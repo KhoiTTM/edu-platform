@@ -13,6 +13,19 @@ Modern student portal built with **Next.js 15**, **Tailwind CSS**, and **Supabas
 2. Paste the contents of `supabase/migrations/001_schema.sql` and click **Run**.
 3. Run **`supabase/migrations/002_lessons_curriculum_vi.sql`** (môn tiếng Việt, thứ tự bài, giải thích câu hỏi).
 4. Run **`supabase/migrations/003_subjects_textbook.sql`** (bảng `subjects`, PDF sách chung theo **tập 1 / tập 2**, `page_hint` từng bài, bucket Storage `textbooks`).
+5. Run **`supabase/migrations/004_toan3_tap1_curriculum.sql`** — **55 bài** Toán lớp 3 tập 1 (26 bài có video YouTube bạn cung cấp + 29 bài chỉ sách), mỗi video = 1 bài trên app, kèm quiz ôn tập.
+
+Sau bước 5, cập nhật PDF tập 1:
+
+```sql
+update public.subjects
+set textbook_pdf_url = 'https://YOUR_PROJECT.supabase.co/storage/v1/object/public/textbooks/grade3/toan-tap1.pdf'
+where grade = 3 and slug = 'toan' and volume = 1;
+```
+
+Chỉnh lại path cho đúng file bạn đã upload. File mẫu local: `content/toan3-tap1.pdf`.
+
+Tạo lại file SQL sau khi sửa dữ liệu: `npm run generate:toan3`
 
 ### Upload sách PDF (Supabase Storage)
 

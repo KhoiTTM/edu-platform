@@ -35,6 +35,9 @@ export type Lesson = {
   volume: Volume;
   page_hint: string | null;
   subject_id: string | null;
+  book_lesson_number: number | null;
+  topic_label: string | null;
+  video_part: number | null;
 };
 
 export type ScheduleEntry = {

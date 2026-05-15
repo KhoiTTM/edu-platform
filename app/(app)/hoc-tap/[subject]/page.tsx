@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { SubjectVolumeTabs } from "@/components/SubjectVolumeTabs";
+import { LessonListByTopic } from "@/components/LessonListByTopic";
 import type { Lesson, Subject, Volume } from "@/types/database";
 
 type Props = {
@@ -113,38 +114,7 @@ export default async function HocTapSubjectPage({ params, searchParams }: Props)
           trong Supabase.
         </p>
       ) : (
-        <ul className="mt-8 space-y-3">
-          {lessons.map((lesson) => (
-            <li key={lesson.id}>
-              <Link
-                href={`/lessons/${lesson.id}`}
-                className="flex min-h-[56px] flex-col rounded-2xl border border-slate-200/80 bg-white px-5 py-4 shadow-card transition hover:border-brand-300 sm:flex-row sm:items-center sm:justify-between"
-              >
-                <div>
-                  <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">
-                    Tập {lesson.volume ?? 1} · Bài {lesson.lesson_index ?? 1}
-                  </p>
-                  <p className="mt-0.5 font-display text-lg font-semibold text-slate-900">
-                    {lesson.title}
-                  </p>
-                  {lesson.page_hint && (
-                    <p className="mt-1 text-sm text-slate-500">
-                      Sách: {lesson.page_hint}
-                    </p>
-                  )}
-                  {lesson.summary && (
-                    <p className="mt-1 line-clamp-2 text-sm text-slate-600">
-                      {lesson.summary}
-                    </p>
-                  )}
-                </div>
-                <span className="mt-3 shrink-0 text-sm font-semibold text-brand-600 sm:mt-0">
-                  Học bài →
-                </span>
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <LessonListByTopic lessons={lessons} />
       )}
     </div>
   );

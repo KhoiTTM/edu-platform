@@ -98,13 +98,18 @@ export default async function LessonPage({ params }: Props) {
         </Link>
         <span className="mx-2 text-slate-400">/</span>
         <span className="font-medium text-slate-900">
-          Tập {volume} · Bài {L.lesson_index ?? 1}
+          #{L.lesson_index ?? 1}
+          {L.book_lesson_number != null && ` · SGK Bài ${L.book_lesson_number}`}
         </span>
       </nav>
 
       <header className="mt-4">
+        {L.topic_label && (
+          <p className="text-sm font-medium text-slate-500">{L.topic_label}</p>
+        )}
         <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">
           Lớp {L.grade} · {subjectLabel} · Tập {volume}
+          {(L.video_part ?? 0) > 0 && L.youtube_video_id && ` · Video phần ${L.video_part}`}
         </p>
         <h1 className="font-display text-3xl font-bold text-slate-900 sm:text-4xl">
           {L.title}
@@ -115,12 +120,6 @@ export default async function LessonPage({ params }: Props) {
       </header>
 
       <div className="mt-8 space-y-10">
-        <TextbookSection
-          subject={subjectRow}
-          pageHint={L.page_hint}
-          lessonTitle={L.title}
-        />
-
         {L.youtube_video_id ? (
           <section>
             <h2 className="mb-3 font-display text-xl font-semibold text-slate-900">
@@ -129,14 +128,16 @@ export default async function LessonPage({ params }: Props) {
             <YouTubeEmbed videoId={L.youtube_video_id} title={L.title} />
           </section>
         ) : (
-          <p className="rounded-2xl border border-slate-200 bg-white p-5 text-sm text-slate-600">
-            Chưa có video cho bài này — thêm{" "}
-            <code className="rounded bg-slate-100 px-1 text-xs">
-              youtube_video_id
-            </code>{" "}
-            trong bảng lessons.
+          <p className="rounded-2xl border border-amber-100 bg-amber-50/80 p-5 text-sm text-amber-950">
+            Bài này chưa có video — đọc sách và làm bài tập bên dưới.
           </p>
         )}
+
+        <TextbookSection
+          subject={subjectRow}
+          pageHint={L.page_hint}
+          lessonTitle={L.title}
+        />
 
         {practiceQuestions.length > 0 ? (
           <LessonPractice questions={practiceQuestions} />
