@@ -31,7 +31,7 @@ export function QuizRunner({ quizId, questions }: Props) {
   function handleSubmit() {
     setError(null);
     if (answeredCount < questions.length) {
-      setError("Please answer every question before submitting.");
+      setError("Hãy trả lời hết các câu trước khi nộp bài.");
       return;
     }
     startTransition(async () => {
@@ -50,12 +50,12 @@ export function QuizRunner({ quizId, questions }: Props) {
     return (
       <div className="mt-8 rounded-2xl border border-emerald-200 bg-emerald-50/80 p-8 text-center shadow-card">
         <p className="text-sm font-semibold uppercase tracking-wide text-emerald-800">
-          Nice work!
+          Hoàn thành!
         </p>
         <p className="mt-2 font-display text-4xl font-bold text-emerald-900">
           {result.score}/{result.total}
         </p>
-        <p className="mt-1 text-lg text-emerald-800">{pct}% correct</p>
+        <p className="mt-1 text-lg text-emerald-800">{pct}% đúng</p>
         <button
           type="button"
           onClick={() => {
@@ -64,7 +64,7 @@ export function QuizRunner({ quizId, questions }: Props) {
           }}
           className="mt-8 rounded-xl bg-brand-600 px-6 py-3 text-sm font-semibold text-white hover:bg-brand-700"
         >
-          Try again
+          Làm lại
         </button>
       </div>
     );
@@ -77,9 +77,9 @@ export function QuizRunner({ quizId, questions }: Props) {
           key={q.id}
           className="rounded-2xl border border-slate-200 bg-white p-5 shadow-card sm:p-6"
         >
-          <legend className="sr-only">Question {idx + 1}</legend>
+          <legend className="sr-only">Câu {idx + 1}</legend>
           <p className="text-sm font-semibold text-brand-600">
-            Question {idx + 1}
+            Câu {idx + 1}
           </p>
           <p className="mt-2 text-lg font-medium text-slate-900">{q.question}</p>
           <div className="mt-4 grid gap-3">
@@ -121,7 +121,7 @@ export function QuizRunner({ quizId, questions }: Props) {
 
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-sm text-slate-600">
-          {answeredCount}/{questions.length} answered
+          Đã trả lời {answeredCount}/{questions.length} câu
         </p>
         <button
           type="button"
@@ -129,7 +129,7 @@ export function QuizRunner({ quizId, questions }: Props) {
           onClick={handleSubmit}
           className="inline-flex min-h-[48px] items-center justify-center rounded-xl bg-brand-600 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-600/20 transition hover:bg-brand-700 disabled:opacity-60"
         >
-          {pending ? "Saving…" : "Submit quiz"}
+          {pending ? "Đang lưu…" : "Nộp bài"}
         </button>
       </div>
     </div>

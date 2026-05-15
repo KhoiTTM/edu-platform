@@ -4,9 +4,10 @@ import { createClient } from "@/lib/supabase/server";
 import { SignOutButton } from "@/components/SignOutButton";
 
 const nav = [
-  { href: "/dashboard", label: "Dashboard", icon: "◆" },
-  { href: "/schedule", label: "Schedule", icon: "☰" },
-  { href: "/scores", label: "Scores", icon: "★" },
+  { href: "/dashboard", label: "Trang chủ", icon: "◆" },
+  { href: "/hoc-tap", label: "Học bài", icon: "📚" },
+  { href: "/schedule", label: "Lịch học", icon: "☰" },
+  { href: "/scores", label: "Điểm số", icon: "★" },
 ];
 
 export default async function StudentLayout({

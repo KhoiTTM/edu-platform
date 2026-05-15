@@ -1,4 +1,16 @@
 export type Grade = 3 | 7;
+export type Volume = 1 | 2;
+
+export type Subject = {
+  id: string;
+  grade: Grade;
+  slug: string;
+  label_vi: string;
+  volume: Volume;
+  textbook_pdf_url: string | null;
+  textbook_title: string | null;
+  created_at: string;
+};
 
 export type Profile = {
   id: string;
@@ -17,6 +29,12 @@ export type Lesson = {
   youtube_video_id: string | null;
   duration_minutes: number | null;
   created_at: string;
+  subject_slug: string;
+  subject_label_vi: string;
+  lesson_index: number;
+  volume: Volume;
+  page_hint: string | null;
+  subject_id: string | null;
 };
 
 export type ScheduleEntry = {
@@ -42,6 +60,7 @@ export type QuizQuestion = {
   options: string[];
   correct_index: number;
   order_index: number;
+  explanation: string | null;
 };
 
 export type QuizAttempt = {

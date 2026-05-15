@@ -11,8 +11,18 @@ Modern student portal built with **Next.js 15**, **Tailwind CSS**, and **Supabas
 
 1. Open your Supabase project → **SQL Editor** → **New query**.
 2. Paste the contents of `supabase/migrations/001_schema.sql` and click **Run**.
+3. Run **`supabase/migrations/002_lessons_curriculum_vi.sql`** (môn tiếng Việt, thứ tự bài, giải thích câu hỏi).
+4. Run **`supabase/migrations/003_subjects_textbook.sql`** (bảng `subjects`, PDF sách chung theo **tập 1 / tập 2**, `page_hint` từng bài, bucket Storage `textbooks`).
 
-This creates tables, Row Level Security policies, a trigger that creates a `profiles` row when a user signs up, and seed lessons/quizzes for grades **3** and **7**.
+### Upload sách PDF (Supabase Storage)
+
+1. Supabase → **Storage** → bucket **`textbooks`** (public) — tạo tự động bởi migration 003 nếu chưa có.
+2. Upload file, ví dụ: `grade3/toan-tap1.pdf`, `grade3/toan-tap2.pdf`.
+3. Copy **public URL** (dạng `https://<project>.supabase.co/storage/v1/object/public/textbooks/grade3/toan-tap1.pdf`).
+4. Supabase → **Table Editor** → **`subjects`** → dán vào cột **`textbook_pdf_url`** cho đúng `grade`, `slug` (toan, tieng_anh), `volume` (1 hoặc 2).
+5. Mỗi **lesson**: cập nhật `youtube_video_id`, `page_hint` (vd. `Trang 12–18`), `volume`, `lesson_index`.
+
+Một file PDF = cả tập sách; mỗi bài chỉ khác **trang đọc**, **video** và **bài tập**.
 
 ### Email confirmations (recommended for local demos)
 
@@ -42,10 +52,10 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## 5. Try it out
 
-1. Use **Sign up** on `/login`, pick **Grade 3** or **Grade 7**, then open the **Dashboard**.
-2. Open a **lesson** to view the **PDF** (iframe) and **YouTube** embed, then **Take the quiz**.
+1. Use **Sign up** on `/login`, pick **Grade 3** or **Grade 7**, then open the dashboard.
+2. Go to **Học bài** (`/hoc-tap`): chọn **môn** → **tập 1/2** (nếu có) → **bài**. Trang bài: **sách PDF chung** + gợi ý trang, **YouTube**, **bài tập chấm ngay**, kiểm tra tổng hợp (lưu điểm).
 3. Visit **Schedule** — a sample Mon–Fri timetable is created automatically the first time you load that page.
-4. Check **Scores** for saved attempts.
+4. Check **Scores** for saved quiz attempts.
 
 ## Project map
 
@@ -57,6 +67,11 @@ Open [http://localhost:3000](http://localhost:3000).
 | `middleware.ts` | Keeps routes private; refreshes Supabase session cookies |
 | `lib/supabase/*` | Browser + server Supabase clients |
 | `supabase/migrations/001_schema.sql` | Schema, RLS, trigger, seed data |
+| `supabase/migrations/002_lessons_curriculum_vi.sql` | Vietnamese subjects, lesson order, quiz explanations |
+| `supabase/migrations/003_subjects_textbook.sql` | Shared textbook PDF per subject/volume, page hints, Storage bucket |
+| `app/(app)/hoc-tap/*` | Chọn môn → tập → bài |
+| `components/LessonPractice.tsx` | Bài tập chấm từng câu + giải thích |
+| `components/TextbookSection.tsx` | PDF sách chung + `page_hint` |
 
 ## Notes
 

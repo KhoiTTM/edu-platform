@@ -49,24 +49,24 @@ export default async function QuizPage({ params }: Props) {
         href="/dashboard"
         className="text-sm font-medium text-brand-600 hover:text-brand-800"
       >
-        ← Back to dashboard
+        ← Về trang chủ
       </Link>
 
       <header className="mt-4">
         <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">
-          Quiz
+          Bài kiểm tra
         </p>
         <h1 className="font-display text-3xl font-bold text-slate-900">
           {Q.title}
         </h1>
         {lessonMeta?.title && (
-          <p className="mt-2 text-slate-600">Lesson: {lessonMeta.title}</p>
+          <p className="mt-2 text-slate-600">Bài học: {lessonMeta.title}</p>
         )}
       </header>
 
       {list.length === 0 ? (
         <p className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 text-slate-600">
-          No questions for this quiz yet.
+          Chưa có câu hỏi cho bài kiểm tra này.
         </p>
       ) : (
         <QuizRunner quizId={id} questions={list} />

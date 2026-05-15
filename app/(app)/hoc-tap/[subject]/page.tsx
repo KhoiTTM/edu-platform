@@ -1,0 +1,151 @@
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { createClient } from "@/lib/supabase/server";
+import { SubjectVolumeTabs } from "@/components/SubjectVolumeTabs";
+import type { Lesson, Subject, Volume } from "@/types/database";
+
+type Props = {
+  params: Promise<{ subject: string }>;
+  searchParams: Promise<{ tap?: string }>;
+};
+
+const SLUG_RE = /^[a-z0-9_]+$/;
+
+function parseVolume(raw: string | undefined): Volume {
+  const n = raw ? parseInt(raw, 10) : 1;
+  return n === 2 ? 2 : 1;
+}
+
+export default async function HocTapSubjectPage({ params, searchParams }: Props) {
+  const { subject } = await params;
+  const { tap } = await searchParams;
+  if (!SLUG_RE.test(subject)) notFound();
+
+  const activeVolume = parseVolume(tap);
+
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  const { data: profile } = await supabase
+    .from("profiles")
+    .select("grade")
+    .eq("id", user!.id)
+    .single();
+
+  const grade = (profile?.grade ?? 3) as 3 | 7;
+
+  const { data: subjectRows } = await supabase
+    .from("subjects")
+    .select("*")
+    .eq("grade", grade)
+    .eq("slug", subject)
+    .order("volume");
+
+  const subjectCatalog = (subjectRows ?? []) as Subject[];
+
+  const { data: allLessons } = await supabase
+    .from("lessons")
+    .select("*")
+    .eq("grade", grade)
+    .eq("subject_slug", subject)
+    .order("volume")
+    .order("lesson_index", { ascending: true });
+
+  const all = (allLessons ?? []) as Lesson[];
+  if (all.length === 0) notFound();
+
+  const labelVi = all[0]?.subject_label_vi ?? subject;
+  const lessons = all.filter((l) => (l.volume ?? 1) === activeVolume);
+
+  const volumesWithLessons = new Set(all.map((l) => l.volume ?? 1));
+  const tabs = ([1, 2] as const).map((v) => ({
+    volume: v,
+    label: `Tập ${v}`,
+    hasLessons: volumesWithLessons.has(v),
+  }));
+
+  const activeSubject =
+    subjectCatalog.find((s) => s.volume === activeVolume) ?? null;
+
+  return (
+    <div className="mx-auto max-w-4xl">
+      <nav className="text-sm text-slate-600">
+        <Link
+          href="/hoc-tap"
+          className="font-medium text-brand-600 hover:text-brand-800"
+        >
+          Chọn môn
+        </Link>
+        <span className="mx-2 text-slate-400">/</span>
+        <span className="font-medium text-slate-900">{labelVi}</span>
+      </nav>
+
+      <header className="mt-4">
+        <h1 className="font-display text-3xl font-bold text-slate-900">
+          {labelVi}
+        </h1>
+        <p className="mt-2 text-slate-600">
+          Một quyển sách PDF chung cho cả tập — mỗi bài có video và bài tập riêng.
+        </p>
+        {activeSubject?.textbook_pdf_url ? (
+          <p className="mt-2 text-sm text-emerald-700">
+            Đã có sách PDF tập {activeVolume}.
+          </p>
+        ) : (
+          <p className="mt-2 text-sm text-amber-700">
+            Chưa gắn PDF tập {activeVolume} — upload lên Supabase Storage (bucket{" "}
+            <code className="text-xs">textbooks</code>).
+          </p>
+        )}
+      </header>
+
+      <SubjectVolumeTabs
+        subjectSlug={subject}
+        tabs={tabs}
+        activeVolume={activeVolume}
+      />
+
+      {lessons.length === 0 ? (
+        <p className="mt-8 rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center text-slate-600">
+          Chưa có bài nào cho tập {activeVolume}. Chọn tập khác hoặc thêm dữ liệu
+          trong Supabase.
+        </p>
+      ) : (
+        <ul className="mt-8 space-y-3">
+          {lessons.map((lesson) => (
+            <li key={lesson.id}>
+              <Link
+                href={`/lessons/${lesson.id}`}
+                className="flex min-h-[56px] flex-col rounded-2xl border border-slate-200/80 bg-white px-5 py-4 shadow-card transition hover:border-brand-300 sm:flex-row sm:items-center sm:justify-between"
+              >
+                <div>
+                  <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">
+                    Tập {lesson.volume ?? 1} · Bài {lesson.lesson_index ?? 1}
+                  </p>
+                  <p className="mt-0.5 font-display text-lg font-semibold text-slate-900">
+                    {lesson.title}
+                  </p>
+                  {lesson.page_hint && (
+                    <p className="mt-1 text-sm text-slate-500">
+                      Sách: {lesson.page_hint}
+                    </p>
+                  )}
+                  {lesson.summary && (
+                    <p className="mt-1 line-clamp-2 text-sm text-slate-600">
+                      {lesson.summary}
+                    </p>
+                  )}
+                </div>
+                <span className="mt-3 shrink-0 text-sm font-semibold text-brand-600 sm:mt-0">
+                  Học bài →
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
