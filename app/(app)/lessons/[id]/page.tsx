@@ -4,6 +4,7 @@ import { createClient } from "@/lib/supabase/server";
 import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import { LessonPractice } from "@/components/LessonPractice";
 import { TextbookSection } from "@/components/TextbookSection";
+import AITeacherChat from "@/components/AITeacherChat";
 import type { Lesson, Quiz, QuizQuestion, Subject, Volume } from "@/types/database";
 
 type Props = { params: Promise<{ id: string }> };

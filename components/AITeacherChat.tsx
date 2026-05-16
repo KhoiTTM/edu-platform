@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { Send, User, Bot, Loader2 } from "lucide-react";
 
 interface Message {
@@ -27,7 +27,7 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
     if (messages.length === 0) {
       handleSend("Bắt đầu buổi học", true);
     }
-  }, []);
+  }, [handleSend, messages.length]);
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -35,7 +35,7 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
     }
   }, [messages]);
 
-  const handleSend = async (text: string, silent = false) => {
+  const handleSend = useCallback(async (text: string, silent = false) => {
     const userMessage = text || input;
     if (!userMessage.trim()) return;
 
@@ -66,7 +66,7 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [input, messages, sessionInfo, studentName]);
 
   return (
     <div className="flex h-[600px] flex-col rounded-2xl border border-slate-200 bg-white shadow-sm">
