@@ -16,6 +16,8 @@ BEGIN
         ) LOOP
             EXECUTE 'ALTER TABLE public.' || quote_ident(t) || ' DROP CONSTRAINT ' || quote_ident(r.constraint_name);
         END LOOP;
+        -- Drop our specific loose constraint if it exists from a previous run
+        EXECUTE 'ALTER TABLE public.' || quote_ident(t) || ' DROP CONSTRAINT IF EXISTS ' || quote_ident(t || '_grade_min_check');
         -- Add back a loose constraint
         EXECUTE 'ALTER TABLE public.' || quote_ident(t) || ' ADD CONSTRAINT ' || quote_ident(t || '_grade_min_check') || ' CHECK (grade >= 0)';
     END LOOP;
