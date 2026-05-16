@@ -18,7 +18,7 @@ export default async function LessonPage({ params }: Props) {
 
   const { data: profile } = await supabase
     .from("profiles")
-    .select("grade")
+    .select("grade, full_name")
     .eq("id", user!.id)
     .single();
 
