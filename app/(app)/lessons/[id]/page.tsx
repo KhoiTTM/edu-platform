@@ -188,7 +188,7 @@ export default async function LessonPage({ params }: Props) {
           <div className="mt-8 lg:mt-0">
             <div className="sticky top-24 space-y-6">
               <AITeacherChat 
-                sessionInfo={{ title: L.title, summary: L.summary }} 
+                sessionInfo={{ title: L.title, summary: L.summary || "" }} 
                 studentName={profile?.full_name || "Học sinh"} 
               />
               
