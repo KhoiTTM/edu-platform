@@ -1,62 +1,45 @@
 -- Mindset For IELTS Foundation Setup
 -- This script relaxes grade constraints to allow Grade 0 (all grades) and adds the IELTS curriculum.
 
--- 1. Relax check constraints
--- Profiles
-alter table public.profiles drop constraint if exists profiles_grade_check;
-alter table public.profiles add constraint profiles_grade_check check (grade >= 0);
+-- 1. Robustly relax grade constraints by dropping all check constraints on the 'grade' column
+DO $$ 
+DECLARE 
+    t text;
+    r RECORD;
+BEGIN
+    FOR t IN SELECT unnest(ARRAY['profiles', 'lessons', 'subjects', 'weekly_lesson_schedule']) LOOP
+        FOR r IN (
+            SELECT tc.constraint_name 
+            FROM information_schema.table_constraints AS tc 
+            JOIN information_schema.key_column_usage AS kcu ON tc.constraint_name = kcu.constraint_name 
+            WHERE tc.table_name = t AND kcu.column_name = 'grade' AND tc.constraint_type = 'CHECK'
+        ) LOOP
+            EXECUTE 'ALTER TABLE public.' || quote_ident(t) || ' DROP CONSTRAINT ' || quote_ident(r.constraint_name);
+        END LOOP;
+        -- Add back a loose constraint
+        EXECUTE 'ALTER TABLE public.' || quote_ident(t) || ' ADD CONSTRAINT ' || quote_ident(t || '_grade_min_check') || ' CHECK (grade >= 0)';
+    END LOOP;
+END $$;
 
--- Lessons
-alter table public.lessons drop constraint if exists lessons_grade_check;
-alter table public.lessons add constraint lessons_grade_check check (grade >= 0);
+-- 2. Simplify RLS Policies (Allow all authenticated users to see lessons/subjects)
+-- We handle the "Current Grade" filtering in the UI code (hoc-tap/page.tsx)
+-- This avoids complex subqueries that might fail or be slow in RLS.
 
--- Subjects
-alter table public.subjects drop constraint if exists subjects_grade_check;
-alter table public.subjects add constraint subjects_grade_check check (grade >= 0);
-
--- Weekly Schedule
-alter table public.weekly_lesson_schedule drop constraint if exists weekly_lesson_schedule_grade_check;
-alter table public.weekly_lesson_schedule add constraint weekly_lesson_schedule_grade_check check (grade >= 0);
-
--- 2. Update RLS Policies to allow Grade 0 visibility
--- Lessons
 drop policy if exists "lessons_select_grade" on public.lessons;
 create policy "lessons_select_grade" on public.lessons
-  for select using (
-    auth.role() = 'authenticated'
-    and (grade = (select p.grade from public.profiles p where p.id = auth.uid()) or grade = 0)
-  );
+  for select using (auth.role() = 'authenticated');
 
--- Subjects
 drop policy if exists "subjects_select_grade" on public.subjects;
 create policy "subjects_select_grade" on public.subjects
-  for select using (
-    auth.role() = 'authenticated'
-    and (grade = (select p.grade from public.profiles p where p.id = auth.uid()) or grade = 0)
-  );
+  for select using (auth.role() = 'authenticated');
 
--- Quizzes
 drop policy if exists "quizzes_select_grade" on public.quizzes;
 create policy "quizzes_select_grade" on public.quizzes
-  for select using (
-    exists (
-      select 1 from public.lessons l
-      where l.id = quizzes.lesson_id
-        and (l.grade = (select p.grade from public.profiles p where p.id = auth.uid()) or l.grade = 0)
-    )
-  );
+  for select using (auth.role() = 'authenticated');
 
--- Questions
 drop policy if exists "questions_select_grade" on public.quiz_questions;
 create policy "questions_select_grade" on public.quiz_questions
-  for select using (
-    exists (
-      select 1 from public.quizzes q
-      join public.lessons l on l.id = q.lesson_id
-      where q.id = quiz_questions.quiz_id
-        and (l.grade = (select p.grade from public.profiles p where p.id = auth.uid()) or l.grade = 0)
-    )
-  );
+  for select using (auth.role() = 'authenticated');
 
 -- 3. Insert IELTS Subject
 insert into public.subjects (id, grade, slug, label_vi, volume, textbook_title, textbook_pdf_url)
