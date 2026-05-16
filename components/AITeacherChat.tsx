@@ -50,7 +50,10 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
       if (data.text) {
         setMessages((prev) => [...prev, { role: "assistant", content: data.text }]);
       } else if (data.error) {
-        setMessages((prev) => [...prev, { role: "assistant", content: `⚠️ Lỗi: ${data.error}` }]);
+        setMessages((prev) => [...prev, { 
+          role: "assistant", 
+          content: `⚠️ Lỗi: ${data.error}${data.details ? `\n\nChi tiết kỹ thuật: ${data.details}` : ""}` 
+        }]);
       }
     } catch (error) {
       console.error("Chat error:", error);
