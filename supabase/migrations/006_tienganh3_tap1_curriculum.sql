@@ -45,7 +45,7 @@ insert into public.lessons (id, grade, title, summary, youtube_video_id, subject
 -- Insert Quizzes for each lesson
 insert into public.quizzes (id, lesson_id, title)
 select 
-  replace(id, 'aaaaaaaa', 'bbbbbbbb'),
+  replace(id::text, 'aaaaaaaa', 'bbbbbbbb')::uuid,
   id,
   'Practice: ' || title
 from public.lessons
