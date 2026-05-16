@@ -1,4 +1,4 @@
-export type Grade = 3 | 7;
+export type Grade = 0 | 3 | 7;
 export type Volume = 1 | 2;
 
 export type Subject = {
