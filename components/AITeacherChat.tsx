@@ -77,15 +77,15 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
   }, [messages]);
 
   return (
-    <div className="flex h-[600px] flex-col rounded-2xl border border-slate-200 bg-white shadow-sm">
+    <div className="flex h-[600px] flex-col rounded-2xl border border-slate-700 bg-slate-900/50 shadow-xl backdrop-blur-md">
       {/* Header */}
-      <div className="flex items-center gap-3 border-b border-slate-100 bg-brand-50/50 px-4 py-3">
-        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-600 text-white">
+      <div className="flex items-center gap-3 border-b border-slate-800 bg-slate-900/80 px-4 py-3">
+        <div className="flex h-8 w-8 items-center justify-center rounded-full bg-sky-600 text-white shadow-lg shadow-sky-500/20">
           <Bot size={18} />
         </div>
         <div>
-          <h3 className="text-sm font-semibold text-slate-900">Giáo viên AI (IELTS Mentor)</h3>
-          <p className="text-xs text-slate-500 italic">Đang hỗ trợ: {sessionInfo.title}</p>
+          <h3 className="text-sm font-semibold text-white">Giáo viên AI (IELTS Mentor)</h3>
+          <p className="text-xs text-slate-400 italic">Đang hỗ trợ: {sessionInfo.title}</p>
         </div>
       </div>
 
@@ -100,14 +100,14 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
             className={`flex gap-3 ${m.role === "user" ? "flex-row-reverse" : ""}`}
           >
             <div className={`mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full ${
-              m.role === "user" ? "bg-slate-100 text-slate-600" : "bg-brand-100 text-brand-600"
+              m.role === "user" ? "bg-slate-800 text-slate-400" : "bg-sky-900/50 text-sky-400"
             }`}>
               {m.role === "user" ? <User size={14} /> : <Bot size={14} />}
             </div>
             <div className={`max-w-[85%] rounded-2xl px-4 py-2 text-sm leading-relaxed ${
               m.role === "user" 
-                ? "bg-brand-600 text-white rounded-tr-none" 
-                : "bg-slate-50 text-slate-800 border border-slate-100 rounded-tl-none"
+                ? "bg-sky-600 text-white rounded-tr-none shadow-lg shadow-sky-500/10" 
+                : "bg-slate-800/80 text-slate-200 border border-slate-700 rounded-tl-none"
             }`}>
               <div className="whitespace-pre-wrap">{m.content}</div>
             </div>
@@ -115,12 +115,12 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
         ))}
         {isLoading && (
           <div className="flex gap-3">
-            <div className="mt-1 flex h-7 w-7 items-center justify-center rounded-full bg-brand-100 text-brand-600">
+            <div className="mt-1 flex h-7 w-7 items-center justify-center rounded-full bg-sky-900/50 text-sky-400">
               <Bot size={14} />
             </div>
-            <div className="flex items-center gap-2 rounded-2xl bg-slate-50 border border-slate-100 px-4 py-2">
-              <Loader2 size={16} className="animate-spin text-brand-600" />
-              <span className="text-xs text-slate-500">Giáo viên đang soạn tin...</span>
+            <div className="flex items-center gap-2 rounded-2xl bg-slate-800/80 border border-slate-700 px-4 py-2">
+              <Loader2 size={16} className="animate-spin text-sky-500" />
+              <span className="text-xs text-slate-400">Giáo viên đang soạn tin...</span>
             </div>
           </div>
         )}
@@ -129,7 +129,7 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
       {/* Input */}
       <form 
         onSubmit={(e) => { e.preventDefault(); handleSend(input); }}
-        className="border-t border-slate-100 p-3"
+        className="border-t border-slate-800 bg-slate-900/80 p-3"
       >
         <div className="flex gap-2">
           <input
@@ -137,13 +137,13 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Trả lời giáo viên hoặc đặt câu hỏi..."
-            className="flex-1 rounded-xl border border-slate-200 px-4 py-2 text-sm focus:border-brand-500 focus:outline-none"
+            className="flex-1 rounded-xl border border-slate-700 bg-slate-800 px-4 py-2 text-sm text-white placeholder:text-slate-500 focus:border-sky-500 focus:outline-none"
             disabled={isLoading}
           />
           <button
             type="submit"
             disabled={isLoading || !input.trim()}
-            className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-600 text-white transition hover:bg-brand-700 disabled:opacity-50"
+            className="flex h-9 w-9 items-center justify-center rounded-xl bg-sky-600 text-white transition hover:bg-sky-700 disabled:opacity-50 shadow-lg shadow-sky-500/20"
           >
             <Send size={18} />
           </button>

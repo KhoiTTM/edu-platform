@@ -18,7 +18,7 @@ export default async function LessonPage({ params }: Props) {
 
   const { data: profile } = await supabase
     .from("profiles")
-    .select("grade, full_name")
+    .select("grade, display_name")
     .eq("id", user!.id)
     .single();
 
@@ -189,7 +189,7 @@ export default async function LessonPage({ params }: Props) {
             <div className="sticky top-24 space-y-6">
               <AITeacherChat 
                 sessionInfo={{ title: L.title, summary: L.summary || "" }} 
-                studentName={profile?.full_name || "Học sinh"} 
+                studentName={profile?.display_name || "Học sinh"} 
               />
               
               <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">

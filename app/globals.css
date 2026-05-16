@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --background: #0f172a; /* Deep Slate Blue */
+  --foreground: #f8fafc; /* Light Slate */
+  --card: #1e293b;
+  --border: #334155;
+  --accent: #38bdf8;
 }
 
 html {
