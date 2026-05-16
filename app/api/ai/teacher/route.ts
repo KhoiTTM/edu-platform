@@ -7,8 +7,6 @@ export async function POST(req: Request) {
   try {
     const { messages, sessionInfo, studentName } = await req.json();
 
-    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
-
     const systemPrompt = `
 You are an expert IELTS Teacher. You are guiding a student named ${studentName} through the "Mindset for IELTS Foundation" curriculum.
 Current Session: ${sessionInfo.title}
@@ -24,41 +22,45 @@ Your Role:
 
 Rules:
 - Be encouraging, professional, and patient.
-- Use a mix of English and Vietnamese to ensure clarity (mostly English for IELTS content, Vietnamese for complex explanations).
-- Follow the core strategies provided in the curriculum.
-- If the student asks something outside of the lesson, politely bring them back to the topic.
+- Use a mix of English and Vietnamese to ensure clarity.
 - Do not just give answers; guide the student to find them.
-
-Core Strategies to emphasize:
-- Listening: Predicting, Synonyms.
-- Speaking: Extending answers (using 'because', 'for example'), Smart notes.
-- Reading: Skimming & Scanning, Paraphrasing.
-- Writing: Sequencing words, Clear structure (Intro, Body, Conclusion).
-
-Maintain a conversation history and act based on the student's last input.
 `;
 
-    const chat = model.startChat({
-      history: messages.map((m: any) => ({
-        role: m.role === "user" ? "user" : "model",
-        parts: [{ text: m.content }],
-      })),
-      generationConfig: {
-        maxOutputTokens: 1000,
-      },
-    });
+    const modelsToTry = ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-1.5-pro"];
+    let lastError = null;
 
-    // We prepend the system prompt to the first message if history is empty, 
-    // or we can just use the system prompt logic. 
-    // For simplicity with Gemini chat, we'll use a single prompt if it's the first message.
-    
-    const result = await chat.sendMessage(messages.length === 1 ? `${systemPrompt}\n\nStudent: ${messages[0].content}` : messages[messages.length - 1].content);
-    const response = await result.response;
-    const text = response.text();
+    for (const modelName of modelsToTry) {
+      try {
+        console.log(`Attempting with model: ${modelName}`);
+        const model = genAI.getGenerativeModel({ model: modelName });
+        
+        const chat = model.startChat({
+          history: messages.slice(0, -1).map((m: any) => ({
+            role: m.role === "user" ? "user" : "model",
+            parts: [{ text: m.content }],
+          })),
+          generationConfig: { maxOutputTokens: 1000 },
+        });
 
-    return NextResponse.json({ text });
+        const lastMessage = messages[messages.length - 1].content;
+        const prompt = messages.length === 1 ? `${systemPrompt}\n\nStudent: ${lastMessage}` : lastMessage;
+
+        const result = await chat.sendMessage(prompt);
+        const response = await result.response;
+        const text = response.text();
+
+        return NextResponse.json({ text, modelUsed: modelName });
+      } catch (err: any) {
+        console.error(`Error with model ${modelName}:`, err.message);
+        lastError = err;
+        // If it's a 429 or other retryable error, continue to next model
+        continue;
+      }
+    }
+
+    throw lastError || new Error("All models failed");
   } catch (error: any) {
-    console.error("AI Teacher Error:", error);
+    console.error("Final AI Teacher Error:", error.message);
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
