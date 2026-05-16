@@ -26,7 +26,12 @@ Rules:
 - Do not just give answers; guide the student to find them.
 `;
 
-    const modelsToTry = ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-1.5-pro"];
+    const modelsToTry = [
+      "gemini-2.0-flash", 
+      "gemini-1.5-flash", 
+      "gemini-1.5-flash-latest", 
+      "gemini-1.5-pro"
+    ];
     let lastError = null;
 
     for (const modelName of modelsToTry) {
@@ -39,7 +44,10 @@ Rules:
             role: m.role === "user" ? "user" : "model",
             parts: [{ text: m.content }],
           })),
-          generationConfig: { maxOutputTokens: 1000 },
+          generationConfig: { 
+            maxOutputTokens: 1000,
+            temperature: 0.7,
+          },
         });
 
         const lastMessage = messages[messages.length - 1].content;
@@ -49,16 +57,25 @@ Rules:
         const response = await result.response;
         const text = response.text();
 
+        if (!text) throw new Error("Empty response from AI");
+
         return NextResponse.json({ text, modelUsed: modelName });
       } catch (err: any) {
         console.error(`Error with model ${modelName}:`, err.message);
         lastError = err;
-        // If it's a 429 or other retryable error, continue to next model
+        // Continue to next model if this one fails
         continue;
       }
     }
 
-    throw lastError || new Error("All models failed");
+    // If we get here, all models failed
+    const errorMessage = lastError?.message || "Unknown error";
+    console.error("All AI models failed. Last error:", errorMessage);
+    
+    return NextResponse.json(
+      { error: "Hệ thống AI đang quá tải (Rate Limit). Vui lòng thử lại sau 30 giây.", details: errorMessage }, 
+      { status: 503 }
+    );
   } catch (error: any) {
     console.error("Final AI Teacher Error:", error.message);
     return NextResponse.json({ error: error.message }, { status: 500 });
