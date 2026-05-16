@@ -56,9 +56,9 @@ on conflict (grade, slug, volume) do update set
   label_vi = excluded.label_vi,
   textbook_title = excluded.textbook_title;
 
--- 4. Insert IELTS Listening Lessons (Tracks)
+-- -- 4. Insert IELTS Listening Lessons (Tracks)
 -- We will use summary to store the 3-step instructions
-insert into public.lessons (id, grade, title, summary, youtube_video_id, subject_slug, subject_label_vi, lesson_index, volume, subject_id)
+insert into public.lessons (id, grade, title, summary, youtube_video_id, subject_slug, subject_label_vi, lesson_index, volume, subject_id, page_hint)
 values
 -- Unit 1
 ('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000102', 0, 'Listening Track 02: Unit 1 - Daily life', 
@@ -66,7 +66,7 @@ values
 1. **Bước 1:** Nghe lần 1 để hiểu nội dung chính.
 2. **Bước 2:** Đọc Audioscript (cuối sách PDF) rồi nghe lại lần 2 để kiểm tra các từ chưa nghe được.
 3. **Bước 3:** Nghe lần 3 và tập đọc theo (Shadowing) để cải thiện phát âm.', 
-'2r7kEF70Afs', 'mindset-ielts', 'Mindset For IELTS Foundation', 2, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
+'2r7kEF70Afs', 'mindset-ielts', 'Mindset For IELTS Foundation', 2, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001', 'Trang 116'),
 
 -- Unit 2
 ('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000103', 0, 'Listening Track 03: Unit 2 - House and home', 
@@ -74,14 +74,14 @@ values
 1. **Bước 1:** Nghe lần 1 để hiểu nội dung chính.
 2. **Bước 2:** Đọc Audioscript rôi nghe lại lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
-'RCuvLzqdBZ8', 'mindset-ielts', 'Mindset For IELTS Foundation', 3, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
+'RCuvLzqdBZ8', 'mindset-ielts', 'Mindset For IELTS Foundation', 3, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001', 'Trang 116'),
 
 ('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000104', 0, 'Listening Track 04: Unit 2 - House and home', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
-'LRPNZf_5j-I', 'mindset-ielts', 'Mindset For IELTS Foundation', 4, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
+'LRPNZf_5j-I', 'mindset-ielts', 'Mindset For IELTS Foundation', 4, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001', 'Trang 116'),
 
 -- Unit 3
 ('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000105', 0, 'Listening Track 05: Unit 3 - Hobbies', 
@@ -89,7 +89,7 @@ values
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
-'gzoYfpWvh7Q', 'mindset-ielts', 'Mindset For IELTS Foundation', 5, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
+'gzoYfpWvh7Q', 'mindset-ielts', 'Mindset For IELTS Foundation', 5, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001', 'Trang 117'),
 
 -- Unit 4
 ('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000106', 0, 'Listening Track 06: Unit 4 - Travel', 
@@ -97,14 +97,14 @@ values
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
-'rkOatFNUGt4', 'mindset-ielts', 'Mindset For IELTS Foundation', 6, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
+'rkOatFNUGt4', 'mindset-ielts', 'Mindset For IELTS Foundation', 6, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001', 'Trang 117'),
 
 ('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000107', 0, 'Listening Track 07: Unit 4 - Travel', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
-'Ou32FRw97Yc', 'mindset-ielts', 'Mindset For IELTS Foundation', 7, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
+'Ou32FRw97Yc', 'mindset-ielts', 'Mindset For IELTS Foundation', 7, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001', 'Trang 117'),
 
 -- Unit 5
 ('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000108', 0, 'Listening Track 08: Unit 5 - Food', 
@@ -112,21 +112,21 @@ values
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
-'RXLcmf5GZQ', 'mindset-ielts', 'Mindset For IELTS Foundation', 8, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
+'RXLcmf5GZQ', 'mindset-ielts', 'Mindset For IELTS Foundation', 8, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001', 'Trang 118'),
 
 ('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000109', 0, 'Listening Track 09: Unit 5 - Food', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
-'WnqLsvQuwZk', 'mindset-ielts', 'Mindset For IELTS Foundation', 9, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
+'WnqLsvQuwZk', 'mindset-ielts', 'Mindset For IELTS Foundation', 9, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001', 'Trang 118'),
 
 ('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000110', 0, 'Listening Track 10: Unit 5 - Food', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
-'qCDSyESoNB0', 'mindset-ielts', 'Mindset For IELTS Foundation', 10, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
+'qCDSyESoNB0', 'mindset-ielts', 'Mindset For IELTS Foundation', 10, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001', 'Trang 118'),
 
 -- Unit 6
 ('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000111', 0, 'Listening Track 11: Unit 6 - Transport', 
@@ -134,14 +134,14 @@ values
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
-'_f8Ciy-r8bM', 'mindset-ielts', 'Mindset For IELTS Foundation', 11, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
+'_f8Ciy-r8bM', 'mindset-ielts', 'Mindset For IELTS Foundation', 11, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001', 'Trang 119'),
 
 ('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000112', 0, 'Listening Track 12: Unit 6 - Transport', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
-'7gFFiqtJzWg', 'mindset-ielts', 'Mindset For IELTS Foundation', 12, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
+'7gFFiqtJzWg', 'mindset-ielts', 'Mindset For IELTS Foundation', 12, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001', 'Trang 119'),
 
 -- Unit 8
 ('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000114', 0, 'Listening Track 14: Unit 8 - Health', 
@@ -149,21 +149,21 @@ values
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
-'jsjIWseiTfM', 'mindset-ielts', 'Mindset For IELTS Foundation', 14, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
+'jsjIWseiTfM', 'mindset-ielts', 'Mindset For IELTS Foundation', 14, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001', 'Trang 120'),
 
 ('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000115', 0, 'Listening Track 15: Unit 8 - Health', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
-'SPurU5V7pxw', 'mindset-ielts', 'Mindset For IELTS Foundation', 15, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
+'SPurU5V7pxw', 'mindset-ielts', 'Mindset For IELTS Foundation', 15, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001', 'Trang 120'),
 
 ('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000116', 0, 'Listening Track 16: Unit 8 - Health', 
 '**HƯỚNG DẪN học nghe (3 bước):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
-'mWPZhFuPkF0', 'mindset-ielts', 'Mindset For IELTS Foundation', 16, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
+'mWPZhFuPkF0', 'mindset-ielts', 'Mindset For IELTS Foundation', 16, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001', 'Trang 121'),
 
 -- Unit 10
 ('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000118', 0, 'Listening Track 18: Unit 10 - Nature', 
@@ -171,24 +171,25 @@ values
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
-'wr8M6uUzHnY', 'mindset-ielts', 'Mindset For IELTS Foundation', 18, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
+'wr8M6uUzHnY', 'mindset-ielts', 'Mindset For IELTS Foundation', 18, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001', 'Trang 122'),
 
 ('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000119', 0, 'Listening Track 19: Unit 10 - Nature', 
 '**HƯỚNG DẪN học nghe (3 bước):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
-'k-EOYc0zoqo', 'mindset-ielts', 'Mindset For IELTS Foundation', 19, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
+'k-EOYc0zoqo', 'mindset-ielts', 'Mindset For IELTS Foundation', 19, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001', 'Trang 122'),
 
 ('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000120', 0, 'Listening Track 20: Unit 10 - Nature', 
 '**HƯỚNG DẪN học nghe (3 bước):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
-'ZN_why11kpc', 'mindset-ielts', 'Mindset For IELTS Foundation', 20, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001')
+'ZN_why11kpc', 'mindset-ielts', 'Mindset For IELTS Foundation', 20, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001', 'Trang 123')
 on conflict (id) do update set
   summary = excluded.summary,
-  youtube_video_id = excluded.youtube_video_id;
+  youtube_video_id = excluded.youtube_video_id,
+  page_hint = excluded.page_hint;
 
 -- 5. Insert Practice Quizzes for IELTS Listening
 insert into public.quizzes (id, lesson_id, title)
