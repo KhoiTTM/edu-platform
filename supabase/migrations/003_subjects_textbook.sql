@@ -63,7 +63,7 @@ values
     'Toán',
     1,
     'Sách Toán lớp 3 — Tập 1',
-    null
+    'https://kfqeumtbatgjdlghiuox.supabase.co/storage/v1/object/public/textbooks/grade3/toan-tap1.pdf'
   ),
   (
     'cccccccc-cccc-cccc-cccc-cccccccc3002',
@@ -72,7 +72,7 @@ values
     'Toán',
     2,
     'Sách Toán lớp 3 — Tập 2',
-    null
+    'https://kfqeumtbatgjdlghiuox.supabase.co/storage/v1/object/public/textbooks/grade3/toan-tap2.pdf'
   ),
   (
     'cccccccc-cccc-cccc-cccc-cccccccc3003',
@@ -81,7 +81,7 @@ values
     'Tiếng Anh',
     1,
     'Sách Tiếng Anh lớp 3 — Tập 1',
-    null
+    'https://kfqeumtbatgjdlghiuox.supabase.co/storage/v1/object/public/textbooks/grade3/tienganh3-tap1.pdf'
   ),
   (
     'cccccccc-cccc-cccc-cccc-cccccccc7001',

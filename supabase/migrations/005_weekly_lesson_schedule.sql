@@ -42,3 +42,24 @@ on conflict (grade, subject_slug, volume, term_start_date, week_number, weekday)
   lesson_index = excluded.lesson_index,
   start_time = excluded.start_time,
   end_time = excluded.end_time;
+
+-- Lịch học Tiếng Anh lớp 3: Thứ 2, 4, 6 lúc 09:00
+insert into public.weekly_lesson_schedule (
+  grade, subject_slug, volume, term_start_date, week_number, weekday, lesson_index, start_time, end_time
+)
+select
+  3, 'tieng_anh', 1, '2026-06-01'::date,
+  (n + 2) / 3 as week_number,
+  case (n - 1) % 3
+    when 0 then 1 -- Thứ 2
+    when 1 then 3 -- Thứ 4
+    when 2 then 5 -- Thứ 6
+  end as weekday,
+  n as lesson_index,
+  '09:00:00'::time,
+  '09:45:00'::time
+from generate_series(1, 30) as n
+on conflict (grade, subject_slug, volume, term_start_date, week_number, weekday) do update set
+  lesson_index = excluded.lesson_index,
+  start_time = excluded.start_time,
+  end_time = excluded.end_time;
