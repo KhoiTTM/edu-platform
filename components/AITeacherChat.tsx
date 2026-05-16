@@ -22,8 +22,10 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
   const [isLoading, setIsLoading] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
+  const hasGreeted = useRef(false);
+
   const handleSend = useCallback(async (text: string, silent = false) => {
-    const userMessage = text || input;
+    const userMessage = text;
     if (!userMessage.trim()) return;
 
     if (!silent) {
@@ -53,14 +55,15 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
     } finally {
       setIsLoading(false);
     }
-  }, [input, messages, sessionInfo, studentName]);
+  }, [messages, sessionInfo, studentName]);
 
-  // Initial greeting
+  // Initial greeting - ONLY ONCE
   useEffect(() => {
-    if (messages.length === 0) {
+    if (!hasGreeted.current) {
+      hasGreeted.current = true;
       handleSend("Bắt đầu buổi học", true);
     }
-  }, [handleSend, messages.length]);
+  }, [handleSend]);
 
   useEffect(() => {
     if (scrollRef.current) {
