@@ -121,68 +121,59 @@ export default async function LessonPage({ params }: Props) {
         )}
       </header>
 
-      <div className={`mt-8 ${subjectSlug === "mindset-ielts" ? "lg:grid lg:grid-cols-2 lg:items-start lg:gap-8" : "space-y-10"}`}>
-        <div className={subjectSlug === "mindset-ielts" ? "space-y-8" : ""}>
-          {L.youtube_video_id ? (
-            <section>
-              <h2 className="mb-3 font-display text-xl font-semibold text-slate-900">
-                Video bài giảng
-              </h2>
-              <YouTubeEmbed videoId={L.youtube_video_id} title={L.title} />
-            </section>
-          ) : (
-            <p className="rounded-2xl border border-amber-100 bg-amber-50/80 p-5 text-sm text-amber-950">
-              Bài này chưa có video — đọc sách và làm bài tập bên dưới.
-            </p>
-          )}
-
-          {subjectSlug !== "mindset-ielts" && (
-            <TextbookSection
-              subject={subjectRow}
-              pageHint={L.page_hint}
-              lessonTitle={L.title}
-            />
-          )}
-
-          {practiceQuestions.length > 0 ? (
-            <LessonPractice questions={practiceQuestions} />
-          ) : (
-            <p className="rounded-2xl border border-dashed border-slate-300 bg-white p-6 text-center text-sm text-slate-600">
-              Chưa có bài tập thực hành cho bài này.
-            </p>
-          )}
-
-          {Q && (
-            <section className="rounded-2xl border border-slate-200 bg-slate-50/80 p-5 sm:p-6">
-              <h2 className="font-display text-lg font-semibold text-slate-900">
-                Kiểm tra tổng hợp (tùy chọn)
-              </h2>
-              <p className="mt-2 text-sm text-slate-600">
-                Làm một lượt hết các câu và lưu điểm vào bảng điểm.
-              </p>
-              <Link
-                href={`/quiz/${Q.id}`}
-                className="mt-4 inline-flex min-h-[48px] items-center justify-center rounded-xl border border-brand-200 bg-white px-8 py-3 text-base font-semibold text-brand-700 transition hover:bg-brand-50"
-              >
-                Vào bài kiểm tra
-              </Link>
-            </section>
-          )}
-        </div>
-
-        {subjectSlug === "mindset-ielts" && (
-          <div className="mt-8 lg:mt-0">
+      <div className="mt-8 space-y-10">
+        {L.youtube_video_id ? (
+          <section>
             <h2 className="mb-3 font-display text-xl font-semibold text-slate-900">
-              Sách & Audioscripts
+              Video bài giảng
             </h2>
-            <div className="sticky top-24">
-              <TextbookSection
-                subject={subjectRow}
-                pageHint={L.page_hint}
-                lessonTitle={L.title}
-              />
+            <YouTubeEmbed videoId={L.youtube_video_id} title={L.title} />
+            <div className="mt-2 text-right">
+              <a 
+                href={`https://www.youtube.com/watch?v=${L.youtube_video_id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-brand-600 hover:underline"
+              >
+                Mở video trực tiếp trên YouTube (nếu không xem được tại đây) ↗
+              </a>
             </div>
-          </div>
+          </section>
+        ) : (
+          <p className="rounded-2xl border border-amber-100 bg-amber-50/80 p-5 text-sm text-amber-950">
+            Bài này chưa có video — đọc sách và làm bài tập bên dưới.
+          </p>
+        )}
+
+        <TextbookSection
+          subject={subjectRow}
+          pageHint={L.page_hint}
+          lessonTitle={L.title}
+        />
+
+        {practiceQuestions.length > 0 ? (
+          <LessonPractice questions={practiceQuestions} />
+        ) : (
+          <p className="rounded-2xl border border-dashed border-slate-300 bg-white p-6 text-center text-sm text-slate-600">
+            Chưa có bài tập thực hành cho bài này.
+          </p>
+        )}
+
+        {Q && (
+          <section className="rounded-2xl border border-slate-200 bg-slate-50/80 p-5 sm:p-6">
+            <h2 className="font-display text-lg font-semibold text-slate-900">
+              Kiểm tra tổng hợp (tùy chọn)
+            </h2>
+            <p className="mt-2 text-sm text-slate-600">
+              Làm một lượt hết các câu và lưu điểm vào bảng điểm.
+            </p>
+            <Link
+              href={`/quiz/${Q.id}`}
+              className="mt-4 inline-flex min-h-[48px] items-center justify-center rounded-xl border border-brand-200 bg-white px-8 py-3 text-base font-semibold text-brand-700 transition hover:bg-brand-50"
+            >
+              Vào bài kiểm tra
+            </Link>
+          </section>
         )}
       </div>
     </div>
