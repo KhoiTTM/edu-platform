@@ -80,44 +80,43 @@ export default async function HocTapSubjectPage({ params, searchParams }: Props)
 
   return (
     <div className="mx-auto max-w-4xl">
-      <nav className="text-sm text-slate-600">
+      <nav className="text-sm text-slate-500">
         <Link
           href="/hoc-tap"
-          className="font-medium text-brand-600 hover:text-brand-800"
+          className="font-medium text-sky-500 hover:text-sky-400"
         >
           Chọn môn
         </Link>
-        <span className="mx-2 text-slate-400">/</span>
-        <span className="font-medium text-slate-900">{labelVi}</span>
+        <span className="mx-2 text-slate-700">/</span>
+        <span className="font-medium text-white">{labelVi}</span>
       </nav>
 
       <header className="mt-4">
-        <h1 className="font-display text-3xl font-bold text-slate-900">
+        <h1 className="font-display text-3xl font-bold text-white">
           {labelVi}
         </h1>
         {subject === "mindset-ielts" ? (
-          <div className="mt-4 rounded-2xl border border-brand-100 bg-brand-50/50 p-5">
-            <h2 className="text-sm font-semibold text-brand-900 flex items-center gap-2">
+          <div className="mt-4 rounded-2xl border border-sky-900/50 bg-sky-900/20 p-5 shadow-lg shadow-sky-900/10 backdrop-blur-sm">
+            <h2 className="text-sm font-semibold text-sky-400 flex items-center gap-2">
               🚀 Lộ trình 36 buổi (Core Strategies)
             </h2>
-            <p className="mt-2 text-sm text-brand-800 leading-relaxed">
+            <p className="mt-2 text-sm text-slate-300 leading-relaxed">
               Em hãy học theo thứ tự từ Buổi 1 đến Buổi 36. Mỗi buổi sẽ có <b>Giáo viên AI</b> hướng dẫn từng bước theo giáo trình Mindset for IELTS Foundation. 
               Hãy chuẩn bị tai nghe và vở ghi chú nhé!
             </p>
           </div>
         ) : (
-          <p className="mt-2 text-slate-600">
+          <p className="mt-2 text-slate-400">
             Một quyển sách PDF chung cho cả tập — mỗi bài có video và bài tập riêng.
           </p>
         )}
         {activeSubject?.textbook_pdf_url ? (
-          <p className="mt-2 text-sm text-emerald-700">
-            Đã có sách PDF tập {activeVolume}.
+          <p className="mt-2 text-sm text-emerald-500 font-medium">
+            ✓ Đã có sách PDF tập {activeVolume}.
           </p>
         ) : (
-          <p className="mt-2 text-sm text-amber-700">
-            Chưa gắn PDF tập {activeVolume} — upload lên Supabase Storage (bucket{" "}
-            <code className="text-xs">textbooks</code>).
+          <p className="mt-2 text-sm text-amber-500 font-medium">
+            ⚠ Chưa gắn PDF tập {activeVolume} — upload lên Supabase Storage.
           </p>
         )}
       </header>
@@ -129,7 +128,7 @@ export default async function HocTapSubjectPage({ params, searchParams }: Props)
       />
 
       {lessons.length === 0 ? (
-        <p className="mt-8 rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center text-slate-600">
+        <p className="mt-8 rounded-2xl border border-dashed border-slate-700 bg-slate-900/50 p-8 text-center text-slate-500">
           Chưa có bài nào cho tập {activeVolume}. Chọn tập khác hoặc thêm dữ liệu
           trong Supabase.
         </p>

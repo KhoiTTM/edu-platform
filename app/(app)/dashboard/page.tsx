@@ -63,10 +63,10 @@ export default async function DashboardPage() {
   return (
     <div className="mx-auto max-w-5xl">
       <div className="mb-8">
-        <h1 className="font-display text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+        <h1 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
           Xin chào, {firstName}!
         </h1>
-        <p className="mt-2 text-slate-600">
+        <p className="mt-2 text-slate-400">
           Lớp {grade} — chọn môn học, sau đó chọn bài để đọc PDF, xem video và làm
           bài tập có chấm ngay.
         </p>
@@ -75,13 +75,13 @@ export default async function DashboardPage() {
       <div className="flex flex-wrap gap-3">
         <Link
           href="/hoc-tap"
-          className="inline-flex min-h-[48px] items-center justify-center rounded-xl bg-brand-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-brand-600/20 transition hover:bg-brand-700"
+          className="inline-flex min-h-[48px] items-center justify-center rounded-xl bg-sky-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-600/20 transition hover:bg-sky-700"
         >
           Vào học bài
         </Link>
         <Link
           href="/schedule"
-          className="inline-flex min-h-[48px] items-center justify-center rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-800 transition hover:bg-slate-50"
+          className="inline-flex min-h-[48px] items-center justify-center rounded-xl border border-slate-700 bg-slate-800/50 px-6 py-3 text-sm font-semibold text-slate-300 transition hover:bg-slate-800 hover:text-white"
         >
           Lịch học
         </Link>
@@ -89,19 +89,19 @@ export default async function DashboardPage() {
 
       <div className="mt-10 grid gap-6 lg:grid-cols-3">
         <section className="lg:col-span-2">
-          <h2 className="mb-4 font-display text-lg font-semibold text-slate-900">
+          <h2 className="mb-4 font-display text-lg font-semibold text-white">
             Môn học của bạn
           </h2>
           {subjects.length === 0 ? (
-            <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center text-slate-600">
+            <div className="rounded-2xl border border-dashed border-slate-700 bg-slate-900/50 p-8 text-center text-slate-400">
               <p>Chưa có dữ liệu môn học.</p>
               <p className="mt-2 text-sm">
                 Trong Supabase, chạy tiếp file{" "}
-                <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs">
+                <code className="rounded bg-slate-800 px-1.5 py-0.5 text-xs text-sky-400">
                   supabase/migrations/002_lessons_curriculum_vi.sql
                 </code>{" "}
                 và{" "}
-                <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs">
+                <code className="rounded bg-slate-800 px-1.5 py-0.5 text-xs text-sky-400">
                   003_subjects_textbook.sql
                 </code>
                 .
@@ -113,15 +113,15 @@ export default async function DashboardPage() {
                 <li key={slug}>
                   <Link
                     href={`/hoc-tap/${slug}`}
-                    className="flex h-full min-h-[120px] flex-col rounded-2xl border border-slate-200/80 bg-white p-5 shadow-card transition hover:border-brand-300 hover:shadow-card-lg"
+                    className="flex h-full min-h-[120px] flex-col rounded-2xl border border-slate-800 bg-slate-900/50 p-5 shadow-xl backdrop-blur-md transition hover:border-sky-500/50 hover:bg-slate-900/80"
                   >
                     <span className="text-3xl" aria-hidden>
                       {emoji[slug] ?? "📚"}
                     </span>
-                    <span className="mt-2 font-display text-lg font-semibold text-slate-900">
+                    <span className="mt-2 font-display text-lg font-semibold text-white">
                       {label}
                     </span>
-                    <span className="mt-auto pt-4 text-sm font-medium text-brand-600">
+                    <span className="mt-auto pt-4 text-sm font-medium text-sky-500">
                       Xem các bài →
                     </span>
                   </Link>
@@ -131,12 +131,12 @@ export default async function DashboardPage() {
           )}
         </section>
 
-        <aside className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-card lg:h-fit">
-          <h2 className="font-display text-lg font-semibold text-slate-900">
+        <aside className="rounded-2xl border border-slate-800 bg-slate-900/50 p-5 shadow-xl backdrop-blur-md lg:h-fit">
+          <h2 className="font-display text-lg font-semibold text-white">
             Điểm gần đây (bài kiểm tra)
           </h2>
           {recent.length === 0 ? (
-            <p className="mt-4 text-sm text-slate-600">
+            <p className="mt-4 text-sm text-slate-400">
               Hoàn thành một bài kiểm tra tổng hợp để xem điểm ở đây.
             </p>
           ) : (
@@ -151,12 +151,12 @@ export default async function DashboardPage() {
                 return (
                   <li
                     key={row.id as string}
-                    className="flex items-center justify-between rounded-xl bg-slate-50 px-3 py-2"
+                    className="flex items-center justify-between rounded-xl bg-slate-800/50 px-3 py-2 border border-slate-700/50"
                   >
-                    <span className="truncate text-sm font-medium text-slate-800">
+                    <span className="truncate text-sm font-medium text-slate-300">
                       {title}
                     </span>
-                    <span className="shrink-0 text-sm font-bold text-brand-700">
+                    <span className="shrink-0 text-sm font-bold text-sky-400">
                       {score}/{total} ({pct}%)
                     </span>
                   </li>
@@ -166,7 +166,7 @@ export default async function DashboardPage() {
           )}
           <Link
             href="/scores"
-            className="mt-5 block text-center text-sm font-semibold text-brand-600 hover:text-brand-800"
+            className="mt-5 block text-center text-sm font-semibold text-sky-500 hover:text-sky-400"
           >
             Xem tất cả điểm
           </Link>
