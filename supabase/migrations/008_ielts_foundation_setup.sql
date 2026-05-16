@@ -78,7 +78,7 @@ on conflict (grade, slug, volume) do update set
 insert into public.lessons (id, grade, title, summary, youtube_video_id, subject_slug, subject_label_vi, lesson_index, volume, subject_id)
 values
 -- Unit 1
-('aaaaaaaa-aaaa-aaaa-aaaa-0000ie000102', 0, 'Listening Track 02: Unit 1 - Daily life', 
+('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000102', 0, 'Listening Track 02: Unit 1 - Daily life', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1 để hiểu nội dung chính.
 2. **Bước 2:** Đọc Audioscript (cuối sách PDF) rồi nghe lại lần 2 để kiểm tra các từ chưa nghe được.
@@ -86,14 +86,14 @@ values
 '2r7kEF70Afs', 'mindset-ielts', 'Mindset For IELTS Foundation', 2, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
 
 -- Unit 2
-('aaaaaaaa-aaaa-aaaa-aaaa-0000ie000103', 0, 'Listening Track 03: Unit 2 - House and home', 
+('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000103', 0, 'Listening Track 03: Unit 2 - House and home', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1 để hiểu nội dung chính.
 2. **Bước 2:** Đọc Audioscript rôi nghe lại lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
 'RCuvLzqdBZ8', 'mindset-ielts', 'Mindset For IELTS Foundation', 3, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
 
-('aaaaaaaa-aaaa-aaaa-aaaa-0000ie000104', 0, 'Listening Track 04: Unit 2 - House and home', 
+('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000104', 0, 'Listening Track 04: Unit 2 - House and home', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
@@ -101,7 +101,7 @@ values
 'LRPNZf_5j-I', 'mindset-ielts', 'Mindset For IELTS Foundation', 4, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
 
 -- Unit 3
-('aaaaaaaa-aaaa-aaaa-aaaa-0000ie000105', 0, 'Listening Track 05: Unit 3 - Hobbies', 
+('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000105', 0, 'Listening Track 05: Unit 3 - Hobbies', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
@@ -109,14 +109,14 @@ values
 'gzoYfpWvh7Q', 'mindset-ielts', 'Mindset For IELTS Foundation', 5, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
 
 -- Unit 4
-('aaaaaaaa-aaaa-aaaa-aaaa-0000ie000106', 0, 'Listening Track 06: Unit 4 - Travel', 
+('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000106', 0, 'Listening Track 06: Unit 4 - Travel', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
 'rkOatFNUGt4', 'mindset-ielts', 'Mindset For IELTS Foundation', 6, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
 
-('aaaaaaaa-aaaa-aaaa-aaaa-0000ie000107', 0, 'Listening Track 07: Unit 4 - Travel', 
+('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000107', 0, 'Listening Track 07: Unit 4 - Travel', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
@@ -124,21 +124,21 @@ values
 'Ou32FRw97Yc', 'mindset-ielts', 'Mindset For IELTS Foundation', 7, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
 
 -- Unit 5
-('aaaaaaaa-aaaa-aaaa-aaaa-0000ie000108', 0, 'Listening Track 08: Unit 5 - Food', 
+('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000108', 0, 'Listening Track 08: Unit 5 - Food', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
 'RXLcmf5GZQ', 'mindset-ielts', 'Mindset For IELTS Foundation', 8, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
 
-('aaaaaaaa-aaaa-aaaa-aaaa-0000ie000109', 0, 'Listening Track 09: Unit 5 - Food', 
+('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000109', 0, 'Listening Track 09: Unit 5 - Food', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
 'WnqLsvQuwZk', 'mindset-ielts', 'Mindset For IELTS Foundation', 9, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
 
-('aaaaaaaa-aaaa-aaaa-aaaa-0000ie000110', 0, 'Listening Track 10: Unit 5 - Food', 
+('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000110', 0, 'Listening Track 10: Unit 5 - Food', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
@@ -146,14 +146,14 @@ values
 'qCDSyESoNB0', 'mindset-ielts', 'Mindset For IELTS Foundation', 10, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
 
 -- Unit 6
-('aaaaaaaa-aaaa-aaaa-aaaa-0000ie000111', 0, 'Listening Track 11: Unit 6 - Transport', 
+('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000111', 0, 'Listening Track 11: Unit 6 - Transport', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
 '_f8Ciy-r8bM', 'mindset-ielts', 'Mindset For IELTS Foundation', 11, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
 
-('aaaaaaaa-aaaa-aaaa-aaaa-0000ie000112', 0, 'Listening Track 12: Unit 6 - Transport', 
+('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000112', 0, 'Listening Track 12: Unit 6 - Transport', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
@@ -161,21 +161,21 @@ values
 '7gFFiqtJzWg', 'mindset-ielts', 'Mindset For IELTS Foundation', 12, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
 
 -- Unit 8
-('aaaaaaaa-aaaa-aaaa-aaaa-0000ie000114', 0, 'Listening Track 14: Unit 8 - Health', 
+('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000114', 0, 'Listening Track 14: Unit 8 - Health', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
 'jsjIWseiTfM', 'mindset-ielts', 'Mindset For IELTS Foundation', 14, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
 
-('aaaaaaaa-aaaa-aaaa-aaaa-0000ie000115', 0, 'Listening Track 15: Unit 8 - Health', 
+('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000115', 0, 'Listening Track 15: Unit 8 - Health', 
 '**HƯỚNG DẪN HỌC NGHE (3 BƯỚC):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
 'SPurU5V7pxw', 'mindset-ielts', 'Mindset For IELTS Foundation', 15, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
 
-('aaaaaaaa-aaaa-aaaa-aaaa-0000ie000116', 0, 'Listening Track 16: Unit 8 - Health', 
+('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000116', 0, 'Listening Track 16: Unit 8 - Health', 
 '**HƯỚNG DẪN học nghe (3 bước):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
@@ -183,21 +183,21 @@ values
 'mWPZhFuPkF0', 'mindset-ielts', 'Mindset For IELTS Foundation', 16, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
 
 -- Unit 10
-('aaaaaaaa-aaaa-aaaa-aaaa-0000ie000118', 0, 'Listening Track 18: Unit 10 - Nature', 
+('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000118', 0, 'Listening Track 18: Unit 10 - Nature', 
 '**HƯỚNG DẪN học nghe (3 bước):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
 'wr8M6uUzHnY', 'mindset-ielts', 'Mindset For IELTS Foundation', 18, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
 
-('aaaaaaaa-aaaa-aaaa-aaaa-0000ie000119', 0, 'Listening Track 19: Unit 10 - Nature', 
+('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000119', 0, 'Listening Track 19: Unit 10 - Nature', 
 '**HƯỚNG DẪN học nghe (3 bước):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
 3. **Bước 3:** Nghe lần 3 và Shadowing.', 
 'k-EOYc0zoqo', 'mindset-ielts', 'Mindset For IELTS Foundation', 19, 1, 'cccccccc-cccc-cccc-cccc-cccccccc0001'),
 
-('aaaaaaaa-aaaa-aaaa-aaaa-0000ie000120', 0, 'Listening Track 20: Unit 10 - Nature', 
+('aaaaaaaa-aaaa-aaaa-aaaa-0000ee000120', 0, 'Listening Track 20: Unit 10 - Nature', 
 '**HƯỚNG DẪN học nghe (3 bước):**
 1. **Bước 1:** Nghe lần 1.
 2. **Bước 2:** Đọc Audioscript rồi nghe lần 2.
@@ -219,5 +219,5 @@ on conflict (id) do nothing;
 
 -- Sample questions for Track 02
 insert into public.quiz_questions (quiz_id, question, options, correct_index, order_index, explanation) values
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ie000102', 'What is the topic of Unit 1?', '["Food", "Daily life", "Travel", "School"]'::jsonb, 1, 0, 'Unit 1 nói về cuộc sống hàng ngày (Daily life).'),
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ie000102', 'Did you hear "I get up at 7 AM"?', '["Yes", "No"]'::jsonb, 0, 1, 'Kiểm tra kỹ năng nghe từ vựng thời gian.');
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'What is the topic of Unit 1?', '["Food", "Daily life", "Travel", "School"]'::jsonb, 1, 0, 'Unit 1 nói về cuộc sống hàng ngày (Daily life).'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'Did you hear "I get up at 7 AM"?', '["Yes", "No"]'::jsonb, 0, 1, 'Kiểm tra kỹ năng nghe từ vựng thời gian.');
