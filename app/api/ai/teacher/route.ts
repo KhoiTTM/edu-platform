@@ -32,8 +32,9 @@ Rules:
 `;
 
     const modelsToTry = [
+      "gemini-1.5-flash-latest",
       "gemini-1.5-flash", 
-      "gemini-1.5-pro",
+      "gemini-1.5-pro-latest",
       "gemini-pro"
     ];
     let detailedErrors = [];
@@ -41,7 +42,11 @@ Rules:
     for (const modelName of modelsToTry) {
       try {
         console.log(`Attempting with model: ${modelName}`);
-        const model = genAI.getGenerativeModel({ model: modelName });
+        // Force API v1 to avoid v1beta issues
+        const model = genAI.getGenerativeModel(
+          { model: modelName },
+          { apiVersion: "v1" }
+        );
         
         const chat = model.startChat({
           history: messages.slice(0, -1).map((m: any) => ({
