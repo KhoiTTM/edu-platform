@@ -13,7 +13,8 @@ Modern student portal built with **Next.js 15**, **Tailwind CSS**, and **Supabas
 2. Paste the contents of `supabase/migrations/001_schema.sql` and click **Run**.
 3. Run **`supabase/migrations/002_lessons_curriculum_vi.sql`** (môn tiếng Việt, thứ tự bài, giải thích câu hỏi).
 4. Run **`supabase/migrations/003_subjects_textbook.sql`** (bảng `subjects`, PDF sách chung theo **tập 1 / tập 2**, `page_hint` từng bài, bucket Storage `textbooks`).
-5. Run **`supabase/migrations/004_toan3_tap1_curriculum.sql`** — **55 bài** Toán lớp 3 tập 1 (26 bài có video YouTube bạn cung cấp + 29 bài chỉ sách), mỗi video = 1 bài trên app, kèm quiz ôn tập.
+5. Run **`supabase/migrations/004_toan3_tap1_curriculum.sql`** — **55 bài** Toán lớp 3 tập 1 (mỗi video = 1 bài trên app khi có), kèm quiz ôn tập.
+6. Run **`supabase/migrations/005_weekly_lesson_schedule.sql`** — lịch **theo tuần** cho Toán lớp 3 tập 1: **Thứ Hai → Thứ Sáu**, **10:00**, 11 tuần × 5 ngày → `lesson_index` 1…55; mốc **01/06/2026** (Thứ Hai).
 
 Sau bước 5, cập nhật PDF tập 1:
 
@@ -81,7 +82,7 @@ Open [http://localhost:3000](http://localhost:3000).
 | `lib/supabase/*` | Browser + server Supabase clients |
 | `supabase/migrations/001_schema.sql` | Schema, RLS, trigger, seed data |
 | `supabase/migrations/002_lessons_curriculum_vi.sql` | Vietnamese subjects, lesson order, quiz explanations |
-| `supabase/migrations/003_subjects_textbook.sql` | Shared textbook PDF per subject/volume, page hints, Storage bucket |
+| `supabase/migrations/005_weekly_lesson_schedule.sql` | `weekly_lesson_schedule` — lịch tuần Toán 3 (từ 01/06/2026) |
 | `app/(app)/hoc-tap/*` | Chọn môn → tập → bài |
 | `components/LessonPractice.tsx` | Bài tập chấm từng câu + giải thích |
 | `components/TextbookSection.tsx` | PDF sách chung + `page_hint` |

@@ -50,6 +50,20 @@ export type ScheduleEntry = {
   lesson?: Lesson;
 };
 
+/** Lịch mẫu theo tuần (môn Toán lớp 3 tập 1, v.v.) */
+export type WeeklyLessonSchedule = {
+  id: string;
+  grade: Grade;
+  subject_slug: string;
+  volume: Volume;
+  term_start_date: string;
+  week_number: number;
+  weekday: number;
+  lesson_index: number;
+  start_time: string;
+  end_time: string;
+};
+
 export type Quiz = {
   id: string;
   lesson_id: string;

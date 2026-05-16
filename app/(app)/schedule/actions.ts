@@ -35,6 +35,10 @@ export async function ensureDemoSchedule() {
 
   const grade = profile?.grade ?? 3;
 
+  if (grade === 3) {
+    return;
+  }
+
   const { data: lessons } = await supabase
     .from("lessons")
     .select("id")
