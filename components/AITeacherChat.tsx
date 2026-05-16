@@ -66,7 +66,7 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
   useEffect(() => {
     if (!hasGreeted.current) {
       hasGreeted.current = true;
-      handleSend("Bắt đầu buổi học", true);
+      handleSend("Chào giáo viên, em đã sẵn sàng cho buổi học hôm nay.", true);
     }
   }, [handleSend]);
 
