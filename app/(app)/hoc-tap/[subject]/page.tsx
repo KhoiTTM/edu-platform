@@ -95,9 +95,21 @@ export default async function HocTapSubjectPage({ params, searchParams }: Props)
         <h1 className="font-display text-3xl font-bold text-slate-900">
           {labelVi}
         </h1>
-        <p className="mt-2 text-slate-600">
-          Một quyển sách PDF chung cho cả tập — mỗi bài có video và bài tập riêng.
-        </p>
+        {subject === "mindset-ielts" ? (
+          <div className="mt-4 rounded-2xl border border-brand-100 bg-brand-50/50 p-5">
+            <h2 className="text-sm font-semibold text-brand-900 flex items-center gap-2">
+              🚀 Lộ trình 36 buổi (Core Strategies)
+            </h2>
+            <p className="mt-2 text-sm text-brand-800 leading-relaxed">
+              Em hãy học theo thứ tự từ Buổi 1 đến Buổi 36. Mỗi buổi sẽ có <b>Giáo viên AI</b> hướng dẫn từng bước theo giáo trình Mindset for IELTS Foundation. 
+              Hãy chuẩn bị tai nghe và vở ghi chú nhé!
+            </p>
+          </div>
+        ) : (
+          <p className="mt-2 text-slate-600">
+            Một quyển sách PDF chung cho cả tập — mỗi bài có video và bài tập riêng.
+          </p>
+        )}
         {activeSubject?.textbook_pdf_url ? (
           <p className="mt-2 text-sm text-emerald-700">
             Đã có sách PDF tập {activeVolume}.
