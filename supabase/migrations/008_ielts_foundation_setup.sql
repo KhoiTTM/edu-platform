@@ -203,7 +203,30 @@ from public.lessons
 where subject_slug = 'mindset-ielts'
 on conflict (id) do nothing;
 
--- Sample questions for Track 02
+-- Sample questions for Tracks
 insert into public.quiz_questions (quiz_id, question, options, correct_index, order_index, explanation) values
+-- Track 02 (Unit 1)
 ('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'What is the topic of Unit 1?', '["Food", "Daily life", "Travel", "School"]'::jsonb, 1, 0, 'Unit 1 nói về cuộc sống hàng ngày (Daily life).'),
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'Did you hear "I get up at 7 AM"?', '["Yes", "No"]'::jsonb, 0, 1, 'Kiểm tra kỹ năng nghe từ vựng thời gian.');
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'Did you hear "I get up at 7 AM"?', '["Yes", "No"]'::jsonb, 0, 1, 'Kiểm tra kỹ năng nghe từ vựng thời gian.'),
+
+-- Track 03 (Unit 2)
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'What is the main topic of Track 03?', '["House and home", "Hobbies", "Food", "Health"]'::jsonb, 0, 0, 'Unit 2 nói về chủ đề Nhà cửa (House and home).'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'Does the speaker mention a garden?', '["Yes", "No"]'::jsonb, 0, 1, 'Kiểm tra từ vựng về các phần trong nhà.'),
+
+-- Track 05 (Unit 3)
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000105', 'What are they discussing in Track 05?', '["Travel", "Hobbies", "Transport", "Nature"]'::jsonb, 1, 0, 'Unit 3 tập trung vào sở thích (Hobbies).'),
+
+-- Track 06 (Unit 4)
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000106', 'Where is the speaker going?', '["To a restaurant", "On a trip", "To the hospital", "To the gym"]'::jsonb, 1, 0, 'Unit 4 nói về du lịch (Travel).'),
+
+-- Track 08 (Unit 5)
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000108', 'What kind of food is mentioned?', '["Fast food", "Healthy food", "Seafood", "Italian food"]'::jsonb, 1, 0, 'Unit 5 tập trung vào đồ ăn (Food).'),
+
+-- Track 11 (Unit 6)
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000111', 'Which mode of transport is discussed?', '["Bus", "Train", "Plane", "All of the above"]'::jsonb, 3, 0, 'Unit 6 nói về các phương tiện giao thông (Transport).'),
+
+-- Track 14 (Unit 8)
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000114', 'What is the doctor talking about?', '["Exercise", "Diet", "Common cold", "Sleep"]'::jsonb, 2, 0, 'Unit 8 tập trung vào sức khỏe (Health).'),
+
+-- Track 18 (Unit 10)
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000118', 'What part of nature is described?', '["Mountains", "Forest", "Animals", "Weather"]'::jsonb, 2, 0, 'Unit 10 nói về thiên nhiên (Nature).');
