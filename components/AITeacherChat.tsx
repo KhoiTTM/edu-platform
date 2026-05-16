@@ -22,19 +22,6 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
   const [isLoading, setIsLoading] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
-  // Initial greeting
-  useEffect(() => {
-    if (messages.length === 0) {
-      handleSend("Bắt đầu buổi học", true);
-    }
-  }, [handleSend, messages.length]);
-
-  useEffect(() => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
-    }
-  }, [messages]);
-
   const handleSend = useCallback(async (text: string, silent = false) => {
     const userMessage = text || input;
     if (!userMessage.trim()) return;
@@ -67,6 +54,19 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
       setIsLoading(false);
     }
   }, [input, messages, sessionInfo, studentName]);
+
+  // Initial greeting
+  useEffect(() => {
+    if (messages.length === 0) {
+      handleSend("Bắt đầu buổi học", true);
+    }
+  }, [handleSend, messages.length]);
+
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    }
+  }, [messages]);
 
   return (
     <div className="flex h-[600px] flex-col rounded-2xl border border-slate-200 bg-white shadow-sm">
