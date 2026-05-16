@@ -73,7 +73,7 @@ Phong cách: Khích lệ, chuyên nghiệp, sư phạm.
         const chat = model.startChat({
           history: history,
           generationConfig: { 
-            maxOutputTokens: 1000,
+            maxOutputTokens: 2048,
             temperature: 0.7,
           },
         });
