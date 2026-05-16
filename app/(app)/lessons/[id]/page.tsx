@@ -30,8 +30,8 @@ export default async function LessonPage({ params }: Props) {
   if (!lesson) notFound();
 
   const L = lesson as Lesson;
-  const userGrade = (profile?.grade ?? 3) as 3 | 7;
-  if (L.grade !== userGrade) {
+  const userGrade = profile?.grade ?? 3;
+  if (L.grade !== userGrade && L.grade !== 0) {
     notFound();
   }
 
@@ -51,7 +51,7 @@ export default async function LessonPage({ params }: Props) {
     const { data } = await supabase
       .from("subjects")
       .select("*")
-      .eq("grade", L.grade)
+      .or(`grade.eq.${L.grade},grade.eq.0`)
       .eq("slug", L.subject_slug ?? "toan")
       .eq("volume", volume)
       .maybeSingle();
@@ -108,14 +108,16 @@ export default async function LessonPage({ params }: Props) {
           <p className="text-sm font-medium text-slate-500">{L.topic_label}</p>
         )}
         <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">
-          Lớp {L.grade} · {subjectLabel} · Tập {volume}
+          {L.grade === 0 ? "Mọi khối lớp" : `Khối lớp ${L.grade}`} · {subjectLabel} · Tập {volume}
           {(L.video_part ?? 0) > 0 && L.youtube_video_id && ` · Video phần ${L.video_part}`}
         </p>
         <h1 className="font-display text-3xl font-bold text-slate-900 sm:text-4xl">
           {L.title}
         </h1>
         {L.summary && (
-          <p className="mt-3 text-lg text-slate-600">{L.summary}</p>
+          <div className="mt-3 whitespace-pre-wrap text-lg text-slate-600">
+            {L.summary}
+          </div>
         )}
       </header>
 

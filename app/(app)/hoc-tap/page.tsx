@@ -18,12 +18,13 @@ export default async function HocTapPage() {
     .eq("id", user!.id)
     .single();
 
-  const grade = (profile?.grade ?? 3) as 3 | 7;
+  const grade = profile?.grade ?? 3;
+  const isIELTS = (slug: string) => slug === "mindset-ielts";
 
   const { data: rows } = await supabase
     .from("lessons")
-    .select("subject_slug, subject_label_vi")
-    .eq("grade", grade);
+    .select("subject_slug, subject_label_vi, grade")
+    .or(`grade.eq.${grade},grade.eq.0`);
 
   const map = new Map<string, string>();
   for (const r of (rows ?? []) as Row[]) {
@@ -41,6 +42,7 @@ export default async function HocTapPage() {
     tieng_anh: "🌍",
     khoa_hoc: "🔬",
     tieng_viet: "📖",
+    "mindset-ielts": "🎓",
   };
 
   return (

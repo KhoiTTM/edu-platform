@@ -35,12 +35,12 @@ export default async function HocTapSubjectPage({ params, searchParams }: Props)
     .eq("id", user!.id)
     .single();
 
-  const grade = (profile?.grade ?? 3) as 3 | 7;
+  const grade = profile?.grade ?? 3;
 
   const { data: subjectRows } = await supabase
     .from("subjects")
     .select("*")
-    .eq("grade", grade)
+    .or(`grade.eq.${grade},grade.eq.0`)
     .eq("slug", subject)
     .order("volume");
 
@@ -49,7 +49,7 @@ export default async function HocTapSubjectPage({ params, searchParams }: Props)
   const { data: allLessons } = await supabase
     .from("lessons")
     .select("*")
-    .eq("grade", grade)
+    .or(`grade.eq.${grade},grade.eq.0`)
     .eq("subject_slug", subject)
     .order("volume")
     .order("lesson_index", { ascending: true });
