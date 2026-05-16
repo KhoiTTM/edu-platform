@@ -70,31 +70,48 @@ insert into public.quiz_questions (quiz_id, question, options, correct_index, or
 ('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'Choose the correct spelling:', '["Helo", "Hello", "Hallo", "Hilo"]'::jsonb, 1, 13, 'Cách viết đúng là Hello (hai chữ l).'),
 ('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'How do you introduce yourself?', '["I''m [Name]", "Fine, thanks", "Goodbye", "Hello"]'::jsonb, 0, 14, 'Dùng ''I''m + tên'' để tự giới thiệu bản thân.');
 -- Unit 2
+insert into public.quiz_questions (quiz_id, question, options, correct_index, order_index, explanation) values
 ('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030104', 'What is ______ name?', '["you", "your", "my", "I"]'::jsonb, 1, 0, 'Tính từ sở hữu "your" đi với "name".'),
 ('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030104', 'My name ______ Peter.', '["am", "is", "are", "be"]'::jsonb, 1, 1, 'Chủ ngữ số ít "My name" đi với "is".'),
 ('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030105', 'How do you ______ your name?', '["say", "read", "spell", "write"]'::jsonb, 2, 0, 'Hỏi cách đánh vần dùng từ "spell".'),
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030105', 'L-I-N-D-A. It is ______.', '["Linda", "Linder", "Lida", "Lina"]'::jsonb, 0, 1, 'Đánh vần từng chữ cái ghép lại thành Linda.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030105', 'L-I-N-D-A. It is ______.', '["Linda", "Linder", "Lida", "Lina"]'::jsonb, 0, 1, 'Đánh vần từng chữ cái ghép lại thành Linda.');
+
 -- Unit 3
+insert into public.quiz_questions (quiz_id, question, options, correct_index, order_index, explanation) values
 ('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030107', 'This ______ my friend, Mary.', '["am", "is", "are", "be"]'::jsonb, 1, 0, 'Giới thiệu một người dùng "This is".'),
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030107', 'They ______ my friends.', '["am", "is", "are", "be"]'::jsonb, 2, 1, 'Chủ ngữ số nhiều "They" đi với "are".'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030107', 'They ______ my friends.', '["am", "is", "are", "be"]'::jsonb, 2, 1, 'Chủ ngữ số nhiều "They" đi với "are".');
+
 -- Unit 4
+insert into public.quiz_questions (quiz_id, question, options, correct_index, order_index, explanation) values
 ('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030110', 'Touch your ______.', '["nose", "is", "fine", "book"]'::jsonb, 0, 0, 'Nose (mũi) là một bộ phận cơ thể.'),
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030110', 'Open your ______.', '["mouth", "hand", "leg", "foot"]'::jsonb, 0, 1, 'Mouth (miệng) có thể mở ra.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030110', 'Open your ______.', '["mouth", "hand", "leg", "foot"]'::jsonb, 0, 1, 'Mouth (miệng) có thể mở ra.');
+
 -- Unit 5
+insert into public.quiz_questions (quiz_id, question, options, correct_index, order_index, explanation) values
 ('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030113', 'I like ______.', '["sing", "singing", "sings", "sang"]'::jsonb, 1, 0, 'Sau "like" thường là động từ đuôi -ing.'),
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030113', 'My hobby is ______.', '["dance", "dancing", "dances", "danced"]'::jsonb, 1, 1, 'Sở thích của tôi là nhảy múa (dancing).'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030113', 'My hobby is ______.', '["dance", "dancing", "dances", "danced"]'::jsonb, 1, 1, 'Sở thích của tôi là nhảy múa (dancing).');
+
 -- Unit 6
+insert into public.quiz_questions (quiz_id, question, options, correct_index, order_index, explanation) values
 ('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030116', 'Is this our ______?', '["school", "hello", "fine", "am"]'::jsonb, 0, 0, 'School (trường học) là một địa điểm.'),
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030116', 'The ______ is big.', '["gym", "hi", "nice", "spell"]'::jsonb, 0, 1, 'Gym (phòng thể dục) có thể to lớn.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030116', 'The ______ is big.', '["gym", "hi", "nice", "spell"]'::jsonb, 0, 1, 'Gym (phòng thể dục) có thể to lớn.');
+
 -- Unit 7
+insert into public.quiz_questions (quiz_id, question, options, correct_index, order_index, explanation) values
 ('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030119', '______ your book, please.', '["Open", "Hello", "Fine", "Is"]'::jsonb, 0, 0, 'Mở sách là "Open your book".'),
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030119', 'May I ______ in?', '["come", "go", "sit", "stand"]'::jsonb, 0, 1, 'Xin phép vào lớp là "May I come in?".'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030119', 'May I ______ in?', '["come", "go", "sit", "stand"]'::jsonb, 0, 1, 'Xin phép vào lớp là "May I come in?".');
+
 -- Unit 8
+insert into public.quiz_questions (quiz_id, question, options, correct_index, order_index, explanation) values
 ('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030122', 'I have a ______.', '["pen", "hello", "spell", "is"]'::jsonb, 0, 0, 'Pen (bút mực) là đồ dùng học tập.'),
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030122', 'These are my ______.', '["pencils", "pencil", "a pencil", "is pencil"]'::jsonb, 0, 1, '"These are" đi với danh từ số nhiều.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030122', 'These are my ______.', '["pencils", "pencil", "a pencil", "is pencil"]'::jsonb, 0, 1, '"These are" đi với danh từ số nhiều.');
+
 -- Unit 9
+insert into public.quiz_questions (quiz_id, question, options, correct_index, order_index, explanation) values
 ('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030125', 'What ______ is it? - It is red.', '["colour", "name", "hobby", "friend"]'::jsonb, 0, 0, 'Hỏi về màu sắc dùng "What colour".'),
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030125', 'The sky is ______.', '["blue", "red", "green", "yellow"]'::jsonb, 0, 1, 'Bầu trời thường có màu xanh dương (blue).'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030125', 'The sky is ______.', '["blue", "red", "green", "yellow"]'::jsonb, 0, 1, 'Bầu trời thường có màu xanh dương (blue).');
+
 -- Unit 10
+insert into public.quiz_questions (quiz_id, question, options, correct_index, order_index, explanation) values
 ('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030128', 'I play ______ at break time.', '["football", "hello", "colour", "spell"]'::jsonb, 0, 0, 'Football là một môn thể thao chơi trong giờ ra chơi.'),
 ('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030128', 'Do you like ______? - Yes, I do.', '["chess", "is", "am", "are"]'::jsonb, 0, 1, 'Chess (cờ vua) là một hoạt động.');
