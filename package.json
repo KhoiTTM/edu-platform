@@ -10,6 +10,7 @@
     "generate:toan3": "tsx scripts/generate-toan3-sql.ts"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "@supabase/ssr": "^0.5.2",
     "@supabase/supabase-js": "^2.47.10",
     "next": "15.5.18",

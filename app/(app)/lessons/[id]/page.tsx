@@ -121,59 +121,94 @@ export default async function LessonPage({ params }: Props) {
         )}
       </header>
 
-      <div className="mt-8 space-y-10">
-        {L.youtube_video_id ? (
-          <section>
-            <h2 className="mb-3 font-display text-xl font-semibold text-slate-900">
-              Video bài giảng
-            </h2>
-            <YouTubeEmbed videoId={L.youtube_video_id} title={L.title} />
-            <div className="mt-2 text-right">
-              <a 
-                href={`https://www.youtube.com/watch?v=${L.youtube_video_id}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-brand-600 hover:underline"
-              >
-                Mở video trực tiếp trên YouTube (nếu không xem được tại đây) ↗
-              </a>
+      <div className={`mt-8 ${subjectSlug === "mindset-ielts" ? "lg:grid lg:grid-cols-2 lg:items-start lg:gap-8" : "space-y-10"}`}>
+        <div className={subjectSlug === "mindset-ielts" ? "space-y-10" : ""}>
+          {L.youtube_video_id ? (
+            <section>
+              <h2 className="mb-3 font-display text-xl font-semibold text-slate-900">
+                Tài liệu học tập
+              </h2>
+              <YouTubeEmbed videoId={L.youtube_video_id} title={L.title} />
+              <div className="mt-2 text-right">
+                <a 
+                  href={`https://www.youtube.com/watch?v=${L.youtube_video_id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-brand-600 hover:underline"
+                >
+                  Mở video trực tiếp trên YouTube ↗
+                </a>
+              </div>
+            </section>
+          ) : (
+            <div className="rounded-2xl border border-blue-100 bg-blue-50/50 p-5 text-sm text-blue-900">
+              <h3 className="font-semibold mb-1">Mục tiêu buổi học</h3>
+              <p>{L.summary}</p>
             </div>
-          </section>
-        ) : (
-          <p className="rounded-2xl border border-amber-100 bg-amber-50/80 p-5 text-sm text-amber-950">
-            Bài này chưa có video — đọc sách và làm bài tập bên dưới.
-          </p>
-        )}
+          )}
 
-        <TextbookSection
-          subject={subjectRow}
-          pageHint={L.page_hint}
-          lessonTitle={L.title}
-        />
+          <TextbookSection
+            subject={subjectRow}
+            pageHint={L.page_hint}
+            lessonTitle={L.title}
+          />
 
-        {practiceQuestions.length > 0 ? (
-          <LessonPractice questions={practiceQuestions} />
-        ) : (
-          <p className="rounded-2xl border border-dashed border-slate-300 bg-white p-6 text-center text-sm text-slate-600">
-            Chưa có bài tập thực hành cho bài này.
-          </p>
-        )}
+          {subjectSlug !== "mindset-ielts" && (
+            <>
+              {practiceQuestions.length > 0 ? (
+                <LessonPractice questions={practiceQuestions} />
+              ) : (
+                <p className="rounded-2xl border border-dashed border-slate-300 bg-white p-6 text-center text-sm text-slate-600">
+                  Chưa có bài tập thực hành cho bài này.
+                </p>
+              )}
 
-        {Q && (
-          <section className="rounded-2xl border border-slate-200 bg-slate-50/80 p-5 sm:p-6">
-            <h2 className="font-display text-lg font-semibold text-slate-900">
-              Kiểm tra tổng hợp (tùy chọn)
-            </h2>
-            <p className="mt-2 text-sm text-slate-600">
-              Làm một lượt hết các câu và lưu điểm vào bảng điểm.
-            </p>
-            <Link
-              href={`/quiz/${Q.id}`}
-              className="mt-4 inline-flex min-h-[48px] items-center justify-center rounded-xl border border-brand-200 bg-white px-8 py-3 text-base font-semibold text-brand-700 transition hover:bg-brand-50"
-            >
-              Vào bài kiểm tra
-            </Link>
-          </section>
+              {Q && (
+                <section className="rounded-2xl border border-slate-200 bg-slate-50/80 p-5 sm:p-6">
+                  <h2 className="font-display text-lg font-semibold text-slate-900">
+                    Kiểm tra tổng hợp (tùy chọn)
+                  </h2>
+                  <p className="mt-2 text-sm text-slate-600">
+                    Làm một lượt hết các câu và lưu điểm vào bảng điểm.
+                  </p>
+                  <Link
+                    href={`/quiz/${Q.id}`}
+                    className="mt-4 inline-flex min-h-[48px] items-center justify-center rounded-xl border border-brand-200 bg-white px-8 py-3 text-base font-semibold text-brand-700 transition hover:bg-brand-50"
+                  >
+                    Vào bài kiểm tra
+                  </Link>
+                </section>
+              )}
+            </>
+          )}
+        </div>
+
+        {subjectSlug === "mindset-ielts" && (
+          <div className="mt-8 lg:mt-0">
+            <div className="sticky top-24 space-y-6">
+              <AITeacherChat 
+                sessionInfo={{ title: L.title, summary: L.summary }} 
+                studentName={profile?.full_name || "Học sinh"} 
+              />
+              
+              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                <h3 className="text-sm font-semibold text-slate-900 flex items-center gap-2">
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-amber-100 text-amber-700 text-[10px]">P</span>
+                  Dành cho Phụ huynh
+                </h3>
+                <div className="mt-3 space-y-3">
+                  <label className="flex items-start gap-3 cursor-pointer group">
+                    <input type="checkbox" className="mt-1 h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
+                    <span className="text-xs text-slate-600 group-hover:text-slate-900 transition">Xác nhận con đã bắt đầu học đúng giờ</span>
+                  </label>
+                  <label className="flex items-start gap-3 cursor-pointer group">
+                    <input type="checkbox" className="mt-1 h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
+                    <span className="text-xs text-slate-600 group-hover:text-slate-900 transition">Kiểm tra Checklist cuối buổi</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
         )}
       </div>
     </div>
