@@ -25,7 +25,7 @@ export function SubjectVolumeTabs({
 
   return (
     <div
-      className="mt-6 flex gap-2 rounded-2xl bg-slate-100 p-1"
+      className="mt-6 flex gap-2 rounded-2xl bg-slate-900/80 p-1 border border-slate-800"
       role="tablist"
       aria-label="Chọn tập sách"
     >
@@ -39,8 +39,8 @@ export function SubjectVolumeTabs({
             aria-selected={active}
             className={`flex-1 rounded-xl py-2.5 text-center text-sm font-semibold transition ${
               active
-                ? "bg-white text-slate-900 shadow-sm"
-                : "text-slate-600 hover:text-slate-900"
+                ? "bg-sky-600 text-white shadow-lg shadow-sky-500/20"
+                : "text-slate-400 hover:bg-slate-800 hover:text-white"
             }`}
           >
             {tab.label}
