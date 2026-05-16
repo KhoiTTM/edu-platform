@@ -54,10 +54,21 @@ where subject_id = 'cccccccc-cccc-cccc-cccc-cccccccc3003';
 -- Insert Quiz Questions
 -- Unit 1
 insert into public.quiz_questions (quiz_id, question, options, correct_index, order_index, explanation) values
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'Hello, I ______ Ben.', '["is", "am", "are", "be"]'::jsonb, 1, 0, 'Cấu trúc: I + am.'),
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'Hi, ______ Hoa.', '["My", "I", "I am", "I is"]'::jsonb, 2, 1, 'I am (hoặc I''m) dùng để giới thiệu bản thân.'),
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030102', 'How are you? - I am ______, thank you.', '["fine", "five", "nice", "hello"]'::jsonb, 0, 0, 'Câu trả lời thông dụng cho "How are you?" là "I am fine".'),
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030102', '______ to meet you.', '["Fine", "Nice", "Hi", "Hello"]'::jsonb, 1, 1, 'Cụm từ "Nice to meet you" dùng khi lần đầu gặp mặt.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'How do you say ''Xin chào'' in English?', '["Goodbye", "Hello", "Thank you", "Sorry"]'::jsonb, 1, 0, 'Hello là lời chào phổ biến nhất.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'Complete: ''Hi, I ______ Mai.''', '["is", "am", "are", "be"]'::jsonb, 1, 1, 'Cấu trúc giới thiệu tên: I am + tên (hoặc I''m + tên).'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'When you meet a friend, you can say ''Hello'' or...', '["Bye", "Hi", "Goodbye", "No"]'::jsonb, 1, 2, 'Hi là cách chào thân mật, dùng giống như Hello.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'Question: ''How are you?'' - Answer: ''I''m ______, thank you.''', '["fine", "hello", "bye", "hi"]'::jsonb, 0, 3, 'Fine nghĩa là khỏe, dùng để trả lời câu hỏi thăm sức khỏe.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'What do you say when you leave?', '["Hello", "Hi", "Goodbye", "How are you"]'::jsonb, 2, 4, 'Goodbye (Tạm biệt) dùng khi chào tạm biệt.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'Which word starts with the letter ''h''?', '["Bye", "Hello", "Fine", "Mai"]'::jsonb, 1, 5, 'Hello bắt đầu bằng chữ ''h''.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'Which word starts with the letter ''b''?', '["Hi", "Bye", "Hello", "Thank"]'::jsonb, 1, 6, 'Bye bắt đầu bằng chữ ''b''.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'Ben: ''Hello, I''m Ben.'' - Lucy: ''______, Ben. I''m Lucy.''', '["Bye", "Hi", "Goodbye", "Fine"]'::jsonb, 1, 7, 'Khi ai đó chào mình, mình nên chào lại bằng Hi hoặc Hello.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'Complete the sentence: ''I''m fine, ______ you.''', '["thank", "thanks", "hello", "hi"]'::jsonb, 0, 8, 'Cụm từ đầy đủ là ''thank you'' (cảm ơn bạn).'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'Who is the teacher character often seen in Unit 1?', '["Miss Hien", "Mai", "Nam", "Quan"]'::jsonb, 0, 9, 'Cô Hiền (Miss Hien) là nhân vật giáo viên trong sách.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'What does ''fine'' mean in Vietnamese?', '["Tốt/Khỏe", "Tạm biệt", "Xin chào", "Cảm ơn"]'::jsonb, 0, 10, 'Fine dùng để chỉ tình trạng sức khỏe tốt.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'What is the meaning of ''Thank you''?', '["Xin chào", "Tạm biệt", "Cảm ơn", "Xin lỗi"]'::jsonb, 2, 11, 'Thank you dùng để bày tỏ lòng biết ơn.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'If someone says ''Goodbye'', you should say...', '["Hello", "Bye", "Hi", "How are you"]'::jsonb, 1, 12, 'Khi tạm biệt, ta chào lại bằng Bye hoặc Goodbye.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'Choose the correct spelling:', '["Helo", "Hello", "Hallo", "Hilo"]'::jsonb, 1, 13, 'Cách viết đúng là Hello (hai chữ l).'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030101', 'How do you introduce yourself?', '["I''m [Name]", "Fine, thanks", "Goodbye", "Hello"]'::jsonb, 0, 14, 'Dùng ''I''m + tên'' để tự giới thiệu bản thân.');
 -- Unit 2
 ('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030104', 'What is ______ name?', '["you", "your", "my", "I"]'::jsonb, 1, 0, 'Tính từ sở hữu "your" đi với "name".'),
 ('bbbbbbbb-aaaa-aaaa-aaaa-0000ea030104', 'My name ______ Peter.', '["am", "is", "are", "be"]'::jsonb, 1, 1, 'Chủ ngữ số ít "My name" đi với "is".'),

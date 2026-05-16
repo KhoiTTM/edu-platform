@@ -203,30 +203,39 @@ from public.lessons
 where subject_slug = 'mindset-ielts'
 on conflict (id) do nothing;
 
--- Sample questions for Tracks
+-- Detailed questions for IELTS Tracks
+-- Unit 1 (Track 02)
 insert into public.quiz_questions (quiz_id, question, options, correct_index, order_index, explanation) values
--- Track 02 (Unit 1)
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'What is the topic of Unit 1?', '["Food", "Daily life", "Travel", "School"]'::jsonb, 1, 0, 'Unit 1 nói về cuộc sống hàng ngày (Daily life).'),
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'Did you hear "I get up at 7 AM"?', '["Yes", "No"]'::jsonb, 0, 1, 'Kiểm tra kỹ năng nghe từ vựng thời gian.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'What does ''wake up'' mean?', '["Đi ngủ", "Thức dậy", "Ăn sáng", "Đi làm"]'::jsonb, 1, 0, 'Wake up có nghĩa là thức dậy sau khi ngủ.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'If you ''get dressed'', you are...', '["Mặc quần áo", "Đi tắm", "Chải đầu", "Rửa mặt"]'::jsonb, 0, 1, 'Get dressed có nghĩa là mặc quần áo để chuẩn bị đi ra ngoài hoặc bắt đầu ngày mới.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'Complete the phrase: ''have ______'' in the morning.', '["lunch", "dinner", "breakfast", "snack"]'::jsonb, 2, 2, 'Breakfast là bữa sáng, bữa ăn đầu tiên trong ngày.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'What is ''leave the house''?', '["Về nhà", "Rời khỏi nhà", "Dọn dẹp nhà", "Xây nhà"]'::jsonb, 1, 3, 'Leave the house nghĩa là đi ra khỏi nhà để đến trường hoặc nơi làm việc.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'Where do you go to catch a bus?', '["Bus stop", "Train station", "Airport", "Park"]'::jsonb, 0, 4, 'Bus stop là điểm dừng xe buýt.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'What do you do with ''rubbish''?', '["Ăn", "Giữ lại", "Vứt đi/Đổ rác", "Mua"]'::jsonb, 2, 5, 'Rubbish là rác, cần được vứt đi hoặc đổ rác (put the rubbish out).'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'What does ''tidy up my room'' mean?', '["Làm bẩn phòng", "Dọn dẹp phòng", "Sơn phòng", "Ngủ"]'::jsonb, 1, 6, 'Tidy up nghĩa là dọn dẹp cho ngăn nắp.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'When do you ''set your alarm''?', '["Sau khi thức dậy", "Trước khi đi ngủ", "Khi đang làm việc", "Khi ăn trưa"]'::jsonb, 1, 7, 'Mọi người thường đặt báo thức trước khi đi ngủ để dậy đúng giờ.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'What is ''switch off the light''?', '["Bật đèn", "Tắt đèn", "Sửa đèn", "Mua đèn"]'::jsonb, 1, 8, 'Switch off nghĩa là tắt thiết bị điện.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'What activity involves washing clothes?', '["Do the laundry", "Do the dishes", "Cook", "Dust"]'::jsonb, 0, 9, 'Do the laundry là việc giặt giũ quần áo.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'What is the opposite of ''start work''?', '["Finish work", "Go to work", "Start study", "Walk to work"]'::jsonb, 0, 10, 'Finish work là kết thúc công việc, ngược lại với start work.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'What does ''get my schoolbag ready'' mean?', '["Mua cặp mới", "Chuẩn bị cặp sách", "Vứt cặp", "Quên cặp"]'::jsonb, 1, 11, 'Chuẩn bị cặp sách để sẵn sàng cho ngày học hôm sau.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'Which activity is done ''before bed''?', '["Start work", "Watch TV", "Have breakfast", "Go to school"]'::jsonb, 1, 12, 'Xem TV là hoạt động thư giãn thường làm trước khi ngủ.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'What is ''take out the bins''?', '["Đi mua thùng rác", "Đổ rác", "Rửa thùng rác", "Lau nhà"]'::jsonb, 1, 13, 'Take out the bins đồng nghĩa với put the rubbish out (đổ rác).'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000102', 'What time do you usually ''go home''?', '["8:00 AM", "12:00 PM", "5:00 PM", "6:00 AM"]'::jsonb, 2, 14, 'Mọi người thường về nhà vào buổi chiều sau khi tan làm/học.');
 
--- Track 03 (Unit 2)
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'What is the main topic of Track 03?', '["House and home", "Hobbies", "Food", "Health"]'::jsonb, 0, 0, 'Unit 2 nói về chủ đề Nhà cửa (House and home).'),
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'Does the speaker mention a garden?', '["Yes", "No"]'::jsonb, 0, 1, 'Kiểm tra từ vựng về các phần trong nhà.'),
-
--- Track 05 (Unit 3)
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000105', 'What are they discussing in Track 05?', '["Travel", "Hobbies", "Transport", "Nature"]'::jsonb, 1, 0, 'Unit 3 tập trung vào sở thích (Hobbies).'),
-
--- Track 06 (Unit 4)
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000106', 'Where is the speaker going?', '["To a restaurant", "On a trip", "To the hospital", "To the gym"]'::jsonb, 1, 0, 'Unit 4 nói về du lịch (Travel).'),
-
--- Track 08 (Unit 5)
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000108', 'What kind of food is mentioned?', '["Fast food", "Healthy food", "Seafood", "Italian food"]'::jsonb, 1, 0, 'Unit 5 tập trung vào đồ ăn (Food).'),
-
--- Track 11 (Unit 6)
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000111', 'Which mode of transport is discussed?', '["Bus", "Train", "Plane", "All of the above"]'::jsonb, 3, 0, 'Unit 6 nói về các phương tiện giao thông (Transport).'),
-
--- Track 14 (Unit 8)
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000114', 'What is the doctor talking about?', '["Exercise", "Diet", "Common cold", "Sleep"]'::jsonb, 2, 0, 'Unit 8 tập trung vào sức khỏe (Health).'),
-
--- Track 18 (Unit 10)
-('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000118', 'What part of nature is described?', '["Mountains", "Forest", "Animals", "Weather"]'::jsonb, 2, 0, 'Unit 10 nói về thiên nhiên (Nature).');
+-- Unit 2 (Track 03, 04)
+insert into public.quiz_questions (quiz_id, question, options, correct_index, order_index, explanation) values
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'What is another word for an apartment?', '["House", "Flat", "Garden", "Garage"]'::jsonb, 1, 0, 'Flat là từ tiếng Anh-Anh để chỉ căn hộ (apartment).'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'Where do you usually cook meals?', '["Bedroom", "Kitchen", "Bathroom", "Living room"]'::jsonb, 1, 1, 'Nhà bếp (kitchen) là nơi nấu ăn.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'A ''balcony'' is usually found...', '["Underground", "Outside a window/door on an upper floor", "In the garden", "In the bathroom"]'::jsonb, 1, 2, 'Ban công là phần nhô ra ngoài từ các tầng cao.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'Where do you sleep?', '["Living room", "Dining room", "Bedroom", "Hall"]'::jsonb, 2, 3, 'Phòng ngủ (bedroom) là nơi để ngủ.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'What are ''stairs'' used for?', '["Cooking", "Sleeping", "Moving between floors", "Washing"]'::jsonb, 2, 4, 'Cầu thang dùng để di chuyển giữa các tầng.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'A ''garage'' is a place to...', '["Grow plants", "Park a car", "Have a bath", "Eat dinner"]'::jsonb, 1, 5, 'Ga-ra là nơi để xe ô tô.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'What is a ''garden''?', '["An area with grass and flowers", "A room to sleep", "A place to cook", "The top of a house"]'::jsonb, 0, 6, 'Garden là khu vườn, nơi có cỏ và hoa.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'The ''roof'' of a house is located at the...', '["Bottom", "Middle", "Top", "Inside"]'::jsonb, 2, 7, 'Mái nhà (roof) nằm ở phần trên cùng của ngôi nhà.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'Where do you usually have dinner with family?', '["Bathroom", "Garage", "Dining room", "Hall"]'::jsonb, 2, 8, 'Phòng ăn (dining room) là nơi dùng bữa.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'What is the ''ceiling''?', '["The floor", "The top inside surface of a room", "A wall", "A window"]'::jsonb, 1, 9, 'Trần nhà (ceiling) là bề mặt phía trên bên trong phòng.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'What do you call the entrance area of a house?', '["Kitchen", "Hall", "Balcony", "Roof"]'::jsonb, 1, 10, 'Sảnh hoặc lối đi ngay cửa vào gọi là hall.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'You use a ''window'' to...', '["Walk through", "Look outside", "Sleep on", "Cook on"]'::jsonb, 1, 11, 'Cửa sổ dùng để nhìn ra ngoài và lấy ánh sáng.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'What is ''wall'' in Vietnamese?', '["Cửa sổ", "Tường", "Sàn nhà", "Trần nhà"]'::jsonb, 1, 12, 'Wall có nghĩa là bức tường.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'Which room usually has a sofa and a TV?', '["Kitchen", "Living room", "Bathroom", "Dining room"]'::jsonb, 1, 13, 'Phòng khách (living room) thường có sofa và TV.'),
+('bbbbbbbb-aaaa-aaaa-aaaa-0000ee000103', 'What is the ''floor''?', '["Mái nhà", "Sàn nhà", "Tường", "Cửa"]'::jsonb, 1, 14, 'Floor là sàn nhà, nơi chúng ta đi lại bên trong phòng.');
