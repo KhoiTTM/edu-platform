@@ -32,12 +32,11 @@ Rules:
 `;
 
     const modelsToTry = [
-      "gemini-2.0-flash", 
       "gemini-1.5-flash", 
-      "gemini-1.5-flash-latest", 
-      "gemini-1.5-pro"
+      "gemini-1.5-pro",
+      "gemini-pro"
     ];
-    let lastError = null;
+    let detailedErrors = [];
 
     for (const modelName of modelsToTry) {
       try {
@@ -62,23 +61,21 @@ Rules:
         const response = await result.response;
         const text = response.text();
 
-        if (!text) throw new Error("Empty response from AI");
+        if (!text) throw new Error("Empty response");
 
         return NextResponse.json({ text, modelUsed: modelName });
       } catch (err: any) {
         console.error(`Error with model ${modelName}:`, err.message);
-        lastError = err;
-        // Continue to next model if this one fails
+        detailedErrors.push(`${modelName}: ${err.message}`);
         continue;
       }
     }
 
-    // If we get here, all models failed
-    const errorMessage = lastError?.message || "Unknown error";
-    console.error("All AI models failed. Last error:", errorMessage);
-    
     return NextResponse.json(
-      { error: "Hệ thống AI đang quá tải (Rate Limit). Vui lòng thử lại sau 30 giây.", details: errorMessage }, 
+      { 
+        error: "Không thể kết nối với các Model AI. Vui lòng kiểm tra API Key hoặc khu vực địa lý.", 
+        details: detailedErrors.join(" | ") 
+      }, 
       { status: 503 }
     );
   } catch (error: any) {
