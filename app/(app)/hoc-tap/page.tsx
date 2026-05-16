@@ -19,12 +19,15 @@ export default async function HocTapPage() {
     .single();
 
   const grade = profile?.grade ?? 3;
-  const isIELTS = (slug: string) => slug === "mindset-ielts";
 
-  const { data: rows } = await supabase
+  const { data: rows, error } = await supabase
     .from("lessons")
     .select("subject_slug, subject_label_vi, grade")
-    .or(`grade.eq.${grade},grade.eq.0`);
+    .in("grade", [grade, 0]);
+
+  if (error) {
+    console.error("Error fetching lessons:", error);
+  }
 
   const map = new Map<string, string>();
   for (const r of (rows ?? []) as Row[]) {
