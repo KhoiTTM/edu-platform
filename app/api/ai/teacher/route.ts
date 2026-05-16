@@ -34,22 +34,31 @@ Rules:
     const modelsToTry = [
       "gemini-flash-latest",
       "gemini-1.5-flash", 
-      "gemini-1.5-flash-latest",
+      "gemini-1.5-pro-latest",
       "gemini-pro"
     ];
     let detailedErrors = [];
 
     for (const modelName of modelsToTry) {
       try {
-        console.log(`Attempting with model: ${modelName}`);
-        // Let the SDK decide the version
         const model = genAI.getGenerativeModel({ model: modelName });
         
+        // Prepare history. Gemini requires history to start with a 'user' message.
+        let history = messages.slice(0, -1).map((m: any) => ({
+          role: m.role === "user" ? "user" : "model",
+          parts: [{ text: m.content }],
+        }));
+
+        // If history starts with model, prepend a system intro from 'user'
+        if (history.length > 0 && history[0].role === "model") {
+          history = [
+            { role: "user", parts: [{ text: `System: ${systemPrompt}\n\nLet's start the lesson.` }] },
+            ...history
+          ];
+        }
+
         const chat = model.startChat({
-          history: messages.slice(0, -1).map((m: any) => ({
-            role: m.role === "user" ? "user" : "model",
-            parts: [{ text: m.content }],
-          })),
+          history: history,
           generationConfig: { 
             maxOutputTokens: 1000,
             temperature: 0.7,
