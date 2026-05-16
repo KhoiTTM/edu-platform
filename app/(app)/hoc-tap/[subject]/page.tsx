@@ -10,7 +10,7 @@ type Props = {
   searchParams: Promise<{ tap?: string }>;
 };
 
-const SLUG_RE = /^[a-z0-9_]+$/;
+const SLUG_RE = /^[a-z0-9_-]+$/;
 
 function parseVolume(raw: string | undefined): Volume {
   const n = raw ? parseInt(raw, 10) : 1;
@@ -37,22 +37,30 @@ export default async function HocTapSubjectPage({ params, searchParams }: Props)
 
   const grade = profile?.grade ?? 3;
 
-  const { data: subjectRows } = await supabase
+  const { data: subjectRows, error: subjectError } = await supabase
     .from("subjects")
     .select("*")
-    .or(`grade.eq.${grade},grade.eq.0`)
+    .in("grade", [grade, 0])
     .eq("slug", subject)
     .order("volume");
 
+  if (subjectError) {
+    console.error("Error fetching subject info:", subjectError);
+  }
+
   const subjectCatalog = (subjectRows ?? []) as Subject[];
 
-  const { data: allLessons } = await supabase
+  const { data: allLessons, error: lessonsError } = await supabase
     .from("lessons")
     .select("*")
-    .or(`grade.eq.${grade},grade.eq.0`)
+    .in("grade", [grade, 0])
     .eq("subject_slug", subject)
     .order("volume")
     .order("lesson_index", { ascending: true });
+
+  if (lessonsError) {
+    console.error("Error fetching subject lessons:", lessonsError);
+  }
 
   const all = (allLessons ?? []) as Lesson[];
   if (all.length === 0) notFound();
