@@ -1,10 +1,15 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { NextResponse } from "next/server";
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
+const rawKey = process.env.GEMINI_API_KEY || "";
+const cleanKey = rawKey.trim();
+const genAI = new GoogleGenerativeAI(cleanKey);
 
 export async function POST(req: Request) {
   try {
+    if (!cleanKey) {
+      return NextResponse.json({ error: "Thiếu GEMINI_API_KEY trên Vercel. Vui lòng cấu hình Environment Variables." }, { status: 500 });
+    }
     const { messages, sessionInfo, studentName } = await req.json();
 
     const systemPrompt = `
