@@ -51,19 +51,19 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="flex min-h-dvh flex-col bg-gradient-to-b from-brand-50 to-white">
-      <header className="flex items-center justify-between px-4 py-5 sm:px-8">
+    <div className="flex min-h-dvh flex-col bg-[#020617] bg-gradient-to-b from-slate-900/30 to-[#020617]">
+      <header className="flex items-center justify-between px-4 py-5 sm:px-8 border-b border-slate-900">
         <Link href="/" className="flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-600 text-sm font-bold text-white">
+          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-sky-600 text-sm font-bold text-white shadow-lg shadow-sky-500/20">
             B
           </span>
-          <span className="font-display text-lg font-semibold text-slate-900">
+          <span className="font-display text-lg font-semibold text-white">
             BrightPath
           </span>
         </Link>
         <Link
           href="/"
-          className="text-sm font-medium text-brand-700 hover:text-brand-800"
+          className="text-sm font-medium text-sky-500 hover:text-sky-400"
         >
           ← Back home
         </Link>
@@ -71,23 +71,23 @@ export default function LoginPage() {
 
       <main className="flex flex-1 items-center justify-center px-4 pb-16 pt-4">
         <div className="w-full max-w-md">
-          <div className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-card-lg sm:p-8">
-            <h1 className="font-display text-2xl font-bold text-slate-900">
+          <div className="rounded-3xl border border-slate-800 bg-slate-900/50 p-6 shadow-2xl backdrop-blur-md sm:p-8">
+            <h1 className="font-display text-2xl font-bold text-white">
               {mode === "signin" ? "Welcome back" : "Create your account"}
             </h1>
-            <p className="mt-2 text-sm text-slate-600">
+            <p className="mt-2 text-sm text-slate-400">
               {mode === "signin"
                 ? "Sign in with the email your teacher shared."
                 : "Sign up to start learning. Pick your grade level."}
             </p>
 
-            <div className="mt-6 flex rounded-full bg-slate-100 p-1">
+            <div className="mt-6 flex rounded-full bg-slate-950/80 p-1 border border-slate-800">
               <button
                 type="button"
                 className={`flex-1 rounded-full py-2 text-sm font-semibold transition ${
                   mode === "signin"
-                    ? "bg-white text-slate-900 shadow-sm"
-                    : "text-slate-600"
+                    ? "bg-sky-600 text-white shadow-lg shadow-sky-500/20"
+                    : "text-slate-400 hover:text-white"
                 }`}
                 onClick={() => setMode("signin")}
               >
@@ -97,8 +97,8 @@ export default function LoginPage() {
                 type="button"
                 className={`flex-1 rounded-full py-2 text-sm font-semibold transition ${
                   mode === "signup"
-                    ? "bg-white text-slate-900 shadow-sm"
-                    : "text-slate-600"
+                    ? "bg-sky-600 text-white shadow-lg shadow-sky-500/20"
+                    : "text-slate-400 hover:text-white"
                 }`}
                 onClick={() => setMode("signup")}
               >
@@ -112,7 +112,7 @@ export default function LoginPage() {
                   <div>
                     <label
                       htmlFor="displayName"
-                      className="block text-sm font-medium text-slate-700"
+                      className="block text-sm font-medium text-slate-300"
                     >
                       Display name
                     </label>
@@ -122,12 +122,12 @@ export default function LoginPage() {
                       autoComplete="name"
                       value={displayName}
                       onChange={(e) => setDisplayName(e.target.value)}
-                      className="mt-1.5 w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-slate-900 outline-none ring-brand-500/30 transition focus:border-brand-500 focus:bg-white focus:ring-4"
+                      className="mt-1.5 w-full rounded-xl border border-slate-700 bg-slate-800 px-4 py-3 text-white outline-none placeholder:text-slate-500 transition focus:border-sky-500 focus:bg-slate-900"
                       placeholder="Alex"
                     />
                   </div>
                   <div>
-                    <span className="block text-sm font-medium text-slate-700">
+                    <span className="block text-sm font-medium text-slate-300">
                       Grade
                     </span>
                     <div className="mt-2 flex gap-3">
@@ -136,8 +136,8 @@ export default function LoginPage() {
                           key={g}
                           className={`flex flex-1 cursor-pointer items-center justify-center rounded-xl border-2 py-3 text-sm font-semibold transition ${
                             grade === g
-                              ? "border-brand-500 bg-brand-50 text-brand-900"
-                              : "border-slate-200 bg-white text-slate-600 hover:border-slate-300"
+                              ? "border-sky-500 bg-sky-950/30 text-sky-400"
+                              : "border-slate-700 bg-slate-800/30 text-slate-400 hover:border-slate-600 hover:text-white"
                           }`}
                         >
                           <input
@@ -158,7 +158,7 @@ export default function LoginPage() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-slate-700"
+                  className="block text-sm font-medium text-slate-300"
                 >
                   Email
                 </label>
@@ -169,14 +169,14 @@ export default function LoginPage() {
                   autoComplete="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="mt-1.5 w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-slate-900 outline-none ring-brand-500/30 transition focus:border-brand-500 focus:bg-white focus:ring-4"
+                  className="mt-1.5 w-full rounded-xl border border-slate-700 bg-slate-800 px-4 py-3 text-white outline-none placeholder:text-slate-500 transition focus:border-sky-500 focus:bg-slate-900"
                   placeholder="you@school.edu"
                 />
               </div>
               <div>
                 <label
                   htmlFor="password"
-                  className="block text-sm font-medium text-slate-700"
+                  className="block text-sm font-medium text-slate-300"
                 >
                   Password
                 </label>
@@ -190,14 +190,14 @@ export default function LoginPage() {
                   }
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="mt-1.5 w-full rounded-xl border border-slate-200 bg-slate-50/50 px-4 py-3 text-slate-900 outline-none ring-brand-500/30 transition focus:border-brand-500 focus:bg-white focus:ring-4"
+                  className="mt-1.5 w-full rounded-xl border border-slate-700 bg-slate-800 px-4 py-3 text-white outline-none placeholder:text-slate-500 transition focus:border-sky-500 focus:bg-slate-900"
                   placeholder="••••••••"
                 />
               </div>
 
               {error && (
                 <p
-                  className="rounded-xl bg-rose-50 px-3 py-2 text-sm text-rose-700"
+                  className="rounded-xl bg-rose-950/30 border border-rose-900/50 px-3 py-2 text-sm text-rose-400 animate-pulse"
                   role="alert"
                 >
                   {error}
@@ -207,7 +207,7 @@ export default function LoginPage() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full rounded-xl bg-brand-600 py-3.5 text-sm font-semibold text-white shadow-lg shadow-brand-600/25 transition hover:bg-brand-700 disabled:opacity-60"
+                className="w-full rounded-xl bg-sky-600 py-3.5 text-sm font-semibold text-white shadow-lg shadow-sky-500/25 transition hover:bg-sky-700 disabled:opacity-60"
               >
                 {loading
                   ? "Please wait…"
@@ -218,7 +218,7 @@ export default function LoginPage() {
             </form>
           </div>
           <p className="mt-6 text-center text-xs text-slate-500">
-            Teachers: run the SQL in <code className="text-slate-700">supabase/migrations</code>{" "}
+            Teachers: run the SQL in <code className="rounded bg-slate-900 px-1.5 py-0.5 text-sky-400">supabase/migrations</code>{" "}
             after creating a Supabase project.
           </p>
         </div>
