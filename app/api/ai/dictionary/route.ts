@@ -36,25 +36,46 @@ Nhiệm vụ của bạn là tra cứu từ/cụm từ mà học sinh nhập và
 Hãy giữ câu trả lời ngắn gọn, trực quan, sinh động để bé không bị nản lòng khi đọc nhé!
 `;
 
-    const modelName = "gemini-1.5-flash";
-    const model = genAI.getGenerativeModel({ model: modelName });
+    const modelsToTry = [
+      "gemini-flash-latest",
+      "gemini-1.5-flash", 
+      "gemini-1.5-pro-latest",
+      "gemini-pro"
+    ];
+    let detailedErrors = [];
 
-    const result = await model.generateContent({
-      contents: [{ role: "user", parts: [{ text: `${systemPrompt}\n\nTừ tra cứu của học sinh: "${query}"` }] }],
-      generationConfig: {
-        maxOutputTokens: 1000,
-        temperature: 0.5,
-      },
-    });
+    for (const modelName of modelsToTry) {
+      try {
+        const model = genAI.getGenerativeModel({ model: modelName });
 
-    const response = await result.response;
-    const text = response.text();
+        const result = await model.generateContent({
+          contents: [{ role: "user", parts: [{ text: `${systemPrompt}\n\nTừ tra cứu của học sinh: "${query}"` }] }],
+          generationConfig: {
+            maxOutputTokens: 1000,
+            temperature: 0.5,
+          },
+        });
 
-    if (!text) {
-      throw new Error("Không có phản hồi từ AI.");
+        const response = await result.response;
+        const text = response.text();
+
+        if (!text) throw new Error("Không nhận được phản hồi");
+
+        return NextResponse.json({ text, modelUsed: modelName });
+      } catch (err: any) {
+        console.error(`Error with model ${modelName} in Dictionary:`, err.message);
+        detailedErrors.push(`${modelName}: ${err.message}`);
+        continue;
+      }
     }
 
-    return NextResponse.json({ text });
+    return NextResponse.json(
+      { 
+        error: "Không thể kết nối với các Model AI để tra từ điển.", 
+        details: detailedErrors.join(" | ") 
+      }, 
+      { status: 503 }
+    );
   } catch (error: any) {
     console.error("Dictionary API Error:", error.message);
     return NextResponse.json({ error: error.message }, { status: 500 });
