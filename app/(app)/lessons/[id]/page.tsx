@@ -5,6 +5,7 @@ import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import { LessonPractice } from "@/components/LessonPractice";
 import { TextbookSection } from "@/components/TextbookSection";
 import AITeacherChat from "@/components/AITeacherChat";
+import { DictionaryPopup } from "@/components/DictionaryPopup";
 import type { Lesson, Quiz, QuizQuestion, Subject, Volume } from "@/types/database";
 
 type Props = { params: Promise<{ id: string }> };
@@ -212,6 +213,7 @@ export default async function LessonPage({ params }: Props) {
           </div>
         )}
       </div>
+      {subjectSlug === "tieng_anh" && <DictionaryPopup />}
     </div>
   );
 }

@@ -4,6 +4,7 @@ import { createClient } from "@/lib/supabase/server";
 import { SubjectVolumeTabs } from "@/components/SubjectVolumeTabs";
 import { LessonListByTopic } from "@/components/LessonListByTopic";
 import type { Lesson, Subject, Volume } from "@/types/database";
+import { DictionaryPopup } from "@/components/DictionaryPopup";
 
 type Props = {
   params: Promise<{ subject: string }>;
@@ -135,6 +136,7 @@ export default async function HocTapSubjectPage({ params, searchParams }: Props)
       ) : (
         <LessonListByTopic lessons={lessons} />
       )}
+      {subject === "tieng_anh" && <DictionaryPopup />}
     </div>
   );
 }
