@@ -61,6 +61,8 @@ export function LessonPractice({ questions }: Props) {
 
               <div className="mt-4 grid gap-2 sm:grid-cols-2">
                 {opts.map((opt, i) => {
+                  const selected = choice === i;
+                  const isCorrect = i === q.correct_index;
                   let ring = "border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-700 hover:bg-slate-800/80";
                   if (st !== "idle" && selected) {
                     ring = isCorrect
