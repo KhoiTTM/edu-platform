@@ -52,33 +52,28 @@ export default async function HocTapPage() {
     <div className="mx-auto max-w-4xl">
       <Link
         href="/dashboard"
-        className="text-sm font-medium text-brand-600 hover:text-brand-800"
+        className="text-sm font-medium text-sky-500 hover:text-sky-400"
       >
         ← Về trang chủ học sinh
       </Link>
 
       <header className="mt-4">
-        <h1 className="font-display text-3xl font-bold text-slate-900">
+        <h1 className="font-display text-3xl font-bold text-white">
           Chọn môn học
         </h1>
-        <p className="mt-2 text-slate-600">
+        <p className="mt-2 text-slate-400">
           Lớp {grade} — chọn môn, sau đó chọn bài (Bài 1, Bài 2, …).
         </p>
       </header>
 
       {subjects.length === 0 ? (
-        <div className="mt-10 rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center text-slate-600">
+        <div className="mt-10 rounded-2xl border border-dashed border-slate-800 bg-slate-900/50 p-8 text-center text-slate-400 backdrop-blur-md">
           <p>Chưa có môn học nào.</p>
-          <p className="mt-2 text-sm">
-            Chạy file SQL{" "}
-            <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs">
-              supabase/migrations/002_lessons_curriculum_vi.sql
-            </code>{" "}
-            và{" "}
-            <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs">
-              003_subjects_textbook.sql
-            </code>{" "}
-            trong Supabase.
+          <p className="mt-2 text-sm text-slate-500">
+            Chạy các file SQL trong thư mục{" "}
+            <code className="rounded bg-slate-950 px-1.5 py-0.5 text-xs text-sky-400">
+              supabase/migrations
+            </code>.
           </p>
         </div>
       ) : (
@@ -87,15 +82,15 @@ export default async function HocTapPage() {
             <li key={slug}>
               <Link
                 href={`/hoc-tap/${slug}`}
-                className="flex min-h-[120px] flex-col rounded-2xl border border-slate-200/80 bg-white p-6 shadow-card transition hover:border-brand-400 hover:shadow-card-lg"
+                className="flex min-h-[120px] flex-col rounded-2xl border border-slate-800 bg-slate-900/50 p-6 shadow-xl backdrop-blur-md transition hover:border-sky-500/50 hover:bg-slate-900/80"
               >
                 <span className="text-3xl" aria-hidden>
                   {subjectEmoji[slug] ?? "📚"}
                 </span>
-                <span className="mt-3 font-display text-xl font-semibold text-slate-900">
+                <span className="mt-3 font-display text-xl font-semibold text-white">
                   {label}
                 </span>
-                <span className="mt-2 text-sm font-medium text-brand-600">
+                <span className="mt-2 text-sm font-medium text-sky-500">
                   Xem các bài →
                 </span>
               </Link>

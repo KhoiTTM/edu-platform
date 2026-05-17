@@ -33,11 +33,11 @@ export function LessonPractice({ questions }: Props) {
   }
 
   return (
-    <section className="rounded-2xl border border-slate-200/80 bg-white p-5 shadow-card sm:p-6">
-      <h2 className="font-display text-xl font-semibold text-slate-900">
+    <section className="rounded-2xl border border-slate-800 bg-slate-900/50 p-5 shadow-xl backdrop-blur-md sm:p-6">
+      <h2 className="font-display text-xl font-semibold text-white">
         Bài tập — chấm ngay từng câu
       </h2>
-      <p className="mt-2 text-sm text-slate-600">
+      <p className="mt-2 text-sm text-slate-400">
         Chọn đáp án: đúng hoặc sai sẽ hiện ngay kèm giải thích.
       </p>
 
@@ -50,28 +50,26 @@ export function LessonPractice({ questions }: Props) {
           return (
             <li
               key={q.id}
-              className="rounded-2xl border border-slate-100 bg-slate-50/60 p-4 sm:p-5"
+              className="rounded-2xl border border-slate-800 bg-slate-950/30 p-4 sm:p-5"
             >
-              <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">
+              <p className="text-xs font-semibold uppercase tracking-wide text-sky-500">
                 Câu {idx + 1}
               </p>
-              <p className="mt-2 text-base font-medium text-slate-900">
+              <p className="mt-2 text-base font-medium text-white">
                 {q.question}
               </p>
 
               <div className="mt-4 grid gap-2 sm:grid-cols-2">
                 {opts.map((opt, i) => {
-                  const selected = choice === i;
-                  const isCorrect = i === q.correct_index;
-                  let ring = "border-slate-200 bg-white hover:border-slate-300";
+                  let ring = "border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-700 hover:bg-slate-800/80";
                   if (st !== "idle" && selected) {
                     ring = isCorrect
-                      ? "border-emerald-500 bg-emerald-50"
-                      : "border-rose-400 bg-rose-50";
+                      ? "border-emerald-500 bg-emerald-950/30 text-emerald-400"
+                      : "border-rose-500 bg-rose-950/30 text-rose-400";
                   } else if (st !== "idle" && isCorrect) {
-                    ring = "border-emerald-500 bg-emerald-50";
+                    ring = "border-emerald-500 bg-emerald-950/30 text-emerald-400";
                   } else if (selected) {
-                    ring = "border-brand-400 bg-brand-50";
+                    ring = "border-sky-500 bg-sky-950/30 text-sky-400";
                   }
 
                   return (
@@ -79,9 +77,9 @@ export function LessonPractice({ questions }: Props) {
                       key={i}
                       type="button"
                       onClick={() => pickOption(q, i)}
-                      className={`flex min-h-[48px] w-full items-center rounded-xl border-2 px-3 py-2.5 text-left text-sm font-medium text-slate-800 transition ${ring}`}
+                      className={`flex min-h-[48px] w-full items-center rounded-xl border-2 px-3 py-2.5 text-left text-sm font-medium transition ${ring}`}
                     >
-                      <span className="mr-2 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white text-xs font-bold text-slate-600 ring-1 ring-slate-200">
+                      <span className="mr-2 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-800 text-xs font-bold text-slate-300 ring-1 ring-slate-700">
                         {String.fromCharCode(65 + i)}
                       </span>
                       {opt}
@@ -91,19 +89,19 @@ export function LessonPractice({ questions }: Props) {
               </div>
 
               {st === "correct" && (
-                <p className="mt-3 rounded-xl bg-emerald-100/80 px-3 py-2 text-sm font-medium text-emerald-900">
-                  Đúng rồi!
+                <p className="mt-3 rounded-xl bg-emerald-950/20 border border-emerald-900/50 px-3 py-2 text-sm font-medium text-emerald-400">
+                  ✓ Đúng rồi!
                 </p>
               )}
               {st === "wrong" && (
-                <p className="mt-3 rounded-xl bg-rose-100/80 px-3 py-2 text-sm font-medium text-rose-900">
-                  Chưa đúng — xem gợi ý bên dưới.
+                <p className="mt-3 rounded-xl bg-rose-950/20 border border-rose-900/50 px-3 py-2 text-sm font-medium text-rose-400">
+                  ✗ Chưa đúng — xem gợi ý bên dưới.
                 </p>
               )}
 
               {st !== "idle" && q.explanation && (
-                <div className="mt-3 rounded-xl border border-brand-100 bg-brand-50/80 px-3 py-3 text-sm text-slate-800">
-                  <span className="font-semibold text-brand-800">
+                <div className="mt-3 rounded-xl border border-sky-900/30 bg-sky-950/10 px-3 py-3 text-sm text-slate-300">
+                  <span className="font-semibold text-sky-400">
                     Giải thích:{" "}
                   </span>
                   {q.explanation}
@@ -113,7 +111,7 @@ export function LessonPractice({ questions }: Props) {
               {st !== "idle" && (
                 <button
                   type="button"
-                  className="mt-3 text-sm font-semibold text-brand-700 underline-offset-2 hover:underline"
+                  className="mt-3 text-sm font-semibold text-sky-500 underline-offset-2 hover:underline hover:text-sky-400"
                   onClick={() => {
                     setPicked((prev) => ({ ...prev, [q.id]: null }));
                     setRevealed((prev) => {

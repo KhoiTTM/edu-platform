@@ -83,22 +83,22 @@ export default async function LessonPage({ params }: Props) {
 
   return (
     <div className="mx-auto max-w-4xl">
-      <nav className="text-sm text-slate-600">
+      <nav className="text-sm text-slate-500">
         <Link
           href="/hoc-tap"
-          className="font-medium text-brand-600 hover:text-brand-800"
+          className="font-medium text-sky-500 hover:text-sky-400"
         >
           Chọn môn
         </Link>
-        <span className="mx-2 text-slate-400">/</span>
+        <span className="mx-2 text-slate-700">/</span>
         <Link
           href={`/hoc-tap/${subjectSlug}${tapQuery}`}
-          className="font-medium text-brand-600 hover:text-brand-800"
+          className="font-medium text-sky-500 hover:text-sky-400"
         >
           {subjectLabel}
         </Link>
-        <span className="mx-2 text-slate-400">/</span>
-        <span className="font-medium text-slate-900">
+        <span className="mx-2 text-slate-700">/</span>
+        <span className="font-medium text-white">
           #{L.lesson_index ?? 1}
           {L.book_lesson_number != null && ` · SGK Bài ${L.book_lesson_number}`}
         </span>
@@ -106,17 +106,17 @@ export default async function LessonPage({ params }: Props) {
 
       <header className="mt-4">
         {L.topic_label && (
-          <p className="text-sm font-medium text-slate-500">{L.topic_label}</p>
+          <p className="text-sm font-medium text-slate-400">{L.topic_label}</p>
         )}
-        <p className="text-xs font-semibold uppercase tracking-wide text-brand-600">
+        <p className="text-xs font-semibold uppercase tracking-wide text-sky-500">
           {L.grade === 0 ? "Mọi khối lớp" : `Khối lớp ${L.grade}`} · {subjectLabel} · Tập {volume}
           {(L.video_part ?? 0) > 0 && L.youtube_video_id && ` · Video phần ${L.video_part}`}
         </p>
-        <h1 className="font-display text-3xl font-bold text-slate-900 sm:text-4xl">
+        <h1 className="font-display text-3xl font-bold text-white sm:text-4xl">
           {L.title}
         </h1>
         {L.summary && (
-          <div className="mt-3 whitespace-pre-wrap text-lg text-slate-600">
+          <div className="mt-3 whitespace-pre-wrap text-lg text-slate-400">
             {L.summary}
           </div>
         )}
@@ -126,7 +126,7 @@ export default async function LessonPage({ params }: Props) {
         <div className={subjectSlug === "mindset-ielts" ? "space-y-10" : ""}>
           {L.youtube_video_id ? (
             <section>
-              <h2 className="mb-3 font-display text-xl font-semibold text-slate-900">
+              <h2 className="mb-3 font-display text-xl font-semibold text-white">
                 Tài liệu học tập
               </h2>
               <YouTubeEmbed videoId={L.youtube_video_id} title={L.title} />
@@ -135,14 +135,14 @@ export default async function LessonPage({ params }: Props) {
                   href={`https://www.youtube.com/watch?v=${L.youtube_video_id}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs text-brand-600 hover:underline"
+                  className="text-xs text-sky-500 hover:underline"
                 >
                   Mở video trực tiếp trên YouTube ↗
                 </a>
               </div>
             </section>
           ) : (
-            <div className="rounded-2xl border border-blue-100 bg-blue-50/50 p-5 text-sm text-blue-900">
+            <div className="rounded-2xl border border-sky-900/50 bg-sky-950/20 p-5 text-sm text-sky-400">
               <h3 className="font-semibold mb-1">Mục tiêu buổi học</h3>
               <p>{L.summary}</p>
             </div>
@@ -159,22 +159,22 @@ export default async function LessonPage({ params }: Props) {
               {practiceQuestions.length > 0 ? (
                 <LessonPractice questions={practiceQuestions} />
               ) : (
-                <p className="rounded-2xl border border-dashed border-slate-300 bg-white p-6 text-center text-sm text-slate-600">
+                <p className="rounded-2xl border border-dashed border-slate-800 bg-slate-900/50 p-6 text-center text-sm text-slate-400 backdrop-blur-md">
                   Chưa có bài tập thực hành cho bài này.
                 </p>
               )}
 
               {Q && (
-                <section className="rounded-2xl border border-slate-200 bg-slate-50/80 p-5 sm:p-6">
-                  <h2 className="font-display text-lg font-semibold text-slate-900">
+                <section className="rounded-2xl border border-slate-800 bg-slate-900/50 p-5 sm:p-6 shadow-xl backdrop-blur-md">
+                  <h2 className="font-display text-lg font-semibold text-white">
                     Kiểm tra tổng hợp (tùy chọn)
                   </h2>
-                  <p className="mt-2 text-sm text-slate-600">
+                  <p className="mt-2 text-sm text-slate-400">
                     Làm một lượt hết các câu và lưu điểm vào bảng điểm.
                   </p>
                   <Link
                     href={`/quiz/${Q.id}`}
-                    className="mt-4 inline-flex min-h-[48px] items-center justify-center rounded-xl border border-brand-200 bg-white px-8 py-3 text-base font-semibold text-brand-700 transition hover:bg-brand-50"
+                    className="mt-4 inline-flex min-h-[48px] items-center justify-center rounded-xl bg-sky-600 px-8 py-3 text-base font-semibold text-white transition hover:bg-sky-700 shadow-lg shadow-sky-500/20"
                   >
                     Vào bài kiểm tra
                   </Link>
@@ -192,19 +192,19 @@ export default async function LessonPage({ params }: Props) {
                 studentName={profile?.display_name || "Học sinh"} 
               />
               
-              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
-                <h3 className="text-sm font-semibold text-slate-900 flex items-center gap-2">
-                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-amber-100 text-amber-700 text-[10px]">P</span>
+              <div className="rounded-2xl border border-slate-800 bg-slate-900/50 p-5 shadow-xl backdrop-blur-md">
+                <h3 className="text-sm font-semibold text-white flex items-center gap-2">
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-amber-950 text-amber-400 text-[10px] border border-amber-800/50">P</span>
                   Dành cho Phụ huynh
                 </h3>
                 <div className="mt-3 space-y-3">
                   <label className="flex items-start gap-3 cursor-pointer group">
-                    <input type="checkbox" className="mt-1 h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
-                    <span className="text-xs text-slate-600 group-hover:text-slate-900 transition">Xác nhận con đã bắt đầu học đúng giờ</span>
+                    <input type="checkbox" className="mt-1 h-4 w-4 rounded border-slate-700 bg-slate-800 text-sky-600 focus:ring-sky-500" />
+                    <span className="text-xs text-slate-400 group-hover:text-white transition">Xác nhận con đã bắt đầu học đúng giờ</span>
                   </label>
                   <label className="flex items-start gap-3 cursor-pointer group">
-                    <input type="checkbox" className="mt-1 h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500" />
-                    <span className="text-xs text-slate-600 group-hover:text-slate-900 transition">Kiểm tra Checklist cuối buổi</span>
+                    <input type="checkbox" className="mt-1 h-4 w-4 rounded border-slate-700 bg-slate-800 text-sky-600 focus:ring-sky-500" />
+                    <span className="text-xs text-slate-400 group-hover:text-white transition">Kiểm tra Checklist cuối buổi</span>
                   </label>
                 </div>
               </div>

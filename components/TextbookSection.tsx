@@ -13,17 +13,17 @@ export function TextbookSection({ subject, pageHint, lessonTitle }: Props) {
 
   if (!pdfUrl) {
     return (
-      <section className="rounded-2xl border border-amber-200 bg-amber-50/80 p-5 text-sm text-amber-950">
+      <section className="rounded-2xl border border-amber-900/50 bg-amber-950/20 p-5 text-sm text-amber-400 backdrop-blur-md">
         <h2 className="font-display text-lg font-semibold">Sách {bookTitle}</h2>
-        <p className="mt-2">
+        <p className="mt-2 text-slate-300">
           Giáo viên chưa gắn link PDF trên Supabase Storage. Upload file vào bucket{" "}
-          <code className="rounded bg-white/80 px-1 py-0.5 text-xs">textbooks</code>{" "}
-          rồi cập nhật cột <code className="rounded bg-white/80 px-1 py-0.5 text-xs">textbook_pdf_url</code>{" "}
-          trong bảng <code className="rounded bg-white/80 px-1 py-0.5 text-xs">subjects</code>.
+          <code className="rounded bg-slate-950 px-1 py-0.5 text-xs text-sky-400">textbooks</code>{" "}
+          rồi cập nhật cột <code className="rounded bg-slate-950 px-1 py-0.5 text-xs text-sky-400">textbook_pdf_url</code>{" "}
+          trong bảng <code className="rounded bg-slate-950 px-1 py-0.5 text-xs text-sky-400">subjects</code>.
         </p>
         {pageHint && (
-          <p className="mt-3 font-medium">
-            Phần cần đọc cho bài này: <span className="text-brand-800">{pageHint}</span>
+          <p className="mt-3 font-medium text-amber-300">
+            Phần cần đọc cho bài này: <span className="text-sky-400 font-semibold">{pageHint}</span>
           </p>
         )}
       </section>
@@ -32,12 +32,12 @@ export function TextbookSection({ subject, pageHint, lessonTitle }: Props) {
 
   return (
     <section>
-      <h2 className="mb-1 font-display text-xl font-semibold text-slate-900">
+      <h2 className="mb-1 font-display text-xl font-semibold text-white">
         {bookTitle}
       </h2>
       {pageHint && (
-        <p className="mb-3 text-sm text-slate-600">
-          <span className="font-semibold text-brand-700">Đọc trong sách:</span>{" "}
+        <p className="mb-3 text-sm text-slate-400">
+          <span className="font-semibold text-sky-500">Đọc trong sách:</span>{" "}
           {pageHint}
         </p>
       )}
