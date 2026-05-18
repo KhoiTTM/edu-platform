@@ -149,11 +149,37 @@ export default async function LessonPage({ params }: Props) {
             </div>
           )}
 
-          <TextbookSection
-            subject={subjectRow}
-            pageHint={L.page_hint}
-            lessonTitle={L.title}
-          />
+          {subjectSlug === "mindset-ielts" ? (
+            subjectRow?.textbook_pdf_url && (
+              <section className="rounded-2xl border border-slate-800 bg-slate-900/50 p-5 shadow-xl backdrop-blur-md animate-in fade-in">
+                <h2 className="font-display text-lg font-semibold text-white">Sách giáo trình</h2>
+                <div className="mt-3 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="text-sm text-slate-400">
+                    <p className="font-medium text-slate-300">{subjectRow.textbook_title || "Mindset for IELTS Foundation"}</p>
+                    {L.page_hint && (
+                      <p className="mt-1">
+                        Phần cần học cho bài này: <span className="text-sky-400 font-semibold">{L.page_hint}</span>
+                      </p>
+                    )}
+                  </div>
+                  <a
+                    href={subjectRow.textbook_pdf_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex min-h-[44px] shrink-0 items-center justify-center rounded-xl bg-sky-600 px-5 text-sm font-semibold text-white transition hover:bg-sky-700 shadow-lg shadow-sky-500/20"
+                  >
+                    Mở Sách Học Ở Tab Mới ↗
+                  </a>
+                </div>
+              </section>
+            )
+          ) : (
+            <TextbookSection
+              subject={subjectRow}
+              pageHint={L.page_hint}
+              lessonTitle={L.title}
+            />
+          )}
 
           {subjectSlug !== "mindset-ielts" && (
             <>

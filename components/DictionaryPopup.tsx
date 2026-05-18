@@ -1,12 +1,13 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { BookOpen, Search, X, Loader2, Sparkles, Languages, ChevronDown, RotateCcw } from "lucide-react";
+import { BookOpen, Search, X, Loader2, Sparkles, Languages, ChevronDown, RotateCcw, Zap } from "lucide-react";
 
 type SearchHistory = {
   query: string;
   result: string;
   timestamp: string;
+  mode?: "quick" | "ai";
 };
 
 export function DictionaryPopup() {
@@ -17,6 +18,7 @@ export function DictionaryPopup() {
   const [error, setError] = useState<string | null>(null);
   const [history, setHistory] = useState<SearchHistory[]>([]);
   const [showHistory, setShowHistory] = useState(false);
+  const [mode, setMode] = useState<"quick" | "ai">("quick");
   const resultRef = useRef<HTMLDivElement>(null);
 
   // Load history from localStorage on mount
@@ -40,36 +42,65 @@ export function DictionaryPopup() {
     }
   };
 
-  const handleSearch = async (e?: React.FormEvent, searchWord?: string) => {
+  const handleSearch = async (e?: React.FormEvent, searchWord?: string, forcedMode?: "quick" | "ai") => {
     if (e) e.preventDefault();
     
     const wordToSearch = searchWord || query;
     if (!wordToSearch.trim()) return;
+
+    const currentMode = forcedMode || mode;
 
     setLoading(true);
     setError(null);
     setResult(null);
 
     try {
-      const res = await fetch("/api/ai/dictionary", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query: wordToSearch }),
-      });
+      if (currentMode === "quick") {
+        // Quick offline-like translation via Google Translate client API (no AI, sub-100ms)
+        const vnChars = /[àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệđìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵ]/i;
+        const isVietnamese = vnChars.test(wordToSearch);
+        const targetLang = isVietnamese ? "en" : "vi";
 
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Có lỗi xảy ra");
+        const res = await fetch(
+          `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=${targetLang}&dt=t&q=${encodeURIComponent(wordToSearch)}`
+        );
+        if (!res.ok) throw new Error("Không thể kết nối đến máy chủ từ điển nhanh");
+        
+        const json = await res.json();
+        const translated = json[0].map((item: any) => item[0]).join("");
 
-      setResult(data.text);
-      
-      // Save search into history if it's new
-      const timestamp = new Date().toLocaleTimeString("vi-VN", { hour: "2-digit", minute: "2-digit" });
-      const updatedHistory = [
-        { query: wordToSearch, result: data.text, timestamp },
-        ...history.filter(h => h.query.toLowerCase() !== wordToSearch.toLowerCase())
-      ].slice(0, 10); // Keep last 10 queries
-      
-      saveHistory(updatedHistory);
+        const formattedResult = `**Từ tra cứu:** ${wordToSearch}\n\n**Nghĩa dịch nhanh:**\n👉 ${translated}`;
+        setResult(formattedResult);
+
+        // Save into history
+        const timestamp = new Date().toLocaleTimeString("vi-VN", { hour: "2-digit", minute: "2-digit" });
+        const updatedHistory = [
+          { query: wordToSearch, result: formattedResult, timestamp, mode: "quick" as const },
+          ...history.filter(h => h.query.toLowerCase() !== wordToSearch.toLowerCase())
+        ].slice(0, 10);
+        saveHistory(updatedHistory);
+      } else {
+        // AI smart lookup
+        const res = await fetch("/api/ai/dictionary", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query: wordToSearch }),
+        });
+
+        const data = await res.json();
+        if (!res.ok) throw new Error(data.error || "Có lỗi xảy ra");
+
+        setResult(data.text);
+        
+        // Save into history
+        const timestamp = new Date().toLocaleTimeString("vi-VN", { hour: "2-digit", minute: "2-digit" });
+        const updatedHistory = [
+          { query: wordToSearch, result: data.text, timestamp, mode: "ai" as const },
+          ...history.filter(h => h.query.toLowerCase() !== wordToSearch.toLowerCase())
+        ].slice(0, 10);
+        
+        saveHistory(updatedHistory);
+      }
       if (!searchWord) setQuery("");
     } catch (err: any) {
       setError(err.message || "Không thể kết nối đến máy chủ");
@@ -113,12 +144,48 @@ export function DictionaryPopup() {
 
           {/* Body */}
           <div className="max-h-[420px] overflow-y-auto p-4 space-y-4 scrollbar-thin">
+            {/* Mode selection tabs */}
+            <div className="grid grid-cols-2 gap-1 rounded-xl bg-slate-950 p-1 border border-slate-800">
+              <button
+                type="button"
+                onClick={() => {
+                  setMode("quick");
+                  setResult(null);
+                  setError(null);
+                }}
+                className={`flex items-center justify-center gap-1.5 rounded-lg py-1.5 text-center text-xs font-semibold transition ${
+                  mode === "quick"
+                    ? "bg-slate-800 text-sky-400 shadow-sm"
+                    : "text-slate-500 hover:text-slate-300"
+                }`}
+              >
+                <Zap size={12} />
+                Tra nhanh
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setMode("ai");
+                  setResult(null);
+                  setError(null);
+                }}
+                className={`flex items-center justify-center gap-1.5 rounded-lg py-1.5 text-center text-xs font-semibold transition ${
+                  mode === "ai"
+                    ? "bg-slate-800 text-sky-400 shadow-sm"
+                    : "text-slate-500 hover:text-slate-300"
+                }`}
+              >
+                <Sparkles size={12} />
+                Giải nghĩa AI
+              </button>
+            </div>
+
             {/* Search Input Form */}
             <form onSubmit={(e) => handleSearch(e)} className="relative flex gap-2">
               <div className="relative flex-1">
                 <input
                   type="text"
-                  placeholder="Gõ từ cần tra (e.g. apple, xin chào)..."
+                  placeholder={mode === "quick" ? "Gõ từ cần dịch nhanh..." : "Nhờ AI giải thích chi tiết từ..."}
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                   className="w-full rounded-xl border border-slate-800 bg-slate-950 py-2.5 pl-3 pr-10 text-sm text-slate-200 placeholder-slate-600 outline-none ring-offset-slate-900 transition focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
@@ -152,11 +219,13 @@ export function DictionaryPopup() {
                         type="button"
                         onClick={() => {
                           setQuery(h.query);
-                          handleSearch(undefined, h.query);
+                          if (h.mode) setMode(h.mode);
+                          handleSearch(undefined, h.query, h.mode);
                         }}
                         className="inline-flex items-center gap-1 rounded-lg bg-slate-950 border border-slate-800/80 px-2 py-1 text-xs text-slate-400 hover:border-sky-500/40 hover:text-sky-400 transition"
                       >
                         {h.query}
+                        <span className="text-[8px] text-slate-600">({h.mode === "ai" ? "AI" : "Nhanh"})</span>
                       </button>
                     ))}
                     <button
@@ -195,10 +264,10 @@ export function DictionaryPopup() {
                 className="rounded-xl border border-slate-800 bg-slate-950 p-4 shadow-inner space-y-2 animate-in fade-in"
               >
                 <div className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-sky-500">
-                  <Sparkles size={10} /> Phản hồi từ điển
+                  {mode === "quick" ? <Zap size={10} /> : <Sparkles size={10} />} 
+                  {mode === "quick" ? "Kết quả dịch nhanh" : "Phản hồi từ điển AI"}
                 </div>
                 <div className="prose prose-invert prose-sm max-w-none text-slate-300 whitespace-pre-wrap text-sm leading-relaxed">
-                  {/* Since Gemini output has beautiful markdown, let's style headers and lists cleanly */}
                   {result}
                 </div>
               </div>
@@ -208,8 +277,15 @@ export function DictionaryPopup() {
             {!result && !loading && !error && (
               <div className="flex flex-col items-center justify-center text-center py-10 px-4 text-slate-500 space-y-2">
                 <BookOpen size={36} className="text-slate-700 animate-pulse" />
-                <p className="text-xs font-semibold text-slate-400">Em cần tra cứu từ nào?</p>
-                <p className="text-[10px] text-slate-600">Gõ tiếng Anh dịch sang tiếng Việt, gõ tiếng Việt dịch sang tiếng Anh dễ dàng!</p>
+                <p className="text-xs font-semibold text-slate-400">
+                  {mode === "quick" ? "Gõ từ dịch siêu tốc" : "Tra từ thông minh với AI"}
+                </p>
+                <p className="text-[10px] text-slate-600">
+                  {mode === "quick" 
+                    ? "Dịch nhanh từ tiếng Anh sang tiếng Việt hoặc ngược lại trong nháy mắt!"
+                    : "Học sinh gõ từ vựng để AI giải thích ngộ nghĩnh, cung cấp phát âm và ví dụ đáng yêu!"
+                  }
+                </p>
               </div>
             )}
           </div>
