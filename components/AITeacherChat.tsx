@@ -199,11 +199,14 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
     }
   }, [handleSend]);
 
+  // Setup Browser Voice Recognition (Speech-to-Text) with robust React unmount cleanup
   useEffect(() => {
+    let rec: any = null;
+
     if (typeof window !== "undefined") {
       const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
       if (SpeechRecognition) {
-        const rec = new SpeechRecognition();
+        rec = new SpeechRecognition();
         rec.continuous = true; // Continuous listening so it doesn't cut off
         rec.interimResults = true; // Show results in real time
         rec.lang = "en-US"; // Expect English for IELTS
@@ -245,7 +248,36 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
         recognitionRef.current = rec;
       }
     }
+
+    // Cleanup: stop any running session on unmount to prevent ghost instances in StrictMode
+    return () => {
+      if (rec) {
+        try {
+          rec.onstart = null;
+          rec.onend = null;
+          rec.onresult = null;
+          rec.onerror = null;
+          rec.abort();
+        } catch (err) {
+          console.error("Cleanup SpeechRecognition error:", err);
+        }
+      }
+    };
   }, []);
+
+  // Automatically silence speaking & stop recording when switching tabs
+  useEffect(() => {
+    stopSpeaking();
+    if (isRecording && recognitionRef.current) {
+      try {
+        recognitionRef.current.abort();
+      } catch (err) {
+        console.error("Tab switch SpeechRecognition abort error:", err);
+      }
+      setIsRecording(false);
+      setSpeechStatus(null);
+    }
+  }, [activeTab, isRecording]);
 
   const toggleRecording = () => {
     if (!recognitionRef.current) {
