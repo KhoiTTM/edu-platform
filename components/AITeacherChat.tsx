@@ -31,14 +31,35 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
   const scrollRef = useRef<HTMLDivElement>(null);
   const hasGreeted = useRef(false);
   const recognitionRef = useRef<any>(null);
-  const speakingUtteranceRef = useRef<any>(null);
+  const audioQueueRef = useRef<HTMLAudioElement[]>([]);
+  const currentAudioRef = useRef<HTMLAudioElement | null>(null);
 
-  // Helper: Speak Text aloud using SpeechSynthesis API (Bilingual Support: English & Vietnamese)
+  // Stop speaking
+  const stopSpeaking = () => {
+    if (typeof window !== "undefined" && window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+    }
+    if (currentAudioRef.current) {
+      currentAudioRef.current.pause();
+      currentAudioRef.current = null;
+    }
+    audioQueueRef.current.forEach(audio => {
+      try {
+        audio.pause();
+      } catch (err) {
+        console.error(err);
+      }
+    });
+    audioQueueRef.current = [];
+    setIsSpeakingNow(false);
+  };
+
+  // Helper: Speak Text aloud using premium, high-quality Google Translate Neural TTS API
   const speakText = useCallback((text: string) => {
-    if (typeof window === "undefined" || !window.speechSynthesis) return;
+    if (typeof window === "undefined") return;
 
     try {
-      window.speechSynthesis.cancel(); // Stop any active speech
+      stopSpeaking(); // Stop any active speech and clear the queue
 
       // Clean text from markdown tags for natural speech
       const cleanText = text
@@ -46,69 +67,80 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
         .replace(/:\)/g, "")
         .replace(/:\D/g, "");
 
-      // Split text into lines, and then into individual sentences to detect language
+      // Split text into lines, and then into sentences under 150 characters to avoid Google Translate TTS limit
       const lines = cleanText.split(/\n+/);
-      const chunks: { text: string; lang: "vi-VN" | "en-US" }[] = [];
+      const chunks: { text: string; lang: "vi" | "en" }[] = [];
       const vnChars = /[àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệđìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵ]/i;
 
       for (const line of lines) {
         if (!line.trim()) continue;
         
-        // Split by sentence punctuation (. ! ?) but keep the punctuation attached
         const sentences = line.split(/(?<=[.!?])\s+/);
         for (const sentence of sentences) {
           if (!sentence.trim()) continue;
           
-          const isVn = vnChars.test(sentence);
-          chunks.push({
-            text: sentence.trim(),
-            lang: isVn ? "vi-VN" : "en-US"
-          });
+          if (sentence.length > 150) {
+            // Split long sentences into safe chunks of up to 150 chars
+            const subparts = sentence.match(/.{1,150}(?=\s|$)/g) || [sentence];
+            for (const part of subparts) {
+              if (part.trim()) {
+                chunks.push({
+                  text: part.trim(),
+                  lang: vnChars.test(part) ? "vi" : "en"
+                });
+              }
+            }
+          } else {
+            chunks.push({
+              text: sentence.trim(),
+              lang: vnChars.test(sentence) ? "vi" : "en"
+            });
+          }
         }
       }
 
       if (chunks.length === 0) return;
 
-      const voices = window.speechSynthesis.getVoices();
-      const vnVoice = voices.find(v => v.lang.startsWith("vi-VN") || v.lang.startsWith("vi"));
-      const enVoice = voices.find(v => v.lang.startsWith("en-US") || v.lang.startsWith("en-GB") || v.lang.startsWith("en"));
-
-      chunks.forEach((chunk, index) => {
-        const utterance = new SpeechSynthesisUtterance(chunk.text);
-        
-        if (chunk.lang === "vi-VN") {
-          utterance.lang = "vi-VN";
-          if (vnVoice) utterance.voice = vnVoice;
-          utterance.rate = 1.0; // Natural pace for Vietnamese
-        } else {
-          utterance.lang = "en-US";
-          if (enVoice) utterance.voice = enVoice;
-          utterance.rate = 0.9; // Clear, slightly slower pace for English practice
-        }
-
-        // Set speaking states on start and end of the entire sequence
-        if (index === 0) {
-          utterance.onstart = () => setIsSpeakingNow(true);
-        }
-        if (index === chunks.length - 1) {
-          utterance.onend = () => setIsSpeakingNow(false);
-          utterance.onerror = () => setIsSpeakingNow(false);
-        }
-
-        window.speechSynthesis.speak(utterance);
+      // Construct high-quality neural HTML5 audio elements
+      const audios = chunks.map(chunk => {
+        const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=${chunk.lang}&client=tw-ob&q=${encodeURIComponent(chunk.text)}`;
+        const audio = new Audio(url);
+        return audio;
       });
+
+      audioQueueRef.current = audios;
+      setIsSpeakingNow(true);
+
+      const playNext = (index: number) => {
+        if (index >= audioQueueRef.current.length) {
+          setIsSpeakingNow(false);
+          currentAudioRef.current = null;
+          return;
+        }
+
+        const audio = audioQueueRef.current[index];
+        currentAudioRef.current = audio;
+
+        audio.onended = () => {
+          playNext(index + 1);
+        };
+
+        audio.onerror = () => {
+          console.warn("Failed to play audio chunk, skipping to next...");
+          playNext(index + 1);
+        };
+
+        audio.play().catch(err => {
+          console.error("Audio playback blocked or failed:", err);
+          setIsSpeakingNow(false);
+        });
+      };
+
+      playNext(0);
     } catch (e) {
-      console.error("SpeechSynthesis error:", e);
+      console.error("Google TTS system error:", e);
     }
   }, []);
-
-  // Stop speaking
-  const stopSpeaking = () => {
-    if (typeof window !== "undefined" && window.speechSynthesis) {
-      window.speechSynthesis.cancel();
-      setIsSpeakingNow(false);
-    }
-  };
 
   const handleSend = useCallback(async (text: string, silent = false) => {
     const userMessage = text;
