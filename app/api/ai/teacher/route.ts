@@ -10,10 +10,30 @@ export async function POST(req: Request) {
     if (!cleanKey) {
       return NextResponse.json({ error: "Thiếu GEMINI_API_KEY trên Vercel. Vui lòng cấu hình Environment Variables." }, { status: 500 });
     }
-    const { messages, sessionInfo, studentName } = await req.json();
+    const { messages, sessionInfo, studentName, mode } = await req.json();
 
-    // Simplified, extremely low-token system prompt for maximum conversational performance & free quota preservation
-    const systemPrompt = `
+    // 1. System Prompt for Text/Syllabus Chat Mode (Song ngữ Anh-Việt, bám sát bài học)
+    const systemPromptText = `
+Bạn là một Giáo viên IELTS chuyên nghiệp, đang hướng dẫn học sinh ${studentName} học lộ trình "Mindset for IELTS Foundation".
+Buổi học hiện tại: ${sessionInfo.title}
+Chi tiết nội dung: ${sessionInfo.summary}
+
+PHƯƠNG PHÁP HỌC TẬP 4 KỸ NĂNG (Lồng ghép hướng dẫn):
+- Nghe (Listening): Hướng dẫn học sinh Dự đoán (Predicting) và tìm Từ đồng nghĩa (Synonyms).
+- Nói (Speaking): Yêu cầu học sinh mở rộng câu trả lời, không chỉ trả lời "Yes/No". Dùng "because" hoặc ví dụ.
+- Đọc (Reading): Hướng dẫn Skimming & Scanning và Paraphrasing.
+- Viết (Writing): Yêu cầu dùng từ nối (First, Then...) và cấu trúc 3 phần rõ ràng.
+
+VAI TRÒ CỦA BẠN (AI - GIÁO VIÊN):
+- TUYỆT ĐỐI KHÔNG tóm tắt lại toàn bộ lịch trình hay lộ trình học.
+- Bắt đầu ngay lập tức bằng cách chào học sinh và hướng dẫn học sinh làm các bài tập/nội dung trong sách của buổi học này.
+- Hướng dẫn từng bước và tương tác sư phạm.
+- Ngôn ngữ: Sử dụng song ngữ Anh-Việt (Tiếng Anh cho các thuật ngữ và ví dụ IELTS, Tiếng Việt để giải thích cặn kẽ).
+- Phong cách: Khích lệ, chuyên nghiệp, sư phạm.
+`;
+
+    // 2. System Prompt for IELTS Speaking Mode (100% Tiếng Anh, tự do giao tiếp nói, ngắn gọn)
+    const systemPromptSpeaking = `
 You are a friendly, supportive IELTS Speaking Partner and Examiner for student ${studentName}.
 Your rules:
 1. Act as a natural conversational partner. The student can discuss ANY topic they like (on-topic or completely off-topic).
@@ -21,6 +41,8 @@ Your rules:
 3. Write your entire response in English so the student stays immersed.
 4. Provide a very brief correction or vocabulary tip if appropriate, and always end with a natural follow-up question to keep the conversation flowing.
 `;
+
+    const systemPrompt = mode === "speaking" ? systemPromptSpeaking : systemPromptText;
 
     // Comprehensive free-tier fallbacks to bypass daily model quotas
     const modelsToTry = [
@@ -47,7 +69,7 @@ Your rules:
         // If history starts with model, prepend a system intro from 'user'
         if (history.length > 0 && history[0].role === "model") {
           history = [
-            { role: "user", parts: [{ text: `System: ${systemPrompt}\n\nLet's start our speaking conversation.` }] },
+            { role: "user", parts: [{ text: `System: ${systemPrompt}\n\nLet's start.` }] },
             ...history
           ];
         }
@@ -55,8 +77,8 @@ Your rules:
         const chat = model.startChat({
           history: history,
           generationConfig: { 
-            maxOutputTokens: 500, // Short output saves massive tokens and budget
-            temperature: 0.8,     // Friendly, natural variety
+            maxOutputTokens: mode === "speaking" ? 500 : 1024,
+            temperature: mode === "speaking" ? 0.8 : 0.7,
           },
         });
 

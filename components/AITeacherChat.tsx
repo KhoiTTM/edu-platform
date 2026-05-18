@@ -163,6 +163,7 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
           messages: silent ? [{ role: "user", content: userMessage }] : [...messages, { role: "user", content: userMessage }],
           sessionInfo,
           studentName,
+          mode: activeTab,
         }),
       });
 
@@ -188,7 +189,7 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
     } finally {
       setIsLoading(false);
     }
-  }, [messages, sessionInfo, studentName, isAutoSpeak, speakText]);
+  }, [messages, sessionInfo, studentName, activeTab, isAutoSpeak, speakText]);
 
   // Initial greeting - ONLY ONCE
   useEffect(() => {
@@ -198,19 +199,18 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
     }
   }, [handleSend]);
 
-  // Setup Browser Voice Recognition (Speech-to-Text)
   useEffect(() => {
     if (typeof window !== "undefined") {
       const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
       if (SpeechRecognition) {
         const rec = new SpeechRecognition();
-        rec.continuous = false;
-        rec.interimResults = false;
+        rec.continuous = true; // Continuous listening so it doesn't cut off
+        rec.interimResults = true; // Show results in real time
         rec.lang = "en-US"; // Expect English for IELTS
 
         rec.onstart = () => {
           setIsRecording(true);
-          setSpeechStatus("🎙️ Em hãy nói (tiếng Anh)...");
+          setSpeechStatus("🎙️ Đang lắng nghe... Hãy nói tiếng Anh. Bấm nút Đỏ để hoàn tất nói.");
         };
 
         rec.onend = () => {
@@ -219,9 +219,17 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
         };
 
         rec.onresult = (event: any) => {
-          const transcript = event.results[0][0].transcript;
+          let transcript = "";
+          for (let i = event.resultIndex; i < event.results.length; ++i) {
+            if (event.results[i].isFinal) {
+              transcript += event.results[i][0].transcript + " ";
+            }
+          }
           if (transcript) {
-            setInput(transcript);
+            setInput((prev) => {
+              const base = prev.trim();
+              return base ? `${base} ${transcript.trim()}` : transcript.trim();
+            });
           }
         };
 
@@ -237,7 +245,7 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
         recognitionRef.current = rec;
       }
     }
-  }, [handleSend]);
+  }, []);
 
   const toggleRecording = () => {
     if (!recognitionRef.current) {
