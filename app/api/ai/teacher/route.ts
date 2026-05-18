@@ -44,34 +44,40 @@ Your rules:
 
     const systemPrompt = mode === "speaking" ? systemPromptSpeaking : systemPromptText;
 
-    // Comprehensive free-tier fallbacks to bypass daily model quotas
+    // Comprehensive free-tier fallbacks, PRIORITIZING "gemini-flash-latest" as requested
     const modelsToTry = [
+      "gemini-flash-latest", // Prioritized first
       "gemini-1.5-flash",
       "gemini-2.0-flash",
       "gemini-2.5-flash",
       "gemini-2.0-flash-lite-preview-02-05",
       "gemini-1.5-pro",
-      "gemini-flash-latest",
       "gemini-pro"
     ];
     let detailedErrors = [];
 
     for (const modelName of modelsToTry) {
       try {
-        const model = genAI.getGenerativeModel({ model: modelName });
+        // Instantiate the model with native, high-performance system instructions
+        const model = genAI.getGenerativeModel({ 
+          model: modelName,
+          systemInstruction: systemPrompt 
+        });
         
-        // Prepare history. Gemini requires history to start with a 'user' message.
-        let history = messages.slice(0, -1).map((m: any) => ({
-          role: m.role === "user" ? "user" : "model",
-          parts: [{ text: m.content }],
-        }));
-
-        // If history starts with model, prepend a system intro from 'user'
-        if (history.length > 0 && history[0].role === "model") {
-          history = [
-            { role: "user", parts: [{ text: `System: ${systemPrompt}\n\nLet's start.` }] },
-            ...history
-          ];
+        // Prepare history and strictly enforce alternating roles starting with 'user' to prevent Gemini validation errors
+        let history: any[] = [];
+        let expectedRole: "user" | "model" = "user";
+        
+        for (let i = 0; i < messages.length - 1; i++) {
+          const m = messages[i];
+          const mappedRole = m.role === "user" ? "user" : "model";
+          if (mappedRole === expectedRole) {
+            history.push({
+              role: mappedRole,
+              parts: [{ text: m.content || "..." }]
+            });
+            expectedRole = expectedRole === "user" ? "model" : "user";
+          }
         }
 
         const chat = model.startChat({
@@ -82,9 +88,7 @@ Your rules:
           },
         });
 
-        const lastMessage = messages[messages.length - 1].content;
-        const prompt = messages.length === 1 ? `${systemPrompt}\n\nStudent: ${lastMessage}` : lastMessage;
-
+        const prompt = messages[messages.length - 1].content;
         const result = await chat.sendMessage(prompt);
         const response = await result.response;
         const text = response.text();
