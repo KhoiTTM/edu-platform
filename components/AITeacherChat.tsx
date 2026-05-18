@@ -33,7 +33,7 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
   const recognitionRef = useRef<any>(null);
   const speakingUtteranceRef = useRef<any>(null);
 
-  // Helper: Speak Text aloud using SpeechSynthesis API
+  // Helper: Speak Text aloud using SpeechSynthesis API (Bilingual Support: English & Vietnamese)
   const speakText = useCallback((text: string) => {
     if (typeof window === "undefined" || !window.speechSynthesis) return;
 
@@ -46,23 +46,57 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
         .replace(/:\)/g, "")
         .replace(/:\D/g, "");
 
-      const utterance = new SpeechSynthesisUtterance(cleanText);
-      
-      // Attempt to load an English voice
-      const voices = window.speechSynthesis.getVoices();
-      const englishVoice = voices.find(v => v.lang.startsWith("en-US") || v.lang.startsWith("en-GB"));
-      if (englishVoice) {
-        utterance.voice = englishVoice;
+      // Split text into lines, and then into individual sentences to detect language
+      const lines = cleanText.split(/\n+/);
+      const chunks: { text: string; lang: "vi-VN" | "en-US" }[] = [];
+      const vnChars = /[àáảãạăắằẳẵặâấầẩẫậèéẻẽẹêếềểễệđìíỉĩịòóỏõọôốồổỗộơớờởỡợùúủũụưứừửữựỳýỷỹỵ]/i;
+
+      for (const line of lines) {
+        if (!line.trim()) continue;
+        
+        // Split by sentence punctuation (. ! ?) but keep the punctuation attached
+        const sentences = line.split(/(?<=[.!?])\s+/);
+        for (const sentence of sentences) {
+          if (!sentence.trim()) continue;
+          
+          const isVn = vnChars.test(sentence);
+          chunks.push({
+            text: sentence.trim(),
+            lang: isVn ? "vi-VN" : "en-US"
+          });
+        }
       }
-      utterance.lang = "en-US";
-      utterance.rate = 0.9; // Clear speed for learning
 
-      utterance.onstart = () => setIsSpeakingNow(true);
-      utterance.onend = () => setIsSpeakingNow(false);
-      utterance.onerror = () => setIsSpeakingNow(false);
+      if (chunks.length === 0) return;
 
-      speakingUtteranceRef.current = utterance;
-      window.speechSynthesis.speak(utterance);
+      const voices = window.speechSynthesis.getVoices();
+      const vnVoice = voices.find(v => v.lang.startsWith("vi-VN") || v.lang.startsWith("vi"));
+      const enVoice = voices.find(v => v.lang.startsWith("en-US") || v.lang.startsWith("en-GB") || v.lang.startsWith("en"));
+
+      chunks.forEach((chunk, index) => {
+        const utterance = new SpeechSynthesisUtterance(chunk.text);
+        
+        if (chunk.lang === "vi-VN") {
+          utterance.lang = "vi-VN";
+          if (vnVoice) utterance.voice = vnVoice;
+          utterance.rate = 1.0; // Natural pace for Vietnamese
+        } else {
+          utterance.lang = "en-US";
+          if (enVoice) utterance.voice = enVoice;
+          utterance.rate = 0.9; // Clear, slightly slower pace for English practice
+        }
+
+        // Set speaking states on start and end of the entire sequence
+        if (index === 0) {
+          utterance.onstart = () => setIsSpeakingNow(true);
+        }
+        if (index === chunks.length - 1) {
+          utterance.onend = () => setIsSpeakingNow(false);
+          utterance.onerror = () => setIsSpeakingNow(false);
+        }
+
+        window.speechSynthesis.speak(utterance);
+      });
     } catch (e) {
       console.error("SpeechSynthesis error:", e);
     }
