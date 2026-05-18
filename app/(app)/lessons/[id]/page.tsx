@@ -168,7 +168,7 @@ export default async function LessonPage({ params }: Props) {
       </div>
 
       <div className={`mt-8 ${subjectSlug === "mindset-ielts" ? "lg:grid lg:grid-cols-12 lg:items-start lg:gap-8" : "space-y-10"}`}>
-        <div className={subjectSlug === "mindset-ielts" ? "lg:col-span-5 space-y-10" : "space-y-10"}>
+        <div className={subjectSlug === "mindset-ielts" ? "lg:col-span-4 space-y-10" : "space-y-10"}>
           {L.youtube_video_id && (
             <section>
               <h2 className="mb-3 font-display text-xl font-semibold text-white">
@@ -219,7 +219,7 @@ export default async function LessonPage({ params }: Props) {
         </div>
 
         {subjectSlug === "mindset-ielts" && (
-          <div className="mt-8 lg:mt-0 lg:col-span-7">
+          <div className="mt-8 lg:mt-0 lg:col-span-8">
             <div className="sticky top-24 space-y-6">
               <AITeacherChat 
                 sessionInfo={{ title: L.title, summary: L.summary || "" }} 

@@ -190,7 +190,6 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
           const transcript = event.results[0][0].transcript;
           if (transcript) {
             setInput(transcript);
-            handleSend(transcript);
           }
         };
 
@@ -363,46 +362,70 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
       <div className="border-t border-slate-800 bg-slate-950/80 p-4">
         {activeTab === "speaking" ? (
           // SPEAKING MODE INTERFACE
-          <div className="flex flex-col items-center justify-center space-y-4 py-2 animate-in fade-in">
-            {/* Real-time speech recognition indicator */}
-            {speechStatus ? (
-              <div className="text-xs text-sky-400 font-semibold animate-pulse">
-                {speechStatus}
-              </div>
-            ) : isSpeakingNow ? (
-              <div className="text-xs text-emerald-400 font-semibold flex items-center gap-1.5">
-                <Volume2 size={12} className="animate-bounce" />
-                Giáo viên đang nói giảng bài...
-              </div>
-            ) : (
-              <div className="text-xs text-slate-500 font-medium">
-                Ấn nút Micro màu xanh và bắt đầu trả lời bằng tiếng Anh nhé!
-              </div>
-            )}
-
-            {/* Speaking mic button */}
-            <div className="relative">
-              {isRecording && (
-                <span className="absolute -inset-2 rounded-full bg-sky-500/20 animate-ping" />
+          <div className="flex flex-col space-y-4 py-2 animate-in fade-in">
+            <div className="flex flex-col items-center justify-center space-y-3">
+              {/* Real-time speech recognition indicator */}
+              {speechStatus ? (
+                <div className="text-xs text-sky-400 font-semibold animate-pulse">
+                  {speechStatus}
+                </div>
+              ) : isSpeakingNow ? (
+                <div className="text-xs text-emerald-400 font-semibold flex items-center gap-1.5">
+                  <Volume2 size={12} className="animate-bounce" />
+                  Giáo viên đang nói giảng bài...
+                </div>
+              ) : (
+                <div className="text-xs text-slate-500 font-medium">
+                  Ấn nút Micro màu xanh và bắt đầu trả lời bằng tiếng Anh nhé!
+                </div>
               )}
-              <button
-                type="button"
-                onClick={toggleRecording}
-                disabled={isLoading}
-                className={`flex h-16 w-16 items-center justify-center rounded-full shadow-lg transition-all duration-300 active:scale-95 ${
-                  isRecording
-                    ? "bg-red-600 text-white hover:bg-red-700 shadow-red-500/20"
-                    : "bg-sky-600 text-white hover:bg-sky-500 shadow-sky-500/20 hover:scale-105"
-                } disabled:opacity-50`}
-              >
-                {isRecording ? <MicOff size={28} /> : <Mic size={28} />}
-              </button>
+
+              {/* Speaking mic button */}
+              <div className="relative">
+                {isRecording && (
+                  <span className="absolute -inset-2 rounded-full bg-sky-500/20 animate-ping" />
+                )}
+                <button
+                  type="button"
+                  onClick={toggleRecording}
+                  disabled={isLoading}
+                  className={`flex h-14 w-14 items-center justify-center rounded-full shadow-lg transition-all duration-300 active:scale-95 ${
+                    isRecording
+                      ? "bg-red-600 text-white hover:bg-red-700 shadow-red-500/20"
+                      : "bg-sky-600 text-white hover:bg-sky-500 shadow-sky-500/20 hover:scale-105"
+                  } disabled:opacity-50`}
+                >
+                  {isRecording ? <MicOff size={24} /> : <Mic size={24} />}
+                </button>
+              </div>
+
+              {/* Subtext info */}
+              <span className="text-[10px] text-slate-600 font-medium uppercase tracking-wider">
+                {isRecording ? "Đang ghi âm... bấm để dừng" : "Nhấp để nói"}
+              </span>
             </div>
 
-            {/* Subtext info */}
-            <span className="text-[10px] text-slate-600 font-medium uppercase tracking-wider">
-              {isRecording ? "Đang lắng nghe... bấm để tắt" : "Nhấp để bắt đầu trả lời nói"}
-            </span>
+            {/* Voice transcript display & edit & send button */}
+            <form 
+              onSubmit={(e) => { e.preventDefault(); handleSend(input); }}
+              className="flex gap-2 border-t border-slate-800/80 pt-3"
+            >
+              <input
+                type="text"
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                placeholder="Câu nói của em sẽ hiện ở đây, em có thể sửa trước khi gửi..."
+                className="flex-1 rounded-xl border border-slate-700 bg-slate-800 px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 transition"
+                disabled={isLoading || isRecording}
+              />
+              <button
+                type="submit"
+                disabled={isLoading || isRecording || !input.trim()}
+                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-sky-600 text-white transition hover:bg-sky-700 disabled:opacity-50 shadow-lg shadow-sky-500/20"
+              >
+                <Send size={18} />
+              </button>
+            </form>
           </div>
         ) : (
           // TEXT CHAT MODE INTERFACE
