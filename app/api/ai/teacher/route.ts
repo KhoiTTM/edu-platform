@@ -12,39 +12,24 @@ export async function POST(req: Request) {
     }
     const { messages, sessionInfo, studentName } = await req.json();
 
+    // Simplified, extremely low-token system prompt for maximum conversational performance & free quota preservation
     const systemPrompt = `
-Bạn là một Giáo viên IELTS chuyên nghiệp, đang hướng dẫn học sinh ${studentName} học lộ trình "Mindset for IELTS Foundation".
-Buổi học hiện tại: ${sessionInfo.title}
-Chi tiết nội dung: ${sessionInfo.summary}
-
-PHƯƠNG PHÁP HỌC TẬP 4 KỸ NĂNG (Bạn phải lồng ghép hướng dẫn này):
-- Nghe (Listening): Hướng dẫn học sinh Dự đoán (Predicting) và tìm Từ đồng nghĩa (Synonyms).
-- Nói (Speaking): Yêu cầu học sinh mở rộng câu trả lời, không chỉ trả lời "Yes/No". Dùng "because" hoặc ví dụ.
-- Đọc (Reading): Hướng dẫn Skimming & Scanning và Paraphrasing.
-- Viết (Writing): Yêu cầu dùng từ nối (First, Then...) và cấu trúc 3 phần rõ ràng.
-
-VAI TRÒ CỦA BẠN (AI - GIÁO VIÊN):
-- TUYỆT ĐỐI KHÔNG tóm tắt lại toàn bộ lịch trình hay lộ trình học.
-- Bắt đầu ngay lập tức bằng cách chào học sinh và hướng dẫn bài tập/nội dung đầu tiên trong sách của buổi học này.
-- Hướng dẫn từng bước theo sách PDF và Audio track tương ứng.
-
-QUY TẮC VỚI HỌC SINH:
-- Yêu cầu học sinh tự đọc hướng dẫn/bài đọc trước khi hỏi bạn.
-- Khuyến khích học sinh làm bài trước, sau đó bạn mới sửa.
-- Nhắc học sinh ghi chú từ vựng mới vào vở.
-
-QUY TẮC VỚI PHỤ HUYNH:
-- Bạn biết rằng Phụ huynh đang giám sát phía sau (xác nhận giờ giấc, kiểm tra checklist).
-- Nếu học sinh lười biếng, hãy nhắc nhở nhẹ nhàng rằng phụ huynh sẽ kiểm tra báo cáo cuối buổi.
-
-Ngôn ngữ: Sử dụng song ngữ Anh-Việt (Tiếng Anh cho các thuật ngữ và ví dụ IELTS, Tiếng Việt để giải thích cặn kẽ).
-Phong cách: Khích lệ, chuyên nghiệp, sư phạm.
+You are a friendly, supportive IELTS Speaking Partner and Examiner for student ${studentName}.
+Your rules:
+1. Act as a natural conversational partner. The student can discuss ANY topic they like (on-topic or completely off-topic).
+2. Keep your responses short (1-3 sentences max). This is critical for high-quality listening practice.
+3. Write your entire response in English so the student stays immersed.
+4. Provide a very brief correction or vocabulary tip if appropriate, and always end with a natural follow-up question to keep the conversation flowing.
 `;
 
+    // Comprehensive free-tier fallbacks to bypass daily model quotas
     const modelsToTry = [
+      "gemini-1.5-flash",
+      "gemini-2.0-flash",
+      "gemini-2.5-flash",
+      "gemini-2.0-flash-lite-preview-02-05",
+      "gemini-1.5-pro",
       "gemini-flash-latest",
-      "gemini-1.5-flash", 
-      "gemini-1.5-pro-latest",
       "gemini-pro"
     ];
     let detailedErrors = [];
@@ -62,7 +47,7 @@ Phong cách: Khích lệ, chuyên nghiệp, sư phạm.
         // If history starts with model, prepend a system intro from 'user'
         if (history.length > 0 && history[0].role === "model") {
           history = [
-            { role: "user", parts: [{ text: `System: ${systemPrompt}\n\nLet's start the lesson.` }] },
+            { role: "user", parts: [{ text: `System: ${systemPrompt}\n\nLet's start our speaking conversation.` }] },
             ...history
           ];
         }
@@ -70,8 +55,8 @@ Phong cách: Khích lệ, chuyên nghiệp, sư phạm.
         const chat = model.startChat({
           history: history,
           generationConfig: { 
-            maxOutputTokens: 2048,
-            temperature: 0.7,
+            maxOutputTokens: 500, // Short output saves massive tokens and budget
+            temperature: 0.8,     // Friendly, natural variety
           },
         });
 
@@ -94,7 +79,7 @@ Phong cách: Khích lệ, chuyên nghiệp, sư phạm.
 
     return NextResponse.json(
       { 
-        error: "Không thể kết nối với các Model AI. Vui lòng kiểm tra API Key hoặc khu vực địa lý.", 
+        error: "Không thể kết nối với các Model AI. Vui lòng kiểm tra lại quota hoặc thử lại sau ít phút.", 
         details: detailedErrors.join(" | ") 
       }, 
       { status: 503 }
