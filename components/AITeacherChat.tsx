@@ -254,13 +254,28 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
     }
 
     if (isRecording) {
-      recognitionRef.current.stop();
+      try {
+        recognitionRef.current.abort(); // Force-stop browser voice recognition immediately
+      } catch (err) {
+        console.error("Speech recognition abort error:", err);
+      }
+      setIsRecording(false);
+      setSpeechStatus(null);
     } else {
       stopSpeaking(); // Silence AI first
       try {
         recognitionRef.current.start();
       } catch (err) {
-        console.error(err);
+        console.error("Speech recognition start error:", err);
+        // Resilient recovery for browser speech session locks
+        try {
+          recognitionRef.current.abort();
+          setTimeout(() => {
+            recognitionRef.current.start();
+          }, 200);
+        } catch (e) {
+          console.error(e);
+        }
       }
     }
   };

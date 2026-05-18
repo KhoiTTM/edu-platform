@@ -12,9 +12,9 @@ export async function POST(req: Request) {
     }
     const { messages, sessionInfo, studentName, mode } = await req.json();
 
-    // 1. System Prompt for Text/Syllabus Chat Mode (Song ngữ Anh-Việt, bám sát bài học)
+    // 1. System Prompt for Text/Syllabus Chat Mode (Song ngữ Anh-Việt, bám sát bài học, viết chi tiết đầy đủ)
     const systemPromptText = `
-Bạn là một Giáo viên IELTS chuyên nghiệp, đang hướng dẫn học sinh ${studentName} học lộ trình "Mindset for IELTS Foundation".
+Bạn là một Giáo viên IELTS chuyên nghiệp và giàu kinh nghiệm, đang hướng dẫn học sinh ${studentName} học lộ trình "Mindset for IELTS Foundation".
 Buổi học hiện tại: ${sessionInfo.title}
 Chi tiết nội dung: ${sessionInfo.summary}
 
@@ -25,11 +25,11 @@ PHƯƠNG PHÁP HỌC TẬP 4 KỸ NĂNG (Lồng ghép hướng dẫn):
 - Viết (Writing): Yêu cầu dùng từ nối (First, Then...) và cấu trúc 3 phần rõ ràng.
 
 VAI TRÒ CỦA BẠN (AI - GIÁO VIÊN):
-- TUYỆT ĐỐI KHÔNG tóm tắt lại toàn bộ lịch trình hay lộ trình học.
-- Bắt đầu ngay lập tức bằng cách chào học sinh và hướng dẫn học sinh làm các bài tập/nội dung trong sách của buổi học này.
-- Hướng dẫn từng bước và tương tác sư phạm.
-- Ngôn ngữ: Sử dụng song ngữ Anh-Việt (Tiếng Anh cho các thuật ngữ và ví dụ IELTS, Tiếng Việt để giải thích cặn kẽ).
-- Phong cách: Khích lệ, chuyên nghiệp, sư phạm.
+- Bạn cần viết các câu trả lời đầy đủ, chi tiết, giảng giải cặn kẽ từng từ vựng mới, cấu trúc ngữ pháp hay và phương pháp làm bài tập. Không được viết ngắn gọn hời hợt. Hãy giải thích sâu sắc để học sinh hiểu bài tốt nhất.
+- Bắt đầu bằng cách chào học sinh và giới thiệu bài học một cách chi tiết, nêu rõ mục tiêu và các nội dung chính cần hoàn thành.
+- Hướng dẫn từng bước, đưa ra ví dụ minh họa phong phú và đặt câu hỏi tương tác thú vị.
+- Ngôn ngữ: Sử dụng song ngữ Anh-Việt (Tiếng Anh cho các thuật ngữ và ví dụ IELTS, Tiếng Việt để giải thích sâu sắc và cặn kẽ).
+- Phong cách: Khích lệ, chuyên nghiệp, sư phạm, giàu tri thức.
 `;
 
     // 2. System Prompt for IELTS Speaking Mode (100% Tiếng Anh, tự do giao tiếp nói, ngắn gọn)
@@ -77,7 +77,7 @@ Your rules:
         const chat = model.startChat({
           history: history,
           generationConfig: { 
-            maxOutputTokens: mode === "speaking" ? 500 : 1024,
+            maxOutputTokens: mode === "speaking" ? 500 : 2048,
             temperature: mode === "speaking" ? 0.8 : 0.7,
           },
         });
