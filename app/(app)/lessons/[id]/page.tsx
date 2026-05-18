@@ -123,9 +123,53 @@ export default async function LessonPage({ params }: Props) {
         )}
       </header>
 
-      <div className={`mt-8 ${subjectSlug === "mindset-ielts" ? "lg:grid lg:grid-cols-2 lg:items-start lg:gap-8" : "space-y-10"}`}>
-        <div className={subjectSlug === "mindset-ielts" ? "space-y-10" : ""}>
-          {L.youtube_video_id ? (
+      {/* Top info row: Lesson Goals & Textbook Links */}
+      <div className="mt-6 grid gap-6 sm:grid-cols-2">
+        {/* Lesson Objective */}
+        <div className="rounded-2xl border border-sky-950/40 bg-sky-950/20 p-5 text-sm text-sky-400 backdrop-blur-md">
+          <h3 className="font-semibold text-base mb-2 text-sky-300 flex items-center gap-1.5">
+            🎯 Mục tiêu buổi học
+          </h3>
+          <p className="text-slate-300 leading-relaxed">
+            {L.summary || "Khám phá kiến thức mới thông qua các tài liệu, bài giảng và bài tập thực hành sinh động."}
+          </p>
+        </div>
+
+        {/* Textbook link/embed */}
+        {subjectSlug === "mindset-ielts" ? (
+          subjectRow?.textbook_pdf_url && (
+            <div className="rounded-2xl border border-slate-800 bg-slate-900/50 p-5 shadow-xl backdrop-blur-md flex flex-col justify-between">
+              <div>
+                <h3 className="font-display text-base font-semibold text-white">📖 Sách giáo trình</h3>
+                <p className="mt-1.5 text-xs text-slate-300 font-medium">{subjectRow.textbook_title || "Mindset for IELTS Foundation"}</p>
+                {L.page_hint && (
+                  <p className="mt-1 text-xs text-slate-400">
+                    Phần cần học cho bài này: <span className="text-sky-400 font-semibold">{L.page_hint}</span>
+                  </p>
+                )}
+              </div>
+              <a
+                href={subjectRow.textbook_pdf_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex min-h-[40px] items-center justify-center rounded-xl bg-sky-600 px-4 text-xs font-semibold text-white transition hover:bg-sky-700 shadow-lg shadow-sky-500/20"
+              >
+                Mở Sách Học Ở Tab Mới ↗
+              </a>
+            </div>
+          )
+        ) : (
+          <TextbookSection
+            subject={subjectRow}
+            pageHint={L.page_hint}
+            lessonTitle={L.title}
+          />
+        )}
+      </div>
+
+      <div className={`mt-8 ${subjectSlug === "mindset-ielts" ? "lg:grid lg:grid-cols-12 lg:items-start lg:gap-8" : "space-y-10"}`}>
+        <div className={subjectSlug === "mindset-ielts" ? "lg:col-span-5 space-y-10" : "space-y-10"}>
+          {L.youtube_video_id && (
             <section>
               <h2 className="mb-3 font-display text-xl font-semibold text-white">
                 Tài liệu học tập
@@ -142,43 +186,6 @@ export default async function LessonPage({ params }: Props) {
                 </a>
               </div>
             </section>
-          ) : (
-            <div className="rounded-2xl border border-sky-900/50 bg-sky-950/20 p-5 text-sm text-sky-400">
-              <h3 className="font-semibold mb-1">Mục tiêu buổi học</h3>
-              <p>{L.summary}</p>
-            </div>
-          )}
-
-          {subjectSlug === "mindset-ielts" ? (
-            subjectRow?.textbook_pdf_url && (
-              <section className="rounded-2xl border border-slate-800 bg-slate-900/50 p-5 shadow-xl backdrop-blur-md animate-in fade-in">
-                <h2 className="font-display text-lg font-semibold text-white">Sách giáo trình</h2>
-                <div className="mt-3 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                  <div className="text-sm text-slate-400">
-                    <p className="font-medium text-slate-300">{subjectRow.textbook_title || "Mindset for IELTS Foundation"}</p>
-                    {L.page_hint && (
-                      <p className="mt-1">
-                        Phần cần học cho bài này: <span className="text-sky-400 font-semibold">{L.page_hint}</span>
-                      </p>
-                    )}
-                  </div>
-                  <a
-                    href={subjectRow.textbook_pdf_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex min-h-[44px] shrink-0 items-center justify-center rounded-xl bg-sky-600 px-5 text-sm font-semibold text-white transition hover:bg-sky-700 shadow-lg shadow-sky-500/20"
-                  >
-                    Mở Sách Học Ở Tab Mới ↗
-                  </a>
-                </div>
-              </section>
-            )
-          ) : (
-            <TextbookSection
-              subject={subjectRow}
-              pageHint={L.page_hint}
-              lessonTitle={L.title}
-            />
           )}
 
           {subjectSlug !== "mindset-ielts" && (
@@ -212,7 +219,7 @@ export default async function LessonPage({ params }: Props) {
         </div>
 
         {subjectSlug === "mindset-ielts" && (
-          <div className="mt-8 lg:mt-0">
+          <div className="mt-8 lg:mt-0 lg:col-span-7">
             <div className="sticky top-24 space-y-6">
               <AITeacherChat 
                 sessionInfo={{ title: L.title, summary: L.summary || "" }} 
@@ -239,7 +246,7 @@ export default async function LessonPage({ params }: Props) {
           </div>
         )}
       </div>
-      {subjectSlug === "tieng_anh" && <DictionaryPopup />}
+      <DictionaryPopup />
     </div>
   );
 }

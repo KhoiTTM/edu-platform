@@ -136,7 +136,7 @@ export default async function HocTapSubjectPage({ params, searchParams }: Props)
       ) : (
         <LessonListByTopic lessons={lessons} />
       )}
-      {subject === "tieng_anh" && <DictionaryPopup />}
+      <DictionaryPopup />
     </div>
   );
 }
