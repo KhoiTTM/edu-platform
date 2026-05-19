@@ -5,6 +5,7 @@ import { LessonPractice } from "@/components/LessonPractice";
 import { TextbookSection } from "@/components/TextbookSection";
 import AITeacherChat from "@/components/AITeacherChat";
 import { DictionaryPopup } from "@/components/DictionaryPopup";
+import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import { getFallbackQuestionsForUnit } from "@/lib/ieltsQuizzes";
 import type { Lesson, Quiz, QuizQuestion, Subject, Volume } from "@/types/database";
 
@@ -239,11 +240,31 @@ export default async function LessonPage({ params }: Props) {
             </section>
           )}
 
+          {/* MATH & ENGLISH GRADE 3: YouTube Video Player */}
+          {subjectSlug !== "mindset-ielts" && L.youtube_video_id && (
+            <section>
+              <h2 className="mb-3 font-display text-lg font-semibold text-white">
+                Tài liệu học tập
+              </h2>
+              <YouTubeEmbed videoId={L.youtube_video_id} title={L.title} />
+              <div className="mt-2 text-right">
+                <a 
+                  href={`https://www.youtube.com/watch?v=${L.youtube_video_id}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-sky-500 hover:underline"
+                >
+                  Mở video trực tiếp trên YouTube ↗
+                </a>
+              </div>
+            </section>
+          )}
+
           {/* Quiz / Practice section */}
           {practiceQuestions.length > 0 ? (
             <section className="space-y-3">
               <h2 className="font-display text-sm font-semibold text-white px-1">
-                📝 Bài tập thực hành (15-20 câu)
+                📝 Bài tập thực hành {subjectSlug === "mindset-ielts" ? "(15-20 câu)" : ""}
               </h2>
               <LessonPractice questions={practiceQuestions} />
             </section>
@@ -253,6 +274,24 @@ export default async function LessonPage({ params }: Props) {
                 Chưa có bài tập thực hành cho bài này.
               </p>
             )
+          )}
+
+          {/* MATH & ENGLISH GRADE 3: General Optional Quiz link */}
+          {subjectSlug !== "mindset-ielts" && Q && (
+            <section className="rounded-2xl border border-slate-800 bg-slate-900/50 p-5 sm:p-6 shadow-xl backdrop-blur-md">
+              <h2 className="font-display text-lg font-semibold text-white">
+                Kiểm tra tổng hợp (tùy chọn)
+              </h2>
+              <p className="mt-2 text-sm text-slate-400">
+                Làm một lượt hết các câu và lưu điểm vào bảng điểm.
+              </p>
+              <Link
+                href={`/quiz/${Q.id}`}
+                className="mt-4 inline-flex min-h-[48px] items-center justify-center rounded-xl bg-sky-600 px-8 py-3 text-base font-semibold text-white transition hover:bg-sky-700 shadow-lg shadow-sky-500/20"
+              >
+                Vào bài kiểm tra
+              </Link>
+            </section>
           )}
         </div>
 
