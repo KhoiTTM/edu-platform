@@ -5,6 +5,7 @@ import { LessonPractice } from "@/components/LessonPractice";
 import { TextbookSection } from "@/components/TextbookSection";
 import AITeacherChat from "@/components/AITeacherChat";
 import { DictionaryPopup } from "@/components/DictionaryPopup";
+import { getFallbackQuestionsForUnit } from "@/lib/ieltsQuizzes";
 import type { Lesson, Quiz, QuizQuestion, Subject, Volume } from "@/types/database";
 
 type Props = { params: Promise<{ id: string }> };
@@ -80,6 +81,19 @@ export default async function LessonPage({ params }: Props) {
   const subjectSlug = L.subject_slug ?? "toan";
   const subjectLabel = L.subject_label_vi ?? "Môn học";
   const tapQuery = `?tap=${volume}`;
+
+  // Parse Unit Number from the lesson title (e.g. U1, U2... U10)
+  const getUnitNumber = (title: string): number => {
+    const match = title.match(/U(\d+)/i);
+    return match ? parseInt(match[1]) : 1;
+  };
+  const unitNum = getUnitNumber(L.title);
+
+  // If database quiz is empty (which happens for new sessions), fallback to our robust 15-question set for the unit!
+  if (subjectSlug === "mindset-ielts" && practiceQuestions.length === 0) {
+    const dummyQuizId = Q?.id || `dummy-quiz-${id}`;
+    practiceQuestions = getFallbackQuestionsForUnit(unitNum, dummyQuizId);
+  }
 
   // Parse BBC topic from lesson summary for IELTS
   let bbcTopic: string | null = null;

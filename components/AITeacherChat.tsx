@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
-import { Send, User, Bot, Loader2 } from "lucide-react";
+import { Send, User, Bot, Loader2, HelpCircle } from "lucide-react";
+import { getScriptForUnit } from "@/lib/ieltsQuizzes";
 
 interface Message {
   role: "user" | "assistant";
@@ -16,58 +17,117 @@ interface AITeacherChatProps {
   studentName: string;
 }
 
+// Check if user is asking a question that requires real-time Gemini AI explanation
+const isQuestionRequestingExplanation = (text: string): boolean => {
+  const lowercase = text.toLowerCase().trim();
+  const questionWords = [
+    "tại sao", "tai sao", "vì sao", "vi sao", "là gì", "la gi", "nghĩa là", "nghia la",
+    "giải thích", "giai thich", "hướng dẫn", "huong dan", "dịch", "dich", "như thế nào",
+    "nhu the nao", "sao lại", "sao lai", "what", "why", "how", "explain", "translate",
+    "meaning", "differ", "khác gì", "khac gi", "?"
+  ];
+  return questionWords.some(word => lowercase.includes(word));
+};
+
 export default function AITeacherChat({ sessionInfo, studentName }: AITeacherChatProps) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  
+  // Track scripted step index
+  const [stepIndex, setStepIndex] = useState(0);
 
   const scrollRef = useRef<HTMLDivElement>(null);
-  const hasGreeted = useRef(false);
+  const hasInitialized = useRef(false);
 
-  const handleSend = useCallback(async (text: string, silent = false) => {
-    const userMessage = text;
-    if (!userMessage.trim()) return;
+  // Helper to parse Unit Number from lesson title
+  const getUnitNumber = (title: string): number => {
+    const match = title.match(/U(\d+)/i);
+    return match ? parseInt(match[1]) : 1;
+  };
+  const unitNum = getUnitNumber(sessionInfo.title);
+  const script = getScriptForUnit(unitNum, studentName, sessionInfo.summary);
 
-    if (!silent) {
+  // Hybrid Flow Send Handler
+  const handleSend = useCallback(async (text: string, isInitial = false) => {
+    const userMessage = text.trim();
+    if (!userMessage) return;
+
+    if (!isInitial) {
       setMessages((prev) => [...prev, { role: "user", content: userMessage }]);
       setInput("");
     }
-    
-    setIsLoading(true);
 
-    try {
-      const response = await fetch("/api/ai/teacher", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          messages: silent ? [{ role: "user", content: userMessage }] : [...messages, { role: "user", content: userMessage }],
-          sessionInfo,
-          studentName,
-          mode: "text", // Always text mode
-        }),
-      });
+    // 10% Realtime AI: Student asks a custom question requesting explanation or dictionary help
+    if (!isInitial && isQuestionRequestingExplanation(userMessage)) {
+      setIsLoading(true);
+      try {
+        const response = await fetch("/api/ai/teacher", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            messages: [...messages, { role: "user", content: userMessage }],
+            sessionInfo,
+            studentName,
+            mode: "text",
+          }),
+        });
 
-      const data = await response.json();
-      if (data.text) {
-        setMessages((prev) => [...prev, { role: "assistant", content: data.text }]);
-      } else if (data.error) {
+        const data = await response.json();
+        if (data.text) {
+          setMessages((prev) => [...prev, { 
+            role: "assistant", 
+            content: `🤖 **[Giải thích bằng AI Realtime]**\n\n${data.text}` 
+          }]);
+        } else if (data.error) {
+          setMessages((prev) => [...prev, { 
+            role: "assistant", 
+            content: `⚠️ Lỗi kết nối AI: ${data.error}` 
+          }]);
+        }
+      } catch (error) {
+        console.error("Gemini API error:", error);
         setMessages((prev) => [...prev, { 
           role: "assistant", 
-          content: `⚠️ Lỗi: ${data.error}${data.details ? `\n\nChi tiết: ${data.details}` : ""}` 
+          content: "⚠️ Không thể kết nối với AI lúc này. Hãy kiểm tra mạng và thử lại nhé!" 
         }]);
+      } finally {
+        setIsLoading(false);
       }
-    } catch (error) {
-      console.error("Chat error:", error);
-    } finally {
-      setIsLoading(false);
+    } 
+    // 90% Scripted Flow: Standard lesson steps running completely LOCALLY with zero API quota usage!
+    else {
+      setIsLoading(true);
+      
+      // Minor delay to simulate natural teacher typing
+      setTimeout(() => {
+        if (isInitial) {
+          // Render greeting (Step 0)
+          setMessages([{ role: "assistant", content: script.steps[0].text }]);
+          setStepIndex(0);
+        } else {
+          const nextIndex = stepIndex + 1;
+          if (nextIndex < script.steps.length) {
+            setMessages((prev) => [...prev, { role: "assistant", content: script.steps[nextIndex].text }]);
+            setStepIndex(nextIndex);
+          } else {
+            // General scripted fallback encouragement
+            setMessages((prev) => [...prev, { 
+              role: "assistant", 
+              content: `Thầy/Cô rất khen ngợi tinh thần tự học của ${studentName}! 🌟\n\nNếu em gặp câu hỏi khó nào trong phần Bài tập trắc nghiệm ở bên trái hoặc cần dịch nghĩa từ vựng, em hãy gõ trực tiếp câu hỏi ở đây kèm dấu "?" hoặc từ "giải thích" nhé, thầy cô AI Realtime sẽ hướng dẫn chi tiết ngay cho em!` 
+            }]);
+          }
+        }
+        setIsLoading(false);
+      }, isInitial ? 0 : 600);
     }
-  }, [messages, sessionInfo, studentName]);
+  }, [messages, stepIndex, script, sessionInfo, studentName]);
 
-  // Initial greeting - ONLY ONCE
+  // Initial mount: load Greeting step
   useEffect(() => {
-    if (!hasGreeted.current) {
-      hasGreeted.current = true;
-      handleSend("Chào giáo viên, em đã sẵn sàng cho buổi học hôm nay.", true);
+    if (!hasInitialized.current) {
+      hasInitialized.current = true;
+      handleSend("ready", true);
     }
   }, [handleSend]);
 
@@ -87,9 +147,13 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
               <Bot size={18} />
             </div>
             <div>
-              <h3 className="text-sm font-semibold text-white">Giáo viên IELTS AI (Syllabus Coach)</h3>
-              <p className="text-[10px] text-slate-500">Kỹ năng học tập toàn diện bám sát bài học</p>
+              <h3 className="text-sm font-semibold text-white">Giáo viên IELTS AI (Syllabus Guide)</h3>
+              <p className="text-[10px] text-slate-500">Giáo án Tương tác + AI Giải đáp 24/7</p>
             </div>
+          </div>
+          <div className="flex items-center gap-1.5 rounded-lg bg-sky-950/30 px-2 py-1 border border-sky-900/30 text-[10px] font-semibold text-sky-400">
+            <HelpCircle size={12} />
+            Chỉ dùng AI khi đặt câu hỏi
           </div>
         </div>
       </div>
@@ -126,7 +190,7 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
             </div>
             <div className="flex items-center gap-2 rounded-2xl bg-slate-900/80 border border-slate-800 px-4 py-2">
               <Loader2 size={16} className="animate-spin text-sky-500" />
-              <span className="text-xs text-slate-400">Giáo viên đang soạn phản hồi & chấm điểm bài học...</span>
+              <span className="text-xs text-slate-400">Giáo viên đang xử lý phản hồi...</span>
             </div>
           </div>
         )}
@@ -142,7 +206,7 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Đặt câu hỏi, nộp bài tập hoặc chat bám sát nội dung sách với AI..."
+            placeholder="Trả lời giáo viên, hoặc gõ câu hỏi để hỏi AI Realtime..."
             className="flex-1 rounded-xl border border-slate-700 bg-slate-800 px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 transition"
             disabled={isLoading}
           />
@@ -154,6 +218,9 @@ export default function AITeacherChat({ sessionInfo, studentName }: AITeacherCha
             <Send size={18} />
           </button>
         </form>
+        <p className="mt-2 text-[10px] text-slate-500 text-center">
+          💡 Mẹo: Khi cần AI giải thích ngữ pháp hoặc dịch từ, hãy nhập câu hỏi có chứa từ &ldquo;giải thích&rdquo;, &ldquo;dịch&rdquo; hoặc dấu hỏi &ldquo;?&rdquo;.
+        </p>
       </div>
     </div>
   );
