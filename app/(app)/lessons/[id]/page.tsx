@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
-import { YouTubeEmbed } from "@/components/YouTubeEmbed";
 import { LessonPractice } from "@/components/LessonPractice";
 import { TextbookSection } from "@/components/TextbookSection";
 import AITeacherChat from "@/components/AITeacherChat";
@@ -82,6 +81,15 @@ export default async function LessonPage({ params }: Props) {
   const subjectLabel = L.subject_label_vi ?? "Môn học";
   const tapQuery = `?tap=${volume}`;
 
+  // Parse BBC topic from lesson summary for IELTS
+  let bbcTopic: string | null = null;
+  if (subjectSlug === "mindset-ielts" && L.summary) {
+    const match = L.summary.match(/BBC:\s*(.+)$/i);
+    if (match) {
+      bbcTopic = match[1].trim();
+    }
+  }
+
   return (
     <div className="mx-auto max-w-4xl">
       <nav className="text-sm text-slate-500">
@@ -111,7 +119,6 @@ export default async function LessonPage({ params }: Props) {
         )}
         <p className="text-xs font-semibold uppercase tracking-wide text-sky-500">
           {L.grade === 0 ? "Mọi khối lớp" : `Khối lớp ${L.grade}`} · {subjectLabel} · Tập {volume}
-          {(L.video_part ?? 0) > 0 && L.youtube_video_id && ` · Video phần ${L.video_part}`}
         </p>
         <h1 className="font-display text-3xl font-bold text-white sm:text-4xl">
           {L.title}
@@ -168,58 +175,75 @@ export default async function LessonPage({ params }: Props) {
       </div>
 
       <div className={`mt-8 ${subjectSlug === "mindset-ielts" ? "lg:grid lg:grid-cols-12 lg:items-start lg:gap-8" : "space-y-10"}`}>
-        <div className={subjectSlug === "mindset-ielts" ? "lg:col-span-3 space-y-10" : "space-y-10"}>
-          {L.youtube_video_id && (
-            <section>
-              <h2 className="mb-3 font-display text-xl font-semibold text-white">
-                Tài liệu học tập
+        <div className={subjectSlug === "mindset-ielts" ? "lg:col-span-4 space-y-8" : "space-y-10"}>
+          {/* IELTS Supplemental Resources */}
+          {subjectSlug === "mindset-ielts" && (
+            <section className="rounded-2xl border border-slate-800 bg-slate-900/50 p-5 shadow-xl backdrop-blur-md space-y-4">
+              <h2 className="font-display text-sm font-semibold text-white border-b border-slate-800 pb-2">
+                🔗 Tài nguyên bổ trợ
               </h2>
-              <YouTubeEmbed videoId={L.youtube_video_id} title={L.title} />
-              <div className="mt-2 text-right">
-                <a 
-                  href={`https://www.youtube.com/watch?v=${L.youtube_video_id}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs text-sky-500 hover:underline"
-                >
-                  Mở video trực tiếp trên YouTube ↗
-                </a>
-              </div>
+              
+              {/* Listen link */}
+              {L.youtube_video_id ? (
+                <div className="rounded-xl border border-sky-950/40 bg-sky-950/20 p-3.5 flex flex-col justify-between">
+                  <div>
+                    <h4 className="text-[10px] font-bold uppercase tracking-wider text-sky-400">🎧 HỌC NGHE (LISTENING)</h4>
+                    <p className="mt-1 text-xs text-slate-300">Buổi học này có file ghi âm Listening Track đi kèm.</p>
+                  </div>
+                  <a
+                    href={`https://www.youtube.com/watch?v=${L.youtube_video_id}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 inline-flex min-h-[36px] items-center justify-center rounded-lg bg-sky-600 px-4 text-xs font-semibold text-white transition hover:bg-sky-700 shadow-md shadow-sky-500/10"
+                  >
+                    Nghe Listening Track ↗
+                  </a>
+                </div>
+              ) : null}
+
+              {/* BBC link */}
+              {bbcTopic ? (
+                <div className="rounded-xl border border-emerald-950/40 bg-emerald-950/20 p-3.5 flex flex-col justify-between">
+                  <div>
+                    <h4 className="text-[10px] font-bold uppercase tracking-wider text-emerald-400">🌐 BBC LEARNING ENGLISH</h4>
+                    <p className="mt-1 text-xs text-slate-300">Chủ đề thảo luận: <span className="font-medium text-white">&ldquo;{bbcTopic}&rdquo;</span></p>
+                  </div>
+                  <a
+                    href={`https://www.google.com/search?q=BBC+Learning+English+${encodeURIComponent(bbcTopic)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 inline-flex min-h-[36px] items-center justify-center rounded-lg bg-emerald-600 px-4 text-xs font-semibold text-white transition hover:bg-emerald-700 shadow-md shadow-emerald-500/10"
+                  >
+                    Học chủ đề trên BBC ↗
+                  </a>
+                </div>
+              ) : null}
+
+              {!L.youtube_video_id && !bbcTopic && (
+                <p className="text-xs text-slate-400">Không có tài nguyên bổ trợ ngoài sách giáo trình cho bài học này.</p>
+              )}
             </section>
           )}
 
-          {subjectSlug !== "mindset-ielts" && (
-            <>
-              {practiceQuestions.length > 0 ? (
-                <LessonPractice questions={practiceQuestions} />
-              ) : (
-                <p className="rounded-2xl border border-dashed border-slate-800 bg-slate-900/50 p-6 text-center text-sm text-slate-400 backdrop-blur-md">
-                  Chưa có bài tập thực hành cho bài này.
-                </p>
-              )}
-
-              {Q && (
-                <section className="rounded-2xl border border-slate-800 bg-slate-900/50 p-5 sm:p-6 shadow-xl backdrop-blur-md">
-                  <h2 className="font-display text-lg font-semibold text-white">
-                    Kiểm tra tổng hợp (tùy chọn)
-                  </h2>
-                  <p className="mt-2 text-sm text-slate-400">
-                    Làm một lượt hết các câu và lưu điểm vào bảng điểm.
-                  </p>
-                  <Link
-                    href={`/quiz/${Q.id}`}
-                    className="mt-4 inline-flex min-h-[48px] items-center justify-center rounded-xl bg-sky-600 px-8 py-3 text-base font-semibold text-white transition hover:bg-sky-700 shadow-lg shadow-sky-500/20"
-                  >
-                    Vào bài kiểm tra
-                  </Link>
-                </section>
-              )}
-            </>
+          {/* Quiz / Practice section */}
+          {practiceQuestions.length > 0 ? (
+            <section className="space-y-3">
+              <h2 className="font-display text-sm font-semibold text-white px-1">
+                📝 Bài tập thực hành (15-20 câu)
+              </h2>
+              <LessonPractice questions={practiceQuestions} />
+            </section>
+          ) : (
+            subjectSlug !== "mindset-ielts" && (
+              <p className="rounded-2xl border border-dashed border-slate-800 bg-slate-900/50 p-6 text-center text-sm text-slate-400 backdrop-blur-md">
+                Chưa có bài tập thực hành cho bài này.
+              </p>
+            )
           )}
         </div>
 
-        {subjectSlug === "mindset-ielts" && (
-          <div className="mt-8 lg:mt-0 lg:col-span-9">
+        {subjectSlug === "mindset-ielts" ? (
+          <div className="mt-8 lg:mt-0 lg:col-span-8">
             <div className="sticky top-24 space-y-6">
               <AITeacherChat 
                 sessionInfo={{ title: L.title, summary: L.summary || "" }} 
@@ -244,7 +268,7 @@ export default async function LessonPage({ params }: Props) {
               </div>
             </div>
           </div>
-        )}
+        ) : null}
       </div>
       <DictionaryPopup />
     </div>
