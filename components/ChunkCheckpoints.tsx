@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { CheckCircle2, XCircle, Lightbulb, RefreshCw, ChevronRight, Sparkles } from "lucide-react";
-import type { Checkpoint } from "@/lib/checkpoints/unit1";
+import type { Checkpoint } from "@/lib/checkpoints";
 
 // ─── Answer validation ────────────────────────────────────────────────────────
 
@@ -136,7 +136,7 @@ function CheckpointCard({ checkpoint, index, total, onDone }: CheckpointCardProp
         )}
         {state === "revealed" && (
           <span className="flex items-center gap-1 text-[10px] font-semibold text-slate-500">
-            Let's look closer
+            Let&apos;s look closer
           </span>
         )}
       </div>
@@ -202,7 +202,7 @@ function CheckpointCard({ checkpoint, index, total, onDone }: CheckpointCardProp
               <div className="flex items-start gap-2 rounded-xl bg-amber-950/30 border border-amber-800/40 px-3.5 py-2.5 mt-1 animate-in slide-in-from-top-1 duration-300">
                 <Lightbulb size={14} className="text-amber-400 mt-0.5 shrink-0" />
                 <div className="flex-1">
-                  <p className="text-xs text-amber-300 font-medium">Aria's Hint: <span className="font-normal opacity-90">{checkpoint.hint}</span></p>
+                  <p className="text-xs text-amber-300 font-medium">Aria&apos;s Hint: <span className="font-normal opacity-90">{checkpoint.hint}</span></p>
                   <div className="mt-2 flex gap-3">
                     <button
                       onClick={retry}
@@ -247,7 +247,7 @@ function CheckpointCard({ checkpoint, index, total, onDone }: CheckpointCardProp
               &ldquo;{checkpoint.revealText}&rdquo;
             </p>
             <p className="text-[10px] text-slate-500 font-medium italic">
-              I've noted this for your summary. Keep going! 🚀
+              I&apos;ve noted this for your summary. Keep going! 🚀
             </p>
           </div>
         )}

@@ -22,27 +22,27 @@ interface Props {
   studentName?: string;
 }
 
+type SessionPhase = "warmup" | "listen" | "explore" | "speak" | "check";
+const PHASE_ORDER: SessionPhase[] = ["warmup", "listen", "explore", "speak", "check"];
+
 export function ListeningClient({ lesson, transcript, questions, studentName = "bạn" }: Props) {
   // ── Session Phase State (Replacing old tabs) ──────────────────────────────
-  type SessionPhase = "warmup" | "listen" | "explore" | "speak" | "check";
   const [sessionPhase, setSessionPhase] = useState<SessionPhase>("warmup");
   const [highestPhase, setHighestPhase] = useState<number>(0);
 
-  const phaseOrder: SessionPhase[] = ["warmup", "listen", "explore", "speak", "check"];
-
   const changePhase = (newPhase: SessionPhase) => {
-    const newIdx = phaseOrder.indexOf(newPhase);
+    const newIdx = PHASE_ORDER.indexOf(newPhase);
     if (newIdx <= highestPhase) {
       setSessionPhase(newPhase);
     }
   };
 
   useEffect(() => {
-    const currentIdx = phaseOrder.indexOf(sessionPhase);
+    const currentIdx = PHASE_ORDER.indexOf(sessionPhase);
     if (currentIdx > highestPhase) {
       setHighestPhase(currentIdx);
     }
-  }, [sessionPhase, highestPhase, phaseOrder]);
+  }, [sessionPhase, highestPhase]);
 
   // Step 1: Chunk checkpoint state
   const [checkpointsDone, setCheckpointsDone] = useState(false);
