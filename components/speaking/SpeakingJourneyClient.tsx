@@ -144,7 +144,7 @@ export function SpeakingJourneyClient({
               <AriaConversationBubble message="" isTyping={true} />
             )}
             
-            {turnCount >= totalTurnsGoal && phase !== "complete" && (
+            {turnCount >= totalTurnsGoal && (
               <div className="flex justify-center pt-4">
                 <button
                   onClick={completeSession}
@@ -160,7 +160,7 @@ export function SpeakingJourneyClient({
           <div className="pt-4 mt-auto">
             <SpeakingInputArea 
               onSubmit={sendMessage}
-              isDisabled={isAriaThinking || phase === "complete"}
+              isDisabled={isAriaThinking}
               placeholder={turnCount === 0 ? "Type your first response..." : "Your turn to speak..."}
             />
           </div>
