@@ -62,7 +62,7 @@ export function TranscriptLineExpander({ english, vietnamese, index, keyPhrase, 
                 </p>
               </div>
               <p className="text-[11px] text-slate-300 leading-relaxed">
-                <span className="font-bold text-emerald-400">"{keyPhrase}"</span>
+                <span className="font-bold text-emerald-400">&quot;{keyPhrase}&quot;</span>
                 {phraseNote ? ` — ${phraseNote}` : ""}
               </p>
             </div>

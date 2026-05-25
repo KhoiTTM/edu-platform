@@ -42,7 +42,7 @@ export function VocabFlipCard({ word, meaning, pronunciation, example }: Props) 
           </div>
           {example && (
             <p className="text-[10px] text-slate-400 italic leading-snug border-l-2 border-emerald-800/50 pl-2">
-              "{example}"
+              &quot;{example}&quot;
             </p>
           )}
         </div>

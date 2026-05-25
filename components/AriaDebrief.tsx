@@ -57,7 +57,7 @@ export function AriaDebrief({ score, total, studentName, lessonTitle, onRestart 
           <Trophy className="text-amber-500" size={32} />
         </div>
         <h2 className="text-2xl font-black text-white tracking-tight">SESSION COMPLETE</h2>
-        <p className="text-sm text-slate-400 italic">"Another step closer to your IELTS goal, {studentName}!"</p>
+        <p className="text-sm text-slate-400 italic">&quot;Another step closer to your IELTS goal, {studentName}!&quot;</p>
       </div>
 
       <div className="grid grid-cols-2 gap-4">
@@ -74,7 +74,7 @@ export function AriaDebrief({ score, total, studentName, lessonTitle, onRestart 
       <div className="rounded-xl bg-sky-950/20 border border-sky-900/30 p-5 space-y-3">
         <div className="flex items-center gap-2 border-b border-sky-900/20 pb-2">
           <Sparkles size={14} className="text-sky-400" />
-          <p className="text-[11px] font-bold uppercase tracking-wider text-sky-400">Coach Aria's Take</p>
+          <p className="text-[11px] font-bold uppercase tracking-wider text-sky-400">Coach Aria&apos;s Take</p>
         </div>
         
         {isLoading ? (

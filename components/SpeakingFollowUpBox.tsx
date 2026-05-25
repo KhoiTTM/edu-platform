@@ -119,7 +119,7 @@ export function SpeakingFollowUpBox({ studentName, lessonTitle, lessonSummary, s
               <Sparkles className="text-indigo-400" size={32} />
             </div>
             <p className="text-xs text-slate-400 leading-relaxed max-w-[200px]">
-              "Jack's family has many skills. What about yours? Type or speak below!"
+              &quot;Jack&apos;s family has many skills. What about yours? Type or speak below!&quot;
             </p>
           </div>
         )}

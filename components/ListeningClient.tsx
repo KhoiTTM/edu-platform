@@ -42,7 +42,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
     if (currentIdx > highestPhase) {
       setHighestPhase(currentIdx);
     }
-  }, [sessionPhase]);
+  }, [sessionPhase, highestPhase, phaseOrder]);
 
   // Step 1: Chunk checkpoint state
   const [checkpointsDone, setCheckpointsDone] = useState(false);
@@ -186,7 +186,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
               </h2>
               <p className="mt-1 text-xs text-slate-400 leading-relaxed">
                 Watch the video above, then answer the 3 checkpoints below.
-                You can replay anytime — there’s no rush. 🎧
+                You can replay anytime — there&apos;s no rush. 🎧
               </p>
             </div>
 
@@ -204,7 +204,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
                 onClick={() => setSessionPhase("explore")}
                 className="w-full inline-flex min-h-[42px] items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 text-sm font-semibold text-white transition hover:bg-emerald-500 shadow-lg shadow-emerald-500/15 active:scale-[0.98]"
               >
-                Let's break down the details 🔍
+                Let&apos;s break down the details 🔍
               </button>
             )}
           </div>
