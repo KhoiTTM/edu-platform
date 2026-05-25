@@ -27,6 +27,7 @@ export type Lesson = {
   summary: string | null;
   pdf_url: string | null;
   youtube_video_id: string | null;
+  skill_focus?: string | null;
   duration_minutes: number | null;
   created_at: string;
   subject_slug: string;

@@ -10,108 +10,161 @@ export async function POST(req: Request) {
     if (!cleanKey) {
       return NextResponse.json({ error: "Thiếu GEMINI_API_KEY trên Vercel. Vui lòng cấu hình Environment Variables." }, { status: 500 });
     }
-    const { messages, sessionInfo, studentName, mode } = await req.json();
+    const { messages, sessionInfo, studentName, mode, struggledWords } = await req.json();
 
-    // 1. System Prompt for Text/Syllabus Chat Mode (Song ngữ Anh-Việt, bám sát bài học, viết chi tiết đầy đủ)
-    const systemPromptText = `
-Bạn là một Giáo viên IELTS chuyên nghiệp và giàu kinh nghiệm, đang hướng dẫn học sinh ${studentName} học lộ trình "Mindset for IELTS Foundation".
-Buổi học hiện tại: ${sessionInfo.title}
-Chi tiết nội dung: ${sessionInfo.summary}
+    // Per-mode config: token limits and temperature tuned for each use case
+    const modeConfig: Record<string, { maxTokens: number; temperature: number }> = {
+      warmup:           { maxTokens: 200,  temperature: 0.85 },
+      speaking_feedback:{ maxTokens: 280,  temperature: 0.60 },
+      debrief:          { maxTokens: 320,  temperature: 0.65 },
+      speaking:         { maxTokens: 500,  temperature: 0.80 },
+      text:             { maxTokens: 2048, temperature: 0.70 },
+    };
+    const { maxTokens, temperature } = modeConfig[mode] ?? modeConfig["text"];
 
-PHƯƠNG PHÁP HỌC TẬP 4 KỸ NĂNG (Lồng ghép hướng dẫn):
-- Nghe (Listening): Hướng dẫn học sinh Dự đoán (Predicting) và tìm Từ đồng nghĩa (Synonyms).
-- Nói (Speaking): Yêu cầu học sinh mở rộng câu trả lời, không chỉ trả lời "Yes/No". Dùng "because" hoặc ví dụ.
-- Đọc (Reading): Hướng dẫn Skimming & Scanning và Paraphrasing.
-- Viết (Writing): Yêu cầu dùng từ nối (First, Then...) và cấu trúc 3 phần rõ ràng.
+    const getSystemPrompt = (mode: string): string => {
+      switch (mode) {
 
-VAI TRÒ CỦA BẠN (AI - GIÁO VIÊN):
-- Bạn cần viết các câu trả lời đầy đủ, chi tiết, giảng giải cặn kẽ từng từ vựng mới, cấu trúc ngữ pháp hay và phương pháp làm bài tập. Không được viết ngắn gọn hời hợt. Hãy giải thích sâu sắc để học sinh hiểu bài tốt nhất.
-- Bắt đầu bằng cách chào học sinh và giới thiệu bài học một cách chi tiết, nêu rõ mục tiêu và các nội dung chính cần hoàn thành.
-- Hướng dẫn từng bước, đưa ra ví dụ minh họa phong phú và đặt câu hỏi tương tác thú vị.
-- Ngôn ngữ: Sử dụng song ngữ Anh-Việt (Tiếng Anh cho các thuật ngữ và ví dụ IELTS, Tiếng Việt để giải thích sâu sắc và cặn kẽ).
-- Phong cách: Khích lệ, chuyên nghiệp, sư phạm, giàu tri thức.
-`;
+        case "warmup":
+          return `You are Coach Aria, a vibrant and friendly IELTS tutor.
+Student: ${studentName}
+Lesson: "${sessionInfo?.title ?? "IELTS"}"
 
-    // 2. System Prompt for IELTS Speaking Mode (100% Tiếng Anh, tự do giao tiếp nói, ngắn gọn)
-    const systemPromptSpeaking = `
-You are a friendly, supportive IELTS Speaking Partner and Examiner for student ${studentName}.
+YOUR TASK:
+The student just responded to your ice-breaker question. Your goal is to keep the energy high and transition to the audio.
+
+RESPONSE GUIDELINES:
+1. If the student's answer is very short (like "ok", "yes", "hello"), don't be robotic. Briefly acknowledge it and give them a tiny prompt to think about the topic, or just share a quick fun fact about yourself related to the lesson topic to build connection.
+2. If they gave a real answer, react with genuine interest.
+3. End with a "mission" for the audio (e.g., "Keep an ear out for...").
+4. You MUST end your response with: "Ready? Let's listen! 🎧"
+
+CRITICAL:
+- Write as a single, natural paragraph.
+- NEVER include labels, bullet points, or the words "INSTRUCTIONS" or "MISSION" in your response.
+- Max 3 sentences.
+- Use warm, peer-to-peer English.`;
+
+        // ── SPEAKING FEEDBACK ─────────────────────────────────────────────────
+        case "speaking_feedback":
+          return `You are Coach Aria, a supportive peer tutor.
+Student: ${studentName}
+Topic: ${sessionInfo?.summary ?? "Daily life"}
+${struggledWords && struggledWords.length > 0 ? `Words the student struggled with earlier today: ${struggledWords.join(', ')}` : ""}
+
+YOUR GOAL: Keep the conversation momentum alive while coaching.
+
+FOR EVERY RESPONSE:
+1. HUMAN REACTION: Comment on the actual content first. ("Wait, you fixed your own furniture? That's insane! 🤯")
+2. NUDGE: If there's a grammar error, fix just ONE. Use: "[their error]" → "[correction]". Explain it like a tip, not a rule.
+3. MEMORY MOMENT: If relevant, organically mention or praise them if they use a word they struggled with earlier. Do NOT force it.
+4. MOMENTUM: Always end with a low-pressure follow-up question to keep them talking.
+
+CRITICAL:
+- Max 4 sentences.
+- No formal labels.
+- Be extremely encouraging.
+- If they fixed a previous mistake, call it out: "Yes! You nailed the -s this time! 🎯"`;
+
+        // ── DEBRIEF ───────────────────────────────────────────────────────────
+        case "debrief":
+          return `You are Coach Aria, wrapping up a session with your student ${studentName}.
+Lesson: "${sessionInfo?.title ?? "IELTS Listening"}"
+
+YOUR GOAL: Make them feel like they've achieved something and create a "memory" for next time.
+
+STRUCTURE:
+1. REACTION: Give a human reaction to their score. (5/5 = "Pure talent! 🌟", 1-2/5 = "That was a beast of a unit, don't sweat it. 😅")
+2. PATTERN: Mention one thing they improved or one trick they caught.
+3. MEMORY ILLUSION: End by picking ONE word or phrase from the lesson and say you're "saving" it for their next session.
+   Example: "I've saved 'itinerary' in my notes for you. We'll use it again! 😉"
+
+RULES:
+- Max 4 sentences. No lists.
+- Conversational and warm.`;
+
+        // ── SPEAKING (conversation partner, existing mode) ─────────────────────
+        case "speaking":
+          return `You are a friendly, supportive IELTS Speaking Partner and Examiner for student ${studentName}.
 Your rules:
-1. Act as a natural conversational partner. The student can discuss ANY topic they like (on-topic or completely off-topic).
-2. Keep your responses short (1-3 sentences max). This is critical for high-quality listening practice.
-3. Write your entire response in English so the student stays immersed.
-4. Provide a very brief correction or vocabulary tip if appropriate, and always end with a natural follow-up question to keep the conversation flowing.
-`;
+1. Act as a natural conversational partner. Student can discuss ANY topic.
+2. Keep responses short (1-3 sentences max). Critical for listening practice.
+3. Write entirely in English so the student stays immersed.
+4. Provide a brief correction or vocab tip if appropriate, always end with a follow-up question.`;
 
-    const systemPrompt = mode === "speaking" ? systemPromptSpeaking : systemPromptText;
+        default:
+          return `Bạn là một Giáo viên IELTS chuyên nghiệp...`;
+      }
+    };
 
-    // Comprehensive free-tier fallbacks, PRIORITIZING "gemini-flash-latest" as requested
+    const systemPrompt = getSystemPrompt(mode);
+
     const modelsToTry = [
-      "gemini-flash-latest", // Prioritized first
-      "gemini-1.5-flash",
-      "gemini-2.0-flash",
-      "gemini-2.5-flash",
-      "gemini-2.0-flash-lite-preview-02-05",
-      "gemini-1.5-pro",
-      "gemini-pro"
+      "gemini-3.5-flash",    // Latest frontier model (May 2026)
+      "gemini-3.1-pro",      // Advanced reasoning
+      "gemini-2.5-pro",      // Previous flagship
+      "gemini-2.5-flash",    // High performance/latency balance
+      "gemini-1.5-pro-latest",
+      "gemini-1.5-flash-latest"
     ];
-    let detailedErrors = [];
+    let detailedErrors: string[] = [];
+
+    console.log(`AI Teacher Request - Mode: ${mode}, Messages: ${messages?.length}`);
 
     for (const modelName of modelsToTry) {
       try {
-        // Instantiate the model with native, high-performance system instructions
         const model = genAI.getGenerativeModel({ 
           model: modelName,
           systemInstruction: systemPrompt 
         });
         
-        // Prepare history and strictly enforce alternating roles starting with 'user' to prevent Gemini validation errors
         let history: any[] = [];
-        let expectedRole: "user" | "model" = "user";
-        
-        for (let i = 0; i < messages.length - 1; i++) {
-          const m = messages[i];
-          const mappedRole = m.role === "user" ? "user" : "model";
-          if (mappedRole === expectedRole) {
-            history.push({
-              role: mappedRole,
-              parts: [{ text: m.content || "..." }]
-            });
-            expectedRole = expectedRole === "user" ? "model" : "user";
+        if (messages && Array.isArray(messages) && messages.length > 1) {
+          let expectedRole: "user" | "model" = "user";
+          for (let i = 0; i < messages.length - 1; i++) {
+            const m = messages[i];
+            const role = m.role === "user" ? "user" : "model";
+            if (role === expectedRole) {
+              history.push({
+                role: role,
+                parts: [{ text: m.content || "..." }]
+              });
+              expectedRole = expectedRole === "user" ? "model" : "user";
+            }
           }
         }
 
         const chat = model.startChat({
-          history: history,
+          history: history.length > 0 ? history : undefined,
           generationConfig: { 
-            maxOutputTokens: mode === "speaking" ? 500 : 2048,
-            temperature: mode === "speaking" ? 0.8 : 0.7,
+            maxOutputTokens: maxTokens,
+            temperature: temperature,
           },
         });
 
-        const prompt = messages[messages.length - 1].content;
-        const result = await chat.sendMessage(prompt);
+        const lastMessage = messages[messages.length - 1]?.content || "Hello";
+        const result = await chat.sendMessage(lastMessage);
         const response = await result.response;
         const text = response.text();
 
-        if (!text) throw new Error("Empty response");
+        if (!text) throw new Error("Empty response from Gemini");
 
         return NextResponse.json({ text, modelUsed: modelName });
-      } catch (err: any) {
-        console.error(`Error with model ${modelName}:`, err.message);
-        detailedErrors.push(`${modelName}: ${err.message}`);
+      } catch (err: unknown) {
+        const errMsg = err instanceof Error ? err.message : String(err);
+        console.error(`AI Error (${modelName}):`, errMsg);
+        detailedErrors.push(`${modelName}: ${errMsg}`);
         continue;
       }
     }
 
-    return NextResponse.json(
-      { 
-        error: "Không thể kết nối với các Model AI. Vui lòng kiểm tra lại quota hoặc thử lại sau ít phút.", 
-        details: detailedErrors.join(" | ") 
-      }, 
-      { status: 503 }
-    );
-  } catch (error: any) {
-    console.error("Final AI Teacher Error:", error.message);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    // If we get here, all models failed. Return the details directly in 'error' for debugging.
+    return NextResponse.json({ 
+      error: `All models failed: ${detailedErrors.join(" | ")}`,
+      details: detailedErrors.join(" | ") 
+    }, { status: 503 });
+  } catch (error: unknown) {
+    const errMsg = error instanceof Error ? error.message : String(error);
+    return NextResponse.json({ error: errMsg }, { status: 500 });
   }
 }

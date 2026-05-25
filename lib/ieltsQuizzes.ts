@@ -142,21 +142,21 @@ export function getFallbackQuestionsForUnit(unitNumber: number, quizId: string):
 
   const questionsData: Record<number, Omit<QuizQuestion, "id" | "quiz_id" | "order_index">[]> = {
     1: [
-      { question: "What does 'wake up' mean?", options: ["Đi ngủ", "Thức dậy", "Ăn sáng", "Rời khỏi nhà"], correct_index: 1, explanation: "Wake up có nghĩa là thức dậy sau khi ngủ." },
-      { question: "Complete the phrase: 'get ______' in the morning.", options: ["dressed", "work", "bed", "alarm"], correct_index: 0, explanation: "Get dressed là mặc quần áo." },
-      { question: "What is 'tidy up my room'?", options: ["Làm bẩn phòng", "Dọn dẹp phòng ngăn nắp", "Sơn phòng", "Trang trí phòng"], correct_index: 1, explanation: "Tidy up có nghĩa là dọn dẹp sạch sẽ ngăn nắp." },
-      { question: "When do you 'set your alarm'?", options: ["Sau khi thức dậy", "Khi ăn trưa", "Trước khi đi ngủ", "Khi làm việc"], correct_index: 2, explanation: "Set your alarm là cài báo thức trước khi đi ngủ." },
-      { question: "What describes things you do every day?", options: ["Daily routine", "Holiday", "Weekly plan", "Sports event"], correct_index: 0, explanation: "Daily routine là lịch trình sinh hoạt hàng ngày." },
-      { question: "What do you do with 'rubbish'?", options: ["Ăn", "Giữ lại", "Vứt đi / Đổ rác", "Mua"], correct_index: 2, explanation: "Rubbish là rác, ta cần vứt hoặc đổ rác." },
-      { question: "What is 'take out the bins'?", options: ["Lau nhà", "Đổ rác", "Rửa bát", "Giặt quần áo"], correct_index: 1, explanation: "Take out the bins có nghĩa là mang rác ra ngoài đổ." },
-      { question: "What time do you usually 'go home'?", options: ["7:00 AM", "12:00 PM", "5:00 PM", "6:00 AM"], correct_index: 2, explanation: "Mọi người thường đi về nhà (go home) sau giờ học/làm việc vào buổi chiều." },
-      { question: "What does 'leave the house' mean?", options: ["Rời khỏi nhà để đi học/làm", "Về nhà", "Dọn nhà", "Mua nhà"], correct_index: 0, explanation: "Leave the house là rời khỏi nhà để bắt đầu ngày học hoặc làm việc." },
-      { question: "Which activity involves washing clothes?", options: ["Do the laundry", "Do the dishes", "Cook", "Dust the furniture"], correct_index: 0, explanation: "Do the laundry là giặt giũ quần áo." },
-      { question: "Where do you go to catch a bus?", options: ["Bus stop", "Train station", "Airport", "Park"], correct_index: 0, explanation: "Bus stop là trạm dừng xe buýt." },
-      { question: "What is the opposite of 'start work'?", options: ["Finish work", "Go to work", "Start study", "Walk to work"], correct_index: 0, explanation: "Finish work là kết thúc công việc, ngược lại với start work." },
-      { question: "What does 'get my schoolbag ready' mean?", options: ["Mua cặp mới", "Chuẩn bị cặp sách sẵn sàng", "Vứt cặp", "Quên cặp sách"], correct_index: 1, explanation: "Chuẩn bị sẵn sách vở vào cặp cho ngày học hôm sau." },
-      { question: "What is 'switch off the light'?", options: ["Bật đèn", "Tắt đèn", "Sửa bóng đèn", "Mua đèn"], correct_index: 1, explanation: "Switch off the light nghĩa là tắt đèn." },
-      { question: "Complete the sentence: 'She ______ goes to bed at 10 PM because she likes sleeping early.'", options: ["never", "usually", "rarely", "hardly"], correct_index: 1, explanation: "Usually (thường xuyên) thể hiện thói quen cố định." }
+      { question: "What is Jack's brother good at?", options: ["Cooking", "Building things", "Painting", "Gardening"], correct_index: 1, explanation: "Jack mentioned his brother is great at building things and fixing stuff." },
+      { question: "Who makes the meals in Jack's family?", options: ["His mother", "His father", "His grandma", "Jack himself"], correct_index: 2, explanation: "Jack said his grandma is an amazing cook and makes all their meals." },
+      { question: "What does Jack's sister enjoy doing?", options: ["Gardening", "Reading", "Painting and drawing", "Building furniture"], correct_index: 2, explanation: "Jack mentioned his sister is talented at painting and drawing." },
+      { question: "What is Jack's mother's hobby?", options: ["Gardening", "Cooking", "Reading", "Gym"], correct_index: 0, explanation: "Jack said his mother loves gardening and planting flowers." },
+      { question: "How does Jack describe his father?", options: ["Very active", "A bit lazy", "A great cook", "Good at fixing things"], correct_index: 1, explanation: "Jack mentioned his father is a bit lazy and prefers staying at home." },
+      { question: "Jack's brother even made some of their ______.", options: ["Clothes", "Furniture", "Toys", "Food"], correct_index: 1, explanation: "Jack's brother is so good at building that he made some furniture." },
+      { question: "Where does Jack's father prefer to stay?", options: ["At the gym", "At home", "In the garden", "At work"], correct_index: 1, explanation: "Jack said his father prefers staying at home and reading." },
+      { question: "What does Jack's mother plant?", options: ["Vegetables", "Trees", "Flowers", "Fruit"], correct_index: 2, explanation: "Jack specifically mentioned she is always planting flowers." },
+      { question: "Does Jack's father use his gym membership often?", options: ["Yes, every day", "Yes, twice a week", "No, rarely", "No, never"], correct_index: 2, explanation: "Jack mentioned his father has a gym membership but rarely goes." },
+      { question: "What is Jack's sister talented at?", options: ["Music", "Cooking", "Art (Painting/Drawing)", "Sports"], correct_index: 2, explanation: "Jack said she is talented at painting and drawing." },
+      { question: "The word 'delicious' in the audio refers to...", options: ["The garden", "The furniture", "The grandma's food", "The sister's paintings"], correct_index: 2, explanation: "Jack said the food his grandma makes is always delicious." },
+      { question: "Jack's brother is always ______ stuff.", options: ["Breaking", "Fixing", "Selling", "Buying"], correct_index: 1, explanation: "Jack mentioned his brother is always fixing stuff around the house." },
+      { question: "Carlos is going to Australia to stay with ______.", options: ["His own family", "Jack's family", "His teacher", "His brother"], correct_index: 1, explanation: "Carlos is visiting Jack and staying with Jack's family." },
+      { question: "What gift does Carlos suggest for the grandma?", options: ["A painting", "A recipe book", "A toolkit", "Flowers"], correct_index: 1, explanation: "Carlos suggested bringing a recipe book from the US." },
+      { question: "Overall, Jack's family members have ______.", options: ["No hobbies", "The same hobby", "Different skills and interests", "Only indoor hobbies"], correct_index: 2, explanation: "Each family member has a unique skill or interest (building, cooking, art, gardening, reading)." }
     ],
     2: [
       { question: "What is another word for an 'apartment'?", options: ["House", "Flat", "Garden", "Garage"], correct_index: 1, explanation: "Flat là từ tiếng Anh-Anh tương đương với apartment (căn hộ)." },
