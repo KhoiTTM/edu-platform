@@ -10,7 +10,19 @@ export async function POST(req: Request) {
     if (!cleanKey) {
       return NextResponse.json({ error: "Thiếu GEMINI_API_KEY trên Vercel. Vui lòng cấu hình Environment Variables." }, { status: 500 });
     }
-    const { messages, sessionInfo, studentName, mode, struggledWords } = await req.json();
+    const { 
+      messages, 
+      sessionInfo, 
+      studentName, 
+      mode, 
+      struggledWords,
+      sessionNumber,
+      previousSummary,
+      turnCount,
+      lastUserWordCount,
+      bestMomentCandidate,
+      scaffoldingUsed
+    } = await req.json();
 
     // Per-mode config: token limits and temperature tuned for each use case
     const modeConfig: Record<string, { maxTokens: number; temperature: number }> = {
@@ -19,11 +31,142 @@ export async function POST(req: Request) {
       debrief:          { maxTokens: 320,  temperature: 0.65 },
       speaking:         { maxTokens: 500,  temperature: 0.80 },
       text:             { maxTokens: 2048, temperature: 0.70 },
+      // New Speaking Journey modes
+      speaking_session_open:   { maxTokens: 350, temperature: 0.85 },
+      speaking_session:        { maxTokens: 350, temperature: 0.85 },
+      speaking_session_debrief: { maxTokens: 400, temperature: 0.75 },
+      speaking_summary:        { maxTokens: 150, temperature: 0.5 },
     };
     const { maxTokens, temperature } = modeConfig[mode] ?? modeConfig["text"];
 
-    const getSystemPrompt = (mode: string): string => {
+    const getSystemPrompt = (mode: string, params: any): string => {
+      const { sessionInfo, studentName, sessionNumber, previousSummary, turnCount, lastUserWordCount, bestMomentCandidate, scaffoldingUsed } = params;
+      
       switch (mode) {
+
+        case "speaking_session_open":
+          return `You are Coach Aria, a warm and witty speaking coach.
+Student: ${studentName}
+Topic: ${sessionInfo?.title ?? "IELTS Speaking"}
+This is Speaking Session ${sessionNumber} of 4.
+
+${previousSummary ? `MEMORY FROM LAST TIME: "${previousSummary}"` : ""}
+
+SESSION ${sessionNumber} GOALS:
+${sessionNumber === 1 ? `
+- This is their FIRST speaking session. Make it feel safe and low-pressure.
+- Ask ONE simple, personal question about the topic.
+- Make the question concrete and easy (not abstract).
+` : ""}
+${sessionNumber === 2 ? `
+- Reference something from last session (use the MEMORY if available).
+- Ask for an OPINION or PREFERENCE, not just a fact.
+- Push them toward explaining WHY.
+` : ""}
+${sessionNumber === 3 ? `
+- Reference the journey so far. Build momentum.
+- Ask for a STORY or EXPERIENCE — something personal that happened.
+- Use "tell me about a time when..." format.
+` : ""}
+${sessionNumber === 4 ? `
+- This is the FINAL session. Tone is warm peer-to-peer, not teacher-student.
+- Open with a mini reflection on their journey.
+- Then launch into pure conversation. No scaffolding language in your question.
+` : ""}
+
+RULES:
+- Write as a single natural message (no headers, no bullets)
+- Max 4 sentences
+- End with exactly ONE question
+- Sound like a real person, not a script
+- Use warm, casual English`;
+
+        case "speaking_session":
+          return `You are Coach Aria, a warm and encouraging speaking coach.
+Student: ${studentName}
+Topic: ${sessionInfo?.title ?? "IELTS Speaking"}
+Session: ${sessionNumber} of 4
+Current turn: ${turnCount}
+Last learner response word count: ~${lastUserWordCount} words
+
+YOUR ROLE IN THIS TURN:
+1. REACT to what they said — respond to the CONTENT first (not grammar).
+   Sound genuinely interested, not scripted.
+   
+2. RECAST (optional, max 1 per turn):
+   If there's a clear grammar error, embed the correct form naturally
+   in your response WITHOUT explicitly saying "you made an error."
+   Example: They said "I am living here since 2 years."
+   You say: "Oh so you've been living there for two years — how has the neighborhood changed?"
+   
+3. ASK ONE follow-up question:
+   - Keep it concrete and answerable
+   - Session ${sessionNumber <= 2 ? "1-2: keep it simple, binary options are great" : "3-4: go deeper, ask for stories or comparisons"}
+   - Never ask two questions at once
+   
+SCAFFOLDING LEVEL FOR SESSION ${sessionNumber}:
+${sessionNumber <= 2 
+  ? "HIGH — use bridging phrases, make questions concrete, give binary options"
+  : "LOW — pure conversation, let them lead more"}
+
+IF their response is very short (< 10 words):
+  Do NOT demand longer answers. Instead, ask a simpler, more concrete follow-up.
+  E.g., Instead of "Can you elaborate?" ask "Is it a big flat or small?"
+
+CORRECTION PHILOSOPHY:
+- Fix only ONE error per turn (the most impactful one)
+- Use recasting, not explicit correction (unless error is very frequent)
+- Never say "you made an error" or use grammar terminology
+- If their response is excellent, just react warmly and ask the follow-up
+
+RULES:
+- Max 5 sentences
+- Sound human and curious
+- Always end with exactly ONE question
+- No bullet points, no headers
+- Warm emojis ok (max 1 per response)`;
+
+        case "speaking_session_debrief":
+          return `You are Coach Aria wrapping up Speaking Session ${sessionNumber} with ${studentName}.
+Topic: ${sessionInfo?.title ?? "IELTS Speaking"}
+
+WHAT HAPPENED THIS SESSION:
+- They completed ${turnCount} conversation turns
+- ${scaffoldingUsed ? "They used sentence starters (totally fine!)" : "They spoke without scaffolding support"}
+- Their best moment was: "${bestMomentCandidate}"
+
+YOUR DEBRIEF STRUCTURE:
+1. CELEBRATE: One genuine reaction to the session (not just "great job").
+   Reference something specific if you can.
+   
+2. GROWTH MOMENT: If this isn't Session 1, note ONE specific improvement
+   compared to where they started. "Remember when..." works well here.
+   
+3. SAVE: End with one phrase they said (use bestMomentCandidate) and
+   say you're "keeping it" for next time.
+   
+4. TEASE: If sessions remain, give ONE hint about what Session ${sessionNumber + 1} will explore.
+   Keep it exciting and personal.
+
+RULES:
+- Max 5 sentences
+- Warm, celebratory, and honest
+- Not clinical or score-focused
+- End on the highest possible emotional note`;
+
+        case "speaking_summary":
+          return `Read this speaking session conversation about "${sessionInfo?.title ?? "IELTS Speaking"}".
+
+Extract:
+1. The learner's KEY PERSONAL DETAILS mentioned (where they live, experiences, preferences)
+2. The learner's VOCABULARY LEVEL (intermediate, advanced words used?)
+3. ONE THING that showed growth or confidence
+
+Write a 2-sentence summary in the THIRD PERSON starting with:
+"In the last session, [student name] talked about..."
+
+This summary will be used by an AI tutor to remember context for the next session.
+Keep it factual and specific. 50 words max.`;
 
         case "warmup":
           return `You are Coach Aria, a vibrant and friendly IELTS tutor.
@@ -97,7 +240,17 @@ Your rules:
       }
     };
 
-    const systemPrompt = getSystemPrompt(mode);
+    const systemPrompt = getSystemPrompt(mode, {
+      sessionInfo,
+      studentName,
+      sessionNumber,
+      previousSummary,
+      turnCount,
+      lastUserWordCount,
+      bestMomentCandidate,
+      scaffoldingUsed,
+      struggledWords
+    });
 
     const modelsToTry = [
       "gemini-3.5-flash",    // Latest frontier model (May 2026)
@@ -109,7 +262,11 @@ Your rules:
     ];
     let detailedErrors: string[] = [];
 
-    console.log(`AI Teacher Request - Mode: ${mode}, Messages: ${messages?.length}`);
+    console.log(`AI Teacher Request - Mode: ${mode}, Messages: ${messages?.length}, Student: ${studentName}`);
+
+    if (mode.startsWith("speaking_session")) {
+      console.log("Speaking Session Info:", { sessionNumber, turnCount, lastUserWordCount });
+    }
 
     for (const modelName of modelsToTry) {
       try {
@@ -119,11 +276,11 @@ Your rules:
         });
         
         let history: any[] = [];
-        if (messages && Array.isArray(messages) && messages.length > 1) {
+        if (messages && Array.isArray(messages) && messages.length > 0) {
           let expectedRole: "user" | "model" = "user";
           for (let i = 0; i < messages.length - 1; i++) {
             const m = messages[i];
-            const role = m.role === "user" ? "user" : "model";
+            const role = (m.role === "user" || m.role === "learner") ? "user" : "model";
             if (role === expectedRole) {
               history.push({
                 role: role,
@@ -142,7 +299,9 @@ Your rules:
           },
         });
 
-        const lastMessage = messages[messages.length - 1]?.content || "Hello";
+        const lastMessage = mode === "speaking_session_open"
+          ? `Start the speaking session for topic: ${sessionInfo?.title ?? "IELTS Speaking"}. Session number: ${sessionNumber}.`
+          : (messages[messages.length - 1]?.content || "Hello");
         const result = await chat.sendMessage(lastMessage);
         const response = await result.response;
         const text = response.text();

@@ -8,10 +8,11 @@ interface Props {
   total: number;
   studentName: string;
   lessonTitle: string;
+  unitId: string;
   onRestart: () => void;
 }
 
-export function AriaDebrief({ score, total, studentName, lessonTitle, onRestart }: Props) {
+export function AriaDebrief({ score, total, studentName, lessonTitle, unitId, onRestart }: Props) {
   const [debrief, setDebrief] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -87,6 +88,22 @@ export function AriaDebrief({ score, total, studentName, lessonTitle, onRestart 
             {debrief || "You've done a great job today! Keep up the momentum."}
           </p>
         )}
+      </div>
+
+      <div className="rounded-xl bg-gradient-to-br from-indigo-900/40 to-sky-900/40 border border-indigo-500/30 p-5 space-y-4">
+        <div className="flex items-center gap-2">
+          <Star size={16} className="text-indigo-400 fill-indigo-400" />
+          <h4 className="text-xs font-black text-white uppercase tracking-tight">Speaking Journey Unlocked</h4>
+        </div>
+        <p className="text-xs text-indigo-200 leading-relaxed">
+          Ready to actually speak about this topic? Start your Speaking Journey now.
+        </p>
+        <button
+          onClick={() => window.location.href = `/speaking/${unitId}/session-1`}
+          className="w-full flex items-center justify-center gap-2 rounded-xl bg-indigo-600 py-3 text-xs font-bold text-white transition hover:bg-indigo-500 shadow-lg shadow-indigo-600/20 active:scale-95"
+        >
+          Start Speaking Session 1 <ArrowRight size={14} />
+        </button>
       </div>
 
       <div className="flex flex-col sm:flex-row gap-3 pt-2">

@@ -328,6 +328,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
                 total={questions.length}
                 studentName={studentName}
                 lessonTitle={lesson.title}
+                unitId={`unit-${unitNumber}`}
                 onRestart={restartQuiz}
               />
             ) : (
