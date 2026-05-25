@@ -1004,87 +1004,87 @@ const loadingMessages = [
 
 ## 12. Implementation Roadmap — 14 Ngày
 
-### Week 1: Core Loop (ngày 1-7)
+### Week 1: Core Loop (ngày 1-7) — COMPLETED ✅
 
-#### Ngày 1 (2-3h) — Setup + Warmup
-- [ ] Thêm `mode: "warmup"` vào `/api/ai/teacher/route.ts` với warmup system prompt
-- [ ] Sửa `AITeacherChat.tsx` nhận `isWarmupMode` prop
-- [ ] Warmup compact card: 1 AI message → user input → AI respond → button
-- [ ] Test với Unit 1 data
+#### Ngày 1 (2-3h) — Setup + Warmup — DONE
+- [x] Thêm `mode: "warmup"` vào `/api/ai/teacher/route.ts` với warmup system prompt
+- [x] Sửa `AITeacherChat.tsx` nhận `isWarmupMode` prop
+- [x] Warmup compact card: 1 AI message → user input → AI respond → button
+- [x] Test với Unit 1 data
 
-#### Ngày 2 (3h) — Chunk Checkpoints
-- [ ] Tạo `lib/checkpoints/unit1.ts` với 3 checkpoints
-- [ ] Build `ChunkCheckpoints.tsx`: 3 cards, sequential unlock
-- [ ] Local validation logic (`checkAnswer()` function)
-- [ ] Retry → hint → reveal flow (không gọi Gemini)
+#### Ngày 2 (3h) — Chunk Checkpoints — DONE
+- [x] Tạo `lib/checkpoints/unit1.ts` với 3 checkpoints
+- [x] Build `ChunkCheckpoints.tsx`: 3 cards, sequential unlock
+- [x] Local validation logic (`checkAnswer()` function)
+- [x] Retry → hint → reveal flow (không gọi Gemini)
 
-#### Ngày 3 (2h) — Wire Phase Flow
-- [ ] Thêm `sessionPhase` state vào `ListeningClient.tsx`
-- [ ] Thay tabs bằng phase-based flow
-- [ ] Phase progress indicator (5 dots)
-- [ ] Warmup → Listen transition
+#### Ngày 3 (2h) — Wire Phase Flow — DONE
+- [x] Thêm `sessionPhase` state vào `ListeningClient.tsx`
+- [x] Thay tabs bằng phase-based flow
+- [x] Phase progress indicator (5 dots)
+- [x] Warmup → Listen transition
 
-#### Ngày 4 (3h) — Interactive Transcript
-- [ ] Build `TranscriptLineExpander.tsx`
-- [ ] Wrap transcript lines trong `ListeningClient` Step 2
-- [ ] Expand on click: key phrase note + "Say it!" button
-- [ ] Vocab cards: thêm flip state
+#### Ngày 4 (3h) — Interactive Transcript — DONE
+- [x] Build `TranscriptLineExpander.tsx`
+- [x] Wrap transcript lines trong `ListeningClient` Step 2
+- [x] Expand on click: key phrase note + "Say it!" button
+- [x] Vocab cards: thêm flip state
 
-#### Ngày 5 (3h) — Speaking Follow-up
-- [ ] Thêm `mode: "speaking"` vào route với enhanced speaking prompt
-- [ ] Build `SpeakingFollowUpBox.tsx`
-- [ ] Integrate vào Step 2 (sau transcript)
-- [ ] Test feedback quality với Unit 1 topic
+#### Ngày 5 (3h) — Speaking Follow-up — DONE
+- [x] Thêm `mode: "speaking"` vào route với enhanced speaking prompt
+- [x] Build `SpeakingFollowUpBox.tsx`
+- [x] Integrate vào Step 2 (sau transcript)
+- [x] Test feedback quality với Unit 1 topic
 
-#### Ngày 6 (2h) — Quiz Upgrade
-- [ ] Đổi quiz từ navigation-based sang immediate feedback
-- [ ] Show quote từ transcript sau câu sai
-- [ ] Retry wrong questions only (filter + re-render)
+#### Ngày 6 (2h) — Quiz Upgrade — DONE
+- [x] Đổi quiz từ navigation-based sang immediate feedback
+- [x] Show quote từ transcript sau câu sai
+- [x] Retry wrong questions only (filter + re-render)
 
-#### Ngày 7 (2h) — Buffer + Testing
-- [ ] End-to-end test full session
-- [ ] Fix bugs, edge cases (empty input, API timeout)
-- [ ] Loading states quality check
+#### Ngày 7 (2h) — Buffer + Testing — DONE
+- [x] End-to-end test full session
+- [x] Fix bugs, edge cases (empty input, API timeout)
+- [x] Loading states quality check
 
 ---
 
-### Week 2: Memory + Polish (ngày 8-14)
+### Week 2: Memory + Polish (ngày 8-14) — COMPLETED ✅
 
-#### Ngày 8 (2h) — Session Memory
-- [ ] Build `lib/sessionMemory.ts` (localStorage helpers)
-- [ ] Lưu weakness khi: checkpoint sai lần 2, quiz sai
-- [ ] Previous weakness note khi vào lại bài
+#### Ngày 8 (2h) — Session Memory — DONE
+- [x] Build `lib/sessionMemory.ts` (localStorage helpers)
+- [x] Lưu weakness khi: checkpoint sai lần 2, quiz sai
+- [x] Previous weakness note khi vào lại bài
 
-#### Ngày 9 (3h) — Aria Debrief
-- [ ] Thêm `mode: "debrief"` vào route
-- [ ] Build `AriaDebrief.tsx` component
-- [ ] Wire sau quiz completion
-- [ ] Save session record vào localStorage
+#### Ngày 9 (3h) — Aria Debrief — DONE
+- [x] Thêm `mode: "debrief"` vào route
+- [x] Build `AriaDebrief.tsx` component
+- [x] Wire sau quiz completion
+- [x] Save session record vào localStorage
 
-#### Ngày 10 (2h) — Listening page server update
-- [ ] Pass `studentName` xuống `ListeningClient` (đã có trong profile fetch)
-- [ ] Pass unit number để load đúng checkpoints
-- [ ] Error boundaries cho mọi Gemini calls
+#### Ngày 10 (2h) — Listening page server update — DONE
+- [x] Pass `studentName` xuống `ListeningClient` (đã có trong profile fetch)
+- [x] Pass unit number để load đúng checkpoints
+- [x] Error boundaries cho mọi Gemini calls
 
-#### Ngày 11 (2h) — Mobile Polish
-- [ ] Test toàn bộ flow trên mobile viewport
-- [ ] Fix keyboard/scroll issues
-- [ ] Touch targets audit
+#### Ngày 11 (2h) — Mobile Polish — DONE
+- [x] Test toàn bộ flow trên mobile viewport
+- [x] Fix keyboard/scroll issues
+- [x] Touch targets audit
 
-#### Ngày 12 (2h) — Microcopy Pass
-- [ ] Thay hết button labels theo bảng microcopy
-- [ ] Loading messages rotation
-- [ ] Error states friendly messages
+#### Ngày 12 (2h) — Microcopy Pass — DONE
+- [x] Thay hết button labels theo bảng microcopy
+- [x] Loading messages rotation
+- [x] Error states friendly messages
 
-#### Ngày 13 (2h) — Edge Cases
-- [ ] Gemini timeout → graceful fallback (không block session)
-- [ ] localStorage unavailable → silent fail
-- [ ] Transcript missing → checkpoint fallback
+#### Ngày 13 (2h) — Edge Cases — DONE
+- [x] Gemini timeout → graceful fallback (không block session)
+- [x] localStorage unavailable → silent fail
+- [x] Transcript missing → checkpoint fallback
 
-#### Ngày 14 (2h) — Final QA
-- [ ] Test Unit 1 full session từ đầu đến cuối
-- [ ] Test trên 3 kịch bản: đúng hết, sai hết, bỏ qua
-- [ ] Kiểm tra quota Gemini không bị burn quá mức
+#### Ngày 14 (2h) — Final QA — DONE
+- [x] Test Unit 1 full session từ đầu đến cuối
+- [x] Test trên 3 kịch bản: đúng hết, sai hết, bỏ qua
+- [x] Kiểm tra quota Gemini không bị burn quá mức
 
 ---
 
