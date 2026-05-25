@@ -3,4 +3,8 @@ command = "npx next build"
 publish = ".next"
 
 [[plugins]]
+<<<<<<< HEAD
 package = "@netlify/plugin-nextjs"
+=======
+package = "@netlify/plugin-nextjs"
+>>>>>>> 248b41d65e961b394e39e296376a0fd829067827

@@ -11,7 +11,11 @@
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
+<<<<<<< HEAD
     "@supabase/auth-helpers-nextjs": "^0.5.9",
+=======
+    "@netlify/plugin-nextjs": "^5.15.11",
+>>>>>>> 248b41d65e961b394e39e296376a0fd829067827
     "@supabase/ssr": "^0.5.2",
     "@supabase/supabase-js": "^2.47.10",
     "lucide-react": "^1.16.0",
