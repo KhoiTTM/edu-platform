@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Sparkles, Trophy, ArrowRight, RefreshCw, Star } from "lucide-react";
+import { useTrackEvent } from "@/hooks/useTrackEvent";
 
 interface Props {
   score: number;
@@ -15,8 +16,22 @@ interface Props {
 export function AriaDebrief({ score, total, studentName, lessonTitle, unitId, onRestart }: Props) {
   const [debrief, setDebrief] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const trackEvent = useTrackEvent();
 
   useEffect(() => {
+    // Track quiz completion
+    trackEvent({
+      type: "quiz_completed",
+      subject_slug: "mindset-ielts",
+      session_id: unitId,
+      metadata: {
+        quiz_id: lessonTitle,
+        score,
+        total,
+        accuracy: Math.round((score / total) * 100)
+      }
+    });
+
     const fetchDebrief = async () => {
       try {
         const response = await fetch("/api/ai/teacher", {

@@ -4,6 +4,7 @@ import { useMemo, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import type { QuizQuestion } from "@/types/database";
 import { submitQuiz } from "./actions";
+import { useTrackEvent } from "@/hooks/useTrackEvent";
 
 type Props = {
   quizId: string;
@@ -12,6 +13,7 @@ type Props = {
 
 export function QuizRunner({ quizId, questions }: Props) {
   const router = useRouter();
+  const trackEvent = useTrackEvent();
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [result, setResult] = useState<{ score: number; total: number } | null>(
     null
@@ -41,6 +43,20 @@ export function QuizRunner({ quizId, questions }: Props) {
         return;
       }
       setResult({ score: res.score, total: res.total });
+      
+      // Track quiz completion
+      trackEvent({
+        type: "quiz_completed",
+        subject_slug: "general-quiz", // Could be more specific if quizId is parsed
+        session_id: quizId,
+        metadata: {
+          quiz_id: quizId,
+          score: res.score,
+          total: res.total,
+          accuracy: Math.round((res.score / res.total) * 100)
+        }
+      });
+
       router.refresh();
     });
   }

@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useRef } from "react";
 import { supabase } from "@/lib/supabase/client";
+import { useTrackEvent } from "@/hooks/useTrackEvent";
 
 export type MessageRole = "aria" | "learner";
 
@@ -44,6 +45,9 @@ export function useSpeakingSession({
   const [bestMoment, setBestMoment] = useState<string | null>(null);
   const [avgWordsPerTurn, setAvgWordsPerTurn] = useState(0);
   const [error, setError] = useState<string | null>(null);
+
+  const trackEvent = useTrackEvent();
+  const sessionId = `${unitId}-${sessionNumber}`;
 
   const totalWordsRef = useRef(0);
   const learnerTurnsRef = useRef(0);
@@ -150,6 +154,14 @@ export function useSpeakingSession({
         addMessage("aria", data.text, { turnNumber: 0 });
         setPhase("conversation");
         resetSilenceTimer();
+
+        // Track session start
+        trackEvent({
+          type: "speaking_session_started",
+          subject_slug: "mindset-ielts",
+          session_id: sessionId,
+          metadata: { unit_id: unitId, session_number: sessionNumber, unit_topic: unitTopic }
+        });
       } else {
         throw new Error("Aria returned an empty response.");
       }
@@ -159,7 +171,7 @@ export function useSpeakingSession({
     } finally {
       setIsAriaThinking(false);
     }
-  }, [studentName, unitTopic, sessionNumber, previousSummary, addMessage, messages.length, unitId, resetSilenceTimer]);
+  }, [studentName, unitTopic, sessionNumber, previousSummary, addMessage, messages.length, unitId, resetSilenceTimer, trackEvent, sessionId]);
 
   const sendMessage = useCallback(async (userText: string) => {
     if (!userText.trim()) return;
@@ -174,7 +186,8 @@ export function useSpeakingSession({
     totalWordsRef.current += wordCount;
     learnerTurnsRef.current += 1;
     setAvgWordsPerTurn(Math.round(totalWordsRef.current / learnerTurnsRef.current));
-    setTurnCount((prev) => prev + 1);
+    const currentTurn = turnCount + 1;
+    setTurnCount(currentTurn);
 
     // AI Response
     setIsAriaThinking(true);
@@ -193,7 +206,7 @@ export function useSpeakingSession({
           unitId,
           sessionNumber,
           messages: history,
-          turnCount: turnCount + 1,
+          turnCount: currentTurn,
           lastUserWordCount: wordCount
         }),
       });
@@ -205,8 +218,23 @@ export function useSpeakingSession({
 
       const data = await res.json();
       if (data.text) {
-        addMessage("aria", data.text, { turnNumber: turnCount + 1 });
+        addMessage("aria", data.text, { turnNumber: currentTurn });
         resetSilenceTimer();
+
+        // Track turn completion
+        trackEvent({
+          type: "speaking_turn_completed",
+          subject_slug: "mindset-ielts",
+          session_id: sessionId,
+          metadata: { 
+            word_count: wordCount, 
+            turn_number: currentTurn, 
+            unit_id: unitId, 
+            session_number: sessionNumber,
+            duration_seconds: 0, // Will be handled better later
+            target_words_used: []
+          }
+        });
       } else {
         throw new Error("Aria returned an empty response.");
       }
@@ -216,7 +244,7 @@ export function useSpeakingSession({
     } finally {
       setIsAriaThinking(false);
     }
-  }, [messages, studentName, unitTopic, sessionNumber, turnCount, addMessage, clearSilenceTimer, resetSilenceTimer, unitId]);
+  }, [messages, studentName, unitTopic, sessionNumber, turnCount, addMessage, clearSilenceTimer, resetSilenceTimer, unitId, trackEvent, sessionId]);
 
   const requestRetry = useCallback(async () => {
     clearSilenceTimer();
@@ -340,6 +368,7 @@ export function useSpeakingSession({
       // 3. Save to Supabase
       const { data: { user } } = await supabase.auth.getUser();
       if (user) {
+        const avgWords = Math.round(totalWordsRef.current / learnerTurnsRef.current);
         // Update session
         const { error: upsertError } = await supabase.from("speaking_sessions").upsert({
           user_id: user.id,
@@ -350,7 +379,7 @@ export function useSpeakingSession({
           session_summary: sessionSummary,
           best_moment_text: bestMomentText,
           turn_count: turnCount,
-          avg_words_per_turn: Math.round(totalWordsRef.current / learnerTurnsRef.current),
+          avg_words_per_turn: avgWords,
           scaffolding_used: sessionNumber <= 2
         });
 
@@ -364,6 +393,20 @@ export function useSpeakingSession({
           unit_complete: sessionNumber === 4,
           last_session_at: new Date().toISOString()
         });
+
+        // Track session finish
+        trackEvent({
+          type: "speaking_session_finished",
+          subject_slug: "mindset-ielts",
+          session_id: sessionId,
+          metadata: { 
+            total_turns: turnCount, 
+            avg_words: avgWords, 
+            best_moment: bestMomentText, 
+            unit_id: unitId, 
+            session_number: sessionNumber 
+          }
+        });
       }
 
       addMessage("aria", ariaDebrief);
@@ -375,7 +418,7 @@ export function useSpeakingSession({
     } finally {
       setIsAriaThinking(false);
     }
-  }, [messages, studentName, unitTopic, sessionNumber, turnCount, unitId, addMessage, clearSilenceTimer]);
+  }, [messages, studentName, unitTopic, sessionNumber, turnCount, unitId, addMessage, clearSilenceTimer, trackEvent, sessionId]);
 
   return {
     messages,
