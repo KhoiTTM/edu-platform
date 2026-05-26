@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { SpeakingJourneyClient } from "@/components/speaking/SpeakingJourneyClient";
+import { getScriptForUnit } from "@/lib/ieltsQuizzes";
 
 export const dynamic = "force-dynamic";
 
@@ -26,6 +27,9 @@ export default async function SpeakingSessionPage({
     redirect("/dashboard");
   }
 
+  // Parse unit number
+  const unitNumber = parseInt(unitId.replace("unit-", ""));
+
   // Fetch student profile
   const { data: profile } = await supabase
     .from("profiles")
@@ -47,16 +51,9 @@ export default async function SpeakingSessionPage({
     previousSummary = prevSession?.session_summary;
   }
 
-  // Unit topic mapping (can be moved to a lib later)
-  const unitTopics: Record<string, string> = {
-    "unit-1": "Daily Life",
-    "unit-2": "Food & Drink",
-    "unit-3": "Education",
-    "unit-4": "Work",
-    "unit-5": "Accommodation",
-  };
-
-  const unitTopic = unitTopics[unitId] || "Daily Life";
+  // Use the curriculum lib to get the topic title
+  const script = getScriptForUnit(unitNumber, "", "");
+  const unitTopic = script.unitTitle.split(":")[1]?.split("(")[0]?.trim() || "Speaking Practice";
 
   return (
     <main className="min-h-screen bg-[#0f172a] p-4 md:p-8">

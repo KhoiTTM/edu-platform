@@ -566,5 +566,47 @@ export const ieltsTranscripts: Record<string, IELTSTranscript> = {
         phraseNote: "Kết nối với ai đó"
       }
     ]
+  },
+  "unit-9-placeholder": {
+    title: "The Secrets of Language Learning",
+    unitTitle: "Unit 9: Language (Listening & Speaking)",
+    description: "Lắng nghe chuyên gia ngôn ngữ chia sẻ về lộ trình trở thành người song ngữ và dự định học tập trong tương lai.",
+    keyVocabulary: [
+      { word: "bilingual", meaning: "song ngữ", pronunciation: "/ˌbaɪˈlɪŋɡwəl/" },
+      { word: "fluency", meaning: "sự trôi chảy", pronunciation: "/ˈfluːənsi/" },
+      { word: "immersion", meaning: "sự đắm mình vào ngôn ngữ", pronunciation: "/ɪˈmɜːʃn/" }
+    ],
+    lines: [
+      { 
+        english: "I am going to move to London next month to practice my English every day.", 
+        vietnamese: "Tôi dự định sẽ chuyển đến London vào tháng tới để thực hành tiếng Anh hàng ngày.",
+        keyPhrase: "going to move to",
+        phraseNote: "Dự định di chuyển (Thì tương lai gần)"
+      },
+      { 
+        english: "Being bilingual opens up so many career opportunities in the global market.", 
+        vietnamese: "Việc sử dụng song ngữ mở ra rất nhiều cơ hội nghề nghiệp trong thị trường toàn cầu.",
+        keyPhrase: "opens up opportunities",
+        phraseNote: "Mở ra nhiều cơ hội"
+      },
+      { 
+        english: "To achieve fluency, you need to surround yourself with the language.", 
+        vietnamese: "Để đạt được sự trôi chảy, bạn cần bao quanh mình bởi ngôn ngữ đó.",
+        keyPhrase: "achieve fluency",
+        phraseNote: "Đạt được sự trôi chảy"
+      },
+      { 
+        english: "My brother is going to sign up for an intensive immersion course this summer.", 
+        vietnamese: "Anh trai tôi định đăng ký một khóa học đắm mình chuyên sâu vào mùa hè này.",
+        keyPhrase: "going to sign up",
+        phraseNote: "Dự định đăng ký (Thì tương lai gần)"
+      },
+      { 
+        english: "Learning a new language is a journey, not just a destination.", 
+        vietnamese: "Học một ngôn ngữ mới là một hành trình, không chỉ là một đích đến.",
+        keyPhrase: "is a journey",
+        phraseNote: "Là một hành trình (Cách nói hình ảnh)"
+      }
+    ]
   }
 };

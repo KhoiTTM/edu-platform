@@ -16,7 +16,7 @@ export function SpeakingInputArea({
   placeholder = "Type your response..." 
 }: SpeakingInputAreaProps) {
   const [text, setText] = useState("");
-  const { isListening, transcript, startListening, stopListening, resetTranscript } = useVoiceInput();
+  const { isListening, transcript, error: voiceError, startListening, stopListening, resetTranscript } = useVoiceInput();
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
@@ -27,6 +27,7 @@ export function SpeakingInputArea({
 
   const handleSend = () => {
     if (text.trim() && !isDisabled) {
+      if (isListening) stopListening();
       onSubmit(text);
       setText("");
       resetTranscript();
@@ -43,15 +44,23 @@ export function SpeakingInputArea({
 
   return (
     <div className="space-y-4">
+      {voiceError && (
+        <div className="px-4 py-2 bg-rose-500/10 border border-rose-500/20 rounded-xl">
+          <p className="text-[10px] font-bold text-rose-400 uppercase tracking-widest text-center">
+            Microphone Error: {voiceError}
+          </p>
+        </div>
+      )}
+      
       <div className="relative group">
         <textarea
           ref={textareaRef}
           value={text}
           onChange={(e) => setText(e.target.value)}
-          disabled={isDisabled || isListening}
-          placeholder={isListening ? "Listening... speak now 🎤" : placeholder}
+          disabled={isDisabled}
+          placeholder={isDisabled ? "Aria is responding..." : isListening ? "Listening... speak now 🎤" : placeholder}
           className={`w-full min-h-[100px] bg-slate-900/50 border ${
-            isListening ? "border-sky-500 ring-2 ring-sky-500/20" : "border-slate-700"
+            isListening ? "border-sky-500 ring-2 ring-sky-500/20" : isDisabled ? "border-slate-800 opacity-50" : "border-slate-700 hover:border-slate-600"
           } rounded-2xl p-4 pr-12 text-white placeholder:text-slate-500 focus:outline-none focus:border-sky-500 transition-all resize-none`}
           onKeyDown={(e) => {
             if (e.key === "Enter" && !e.shiftKey) {
@@ -62,7 +71,7 @@ export function SpeakingInputArea({
         />
         
         <div className="absolute right-3 bottom-3 flex gap-2">
-          {text && !isListening && (
+          {text && !isListening && !isDisabled && (
             <button
               onClick={() => { setText(""); resetTranscript(); }}
               className="p-2 text-slate-500 hover:text-white transition"
@@ -77,7 +86,7 @@ export function SpeakingInputArea({
             className={`p-3 rounded-full transition-all ${
               isListening 
                 ? "bg-rose-500 text-white animate-pulse" 
-                : "bg-slate-800 text-sky-400 hover:bg-slate-700"
+                : "bg-slate-800 text-sky-400 hover:bg-slate-700 disabled:opacity-20"
             }`}
           >
             {isListening ? <Square size={20} fill="currentColor" /> : <Mic size={20} />}
@@ -85,7 +94,7 @@ export function SpeakingInputArea({
           
           <button
             onClick={handleSend}
-            disabled={isDisabled || !text.trim() || isListening}
+            disabled={isDisabled || !text.trim()}
             className="p-3 bg-sky-600 text-white rounded-full hover:bg-sky-500 transition disabled:opacity-40 disabled:cursor-not-allowed shadow-lg shadow-sky-600/20"
           >
             <Send size={20} />

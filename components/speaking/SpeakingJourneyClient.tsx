@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { ChevronLeft } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { ChevronLeft, RefreshCw, Sparkles } from "lucide-react";
 import Link from "next/link";
 import { useSpeakingSession } from "@/hooks/useSpeakingSession";
 import { AriaConversationBubble } from "./AriaConversationBubble";
@@ -35,6 +35,8 @@ export function SpeakingJourneyClient({
     error,
     startSession,
     sendMessage,
+    requestRetry,
+    requestHint,
     completeSession
   } = useSpeakingSession({
     unitId,
@@ -45,8 +47,39 @@ export function SpeakingJourneyClient({
   });
 
   const scrollRef = useRef<HTMLDivElement>(null);
-  const totalTurnsGoal = sessionNumber === 1 ? 5 : 7;
+  
+  // Turn goals increase as sessions progress to build stamina
+  const turnGoals: Record<number, number> = {
+    1: 5,
+    2: 6,
+    3: 7,
+    4: 9
+  };
+  const totalTurnsGoal = turnGoals[sessionNumber] || 7;
   const unitNumber = unitId.replace("unit-", "");
+
+  const [thinkingMsg, setThinkingMsg] = useState("Aria is thinking...");
+  const thinkingMessages = [
+    "Aria is reading your answer carefully...",
+    "Hmm, let me think about what you said...",
+    "Aria is finding the perfect follow-up...",
+    "Processing... (Aria is easily distracted by good answers 😄)",
+    "That's interesting! Let me formulate a thought...",
+    "Thinking of something brilliant to say..."
+  ];
+
+  useEffect(() => {
+    let interval: NodeJS.Timeout;
+    if (isAriaThinking) {
+      interval = setInterval(() => {
+        setThinkingMsg(prev => {
+          const others = thinkingMessages.filter(m => m !== prev);
+          return others[Math.floor(Math.random() * others.length)];
+        });
+      }, 3000);
+    }
+    return () => clearInterval(interval);
+  }, [isAriaThinking]);
 
   useEffect(() => {
     startSession();
@@ -61,6 +94,7 @@ export function SpeakingJourneyClient({
   if (phase === "complete") {
     return (
       <SpeakingSessionComplete 
+        unitId={unitId}
         unitTopic={unitTopic}
         sessionNumber={sessionNumber}
         turnCount={turnCount}
@@ -109,7 +143,7 @@ export function SpeakingJourneyClient({
             ref={scrollRef}
             className="flex-1 overflow-y-auto pr-4 space-y-6 scroll-smooth scrollbar-hide pb-8"
           >
-            {error && (
+            {error && messages.length === 0 && (
               <div className="p-6 rounded-2xl bg-rose-500/10 border border-rose-500/20 text-center space-y-4 animate-in zoom-in-95 duration-500">
                 <p className="text-sm text-rose-400 font-medium">{error}</p>
                 <button
@@ -134,14 +168,20 @@ export function SpeakingJourneyClient({
               ) : (
                 <div key={m.id} className="flex justify-end animate-in fade-in slide-in-from-right-4 duration-500">
                   <div className="bg-sky-600/90 text-white p-4 rounded-2xl rounded-tr-none shadow-sm max-w-[85%] border border-sky-500/30">
-                    <p className="text-sm leading-relaxed">{m.content}</p>
+                    <p className="text-sm leading-relaxed whitespace-pre-wrap break-words">{m.content}</p>
                   </div>
                 </div>
               )
             ))}
             
             {isAriaThinking && (
-              <AriaConversationBubble message="" isTyping={true} />
+              <AriaConversationBubble message="" isTyping={true} thinkingMessage={thinkingMsg} />
+            )}
+
+            {error && messages.length > 0 && (
+              <div className="p-4 rounded-xl bg-rose-500/10 border border-rose-500/20 text-center animate-in slide-in-from-bottom-2 duration-500">
+                <p className="text-xs text-rose-400 font-medium">{error}</p>
+              </div>
             )}
             
             {turnCount >= totalTurnsGoal && (
@@ -157,7 +197,23 @@ export function SpeakingJourneyClient({
           </div>
 
           {/* Input Area */}
-          <div className="pt-4 mt-auto">
+          <div className="pt-4 mt-auto space-y-4">
+            {messages.length > 0 && phase === "conversation" && !isAriaThinking && (
+              <div className="flex gap-2 animate-in slide-in-from-bottom-2 duration-500">
+                <button
+                  onClick={requestRetry}
+                  className="text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-white hover:border-slate-600 transition flex items-center gap-1.5"
+                >
+                  <RefreshCw size={12} /> Try that again
+                </button>
+                <button
+                  onClick={requestHint}
+                  className="text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-white hover:border-slate-600 transition flex items-center gap-1.5"
+                >
+                  <Sparkles size={12} /> Give me a hint
+                </button>
+              </div>
+            )}
             <SpeakingInputArea 
               onSubmit={sendMessage}
               isDisabled={isAriaThinking}
@@ -170,6 +226,7 @@ export function SpeakingJourneyClient({
         <div className="hidden lg:block lg:col-span-5 space-y-6">
           <div className="sticky top-0">
             <ScaffoldingPanel 
+              unitId={unitId}
               unitTopic={unitTopic}
               sessionNumber={sessionNumber}
             />

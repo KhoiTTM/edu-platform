@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
+import { redirect } from "next/navigation";
 
 type Row = {
   subject_slug: string;
@@ -12,10 +13,14 @@ export default async function DashboardPage() {
     data: { user },
   } = await supabase.auth.getUser();
 
+  if (!user) {
+    redirect("/login");
+  }
+
   const { data: profile } = await supabase
     .from("profiles")
     .select("grade, display_name")
-    .eq("id", user!.id)
+    .eq("id", user.id)
     .single();
 
   const grade = profile?.grade ?? 3;

@@ -33,7 +33,7 @@ export function AriaConversationBubble({
               <p className="text-xs text-slate-400 italic animate-pulse">{thinkingMessage}</p>
             </div>
           ) : (
-            <p className="text-sm leading-relaxed whitespace-pre-wrap">{message}</p>
+            <p className="text-sm leading-relaxed whitespace-pre-wrap break-words">{message}</p>
           )}
         </div>
         
