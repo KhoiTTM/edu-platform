@@ -54,7 +54,7 @@ export function AriaDebrief({ score, total, studentName, lessonTitle, unitId, on
     };
 
     fetchDebrief();
-  }, [score, total, studentName, lessonTitle]);
+  }, [score, total, studentName, lessonTitle, trackEvent, unitId]);
 
   const getRank = () => {
     const pct = (score / total) * 100;

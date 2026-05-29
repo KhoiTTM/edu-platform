@@ -18,6 +18,15 @@ interface SpeakingJourneyClientProps {
   previousSummary?: string | null;
 }
 
+const THINKING_MESSAGES = [
+  "Aria is reading your answer carefully...",
+  "Hmm, let me think about what you said...",
+  "Aria is finding the perfect follow-up...",
+  "Processing... (Aria is easily distracted by good answers 😄)",
+  "That's interesting! Let me formulate a thought...",
+  "Thinking of something brilliant to say..."
+];
+
 export function SpeakingJourneyClient({
   unitId,
   sessionNumber,
@@ -59,21 +68,13 @@ export function SpeakingJourneyClient({
   const unitNumber = unitId.replace("unit-", "");
 
   const [thinkingMsg, setThinkingMsg] = useState("Aria is thinking...");
-  const thinkingMessages = [
-    "Aria is reading your answer carefully...",
-    "Hmm, let me think about what you said...",
-    "Aria is finding the perfect follow-up...",
-    "Processing... (Aria is easily distracted by good answers 😄)",
-    "That's interesting! Let me formulate a thought...",
-    "Thinking of something brilliant to say..."
-  ];
 
   useEffect(() => {
     let interval: NodeJS.Timeout;
     if (isAriaThinking) {
       interval = setInterval(() => {
         setThinkingMsg(prev => {
-          const others = thinkingMessages.filter(m => m !== prev);
+          const others = THINKING_MESSAGES.filter(m => m !== prev);
           return others[Math.floor(Math.random() * others.length)];
         });
       }, 3000);
