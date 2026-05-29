@@ -59,16 +59,16 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
     
     if (isUnit) {
       x = 300; // Units are always centered
-      if (i > 0) currentY += 240; // Extra space before a unit
+      if (i > 0) currentY += 150; // Extra space before a unit (Reduced for higher density)
       lessonCounter = 0; // Reset zigzag counter for lessons in this unit
     } else if (node.type === 'exam') {
       x = 300; // Exams are centered at the end of the chapter
-      currentY += 180;
+      currentY += 120; // Reduced for density
     } else {
-      // Lessons zigzag very widely to make it much more winding
-      const pattern = [120, 480, 150, 450, 100, 500];
+      // Lessons zigzag very widely to make it much more winding, but closer vertically
+      const pattern = [140, 460, 170, 430, 110, 490];
       x = pattern[lessonCounter % pattern.length];
-      currentY += 160; // Standard space between lessons
+      currentY += 100; // Standard space between lessons (Reduced from 160)
       lessonCounter++;
     }
     
@@ -94,9 +94,9 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
         // Curved transition
         dPath += ` C ${prev.x} ${cp1Y}, ${curr.x} ${cp2Y}, ${curr.x} ${curr.y}`;
       } else {
-        // Exaggerated Zig-zag curve for winding path
-        const cp1X = prev.x + (i % 2 === 0 ? 120 : -120);
-        const cp2X = curr.x + (i % 2 === 0 ? -120 : 120);
+        // Exaggerated Zig-zag curve for winding path (adjusted for tighter Y spacing)
+        const cp1X = prev.x + (i % 2 === 0 ? 100 : -100);
+        const cp2X = curr.x + (i % 2 === 0 ? -100 : 100);
         dPath += ` C ${cp1X} ${cp1Y}, ${cp2X} ${cp2Y}, ${curr.x} ${curr.y}`;
       }
       prev = curr;
@@ -106,7 +106,7 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
   // Predefined positions for decorative background items based on path height
   const decorationTypes = ["lollipop", "cookie", "shroom", "star", "flower", "wrapped_candy", "gummy_bear"];
   const decorations: { x: number; y: number; type: string; scale: number }[] = [];
-  for (let y = 80; y < pathHeight - 80; y += 80) { // Increased density
+  for (let y = 60; y < pathHeight - 60; y += 70) { // Further increased density for background decors
     // Left side decors
     decorations.push({
       x: 50 + Math.sin(y) * 40,
@@ -296,48 +296,54 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                 </div>
 
                 {isUnitNode ? (
-                  /* 3D Unit Castle / Pudding House Button */
+                  /* 3D Unit Giant Candy Button */
                   <div className="relative flex flex-col items-center">
                     <button 
                       onClick={() => toggleUnit(node.id)}
                       className={`
-                        relative flex items-center justify-center transition-all duration-150 active:translate-y-[4px] active:shadow-[0_4px_0_#9d174d]
-                        w-24 h-24 rounded-[2rem] hover:scale-105
-                        ${isUnlocked 
-                          ? 'bg-gradient-to-br from-pink-400 via-rose-500 to-fuchsia-600 border-4 border-white shadow-[0_10px_0_#9d174d,0_15px_30px_rgba(219,39,119,0.6)]'
-                          : 'bg-slate-300 border-4 border-white text-slate-400 shadow-[0_10px_0_#94a3b8]'}
+                        relative flex items-center justify-center transition-all duration-150 active:translate-y-[4px]
+                        hover:scale-105 w-32 h-24
                       `}
                     >
-                      {/* Top shine effect */}
-                      <div className="absolute top-1.5 left-3 right-3 h-4 bg-white/40 rounded-full pointer-events-none"></div>
-
-                      <div className={isUnlocked ? 'text-white drop-shadow-[0_2px_4px_rgba(157,23,77,0.6)]' : 'text-slate-400'}>
-                        <Icon size={42} fill={isUnlocked ? "currentColor" : "none"} className="animate-pulse" />
-                      </div>
-                      
-                      {/* Expand / Collapse Indicator */}
-                      <div className="absolute -bottom-4 bg-rose-500 border-2 border-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg transition-transform duration-300" style={{ transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" className="text-white">
-                          <path d="M6 9l6 6 6-6" />
-                        </svg>
+                      <div className="flex items-center justify-center -rotate-6">
+                        <div className={`w-0 h-0 border-y-[16px] border-y-transparent border-r-[20px] ${isUnlocked ? 'border-r-pink-400' : 'border-r-slate-400'} -mr-2 z-0`}></div>
+                        <div className={`w-20 h-20 rounded-full ${isUnlocked ? 'bg-gradient-to-tr from-pink-400 via-rose-500 to-fuchsia-600 shadow-[0_10px_0_#9d174d]' : 'bg-slate-300 shadow-[0_10px_0_#94a3b8]'} shadow-inner flex items-center justify-center z-10 border-4 border-white relative`}>
+                           {/* Top shine effect */}
+                           <div className="absolute top-1 left-2 right-2 h-3 bg-white/40 rounded-full pointer-events-none"></div>
+                           <div className={isUnlocked ? 'text-white drop-shadow-[0_2px_4px_rgba(157,23,77,0.6)]' : 'text-slate-400'}>
+                             <Icon size={42} fill={isUnlocked ? "currentColor" : "none"} className={isUnlocked ? "animate-pulse" : ""} />
+                           </div>
+                           {/* Expand / Collapse Indicator */}
+                           <div className="absolute -bottom-4 bg-rose-500 border-2 border-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg transition-transform duration-300" style={{ transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>
+                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" className="text-white">
+                               <path d="M6 9l6 6 6-6" />
+                             </svg>
+                           </div>
+                        </div>
+                        <div className={`w-0 h-0 border-y-[16px] border-y-transparent border-l-[20px] ${isUnlocked ? 'border-l-pink-400' : 'border-l-slate-400'} -ml-2 z-0`}></div>
                       </div>
                     </button>
                   </div>
                 ) : node.type === 'exam' ? (
-                  /* 3D Gold Treasure Chest Exam Node */
+                  /* 3D Big Purple Candy for Exam Node */
                   <Link 
                     href={`/learn/${subjectSlug}/${node.slug}`}
                     className={`
-                      relative flex items-center justify-center transition-all duration-150 active:translate-y-[4px] active:shadow-[0_4px_0_#9333ea]
-                      w-20 h-20 rounded-2xl hover:scale-110
-                      bg-gradient-to-b from-purple-300 via-fuchsia-400 to-violet-500 border-4 border-white shadow-[0_8px_0_#9333ea,0_12px_25px_rgba(147,51,234,0.5)]
+                      relative flex items-center justify-center transition-all duration-150 active:translate-y-[4px]
+                      hover:scale-110 w-24 h-20
                     `}
                   >
-                    {/* Glowing effect background */}
-                    <div className="absolute inset-0 bg-fuchsia-400/40 rounded-2xl blur-md animate-pulse pointer-events-none"></div>
-                    <div className="absolute top-1 left-2 right-2 h-4 bg-white/50 rounded-full pointer-events-none"></div>
-                    <div className="text-white drop-shadow-[0_2px_4px_rgba(147,51,234,0.6)]">
-                      <Gift size={36} fill="currentColor" />
+                    <div className="flex items-center justify-center rotate-6">
+                      <div className="w-0 h-0 border-y-[12px] border-y-transparent border-r-[16px] border-r-purple-400 -mr-2 z-0"></div>
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-purple-400 via-fuchsia-500 to-violet-500 shadow-[0_8px_0_#9333ea] shadow-inner flex items-center justify-center z-10 border-4 border-white relative">
+                        {/* Glowing effect background */}
+                        <div className="absolute inset-0 bg-fuchsia-400/40 rounded-full blur-md animate-pulse pointer-events-none"></div>
+                        <div className="absolute top-1 left-2 right-2 h-2.5 bg-white/50 rounded-full pointer-events-none"></div>
+                        <div className="text-white drop-shadow-[0_2px_4px_rgba(147,51,234,0.6)] z-10">
+                          <Gift size={32} fill="currentColor" />
+                        </div>
+                      </div>
+                      <div className="w-0 h-0 border-y-[12px] border-y-transparent border-l-[16px] border-l-purple-400 -ml-2 z-0"></div>
                     </div>
                   </Link>
                 ) : (
@@ -345,18 +351,10 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                   <Link 
                     href={`/learn/${subjectSlug}/${node.slug}`}
                     className={`
-                      relative flex items-center justify-center transition-all duration-150 active:translate-y-[3px] active:shadow-[0_3px_0_#0369a1]
+                      relative flex items-center justify-center transition-all duration-150 active:translate-y-[3px]
                       w-16 h-16 rounded-full hover:scale-110
-                      ${isCompleted 
-                        ? 'bg-gradient-to-b from-emerald-300 to-teal-500 border-4 border-white shadow-[0_7px_0_#0f766e,0_10px_20px_rgba(20,184,166,0.5)]'
-                        : isUnlocked 
-                          ? 'bg-gradient-to-b from-sky-300 to-blue-500 border-4 border-white shadow-[0_7px_0_#0369a1,0_10px_20px_rgba(14,165,233,0.5)]'
-                          : 'bg-slate-200 border-4 border-white text-slate-400 shadow-[0_7px_0_#94a3b8]'
-                      }
                     `}
                   >
-                    {/* Top inner gloss reflection */}
-                    <div className="absolute top-1 left-2 right-2 h-3 bg-white/50 rounded-full pointer-events-none"></div>
 
                     <div className="relative flex flex-col items-center justify-center w-full h-full">
                       {isCompleted ? (
