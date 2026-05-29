@@ -19,7 +19,7 @@ export default async function DashboardPage() {
   const [profileRes, statsRes, sessionsRes, quizRes] = await Promise.all([
     supabase.from("profiles").select("grade, display_name").eq("id", user.id).single(),
     supabase.from("user_dashboard_stats").select("*").eq("user_id", user.id).single(),
-    supabase.from("learning_sessions").select("started_at").eq("user_id", user.id).order("started_at", { ascending: false }),
+    supabase.from("learning_sessions").select("*").eq("user_id", user.id).order("started_at", { ascending: false }).limit(20),
     supabase.from("quiz_attempts").select("id, score, total, created_at, quizzes(title, lessons(subject_slug))").eq("user_id", user.id).order("created_at", { ascending: false }).limit(20),
   ]);
 
@@ -31,16 +31,50 @@ export default async function DashboardPage() {
   const grade = profile?.grade ?? 3;
   const firstName = profile?.display_name?.split(/\s+/)[0] ?? "bạn";
 
-  const seenSubjects = new Set();
+  const allActivities: any[] = [];
+
+  for (const q of recent) {
+    const qData = q.quizzes as any;
+    const subject = qData?.lessons?.subject_slug || "tieng_anh";
+    allActivities.push({
+      id: q.id,
+      type: "quiz",
+      date: new Date(q.created_at).getTime(),
+      dateStr: q.created_at,
+      subject: subject,
+      title: qData?.title || "Bài kiểm tra",
+      score: q.score,
+      total: q.total
+    });
+  }
+
+  for (const s of learningSessions) {
+    if (!s.summary_metrics || !s.ended_at) continue;
+    const metrics = s.summary_metrics as any;
+    const title = metrics?.unit_topic || "Học bài / Luyện nói";
+    
+    allActivities.push({
+      id: s.id,
+      type: "lesson",
+      date: new Date(s.started_at).getTime(),
+      dateStr: s.started_at,
+      subject: s.subject_slug,
+      title: title,
+      score: null,
+      total: null
+    });
+  }
+
+  allActivities.sort((a, b) => b.date - a.date);
+
+  const seenSubjectTypes = new Set();
   const recentSessionsList: any[] = [];
   
-  for (const session of recent) {
-    const q = session.quizzes as any;
-    // Extract subject_slug from nested lessons relation, fallback to tieng_anh
-    const subject = q?.lessons?.subject_slug || "tieng_anh";
-    if (!seenSubjects.has(subject)) {
-      seenSubjects.add(subject);
-      recentSessionsList.push(session);
+  for (const activity of allActivities) {
+    const key = `${activity.subject}-${activity.type}`;
+    if (!seenSubjectTypes.has(key)) {
+      seenSubjectTypes.add(key);
+      recentSessionsList.push(activity);
       if (recentSessionsList.length === 4) break;
     }
   }
@@ -81,21 +115,18 @@ export default async function DashboardPage() {
 
             <div className="overflow-y-auto pr-2 space-y-3 custom-scrollbar flex-1">
               {recentSessionsList.length > 0 ? (
-                recentSessionsList.map((session: any) => {
-                  const q = session.quizzes as any;
-                  const subject = q?.subject_id || q?.subject || "tieng_anh";
-                  const title = q?.title || "Bài tập";
+                recentSessionsList.map((activity: any) => {
                   return (
                     <Link
-                      key={session.id}
-                      href={`/luyen-tap/${subject}`}
+                      key={`${activity.id}-${activity.type}`}
+                      href={`/luyen-tap/${activity.subject}`}
                       className="group flex items-center justify-between rounded-2xl bg-slate-950/60 p-4 border border-slate-800 hover:border-sky-500/50 hover:bg-slate-900 transition-all shadow-inner"
                     >
                       <div>
-                        <h3 className="text-sm font-black text-white group-hover:text-sky-400 transition-colors">{title}</h3>
+                        <h3 className="text-sm font-black text-white group-hover:text-sky-400 transition-colors">{activity.title}</h3>
                         <p className="text-slate-500 font-bold text-[10px] uppercase tracking-wider mt-1 flex items-center gap-1.5">
-                          <Target size={12} className="text-emerald-500" />
-                          Điểm: {session.score}/{session.total} • {new Date(session.created_at).toLocaleDateString("vi-VN")}
+                          <Target size={12} className={activity.type === 'quiz' ? "text-emerald-500" : "text-sky-500"} />
+                          {activity.type === 'quiz' ? `Điểm: ${activity.score}/${activity.total}` : "Đã hoàn thành"} • {new Date(activity.dateStr).toLocaleDateString("vi-VN")}
                         </p>
                       </div>
                       <div className="shrink-0 w-8 h-8 rounded-full bg-sky-500/10 flex items-center justify-center text-sky-400 group-hover:bg-sky-500 group-hover:text-white transition-colors">
