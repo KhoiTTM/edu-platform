@@ -1,11 +1,7 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from '@/lib/supabase/server';
 import { EnglishAdapter } from '../../subjects/english/adapter';
 import { MathAdapter } from '../../subjects/math/adapter';
 import { SubjectAdapter } from '../../subjects/adapter';
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
-const supabase = createClient(supabaseUrl, supabaseKey);
 
 export interface GeneratedQuestion {
   concept_id: string;
@@ -31,6 +27,7 @@ export class DeterministicGenerator {
    * Main entry point for generation
    */
   async generate(conceptId: string, blueprintId: string): Promise<GeneratedQuestion | null> {
+    const supabase = await createClient();
     // 1. Fetch Concept Data
     const { data: concept, error: conceptError } = await supabase
       .from('curriculum_concepts')
@@ -89,6 +86,7 @@ export class DeterministicGenerator {
    * Helper: Fetch distractors from the same unit/lesson to keep it relevant
    */
   public async getDistractors(concept: any, type: string, field: string, count: number): Promise<string[]> {
+    const supabase = await createClient();
     const { data: siblingConcepts } = await supabase
       .from('curriculum_concepts')
       .select('content_json')
@@ -108,6 +106,7 @@ export class DeterministicGenerator {
   }
 
   public async getSiblings(concept: any, type: string, count: number) {
+    const supabase = await createClient();
     return await supabase
       .from('curriculum_concepts')
       .select('content_json')

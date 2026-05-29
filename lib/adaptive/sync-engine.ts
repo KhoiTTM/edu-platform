@@ -1,9 +1,5 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from '@/lib/supabase/server';
 import { calculateNextReview } from '../srs/scheduler';
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
-const supabase = createClient(supabaseUrl, supabaseKey);
 
 export interface SessionResult {
   concept_id: string;
@@ -21,6 +17,7 @@ export class AdaptiveSyncEngine {
    * Syncs a batch of results for a user.
    */
   async syncSession(userId: string, results: SessionResult[]) {
+    const supabase = await createClient();
     console.log(`Syncing session for user ${userId}...`);
 
     for (const res of results) {
