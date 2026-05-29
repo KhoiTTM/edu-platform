@@ -344,9 +344,9 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
 
                     <div className="relative flex flex-col items-center justify-center w-full h-full">
                       {isCompleted ? (
-                        // Big Candy for completed lessons
-                        <div className="flex items-center justify-center rotate-[15deg] hover:rotate-[25deg] transition-transform relative">
-                          <div className="text-[54px] leading-none select-none drop-shadow-[0_8px_8px_rgba(16,185,129,0.6)]">
+                        // Big Candy for completed lessons (Faded out)
+                        <div className="flex items-center justify-center rotate-[15deg] hover:rotate-[25deg] transition-transform relative opacity-60 grayscale hover:grayscale-0 hover:opacity-100 duration-300">
+                          <div className="text-[54px] leading-none select-none drop-shadow-md">
                             🍬
                           </div>
                           {/* Checked badge */}
