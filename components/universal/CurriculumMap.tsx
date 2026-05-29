@@ -305,23 +305,15 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                       `}
                     >
                       <div className="flex items-center justify-center -rotate-6 group-hover:rotate-0 transition-transform">
-                        <div className={`w-0 h-0 border-y-[24px] border-y-transparent border-r-[32px] ${isUnlocked ? 'border-r-pink-500' : 'border-r-slate-400'} -mr-3 z-0`}></div>
-                        <div className={`w-24 h-24 rounded-full ${isUnlocked ? 'bg-gradient-to-tr from-pink-400 via-rose-500 to-fuchsia-600 shadow-[0_10px_0_#9d174d]' : 'bg-slate-300 shadow-[0_10px_0_#94a3b8]'} shadow-inner flex items-center justify-center z-10 border-[5px] border-white relative overflow-hidden`}>
-                           {/* Stripes */}
-                           {isUnlocked && <div className="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_12px,rgba(255,255,255,0.3)_12px,rgba(255,255,255,0.3)_24px)]"></div>}
-                           {/* Top shine effect */}
-                           <div className="absolute top-1.5 left-3 right-3 h-4 bg-white/50 rounded-full pointer-events-none"></div>
-                           <div className={isUnlocked ? 'text-white drop-shadow-[0_2px_4px_rgba(157,23,77,0.8)] z-10' : 'text-slate-400 z-10'}>
-                             <Icon size={48} fill={isUnlocked ? "currentColor" : "none"} className={isUnlocked ? "animate-pulse" : ""} />
-                           </div>
-                           {/* Expand / Collapse Indicator */}
-                           <div className="absolute -bottom-5 bg-rose-500 border-2 border-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg transition-transform duration-300 z-20" style={{ transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>
-                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" className="text-white">
-                               <path d="M6 9l6 6 6-6" />
-                             </svg>
-                           </div>
+                        <div className={`text-[90px] leading-none select-none ${isUnlocked ? 'drop-shadow-[0_10px_10px_rgba(219,39,119,0.8)] animate-bounce' : 'grayscale opacity-50 drop-shadow-md'}`}>
+                          🍭
                         </div>
-                        <div className={`w-0 h-0 border-y-[24px] border-y-transparent border-l-[32px] ${isUnlocked ? 'border-l-pink-500' : 'border-l-slate-400'} -ml-3 z-0`}></div>
+                        {/* Expand / Collapse Indicator */}
+                        <div className="absolute -bottom-2 bg-rose-500 border-[3px] border-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg transition-transform duration-300 z-20" style={{ transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>
+                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="5" className="text-white">
+                            <path d="M6 9l6 6 6-6" />
+                          </svg>
+                        </div>
                       </div>
                     </button>
                   </div>
@@ -335,17 +327,9 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                     `}
                   >
                     <div className="flex items-center justify-center rotate-6 group-hover:rotate-12 transition-transform">
-                      <div className="w-0 h-0 border-y-[18px] border-y-transparent border-r-[24px] border-r-purple-500 -mr-3 z-0"></div>
-                      <div className="w-20 h-20 rounded-full bg-gradient-to-tr from-purple-500 via-fuchsia-500 to-violet-500 shadow-[0_8px_0_#9333ea] shadow-inner flex items-center justify-center z-10 border-[5px] border-white relative overflow-hidden">
-                        {/* Glowing effect background */}
-                        <div className="absolute inset-0 bg-fuchsia-400/40 rounded-full blur-md animate-pulse pointer-events-none"></div>
-                        <div className="absolute inset-0 bg-[repeating-linear-gradient(-45deg,transparent,transparent_10px,rgba(255,255,255,0.2)_10px,rgba(255,255,255,0.2)_20px)]"></div>
-                        <div className="absolute top-1.5 left-2.5 right-2.5 h-3 bg-white/60 rounded-full pointer-events-none"></div>
-                        <div className="text-white drop-shadow-[0_2px_6px_rgba(147,51,234,0.9)] z-10">
-                          <Gift size={38} fill="currentColor" />
-                        </div>
+                      <div className="text-[80px] leading-none select-none drop-shadow-[0_10px_15px_rgba(147,51,234,0.8)]">
+                        🍫
                       </div>
-                      <div className="w-0 h-0 border-y-[18px] border-y-transparent border-l-[24px] border-l-purple-500 -ml-3 z-0"></div>
                     </div>
                   </Link>
                 ) : (
@@ -361,35 +345,32 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                     <div className="relative flex flex-col items-center justify-center w-full h-full">
                       {isCompleted ? (
                         // Big Candy for completed lessons
-                        <div className="flex items-center justify-center rotate-[15deg] hover:rotate-[25deg] transition-transform">
-                          <div className="w-0 h-0 border-y-[14px] border-y-transparent border-r-[18px] border-r-emerald-400 -mr-2 z-0"></div>
-                          <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-emerald-300 to-teal-400 shadow-inner flex items-center justify-center z-10 border-[4px] border-white relative overflow-hidden">
-                             <div className="absolute inset-0 bg-[repeating-linear-gradient(-45deg,transparent,transparent_8px,rgba(255,255,255,0.3)_8px,rgba(255,255,255,0.3)_16px)]"></div>
-                             <div className="absolute top-1 left-1.5 right-1.5 h-2 bg-white/60 rounded-full pointer-events-none"></div>
-                             <CheckCircle2 size={24} strokeWidth={4} className="text-white drop-shadow-md z-10" />
+                        <div className="flex items-center justify-center rotate-[15deg] hover:rotate-[25deg] transition-transform relative">
+                          <div className="text-[64px] leading-none select-none drop-shadow-[0_8px_8px_rgba(16,185,129,0.6)]">
+                            🍬
                           </div>
-                          <div className="w-0 h-0 border-y-[14px] border-y-transparent border-l-[18px] border-l-emerald-400 -ml-2 z-0"></div>
+                          {/* Checked badge */}
+                          <div className="absolute -top-1 -right-2 bg-emerald-500 rounded-full p-0.5 border-[3px] border-white shadow-md z-20">
+                             <CheckCircle2 size={18} strokeWidth={4} className="text-white" />
+                          </div>
                         </div>
                       ) : isUnlocked ? (
                         // Big Candy for unlocked current lesson
-                        <div className="flex items-center justify-center -rotate-[10deg] hover:rotate-0 transition-transform animate-pulse">
-                          <div className="w-0 h-0 border-y-[16px] border-y-transparent border-r-[22px] border-r-sky-400 -mr-2 z-0"></div>
-                          <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-sky-300 to-blue-400 shadow-[0_5px_15px_rgba(14,165,233,0.6)] shadow-inner flex items-center justify-center z-10 border-[4px] border-white relative overflow-hidden">
-                             <div className="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_8px,rgba(255,255,255,0.4)_8px,rgba(255,255,255,0.4)_16px)]"></div>
-                             <div className="absolute top-1 left-2 right-2 h-2.5 bg-white/60 rounded-full pointer-events-none"></div>
-                             <Play size={26} fill="currentColor" className="text-white drop-shadow-md z-10 ml-1" />
+                        <div className="flex items-center justify-center -rotate-[10deg] hover:rotate-0 transition-transform animate-pulse relative">
+                          <div className="text-[72px] leading-none select-none drop-shadow-[0_8px_15px_rgba(14,165,233,0.8)]">
+                            🍬
                           </div>
-                          <div className="w-0 h-0 border-y-[16px] border-y-transparent border-l-[22px] border-l-sky-400 -ml-2 z-0"></div>
+                          {/* Play badge */}
+                          <div className="absolute -bottom-2 -right-2 bg-sky-500 rounded-full p-1.5 border-[3px] border-white shadow-md z-20">
+                             <Play size={16} fill="currentColor" className="text-white ml-0.5" />
+                          </div>
                         </div>
                       ) : (
                         // Small Candy for locked lessons
-                        <div className="flex items-center justify-center rotate-[20deg] opacity-80 hover:opacity-100 transition-opacity">
-                          <div className="w-0 h-0 border-y-[10px] border-y-transparent border-r-[14px] border-r-slate-300 -mr-1.5 z-0"></div>
-                          <div className="w-10 h-10 rounded-full bg-slate-200 shadow-inner flex items-center justify-center z-10 border-[3px] border-white relative">
-                             <div className="absolute top-0.5 left-1 right-1 h-1.5 bg-white/60 rounded-full pointer-events-none"></div>
-                             <Lock size={16} strokeWidth={3} className="text-slate-400 z-10" />
+                        <div className="flex items-center justify-center rotate-[20deg] opacity-60 hover:opacity-100 transition-opacity grayscale">
+                          <div className="text-[52px] leading-none select-none drop-shadow-md">
+                            🍬
                           </div>
-                          <div className="w-0 h-0 border-y-[10px] border-y-transparent border-l-[14px] border-l-slate-300 -ml-1.5 z-0"></div>
                         </div>
                       )}
                     </div>
