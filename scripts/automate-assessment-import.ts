@@ -52,7 +52,10 @@ async function processFiles() {
                 volume: data.metadata?.volume || 1,
                 // Extract unit numbers from string like "Unit 1" and keep only the largest
                 units: (() => {
-                    const parsedUnits = data.metadata?.units?.map((u: string) => parseInt(u.replace(/\D/g, ''))).filter((n: number) => !isNaN(n)) || [];
+                    const parsedUnits = data.metadata?.units?.map((u: any) => {
+                        if (typeof u === 'number') return u;
+                        return parseInt(u.replace(/\D/g, ''));
+                    }).filter((n: number) => !isNaN(n)) || [];
                     return parsedUnits.length > 0 ? [Math.max(...parsedUnits)] : [];
                 })(),
                 reference_book: data.metadata?.book,
