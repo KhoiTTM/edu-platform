@@ -44,3 +44,33 @@ export async function getExamQuestions(examId: string) {
   console.log(`  [ACTION-LOG] Successfully fetched ${questions.length} questions.`);
   return questions;
 }
+
+export async function saveExamResult(examId: string, score: number, total: number) {
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return;
+
+  const { data: examData } = await supabase
+    .from('exams')
+    .select('title, assessment_collections(subject_slug)')
+    .eq('id', examId)
+    .single();
+
+  if (examData) {
+    const subjectSlug = examData.assessment_collections?.subject_slug || 'tieng_anh';
+    const now = new Date().toISOString();
+    
+    await supabase.from('learning_sessions').insert({
+      user_id: user.id,
+      subject_slug: subjectSlug,
+      started_at: now,
+      ended_at: now,
+      summary_metrics: {
+        type: 'exam',
+        unit_topic: examData.title,
+        score: score,
+        total: total
+      }
+    });
+  }
+}

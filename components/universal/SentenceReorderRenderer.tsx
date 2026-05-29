@@ -14,7 +14,7 @@ interface SentenceReorderRendererProps {
 
 export function SentenceReorderRenderer({
   instruction,
-  words,
+  words = [],
   correctSentence,
   onAnswer,
   disabled = false

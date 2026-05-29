@@ -52,16 +52,17 @@ export default async function DashboardPage() {
     if (!s.summary_metrics || !s.ended_at) continue;
     const metrics = s.summary_metrics as any;
     const title = metrics?.unit_topic || "Học bài / Luyện nói";
+    const type = metrics?.type === 'exam' ? 'quiz' : 'lesson';
     
     allActivities.push({
       id: s.id,
-      type: "lesson",
+      type: type,
       date: new Date(s.started_at).getTime(),
       dateStr: s.started_at,
       subject: s.subject_slug,
       title: title,
-      score: null,
-      total: null
+      score: metrics.score ?? null,
+      total: metrics.total ?? null
     });
   }
 
@@ -78,6 +79,24 @@ export default async function DashboardPage() {
       if (recentSessionsList.length === 4) break;
     }
   }
+
+  // Build the final Leaderboard array merging old quiz_attempts and new exam learning_sessions
+  const leaderboardItems = [...recent];
+  
+  for (const s of learningSessions) {
+    if (s.summary_metrics && (s.summary_metrics as any).type === 'exam') {
+      leaderboardItems.push({
+        id: s.id,
+        score: (s.summary_metrics as any).score,
+        total: (s.summary_metrics as any).total,
+        created_at: s.started_at,
+        quizzes: { title: (s.summary_metrics as any).unit_topic }
+      });
+    }
+  }
+
+  leaderboardItems.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
+  const finalLeaderboard = leaderboardItems.slice(0, 20);
 
   return (
     <div className="mx-auto max-w-6xl h-[calc(100dvh-6rem)] flex flex-col gap-4 select-none relative z-10 overflow-hidden">
@@ -172,14 +191,14 @@ export default async function DashboardPage() {
             </div>
             
             <div className="overflow-y-auto pr-2 space-y-3 custom-scrollbar flex-1">
-              {recent.length === 0 ? (
+              {finalLeaderboard.length === 0 ? (
                 <div className="text-center py-8 opacity-60">
                   <Trophy size={24} className="text-slate-600 mx-auto mb-2" />
                   <p className="text-xs text-slate-400 font-semibold">Chưa có kết quả.</p>
                 </div>
               ) : (
                 <ul className="space-y-3">
-                  {recent.map((row: any, index: number) => {
+                  {finalLeaderboard.map((row: any, index: number) => {
                     const q = row.quizzes as { title?: string } | null;
                     const title = q?.title ?? "Bài kiểm tra";
                     const score = row.score as number;

@@ -4,7 +4,7 @@ import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { AssessmentRenderer } from '@/components/universal/AssessmentRenderer';
 import { AssessmentResultCard } from '@/components/assessment/AssessmentResultCard';
-import { getExamQuestions, getExamInfo } from './actions';
+import { getExamQuestions, getExamInfo, saveExamResult } from './actions';
 
 function AssessmentContent() {
   const searchParams = useSearchParams();
@@ -55,6 +55,7 @@ function AssessmentContent() {
           completedExams.push(examId);
           localStorage.setItem('completed_exams', JSON.stringify(completedExams));
         }
+        saveExamResult(examId, correctCount, answers.length);
       } catch (e) {
         console.error("Failed to save progress", e);
       }

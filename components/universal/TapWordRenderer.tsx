@@ -10,7 +10,7 @@ interface TapWordRendererProps {
   disabled?: boolean;
 }
 
-export function TapWordRenderer({ instruction, words, correctWord, onAnswer, disabled }: TapWordRendererProps) {
+export function TapWordRenderer({ instruction, words = [], correctWord, onAnswer, disabled }: TapWordRendererProps) {
   const [selected, setSelected] = useState<string | null>(null);
 
   const handleSelect = (word: string) => {
@@ -26,20 +26,32 @@ export function TapWordRenderer({ instruction, words, correctWord, onAnswer, dis
       </div>
       
       <div className="flex flex-wrap gap-3 justify-center">
-        {words.map((word, idx) => (
-          <button
-            key={idx}
-            disabled={disabled}
-            onClick={() => handleSelect(word)}
-            className={`px-6 py-4 rounded-2xl border-2 font-bold transition-all ${
-              selected === word 
-                ? 'bg-sky-500 border-sky-400 text-white shadow-[0_4px_0_rgb(14,165,233)]' 
-                : 'bg-slate-800 border-slate-700 text-slate-200 hover:bg-slate-700 shadow-[0_4px_0_rgb(30,41,59)]'
-            } active:translate-y-1 active:shadow-none`}
-          >
-            {word}
-          </button>
-        ))}
+        {words.map((word, idx) => {
+          let stateClass = 'bg-slate-800 border-slate-700 text-slate-200 hover:bg-slate-700 shadow-[0_4px_0_rgb(30,41,59)]';
+          
+          if (disabled) {
+            if (word === correctWord) {
+              stateClass = 'bg-emerald-500 border-emerald-400 text-white shadow-none';
+            } else if (word === selected) {
+              stateClass = 'bg-rose-500 border-rose-400 text-white shadow-none';
+            } else {
+              stateClass = 'bg-slate-800/50 border-slate-700/50 text-slate-500 shadow-none cursor-not-allowed';
+            }
+          } else if (selected === word) {
+            stateClass = 'bg-sky-500 border-sky-400 text-white shadow-[0_4px_0_rgb(14,165,233)]';
+          }
+
+          return (
+            <button
+              key={idx}
+              disabled={disabled}
+              onClick={() => handleSelect(word)}
+              className={`px-6 py-4 rounded-2xl border-2 font-bold transition-all ${stateClass} active:translate-y-1 active:shadow-none`}
+            >
+              {word}
+            </button>
+          );
+        })}
       </div>
     </div>
   );

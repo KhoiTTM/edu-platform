@@ -73,7 +73,8 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
       case 'tap_word': {
         const words = currentQuestion.words || currentQuestion.choices || [];
         const correctWord = currentQuestion.correctWord || currentQuestion.correct_word || '';
-        const instruction = currentQuestion.target_word ? `${currentQuestion.instruction}: "${currentQuestion.target_word}"` : currentQuestion.instruction;
+        const instructionText = currentQuestion.instruction || "Chọn từ đúng nghĩa";
+        const instruction = currentQuestion.target_word ? `${instructionText}: "${currentQuestion.target_word}"` : instructionText;
         return (
           <TapWordRenderer
             key={`tw-${currentIndex}`}
