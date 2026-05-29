@@ -80,6 +80,26 @@ export default async function DashboardPage() {
     }
   }
 
+  // Fetch next lesson recommendations for each recent activity
+  for (const activity of recentSessionsList) {
+    const match = activity.title.match(/(?:Bài|Unit|Ex)\s*(\d+)/i);
+    if (match) {
+      const nextUnitNum = parseInt(match[1]) + 1;
+      const { data: nextCol } = await supabase
+        .from('assessment_collections')
+        .select('exams(id)')
+        .eq('subject_slug', activity.subject)
+        .contains('units', [nextUnitNum])
+        .limit(1)
+        .single();
+        
+      if (nextCol && nextCol.exams && nextCol.exams.length > 0) {
+        activity.nextUnit = nextUnitNum;
+        activity.nextExamId = (nextCol.exams[0] as any).id;
+      }
+    }
+  }
+
   // Build the final Leaderboard array merging old quiz_attempts and new exam learning_sessions
   const leaderboardItems = [...recent];
   
@@ -147,6 +167,13 @@ export default async function DashboardPage() {
                           <Target size={12} className={activity.type === 'quiz' ? "text-emerald-500" : "text-sky-500"} />
                           {activity.type === 'quiz' ? `Điểm: ${activity.score}/${activity.total}` : "Đã hoàn thành"} • {new Date(activity.dateStr).toLocaleDateString("vi-VN")}
                         </p>
+                        {activity.nextUnit && activity.nextExamId && (
+                          <div className="mt-2 inline-flex items-center gap-1 text-[10px] font-bold text-emerald-300 bg-emerald-500/20 px-2 py-1 rounded">
+                            <Link href={`/test-assessment?examId=${activity.nextExamId}`} className="hover:text-emerald-200 transition flex items-center gap-1">
+                                Gợi ý học tiếp: Bài {activity.nextUnit} <ArrowRight size={10} />
+                            </Link>
+                          </div>
+                        )}
                       </div>
                       <div className="shrink-0 w-8 h-8 rounded-full bg-sky-500/10 flex items-center justify-center text-sky-400 group-hover:bg-sky-500 group-hover:text-white transition-colors">
                         <ArrowRight size={16} />
