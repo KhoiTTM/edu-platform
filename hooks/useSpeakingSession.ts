@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback, useRef } from "react";
-import { supabase } from "@/lib/supabase/client";
+import { createClient } from "@/lib/supabase/client";
 import { useTrackEvent } from "@/hooks/useTrackEvent";
 
 export type MessageRole = "aria" | "learner";
@@ -366,6 +366,7 @@ export function useSpeakingSession({
       const sessionSummary = summaryData.text;
 
       // 3. Save to Supabase
+      const supabase = createClient();
       const { data: { user } } = await supabase.auth.getUser();
       if (user) {
         const avgWords = Math.round(totalWordsRef.current / learnerTurnsRef.current);
