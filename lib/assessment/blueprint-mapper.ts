@@ -1,8 +1,4 @@
-import { createClient } from '@supabase/supabase-js';
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
-const supabase = createClient(supabaseUrl, supabaseKey);
+import { createClient } from '@/lib/supabase/server';
 
 export interface Blueprint {
   id: string;
@@ -16,6 +12,7 @@ export interface Blueprint {
  * Mapping Engine: Links concepts to appropriate blueprints
  */
 export async function getBlueprintsForConcept(conceptType: string): Promise<Blueprint[]> {
+  const supabase = await createClient();
   const { data, error } = await supabase
     .from('question_blueprints')
     .select('*')
@@ -33,6 +30,7 @@ export async function getBlueprintsForConcept(conceptType: string): Promise<Blue
  * Advanced Mapping: Returns valid concept-blueprint pairs for a given lesson
  */
 export async function getValidPairsForLesson(lessonId: string) {
+  const supabase = await createClient();
   // 1. Fetch all concepts for the lesson
   const { data: concepts, error: conceptsError } = await supabase
     .from('curriculum_concepts')
