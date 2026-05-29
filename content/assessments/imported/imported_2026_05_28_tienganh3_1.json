@@ -1,0 +1,179 @@
+{
+  "title": "Unit 2 Our names - Assessment (Cumulative Unit 1-2)",
+  "metadata": {
+    "subject": "Tiếng Anh",
+    "grade": 3,
+    "volume": 1,
+    "book": "Tiếng Anh 3 - Global Success",
+    "units": ["Unit 1", "Unit 2"],
+    "total_questions": 15,
+    "generated_date": "2026-05-28 13:10:00"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "tap_correct_word",
+      "instruction": "Chọn từ đúng để hoàn thành câu chào hỏi.",
+      "question_data": {
+        "question": "Hello. I ___ Ben.",
+        "correct_word": "am",
+        "choices": ["am", "is", "are", "fine"]
+      },
+      "source_anchor": { "book": "English 3 Global Success - Tập 1", "unit": 1, "page": 10 }
+    },
+    {
+      "id": "Q002",
+      "type": "tap_correct_word",
+      "instruction": "Chọn từ đúng để hoàn thành câu hỏi tên.",
+      "question_data": {
+        "question": "What's ___ name",
+        "correct_word": "your",
+        "choices": ["your", "you", "my", "she"]
+      },
+      "source_anchor": { "book": "English 3 Global Success - Tập 1", "unit": 2, "page": 16 }
+    },
+    {
+      "id": "Q003",
+      "type": "tap_correct_word",
+      "instruction": "Chọn từ đúng để hoàn thành câu hỏi tuổi.",
+      "question_data": {
+        "question": "How ___ are you",
+        "correct_word": "old",
+        "choices": ["old", "what", "you", "fine"]
+      },
+      "source_anchor": { "book": "English 3 Global Success - Tập 1", "unit": 2, "page": 18 }
+    },
+    {
+      "id": "Q004",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các từ để tạo thành câu hỏi thăm sức khỏe hoàn chỉnh.",
+      "question_data": {
+        "words": ["Fine", ",", "thank", "you", "."],
+        "correct_sentence": "Fine, thank you."
+      },
+      "source_anchor": { "book": "English 3 Global Success - Tập 1", "unit": 1, "page": 12 }
+    },
+    {
+      "id": "Q005",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các từ để tạo thành câu giới thiệu tên.",
+      "question_data": {
+        "words": ["name's", "My", "Linh", "."],
+        "correct_sentence": "My name's Linh."
+      },
+      "source_anchor": { "book": "English 3 Global Success - Tập 1", "unit": 2, "page": 16 }
+    },
+    {
+      "id": "Q006",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các từ để tạo thành câu hỏi tuổi.",
+      "question_data": {
+        "words": ["old", "are", "you", "How"],
+        "correct_sentence": "How old are you"
+      },
+      "source_anchor": { "book": "English 3 Global Success - Tập 1", "unit": 2, "page": 18 }
+    },
+    {
+      "id": "Q007",
+      "type": "vocab_to_word",
+      "instruction": "Chọn từ tiếng Anh tương ứng với nghĩa tiếng Việt.",
+      "question_data": {
+        "question": "Xin chào",
+        "correct_word": "Hello",
+        "choices": ["Hello", "Bye", "Fine", "Name"]
+      },
+      "source_anchor": { "book": "English 3 Global Success - Tập 1", "unit": 1, "page": 10 }
+    },
+    {
+      "id": "Q008",
+      "type": "vocab_to_word",
+      "instruction": "Chọn từ tiếng Anh tương ứng với nghĩa tiếng Việt.",
+      "question_data": {
+        "question": "Tên",
+        "correct_word": "name",
+        "choices": ["name", "old", "how", "what"]
+      },
+      "source_anchor": { "book": "English 3 Global Success - Tập 1", "unit": 2, "page": 16 }
+    },
+    {
+      "id": "Q009",
+      "type": "vocab_to_word",
+      "instruction": "Chọn từ tiếng Anh tương ứng với nghĩa tiếng Việt.",
+      "question_data": {
+        "question": "Tạm biệt",
+        "correct_word": "Goodbye",
+        "choices": ["Goodbye", "Hello", "How", "Fine"]
+      },
+      "source_anchor": { "book": "English 3 Global Success - Tập 1", "unit": 1, "page": 12 }
+    },
+    {
+      "id": "Q010",
+      "type": "fill_blank",
+      "instruction": "Điền từ thích hợp vào chỗ trống để hỏi thăm sức khỏe.",
+      "question_data": {
+        "question": "___ are you - Fine, thank you.",
+        "correct_answer": "How",
+        "choices": ["How", "What", "Who", "Fine"]
+      },
+      "source_anchor": { "book": "English 3 Global Success - Tập 1", "unit": 1, "page": 12 }
+    },
+    {
+      "id": "Q011",
+      "type": "fill_blank",
+      "instruction": "Điền từ thích hợp vào chỗ trống để trả lời về tên.",
+      "question_data": {
+        "question": "What's your ___ - My name's Mary.",
+        "correct_answer": "name",
+        "choices": ["name", "age", "years", "old"]
+      },
+      "source_anchor": { "book": "English 3 Global Success - Tập 1", "unit": 2, "page": 16 }
+    },
+    {
+      "id": "Q012",
+      "type": "fill_blank",
+      "instruction": "Điền từ thích hợp vào chỗ trống để trả lời về tuổi.",
+      "question_data": {
+        "question": "I'm seven ___ old.",
+        "correct_answer": "years",
+        "choices": ["years", "year", "old", "name"]
+      },
+      "source_anchor": { "book": "English 3 Global Success - Tập 1", "unit": 2, "page": 18 }
+    },
+    {
+      "id": "Q013",
+      "type": "match_pair",
+      "instruction": "Nối câu chào hỏi phù hợp.",
+      "question_data": {
+        "pairs": [
+          { "left": "Hi. I'm Mai.", "right": "Hello, Mai. I'm Ben." },
+          { "left": "How are you", "right": "Fine, thank you." }
+        ]
+      },
+      "source_anchor": { "book": "English 3 Global Success - Tập 1", "unit": 1, "page": 13 }
+    },
+    {
+      "id": "Q014",
+      "type": "match_pair",
+      "instruction": "Nối câu hỏi với câu trả lời tương ứng.",
+      "question_data": {
+        "pairs": [
+          { "left": "What's your name", "right": "My name's Mary." },
+          { "left": "How old are you", "right": "I'm eight years old." }
+        ]
+      },
+      "source_anchor": { "book": "English 3 Global Success - Tập 1", "unit": 2, "page": 21 }
+    },
+    {
+      "id": "Q015",
+      "type": "match_pair",
+      "instruction": "Nối các lời chào và tạm biệt tương ứng.",
+      "question_data": {
+        "pairs": [
+          { "left": "Hello", "right": "Hi" },
+          { "left": "Goodbye", "right": "Bye" }
+        ]
+      },
+      "source_anchor": { "book": "English 3 Global Success - Tập 1", "unit": 1, "page": 12 }
+    }
+  ]
+}

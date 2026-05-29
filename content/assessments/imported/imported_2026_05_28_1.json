@@ -1,0 +1,179 @@
+{
+  "title": "Unit 5: My hobbies - Assessment (Cumulative Unit 1-5)",
+  "metadata": {
+    "subject": "Tiếng Anh",
+    "grade": 3,
+    "volume": 1,
+    "book": "Tiếng Anh 3 - Global Success",
+    "units": ["Unit 1", "Unit 2", "Unit 3", "Unit 4", "Unit 5"],
+    "total_questions": 15,
+    "generated_date": "2026-05-28 15:30:45"
+  },
+  "questions": [
+    {
+      "id": "Q501",
+      "type": "tap_correct_word",
+      "instruction": "Chọn từ đúng để hoàn thành câu hỏi về sở thích.",
+      "question_data": {
+        "question": "What's your ____? - It's singing.",
+        "correct_word": "hobby",
+        "choices": ["hobby", "name", "old", "friend"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 5, "page": 34 }
+    },
+    {
+      "id": "Q502",
+      "type": "tap_correct_word",
+      "instruction": "Chọn từ đúng để trả lời về sở thích.",
+      "question_data": {
+        "question": "What's your hobby? - I ____ drawing.",
+        "correct_word": "like",
+        "choices": ["like", "am", "is", "are"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 5, "page": 36 }
+    },
+    {
+      "id": "Q503",
+      "type": "tap_correct_word",
+      "instruction": "Chọn từ đúng để hoàn thành lệnh về cơ thể (Unit 4).",
+      "question_data": {
+        "question": "____ your nose.",
+        "correct_word": "Touch",
+        "choices": ["Touch", "Open", "Is", "It"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 4, "page": 28 }
+    },
+    {
+      "id": "Q504",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các từ để tạo thành câu hỏi sở thích hoàn chỉnh.",
+      "question_data": {
+        "words": ["hobby", "What's", "your", "?"],
+        "correct_sentence": "What's your hobby?"
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 5, "page": 34 }
+    },
+    {
+      "id": "Q505",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các từ để tạo thành câu nói về sở thích.",
+      "question_data": {
+        "words": ["dancing", "like", "I", "."],
+        "correct_sentence": "I like dancing."
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 5, "page": 36 }
+    },
+    {
+      "id": "Q506",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các từ thành câu hỏi tuổi (Unit 2).",
+      "question_data": {
+        "words": ["old", "are", "you", "How", "?"],
+        "correct_sentence": "How old are you?"
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 18 }
+    },
+    {
+      "id": "Q507",
+      "type": "vocab_to_word",
+      "instruction": "Chọn từ tiếng Anh tương ứng với nghĩa tiếng Việt.",
+      "question_data": {
+        "question": "Nấu ăn",
+        "correct_word": "cooking",
+        "choices": ["cooking", "dancing", "drawing", "singing"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 5, "page": 78 }
+    },
+    {
+      "id": "Q508",
+      "type": "vocab_to_word",
+      "instruction": "Chọn từ tiếng Anh tương ứng với nghĩa tiếng Việt.",
+      "question_data": {
+        "question": "Bơi",
+        "correct_word": "swimming",
+        "choices": ["swimming", "running", "walking", "painting"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 5, "page": 80 }
+    },
+    {
+      "id": "Q509",
+      "type": "vocab_to_word",
+      "instruction": "Chọn từ tiếng Anh tương ứng với số đếm (Unit 2).",
+      "question_data": {
+        "question": "Số chín (9)",
+        "correct_word": "nine",
+        "choices": ["nine", "seven", "eight", "ten"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 79 }
+    },
+    {
+      "id": "Q510",
+      "type": "fill_blank",
+      "instruction": "Điền từ còn thiếu vào câu giới thiệu sở thích.",
+      "question_data": {
+        "question": "I like ____. (vẽ tranh bằng màu)",
+        "correct_answer": "painting",
+        "choices": ["painting", "drawing", "running", "singing"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 5, "page": 36 }
+    },
+    {
+      "id": "Q511",
+      "type": "fill_blank",
+      "instruction": "Điền từ còn thiếu để hoàn thành câu hỏi xác nhận (Unit 3).",
+      "question_data": {
+        "question": "Is ____ Mr Long? - Yes, it is.",
+        "correct_answer": "that",
+        "choices": ["that", "this", "it", "he"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 3, "page": 24 }
+    },
+    {
+      "id": "Q512",
+      "type": "fill_blank",
+      "instruction": "Điền từ còn thiếu để nói về hành động chạy.",
+      "question_data": {
+        "question": "I like ____.",
+        "correct_answer": "running",
+        "choices": ["running", "walking", "swimming", "cooking"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 5, "page": 38 }
+    },
+    {
+      "id": "Q513",
+      "type": "match_pair",
+      "instruction": "Nối câu hỏi sở thích với câu trả lời phù hợp.",
+      "question_data": {
+        "pairs": [
+          { "left": "What's your hobby?", "right": "It's walking." },
+          { "left": "What's your hobby?", "right": "I like drawing." }
+        ]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 5, "page": 35, "unit_ref": 36 }
+    },
+    {
+      "id": "Q514",
+      "type": "match_pair",
+      "instruction": "Nối câu hỏi với lời đáp phù hợp (Tổng hợp Unit 1-2).",
+      "question_data": {
+        "pairs": [
+          { "left": "How are you?", "right": "Fine, thank you." },
+          { "left": "What's your name?", "right": "My name's Bill." }
+        ]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 1, "page": 13, "unit_ref": 16 }
+    },
+    {
+      "id": "Q515",
+      "type": "match_pair",
+      "instruction": "Nối từ vựng với hành động tương ứng.",
+      "question_data": {
+        "pairs": [
+          { "left": "cooking", "right": "nấu ăn" },
+          { "left": "singing", "right": "hát" }
+        ]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 5, "page": 78, "unit_ref": 80 }
+    }
+  ]
+}

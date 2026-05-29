@@ -26,7 +26,7 @@ export function LessonListByTopic({ lessons }: Props) {
               <li key={lesson.id}>
                 <Link
                   href={`/lessons/${lesson.id}`}
-                  className="flex min-h-[56px] flex-col rounded-2xl border border-slate-800 bg-slate-900/50 px-5 py-4 shadow-xl backdrop-blur-md transition hover:border-sky-500/50 hover:bg-slate-900/80 sm:flex-row sm:items-center sm:justify-between"
+                  className="group relative flex min-h-[64px] flex-col rounded-2xl border-2 border-slate-700 bg-slate-800 px-5 py-4 shadow-[0_6px_0_#334155] transition-all duration-150 hover:bg-slate-700 active:translate-y-[6px] active:shadow-none sm:flex-row sm:items-center sm:justify-between"
                 >
                   <div className="min-w-0 flex-1">
                     <div className="flex flex-wrap items-center gap-2">
@@ -59,8 +59,8 @@ export function LessonListByTopic({ lessons }: Props) {
                       </p>
                     )}
                   </div>
-                  <span className="mt-3 shrink-0 text-sm font-semibold text-sky-500 sm:mt-0 sm:pl-4">
-                    Học bài →
+                  <span className="mt-4 shrink-0 rounded-xl bg-sky-500 px-4 py-2 text-sm font-bold text-white shadow-[0_4px_0_#0284c7] transition-transform group-hover:scale-105 sm:mt-0 sm:ml-4">
+                    Học bài
                   </span>
                 </Link>
               </li>

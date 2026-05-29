@@ -27,7 +27,7 @@
 | Ngôn ngữ | **TypeScript 5** |
 | Styling | **Tailwind CSS 3** |
 | Backend / Auth / DB | **Supabase** (PostgreSQL + Row Level Security + Auth) |
-| AI | **Google Gemini** (`@google/generative-ai`) |
+| AI | **Google Gemini 1.5 Flash** (`@google/generative-ai`) |
 | Font | `Outfit` (display), `DM Sans` (body) — Google Fonts |
 | Icons | `lucide-react` |
 | PDF Viewer | `react-pdf` |
@@ -484,3 +484,11 @@ npm run dev
 - [ ] Speaking practice với Web Speech API + Gemini đánh giá
 - [ ] Thêm môn học: Khoa học, Tiếng Việt lớp 3
 - [ ] Notifications / reminders học theo lịch
+
+---
+
+## 14. Tài liệu Chi Tiết
+
+Vui lòng tham khảo các tài liệu chi tiết sau trong thư mục `docs/`:
+- [Kiến trúc, DB và Gamification (Architecture)](./docs/architecture.md)
+- [Thuật toán Adaptive Assessment & Spaced Repetition (SM-2)](./docs/adaptive_engine.md)

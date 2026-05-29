@@ -37,40 +37,41 @@ export function AIInsightPanel({ initialInsight, lastInsightAt }: AIInsightPanel
   };
 
   return (
-    <div className="relative rounded-3xl bg-slate-900/50 border border-sky-500/20 p-6 shadow-xl backdrop-blur-md overflow-hidden group">
-      {/* Background glow */}
-      <div className="absolute -right-4 -bottom-4 h-24 w-24 rounded-full bg-sky-500/5 blur-2xl group-hover:bg-sky-500/10 transition-colors duration-700" />
+    <div className="relative rounded-[2.5rem] border-4 border-[#1e293b] bg-slate-900/60 p-6 shadow-[0_12px_0_#0f172a,0_20px_40px_rgba(0,0,0,0.5)] backdrop-blur-xl overflow-hidden group transition-all duration-300 hover:scale-[1.01] h-full flex flex-col justify-between">
+      {/* Glow Effects */}
+      <div className="absolute -right-4 -bottom-4 h-24 w-24 rounded-full bg-sky-500/10 blur-3xl group-hover:bg-sky-500/15 transition-colors duration-700" />
       
       <div className="flex items-start gap-4">
-        <div className="flex-shrink-0 h-10 w-10 rounded-2xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400">
-          <Bot size={24} />
+        {/* Cute AI Agent Avatar */}
+        <div className="relative flex-shrink-0 h-12 w-12 rounded-2xl bg-gradient-to-b from-sky-400 to-blue-500 border-2 border-sky-200 flex items-center justify-center text-white shadow-[0_4px_0_#0369a1]">
+          <Bot size={24} className="animate-pulse" />
+          <div className="absolute top-0.5 left-1.5 right-1.5 h-1.5 bg-white/20 rounded-full pointer-events-none"></div>
         </div>
         
         <div className="flex-1 space-y-3">
           <div className="flex items-center justify-between">
-            <h3 className="text-[10px] font-bold uppercase tracking-widest text-sky-400 flex items-center gap-1.5">
-              <Sparkles size={12} /> Coach Aria&apos;s Insight
+            <h3 className="text-[10px] font-black uppercase tracking-widest text-sky-400 flex items-center gap-1.5">
+              <Sparkles size={12} className="animate-spin-slow" /> Coach Aria&apos;s Insight
             </h3>
+            
             <button
               onClick={generateInsight}
               disabled={isLoading}
-              className={`p-1.5 rounded-lg transition-all ${
+              className={`p-1.5 rounded-xl transition-all border border-slate-700 active:translate-y-[2px] active:shadow-none shadow-[0_2px_0_#1e293b] ${
                 isLoading 
                   ? "bg-slate-800 text-slate-500 animate-spin" 
-                  : "bg-slate-800/50 text-slate-400 hover:bg-slate-800 hover:text-white"
+                  : "bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white"
               }`}
-              title="Refresh insight"
+              title="Cập nhật nhận xét"
             >
-              <RefreshCw size={14} />
+              <RefreshCw size={12} />
             </button>
           </div>
           
-          <div className="relative">
-            <p className="text-sm text-slate-200 leading-relaxed italic pr-4">
+          <div className="relative bg-slate-950/40 border border-slate-800/80 rounded-2xl p-4 shadow-inner">
+            <p className="text-xs text-slate-200 leading-relaxed italic pr-2 font-medium">
               &ldquo;{insight}&rdquo;
             </p>
-            {/* Bubble tail decoration */}
-            <div className="absolute -left-1 top-2 w-2 h-2 bg-slate-900 rotate-45 border-l border-b border-sky-500/10" />
           </div>
         </div>
       </div>

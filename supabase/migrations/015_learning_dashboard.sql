@@ -37,22 +37,23 @@ ALTER TABLE public.learning_sessions ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.user_dashboard_stats ENABLE ROW LEVEL SECURITY;
 
 -- RLS Policies
+DROP POLICY IF EXISTS "Users can insert their own events" ON public.learning_events;
 CREATE POLICY "Users can insert their own events" ON public.learning_events
     FOR INSERT WITH CHECK (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Users can select their own events" ON public.learning_events;
 CREATE POLICY "Users can select their own events" ON public.learning_events
     FOR SELECT USING (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Users can manage their own sessions" ON public.learning_sessions;
 CREATE POLICY "Users can manage their own sessions" ON public.learning_sessions
     FOR ALL USING (auth.uid() = user_id);
 
+DROP POLICY IF EXISTS "Users can manage their own stats" ON public.user_dashboard_stats;
 CREATE POLICY "Users can manage their own stats" ON public.user_dashboard_stats
     FOR ALL USING (auth.uid() = user_id);
 
 -- Indexes for performance
-CREATE INDEX idx_learning_events_user_id ON public.learning_events(user_id);
-CREATE INDEX idx_learning_events_session_id ON public.learning_events(session_id);
-CREATE INDEX idx_learning_sessions_user_id ON public.learning_sessions(user_id);
-
--- Function to initialize stats on user creation (optional but good practice)
--- Or we can just upsert in the API. Let's do upsert in API for simplicity.
+CREATE INDEX IF NOT EXISTS idx_learning_events_user_id ON public.learning_events(user_id);
+CREATE INDEX IF NOT EXISTS idx_learning_events_session_id ON public.learning_events(session_id);
+CREATE INDEX IF NOT EXISTS idx_learning_sessions_user_id ON public.learning_sessions(user_id);

@@ -1,0 +1,208 @@
+"use server";
+
+import { createClient } from "@/lib/supabase/server";
+
+export async function getSubjectCurriculum(subjectSlug: string) {
+  console.log(`
+--- [ACTION] getSubjectCurriculum for: ${subjectSlug} ---`);
+  const supabase = await createClient();
+  
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) {
+    console.error("  [ACTION-LOG] User not found. Aborting.");
+    return [];
+  }
+  console.log(`  [ACTION-LOG] User ID: ${user.id}`);
+
+  const { data: profile } = await supabase.from('profiles').select('grade').eq('id', user.id).single();
+  const grade = profile?.grade || 3;
+  console.log(`  [ACTION-LOG] User grade is ${profile?.grade}. Querying for grade: ${grade}.`);
+
+  // First, try to fetch lessons for the user's actual grade
+  console.log(`  [ACTION-LOG] Attempting to fetch lessons for grade ${grade}...`);
+  let { data: lessons, error } = await supabase
+    .from("lessons")
+    .select("id, title, topic_label, lesson_index, subject_slug, grade")
+    .eq("grade", grade)
+    .eq("subject_slug", subjectSlug)
+    .order("lesson_index", { ascending: true });
+
+  if (error) {
+    // Log error but don't return yet, allow fallback
+    console.error(`  [ACTION-LOG] Error on initial fetch for grade ${grade}:`, error.message);
+  }
+  console.log(`  [ACTION-LOG] Initial fetch found ${lessons?.length || 0} lessons.`);
+
+  // If no lessons found for the user's grade, fall back to grade 3
+  if (!lessons || lessons.length === 0) {
+    console.log(`  [ACTION-LOG] No lessons found for grade ${grade}. Triggering fallback to grade 3.`);
+    const { data: fallbackLessons, error: fallbackError } = await supabase
+      .from("lessons")
+      .select("id, title, topic_label, lesson_index, subject_slug, grade")
+      .eq("grade", 3)
+      .eq("subject_slug", subjectSlug)
+      .order("lesson_index", { ascending: true });
+    
+    if (fallbackError) {
+      console.error(`  [ACTION-LOG] Error on fallback fetch for grade 3:`, fallbackError.message);
+      return [];
+    }
+    lessons = fallbackLessons;
+    console.log(`  [ACTION-LOG] Fallback fetch found ${lessons?.length || 0} lessons.`);
+  }
+
+  if (!lessons || lessons.length === 0) {
+    console.warn("  [ACTION-LOG] No lessons found after initial fetch and fallback. Returning empty array.");
+    return [];
+  }
+
+  const completedLessonIds = new Set(); // Simplified for now
+  console.log(`  [ACTION-LOG] Processing ${lessons.length} lessons to create map units.`);
+
+  const orderedTopics: string[] = [];
+  const groups: Record<string, any[]> = {};
+  
+  lessons.forEach(lesson => {
+    const label = lesson.topic_label || "Other";
+    if (!groups[label]) {
+      groups[label] = [];
+      orderedTopics.push(label);
+    }
+    groups[label].push(lesson);
+  });
+
+  let foundCurrent = false;
+
+  const units = orderedTopics.map((title, unitIndex) => {
+    const levels = groups[title].map((l, i) => {
+        const isCompleted = completedLessonIds.has(l.id);
+        let status: 'completed' | 'current' | 'locked' = 'locked';
+        if (isCompleted) {
+            status = 'completed';
+        } else if (!foundCurrent) {
+            status = 'current';
+            foundCurrent = true;
+        }
+        let type = i === 0 ? 'start' : (i === groups[title].length - 1 ? 'practice' : 'lesson');
+        return { id: l.id, type, status };
+    });
+
+    const colors = ["bg-emerald-400", "bg-pink-400", "bg-sky-400", "bg-amber-400"];
+    const shadows = ["shadow-[0_6px_0_rgb(16,185,129)]", "shadow-[0_6px_0_rgb(236,72,153)]", "shadow-[0_6px_0_rgb(56,189,248)]", "shadow-[0_6px_0_rgb(251,191,36)]"];
+    return {
+      id: `unit-${unitIndex}`,
+      title: title,
+      levels: levels,
+      color: colors[unitIndex % colors.length],
+      shadow: shadows[unitIndex % shadows.length],
+    };
+  });
+  console.log(`  [ACTION-LOG] Successfully created ${units.length} units. Returning to client.`);
+  console.log("--- [ACTION] Finished getSubjectCurriculum ---");
+  return units;
+}
+
+export async function getAssessmentMap(subjectSlug: string, grade?: number) {
+  console.log(`
+--- [ACTION] getAssessmentMap for: ${subjectSlug}, grade: ${grade || 'auto'} ---`);
+  const supabase = await createClient();
+
+  let targetGrade = grade;
+  if (!targetGrade) {
+    const { data: { user } } = await supabase.auth.getUser();
+    if (user) {
+      const { data: profile } = await supabase.from('profiles').select('grade').eq('id', user.id).single();
+      targetGrade = profile?.grade || 3;
+    } else {
+      targetGrade = 3;
+    }
+  }
+
+  const { data: collections, error } = await supabase
+    .from('assessment_collections')
+    .select(`
+      id,
+      title,
+      volume,
+      units,
+      sequence_number,
+      exams (
+        id,
+        title,
+        exam_number,
+        total_questions
+      )
+    `)
+    .eq('subject_slug', subjectSlug)
+    .eq('grade', targetGrade)
+    .eq('status', 'published')
+    .order('volume', { ascending: true })
+    .order('sequence_number', { ascending: true });
+
+  if (error) {
+    console.error('  [ACTION-LOG] Error fetching assessment map:', error);
+    return [];
+  }
+
+  console.log(`  [ACTION-LOG] Found ${collections?.length || 0} collections.`);
+
+  // Transform to nested structure: [ { volume: 1, units: [ { unit: 1, exams: [...] } ] } ]
+  const volumesMap = new Map<number, any>();
+
+  collections.forEach((collection) => {
+    const vol = collection.volume || 1;
+    if (!volumesMap.has(vol)) {
+      volumesMap.set(vol, { volume: vol, units: new Map<number, any>() });
+    }
+
+    const volumeEntry = volumesMap.get(vol);
+    // Use the first unit in the array or 0 for "General/Review"
+    const unitId = collection.units && collection.units.length > 0 ? collection.units[0] : 0;
+
+    if (!volumeEntry.units.has(unitId)) {
+      volumeEntry.units.set(unitId, { unit: unitId, exams: [] });
+    }
+
+    const unitEntry = volumeEntry.units.get(unitId);
+    
+    // Add exams from this collection
+    collection.exams.forEach((exam: any) => {
+      unitEntry.exams.push({
+        id: exam.id,
+        title: exam.title,
+        exam_number: exam.exam_number,
+        total_questions: exam.total_questions,
+        collection_title: collection.title
+      });
+    });
+  });
+
+  // Convert Maps to sorted arrays
+  const result = Array.from(volumesMap.values()).map(v => ({
+    ...v,
+    units: Array.from(v.units.values())
+      .sort((a: any, b: any) => a.unit - b.unit)
+  })).sort((a, b) => a.volume - b.volume);
+
+  console.log(`  [ACTION-LOG] Successfully transformed to ${result.length} volumes.`);
+  console.log("--- [ACTION] Finished getAssessmentMap ---");
+  return result;
+}
+
+export async function submitLesson(lessonId: string, isVictory: boolean, xp: number, streak: number) {
+  // ... (rest of the function is unchanged)
+  if (!isVictory) return { success: false };
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return { success: false, error: 'Unauthorized' };
+  let { data: quiz } = await supabase.from("quizzes").select("id").eq("lesson_id", lessonId).limit(1).single();
+  if (!quiz) {
+    const { data: newQuiz, error: insertError } = await supabase.from("quizzes").insert({ lesson_id: lessonId, title: "Luyen Tap Runtime Quiz" }).select("id").single();
+    if (insertError || !newQuiz) return { success: false, error: 'Failed to create quiz' };
+    quiz = newQuiz;
+  }
+  await supabase.from("quiz_attempts").insert({ user_id: user.id, quiz_id: quiz.id, score: 100, total: 100 });
+  await supabase.rpc('increment_xp', { user_id_param: user.id, amount: xp });
+  await supabase.from('gamification_profiles').update({ streak: streak }).eq('user_id', user.id);
+  return { success: true };
+}

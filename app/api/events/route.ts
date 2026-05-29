@@ -48,16 +48,136 @@ export async function POST(req: Request) {
 
       // 3. Update Snapshot (Layer 3)
       await updateDashboardStats(supabase, user.id, event.subject_slug, 5);
+
+      // 4. Universal Engine: Intercept for Concept Mastery (Phase 3 Adapter)
+      // Fire and forget, don't await to keep legacy response fast
+      trackConceptMastery(supabase, user.id, (event.metadata as any).unit_id || (event.metadata as any).quiz_id).catch(e => console.error("Mastery Adapter Error:", e));
     }
 
     if (event.type === "quiz_completed") {
       await updateDashboardStats(supabase, user.id, event.subject_slug, 2);
+      
+      // Universal Engine: Intercept for Concept Mastery
+      trackConceptMastery(supabase, user.id, (event.metadata as any).quiz_id || (event.metadata as any).unit_id).catch(e => console.error("Mastery Adapter Error:", e));
+    }
+
+    // 5. Universal Engine: Direct Event Processing
+    if (event.type === "question_answered") {
+      const { concept_id, is_correct } = event.metadata;
+      if (concept_id) {
+        updateUniversalMastery(supabase, user.id, concept_id, is_correct).catch(e => console.error("Universal Mastery Error:", e));
+      }
     }
 
     return NextResponse.json({ success: true });
   } catch (err: any) {
     console.error("API Event Error:", err);
     return NextResponse.json({ error: err.message }, { status: 500 });
+  }
+}
+
+/**
+ * Universal Engine: Updates mastery score based on question performance.
+ */
+async function updateUniversalMastery(supabase: any, userId: string, conceptId: string, isCorrect: boolean) {
+  try {
+    const { data: existing } = await supabase
+      .from('user_concept_mastery')
+      .select('mastery_score, attempts, correct_attempts')
+      .eq('user_id', userId)
+      .eq('concept_id', conceptId)
+      .maybeSingle();
+
+    const currentScore = Number(existing?.mastery_score || 0);
+    const attempts = (existing?.attempts || 0) + 1;
+    const correctAttempts = (existing?.correct_attempts || 0) + (isCorrect ? 1 : 0);
+    
+    // Calculation logic: Correct = +5, Incorrect = +1
+    const increment = isCorrect ? 5 : 1;
+    const newScore = Math.min(100, currentScore + increment);
+
+    await supabase.from('user_concept_mastery').upsert({
+      user_id: userId,
+      concept_id: conceptId,
+      mastery_score: newScore,
+      attempts: attempts,
+      correct_attempts: correctAttempts,
+      last_attempt_at: new Date().toISOString(),
+      updated_at: new Date().toISOString()
+    }, { onConflict: 'user_id,concept_id' });
+  } catch (err) {
+    console.warn("Universal Mastery update failed:", err);
+  }
+}
+
+/**
+ * Universal Engine Adapter: Automatically calculates mastery points for legacy lessons.
+ */
+async function trackConceptMastery(supabase: any, userId: string, lessonOrQuizId: string) {
+  if (!lessonOrQuizId || typeof lessonOrQuizId !== 'string') return;
+
+  try {
+    // 1. Find concepts linked to this lesson/unit/quiz
+    let targetLessonId = lessonOrQuizId;
+    
+    // Legacy mapping: If it's a quiz ID (starts with 'bbbbbbbb'), find the lesson ID (starts with 'aaaaaaaa')
+    if (lessonOrQuizId.startsWith('bbbbbbbb-')) {
+      targetLessonId = lessonOrQuizId.replace('bbbbbbbb', 'aaaaaaaa');
+    }
+
+    // Legacy mapping: If it's a unit slug (e.g., 'unit-1'), find its UUID
+    if (lessonOrQuizId.startsWith('unit-')) {
+       const unitNum = lessonOrQuizId.replace('unit-', '');
+       const { data: lesson } = await supabase
+         .from('lessons')
+         .select('id')
+         .eq('subject_slug', 'mindset-ielts')
+         .or(`title.ilike.%Unit ${unitNum}%,title.ilike.%U${unitNum}%`)
+         .limit(1)
+         .maybeSingle();
+       
+       if (lesson) targetLessonId = lesson.id;
+    }
+
+    const { data: links } = await supabase
+      .from('lesson_concepts')
+      .select('concept_id')
+      .eq('lesson_id', targetLessonId);
+
+    if (!links || links.length === 0) {
+      console.log(`No concept links found for lesson/quiz: ${targetLessonId}`);
+      return;
+    }
+
+    // 2. For each concept, increment mastery
+    for (const link of links) {
+      const { data: existing } = await supabase
+        .from('user_concept_mastery')
+        .select('mastery_score, attempts, correct_attempts')
+        .eq('user_id', userId)
+        .eq('concept_id', link.concept_id)
+        .maybeSingle();
+
+      const currentScore = Number(existing?.mastery_score || 0);
+      const attempts = (existing?.attempts || 0) + 1;
+      const correctAttempts = (existing?.correct_attempts || 0) + 1; // Assuming completion is "correct"
+      
+      const newScore = Math.min(100, currentScore + 5); // Add 5 points per session
+
+      await supabase.from('user_concept_mastery').upsert({
+        user_id: userId,
+        concept_id: link.concept_id,
+        mastery_score: newScore,
+        attempts: attempts,
+        correct_attempts: correctAttempts,
+        subject_slug: 'mindset-ielts',
+        last_attempt_at: new Date().toISOString(),
+        updated_at: new Date().toISOString()
+      }, { onConflict: 'user_id,concept_id' });
+    }
+  } catch (err) {
+    // Silent fail for adapter to protect legacy flow
+    console.warn("Concept Mastery Adapter failed silently:", err);
   }
 }
 

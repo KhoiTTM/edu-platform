@@ -1,0 +1,128 @@
+{
+  "curriculum": {
+    "subject": "english",
+    "grade": 3,
+    "volume": 1,
+    "book": "Global Success 3",
+    "unit": {
+      "number": 1,
+      "title": "Hello"
+    },
+    "lessons": [
+      {
+        "number": 1,
+        "title": "Lesson 1",
+        "focus": "Greetings and Introductions",
+        "vocabulary": ["hello", "hi", "I", "am"],
+        "patterns": ["Hello, I'm [Name].", "Hi, [Name]."]
+      },
+      {
+        "number": 2,
+        "title": "Lesson 2",
+        "focus": "Health and Goodbyes",
+        "vocabulary": ["how", "are", "you", "fine", "thank", "goodbye", "bye"],
+        "patterns": ["How are you?", "I'm fine, thank you.", "Goodbye, [Name]."]
+      },
+      {
+        "number": 3,
+        "title": "Lesson 3",
+        "focus": "Phonics /b/ and /h/",
+        "vocabulary": ["Ben", "Bill", "book", "boy", "hello", "hi"],
+        "phonics": ["/b/", "/h/"]
+      }
+    ]
+  },
+
+  "question_bank": [
+    {
+      "id": "u1l1_q1",
+      "lesson": 1,
+      "type": "tap_correct_word",
+      "instruction": "Tap the word for 'Xin chào'",
+      "choices": ["Hello", "Goodbye", "Thanks", "Sorry"],
+      "correct_answer": "Hello",
+      "source_anchor": { "book": "Global Success 3", "unit": 1, "lesson": 1, "page": 8, "activity": "Look, listen and repeat" }
+    },
+    {
+      "id": "u1l1_q2",
+      "lesson": 1,
+      "type": "sentence_reorder",
+      "tokens": ["I'm", "Hello,", "Nam."],
+      "correct_sentence": "Hello, I'm Nam.",
+      "source_anchor": { "book": "Global Success 3", "unit": 1, "lesson": 1, "page": 8, "activity": "Point and say" }
+    },
+    {
+      "id": "u1l1_q3",
+      "lesson": 1,
+      "type": "dialogue_completion",
+      "dialogue": ["Hi, Mai.", "____, Nam."],
+      "answer": "Hello",
+      "source_anchor": { "book": "Global Success 3", "unit": 1, "lesson": 1, "page": 9, "activity": "Let's talk" }
+    },
+    {
+      "id": "u1l2_q1",
+      "lesson": 2,
+      "type": "choose_correct_response",
+      "question": "How do you ask about health?",
+      "options": ["How are you?", "What is your name?", "How old are you?", "Goodbye?"],
+      "answer": "How are you?",
+      "source_anchor": { "book": "Global Success 3", "unit": 1, "lesson": 2, "page": 10, "activity": "Look, listen and repeat" }
+    },
+    {
+      "id": "u1l2_q2",
+      "lesson": 2,
+      "type": "sentence_reorder",
+      "tokens": ["fine,", "I'm", "thank", "you."],
+      "correct_sentence": "I'm fine, thank you.",
+      "source_anchor": { "book": "Global Success 3", "unit": 1, "lesson": 2, "page": 10, "activity": "Point and say" }
+    },
+    {
+      "id": "u1l2_q3",
+      "lesson": 2,
+      "type": "tap_correct_word",
+      "instruction": "Tap the word for 'Tạm biệt'",
+      "choices": ["Hello", "Hi", "Goodbye", "Fine"],
+      "correct_answer": "Goodbye",
+      "source_anchor": { "book": "Global Success 3", "unit": 1, "lesson": 2, "page": 11, "activity": "Listen and tick" }
+    },
+    {
+      "id": "u1l3_q1",
+      "lesson": 3,
+      "type": "tap_correct_word",
+      "instruction": "Which word starts with sound /b/?",
+      "choices": ["Hello", "Hi", "Bye", "Fine"],
+      "correct_answer": "Bye",
+      "source_anchor": { "book": "Global Success 3", "unit": 1, "lesson": 3, "page": 12, "activity": "Listen and repeat" }
+    },
+    {
+      "id": "u1l3_q2",
+      "lesson": 3,
+      "type": "match_word_meaning",
+      "pairs": [
+        { "left": "/b/", "right": "Ben" },
+        { "left": "/h/", "right": "Hello" }
+      ],
+      "source_anchor": { "book": "Global Success 3", "unit": 1, "lesson": 3, "page": 12, "activity": "Listen and repeat" }
+    }
+  ],
+
+  "unit_reviews": [
+    {
+      "id": "u1_rev1",
+      "type": "mixed_review",
+      "instruction": "Unit 1 Recap",
+      "questions": ["u1l1_q1", "u1l2_q1", "u1l3_q1"]
+    }
+  ],
+
+  "boss_challenges": [
+    {
+      "id": "u1_boss",
+      "type": "boss_battle",
+      "title": "Welcome to English World!",
+      "instruction": "Complete all challenges to unlock Unit 2",
+      "hp": 3,
+      "questions": ["u1l1_q2", "u1l2_q2", "u1l3_q2"]
+    }
+  ]
+}

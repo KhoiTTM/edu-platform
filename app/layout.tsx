@@ -15,7 +15,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "BrightPath Academy | Grades 3 & 7",
+  title: "EduVerse | Khám Phá Vũ Trụ Tri Thức",
   description:
     "Student portal for lessons, schedules, videos, quizzes, and scores.",
 };

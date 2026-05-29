@@ -1,3 +1,57 @@
+import { z } from "zod";
+
+/**
+ * Event Schemas for the Universal Learning Engine.
+ * Built with Zod for strict runtime validation.
+ */
+
+export const QuestionAnsweredEventSchema = z.object({
+  type: z.literal("question_answered"),
+  subject_slug: z.string(),
+  session_id: z.string().uuid().optional(),
+  metadata: z.object({
+    node_id: z.string().uuid(),
+    exercise_id: z.string().uuid(),
+    question_id: z.string().uuid(),
+    concept_id: z.string().uuid(),
+    is_correct: z.boolean(),
+    difficulty: z.enum(['easy', 'medium', 'hard']),
+    time_spent_seconds: z.number().min(0),
+    user_answer: z.any().optional(),
+  }),
+});
+
+export const ConceptMasteredEventSchema = z.object({
+  type: z.literal("concept_mastered"),
+  subject_slug: z.string(),
+  metadata: z.object({
+    concept_id: z.string().uuid(),
+    mastery_score: z.number().min(0).max(100),
+    previous_score: z.number().min(0).max(100).optional(),
+  }),
+});
+
+export const AIHelpRequestedEventSchema = z.object({
+  type: z.literal("ai_help_requested"),
+  subject_slug: z.string(),
+  session_id: z.string().uuid().optional(),
+  metadata: z.object({
+    node_id: z.string().uuid(),
+    context_type: z.enum(['hint', 'explanation', 're-phrase', 'example']),
+    prompt_type: z.string().optional(), // Adding for flexibility as per phase 2
+    question_id: z.string().uuid().optional(),
+  }),
+});
+
+export const UniversalEventSchema = z.discriminatedUnion("type", [
+  QuestionAnsweredEventSchema,
+  ConceptMasteredEventSchema,
+  AIHelpRequestedEventSchema,
+]);
+
+export type UniversalEvent = z.infer<typeof UniversalEventSchema>;
+
+// Legacy compatibility types (Phase 1/2 Dashboard)
 export type SpeakingTurnCompletedEvent = {
   type: "speaking_turn_completed";
   subject_slug: "mindset-ielts";
@@ -48,7 +102,8 @@ export type AnyLearningEvent =
   | SpeakingTurnCompletedEvent 
   | SpeakingSessionStartedEvent
   | SpeakingSessionFinishedEvent 
-  | QuizCompletedEvent;
+  | QuizCompletedEvent
+  | UniversalEvent;
 
 export interface LearningEventRecord {
   id?: string;

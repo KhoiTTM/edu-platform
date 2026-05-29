@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { SubjectVolumeTabs } from "@/components/SubjectVolumeTabs";
 import { LessonListByTopic } from "@/components/LessonListByTopic";
@@ -20,6 +20,12 @@ function parseVolume(raw: string | undefined): Volume {
 
 export default async function HocTapSubjectPage({ params, searchParams }: Props) {
   const { subject } = await params;
+  if (subject === "toan") {
+    redirect("/learn/toan/lop-3");
+  }
+  if (subject === "tieng_anh") {
+    redirect("/learn/tieng_anh/lop-3");
+  }
   const { tap } = await searchParams;
   if (!SLUG_RE.test(subject)) notFound();
 

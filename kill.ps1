@@ -1,0 +1,1 @@
+Get-CimInstance Win32_Process | Where-Object { $_.CommandLine -like '*discord-chat-sync*' } | Stop-Process -Force
