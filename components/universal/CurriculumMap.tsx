@@ -59,16 +59,16 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
     
     if (isUnit) {
       x = 300; // Units are always centered
-      if (i > 0) currentY += 150; // Extra space before a unit (Reduced for higher density)
+      if (i > 0) currentY += 120; // Extra space before a unit (Reduced significantly)
       lessonCounter = 0; // Reset zigzag counter for lessons in this unit
     } else if (node.type === 'exam') {
       x = 300; // Exams are centered at the end of the chapter
-      currentY += 120; // Reduced for density
+      currentY += 90; // Reduced for density
     } else {
-      // Lessons zigzag very widely to make it much more winding, but closer vertically
-      const pattern = [140, 460, 170, 430, 110, 490];
+      // Lessons zigzag very widely to make it much more winding, but very close vertically
+      const pattern = [160, 440, 180, 420, 140, 460];
       x = pattern[lessonCounter % pattern.length];
-      currentY += 100; // Standard space between lessons (Reduced from 160)
+      currentY += 65; // Extremely dense space between lessons
       lessonCounter++;
     }
     
@@ -94,9 +94,9 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
         // Curved transition
         dPath += ` C ${prev.x} ${cp1Y}, ${curr.x} ${cp2Y}, ${curr.x} ${curr.y}`;
       } else {
-        // Exaggerated Zig-zag curve for winding path (adjusted for tighter Y spacing)
-        const cp1X = prev.x + (i % 2 === 0 ? 100 : -100);
-        const cp2X = curr.x + (i % 2 === 0 ? -100 : 100);
+        // Exaggerated Zig-zag curve for winding path (adjusted for extreme tight Y spacing)
+        const cp1X = prev.x + (i % 2 === 0 ? 80 : -80);
+        const cp2X = curr.x + (i % 2 === 0 ? -80 : 80);
         dPath += ` C ${cp1X} ${cp1Y}, ${cp2X} ${cp2Y}, ${curr.x} ${curr.y}`;
       }
       prev = curr;
@@ -346,29 +346,29 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                       {isCompleted ? (
                         // Big Candy for completed lessons
                         <div className="flex items-center justify-center rotate-[15deg] hover:rotate-[25deg] transition-transform relative">
-                          <div className="text-[64px] leading-none select-none drop-shadow-[0_8px_8px_rgba(16,185,129,0.6)]">
+                          <div className="text-[54px] leading-none select-none drop-shadow-[0_8px_8px_rgba(16,185,129,0.6)]">
                             🍬
                           </div>
                           {/* Checked badge */}
                           <div className="absolute -top-1 -right-2 bg-emerald-500 rounded-full p-0.5 border-[3px] border-white shadow-md z-20">
-                             <CheckCircle2 size={18} strokeWidth={4} className="text-white" />
+                             <CheckCircle2 size={16} strokeWidth={4} className="text-white" />
                           </div>
                         </div>
                       ) : isUnlocked ? (
                         // Big Candy for unlocked current lesson
                         <div className="flex items-center justify-center -rotate-[10deg] hover:rotate-0 transition-transform animate-pulse relative">
-                          <div className="text-[72px] leading-none select-none drop-shadow-[0_8px_15px_rgba(14,165,233,0.8)]">
+                          <div className="text-[60px] leading-none select-none drop-shadow-[0_8px_15px_rgba(14,165,233,0.8)]">
                             🍬
                           </div>
                           {/* Play badge */}
-                          <div className="absolute -bottom-2 -right-2 bg-sky-500 rounded-full p-1.5 border-[3px] border-white shadow-md z-20">
-                             <Play size={16} fill="currentColor" className="text-white ml-0.5" />
+                          <div className="absolute -bottom-1 -right-2 bg-sky-500 rounded-full p-1 border-[3px] border-white shadow-md z-20">
+                             <Play size={14} fill="currentColor" className="text-white ml-0.5" />
                           </div>
                         </div>
                       ) : (
                         // Small Candy for locked lessons
                         <div className="flex items-center justify-center rotate-[20deg] opacity-60 hover:opacity-100 transition-opacity grayscale">
-                          <div className="text-[52px] leading-none select-none drop-shadow-md">
+                          <div className="text-[44px] leading-none select-none drop-shadow-md">
                             🍬
                           </div>
                         </div>
