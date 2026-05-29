@@ -20,7 +20,7 @@ function AssessmentContent() {
       async function load() {
         try {
           setIsLoading(true);
-          const data = await getExamQuestions(examId);
+          const data = await getExamQuestions(examId!);
           if (data.length === 0) {
             setError("No questions found for this exam.");
           } else {

@@ -253,7 +253,8 @@ export function LearnNodeClient({
         <div className="max-w-2xl mx-auto mt-10 animate-in zoom-in-95 duration-700">
           <AssessmentResultCard 
             score={resultData?.score || 0}
-            conceptResults={resultData?.conceptResults || []}
+            correctCount={resultData?.correctCount || 0}
+            totalCount={resultData?.totalCount || 0}
             onContinue={() => {
               if (resultData?.score >= 70) {
                 router.push(`/learn/${subjectSlug}/${backSlug}`);

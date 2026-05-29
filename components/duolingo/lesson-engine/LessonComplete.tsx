@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { XPToast } from '../../gamification/XPToast';
 import { StreakFlame } from '../../gamification/StreakFlame';
 
-import { submitLesson } from '@/app/(app)/english-world/actions';
+import { submitLesson } from '@/app/(app)/luyen-tap/actions';
 
 interface LessonCompleteProps {
   isVictory: boolean;
@@ -82,14 +82,14 @@ export const LessonComplete: React.FC<LessonCompleteProps> = ({ isVictory, xp = 
 
       <div className="flex flex-col gap-6 w-full max-w-sm mt-8">
         <Link
-          href="/english-world"
+          href="/luyen-tap"
           className="w-full px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-white rounded-3xl font-black text-xl transition-all shadow-[0_6px_0_rgb(16,185,129)] active:translate-y-1 active:shadow-none flex items-center justify-center gap-2"
         >
           {isVictory ? 'CONTINUE' : 'BACK TO MAP'}
         </Link>
         {!isVictory && (
           <Link
-            href="/english-world/review"
+            href="/luyen-tap/review"
             className="w-full px-8 py-4 bg-white dark:bg-slate-800 text-purple-600 dark:text-purple-400 rounded-3xl font-black text-xl transition-all shadow-[0_6px_0_rgb(226,232,240)] dark:shadow-[0_6px_0_rgb(30,41,59)] border-2 border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 active:translate-y-1 active:shadow-none flex items-center justify-center gap-2"
           >
             RESTORE HEARTS ❤️

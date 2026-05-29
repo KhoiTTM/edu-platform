@@ -91,6 +91,8 @@ export async function submitAssessmentSession(
   return {
     score,
     conceptResults,
+    correctCount,
+    totalCount: answers.length,
     message: 'Assessment submitted successfully'
   };
 }
