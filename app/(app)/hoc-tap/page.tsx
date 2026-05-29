@@ -2,11 +2,6 @@ import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { BookOpen, Globe2, Calculator, FlaskConical, GraduationCap, ArrowRight } from "lucide-react";
 
-type Row = {
-  subject_slug: string;
-  subject_label_vi: string;
-};
-
 export default async function HocTapPage() {
   const supabase = await createClient();
   const {
@@ -21,21 +16,24 @@ export default async function HocTapPage() {
 
   const grade = profile?.grade ?? 3;
 
-  const { data: rows, error } = await supabase
-    .from("lessons")
-    .select("subject_slug, subject_label_vi, grade")
-    .in("grade", [grade, 0]);
+  const { data: universalSubjects, error } = await supabase
+    .from("universal_subjects")
+    .select("slug, name_vi");
 
   if (error) {
-    console.error("Error fetching lessons:", error);
+    console.error("Error fetching subjects:", error);
   }
 
   const map = new Map<string, string>();
-  for (const r of (rows ?? []) as Row[]) {
-    if (r.subject_slug && r.subject_label_vi) {
-      map.set(r.subject_slug, r.subject_label_vi);
+  for (const r of (universalSubjects ?? [])) {
+    if (r.slug && r.name_vi) {
+      map.set(r.slug, r.name_vi);
     }
   }
+  
+  // Ensure default subjects are available
+  map.set("tieng_anh", "Tiếng Anh");
+  map.set("toan", "Toán");
 
   const subjects = [...map.entries()].sort((a, b) =>
     a[1].localeCompare(b[1], "vi")
