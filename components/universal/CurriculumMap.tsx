@@ -48,6 +48,9 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
     return true;
   });
 
+  const positions: { x: number, y: number, isUnit: boolean, index?: number }[] = [];
+  let currentY = 100;
+  let lessonCounter = 0;
   let globalLessonCount = 0;
 
   // With map width 600px, center is 300px
