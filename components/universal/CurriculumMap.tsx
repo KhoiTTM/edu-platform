@@ -104,23 +104,32 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
   }
 
   // Predefined positions for decorative background items based on path height
-  const decorationTypes = ["lollipop", "cookie", "shroom", "star", "flower"];
+  const decorationTypes = ["lollipop", "cookie", "shroom", "star", "flower", "wrapped_candy", "gummy_bear"];
   const decorations: { x: number; y: number; type: string; scale: number }[] = [];
-  for (let y = 150; y < pathHeight - 100; y += 180) {
-    // Left side decors (moved further left due to wider board)
+  for (let y = 80; y < pathHeight - 80; y += 80) { // Increased density
+    // Left side decors
     decorations.push({
-      x: 70 + Math.sin(y) * 30,
-      y: y,
+      x: 50 + Math.sin(y) * 40,
+      y: y + Math.cos(y) * 20,
       type: decorationTypes[Math.floor((y * 1.3) % decorationTypes.length)],
-      scale: 0.85 + (Math.sin(y) * 0.15)
+      scale: 0.7 + (Math.sin(y) * 0.3)
     });
-    // Right side decors (moved further right due to wider board)
+    // Right side decors
     decorations.push({
-      x: 530 + Math.cos(y) * 30,
-      y: y + 90,
+      x: 550 + Math.cos(y) * 40,
+      y: y + 40 + Math.sin(y) * 20,
       type: decorationTypes[Math.floor((y * 1.7) % decorationTypes.length)],
-      scale: 0.85 + (Math.cos(y) * 0.15)
+      scale: 0.7 + (Math.cos(y) * 0.3)
     });
+    // Extra random decors far out
+    if (y % 160 === 0) {
+      decorations.push({
+        x: Math.sin(y) > 0 ? 20 : 580,
+        y: y + 60,
+        type: decorationTypes[Math.floor((y * 2.1) % decorationTypes.length)],
+        scale: 0.5
+      });
+    }
   }
 
   return (
@@ -190,6 +199,26 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                 <div className="absolute w-2.5 h-2.5 rounded-full bg-white/70 -bottom-1 border border-slate-400/30"></div>
                 <div className="absolute w-2.5 h-2.5 rounded-full bg-white/70 -left-1 border border-slate-400/30"></div>
                 <div className="absolute w-2.5 h-2.5 rounded-full bg-white/70 -right-1 border border-slate-400/30"></div>
+              </div>
+            )}
+            {dec.type === "wrapped_candy" && (
+              <div className="flex items-center justify-center opacity-85 rotate-45">
+                <div className="w-0 h-0 border-y-[6px] border-y-transparent border-r-[8px] border-r-pink-400/80 -mr-1"></div>
+                <div className="w-5 h-5 rounded-full bg-gradient-to-tr from-pink-400 to-rose-300 border border-white shadow-sm z-10">
+                  <div className="w-2 h-1 bg-white/40 rounded-full mt-1 ml-1"></div>
+                </div>
+                <div className="w-0 h-0 border-y-[6px] border-y-transparent border-l-[8px] border-l-pink-400/80 -ml-1"></div>
+              </div>
+            )}
+            {dec.type === "gummy_bear" && (
+              <div className="flex flex-col items-center opacity-80 -rotate-12">
+                <div className="w-3 h-2.5 bg-emerald-400 rounded-t-full border border-emerald-600/30 shadow-sm relative z-10 flex justify-between px-0.5">
+                  <div className="w-1 h-1 bg-emerald-500 rounded-full -mt-0.5"></div>
+                  <div className="w-1 h-1 bg-emerald-500 rounded-full -mt-0.5"></div>
+                </div>
+                <div className="w-4 h-5 bg-emerald-400 rounded-[4px] border border-emerald-600/30 shadow-sm -mt-0.5 relative">
+                  <div className="absolute top-1 left-1 w-1.5 h-2 bg-white/20 rounded-full"></div>
+                </div>
               </div>
             )}
           </div>
@@ -329,13 +358,34 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                     {/* Top inner gloss reflection */}
                     <div className="absolute top-1 left-2 right-2 h-3 bg-white/50 rounded-full pointer-events-none"></div>
 
-                    <div className={isUnlocked ? 'text-white drop-shadow-[0_2px_3px_rgba(3,105,161,0.5)]' : 'text-slate-400'}>
+                    <div className="relative flex flex-col items-center justify-center w-full h-full">
                       {isCompleted ? (
-                        <CheckCircle2 size={28} strokeWidth={3} />
+                        // Big Candy for completed lessons
+                        <div className="flex items-center justify-center rotate-[15deg]">
+                          <div className="w-0 h-0 border-y-[6px] border-y-transparent border-r-[8px] border-r-emerald-200 -mr-1 z-0"></div>
+                          <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-emerald-100 to-white shadow-inner flex items-center justify-center z-10 border border-emerald-200">
+                             <CheckCircle2 size={16} strokeWidth={4} className="text-emerald-500" />
+                          </div>
+                          <div className="w-0 h-0 border-y-[6px] border-y-transparent border-l-[8px] border-l-emerald-200 -ml-1 z-0"></div>
+                        </div>
                       ) : isUnlocked ? (
-                        <Icon size={26} fill="currentColor" />
+                        // Big Candy for unlocked current lesson
+                        <div className="flex items-center justify-center -rotate-[10deg] animate-pulse">
+                          <div className="w-0 h-0 border-y-[8px] border-y-transparent border-r-[10px] border-r-white -mr-1 z-0"></div>
+                          <div className="w-8 h-8 rounded-full bg-white shadow-inner flex items-center justify-center z-10 border-2 border-sky-200">
+                             <Play size={16} fill="currentColor" className="text-sky-500 ml-1" />
+                          </div>
+                          <div className="w-0 h-0 border-y-[8px] border-y-transparent border-l-[10px] border-l-white -ml-1 z-0"></div>
+                        </div>
                       ) : (
-                        <Lock size={22} strokeWidth={3} />
+                        // Small Candy for locked lessons
+                        <div className="flex items-center justify-center rotate-[20deg] opacity-60">
+                          <div className="w-0 h-0 border-y-[4px] border-y-transparent border-r-[6px] border-r-slate-400 -mr-0.5 z-0"></div>
+                          <div className="w-5 h-5 rounded-full bg-slate-300 shadow-inner flex items-center justify-center z-10 border border-slate-400">
+                             <Lock size={10} strokeWidth={3} className="text-slate-500" />
+                          </div>
+                          <div className="w-0 h-0 border-y-[4px] border-y-transparent border-l-[6px] border-l-slate-400 -ml-0.5 z-0"></div>
+                        </div>
                       )}
                     </div>
 
