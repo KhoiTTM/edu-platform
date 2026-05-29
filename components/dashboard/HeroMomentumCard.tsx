@@ -28,17 +28,17 @@ export function HeroMomentumCard({ streak, totalMinutes }: HeroMomentumCardProps
       <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-purple-500/10 blur-3xl pointer-events-none" />
       <div className="absolute -bottom-10 -left-10 h-32 w-32 rounded-full bg-indigo-500/10 blur-3xl pointer-events-none" />
 
-      <div className="relative z-10 flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+      <div className="relative z-10 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
         
         {/* Left Side: Avatar/Rank Info */}
         <div className="flex items-center gap-4">
-          <div className="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-tr from-purple-500 via-indigo-600 to-pink-500 border-2 border-purple-200 shadow-[0_4px_0_#3b0764,0_5px_10px_rgba(168,85,247,0.3)]">
-            <span className="text-2xl filter drop-shadow-md select-none">{getRankBadge()}</span>
+          <div className="relative flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-tr from-purple-500 via-indigo-600 to-pink-500 border-2 border-purple-200 shadow-[0_4px_0_#3b0764,0_5px_10px_rgba(168,85,247,0.3)]">
+            <span className="text-xl filter drop-shadow-md select-none">{getRankBadge()}</span>
             <div className="absolute top-1 left-2 right-2 h-2.5 bg-white/20 rounded-full pointer-events-none"></div>
           </div>
           <div className="space-y-1">
             <p className="text-[10px] font-black uppercase tracking-widest text-purple-400">DANH HIỆU HIỆN TẠI</p>
-            <h2 className="text-xl font-black text-white tracking-tight leading-none uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
+            <h2 className="text-lg font-black text-white tracking-tight leading-none uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
               {getTitle()}
             </h2>
             <div className="flex items-center gap-1.5 text-slate-400 text-xs font-semibold">
@@ -52,23 +52,23 @@ export function HeroMomentumCard({ streak, totalMinutes }: HeroMomentumCardProps
         <div className="flex flex-wrap gap-3 sm:gap-4">
           {/* Streak Card */}
           <div className="flex items-center gap-3 bg-slate-950/60 border border-purple-950/50 rounded-2xl p-3 shadow-inner min-w-[120px]">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-b from-orange-400 to-red-500 border-2 border-orange-200 text-white shadow-[0_4px_0_#9a3412]">
-              <Flame size={20} fill="currentColor" className="animate-pulse" />
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-b from-orange-400 to-red-500 border-2 border-orange-200 text-white shadow-[0_4px_0_#9a3412]">
+              <Flame size={16} fill="currentColor" className="animate-pulse" />
             </div>
             <div>
-              <p className="text-[9px] font-extrabold uppercase tracking-wider text-slate-500">Chuỗi ngày</p>
-              <p className="text-lg font-black text-white">{streak} Ngày</p>
+              <p className="text-[8px] font-extrabold uppercase tracking-wider text-slate-500">Chuỗi ngày</p>
+              <p className="text-base font-black text-white">{streak} Ngày</p>
             </div>
           </div>
 
           {/* Focus Time Card */}
           <div className="flex items-center gap-3 bg-slate-950/60 border border-purple-950/50 rounded-2xl p-3 shadow-inner min-w-[120px]">
-            <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-b from-sky-400 to-blue-500 border-2 border-sky-200 text-white shadow-[0_4px_0_#0369a1]">
-              <Timer size={20} />
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-b from-sky-400 to-blue-500 border-2 border-sky-200 text-white shadow-[0_4px_0_#0369a1]">
+              <Timer size={16} />
             </div>
             <div>
-              <p className="text-[9px] font-extrabold uppercase tracking-wider text-slate-500">Thời gian học</p>
-              <p className="text-lg font-black text-white">{totalMinutes} Phút</p>
+              <p className="text-[8px] font-extrabold uppercase tracking-wider text-slate-500">Thời gian học</p>
+              <p className="text-base font-black text-white">{totalMinutes} Phút</p>
             </div>
           </div>
         </div>

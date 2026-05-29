@@ -20,7 +20,7 @@ export default async function DashboardPage() {
     supabase.from("profiles").select("grade, display_name").eq("id", user.id).single(),
     supabase.from("user_dashboard_stats").select("*").eq("user_id", user.id).single(),
     supabase.from("learning_sessions").select("started_at").eq("user_id", user.id).order("started_at", { ascending: false }),
-    supabase.from("quiz_attempts").select("id, score, total, created_at, quizzes(title)").eq("user_id", user.id).order("created_at", { ascending: false }).limit(5),
+    supabase.from("quiz_attempts").select("id, score, total, created_at, quizzes(title, subject, subject_id)").eq("user_id", user.id).order("created_at", { ascending: false }).limit(20),
   ]);
 
   const profile = profileRes.data;
@@ -31,18 +31,29 @@ export default async function DashboardPage() {
   const grade = profile?.grade ?? 3;
   const firstName = profile?.display_name?.split(/\s+/)[0] ?? "bạn";
 
-  const recentSessionsList = recent.slice(0, 4);
+  const seenSubjects = new Set();
+  const recentSessionsList: any[] = [];
+  
+  for (const session of recent) {
+    const q = session.quizzes as any;
+    const subject = q?.subject_id || q?.subject || "tieng_anh";
+    if (!seenSubjects.has(subject)) {
+      seenSubjects.add(subject);
+      recentSessionsList.push(session);
+      if (recentSessionsList.length === 4) break;
+    }
+  }
 
   return (
     <div className="mx-auto max-w-6xl h-[calc(100dvh-6rem)] flex flex-col gap-4 select-none relative z-10 overflow-hidden">
       
       {/* 1. Welcome & Stats Combined Strip */}
       <div className="flex flex-col md:flex-row md:items-stretch justify-between gap-4 shrink-0">
-        <div className="bg-slate-900/60 px-6 py-5 rounded-[1.5rem] border-2 border-slate-800 shadow-md backdrop-blur-md flex-1 flex flex-col justify-center">
-          <h1 className="font-['Outfit'] text-2xl md:text-3xl font-black tracking-tight text-white flex items-center gap-2">
-            Xin chào, {firstName}! <Sparkles size={20} className="text-yellow-400 animate-pulse" />
+        <div className="bg-slate-900/60 px-5 py-4 rounded-[1.5rem] border-2 border-slate-800 shadow-md backdrop-blur-md flex-1 flex flex-col justify-center">
+          <h1 className="font-['Outfit'] text-xl md:text-2xl font-black tracking-tight text-white flex items-center gap-2">
+            Xin chào, {firstName}! <Sparkles size={16} className="text-yellow-400 animate-pulse" />
           </h1>
-          <p className="text-xs text-slate-400 font-bold tracking-widest uppercase mt-1">
+          <p className="text-[10px] text-slate-400 font-bold tracking-widest uppercase mt-0.5">
             Học sinh lớp {grade} — Hành trình tiếp tục
           </p>
         </div>
