@@ -48,9 +48,7 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
     return true;
   });
 
-  const positions: { x: number, y: number, isUnit: boolean }[] = [];
-  let currentY = 100;
-  let lessonCounter = 0;
+  let globalLessonCount = 0;
 
   // With map width 600px, center is 300px
   visibleNodes.forEach((node, i) => {
@@ -59,20 +57,21 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
     
     if (isUnit) {
       x = 300; // Units are always centered
-      if (i > 0) currentY += 120; // Extra space before a unit (Reduced significantly)
+      if (i > 0) currentY += 140; // Extra space before a unit
       lessonCounter = 0; // Reset zigzag counter for lessons in this unit
     } else if (node.type === 'exam') {
       x = 300; // Exams are centered at the end of the chapter
-      currentY += 90; // Reduced for density
+      currentY += 100; // Reduced for density
     } else {
-      // Lessons zigzag very widely to make it much more winding, but very close vertically
+      // Lessons zigzag curve
       const pattern = [160, 440, 180, 420, 140, 460];
       x = pattern[lessonCounter % pattern.length];
       currentY += 65; // Extremely dense space between lessons
       lessonCounter++;
+      globalLessonCount++;
     }
     
-    positions.push({ x, y: currentY, isUnit });
+    positions.push({ x, y: currentY, isUnit, index: globalLessonCount });
   });
 
   const pathHeight = positions.length > 0 ? positions[positions.length - 1].y + 180 : 500;
@@ -104,35 +103,40 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
   }
 
   // Predefined positions for decorative background items based on path height
-  const decorationTypes = ["lollipop", "cookie", "shroom", "star", "flower", "wrapped_candy", "swirl_candy"];
-  const decorations: { x: number; y: number; type: string; scale: number }[] = [];
-  for (let y = 60; y < pathHeight - 60; y += 70) { 
+  const decorationTypes = ["lollipop", "sugar_cube", "grass_tuft", "jelly_bean", "choco_mud", "lollipop_swirl"];
+  const decorations: { x: number; y: number; type: string; scale: number; rotation: number }[] = [];
+  for (let y = 60; y < pathHeight - 60; y += 60) { 
     // Pseudo-random deterministic values based on y
     const rand1 = Math.abs(Math.sin(y * 1.23)) * decorationTypes.length;
     const rand2 = Math.abs(Math.cos(y * 2.34)) * decorationTypes.length;
     const rand3 = Math.abs(Math.sin(y * 3.45)) * decorationTypes.length;
+    const rot1 = Math.floor(Math.sin(y * 4.56) * 45);
+    const rot2 = Math.floor(Math.cos(y * 5.67) * 45);
 
     // Left side decors
     decorations.push({
-      x: 50 + Math.sin(y) * 40,
+      x: 60 + Math.sin(y) * 50,
       y: y + Math.cos(y) * 20,
       type: decorationTypes[Math.floor(rand1) % decorationTypes.length],
-      scale: 0.9 + (Math.sin(y) * 0.3)
+      scale: 0.8 + (Math.sin(y) * 0.4),
+      rotation: rot1
     });
     // Right side decors
     decorations.push({
-      x: 550 + Math.cos(y) * 40,
+      x: 540 + Math.cos(y) * 50,
       y: y + 40 + Math.sin(y) * 20,
       type: decorationTypes[Math.floor(rand2) % decorationTypes.length],
-      scale: 0.9 + (Math.cos(y) * 0.3)
+      scale: 0.8 + (Math.cos(y) * 0.4),
+      rotation: rot2
     });
     // Extra random decors far out
-    if (y % 140 === 0) {
+    if (y % 120 === 0) {
       decorations.push({
         x: Math.sin(y) > 0 ? 30 : 570,
         y: y + 60,
         type: decorationTypes[Math.floor(rand3) % decorationTypes.length],
-        scale: 1.2
+        scale: 1.2,
+        rotation: rot1 * -1
       });
     }
   }
@@ -140,90 +144,75 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
   return (
     <div className="relative w-full max-w-2xl mx-auto py-10 flex justify-center select-none">
       
-      {/* Outer Adventure Board Frame - Candy Theme */}
+      {/* Outer Adventure Board Frame - Grass Theme */}
       <div 
-        className="relative w-full rounded-[2.5rem] overflow-hidden border-[12px] border-white shadow-[0_25px_60px_rgba(236,72,153,0.4)] bg-gradient-to-b from-sky-300 via-pink-300 to-fuchsia-300 transition-all duration-500"
+        className="relative w-full rounded-[2.5rem] overflow-hidden border-[12px] border-[#381e0f] shadow-[0_25px_60px_rgba(0,0,0,0.6)] bg-gradient-to-b from-[#8ed827] via-[#7bc810] to-[#60b00e] transition-all duration-500"
         style={{ height: pathHeight }}
       >
-        {/* Subtle grid pattern overlay */}
-        <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#ffffff_20%,transparent_21%)] bg-[size:40px_40px]"></div>
+        {/* Subtle grass texture overlay */}
+        <div className="absolute inset-0 opacity-10 pointer-events-none bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+CjxwYXRoIGQ9Ik0wIDBoMjB2MjBIMHoiIGZpbGw9Im5vbmUiLz4KPGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9IiNmZmYiLz4KPC9zdmc+')] bg-[size:40px_40px]"></div>
         
-        {/* Fluffy Candy Clouds in Background */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute top-10 left-[-20px] w-48 h-16 bg-white/40 rounded-full blur-[4px] animate-[pulse_6s_infinite]"></div>
-          <div className="absolute top-10 left-10 w-32 h-20 bg-white/40 rounded-full blur-[4px] animate-[pulse_6s_infinite] delay-75"></div>
+        {/* Fluffy Clouds in Background */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-80">
+          <div className="absolute top-10 left-[-20px] w-48 h-16 bg-white/70 rounded-full blur-[2px] animate-[pulse_6s_infinite]"></div>
+          <div className="absolute top-10 left-10 w-32 h-20 bg-white/60 rounded-full blur-[2px] animate-[pulse_6s_infinite] delay-75"></div>
           
-          <div className="absolute top-1/3 right-[-30px] w-40 h-16 bg-white/40 rounded-full blur-[4px] animate-[pulse_8s_infinite]"></div>
-          <div className="absolute top-1/3 right-10 w-24 h-24 bg-white/40 rounded-full blur-[4px] animate-[pulse_8s_infinite] delay-150"></div>
+          <div className="absolute top-1/3 right-[-30px] w-48 h-20 bg-white/70 rounded-full blur-[2px] animate-[pulse_8s_infinite]"></div>
           
-          <div className="absolute bottom-20 left-10 w-36 h-14 bg-white/40 rounded-full blur-[4px] animate-[pulse_5s_infinite]"></div>
+          <div className="absolute bottom-20 left-10 w-40 h-16 bg-white/60 rounded-full blur-[2px] animate-[pulse_5s_infinite]"></div>
         </div>
 
         {/* Decorative Floating Elements */}
         {decorations.map((dec, idx) => (
           <div 
             key={idx} 
-            className="absolute transform -translate-x-1/2 -translate-y-1/2 pointer-events-none transition-transform hover:scale-110 duration-300"
+            className="absolute transform -translate-x-1/2 -translate-y-1/2 pointer-events-none transition-transform hover:scale-110 duration-300 z-0"
             style={{ 
               left: `${dec.x}px`, 
               top: `${dec.y}px`,
-              transform: `translate(-50%, -50%) scale(${dec.scale})` 
+              transform: `translate(-50%, -50%) scale(${dec.scale}) rotate(${dec.rotation}deg)` 
             }}
           >
             {dec.type === "lollipop" && (
               <div className="flex flex-col items-center opacity-95 scale-125">
-                <div className="w-10 h-10 rounded-full bg-[conic-gradient(#ec4899_0deg_45deg,#fff_45deg_90deg,#ec4899_90deg_135deg,#fff_135deg_180deg,#ec4899_180deg_225deg,#fff_225deg_270deg,#ec4899_270deg_315deg,#fff_315deg_360deg)] border-2 border-white shadow-lg flex items-center justify-center">
+                <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-fuchsia-500 via-pink-500 to-rose-400 border-[3px] border-white/90 shadow-lg flex items-center justify-center overflow-hidden">
+                   <div className="absolute top-1 left-2 right-2 h-4 bg-white/40 rounded-full"></div>
+                </div>
+                <div className="w-2.5 h-16 bg-white rounded-full -mt-2 border border-slate-200/50 shadow-md z-[-1]"></div>
+              </div>
+            )}
+            {dec.type === "lollipop_swirl" && (
+              <div className="flex flex-col items-center opacity-95 scale-125">
+                <div className="w-14 h-14 rounded-full bg-[conic-gradient(#ec4899_0deg_45deg,#fff_45deg_90deg,#ec4899_90deg_135deg,#fff_135deg_180deg,#ec4899_180deg_225deg,#fff_225deg_270deg,#ec4899_270deg_315deg,#fff_315deg_360deg)] border-[3px] border-white/90 shadow-lg flex items-center justify-center">
                   <div className="w-full h-full rounded-full shadow-[inset_0_2px_4px_rgba(255,255,255,0.8)]"></div>
                 </div>
-                <div className="w-2 h-10 bg-white rounded-full -mt-1 border border-slate-200/50 shadow-sm z-[-1]"></div>
+                <div className="w-2.5 h-16 bg-white rounded-full -mt-2 border border-slate-200/50 shadow-md z-[-1]"></div>
               </div>
             )}
-            {dec.type === "cookie" && (
-              <div className="w-10 h-10 rounded-full bg-amber-600/90 border-[3px] border-amber-800/40 shadow-lg flex flex-wrap p-1.5 gap-1 items-center justify-center rotate-12 opacity-95">
-                <div className="w-2 h-2 rounded-full bg-amber-950"></div>
-                <div className="w-2 h-2 rounded-full bg-amber-950"></div>
-                <div className="w-2 h-2 rounded-full bg-amber-950"></div>
+            {dec.type === "sugar_cube" && (
+              <div className="w-8 h-8 bg-white rounded-md shadow-lg border-2 border-slate-100 flex items-center justify-center opacity-95">
+                <div className="w-5 h-5 bg-slate-50/50 rounded-sm shadow-inner"></div>
               </div>
             )}
-            {dec.type === "shroom" && (
-              <div className="flex flex-col items-center opacity-95 rotate-12 scale-110">
-                <div className="w-12 h-8 bg-gradient-to-r from-sky-400 to-indigo-500 rounded-t-full border-2 border-white shadow-lg relative flex items-center justify-center overflow-hidden">
-                  <div className="absolute top-1 left-2 w-3 h-3 rounded-full bg-white/80"></div>
-                  <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-white/80"></div>
-                </div>
-                <div className="w-6 h-4 bg-amber-100/90 rounded-b-md border-x-2 border-b-2 border-white -mt-0.5"></div>
+            {dec.type === "grass_tuft" && (
+              <div className="flex items-end justify-center opacity-90">
+                <div className="w-2 h-6 bg-[#65a30d] rounded-full rotate-[-30deg] translate-x-2"></div>
+                <div className="w-2.5 h-8 bg-[#4d7c0f] rounded-full z-10"></div>
+                <div className="w-2 h-5 bg-[#65a30d] rounded-full rotate-[30deg] -translate-x-1"></div>
               </div>
             )}
-            {dec.type === "star" && (
-              <Sparkles size={28} className="text-yellow-400 fill-yellow-300 drop-shadow-[0_2px_6px_rgba(250,204,21,0.6)] animate-pulse" />
-            )}
-            {dec.type === "flower" && (
-              <div className="relative w-10 h-10 flex items-center justify-center opacity-90">
-                <div className="absolute w-4 h-4 rounded-full bg-yellow-400 z-10 border-2 border-white"></div>
-                <div className="absolute w-4 h-4 rounded-full bg-pink-400 -top-1.5 border-2 border-white"></div>
-                <div className="absolute w-4 h-4 rounded-full bg-sky-400 -bottom-1.5 border-2 border-white"></div>
-                <div className="absolute w-4 h-4 rounded-full bg-purple-400 -left-1.5 border-2 border-white"></div>
-                <div className="absolute w-4 h-4 rounded-full bg-emerald-400 -right-1.5 border-2 border-white"></div>
+            {dec.type === "jelly_bean" && (
+              <div className="w-10 h-6 bg-gradient-to-b from-rose-500 to-rose-700 rounded-full shadow-lg border border-rose-800/20 relative overflow-hidden">
+                 <div className="absolute top-1 left-2 w-4 h-1.5 bg-white/60 rounded-full rotate-[-15deg]"></div>
               </div>
             )}
-            {dec.type === "wrapped_candy" && (
-              <div className="flex items-center justify-center opacity-95 rotate-45 scale-125">
-                <div className="w-0 h-0 border-y-[12px] border-y-transparent border-r-[16px] border-r-pink-500 -mr-2 z-0"></div>
-                <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-pink-400 to-rose-400 border-2 border-white shadow-lg z-10 overflow-hidden">
-                  <div className="w-full h-full bg-[repeating-linear-gradient(45deg,transparent,transparent_4px,rgba(255,255,255,0.4)_4px,rgba(255,255,255,0.4)_8px)]"></div>
-                </div>
-                <div className="w-0 h-0 border-y-[12px] border-y-transparent border-l-[16px] border-l-pink-500 -ml-2 z-0"></div>
-              </div>
-            )}
-            {dec.type === "swirl_candy" && (
-              <div className="flex items-center justify-center opacity-95 -rotate-12 scale-110">
-                 <div className="w-9 h-9 rounded-full bg-[conic-gradient(#38bdf8_0deg_90deg,#fff_90deg_180deg,#38bdf8_180deg_270deg,#fff_270deg_360deg)] border-2 border-white shadow-md"></div>
-              </div>
+            {dec.type === "choco_mud" && (
+              <div className="w-24 h-12 bg-[#573418] rounded-full opacity-60 blur-[1px] shadow-inner"></div>
             )}
           </div>
         ))}
 
-        {/* 3D Road / SVG Path (Centered dynamically in 600px space) */}
+        {/* 3D Road / Golden Path SVG */}
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none flex justify-center">
           <svg 
             width="600" 
@@ -234,34 +223,26 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
             {/* 3D Road Bottom Depth Shadow */}
             <path 
               d={dPath} 
-              stroke="#db2777"
-              strokeWidth="42"
+              stroke="#b45309"
+              strokeWidth="48"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
-            {/* 3D Road Main Candy Body */}
+            {/* 3D Road Main Golden Body */}
             <path 
               d={dPath} 
-              stroke="#fbcfe8"
-              strokeWidth="32"
+              stroke="#fbbf24"
+              strokeWidth="40"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
-            {/* 3D Road Center Walk Path */}
+            {/* 3D Road Highlight (Center Path) */}
             <path 
               d={dPath} 
-              stroke="#ffffff"
-              strokeWidth="20"
+              stroke="#fcd34d"
+              strokeWidth="28"
               strokeLinecap="round"
               strokeLinejoin="round"
-            />
-            {/* Dash center lines */}
-            <path 
-              d={dPath} 
-              stroke="#f472b6"
-              strokeWidth="4"
-              strokeDasharray="8 14"
-              strokeLinecap="round"
             />
           </svg>
         </div>
@@ -288,109 +269,93 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                 className={`absolute transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center group cursor-pointer ${isUnitNode ? 'w-36 h-36' : 'w-24 h-24'}`}
                 style={{ left: leftOffset, top: topOffset }}
               >
-                {/* Tooltip */}
-                <div className="absolute -top-14 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap bg-slate-900/95 text-white text-sm font-bold px-4 py-2 rounded-xl border border-slate-700 shadow-2xl z-20">
+                {/* Tooltip on Hover */}
+                <div className="absolute -top-12 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap bg-white text-slate-700 border-4 border-amber-300 shadow-xl px-4 py-2 rounded-2xl z-50 font-black text-sm">
                   {node.title}
-                  <div className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-slate-900 border-b border-r border-slate-700 rotate-45"></div>
+                  <div className="absolute -bottom-[10px] left-1/2 -translate-x-1/2 w-0 h-0 border-x-[8px] border-x-transparent border-t-[8px] border-t-amber-300"></div>
                 </div>
 
                 {isUnitNode ? (
-                  /* 3D Unit Giant Candy Button */
-                  <div className="relative flex flex-col items-center">
+                  /* Purple Banner Flag Unit Node */
+                  <div className="relative flex flex-col items-center mt-[-30px]">
                     <button 
                       onClick={() => toggleUnit(node.id)}
                       className={`
-                        relative flex items-center justify-center transition-all duration-150 active:translate-y-[4px]
-                        hover:scale-105 w-32 h-24
+                        relative flex flex-col items-center justify-start transition-all duration-150 active:translate-y-[4px] hover:scale-105 z-10
                       `}
                     >
-                      <div className="flex items-center justify-center -rotate-6 group-hover:rotate-0 transition-transform">
-                        <div className={`text-[90px] leading-none select-none ${isUnlocked ? 'drop-shadow-[0_10px_10px_rgba(219,39,119,0.8)] animate-bounce' : 'grayscale opacity-50 drop-shadow-md'}`}>
-                          🍭
-                        </div>
-                        {/* Expand / Collapse Indicator */}
-                        <div className="absolute -bottom-2 bg-rose-500 border-[3px] border-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg transition-transform duration-300 z-20" style={{ transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>
-                          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="5" className="text-white">
-                            <path d="M6 9l6 6 6-6" />
-                          </svg>
-                        </div>
+                      {/* Banner Body */}
+                      <div className={`w-16 h-24 ${isUnlocked ? 'bg-gradient-to-b from-purple-500 to-purple-800' : 'bg-gradient-to-b from-slate-400 to-slate-600'} border-2 border-amber-300 rounded-b-md relative flex items-center justify-start pt-3 shadow-[0_5px_15px_rgba(0,0,0,0.4)] flex-col`}>
+                        <Star size={24} className={isUnlocked ? 'text-yellow-400 fill-yellow-400 drop-shadow-md' : 'text-slate-300 fill-slate-300'} />
+                        {/* The pointy bottom of banner */}
+                        <div className={`absolute -bottom-4 w-0 h-0 border-x-[30px] border-x-transparent border-t-[16px] ${isUnlocked ? 'border-t-purple-800' : 'border-t-slate-600'}`}></div>
+                        <div className="absolute -bottom-[19px] w-0 h-0 border-x-[34px] border-x-transparent border-t-[18px] border-t-amber-300 z-[-1]"></div>
+                      </div>
+                      
+                      {/* Expand / Collapse Indicator */}
+                      <div className="absolute -bottom-8 bg-amber-400 border-[3px] border-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg transition-transform duration-300 z-20" style={{ transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#78350f" strokeWidth="5" className="text-amber-900">
+                          <path d="M6 9l6 6 6-6" />
+                        </svg>
                       </div>
                     </button>
+                    {/* Wooden Pole */}
+                    <div className="absolute w-3 h-24 bg-[#8b5a2b] border-r-[3px] border-[#5c3a21]/50 -bottom-10 rounded-full z-0 shadow-lg"></div>
                   </div>
                 ) : node.type === 'exam' ? (
-                  /* 3D Big Purple Candy for Exam Node */
+                  /* Exam Gift Node */
                   <Link 
                     href={`/learn/${subjectSlug}/${node.slug}`}
                     className={`
-                      relative flex items-center justify-center transition-all duration-150 active:translate-y-[4px]
-                      hover:scale-110 w-24 h-20
+                      relative flex items-center justify-center transition-all duration-150 active:translate-y-[4px] hover:scale-110 z-10 mt-[-10px]
                     `}
                   >
-                    <div className="flex items-center justify-center rotate-6 group-hover:rotate-12 transition-transform">
-                      <div className="text-[80px] leading-none select-none drop-shadow-[0_10px_15px_rgba(147,51,234,0.8)]">
-                        🍫
-                      </div>
+                    <div className="text-[70px] leading-none select-none drop-shadow-[0_10px_15px_rgba(0,0,0,0.4)]">
+                      🎁
                     </div>
                   </Link>
                 ) : (
-                  /* 3D Round Cookie / Candy Lesson Step */
+                  /* 3D Glassy Round Buttons for Lessons */
                   <Link 
                     href={`/learn/${subjectSlug}/${node.slug}`}
                     className={`
-                      relative flex items-center justify-center transition-all duration-150 active:translate-y-[3px]
-                      w-16 h-16 rounded-full hover:scale-110
+                      relative flex items-center justify-center transition-all duration-150 active:translate-y-[3px] hover:scale-110 z-10
                     `}
                   >
-
                     <div className="relative flex flex-col items-center justify-center w-full h-full">
                       {isCompleted ? (
-                        // Big Candy for completed lessons (Faded out)
-                        <div className="flex items-center justify-center rotate-[15deg] hover:rotate-[25deg] transition-transform relative opacity-60 grayscale hover:grayscale-0 hover:opacity-100 duration-300">
-                          <div className="text-[54px] leading-none select-none drop-shadow-md">
-                            🍬
+                        // Completed Glassy Blue Button with 3 Stars
+                        <div className="flex flex-col items-center justify-center transition-transform relative opacity-90">
+                          <div className="w-14 h-14 rounded-full bg-gradient-to-b from-[#77d3f4] to-[#258bd5] shadow-[0_5px_0_#0f5a9e,inset_0_3px_5px_rgba(255,255,255,0.6)] border-[3px] border-white flex items-center justify-center z-10">
+                             <span className="text-white text-2xl font-black drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)]">{pos.index}</span>
                           </div>
-                          {/* Checked badge */}
-                          <div className="absolute -top-1 -right-2 bg-emerald-500 rounded-full p-0.5 border-[3px] border-white shadow-md z-20">
-                             <CheckCircle2 size={16} strokeWidth={4} className="text-white" />
+                          {/* 3 Stars below */}
+                          <div className="absolute -bottom-4 flex justify-center w-[120%] gap-0.5 z-20">
+                            <Star size={14} className="text-yellow-400 fill-yellow-400 drop-shadow-md rotate-[-15deg] mt-1" />
+                            <Star size={18} className="text-yellow-400 fill-yellow-400 drop-shadow-md z-10" />
+                            <Star size={14} className="text-yellow-400 fill-yellow-400 drop-shadow-md rotate-[15deg] mt-1" />
                           </div>
                         </div>
                       ) : isUnlocked ? (
-                        // Big Candy for unlocked current lesson
-                        <div className="flex items-center justify-center -rotate-[10deg] hover:rotate-0 transition-transform animate-pulse relative">
-                          <div className="text-[60px] leading-none select-none drop-shadow-[0_8px_15px_rgba(14,165,233,0.8)]">
-                            🍬
+                        // Unlocked Glassy Blue Button
+                        <div className="flex items-center justify-center transition-transform animate-[bounce_2s_infinite] relative">
+                          <div className="w-16 h-16 rounded-full bg-gradient-to-b from-[#77d3f4] to-[#258bd5] shadow-[0_6px_0_#0f5a9e,0_10px_15px_rgba(15,90,158,0.5),inset_0_3px_5px_rgba(255,255,255,0.6)] border-[4px] border-white flex items-center justify-center z-10">
+                             <span className="text-white text-3xl font-black drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)]">{pos.index}</span>
                           </div>
-                          {/* Play badge */}
-                          <div className="absolute -bottom-1 -right-2 bg-sky-500 rounded-full p-1 border-[3px] border-white shadow-md z-20">
-                             <Play size={14} fill="currentColor" className="text-white ml-0.5" />
-                          </div>
+                          {/* Light ring effect around active node */}
+                          <div className="absolute inset-[-10px] bg-white/20 rounded-full blur-sm -z-10 animate-pulse"></div>
                         </div>
                       ) : (
-                        // Small Candy for locked lessons
-                        <div className="flex items-center justify-center rotate-[20deg] opacity-60 hover:opacity-100 transition-opacity grayscale">
-                          <div className="text-[44px] leading-none select-none drop-shadow-md">
-                            🍬
+                        // Locked Glassy Gray Button
+                        <div className="flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity">
+                          <div className="w-12 h-12 rounded-full bg-gradient-to-b from-[#e2e8f0] to-[#94a3b8] shadow-[0_4px_0_#475569,inset_0_2px_3px_rgba(255,255,255,0.8)] border-[3px] border-white flex items-center justify-center z-10">
+                             <span className="text-slate-500 text-xl font-black drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)]">{pos.index}</span>
                           </div>
                         </div>
                       )}
                     </div>
-
-                    {isCompleted && (
-                      <div className="absolute -bottom-2 -right-2 bg-yellow-400 rounded-full p-1 border-2 border-white shadow-lg z-10 animate-bounce">
-                        <Star size={12} className="text-white fill-white" />
-                      </div>
-                    )}
                   </Link>
                 )}
-
-                {/* Styled Title Label Below Node */}
-                <div className="mt-5 text-center max-w-[140px] px-1 relative z-10">
-                  <div className="bg-white/90 border-[3px] border-pink-200 rounded-2xl px-3 py-1.5 shadow-lg backdrop-blur-sm">
-                    <p className={`text-[11px] font-black tracking-wide leading-tight uppercase ${isUnlocked ? 'text-pink-600' : 'text-slate-400'}`}>
-                      {node.title}
-                    </p>
-                  </div>
-                </div>
               </div>
             );
           })}
