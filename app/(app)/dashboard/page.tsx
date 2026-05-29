@@ -83,17 +83,17 @@ export default async function DashboardPage() {
     <div className="mx-auto max-w-6xl h-[calc(100dvh-6rem)] flex flex-col gap-4 select-none relative z-10 overflow-hidden">
       
       {/* 1. Welcome & Stats Combined Strip */}
-      <div className="flex flex-col md:flex-row md:items-stretch justify-between gap-4 shrink-0">
-        <div className="bg-slate-900/60 px-5 py-4 rounded-[1.5rem] border-2 border-slate-800 shadow-md backdrop-blur-md flex-1 flex flex-col justify-center">
-          <h1 className="font-['Outfit'] text-xl md:text-2xl font-black tracking-tight text-white flex items-center gap-2">
-            Xin chào, {firstName}! <Sparkles size={16} className="text-yellow-400 animate-pulse" />
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 shrink-0">
+        <div className="flex-1 py-2">
+          <h1 className="font-['Outfit'] text-2xl md:text-3xl font-black tracking-tight text-white flex items-center gap-2">
+            Xin chào, {firstName}! <Sparkles size={24} className="text-yellow-400 animate-pulse" />
           </h1>
-          <p className="text-[10px] text-slate-400 font-bold tracking-widest uppercase mt-0.5">
+          <p className="text-xs text-slate-400 font-bold tracking-widest uppercase mt-1">
             Học sinh lớp {grade} — Hành trình tiếp tục
           </p>
         </div>
         
-        <div className="flex-1 max-w-md w-full">
+        <div className="shrink-0">
           <HeroMomentumCard 
             streak={dashboardStats?.current_streak || 0}
             totalMinutes={dashboardStats?.total_learning_minutes || 0}
