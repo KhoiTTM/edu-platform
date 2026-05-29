@@ -1,0 +1,323 @@
+{
+  "title": "MATH 3 - Tập 1 - Bài 26 (Đề 1)",
+  "metadata": {
+    "subject": "Toán",
+    "grade": 3,
+    "volume": 1,
+    "book": "Toán 3 - Kết nối tri thức",
+    "lessons": [
+      26
+    ],
+    "total_questions": 15,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "shape_identify",
+      "instruction": "Nhận dạng hình",
+      "question_data": {
+        "shape_description": "Đây là hình gì?",
+        "correct_answer": "Hình tròn",
+        "choices": [
+          "Hình tam giác",
+          "Hình vuông",
+          "Hình chữ nhật",
+          "Hình tròn"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 26",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 7",
+      "question_data": {
+        "question": "7 x 6 = ___",
+        "correct_answer": "42",
+        "choices": [
+          "48",
+          "33",
+          "42",
+          "52"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 26",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 25 viên bi. Minh được cho thêm 46 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "71",
+        "choices": [
+          "86",
+          "17",
+          "71",
+          "81"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 26",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 9",
+      "question_data": {
+        "question": "9 x 1 = ___",
+        "correct_answer": "9",
+        "choices": [
+          "8",
+          "9",
+          "14",
+          "1"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 26",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 64 viên bi. Minh được cho thêm 25 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "89",
+        "choices": [
+          "79",
+          "98",
+          "89",
+          "99"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 26",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "231 + 436 = ___",
+        "correct_answer": "667",
+        "choices": [
+          "657",
+          "671",
+          "669",
+          "667"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 26",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "shape_identify",
+      "instruction": "Nhận dạng hình",
+      "question_data": {
+        "shape_description": "Đây là hình gì?",
+        "correct_answer": "Hình vuông",
+        "choices": [
+          "Hình tam giác",
+          "Hình vuông",
+          "Hình chữ nhật",
+          "Hình tròn"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 26",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 90 viên bi. Minh được cho thêm 41 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "131",
+        "choices": [
+          "131",
+          "125",
+          "141",
+          "129"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 26",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 58 viên bi. Minh được cho thêm 39 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "97",
+        "choices": [
+          "97",
+          "106",
+          "79",
+          "96"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 26",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 66 viên bi. Minh được cho thêm 39 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "105",
+        "choices": [
+          "501",
+          "111",
+          "105",
+          "115"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 26",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "480 + 141 = ___",
+        "correct_answer": "621",
+        "choices": [
+          "626",
+          "126",
+          "621",
+          "620"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 26",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 6",
+      "question_data": {
+        "question": "6 x 1 = ___",
+        "correct_answer": "6",
+        "choices": [
+          "6",
+          "11",
+          "19",
+          "13"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 26",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 53 viên bi. Minh được cho thêm 27 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "80",
+        "choices": [
+          "8",
+          "80",
+          "90",
+          "84"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 26",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 9",
+      "question_data": {
+        "question": "9 x 2 = ___",
+        "correct_answer": "18",
+        "choices": [
+          "28",
+          "81",
+          "10",
+          "18"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 26",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 48 viên bi. Minh được cho thêm 14 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "62",
+        "choices": [
+          "57",
+          "62",
+          "54",
+          "61"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 26",
+        "page": 0
+      }
+    }
+  ]
+}

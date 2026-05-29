@@ -1,0 +1,498 @@
+{
+  "title": "ENGLISH 3 - Tập 1 - Bài 11 (Đề 20)",
+  "metadata": {
+    "subject": "english",
+    "grade": 3,
+    "volume": 1,
+    "book": "english 3 - Kết nối tri thức",
+    "lessons": [
+      11
+    ],
+    "total_questions": 20,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "your",
+          "Open",
+          "please",
+          "book"
+        ],
+        "correct_sentence": "Open your book, please."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "what",
+            "right": "cái gì"
+          },
+          {
+            "left": "name",
+            "right": "tên"
+          },
+          {
+            "left": "my",
+            "right": "của tôi"
+          },
+          {
+            "left": "your",
+            "right": "của bạn"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "you",
+          "old",
+          "are",
+          "How"
+        ],
+        "correct_sentence": "How old are you?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "mở",
+        "correct_word": "open",
+        "choices": [
+          "open",
+          "close",
+          "book",
+          "stand up",
+          "sit down",
+          "come in"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "break time",
+            "right": "giờ ra chơi"
+          },
+          {
+            "left": "play",
+            "right": "chơi"
+          },
+          {
+            "left": "chess",
+            "right": "cờ vua"
+          },
+          {
+            "left": "badminton",
+            "right": "cầu lông"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "nhảy múa",
+        "correct_word": "dancing",
+        "choices": [
+          "dancing",
+          "swimming",
+          "singing",
+          "hobby",
+          "drawing"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "don't",
+          "I",
+          "No"
+        ],
+        "correct_sentence": "No, I don't."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "how old",
+            "right": "mấy tuổi"
+          },
+          {
+            "left": "old",
+            "right": "cũ/tuổi"
+          },
+          {
+            "left": "years old",
+            "right": "tuổi"
+          },
+          {
+            "left": "seven",
+            "right": "bảy"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "How",
+          "old",
+          "are",
+          "you"
+        ],
+        "correct_sentence": "How old are you?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "sân chơi",
+        "correct_word": "playground",
+        "choices": [
+          "school",
+          "playground",
+          "gym",
+          "classroom",
+          "computer room",
+          "library"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "what",
+            "right": "cái gì"
+          },
+          {
+            "left": "name",
+            "right": "tên"
+          },
+          {
+            "left": "my",
+            "right": "của tôi"
+          },
+          {
+            "left": "your",
+            "right": "của bạn"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "open",
+            "right": "mở"
+          },
+          {
+            "left": "close",
+            "right": "đóng"
+          },
+          {
+            "left": "book",
+            "right": "quyển sách"
+          },
+          {
+            "left": "stand up",
+            "right": "đứng lên"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "khỏe",
+        "correct_word": "fine",
+        "choices": [
+          "fine",
+          "how",
+          "hi",
+          "hello"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "What",
+          "name",
+          "is",
+          "your"
+        ],
+        "correct_sentence": "What is your name?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "hobby",
+            "right": "sở thích"
+          },
+          {
+            "left": "singing",
+            "right": "ca hát"
+          },
+          {
+            "left": "swimming",
+            "right": "bơi lội"
+          },
+          {
+            "left": "dancing",
+            "right": "nhảy múa"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q016",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "break time",
+            "right": "giờ ra chơi"
+          },
+          {
+            "left": "play",
+            "right": "chơi"
+          },
+          {
+            "left": "chess",
+            "right": "cờ vua"
+          },
+          {
+            "left": "badminton",
+            "right": "cầu lông"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q017",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "This",
+          "is",
+          "my",
+          "friend"
+        ],
+        "correct_sentence": "This is my friend."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q018",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "how old",
+            "right": "mấy tuổi"
+          },
+          {
+            "left": "old",
+            "right": "cũ/tuổi"
+          },
+          {
+            "left": "years old",
+            "right": "tuổi"
+          },
+          {
+            "left": "seven",
+            "right": "bảy"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q019",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "phòng thể chất",
+        "correct_word": "gym",
+        "choices": [
+          "library",
+          "classroom",
+          "gym",
+          "computer room",
+          "school",
+          "playground"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q020",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "mở",
+        "correct_word": "open",
+        "choices": [
+          "book",
+          "open",
+          "close",
+          "come in",
+          "stand up",
+          "sit down"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    }
+  ]
+}

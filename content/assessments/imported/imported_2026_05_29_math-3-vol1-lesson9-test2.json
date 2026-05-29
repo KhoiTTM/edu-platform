@@ -1,0 +1,316 @@
+{
+  "title": "MATH 3 - Tập 1 - Bài 9 (Đề 2)",
+  "metadata": {
+    "subject": "Toán",
+    "grade": 3,
+    "volume": 1,
+    "book": "Toán 3 - Kết nối tri thức",
+    "lessons": [
+      9
+    ],
+    "total_questions": 15,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "411 + 482 = ___",
+        "correct_answer": "893",
+        "choices": [
+          "895",
+          "892",
+          "893",
+          "899"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 9",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 6",
+      "question_data": {
+        "question": "6 x 10 = ___",
+        "correct_answer": "60",
+        "choices": [
+          "62",
+          "68",
+          "60",
+          "70"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 9",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 6",
+      "question_data": {
+        "question": "6 x 3 = ___",
+        "correct_answer": "18",
+        "choices": [
+          "18",
+          "81",
+          "19",
+          "28"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 9",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 6",
+      "question_data": {
+        "question": "6 x 8 = ___",
+        "correct_answer": "48",
+        "choices": [
+          "48",
+          "49",
+          "38",
+          "58"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 9",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 6",
+      "question_data": {
+        "question": "6 x 1 = ___",
+        "correct_answer": "6",
+        "choices": [
+          "9",
+          "10",
+          "6",
+          "18"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 9",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 6",
+      "question_data": {
+        "question": "6 x 3 = ___",
+        "correct_answer": "18",
+        "choices": [
+          "16",
+          "18",
+          "10",
+          "81"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 9",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 6",
+      "question_data": {
+        "question": "6 x 10 = ___",
+        "correct_answer": "60",
+        "choices": [
+          "60",
+          "65",
+          "62",
+          "6"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 9",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "366 + 292 = ___",
+        "correct_answer": "658",
+        "choices": [
+          "665",
+          "663",
+          "658",
+          "650"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 9",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "tap_correct_answer",
+      "instruction": "Bảng chia 6",
+      "question_data": {
+        "question": "36 : 6 = ?",
+        "correct_answer": "6",
+        "choices": [
+          "16",
+          "11",
+          "4",
+          "6"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 9",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "shape_identify",
+      "instruction": "Nhận dạng hình",
+      "question_data": {
+        "shape_description": "Đây là hình gì?",
+        "correct_answer": "Hình tam giác",
+        "choices": [
+          "Hình tam giác",
+          "Hình vuông",
+          "Hình chữ nhật",
+          "Hình tròn"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 9",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "tap_correct_answer",
+      "instruction": "Bảng chia 6",
+      "question_data": {
+        "question": "6 : 6 = ?",
+        "correct_answer": "1",
+        "choices": [
+          "11",
+          "9",
+          "6",
+          "1"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 9",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "shape_identify",
+      "instruction": "Nhận dạng hình",
+      "question_data": {
+        "shape_description": "Đây là hình gì?",
+        "correct_answer": "Hình tròn",
+        "choices": [
+          "Hình tam giác",
+          "Hình vuông",
+          "Hình chữ nhật",
+          "Hình tròn"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 9",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "tap_correct_answer",
+      "instruction": "Bảng chia 6",
+      "question_data": {
+        "question": "36 : 6 = ?",
+        "correct_answer": "6",
+        "choices": [
+          "16",
+          "6",
+          "4",
+          "2"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 9",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 6",
+      "question_data": {
+        "question": "6 x 5 = ___",
+        "correct_answer": "30",
+        "choices": [
+          "32",
+          "30",
+          "28",
+          "40"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 9",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "tap_correct_answer",
+      "instruction": "Bảng chia 6",
+      "question_data": {
+        "question": "18 : 6 = ?",
+        "correct_answer": "3",
+        "choices": [
+          "4",
+          "3",
+          "5",
+          "13"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 9",
+        "page": 0
+      }
+    }
+  ]
+}

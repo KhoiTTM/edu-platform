@@ -1,0 +1,419 @@
+{
+  "title": "MATH 3 - Tập 1 - Bài 44 (Đề 40)",
+  "metadata": {
+    "subject": "Toán",
+    "grade": 3,
+    "volume": 1,
+    "book": "Toán 3 - Kết nối tri thức",
+    "lessons": [
+      44
+    ],
+    "total_questions": 20,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "400 + 458 = ___",
+        "correct_answer": "858",
+        "choices": [
+          "853",
+          "863",
+          "854",
+          "858"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 44 viên bi. Minh được cho thêm 28 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "72",
+        "choices": [
+          "72",
+          "27",
+          "70",
+          "84"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "330 + 355 = ___",
+        "correct_answer": "685",
+        "choices": [
+          "676",
+          "682",
+          "685",
+          "688"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "159 + 184 = ___",
+        "correct_answer": "343",
+        "choices": [
+          "335",
+          "333",
+          "343",
+          "353"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "413 + 303 = ___",
+        "correct_answer": "716",
+        "choices": [
+          "706",
+          "716",
+          "726",
+          "617"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "410 + 372 = ___",
+        "correct_answer": "782",
+        "choices": [
+          "781",
+          "789",
+          "788",
+          "782"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "240 + 402 = ___",
+        "correct_answer": "642",
+        "choices": [
+          "647",
+          "636",
+          "246",
+          "642"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "108 + 158 = ___",
+        "correct_answer": "266",
+        "choices": [
+          "264",
+          "266",
+          "271",
+          "662"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "363 + 489 = ___",
+        "correct_answer": "852",
+        "choices": [
+          "862",
+          "852",
+          "851",
+          "860"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 61 viên bi. Minh được cho thêm 23 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "84",
+        "choices": [
+          "94",
+          "84",
+          "81",
+          "48"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 3",
+      "question_data": {
+        "question": "3 x 7 = ___",
+        "correct_answer": "21",
+        "choices": [
+          "23",
+          "21",
+          "18",
+          "31"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 92 viên bi. Minh được cho thêm 48 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "140",
+        "choices": [
+          "141",
+          "138",
+          "133",
+          "140"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "134 + 263 = ___",
+        "correct_answer": "397",
+        "choices": [
+          "397",
+          "407",
+          "793",
+          "404"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "214 + 326 = ___",
+        "correct_answer": "540",
+        "choices": [
+          "540",
+          "542",
+          "534",
+          "532"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "120 + 362 = ___",
+        "correct_answer": "482",
+        "choices": [
+          "488",
+          "482",
+          "477",
+          "478"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q016",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "123 + 195 = ___",
+        "correct_answer": "318",
+        "choices": [
+          "316",
+          "813",
+          "328",
+          "318"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q017",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "416 + 409 = ___",
+        "correct_answer": "825",
+        "choices": [
+          "528",
+          "835",
+          "816",
+          "825"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q018",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 4",
+      "question_data": {
+        "question": "4 x 5 = ___",
+        "correct_answer": "20",
+        "choices": [
+          "13",
+          "29",
+          "11",
+          "20"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q019",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "287 + 261 = ___",
+        "correct_answer": "548",
+        "choices": [
+          "544",
+          "548",
+          "845",
+          "549"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q020",
+      "type": "tap_correct_answer",
+      "instruction": "Bảng chia 9",
+      "question_data": {
+        "question": "81 : 9 = ?",
+        "correct_answer": "9",
+        "choices": [
+          "19",
+          "1",
+          "14",
+          "9"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 44",
+        "page": 0
+      }
+    }
+  ]
+}

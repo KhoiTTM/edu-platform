@@ -1,0 +1,504 @@
+{
+  "title": "ENGLISH 3 - Tập 1 - Bài 11 (Đề 33)",
+  "metadata": {
+    "subject": "english",
+    "grade": 3,
+    "volume": 1,
+    "book": "english 3 - Kết nối tri thức",
+    "lessons": [
+      11
+    ],
+    "total_questions": 20,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "what",
+            "right": "cái gì"
+          },
+          {
+            "left": "name",
+            "right": "tên"
+          },
+          {
+            "left": "my",
+            "right": "của tôi"
+          },
+          {
+            "left": "your",
+            "right": "của bạn"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "it",
+          "What",
+          "colour",
+          "is"
+        ],
+        "correct_sentence": "What colour is it?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "I",
+          "thank",
+          "am",
+          "fine",
+          "you"
+        ],
+        "correct_sentence": "I am fine, thank you."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "cặp sách",
+        "correct_word": "school bag",
+        "choices": [
+          "pencil",
+          "pen",
+          "ruler",
+          "school bag",
+          "pencil case",
+          "rubber"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "cờ vua",
+        "correct_word": "chess",
+        "choices": [
+          "badminton",
+          "football",
+          "chess",
+          "basketball",
+          "play",
+          "break time"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "play",
+          "football",
+          "you",
+          "Do"
+        ],
+        "correct_sentence": "Do you play football?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "red",
+            "right": "màu đỏ"
+          },
+          {
+            "left": "green",
+            "right": "màu xanh lá"
+          },
+          {
+            "left": "blue",
+            "right": "màu xanh dương"
+          },
+          {
+            "left": "yellow",
+            "right": "màu vàng"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "what",
+            "right": "cái gì"
+          },
+          {
+            "left": "name",
+            "right": "tên"
+          },
+          {
+            "left": "my",
+            "right": "của tôi"
+          },
+          {
+            "left": "your",
+            "right": "của bạn"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "a",
+          "pencil",
+          "Do",
+          "you",
+          "have"
+        ],
+        "correct_sentence": "Do you have a pencil?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "how old",
+            "right": "mấy tuổi"
+          },
+          {
+            "left": "old",
+            "right": "cũ/tuổi"
+          },
+          {
+            "left": "years old",
+            "right": "tuổi"
+          },
+          {
+            "left": "seven",
+            "right": "bảy"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "what",
+            "right": "cái gì"
+          },
+          {
+            "left": "name",
+            "right": "tên"
+          },
+          {
+            "left": "my",
+            "right": "của tôi"
+          },
+          {
+            "left": "your",
+            "right": "của bạn"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "red",
+            "right": "màu đỏ"
+          },
+          {
+            "left": "green",
+            "right": "màu xanh lá"
+          },
+          {
+            "left": "blue",
+            "right": "màu xanh dương"
+          },
+          {
+            "left": "yellow",
+            "right": "màu vàng"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "Yes",
+          "you",
+          "can"
+        ],
+        "correct_sentence": "Yes, you can."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "open",
+            "right": "mở"
+          },
+          {
+            "left": "close",
+            "right": "đóng"
+          },
+          {
+            "left": "book",
+            "right": "quyển sách"
+          },
+          {
+            "left": "stand up",
+            "right": "đứng lên"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "pen",
+            "right": "cái bút"
+          },
+          {
+            "left": "pencil",
+            "right": "bút chì"
+          },
+          {
+            "left": "ruler",
+            "right": "thước kẻ"
+          },
+          {
+            "left": "rubber",
+            "right": "cục tẩy"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q016",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "This",
+          "is",
+          "our",
+          "school"
+        ],
+        "correct_sentence": "This is our school."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q017",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "màu đen",
+        "correct_word": "black",
+        "choices": [
+          "blue",
+          "yellow",
+          "white",
+          "green",
+          "black",
+          "red"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q018",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "Linh",
+          "is",
+          "name",
+          "My"
+        ],
+        "correct_sentence": "My name is Linh."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q019",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "It",
+          "red",
+          "is"
+        ],
+        "correct_sentence": "It is red."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q020",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "red",
+            "right": "màu đỏ"
+          },
+          {
+            "left": "green",
+            "right": "màu xanh lá"
+          },
+          {
+            "left": "blue",
+            "right": "màu xanh dương"
+          },
+          {
+            "left": "yellow",
+            "right": "màu vàng"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    }
+  ]
+}

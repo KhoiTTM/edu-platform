@@ -1,0 +1,355 @@
+{
+  "title": "ENGLISH 3 - Tập 1 - Bài 7 (Đề 4)",
+  "metadata": {
+    "subject": "english",
+    "grade": 3,
+    "volume": 1,
+    "book": "english 3 - Kết nối tri thức",
+    "lessons": [
+      7
+    ],
+    "total_questions": 15,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "my",
+          "This",
+          "friend",
+          "is"
+        ],
+        "correct_sentence": "This is my friend."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "hello",
+            "right": "xin chào"
+          },
+          {
+            "left": "hi",
+            "right": "chào"
+          },
+          {
+            "left": "how",
+            "right": "thế nào"
+          },
+          {
+            "left": "fine",
+            "right": "khỏe"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "vẽ",
+        "correct_word": "drawing",
+        "choices": [
+          "singing",
+          "dancing",
+          "swimming",
+          "hobby",
+          "drawing"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "May",
+          "I",
+          "come",
+          "in"
+        ],
+        "correct_sentence": "May I come in?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "school",
+            "right": "trường học"
+          },
+          {
+            "left": "classroom",
+            "right": "phòng học"
+          },
+          {
+            "left": "library",
+            "right": "thư viện"
+          },
+          {
+            "left": "playground",
+            "right": "sân chơi"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "vào trong",
+        "correct_word": "come in",
+        "choices": [
+          "stand up",
+          "sit down",
+          "close",
+          "come in",
+          "open",
+          "book"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "teacher",
+          "my",
+          "is",
+          "That"
+        ],
+        "correct_sentence": "That is my teacher."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "phòng thể chất",
+        "correct_word": "gym",
+        "choices": [
+          "school",
+          "classroom",
+          "computer room",
+          "library",
+          "playground",
+          "gym"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "what",
+            "right": "cái gì"
+          },
+          {
+            "left": "name",
+            "right": "tên"
+          },
+          {
+            "left": "my",
+            "right": "của tôi"
+          },
+          {
+            "left": "your",
+            "right": "của bạn"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "you",
+          "like",
+          "Do",
+          "dancing"
+        ],
+        "correct_sentence": "Do you like dancing?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "is",
+          "he",
+          "Yes"
+        ],
+        "correct_sentence": "Yes, he is."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "quyển sách",
+        "correct_word": "book",
+        "choices": [
+          "book",
+          "close",
+          "come in",
+          "stand up",
+          "open",
+          "sit down"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "Yes",
+          "I",
+          "like",
+          "dancing"
+        ],
+        "correct_sentence": "Yes, I like dancing."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "come",
+          "May",
+          "in",
+          "I"
+        ],
+        "correct_sentence": "May I come in?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "open",
+            "right": "mở"
+          },
+          {
+            "left": "close",
+            "right": "đóng"
+          },
+          {
+            "left": "book",
+            "right": "quyển sách"
+          },
+          {
+            "left": "stand up",
+            "right": "đứng lên"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    }
+  ]
+}

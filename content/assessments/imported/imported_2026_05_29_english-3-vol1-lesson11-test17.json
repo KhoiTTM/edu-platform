@@ -1,0 +1,501 @@
+{
+  "title": "ENGLISH 3 - Tập 1 - Bài 11 (Đề 17)",
+  "metadata": {
+    "subject": "english",
+    "grade": 3,
+    "volume": 1,
+    "book": "english 3 - Kết nối tri thức",
+    "lessons": [
+      11
+    ],
+    "total_questions": 20,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "màu vàng",
+        "correct_word": "yellow",
+        "choices": [
+          "blue",
+          "green",
+          "white",
+          "red",
+          "yellow",
+          "black"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "mở",
+        "correct_word": "open",
+        "choices": [
+          "close",
+          "sit down",
+          "come in",
+          "stand up",
+          "open",
+          "book"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "years",
+          "eight",
+          "old",
+          "I",
+          "am"
+        ],
+        "correct_sentence": "I am eight years old."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "bơi lội",
+        "correct_word": "swimming",
+        "choices": [
+          "hobby",
+          "singing",
+          "swimming",
+          "dancing",
+          "drawing"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "pen",
+            "right": "cái bút"
+          },
+          {
+            "left": "pencil",
+            "right": "bút chì"
+          },
+          {
+            "left": "ruler",
+            "right": "thước kẻ"
+          },
+          {
+            "left": "rubber",
+            "right": "cục tẩy"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "red",
+            "right": "màu đỏ"
+          },
+          {
+            "left": "green",
+            "right": "màu xanh lá"
+          },
+          {
+            "left": "blue",
+            "right": "màu xanh dương"
+          },
+          {
+            "left": "yellow",
+            "right": "màu vàng"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "của bạn",
+        "correct_word": "your",
+        "choices": [
+          "my",
+          "your",
+          "name",
+          "what"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "vào trong",
+        "correct_word": "come in",
+        "choices": [
+          "stand up",
+          "book",
+          "sit down",
+          "close",
+          "open",
+          "come in"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "giờ ra chơi",
+        "correct_word": "break time",
+        "choices": [
+          "football",
+          "break time",
+          "play",
+          "chess",
+          "badminton",
+          "basketball"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "open",
+            "right": "mở"
+          },
+          {
+            "left": "close",
+            "right": "đóng"
+          },
+          {
+            "left": "book",
+            "right": "quyển sách"
+          },
+          {
+            "left": "stand up",
+            "right": "đứng lên"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "What",
+          "colour",
+          "are",
+          "they"
+        ],
+        "correct_sentence": "What colour are they?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "break time",
+            "right": "giờ ra chơi"
+          },
+          {
+            "left": "play",
+            "right": "chơi"
+          },
+          {
+            "left": "chess",
+            "right": "cờ vua"
+          },
+          {
+            "left": "badminton",
+            "right": "cầu lông"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "my",
+          "is",
+          "teacher",
+          "That"
+        ],
+        "correct_sentence": "That is my teacher."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "bút chì",
+        "correct_word": "pencil",
+        "choices": [
+          "pen",
+          "pencil",
+          "ruler",
+          "rubber",
+          "pencil case",
+          "school bag"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "break time",
+            "right": "giờ ra chơi"
+          },
+          {
+            "left": "play",
+            "right": "chơi"
+          },
+          {
+            "left": "chess",
+            "right": "cờ vua"
+          },
+          {
+            "left": "badminton",
+            "right": "cầu lông"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q016",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "hello",
+            "right": "xin chào"
+          },
+          {
+            "left": "hi",
+            "right": "chào"
+          },
+          {
+            "left": "how",
+            "right": "thế nào"
+          },
+          {
+            "left": "fine",
+            "right": "khỏe"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q017",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "màu đỏ",
+        "correct_word": "red",
+        "choices": [
+          "green",
+          "blue",
+          "yellow",
+          "black",
+          "red",
+          "white"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q018",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "bóng rổ",
+        "correct_word": "basketball",
+        "choices": [
+          "chess",
+          "badminton",
+          "play",
+          "basketball",
+          "break time",
+          "football"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q019",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "red",
+            "right": "màu đỏ"
+          },
+          {
+            "left": "green",
+            "right": "màu xanh lá"
+          },
+          {
+            "left": "blue",
+            "right": "màu xanh dương"
+          },
+          {
+            "left": "yellow",
+            "right": "màu vàng"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q020",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "bút chì",
+        "correct_word": "pencil",
+        "choices": [
+          "pencil case",
+          "pencil",
+          "school bag",
+          "ruler",
+          "rubber",
+          "pen"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    }
+  ]
+}

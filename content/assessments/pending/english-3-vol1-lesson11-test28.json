@@ -1,0 +1,505 @@
+{
+  "title": "ENGLISH 3 - Tập 1 - Bài 11 (Đề 28)",
+  "metadata": {
+    "subject": "english",
+    "grade": 3,
+    "volume": 1,
+    "book": "english 3 - Kết nối tri thức",
+    "lessons": [
+      11
+    ],
+    "total_questions": 20,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "school",
+            "right": "trường học"
+          },
+          {
+            "left": "classroom",
+            "right": "phòng học"
+          },
+          {
+            "left": "library",
+            "right": "thư viện"
+          },
+          {
+            "left": "playground",
+            "right": "sân chơi"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "hobby",
+            "right": "sở thích"
+          },
+          {
+            "left": "singing",
+            "right": "ca hát"
+          },
+          {
+            "left": "swimming",
+            "right": "bơi lội"
+          },
+          {
+            "left": "dancing",
+            "right": "nhảy múa"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "sở thích",
+        "correct_word": "hobby",
+        "choices": [
+          "hobby",
+          "singing",
+          "swimming",
+          "drawing",
+          "dancing"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "What",
+          "colour",
+          "they",
+          "are"
+        ],
+        "correct_sentence": "What colour are they?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "name",
+          "Linh",
+          "My",
+          "is"
+        ],
+        "correct_sentence": "My name is Linh."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "bơi lội",
+        "correct_word": "swimming",
+        "choices": [
+          "dancing",
+          "hobby",
+          "drawing",
+          "singing",
+          "swimming"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "how old",
+            "right": "mấy tuổi"
+          },
+          {
+            "left": "old",
+            "right": "cũ/tuổi"
+          },
+          {
+            "left": "years old",
+            "right": "tuổi"
+          },
+          {
+            "left": "seven",
+            "right": "bảy"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "tên",
+        "correct_word": "name",
+        "choices": [
+          "what",
+          "your",
+          "name",
+          "my"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "pen",
+            "right": "cái bút"
+          },
+          {
+            "left": "pencil",
+            "right": "bút chì"
+          },
+          {
+            "left": "ruler",
+            "right": "thước kẻ"
+          },
+          {
+            "left": "rubber",
+            "right": "cục tẩy"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "Mai",
+          "am",
+          "I",
+          "Hi"
+        ],
+        "correct_sentence": "Hi, I am Mai."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "hobby",
+            "right": "sở thích"
+          },
+          {
+            "left": "singing",
+            "right": "ca hát"
+          },
+          {
+            "left": "swimming",
+            "right": "bơi lội"
+          },
+          {
+            "left": "dancing",
+            "right": "nhảy múa"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "school",
+            "right": "trường học"
+          },
+          {
+            "left": "classroom",
+            "right": "phòng học"
+          },
+          {
+            "left": "library",
+            "right": "thư viện"
+          },
+          {
+            "left": "playground",
+            "right": "sân chơi"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "break time",
+            "right": "giờ ra chơi"
+          },
+          {
+            "left": "play",
+            "right": "chơi"
+          },
+          {
+            "left": "chess",
+            "right": "cờ vua"
+          },
+          {
+            "left": "badminton",
+            "right": "cầu lông"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "how old",
+            "right": "mấy tuổi"
+          },
+          {
+            "left": "old",
+            "right": "cũ/tuổi"
+          },
+          {
+            "left": "years old",
+            "right": "tuổi"
+          },
+          {
+            "left": "seven",
+            "right": "bảy"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "pencil",
+          "you",
+          "Do",
+          "have",
+          "a"
+        ],
+        "correct_sentence": "Do you have a pencil?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q016",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "cái bút",
+        "correct_word": "pen",
+        "choices": [
+          "pen",
+          "rubber",
+          "pencil",
+          "ruler",
+          "school bag",
+          "pencil case"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q017",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "What",
+          "your",
+          "name",
+          "is"
+        ],
+        "correct_sentence": "What is your name?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q018",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "của tôi",
+        "correct_word": "my",
+        "choices": [
+          "what",
+          "your",
+          "name",
+          "my"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q019",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "how old",
+            "right": "mấy tuổi"
+          },
+          {
+            "left": "old",
+            "right": "cũ/tuổi"
+          },
+          {
+            "left": "years old",
+            "right": "tuổi"
+          },
+          {
+            "left": "seven",
+            "right": "bảy"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q020",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "your",
+          "is",
+          "What",
+          "name"
+        ],
+        "correct_sentence": "What is your name?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 11",
+        "page": 0
+      }
+    }
+  ]
+}

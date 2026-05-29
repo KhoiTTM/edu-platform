@@ -1,0 +1,352 @@
+{
+  "title": "ENGLISH 3 - Tập 1 - Bài 8 (Đề 1)",
+  "metadata": {
+    "subject": "english",
+    "grade": 3,
+    "volume": 1,
+    "book": "english 3 - Kết nối tri thức",
+    "lessons": [
+      8
+    ],
+    "total_questions": 15,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "hộp bút",
+        "correct_word": "pencil case",
+        "choices": [
+          "rubber",
+          "ruler",
+          "school bag",
+          "pencil",
+          "pen",
+          "pencil case"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 8",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "cục tẩy",
+        "correct_word": "rubber",
+        "choices": [
+          "pen",
+          "rubber",
+          "school bag",
+          "pencil",
+          "ruler",
+          "pencil case"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 8",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "thước kẻ",
+        "correct_word": "ruler",
+        "choices": [
+          "pencil case",
+          "ruler",
+          "rubber",
+          "pencil",
+          "school bag",
+          "pen"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 8",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "this",
+          "Is",
+          "library",
+          "our"
+        ],
+        "correct_sentence": "Is this our library?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 8",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "tên",
+        "correct_word": "name",
+        "choices": [
+          "my",
+          "name",
+          "your",
+          "what"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 8",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "Do",
+          "you",
+          "pencil",
+          "have",
+          "a"
+        ],
+        "correct_sentence": "Do you have a pencil?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 8",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "I",
+          "Yes",
+          "do"
+        ],
+        "correct_sentence": "Yes, I do."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 8",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "cặp sách",
+        "correct_word": "school bag",
+        "choices": [
+          "school bag",
+          "pencil case",
+          "rubber",
+          "ruler",
+          "pencil",
+          "pen"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 8",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "bơi lội",
+        "correct_word": "swimming",
+        "choices": [
+          "swimming",
+          "dancing",
+          "drawing",
+          "singing",
+          "hobby"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 8",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "hobby",
+            "right": "sở thích"
+          },
+          {
+            "left": "singing",
+            "right": "ca hát"
+          },
+          {
+            "left": "swimming",
+            "right": "bơi lội"
+          },
+          {
+            "left": "dancing",
+            "right": "nhảy múa"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 8",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "bơi lội",
+        "correct_word": "swimming",
+        "choices": [
+          "drawing",
+          "singing",
+          "hobby",
+          "dancing",
+          "swimming"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 8",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "pen",
+            "right": "cái bút"
+          },
+          {
+            "left": "pencil",
+            "right": "bút chì"
+          },
+          {
+            "left": "ruler",
+            "right": "thước kẻ"
+          },
+          {
+            "left": "rubber",
+            "right": "cục tẩy"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 8",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "kia",
+        "correct_word": "that",
+        "choices": [
+          "that",
+          "teacher",
+          "this",
+          "friend"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 8",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "pen",
+            "right": "cái bút"
+          },
+          {
+            "left": "pencil",
+            "right": "bút chì"
+          },
+          {
+            "left": "ruler",
+            "right": "thước kẻ"
+          },
+          {
+            "left": "rubber",
+            "right": "cục tẩy"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 8",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "you",
+          "How",
+          "old",
+          "are"
+        ],
+        "correct_sentence": "How old are you?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 8",
+        "page": 0
+      }
+    }
+  ]
+}

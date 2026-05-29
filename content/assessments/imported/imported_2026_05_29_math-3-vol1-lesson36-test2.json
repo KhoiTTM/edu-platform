@@ -1,0 +1,317 @@
+{
+  "title": "MATH 3 - Tập 1 - Bài 36 (Đề 2)",
+  "metadata": {
+    "subject": "Toán",
+    "grade": 3,
+    "volume": 1,
+    "book": "Toán 3 - Kết nối tri thức",
+    "lessons": [
+      36
+    ],
+    "total_questions": 15,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "459 + 304 = ___",
+        "correct_answer": "763",
+        "choices": [
+          "763",
+          "772",
+          "367",
+          "761"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 36",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "477 + 178 = ___",
+        "correct_answer": "655",
+        "choices": [
+          "668",
+          "660",
+          "665",
+          "655"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 36",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "430 + 236 = ___",
+        "correct_answer": "666",
+        "choices": [
+          "674",
+          "675",
+          "666",
+          "681"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 36",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "337 + 265 = ___",
+        "correct_answer": "602",
+        "choices": [
+          "593",
+          "595",
+          "602",
+          "206"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 36",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "362 + 139 = ___",
+        "correct_answer": "501",
+        "choices": [
+          "506",
+          "511",
+          "501",
+          "510"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 36",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "400 + 178 = ___",
+        "correct_answer": "578",
+        "choices": [
+          "578",
+          "572",
+          "574",
+          "571"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 36",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "284 + 136 = ___",
+        "correct_answer": "420",
+        "choices": [
+          "427",
+          "416",
+          "430",
+          "420"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 36",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "shape_identify",
+      "instruction": "Nhận dạng hình",
+      "question_data": {
+        "shape_description": "Đây là hình gì?",
+        "correct_answer": "Hình tròn",
+        "choices": [
+          "Hình tam giác",
+          "Hình vuông",
+          "Hình chữ nhật",
+          "Hình tròn"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 36",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "shape_identify",
+      "instruction": "Nhận dạng hình",
+      "question_data": {
+        "shape_description": "Đây là hình gì?",
+        "correct_answer": "Hình tròn",
+        "choices": [
+          "Hình tam giác",
+          "Hình vuông",
+          "Hình chữ nhật",
+          "Hình tròn"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 36",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "7 cm = ___ mm",
+        "correct_answer": "70",
+        "choices": [
+          "80",
+          "70",
+          "75",
+          "82"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 36",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "2 cm = ___ mm",
+        "correct_answer": "20",
+        "choices": [
+          "20",
+          "17",
+          "2",
+          "30"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 36",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 62 viên bi. Minh được cho thêm 24 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "86",
+        "choices": [
+          "68",
+          "77",
+          "86",
+          "93"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 36",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "423 + 291 = ___",
+        "correct_answer": "714",
+        "choices": [
+          "714",
+          "708",
+          "727",
+          "724"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 36",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "shape_identify",
+      "instruction": "Nhận dạng hình",
+      "question_data": {
+        "shape_description": "Đây là hình gì?",
+        "correct_answer": "Hình tròn",
+        "choices": [
+          "Hình tam giác",
+          "Hình vuông",
+          "Hình chữ nhật",
+          "Hình tròn"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 36",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "496 + 182 = ___",
+        "correct_answer": "678",
+        "choices": [
+          "687",
+          "673",
+          "681",
+          "678"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 36",
+        "page": 0
+      }
+    }
+  ]
+}

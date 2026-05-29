@@ -14,12 +14,14 @@ const AssessmentCard = ({
   unitColor,
   unitShadow,
   unitGlow,
+  isCompleted,
 }: {
   exam: any;
   index: number;
   unitColor: string;
   unitShadow: string;
   unitGlow: string;
+  isCompleted?: boolean;
 }) => {
   const isLocked = false; // For now all assessments are unlocked
   const isCurrent = index === 0;
@@ -32,11 +34,17 @@ const AssessmentCard = ({
         "relative flex flex-col p-5 rounded-2xl text-white transition-all duration-300 w-full h-full border border-white/10 backdrop-blur-sm",
         isLocked ? "bg-slate-800/50" : unitColor,
         isLocked ? "shadow-md" : unitShadow,
-        isLocked ? "cursor-not-allowed opacity-80" : "cursor-pointer"
+        isLocked ? "cursor-not-allowed opacity-80" : "cursor-pointer",
+        isCompleted && !isLocked && "opacity-60 grayscale-[40%]"
       )}
       style={!isLocked ? { boxShadow: `0 8px 32px 0 ${unitGlow}, inset 0 0 20px rgba(255,255,255,0.2)` } : {}}
     >
-      {isCurrent && (
+      {isCompleted && (
+        <div className="absolute top-2 right-2 bg-emerald-500/90 text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider z-10 shadow-sm backdrop-blur-sm">
+          Đã làm
+        </div>
+      )}
+      {isCurrent && !isCompleted && (
         <div className="absolute -top-3 -right-3 animate-pulse">
             <Sparkles className="text-amber-300 w-8 h-8 drop-shadow-[0_0_10px_rgba(252,211,77,0.8)]" />
         </div>
@@ -77,6 +85,7 @@ export default function SubjectMapPage() {
   const subject = params.subject as string;
   const [mounted, setMounted] = useState(false);
   const [volumes, setVolumes] = useState<any[]>([]);
+  const [completedExams, setCompletedExams] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   
   const subjectName = subject ? subject.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) : '';
@@ -88,6 +97,10 @@ export default function SubjectMapPage() {
           setIsLoading(true);
           const data = await getAssessmentMap(subject);
           setVolumes(data);
+          try {
+            const stored = JSON.parse(localStorage.getItem('completed_exams') || '[]');
+            setCompletedExams(stored);
+          } catch(e) {}
           setIsLoading(false);
       }
       loadData();
@@ -165,7 +178,9 @@ export default function SubjectMapPage() {
                     style={{ boxShadow: `0 0 30px ${unitGlows[colorIdx]}` }}
                     >
                       <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/3 blur-2xl"></div>
-                      <h2 className="text-3xl font-black tracking-wider drop-shadow-md">Unit {unit.unit}</h2>
+                      <h2 className="text-3xl font-black tracking-wider drop-shadow-md">
+                        {(unit.unit === 7 && subject === 'toan') || (unit.unit === 11 && subject === 'tieng-anh') ? "Ôn tập Học kỳ 1" : `Unit ${unit.unit}`}
+                      </h2>
                       <p className="font-bold text-white/90 mt-1 uppercase tracking-widest text-sm">Nhiệm vụ vũ trụ</p>
                     </div>
 
@@ -181,6 +196,7 @@ export default function SubjectMapPage() {
                             unitColor={unitColors[colorIdx]}
                             unitShadow={unitShadows[colorIdx]}
                             unitGlow={unitGlows[colorIdx]}
+                            isCompleted={completedExams.includes(exam.id)}
                           />
                         );
                       })}

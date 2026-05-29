@@ -4,7 +4,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 // Re-usable Subject Card
-const SubjectCard = ({ subject }: { subject: any }) => {
+const SubjectCard = ({ subject, grade }: { subject: any, grade: number }) => {
     const colors: Record<string, any> = {
         'tieng_anh': { bg: 'bg-emerald-500', shadow: 'shadow-[0_8px_0_#059669]', icon: '📚' },
         'toan': { bg: 'bg-sky-500', shadow: 'shadow-[0_8px_0_#0284c7]', icon: '🧮' },
@@ -19,8 +19,8 @@ const SubjectCard = ({ subject }: { subject: any }) => {
                 {color.icon}
             </div>
             <p className="text-sm font-black uppercase tracking-widest opacity-80">Môn học</p>
-            <h2 className="text-4xl font-black mt-2">{subject.name_vi}</h2>
-            <p className="mt-4 font-semibold opacity-90">{subject.description || `Luyện tập kỹ năng cho môn ${subject.name_vi}`}</p>
+            <h2 className="text-4xl font-black mt-2">{subject.name_vi} <span className="text-2xl opacity-75">- Lớp {grade}</span></h2>
+            <p className="mt-4 font-semibold opacity-90">{subject.description || `Luyện tập kỹ năng cho môn ${subject.name_vi} lớp ${grade}`}</p>
         </Link>
     )
 }
@@ -34,11 +34,18 @@ export default async function LuyenTapPage() {
     const { data: profile } = await supabase.from('profiles').select('grade').eq('id', user.id).single();
     const grade = profile?.grade || 3;
     
-    // Fetch subjects available for the user's grade
+    // Fetch subjects available for the user's grade from curriculum_units
     const { data: units } = await supabase
         .from('curriculum_units')
         .select('subject')
         .eq('grade', grade);
+
+    // Fetch subjects available for the user's grade from assessment_collections
+    const { data: collections } = await supabase
+        .from('assessment_collections')
+        .select('subject_slug')
+        .eq('grade', grade)
+        .eq('status', 'published');
 
     const subjectMap: Record<string, string> = {
         'english': 'tieng_anh',
@@ -48,9 +55,10 @@ export default async function LuyenTapPage() {
         'toan': 'toan'
     };
 
-    const availableSubjectSlugs = Array.from(new Set(
-        units?.map((u: any) => subjectMap[u.subject] || u.subject) || []
-    ));
+    const availableSubjectSlugs = Array.from(new Set([
+        ...(units?.map((u: any) => subjectMap[u.subject] || u.subject) || []),
+        ...(collections?.map((c: any) => subjectMap[c.subject_slug] || c.subject_slug) || [])
+    ]));
 
     const { data: subjects } = await supabase
         .from('universal_subjects')
@@ -71,7 +79,7 @@ export default async function LuyenTapPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {(subjects && subjects.length > 0) ? (
                     subjects.map((subject: any) => (
-                        <SubjectCard key={subject.id} subject={subject} />
+                        <SubjectCard key={subject.id} subject={subject} grade={grade} />
                     ))
                 ) : (
                     <div className="md:col-span-2 p-12 text-center bg-slate-100 dark:bg-slate-800/50 rounded-3xl">

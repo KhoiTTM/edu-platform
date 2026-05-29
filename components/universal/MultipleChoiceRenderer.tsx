@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Check, X } from "lucide-react";
 
 interface MultipleChoiceRendererProps {
-  question: string;
+  question: React.ReactNode;
   options: string[];
   correctIndex: number;
   explanation?: string | null;

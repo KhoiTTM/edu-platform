@@ -4,12 +4,13 @@ import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { AssessmentRenderer } from '@/components/universal/AssessmentRenderer';
 import { AssessmentResultCard } from '@/components/assessment/AssessmentResultCard';
-import { getExamQuestions } from './actions';
+import { getExamQuestions, getExamInfo } from './actions';
 
 function AssessmentContent() {
   const searchParams = useSearchParams();
   const examId = searchParams.get('examId');
   const [questions, setQuestions] = useState<any[]>([]);
+  const [examTitle, setExamTitle] = useState<string>("Luyện Tập Assessment");
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [completed, setCompleted] = useState(false);
@@ -20,7 +21,11 @@ function AssessmentContent() {
       async function load() {
         try {
           setIsLoading(true);
-          const data = await getExamQuestions(examId!);
+          const [titleData, data] = await Promise.all([
+            getExamInfo(examId!),
+            getExamQuestions(examId!)
+          ]);
+          setExamTitle(titleData);
           if (data.length === 0) {
             setError("No questions found for this exam.");
           } else {
@@ -42,6 +47,18 @@ function AssessmentContent() {
   const handleComplete = (answers: any[]) => {
     const correctCount = answers.filter(a => a.isCorrect).length;
     const score = (correctCount / answers.length) * 100;
+    
+    if (examId) {
+      try {
+        const completedExams = JSON.parse(localStorage.getItem('completed_exams') || '[]');
+        if (!completedExams.includes(examId)) {
+          completedExams.push(examId);
+          localStorage.setItem('completed_exams', JSON.stringify(completedExams));
+        }
+      } catch (e) {
+        console.error("Failed to save progress", e);
+      }
+    }
     
     setResults({ 
       score, 
@@ -69,7 +86,8 @@ function AssessmentContent() {
   }
 
   return (
-    <>
+    <div className="w-full flex flex-col items-center">
+        <h1 className="text-4xl font-black text-slate-800 dark:text-white mb-8 text-center">{examTitle}</h1>
         {!completed ? (
           <AssessmentRenderer 
             questions={questions}
@@ -86,15 +104,13 @@ function AssessmentContent() {
             }}
           />
         )}
-    </>
+    </div>
   );
 }
 
 export default function TestAssessmentPage() {
   return (
       <div className="min-h-screen bg-sky-50 dark:bg-indigo-950 flex flex-col items-center justify-center p-8 transition-colors duration-300">
-        <h1 className="text-4xl font-black text-slate-800 dark:text-white mb-8">Luyện Tập Assessment</h1>
-        
         <Suspense fallback={
           <div className="flex flex-col items-center justify-center py-20">
             <div className="w-12 h-12 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin"></div>

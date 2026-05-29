@@ -44,8 +44,8 @@ export function SentenceReorderRenderer({
   const handleSubmit = () => {
     const assembledSentence = selectedIndices.map(i => words[i]).join(' ');
     
-    // Normalize by removing all non-alphanumeric characters and lowercasing
-    const normalize = (str: string) => (str || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+    // Normalize by removing spaces and lowercasing
+    const normalize = (str: string) => (str || '').toLowerCase().replace(/\s+/g, '');
     const isCorrect = normalize(assembledSentence) === normalize(correctSentence);
     
     setIsCorrectResult(isCorrect);
@@ -81,7 +81,7 @@ export function SentenceReorderRenderer({
           ))}
         </AnimatePresence>
         {selectedIndices.length === 0 && (
-          <span className="text-slate-500 font-medium italic">Tap words to build the sentence...</span>
+          <span className="text-slate-500 font-medium italic">Nhấn vào các phần tử bên dưới để sắp xếp...</span>
         )}
       </div>
 
@@ -117,7 +117,7 @@ export function SentenceReorderRenderer({
         className="mt-4 w-full py-4 bg-emerald-500 disabled:bg-slate-700 text-white font-black text-xl rounded-2xl shadow-[0_6px_0_rgb(16,185,129)] disabled:shadow-none hover:bg-emerald-400 active:translate-y-[6px] active:shadow-none transition-all flex items-center justify-center gap-2"
       >
         <Check size={24} strokeWidth={3} />
-        CHECK ANSWER
+        KIỂM TRA
       </button>
     </div>
   );

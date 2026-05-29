@@ -1,0 +1,316 @@
+{
+  "title": "MATH 3 - Tập 1 - Bài 31 (Đề 2)",
+  "metadata": {
+    "subject": "Toán",
+    "grade": 3,
+    "volume": 1,
+    "book": "Toán 3 - Kết nối tri thức",
+    "lessons": [
+      31
+    ],
+    "total_questions": 15,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "5 kg = ___ g",
+        "correct_answer": "5000",
+        "choices": [
+          "5010",
+          "4998",
+          "5000",
+          "4996"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 31",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "5 kg = ___ g",
+        "correct_answer": "5000",
+        "choices": [
+          "5000",
+          "5008",
+          "5",
+          "5010"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 31",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "3 kg = ___ g",
+        "correct_answer": "3000",
+        "choices": [
+          "3000",
+          "3004",
+          "3",
+          "3010"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 31",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "6 kg = ___ g",
+        "correct_answer": "6000",
+        "choices": [
+          "6000",
+          "6003",
+          "6005",
+          "6010"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 31",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "5 kg = ___ g",
+        "correct_answer": "5000",
+        "choices": [
+          "5000",
+          "4999",
+          "5010",
+          "5002"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 31",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "tap_correct_answer",
+      "instruction": "Bảng chia 7",
+      "question_data": {
+        "question": "35 : 7 = ?",
+        "correct_answer": "5",
+        "choices": [
+          "10",
+          "5",
+          "4",
+          "13"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 31",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "7 kg = ___ g",
+        "correct_answer": "7000",
+        "choices": [
+          "6998",
+          "7000",
+          "7009",
+          "7"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 31",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "9 kg = ___ g",
+        "correct_answer": "9000",
+        "choices": [
+          "9000",
+          "9001",
+          "9007",
+          "9010"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 31",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 9",
+      "question_data": {
+        "question": "9 x 10 = ___",
+        "correct_answer": "90",
+        "choices": [
+          "90",
+          "98",
+          "91",
+          "86"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 31",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "7 kg = ___ g",
+        "correct_answer": "7000",
+        "choices": [
+          "6993",
+          "7000",
+          "7",
+          "7010"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 31",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "shape_identify",
+      "instruction": "Nhận dạng hình",
+      "question_data": {
+        "shape_description": "Đây là hình gì?",
+        "correct_answer": "Hình tròn",
+        "choices": [
+          "Hình tam giác",
+          "Hình vuông",
+          "Hình chữ nhật",
+          "Hình tròn"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 31",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "9 kg = ___ g",
+        "correct_answer": "9000",
+        "choices": [
+          "8995",
+          "9000",
+          "9010",
+          "9"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 31",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "6 kg = ___ g",
+        "correct_answer": "6000",
+        "choices": [
+          "6000",
+          "6003",
+          "5994",
+          "6010"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 31",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "9 kg = ___ g",
+        "correct_answer": "9000",
+        "choices": [
+          "9",
+          "9000",
+          "8998",
+          "8997"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 31",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 5",
+      "question_data": {
+        "question": "5 x 2 = ___",
+        "correct_answer": "10",
+        "choices": [
+          "10",
+          "9",
+          "20",
+          "4"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 31",
+        "page": 0
+      }
+    }
+  ]
+}

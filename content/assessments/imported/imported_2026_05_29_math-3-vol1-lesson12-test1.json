@@ -1,0 +1,316 @@
+{
+  "title": "MATH 3 - Tập 1 - Bài 12 (Đề 1)",
+  "metadata": {
+    "subject": "Toán",
+    "grade": 3,
+    "volume": 1,
+    "book": "Toán 3 - Kết nối tri thức",
+    "lessons": [
+      12
+    ],
+    "total_questions": 15,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "tap_correct_answer",
+      "instruction": "Bảng chia 9",
+      "question_data": {
+        "question": "27 : 9 = ?",
+        "correct_answer": "3",
+        "choices": [
+          "3",
+          "13",
+          "8",
+          "4"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 12",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 9",
+      "question_data": {
+        "question": "9 x 1 = ___",
+        "correct_answer": "9",
+        "choices": [
+          "9",
+          "19",
+          "1",
+          "14"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 12",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 9",
+      "question_data": {
+        "question": "9 x 7 = ___",
+        "correct_answer": "63",
+        "choices": [
+          "72",
+          "73",
+          "63",
+          "53"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 12",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "tap_correct_answer",
+      "instruction": "Bảng chia 9",
+      "question_data": {
+        "question": "9 : 9 = ?",
+        "correct_answer": "1",
+        "choices": [
+          "11",
+          "6",
+          "3",
+          "1"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 12",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "358 + 247 = ___",
+        "correct_answer": "605",
+        "choices": [
+          "605",
+          "615",
+          "596",
+          "506"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 12",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 9",
+      "question_data": {
+        "question": "9 x 10 = ___",
+        "correct_answer": "90",
+        "choices": [
+          "95",
+          "100",
+          "9",
+          "90"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 12",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "159 + 192 = ___",
+        "correct_answer": "351",
+        "choices": [
+          "354",
+          "153",
+          "361",
+          "351"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 12",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "tap_correct_answer",
+      "instruction": "Bảng chia 9",
+      "question_data": {
+        "question": "18 : 9 = ?",
+        "correct_answer": "2",
+        "choices": [
+          "10",
+          "16",
+          "5",
+          "2"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 12",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "235 + 284 = ___",
+        "correct_answer": "519",
+        "choices": [
+          "519",
+          "512",
+          "526",
+          "915"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 12",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "tap_correct_answer",
+      "instruction": "Bảng chia 9",
+      "question_data": {
+        "question": "63 : 9 = ?",
+        "correct_answer": "7",
+        "choices": [
+          "7",
+          "6",
+          "22",
+          "17"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 12",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 9",
+      "question_data": {
+        "question": "9 x 7 = ___",
+        "correct_answer": "63",
+        "choices": [
+          "54",
+          "64",
+          "36",
+          "63"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 12",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "tap_correct_answer",
+      "instruction": "Bảng chia 9",
+      "question_data": {
+        "question": "90 : 9 = ?",
+        "correct_answer": "10",
+        "choices": [
+          "20",
+          "24",
+          "1",
+          "10"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 12",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "tap_correct_answer",
+      "instruction": "Bảng chia 9",
+      "question_data": {
+        "question": "9 : 9 = ?",
+        "correct_answer": "1",
+        "choices": [
+          "6",
+          "15",
+          "11",
+          "1"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 12",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 9",
+      "question_data": {
+        "question": "9 x 1 = ___",
+        "correct_answer": "9",
+        "choices": [
+          "9",
+          "14",
+          "4",
+          "5"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 12",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "177 + 169 = ___",
+        "correct_answer": "346",
+        "choices": [
+          "349",
+          "643",
+          "346",
+          "343"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 12",
+        "page": 0
+      }
+    }
+  ]
+}

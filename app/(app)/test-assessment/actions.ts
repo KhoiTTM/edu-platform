@@ -2,6 +2,12 @@
 
 import { createClient } from "@/lib/supabase/server";
 
+export async function getExamInfo(examId: string) {
+  const supabase = await createClient();
+  const { data } = await supabase.from('exams').select('title').eq('id', examId).single();
+  return data?.title || "Bài Kiểm Tra";
+}
+
 export async function getExamQuestions(examId: string) {
   console.log(`
 --- [ACTION] getExamQuestions for examId: ${examId} ---`);

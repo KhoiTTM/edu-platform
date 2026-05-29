@@ -1,0 +1,320 @@
+{
+  "title": "MATH 3 - Tập 1 - Bài 43 (Đề 1)",
+  "metadata": {
+    "subject": "Toán",
+    "grade": 3,
+    "volume": 1,
+    "book": "Toán 3 - Kết nối tri thức",
+    "lessons": [
+      43
+    ],
+    "total_questions": 15,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "429 + 132 = ___",
+        "correct_answer": "561",
+        "choices": [
+          "573",
+          "561",
+          "571",
+          "553"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 43",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 84 viên bi. Minh được cho thêm 15 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "99",
+        "choices": [
+          "113",
+          "99",
+          "93",
+          "109"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 43",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "439 + 130 = ___",
+        "correct_answer": "569",
+        "choices": [
+          "579",
+          "576",
+          "569",
+          "965"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 43",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "416 + 123 = ___",
+        "correct_answer": "539",
+        "choices": [
+          "935",
+          "539",
+          "544",
+          "550"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 43",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 100 viên bi. Minh được cho thêm 15 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "115",
+        "choices": [
+          "511",
+          "114",
+          "125",
+          "115"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 43",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "3 cm = ___ mm",
+        "correct_answer": "30",
+        "choices": [
+          "40",
+          "37",
+          "31",
+          "30"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 43",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 84 viên bi. Minh được cho thêm 20 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "104",
+        "choices": [
+          "104",
+          "97",
+          "114",
+          "401"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 43",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "110 + 459 = ___",
+        "correct_answer": "569",
+        "choices": [
+          "579",
+          "569",
+          "566",
+          "574"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 43",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "167 + 472 = ___",
+        "correct_answer": "639",
+        "choices": [
+          "936",
+          "653",
+          "639",
+          "649"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 43",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "199 + 341 = ___",
+        "correct_answer": "540",
+        "choices": [
+          "540",
+          "550",
+          "543",
+          "544"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 43",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "395 + 321 = ___",
+        "correct_answer": "716",
+        "choices": [
+          "726",
+          "717",
+          "716",
+          "725"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 43",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "182 + 318 = ___",
+        "correct_answer": "500",
+        "choices": [
+          "500",
+          "494",
+          "5",
+          "508"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 43",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "shape_identify",
+      "instruction": "Nhận dạng hình",
+      "question_data": {
+        "shape_description": "Đây là hình gì?",
+        "correct_answer": "Hình tròn",
+        "choices": [
+          "Hình tam giác",
+          "Hình vuông",
+          "Hình chữ nhật",
+          "Hình tròn"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 43",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "290 + 234 = ___",
+        "correct_answer": "524",
+        "choices": [
+          "526",
+          "425",
+          "518",
+          "524"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 43",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 67 viên bi. Minh được cho thêm 20 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "87",
+        "choices": [
+          "87",
+          "86",
+          "78",
+          "90"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 43",
+        "page": 0
+      }
+    }
+  ]
+}

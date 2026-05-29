@@ -1,0 +1,317 @@
+{
+  "title": "MATH 3 - Tập 1 - Bài 34 (Đề 1)",
+  "metadata": {
+    "subject": "Toán",
+    "grade": 3,
+    "volume": 1,
+    "book": "Toán 3 - Kết nối tri thức",
+    "lessons": [
+      34
+    ],
+    "total_questions": 15,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "5 cm = ___ mm",
+        "correct_answer": "50",
+        "choices": [
+          "50",
+          "44",
+          "57",
+          "60"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 34",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "tap_correct_answer",
+      "instruction": "Bảng chia 9",
+      "question_data": {
+        "question": "18 : 9 = ?",
+        "correct_answer": "2",
+        "choices": [
+          "12",
+          "6",
+          "2",
+          "7"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 34",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "4 cm = ___ mm",
+        "correct_answer": "40",
+        "choices": [
+          "42",
+          "31",
+          "37",
+          "40"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 34",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "shape_identify",
+      "instruction": "Nhận dạng hình",
+      "question_data": {
+        "shape_description": "Đây là hình gì?",
+        "correct_answer": "Hình vuông",
+        "choices": [
+          "Hình tam giác",
+          "Hình vuông",
+          "Hình chữ nhật",
+          "Hình tròn"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 34",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "5 cm = ___ mm",
+        "correct_answer": "50",
+        "choices": [
+          "53",
+          "5",
+          "65",
+          "50"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 34",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 86 viên bi. Minh được cho thêm 44 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "130",
+        "choices": [
+          "130",
+          "140",
+          "129",
+          "138"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 34",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "7 cm = ___ mm",
+        "correct_answer": "70",
+        "choices": [
+          "70",
+          "65",
+          "7",
+          "83"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 34",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "6 cm = ___ mm",
+        "correct_answer": "60",
+        "choices": [
+          "74",
+          "60",
+          "55",
+          "6"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 34",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "2 cm = ___ mm",
+        "correct_answer": "20",
+        "choices": [
+          "30",
+          "16",
+          "12",
+          "20"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 34",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "fill_blank",
+      "instruction": "Bảng nhân 6",
+      "question_data": {
+        "question": "6 x 6 = ___",
+        "correct_answer": "36",
+        "choices": [
+          "63",
+          "46",
+          "36",
+          "43"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 34",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "3 cm = ___ mm",
+        "correct_answer": "30",
+        "choices": [
+          "3",
+          "22",
+          "40",
+          "30"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 34",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "shape_identify",
+      "instruction": "Nhận dạng hình",
+      "question_data": {
+        "shape_description": "Đây là hình gì?",
+        "correct_answer": "Hình vuông",
+        "choices": [
+          "Hình tam giác",
+          "Hình vuông",
+          "Hình chữ nhật",
+          "Hình tròn"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 34",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "4 cm = ___ mm",
+        "correct_answer": "40",
+        "choices": [
+          "35",
+          "41",
+          "40",
+          "43"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 34",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "6 cm = ___ mm",
+        "correct_answer": "60",
+        "choices": [
+          "60",
+          "55",
+          "62",
+          "65"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 34",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "fill_blank",
+      "instruction": "Đổi đơn vị",
+      "question_data": {
+        "question": "8 cm = ___ mm",
+        "correct_answer": "80",
+        "choices": [
+          "93",
+          "90",
+          "80",
+          "81"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 34",
+        "page": 0
+      }
+    }
+  ]
+}

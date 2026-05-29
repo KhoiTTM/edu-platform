@@ -53,6 +53,7 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
             disabled={hasAnswered}
           />
         );
+      case 'tap_correct_answer':
       case 'tap_correct_word':
       case 'vocab_to_word':
       case 'fill_blank':
@@ -101,23 +102,94 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
             disabled={hasAnswered}
           />
         );
-      case 'sentence_reorder':
+      case 'word_problem': {
+        const mcQuestion = [currentQuestion.story, currentQuestion.question].filter(Boolean).join('\n');
+        const mcChoices = currentQuestion.choices || [];
+        const mcCorrectIndex = mcChoices.indexOf(currentQuestion.correct_answer);
+        return (
+          <MultipleChoiceRenderer
+            key={`wp-${currentIndex}`}
+            question={mcQuestion}
+            options={mcChoices}
+            correctIndex={mcCorrectIndex}
+            onAnswer={handleAnswer}
+            disabled={hasAnswered}
+          />
+        );
+      }
+      case 'true_false': {
+        const mcQuestion = currentQuestion.statement;
+        const mcChoices = ["Đúng", "Sai"];
+        const mcCorrectIndex = currentQuestion.correct_answer === true || currentQuestion.correct_answer === "true" ? 0 : 1;
+        return (
+          <MultipleChoiceRenderer
+            key={`tf-${currentIndex}`}
+            question={mcQuestion}
+            options={mcChoices}
+            correctIndex={mcCorrectIndex}
+            onAnswer={handleAnswer}
+            disabled={hasAnswered}
+          />
+        );
+      }
+      case 'shape_identify': {
+        const shapeName = currentQuestion.correct_answer;
+        let svg = null;
+        if (shapeName === "Hình tròn") svg = <div className="w-32 h-32 rounded-full border-4 border-sky-500 bg-sky-500/20 mx-auto my-4" />;
+        else if (shapeName === "Hình vuông") svg = <div className="w-32 h-32 border-4 border-emerald-500 bg-emerald-500/20 mx-auto my-4" />;
+        else if (shapeName === "Hình chữ nhật") svg = <div className="w-48 h-24 border-4 border-amber-500 bg-amber-500/20 mx-auto my-4" />;
+        else if (shapeName === "Hình tam giác") svg = <div className="w-0 h-0 border-l-[60px] border-l-transparent border-r-[60px] border-r-transparent border-b-[100px] border-b-rose-500 mx-auto my-4" />;
+
+        const mcQuestion = (
+          <div className="text-center">
+             <div className="text-lg font-medium mb-4">{currentQuestion.shape_description}</div>
+             {svg}
+          </div>
+        );
+        const mcChoices = currentQuestion.choices || [];
+        const mcCorrectIndex = mcChoices.indexOf(currentQuestion.correct_answer);
+        return (
+          <MultipleChoiceRenderer
+            key={`si-${currentIndex}`}
+            question={mcQuestion}
+            options={mcChoices}
+            correctIndex={mcCorrectIndex}
+            onAnswer={handleAnswer}
+            disabled={hasAnswered}
+          />
+        );
+      }
+      case 'clock_read': {
+        let clockText = "";
+        if (currentQuestion.clock_display) {
+           clockText = `[Hình ảnh: Đồng hồ chỉ ${currentQuestion.clock_display.hour} giờ ${currentQuestion.clock_display.minute} phút]`;
+        }
+        const mcQuestion = [currentQuestion.question, clockText].filter(Boolean).join('\n');
+        const mcChoices = currentQuestion.choices || [];
+        const mcCorrectIndex = mcChoices.indexOf(currentQuestion.correct_answer);
+        return (
+          <MultipleChoiceRenderer
+            key={`cr-${currentIndex}`}
+            question={mcQuestion}
+            options={mcChoices}
+            correctIndex={mcCorrectIndex}
+            onAnswer={handleAnswer}
+            disabled={hasAnswered}
+          />
+        );
+      }
+      case 'number_order': {
         return (
           <SentenceReorderRenderer
-            instruction={currentQuestion.instruction || 'Sắp xếp lại câu:'}
-            words={currentQuestion.words}
-            correctSentence={currentQuestion.correct_sentence}
+            key={`no-${currentIndex}`}
+            instruction={currentQuestion.instruction_detail || currentQuestion.instruction || 'Sắp xếp dãy số sau:'}
+            words={currentQuestion.numbers?.map(String) || []}
+            correctSentence={(currentQuestion.correct_order || []).join(' ')}
             onAnswer={handleAnswer}
+            disabled={hasAnswered}
           />
         );
-      case 'match_pair':
-        return (
-          <MatchPairRenderer
-            instruction={currentQuestion.instruction || 'Nối cặp từ phù hợp:'}
-            pairs={currentQuestion.pairs}
-            onAnswer={handleAnswer}
-          />
-        );
+      }
       default:
         return (
           <div className="text-center p-8 bg-slate-800 rounded-xl text-slate-400">

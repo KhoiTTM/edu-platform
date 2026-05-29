@@ -1,0 +1,326 @@
+{
+  "title": "MATH 3 - Tập 1 - Bài 28 (Đề 2)",
+  "metadata": {
+    "subject": "Toán",
+    "grade": 3,
+    "volume": 1,
+    "book": "Toán 3 - Kết nối tri thức",
+    "lessons": [
+      28
+    ],
+    "total_questions": 15,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 45 viên bi. Minh được cho thêm 47 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "92",
+        "choices": [
+          "29",
+          "92",
+          "97",
+          "102"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 28",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 73 viên bi. Minh được cho thêm 37 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "110",
+        "choices": [
+          "110",
+          "112",
+          "121",
+          "125"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 28",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 73 viên bi. Minh được cho thêm 48 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "121",
+        "choices": [
+          "119",
+          "121",
+          "118",
+          "131"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 28",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "376 + 434 = ___",
+        "correct_answer": "810",
+        "choices": [
+          "825",
+          "813",
+          "815",
+          "810"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 28",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 64 viên bi. Minh được cho thêm 43 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "107",
+        "choices": [
+          "701",
+          "107",
+          "110",
+          "117"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 28",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "tap_correct_answer",
+      "instruction": "Bảng chia 3",
+      "question_data": {
+        "question": "30 : 3 = ?",
+        "correct_answer": "10",
+        "choices": [
+          "13",
+          "5",
+          "10",
+          "20"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 28",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "tap_correct_answer",
+      "instruction": "Bảng chia 5",
+      "question_data": {
+        "question": "30 : 5 = ?",
+        "correct_answer": "6",
+        "choices": [
+          "6",
+          "16",
+          "10",
+          "11"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 28",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 76 viên bi. Minh được cho thêm 18 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "94",
+        "choices": [
+          "94",
+          "49",
+          "102",
+          "88"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 28",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 44 viên bi. Minh được cho thêm 33 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "77",
+        "choices": [
+          "87",
+          "77",
+          "88",
+          "92"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 28",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "293 + 477 = ___",
+        "correct_answer": "770",
+        "choices": [
+          "772",
+          "763",
+          "770",
+          "774"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 28",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 31 viên bi. Minh được cho thêm 18 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "49",
+        "choices": [
+          "49",
+          "45",
+          "94",
+          "40"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 28",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 98 viên bi. Minh được cho thêm 12 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "110",
+        "choices": [
+          "120",
+          "11",
+          "107",
+          "110"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 28",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 54 viên bi. Minh được cho thêm 43 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "97",
+        "choices": [
+          "107",
+          "109",
+          "98",
+          "97"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 28",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "115 + 443 = ___",
+        "correct_answer": "558",
+        "choices": [
+          "565",
+          "558",
+          "855",
+          "568"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 28",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "word_problem",
+      "instruction": "Giải bài toán",
+      "question_data": {
+        "story": "Minh có 24 viên bi. Minh được cho thêm 49 viên.",
+        "question": "Hỏi Minh có tất cả bao nhiêu viên bi?",
+        "correct_answer": "73",
+        "choices": [
+          "68",
+          "74",
+          "73",
+          "83"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 28",
+        "page": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+{
+  "title": "Toán 3 - Kết nối tri thức - Ôn tập đến Unit 6",
+  "metadata": {
+    "subject": "Toán",
+    "grade": 3,
+    "volume": 1,
+    "book": "Toán 3 - Kết nối tri thức",
+    "units": [1, 2, 3, 4, 5, 6],
+    "total_questions": 15,
+    "generated_date": "2026-05-29 13:30:00"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "tap_correct_word",
+      "instruction": "Chọn số đúng để điền vào kết quả",
+      "question_data": {
+        "question": "Kết quả của phép tính 24 : 6 là:",
+        "correct_word": "4",
+        "choices": ["3", "4", "5", "6"]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 2, "page": 25 }
+    },
+    {
+      "id": "Q002",
+      "type": "tap_correct_word",
+      "instruction": "Chọn hình học phù hợp với mô tả",
+      "question_data": {
+        "question": "Hình khối nào có 6 mặt đều là hình vuông?",
+        "correct_word": "Khối lập phương",
+        "choices": ["Khối lập phương", "Khối hộp chữ nhật", "Hình cầu", "Hình trụ"]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 4, "page": 45 }
+    },
+    {
+      "id": "Q003",
+      "type": "tap_correct_word",
+      "instruction": "Chọn đáp án đúng nhất về phép chia có dư",
+      "question_data": {
+        "question": "Trong phép chia có dư với số chia là 5, số dư lớn nhất có thể là:",
+        "correct_word": "4",
+        "choices": ["3", "4", "5", "6"]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 6, "page": 62 }
+    },
+    {
+      "id": "Q004",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các thành phần để tạo thành phép tính đúng",
+      "question_data": {
+        "words": ["8", "x", "7", "=", "56"],
+        "correct_sentence": "8 x 7 = 56"
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 2, "page": 30 }
+    },
+    {
+      "id": "Q005",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các từ để tạo thành quy tắc toán học đúng",
+      "question_data": {
+        "words": ["Số", "dư", "luôn", "nhỏ", "hơn", "số", "chia"],
+        "correct_sentence": "Số dư luôn nhỏ hơn số chia"
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 6, "page": 63 }
+    },
+    {
+      "id": "Q006",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các từ để tạo thành câu đúng",
+      "question_data": {
+        "words": ["Một", "phần", "tám", "của", "32", "là", "4"],
+        "correct_sentence": "Một phần tám của 32 là 4"
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 5, "page": 55 }
+    },
+    {
+      "id": "Q007",
+      "type": "vocab_to_word",
+      "instruction": "Tìm số tương ứng với mô tả",
+      "question_data": {
+        "question": "Một phần bảy của 42 là bao nhiêu?",
+        "correct_word": "6",
+        "choices": ["5", "6", "7", "8"]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 5, "page": 58 }
+    },
+    {
+      "id": "Q008",
+      "type": "vocab_to_word",
+      "instruction": "Tìm kết quả của phép tính",
+      "question_data": {
+        "question": "Thương của 45 và 9 là mấy?",
+        "correct_word": "5",
+        "choices": ["4", "5", "6", "7"]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 2, "page": 32 }
+    },
+    {
+      "id": "Q009",
+      "type": "vocab_to_word",
+      "instruction": "Tìm số liên quan",
+      "question_data": {
+        "question": "Số liền trước của 1000",
+        "correct_word": "999",
+        "choices": ["990", "999", "1001", "1000"]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 1, "page": 10 }
+    },
+    {
+      "id": "Q010",
+      "type": "fill_blank",
+      "instruction": "Điền số thích hợp vào chỗ trống",
+      "question_data": {
+        "question": "6 x ___ = 54",
+        "correct_answer": "9",
+        "choices": ["7", "8", "9", "10"]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 2, "page": 28 }
+    },
+    {
+      "id": "Q011",
+      "type": "fill_blank",
+      "instruction": "Điền số thích hợp vào chỗ trống",
+      "question_data": {
+        "question": "40 : 5 = ___",
+        "correct_answer": "8",
+        "choices": ["6", "7", "8", "9"]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 2, "page": 29 }
+    },
+    {
+      "id": "Q012",
+      "type": "fill_blank",
+      "instruction": "Điền số dư thích hợp vào chỗ trống",
+      "question_data": {
+        "question": "35 chia 6 được 5 dư ___",
+        "correct_answer": "5",
+        "choices": ["3", "4", "5", "6"]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 6, "page": 64 }
+    },
+    {
+      "id": "Q013",
+      "type": "match_pair",
+      "instruction": "Ghép nối phép tính với kết quả đúng",
+      "question_data": {
+        "pairs": [
+          { "left": "7 x 6", "right": "42" },
+          { "left": "9 x 4", "right": "36" },
+          { "left": "8 x 8", "right": "64" }
+        ]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 2, "page": 35 }
+    },
+    {
+      "id": "Q014",
+      "type": "match_pair",
+      "instruction": "Ghép nối khái niệm một phần mấy với kết quả đúng",
+      "question_data": {
+        "pairs": [
+          { "left": "1/3 của 27", "right": "9" },
+          { "left": "1/4 của 32", "right": "8" },
+          { "left": "1/5 của 50", "right": "10" }
+        ]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 5, "page": 60 }
+    },
+    {
+      "id": "Q015",
+      "type": "match_pair",
+      "instruction": "Ghép nối phép chia với kết quả và số dư",
+      "question_data": {
+        "pairs": [
+          { "left": "17 : 3", "right": "5 (dư 2)" },
+          { "left": "22 : 4", "right": "5 (dư 2)" },
+          { "left": "31 : 6", "right": "5 (dư 1)" }
+        ]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 6, "page": 65 }
+    }
+  ]
+}

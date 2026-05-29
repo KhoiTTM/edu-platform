@@ -1,0 +1,181 @@
+{
+  "title": "Toán 3 - Kết nối tri thức - Unit 1: Ôn tập các số đến 1000",
+  "metadata": {
+    "subject": "Toán",
+    "grade": 3,
+    "volume": 1,
+    "book": "Toán 3 - Kết nối tri thức với cuộc sống",
+    "units": [1],
+    "total_questions": 15,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "tap_correct_word",
+      "instruction": "Chọn đáp án đúng nhất",
+      "question_data": {
+        "question": "Số liền trước của 1000 là số nào?",
+        "correct_word": "999",
+        "choices": ["990", "999", "900", "998"]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 1, "page": 8 }
+    },
+    {
+      "id": "Q002",
+      "type": "tap_correct_word",
+      "instruction": "Đọc bài toán và chọn kết quả đúng",
+      "question_data": {
+        "question": "Khối lớp 3 có 245 học sinh, khối lớp 4 có 210 học sinh. Hỏi cả hai khối có tất cả bao nhiêu học sinh?",
+        "correct_word": "455",
+        "choices": ["450", "455", "465", "555"]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 1, "page": 10 }
+    },
+    {
+      "id": "Q003",
+      "type": "tap_correct_word",
+      "instruction": "Chọn số viết đúng",
+      "question_data": {
+        "question": "Số gồm 5 trăm, 4 chục và 3 đơn vị viết là:",
+        "correct_word": "543",
+        "choices": ["543", "345", "453", "534"]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 1, "page": 6 }
+    },
+    {
+      "id": "Q004",
+      "type": "tap_correct_word",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "Tổng của 340 và 160 là:",
+        "correct_word": "500",
+        "choices": ["400", "500", "600", "450"]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 1, "page": 9 }
+    },
+    {
+      "id": "Q005",
+      "type": "fill_blank",
+      "instruction": "Điền kết quả vào chỗ trống",
+      "question_data": {
+        "question": "450 + 230 = ___",
+        "correct_answer": "680",
+        "choices": ["670", "680", "780", "580"]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 1, "page": 9 }
+    },
+    {
+      "id": "Q006",
+      "type": "fill_blank",
+      "instruction": "Tìm số còn thiếu",
+      "question_data": {
+        "question": "800 - ___ = 500",
+        "correct_answer": "300",
+        "choices": ["200", "300", "400", "500"]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 1, "page": 11 }
+    },
+    {
+      "id": "Q007",
+      "type": "fill_blank",
+      "instruction": "Điền số thích hợp",
+      "question_data": {
+        "question": "Số lớn nhất có ba chữ số là ___",
+        "correct_answer": "999",
+        "choices": ["100", "990", "999", "1000"]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 1, "page": 7 }
+    },
+    {
+      "id": "Q008",
+      "type": "fill_blank",
+      "instruction": "Hoàn thành phép tính",
+      "question_data": {
+        "question": "150 + ___ = 200",
+        "correct_answer": "50",
+        "choices": ["40", "50", "60", "100"]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 1, "page": 10 }
+    },
+    {
+      "id": "Q009",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các số sau theo thứ tự từ bé đến lớn",
+      "question_data": {
+        "words": ["125", "251", "512", "521"],
+        "correct_sentence": "125 251 512 521"
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 1, "page": 8 }
+    },
+    {
+      "id": "Q010",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các số sau theo thứ tự từ lớn đến bé",
+      "question_data": {
+        "words": ["980", "890", "809", "908"],
+        "correct_sentence": "980 908 890 809"
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 1, "page": 8 }
+    },
+    {
+      "id": "Q011",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp để tạo thành phép tính đúng",
+      "question_data": {
+        "words": ["200", "+", "300", "=", "500"],
+        "correct_sentence": "200 + 300 = 500"
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 1, "page": 9 }
+    },
+    {
+      "id": "Q012",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp để tạo thành phép trừ đúng",
+      "question_data": {
+        "words": ["900", "-", "400", "=", "500"],
+        "correct_sentence": "900 - 400 = 500"
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 1, "page": 11 }
+    },
+    {
+      "id": "Q013",
+      "type": "match_pair",
+      "instruction": "Nối phép tính với kết quả đúng",
+      "question_data": {
+        "pairs": [
+          { "left": "100 + 200", "right": "300" },
+          { "left": "500 - 150", "right": "350" },
+          { "left": "450 + 50", "right": "500" }
+        ]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 1, "page": 12 }
+    },
+    {
+      "id": "Q014",
+      "type": "match_pair",
+      "instruction": "Nối cách đọc số với số tương ứng",
+      "question_data": {
+        "pairs": [
+          { "left": "Hai trăm linh năm", "right": "205" },
+          { "left": "Hai trăm năm mươi", "right": "250" },
+          { "left": "Năm trăm linh hai", "right": "502" }
+        ]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 1, "page": 6 }
+    },
+    {
+      "id": "Q015",
+      "type": "match_pair",
+      "instruction": "Nối hai phép tính có cùng kết quả",
+      "question_data": {
+        "pairs": [
+          { "left": "100 + 50", "right": "200 - 50" },
+          { "left": "300 + 200", "right": "600 - 100" },
+          { "left": "400 - 200", "right": "150 + 50" }
+        ]
+      },
+      "source_anchor": { "book": "Toán 3 - KNTT", "unit": 1, "page": 13 }
+    }
+  ]
+}

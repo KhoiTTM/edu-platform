@@ -1,0 +1,242 @@
+{
+  "title": "ENGLISH 3 - Tập 1 - Bài 1 (Đề 1)",
+  "metadata": {
+    "subject": "english",
+    "grade": 3,
+    "volume": 1,
+    "book": "english 3 - Kết nối tri thức",
+    "lessons": [
+      1
+    ],
+    "total_questions": 10,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "Hello",
+          "I",
+          "Ben",
+          "am"
+        ],
+        "correct_sentence": "Hello, I am Ben."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 1",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "xin chào",
+        "correct_word": "hello",
+        "choices": [
+          "hello",
+          "fine",
+          "hi",
+          "how"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 1",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "Mai",
+          "am",
+          "I",
+          "Hi"
+        ],
+        "correct_sentence": "Hi, I am Mai."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 1",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "hello",
+            "right": "xin chào"
+          },
+          {
+            "left": "hi",
+            "right": "chào"
+          },
+          {
+            "left": "how",
+            "right": "thế nào"
+          },
+          {
+            "left": "fine",
+            "right": "khỏe"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 1",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "thế nào",
+        "correct_word": "how",
+        "choices": [
+          "hi",
+          "hello",
+          "how",
+          "fine"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 1",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "How",
+          "are",
+          "you"
+        ],
+        "correct_sentence": "How are you?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 1",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "hello",
+            "right": "xin chào"
+          },
+          {
+            "left": "hi",
+            "right": "chào"
+          },
+          {
+            "left": "how",
+            "right": "thế nào"
+          },
+          {
+            "left": "fine",
+            "right": "khỏe"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 1",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "hello",
+            "right": "xin chào"
+          },
+          {
+            "left": "hi",
+            "right": "chào"
+          },
+          {
+            "left": "how",
+            "right": "thế nào"
+          },
+          {
+            "left": "fine",
+            "right": "khỏe"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 1",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "khỏe",
+        "correct_word": "fine",
+        "choices": [
+          "hello",
+          "hi",
+          "how",
+          "fine"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 1",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "thế nào",
+        "correct_word": "how",
+        "choices": [
+          "hi",
+          "hello",
+          "fine",
+          "how"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 1",
+        "page": 0
+      }
+    }
+  ]
+}

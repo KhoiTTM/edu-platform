@@ -47,16 +47,25 @@ async function processFiles() {
             .from('assessment_collections')
             .insert({
                 title: data.title,
-                subject_slug: data.metadata?.subject === "Tiếng Anh" ? "tieng_anh" : (data.metadata?.subject === "Toán" ? "math" : (data.metadata?.subject === "IELTS" ? "ielts" : (data.metadata?.subject?.toLowerCase() || 'tieng_anh'))),
+                subject_slug: data.metadata?.subject === "Tiếng Anh" ? "tieng_anh" : (data.metadata?.subject === "Toán" ? "toan" : (data.metadata?.subject === "IELTS" ? "ielts" : (data.metadata?.subject?.toLowerCase() || 'tieng_anh'))),
                 grade: data.metadata?.grade || 3,
                 volume: data.metadata?.volume || 1,
-                // Extract unit numbers from string like "Unit 1" and keep only the largest
                 units: (() => {
-                    const parsedUnits = data.metadata?.units?.map((u: any) => {
-                        if (typeof u === 'number') return u;
-                        return parseInt(u.replace(/\D/g, ''));
-                    }).filter((n: number) => !isNaN(n)) || [];
-                    return parsedUnits.length > 0 ? [Math.max(...parsedUnits)] : [];
+                    let derivedUnit = 1;
+                    const lessonNum = data.metadata?.lessons?.[0] || data.metadata?.units?.[0] || 1;
+                    const subj = data.metadata?.subject;
+                    if (subj === 'math' || subj === 'Toán') {
+                        if (lessonNum <= 8) derivedUnit = 1;
+                        else if (lessonNum <= 15) derivedUnit = 2;
+                        else if (lessonNum <= 22) derivedUnit = 3;
+                        else if (lessonNum <= 29) derivedUnit = 4;
+                        else if (lessonNum <= 35) derivedUnit = 5;
+                        else if (lessonNum <= 40) derivedUnit = 6;
+                        else derivedUnit = 7;
+                    } else {
+                        derivedUnit = lessonNum;
+                    }
+                    return [derivedUnit];
                 })(),
                 reference_book: data.metadata?.book,
                 status: 'published'
