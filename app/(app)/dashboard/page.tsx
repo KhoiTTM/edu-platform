@@ -20,7 +20,7 @@ export default async function DashboardPage() {
     supabase.from("profiles").select("grade, display_name").eq("id", user.id).single(),
     supabase.from("user_dashboard_stats").select("*").eq("user_id", user.id).single(),
     supabase.from("learning_sessions").select("started_at").eq("user_id", user.id).order("started_at", { ascending: false }),
-    supabase.from("quiz_attempts").select("id, score, total, created_at, quizzes(title, subject, subject_id)").eq("user_id", user.id).order("created_at", { ascending: false }).limit(20),
+    supabase.from("quiz_attempts").select("id, score, total, created_at, quizzes(title, lessons(subject_slug))").eq("user_id", user.id).order("created_at", { ascending: false }).limit(20),
   ]);
 
   const profile = profileRes.data;
@@ -36,7 +36,8 @@ export default async function DashboardPage() {
   
   for (const session of recent) {
     const q = session.quizzes as any;
-    const subject = q?.subject_id || q?.subject || "tieng_anh";
+    // Extract subject_slug from nested lessons relation, fallback to tieng_anh
+    const subject = q?.lessons?.subject_slug || "tieng_anh";
     if (!seenSubjects.has(subject)) {
       seenSubjects.add(subject);
       recentSessionsList.push(session);
