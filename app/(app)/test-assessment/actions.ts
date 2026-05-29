@@ -57,7 +57,8 @@ export async function saveExamResult(examId: string, score: number, total: numbe
     .single();
 
   if (examData) {
-    const subjectSlug = examData.assessment_collections?.subject_slug || 'tieng_anh';
+    const coll = examData.assessment_collections as any;
+    const subjectSlug = (Array.isArray(coll) ? coll[0]?.subject_slug : coll?.subject_slug) || 'tieng_anh';
     const now = new Date().toISOString();
     
     await supabase.from('learning_sessions').insert({

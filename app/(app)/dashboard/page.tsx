@@ -111,7 +111,7 @@ export default async function DashboardPage() {
         total: (s.summary_metrics as any).total,
         created_at: s.started_at,
         quizzes: { title: (s.summary_metrics as any).unit_topic }
-      });
+      } as any);
     }
   }
 

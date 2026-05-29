@@ -20,29 +20,32 @@ function parseVolume(raw: string | undefined): Volume {
 
 export default async function HocTapSubjectPage({ params, searchParams }: Props) {
   const { subject } = await params;
-  if (subject === "toan") {
-    redirect("/learn/toan/lop-3");
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!user) {
+    redirect("/login");
   }
-  if (subject === "tieng_anh") {
-    redirect("/learn/tieng_anh/lop-3");
+
+  const { data: profile } = await supabase
+    .from("profiles")
+    .select("grade")
+    .eq("id", user.id)
+    .single();
+
+  const grade = profile?.grade ?? 3;
+
+  if (subject === "toan" || subject === "tieng_anh") {
+    redirect(`/learn/${subject}/lop-${grade}`);
   }
   const { tap } = await searchParams;
   if (!SLUG_RE.test(subject)) notFound();
 
   const activeVolume = parseVolume(tap);
 
-  const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
 
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("grade")
-    .eq("id", user!.id)
-    .single();
-
-  const grade = profile?.grade ?? 3;
 
   const { data: subjectRows, error: subjectError } = await supabase
     .from("subjects")
