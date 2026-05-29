@@ -104,30 +104,35 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
   }
 
   // Predefined positions for decorative background items based on path height
-  const decorationTypes = ["lollipop", "cookie", "shroom", "star", "flower", "wrapped_candy", "gummy_bear"];
+  const decorationTypes = ["lollipop", "cookie", "shroom", "star", "flower", "wrapped_candy", "swirl_candy"];
   const decorations: { x: number; y: number; type: string; scale: number }[] = [];
-  for (let y = 60; y < pathHeight - 60; y += 70) { // Further increased density for background decors
+  for (let y = 60; y < pathHeight - 60; y += 70) { 
+    // Pseudo-random deterministic values based on y
+    const rand1 = Math.abs(Math.sin(y * 1.23)) * decorationTypes.length;
+    const rand2 = Math.abs(Math.cos(y * 2.34)) * decorationTypes.length;
+    const rand3 = Math.abs(Math.sin(y * 3.45)) * decorationTypes.length;
+
     // Left side decors
     decorations.push({
       x: 50 + Math.sin(y) * 40,
       y: y + Math.cos(y) * 20,
-      type: decorationTypes[Math.floor((y * 1.3) % decorationTypes.length)],
-      scale: 0.7 + (Math.sin(y) * 0.3)
+      type: decorationTypes[Math.floor(rand1) % decorationTypes.length],
+      scale: 0.9 + (Math.sin(y) * 0.3)
     });
     // Right side decors
     decorations.push({
       x: 550 + Math.cos(y) * 40,
       y: y + 40 + Math.sin(y) * 20,
-      type: decorationTypes[Math.floor((y * 1.7) % decorationTypes.length)],
-      scale: 0.7 + (Math.cos(y) * 0.3)
+      type: decorationTypes[Math.floor(rand2) % decorationTypes.length],
+      scale: 0.9 + (Math.cos(y) * 0.3)
     });
     // Extra random decors far out
-    if (y % 160 === 0) {
+    if (y % 140 === 0) {
       decorations.push({
-        x: Math.sin(y) > 0 ? 20 : 580,
+        x: Math.sin(y) > 0 ? 30 : 570,
         y: y + 60,
-        type: decorationTypes[Math.floor((y * 2.1) % decorationTypes.length)],
-        scale: 0.5
+        type: decorationTypes[Math.floor(rand3) % decorationTypes.length],
+        scale: 1.2
       });
     }
   }
@@ -166,59 +171,53 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
             }}
           >
             {dec.type === "lollipop" && (
-              <div className="flex flex-col items-center opacity-85">
-                <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-pink-600 via-rose-500 to-amber-400 border-2 border-white/80 shadow-md flex items-center justify-center overflow-hidden">
-                  <div className="w-full h-1 bg-white/30 rotate-45"></div>
+              <div className="flex flex-col items-center opacity-95 scale-125">
+                <div className="w-10 h-10 rounded-full bg-[conic-gradient(#ec4899_0deg_45deg,#fff_45deg_90deg,#ec4899_90deg_135deg,#fff_135deg_180deg,#ec4899_180deg_225deg,#fff_225deg_270deg,#ec4899_270deg_315deg,#fff_315deg_360deg)] border-2 border-white shadow-lg flex items-center justify-center">
+                  <div className="w-full h-full rounded-full shadow-[inset_0_2px_4px_rgba(255,255,255,0.8)]"></div>
                 </div>
-                <div className="w-1 h-5 bg-orange-200/50 rounded-full -mt-0.5 border border-amber-950/20"></div>
+                <div className="w-2 h-10 bg-white rounded-full -mt-1 border border-slate-200/50 shadow-sm z-[-1]"></div>
               </div>
             )}
             {dec.type === "cookie" && (
-              <div className="w-8 h-8 rounded-xl bg-amber-800/80 border-2 border-amber-950/40 shadow-md flex flex-wrap p-1 gap-1 items-center justify-center rotate-12 opacity-80">
-                <div className="w-1.5 h-1.5 rounded-full bg-amber-950"></div>
-                <div className="w-1.5 h-1.5 rounded-full bg-amber-950"></div>
-                <div className="w-1.5 h-1.5 rounded-full bg-amber-950"></div>
+              <div className="w-10 h-10 rounded-full bg-amber-600/90 border-[3px] border-amber-800/40 shadow-lg flex flex-wrap p-1.5 gap-1 items-center justify-center rotate-12 opacity-95">
+                <div className="w-2 h-2 rounded-full bg-amber-950"></div>
+                <div className="w-2 h-2 rounded-full bg-amber-950"></div>
+                <div className="w-2 h-2 rounded-full bg-amber-950"></div>
               </div>
             )}
             {dec.type === "shroom" && (
-              <div className="flex flex-col items-center opacity-90 rotate-12">
-                <div className="w-10 h-6 bg-gradient-to-r from-sky-400 to-indigo-500 rounded-full border-2 border-white shadow-lg relative flex items-center justify-center">
-                  <div className="absolute top-1 left-2 w-3 h-1 rounded-full bg-white/60"></div>
+              <div className="flex flex-col items-center opacity-95 rotate-12 scale-110">
+                <div className="w-12 h-8 bg-gradient-to-r from-sky-400 to-indigo-500 rounded-t-full border-2 border-white shadow-lg relative flex items-center justify-center overflow-hidden">
+                  <div className="absolute top-1 left-2 w-3 h-3 rounded-full bg-white/80"></div>
+                  <div className="absolute top-2 right-2 w-2 h-2 rounded-full bg-white/80"></div>
                 </div>
-                <div className="w-4 h-4 bg-transparent border-t-4 border-l-4 border-white rotate-45 -mt-3 -z-10"></div>
-                <div className="w-4 h-4 bg-transparent border-t-4 border-r-4 border-white -rotate-45 -mt-4 -ml-6 -z-10"></div>
+                <div className="w-6 h-4 bg-amber-100/90 rounded-b-md border-x-2 border-b-2 border-white -mt-0.5"></div>
               </div>
             )}
             {dec.type === "star" && (
-              <Sparkles size={18} className="text-yellow-400/70 fill-yellow-300/40 drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)] animate-pulse" />
+              <Sparkles size={28} className="text-yellow-400 fill-yellow-300 drop-shadow-[0_2px_6px_rgba(250,204,21,0.6)] animate-pulse" />
             )}
             {dec.type === "flower" && (
-              <div className="relative w-7 h-7 flex items-center justify-center opacity-75">
-                <div className="absolute w-3 h-3 rounded-full bg-yellow-500/80 z-10 border border-yellow-700/50"></div>
-                <div className="absolute w-2.5 h-2.5 rounded-full bg-white/70 -top-1 border border-slate-400/30"></div>
-                <div className="absolute w-2.5 h-2.5 rounded-full bg-white/70 -bottom-1 border border-slate-400/30"></div>
-                <div className="absolute w-2.5 h-2.5 rounded-full bg-white/70 -left-1 border border-slate-400/30"></div>
-                <div className="absolute w-2.5 h-2.5 rounded-full bg-white/70 -right-1 border border-slate-400/30"></div>
+              <div className="relative w-10 h-10 flex items-center justify-center opacity-90">
+                <div className="absolute w-4 h-4 rounded-full bg-yellow-400 z-10 border-2 border-white"></div>
+                <div className="absolute w-4 h-4 rounded-full bg-pink-400 -top-1.5 border-2 border-white"></div>
+                <div className="absolute w-4 h-4 rounded-full bg-sky-400 -bottom-1.5 border-2 border-white"></div>
+                <div className="absolute w-4 h-4 rounded-full bg-purple-400 -left-1.5 border-2 border-white"></div>
+                <div className="absolute w-4 h-4 rounded-full bg-emerald-400 -right-1.5 border-2 border-white"></div>
               </div>
             )}
             {dec.type === "wrapped_candy" && (
-              <div className="flex items-center justify-center opacity-85 rotate-45">
-                <div className="w-0 h-0 border-y-[6px] border-y-transparent border-r-[8px] border-r-pink-400/80 -mr-1"></div>
-                <div className="w-5 h-5 rounded-full bg-gradient-to-tr from-pink-400 to-rose-300 border border-white shadow-sm z-10">
-                  <div className="w-2 h-1 bg-white/40 rounded-full mt-1 ml-1"></div>
+              <div className="flex items-center justify-center opacity-95 rotate-45 scale-125">
+                <div className="w-0 h-0 border-y-[12px] border-y-transparent border-r-[16px] border-r-pink-500 -mr-2 z-0"></div>
+                <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-pink-400 to-rose-400 border-2 border-white shadow-lg z-10 overflow-hidden">
+                  <div className="w-full h-full bg-[repeating-linear-gradient(45deg,transparent,transparent_4px,rgba(255,255,255,0.4)_4px,rgba(255,255,255,0.4)_8px)]"></div>
                 </div>
-                <div className="w-0 h-0 border-y-[6px] border-y-transparent border-l-[8px] border-l-pink-400/80 -ml-1"></div>
+                <div className="w-0 h-0 border-y-[12px] border-y-transparent border-l-[16px] border-l-pink-500 -ml-2 z-0"></div>
               </div>
             )}
-            {dec.type === "gummy_bear" && (
-              <div className="flex flex-col items-center opacity-80 -rotate-12">
-                <div className="w-3 h-2.5 bg-emerald-400 rounded-t-full border border-emerald-600/30 shadow-sm relative z-10 flex justify-between px-0.5">
-                  <div className="w-1 h-1 bg-emerald-500 rounded-full -mt-0.5"></div>
-                  <div className="w-1 h-1 bg-emerald-500 rounded-full -mt-0.5"></div>
-                </div>
-                <div className="w-4 h-5 bg-emerald-400 rounded-[4px] border border-emerald-600/30 shadow-sm -mt-0.5 relative">
-                  <div className="absolute top-1 left-1 w-1.5 h-2 bg-white/20 rounded-full"></div>
-                </div>
+            {dec.type === "swirl_candy" && (
+              <div className="flex items-center justify-center opacity-95 -rotate-12 scale-110">
+                 <div className="w-9 h-9 rounded-full bg-[conic-gradient(#38bdf8_0deg_90deg,#fff_90deg_180deg,#38bdf8_180deg_270deg,#fff_270deg_360deg)] border-2 border-white shadow-md"></div>
               </div>
             )}
           </div>
@@ -305,22 +304,24 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                         hover:scale-105 w-32 h-24
                       `}
                     >
-                      <div className="flex items-center justify-center -rotate-6">
-                        <div className={`w-0 h-0 border-y-[16px] border-y-transparent border-r-[20px] ${isUnlocked ? 'border-r-pink-400' : 'border-r-slate-400'} -mr-2 z-0`}></div>
-                        <div className={`w-20 h-20 rounded-full ${isUnlocked ? 'bg-gradient-to-tr from-pink-400 via-rose-500 to-fuchsia-600 shadow-[0_10px_0_#9d174d]' : 'bg-slate-300 shadow-[0_10px_0_#94a3b8]'} shadow-inner flex items-center justify-center z-10 border-4 border-white relative`}>
+                      <div className="flex items-center justify-center -rotate-6 group-hover:rotate-0 transition-transform">
+                        <div className={`w-0 h-0 border-y-[24px] border-y-transparent border-r-[32px] ${isUnlocked ? 'border-r-pink-500' : 'border-r-slate-400'} -mr-3 z-0`}></div>
+                        <div className={`w-24 h-24 rounded-full ${isUnlocked ? 'bg-gradient-to-tr from-pink-400 via-rose-500 to-fuchsia-600 shadow-[0_10px_0_#9d174d]' : 'bg-slate-300 shadow-[0_10px_0_#94a3b8]'} shadow-inner flex items-center justify-center z-10 border-[5px] border-white relative overflow-hidden`}>
+                           {/* Stripes */}
+                           {isUnlocked && <div className="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_12px,rgba(255,255,255,0.3)_12px,rgba(255,255,255,0.3)_24px)]"></div>}
                            {/* Top shine effect */}
-                           <div className="absolute top-1 left-2 right-2 h-3 bg-white/40 rounded-full pointer-events-none"></div>
-                           <div className={isUnlocked ? 'text-white drop-shadow-[0_2px_4px_rgba(157,23,77,0.6)]' : 'text-slate-400'}>
-                             <Icon size={42} fill={isUnlocked ? "currentColor" : "none"} className={isUnlocked ? "animate-pulse" : ""} />
+                           <div className="absolute top-1.5 left-3 right-3 h-4 bg-white/50 rounded-full pointer-events-none"></div>
+                           <div className={isUnlocked ? 'text-white drop-shadow-[0_2px_4px_rgba(157,23,77,0.8)] z-10' : 'text-slate-400 z-10'}>
+                             <Icon size={48} fill={isUnlocked ? "currentColor" : "none"} className={isUnlocked ? "animate-pulse" : ""} />
                            </div>
                            {/* Expand / Collapse Indicator */}
-                           <div className="absolute -bottom-4 bg-rose-500 border-2 border-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg transition-transform duration-300" style={{ transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>
+                           <div className="absolute -bottom-5 bg-rose-500 border-2 border-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg transition-transform duration-300 z-20" style={{ transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" className="text-white">
                                <path d="M6 9l6 6 6-6" />
                              </svg>
                            </div>
                         </div>
-                        <div className={`w-0 h-0 border-y-[16px] border-y-transparent border-l-[20px] ${isUnlocked ? 'border-l-pink-400' : 'border-l-slate-400'} -ml-2 z-0`}></div>
+                        <div className={`w-0 h-0 border-y-[24px] border-y-transparent border-l-[32px] ${isUnlocked ? 'border-l-pink-500' : 'border-l-slate-400'} -ml-3 z-0`}></div>
                       </div>
                     </button>
                   </div>
@@ -333,17 +334,18 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                       hover:scale-110 w-24 h-20
                     `}
                   >
-                    <div className="flex items-center justify-center rotate-6">
-                      <div className="w-0 h-0 border-y-[12px] border-y-transparent border-r-[16px] border-r-purple-400 -mr-2 z-0"></div>
-                      <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-purple-400 via-fuchsia-500 to-violet-500 shadow-[0_8px_0_#9333ea] shadow-inner flex items-center justify-center z-10 border-4 border-white relative">
+                    <div className="flex items-center justify-center rotate-6 group-hover:rotate-12 transition-transform">
+                      <div className="w-0 h-0 border-y-[18px] border-y-transparent border-r-[24px] border-r-purple-500 -mr-3 z-0"></div>
+                      <div className="w-20 h-20 rounded-full bg-gradient-to-tr from-purple-500 via-fuchsia-500 to-violet-500 shadow-[0_8px_0_#9333ea] shadow-inner flex items-center justify-center z-10 border-[5px] border-white relative overflow-hidden">
                         {/* Glowing effect background */}
                         <div className="absolute inset-0 bg-fuchsia-400/40 rounded-full blur-md animate-pulse pointer-events-none"></div>
-                        <div className="absolute top-1 left-2 right-2 h-2.5 bg-white/50 rounded-full pointer-events-none"></div>
-                        <div className="text-white drop-shadow-[0_2px_4px_rgba(147,51,234,0.6)] z-10">
-                          <Gift size={32} fill="currentColor" />
+                        <div className="absolute inset-0 bg-[repeating-linear-gradient(-45deg,transparent,transparent_10px,rgba(255,255,255,0.2)_10px,rgba(255,255,255,0.2)_20px)]"></div>
+                        <div className="absolute top-1.5 left-2.5 right-2.5 h-3 bg-white/60 rounded-full pointer-events-none"></div>
+                        <div className="text-white drop-shadow-[0_2px_6px_rgba(147,51,234,0.9)] z-10">
+                          <Gift size={38} fill="currentColor" />
                         </div>
                       </div>
-                      <div className="w-0 h-0 border-y-[12px] border-y-transparent border-l-[16px] border-l-purple-400 -ml-2 z-0"></div>
+                      <div className="w-0 h-0 border-y-[18px] border-y-transparent border-l-[24px] border-l-purple-500 -ml-3 z-0"></div>
                     </div>
                   </Link>
                 ) : (
@@ -359,30 +361,35 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                     <div className="relative flex flex-col items-center justify-center w-full h-full">
                       {isCompleted ? (
                         // Big Candy for completed lessons
-                        <div className="flex items-center justify-center rotate-[15deg]">
-                          <div className="w-0 h-0 border-y-[6px] border-y-transparent border-r-[8px] border-r-emerald-200 -mr-1 z-0"></div>
-                          <div className="w-7 h-7 rounded-full bg-gradient-to-tr from-emerald-100 to-white shadow-inner flex items-center justify-center z-10 border border-emerald-200">
-                             <CheckCircle2 size={16} strokeWidth={4} className="text-emerald-500" />
+                        <div className="flex items-center justify-center rotate-[15deg] hover:rotate-[25deg] transition-transform">
+                          <div className="w-0 h-0 border-y-[14px] border-y-transparent border-r-[18px] border-r-emerald-400 -mr-2 z-0"></div>
+                          <div className="w-14 h-14 rounded-full bg-gradient-to-tr from-emerald-300 to-teal-400 shadow-inner flex items-center justify-center z-10 border-[4px] border-white relative overflow-hidden">
+                             <div className="absolute inset-0 bg-[repeating-linear-gradient(-45deg,transparent,transparent_8px,rgba(255,255,255,0.3)_8px,rgba(255,255,255,0.3)_16px)]"></div>
+                             <div className="absolute top-1 left-1.5 right-1.5 h-2 bg-white/60 rounded-full pointer-events-none"></div>
+                             <CheckCircle2 size={24} strokeWidth={4} className="text-white drop-shadow-md z-10" />
                           </div>
-                          <div className="w-0 h-0 border-y-[6px] border-y-transparent border-l-[8px] border-l-emerald-200 -ml-1 z-0"></div>
+                          <div className="w-0 h-0 border-y-[14px] border-y-transparent border-l-[18px] border-l-emerald-400 -ml-2 z-0"></div>
                         </div>
                       ) : isUnlocked ? (
                         // Big Candy for unlocked current lesson
-                        <div className="flex items-center justify-center -rotate-[10deg] animate-pulse">
-                          <div className="w-0 h-0 border-y-[8px] border-y-transparent border-r-[10px] border-r-white -mr-1 z-0"></div>
-                          <div className="w-8 h-8 rounded-full bg-white shadow-inner flex items-center justify-center z-10 border-2 border-sky-200">
-                             <Play size={16} fill="currentColor" className="text-sky-500 ml-1" />
+                        <div className="flex items-center justify-center -rotate-[10deg] hover:rotate-0 transition-transform animate-pulse">
+                          <div className="w-0 h-0 border-y-[16px] border-y-transparent border-r-[22px] border-r-sky-400 -mr-2 z-0"></div>
+                          <div className="w-16 h-16 rounded-full bg-gradient-to-tr from-sky-300 to-blue-400 shadow-[0_5px_15px_rgba(14,165,233,0.6)] shadow-inner flex items-center justify-center z-10 border-[4px] border-white relative overflow-hidden">
+                             <div className="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_8px,rgba(255,255,255,0.4)_8px,rgba(255,255,255,0.4)_16px)]"></div>
+                             <div className="absolute top-1 left-2 right-2 h-2.5 bg-white/60 rounded-full pointer-events-none"></div>
+                             <Play size={26} fill="currentColor" className="text-white drop-shadow-md z-10 ml-1" />
                           </div>
-                          <div className="w-0 h-0 border-y-[8px] border-y-transparent border-l-[10px] border-l-white -ml-1 z-0"></div>
+                          <div className="w-0 h-0 border-y-[16px] border-y-transparent border-l-[22px] border-l-sky-400 -ml-2 z-0"></div>
                         </div>
                       ) : (
                         // Small Candy for locked lessons
-                        <div className="flex items-center justify-center rotate-[20deg] opacity-60">
-                          <div className="w-0 h-0 border-y-[4px] border-y-transparent border-r-[6px] border-r-slate-400 -mr-0.5 z-0"></div>
-                          <div className="w-5 h-5 rounded-full bg-slate-300 shadow-inner flex items-center justify-center z-10 border border-slate-400">
-                             <Lock size={10} strokeWidth={3} className="text-slate-500" />
+                        <div className="flex items-center justify-center rotate-[20deg] opacity-80 hover:opacity-100 transition-opacity">
+                          <div className="w-0 h-0 border-y-[10px] border-y-transparent border-r-[14px] border-r-slate-300 -mr-1.5 z-0"></div>
+                          <div className="w-10 h-10 rounded-full bg-slate-200 shadow-inner flex items-center justify-center z-10 border-[3px] border-white relative">
+                             <div className="absolute top-0.5 left-1 right-1 h-1.5 bg-white/60 rounded-full pointer-events-none"></div>
+                             <Lock size={16} strokeWidth={3} className="text-slate-400 z-10" />
                           </div>
-                          <div className="w-0 h-0 border-y-[4px] border-y-transparent border-l-[6px] border-l-slate-400 -ml-0.5 z-0"></div>
+                          <div className="w-0 h-0 border-y-[10px] border-y-transparent border-l-[14px] border-l-slate-300 -ml-1.5 z-0"></div>
                         </div>
                       )}
                     </div>
