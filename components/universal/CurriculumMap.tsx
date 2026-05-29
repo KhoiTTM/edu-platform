@@ -65,8 +65,8 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
       x = 300; // Exams are centered at the end of the chapter
       currentY += 180;
     } else {
-      // Lessons zigzag wider: panning between 180px and 420px
-      const pattern = [180, 420, 220, 380];
+      // Lessons zigzag very widely to make it much more winding
+      const pattern = [120, 480, 150, 450, 100, 500];
       x = pattern[lessonCounter % pattern.length];
       currentY += 160; // Standard space between lessons
       lessonCounter++;
@@ -94,9 +94,9 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
         // Curved transition
         dPath += ` C ${prev.x} ${cp1Y}, ${curr.x} ${cp2Y}, ${curr.x} ${curr.y}`;
       } else {
-        // Zig-zag curve
-        const cp1X = prev.x + (i % 2 === 0 ? 60 : -60);
-        const cp2X = curr.x + (i % 2 === 0 ? -60 : 60);
+        // Exaggerated Zig-zag curve for winding path
+        const cp1X = prev.x + (i % 2 === 0 ? 120 : -120);
+        const cp2X = curr.x + (i % 2 === 0 ? -120 : 120);
         dPath += ` C ${cp1X} ${cp1Y}, ${cp2X} ${cp2Y}, ${curr.x} ${curr.y}`;
       }
       prev = curr;
@@ -126,19 +126,23 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
   return (
     <div className="relative w-full max-w-2xl mx-auto py-10 flex justify-center select-none">
       
-      {/* Outer Adventure Board Frame - Expanded Width & Darker Muted Magical Forest Green */}
+      {/* Outer Adventure Board Frame - Candy Theme */}
       <div 
-        className="relative w-full rounded-[2.5rem] overflow-hidden border-8 border-[#2d1b10] shadow-[0_25px_60px_rgba(0,0,0,0.6)] bg-gradient-to-b from-[#112415] via-[#16351e] to-[#0e1f13] transition-all duration-500"
+        className="relative w-full rounded-[2.5rem] overflow-hidden border-[12px] border-white shadow-[0_25px_60px_rgba(236,72,153,0.4)] bg-gradient-to-b from-sky-300 via-pink-300 to-fuchsia-300 transition-all duration-500"
         style={{ height: pathHeight }}
       >
-        {/* Subtle magical grid pattern overlay */}
-        <div className="absolute inset-0 opacity-5 pointer-events-none bg-[radial-gradient(#ffffff_15%,transparent_16%)] bg-[size:32px_32px]"></div>
+        {/* Subtle grid pattern overlay */}
+        <div className="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#ffffff_20%,transparent_21%)] bg-[size:40px_40px]"></div>
         
-        {/* Floating Clouds in Background (softened opacity) */}
+        {/* Fluffy Candy Clouds in Background */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div className="absolute top-10 left-[-50px] w-32 h-10 bg-white/10 rounded-full blur-[3px] animate-[pulse_6s_infinite]"></div>
-          <div className="absolute top-1/3 right-[-30px] w-40 h-12 bg-white/5 rounded-full blur-[2px] animate-[pulse_8s_infinite]"></div>
-          <div className="absolute bottom-20 left-10 w-36 h-10 bg-white/8 rounded-full blur-[4px] animate-[pulse_5s_infinite]"></div>
+          <div className="absolute top-10 left-[-20px] w-48 h-16 bg-white/40 rounded-full blur-[4px] animate-[pulse_6s_infinite]"></div>
+          <div className="absolute top-10 left-10 w-32 h-20 bg-white/40 rounded-full blur-[4px] animate-[pulse_6s_infinite] delay-75"></div>
+          
+          <div className="absolute top-1/3 right-[-30px] w-40 h-16 bg-white/40 rounded-full blur-[4px] animate-[pulse_8s_infinite]"></div>
+          <div className="absolute top-1/3 right-10 w-24 h-24 bg-white/40 rounded-full blur-[4px] animate-[pulse_8s_infinite] delay-150"></div>
+          
+          <div className="absolute bottom-20 left-10 w-36 h-14 bg-white/40 rounded-full blur-[4px] animate-[pulse_5s_infinite]"></div>
         </div>
 
         {/* Decorative Floating Elements */}
@@ -168,12 +172,12 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
               </div>
             )}
             {dec.type === "shroom" && (
-              <div className="flex flex-col items-center opacity-80">
-                <div className="w-8 h-6 bg-red-600/90 rounded-t-full border-2 border-[#2d1b10] relative shadow-sm">
-                  <div className="absolute top-1 left-2 w-1.5 h-1.5 rounded-full bg-white/90"></div>
-                  <div className="absolute top-2 right-2 w-1 h-1 rounded-full bg-white/90"></div>
+              <div className="flex flex-col items-center opacity-90 rotate-12">
+                <div className="w-10 h-6 bg-gradient-to-r from-sky-400 to-indigo-500 rounded-full border-2 border-white shadow-lg relative flex items-center justify-center">
+                  <div className="absolute top-1 left-2 w-3 h-1 rounded-full bg-white/60"></div>
                 </div>
-                <div className="w-4 h-3 bg-amber-100/70 rounded-b-md border-x-2 border-b-2 border-[#2d1b10] -mt-0.5"></div>
+                <div className="w-4 h-4 bg-transparent border-t-4 border-l-4 border-white rotate-45 -mt-3 -z-10"></div>
+                <div className="w-4 h-4 bg-transparent border-t-4 border-r-4 border-white -rotate-45 -mt-4 -ml-6 -z-10"></div>
               </div>
             )}
             {dec.type === "star" && (
@@ -202,32 +206,32 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
             {/* 3D Road Bottom Depth Shadow */}
             <path 
               d={dPath} 
-              stroke="#2e1b0f"
-              strokeWidth="36"
+              stroke="#db2777"
+              strokeWidth="42"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
-            {/* 3D Road Main Dirt Body */}
+            {/* 3D Road Main Candy Body */}
             <path 
               d={dPath} 
-              stroke="#543620"
-              strokeWidth="28"
+              stroke="#fbcfe8"
+              strokeWidth="32"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
             {/* 3D Road Center Walk Path */}
             <path 
               d={dPath} 
-              stroke="#a3744f"
-              strokeWidth="18"
+              stroke="#ffffff"
+              strokeWidth="20"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
             {/* Dash center lines */}
             <path 
               d={dPath} 
-              stroke="#edd7c4"
-              strokeWidth="2"
+              stroke="#f472b6"
+              strokeWidth="4"
               strokeDasharray="8 14"
               strokeLinecap="round"
             />
@@ -268,22 +272,22 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                     <button 
                       onClick={() => toggleUnit(node.id)}
                       className={`
-                        relative flex items-center justify-center transition-all duration-150 active:translate-y-[4px] active:shadow-[0_4px_0_#3b0764]
+                        relative flex items-center justify-center transition-all duration-150 active:translate-y-[4px] active:shadow-[0_4px_0_#9d174d]
                         w-24 h-24 rounded-[2rem] hover:scale-105
                         ${isUnlocked 
-                          ? 'bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 border-4 border-purple-300/40 shadow-[0_10px_0_#3b0764,0_15px_30px_rgba(59,7,100,0.6)]'
-                          : 'bg-slate-800 border-4 border-slate-700 text-slate-500 shadow-[0_10px_0_#1e293b]'}
+                          ? 'bg-gradient-to-br from-pink-400 via-rose-500 to-fuchsia-600 border-4 border-white shadow-[0_10px_0_#9d174d,0_15px_30px_rgba(219,39,119,0.6)]'
+                          : 'bg-slate-300 border-4 border-white text-slate-400 shadow-[0_10px_0_#94a3b8]'}
                       `}
                     >
                       {/* Top shine effect */}
-                      <div className="absolute top-1.5 left-3 right-3 h-3 bg-white/20 rounded-full pointer-events-none"></div>
+                      <div className="absolute top-1.5 left-3 right-3 h-4 bg-white/40 rounded-full pointer-events-none"></div>
 
-                      <div className={isUnlocked ? 'text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]' : 'text-slate-500'}>
+                      <div className={isUnlocked ? 'text-white drop-shadow-[0_2px_4px_rgba(157,23,77,0.6)]' : 'text-slate-400'}>
                         <Icon size={42} fill={isUnlocked ? "currentColor" : "none"} className="animate-pulse" />
                       </div>
                       
                       {/* Expand / Collapse Indicator */}
-                      <div className="absolute -bottom-4 bg-[#2d1b10] border-2 border-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg transition-transform duration-300" style={{ transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>
+                      <div className="absolute -bottom-4 bg-rose-500 border-2 border-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg transition-transform duration-300" style={{ transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" className="text-white">
                           <path d="M6 9l6 6 6-6" />
                         </svg>
@@ -295,16 +299,16 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                   <Link 
                     href={`/learn/${subjectSlug}/${node.slug}`}
                     className={`
-                      relative flex items-center justify-center transition-all duration-150 active:translate-y-[4px] active:shadow-[0_4px_0_#7c2d12]
-                      w-18 h-18 rounded-2xl hover:scale-110
-                      bg-gradient-to-b from-yellow-300 via-amber-500 to-orange-600 border-4 border-yellow-100 shadow-[0_8px_0_#7c2d12,0_12px_25px_rgba(245,158,11,0.5)]
+                      relative flex items-center justify-center transition-all duration-150 active:translate-y-[4px] active:shadow-[0_4px_0_#9333ea]
+                      w-20 h-20 rounded-2xl hover:scale-110
+                      bg-gradient-to-b from-purple-300 via-fuchsia-400 to-violet-500 border-4 border-white shadow-[0_8px_0_#9333ea,0_12px_25px_rgba(147,51,234,0.5)]
                     `}
                   >
                     {/* Glowing effect background */}
-                    <div className="absolute inset-0 bg-yellow-400/20 rounded-2xl blur-md animate-pulse pointer-events-none"></div>
-                    <div className="absolute top-1 left-2 right-2 h-3 bg-white/30 rounded-full pointer-events-none"></div>
-                    <div className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)]">
-                      <Gift size={32} fill="currentColor" />
+                    <div className="absolute inset-0 bg-fuchsia-400/40 rounded-2xl blur-md animate-pulse pointer-events-none"></div>
+                    <div className="absolute top-1 left-2 right-2 h-4 bg-white/50 rounded-full pointer-events-none"></div>
+                    <div className="text-white drop-shadow-[0_2px_4px_rgba(147,51,234,0.6)]">
+                      <Gift size={36} fill="currentColor" />
                     </div>
                   </Link>
                 ) : (
@@ -312,20 +316,20 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                   <Link 
                     href={`/learn/${subjectSlug}/${node.slug}`}
                     className={`
-                      relative flex items-center justify-center transition-all duration-150 active:translate-y-[3px] active:shadow-[0_3px_0_#7c2d12]
+                      relative flex items-center justify-center transition-all duration-150 active:translate-y-[3px] active:shadow-[0_3px_0_#0369a1]
                       w-16 h-16 rounded-full hover:scale-110
                       ${isCompleted 
-                        ? 'bg-gradient-to-b from-emerald-500 to-teal-600 border-4 border-emerald-300/40 shadow-[0_7px_0_#064e3b,0_10px_20px_rgba(6,78,59,0.5)]'
+                        ? 'bg-gradient-to-b from-emerald-300 to-teal-500 border-4 border-white shadow-[0_7px_0_#0f766e,0_10px_20px_rgba(20,184,166,0.5)]'
                         : isUnlocked 
-                          ? 'bg-gradient-to-b from-amber-500 to-orange-600 border-4 border-amber-300/40 shadow-[0_7px_0_#7c2d12,0_10px_20px_rgba(124,45,18,0.5)]'
-                          : 'bg-slate-800 border-4 border-slate-700 text-slate-500 shadow-[0_7px_0_#1e293b]'
+                          ? 'bg-gradient-to-b from-sky-300 to-blue-500 border-4 border-white shadow-[0_7px_0_#0369a1,0_10px_20px_rgba(14,165,233,0.5)]'
+                          : 'bg-slate-200 border-4 border-white text-slate-400 shadow-[0_7px_0_#94a3b8]'
                       }
                     `}
                   >
                     {/* Top inner gloss reflection */}
-                    <div className="absolute top-1 left-2 right-2 h-2.5 bg-white/20 rounded-full pointer-events-none"></div>
+                    <div className="absolute top-1 left-2 right-2 h-3 bg-white/50 rounded-full pointer-events-none"></div>
 
-                    <div className={isUnlocked ? 'text-white drop-shadow-[0_2px_3px_rgba(0,0,0,0.5)]' : 'text-slate-500'}>
+                    <div className={isUnlocked ? 'text-white drop-shadow-[0_2px_3px_rgba(3,105,161,0.5)]' : 'text-slate-400'}>
                       {isCompleted ? (
                         <CheckCircle2 size={28} strokeWidth={3} />
                       ) : isUnlocked ? (
@@ -336,7 +340,7 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                     </div>
 
                     {isCompleted && (
-                      <div className="absolute -bottom-2 -right-2 bg-yellow-500 rounded-full p-1 border-2 border-white shadow-md z-10 animate-bounce">
+                      <div className="absolute -bottom-2 -right-2 bg-yellow-400 rounded-full p-1 border-2 border-white shadow-lg z-10 animate-bounce">
                         <Star size={12} className="text-white fill-white" />
                       </div>
                     )}
@@ -345,8 +349,8 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
 
                 {/* Styled Title Label Below Node */}
                 <div className="mt-5 text-center max-w-[140px] px-1 relative z-10">
-                  <div className="bg-[#2d1b10]/95 border-2 border-[#edd7c4]/10 rounded-xl px-2 py-1 shadow-md">
-                    <p className={`text-[10px] font-extrabold tracking-wide leading-tight ${isUnlocked ? 'text-yellow-100/90' : 'text-slate-400'}`}>
+                  <div className="bg-white/90 border-[3px] border-pink-200 rounded-2xl px-3 py-1.5 shadow-lg backdrop-blur-sm">
+                    <p className={`text-[11px] font-black tracking-wide leading-tight uppercase ${isUnlocked ? 'text-pink-600' : 'text-slate-400'}`}>
                       {node.title}
                     </p>
                   </div>
