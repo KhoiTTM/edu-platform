@@ -47,7 +47,7 @@ async function processFiles() {
             .from('assessment_collections')
             .insert({
                 title: data.title,
-                subject_slug: data.metadata?.subject === "Tiếng Anh" ? "tieng_anh" : (data.metadata?.subject === "Toán" ? "toan" : (data.metadata?.subject === "IELTS" ? "ielts" : (data.metadata?.subject?.toLowerCase() || 'tieng_anh'))),
+                subject_slug: (data.metadata?.subject === "Tiếng Anh" || data.metadata?.subject === "english") ? "tieng_anh" : (data.metadata?.subject === "Toán" ? "toan" : (data.metadata?.subject === "IELTS" ? "ielts" : (data.metadata?.subject?.toLowerCase() || 'tieng_anh'))),
                 grade: data.metadata?.grade || 3,
                 volume: data.metadata?.volume || 1,
                 units: (() => {

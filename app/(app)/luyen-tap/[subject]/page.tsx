@@ -179,7 +179,7 @@ export default function SubjectMapPage() {
                     >
                       <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/3 blur-2xl"></div>
                       <h2 className="text-3xl font-black tracking-wider drop-shadow-md">
-                        {(unit.unit === 7 && subject === 'toan') || (unit.unit === 11 && subject === 'tieng-anh') ? "Ôn tập Học kỳ 1" : `Unit ${unit.unit}`}
+                        {(unit.unit === 7 && subject === 'toan') || (unit.unit === 11 && subject === 'tieng_anh') ? "Ôn tập Học kỳ 1" : `Unit ${unit.unit}`}
                       </h2>
                       <p className="font-bold text-white/90 mt-1 uppercase tracking-widest text-sm">Nhiệm vụ vũ trụ</p>
                     </div>

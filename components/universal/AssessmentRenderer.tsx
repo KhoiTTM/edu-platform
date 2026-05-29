@@ -70,28 +70,34 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
             disabled={hasAnswered}
           />
         );
-      case 'tap_word':
+      case 'tap_word': {
+        const words = currentQuestion.words || currentQuestion.choices || [];
+        const correctWord = currentQuestion.correctWord || currentQuestion.correct_word || '';
+        const instruction = currentQuestion.target_word ? `${currentQuestion.instruction}: "${currentQuestion.target_word}"` : currentQuestion.instruction;
         return (
           <TapWordRenderer
             key={`tw-${currentIndex}`}
-            instruction={currentQuestion.instruction}
-            words={currentQuestion.words}
-            correctWord={currentQuestion.correctWord}
+            instruction={instruction}
+            words={words}
+            correctWord={correctWord}
             onAnswer={handleAnswer}
             disabled={hasAnswered}
           />
         );
-      case 'sentence_reorder':
+      }
+      case 'sentence_reorder': {
+        const words = currentQuestion.words || currentQuestion.parts || [];
         return (
           <SentenceReorderRenderer
             key={`sr-${currentIndex}`}
             instruction={currentQuestion.instruction || 'Sắp xếp lại câu:'}
-            words={currentQuestion.words}
+            words={words}
             correctSentence={currentQuestion.correct_sentence}
             onAnswer={handleAnswer}
             disabled={hasAnswered}
           />
         );
+      }
       case 'match_pair':
         return (
           <MatchPairRenderer
