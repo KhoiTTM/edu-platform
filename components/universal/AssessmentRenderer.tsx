@@ -19,7 +19,19 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
 
   const currentQuestion = questions[currentIndex];
 
+  const playSound = (isCorrect: boolean) => {
+    try {
+      // Free open-source sounds (placeholder URLs, in production these should be in public/audio/)
+      const audioUrl = isCorrect 
+        ? 'https://actions.google.com/sounds/v1/cartoon/cartoon_boing.ogg' // Correct (Boing/Ding)
+        : 'https://actions.google.com/sounds/v1/cartoon/cartoon_cowbell_decline.ogg'; // Incorrect (Bonk)
+      const audio = new Audio(audioUrl);
+      audio.play().catch(e => console.log('Audio play failed:', e));
+    } catch(e) {}
+  };
+
   const handleAnswer = (isCorrect: boolean, answerValue: string) => {
+    playSound(isCorrect);
     const newAnswers = [...answers, { ...currentQuestion, isCorrect, answerValue }];
     setAnswers(newAnswers);
     setHasAnswered(true);
