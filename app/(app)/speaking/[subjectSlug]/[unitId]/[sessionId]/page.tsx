@@ -3,12 +3,15 @@ import { generateSpeakingPrompt } from "@/lib/speaking/prompt-generator";
 import { createClient } from "@/lib/supabase/server";
 
 export default async function SpeakingSessionPage({
-  params
+  params,
+  searchParams
 }: {
-  params: Promise<{ subjectSlug: string; unitId: string; sessionId: string }>
+  params: Promise<{ subjectSlug: string; unitId: string; sessionId: string }>;
+  searchParams: Promise<{ backUrl?: string }>;
 }) {
   const resolvedParams = await params;
   const { subjectSlug, unitId, sessionId } = resolvedParams;
+  const resolvedSearchParams = await searchParams;
   
   const supabase = await createClient();
   
@@ -27,7 +30,11 @@ export default async function SpeakingSessionPage({
   const vocab = metadata?.vocab || [];
 
   const subjectType = subjectSlug.includes('ielts') ? 'ielts' : 'general_k12';
-  const studentLevel = subjectSlug.includes('ielts') ? 'IELTS Band 6.5' : (subjectSlug.includes('grade') ? 'Primary School Student' : 'English Learner');
+  const studentLevel = subjectSlug.includes('ielts') 
+    ? 'IELTS Band 6.5' 
+    : (subjectSlug.includes('tieng-anh-3') || subjectSlug.includes('lop-3')
+      ? 'Primary School Student (Grade 3)'
+      : (subjectSlug.includes('grade') ? 'Primary School Student' : 'English Learner'));
 
   const promptText = generateSpeakingPrompt({
     subjectType,
@@ -37,9 +44,9 @@ export default async function SpeakingSessionPage({
     keyVocab: vocab
   });
 
-  const backUrl = subjectSlug.includes('mindset') 
+  const backUrl = resolvedSearchParams.backUrl || (subjectSlug.includes('mindset') 
     ? '/hoc-tap/mindset-ielts/speaking' 
-    : `/hoc-tap/${subjectSlug}/speaking`;
+    : `/hoc-tap/${subjectSlug}/speaking`);
 
   return (
     <div className="min-h-screen py-10 px-4">

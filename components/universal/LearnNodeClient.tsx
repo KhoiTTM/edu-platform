@@ -6,7 +6,7 @@ import Link from "next/link";
 import { AssessmentRenderer } from "./AssessmentRenderer";
 import { AssessmentResultCard } from "../assessment/AssessmentResultCard";
 import { CurriculumMap } from "./CurriculumMap";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 interface LearnNodeClientProps {
   node: {
@@ -31,8 +31,15 @@ export function LearnNodeClient({
   childNodes 
 }: LearnNodeClientProps) {
   const router = useRouter();
+  const pathname = usePathname();
   const backSlug = breadcrumbs.find(b => b.path.split('.').length === 2)?.slug || 
                    (breadcrumbs.length > 0 ? breadcrumbs[0].slug : '');
+
+  // Check if it is an English subject supporting speaking (tieng-anh-3, mindset-foundation, ielts)
+  const slugMatch = node.slug ? node.slug.match(/^([a-z0-9-]+)-(unit-\d+)(?:-lesson-\d+)?$/i) : null;
+  const courseSlug = slugMatch ? slugMatch[1] : null;
+  const unitId = slugMatch ? slugMatch[2] : null;
+  const hasSpeaking = !!(courseSlug && (courseSlug.includes('tieng-anh-3') || courseSlug.includes('mindset-foundation') || subjectSlug.includes('tieng_anh') || subjectSlug.includes('ielts')));
 
   const isExam = node.type === 'exam';
 
@@ -214,14 +221,28 @@ export function LearnNodeClient({
               <div className="p-6 rounded-3xl bg-slate-900/40 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div className="space-y-1 text-center sm:text-left">
                   <p className="font-extrabold text-white text-base">Xem xong video rồi?</p>
-                  <p className="text-xs text-slate-500">Chuyển sang làm bài luyện tập không tính điểm để hiểu bài nhé!</p>
+                  <p className="text-xs text-slate-500">
+                    {hasSpeaking 
+                      ? "Hãy chọn Luyện tập trắc nghiệm hoặc Luyện nói với AI Teacher nhé!" 
+                      : "Chuyển sang làm bài luyện tập không tính điểm để hiểu bài nhé!"}
+                  </p>
                 </div>
-                <button 
-                  onClick={() => setCurrentPart('practice')}
-                  className="px-6 py-3 bg-sky-600 hover:bg-sky-500 text-white font-extrabold rounded-2xl transition active:scale-95 flex items-center gap-2"
-                >
-                  Bắt đầu luyện tập <ChevronRight size={18} />
-                </button>
+                <div className="flex flex-wrap gap-3 justify-center sm:justify-end w-full sm:w-auto">
+                  <button 
+                    onClick={() => setCurrentPart('practice')}
+                    className={`px-5 py-3 ${hasSpeaking ? 'bg-slate-800 hover:bg-slate-700 text-white border border-slate-700' : 'bg-sky-600 hover:bg-sky-500 text-white'} font-extrabold rounded-2xl transition active:scale-95 flex items-center gap-2`}
+                  >
+                    Bắt đầu luyện tập <ChevronRight size={18} />
+                  </button>
+                  {hasSpeaking && (
+                    <Link
+                      href={`/speaking/${courseSlug}/${unitId}/session-1?backUrl=${encodeURIComponent(pathname)}`}
+                      className="px-5 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold rounded-2xl transition active:scale-95 flex items-center gap-2"
+                    >
+                      🗣️ Luyện nói với AI <ArrowRight size={18} />
+                    </Link>
+                  )}
+                </div>
               </div>
             </div>
           )}
