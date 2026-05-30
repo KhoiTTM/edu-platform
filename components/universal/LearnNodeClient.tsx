@@ -23,6 +23,115 @@ interface LearnNodeClientProps {
   childNodes?: { id: string; title: string; slug: string; type: string }[];
 }
 
+function GrammarTutorialRenderer({ content }: { content: string }) {
+  if (!content) return <p className="text-slate-500 italic">Bài học này chưa có nội dung hướng dẫn từ AI.</p>;
+
+  // Split into paragraphs/lines
+  const sections = content.split('\n\n');
+
+  return (
+    <div className="space-y-6 text-slate-300 leading-relaxed font-sans">
+      {sections.map((section, idx) => {
+        const trimmed = section.trim();
+        if (!trimmed) return null;
+
+        // Heading 3: ###
+        if (trimmed.startsWith('### ')) {
+          return (
+            <h2 key={idx} className="text-xl md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-fuchsia-400 pb-2 border-b border-rose-500/20 tracking-tight uppercase mt-8 first:mt-0">
+              {trimmed.substring(4)}
+            </h2>
+          );
+        }
+
+        // Heading 4: ####
+        if (trimmed.startsWith('#### ')) {
+          return (
+            <h3 key={idx} className="text-base font-extrabold text-rose-400 mt-4">
+              {trimmed.substring(5)}
+            </h3>
+          );
+        }
+
+        // Blockquotes for Formulas: >
+        if (trimmed.startsWith('> ')) {
+          const blockContent = trimmed.split('\n')
+            .map(line => line.replace(/^>\s*/, '').trim())
+            .filter(Boolean);
+
+          return (
+            <div key={idx} className="p-5 rounded-2xl border border-slate-800 bg-slate-950/60 shadow-inner relative overflow-hidden my-4 border-l-4 border-l-rose-500">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-rose-500/5 blur-[50px] pointer-events-none" />
+              <div className="space-y-2 font-mono text-xs md:text-sm text-slate-200">
+                {blockContent.map((line, lidx) => (
+                  <p key={lidx}>{line}</p>
+                ))}
+              </div>
+            </div>
+          );
+        }
+
+        // Check/Cross Lists (✓ / ✗)
+        if (trimmed.includes('✓') || trimmed.includes('✗')) {
+          const lines = trimmed.split('\n');
+          return (
+            <div key={idx} className="space-y-3 my-4">
+              {lines.map((line, lidx) => {
+                const lineTrim = line.trim();
+                const isCorrect = lineTrim.startsWith('* ✓') || lineTrim.startsWith('✓') || lineTrim.includes('✓');
+                const isIncorrect = lineTrim.startsWith('* ✗') || lineTrim.startsWith('✗') || lineTrim.includes('✗');
+                
+                if (isCorrect) {
+                  return (
+                    <div key={lidx} className="flex gap-3 items-start bg-emerald-950/20 border border-emerald-900/40 p-4 rounded-xl text-slate-200 text-sm">
+                      <span className="flex items-center justify-center w-5 h-5 rounded-full bg-emerald-500/20 text-emerald-400 font-bold shrink-0 text-xs">✓</span>
+                      <div>
+                        {lineTrim.replace(/^[\*\s✓✗]+/, '')}
+                      </div>
+                    </div>
+                  );
+                }
+                
+                if (isIncorrect) {
+                  return (
+                    <div key={lidx} className="flex gap-3 items-start bg-rose-950/20 border border-rose-900/40 p-4 rounded-xl text-slate-200 text-sm">
+                      <span className="flex items-center justify-center w-5 h-5 rounded-full bg-rose-500/20 text-rose-400 font-bold shrink-0 text-xs">✗</span>
+                      <div className="text-slate-300">
+                        {lineTrim.replace(/^[\*\s✓✗]+/, '')}
+                      </div>
+                    </div>
+                  );
+                }
+
+                return <p key={lidx} className="text-xs text-slate-400 pl-8">{lineTrim.replace(/^[\*\s]+/, '')}</p>;
+              })}
+            </div>
+          );
+        }
+
+        // Bullet lists
+        if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
+          const items = trimmed.split('\n').map(item => item.replace(/^[\-\*\s]+/, '').trim());
+          return (
+            <ul key={idx} className="list-disc pl-5 space-y-2 text-sm text-slate-300 my-3">
+              {items.map((item, iidx) => (
+                <li key={iidx}>{item}</li>
+              ))}
+            </ul>
+          );
+        }
+
+        // Default Paragraph
+        return (
+          <p key={idx} className="text-sm leading-relaxed text-slate-300">
+            {trimmed}
+          </p>
+        );
+      })}
+    </div>
+  );
+}
+
 export function LearnNodeClient({ 
   node, 
   breadcrumbs, 
@@ -51,10 +160,13 @@ export function LearnNodeClient({
     subjectSlug.includes('ielts')
   ));
 
+  const isGrammar = node.metadata?.skill_focus === 'grammar' || 
+                    (node.title && /grammar|ngữ pháp/i.test(node.title));
+
   const isExam = node.type === 'exam';
 
-  const [currentPart, setCurrentPart] = useState<'video' | 'practice' | 'quiz'>(
-    isExam ? 'quiz' : 'video'
+  const [currentPart, setCurrentPart] = useState<'video' | 'ai-tutorial' | 'practice' | 'quiz'>(
+    isGrammar ? 'ai-tutorial' : (isExam ? 'quiz' : 'video')
   );
   
   const [completed, setCompleted] = useState(false);
@@ -182,17 +294,17 @@ export function LearnNodeClient({
         </p>
       </div>
 
-      {node.type !== 'lesson' && node.type !== 'exam' ? (
+      {node.type !== 'lesson' && node.type !== 'exam' && !isGrammar ? (
         <CurriculumMap nodes={childNodes || []} subjectSlug={subjectSlug} />
       ) : !completed ? (
         <div className="space-y-6">
           {!isExam && (
             <div className="grid grid-cols-3 gap-2 bg-slate-900/50 p-2.5 rounded-2xl border border-slate-800 shadow-inner text-center text-xs font-bold">
               <button 
-                onClick={() => currentPart !== 'quiz' && setCurrentPart('video')}
-                className={`py-2 rounded-xl transition ${currentPart === 'video' ? 'bg-sky-500 text-white shadow' : 'text-slate-500 hover:text-slate-300'}`}
+                onClick={() => currentPart !== 'quiz' && setCurrentPart(isGrammar ? 'ai-tutorial' : 'video')}
+                className={`py-2 rounded-xl transition ${currentPart === (isGrammar ? 'ai-tutorial' : 'video') ? 'bg-sky-500 text-white shadow' : 'text-slate-500 hover:text-slate-300'}`}
               >
-                1. Bài giảng Video
+                {isGrammar ? '1. Hướng dẫn học AI' : '1. Bài giảng Video'}
               </button>
               <button 
                 onClick={() => currentPart !== 'quiz' && setCurrentPart('practice')}
@@ -252,6 +364,28 @@ export function LearnNodeClient({
                       🗣️ Luyện nói với AI <ArrowRight size={18} />
                     </Link>
                   )}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {currentPart === 'ai-tutorial' && (
+            <div className="space-y-8 animate-in fade-in duration-300">
+              <div className="bg-slate-900/40 border border-slate-800 p-8 rounded-3xl backdrop-blur-md shadow-2xl relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-[50%] h-64 bg-rose-500/5 blur-[120px] pointer-events-none" />
+                <GrammarTutorialRenderer content={node.metadata?.grammar_tutorial} />
+                
+                <div className="p-6 mt-8 rounded-3xl bg-slate-950/50 border border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+                  <div className="space-y-1 text-center sm:text-left">
+                    <p className="font-extrabold text-white text-base">Đã nắm rõ lý thuyết?</p>
+                    <p className="text-xs text-slate-500">Chuyển sang làm bài luyện tập không tính điểm để kiểm tra hiểu biết nhé!</p>
+                  </div>
+                  <button 
+                    onClick={() => setCurrentPart('practice')}
+                    className="px-6 py-3 bg-rose-600 hover:bg-rose-500 text-white font-extrabold rounded-2xl transition active:scale-95 flex items-center gap-2"
+                  >
+                    Bắt đầu luyện tập <ChevronRight size={18} />
+                  </button>
                 </div>
               </div>
             </div>

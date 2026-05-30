@@ -29,6 +29,7 @@ export default async function GrammarPage() {
           .map(n => ({
             id: n.id,
             title: n.title,
+            slug: n.slug,
             lesson_index: n.sort_key,
             youtube_video_id: n.metadata?.youtube_id,
             page_hint: n.metadata?.page_hint || `Unit ${n.slug.split('-')[1]}`,
@@ -58,43 +59,35 @@ export default async function GrammarPage() {
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {lessons.map((lesson) => {
-          const hasVideo = !!lesson.youtube_video_id;
           const unitMatch = lesson.title.match(/U(\d+)/i);
           const unit = unitMatch?.[1] ?? '?';
 
-          const card = (
-            <div className={`group flex flex-col gap-3 rounded-2xl border p-5 backdrop-blur-md transition-all duration-200 ${
-              hasVideo
-                ? 'border-slate-800 bg-slate-900/30 hover:border-rose-500/40 hover:bg-slate-900/60 hover:shadow-lg cursor-pointer'
-                : 'border-slate-800 bg-slate-900/20 cursor-default'
-            }`}>
-              <div className="flex items-center justify-between">
-                <span className="rounded-md bg-rose-950/60 px-2 py-0.5 text-[10px] font-bold text-rose-400 border border-rose-900/40 uppercase">
-                  Unit {unit}
-                </span>
-                <span className="text-[10px] text-slate-500">Buổi {lesson.lesson_index}</span>
-              </div>
-              <h3 className="text-sm font-semibold text-white leading-snug group-hover:text-rose-400 transition-colors">
-                {lesson.title.replace(/^Buổi \d+:\s*/, '')}
-              </h3>
-              {lesson.page_hint && (
-                <p className="text-[11px] text-slate-500">📖 {lesson.page_hint}</p>
-              )}
-              <p className="mt-auto text-[11px] text-slate-400 leading-relaxed line-clamp-2">
-                {lesson.summary?.replace(/\[.*?\]/g, '').trim() || 'Luyện ngữ pháp và từ vựng theo chủ đề.'}
-              </p>
-              {hasVideo && (
+          return (
+            <Link 
+              key={lesson.id} 
+              href={`/learn/mindset-ielts/${lesson.slug}`}
+            >
+              <div className="group flex flex-col gap-3 rounded-2xl border p-5 backdrop-blur-md transition-all duration-200 border-slate-800 bg-slate-900/30 hover:border-rose-500/40 hover:bg-slate-900/60 hover:shadow-lg cursor-pointer h-full">
+                <div className="flex items-center justify-between">
+                  <span className="rounded-md bg-rose-950/60 px-2 py-0.5 text-[10px] font-bold text-rose-400 border border-rose-900/40 uppercase">
+                    Unit {unit}
+                  </span>
+                  <span className="text-[10px] text-slate-500">Buổi {lesson.lesson_index}</span>
+                </div>
+                <h3 className="text-sm font-semibold text-white leading-snug group-hover:text-rose-400 transition-colors">
+                  {lesson.title.replace(/^Buổi \d+:\s*/, '')}
+                </h3>
+                {lesson.page_hint && (
+                  <p className="text-[11px] text-slate-500">📖 {lesson.page_hint}</p>
+                )}
+                <p className="mt-auto text-[11px] text-slate-400 leading-relaxed line-clamp-2">
+                  {lesson.summary?.replace(/\[.*?\]/g, '').trim() || 'Luyện ngữ pháp và từ vựng theo chủ đề.'}
+                </p>
                 <span className="text-xs font-semibold text-sky-400 group-hover:text-sky-300 transition-colors">
-                  🎧 Xem video →
+                  📝 Học bài ngay →
                 </span>
-              )}
-            </div>
-          );
-
-          return hasVideo ? (
-            <Link key={lesson.id} href={`/listening/${lesson.id}`}>{card}</Link>
-          ) : (
-            <div key={lesson.id}>{card}</div>
+              </div>
+            </Link>
           );
         })}
       </div>
