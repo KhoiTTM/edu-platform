@@ -156,29 +156,31 @@ export default async function DashboardPage() {
               {recentSessionsList.length > 0 ? (
                 recentSessionsList.map((activity: any) => {
                   return (
-                    <Link
+                    <div
                       key={`${activity.id}-${activity.type}`}
-                      href={`/luyen-tap/${activity.subject}`}
-                      className="group flex items-center justify-between rounded-2xl bg-slate-950/60 p-4 border border-slate-800 hover:border-sky-500/50 hover:bg-slate-900 transition-all shadow-inner"
+                      className="group relative flex items-center justify-between rounded-2xl bg-slate-950/60 p-4 border border-slate-800 hover:border-sky-500/50 hover:bg-slate-900 transition-all shadow-inner"
                     >
-                      <div>
-                        <h3 className="text-sm font-black text-white group-hover:text-sky-400 transition-colors">{activity.title}</h3>
-                        <p className="text-slate-500 font-bold text-[10px] uppercase tracking-wider mt-1 flex items-center gap-1.5">
+                      {/* Main card link (covers entire card but sits behind content) */}
+                      <Link href={`/luyen-tap/${activity.subject}`} className="absolute inset-0 z-0 rounded-2xl" />
+                      
+                      <div className="relative z-10">
+                        <h3 className="text-sm font-black text-white group-hover:text-sky-400 transition-colors pointer-events-none">{activity.title}</h3>
+                        <p className="text-slate-500 font-bold text-[10px] uppercase tracking-wider mt-1 flex items-center gap-1.5 pointer-events-none">
                           <Target size={12} className={activity.type === 'quiz' ? "text-emerald-500" : "text-sky-500"} />
                           {activity.type === 'quiz' ? `Điểm: ${activity.score}/${activity.total}` : "Đã hoàn thành"} • {new Date(activity.dateStr).toLocaleDateString("vi-VN")}
                         </p>
                         {activity.nextUnit && activity.nextExamId && (
-                          <div className="mt-2 inline-flex items-center gap-1 text-[10px] font-bold text-emerald-300 bg-emerald-500/20 px-2 py-1 rounded">
+                          <div className="mt-2 inline-flex items-center gap-1 text-[10px] font-bold text-emerald-300 bg-emerald-500/20 px-2 py-1 rounded relative z-20">
                             <Link href={`/test-assessment?examId=${activity.nextExamId}`} className="hover:text-emerald-200 transition flex items-center gap-1">
                                 Gợi ý học tiếp: Bài {activity.nextUnit} <ArrowRight size={10} />
                             </Link>
                           </div>
                         )}
                       </div>
-                      <div className="shrink-0 w-8 h-8 rounded-full bg-sky-500/10 flex items-center justify-center text-sky-400 group-hover:bg-sky-500 group-hover:text-white transition-colors">
+                      <div className="shrink-0 w-8 h-8 rounded-full bg-sky-500/10 flex items-center justify-center text-sky-400 group-hover:bg-sky-500 group-hover:text-white transition-colors relative z-10 pointer-events-none">
                         <ArrowRight size={16} />
                       </div>
-                    </Link>
+                    </div>
                   );
                 })
               ) : (
