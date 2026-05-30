@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 interface AssessmentResultCardProps {
   score: number;
@@ -12,6 +12,48 @@ interface AssessmentResultCardProps {
 export function AssessmentResultCard({ score, correctCount, totalCount, onContinue }: AssessmentResultCardProps) {
   const passed = score >= 50;
   const incorrectCount = totalCount - correctCount;
+  const hasPlayed = useRef(false);
+
+  useEffect(() => {
+    if (hasPlayed.current) return;
+    hasPlayed.current = true;
+
+    try {
+      const AudioContext = window.AudioContext || (window as any).webkitAudioContext;
+      if (!AudioContext) return;
+      const ctx = new AudioContext();
+      
+      const playNote = (freq: number, type: OscillatorType, startTime: number, duration: number) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = type;
+        osc.frequency.value = freq;
+        gain.gain.setValueAtTime(0, startTime);
+        gain.gain.linearRampToValueAtTime(0.3, startTime + 0.05);
+        gain.gain.exponentialRampToValueAtTime(0.01, startTime + duration);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start(startTime);
+        osc.stop(startTime + duration);
+      };
+
+      const now = ctx.currentTime;
+      if (passed) {
+        // Fanfare (Victory)
+        playNote(523.25, 'triangle', now, 0.15); // C5
+        playNote(523.25, 'triangle', now + 0.15, 0.15); // C5
+        playNote(523.25, 'triangle', now + 0.3, 0.15); // C5
+        playNote(659.25, 'triangle', now + 0.45, 0.3); // E5
+        playNote(783.99, 'triangle', now + 0.75, 0.5); // G5
+      } else {
+        // Try again (Sad Tromboneish)
+        playNote(392.00, 'sawtooth', now, 0.3); // G4
+        playNote(370.00, 'sawtooth', now + 0.3, 0.3); // Gb4
+        playNote(349.23, 'sawtooth', now + 0.6, 0.3); // F4
+        playNote(329.63, 'sawtooth', now + 0.9, 0.6); // E4
+      }
+    } catch(e) {}
+  }, [passed]);
 
   return (
     <div className="w-full max-w-lg mx-auto p-8 bg-white dark:bg-slate-800 rounded-3xl shadow-2xl flex flex-col items-center border border-slate-200 dark:border-slate-700">

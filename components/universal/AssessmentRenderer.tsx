@@ -25,29 +25,32 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
       if (!AudioContext) return;
       const ctx = new AudioContext();
       
-      const osc = ctx.createOscillator();
-      const gainNode = ctx.createGain();
-      
+      const playNote = (freq: number, type: OscillatorType, startTime: number, duration: number) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = type;
+        osc.frequency.value = freq;
+        gain.gain.setValueAtTime(0, startTime);
+        gain.gain.linearRampToValueAtTime(0.3, startTime + 0.05);
+        gain.gain.exponentialRampToValueAtTime(0.01, startTime + duration);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start(startTime);
+        osc.stop(startTime + duration);
+      };
+
+      const now = ctx.currentTime;
       if (isCorrect) {
-        osc.type = 'sine';
-        osc.frequency.setValueAtTime(800, ctx.currentTime);
-        osc.frequency.exponentialRampToValueAtTime(1200, ctx.currentTime + 0.1);
-        gainNode.gain.setValueAtTime(0, ctx.currentTime);
-        gainNode.gain.linearRampToValueAtTime(0.3, ctx.currentTime + 0.02);
-        gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
+        // Melodic correct sound (C5 - E5 - G5)
+        playNote(523.25, 'sine', now, 0.15);
+        playNote(659.25, 'sine', now + 0.1, 0.15);
+        playNote(783.99, 'sine', now + 0.2, 0.4);
       } else {
-        osc.type = 'sawtooth';
-        osc.frequency.setValueAtTime(150, ctx.currentTime);
-        osc.frequency.exponentialRampToValueAtTime(100, ctx.currentTime + 0.3);
-        gainNode.gain.setValueAtTime(0, ctx.currentTime);
-        gainNode.gain.linearRampToValueAtTime(0.3, ctx.currentTime + 0.05);
-        gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
+        // Melodic incorrect sound (Eb4 - C4 - G3)
+        playNote(311.13, 'triangle', now, 0.2);
+        playNote(261.63, 'triangle', now + 0.15, 0.2);
+        playNote(196.00, 'triangle', now + 0.3, 0.5);
       }
-      
-      osc.connect(gainNode);
-      gainNode.connect(ctx.destination);
-      osc.start();
-      osc.stop(ctx.currentTime + 0.3);
     } catch(e) {
       console.error('Audio play failed:', e);
     }
