@@ -44,7 +44,7 @@ export default async function LearnNodePage({ params }: LearnNodePageProps) {
   // Step 1c: Query the node, filtered by source if possible
   let nodeQuery = adminSupabase
     .from("curriculum_nodes")
-    .select("id, title, slug, path, type, metadata, source_id")
+    .select("id, title, slug, path, type, metadata, source_id, content_sources(slug)")
     .eq("slug", node);
 
   if (sourceIds.length > 0) {

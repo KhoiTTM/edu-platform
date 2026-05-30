@@ -36,10 +36,20 @@ export function LearnNodeClient({
                    (breadcrumbs.length > 0 ? breadcrumbs[0].slug : '');
 
   // Check if it is an English subject supporting speaking (tieng-anh-3, mindset-foundation, ielts)
-  const slugMatch = node.slug ? node.slug.match(/^([a-z0-9-]+)-(unit-\d+)(?:-lesson-\d+)?$/i) : null;
-  const courseSlug = slugMatch ? slugMatch[1] : null;
-  const unitId = slugMatch ? slugMatch[2] : null;
-  const hasSpeaking = !!(courseSlug && (courseSlug.includes('tieng-anh-3') || courseSlug.includes('mindset-foundation') || subjectSlug.includes('tieng_anh') || subjectSlug.includes('ielts')));
+  const unitMatch = node.slug ? node.slug.match(/(unit-\d+)/i) : null;
+  const unitId = unitMatch ? unitMatch[1].toLowerCase() : null;
+  
+  const lessonSlug = node.slug;
+  const courseSlug = (node as any).content_sources?.slug || 
+                     (node.slug ? node.slug.match(/^([a-z0-9-]+)-(unit-\d+)/i)?.[1] : null);
+
+  const hasSpeaking = !!(courseSlug && lessonSlug && (
+    courseSlug.includes('tieng-anh') || 
+    courseSlug.includes('mindset') || 
+    courseSlug.includes('ielts') || 
+    subjectSlug.includes('tieng_anh') || 
+    subjectSlug.includes('ielts')
+  ));
 
   const isExam = node.type === 'exam';
 
@@ -236,7 +246,7 @@ export function LearnNodeClient({
                   </button>
                   {hasSpeaking && (
                     <Link
-                      href={`/speaking/${courseSlug}/${unitId}/session-1?backUrl=${encodeURIComponent(pathname)}`}
+                      href={`/speaking/${courseSlug}/${lessonSlug}/session-1?backUrl=${encodeURIComponent(pathname)}`}
                       className="px-5 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold rounded-2xl transition active:scale-95 flex items-center gap-2"
                     >
                       🗣️ Luyện nói với AI <ArrowRight size={18} />
