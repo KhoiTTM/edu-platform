@@ -21,13 +21,36 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
 
   const playSound = (isCorrect: boolean) => {
     try {
-      // Free open-source sounds (placeholder URLs, in production these should be in public/audio/)
-      const audioUrl = isCorrect 
-        ? 'https://actions.google.com/sounds/v1/cartoon/cartoon_boing.ogg' // Correct (Boing/Ding)
-        : 'https://actions.google.com/sounds/v1/cartoon/cartoon_cowbell_decline.ogg'; // Incorrect (Bonk)
-      const audio = new Audio(audioUrl);
-      audio.play().catch(e => console.log('Audio play failed:', e));
-    } catch(e) {}
+      const AudioContext = window.AudioContext || (window as any).webkitAudioContext;
+      if (!AudioContext) return;
+      const ctx = new AudioContext();
+      
+      const osc = ctx.createOscillator();
+      const gainNode = ctx.createGain();
+      
+      if (isCorrect) {
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(800, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(1200, ctx.currentTime + 0.1);
+        gainNode.gain.setValueAtTime(0, ctx.currentTime);
+        gainNode.gain.linearRampToValueAtTime(0.3, ctx.currentTime + 0.02);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
+      } else {
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(150, ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(100, ctx.currentTime + 0.3);
+        gainNode.gain.setValueAtTime(0, ctx.currentTime);
+        gainNode.gain.linearRampToValueAtTime(0.3, ctx.currentTime + 0.05);
+        gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
+      }
+      
+      osc.connect(gainNode);
+      gainNode.connect(ctx.destination);
+      osc.start();
+      osc.stop(ctx.currentTime + 0.3);
+    } catch(e) {
+      console.error('Audio play failed:', e);
+    }
   };
 
   const handleAnswer = (isCorrect: boolean, answerValue: string) => {
