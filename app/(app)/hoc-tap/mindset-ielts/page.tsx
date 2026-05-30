@@ -19,19 +19,44 @@ const SKILL_COLORS: Record<string, string> = {
 
 export default async function MindsetIELTSPage() {
   const supabase = await createClient();
-  const { data } = await supabase
-    .from('lessons')
-    .select('*')
-    .eq('subject_slug', 'mindset-ielts')
-    .order('lesson_index', { ascending: true });
 
-  const lessons = (data ?? []) as Lesson[];
+  // 1. Fetch IELTS Source
+  const { data: source } = await supabase
+    .from('content_sources')
+    .select('id')
+    .eq('slug', 'mindset-foundation')
+    .maybeSingle();
+
+  let lessons: any[] = [];
+  
+  if (source) {
+    // 2. Fetch all nodes for this source (Units and Lessons)
+    const { data: nodes } = await supabase
+      .from('curriculum_nodes')
+      .select('id, title, slug, type, sort_key, metadata')
+      .eq('source_id', source.id)
+      .order('sort_key', { ascending: true });
+
+    if (nodes) {
+        // Map nodes to the structure expected by the UI
+        lessons = nodes
+          .filter(n => n.type === 'unit') // The legacy 'lessons' are now 'unit' nodes in hierarchical engine
+          .map(n => ({
+            id: n.id,
+            title: n.title,
+            lesson_index: n.sort_key,
+            youtube_video_id: n.metadata?.youtube_id,
+            skill_focus: n.metadata?.skill_focus,
+            page_hint: n.metadata?.page_hint || `Unit ${n.slug.split('-')[1]}`,
+          }));
+    }
+  }
 
   // Group by unit number
-  const byUnit: Record<number, Lesson[]> = {};
+  const byUnit: Record<number, any[]> = {};
   for (const l of lessons) {
     const m = l.title.match(/U(\d+)/i);
-    const unit = m ? parseInt(m[1]) : 0;
+    const unit = m ? parseInt(m[1]) : (l.lesson_index ? Math.ceil(l.lesson_index / 3.6) : 0); // fallback grouping
     if (!byUnit[unit]) byUnit[unit] = [];
     byUnit[unit].push(l);
   }

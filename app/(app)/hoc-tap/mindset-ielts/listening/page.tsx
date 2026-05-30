@@ -6,19 +6,41 @@ import type { Lesson } from '@/types/database';
 export default async function ListeningPage() {
   const supabase = await createClient();
 
-  // Get all mindset-ielts lessons — filter by title/youtube presence in UI
-  const { data } = await supabase
-    .from('lessons')
-    .select('*')
-    .eq('subject_slug', 'mindset-ielts')
-    .order('lesson_index', { ascending: true });
+  // 1. Fetch IELTS Source
+  const { data: source } = await supabase
+    .from('content_sources')
+    .select('id')
+    .eq('slug', 'mindset-foundation')
+    .maybeSingle();
 
-  const all = (data ?? []) as Lesson[];
+  let lessons: any[] = [];
+  
+  if (source) {
+    // 2. Fetch all nodes for this source
+    const { data: nodes } = await supabase
+      .from('curriculum_nodes')
+      .select('id, title, slug, type, sort_key, metadata')
+      .eq('source_id', source.id)
+      .order('sort_key', { ascending: true });
 
-  // Show lessons that mention listening in title OR have a video track
-  const lessons = all.filter(l =>
-    /listening|nghe/i.test(l.title) || !!l.youtube_video_id
-  );
+    if (nodes) {
+        lessons = nodes
+          .filter(n => n.type === 'unit')
+          .map(n => ({
+            id: n.id,
+            title: n.title,
+            lesson_index: n.sort_key,
+            youtube_video_id: n.metadata?.youtube_id,
+            page_hint: n.metadata?.page_hint || `Unit ${n.slug.split('-')[1]}`,
+            skill_focus: n.metadata?.skill_focus,
+          }))
+          .filter(l => 
+            l.skill_focus === 'listening' || 
+            /listening|nghe/i.test(l.title) || 
+            !!l.youtube_video_id
+          );
+    }
+  }
 
   return (
     <div className="space-y-6 max-w-5xl mx-auto">

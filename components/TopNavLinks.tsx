@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Layout, BookOpen, Target, PenTool } from "lucide-react";
+import { Layout, BookOpen, Target, PenTool, Settings } from "lucide-react";
 
 export function TopNavLinks() {
   const pathname = usePathname();
@@ -12,6 +12,7 @@ export function TopNavLinks() {
     { href: "/hoc-tap", label: "Học bài", icon: BookOpen, color: "text-emerald-400", activeBg: "bg-emerald-500/20", border: "border-emerald-500" },
     { href: "/luyen-tap", label: "Luyện tập", icon: Target, color: "text-fuchsia-400", activeBg: "bg-fuchsia-500/20", border: "border-fuchsia-500" },
     { href: "/assessment-studio", label: "Đánh giá", icon: PenTool, color: "text-amber-400", activeBg: "bg-amber-500/20", border: "border-amber-500" },
+    { href: "/settings", label: "Cài đặt", icon: Settings, color: "text-slate-200", activeBg: "bg-slate-500/20", border: "border-slate-500" },
   ];
 
   return (

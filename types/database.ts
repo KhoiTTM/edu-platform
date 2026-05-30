@@ -17,6 +17,7 @@ export type Profile = {
   email: string | null;
   display_name: string | null;
   grade: Grade;
+  grades: Grade[];
   created_at: string;
 };
 

@@ -5,15 +5,42 @@ import type { Lesson } from '@/types/database';
 
 export default async function SpeakingPage() {
   const supabase = await createClient();
-  const { data } = await supabase
-    .from('lessons')
-    .select('*')
-    .eq('subject_slug', 'mindset-ielts')
-    .order('lesson_index', { ascending: true });
 
-  const lessons = ((data ?? []) as Lesson[]).filter(l =>
-    /speaking|nói/i.test(l.title)
-  );
+  // 1. Fetch IELTS Source
+  const { data: source } = await supabase
+    .from('content_sources')
+    .select('id')
+    .eq('slug', 'mindset-foundation')
+    .maybeSingle();
+
+  let lessons: any[] = [];
+  
+  if (source) {
+    // 2. Fetch all nodes for this source
+    const { data: nodes } = await supabase
+      .from('curriculum_nodes')
+      .select('id, title, slug, type, sort_key, metadata')
+      .eq('source_id', source.id)
+      .order('sort_key', { ascending: true });
+
+    if (nodes) {
+        lessons = nodes
+          .filter(n => n.type === 'unit')
+          .map(n => ({
+            id: n.id,
+            title: n.title,
+            lesson_index: n.sort_key,
+            youtube_video_id: n.metadata?.youtube_id,
+            page_hint: n.metadata?.page_hint || `Unit ${n.slug.split('-')[1]}`,
+            summary: n.metadata?.summary,
+            skill_focus: n.metadata?.skill_focus,
+          }))
+          .filter(l => 
+            l.skill_focus === 'speaking' || 
+            /speaking|nói/i.test(l.title)
+          );
+    }
+  }
 
   return (
     <div className="space-y-6 max-w-5xl mx-auto">
