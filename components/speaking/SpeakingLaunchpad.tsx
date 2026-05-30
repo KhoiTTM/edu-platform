@@ -13,21 +13,21 @@ interface SpeakingLaunchpadProps {
 }
 
 export function SpeakingLaunchpad({ promptText, unitTopic, sessionId, unitId }: SpeakingLaunchpadProps) {
-  const [copied, setCopied] = useState(false);
+  const [copied, setCopied] = useState<string | null>(null);
   const [isCompleted, setIsCompleted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const router = useRouter();
 
-  const handleCopyAndGo = async () => {
+  const handleCopyAndGo = async (url: string) => {
     try {
       await navigator.clipboard.writeText(promptText);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 3000);
-      window.open("https://gemini.google.com", "_blank");
+      setCopied(url);
+      setTimeout(() => setCopied(null), 3000);
+      window.open(url, "_blank");
     } catch (err) {
       console.error("Failed to copy", err);
       // Fallback
-      window.open("https://gemini.google.com", "_blank");
+      window.open(url, "_blank");
     }
   };
 
@@ -110,26 +110,49 @@ export function SpeakingLaunchpad({ promptText, unitTopic, sessionId, unitId }: 
             </ul>
           </div>
 
-          <button
-            onClick={handleCopyAndGo}
-            className="w-full relative group overflow-hidden rounded-2xl p-1"
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-sky-500 via-indigo-500 to-sky-500 opacity-70 group-hover:opacity-100 transition-opacity animate-gradient-x" />
-            <div className="relative bg-slate-900 px-6 py-4 rounded-xl flex items-center justify-center gap-3 transition-transform group-hover:scale-[0.99] group-active:scale-95">
-              {copied ? (
-                <>
-                  <CheckCircle className="text-emerald-400" />
-                  <span className="font-black text-white text-lg tracking-wide">Đã Copy! Đang mở Gemini...</span>
-                </>
-              ) : (
-                <>
-                  <Copy className="text-sky-400 group-hover:text-white transition-colors" />
-                  <span className="font-black text-white text-lg tracking-wide">Copy Prompt & Mở Gemini</span>
-                  <ExternalLink size={18} className="text-slate-400 group-hover:text-white transition-colors ml-2" />
-                </>
-              )}
-            </div>
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 w-full">
+            <button
+              onClick={() => handleCopyAndGo("https://gemini.google.com")}
+              className="flex-1 relative group overflow-hidden rounded-2xl p-1"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-sky-500 via-indigo-500 to-sky-500 opacity-70 group-hover:opacity-100 transition-opacity animate-gradient-x" />
+              <div className="relative bg-slate-900 px-4 py-4 rounded-xl flex items-center justify-center gap-2 transition-transform group-hover:scale-[0.99] group-active:scale-95 h-full">
+                {copied === "https://gemini.google.com" ? (
+                  <>
+                    <CheckCircle className="text-emerald-400" />
+                    <span className="font-black text-white text-sm tracking-wide">Đã Copy!</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy className="text-sky-400 group-hover:text-white transition-colors" size={20} />
+                    <span className="font-black text-white text-sm tracking-wide">Mở bằng Gemini</span>
+                    <ExternalLink size={16} className="text-slate-400 group-hover:text-white transition-colors" />
+                  </>
+                )}
+              </div>
+            </button>
+
+            <button
+              onClick={() => handleCopyAndGo("https://chatgpt.com")}
+              className="flex-1 relative group overflow-hidden rounded-2xl p-1"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-500 opacity-70 group-hover:opacity-100 transition-opacity animate-gradient-x" />
+              <div className="relative bg-slate-900 px-4 py-4 rounded-xl flex items-center justify-center gap-2 transition-transform group-hover:scale-[0.99] group-active:scale-95 h-full">
+                {copied === "https://chatgpt.com" ? (
+                  <>
+                    <CheckCircle className="text-emerald-400" />
+                    <span className="font-black text-white text-sm tracking-wide">Đã Copy!</span>
+                  </>
+                ) : (
+                  <>
+                    <Copy className="text-emerald-400 group-hover:text-white transition-colors" size={20} />
+                    <span className="font-black text-white text-sm tracking-wide">Mở bằng ChatGPT</span>
+                    <ExternalLink size={16} className="text-slate-400 group-hover:text-white transition-colors" />
+                  </>
+                )}
+              </div>
+            </button>
+          </div>
 
           {/* Completion area */}
           <div className="pt-6 mt-6 border-t border-slate-800/80">
