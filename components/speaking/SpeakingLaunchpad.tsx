@@ -10,9 +10,10 @@ interface SpeakingLaunchpadProps {
   unitTopic: string;
   sessionId: string;
   unitId: string;
+  backUrl: string;
 }
 
-export function SpeakingLaunchpad({ promptText, unitTopic, sessionId, unitId }: SpeakingLaunchpadProps) {
+export function SpeakingLaunchpad({ promptText, unitTopic, sessionId, unitId, backUrl }: SpeakingLaunchpadProps) {
   const [copied, setCopied] = useState<string | null>(null);
   const [isCompleted, setIsCompleted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -43,7 +44,7 @@ export function SpeakingLaunchpad({ promptText, unitTopic, sessionId, unitId }: 
       if (res.ok) {
         setIsCompleted(true);
         setTimeout(() => {
-          router.push("/hoc-tap/mindset-ielts/speaking");
+          router.push(backUrl);
         }, 1500);
       }
     } catch (e) {
@@ -69,7 +70,7 @@ export function SpeakingLaunchpad({ promptText, unitTopic, sessionId, unitId }: 
     <div className="w-full max-w-2xl mx-auto space-y-6">
       
       {/* Back button */}
-      <Link href="/hoc-tap/mindset-ielts/speaking" className="inline-flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-white transition-colors mb-4">
+      <Link href={backUrl} className="inline-flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-white transition-colors mb-4">
         <ArrowLeft size={16} /> Quay lại danh sách
       </Link>
 

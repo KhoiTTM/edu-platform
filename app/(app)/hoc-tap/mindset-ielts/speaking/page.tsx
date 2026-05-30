@@ -88,7 +88,7 @@ export default async function SpeakingPage() {
           return (
             <Link 
               key={lesson.id} 
-              href={`/speaking/unit-${unit}/session-1`}
+              href={`/speaking/mindset-foundation/unit-${unit}/session-1`}
             >
               {card}
             </Link>
