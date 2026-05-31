@@ -26,6 +26,58 @@ if (!supabaseUrl || !supabaseKey) {
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 const tutorials: Record<string, string> = {
+  'unit-1': `### Bài học Từ vựng: Hoạt động Thường nhật & Trạng từ Tần suất (Daily Life & Adverbs of Frequency)
+
+#### 1. Giới thiệu (Introduction)
+Từ vựng về đời sống hàng ngày (Daily Life) là nền tảng cơ bản nhất trong IELTS Speaking Part 1. Để ghi điểm tốt, bạn cần làm quen với các cụm động từ chỉ hoạt động thường nhật và cách sử dụng **Trạng từ chỉ tần suất** để mô tả thói quen của mình một cách tự nhiên.
+
+---
+
+#### 2. Từ vựng & Cấu trúc (Vocabulary & Structure)
+
+##### Cụm từ chỉ hoạt động thường ngày (Daily Routines):
+- **Wake up / Get up**: Thức dậy / Rời khỏi giường.
+- **Brush my teeth / Wash my face**: Đánh răng / Rửa mặt.
+- **Have breakfast / lunch / dinner**: Ăn sáng / trưa / tối.
+- **Commute to work / school**: Đi làm / đi học.
+- **Do the chores / tidy up**: Làm việc nhà / dọn dẹp.
+- **Go to bed / fall asleep**: Đi ngủ / ngủ thiếp đi.
+
+##### Trạng từ tần suất (Adverbs of Frequency):
+Sắp xếp theo mức độ từ nhiều đến ít:
+- **Always** (100%): Luôn luôn
+- **Usually / Normally** (80-90%): Thường xuyên
+- **Often** (70%): Hay, thường
+- **Sometimes** (50%): Thỉnh thoảng
+- **Seldom / Rarely** (10%): Hiếm khi
+- **Never** (0%): Không bao giờ
+
+##### Vị trí của trạng từ tần suất:
+> \`Chủ ngữ + Trạng từ tần suất + Động từ thường\`
+> \`Chủ ngữ + Động từ To Be + Trạng từ tần suất\`
+
+---
+
+#### 3. Cách dùng chi tiết (Detailed Usage)
+Sử dụng các cụm từ này kết hợp với trạng từ tần suất để trả lời các câu hỏi về thói quen trong ngày:
+- *Ví dụ:* Bạn làm gì vào buổi sáng? Tần suất làm việc nhà của bạn như thế nào?
+
+---
+
+#### 4. Ví dụ thực tế (Practical Examples)
+- **✓ Đúng:** *I usually have breakfast at 7 AM before going to school.* (Tôi thường ăn sáng lúc 7h trước khi đi học - đúng vị trí của trạng từ).
+- **✓ Đúng:** *My father is always busy in the morning.* (Bố tôi lúc nào cũng bận rộn vào buổi sáng - trạng từ đứng sau To Be).
+- **✗ Sai:** *I go rarely to the gym on weekdays.*
+  *(Giải thích: Trạng từ "rarely" phải đứng trước động từ thường "go". Sửa đúng: "I rarely go to the gym...").*
+- **✗ Sai:** *She always wash her face twice a day.*
+  *(Giải thích: Thiếu chia động từ ngôi thứ ba số ít. Sửa đúng: "She always washes her face...").*
+
+---
+
+#### 5. Tổng kết (Summary)
+- Nhớ quy tắc đặt trạng từ tần suất: **Trước động từ thường, sau động từ To Be**.
+- Luyện tập sử dụng đa dạng các trạng từ như *rarely, normally* thay vì chỉ dùng *always* hoặc *never*.`,
+
   'unit-6': `### Bài giảng Ngữ pháp: Giới từ chỉ vị trí (Prepositions of Place) & There is / There are
 
 #### 1. Giới thiệu (Introduction)
@@ -118,6 +170,49 @@ Khi thảo luận về sở thích (Hobbies) và hoạt động trong thời gia
 - Sau **like, love, enjoy, hate**, động từ luôn phải thêm đuôi **-ing** (V-ing).
 - Dùng **Present Simple** cho thói quen thường xuyên và **Present Continuous** cho những hoạt động/sở thích mang tính chất tạm thời, đang diễn ra ở hiện tại.`,
 
+  'unit-11': `### Bài học Từ vựng: Các loại Sở thích & Liên từ Chỉ lý do (Hobbies, Interests & Collocations)
+
+#### 1. Giới thiệu (Introduction)
+Để viết bài hoặc trả lời phỏng vấn xuất sắc về chủ đề Hobbies & Interests, bạn cần sở hữu một vốn từ vựng phong phú về các hoạt động giải trí cũng như các cấu trúc đi kèm phổ biến. Sử dụng các cụm động từ kết hợp (Collocations) với **go**, **play**, và **do** một cách chuẩn xác sẽ giúp bài nói/viết tự nhiên hơn rất nhiều.
+
+---
+
+#### 2. Từ vựng & Cấu trúc (Vocabulary & Structure)
+
+##### Phân loại cụm động từ với Sở thích (Go, Play, Do):
+- **Play + các môn thể thao đồng đội hoặc có bóng/dụng cụ tranh đấu:**
+  > *Play football, play chess, play video games, play the guitar.*
+- **Go + các hoạt động tận cùng bằng đuôi -ing:**
+  > *Go swimming, go camping, go hiking, go shopping, go fishing.*
+- **Do + các hoạt động giải trí trong nhà hoặc môn thể thao cá nhân không dùng bóng:**
+  > *Do yoga, do puzzles, do gymnastics, do martial arts.*
+
+##### Mẫu câu chỉ lý do tại sao thích hoạt động đó:
+- **Be into / Be interested in / Be keen on + V-ing / Noun**: Cực kỳ thích cái gì.
+- **It helps me to unwind / escape from daily stress**: Nó giúp tôi thư giãn / thoát khỏi áp lực.
+
+---
+
+#### 3. Cách dùng chi tiết (Detailed Usage)
+- Luôn chú ý chia động từ phù hợp khi kết hợp với *go, play, do* theo chủ ngữ.
+- Khi được hỏi về sở thích, hãy tránh dùng lặp từ "like", thay vào đó hãy sử dụng: *I'm really into...* hoặc *I have a keen interest in...*.
+
+---
+
+#### 4. Ví dụ thực tế (Practical Examples)
+- **✓ Đúng:** *I usually do yoga every morning because it helps me stay fit.* (Tôi thường tập yoga mỗi sáng vì nó giúp tôi giữ vóc dáng - đúng cụm từ "do yoga").
+- **✓ Đúng:** *My sister is keen on going swimming on weekends.* (Chị tôi rất thích đi bơi vào cuối tuần - đúng cụm "keen on + V-ing").
+- **✗ Sai:** *I play yoga twice a week.*
+  *(Giải thích: Yoga không phải môn thể thao đồng đội đấu bóng, phải dùng "do yoga" thay vì "play". Sửa đúng: "I do yoga...").*
+- **✗ Sai:** *I go to swimming with my friends.*
+  *(Giải thích: Cụm từ hoạt động trực tiếp là "go swimming", không thêm giới từ "to". Sửa đúng: "I go swimming...").*
+
+---
+
+#### 5. Tổng kết (Summary)
+- Thuộc lòng cách phân nhóm: **Play** (thể thao đấu bóng/bàn cờ), **Go** (hoạt động đuôi -ing), **Do** (hoạt động cá nhân/võ thuật).
+- Thay thế động từ "like/love" bằng các cụm cao cấp như **be interested in**, **be keen on** để tăng điểm từ vựng.`,
+
   'unit-14': `### Bài giảng Ngữ pháp: Thì Quá khứ đơn (Past Simple) & Quá khứ tiếp diễn (Past Continuous)
 
 #### 1. Giới thiệu (Introduction)
@@ -209,6 +304,51 @@ Khi thảo luận về chủ đề Phương tiện giao thông (Transport), chú
 - Tính từ **ngắn** thêm đuôi **-er / -est**.
 - Tính từ **dài** đi kèm với từ **more / most**.
 - Luôn đi kèm từ **than** trong so sánh hơn và từ **the** trong so sánh nhất.`,
+
+  'unit-22': `### Bài học Từ vựng: Ngành nghề & Mô tả Công việc (Jobs, Occupations & Workplace Verbs)
+
+#### 1. Giới thiệu (Introduction)
+Chủ đề Công việc và Nghề nghiệp (Jobs & Occupations) là phần từ vựng cực kỳ quan trọng trong cả phần thi nghe (Listening Section 1) và phần thi nói (Speaking Part 1). Để nói về công việc trôi chảy, bạn cần nắm vững tên gọi các ngành nghề phổ biến cùng các động từ hành động mô tả nghĩa vụ công sở hàng ngày.
+
+---
+
+#### 2. Từ vựng & Cấu trúc (Vocabulary & Structure)
+
+##### Các nhóm nghề nghiệp phổ biến (Common Occupations):
+- **Architect**: Kiến trúc sư.
+- **Engineer**: Kỹ sư.
+- **Accountant**: Kế toán.
+- **Receptionist**: Nhân viên lễ tân.
+- **Flight attendant**: Tiếp viên hàng không.
+- **Sales representative**: Nhân viên kinh doanh.
+
+##### Các động từ mô tả công việc (Workplace Action Verbs):
+- **Be responsible for / In charge of + V-ing**: Chịu trách nhiệm cho việc gì.
+- **Deal with / Handle customer complaints**: Giải quyết khiếu nại khách hàng.
+- **Manage a team / coordinate projects**: Quản lý đội ngũ / điều phối dự án.
+- **Assist / Support colleagues**: Hỗ trợ đồng nghiệp.
+
+---
+
+#### 3. Cách dùng chi tiết (Detailed Usage)
+- Khi nói về ngành nghề của ai đó, luôn luôn sử dụng mạo từ **a / an** đứng trước (ví dụ: *I am an engineer*, không nói *I am engineer*).
+- Dùng cấu trúc **in charge of + V-ing** để mô tả chi tiết nhiệm vụ cụ thể của bạn tại công ty.
+
+---
+
+#### 4. Ví dụ thực tế (Practical Examples)
+- **✓ Đúng:** *She works as an accountant and she is in charge of managing tax reports.* (Cô ấy làm kế toán và chịu trách nhiệm quản lý báo cáo thuế - đúng ngữ pháp).
+- **✓ Đúng:** *A receptionist needs to deal with many visitors every day.* (Một lễ tân cần tiếp đón nhiều khách ghé thăm mỗi ngày).
+- **✗ Sai:** *My brother is architect at a famous firm.*
+  *(Giải thích: Thiếu mạo từ "an" trước danh từ chỉ nghề nghiệp bắt đầu bằng nguyên âm. Sửa đúng: "...is an architect...").*
+- **✗ Sai:** *I am responsible to handle the office paperwork.*
+  *(Giải thích: Cấu trúc là "responsible for + V-ing". Sửa đúng: "I am responsible for handling...").*
+
+---
+
+#### 5. Tổng kết (Summary)
+- Nhớ dùng **a/an** trước tên nghề nghiệp số ít.
+- Sử dụng đa dạng các động từ như **handle, coordinate, manage** thay vì chỉ nói chung chung là "do my job".`,
 
   'unit-23': `### Bài giảng Ngữ pháp: Động từ khuyết thiếu (Modal Verbs: Must, Have to, Should)
 
@@ -341,7 +481,7 @@ Dùng để dự đoán sự thay đổi khi áp dụng công nghệ mới:
 
 async function seed() {
   try {
-    console.log("Starting seeding of grammar tutorials...");
+    console.log("Starting seeding of grammar and vocabulary tutorials...");
     
     // Check if we can find the content source for mindset-foundation
     const { data: source } = await supabase
@@ -362,7 +502,7 @@ async function seed() {
 
     if (fetchErr) throw fetchErr;
     
-    console.log(`Found ${nodes?.length} nodes in source. Updating grammar nodes...`);
+    console.log(`Found ${nodes?.length} nodes in source. Updating grammar/vocab nodes...`);
 
     let updatedCount = 0;
     for (const node of (nodes || [])) {

@@ -161,7 +161,7 @@ export function LearnNodeClient({
   ));
 
   const isGrammar = node.metadata?.skill_focus === 'grammar' || 
-                    (node.title && /grammar|ngữ pháp/i.test(node.title));
+                    (node.title && /grammar|ngữ pháp|vocabulary|từ vựng/i.test(node.title));
 
   const isExam = node.type === 'exam';
 
