@@ -371,9 +371,17 @@ export function LearnNodeClient({
                    (breadcrumbs.length > 0 ? breadcrumbs[0].slug : '');
 
   // Check if it is an English subject supporting speaking (tieng-anh-3, mindset-foundation, ielts)
-  const unitMatch = node.slug ? node.slug.match(/(unit-\d+)/i) : null;
-  const unitId = unitMatch ? unitMatch[1].toLowerCase() : null;
-  const unitNum = unitId ? parseInt(unitId.split('-')[1], 10) : 1;
+  let unitNum = 1;
+  if (node.title) {
+    const titleUnitMatch = node.title.match(/U(\d+)/i);
+    if (titleUnitMatch) {
+      unitNum = parseInt(titleUnitMatch[1], 10);
+    } else {
+      const unitMatch = node.slug ? node.slug.match(/(unit-\d+)/i) : null;
+      const unitId = unitMatch ? unitMatch[1].toLowerCase() : null;
+      unitNum = unitId ? parseInt(unitId.split('-')[1], 10) : 1;
+    }
+  }
   
   const lessonSlug = node.slug;
   const courseSlug = (node as any).content_sources?.slug || 
