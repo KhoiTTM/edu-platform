@@ -23,8 +23,8 @@ interface Props {
   backUrl?: string;
 }
 
-type SessionPhase = "warmup" | "listen" | "explore" | "speak" | "check";
-const PHASE_ORDER: SessionPhase[] = ["warmup", "listen", "explore", "speak", "check"];
+type SessionPhase = "warmup" | "listen" | "book" | "explore" | "speak" | "check";
+const PHASE_ORDER: SessionPhase[] = ["warmup", "listen", "book", "explore", "speak", "check"];
 
 export function ListeningClient({ lesson, transcript, questions, studentName = "bạn", backUrl = "/hoc-tap/mindset-ielts/listening" }: Props) {
   // ── Session Phase State (Replacing old tabs) ──────────────────────────────
@@ -51,6 +51,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
 
   // Step 3: Speaking state
   const [speakingDone, setSpeakingDone] = useState(false);
+  const [chatGptPromptCopied, setChatGptPromptCopied] = useState<boolean>(false);
 
   const unitNum = parseInt(lesson.title.match(/U(\d+)/i)?.[1] ?? "1", 10);
   const checkpoints = getCheckpointsForUnit(unitNum);
@@ -120,8 +121,8 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
       {/* ── PHASE PROGRESS INDICATOR ────────────────────────────────────────── */}
       {sessionPhase !== "warmup" && (
         <div className="flex items-center justify-center gap-3 py-2">
-          {(["listen", "explore", "speak", "check"] as const).map((p, idx) => {
-            const phases: Record<SessionPhase, number> = { warmup: 0, listen: 1, explore: 2, speak: 3, check: 4 };
+          {(["listen", "book", "explore", "speak", "check"] as const).map((p, idx) => {
+            const phases: Record<SessionPhase, number> = { warmup: 0, listen: 1, book: 2, explore: 3, speak: 4, check: 5 };
             const isActive = p === sessionPhase;
             const isDone = phases[sessionPhase] > phases[p];
             const isAccessible = phases[p] <= highestPhase;
@@ -140,10 +141,10 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
                   <span className={`text-[9px] font-bold uppercase tracking-tighter transition-colors ${
                     isActive ? "text-sky-400" : isDone ? "text-emerald-500" : isAccessible ? "text-sky-900" : "text-slate-600"
                   }`}>
-                    {p}
+                    {p === 'book' ? 'textbook' : p}
                   </span>
                 </button>
-                {idx < 3 && <div className={`h-[1px] w-8 sm:w-12 mb-4 transition-colors ${isDone ? "bg-emerald-500/50" : "bg-slate-800"}`} />}
+                {idx < 4 && <div className={`h-[1px] w-8 sm:w-12 mb-4 transition-colors ${isDone ? "bg-emerald-500/50" : "bg-slate-800"}`} />}
               </div>
             );
           })}
@@ -218,16 +219,111 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
             {/* Unlock next step once all checkpoints done */}
             {checkpointsDone && (
               <button
-                onClick={() => setSessionPhase("explore")}
+                onClick={() => setSessionPhase("book")}
                 className="w-full inline-flex min-h-[42px] items-center justify-center gap-2 rounded-xl bg-emerald-600 px-4 text-sm font-semibold text-white transition hover:bg-emerald-500 shadow-lg shadow-emerald-500/15 active:scale-[0.98]"
               >
-                Let&apos;s break down the details 🔍
+                Học sách giáo trình 📖 ➔
               </button>
             )}
           </div>
         )}
 
-        {/* STEP 2 CONTENT: EXPLORE — Bilingual Transcript */}
+        {/* STEP 2: TEXTBOOK STUDY */}
+        {sessionPhase === "book" && (
+          <div className="rounded-2xl border border-slate-800 bg-slate-900/20 p-6 shadow-xl backdrop-blur-md space-y-6">
+            <div>
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-sky-500/10 px-3 py-1 text-xs font-semibold text-sky-400 border border-sky-500/20 mb-3">
+                📖 TEXTBOOK STUDY STEP
+              </span>
+              <h2 className="text-base font-bold text-white flex items-center gap-2">
+                Bài tập bám sát sách giáo trình
+              </h2>
+              <p className="text-xs text-slate-400 leading-relaxed">
+                Yêu cầu bắt buộc: Học sinh kết hợp mở sách giấy Mindset for IELTS để hoàn thành bài tập nghe.
+              </p>
+            </div>
+
+            {/* Instruction cards */}
+            <div className="grid gap-4 md:grid-cols-2">
+              <div className="bg-slate-950/60 p-5 rounded-2xl border border-slate-850 space-y-2">
+                <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest">BƯỚC A: MỞ SÁCH LÀM BÀI</span>
+                <p className="text-xs text-slate-200 leading-relaxed">
+                  Em hãy mở sách giáo trình Mindset for IELTS tại phần Listening: <strong className="text-white bg-slate-900 px-2 py-0.5 rounded border border-slate-800">{lesson.page_hint || `Unit ${unitNum}`}</strong>. Đọc lý thuyết và hoàn thành các bài tập nghe trong sách.
+                </p>
+              </div>
+
+              <div className="bg-slate-950/60 p-5 rounded-2xl border border-slate-850 space-y-2">
+                <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest">BƯỚC B: CHẤM BÀI CÙNG AI</span>
+                <p className="text-xs text-slate-200 leading-relaxed">
+                  Sao chép câu lệnh (Prompt) chuẩn ở bên dưới và mở ChatGPT/Claude (hoặc AI Teacher ở cột bên phải) để được chấm điểm và sửa lỗi bài tập nghe trong sách chi tiết.
+                </p>
+              </div>
+            </div>
+
+            {/* ChatGPT Prompt box */}
+            {(() => {
+              const pageNumStr = lesson.page_hint || `Unit ${unitNum}`;
+              const chatGptPrompt = `Hãy đóng vai là một giáo viên dạy IELTS chuyên nghiệp. Hãy hướng dẫn tôi học sách Mindset for IELTS phần Listening ${pageNumStr} có chủ đề "${lesson.title}". Hãy đưa ra 3 bài tập nhỏ bám sát nội dung này, sau đó chấm điểm và sửa lỗi ngữ pháp một cách chi tiết cho tôi bằng tiếng Việt nhé!`;
+
+              return (
+                <div className="bg-slate-950/80 p-5 rounded-2xl border border-slate-800 space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Prompt chuẩn gửi ChatGPT / AI bên ngoài:</span>
+                    <button
+                      onClick={() => {
+                        navigator.clipboard.writeText(chatGptPrompt);
+                        setChatGptPromptCopied(true);
+                        setTimeout(() => setChatGptPromptCopied(false), 2000);
+                      }}
+                      className={`px-3 py-1.5 rounded-lg text-[10px] font-bold transition flex items-center gap-1.5 ${
+                        chatGptPromptCopied ? "bg-emerald-600 text-white" : "bg-slate-800 text-slate-300 hover:bg-slate-700"
+                      }`}
+                    >
+                      {chatGptPromptCopied ? "✓ Đã sao chép!" : "Copy Prompt"}
+                    </button>
+                  </div>
+                  <div className="bg-slate-900/50 p-4 rounded-xl border border-slate-850 text-xs text-slate-300 font-mono select-all leading-relaxed whitespace-pre-wrap">
+                    {chatGptPrompt}
+                  </div>
+                  <div className="flex flex-wrap gap-2 pt-1">
+                    <a
+                      href="https://chatgpt.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl transition text-[11px] flex items-center gap-1.5 shadow-md shadow-emerald-600/10"
+                    >
+                      🌐 Mở ChatGPT ➔
+                    </a>
+                    <a
+                      href="https://claude.ai/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-amber-600 hover:bg-amber-500 text-white font-bold rounded-xl transition text-[11px] flex items-center gap-1.5 shadow-md shadow-amber-600/10"
+                    >
+                      🌐 Mở Claude AI ➔
+                    </a>
+                  </div>
+                </div>
+              );
+            })()}
+
+            {/* Submit completion */}
+            <div className="p-5 rounded-2xl bg-gradient-to-r from-slate-950 to-slate-900 border border-slate-850 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="space-y-1 text-center sm:text-left">
+                <p className="font-extrabold text-white text-sm">Đã hoàn thành làm bài nghe trong sách?</p>
+                <p className="text-[11px] text-slate-500">Nhấn nút bên cạnh để chuyển sang phần dịch câu và từ vựng.</p>
+              </div>
+              <button 
+                onClick={() => setSessionPhase("explore")}
+                className="px-6 py-3 bg-emerald-600 hover:bg-emerald-555 text-white font-extrabold rounded-2xl transition active:scale-95 flex items-center gap-1.5 shadow-lg shadow-emerald-600/25 shrink-0"
+              >
+                Tiếp tục học ➔
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* STEP 3 CONTENT: EXPLORE — Bilingual Transcript */}
         {sessionPhase === "explore" && (
           <div className="rounded-2xl border border-slate-800 bg-slate-900/20 p-6 shadow-xl backdrop-blur-md space-y-6">
             <div className="flex items-center justify-between gap-4 flex-wrap">
