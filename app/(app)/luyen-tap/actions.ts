@@ -108,14 +108,32 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
   const supabase = await createClient();
 
   let targetGrade = grade;
-  if (!targetGrade) {
-    const { data: { user } } = await supabase.auth.getUser();
-    if (user) {
+  const completedExamIds = new Set<string>();
+  const completedExamTitles = new Set<string>();
+
+  const { data: { user } } = await supabase.auth.getUser();
+  if (user) {
+    if (!targetGrade) {
       const { data: profile } = await supabase.from('profiles').select('grade').eq('id', user.id).single();
       targetGrade = profile?.grade || 3;
-    } else {
-      targetGrade = 3;
     }
+
+    // Query learning sessions to find completed exams
+    const { data: sessions } = await supabase
+      .from('learning_sessions')
+      .select('summary_metrics')
+      .eq('user_id', user.id)
+      .eq('subject_slug', subjectSlug);
+
+    sessions?.forEach((s: any) => {
+      const metrics = s.summary_metrics;
+      if (metrics && metrics.type === 'exam') {
+        if (metrics.exam_id) completedExamIds.add(metrics.exam_id);
+        if (metrics.unit_topic) completedExamTitles.add(metrics.unit_topic);
+      }
+    });
+  } else {
+    if (!targetGrade) targetGrade = 3;
   }
 
   const { data: collections, error } = await supabase
@@ -167,12 +185,14 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
     
     // Add exams from this collection
     collection.exams.forEach((exam: any) => {
+      const isCompleted = completedExamIds.has(exam.id) || completedExamTitles.has(exam.title);
       unitEntry.exams.push({
         id: exam.id,
         title: exam.title,
         exam_number: exam.exam_number,
         total_questions: exam.total_questions,
-        collection_title: collection.title
+        collection_title: collection.title,
+        is_completed: isCompleted
       });
     });
   });

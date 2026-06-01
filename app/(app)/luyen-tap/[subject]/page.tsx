@@ -208,7 +208,7 @@ export default function SubjectMapPage() {
                             unitColor={unitColors[colorIdx]}
                             unitShadow={unitShadows[colorIdx]}
                             unitGlow={unitGlows[colorIdx]}
-                            isCompleted={completedExams.includes(exam.id)}
+                            isCompleted={exam.is_completed || completedExams.includes(exam.id)}
                           />
                         );
                       })}

@@ -68,6 +68,7 @@ export async function saveExamResult(examId: string, score: number, total: numbe
       ended_at: now,
       summary_metrics: {
         type: 'exam',
+        exam_id: examId,
         unit_topic: examData.title,
         score: score,
         total: total
