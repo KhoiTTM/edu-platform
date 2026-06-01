@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
 import IELTSSkillsNav from '@/components/IELTSSkillsNav';
-import type { Lesson } from '@/types/database';
+import { BookOpen, Sparkles, Award } from 'lucide-react';
 
 export default async function GrammarPage() {
   const supabase = await createClient();
@@ -44,20 +44,27 @@ export default async function GrammarPage() {
   }
 
   return (
-    <div className="space-y-6 max-w-5xl mx-auto">
+    <div className="space-y-6 max-w-5xl mx-auto pb-12">
       <IELTSSkillsNav />
 
-      <header className="rounded-2xl border border-rose-900/40 bg-gradient-to-br from-rose-950/30 via-slate-900/60 to-slate-950 p-6 shadow-xl">
-        <span className="inline-flex items-center gap-1.5 rounded-full bg-rose-500/10 px-3 py-1 text-xs font-semibold text-rose-400 border border-rose-500/20">
-          📝 GRAMMAR & VOCABULARY
-        </span>
-        <h1 className="mt-3 text-2xl font-extrabold text-white">Ngữ Pháp & Từ Vựng</h1>
-        <p className="mt-1.5 text-sm text-slate-400">
-          {lessons.length} buổi ngữ pháp & từ vựng — bám sát giáo trình Mindset for IELTS Foundation.
-        </p>
+      {/* HEADER CARD */}
+      <header className="rounded-2xl border border-rose-900/40 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 p-6 shadow-2xl relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-rose-500/5 blur-[80px] pointer-events-none" />
+        <div className="relative z-10 space-y-2">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-rose-500/10 px-3 py-1 text-xs font-semibold text-rose-400 border border-rose-500/20 uppercase tracking-wider">
+            <Award size={12} /> GRAMMAR & VOCABULARY
+          </span>
+          <h1 className="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-300 tracking-tight">
+            Ngữ Pháp & Từ Vựng
+          </h1>
+          <p className="text-xs text-slate-400 max-w-2xl leading-relaxed">
+            Học {lessons.length} buổi chuyên sâu về cấu trúc ngữ pháp học thuật, cụm từ vựng cốt lõi và bài luyện tập nâng cao bám sát giáo trình Mindset for IELTS Foundation.
+          </p>
+        </div>
       </header>
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {/* LESSONS GRID */}
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {lessons.map((lesson) => {
           const unitMatch = lesson.title.match(/U(\d+)/i);
           const unit = unitMatch?.[1] ?? '?';
@@ -65,27 +72,38 @@ export default async function GrammarPage() {
           return (
             <Link 
               key={lesson.id} 
-              href={`/learn/mindset-ielts/${lesson.slug}`}
+              href={`/learn/mindset-ielts/${lesson.slug}?focus=grammar`}
+              className="block group"
             >
-              <div className="group flex flex-col gap-3 rounded-2xl border p-5 backdrop-blur-md transition-all duration-200 border-slate-800 bg-slate-900/30 hover:border-rose-500/40 hover:bg-slate-900/60 hover:shadow-lg cursor-pointer h-full">
+              <div className="flex flex-col gap-4 rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-900/40 to-slate-950/20 p-5 shadow-xl transition-all duration-300 hover:border-rose-500/40 hover:from-slate-900/60 hover:to-slate-950/40 hover:shadow-rose-950/10 cursor-pointer h-full relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-rose-500/5 blur-[40px] pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity" />
+                
                 <div className="flex items-center justify-between">
-                  <span className="rounded-md bg-rose-950/60 px-2 py-0.5 text-[10px] font-bold text-rose-400 border border-rose-900/40 uppercase">
+                  <span className="rounded-md bg-rose-950/60 px-2 py-0.5 text-[9px] font-black text-rose-400 border border-rose-900/40 uppercase tracking-wider">
                     Unit {unit}
                   </span>
-                  <span className="text-[10px] text-slate-500">Buổi {lesson.lesson_index}</span>
+                  <span className="text-[10px] text-slate-500 font-bold">Buổi {lesson.lesson_index}</span>
                 </div>
-                <h3 className="text-sm font-semibold text-white leading-snug group-hover:text-rose-400 transition-colors">
-                  {lesson.title.replace(/^Buổi \d+:\s*/, '')}
-                </h3>
-                {lesson.page_hint && (
-                  <p className="text-[11px] text-slate-500">📖 {lesson.page_hint}</p>
-                )}
-                <p className="mt-auto text-[11px] text-slate-400 leading-relaxed line-clamp-2">
-                  {lesson.summary?.replace(/\[.*?\]/g, '').trim() || 'Luyện ngữ pháp và từ vựng theo chủ đề.'}
+                
+                <div className="space-y-1">
+                  <h3 className="text-sm font-bold text-white leading-snug group-hover:text-rose-400 transition-colors font-display">
+                    {lesson.title.replace(/^Buổi \d+:\s*/, '')}
+                  </h3>
+                  {lesson.page_hint && (
+                    <p className="text-[10px] text-slate-500 font-semibold flex items-center gap-1">
+                      <BookOpen size={10} /> {lesson.page_hint}
+                    </p>
+                  )}
+                </div>
+
+                <p className="text-[11px] text-slate-400 leading-relaxed line-clamp-2 mt-1">
+                  {lesson.summary?.replace(/\[.*?\]/g, '').trim() || 'Luyện chuyên đề ngữ pháp và từ vựng tích hợp.'}
                 </p>
-                <span className="text-xs font-semibold text-sky-400 group-hover:text-sky-300 transition-colors">
-                  📝 Học bài ngay →
-                </span>
+
+                <div className="mt-auto pt-2 border-t border-slate-900/40 flex items-center justify-between text-xs font-bold text-sky-400 group-hover:text-sky-300 transition-colors">
+                  <span>Học bài ngay ➔</span>
+                  <Sparkles size={12} className="text-rose-400/60 group-hover:text-rose-400 animate-pulse" />
+                </div>
               </div>
             </Link>
           );
@@ -93,8 +111,9 @@ export default async function GrammarPage() {
       </div>
 
       {lessons.length === 0 && (
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/30 p-10 text-center">
-          <p className="text-slate-400">Không có buổi Grammar nào.</p>
+        <div className="rounded-2xl border border-slate-800 bg-slate-900/30 p-12 text-center flex flex-col items-center justify-center space-y-2">
+          <BookOpen size={32} className="text-slate-600" />
+          <p className="text-xs text-slate-500 font-semibold">Hiện chưa có buổi ôn luyện Ngữ pháp & Từ vựng nào được xuất bản.</p>
         </div>
       )}
     </div>

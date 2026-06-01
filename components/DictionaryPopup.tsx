@@ -113,6 +113,34 @@ export function DictionaryPopup() {
     }
   };
 
+  const handleSearchRef = useRef(handleSearch);
+  useEffect(() => {
+    handleSearchRef.current = handleSearch;
+  });
+
+  // Double-click word lookup listener
+  useEffect(() => {
+    const handleDblClick = () => {
+      const selection = window.getSelection();
+      const text = selection ? selection.toString().trim() : "";
+      // Limit to single words or very short phrases (less than 40 characters)
+      if (text && text.length > 0 && text.length < 40) {
+        // Strip out punctuation at the start or end of the selection
+        const cleanWord = text.replace(/^[.,\/#!$%\^&\*;:{}=\-_`~()?"'“‘”’]+|[.,\/#!$%\^&\*;:{}=\-_`~()?"'“‘”’]+$/g, "");
+        if (cleanWord) {
+          setIsOpen(true);
+          setQuery(cleanWord);
+          handleSearchRef.current(undefined, cleanWord, "quick");
+        }
+      }
+    };
+
+    document.addEventListener("dblclick", handleDblClick);
+    return () => {
+      document.removeEventListener("dblclick", handleDblClick);
+    };
+  }, []);
+
   const clearHistory = () => {
     saveHistory([]);
   };

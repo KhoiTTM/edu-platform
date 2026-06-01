@@ -325,3 +325,151 @@ export function getFallbackQuestionsForUnit(unitNumber: number, quizId: string):
     explanation: q.explanation
   }));
 }
+
+// 3. Static database of all key vocabulary across the 10 IELTS units for spaced retrieval
+export interface IELTSVocabularyWord {
+  unit: number;
+  word: string;
+  meaning: string;
+  pronunciation: string;
+}
+
+export const ieltsVocabularyDB: IELTSVocabularyWord[] = [
+  // Unit 1
+  { unit: 1, word: "routine", meaning: "thói quen hàng ngày, trình tự làm việc cố định", pronunciation: "/ruːˈtiːn/" },
+  { unit: 1, word: "prepare", meaning: "chuẩn bị, sửa soạn", pronunciation: "/prɪˈpeə(r)/" },
+  { unit: 1, word: "gardening", meaning: "việc làm vườn, chăm sóc cây", pronunciation: "/ˈɡɑːdnɪŋ/" },
+  { unit: 1, word: "handcrafts", meaning: "đồ thủ công tự tay làm", pronunciation: "/ˈhændɪkrɑːfts/" },
+  { unit: 1, word: "delicious", meaning: "ngon miệng, có hương vị tuyệt vời", pronunciation: "/dɪˈlɪʃəs/" },
+  // Unit 2
+  { unit: 2, word: "apartment", meaning: "căn hộ chung cư", pronunciation: "/əˈpɑːtmənt/" },
+  { unit: 2, word: "comfortable", meaning: "thoải mái, tiện nghi", pronunciation: "/ˈkʌmftəbl/" },
+  { unit: 2, word: "wardrobe", meaning: "tủ quần áo", pronunciation: "/ˈwɔːdrəʊb/" },
+  { unit: 2, word: "balcony", meaning: "ban công hiên nhà", pronunciation: "/ˈbælkəni/" },
+  { unit: 2, word: "garage", meaning: "nhà để xe ô tô", pronunciation: "/ˈɡærɑːʒ/" },
+  // Unit 3
+  { unit: 3, word: "photography", meaning: "nhiếp ảnh, nghệ thuật chụp ảnh", pronunciation: "/fəˈtɒɡrəfi/" },
+  { unit: 3, word: "adventure", meaning: "cuộc phiêu lưu mạo hiểm thú vị", pronunciation: "/ədˈventʃə(r)/" },
+  { unit: 3, word: "competitive", meaning: "mang tính cạnh tranh, ganh đua", pronunciation: "/kəmˈpetətɪv/" },
+  { unit: 3, word: "hobby", meaning: "sở thích lúc rảnh rỗi", pronunciation: "/ˈhɒbi/" },
+  { unit: 3, word: "leisure center", meaning: "trung tâm thể dục thể thao giải trí", pronunciation: "/ˈleʒə ˈsentə(r)/" },
+  // Unit 4
+  { unit: 4, word: "destination", meaning: "điểm đến của chuyến đi", pronunciation: "/ˌdestɪˈneɪʃn/" },
+  { unit: 4, word: "itinerary", meaning: "lịch trình chi tiết của chuyến du lịch", pronunciation: "/aɪˈtɪnərəri/" },
+  { unit: 4, word: "suitcase", meaning: "vali đựng quần áo đồ đạc", pronunciation: "/ˈsuːtkeɪs/" },
+  { unit: 4, word: "ecotourism", meaning: "du lịch sinh thái bảo vệ môi trường", pronunciation: "/ˈiːkəʊtʊərɪzəm/" },
+  { unit: 4, word: "sightseeing", meaning: "đi tham quan, ngắm cảnh đẹp", pronunciation: "/ˈsaɪtsiːɪŋ/" },
+  // Unit 5
+  { unit: 5, word: "ingredients", meaning: "các nguyên liệu nấu ăn", pronunciation: "/ɪnˈɡriːdiənts/" },
+  { unit: 5, word: "recipe", meaning: "công thức hướng dẫn nấu ăn", pronunciation: "/ˈresəpi/" },
+  { unit: 5, word: "organic", meaning: "hữu cơ, tự nhiên sạch", pronunciation: "/ɔːˈɡænɪk/" },
+  { unit: 5, word: "homemade", meaning: "nhà làm, tự làm tại nhà", pronunciation: "/ˌhəʊmˈmeɪd/" },
+  { unit: 5, word: "nutritious", meaning: "bổ dưỡng, giàu chất dinh dưỡng", pronunciation: "/njuˈtrɪʃəs/" },
+  // Unit 6
+  { unit: 6, word: "commute", meaning: "hành trình di chuyển đi làm/đi học hàng ngày", pronunciation: "/kəˈmjuːt/" },
+  { unit: 6, word: "rush hour", meaning: "giờ cao điểm kẹt xe", pronunciation: "/rʌʃ ˈaʊə(r)/" },
+  { unit: 6, word: "traffic jam", meaning: "sự kẹt xe, ùn tắc giao thông", pronunciation: "/ˈtræfɪk dʒæm/" },
+  { unit: 6, word: "environmentally friendly", meaning: "thân thiện với môi trường, không độc hại", pronunciation: "/ɪnˌvaɪrənˈmentəli ˈfrendli/" },
+  // Unit 7
+  { unit: 7, word: "automation", meaning: "sự tự động hóa bằng máy móc", pronunciation: "/ˌɔːtəˈmeɪʃn/" },
+  { unit: 7, word: "colleagues", meaning: "đồng nghiệp cùng cơ quan", pronunciation: "/ˈkɒliːɡz/" },
+  { unit: 7, word: "qualifications", meaning: "bằng cấp, chứng chỉ chuyên môn", pronunciation: "/ˌkwɒlɪfɪˈkeɪʃnz/" },
+  { unit: 7, word: "working from home", meaning: "làm việc từ xa tại nhà qua mạng", pronunciation: "/ˈwɜːkɪŋ frɒm həʊm/" },
+  // Unit 8
+  { unit: 8, word: "insomnia", meaning: "chứng mất ngủ kéo dài", pronunciation: "/ɪnˈsɒmniə/" },
+  { unit: 8, word: "strain", meaning: "sự căng thẳng, mệt mỏi cơ hoặc mắt", pronunciation: "/streɪn/" },
+  { unit: 8, word: "recommendation", meaning: "khuyến nghị, lời khuyên của chuyên gia", pronunciation: "/ˌrekəmenˈdeɪʃn/" },
+  { unit: 8, word: "balanced diet", meaning: "chế độ ăn uống cân đối đủ chất", pronunciation: "/ˈbælənst ˈdaɪət/" },
+  // Unit 9
+  { unit: 9, word: "bilingual", meaning: "song ngữ, nói được 2 thứ tiếng lưu loát", pronunciation: "/ˌbaɪˈlɪŋɡwəl/" },
+  { unit: 9, word: "fluently", meaning: "một cách trôi chảy, lưu loát", pronunciation: "/ˈfluːəntli/" },
+  { unit: 9, word: "opportunities", meaning: "các cơ hội, thời cơ tốt trong cuộc sống", pronunciation: "/ˌɒpəˈtjuːnətiz/" },
+  { unit: 9, word: "native speaker", meaning: "người bản xứ nói tiếng mẹ đẻ", pronunciation: "/ˈneɪtɪv ˈspiːkə(r)/" },
+  // Unit 10
+  { unit: 10, word: "gadget", meaning: "thiết bị công nghệ nhỏ tiện ích", pronunciation: "/ˈɡædʒɪt/" },
+  { unit: 10, word: "automatically", meaning: "một cách tự động bằng máy", pronunciation: "/ˌɔːtəˈmætɪkli/" },
+  { unit: 10, word: "predict", meaning: "dự đoán, dự báo trước tương lai", pronunciation: "/prɪˈdɪkt/" },
+  { unit: 10, word: "artificial intelligence", meaning: "trí tuệ nhân tạo (AI)", pronunciation: "/ˌɑːtɪˈfɪʃl ɪnˈtelɪdʒəns/" }
+];
+
+// Helper to shuffle an array
+function shuffleArray<T>(array: T[]): T[] {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+/**
+ * 4. Generate Cumulative Spaced Retrieval Vocabulary Quiz for Warmup
+ * Pulls words from Unit 1 to (unitNumber - 1). If unitNumber is 1, pulls from Unit 1.
+ */
+export function getCumulativeVocabularyQuiz(unitNumber: number, quizId: string, count: number = 10): QuizQuestion[] {
+  const currentUnit = Math.max(1, Math.min(10, unitNumber));
+  
+  // Filter vocabulary: if unit > 1, get words from unit 1 to unit - 1. Otherwise, get words from unit 1.
+  let pool = ieltsVocabularyDB.filter(w => currentUnit > 1 ? w.unit < currentUnit : w.unit === 1);
+  if (pool.length === 0) pool = ieltsVocabularyDB; // Fallback
+
+  const selectedWords = shuffleArray(pool).slice(0, count);
+  const allMeanings = ieltsVocabularyDB.map(w => w.meaning);
+
+  return selectedWords.map((vocab, index) => {
+    // Collect distractors: 3 other random meanings
+    const correctMeaning = vocab.meaning;
+    const distinctOtherMeanings = shuffleArray(allMeanings.filter(m => m !== correctMeaning)).slice(0, 3);
+    
+    // Combine and shuffle options
+    const options = shuffleArray([correctMeaning, ...distinctOtherMeanings]);
+    const correct_index = options.indexOf(correctMeaning);
+
+    return {
+      id: `${quizId}-vocab-${vocab.word}-${index}`,
+      quiz_id: quizId,
+      question: `Từ vựng "${vocab.word}" (${vocab.pronunciation}) mang ý nghĩa nào sau đây?`,
+      options,
+      correct_index,
+      order_index: index,
+      explanation: `Từ vựng "${vocab.word}" có phát âm là ${vocab.pronunciation}, mang ý nghĩa: "${vocab.meaning}". (Unit ${vocab.unit})`
+    };
+  });
+}
+
+/**
+ * 5. Generate Cumulative Spaced-Retrieval Questions for Unit
+ * Combines 15 questions from the current unit and 5 questions from previous units (if applicable).
+ */
+export function getCumulativeQuestionsForUnit(unitNumber: number, quizId: string, totalCount: number = 20): QuizQuestion[] {
+  const currentUnit = Math.max(1, Math.min(10, unitNumber));
+  
+  // 1. Get fallback questions for current unit (usually 15 questions)
+  const currentUnitQuestions = getFallbackQuestionsForUnit(currentUnit, quizId);
+  
+  if (currentUnit === 1) {
+    // If unit 1, we can't accumulate from past units, so we return the first 20 questions or padding from Unit 1 fallback
+    return currentUnitQuestions.slice(0, totalCount);
+  }
+
+  // 2. Collect past unit questions as pool
+  const pastUnitsQuestions: QuizQuestion[] = [];
+  for (let u = 1; u < currentUnit; u++) {
+    pastUnitsQuestions.push(...getFallbackQuestionsForUnit(u, quizId));
+  }
+
+  // 3. Shuffle past questions and pick 5 questions (or totalCount - currentUnitCount)
+  const accumulatedCount = Math.max(2, totalCount - currentUnitQuestions.length);
+  const selectedPastQuestions = shuffleArray(pastUnitsQuestions).slice(0, accumulatedCount);
+
+  // 4. Combine current questions and selected past questions
+  const finalQuestions = [...currentUnitQuestions, ...selectedPastQuestions];
+  
+  // Re-index order
+  return finalQuestions.map((q, idx) => ({
+    ...q,
+    id: `${quizId}-cumulative-${idx}`,
+    order_index: idx
+  }));
+}
+

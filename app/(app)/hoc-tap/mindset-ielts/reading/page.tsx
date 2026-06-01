@@ -58,43 +58,34 @@ export default async function ReadingPage() {
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {lessons.map((lesson) => {
-          const hasVideo = !!lesson.youtube_video_id;
           const unitMatch = lesson.title.match(/U(\d+)/i);
           const unit = unitMatch?.[1] ?? '?';
 
           const card = (
-            <div className={`group flex flex-col gap-3 rounded-2xl border p-5 backdrop-blur-md transition-all duration-200 ${
-              hasVideo
-                ? 'border-slate-800 bg-slate-900/30 hover:border-amber-500/40 hover:bg-slate-900/60 hover:shadow-lg cursor-pointer'
-                : 'border-slate-800 bg-slate-900/20 cursor-default'
-            }`}>
+            <div className="group flex flex-col gap-3 rounded-2xl border p-5 backdrop-blur-md transition-all duration-200 border-slate-800 bg-slate-900/30 hover:border-amber-500/40 hover:bg-slate-900/60 hover:shadow-lg cursor-pointer h-full">
               <div className="flex items-center justify-between">
                 <span className="rounded-md bg-amber-950/60 px-2 py-0.5 text-[10px] font-bold text-amber-400 border border-amber-900/40 uppercase">
                   Unit {unit}
                 </span>
                 <span className="text-[10px] text-slate-500">Buổi {lesson.lesson_index}</span>
               </div>
-              <h3 className="text-sm font-semibold text-white leading-snug group-hover:text-amber-400 transition-colors">
+              <h3 className="text-sm font-semibold text-white leading-snug group-hover:text-amber-400 transition-colors font-display">
                 {lesson.title.replace(/^Buổi \d+:\s*/, '')}
               </h3>
               {lesson.page_hint && (
-                <p className="text-[11px] text-slate-500">📖 {lesson.page_hint}</p>
+                <p className="text-[11px] text-slate-500 font-medium">📖 {lesson.page_hint}</p>
               )}
               <p className="mt-auto text-[11px] text-slate-400 leading-relaxed line-clamp-2">
                 {lesson.summary?.replace(/\[.*?\]/g, '').trim() || 'Luyện đọc hiểu theo chủ đề Unit.'}
               </p>
-              {hasVideo && (
-                <span className="text-xs font-semibold text-sky-400 group-hover:text-sky-300 transition-colors">
-                  🎧 Xem video →
-                </span>
-              )}
+              <span className="text-xs font-semibold text-sky-400 group-hover:text-sky-300 transition-colors mt-2">
+                📖 Học đọc hiểu ngay →
+              </span>
             </div>
           );
 
-          return hasVideo ? (
-            <Link key={lesson.id} href={`/listening/${lesson.id}`}>{card}</Link>
-          ) : (
-            <div key={lesson.id}>{card}</div>
+          return (
+            <Link key={lesson.id} href={`/reading/${lesson.id}`}>{card}</Link>
           );
         })}
       </div>

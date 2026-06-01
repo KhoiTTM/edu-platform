@@ -44,6 +44,7 @@ export default async function MindsetIELTSPage() {
           .map(n => ({
             id: n.id,
             title: n.title,
+            slug: n.slug,
             lesson_index: n.sort_key,
             youtube_video_id: n.metadata?.youtube_id,
             skill_focus: n.metadata?.skill_focus,
@@ -121,29 +122,37 @@ export default async function MindsetIELTSPage() {
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {byUnit[unit].map((lesson) => {
               const hasVideo = !!lesson.youtube_video_id;
-              const skill = (lesson.skill_focus || 'reading') as string;
-              const skillColor = SKILL_COLORS[skill] ?? SKILL_COLORS.reading;
-              const href = hasVideo ? `/listening/${lesson.id}` : '#';
-
+              const skill = (lesson.skill_focus || '').toLowerCase();
+              
               // Parse skill tags from title
               const skillLabels: string[] = [];
-              if (/listening|nghe/i.test(lesson.title)) skillLabels.push('Listening');
-              if (/speaking|nói/i.test(lesson.title)) skillLabels.push('Speaking');
-              if (/reading|đọc/i.test(lesson.title)) skillLabels.push('Reading');
-              if (/writing|viết/i.test(lesson.title)) skillLabels.push('Writing');
-              if (/grammar|ngữ pháp|vocabulary/i.test(lesson.title)) skillLabels.push('Grammar');
+              if (skill === 'listening' || /listening|nghe/i.test(lesson.title)) skillLabels.push('Listening');
+              if (skill === 'speaking' || /speaking|nói/i.test(lesson.title)) skillLabels.push('Speaking');
+              if (skill === 'reading' || /reading|đọc/i.test(lesson.title)) skillLabels.push('Reading');
+              if (skill === 'writing' || /writing|viết/i.test(lesson.title)) skillLabels.push('Writing');
+              if (skill === 'grammar' || /grammar|ngữ pháp|vocabulary|từ vựng/i.test(lesson.title)) skillLabels.push('Grammar');
+
+              const mainSkill = skillLabels[0]?.toLowerCase() || 'reading';
+
+              // Every lesson card maps to the coordinator client page
+              const href = `/learn/mindset-ielts/${lesson.slug}`;
+              const isActive = true;
 
               const card = (
-                <div className={`group flex flex-col gap-3 rounded-2xl border bg-slate-900/30 p-4 backdrop-blur-md transition-all duration-200 ${
-                  hasVideo
+                <div className={`group flex flex-col gap-3 rounded-2xl border bg-slate-900/30 p-4 backdrop-blur-md transition-all duration-200 h-full ${
+                  isActive
                     ? 'border-slate-800 hover:border-sky-500/40 hover:bg-slate-900/60 hover:shadow-lg hover:shadow-sky-950/20 cursor-pointer'
-                    : 'border-slate-800/50 opacity-70 cursor-not-allowed'
+                    : 'border-slate-800/50 opacity-60 cursor-not-allowed'
                 }`}>
                   <div className="flex items-start justify-between gap-2">
                     <span className="text-[10px] font-bold text-slate-500">Buổi {lesson.lesson_index}</span>
-                    {hasVideo ? (
+                    {mainSkill === 'listening' && hasVideo ? (
                       <span className="flex items-center gap-1 rounded-full bg-sky-500/10 px-2 py-0.5 text-[10px] font-semibold text-sky-400 border border-sky-500/20">
                         🎧 Có bài nghe
+                      </span>
+                    ) : isActive ? (
+                      <span className="rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-semibold text-emerald-400 border border-emerald-500/20">
+                        ✓ Sẵn sàng
                       </span>
                     ) : (
                       <span className="rounded-full bg-slate-800 px-2 py-0.5 text-[10px] text-slate-500 border border-slate-700">
@@ -152,7 +161,7 @@ export default async function MindsetIELTSPage() {
                     )}
                   </div>
 
-                  <h3 className={`text-sm font-semibold leading-snug transition-colors ${hasVideo ? 'text-white group-hover:text-sky-400' : 'text-slate-400'}`}>
+                  <h3 className={`text-sm font-semibold leading-snug transition-colors ${isActive ? 'text-white group-hover:text-sky-400' : 'text-slate-500'}`}>
                     {lesson.title.replace(/^Buổi \d+:\s*/, '')}
                   </h3>
 
@@ -162,7 +171,7 @@ export default async function MindsetIELTSPage() {
 
                   {/* Skill tags parsed from title */}
                   {skillLabels.length > 0 && (
-                    <div className="flex flex-wrap gap-1.5">
+                    <div className="flex flex-wrap gap-1.5 mt-auto pt-2">
                       {skillLabels.map(s => (
                         <span key={s} className={`rounded-full border px-2 py-0.5 text-[10px] font-medium ${SKILL_COLORS[s.toLowerCase()] ?? SKILL_COLORS.reading}`}>
                           {s}
@@ -171,17 +180,17 @@ export default async function MindsetIELTSPage() {
                     </div>
                   )}
 
-                  {hasVideo && (
-                    <div className="mt-auto pt-1">
+                  {isActive && (
+                    <div className="pt-1">
                       <span className="inline-flex items-center gap-1 text-xs font-semibold text-sky-400 group-hover:text-sky-300 transition-colors">
-                        Vào phòng luyện nghe →
+                        Vào phòng học ngay →
                       </span>
                     </div>
                   )}
                 </div>
               );
 
-              return hasVideo ? (
+              return isActive ? (
                 <Link key={lesson.id} href={href}>{card}</Link>
               ) : (
                 <div key={lesson.id}>{card}</div>

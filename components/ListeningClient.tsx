@@ -20,12 +20,13 @@ interface Props {
   questions: QuizQuestion[];
   /** Student display name — passed from server page for Aria to greet by name */
   studentName?: string;
+  backUrl?: string;
 }
 
 type SessionPhase = "warmup" | "listen" | "explore" | "speak" | "check";
 const PHASE_ORDER: SessionPhase[] = ["warmup", "listen", "explore", "speak", "check"];
 
-export function ListeningClient({ lesson, transcript, questions, studentName = "bạn" }: Props) {
+export function ListeningClient({ lesson, transcript, questions, studentName = "bạn", backUrl = "/hoc-tap/mindset-ielts/listening" }: Props) {
   // ── Session Phase State (Replacing old tabs) ──────────────────────────────
   const [sessionPhase, setSessionPhase] = useState<SessionPhase>("warmup");
   const [highestPhase, setHighestPhase] = useState<number>(0);
@@ -100,6 +101,22 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
 
   return (
     <div className="space-y-6">
+      {/* ── HEADER BACK ROW ─────────────────────────────────────────────────── */}
+      <div className="flex items-center gap-3 bg-slate-900/40 p-3 rounded-2xl border border-slate-800 shadow backdrop-blur">
+        <Link
+          href={backUrl}
+          className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-white transition"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+          </svg>
+        </Link>
+        <div>
+          <span className="text-[10px] font-bold text-slate-500 uppercase block tracking-wider">Học Kỹ Năng Nghe</span>
+          <span className="text-xs font-bold text-sky-400">Quay lại Buổi học chính</span>
+        </div>
+      </div>
+
       {/* ── PHASE PROGRESS INDICATOR ────────────────────────────────────────── */}
       {sessionPhase !== "warmup" && (
         <div className="flex items-center justify-center gap-3 py-2">
