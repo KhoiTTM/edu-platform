@@ -28,16 +28,16 @@ const AssessmentCard = ({
 
   const content = (
     <motion.div
-      whileHover={!isLocked ? { scale: 1.03, y: -4 } : {}}
-      whileTap={!isLocked ? { scale: 0.97 } : {}}
+      whileHover={(!isLocked && !isCompleted) ? { scale: 1.03, y: -4 } : {}}
+      whileTap={(!isLocked && !isCompleted) ? { scale: 0.97 } : {}}
       className={clsx(
         "relative flex flex-col p-5 rounded-2xl text-white transition-all duration-300 w-full h-full border border-white/10 backdrop-blur-sm",
-        isLocked ? "bg-slate-800/50" : unitColor,
-        isLocked ? "shadow-md" : unitShadow,
+        isLocked ? "bg-slate-800/50" : (isCompleted ? "bg-slate-900/60" : unitColor),
+        isLocked ? "shadow-md" : (isCompleted ? "shadow-inner border-white/5" : unitShadow),
         isLocked ? "cursor-not-allowed opacity-80" : "cursor-pointer",
-        isCompleted && !isLocked && "opacity-60 grayscale-[40%]"
+        isCompleted && !isLocked && "opacity-40 grayscale"
       )}
-      style={!isLocked ? { boxShadow: `0 8px 32px 0 ${unitGlow}, inset 0 0 20px rgba(255,255,255,0.2)` } : {}}
+      style={(!isLocked && !isCompleted) ? { boxShadow: `0 8px 32px 0 ${unitGlow}, inset 0 0 20px rgba(255,255,255,0.2)` } : {}}
     >
       {isCompleted && (
         <div className="absolute top-2 right-2 bg-emerald-500/90 text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider z-10 shadow-sm backdrop-blur-sm">
@@ -105,6 +105,18 @@ export default function SubjectMapPage() {
       }
       loadData();
     }
+
+    const handlePageShow = () => {
+      try {
+        const stored = JSON.parse(localStorage.getItem('completed_exams') || '[]');
+        setCompletedExams(stored);
+      } catch(e) {}
+    };
+
+    window.addEventListener('pageshow', handlePageShow);
+    return () => {
+      window.removeEventListener('pageshow', handlePageShow);
+    };
   }, [subject]);
 
   if (!mounted || !subject) return (
