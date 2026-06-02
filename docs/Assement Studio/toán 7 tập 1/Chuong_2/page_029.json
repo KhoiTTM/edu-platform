@@ -1,0 +1,23 @@
+{
+  "page": 29,
+  "lesson_title": "Bài tập (Bài 5: Làm quen với số thập phân vô hạn tuần hoàn)",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "2.1",
+      "question": "Trong các số thập phân sau, số nào là số thập phân hữu hạn? Số nào là số thập phân vô hạn tuần hoàn?\n0,1; -1,23; 0,142857142857...; 0,020202...",
+      "answer": "- Hữu hạn: 0,1; -1,23.\n- Vô hạn tuần hoàn: 0,142857142857... (chu kì 142857); 0,020202... (chu kì 02)."
+    },
+    {
+      "id": "2.2",
+      "question": "Sử dụng chu kì để viết gọn các số thập phân vô hạn tuần hoàn sau: a) 1,123123...; b) -0,02121...",
+      "answer": "a) 1,(123);\nb) -0,0(21)."
+    },
+    {
+      "id": "2.3",
+      "question": "Viết các phân số sau dưới dạng số thập phân rồi cho biết chu kì của nó: a) $\\frac{1}{4}; \\frac{4}{11}$.",
+      "answer": "a) $\\frac{1}{4} = 0,25$ (không có chu kì);\nb) $\\frac{4}{11} = 0,3636... = 0,(36)$ (chu kì 36)."
+    }
+  ]
+}

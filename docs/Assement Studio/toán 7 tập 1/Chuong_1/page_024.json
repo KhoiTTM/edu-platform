@@ -1,0 +1,18 @@
+{
+  "page": 24,
+  "lesson_title": "Luyện tập chung (Chương 1 - tiếp theo)",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "1.33",
+      "question": "Tính một cách hợp lí: a) $A = \\frac{5}{9} \\cdot \\frac{7}{13} + \\frac{5}{9} \\cdot \\frac{9}{13} - \\frac{5}{9} \\cdot \\frac{3}{13}$; b) $B = \\left( \\frac{1}{3} - \\frac{5}{11} \\right) \\cdot \\frac{11}{8}$.",
+      "answer": "a) $A = \\frac{5}{9} \\cdot (\\frac{7}{13} + \\frac{9}{13} - \\frac{3}{13}) = \\frac{5}{9} \\cdot 1 = \\frac{5}{9}$.\nb) $B = (\\frac{11 - 15}{33}) \\cdot \\frac{11}{8} = \\frac{-4}{33} \\cdot \\frac{11}{8} = \\frac{-1}{3} \\cdot \\frac{1}{2} = \\frac{-1}{6}$."
+    },
+    {
+      "id": "1.34",
+      "question": "Đặt một vòi nước chảy vào bể chưa có nước. Giờ thứ nhất vòi chảy được $\\frac{1}{2}$ bể, giờ thứ hai vòi chảy được $\\frac{1}{3}$ bể. Hỏi sau hai giờ vòi nước đó chảy được bao nhiêu phần bể?",
+      "answer": "Sau hai giờ vòi nước chảy được: $\\frac{1}{2} + \\frac{1}{3} = \\frac{5}{6}$ (bể)."
+    }
+  ]
+}

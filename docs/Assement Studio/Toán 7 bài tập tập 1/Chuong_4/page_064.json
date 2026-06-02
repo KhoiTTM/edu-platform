@@ -1,0 +1,17 @@
+{
+  "page": 64,
+  "chapter": "Chương IV: Tam giác bằng nhau",
+  "lesson_title": "Bài tập (Bài 14 - tiếp theo)",
+  "exercises": [
+    {
+      "id": "4.30",
+      "question": "Cho hình 4.19. Biết OA = OB, $\\widehat{OAM} = \\widehat{OBM}$. Chứng minh rằng $\\triangle OAM = \\triangle OBM$.",
+      "answer": "Xét $\\triangle OAM$ và $\\triangle OBM$, ta có:\nOA = OB (theo giả thiết);\n$\\widehat{OAM} = \\widehat{OBM}$ (theo giả thiết);\nOM là cạnh chung.\nVậy $\\triangle OAM = \\triangle OBM$ (c.g.c)."
+    },
+    {
+      "id": "4.31",
+      "question": "Cho tam giác ABC có $\\widehat{B} = \\widehat{C}$. Kẻ tia phân giác AD của góc A ($D \\in BC$). Chứng minh rằng $\\triangle ABD = \\triangle ACD$.",
+      "answer": "Trong tam giác ABD: $\\widehat{ADB} = 180^\\circ - (\\widehat{BAD} + \\widehat{ABD})$.\nTrong tam giác ACD: $\\widehat{ADC} = 180^\\circ - (\\widehat{CAD} + \\widehat{ACD})$.\nVì AD là tia phân giác của $\\widehat{A}$ nên $\\widehat{BAD} = \\widehat{CAD}$.\nLại có $\\widehat{ABD} = \\widehat{ACD}$ (theo giả thiết $\\widehat{B} = \\widehat{C}$).\nSuy ra $\\widehat{ADB} = \\widehat{ADC}$.\nXét $\\triangle ABD$ và $\\triangle ACD$, ta có:\n$\\widehat{BAD} = \\widehat{CAD}$ (chứng minh trên);\nAD là cạnh chung;\n$\\widehat{ADB} = \\widehat{ADC}$ (chứng minh trên).\nVậy $\\triangle ABD = \\triangle ACD$ (g.c.g)."
+    }
+  ]
+}

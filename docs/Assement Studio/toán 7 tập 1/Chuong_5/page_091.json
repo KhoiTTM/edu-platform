@@ -1,0 +1,23 @@
+{
+  "page": 90,
+  "lesson_title": "Bài 18: Thu thập và phân loại dữ liệu (tiếp theo)",
+  "theory": [
+    {
+      "subtitle": "Tính hợp lí của dữ liệu",
+      "content": "Để đánh giá tính hợp lí của dữ liệu, ta cần dựa vào các tiêu chí như:\n- Dữ liệu phải nằm trong phạm vi dự kiến.\n- Dữ liệu phải phù hợp với các kiến thức thực tế.\n- Dữ liệu phải có định dạng đúng."
+    }
+  ],
+  "examples": [
+    {
+      "question": "Ví dụ 3: Một danh sách ghi chiều cao (đơn vị cm) của 5 học sinh lớp 7 như sau: 145; 152; 148; 250; 155. Dữ liệu nào là không hợp lí?",
+      "solution": "Số 250 là không hợp lí vì chiều cao của học sinh lớp 7 không thể đạt đến 250 cm (2,5 mét)."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "Luyện tập 2",
+      "question": "Tìm các điểm không hợp lí trong các dữ liệu sau:\na) Danh sách số điện thoại: 0912345678, 123, 0987654321.\nb) Điểm kiểm tra môn Toán: 8; 10; 7; -2; 9.",
+      "answer": "a) Số 123 không hợp lí (vì số điện thoại thường có 10 chữ số).\nb) Số -2 không hợp lí (vì điểm kiểm tra thường từ 0 đến 10)."
+    }
+  ]
+}

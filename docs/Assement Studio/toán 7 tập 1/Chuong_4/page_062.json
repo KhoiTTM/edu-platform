@@ -1,0 +1,19 @@
+{
+  "page": 61,
+  "lesson_title": "Bài 13: Hai tam giác bằng nhau. Trường hợp bằng nhau thứ nhất của tam giác",
+  "objective": "Sau bài học này, em sẽ: Hiểu định nghĩa hai tam giác bằng nhau. Giải thích được trường hợp bằng nhau thứ nhất của tam giác: cạnh - cạnh - cạnh. Biết cách sử dụng trường hợp bằng nhau c.c.c để chứng minh hai tam giác bằng nhau.",
+  "theory": [
+    {
+      "subtitle": "1. Hai tam giác bằng nhau",
+      "content": "Hai tam giác bằng nhau là hai tam giác có các cạnh tương ứng bằng nhau và các góc tương ứng bằng nhau.\nVí dụ: $\\Delta ABC$ và $\\Delta A'B'C'$ bằng nhau nếu:\n- $AB = A'B', BC = B'C', AC = A'C'$;\n- $\\widehat{A} = \\widehat{A'}, \\widehat{B} = \\widehat{B'}, \\widehat{C} = \\widehat{C'}$.\nKí hiệu: $\\Delta ABC = \\Delta A'B'C'$."
+    }
+  ],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "HĐ1",
+      "question": "Cho hai tam giác ABC và A'B'C' (H.4.10). Dùng thước thẳng và thước đo góc để kiểm tra xem các cạnh và các góc tương ứng có bằng nhau không.",
+      "answer": "Kết quả đo cho thấy các cặp cạnh và cặp góc tương ứng bằng nhau."
+    }
+  ]
+}

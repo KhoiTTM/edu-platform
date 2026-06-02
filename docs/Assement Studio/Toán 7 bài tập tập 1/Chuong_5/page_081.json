@@ -1,0 +1,17 @@
+{
+  "page": 81,
+  "chapter": "Chương V: Thu thập và biểu diễn dữ liệu",
+  "lesson_title": "Bài tập (Bài 18: Biểu đồ hình quạt tròn)",
+  "exercises": [
+    {
+      "id": "5.11",
+      "question": "Biểu đồ hình 5.1 cho biết tỉ lệ phần trăm các loại trái cây bán được trong một ngày tại một cửa hàng.\na) Loại trái cây nào bán được nhiều nhất?\nb) Loại trái cây nào bán được ít nhất?\nc) Biết tổng số trái cây bán được trong ngày là 200 kg. Tính khối lượng mỗi loại trái cây bán được.",
+      "answer": "a) Loại trái cây bán được nhiều nhất là Cam (40%);\nb) Loại trái cây bán được ít nhất là Xoài (10%);\nc) Khối lượng mỗi loại:\n- Cam: $200 \\cdot 40\\% = 80$ (kg);\n- Táo: $200 \\cdot 30\\% = 60$ (kg);\n- Chuối: $200 \\cdot 20\\% = 40$ (kg);\n- Xoài: $200 \\cdot 10\\% = 20$ (kg)."
+    },
+    {
+      "id": "5.12",
+      "question": "Cho biểu đồ hình quạt tròn biểu diễn tỉ lệ phần trăm học sinh tham gia các câu lạc bộ (H.5.2). Em hãy cho biết:\na) Có bao nhiêu câu lạc bộ được học sinh tham gia?\nb) Câu lạc bộ nào có tỉ lệ học sinh tham gia cao nhất?\nc) Tổng tỉ lệ phần trăm của các câu lạc bộ có bằng 100% không?",
+      "answer": "a) Có 4 câu lạc bộ: Bóng đá, Bơi lội, Cầu lông, Cờ vua;\nb) Câu lạc bộ Bóng đá có tỉ lệ tham gia cao nhất (35%);\nc) Có, tổng tỉ lệ: $35\\% + 25\\% + 20\\% + 20\\% = 100\\%$."
+    }
+  ]
+}

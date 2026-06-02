@@ -1,0 +1,23 @@
+{
+  "page": 35,
+  "lesson_title": "Bài 7: Tập hợp các số thực (tiếp theo)",
+  "theory": [
+    {
+      "subtitle": "3. Giá trị tuyệt đối của một số thực",
+      "content": "Khoảng cách từ điểm $x$ trên trục số đến điểm gốc 0 gọi là giá trị tuyệt đối của số thực $x$, kí hiệu là $|x|$.\n- Nếu $x > 0$ thì $|x| = x$.\n- Nếu $x < 0$ thì $|x| = -x$.\n- Nếu $x = 0$ thì $|x| = 0$."
+    }
+  ],
+  "examples": [
+    {
+      "question": "Ví dụ 2: Tính: a) $|\\sqrt{2}|$; b) $|-3,5|$.",
+      "solution": "a) $|\\sqrt{2}| = \\sqrt{2}$ (vì $\\sqrt{2} > 0$);\nb) $|-3,5| = -(-3,5) = 3,5$ (vì $-3,5 < 0$)."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "Luyện tập 2",
+      "question": "Tính: a) $|-0,25|$; b) $|\\sqrt{5}|$; c) $|0|$.",
+      "answer": "a) $0,25$; b) $\\sqrt{5}$; c) $0$."
+    }
+  ]
+}

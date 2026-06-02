@@ -1,0 +1,22 @@
+{
+  "page": 54,
+  "chapter": "Chương IV: Tam giác bằng nhau",
+  "lesson_title": "Bài tập (Bài 12 - tiếp theo)",
+  "exercises": [
+    {
+      "id": "4.7",
+      "question": "Cho tam giác ABC vuông tại A. Tia phân giác của $\\widehat{B}$ cắt cạnh AC tại D. Tính số đo $\\widehat{ADB}$ biết $\\widehat{C} = 40^\\circ$.",
+      "answer": "Trong tam giác ABC vuông tại A: $\\widehat{B} = 90^\\circ - 40^\\circ = 50^\\circ$.\nVì BD là tia phân giác của $\\widehat{B}$ nên $\\widehat{ABD} = \\frac{50^\\circ}{2} = 25^\\circ$.\nTrong tam giác ABD vuông tại A: $\\widehat{ADB} = 90^\\circ - 25^\\circ = 65^\\circ$."
+    },
+    {
+      "id": "4.8",
+      "question": "Cho tam giác ABC có $\\widehat{A} = 70^\\circ, \\widehat{B} - \\widehat{C} = 20^\\circ$. Tính số đo $\\widehat{B}, \\widehat{C}$.",
+      "answer": "Ta có $\\widehat{B} + \\widehat{C} = 180^\\circ - 70^\\circ = 110^\\circ$.\nKết hợp với $\\widehat{B} - \\widehat{C} = 20^\\circ$, ta có:\n$2\\widehat{B} = 110^\\circ + 20^\\circ = 130^\\circ \\Rightarrow \\widehat{B} = 65^\\circ$.\n$\\widehat{C} = 110^\\circ - 65^\\circ = 45^\\circ$."
+    },
+    {
+      "id": "4.9",
+      "question": "Cho tam giác ABC có $\\widehat{A} = 90^\\circ$. Gọi d là đường thẳng đi qua C và vuông góc với BC. Đường thẳng qua B và song song với AC cắt d tại D. Chứng minh rằng $\\widehat{BDC} = \\widehat{ABC}$.",
+      "answer": "Vì $AC \\parallel BD$ nên $\\widehat{ACB} = \\widehat{CBD}$ (hai góc so le trong).\nTrong tam giác ABC vuông tại A, ta có $\\widehat{ABC} + \\widehat{ACB} = 90^\\circ$.\nSuy ra $\\widehat{ABC} + \\widehat{CBD} = 90^\\circ$ hay $\\widehat{ABD} = 90^\\circ$.\nVì $CD \\perp BC$ nên $\\widehat{BCD} = 90^\\circ$.\nTrong tam giác BCD, ta có $\\widehat{BDC} = 180^\\circ - (\\widehat{CBD} + \\widehat{BCD}) = 180^\\circ - (\\widehat{CBD} + 90^\\circ) = 90^\\circ - \\widehat{CBD}$.\nMà $\\widehat{CBD} = \\widehat{ACB}$ nên $\\widehat{BDC} = 90^\\circ - \\widehat{ACB} = \\widehat{ABC}$."
+    }
+  ]
+}

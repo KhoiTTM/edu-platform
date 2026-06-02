@@ -1,0 +1,67 @@
+{
+  "page": 94,
+  "chapter": "Chương V: Thu thập và biểu diễn dữ liệu",
+  "lesson_title": "Ôn tập chương V",
+  "exercises": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "question": "Dữ liệu nào sau đây là số liệu?",
+      "options": [
+        "A. Tên các loài động vật",
+        "B. Chiều cao của các học sinh",
+        "C. Xếp loại học lực",
+        "D. Màu sắc yêu thích"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "2",
+      "type": "multiple_choice",
+      "question": "Biểu đồ hình quạt tròn dùng để:",
+      "options": [
+        "A. Biểu diễn sự thay đổi theo thời gian",
+        "B. So sánh các phần trong toàn bộ dữ liệu",
+        "C. Liệt kê các đối tượng",
+        "D. Tính toán các giá trị số"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "3",
+      "type": "multiple_choice",
+      "question": "Biểu đồ đoạn thẳng thường dùng để:",
+      "options": [
+        "A. So sánh các phần trong toàn bộ dữ liệu",
+        "B. Biểu diễn sự thay đổi của một đại lượng theo thời gian",
+        "C. Phân loại dữ liệu",
+        "D. Thu thập dữ liệu"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "4",
+      "type": "multiple_choice",
+      "question": "Trên biểu đồ đoạn thẳng, mốc thời gian thường được biểu diễn trên:",
+      "options": [
+        "A. Trục thẳng đứng",
+        "B. Trục nằm ngang",
+        "C. Các điểm biểu diễn",
+        "D. Các đoạn thẳng"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "5",
+      "type": "multiple_choice",
+      "question": "Trong các dữ liệu sau, dữ liệu nào không hợp lí?",
+      "options": [
+        "A. Tuổi của học sinh lớp 7: 12, 13, 14, 15",
+        "B. Điểm kiểm tra: 7, 8, 9, 11",
+        "C. Tên các bạn: An, Bình, Hòa",
+        "D. Số học sinh của lớp: 35, 40, 42"
+      ],
+      "answer": "B"
+    }
+  ]
+}

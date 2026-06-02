@@ -1,0 +1,67 @@
+{
+  "page": 47,
+  "chapter": "Chương III: Hình học trực quan. Các hình khối trong thực tiễn",
+  "lesson_title": "Ôn tập chương III",
+  "exercises": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "question": "Hình lăng trụ đứng tam giác có bao nhiêu mặt?",
+      "options": [
+        "A. 3",
+        "B. 4",
+        "C. 5",
+        "D. 6"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "2",
+      "type": "multiple_choice",
+      "question": "Hình lăng trụ đứng tứ giác có bao nhiêu cạnh?",
+      "options": [
+        "A. 4",
+        "B. 8",
+        "C. 10",
+        "D. 12"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "3",
+      "type": "multiple_choice",
+      "question": "Một hình lăng trụ đứng tứ giác có diện tích đáy là 25 $cm^2$, chiều cao là 6 cm. Thể tích của nó là:",
+      "options": [
+        "A. 150 $cm^2$",
+        "B. 150 $cm^3$",
+        "C. 31 $cm^3$",
+        "D. 100 $cm^3$"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "4",
+      "type": "multiple_choice",
+      "question": "Một hình lăng trụ đứng tam giác có chu vi đáy là 12 cm, chiều cao là 10 cm. Diện tích xung quanh của nó là:",
+      "options": [
+        "A. 120 $cm^2$",
+        "B. 60 $cm^2$",
+        "C. 12 $cm^2$",
+        "D. 22 $cm^2$"
+      ],
+      "answer": "A"
+    },
+    {
+      "id": "5",
+      "type": "multiple_choice",
+      "question": "Trong một hình lăng trụ đứng, các mặt bên là:",
+      "options": [
+        "A. Các hình tam giác",
+        "B. Các hình lăng trụ",
+        "C. Các hình vuông",
+        "D. Các hình chữ nhật"
+      ],
+      "answer": "D"
+    }
+  ]
+}

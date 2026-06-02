@@ -1,0 +1,17 @@
+{
+  "page": 91,
+  "chapter": "Chương V: Thu thập và biểu diễn dữ liệu",
+  "lesson_title": "Luyện tập chung",
+  "exercises": [
+    {
+      "id": "5.29",
+      "question": "Kết quả đánh giá mức độ tin tưởng vào thông tin trên mạng xã hội của một nhóm người được cho trong bảng sau:\n\n| Mức độ | Số người |\n| :--- | :---: |\n| Rất tin tưởng | 15 |\n| Tin tưởng | 45 |\n| Bình thường | 30 |\n| Không tin tưởng | 10 |\n\na) Dữ liệu trên thuộc loại nào?\nb) Tính tỉ lệ phần trăm cho mỗi mức độ đánh giá.\nc) Vẽ biểu đồ hình quạt tròn biểu diễn các tỉ lệ đó.",
+      "answer": "a) Dữ liệu định tính, có thể sắp thứ tự;\nb) Tổng số người: $15 + 45 + 30 + 10 = 100$ (người).\nTỉ lệ phần trăm:\n- Rất tin tưởng: 15%;\n- Tin tưởng: 45%;\n- Bình thường: 30%;\n- Không tin tưởng: 10%;\nc) Học sinh tự vẽ biểu đồ hình quạt tròn."
+    },
+    {
+      "id": "5.30",
+      "question": "Biểu đồ hình 5.15 biểu diễn sản lượng lúa của nước ta từ năm 2010 đến năm 2020.\na) Sản lượng lúa năm nào cao nhất? Năm nào thấp nhất?\nb) Em có nhận xét gì về sản lượng lúa của nước ta trong giai đoạn này?",
+      "answer": "a) Sản lượng lúa cao nhất vào năm 2015 (45,1 triệu tấn); thấp nhất vào năm 2010 (40 triệu tấn);\nb) Nhận xét: Sản lượng lúa có xu hướng tăng trong giai đoạn 2010 - 2015, sau đó có sự dao động nhẹ nhưng vẫn duy trì ở mức cao (trên 42 triệu tấn)."
+    }
+  ]
+}

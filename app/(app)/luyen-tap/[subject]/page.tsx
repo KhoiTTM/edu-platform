@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import clsx from "clsx";
 import { getAssessmentMap } from "../actions";
-import { useParams } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
 import { Sparkles, Star, ChevronRight } from "lucide-react";
 
 const AssessmentCard = ({
@@ -82,7 +82,10 @@ const AssessmentCard = ({
 
 export default function SubjectMapPage() {
   const params = useParams();
+  const searchParams = useSearchParams();
   const subject = params.subject as string;
+  const gradeParam = searchParams.get("grade");
+  const gradeNum = gradeParam ? parseInt(gradeParam, 10) : undefined;
   const [mounted, setMounted] = useState(false);
   const [volumes, setVolumes] = useState<any[]>([]);
   const [completedExams, setCompletedExams] = useState<string[]>([]);
@@ -95,7 +98,7 @@ export default function SubjectMapPage() {
     if (subject) {
       async function loadData() {
           setIsLoading(true);
-          const data = await getAssessmentMap(subject);
+          const data = await getAssessmentMap(subject, gradeNum);
           setVolumes(data);
           try {
             const stored = JSON.parse(localStorage.getItem('completed_exams') || '[]');
@@ -117,7 +120,7 @@ export default function SubjectMapPage() {
     return () => {
       window.removeEventListener('pageshow', handlePageShow);
     };
-  }, [subject]);
+  }, [subject, gradeNum]);
 
   if (!mounted || !subject) return (
     <div className="flex items-center justify-center h-full bg-slate-900 text-white">

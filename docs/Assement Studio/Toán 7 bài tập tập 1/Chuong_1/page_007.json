@@ -1,0 +1,23 @@
+{
+  "page": 7,
+  "lesson_title": "Bài tập (Bài 1: Tập hợp các số hữu tỉ)",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "1.1",
+      "question": "Trong các khẳng định sau, khẳng định nào đúng? Khẳng định nào sai?\na) Số hữu tỉ âm nhỏ hơn số hữu tỉ dương;\nb) Số hữu tỉ âm nhỏ hơn số tự nhiên;\nc) Số 0 là số hữu tỉ dương;\nd) Số nguyên âm không phải là số hữu tỉ âm;\ne) Tập hợp $\\mathbb{Q}$ gồm các số hữu tỉ dương và các số hữu tỉ âm.",
+      "answer": "a) Đúng; b) Đúng; c) Sai; d) Sai; e) Sai (thiếu số 0)."
+    },
+    {
+      "id": "1.2",
+      "question": "Điền kí hiệu ($\\in, \\notin$) thích hợp vào ô vuông:\n$-7 \\square \\mathbb{N}$; $-7 \\square \\mathbb{Z}$; $-7 \\square \\mathbb{Q}$; $\\frac{-3}{5} \\square \\mathbb{Z}$; $\\frac{-3}{5} \\square \\mathbb{Q}$",
+      "answer": "$-7 \\notin \\mathbb{N}$; $-7 \\in \\mathbb{Z}$; $-7 \\in \\mathbb{Q}$; $\\frac{-3}{5} \\notin \\mathbb{Z}$; $\\frac{-3}{5} \\in \\mathbb{Q}$."
+    },
+    {
+      "id": "1.3",
+      "question": "Nối mỗi dòng ở cột bên trái với một dòng ở cột bên phải để được khẳng định đúng:\na) $\\frac{0}{-8}$ | 1) Là số hữu tỉ âm\nb) $\\frac{-7}{-5}$ | 2) Là số hữu tỉ dương\nc) $\\frac{-2}{9}$ | 3) Không là số hữu tỉ âm, cũng không là số hữu tỉ dương\nd) $\\frac{5}{0}$ | 4) Không là số hữu tỉ",
+      "answer": "a - 3; b - 2; c - 1; d - 4."
+    }
+  ]
+}

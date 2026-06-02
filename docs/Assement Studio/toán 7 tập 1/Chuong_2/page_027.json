@@ -1,0 +1,24 @@
+{
+  "page": 27,
+  "lesson_title": "Bài 5: Làm quen với số thập phân vô hạn tuần hoàn",
+  "objective": "Sau bài học này, em sẽ: Nhận biết được số thập phân vô hạn tuần hoàn. Viết được phân số dưới dạng số thập phân hữu hạn hoặc vô hạn tuần hoàn.",
+  "theory": [
+    {
+      "subtitle": "1. Số thập phân hữu hạn và số thập phân vô hạn tuần hoàn",
+      "content": "Thực hiện phép chia $3 : 4 = 0,75$. Đây là số thập phân hữu hạn.\nThực hiện phép chia $5 : 3 = 1,666...$. Đây là số thập phân vô hạn tuần hoàn. Chữ số 6 được lặp lại vô tận và gọi là chu kì. Ta viết gọn là $1,(6)$."
+    }
+  ],
+  "examples": [
+    {
+      "question": "Ví dụ 1: Viết các phân số $\\frac{1}{4}; \\frac{1}{6}$ dưới dạng số thập phân.",
+      "solution": "$\\frac{1}{4} = 0,25$ (hữu hạn).\n$\\frac{1}{6} = 0,1666... = 0,1(6)$ (vô hạn tuần hoàn chu kì 6)."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "HĐ1",
+      "question": "Sử dụng máy tính cầm tay để viết các phân số sau dưới dạng số thập phân: $\\frac{5}{8}; \\frac{-7}{20}; \\frac{1}{9}; \\frac{15}{11}$.",
+      "answer": "$\\frac{5}{8} = 0,625$; $\\frac{-7}{20} = -0,35$; $\\frac{1}{9} = 0,111... = 0,(1)$; $\\frac{15}{11} = 1,3636... = 1,(36)$."
+    }
+  ]
+}

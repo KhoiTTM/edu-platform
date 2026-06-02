@@ -1,0 +1,22 @@
+{
+  "page": 69,
+  "chapter": "Chương IV: Tam giác bằng nhau",
+  "lesson_title": "Bài tập (Bài 15: Các trường hợp bằng nhau của tam giác vuông)",
+  "exercises": [
+    {
+      "id": "4.40",
+      "question": "Trong mỗi hình dưới đây (H.4.25), hãy chỉ ra các cặp tam giác vuông bằng nhau. Giải thích vì sao.",
+      "answer": "- Hình a: $\\triangle ABC = \\triangle DEF$ (cạnh huyền - góc nhọn) vì BC = EF và $\\widehat{B} = \\widehat{E}$.\n- Hình b: $\\triangle GHI = \\triangle KLM$ (cạnh huyền - cạnh góc vuông) vì GI = KM và GH = KL."
+    },
+    {
+      "id": "4.41",
+      "question": "Cho hình 4.26. Biết AB = AC, $AD \\perp BC$ ($D \\in BC$). Chứng minh rằng $\\triangle ABD = \\triangle ACD$.",
+      "answer": "Xét tam giác vuông ABD và tam giác vuông ACD có:\nAB = AC (theo giả thiết);\nAD là cạnh chung.\nVậy $\\triangle ABD = \\triangle ACD$ (cạnh huyền - cạnh góc vuông)."
+    },
+    {
+      "id": "4.42",
+      "question": "Cho hình 4.27. Biết $AD \\perp BC$ ($D \\in BC$), $\\widehat{BAD} = \\widehat{CAD}$. Chứng minh rằng $\\triangle ABD = \\triangle ACD$.",
+      "answer": "Xét tam giác vuông ABD và tam giác vuông ACD có:\nAD là cạnh chung;\n$\\widehat{BAD} = \\widehat{CAD}$ (theo giả thiết).\nVậy $\\triangle ABD = \\triangle ACD$ (cạnh góc vuông - góc nhọn kề)."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "page": 33,
+  "lesson_title": "Bài 7: Tập hợp các số thực",
+  "objective": "Sau bài học này, em sẽ: Nhận biết được số thực và tập hợp các số thực. Nhận biết được thứ tự trong tập hợp các số thực. Nhận biết được giá trị tuyệt đối của một số thực.",
+  "theory": [
+    {
+      "subtitle": "1. Khái niệm số thực",
+      "content": "Số hữu tỉ và số vô tỉ được gọi chung là số thực. Tập hợp các số thực được kí hiệu là $\\mathbb{R}$.\nNhư vậy, mọi số hữu tỉ đều là số thực. Ta có các quan hệ bao hàm giữa các tập hợp số: $\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}$."
+    }
+  ],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "HĐ1",
+      "question": "Cách viết nào sau đây là đúng: $\\sqrt{2} \\in \\mathbb{Q}; \\sqrt{2} \\in \\mathbb{R}; \\pi \\in \\mathbb{R}; -2,3 \\in \\mathbb{R}$?",
+      "answer": "- $\\sqrt{2} \\in \\mathbb{Q}$ là Sai (vì $\\sqrt{2}$ là số vô tỉ).\n- $\\sqrt{2} \\in \\mathbb{R}$ là Đúng.\n- $\\pi \\in \\mathbb{R}$ là Đúng.\n- $-2,3 \\in \\mathbb{R}$ là Đúng."
+    }
+  ]
+}

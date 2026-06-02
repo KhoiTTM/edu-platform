@@ -1,0 +1,17 @@
+{
+  "page": 95,
+  "chapter": "Chương V: Thu thập và biểu diễn dữ liệu",
+  "lesson_title": "Ôn tập chương V (tiếp theo)",
+  "exercises": [
+    {
+      "id": "5.35",
+      "question": "Kết quả khảo sát về môn thể thao yêu thích của các bạn học sinh trong một tổ được cho trong bảng sau:\n\n| Môn thể thao | Bóng đá | Cầu lông | Bơi lội | Bóng rổ |\n| :--- | :---: | :---: | :---: | :---: |\n| Số bạn chọn | 5 | 3 | 2 | 2 |\n\na) Dữ liệu trên thuộc loại nào?\nb) Tính tỉ lệ phần trăm cho mỗi môn thể thao.\nc) Vẽ biểu đồ hình quạt tròn biểu diễn các tỉ lệ đó.",
+      "answer": "a) Dữ liệu định tính, không sắp thứ tự;\nb) Tổng số bạn: $5 + 3 + 2 + 2 = 12$ (bạn).\nTỉ lệ phần trăm:\n- Bóng đá: $(5/12) \\cdot 100\\% \\approx 41,7\\%$;\n- Cầu lông: $(3/12) \\cdot 100\\% = 25\\%$;\n- Bơi lội: $(2/12) \\cdot 100\\% \\approx 16,7\\%$;\n- Bóng rổ: $(2/12) \\cdot 100\\% \\approx 16,7\\%$;\nc) Học sinh tự vẽ biểu đồ hình quạt tròn."
+    },
+    {
+      "id": "5.36",
+      "question": "Biểu đồ hình 5.20 biểu diễn số lượng giày bán được của một cửa hàng trong các tháng cuối năm.\na) Doanh số bán hàng tăng mạnh nhất trong khoảng thời gian nào?\nb) Em có nhận xét gì về tình hình kinh doanh của cửa hàng qua biểu đồ này?",
+      "answer": "a) Doanh số bán hàng tăng mạnh nhất trong giai đoạn từ tháng 11 đến tháng 12;\nb) Nhận xét: Cửa hàng có kết quả kinh doanh tốt, doanh số có xu hướng tăng dần vào các tháng cuối năm, đặc biệt là tháng 12 (có thể do nhu cầu mua sắm chuẩn bị cho các dịp lễ Tết)."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "page": 73,
+  "lesson_title": "Luyện tập chung (Chương 4 - tiếp theo)",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "4.19",
+      "question": "Cho Hình 4.32, biết $\\widehat{O_1} = \\widehat{O_2}$, $\\widehat{A} = \\widehat{B}$. Chứng minh rằng $OA = OB$.",
+      "answer": "Xét $\\Delta OAC$ và $\\Delta OBC$ có:\n- $\\widehat{O_1} = \\widehat{O_2}$ (giả thiết);\n- $OC$ là cạnh chung;\n- $\\widehat{A} = \\widehat{B} \\implies \\widehat{C_1} = \\widehat{C_2}$ (vì tổng ba góc trong tam giác bằng $180^\\circ$).\n$\\implies \\Delta OAC = \\Delta OBC$ (g.c.g) $\\implies OA = OB$ (hai cạnh tương ứng)."
+    },
+    {
+      "id": "4.20",
+      "question": "Cho tam giác ABC. Các tia phân giác của góc B và góc C cắt nhau tại I. Chứng minh rằng nếu $\\widehat{B} = \\widehat{C}$ thì $IB = IC$.",
+      "answer": "Sử dụng các trường hợp bằng nhau của tam giác để chứng minh $\\Delta IBC$ có hai góc đáy bằng nhau hoặc qua các tam giác phụ."
+    }
+  ]
+}

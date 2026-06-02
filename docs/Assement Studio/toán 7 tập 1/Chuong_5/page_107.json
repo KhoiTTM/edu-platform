@@ -1,0 +1,13 @@
+{
+  "page": 106,
+  "lesson_title": "Luyện tập chung (Chương 5 - tiếp theo)",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "5.20",
+      "question": "Biểu đồ Hình 5.19 cho biết tỉ lệ phần trăm các loại cây trong một khu vườn: Cây ăn quả (45%), Cây bóng mát (35%), Cây hoa (20%). Nếu tổng số cây là 200 cây, tính số cây mỗi loại.",
+      "answer": "- Cây ăn quả: $200 \cdot 45\% = 90$ cây.\n- Cây bóng mát: $200 \cdot 35\% = 70$ cây.\n- Cây hoa: $200 \cdot 20\% = 40$ cây."
+    }
+  ]
+}

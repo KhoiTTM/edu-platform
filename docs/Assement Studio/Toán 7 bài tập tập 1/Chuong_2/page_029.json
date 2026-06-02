@@ -1,0 +1,34 @@
+{
+  "page": 29,
+  "chapter": "Chương II: Số thực",
+  "lesson_title": "Bài 7: Tập hợp các số thực",
+  "exercises": [
+    {
+      "id": "2.16",
+      "question": "Tìm x, biết:\na) $x^2 = 16$;\nb) $x^2 = 5$;\nc) $x^2 = 0$.",
+      "answer": "a) $x = 4$ hoặc $x = -4$;\nb) $x = \\sqrt{5}$ hoặc $x = -\\sqrt{5}$;\nc) $x = 0$."
+    },
+    {
+      "id": "2.17",
+      "question": "Dùng máy tính cầm tay để tính các căn bậc hai số học sau (làm tròn đến chữ số thập phân thứ hai):\na) $\\sqrt{15}$;\nb) $\\sqrt{2,5}$;\nc) $\\sqrt{10,24}$.",
+      "answer": "a) $\\sqrt{15} \\approx 3,87$;\nb) $\\sqrt{2,5} \\approx 1,58$;\nc) $\\sqrt{10,24} = 3,2$."
+    },
+    {
+      "id": "2.18",
+      "question": "Biết $\\sqrt{2} = 1,41421356...$. Hãy làm tròn $\\sqrt{2}$ đến chữ số thập phân thứ ba.",
+      "answer": "1,414."
+    }
+  ],
+  "theory": [
+    {
+      "subtitle": "A. Kiến thức cần nhớ",
+      "content": "- Tập hợp các số thực gồm các số hữu tỉ và các số vô tỉ. Kí hiệu là $\\mathbb{R}$.\n- Mỗi số thực được biểu diễn bởi một điểm trên trục số và ngược lại. Trục số còn được gọi là trục số thực.\n- Thứ tự trong tập hợp các số thực: Với hai số thực a và b bất kì, ta luôn có a = b hoặc a < b hoặc a > b.\n- Giá trị tuyệt đối của một số thực x, kí hiệu |x|, là khoảng cách từ điểm x đến điểm 0 trên trục số.\n  |x| = x nếu x \u2265 0; |x| = -x nếu x < 0."
+    }
+  ],
+  "skills": [
+    {
+      "subtitle": "B. Kĩ năng giải toán",
+      "content": "- Sử dụng các kí hiệu tập hợp \u2208, \u2209, \u2282.\n- So sánh các số thực.\n- Tính giá trị tuyệt đối của một số thực."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "page": 22,
+  "lesson_title": "Bài tập (Bài 4: Quy tắc chuyển vế)",
+  "theory": [
+    {
+      "subtitle": "Thứ tự thực hiện các phép tính",
+      "content": "- Với biểu thức không có dấu ngoặc:\n  + Nếu chỉ có phép cộng, trừ hoặc chỉ có phép nhân, chia, ta thực hiện phép tính theo thứ tự từ trái sang phải.\n  + Nếu có các phép tính cộng, trừ, nhân, chia, nâng lên lũy thừa, ta thực hiện phép nâng lên lũy thừa trước, rồi đến nhân và chia, cuối cùng đến cộng và trừ.\n- Với biểu thức có dấu ngoặc: Ta thực hiện trong ngoặc tròn () trước, rồi đến ngoặc vuông [], cuối cùng là ngoặc nhọn {}."
+    }
+  ],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "1.26",
+      "question": "Tìm $x$, biết: a) $x + 0,25 = \\frac{1}{2}$; b) $x - \\left( -\\frac{5}{7} \\right) = \\frac{9}{14}$.",
+      "answer": "a) $x = 0,5 - 0,25 = 0,25$.\nb) $x + \\frac{5}{7} = \\frac{9}{14} \\implies x = \\frac{9}{14} - \\frac{10}{14} = -\\frac{1}{14}$."
+    },
+    {
+      "id": "1.27",
+      "question": "Tính hợp lí: a) $A = \\left( \\frac{3}{8} - \\frac{5}{6} \\right) + \\frac{1}{3} + \\frac{5}{8}$; b) $B = \\frac{1}{2} \\cdot \\frac{4}{7} + \\frac{1}{2} \\cdot \\frac{3}{7}$.",
+      "answer": "a) $A = (\\frac{3}{8} + \\frac{5}{8}) + (-\\frac{5}{6} + \\frac{2}{6}) = 1 - \\frac{3}{6} = 0,5$.\nb) $B = \\frac{1}{2} \\cdot (\\frac{4}{7} + \\frac{3}{7}) = \\frac{1}{2} \\cdot 1 = 0,5$."
+    }
+  ]
+}

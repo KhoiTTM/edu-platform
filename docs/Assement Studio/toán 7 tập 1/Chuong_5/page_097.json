@@ -1,0 +1,18 @@
+{
+  "page": 96,
+  "lesson_title": "Bài tập (Bài 19: Biểu đồ hình quạt tròn)",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "5.7",
+      "question": "Biểu đồ Hình 5.8 cho biết tỉ lệ chi tiêu hàng tháng của một gia đình: Ăn uống (40%), Giáo dục (20%), Tiết kiệm (15%), Khác (25%). Nếu thu nhập hàng tháng là 10 triệu đồng, hãy tính số tiền gia đình đó dành cho ăn uống.",
+      "answer": "Số tiền dành cho ăn uống là: $10 \\cdot 40\\% = 4$ triệu đồng."
+    },
+    {
+      "id": "5.8",
+      "question": "Cho bảng số liệu về các loại phương tiện học sinh dùng để đến trường: Xe đạp (40%), Xe buýt (30%), Đi bộ (20%), Khác (10%). Hãy vẽ biểu đồ hình quạt tròn biểu diễn bảng số liệu này.",
+      "answer": "Học sinh thực hiện vẽ biểu đồ tròn chia làm 4 phần với tỉ lệ 40%, 30%, 20%, 10%."
+    }
+  ]
+}

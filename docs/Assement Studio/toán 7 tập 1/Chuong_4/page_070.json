@@ -1,0 +1,23 @@
+{
+  "page": 69,
+  "lesson_title": "Bài 15: Trường hợp bằng nhau thứ ba của tam giác: góc - cạnh - góc (tiếp theo)",
+  "theory": [
+    {
+      "subtitle": "Áp dụng vào tam giác vuông",
+      "content": "- Nếu một cạnh góc vuông và một góc nhọn kề cạnh ấy của tam giác vuông này bằng một cạnh góc vuông và một góc nhọn kề cạnh ấy của tam giác vuông kia thì hai tam giác vuông đó bằng nhau (g.c.g).\n- Nếu cạnh huyền và một góc nhọn của tam giác vuông này bằng cạnh huyền và một góc nhọn của tam giác vuông kia thì hai tam giác vuông đó bằng nhau (g.c.g)."
+    }
+  ],
+  "examples": [
+    {
+      "question": "Ví dụ 1: Cho Hình 4.25, chứng minh rằng $\\Delta ABC = \\Delta ABD$.",
+      "solution": "Xét $\\Delta ABC$ và $\\Delta ABD$ có:\n- $\\widehat{CAB} = \\widehat{DAB}$ (giả thiết);\n- $AB$ là cạnh chung;\n- $\\widehat{CBA} = \\widehat{DBA}$ (giả thiết).\nVậy $\\Delta ABC = \\Delta ABD$ (g.c.g)."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "Luyện tập 1",
+      "question": "Cho Hình 4.26, hãy chỉ ra các cặp tam giác bằng nhau.",
+      "answer": "Dựa vào trường hợp g.c.g để xác định các cặp tam giác bằng nhau trong hình."
+    }
+  ]
+}

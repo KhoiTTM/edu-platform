@@ -80,6 +80,9 @@ export type QuizQuestion = {
   correct_index: number;
   order_index: number;
   explanation: string | null;
+  type?: 'multiple_choice' | 'fill_in_blank' | 'matching';
+  correct_answer?: string;
+  exercise_title?: string;
 };
 
 export type QuizAttempt = {

@@ -1,0 +1,22 @@
+{
+  "page": 40,
+  "chapter": "Chương III: Hình học trực quan. Các hình khối trong thực tiễn",
+  "lesson_title": "Bài tập (Bài 8 - tiếp theo)",
+  "exercises": [
+    {
+      "id": "3.13",
+      "question": "Một chiếc máng có dạng hình lăng trụ đứng tứ giác có đáy là hình thang cân (H.3.8).\na) Tính diện tích đáy của chiếc máng.\nb) Tính thể tích của chiếc máng.",
+      "answer": "a) Diện tích đáy (hình thang cân): $S_{đáy} = \\frac{(60 + 30) \\cdot 25}{2} = 1125$ ($cm^2$);\nb) Thể tích chiếc máng: $V = S_{đáy} \\cdot h = 1125 \\cdot 120 = 135000$ ($cm^3$)."
+    },
+    {
+      "id": "3.14",
+      "question": "Một hộp quà có dạng hình lăng trụ đứng tứ giác có đáy là hình thoi cạnh 6 cm, độ dài hai đường chéo là 6 cm và $6\\sqrt{3}$ cm. Chiều cao của hộp quà là 10 cm. Tính diện tích xung quanh của hộp quà.",
+      "answer": "Chu vi đáy: $C = 6 \\cdot 4 = 24$ (cm).\nDiện tích xung quanh: $S_{xq} = C \\cdot h = 24 \\cdot 10 = 240$ ($cm^2$)."
+    },
+    {
+      "id": "3.15",
+      "question": "Tính thể tích của hình lăng trụ đứng tứ giác có đáy là hình thang vuông với các cạnh đáy là 4 cm, 6 cm, cạnh bên vuông góc với hai đáy là 3 cm và chiều cao của hình lăng trụ là 7 cm.",
+      "answer": "Diện tích đáy (hình thang vuông): $S_{đáy} = \\frac{(4 + 6) \\cdot 3}{2} = 15$ ($cm^2$).\nThể tích: $V = S_{đáy} \\cdot h = 15 \\cdot 7 = 105$ ($cm^3$)."
+    }
+  ]
+}

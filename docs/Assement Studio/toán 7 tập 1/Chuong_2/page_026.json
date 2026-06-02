@@ -1,0 +1,13 @@
+{
+  "page": 26,
+  "lesson_title": "Chương 2: Số thực",
+  "objective": "Chương này giúp em: Làm quen với số thập phân vô hạn tuần hoàn. Nhận biết số vô tỉ, số thực và căn bậc hai số học của một số không âm. Tính giá trị (đúng hoặc gần đúng) căn bậc hai số học của một số bằng máy tính cầm tay. Nhận biết thứ tự trong tập hợp các số thực và thực hiện ước lượng kết quả các phép tính. Nhận biết giá trị tuyệt đối của một số thực.",
+  "theory": [
+    {
+      "subtitle": "Giới thiệu chương",
+      "content": "Trong Chương 1, chúng ta đã tìm hiểu về tập hợp các số hữu tỉ ℚ. Tuy nhiên, trong thực tế có những độ dài không thể biểu diễn bằng số hữu tỉ. Chương 2 sẽ giới thiệu về số thực, bao gồm cả số hữu tỉ và số vô tỉ."
+    }
+  ],
+  "examples": [],
+  "exercises": []
+}

@@ -23,12 +23,12 @@ interface Props {
   backUrl?: string;
 }
 
-type SessionPhase = "warmup" | "listen" | "book" | "explore" | "speak" | "check";
-const PHASE_ORDER: SessionPhase[] = ["warmup", "listen", "book", "explore", "speak", "check"];
+type SessionPhase = "listen" | "book" | "explore" | "speak" | "check";
+const PHASE_ORDER: SessionPhase[] = ["listen", "book", "explore", "speak", "check"];
 
 export function ListeningClient({ lesson, transcript, questions, studentName = "bạn", backUrl = "/hoc-tap/mindset-ielts/listening" }: Props) {
   // ── Session Phase State (Replacing old tabs) ──────────────────────────────
-  const [sessionPhase, setSessionPhase] = useState<SessionPhase>("warmup");
+  const [sessionPhase, setSessionPhase] = useState<SessionPhase>("listen");
   const [highestPhase, setHighestPhase] = useState<number>(0);
 
   const changePhase = (newPhase: SessionPhase) => {
@@ -58,14 +58,21 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
 
   // Quiz state
   const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
-  const [selectedAnswers, setSelectedAnswers] = useState<Record<string, number>>({});
+  const [selectedAnswers, setSelectedAnswers] = useState<Record<string, number | string>>({});
+  const [inputValue, setInputValue] = useState("");
+  useEffect(() => {
+    if (questions[currentQuestionIdx]) {
+      const qId = questions[currentQuestionIdx].id;
+      setInputValue(String(selectedAnswers[qId] ?? ""));
+    }
+  }, [currentQuestionIdx, questions, selectedAnswers]);
   const [quizSubmitted, setQuizSubmitted] = useState(false);
   const [quizScore, setQuizScore] = useState(0);
 
   // Lesson info for AI context
   const unitNumber = lesson.title.match(/U(\d+)/i)?.[1] ?? "1";
   const sessionInfo = { title: lesson.title, summary: lesson.summary ?? lesson.page_hint ?? "" };
-  const handleAnswerSelect = (questionId: string, optionIdx: number) => {
+  const handleAnswerSelect = (questionId: string, optionIdx: number | string) => {
     if (quizSubmitted) return;
     setSelectedAnswers((prev) => ({ ...prev, [questionId]: optionIdx }));
   };
@@ -85,8 +92,16 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
   const submitQuiz = () => {
     let score = 0;
     questions.forEach((q) => {
-      if (selectedAnswers[q.id] === q.correct_index) {
-        score += 1;
+      if (q.type === 'fill_in_blank') {
+        const userAns = String(selectedAnswers[q.id] || "").trim().toLowerCase();
+        const correctAns = String(q.correct_answer || "").trim().toLowerCase();
+        if (userAns === correctAns) {
+          score += 1;
+        }
+      } else {
+        if (selectedAnswers[q.id] === q.correct_index) {
+          score += 1;
+        }
       }
     });
     setQuizScore(score);
@@ -119,52 +134,38 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
       </div>
 
       {/* ── PHASE PROGRESS INDICATOR ────────────────────────────────────────── */}
-      {sessionPhase !== "warmup" && (
-        <div className="flex items-center justify-center gap-3 py-2">
-          {(["listen", "book", "explore", "speak", "check"] as const).map((p, idx) => {
-            const phases: Record<SessionPhase, number> = { warmup: 0, listen: 1, book: 2, explore: 3, speak: 4, check: 5 };
-            const isActive = p === sessionPhase;
-            const isDone = phases[sessionPhase] > phases[p];
-            const isAccessible = phases[p] <= highestPhase;
-            
-            return (
-              <div key={p} className="flex items-center gap-3">
-                <button 
-                  onClick={() => isAccessible && changePhase(p)}
-                  disabled={!isAccessible}
-                  className={`flex flex-col items-center gap-1.5 transition-all ${isAccessible ? "cursor-pointer hover:opacity-80" : "cursor-not-allowed opacity-30"}`}
-                >
-                  <div className={`h-2.5 w-2.5 rounded-full transition-all duration-500 ${
-                    isActive ? "bg-sky-500 ring-4 ring-sky-500/20 scale-125" : 
-                    isDone ? "bg-emerald-500" : isAccessible ? "bg-sky-900/50" : "bg-slate-800"
-                  }`} />
-                  <span className={`text-[9px] font-bold uppercase tracking-tighter transition-colors ${
-                    isActive ? "text-sky-400" : isDone ? "text-emerald-500" : isAccessible ? "text-sky-900" : "text-slate-600"
-                  }`}>
-                    {p === 'book' ? 'textbook' : p}
-                  </span>
-                </button>
-                {idx < 4 && <div className={`h-[1px] w-8 sm:w-12 mb-4 transition-colors ${isDone ? "bg-emerald-500/50" : "bg-slate-800"}`} />}
-              </div>
-            );
-          })}
-        </div>
-      )}
-
-      {/* ── WARMUP PHASE ───────────────────────────────────────────────────── */}
-      {sessionPhase === "warmup" && (
-        <AITeacherChat
-          mode="warmup"
-          sessionInfo={sessionInfo}
-          studentName={studentName}
-          onWarmupComplete={() => setSessionPhase("listen")}
-        />
-      )}
+      <div className="flex items-center justify-center gap-3 py-2">
+        {(["listen", "book", "explore", "speak", "check"] as const).map((p, idx) => {
+          const phases: Record<SessionPhase, number> = { listen: 0, book: 1, explore: 2, speak: 3, check: 4 };
+          const isActive = p === sessionPhase;
+          const isDone = phases[sessionPhase] > phases[p];
+          const isAccessible = phases[p] <= highestPhase;
+          
+          return (
+            <div key={p} className="flex items-center gap-3">
+              <button 
+                onClick={() => isAccessible && changePhase(p)}
+                disabled={!isAccessible}
+                className={`flex flex-col items-center gap-1.5 transition-all ${isAccessible ? "cursor-pointer hover:opacity-80" : "cursor-not-allowed opacity-30"}`}
+              >
+                <div className={`h-2.5 w-2.5 rounded-full transition-all duration-500 ${
+                  isActive ? "bg-sky-500 ring-4 ring-sky-500/20 scale-125" : 
+                  isDone ? "bg-emerald-500" : isAccessible ? "bg-sky-900/50" : "bg-slate-800"
+                }`} />
+                <span className={`text-[9px] font-bold uppercase tracking-tighter transition-colors ${
+                  isActive ? "text-sky-400" : isDone ? "text-emerald-500" : isAccessible ? "text-sky-900" : "text-slate-600"
+                }`}>
+                  {p === 'book' ? 'textbook' : p}
+                </span>
+              </button>
+              {idx < 3 && <div className={`h-[1px] w-8 sm:w-12 mb-4 transition-colors ${isDone ? "bg-emerald-500/50" : "bg-slate-800"}`} />}
+            </div>
+          );
+        })}
+      </div>
 
       {/* ── MAIN SESSION (hidden during warmup) ────────────────────────────── */}
-      <div className={`grid gap-8 lg:grid-cols-12 lg:items-start lg:gap-8 transition-all duration-500 ${
-        sessionPhase !== "warmup" ? "opacity-100" : "opacity-0 pointer-events-none select-none h-0 overflow-hidden"
-      }`}>
+      <div className="grid gap-8 lg:grid-cols-12 lg:items-start lg:gap-8 transition-all duration-500">
       {/* LEFT COLUMN: Video Player & Step Navigation (Col span 7) */}
       <div className="lg:col-span-7 space-y-6">
         
@@ -558,15 +559,27 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
             </h3>
             <div className="space-y-4 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">
               {questions.map((q, idx) => {
-                const isCorrect = selectedAnswers[q.id] === q.correct_index;
+                const userAns = selectedAnswers[q.id];
+                const isCorrect = q.type === 'fill_in_blank'
+                  ? String(userAns || "").trim().toLowerCase() === String(q.correct_answer || "").trim().toLowerCase()
+                  : userAns === q.correct_index;
+
+                const displayUserAns = q.type === 'fill_in_blank'
+                  ? String(userAns || "N/A")
+                  : q.options[userAns as number] || "N/A";
+
+                const displayCorrectAns = q.type === 'fill_in_blank'
+                  ? q.correct_answer
+                  : q.options[q.correct_index];
+
                 return (
                   <div key={q.id} className={`p-3.5 rounded-xl border ${isCorrect ? "border-emerald-950 bg-emerald-950/10" : "border-rose-950 bg-rose-950/10"}`}>
                     <p className="text-[11px] font-bold text-white">Q{idx + 1}: {q.question}</p>
                     <p className="mt-1 text-[11px] text-slate-300">
-                      Lựa chọn của em: <span className={isCorrect ? "text-emerald-400 font-bold" : "text-rose-400 font-bold"}>{q.options[selectedAnswers[q.id]] || "N/A"}</span>
+                      Lựa chọn của em: <span className={isCorrect ? "text-emerald-400 font-bold" : "text-rose-400 font-bold"}>{displayUserAns}</span>
                     </p>
                     <p className="mt-0.5 text-[11px] text-slate-300">
-                      Đáp án đúng: <span className="text-emerald-400 font-bold">{q.options[q.correct_index]}</span>
+                      Đáp án đúng: <span className="text-emerald-400 font-bold">{displayCorrectAns}</span>
                     </p>
                     <p className="mt-2 text-[10px] text-slate-400 leading-relaxed border-t border-slate-800/80 pt-1.5 italic">
                       🔍 Giải thích: {q.explanation}

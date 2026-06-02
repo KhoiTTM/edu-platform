@@ -1,0 +1,17 @@
+{
+  "page": 90,
+  "chapter": "Chương V: Thu thập và biểu diễn dữ liệu",
+  "lesson_title": "Bài tập (Bài 19 - tiếp theo)",
+  "exercises": [
+    {
+      "id": "5.27",
+      "question": "Biểu đồ hình 5.13 cho biết tỉ lệ phần trăm khách du lịch đến một tỉnh theo các quý trong năm 2019.\na) Quý nào có lượng khách du lịch đến cao nhất?\nb) Tính số lượng khách du lịch trong mỗi quý, biết tổng số khách du lịch cả năm là 2 triệu lượt người.",
+      "answer": "a) Quý 3 có lượng khách du lịch cao nhất (40%);\nb) Số lượng khách mỗi quý:\n- Quý 1: $2 \\cdot 20\\% = 0,4$ (triệu lượt người);\n- Quý 2: $2 \\cdot 25\\% = 0,5$ (triệu lượt người);\n- Quý 3: $2 \\cdot 40\\% = 0,8$ (triệu lượt người);\n- Quý 4: $2 \\cdot 15\\% = 0,3$ (triệu lượt người)."
+    },
+    {
+      "id": "5.28",
+      "question": "Dựa vào biểu đồ hình 5.14, hãy so sánh xu hướng thay đổi diện tích rừng trồng của nước ta trong giai đoạn 2010 - 2018.",
+      "answer": "Dựa vào biểu đồ ta thấy:\n- Diện tích rừng trồng của nước ta có xu hướng tăng liên tục từ năm 2010 đến năm 2018.\n- Giai đoạn 2015 - 2018 tăng mạnh hơn giai đoạn 2010 - 2015.\n- Năm 2018 diện tích đạt khoảng 4,2 triệu ha, tăng đáng kể so với mức khoảng 3,1 triệu ha năm 2010."
+    }
+  ]
+}

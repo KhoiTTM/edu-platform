@@ -1,0 +1,16 @@
+{
+  "page": 27,
+  "lesson_title": "Bài 6: Số vô tỉ. Căn bậc hai số học (tiếp theo)",
+  "examples": [
+    {
+      "id": "Ví dụ 1",
+      "question": "Viết các số tự nhiên liên tiếp theo thứ tự từ nhỏ đến lớn 01234567891011... và thêm dấu phẩy ngay sau chữ số 0 đầu tiên ta được số $a = 0,1234567891011...$ Số này là số thập phân vô hạn tuần hoàn? Vì sao?",
+      "solution": "Số $a$ là số thập phân vô hạn. Nếu $a$ tuần hoàn, chu kì của nó phải chứa toàn chữ số 0 (do trong dãy số tự nhiên sẽ xuất hiện chuỗi số 0 dài tùy ý), khi đó $a$ là số thập phân hữu hạn (vô lí). Vậy $a$ là số vô tỉ."
+    },
+    {
+      "id": "Ví dụ 2",
+      "question": "a) Tổng, hiệu, tích của hai số hữu tỉ là số hữu tỉ hay vô tỉ? Thương của một số hữu tỉ với một số hữu tỉ khác 0 là số hữu tỉ hay vô tỉ?\nb) Tìm hai số vô tỉ $x, y$ sao cho $x + y$ và $x - y$ đều là số hữu tỉ.\nc) Có hay không hai số vô tỉ $x, y$ với $y \\neq 0$ sao cho $x + y$ và $x : y$ đều là số hữu tỉ?",
+      "solution": "a) Đều là số hữu tỉ.\nb) Không có hai số vô tỉ nào mà cả tổng và hiệu đều là số hữu tỉ (vì khi đó $x = [(x+y)+(x-y)]/2$ sẽ là số hữu tỉ).\nc) Có, ví dụ $x = \\sqrt{2}, y = -\\sqrt{2}$ thì $x+y=0$ và $x/y=-1$ đều là số hữu tỉ."
+    }
+  ]
+}

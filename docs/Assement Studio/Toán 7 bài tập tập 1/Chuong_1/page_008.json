@@ -1,0 +1,21 @@
+{
+  "page": 8,
+  "lesson_title": "Bài tập (Bài 1 - tiếp theo)",
+  "exercises": [
+    {
+      "id": "1.6",
+      "question": "Các điểm A, B, C, D (H.1.3) lần lượt biểu diễn các số hữu tỉ nào?",
+      "answer": "A biểu diễn -1/2; B biểu diễn -1/3; C biểu diễn 1/3; D biểu diễn 1."
+    },
+    {
+      "id": "1.7",
+      "question": "Hãy biểu diễn hai số hữu tỉ $\\frac{4}{5}$ và $-\\frac{1}{2}$ trên cùng một trục số.",
+      "answer": "Quy đồng mẫu số: 4/5 = 8/10; -1/2 = -5/10. Chia đoạn đơn vị thành 10 phần và biểu diễn."
+    },
+    {
+      "id": "1.8",
+      "question": "Chỉ ra hai phân số có mẫu bằng 7, lớn hơn $\\frac{-3}{8}$ và nhỏ hơn $\\frac{1}{8}$.",
+      "answer": "Ta có -3/8 = -21/56; 1/8 = 7/56. Các phân số mẫu 7 là x/7 = 8x/56. Cần -21 < 8x < 7. Chọn x = -1, x = -2. Vậy hai phân số là -1/7 và -2/7."
+    }
+  ]
+}

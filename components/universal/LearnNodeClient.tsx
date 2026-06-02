@@ -31,9 +31,44 @@ function GrammarTutorialRenderer({ content }: { content: string }) {
 
   if (!content) return <p className="text-slate-500 italic">Bài học này chưa có nội dung hướng dẫn từ AI.</p>;
 
-  // Helper to format inline tags (**bold**, *italic*, `code`)
+  // Helper to format inline tags (**bold**, *italic*, `code`, and $math$)
   const formatText = (text: string) => {
     let formatted = text
+      .replace(/\$([^\$]+)\$/g, (match, p1) => {
+        let math = p1
+          // Fractions \frac{A}{B}
+          .replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, '<span class="inline-flex flex-col text-center align-middle mx-0.5"><span class="border-b border-current px-0.5 text-[11px] leading-none pb-0.5">$1</span><span class="text-[11px] leading-none pt-0.5">$2</span></span>')
+          // Geometry & Trig symbols
+          .replace(/\\widehat\{([^{}]+)\}/g, '∠$1')
+          .replace(/\\circ/g, '°')
+          .replace(/\\parallel/g, '∥')
+          .replace(/\\perp/g, '⊥')
+          // Symbols
+          .replace(/\\in/g, '∈')
+          .replace(/\\neq/g, '≠')
+          .replace(/\\mathbb\{Z\}/g, 'ℤ')
+          .replace(/\\mathbb\{Q\}/g, 'ℚ')
+          .replace(/\\mathbb\{R\}/g, 'ℝ')
+          .replace(/\\mathbb\{N\}/g, 'ℕ')
+          .replace(/\\mathbb\{C\}/g, 'ℂ')
+          .replace(/\\notin/g, '∉')
+          .replace(/\\subset/g, '⊂')
+          .replace(/\\supset/g, '⊃')
+          .replace(/\\cap/g, '∩')
+          .replace(/\\cup/g, '∪')
+          .replace(/\\le/g, '≤')
+          .replace(/\\ge/g, '≥')
+          .replace(/\\times/g, '×')
+          .replace(/\\div/g, '÷')
+          .replace(/\\approx/g, '≈')
+          .replace(/\\pm/g, '±')
+          .replace(/\\infty/g, '∞')
+          // Subscripts & Superscripts
+          .replace(/\^\{?([^\{\}]+)\}?/g, '<sup>$1</sup>')
+          .replace(/_\{?([^\{\}]+)\}?/g, '<sub>$1</sub>');
+
+        return `<span class="font-mono text-amber-300 bg-amber-500/5 px-1 py-0.5 rounded border border-amber-500/10 italic">${math}</span>`;
+      })
       .replace(/`([^`]+)`/g, '<code class="bg-rose-500/10 border border-rose-500/20 text-rose-300 rounded px-1.5 py-0.5 font-mono text-[13px]">$1</code>')
       .replace(/\*\*([^*]+)\*\*/g, '<strong class="text-white font-extrabold">$1</strong>')
       .replace(/\*([^*]+)\*/g, '<span class="text-amber-400 font-medium italic">$1</span>');
@@ -87,7 +122,7 @@ function GrammarTutorialRenderer({ content }: { content: string }) {
     const blocks = sec.content.split('\n\n');
 
     if (sec.index === 1) {
-      // INTRO TAB: Large card style
+      // INTRO TAB: Large card style containing rich formatting
       return (
         <div className="space-y-6 animate-in fade-in slide-in-from-bottom-2 duration-300">
           <div className="rounded-3xl border border-rose-500/20 bg-gradient-to-br from-rose-950/10 via-slate-900/60 to-slate-950/80 p-8 shadow-2xl relative overflow-hidden">
@@ -102,6 +137,52 @@ function GrammarTutorialRenderer({ content }: { content: string }) {
                   {blocks.map((block, bidx) => {
                     const trimmed = block.trim();
                     if (!trimmed || trimmed === "---") return null;
+
+                    // Support lists in intro card
+                    if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
+                      const items = trimmed.split('\n').map(item => {
+                        const line = item.replace(/^[\-\*\s]+/, '').trim();
+                        const matchParts = line.match(/^\*\*([^*]+)\*\*:\s*(.*)/);
+                        if (matchParts) {
+                          return { key: matchParts[1], val: matchParts[2] };
+                        }
+                        return { key: "", val: line };
+                      });
+                      return (
+                        <div key={bidx} className="grid gap-3 sm:grid-cols-2 my-2">
+                          {items.map((item, iidx) => (
+                            <div key={iidx} className="p-3.5 rounded-2xl border border-slate-800 bg-slate-950/40 shadow-sm flex flex-col gap-1 hover:border-rose-500/10 transition">
+                              {item.key && (
+                                <span className="text-[11px] font-black text-rose-300">
+                                  {item.key}
+                                </span>
+                              )}
+                              <p className="text-[11px] text-slate-400 leading-relaxed font-light">
+                                {formatText(item.val)}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      );
+                    }
+
+                    // Support blockquotes in intro card
+                    if (trimmed.startsWith('> ')) {
+                      const lines = trimmed.split('\n').map(l => l.replace(/^>\s*/, '').replace(/`/g, '').trim()).filter(Boolean);
+                      return (
+                        <div key={bidx} className="my-3 rounded-2xl border border-slate-800 bg-slate-950/60 overflow-hidden shadow-lg">
+                          <div className="p-4 font-mono text-xs text-amber-300 space-y-1.5 bg-gradient-to-r from-slate-950 via-slate-900/30 to-slate-950">
+                            {lines.map((line, lidx) => (
+                              <p key={lidx} className="flex gap-2 leading-relaxed">
+                                <span className="text-rose-500/50 select-none">&gt;</span>
+                                {formatText(line)}
+                              </p>
+                            ))}
+                          </div>
+                        </div>
+                      );
+                    }
+
                     return <p key={bidx}>{formatText(trimmed)}</p>;
                   })}
                 </div>
@@ -420,6 +501,8 @@ export function LearnNodeClient({
   const [warmupCompleted, setWarmupCompleted] = useState<boolean>(false);
   const [bookCompleted, setBookCompleted] = useState<boolean>(false);
   const [chatGptPromptCopied, setChatGptPromptCopied] = useState<boolean>(false);
+  const [handcraftedExams, setHandcraftedExams] = useState<any[]>([]);
+  const [isFetchingHandcrafted, setIsFetchingHandcrafted] = useState<boolean>(true);
 
   useEffect(() => {
     const fetchProfile = async () => {
@@ -443,6 +526,61 @@ export function LearnNodeClient({
     };
     fetchProfile();
   }, []);
+
+  useEffect(() => {
+    if (!subjectSlug) return;
+    
+    const fetchHandcraftedExams = async () => {
+      setIsFetchingHandcrafted(true);
+      try {
+        const { createClient } = await import("@/lib/supabase/client");
+        const supabase = createClient();
+
+        // 1. Get Grade from breadcrumbs
+        const courseBreadcrumb = breadcrumbs.find(b => b.slug.startsWith('lop-') || b.slug.startsWith('grade-'));
+        const gradeNum = courseBreadcrumb 
+          ? parseInt(courseBreadcrumb.slug.replace(/^(lop|grade)-/, ''), 10) 
+          : 7;
+
+        // 2. Get Unit number from breadcrumbs
+        const unitBreadcrumb = breadcrumbs.find(b => b.slug.startsWith('chuong-') || b.slug.startsWith('unit-'));
+        const unitNum = unitBreadcrumb 
+          ? parseInt(unitBreadcrumb.slug.match(/(?:chuong|unit)-(\d+)/i)?.[1] || '1', 10) 
+          : 1;
+
+        // 3. Fetch assessment collections for subject and grade
+        const { data: collections } = await supabase
+          .from('assessment_collections')
+          .select(`
+            id,
+            units,
+            exams (
+              id,
+              title,
+              exam_number,
+              total_questions
+            )
+          `)
+          .eq('subject_slug', subjectSlug)
+          .eq('grade', gradeNum)
+          .eq('status', 'published');
+
+        if (collections) {
+          const matchingCollections = collections.filter((c: any) => c.units?.includes(unitNum)) || [];
+          const exams = matchingCollections
+            .flatMap((c: any) => c.exams || [])
+            .sort((a: any, b: any) => a.exam_number - b.exam_number);
+          setHandcraftedExams(exams);
+        }
+      } catch (err) {
+        console.error("Error fetching handcrafted exams:", err);
+      } finally {
+        setIsFetchingHandcrafted(false);
+      }
+    };
+
+    fetchHandcraftedExams();
+  }, [subjectSlug, breadcrumbs]);
 
   const [practiceSession, setPracticeSession] = useState<any>(null);
   const [quizSession, setQuizSession] = useState<any>(null);
@@ -1199,7 +1337,7 @@ export function LearnNodeClient({
                 onClick={() => currentPart !== 'quiz' && setCurrentPart(isGrammar ? 'ai-tutorial' : 'video')}
                 className={`py-2 rounded-xl transition ${currentPart === (isGrammar ? 'ai-tutorial' : 'video') ? 'bg-sky-500 text-white shadow' : 'text-slate-500 hover:text-slate-300'}`}
               >
-                {isGrammar ? '1. Hướng dẫn học AI' : '1. Bài giảng Video'}
+                {isGrammar ? (subjectSlug === 'toan' ? '1. Lý thuyết bài học' : '1. Hướng dẫn học AI') : '1. Bài giảng Video'}
               </button>
               <button 
                 onClick={() => currentPart !== 'quiz' && setCurrentPart('practice')}
@@ -1207,11 +1345,12 @@ export function LearnNodeClient({
               >
                 2. Luyện tập
               </button>
-              <div 
-                className={`py-2 rounded-xl transition ${currentPart === 'quiz' ? 'bg-amber-500 text-white shadow' : 'text-slate-500'}`}
+              <button 
+                onClick={() => setCurrentPart('quiz')}
+                className={`py-2 rounded-xl transition ${currentPart === 'quiz' ? 'bg-amber-500 text-white shadow' : 'text-slate-500 hover:text-slate-300'}`}
               >
                 3. Đánh giá tính điểm
-              </div>
+              </button>
             </div>
           )}
 
@@ -1286,7 +1425,50 @@ export function LearnNodeClient({
             </div>
           )}
 
-          {(currentPart === 'practice' || currentPart === 'quiz') && (() => {
+          {currentPart === 'quiz' && handcraftedExams.length > 0 ? (
+            <div className="space-y-6 animate-in fade-in duration-500">
+              <div className="p-8 rounded-[2rem] bg-slate-900/60 border-2 border-slate-800 backdrop-blur-xl relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-sky-500/10 blur-[100px] pointer-events-none" />
+                <div className="relative z-10">
+                  <h2 className="font-['Outfit'] text-2xl font-black text-white uppercase tracking-tight flex items-center gap-2 mb-2">
+                    🏆 Bài luyện tập tính điểm
+                  </h2>
+                  <p className="text-sm text-slate-400 mb-8 font-medium">
+                    Hãy lựa chọn một đề thi dưới đây để làm bài đánh giá tính điểm và tích lũy XP.
+                  </p>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {handcraftedExams.map((exam, index) => {
+                      return (
+                        <Link 
+                          key={exam.id}
+                          href={`/test-assessment?examId=${exam.id}`}
+                          className="group relative flex flex-col justify-between p-6 rounded-2xl bg-slate-950/40 border border-slate-850 hover:border-sky-500/50 hover:bg-slate-900/50 transition-all duration-300 hover:-translate-y-1 shadow-lg"
+                        >
+                          <div className="flex items-start gap-4">
+                            <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-sky-500/10 group-hover:bg-sky-500/20 text-sky-400 rounded-full font-black text-xl border border-sky-500/20">
+                              {index + 1}
+                            </div>
+                            <div className="space-y-1 flex-1">
+                              <h3 className="text-base font-bold text-white group-hover:text-sky-300 transition-colors leading-tight">
+                                {exam.title}
+                              </h3>
+                              <p className="text-xs text-slate-500 font-semibold uppercase tracking-wider">
+                                {exam.total_questions || 20} câu hỏi • Tính điểm tích lũy
+                              </p>
+                            </div>
+                          </div>
+                          <div className="mt-6 flex items-center justify-between text-xs font-bold uppercase tracking-widest text-sky-400 group-hover:text-sky-300">
+                            <span>Bắt đầu làm ➔</span>
+                          </div>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : (currentPart === 'practice' || currentPart === 'quiz') && (() => {
             const isLoading = isSubmitting || (currentPart === 'practice' ? isFetchingPractice : isFetchingQuiz);
             const activeSession = currentPart === 'practice' ? practiceSession : quizSession;
             return (

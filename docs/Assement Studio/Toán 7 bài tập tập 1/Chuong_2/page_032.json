@@ -1,0 +1,32 @@
+{
+  "page": 32,
+  "chapter": "Chương II: Số thực",
+  "lesson_title": "Luyện tập chung",
+  "exercises": [
+    {
+      "id": "2.30",
+      "question": "Cho x = 4,5(1). Hãy viết x dưới dạng hỗn số và dưới dạng phân số.",
+      "answer": "$x = 4,5(1) = 4,5 + 0,0(1) = \\frac{45}{10} + \\frac{1}{90} = \\frac{405 + 1}{90} = \\frac{406}{90} = \\frac{203}{45}$.\nHỗn số: $4\\frac{23}{45}$; Phân số: $\\frac{203}{45}$."
+    },
+    {
+      "id": "2.31",
+      "question": "Tính: $\\sqrt{(-\\sqrt{2})^2}$; $\\sqrt{2^2}$; $\\sqrt{(-2)^2}$.",
+      "answer": "$\\sqrt{(-\\sqrt{2})^2} = \\sqrt{2}$;\n$\\sqrt{2^2} = 2$;\n$\\sqrt{(-2)^2} = 2$."
+    },
+    {
+      "id": "2.32",
+      "question": "Cho $a = \\sqrt{4 + 2\\sqrt{3}}$ và $b = \\sqrt{4 - 2\\sqrt{3}}$.\na) Tính $a^2$ và $b^2$;\nb) Chứng tỏ rằng a - b = 2.\n(Gợi ý: Tính $(a-b)^2$ rồi suy ra a - b).",
+      "answer": "a) $a^2 = 4 + 2\\sqrt{3}$; $b^2 = 4 - 2\\sqrt{3}$;\nb) $(a-b)^2 = a^2 + b^2 - 2ab = (4 + 2\\sqrt{3}) + (4 - 2\\sqrt{3}) - 2\\sqrt{(4+2\\sqrt{3})(4-2\\sqrt{3})} = 8 - 2\\sqrt{16-12} = 8 - 2\\sqrt{4} = 8 - 4 = 4$.\nVì a > b nên a - b = 2."
+    },
+    {
+      "id": "2.33",
+      "question": "Tìm giá trị nhỏ nhất của biểu thức A = |x - 2| + |x - 5|.",
+      "answer": "A = |x - 2| + |5 - x| \u2265 |x - 2 + 5 - x| = 3. Dấu \"=\" xảy ra khi 2 \u2264 x \u2264 5. Vậy GTNN của A là 3."
+    },
+    {
+      "id": "2.34",
+      "question": "Tìm giá trị lớn nhất của biểu thức B = 10 - |x - 3|.",
+      "answer": "Vì |x - 3| \u2265 0 nên 10 - |x - 3| \u2264 10. Dấu \"=\" xảy ra khi x = 3. Vậy GTLN của B là 10."
+    }
+  ]
+}

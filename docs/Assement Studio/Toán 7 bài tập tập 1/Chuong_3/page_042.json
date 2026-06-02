@@ -1,0 +1,22 @@
+{
+  "page": 42,
+  "chapter": "Chương III: Hình học trực quan. Các hình khối trong thực tiễn",
+  "lesson_title": "Luyện tập chung",
+  "exercises": [
+    {
+      "id": "3.19",
+      "question": "Cho hình lăng trụ đứng tam giác có các kích thước như hình 3.11. Tính:\na) Diện tích xung quanh của hình lăng trụ đứng.\nb) Thể tích của hình lăng trụ đứng.",
+      "answer": "a) Diện tích xung quanh: $S_{xq} = (6 + 8 + 10) \\cdot 12 = 24 \\cdot 12 = 288$ ($cm^2$);\nb) Diện tích đáy: $S_{đáy} = \\frac{1}{2} \\cdot 6 \\cdot 8 = 24$ ($cm^2$).\nThể tích: $V = S_{đáy} \\cdot h = 24 \\cdot 12 = 288$ ($cm^3$)."
+    },
+    {
+      "id": "3.20",
+      "question": "Một hình lăng trụ đứng tứ giác có thể tích 120 $cm^3$, đáy là hình chữ nhật có chiều dài 6 cm, chiều rộng 4 cm. Tính chiều cao của hình lăng trụ đứng đó.",
+      "answer": "Diện tích đáy: $S_{đáy} = 6 \\cdot 4 = 24$ ($cm^2$).\nChiều cao: $h = V : S_{đáy} = 120 : 24 = 5$ (cm)."
+    },
+    {
+      "id": "3.21",
+      "question": "Trong các hình dưới đây (H.3.12), hình nào là hình khai triển của một hình lăng trụ đứng tam giác? Tính diện tích xung quanh của hình lăng trụ đứng đó.",
+      "answer": "Hình b) là hình khai triển của một hình lăng trụ đứng tam giác.\nDiện tích xung quanh: $S_{xq} = (3 + 4 + 5) \\cdot 6 = 12 \\cdot 6 = 72$ ($cm^2$)."
+    }
+  ]
+}

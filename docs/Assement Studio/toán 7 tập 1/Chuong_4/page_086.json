@@ -1,0 +1,18 @@
+{
+  "page": 85,
+  "lesson_title": "Bài tập cuối chương 4 (tiếp theo)",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "4.42",
+      "question": "Cho tam giác ABC cân tại A. Trên cạnh BC lấy điểm D, trên tia đối của tia CB lấy điểm E sao cho BD = CE. Kẻ $DF \\perp BC (F \\in AB)$ và $EG \\perp BC (G \\in AC$ kéo dài). Chứng minh rằng $\\Delta BDF = \\Delta CEG$.",
+      "answer": "Sử dụng các trường hợp bằng nhau của tam giác vuông (cạnh góc vuông - góc nhọn kề) để chứng minh."
+    },
+    {
+      "id": "4.43",
+      "question": "Cho tam giác ABC. Các đường trung trực của AB và AC cắt nhau tại O. Chứng minh rằng O nằm trên đường trung trực của BC.",
+      "answer": "Vì O nằm trên đường trung trực của AB nên OA = OB. Vì O nằm trên đường trung trực của AC nên OA = OC. Suy ra OB = OC. Vậy O nằm trên đường trung trực của BC."
+    }
+  ]
+}

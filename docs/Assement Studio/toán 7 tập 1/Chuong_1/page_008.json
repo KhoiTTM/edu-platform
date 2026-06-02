@@ -1,0 +1,28 @@
+{
+  "page": 8,
+  "lesson_title": "Bài 1: Tập hợp các số hữu tỉ (tiếp theo)",
+  "theory": [
+    {
+      "subtitle": "2. Thứ tự trong tập hợp các số hữu tỉ",
+      "content": "Với hai số hữu tỉ bất kì $x, y$, ta luôn có: hoặc $x < y$, hoặc $x > y$, hoặc $x = y$.\nNếu $x < y$ và $y < z$ thì $x < z$ (tính chất bắc cầu).\nTrên trục số, nếu $x < y$ thì điểm $x$ nằm bên trái điểm $y$."
+    },
+    {
+      "subtitle": "So sánh hai số hữu tỉ",
+      "content": "Để so sánh hai số hữu tỉ, ta có thể viết chúng dưới dạng phân số rồi so sánh hai phân số đó.\n- Nếu hai số hữu tỉ cùng dương, số nào có giá trị tuyệt đối lớn hơn thì lớn hơn.\n- Nếu hai số hữu tỉ cùng âm, số nào có giá trị tuyệt đối lớn hơn thì nhỏ hơn.\n- Số hữu tỉ dương luôn lớn hơn số hữu tỉ âm.\n- Số hữu tỉ 0 không là số hữu tỉ dương cũng không là số hữu tỉ âm."
+    }
+  ],
+  "examples": [
+    {
+      "question": "Ví dụ 1: So sánh $-0,5$ và $\\frac{1}{-4}$.",
+      "solution": "Ta có $-0,5 = \\frac{-1}{2} = \\frac{-2}{4}$. Vì $-2 < -1$ nên $\\frac{-2}{4} < \\frac{-1}{4}$. Vậy $-0,5 < \\frac{1}{-4}$."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "Luyện tập 2",
+      "question": "So sánh các cặp số hữu tỉ sau:\na) $-0,75$ và $\\frac{-5}{6}$;\nb) $-4,5$ và $0,3$.",
+      "options": [],
+      "answer": "a) $-0,75 = \\frac{-3}{4} = \\frac{-9}{12}$. $\\frac{-5}{6} = \\frac{-10}{12}$. Vì $-9 > -10$ nên $-0,75 > \\frac{-5}{6}$.\nb) Vì $-4,5$ là số hữu tỉ âm và $0,3$ là số hữu tỉ dương nên $-4,5 < 0,3$."
+    }
+  ]
+}

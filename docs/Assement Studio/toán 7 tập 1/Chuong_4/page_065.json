@@ -1,0 +1,19 @@
+{
+  "page": 64,
+  "lesson_title": "Bài 14: Trường hợp bằng nhau thứ hai của tam giác: cạnh - góc - cạnh",
+  "objective": "Sau bài học này, em sẽ: Giải thích được trường hợp bằng nhau thứ hai của tam giác: cạnh - góc - cạnh (c.g.c). Biết cách sử dụng trường hợp bằng nhau c.g.c để chứng minh hai tam giác bằng nhau.",
+  "theory": [
+    {
+      "subtitle": "1. Trường hợp bằng nhau cạnh - góc - cạnh (c.g.c)",
+      "content": "Định lí: Nếu hai cạnh và góc xen giữa của tam giác này bằng hai cạnh và góc xen giữa của tam giác kia thì hai tam giác đó bằng nhau.\nNếu $\\Delta ABC$ và $\\Delta A'B'C'$ có:\n$AB = A'B', \\widehat{B} = \\widehat{B'}, BC = B'C'$\nthì $\\Delta ABC = \\Delta A'B'C'$ (c.g.c)."
+    }
+  ],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "HĐ1",
+      "question": "Vẽ tam giác ABC có $AB = 3 cm, \\widehat{B} = 60^\\circ, BC = 4 cm$. Vẽ tam giác A'B'C' có $A'B' = 3 cm, \\widehat{B'} = 60^\\circ, B'C' = 4 cm$. Dùng thước đo cạnh AC và A'C' rồi so sánh.",
+      "answer": "Kết quả đo cho thấy $AC = A'C'$, do đó $\\Delta ABC = \\Delta A'B'C'$."
+    }
+  ]
+}

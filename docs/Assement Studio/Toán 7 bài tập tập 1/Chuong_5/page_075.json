@@ -1,0 +1,17 @@
+{
+  "page": 75,
+  "chapter": "Chương V: Thu thập và biểu diễn dữ liệu",
+  "lesson_title": "Bài 17: Thu thập và phân loại dữ liệu",
+  "theory": [
+    {
+      "subtitle": "A. Kiến thức cần nhớ",
+      "content": "1. Thu thập dữ liệu:\n- Có nhiều cách để thu thập dữ liệu như: quan sát, làm thí nghiệm, lập bảng hỏi, phỏng vấn, thu thập từ các nguồn có sẵn (sách, báo, trang web,...).\n2. Phân loại dữ liệu:\n- Dữ liệu thu thập được bao gồm số và không phải là số.\n- Dữ liệu là số gọi là dữ liệu định lượng (hay số liệu).\n- Dữ liệu không phải là số gọi là dữ liệu định tính.\n- Có thể phân loại dữ liệu định tính thành các loại: loại không thể sắp thứ tự (như tên các nước, giới tính,...) và loại có thể sắp thứ tự (như trình độ học vấn, xếp loại hạnh kiểm,...)."
+    }
+  ],
+  "skills": [
+    {
+      "subtitle": "B. Kĩ năng giải toán",
+      "content": "- Thu thập dữ liệu theo một tiêu chí cho trước.\n- Phân loại dữ liệu theo các tiêu chí cho trước.\n- Đánh giá tính hợp lí của dữ liệu."
+    }
+  ]
+}

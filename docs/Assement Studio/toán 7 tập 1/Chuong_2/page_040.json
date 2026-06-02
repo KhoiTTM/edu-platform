@@ -1,0 +1,23 @@
+{
+  "page": 40,
+  "lesson_title": "Bài tập cuối chương 2 (tiếp theo)",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "2.34",
+      "question": "Sử dụng máy tính cầm tay để tính các giá trị sau (làm tròn đến chữ số thập phân thứ hai): a) $\\sqrt{125}$; b) $\\sqrt{0,5}$.",
+      "answer": "a) $\\sqrt{125} \\approx 11,18$; b) $\\sqrt{0,5} \\approx 0,71$."
+    },
+    {
+      "id": "2.35",
+      "question": "Một mảnh vườn hình vuông có diện tích $200 m^2$. Tính độ dài cạnh của mảnh vườn đó (làm tròn đến mét).",
+      "answer": "Độ dài cạnh mảnh vườn là $\\sqrt{200} \\approx 14,14 (m)$. Làm tròn đến mét là $14 m$."
+    },
+    {
+      "id": "2.36",
+      "question": "Tính chu vi của mảnh vườn ở bài 2.35.",
+      "answer": "Chu vi mảnh vườn là: $4 \\cdot 14 = 56 (m)$ (nếu lấy kết quả làm tròn) hoặc $4 \\cdot \\sqrt{200} \\approx 56,57 (m)$."
+    }
+  ]
+}

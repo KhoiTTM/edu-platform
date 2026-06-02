@@ -1,0 +1,22 @@
+{
+  "page": 37,
+  "chapter": "Chương III: Hình học trực quan. Các hình khối trong thực tiễn",
+  "lesson_title": "Bài tập (Bài 8 - tiếp theo)",
+  "exercises": [
+    {
+      "id": "3.4",
+      "question": "Trong các hình dưới đây (H.3.3), hình nào gấp lại được một hình lăng trụ đứng tam giác?",
+      "answer": "Hình b) và hình c) gấp lại được một hình lăng trụ đứng tam giác. Hình a) không gấp được vì hai đáy nằm cùng một phía đối với các mặt bên."
+    },
+    {
+      "id": "3.5",
+      "question": "Trong các hình dưới đây (H.3.4), hình nào gấp lại được một hình lăng trụ đứng tứ giác?",
+      "answer": "Hình a) và hình c) gấp lại được một hình lăng trụ đứng tứ giác. Hình b) không gấp được vì hai đáy không khớp với các cạnh của mặt bên."
+    },
+    {
+      "id": "3.6",
+      "question": "Vẽ hình khai triển (trên giấy kẻ ô vuông) của hình lăng trụ đứng tam giác có các cạnh đáy là 3 cm, 4 cm, 5 cm và chiều cao là 4 cm.",
+      "answer": "Học sinh tự vẽ hình khai triển gồm 3 hình chữ nhật (mặt bên) có kích thước: 3x4, 4x4, 5x4 và 2 tam giác vuông (mặt đáy) có các cạnh 3, 4, 5 ghép vào các cạnh tương ứng của các hình chữ nhật."
+    }
+  ]
+}

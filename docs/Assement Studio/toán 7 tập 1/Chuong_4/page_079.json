@@ -1,0 +1,23 @@
+{
+  "page": 78,
+  "lesson_title": "Bài 17: Các trường hợp bằng nhau của tam giác vuông",
+  "objective": "Sau bài học này, em sẽ: Nhận biết và giải thích được các trường hợp bằng nhau của tam giác vuông: cạnh góc vuông - góc nhọn kề; cạnh huyền - góc nhọn; cạnh huyền - cạnh góc vuông.",
+  "theory": [
+    {
+      "subtitle": "1. Các trường hợp bằng nhau đã biết của tam giác vuông",
+      "content": "Từ các trường hợp bằng nhau của tam giác, ta có các trường hợp bằng nhau sau của hai tam giác vuông:\n- Nếu hai cạnh góc vuông của tam giác vuông này bằng hai cạnh góc vuông của tam giác vuông kia thì hai tam giác vuông đó bằng nhau (c.g.c).\n- Nếu một cạnh góc vuông và một góc nhọn kề cạnh ấy của tam giác vuông này bằng một cạnh góc vuông và một góc nhọn kề cạnh ấy của tam giác vuông kia thì hai tam giác vuông đó bằng nhau (g.c.g)."
+    },
+    {
+      "subtitle": "Trường hợp bằng nhau cạnh huyền - góc nhọn",
+      "content": "Định lí: Nếu cạnh huyền và một góc nhọn của tam giác vuông này bằng cạnh huyền và một góc nhọn của tam giác vuông kia thì hai tam giác vuông đó bằng nhau."
+    }
+  ],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "HĐ1",
+      "question": "Cho hai tam giác vuông ABC và A'B'C' có $\\widehat{A} = \\widehat{A'} = 90^\\circ, BC = B'C', \\widehat{B} = \\widehat{B'}$. Chứng minh rằng $\\Delta ABC = \\Delta A'B'C'$.",
+      "answer": "Ta có $\\widehat{C} = 90^\\circ - \\widehat{B}$ và $\\widehat{C'} = 90^\\circ - \\widehat{B'}$. Vì $\\widehat{B} = \\widehat{B'}$ nên $\\widehat{C} = \\widehat{C'}$. Xét $\\Delta ABC$ và $\\Delta A'B'C'$ có $\\widehat{B} = \\widehat{B'}, BC = B'C', \\widehat{C} = \\widehat{C'}$. Vậy $\\Delta ABC = \\Delta A'B'C'$ (g.c.g)."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "page": 34,
+  "lesson_title": "Bài 7: Tập hợp các số thực (tiếp theo)",
+  "theory": [
+    {
+      "subtitle": "2. Thứ tự trong tập hợp các số thực",
+      "content": "Các số thực được so sánh tương tự như so sánh các số hữu tỉ viết dưới dạng số thập phân.\nVí dụ: $0,3131... < 0,32$ vì ở hàng phần trăm ta có $1 < 2$.\nVới hai số thực dương $a, b$, nếu $a < b$ thì $\\sqrt{a} < \\sqrt{b}$."
+    },
+    {
+      "subtitle": "Trục số thực",
+      "content": "Mỗi số thực được biểu diễn bởi một điểm trên trục số. Ngược lại, mỗi điểm trên trục số biểu diễn một số thực. Vì thế, trục số còn được gọi là trục số thực."
+    }
+  ],
+  "examples": [
+    {
+      "question": "Ví dụ 1: So sánh: a) $2$ và $\\sqrt{3}$; b) $-1,5$ và $-1,55$.",
+      "solution": "a) Ta có $2 = \\sqrt{4}$. Vì $4 > 3$ nên $\\sqrt{4} > \\sqrt{3}$, do đó $2 > \\sqrt{3}$.\nb) Vì $1,5 < 1,55$ nên $-1,5 > -1,55$."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "Luyện tập 1",
+      "question": "So sánh các cặp số sau: a) $1,31$ và $1,3131...$; b) $\\sqrt{5}$ và $2,36$.",
+      "answer": "a) $1,3100 < 1,3131...$ nên $1,31 < 1,3131...$\nb) $2,36^2 = 5,5696 > 5$ nên $2,36 > \\sqrt{5}$."
+    }
+  ]
+}

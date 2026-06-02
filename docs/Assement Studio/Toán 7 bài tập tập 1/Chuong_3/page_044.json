@@ -1,0 +1,22 @@
+{
+  "page": 44,
+  "chapter": "Chương III: Hình học trực quan. Các hình khối trong thực tiễn",
+  "lesson_title": "Luyện tập chung (tiếp theo)",
+  "exercises": [
+    {
+      "id": "3.25",
+      "question": "Người ta sơn tất cả các mặt bên của một cái hộp dạng hình lăng trụ đứng tứ giác có đáy là hình thoi có độ dài hai đường chéo là 6 cm và 8 cm, chiều cao của cái hộp là 10 cm. Tính diện tích cần sơn.",
+      "answer": "Cạnh của hình thoi đáy: $a = \\sqrt{(\\frac{6}{2})^2 + (\\frac{8}{2})^2} = \\sqrt{3^2 + 4^2} = 5$ (cm).\nChu vi đáy: $C = 5 \\cdot 4 = 20$ (cm).\nDiện tích cần sơn (diện tích xung quanh): $S_{xq} = C \\cdot h = 20 \\cdot 10 = 200$ ($cm^2$)."
+    },
+    {
+      "id": "3.26",
+      "question": "Một chiếc lều có dạng hình lăng trụ đứng tam giác với kích thước như hình 3.15. Tính số mét vuông vải bạt cần để làm chiếc lều đó (không tính các mép gấp và đáy lều).",
+      "answer": "Số $m^2$ vải bạt cần dùng chính là diện tích xung quanh của hình lăng trụ đứng tam giác (không tính đáy).\nMặt bên là hai hình chữ nhật kích thước 2 m x 3 m và một hình chữ nhật kích thước 2,4 m x 3 m (mặt đáy lều không tính).\nDiện tích hai mặt bên: $S = 2 \\cdot (2 \\cdot 3) = 12$ ($m^2$).\nSố mét vuông vải bạt cần dùng là 12 $m^2$ (nếu chỉ tính 2 mái lều) hoặc tính cả 2 đầu hồi lều (2 tam giác cân).\nDiện tích 2 đầu hồi (tam giác): $S_{đầu} = 2 \\cdot (\\frac{1}{2} \\cdot 2,4 \\cdot 1,6) = 3,84$ ($m^2$).\nTổng diện tích vải bạt: $12 + 3,84 = 15,84$ ($m^2$)."
+    },
+    {
+      "id": "3.27",
+      "question": "Tính thể tích của một hình khối có dạng lăng trụ đứng đáy là hình thang cân với các kích thước như hình 3.16.",
+      "answer": "Diện tích đáy (hình thang cân): $S_{đáy} = \\frac{(10 + 22) \\cdot 8}{2} = 128$ ($cm^2$).\nThể tích hình khối: $V = S_{đáy} \\cdot h = 128 \\cdot 20 = 2560$ ($cm^3$)."
+    }
+  ]
+}

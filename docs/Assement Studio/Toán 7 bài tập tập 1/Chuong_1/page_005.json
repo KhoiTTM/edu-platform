@@ -1,0 +1,17 @@
+{
+  "page": 5,
+  "chapter": "Chương I: Số hữu tỉ",
+  "lesson_title": "Bài 1: Tập hợp các số hữu tỉ",
+  "theory": [
+    {
+      "subtitle": "A. Kiến thức cần nhớ",
+      "content": "1. Số hữu tỉ là số được viết dưới dạng phân số $\\frac{a}{b}$ với $a, b \\in \\mathbb{Z}, b \\neq 0$. Tập hợp số hữu tỉ được kí hiệu là $\\mathbb{Q}$.\n2. Mỗi số hữu tỉ đều được biểu diễn bởi một điểm trên trục số.\n3. So sánh số hữu tỉ: Ta có thể viết chúng dưới dạng phân số rồi so sánh. Số hữu tỉ dương > 0; số hữu tỉ âm < 0; số 0 không là số hữu tỉ âm cũng không là số hữu tỉ dương.\n4. Trên trục số, nếu $a < b$ thì điểm $a$ nằm trước điểm $b$."
+    }
+  ],
+  "skills": [
+    {
+      "subtitle": "B. Kĩ năng giải toán",
+      "content": "- Khi so sánh, có thể đưa về cùng mẫu số, cùng tử số hoặc dùng số trung gian.\n- Khi biểu diễn trên trục số, nên đưa về phân số tối giản, quy đồng mẫu để chia đoạn thẳng đơn vị cho chính xác."
+    }
+  ]
+}

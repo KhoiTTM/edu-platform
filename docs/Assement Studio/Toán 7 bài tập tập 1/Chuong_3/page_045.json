@@ -1,0 +1,17 @@
+{
+  "page": 45,
+  "chapter": "Chương III: Hình học trực quan. Các hình khối trong thực tiễn",
+  "lesson_title": "Luyện tập chung (tiếp theo)",
+  "exercises": [
+    {
+      "id": "3.28",
+      "question": "Một đoạn kênh có dạng hình lăng trụ đứng tứ giác có đáy là hình thang cân với các kích thước như hình 3.17. Tính thể tích đất cần phải đào để tạo nên đoạn kênh đó, biết đoạn kênh dài 50 m.",
+      "answer": "Diện tích đáy (hình thang cân): $S_{đáy} = \\frac{(2 + 5) \\cdot 2}{2} = 7$ ($m^2$).\nThể tích đất cần đào: $V = S_{đáy} \\cdot h = 7 \\cdot 50 = 350$ ($m^3$)."
+    },
+    {
+      "id": "3.29",
+      "question": "Tính thể tích của hình khối dưới đây (H.3.18).",
+      "answer": "Chia khối hình thành một hình hộp chữ nhật và một hình lăng trụ đứng tam giác.\nThể tích hình hộp chữ nhật: $V_{HHCN} = 10 \\cdot 6 \\cdot 5 = 300$ ($cm^3$).\nThể tích hình lăng trụ đứng tam giác: $V_{Lăng trụ} = (\\frac{1}{2} \\cdot 6 \\cdot 4) \\cdot 10 = 120$ ($cm^3$).\nThể tích khối hình: $V = 300 + 120 = 420$ ($cm^3$)."
+    }
+  ]
+}

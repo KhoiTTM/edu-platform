@@ -1,0 +1,23 @@
+{
+  "page": 83,
+  "lesson_title": "Bài tập cuối chương 4",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "4.37",
+      "question": "Cho tam giác ABC có $\\widehat{A} = 120^\\circ$. Các tia phân giác của góc B và C cắt nhau tại O. Tính số đo góc BOC.",
+      "answer": "$\\widehat{B} + \\widehat{C} = 180^\\circ - 120^\\circ = 60^\\circ$. $\\widehat{OBC} + \\widehat{OCB} = \\frac{1}{2}(\\widehat{B} + \\widehat{C}) = 30^\\circ$. $\\widehat{BOC} = 180^\\circ - 30^\\circ = 150^\\circ$."
+    },
+    {
+      "id": "4.38",
+      "question": "Cho Hình 4.45. Chứng minh rằng $\\Delta ABD = \\Delta ACD$.",
+      "answer": "Dựa vào các trường hợp bằng nhau c.c.c, c.g.c hoặc g.c.g trên hình vẽ."
+    },
+    {
+      "id": "4.39",
+      "question": "Cho tam giác ABC cân tại A. Gọi M là trung điểm của BC. Kẻ $ME \\perp AB, MF \\perp AC$. Chứng minh rằng ME = MF.",
+      "answer": "Xét hai tam giác vuông BEM và CFM có: $BM = CM, \\widehat{B} = \\widehat{C}$. Suy ra $\\Delta BEM = \\Delta CFM$ (cạnh huyền - góc nhọn) $\\implies ME = MF$."
+    }
+  ]
+}

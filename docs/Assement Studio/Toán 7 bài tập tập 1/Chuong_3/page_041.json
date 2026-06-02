@@ -1,0 +1,22 @@
+{
+  "page": 41,
+  "chapter": "Chương III: Hình học trực quan. Các hình khối trong thực tiễn",
+  "lesson_title": "Bài tập (Bài 8 - tiếp theo)",
+  "exercises": [
+    {
+      "id": "3.16",
+      "question": "Tính thể tích của hình khối dưới đây (H.3.9).",
+      "answer": "Chia khối hình thành hai hình lăng trụ đứng tứ giác.\n$V_1 = 3 \\cdot 2 \\cdot 6 = 36$ ($cm^3$);\n$V_2 = 2 \\cdot 2 \\cdot 6 = 24$ ($cm^3$).\nThể tích của hình khối: $V = V_1 + V_2 = 36 + 24 = 60$ ($cm^3$)."
+    },
+    {
+      "id": "3.17",
+      "question": "Tính thể tích của hình khối dưới đây (H.3.10).",
+      "answer": "Thể tích hình lăng trụ đứng tứ giác bên ngoài: $V_{ngoài} = 10 \\cdot 8 \\cdot 20 = 1600$ ($cm^3$).\nThể tích phần rỗng bên trong: $V_{rỗng} = 6 \\cdot 4 \\cdot 20 = 480$ ($cm^3$).\nThể tích của hình khối: $V = V_{ngoài} - V_{rỗng} = 1600 - 480 = 1120$ ($cm^3$)."
+    },
+    {
+      "id": "3.18",
+      "question": "Một bể bơi có dạng hình lăng trụ đứng tứ giác có đáy là hình thang vuông với các cạnh đáy là 10 m, 15 m và chiều cao của bể là 20 m. Cạnh bên vuông góc với hai đáy là 1,2 m. Tính số mét khối nước cần để bơm đầy bể bơi.",
+      "answer": "Diện tích đáy (hình thang vuông): $S_{đáy} = \\frac{(10 + 15) \\cdot 1,2}{2} = 15$ ($m^2$).\nThể tích bể bơi (số $m^3$ nước): $V = S_{đáy} \\cdot h = 15 \\cdot 20 = 300$ ($m^3$)."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "page": 76,
+  "chapter": "Chương V: Thu thập và biểu diễn dữ liệu",
+  "lesson_title": "Bài tập (Bài 17: Thu thập và phân loại dữ liệu)",
+  "exercises": [
+    {
+      "id": "5.1",
+      "question": "Cho các dữ liệu sau:\na) Danh sách các môn thể thao: Bóng đá, Bóng rổ, Cầu lông, Bơi lội.\nb) Điểm kiểm tra môn Toán của 5 học sinh: 7; 8; 6; 9; 10.\nc) Chiều cao (tính theo cm) của 4 học sinh: 150; 155; 160; 145.\nd) Đánh giá mức độ hài lòng của khách hàng: Rất hài lòng, Hài lòng, Không hài lòng.\nTrong các dữ liệu trên, dữ liệu nào là số liệu, dữ liệu nào không phải là số liệu?",
+      "answer": "- Dữ liệu là số liệu (dữ liệu định lượng): b, c.\n- Dữ liệu không phải là số liệu (dữ liệu định tính): a, d."
+    },
+    {
+      "id": "5.2",
+      "question": "Bạn An muốn khảo sát về môn học yêu thích của các bạn trong lớp. Theo em, bạn An nên thu thập dữ liệu bằng cách nào?",
+      "answer": "Bạn An nên thu thập dữ liệu bằng cách lập bảng hỏi hoặc phỏng vấn các bạn trong lớp."
+    },
+    {
+      "id": "5.3",
+      "question": "Phân loại các dữ liệu sau đây vào các nhóm: dữ liệu định tính, dữ liệu định lượng.\na) Tên các loài hoa: Hoa hồng, Hoa cúc, Hoa lan, Hoa mai.\nb) Số học sinh của 4 lớp khối 7: 40; 42; 38; 45.\nc) Xếp loại học lực của học sinh: Giỏi, Khá, Trung bình, Yếu.\nd) Nhiệt độ trung bình các ngày trong tuần: $25^\\circ C; 27^\\circ C; 24^\\circ C; 26^\\circ C; 28^\\circ C; 25^\\circ C; 26^\\circ C$.",
+      "answer": "- Dữ liệu định tính: a, c.\n- Dữ liệu định lượng: b, d."
+    }
+  ]
+}

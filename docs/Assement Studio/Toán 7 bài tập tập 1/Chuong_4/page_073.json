@@ -1,0 +1,67 @@
+{
+  "page": 73,
+  "chapter": "Chương IV: Tam giác bằng nhau",
+  "lesson_title": "Ôn tập chương IV",
+  "exercises": [
+    {
+      "id": "1",
+      "type": "multiple_choice",
+      "question": "Tổng ba góc của một tam giác bằng:",
+      "options": [
+        "A. $90^\\circ$",
+        "B. $180^\\circ$",
+        "C. $270^\\circ$",
+        "D. $360^\\circ$"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "2",
+      "type": "multiple_choice",
+      "question": "Trong một tam giác vuông, hai góc nhọn:",
+      "options": [
+        "A. Bằng nhau",
+        "B. Bù nhau",
+        "C. Phụ nhau",
+        "D. Kề nhau"
+      ],
+      "answer": "C"
+    },
+    {
+      "id": "3",
+      "type": "multiple_choice",
+      "question": "Tam giác ABC có $\\widehat{A} = 50^\\circ, \\widehat{B} = 70^\\circ$. Số đo góc C là:",
+      "options": [
+        "A. $50^\\circ$",
+        "B. $60^\\circ$",
+        "C. $70^\\circ$",
+        "D. $120^\\circ$"
+      ],
+      "answer": "B"
+    },
+    {
+      "id": "4",
+      "type": "multiple_choice",
+      "question": "Cho $\\triangle ABC = \\triangle DEF$. Khẳng định nào sau đây là sai?",
+      "options": [
+        "A. AB = DE",
+        "B. $\\widehat{C} = \\widehat{F}$",
+        "C. BC = EF",
+        "D. $\\widehat{A} = \\widehat{E}$"
+      ],
+      "answer": "D"
+    },
+    {
+      "id": "5",
+      "type": "multiple_choice",
+      "question": "Nếu ba cạnh của tam giác này bằng ba cạnh của tam giác kia thì hai tam giác đó bằng nhau theo trường hợp:",
+      "options": [
+        "A. c.c.c",
+        "B. c.g.c",
+        "C. g.c.g",
+        "D. g.g.g"
+      ],
+      "answer": "A"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "page": 70,
+  "lesson_title": "Bài tập (Bài 15: Trường hợp bằng nhau g.c.g)",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "4.12",
+      "question": "Trong mỗi hình dưới đây, hãy tìm các cặp tam giác bằng nhau.",
+      "answer": "Sử dụng trường hợp g.c.g để tìm các cặp tam giác bằng nhau trong Hình 4.27a, b."
+    },
+    {
+      "id": "4.13",
+      "question": "Cho Hình 4.28, biết $AB = CD, AB // CD$. Chứng minh rằng $\\Delta OAB = \\Delta OCD$.",
+      "answer": "Vì $AB // CD$ nên $\\widehat{A} = \\widehat{C}$ và $\\widehat{B} = \\widehat{D}$ (so le trong). Xét $\\Delta OAB$ và $\\Delta OCD$ có:\n- $\\widehat{A} = \\widehat{C}$;\n- $AB = CD$;\n- $\\widehat{B} = \\widehat{D}$.\nVậy $\\Delta OAB = \\Delta OCD$ (g.c.g)."
+    },
+    {
+      "id": "4.14",
+      "question": "Cho Hình 4.29, biết $\\widehat{ABC} = \\widehat{ACB}$ và $BD = CE$. Chứng minh rằng $\\Delta ABD = \\Delta ACE$.",
+      "answer": "Sử dụng các tính chất về góc và cạnh để chứng minh hai tam giác bằng nhau."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "page": 108,
+  "lesson_title": "Bài tập cuối chương 5 (tiếp theo)",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "5.23",
+      "question": "Cho bảng số liệu về sản lượng lúa của Việt Nam qua các năm. Hãy biểu diễn dữ liệu này trên biểu đồ đoạn thẳng.",
+      "answer": "Học sinh thực hiện vẽ biểu đồ đoạn thẳng dựa trên số liệu trong bảng."
+    },
+    {
+      "id": "5.24",
+      "question": "Dựa vào biểu đồ tròn về tỉ lệ phân loại rác thải: Rác hữu cơ (60%), Rác tái chế (25%), Rác khác (15%). Hãy cho biết rác hữu cơ chiếm tỉ lệ bao nhiêu?",
+      "answer": "Rác hữu cơ chiếm 60%."
+    }
+  ]
+}

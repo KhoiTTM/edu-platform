@@ -33,6 +33,21 @@ export class QuestionBankSearchService {
       return [];
     }
 
-    return questions as QuestionBankItem[];
+    return (questions || []).map((q: any) => ({
+      id: q.id,
+      concept_id: q.concept_id,
+      blueprint_id: q.blueprint_id,
+      type: q.type,
+      difficulty: q.difficulty,
+      subject_slug: q.subject_slug,
+      grade: q.grade,
+      source_anchor: q.source_anchor,
+      ...(q.metadata_json || {}),
+      options: q.metadata_json?.options || q.metadata_json?.choices || [],
+      choices: q.metadata_json?.choices || q.metadata_json?.options || [],
+      question: q.metadata_json?.question || q.metadata_json?.prompt || '',
+      correct_index: q.metadata_json?.correct_index !== undefined ? q.metadata_json.correct_index : q.metadata_json?.correct_answer_index,
+      correct_answer: q.metadata_json?.correct_answer || q.metadata_json?.correct_word || ''
+    })) as any[];
   }
 }

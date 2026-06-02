@@ -169,6 +169,7 @@ export default function StudioDashboard() {
             <option value="3">Grade 3</option>
             <option value="4">Grade 4</option>
             <option value="5">Grade 5</option>
+            <option value="7">Grade 7</option>
             <option value="0">IELTS (N/A)</option>
         </select>
 
@@ -296,12 +297,12 @@ export default function StudioDashboard() {
                                 </span>
                             </td>
                             <td className="px-8 py-6">
-                                <div>
+                                <Link href={`/assessment-studio/collections/${c.id}`} className="hover:underline">
                                     <p className="font-black text-slate-800 dark:text-white group-hover:text-sky-600 transition-colors line-clamp-1">{c.title}</p>
                                     <p className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter mt-0.5 line-clamp-1 max-w-[200px]">
                                         {c.reference_book || "Custom Reference"}
                                     </p>
-                                </div>
+                                </Link>
                             </td>
                             <td className="px-6 py-6 text-center">
                                 <span className="px-2 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 font-black text-[9px] uppercase tracking-widest border border-slate-200 dark:border-slate-700 whitespace-nowrap">

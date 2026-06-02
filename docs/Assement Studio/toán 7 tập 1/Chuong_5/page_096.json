@@ -1,0 +1,18 @@
+{
+  "page": 95,
+  "lesson_title": "Bài 19: Biểu đồ hình quạt tròn (tiếp theo)",
+  "theory": [
+    {
+      "subtitle": "Tranh luận",
+      "content": "Bạn Vuông: 'Có thể dùng biểu đồ hình quạt tròn để biểu diễn dữ liệu về môn thể thao yêu thích của học sinh không, khi mà một bạn có thể chọn nhiều môn?'\nBạn Tròn: 'Không được, vì tổng tỉ lệ phần trăm của các thành phần trong biểu đồ hình quạt tròn phải luôn bằng 100%.'"
+    }
+  ],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "5.6",
+      "question": "Cho biểu đồ Hình 5.7 về phân loại học lực của học sinh lớp 7A: Tốt (15%), Khá (45%), Đạt (30%), Chưa đạt (10%).\na) Học sinh loại Khá chiếm tỉ lệ bao nhiêu?\nb) Loại nào chiếm tỉ lệ thấp nhất?",
+      "answer": "a) Học sinh loại Khá chiếm 45%.\nb) Loại Chưa đạt chiếm tỉ lệ thấp nhất (10%)."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "page": 96,
+  "chapter": "Chương V: Thu thập và biểu diễn dữ liệu",
+  "lesson_title": "Ôn tập chương V (tiếp theo)",
+  "exercises": [
+    {
+      "id": "5.37",
+      "question": "Biểu đồ hình 5.21 cho biết tỉ lệ phần trăm các loại năng lượng tái tạo được sử dụng tại một quốc gia năm 2020.\na) Loại năng lượng nào được sử dụng nhiều nhất?\nb) Nếu tổng sản lượng năng lượng tái tạo là 500 tỉ kWh thì mỗi loại đóng góp bao nhiêu?",
+      "answer": "a) Năng lượng Gió chiếm tỉ lệ cao nhất (45%);\nb) Sản lượng mỗi loại:\n- Năng lượng Gió: $500 \\cdot 45\\% = 225$ (tỉ kWh);\n- Năng lượng Mặt trời: $500 \\cdot 30\\% = 150$ (tỉ kWh);\n- Thủy điện: $500 \\cdot 20\\% = 100$ (tỉ kWh);\n- Khác: $500 \\cdot 5\\% = 25$ (tỉ kWh)."
+    },
+    {
+      "id": "5.38",
+      "question": "Dựa vào biểu đồ hình 5.22, hãy cho biết sự thay đổi về tỉ lệ người sử dụng Internet tại Việt Nam trong giai đoạn 2010 - 2020.",
+      "answer": "Dựa vào biểu đồ ta thấy:\n- Tỉ lệ người sử dụng Internet tại Việt Nam tăng trưởng rất nhanh và liên tục từ năm 2010 đến năm 2020.\n- Năm 2010 chỉ khoảng 30%, đến năm 2020 đã đạt trên 70%.\n- Sự gia tăng mạnh nhất được ghi nhận trong giai đoạn từ năm 2015 đến năm 2020."
+    }
+  ]
+}

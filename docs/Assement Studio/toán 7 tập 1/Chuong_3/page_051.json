@@ -1,0 +1,28 @@
+{
+  "page": 50,
+  "lesson_title": "Bài 10: Tiên đề Euclid. Tính chất của hai đường thẳng song song (tiếp theo)",
+  "theory": [
+    {
+      "subtitle": "2. Tính chất của hai đường thẳng song song",
+      "content": "Tính chất: Nếu một đường thẳng cắt hai đường thẳng song song thì:\n- Hai góc so le trong bằng nhau;\n- Hai góc đồng vị bằng nhau."
+    }
+  ],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "HĐ2",
+      "question": "Cho hai đường thẳng song song a và b. Đường thẳng c cắt a và b lần lượt tại A và B (H.3.28). a) Hãy đo và so sánh hai góc so le trong $A_4$ và $B_2$. b) Hãy đo và so sánh hai góc đồng vị $A_1$ và $B_1$.",
+      "answer": "a) $\\widehat{A_4} = \\widehat{B_2}$. b) $\\widehat{A_1} = \\widehat{B_1}$."
+    },
+    {
+      "id": "Câu hỏi",
+      "question": "Cho Hình 3.29, biết $mn // pq$. Tính số đo các góc $\\widehat{mAB}, \\widehat{pBA}$.",
+      "answer": "Dựa vào tính chất hai đường thẳng song song để tính các góc ở vị trí so le trong hoặc đồng vị."
+    },
+    {
+      "id": "Luyện tập",
+      "question": "Cho Hình 3.30, biết $a // b$, $\\widehat{A_1} = 100^\\circ$. Tính số đo các góc: $\\widehat{B_1}, \\widehat{B_2}, \\widehat{B_3}, \\widehat{B_4}$.",
+      "answer": "- $\\widehat{B_1} = \\widehat{A_1} = 100^\\circ$ (đồng vị).\n- $\\widehat{B_2} = 180^\\circ - \\widehat{B_1} = 80^\\circ$ (kề bù).\n- $\\widehat{B_3} = \\widehat{B_1} = 100^\\circ$ (đối đỉnh).\n- $\\widehat{B_4} = \\widehat{B_2} = 80^\\circ$ (đối đỉnh)."
+    }
+  ]
+}

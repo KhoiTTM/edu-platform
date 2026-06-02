@@ -1,0 +1,17 @@
+{
+  "page": 51,
+  "chapter": "Chương IV: Tam giác bằng nhau",
+  "lesson_title": "Bài 12: Tổng các góc trong một tam giác",
+  "theory": [
+    {
+      "subtitle": "A. Kiến thức cần nhớ",
+      "content": "- Tổng ba góc trong một tam giác bằng $180^\\circ$.\n- Trong một tam giác vuông, hai góc nhọn phụ nhau.\n- Góc ngoài của một tam giác là góc kề bù với một góc của tam giác đó.\n- Mỗi góc ngoài của một tam giác bằng tổng của hai góc trong không kề với nó."
+    }
+  ],
+  "skills": [
+    {
+      "subtitle": "B. Kĩ năng giải toán",
+      "content": "- Tính số đo góc trong tam giác.\n- Vận dụng định lí về tổng ba góc của một tam giác, định lí về góc ngoài của tam giác để giải các bài toán liên quan."
+    }
+  ]
+}

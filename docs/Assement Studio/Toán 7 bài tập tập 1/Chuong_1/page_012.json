@@ -1,0 +1,16 @@
+{
+  "page": 12,
+  "lesson_title": "Bài tập (Bài 2 - tiếp theo)",
+  "exercises": [
+    {
+      "id": "1.15",
+      "question": "Chim ruồi 'khổng lồ' Nam Mỹ dài gấp $4 \\frac{1}{8}$ lần chim ruồi ong. Nếu độ dài của chim ruồi ong là 5,5 cm thì độ dài của chim ruồi 'khổng lồ' là bao nhiêu?",
+      "answer": "Độ dài chim ruồi khổng lồ là: $5,5 \\cdot 4,125 = 22,6875$ cm."
+    },
+    {
+      "id": "1.16",
+      "question": "Mật độ dân số là số người sinh sống trên một đơn vị diện tích. Monaco có diện tích khoảng 2,1 km$^2$. Năm 2020, ước tính dân số của Monaco là 38 900 người. Hỏi mật độ dân số trên 1 km$^2$ của Monaco là bao nhiêu?",
+      "answer": "Mật độ dân số là: $38900 : 2,1 \\approx 18524$ (người/km$^2$)."
+    }
+  ]
+}

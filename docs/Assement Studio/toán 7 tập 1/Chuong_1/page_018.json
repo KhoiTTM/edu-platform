@@ -1,0 +1,23 @@
+{
+  "page": 18,
+  "lesson_title": "Bài 3: Phép tính lũy thừa với số mũ tự nhiên của một số hữu tỉ (tiếp theo)",
+  "theory": [
+    {
+      "subtitle": "3. Lũy thừa của lũy thừa",
+      "content": "Khi tính lũy thừa của một lũy thừa, ta giữ nguyên cơ số và nhân hai số mũ: $(x^m)^n = x^{m \\cdot n}$."
+    }
+  ],
+  "examples": [
+    {
+      "question": "Ví dụ 3: Viết các số $(2^2)^3$ và $2^{2 \\cdot 3}$ dưới dạng lũy thừa của 2 rồi so sánh kết quả.",
+      "solution": "$(2^2)^3 = 4^3 = 64; 2^{2 \\cdot 3} = 2^6 = 64$. Vậy $(2^2)^3 = 2^{2 \\cdot 3}$."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "Luyện tập 3",
+      "question": "Viết các số sau dưới dạng lũy thừa của 3: a) $(3^3)^4$; b) $[(-3)^2]^5$.",
+      "answer": "a) $3^{3 \\cdot 4} = 3^{12}$.\nb) $(-3)^{2 \\cdot 5} = (-3)^{10} = 3^{10}$."
+    }
+  ]
+}

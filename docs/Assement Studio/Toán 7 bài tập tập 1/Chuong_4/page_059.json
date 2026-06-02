@@ -1,0 +1,17 @@
+{
+  "page": 59,
+  "chapter": "Chương IV: Tam giác bằng nhau",
+  "lesson_title": "Bài tập (Bài 13 - tiếp theo)",
+  "exercises": [
+    {
+      "id": "4.19",
+      "question": "Cho hình 4.9. Biết AB = AC, DB = DC. Chứng minh rằng $\\widehat{ABD} = \\widehat{ACD}$.",
+      "answer": "Nối A với D.\nXét $\\triangle ABD$ và $\\triangle ACD$, ta có:\nAB = AC (theo giả thiết);\nDB = DC (theo giả thiết);\nAD là cạnh chung.\nVậy $\\triangle ABD = \\triangle ACD$ (c.c.c).\nSuy ra $\\widehat{ABD} = \\widehat{ACD}$ (hai góc tương ứng)."
+    },
+    {
+      "id": "4.20",
+      "question": "Cho hình 4.10. Biết OA = OB, MA = MB. Chứng minh rằng OM là tia phân giác của góc AOB.",
+      "answer": "Xét $\\triangle OAM$ và $\\triangle OBM$, ta có:\nOA = OB (theo giả thiết);\nMA = MB (theo giả thiết);\nOM là cạnh chung.\nVậy $\\triangle OAM = \\triangle OBM$ (c.c.c).\nSuy ra $\\widehat{AOM} = \\widehat{BOM}$ (hai góc tương ứng).\nVậy OM là tia phân giác của góc AOB."
+    }
+  ]
+}

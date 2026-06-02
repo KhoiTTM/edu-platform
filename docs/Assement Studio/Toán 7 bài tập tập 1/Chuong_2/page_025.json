@@ -1,0 +1,17 @@
+{
+  "page": 25,
+  "lesson_title": "Bài tập (Bài 5 - tiếp theo)",
+  "exercises": [
+    {
+      "id": "2.6",
+      "question": "Chữ số thứ 105 sau dấu phẩy của phân số 1/7 (viết dưới dạng số thập phân) là chữ số nào?",
+      "answer": "$1/7 = 0,(142857)$ chu kì có 6 chữ số. Ta có $105 = 17 \\cdot 6 + 3$. Vậy chữ số thứ 105 là chữ số thứ 3 của chu kì, tức là chữ số 2."
+    },
+    {
+      "id": "2.7",
+      "question": "Kết quả phép tính $1 : 1,(3)$ bằng:",
+      "options": ["A. 0,(75)", "B. 0,3", "C. 0,(3)", "D. 0,75"],
+      "answer": "D. 0,75 (Vì $1,(3) = 1 + 1/3 = 4/3$, nên $1 : 4/3 = 3/4 = 0,75$)."
+    }
+  ]
+}

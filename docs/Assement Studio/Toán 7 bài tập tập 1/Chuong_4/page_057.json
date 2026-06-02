@@ -1,0 +1,22 @@
+{
+  "page": 57,
+  "chapter": "Chương IV: Tam giác bằng nhau",
+  "lesson_title": "Bài tập (Bài 13: Hai tam giác bằng nhau. Trường hợp bằng nhau thứ nhất của tam giác: cạnh - cạnh - cạnh)",
+  "exercises": [
+    {
+      "id": "4.13",
+      "question": "Cho hai tam giác ABC và DEF bằng nhau. Biết $\\widehat{A} = 50^\\circ, \\widehat{E} = 60^\\circ$. Tính các góc còn lại của hai tam giác đó.",
+      "answer": "Vì $\\triangle ABC = \\triangle DEF$ nên $\\widehat{A} = \\widehat{D} = 50^\\circ$; $\\widehat{B} = \\widehat{E} = 60^\\circ$; $\\widehat{C} = \\widehat{F}$.\nTrong tam giác ABC: $\\widehat{C} = 180^\\circ - (\\widehat{A} + \\widehat{B}) = 180^\\circ - (50^\\circ + 60^\\circ) = 70^\\circ$.\nVậy $\\widehat{F} = \\widehat{C} = 70^\\circ$."
+    },
+    {
+      "id": "4.14",
+      "question": "Cho $\\triangle ABC = \\triangle MNP$. Biết AB = 5 cm, MP = 7 cm và chu vi của tam giác ABC bằng 18 cm. Tính độ dài các cạnh còn lại của hai tam giác đó.",
+      "answer": "Vì $\\triangle ABC = \\triangle MNP$ nên AB = MN = 5 cm; AC = MP = 7 cm; BC = NP.\nChu vi tam giác ABC: AB + BC + AC = 18 cm.\n$\\Rightarrow 5 + BC + 7 = 18 \\Rightarrow BC = 6$ (cm).\nVậy BC = NP = 6 cm."
+    },
+    {
+      "id": "4.15",
+      "question": "Trong mỗi hình dưới đây (H.4.5), hãy chỉ ra các cặp tam giác bằng nhau. Giải thích vì sao.",
+      "answer": "- Hình a: $\\triangle ABC = \\triangle ABD$ (c.c.c) vì AC = AD, BC = BD (theo ký hiệu) và AB là cạnh chung.\n- Hình b: $\\triangle MNP = \\triangle QPN$ (c.c.c) vì MN = QP, MP = QN (theo ký hiệu) và NP là cạnh chung."
+    }
+  ]
+}

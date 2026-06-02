@@ -1,0 +1,23 @@
+{
+  "page": 79,
+  "lesson_title": "Bài 17: Các trường hợp bằng nhau của tam giác vuông (tiếp theo)",
+  "theory": [
+    {
+      "subtitle": "2. Trường hợp bằng nhau cạnh huyền - cạnh góc vuông",
+      "content": "Định lí: Nếu cạnh huyền và một cạnh góc vuông của tam giác vuông này bằng cạnh huyền và một cạnh góc vuông của tam giác vuông kia thì hai tam giác vuông đó bằng nhau."
+    }
+  ],
+  "examples": [
+    {
+      "question": "Ví dụ 1: Cho Hình 4.38, chứng minh rằng $\\Delta ABC = \\Delta ADC$.",
+      "solution": "Xét hai tam giác vuông ABC và ADC ($\\widehat{B} = \\widehat{D} = 90^\\circ$) có:\n- $AC$ là cạnh huyền chung;\n- $BC = DC$ (giả thiết).\nVậy $\\Delta ABC = \\Delta ADC$ (cạnh huyền - cạnh góc vuông)."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "Luyện tập 1",
+      "question": "Cho Hình 4.39, hãy chỉ ra các cặp tam giác vuông bằng nhau và giải thích vì sao.",
+      "answer": "Dựa vào các trường hợp bằng nhau cạnh huyền - góc nhọn hoặc cạnh huyền - cạnh góc vuông để xác định."
+    }
+  ]
+}

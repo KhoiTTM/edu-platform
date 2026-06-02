@@ -1,0 +1,17 @@
+{
+  "page": 83,
+  "chapter": "Chương V: Thu thập và biểu diễn dữ liệu",
+  "lesson_title": "Bài tập (Bài 18 - tiếp theo)",
+  "exercises": [
+    {
+      "id": "5.15",
+      "question": "Biểu đồ hình 5.4 cho biết kết quả xếp loại hạnh kiểm của học sinh khối 7 trường THCS X.\na) Hạnh kiểm loại nào chiếm tỉ lệ cao nhất?\nb) Tính số lượng học sinh mỗi loại hạnh kiểm, biết tổng số học sinh khối 7 là 400 em.",
+      "answer": "a) Hạnh kiểm loại Tốt chiếm tỉ lệ cao nhất (70%);\nb) Số lượng học sinh mỗi loại:\n- Loại Tốt: $400 \\cdot 70\\% = 280$ (học sinh);\n- Loại Khá: $400 \\cdot 20\\% = 80$ (học sinh);\n- Loại Đạt: $400 \\cdot 8\\% = 32$ (học sinh);\n- Loại Chưa đạt: $400 \\cdot 2\\% = 8$ (học sinh)."
+    },
+    {
+      "id": "5.16",
+      "question": "Dựa vào biểu đồ hình 5.5, hãy lập bảng thống kê tỉ lệ phần trăm các loại rác thải sinh hoạt.",
+      "answer": "Bảng thống kê:\n\n| Loại rác thải | Tỉ lệ phần trăm |\n| :--- | :---: |\n| Rác thực phẩm | 50% |\n| Giấy, bìa | 20% |\n| Nhựa, nilon | 15% |\n| Kim loại | 5% |\n| Khác | 10% |"
+    }
+  ]
+}

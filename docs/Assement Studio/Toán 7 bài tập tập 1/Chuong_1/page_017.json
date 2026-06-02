@@ -1,0 +1,17 @@
+{
+  "page": 17,
+  "lesson_title": "Bài 4: Thứ tự thực hiện các phép tính. Quy tắc chuyển vế",
+  "theory": [
+    {
+      "subtitle": "A. Kiến thức cần nhớ",
+      "content": "1. Thứ tự thực hiện phép tính:\n- Với biểu thức không có dấu ngoặc: Lũy thừa -> Nhân và chia -> Cộng và trừ.\n- Với biểu thức có dấu ngoặc: () -> [] -> {}.\n2. Quy tắc chuyển vế: Khi chuyển một số hạng từ vế này sang vế kia của một đẳng thức, ta phải đổi dấu số hạng đó: dấu '+' đổi thành '-' và dấu '-' đổi thành '+'."
+    }
+  ],
+  "examples": [
+    {
+      "id": "Ví dụ 1",
+      "question": "Tính $A = [ (15/21 - 17/42) + 7/13 - 5/6 ] : [ (6/11 - 8/33) + 11/10 - 1/2 ]$.",
+      "solution": "Thực hiện tính toán trong từng ngoặc vuông trước. Kết quả $A = 1/1 = 1$."
+    }
+  ]
+}

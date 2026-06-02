@@ -1,0 +1,21 @@
+{
+  "page": 23,
+  "lesson_title": "Bài 5: Làm quen với số thập phân vô hạn tuần hoàn (tiếp theo)",
+  "examples": [
+    {
+      "id": "Ví dụ 1",
+      "question": "Thầy giáo hỏi: 'Nếu viết phân số 21/56 dưới dạng số thập phân thì kết quả là số thập phân hữu hạn hay vô hạn tuần hoàn?'. Bạn An trả lời là vô hạn tuần hoàn vì mẫu số 56 có ước 7 khác 2 và 5. Theo em, câu trả lời của An đúng hay sai? Vì sao?",
+      "solution": "An trả lời Sai. Vì phân số chưa tối giản: $21/56 = 3/8$. Mẫu số 8 chỉ có ước nguyên tố là 2 nên phân số này viết được dưới dạng số thập phân hữu hạn ($3/8 = 0,375$)."
+    },
+    {
+      "id": "Ví dụ 2",
+      "question": "So sánh 0,91(6) và 0,958(3).",
+      "solution": "Ta có $0,91(6) = 0,91666... < 0,95833... = 0,958(3)$. Vậy $0,91(6) < 0,958(3)$."
+    },
+    {
+      "id": "Ví dụ 3",
+      "question": "a) Làm tròn số 0,958(3) đến hàng phần nghìn.\nb) Làm tròn số 0,958(3) với độ chính xác 0,005.",
+      "solution": "a) Chữ số hàng phần vạn là 3 < 5 nên kết quả là 0,958.\nb) Độ chính xác 0,005 tương ứng làm tròn đến hàng phần trăm. Chữ số hàng phần nghìn là 8 > 5 nên kết quả là 0,96."
+    }
+  ]
+}

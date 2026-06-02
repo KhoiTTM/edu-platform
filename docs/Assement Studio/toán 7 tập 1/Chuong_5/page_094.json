@@ -1,0 +1,24 @@
+{
+  "page": 93,
+  "lesson_title": "Bài 19: Biểu đồ hình quạt tròn",
+  "objective": "Sau bài học này, em sẽ: Đọc và mô tả được dữ liệu từ biểu đồ hình quạt tròn. Biểu diễn được dữ liệu vào biểu đồ hình quạt tròn. So sánh được các thành phần của dữ liệu dựa trên biểu đồ hình quạt tròn.",
+  "theory": [
+    {
+      "subtitle": "1. Đọc và mô tả biểu đồ hình quạt tròn",
+      "content": "Biểu đồ hình quạt tròn dùng để so sánh các phần trong toàn bộ dữ liệu. Các thành phần được biểu diễn bằng các hình quạt tròn. Tổng các tỉ lệ phần trăm trong biểu đồ hình quạt tròn luôn bằng 100%."
+    }
+  ],
+  "examples": [
+    {
+      "question": "Ví dụ 1: Quan sát biểu đồ Hình 5.5 về tỉ lệ các loại sách trong thư viện: Sách giáo khoa (50%), Sách tham khảo (25%), Truyện thiếu nhi (20%), Loại khác (5%). Hãy cho biết loại sách nào chiếm tỉ lệ cao nhất?",
+      "solution": "Dựa vào biểu đồ, Sách giáo khoa chiếm tỉ lệ cao nhất (50%)."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "HĐ1",
+      "question": "Quan sát Hình 5.6 và cho biết các thành phần của biểu đồ và tỉ lệ phần trăm tương ứng.",
+      "answer": "Học sinh liệt kê các thành phần và số % tương ứng ghi trên biểu đồ."
+    }
+  ]
+}

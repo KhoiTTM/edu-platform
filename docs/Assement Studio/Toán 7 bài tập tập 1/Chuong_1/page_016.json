@@ -1,0 +1,31 @@
+{
+  "page": 16,
+  "lesson_title": "Bài tập (Bài 3 - tiếp theo)",
+  "exercises": [
+    {
+      "id": "1.22",
+      "question": "Thay dấu \"?\" bằng số thích hợp: a) $(-2/3)^5 \\cdot (-2/3)^? = (-2/3)^8$; b) $(-3/4)^? : (-3/4)^3 = (-3/4)^2$.",
+      "answer": "a) 3; b) 5."
+    },
+    {
+      "id": "1.23",
+      "question": "Không sử dụng máy tính cầm tay, hãy tính: a) $(-5)^7$, biết $(-5)^6 = 15625$; b) $2^{12}$, biết $2^{11} = 2048$.",
+      "answer": "a) $-5 \\cdot 15625 = -78125$; b) $2 \\cdot 2048 = 4096$."
+    },
+    {
+      "id": "1.24",
+      "question": "Hình vuông dưới đây có tính chất: Mỗi ô ghi một lũy thừa của 2; tích các số trong mỗi hàng, mỗi cột và mỗi đường chéo đều bằng nhau. Hãy điền các lũy thừa của 2 còn thiếu vào ô trống (Ô có sẵn: $2^1, 2^6, 2^4, 2^7$).",
+      "answer": "Dựa vào tích hằng số (ví dụ $2^1 \\cdot 2^6 \\cdot ...$ nếu biết đường chéo) để tìm các ô còn lại."
+    },
+    {
+      "id": "1.25",
+      "question": "Tìm số tự nhiên n, biết: a) $5^n : (1/5)^3 = 125$; b) $4 \cdot 3^n = 324$.",
+      "answer": "a) $5^n \cdot 5^3 = 5^3 \implies 5^{n+3} = 5^3 \implies n = 0$ (Wait, check $125=5^3$, so $5^{n+3}=5^3 \implies n=0$. Correct). b) $3^n = 81 = 3^4 \implies n = 4$."
+    },
+    {
+      "id": "1.26",
+      "question": "Tính: $A = \\frac{27^{10} + 9^5}{9^{13} + 27^2}$.",
+      "answer": "$A = \\frac{(3^3)^{10} + (3^2)^5}{(3^2)^{13} + (3^3)^2} = \\frac{3^{30} + 3^{10}}{3^{26} + 3^6} = \\frac{3^{10}(3^{20} + 1)}{3^6(3^{20} + 1)} = 3^4 = 81$."
+    }
+  ]
+}

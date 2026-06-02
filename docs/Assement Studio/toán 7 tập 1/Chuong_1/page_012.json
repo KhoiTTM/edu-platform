@@ -1,0 +1,24 @@
+{
+  "page": 12,
+  "lesson_title": "Bài 2: Cộng, trừ, nhân, chia số hữu tỉ",
+  "objective": "Sau bài học này, em sẽ: Thực hiện được các phép tính cộng, trừ, nhân, chia hai số hữu tỉ. Vận dụng được tính chất cơ bản của các phép tính để tính giá trị biểu thức một cách hợp lí.",
+  "theory": [
+    {
+      "subtitle": "1. Cộng và trừ hai số hữu tỉ",
+      "content": "Mọi số hữu tỉ đều viết được dưới dạng phân số. Ta có thể cộng, trừ hai số hữu tỉ bằng cách viết chúng dưới dạng phân số có cùng mẫu dương rồi áp dụng quy tắc cộng, trừ phân số.\nPhép cộng số hữu tỉ có các tính chất: giao hoán, kết hợp, cộng với số 0, mỗi số hữu tỉ đều có một số đối."
+    }
+  ],
+  "examples": [
+    {
+      "question": "Ví dụ 1: Tính: a) $-0,5 + \\frac{1}{3}$; b) $\\frac{2}{3} - (-1,2)$.",
+      "solution": "a) $-0,5 + \\frac{1}{3} = \\frac{-1}{2} + \\frac{1}{3} = \\frac{-3}{6} + \\frac{2}{6} = \\frac{-1}{6}$.\nb) $\\frac{2}{3} - (-1,2) = \\frac{2}{3} + 1,2 = \\frac{2}{3} + \\frac{6}{5} = \\frac{10}{15} + \\frac{18}{15} = \\frac{28}{15}$."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "Luyện tập 1",
+      "question": "Tính: a) $-7 - (-3,5)$; b) $\\frac{-2}{5} + 0,15$.",
+      "answer": "a) $-7 + 3,5 = -3,5$.\nb) $\\frac{-2}{5} + \\frac{3}{20} = \\frac{-8}{20} + \\frac{3}{20} = \\frac{-5}{20} = \\frac{-1}{4}$."
+    }
+  ]
+}

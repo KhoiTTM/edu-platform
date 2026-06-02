@@ -1,0 +1,17 @@
+{
+  "page": 13,
+  "lesson_title": "Bài 3: Lũy thừa với số mũ tự nhiên của một số hữu tỉ",
+  "objective": "Tóm tắt kiến thức cần nhớ về lũy thừa của số hữu tỉ.",
+  "theory": [
+    {
+      "subtitle": "A. Kiến thức cần nhớ",
+      "content": "1. Lũy thừa bậc $n$: $x^n = x \\cdot x \\cdot ... \\cdot x$ ($n$ thừa số $x$). Quy ước $x^1 = x; x^0 = 1 (x \\neq 0)$.\n2. Nhân, chia hai lũy thừa cùng cơ số: $x^m \\cdot x^n = x^{m+n}$; $x^m : x^n = x^{m-n} (x \\neq 0, m \\ge n)$.\n3. Lũy thừa của một tích, một thương: $(x \\cdot y)^n = x^n \\cdot y^n$; $(x/y)^n = x^n / y^n$.\n4. Lũy thừa của lũy thừa: $(x^m)^n = x^{m \\cdot n}$.\n5. Tính chất: $a^m = a^n \\iff m = n (a \\neq 0, a \\neq \\pm 1)$."
+    }
+  ],
+  "skills": [
+    {
+      "subtitle": "B. Kĩ năng giải toán",
+      "content": "Vận dụng các quy tắc nhân, chia, lũy thừa của lũy thừa... để thực hiện tính nhanh, tìm số mũ chưa biết."
+    }
+  ]
+}

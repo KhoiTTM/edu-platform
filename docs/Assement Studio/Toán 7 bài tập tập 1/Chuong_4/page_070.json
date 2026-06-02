@@ -1,0 +1,22 @@
+{
+  "page": 70,
+  "chapter": "Chương IV: Tam giác bằng nhau",
+  "lesson_title": "Bài tập (Bài 15 - tiếp theo)",
+  "exercises": [
+    {
+      "id": "4.43",
+      "question": "Cho hình 4.28. Biết AB // CD, $BC \\perp CD$, $AD \\perp CD$. Chứng minh rằng $\\triangle ABC = \\triangle CDA$.",
+      "answer": "Vì $BC \\perp CD$ và $AD \\perp CD$ nên BC // AD.\nMặt khác AB // CD (theo giả thiết).\nXét $\\triangle ABC$ và $\\triangle CDA$, ta có:\n$\\widehat{BAC} = \\widehat{DCA}$ (hai góc so le trong vì AB // CD);\nAC là cạnh chung;\n$\\widehat{BCA} = \\widehat{DAC}$ (hai góc so le trong vì BC // AD).\nVậy $\\triangle ABC = \\triangle CDA$ (g.c.g)."
+    },
+    {
+      "id": "4.44",
+      "question": "Cho hình 4.29. Biết AB = AC, $\\widehat{ABC} = \\widehat{ACB}$. Kẻ $BD \\perp AC$ ($D \\in AC$), $CE \\perp AB$ ($E \\in AB$). Chứng minh rằng BD = CE.",
+      "answer": "Xét tam giác vuông BDC và tam giác vuông CEB có:\nBC là cạnh chung;\n$\\widehat{BCD} = \\widehat{CBE}$ (theo giả thiết $\\widehat{ACB} = \\widehat{ABC}$).\nVậy $\\triangle BDC = \\triangle CEB$ (cạnh huyền - góc nhọn).\nSuy ra BD = CE (hai cạnh tương ứng)."
+    },
+    {
+      "id": "4.45",
+      "question": "Cho tam giác ABC cân tại A (AB = AC). Gọi D là trung điểm của BC. Kẻ $DE \\perp AB$ ($E \\in AB$), $DF \\perp AC$ ($F \\in AC$). Chứng minh rằng DE = DF.",
+      "answer": "Xét tam giác vuông DEB và tam giác vuông DFC có:\nDB = DC (vì D là trung điểm của BC);\n$\\widehat{B} = \\widehat{C}$ (vì tam giác ABC cân tại A).\nVậy $\\triangle DEB = \\triangle DFC$ (cạnh huyền - góc nhọn).\nSuy ra DE = DF (hai cạnh tương ứng)."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "page": 79,
+  "chapter": "Chương V: Thu thập và biểu diễn dữ liệu",
+  "lesson_title": "Bài tập (Bài 17 - tiếp theo)",
+  "exercises": [
+    {
+      "id": "5.9",
+      "question": "Cho các dữ liệu định tính sau. Dữ liệu nào có thể so sánh và sắp xếp thứ tự?\na) Xếp loại hạnh kiểm: Tốt, Khá, Đạt, Chưa đạt.\nb) Các địa danh: Vịnh Hạ Long, Cố đô Huế, Phố cổ Hội An, Thánh địa Mỹ Sơn.\nc) Trình độ ngoại ngữ: A1, A2, B1, B2, C1, C2.\nd) Tên các môn học: Toán, Ngữ văn, Anh văn, Khoa học tự nhiên.",
+      "answer": "Dữ liệu có thể so sánh và sắp xếp thứ tự là: a, c."
+    },
+    {
+      "id": "5.10",
+      "question": "Một cửa hàng bán xe máy thống kê số lượng xe bán được trong 4 tháng đầu năm như sau:\n\n| Tháng | Số lượng xe bán được |\n| :--- | :---: |\n| 1 | 120 |\n| 2 | 100 |\n| 3 | 150 |\n| 4 | -10 |\n\nDữ liệu nào không hợp lí trong bảng trên? Giải thích vì sao.",
+      "answer": "Dữ liệu không hợp lí là \"-10\" ở tháng 4, vì số lượng xe bán được phải là số nguyên không âm."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "page": 26,
+  "chapter": "Chương II: Số thực",
+  "lesson_title": "Bài 6: Số vô tỉ. Căn bậc hai số học",
+  "theory": [
+    {
+      "subtitle": "A. Kiến thức cần nhớ",
+      "content": "- Số vô tỉ là các số thập phân vô hạn không tuần hoàn.\n- Căn bậc hai số học của một số $a$ không âm, kí hiệu là $\\sqrt{a}$, là số không âm $x$ thỏa mãn $x^2 = a$.\n- Nếu hình vuông có diện tích bằng $a$ thì cạnh hình vuông đó có độ dài bằng $\\sqrt{a}$.\n- Một số tính chất của căn bậc hai số học:\n  + $(\\sqrt{a})^2 = a$ (với $a \\ge 0$)\n  + $\\sqrt{a^2} = a$ (nếu $a \\ge 0$)\n  + $\\sqrt{a^2} = -a$ (nếu $a < 0$)\n  + Nếu $a$ là số chính phương thì $\\sqrt{a}$ là số tự nhiên; nếu $a$ là số tự nhiên không chính phương thì $\\sqrt{a}$ là số vô tỉ."
+    }
+  ],
+  "skills": [
+    {
+      "subtitle": "B. Kĩ năng giải toán",
+      "content": "- Nhận biết số vô tỉ, căn bậc hai số học.\n- Sử dụng định nghĩa tính căn bậc hai số học trong trường hợp thuận lợi.\n- Làm tròn số vô tỉ.\n- Sử dụng máy tính cầm tay tính căn bậc hai (kết quả thường được làm tròn)."
+    }
+  ]
+}

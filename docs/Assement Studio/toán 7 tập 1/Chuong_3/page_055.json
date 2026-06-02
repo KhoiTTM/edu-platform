@@ -1,0 +1,23 @@
+{
+  "page": 54,
+  "lesson_title": "Luyện tập chung (Chương 3 - tiếp theo)",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "3.17",
+      "question": "Cho Hình 3.37. Giải thích tại sao a // b.",
+      "answer": "Quan sát Hình 3.37, ta thấy đường thẳng c cắt hai đường thẳng a và b, tạo thành hai góc ở vị trí đồng vị bằng nhau (cùng bằng $60^\\circ$). Do đó a // b."
+    },
+    {
+      "id": "3.18",
+      "question": "Cho Hình 3.38, biết a // b. Tính số đo góc x.",
+      "answer": "Góc x và góc $120^\\circ$ là hai góc ở vị trí so le trong. Vì a // b nên $x = 120^\\circ$."
+    },
+    {
+      "id": "3.19",
+      "question": "Cho Hình 3.39, hãy giải thích tại sao m // n.",
+      "answer": "Dựa vào dấu hiệu nhận biết: hai đường thẳng cùng vuông góc với một đường thẳng thứ ba thì chúng song song với nhau."
+    }
+  ]
+}

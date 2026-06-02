@@ -1,0 +1,17 @@
+{
+  "page": 84,
+  "chapter": "Chương V: Thu thập và biểu diễn dữ liệu",
+  "lesson_title": "Bài tập (Bài 18 - tiếp theo)",
+  "exercises": [
+    {
+      "id": "5.17",
+      "question": "Biểu đồ hình 5.6 cho biết cơ cấu các ngành kinh tế của nước ta năm 2020.\na) Ngành nào chiếm tỉ trọng lớn nhất?\nb) Tính tỉ trọng của ngành Công nghiệp và Xây dựng.\nc) Biết tổng GDP của nước ta năm 2020 là khoảng 271 tỉ USD. Tính giá trị GDP của mỗi ngành.",
+      "answer": "a) Ngành Dịch vụ chiếm tỉ trọng lớn nhất (41,63%);\nb) Tỉ trọng ngành Công nghiệp và Xây dựng là 33,72%;\nc) Giá trị GDP mỗi ngành:\n- Nông nghiệp, lâm nghiệp và thủy sản: $271 \\cdot 14,85\\% \\approx 40,24$ (tỉ USD);\n- Công nghiệp và xây dựng: $271 \\cdot 33,72\\% \\approx 91,38$ (tỉ USD);\n- Dịch vụ: $271 \\cdot 41,63\\% \\approx 112,82$ (tỉ USD);\n- Thuế sản phẩm trừ trợ cấp sản phẩm: $271 \\cdot 9,8\\% \\approx 26,56$ (tỉ USD)."
+    },
+    {
+      "id": "5.18",
+      "question": "Cho bảng thống kê diện tích gieo trồng các nhóm cây năm 2019:\n\n| Nhóm cây | Diện tích (nghìn ha) |\n| :--- | :---: |\n| Cây lương thực | 7 400 |\n| Cây công nghiệp | 2 800 |\n| Cây thực phẩm, cây ăn quả, cây khác | 1 300 |\n\na) Tính tổng diện tích gieo trồng.\nb) Tính tỉ lệ phần trăm diện tích gieo trồng mỗi nhóm cây.\nc) Vẽ biểu đồ hình quạt tròn biểu diễn các tỉ lệ đó.",
+      "answer": "a) Tổng diện tích: $7400 + 2800 + 1300 = 11500$ (nghìn ha);\nb) Tỉ lệ phần trăm:\n- Cây lương thực: $(7400/11500) \\cdot 100\\% \\approx 64,3\\%$;\n- Cây công nghiệp: $(2800/11500) \\cdot 100\\% \\approx 24,3\\%$;\n- Các loại cây khác: $(1300/11500) \\cdot 100\\% \\approx 11,4\\%$;\nc) Học sinh tự vẽ biểu đồ hình quạt tròn."
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "page": 86,
+  "lesson_title": "Bài tập cuối chương 4 (tiếp theo)",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "4.45",
+      "question": "Cho Hình 4.48. Hãy giải thích tại sao $\\Delta ABC = \\Delta FED$.",
+      "answer": "Dựa vào các cạnh và góc tương ứng bằng nhau trên hình vẽ để kết luận theo trường hợp c.c.c, c.g.c hoặc g.c.g."
+    },
+    {
+      "id": "4.46",
+      "question": "Cho tam giác ABC vuông tại A. Tia phân giác của góc B cắt AC tại D. Kẻ $DE \\perp BC (E \\in BC)$. Chứng minh rằng AD = ED.",
+      "answer": "Xét hai tam giác vuông ABD và EBD có: $BD$ chung, $\\widehat{ABD} = \\widehat{EBD}$ (BD là phân giác). Suy ra $\\Delta ABD = \\Delta EBD$ (cạnh huyền - góc nhọn) $\\implies AD = ED$."
+    }
+  ]
+}

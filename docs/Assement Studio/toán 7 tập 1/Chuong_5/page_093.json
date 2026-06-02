@@ -1,0 +1,18 @@
+{
+  "page": 92,
+  "lesson_title": "Bài tập (Bài 18 - tiếp theo)",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "5.4",
+      "question": "Các dữ liệu thu thập được trong các trường hợp sau có đảm bảo tính đại diện không?\na) Để tìm hiểu về mức thu nhập trung bình của người dân Việt Nam, một nhóm nghiên cứu đã tiến hành khảo sát tại một số khu chung cư cao cấp ở Hà Nội và TP. Hồ Chí Minh.\nb) Để tìm hiểu về sở thích đọc sách của học sinh trong trường, bạn Nam đã hỏi ý kiến của các bạn trong câu lạc bộ Sách của trường.",
+      "answer": "a) Không đảm bảo tính đại diện vì chỉ khảo sát ở khu chung cư cao cấp, không phản ánh đúng thu nhập của đa số người dân.\nb) Không đảm bảo tính đại diện vì các bạn trong câu lạc bộ Sách thường có sở thích đọc sách cao hơn mức trung bình của toàn trường."
+    },
+    {
+      "id": "5.5",
+      "question": "Để khảo sát về thời gian sử dụng mạng internet mỗi ngày của các bạn học sinh trong lớp, bạn Hùng đã lập phiếu hỏi. Kết quả bạn thu được là: 1 giờ; 2 giờ; 30 phút; 5 giờ; 0 giờ; 10 giờ. Theo em, dữ liệu nào là không hợp lí?",
+      "answer": "Dữ liệu 10 giờ có thể được coi là không hợp lí đối với học sinh nếu xét trong bối cảnh cần thời gian đi học, ngủ và các hoạt động khác (tùy vào tiêu chuẩn đánh giá của đề bài, nhưng thường 10h/ngày cho mạng internet là quá cao)."
+    }
+  ]
+}

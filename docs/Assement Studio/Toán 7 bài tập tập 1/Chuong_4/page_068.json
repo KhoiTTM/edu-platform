@@ -1,0 +1,17 @@
+{
+  "page": 68,
+  "chapter": "Chương IV: Tam giác bằng nhau",
+  "lesson_title": "Bài 15: Các trường hợp bằng nhau của tam giác vuông",
+  "theory": [
+    {
+      "subtitle": "A. Kiến thức cần nhớ",
+      "content": "Các trường hợp bằng nhau đã biết của hai tam giác vuông:\n- Hai cạnh góc vuông (c.g.c).\n- Cạnh góc vuông - góc nhọn kề (g.c.g).\n- Cạnh huyền - góc nhọn (g.c.g).\nTrường hợp bằng nhau đặc biệt của hai tam giác vuông:\n- Trường hợp cạnh huyền - cạnh góc vuông: Nếu cạnh huyền và một cạnh góc vuông của tam giác vuông này bằng cạnh huyền và một cạnh góc vuông của tam giác vuông kia thì hai tam giác vuông đó bằng nhau."
+    }
+  ],
+  "skills": [
+    {
+      "subtitle": "B. Kĩ năng giải toán",
+      "content": "- Biết cách chỉ ra hai tam giác vuông bằng nhau theo các trường hợp đã học.\n- Sử dụng các trường hợp bằng nhau của tam giác vuông để chứng minh các đoạn thẳng bằng nhau, các góc bằng nhau."
+    }
+  ]
+}

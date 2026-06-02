@@ -1,0 +1,22 @@
+{
+  "page": 48,
+  "chapter": "Chương III: Hình học trực quan. Các hình khối trong thực tiễn",
+  "lesson_title": "Ôn tập chương III (tiếp theo)",
+  "exercises": [
+    {
+      "id": "3.32",
+      "question": "Hoàn thành bảng sau để so sánh hình lăng trụ đứng tam giác và hình lăng trụ đứng tứ giác:\n\n| Đặc điểm | Hình lăng trụ đứng tam giác | Hình lăng trụ đứng tứ giác |\n| :--- | :---: | :---: |\n| Số mặt đáy | ? | ? |\n| Số mặt bên | ? | ? |\n| Số đỉnh | ? | ? |\n| Số cạnh | ? | ? |",
+      "answer": "| Đặc điểm | Hình lăng trụ đứng tam giác | Hình lăng trụ đứng tứ giác |\n| :--- | :---: | :---: |\n| Số mặt đáy | 2 | 2 |\n| Số mặt bên | 3 | 4 |\n| Số đỉnh | 6 | 8 |\n| Số cạnh | 9 | 12 |"
+    },
+    {
+      "id": "3.33",
+      "question": "Từ hình khai triển (H.3.21), hãy cho biết đó là hình gì và tính thể tích của hình đó.",
+      "answer": "Đó là hình lăng trụ đứng tam giác có đáy là tam giác vuông (vì $3^2 + 4^2 = 5^2$).\nChiều cao của lăng trụ: $h = 8$ (cm).\nDiện tích đáy: $S_{đáy} = \\frac{1}{2} \\cdot 3 \\cdot 4 = 6$ ($cm^2$).\nThể tích: $V = S_{đáy} \\cdot h = 6 \\cdot 8 = 48$ ($cm^3$)."
+    },
+    {
+      "id": "3.34",
+      "question": "Cho hình lăng trụ đứng tam giác có kích thước như hình 3.22. Tính:\na) Diện tích xung quanh của hình lăng trụ đứng.\nb) Thể tích của hình lăng trụ đứng.",
+      "answer": "a) Diện tích xung quanh: $S_{xq} = (3 + 4 + 5) \\cdot 10 = 120$ ($cm^2$);\nb) Diện tích đáy: $S_{đáy} = \\frac{1}{2} \\cdot 3 \\cdot 4 = 6$ ($cm^2$).\nThể tích: $V = S_{đáy} \\cdot h = 6 \\cdot 10 = 60$ ($cm^3$)."
+    }
+  ]
+}

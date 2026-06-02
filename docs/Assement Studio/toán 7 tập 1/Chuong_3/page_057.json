@@ -1,0 +1,28 @@
+{
+  "page": 56,
+  "lesson_title": "Bài tập cuối chương 3 (tiếp theo)",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "3.23",
+      "question": "Cho Hình 3.43. Giải thích tại sao $AB // CD$.",
+      "answer": "Sử dụng dấu hiệu nhận biết hai đường thẳng song song."
+    },
+    {
+      "id": "3.24",
+      "question": "Cho Hình 3.44, biết $a // b$. Tính số đo các góc $\\widehat{A_1}, \\widehat{B_2}$.",
+      "answer": "Áp dụng tính chất của hai đường thẳng song song."
+    },
+    {
+      "id": "3.25",
+      "question": "Cho Hình 3.45. Chứng minh rằng $m // n$.",
+      "answer": "Dựa vào các số đo góc cho trước trên hình để chứng minh."
+    },
+    {
+      "id": "3.26",
+      "question": "Vẽ hình theo diễn đạt sau: Cho góc xOy. Lấy điểm A trên tia Ox, điểm B trên tia Oy. Vẽ đường thẳng m đi qua A và song song với Oy, vẽ đường thẳng n đi qua B và song song với Ox.",
+      "answer": "Thực hiện vẽ theo các bước mô tả."
+    }
+  ]
+}

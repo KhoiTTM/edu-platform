@@ -1,0 +1,17 @@
+{
+  "page": 74,
+  "chapter": "Chương IV: Tam giác bằng nhau",
+  "lesson_title": "Ôn tập chương IV (tiếp theo)",
+  "exercises": [
+    {
+      "id": "4.51",
+      "question": "Cho tam giác ABC cân tại A. Gọi D, E lần lượt là trung điểm của AB, AC.\na) Chứng minh rằng $\\triangle ABE = \\triangle ACD$.\nb) Chứng minh rằng BE = CD.\nc) Gọi I là giao điểm của BE và CD. Chứng minh rằng $\\triangle IBC$ cân.",
+      "answer": "a) Vì $\\triangle ABC$ cân tại A nên AB = AC.\nVì D, E lần lượt là trung điểm của AB, AC nên AD = AE = $\\frac{1}{2}$AB.\nXét $\\triangle ABE$ và $\\triangle ACD$ có:\nAB = AC (theo giả thiết);\n$\\widehat{A}$ là góc chung;\nAE = AD (chứng minh trên).\nVậy $\\triangle ABE = \\triangle ACD$ (c.g.c).\nb) Từ $\\triangle ABE = \\triangle ACD$ suy ra BE = CD (hai cạnh tương ứng).\nc) Từ $\\triangle ABE = \\triangle ACD$ suy ra $\\widehat{ABE} = \\widehat{ACD}$.\nMà $\\widehat{ABC} = \\widehat{ACB}$ (vì $\\triangle ABC$ cân tại A).\nSuy ra $\\widehat{ABC} - \\widehat{ABE} = \\widehat{ACB} - \\widehat{ACD} \\Rightarrow \\widehat{IBC} = \\widehat{ICB}$.\nVậy $\\triangle IBC$ cân tại I."
+    },
+    {
+      "id": "4.52",
+      "question": "Cho hình 4.31. Biết AB = AC, BD = CE. Chứng minh rằng $\\triangle ABD = \\triangle ACE$.",
+      "answer": "Xét $\\triangle ABC$ cân tại A vì AB = AC, suy ra $\\widehat{ABC} = \\widehat{ACB}$.\nDo đó $\\widehat{ABD} = \\widehat{ACE}$ (vì cùng kề bù với hai góc bằng nhau $\\widehat{ABC}$ và $\\widehat{ACB}$).\nXét $\\triangle ABD$ và $\\triangle ACE$ có:\nAB = AC (theo giả thiết);\n$\\widehat{ABD} = \\widehat{ACE}$ (chứng minh trên);\nBD = CE (theo giả thiết).\nVậy $\\triangle ABD = \\triangle ACE$ (c.g.c)."
+    }
+  ]
+}

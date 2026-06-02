@@ -1,0 +1,28 @@
+{
+  "page": 52,
+  "lesson_title": "Bài 11: Định lí và chứng minh định lí (tiếp theo)",
+  "theory": [
+    {
+      "subtitle": "2. Chứng minh định lí",
+      "content": "Chứng minh một định lí là dùng suy luận để khẳng định kết luận (KL) là đúng, từ giả thiết (GT) và những khẳng định đúng đã biết."
+    }
+  ],
+  "examples": [
+    {
+      "question": "Ví dụ: Chứng minh định lí: \"Nếu hai đường thẳng phân biệt cùng song song với một đường thẳng thứ ba thì chúng song song với nhau.\"",
+      "solution": "Giả thiết: $a // c$ và $b // c$ ($a, b, c$ phân biệt). Kết luận: $a // b$.\nChứng minh: Nếu $a$ cắt $b$ tại điểm $M$ thì qua điểm $M$ có hai đường thẳng $a, b$ cùng song song with $c$. Điều này trái với tiên đề Euclid. Vậy $a$ không thể cắt $b$, tức là $a // b$."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "Luyện tập 1",
+      "question": "Cho định lí: \"Nếu một đường thẳng cắt hai đường thẳng song song thì hai góc đồng vị bằng nhau.\" Hãy chỉ ra giả thiết và kết luận của định lí đó.",
+      "answer": "- Giả thiết (GT): Một đường thẳng cắt hai đường thẳng song song.\n- Kết luận (KL): Hai góc đồng vị bằng nhau."
+    },
+    {
+      "id": "Luyện tập 2",
+      "question": "Em hãy chứng minh định lí: \"Hai góc cùng bù với một góc thứ ba thì bằng nhau.\"",
+      "answer": "Giả thiết: $\\widehat{A} + \\widehat{C} = 180^\\circ$ và $\\widehat{B} + \\widehat{C} = 180^\\circ$. Kết luận: $\\widehat{A} = \\widehat{B}$.\nChứng minh: Từ $\\widehat{A} + \\widehat{C} = 180^\\circ \\implies \\widehat{A} = 180^\\circ - \\widehat{C}$.\nTừ $\\widehat{B} + \\widehat{C} = 180^\\circ \\implies \\widehat{B} = 180^\\circ - \\widehat{C}$.\nSuy ra $\\widehat{A} = \\widehat{B}$."
+    }
+  ]
+}

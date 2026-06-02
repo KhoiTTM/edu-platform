@@ -1,0 +1,17 @@
+{
+  "page": 92,
+  "chapter": "Chương V: Thu thập và biểu diễn dữ liệu",
+  "lesson_title": "Luyện tập chung (tiếp theo)",
+  "exercises": [
+    {
+      "id": "5.31",
+      "question": "Biểu đồ hình 5.16 cho biết cơ cấu dân số theo nhóm tuổi của Nhật Bản năm 2020.\na) Nhóm tuổi nào chiếm tỉ lệ cao nhất? Thấp nhất?\nb) Em có nhận xét gì về cơ cấu dân số của Nhật Bản qua biểu đồ này?",
+      "answer": "a) Nhóm tuổi 15 - 64 chiếm tỉ lệ cao nhất (59,2%); Nhóm tuổi 0 - 14 chiếm tỉ lệ thấp nhất (12,1%);\nb) Nhận xét: Nhật Bản có cơ cấu dân số già. Tỉ lệ người cao tuổi (từ 65 tuổi trở lên) chiếm tới 28,7%, cao gấp hơn 2 lần tỉ lệ trẻ em (0 - 14 tuổi). Điều này cho thấy gánh nặng an sinh xã hội và thiếu hụt nguồn lao động trong tương lai."
+    },
+    {
+      "id": "5.32",
+      "question": "Dựa vào biểu đồ hình 5.17, hãy so sánh xu hướng thay đổi về tỉ lệ thất nghiệp của một số quốc gia trong giai đoạn 2015 - 2020.",
+      "answer": "Dựa vào biểu đồ ta thấy:\n- Tỉ lệ thất nghiệp của các quốc gia đều có sự biến động trong giai đoạn 2015 - 2020.\n- Đa số có xu hướng giảm từ 2015 đến 2019.\n- Năm 2020, do ảnh hưởng của đại dịch COVID-19, tỉ lệ thất nghiệp ở hầu hết các quốc gia đều tăng mạnh trở lại."
+    }
+  ]
+}

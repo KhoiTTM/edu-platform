@@ -1,0 +1,18 @@
+{
+  "page": 81,
+  "lesson_title": "Bài tập (Bài 17 - tiếp theo)",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "4.33",
+      "question": "Cho tam giác ABC cân tại A. Kẻ $AD \\perp BC$ tại D. Chứng minh rằng $\\Delta ABD = \\Delta ACD$.",
+      "answer": "Xét hai tam giác vuông ABD và ACD có:\n- $AB = AC$ ($\\Delta ABC$ cân tại $A$);\n- $AD$ là cạnh chung.\nVậy $\\Delta ABD = \\Delta ACD$ (cạnh huyền - cạnh góc vuông)."
+    },
+    {
+      "id": "4.34",
+      "question": "Cho tam giác ABC cân tại A. Kẻ $BH \\perp AC (H \\in AC)$ và $CK \\perp AB (K \\in AB)$. Chứng minh rằng BH = CK.",
+      "answer": "Xét hai tam giác vuông ABH và ACK có:\n- $\\widehat{A}$ chung;\n- $AB = AC$ (giả thiết).\nVậy $\\Delta ABH = \\Delta ACK$ (cạnh huyền - góc nhọn) $\\implies BH = CK$."
+    }
+  ]
+}

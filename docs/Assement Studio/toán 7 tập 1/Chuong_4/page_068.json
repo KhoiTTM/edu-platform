@@ -1,0 +1,23 @@
+{
+  "page": 67,
+  "lesson_title": "Luyện tập chung (Chương 4 - tiếp theo)",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "4.9",
+      "question": "Cho Hình 4.21, biết AB = AD, $\\widehat{BAC} = \\widehat{DAC}$. Chứng minh rằng BC = DC.",
+      "answer": "Xét $\\Delta ABC$ và $\\Delta ADC$ có:\n- $AB = AD$ (giả thiết);\n- $\\widehat{BAC} = \\widehat{DAC}$ (giả thiết);\n- $AC$ là cạnh chung.\n$\\implies \\Delta ABC = \\Delta ADC$ (c.g.c) $\\implies BC = DC$ (hai cạnh tương ứng)."
+    },
+    {
+      "id": "4.10",
+      "question": "Cho Hình 4.22, biết AB = CD, $\\widehat{BAC} = \\widehat{DCA}$. Chứng minh rằng $\\Delta ABC = \\Delta CDA$.",
+      "answer": "Xét $\\Delta ABC$ và $\\Delta CDA$ có:\n- $AB = CD$ (giả thiết);\n- $\\widehat{BAC} = \\widehat{DCA}$ (giả thiết);\n- $AC$ là cạnh chung.\nVậy $\\Delta ABC = \\Delta CDA$ (c.g.c)."
+    },
+    {
+      "id": "4.11",
+      "question": "Cho Hình 4.23, biết $\\widehat{AOB} = \\widehat{COD}$, $OA = OC$, $OB = OD$. Chứng minh rằng $AB = CD$.",
+      "answer": "Xét $\\Delta OAB$ và $\\Delta OCD$ có:\n- $OA = OC$ (giả thiết);\n- $\\widehat{AOB} = \\widehat{COD}$ (giả thiết);\n- $OB = OD$ (giả thiết).\n$\\implies \\Delta OAB = \\Delta OCD$ (c.g.c) $\\implies AB = CD$ (hai cạnh tương ứng)."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "page": 58,
+  "chapter": "Chương IV: Tam giác bằng nhau",
+  "lesson_title": "Bài tập (Bài 13 - tiếp theo)",
+  "exercises": [
+    {
+      "id": "4.16",
+      "question": "Cho hình 4.6. Chứng minh rằng $\\triangle ABC = \\triangle ADC$.",
+      "answer": "Xét $\\triangle ABC$ và $\\triangle ADC$, ta có:\nAB = AD (theo giả thiết);\nBC = DC (theo giả thiết);\nAC là cạnh chung.\nVậy $\\triangle ABC = \\triangle ADC$ (c.c.c)."
+    },
+    {
+      "id": "4.17",
+      "question": "Cho hình 4.7. Chứng minh rằng $\\triangle ABD = \\triangle CDB$, từ đó suy ra $AB \\parallel CD$ và $AD \\parallel CB$.",
+      "answer": "- Xét $\\triangle ABD$ và $\\triangle CDB$, ta có:\nAB = CD (theo giả thiết);\nAD = CB (theo giả thiết);\nBD là cạnh chung.\nVậy $\\triangle ABD = \\triangle CDB$ (c.c.c).\n- Từ $\\triangle ABD = \\triangle CDB$ suy ra:\n$\\widehat{ABD} = \\widehat{CDB}$ (hai góc tương ứng). Mà hai góc này ở vị trí so le trong nên $AB \\parallel CD$.\n$\\widehat{ADB} = \\widehat{CBD}$ (hai góc tương ứng). Mà hai góc này ở vị trí so le trong nên $AD \\parallel CB$."
+    },
+    {
+      "id": "4.18",
+      "question": "Cho hình 4.8. Biết AC = BD, BC = AD. Chứng minh rằng $\\widehat{ABC} = \\widehat{BAD}$ và $\\widehat{BAC} = \\widehat{ABD}$.",
+      "answer": "Xét $\\triangle ABC$ và $\\triangle BAD$, ta có:\nAC = BD (theo giả thiết);\nBC = AD (theo giả thiết);\nAB là cạnh chung.\nVậy $\\triangle ABC = \\triangle BAD$ (c.c.c).\nSuy ra: $\\widehat{ABC} = \\widehat{BAD}$ và $\\widehat{BAC} = \\widehat{ABD}$ (các cặp góc tương ứng)."
+    }
+  ]
+}

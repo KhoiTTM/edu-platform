@@ -1,0 +1,18 @@
+{
+  "page": 82,
+  "lesson_title": "Luyện tập chung (Chương 4)",
+  "theory": [],
+  "examples": [],
+  "exercises": [
+    {
+      "id": "4.35",
+      "question": "Cho tam giác ABC cân tại A. Gọi M là trung điểm của BC. Chứng minh rằng AM là tia phân giác của góc BAC.",
+      "answer": "Xét $\\Delta ABM$ và $\\Delta ACM$ có: $AB = AC, AM$ chung, $MB = MC$. Suy ra $\\Delta ABM = \\Delta ACM$ (c.c.c). Suy ra $\\widehat{BAM} = \\widehat{CAM}$. Vậy $AM$ là tia phân giác của góc $BAC$."
+    },
+    {
+      "id": "4.36",
+      "question": "Cho tam giác ABC cân tại A. Trên cạnh AB lấy điểm D, trên cạnh AC lấy điểm E sao cho AD = AE. Chứng minh rằng $CD = BE$.",
+      "answer": "Xét $\\Delta ADC$ và $\\Delta AEB$ có: $AD = AE, \\widehat{A}$ chung, $AC = AB$. Suy ra $\\Delta ADC = \\Delta AEB$ (c.g.c). Suy ra $CD = BE$."
+    }
+  ]
+}
