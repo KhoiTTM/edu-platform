@@ -1,0 +1,52 @@
+{
+  "page": 10,
+  "exercises": [
+    {
+      "id": "1",
+      "instruction": "Số ?",
+      "table": {
+        "headers": ["Số bị trừ", "Số trừ", "Hiệu"],
+        "rows": [
+          {"so_bi_tru": 1000, "so_tru": 200, "hieu": 800},
+          {"so_bi_tru": 563, "so_tru": 137, "hieu": "?"},
+          {"so_bi_tru": 210, "so_tru": 60, "hieu": "?"},
+          {"so_bi_tru": 100, "so_tru": 26, "hieu": "?"},
+          {"so_bi_tru": 216, "so_tru": 132, "hieu": "?"}
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "instruction": "Số ?",
+      "calculation_chain": [305, "+ 105", "?", "- 205", "?"]
+    },
+    {
+      "id": "3",
+      "parts": [
+        {
+          "sub_id": "a",
+          "instruction": "Những chum nào ghi phép tính có kết quả lớn hơn 150?",
+          "items": [
+            {"label": "A", "operation": "135 + 48"},
+            {"label": "B", "operation": "80 + 27"},
+            {"label": "C", "operation": "537 - 361"},
+            {"label": "D", "operation": "25 + 125"},
+            {"label": "E", "operation": "216 - 109"}
+          ]
+        },
+        {
+          "sub_id": "b",
+          "instruction": "Những chum nào ghi phép tính có kết quả bằng nhau?"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "problem_text": "Ở một trường học, khối lớp Ba có 142 học sinh, khối lớp Bốn có ít hơn khối lớp Ba 18 học sinh. Hỏi:",
+      "parts": [
+        "a) Khối lớp Bốn có bao nhiêu học sinh?",
+        "b) Cả hai khối lớp có bao nhiêu học sinh?"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "page": 148,
+  "lesson_title": "BUỔI SÁNG QUÊ NỘI",
+  "sections": [
+    {
+      "type": "đọc",
+      "content": "Khi mặt trời chưa dậy
+Hoa còn thiếp trong sương
+Khói bếp đầy vườn
+Nội nấu cơm, nấu cám.
+
+Đàn trâu ra đồng sớm
+Đội cả sương mà đi
+Núi đồi ngủ trong mây
+Cuối xóm ai thầm thì
+Gánh rau ra chợ bán.
+
+Gà con kêu trong ổ
+Đánh thức ông mặt trời
+Chú mực ra sân phơi
+Chạy mấy vòng khởi động.
+
+Một mùi hương mỏng
+Thơm đẫm vào ban mai
+Gió chạm khóm hoa nhài
+Mang hương đi khắp lối.
+
+Buổi sáng quê nội
+Mặt trời như trái chín
+Treo trên vòm cây.",
+      "author": "Nguyễn Lãm Thắng",
+      "questions": [
+        {
+          "id": "a",
+          "question": "Tìm những từ ngữ trong bài thơ tả: hoa, núi đồi, mặt trời"
+        },
+        {
+          "id": "b",
+          "question": "Những con vật đã làm gì trong buổi sáng ở quê nội của bạn nhỏ?"
+        },
+        {
+          "id": "c",
+          "question": "Bài thơ nói đến những ai? Những người đó làm gì?"
+        }
+      ]
+    }
+  ]
+}

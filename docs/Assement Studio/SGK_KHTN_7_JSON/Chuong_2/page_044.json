@@ -1,0 +1,17 @@
+{
+  "page": 44,
+  "sections": [
+    {
+      "title": "2. Biết công thức hoá học, tính phần trăm khối lượng các nguyên tố trong hợp chất",
+      "content": "Cách tính:\n- Bước 1: Tính khối lượng phân tử của hợp chất.\n- Bước 2: Tính phần trăm khối lượng của nguyên tố trong hợp chất theo công thức:\n%X = (Số nguyên tử X \u00d7 KLNT X / KLPT hợp chất) \u00d7 100%"
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "exercise",
+      "content": "Tính phần trăm khối lượng các nguyên tố C và H trong methane có công thức hoá học CH4.",
+      "answer": "KLPT CH4 = 12 + 4 \u00d7 1 = 16 amu.\n%C = (12 / 16) \u00d7 100% = 75%.\n%H = (4 / 16) \u00d7 100% = 25% (hoặc 100% - 75% = 25%)."
+    }
+  ]
+}

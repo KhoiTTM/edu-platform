@@ -1,0 +1,25 @@
+{
+  "page": 37,
+  "chapter": "CHƯƠNG II: PHÂN TỬ. LIÊN KẾT HOÁ HỌC",
+  "lesson_title": "Bài 5: Giới thiệu về liên kết hoá học",
+  "learning_objectives": [
+    "Nêu được mô hình sắp xếp các electron trong vỏ nguyên tử của một số nguyên tố khí hiếm.",
+    "Nêu được sự hình thành liên kết cộng hoá trị theo nguyên tắc dùng chung electron để tạo ra lớp electron ngoài cùng giống nguyên tử nguyên tố khí hiếm. Áp dụng được cho các phân tử đơn giản như H2, O2, NH3, H2O,...",
+    "Nêu được sự hình thành liên kết ion theo nguyên tắc cho và nhận electron để tạo ra ion có lớp electron ngoài cùng giống nguyên tử nguyên tố khí hiếm. Áp dụng được cho các phân tử đơn giản như NaCl, MgO,...",
+    "Chỉ ra được sự khác nhau về một số tính chất của hợp chất ion và hợp chất cộng hoá trị."
+  ],
+  "sections": [
+    {
+      "subtitle": "I. Cấu trúc electron bền vững của khí hiếm",
+      "content": "- Ở điều kiện thường, các khí hiếm tồn tại dưới dạng đơn nguyên tử bền vững, khó bị biến đổi hoá học.\n- Lớp electron ngoài cùng của chúng chứa 8 electron (trừ He chứa 2 electron).\n- Nguyên tử của các nguyên tố khác có xu hướng tham gia liên kết hoá học để đạt được lớp electron ngoài cùng giống khí hiếm bằng cách nhường, nhận hoặc dùng chung các electron."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Quan sát Hình 6.1, so sánh số electron lớp ngoài cùng của He, Ne và Ar.",
+      "answer": "He có 2 electron lớp ngoài cùng. Ne và Ar đều có 8 electron lớp ngoài cùng."
+    }
+  ]
+}

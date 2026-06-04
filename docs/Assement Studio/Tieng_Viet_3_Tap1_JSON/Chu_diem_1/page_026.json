@@ -1,0 +1,37 @@
+{
+  "page": 25,
+  "sections": [
+    {
+      "type": "nói_và_nghe",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Quan sát tranh, kể lại các hoạt động trong từng tranh:",
+          "items": []
+        },
+        {
+          "id": "2",
+          "instruction": "Kể lại một hoạt động em đã làm cùng những người thân trong gia đình.",
+          "items": [
+            "Kể lại một hoạt động:",
+            "a. Giới thiệu: Thời gian, Địa điểm, Người tham gia",
+            "b. Diễn biến: Việc đầu tiên, Việc tiếp theo, Việc cuối cùng",
+            "c. Cảm nghĩ: Suy nghĩ khi làm việc cùng mọi người, Cảm xúc khi hoàn thành công việc"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "viết",
+      "exercises": [
+        {
+          "id": "3",
+          "instruction": "Viết 3 - 4 câu về những điều em đã kể theo gợi ý a, b hoặc c ở bài tập 2.",
+          "items": [
+            "Đọc lại đoạn văn của em, phát hiện lỗi và sửa lỗi (dùng từ, đặt câu, sắp xếp ý...)."
+          ]
+        }
+      ]
+    }
+  ]
+}

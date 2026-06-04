@@ -1,0 +1,66 @@
+{
+  "page": 13,
+  "sections": [
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "1",
+          "parts": [
+            {
+              "sub_id": "a",
+              "instruction": "Tìm số bị trừ (theo mẫu).",
+              "example": "? - 10 = 30 => 30 + 10 = 40.",
+              "items": [
+                "? - 20 = 40",
+                "? - 12 = 25",
+                "? - 18 = 42"
+              ]
+            },
+            {
+              "sub_id": "b",
+              "instruction": "Tìm số trừ (theo mẫu).",
+              "example": "30 - ? = 20 => 30 - 20 = 10.",
+              "items": [
+                "50 - ? = 10",
+                "35 - ? = 15",
+                "51 - ? = 18"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Số ?",
+          "table": {
+            "headers": ["Số bị trừ", "Số trừ", "Hiệu"],
+            "rows": [
+              {"so_bi_tru": 70, "so_tru": 20, "hieu": 50},
+              {"so_bi_tru": "?", "so_tru": 14, "hieu": 25},
+              {"so_bi_tru": 34, "so_tru": "?", "hieu": 12},
+              {"so_bi_tru": "?", "so_tru": 26, "hieu": 18},
+              {"so_bi_tru": 64, "so_tru": "?", "hieu": 37}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "luyện_tập",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Chọn câu trả lời đúng.",
+          "items": [
+            "a) Biết số trừ là 36, hiệu là 25, số bị trừ là: A. 51, B. 11, C. 61",
+            "b) Biết số bị trừ là 52, hiệu là 28, số trừ là: A. 80, B. 34, C. 24"
+          ]
+        },
+        {
+          "id": "2",
+          "problem_text": "Lúc đầu có 64 con vịt ở trên bờ. Lúc sau có một số con vịt xuống ao bơi lội, số vịt còn lại ở trên bờ là 24 con. Hỏi có bao nhiêu con vịt xuống ao?"
+        }
+      ]
+    }
+  ]
+}

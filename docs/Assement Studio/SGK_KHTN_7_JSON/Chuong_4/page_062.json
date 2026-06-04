@@ -1,0 +1,29 @@
+{
+  "page": 62,
+  "chapter": "CHƯƠNG IV: ÂM THANH",
+  "lesson_title": "Bài 12: Sóng âm",
+  "learning_objectives": [
+    "Giải thích được sự tạo thành sóng âm.",
+    "Nêu được các môi trường truyền âm khác nhau (rắn, lỏng, khí).",
+    "Mô tả được sơ lược về sự truyền năng lượng của sóng âm."
+  ],
+  "sections": [
+    {
+      "subtitle": "I. Nguồn âm",
+      "content": "- Nguồn âm là những vật phát ra âm thanh.\n- Khi phát ra âm, các vật đều dao động. Dao động là sự chuyển động qua lại quanh vị trí cân bằng.\n\nVí dụ: Dây đàn dao động phát ra âm, mặt trống dao động phát ra âm."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "opening",
+      "content": "Tại sao chúng ta có thể nghe được âm thanh phát ra từ các nhạc cụ, tiếng chim hót hay tiếng cười nói của mọi người?"
+    },
+    {
+      "id": "2",
+      "type": "activity",
+      "content": "Hãy tìm ví dụ về một vật phát ra âm thanh và chỉ ra bộ phận nào của nó dao động.",
+      "answer": "Ví dụ: Khi gảy dây đàn guitar, dây đàn dao động và phát ra âm thanh. Khi đánh trống, mặt trống dao động và phát ra âm thanh."
+    }
+  ]
+}

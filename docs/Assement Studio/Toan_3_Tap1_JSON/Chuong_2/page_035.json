@@ -1,0 +1,23 @@
+{
+  "page": 35,
+  "exercises": [
+    {
+      "id": "2",
+      "instruction": "Số ?",
+      "calculation_chain": [8, "x 3", "?", "+ 16", "?"]
+    },
+    {
+      "id": "3",
+      "instruction": "Chọn kết quả cho mỗi phép tính.",
+      "visual_elements": "Bees with calculations: 64 : 8, 8 x 2, 8 x 5, 40 : 8, 8 x 7. Flowers with results: 8, 16, 40, 5, 56."
+    },
+    {
+      "id": "4",
+      "problem_text": "Mỗi con cua có 8 cái cẳng và 2 cái càng. Hỏi:",
+      "parts": [
+        "a) 3 con cua có bao nhiêu cái cẳng?",
+        "b) 6 con cua có bao nhiêu cái càng?"
+      ]
+    }
+  ]
+}

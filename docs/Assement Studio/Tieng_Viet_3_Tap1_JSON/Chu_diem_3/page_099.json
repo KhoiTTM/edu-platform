@@ -1,0 +1,62 @@
+{
+  "page": 98,
+  "sections": [
+    {
+      "type": "đọc",
+      "author": "(Theo Hà Yên)",
+      "content": "Na không hiểu được tại sao nắng lại chiếu từ mắt mình nhưng cô bé rất mừng vì làm cho bà vui. Mỗi sáng, Na dạo chơi trong vườn rồi chạy ùa vào phòng để đem nắng cho bà."
+    },
+    {
+      "type": "luyện_từ_và_câu",
+      "title": "Từ ngữ",
+      "content": "Xổ: mở ra, tháo ra.\nMắt lanh: mắt có ánh sáng chiếu vào, trông sinh động."
+    },
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "1",
+          "question": "Vì sao bà nội của Na khó thấy được nắng?"
+        },
+        {
+          "id": "2",
+          "question": "Na nghĩ ra cách nào để mang nắng cho bà?"
+        },
+        {
+          "id": "3",
+          "question": "Na có mang được nắng cho bà không? Vì sao?"
+        },
+        {
+          "id": "4",
+          "question": "Câu nói của bà cho em biết điều gì? Chọn câu trả lời hoặc nêu ý kiến khác của em.",
+          "options": [
+            "a. Bà hiểu tình cảm của Na.",
+            "b. Bà không muốn Na buồn.",
+            "c. Bà rất yêu Na."
+          ]
+        },
+        {
+          "id": "5",
+          "question": "Nếu là Na, em sẽ làm gì để giúp bà nhìn thấy nắng?"
+        }
+      ]
+    },
+    {
+      "type": "nói_và_nghe",
+      "title": "NÓI VÀ NGHE",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Nêu nội dung từng tranh.",
+          "items": [
+            "Tia nắng bé nhỏ",
+            "Bà nội của Na (...)",
+            "Một buổi sáng (...)",
+            "Na chạy ùa vào (...)",
+            "Mỗi sáng, (...)"
+          ]
+        }
+      ]
+    }
+  ]
+}

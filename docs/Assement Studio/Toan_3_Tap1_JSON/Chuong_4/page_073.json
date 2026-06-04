@@ -1,0 +1,52 @@
+{
+  "page": 73,
+  "lesson_title": "Bài 25: PHÉP CHIA HẾT, PHÉP CHIA CÓ DƯ",
+  "sections": [
+    {
+      "type": "hoạt_động",
+      "title": "Hoạt động",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Tính.",
+          "items": [
+            {
+              "id": "a",
+              "logic": [
+                "15 : 3 = 5",
+                "24 : 6 = 4",
+                "20 : 5 = 4"
+              ]
+            },
+            {
+              "id": "b",
+              "logic": [
+                "32 : 6 = 5 (dư 2)",
+                "41 : 8 = 5 (dư 1)",
+                "23 : 3 = 7 (dư 2)"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Cách chia táo của bạn nào cho ta phép chia hết? Cách chia táo của bạn nào cho ta phép chia có dư?",
+          "items": [
+            {
+              "id": "Robot",
+              "text": "Chia 18 quả táo vào các đĩa, mỗi đĩa 4 quả."
+            },
+            {
+              "id": "Nam",
+              "text": "Chia 18 quả táo vào các đĩa, mỗi đĩa 3 quả."
+            },
+            {
+              "id": "Mai",
+              "text": "Chia 18 quả táo vào các đĩa, mỗi đĩa 5 quả."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

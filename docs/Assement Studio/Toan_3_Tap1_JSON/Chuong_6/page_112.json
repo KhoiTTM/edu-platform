@@ -1,0 +1,30 @@
+{
+  "page": 112,
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "exercises": [
+        {
+          "id": "2",
+          "instruction": "Cây cau nhà em lúc mới trồng cao 2 m. Hiện nay, cây cau đã cao 6 m. Hỏi hiện nay cây cau cao gấp mấy lần lúc mới trồng?"
+        },
+        {
+          "id": "3",
+          "instruction": "a) Con ngỗng cân nặng 6 kg. Con chó nặng gấp 2 lần con ngỗng. Con lợn nặng gấp 5 lần con chó. Hỏi con lợn cân nặng bao nhiêu ki-lô-gam?",
+          "content": "Con ngỗng cân nặng 6 kg. Con chó nặng gấp 2 lần con ngỗng. Con lợn nặng gấp 5 lần con chó.",
+          "logic": [
+            "Việt: (6 x 2) x 5 = 12 x 5 = 60",
+            "Nam: 6 x (2 x 5) = 6 x 10 = 60",
+            "Cả hai bạn đều tính đúng. Cách tính của Việt thuận tiện hơn.",
+            "Nhận xét: (6 x 2) x 5 = 6 x (2 x 5)"
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "b) Tính giá trị của biểu thức.",
+          "items": ["8 x 5 x 2", "9 x 2 x 5"]
+        }
+      ]
+    }
+  ]
+}

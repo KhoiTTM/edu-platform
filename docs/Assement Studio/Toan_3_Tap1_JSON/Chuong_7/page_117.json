@@ -1,0 +1,51 @@
+{
+  "page": 117,
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Tính giá trị của biểu thức.",
+          "items": [
+            "a) 45 + (62 + 38)",
+            "b) 182 - (96 - 54)",
+            "c) 64 : (4 x 2)",
+            "d) 7 x (48 : 6)"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Chọn số là giá trị của mỗi biểu thức dưới đây.",
+          "items": [
+            "A: 4 x (54 - 44)",
+            "B: (33 + 67) : 2",
+            "C: (25 + 45) x 3",
+            "D: 52 + 24 x 2",
+            "Các giá trị để chọn: 40, 50, 100, 210"
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Tính giá trị của biểu thức.",
+          "items": [
+            "a) 27 + 34 + 66",
+            "b) 7 x 5 x 2"
+          ]
+        },
+        {
+          "id": "4",
+          "instruction": "Người ta đóng 288 bánh xe ô tô vào các hộp, mỗi hộp 4 bánh xe. Sau đó đóng các hộp vào các thùng, mỗi thùng 8 hộp. Hỏi người ta đóng được bao nhiêu thùng bánh xe ô tô như vậy?"
+        },
+        {
+          "id": "5",
+          "instruction": "Đố em!",
+          "content": "Chọn dấu phép tính \"+; -; x; :\" thích hợp thay cho dấu \"?\" để được biểu thức có giá trị bé nhất.",
+          "items": [
+            "6 x (6 ? 6)"
+          ]
+        }
+      ]
+    }
+  ]
+}

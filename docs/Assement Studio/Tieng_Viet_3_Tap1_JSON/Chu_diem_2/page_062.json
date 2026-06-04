@@ -1,0 +1,46 @@
+{
+  "page": 61,
+  "lesson_title": "BÀN TAY CÔ GIÁO",
+  "sections": [
+    {
+      "type": "viết",
+      "title": "Nghe - viết",
+      "content": "Em nghe thầy đọc bao ngày\\nTiếng thơ đỏ nắng, xanh cây quanh nhà\\nMái chèo nghiêng mặt sông xa\\nBâng khuâng nghe vọng tiếng bà năm xưa\\n\\nNghe thơ đọc\\nNghe tàu dừa\\nRào rào\\nchuyển con mưa giữa trời.\\nThêm yêu tiếng hát nụ cười\\nNghe thơ em thấy đất trời đẹp ra.\\n(Trần Đăng Khoa)"
+    },
+    {
+      "type": "luyện_từ_và_câu",
+      "title": "Làm bài tập a hoặc b",
+      "exercises": [
+        {
+          "id": "a",
+          "instruction": "Chọn l hoặc n cho ô vuông.",
+          "items": [
+            "Tớ là chiếc xe lu. Người tớ to lù lù.",
+            "Con đường nằm mới đắp.",
+            "Trời nắng như lửa thiêu.",
+            "Tớ san bằng tăm tắp.",
+            "Tớ vẫn lăn đều đều.",
+            "Con đường lộng gió rải nhựa.",
+            "Trời lạnh như ướp đá.",
+            "Tớ làm phẳng như lụa.",
+            "Tớ càng lăn vội vã."
+          ]
+        },
+        {
+          "id": "b",
+          "instruction": "Tìm từ chứa ăng hoặc ăt cho ô vuông:",
+          "items": [
+            "Đêm đã về khuya, cảnh vật vắng vẻ, yên tĩnh.",
+            "Mặt trăng đã lên cao, tròn vành vạnh.",
+            "Ánh trăng trong vắt, chiếu xuống mặt hồ.",
+            "Những gợn sóng lăn tăn phản chiếu ánh sáng lóng lánh như ánh bạc."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vận_dụng",
+      "content": "Kể với người thân về một giờ học em thấy vui vẻ, thú vị."
+    }
+  ]
+}

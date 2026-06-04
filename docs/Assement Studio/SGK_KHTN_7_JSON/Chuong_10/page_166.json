@@ -1,0 +1,33 @@
+{
+  "page": 166,
+  "sections": [
+    {
+      "subtitle": "2. Các hình thức sinh sản vô tính ở thực vật",
+      "content": "Thực vật có hai hình thức sinh sản vô tính chính:",
+      "methods": [
+        {
+          "name": "Sinh sản bằng bào tử",
+          "content": "Cá thể mới được tạo thành từ bào tử. Ví dụ: rêu, dương xỉ."
+        },
+        {
+          "name": "Sinh sản sinh dưỡng",
+          "content": "Cá thể mới được tạo thành từ một bộ phận cơ quan sinh dưỡng của cây mẹ (rễ, thân, lá).",
+          "examples": [
+            "Lá cây thuốc bỏng (lá).",
+            "Củ khoai lang (rễ củ).",
+            "Gừng, nghệ (thân rễ).",
+            "Dâu tây (thân bò)."
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Quan sát Hình 39.2, hãy mô tả các hình thức sinh sản sinh dưỡng ở thực vật.",
+      "answer": "- Cây thuốc bỏng: Cây con mọc từ mép lá.\n- Cây khoai lang: Cây con mọc từ rễ củ.\n- Cây cỏ gấu: Cây con mọc từ thân rễ."
+    }
+  ]
+}

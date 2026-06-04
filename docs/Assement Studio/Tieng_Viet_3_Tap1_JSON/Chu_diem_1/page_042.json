@@ -1,0 +1,49 @@
+{
+  "page": 41,
+  "lesson_title": "NÓI VÀ NGHE",
+  "sections": [
+    {
+      "type": "nói_và_nghe",
+      "title": "1. Trao đổi về những nội dung theo gợi ý trong bảng",
+      "exercises": [
+        {
+          "id": "ex1",
+          "instruction": "Trao đổi về câu chuyện Tạm biệt mùa hè",
+          "items": [
+            "Việc làm của Diệu: Diệu vào vườn hái quả cùng mẹ",
+            "Cảm xúc của Diệu: Thích thú và hào hứng",
+            "Suy nghĩ của em về việc làm của Diệu: Diệu là cô bé chăm làm, biết quan tâm, giúp đỡ mẹ",
+            "Diệu đến thăm bà cụ Khởi và trò chuyện với bà",
+            "Diệu ra chợ cùng mẹ và được gặp nhiều người",
+            "Tình cảm của em về việc làm của Diệu: Diệu thật tình cảm, thật đáng yêu!"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "nói_và_nghe",
+      "title": "2. Nói về tình cảm, cảm xúc của em đối với một người bạn mà em yêu quý",
+      "exercises": [
+        {
+          "id": "ex2a",
+          "instruction": "a. Em muốn nói về tình cảm, cảm xúc của em đối với bạn nào?",
+          "items": []
+        },
+        {
+          "id": "ex2b",
+          "instruction": "b. Bạn đó có điểm gì khiến em yêu quý?",
+          "items": []
+        },
+        {
+          "id": "ex2c",
+          "instruction": "c. Em có tình cảm, cảm xúc như thế nào đối với bạn đó?",
+          "items": []
+        }
+      ]
+    },
+    {
+      "type": "viết",
+      "title": "3. Viết 2 - 3 câu thể hiện tình cảm, cảm xúc của em đối với bạn theo ý c ở bài tập 2"
+    }
+  ]
+}

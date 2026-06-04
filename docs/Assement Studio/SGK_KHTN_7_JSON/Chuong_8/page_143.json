@@ -1,0 +1,35 @@
+{
+  "page": 143,
+  "sections": [
+    {
+      "subtitle": "II. Cảm ứng ở thực vật",
+      "content": "Cảm ứng ở thực vật thường diễn ra chậm, khó nhận thấy bằng mắt thường trong thời gian ngắn. Các hình thức cảm ứng phổ biến bao gồm:",
+      "types": [
+        {
+          "name": "Hướng sáng",
+          "content": "Thân cây cong về phía có ánh sáng."
+        },
+        {
+          "name": "Hướng nước",
+          "content": "Rễ cây sinh trưởng hướng về nguồn nước."
+        },
+        {
+          "name": "Hướng trọng lực",
+          "content": "Rễ cây hướng xuống đất, thân cây hướng lên trên."
+        },
+        {
+          "name": "Hướng tiếp xúc",
+          "content": "Cây leo (tua cuốn) quấn quanh giá thể khi tiếp xúc."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Quan sát Hình 33.2, hãy cho biết các hiện tượng cảm ứng đó thuộc loại hướng động nào.",
+      "answer": "- Cây trong chậu để bên cửa sổ: Hướng sáng.\n- Rễ cây hướng về phía chậu nước: Hướng nước.\n- Tua cuốn cây mướp quấn vào giàn: Hướng tiếp xúc."
+    }
+  ]
+}

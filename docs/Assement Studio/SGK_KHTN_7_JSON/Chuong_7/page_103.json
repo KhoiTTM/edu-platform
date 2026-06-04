@@ -1,0 +1,17 @@
+{
+  "page": 103,
+  "title": "Bài tập Bài 22",
+  "exercises": [
+    {
+      "id": "1",
+      "question": "Viết phương trình quang hợp dạng chữ.",
+      "answer": "Nước + Carbon dioxide $\\xrightarrow[\text{Diệp lục}]{\text{Ánh sáng}}$ Chất hữu cơ + Oxygen."
+    },
+    {
+      "id": "2",
+      "question": "Những đặc điểm nào của lá cây giúp nó nhận được nhiều ánh sáng?",
+      "answer": "Phiến lá rộng, mỏng; các lá trên cành thường mọc so le nhau để không che khuất nhau."
+    }
+  ],
+  "em_co_biet": "Ngoài lá, một số bộ phận khác của cây có màu xanh (như thân cây xương rồng) cũng có khả năng quang hợp."
+}

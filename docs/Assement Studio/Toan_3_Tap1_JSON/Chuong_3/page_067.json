@@ -1,0 +1,24 @@
+{
+  "page": 66,
+  "lesson_title": "Luyện tập",
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "visual_elements": "Hình 1: Một hình đa giác ABCDE với các đường chéo AC và AD xuất phát từ đỉnh A. Hình 2: Một hình tròn tâm O với bốn bán kính OA, OB, OC, OD. Hình 3: Một khối lập phương lớn được tạo thành từ 8 khối lập phương nhỏ (2x2x2) sơn màu đỏ.",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Tìm các hình tam giác và các hình tứ giác có trong hình sau:"
+        },
+        {
+          "id": "2",
+          "instruction": "Trong hình dưới đây, hãy dùng ê ke kiểm tra xem hai bán kính nào của hình tròn tâm O tạo thành một góc vuông."
+        },
+        {
+          "id": "3",
+          "instruction": "Ghép 8 khối lập phương nhỏ được khối lập phương lớn (như hình vẽ). Người ta sơn màu đỏ vào tất cả các mặt của khối lập phương lớn. Hỏi có tất cả bao nhiêu mặt của các khối lập phương nhỏ được sơn màu đỏ?"
+        }
+      ]
+    }
+  ]
+}

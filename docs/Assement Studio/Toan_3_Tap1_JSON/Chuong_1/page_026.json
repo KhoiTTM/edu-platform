@@ -1,0 +1,50 @@
+{
+  "page": 26,
+  "exercises": [
+    {
+      "id": "3",
+      "instruction": "Số ?",
+      "visual_element": "Path with cars and calculations: 3 x 7 = ?, 5 : 1 = ?, 4 x 4 = ?, 14 : 2 = ?, 1 x 9 = ?, 6 : 3 = ?, 2 x 6 = ?, 5 x 3 = ?, 12 : 4 = ?, 4 x 6 = ?, 20 : 5 = ?, 6 x 1 = ?"
+    },
+    {
+      "id": "4",
+      "instruction": "Số ?",
+      "parts": [
+        {
+          "sub_id": "a",
+          "items": [
+            "4 x ? = 8",
+            "12 : ? = 3",
+            "3 x ? = 18",
+            "25 : ? = 5"
+          ]
+        },
+        {
+          "sub_id": "b",
+          "pyramid": {
+            "level_1": [1, 2, 1, 2],
+            "level_2": ["?", 2, "?"],
+            "level_3": ["?", "?"],
+            "level_4": ["?"]
+          }
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "title": "Phép nhân và phép chia với số 0",
+      "exercises": [
+        {
+          "id": "1",
+          "sub_id": "a",
+          "instruction": "Tính (theo mẫu).",
+          "example": "0 x 2 = ? => 0 x 2 = 0 + 0 = 0 => 0 x 2 = 0.",
+          "items": ["0 x 3", "0 x 4", "0 x 5"],
+          "notes": ["Số 0 nhân với số nào cũng bằng 0."]
+        }
+      ]
+    }
+  ]
+}

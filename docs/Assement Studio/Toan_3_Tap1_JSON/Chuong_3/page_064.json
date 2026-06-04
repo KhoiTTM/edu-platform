@@ -1,0 +1,23 @@
+{
+  "page": 63,
+  "lesson_title": "Bài 21. Khối lập phương, khối hộp chữ nhật",
+  "sections": [
+    {
+      "type": "khám_phá",
+      "title": null,
+      "visual_elements": "Các nhân vật hình học cách điệu và mô hình hình khối trực quan.",
+      "content": "Khối hộp chữ nhật và khối lập phương đều có 8 đỉnh, 6 mặt và 12 cạnh. Các mặt của khối hộp chữ nhật đều là hình chữ nhật. Các mặt của khối lập phương đều là hình vuông.",
+      "logic": [
+        "Khối hộp chữ nhật có 8 đỉnh, 6 mặt là hình chữ nhật, 12 cạnh.",
+        "Khối lập phương có 8 đỉnh, 6 mặt là hình vuông, 12 cạnh."
+      ],
+      "exercises": [
+        {
+          "id": null,
+          "instruction": "Nhận biết các đặc điểm của khối hộp chữ nhật và khối lập phương qua hình vẽ minh họa.",
+          "visual_elements": "Ba nhân vật hình khối: hình chữ nhật xanh lam, khối hộp chữ nhật vàng, và khối lập phương xanh lá. Bên dưới là ba bạn nhỏ đang quan sát một mô hình khối hộp chữ nhật trong suốt, có chỉ rõ 'đỉnh', 'cạnh', 'mặt'. Cạnh đó là một khung dây khối lập phương."
+        }
+      ]
+    }
+  ]
+}

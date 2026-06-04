@@ -1,0 +1,23 @@
+{
+  "page": 160,
+  "sections": [
+    {
+      "subtitle": "II. Cách tiến hành",
+      "experiment_1": {
+        "title": "1. Thí nghiệm quan sát sự sinh trưởng của cây",
+        "steps": [
+          "Gieo hạt đậu xanh vào chậu đất ẩm.",
+          "Khi hạt nảy mầm, mỗi ngày đo chiều cao của cây và đếm số lá.",
+          "Ghi lại số liệu vào bảng theo dõi trong khoảng 7 - 10 ngày."
+        ]
+      },
+      "experiment_2": {
+        "title": "2. Quan sát sự phát triển của động vật",
+        "steps": [
+          "Quan sát tranh ảnh hoặc video về vòng đời của một loài động vật (ví dụ: vòng đời của bướm).",
+          "Mô tả các giai đoạn phát triển khác nhau (Trứng -> Sâu -> Nhộng -> Bướm)."
+        ]
+      }
+    }
+  ]
+}

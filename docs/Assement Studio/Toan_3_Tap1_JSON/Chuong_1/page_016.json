@@ -1,0 +1,51 @@
+{
+  "page": 16,
+  "lesson_title": "Bài 5. BẢNG NHÂN 3, BẢNG CHIA 3",
+  "sections": [
+    {
+      "type": "khám_phá",
+      "title": "Bảng nhân 3",
+      "content": "Mỗi xe xích lô có 3 bánh xe. Hỏi 4 xe xích lô có bao nhiêu bánh xe?",
+      "logic": [
+        "3 x 4 = ?",
+        "3 + 3 + 3 + 3 = 12",
+        "3 x 4 = 12"
+      ],
+      "table": {
+        "title": "Hoàn thành bảng nhân 3",
+        "rows": [
+          "3 x 1 = 3",
+          "3 x 2 = 6",
+          "3 x 3 = ?",
+          "3 x 4 = ?",
+          "3 x 5 = ?",
+          "3 x 6 = ?",
+          "3 x 7 = ?",
+          "3 x 8 = ?",
+          "3 x 9 = ?",
+          "3 x 10 = 30"
+        ]
+      }
+    },
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Số ?",
+          "table": {
+            "headers": ["Thừa số", "Thừa số", "Tích"],
+            "rows": [
+              {"ts1": 3, "ts2": 2, "tich": 6},
+              {"ts1": 3, "ts2": 3, "tich": "?"},
+              {"ts1": 3, "ts2": 5, "tich": "?"},
+              {"ts1": 3, "ts2": 7, "tich": "?"},
+              {"ts1": 3, "ts2": 9, "tich": "?"},
+              {"ts1": 3, "ts2": 10, "tich": "?"}
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

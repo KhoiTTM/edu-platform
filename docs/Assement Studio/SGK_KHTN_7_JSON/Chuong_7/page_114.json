@@ -1,0 +1,32 @@
+{
+  "page": 114,
+  "chapter": "CHƯƠNG VII: TRAO ĐỔI CHẤT VÀ CHUYỂN HOÁ NĂNG LƯỢNG Ở SINH VẬT",
+  "lesson_title": "Bài 26: Một số yếu tố ảnh hưởng đến hô hấp tế bào",
+  "learning_objectives": [
+    "Nêu được một số yếu tố ảnh hưởng đến hô hấp tế bào.",
+    "Vận dụng hiểu biết về hô hấp tế bào vào thực tiễn (ví dụ: bảo quản hạt và nông sản, chế độ dinh dưỡng và tập luyện thể thao)."
+  ],
+  "sections": [
+    {
+      "subtitle": "I. Một số yếu tố ảnh hưởng đến hô hấp tế bào",
+      "content": "Quá trình hô hấp tế bào chịu ảnh hưởng của các yếu tố môi trường:",
+      "factors": [
+        {
+          "name": "1. Hàm lượng nước",
+          "content": "Nước là môi trường và nguyên liệu cho các phản ứng hoá học trong hô hấp tế bào. Hàm lượng nước thấp làm giảm tốc độ hô hấp."
+        },
+        {
+          "name": "2. Nồng độ khí oxygen",
+          "content": "Oxygen là nguyên liệu trực tiếp của hô hấp tế bào. Khi nồng độ oxygen giảm xuống dưới 5% thì tốc độ hô hấp giảm."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "opening",
+      "content": "Tại sao muốn bảo quản các loại hạt (lúa, ngô, đỗ,...) được lâu, người ta phải phơi khô chúng?"
+    }
+  ]
+}

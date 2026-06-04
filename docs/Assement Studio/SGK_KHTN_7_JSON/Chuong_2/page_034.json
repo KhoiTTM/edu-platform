@@ -1,0 +1,21 @@
+{
+  "page": 34,
+  "sections": [
+    {
+      "title": "2. Hợp chất",
+      "content": "- Hợp chất là những chất được tạo nên từ hai hay nhiều nguyên tố hoá học.\n- Ví dụ: nước được tạo nên từ hai nguyên tố H và O; muối ăn được tạo nên từ hai nguyên tố Na và Cl; khí carbon dioxide được tạo nên từ hai nguyên tố C và O."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "exercise",
+      "content": "Trong các chất sau, chất nào là đơn chất, chất nào là hợp chất?\na) Đường ăn (tạo nên từ C, H, O).\nb) Nhôm (tạo nên từ Al).\nc) Khí nitrogen (tạo nên từ N).\nd) Muối ăn (tạo nên từ Na, Cl).",
+      "answer": "- Đơn chất: b) Nhôm, c) Khí nitrogen.\n- Hợp chất: a) Đường ăn, d) Muối ăn."
+    }
+  ],
+  "key_points": [
+    "Đơn chất là chất được tạo nên từ một nguyên tố hoá học.",
+    "Hợp chất là chất được tạo nên từ hai hay nhiều nguyên tố hoá học."
+  ]
+}

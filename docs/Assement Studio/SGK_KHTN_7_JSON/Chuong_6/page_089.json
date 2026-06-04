@@ -1,0 +1,22 @@
+{
+  "page": 89,
+  "title": "Bài tập Bài 18",
+  "exercises": [
+    {
+      "id": "1",
+      "question": "Nam châm không hút vật nào sau đây?\nA. Cái kẹp giấy bằng thép.\nB. Đồng xu làm bằng đồng.\nC. Chiếc đinh sắt.\nD. Cái chìa khóa bằng niken.",
+      "answer": "B"
+    },
+    {
+      "id": "2",
+      "question": "Khi một nam châm thẳng bị gãy làm đôi, mỗi nửa sẽ như thế nào?\nA. Một nửa chỉ có cực Bắc, một nửa chỉ có cực Nam.\nB. Cả hai nửa đều mất hết từ tính.\nC. Mỗi nửa đều trở thành một nam châm mới có đủ hai cực Bắc và Nam.\nD. Một nửa vẫn là nam châm, nửa kia thì không.",
+      "answer": "C"
+    },
+    {
+      "id": "3",
+      "question": "Làm thế nào để xác định cực của một thanh nam châm đã bị mất màu sơn và kí hiệu?",
+      "answer": "Có thể dùng một nam châm khác đã biết rõ cực hoặc treo thanh nam châm bằng một sợi dây mảnh sao cho nó có thể quay tự do. Cực chỉ về hướng Bắc địa lí là cực Bắc, cực chỉ về hướng Nam địa lí là cực Nam."
+    }
+  ],
+  "em_co_biet": "La bàn là thiết bị dùng nam châm để xác định hướng. Kim la bàn luôn chỉ hướng Bắc - Nam. Người đi biển, phi công, người đi rừng thường dùng la bàn để định hướng."
+}

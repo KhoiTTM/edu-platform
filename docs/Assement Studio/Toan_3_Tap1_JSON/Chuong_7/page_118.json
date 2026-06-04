@@ -1,0 +1,40 @@
+{
+  "page": 118,
+  "lesson_title": "Bài 43: ÔN TẬP HÌNH HỌC VÀ ĐO LƯỜNG",
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Trong hình bên:",
+          "items": [
+            "a) Có mấy góc vuông?",
+            "b) Có mấy góc không vuông đỉnh A?",
+            "c) Tìm trung điểm của đoạn thẳng AC và đoạn thẳng ED."
+          ],
+          "visual_elements": "Hình đa giác ABCDE trên lưới ô vuông với các điểm K trên AC và I trên ED."
+        },
+        {
+          "id": "2",
+          "instruction": "Vẽ hình (theo mẫu).",
+          "visual_elements": "Hình tam giác, hình chữ nhật và hình vuông vẽ trên lưới ô vuông."
+        },
+        {
+          "id": "3",
+          "instruction": "Nêu tên và đếm khối:",
+          "items": [
+            "a) Nêu tên các đường kính, bán kính của hình tròn dưới đây.",
+            "b) Hình dưới đây được xếp bởi bao nhiêu khối lập phương, bao nhiêu khối trụ?"
+          ],
+          "visual_elements": "a) Hình tròn tâm O với các đoạn thẳng AB, CD, MN, ... b) Mô hình xếp từ các khối lập phương và khối trụ."
+        },
+        {
+          "id": "4",
+          "instruction": "Người ta xếp các khối lập phương màu trắng thành khối hộp chữ nhật, rồi sơn tất cả các mặt của khối hộp chữ nhật đó (như hình vẽ). Hỏi có tất cả bao nhiêu khối lập phương được sơn 3 mặt, được sơn 2 mặt?",
+          "visual_elements": "Hình khối hộp chữ nhật được ghép từ các khối lập phương nhỏ."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "page": 173,
+  "chapter": "CHƯƠNG X: SINH SẢN Ở SINH VẬT",
+  "lesson_title": "Bài 41: Một số yếu tố ảnh hưởng và điều hoà, điều khiển sinh sản ở sinh vật",
+  "learning_objectives": [
+    "Nêu được một số yếu tố ảnh hưởng đến sinh sản ở sinh vật.",
+    "Nêu được một số ứng dụng về điều khiển sinh sản ở sinh vật trong thực tiễn."
+  ],
+  "sections": [
+    {
+      "subtitle": "I. Một số yếu tố ảnh hưởng đến sinh sản ở sinh vật",
+      "content": "Quá trình sinh sản chịu ảnh hưởng của các nhân tố bên trong và bên ngoài:",
+      "factors": [
+        {
+          "name": "Nhân tố bên trong",
+          "content": "Đặc điểm của loài, độ tuổi và hormone sinh dục là những yếu tố quyết định thời điểm và khả năng sinh sản của sinh vật."
+        },
+        {
+          "name": "Nhân tố bên ngoài",
+          "content": "Nhiệt độ, độ ẩm, chế độ dinh dưỡng, ánh sáng,... ảnh hưởng đến sự hình thành giao tử và hành vi sinh sản."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "opening",
+      "content": "Tại sao các loài động vật thường chỉ sinh sản vào những mùa nhất định trong năm?"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "page": 118,
+  "lesson_title": "LUYỆN TẬP",
+  "sections": [
+    {
+      "type": "luyện_từ_và_câu",
+      "title": "LUYỆN TẬP",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Tìm trong những từ dưới đây các cặp từ có nghĩa trái ngược nhau:",
+          "items": [
+            "vui",
+            "buồn",
+            "lạnh",
+            "bé",
+            "xấu",
+            "lớn",
+            "đẹp",
+            "nóng"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Tìm thêm 3 - 5 cặp từ chỉ đặc điểm có nghĩa trái ngược nhau.",
+          "items": [
+            "M: nhanh - chậm"
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Đọc lại câu chuyện Đi tìm mặt trời; đặt câu khiến trong mỗi tình huống sau:",
+          "items": [
+            "a. Đóng vai gõ kiến đến nhờ công, liếu điếu hoặc chích choè đi tìm mặt trời.",
+            "b. Đóng vai gà trống, nói lời đề nghị mặt trời chiếu ánh sáng cho khu rừng tối tăm, ẩm ướt."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "nói_và_nghe",
+      "title": "NÓI VÀ NGHE",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Kể tên một số câu chuyện em yêu thích."
+        },
+        {
+          "id": "2",
+          "instruction": "Hỏi đáp về nhân vật em thích hoặc không thích trong câu chuyện đã đọc hoặc đã nghe."
+        }
+      ]
+    }
+  ]
+}

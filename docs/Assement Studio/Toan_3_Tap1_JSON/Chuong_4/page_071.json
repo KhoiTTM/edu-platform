@@ -1,0 +1,63 @@
+{
+  "page": 71,
+  "lesson_title": null,
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "title": "Luyện tập",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Số ?",
+          "items": [
+            "3 Gấp 4 lần -> ?",
+            "3 Thêm 4 đơn vị -> ?",
+            "6 Gấp 5 lần -> ?",
+            "6 Thêm 5 đơn vị -> ?"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Đ, S ?",
+          "items": [
+            {
+              "id": "a",
+              "text": "7 Gấp 9 lần -> 63 (Đ) ; Thêm 9 đơn vị -> 63 (S)"
+            },
+            {
+              "id": "b",
+              "text": "8 Thêm 5 đơn vị -> 13 (?) ; Gấp 5 lần -> 13 (?)"
+            },
+            {
+              "id": "c",
+              "text": "16 Gấp 3 lần -> 32 (?) ; Gấp 2 lần -> 32 (?)"
+            },
+            {
+              "id": "d",
+              "text": "24 Gấp 3 lần -> 72 (?) ; Thêm 3 đơn vị -> 72 (?)"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Trong phòng có 9 cái bàn. Nam muốn xếp mỗi bàn 2 cái ghế. Hỏi Nam cần bao nhiêu cái ghế?",
+          "items": []
+        },
+        {
+          "id": "4",
+          "instruction": "Tìm đường đi qua mê cung để tới tòa thành theo các phép tính có kết quả bằng 45.",
+          "logic": [
+            "23 x 2",
+            "75 - 20",
+            "16 x 2",
+            "15 x 3",
+            "9 x 5",
+            "75 - 45",
+            "45 + 7",
+            "75 - 30"
+          ]
+        }
+      ]
+    }
+  ]
+}

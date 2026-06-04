@@ -503,6 +503,52 @@ export function LearnNodeClient({
   const [chatGptPromptCopied, setChatGptPromptCopied] = useState<boolean>(false);
   const [handcraftedExams, setHandcraftedExams] = useState<any[]>([]);
   const [isFetchingHandcrafted, setIsFetchingHandcrafted] = useState<boolean>(true);
+  const [completedNodes, setCompletedNodes] = useState<string[]>([]);
+
+  useEffect(() => {
+    const fetchCompleted = async () => {
+      try {
+        const { createClient } = await import("@/lib/supabase/client");
+        const supabase = createClient();
+        const { data: { user } } = await supabase.auth.getUser();
+        if (!user) return;
+        const { data } = await supabase.from('learning_events').select('metadata').eq('user_id', user.id).eq('event_type', 'lesson_visited');
+        if (data) {
+           const slugs = data.map(d => {
+             if (d.metadata?.slug) return d.metadata.slug;
+             if (d.metadata?.url) {
+               const parts = d.metadata.url.split('/');
+               return parts[parts.length - 1];
+             }
+             return null;
+           }).filter(Boolean);
+           const examsStr = localStorage.getItem('completed_exams');
+           const exams = examsStr ? JSON.parse(examsStr) : [];
+           setCompletedNodes([...new Set([...slugs, ...exams])]);
+        }
+      } catch (e) {}
+    };
+    fetchCompleted();
+  }, []);
+
+  useEffect(() => {
+    // Fire tracking event for lesson visited
+    if (node && subjectSlug) {
+      if (node.type !== 'lesson' && node.type !== 'grammar') return;
+      fetch('/api/events', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          type: 'lesson_visited',
+          subject_slug: subjectSlug,
+          metadata: {
+            title: node.title,
+            url: window.location.pathname
+          }
+        })
+      }).catch(console.error);
+    }
+  }, [node, subjectSlug]);
 
   useEffect(() => {
     const fetchProfile = async () => {
@@ -1304,7 +1350,7 @@ export function LearnNodeClient({
           <Home size={12} /> Dashboard
         </Link>
         {breadcrumbs.map((bc, idx) => (
-          <div key={bc.path} className="flex items-center gap-2">
+          <div key={`bc-${idx}-${bc.slug}`} className="flex items-center gap-2">
             <ChevronRight size={10} />
             <span className={idx === breadcrumbs.length - 1 ? "text-sky-400" : ""}>{bc.title}</span>
           </div>
@@ -1328,7 +1374,7 @@ export function LearnNodeClient({
       </div>
 
       {node.type !== 'lesson' && node.type !== 'exam' && !isGrammar ? (
-        <CurriculumMap nodes={childNodes || []} subjectSlug={subjectSlug} />
+        <CurriculumMap nodes={childNodes || []} subjectSlug={subjectSlug} completedNodes={completedNodes} />
       ) : !completed ? (
         <div className="space-y-6">
           {!isExam && (

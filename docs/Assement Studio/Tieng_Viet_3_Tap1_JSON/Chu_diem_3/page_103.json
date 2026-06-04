@@ -1,0 +1,44 @@
+{
+  "page": 102,
+  "sections": [
+    {
+      "type": "luyện_từ_và_câu",
+      "title": "Luyện tập",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Xếp các từ in đậm trong đoạn thơ dưới đây vào nhóm thích hợp.",
+          "items": [
+            "vác",
+            "dài",
+            "rộng",
+            "đẩy",
+            "quay",
+            "khoẻ",
+            "làm"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Tìm câu kể trong những câu dưới đây:",
+          "items": [
+            "a. Tháp Bà Pô-na-ga ở đâu?",
+            "b. Tháp Bà Pô-na-ga là một địa điểm du lịch nổi tiếng ở Nha Trang.",
+            "c. Ông ngoại đưa đón Dương đi học mỗi khi bố mẹ bận rộn.",
+            "d. Mỗi một ngày trôi qua, ông đang già đi, còn nó mạnh mẽ hơn.",
+            "e. Ông ngoại ơi, cháu yêu ông nhiều lắm!"
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Xếp các câu kể ở bài tập 2 vào nhóm thích hợp.",
+          "items": [
+            "Câu giới thiệu sự vật",
+            "Câu nêu hoạt động",
+            "Câu nêu đặc điểm"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -5,12 +5,15 @@ import { MultipleChoiceRenderer } from './MultipleChoiceRenderer';
 import { TapWordRenderer } from './TapWordRenderer';
 import { SentenceReorderRenderer } from './SentenceReorderRenderer';
 import { MatchPairRenderer } from './MatchPairRenderer';
+import { CategorizationRenderer } from './CategorizationRenderer';
+import { InlineFillBlankRenderer } from './InlineFillBlankRenderer';
 
 interface AssessmentRendererProps {
   questions: any[];
   mode: 'practice' | 'quiz' | 'exam' | 'review' | 'challenge';
   onComplete: (answers: any[]) => void;
 }
+
 
 export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRendererProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -81,11 +84,17 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
           <MultipleChoiceRenderer
             key={`mc-${currentIndex}`}
             question={currentQuestion.question}
-            options={currentQuestion.options}
+            options={
+              currentQuestion.options && typeof currentQuestion.options[0] === 'object'
+                ? currentQuestion.options.map((o: any) => o.text || o.content || JSON.stringify(o))
+                : currentQuestion.options
+            }
             correctIndex={
-                currentQuestion.correct_index !== undefined 
+              currentQuestion.correct_index !== undefined 
                 ? currentQuestion.correct_index 
-                : currentQuestion.options?.indexOf(currentQuestion.correctOption)
+                : currentQuestion.options && typeof currentQuestion.options[0] === 'object'
+                  ? currentQuestion.options.findIndex((o: any) => o.is_correct || o.isCorrect)
+                  : currentQuestion.options?.indexOf(currentQuestion.correctOption)
             }
             onAnswer={handleAnswer}
             disabled={hasAnswered}
@@ -95,6 +104,33 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
       case 'tap_correct_word':
       case 'vocab_to_word':
       case 'fill_blank':
+        if (currentQuestion.sentences) {
+          const textSegments: string[] = [];
+          const correctAnswers: string[] = [];
+          currentQuestion.sentences.forEach((s: any, idx: number) => {
+             const parts = s.template.split('__');
+             if (idx === 0) {
+                 textSegments.push(parts[0] || '');
+             } else {
+                 textSegments[textSegments.length - 1] += '\n' + (parts[0] || '');
+             }
+             if (parts.length > 1) {
+                 correctAnswers.push(s.correct_answer);
+                 textSegments.push(parts[1] || '');
+             }
+          });
+          return (
+            <InlineFillBlankRenderer
+              key={`ifb-${currentIndex}`}
+              instruction={currentQuestion.instruction || "Điền vào chỗ trống:"}
+              textSegments={textSegments}
+              correctAnswers={correctAnswers}
+              onAnswer={handleAnswer}
+              disabled={hasAnswered}
+            />
+          );
+        }
+        // Fallback for simple fill_blank
         const mcQuestion = [currentQuestion.instruction, currentQuestion.question].filter(Boolean).join('\n');
         const mcChoices = currentQuestion.choices || [];
         const mcCorrectIndex = mcChoices.indexOf(currentQuestion.correct_word || currentQuestion.correct_answer);
@@ -124,25 +160,74 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
           />
         );
       }
+      case 'sorting':
       case 'sentence_reorder': {
-        const words = currentQuestion.words || currentQuestion.parts || [];
+        const words = currentQuestion.words || currentQuestion.parts || (currentQuestion.items ? currentQuestion.items.map((i: any) => i.text) : []);
+        let correctSentence = currentQuestion.correct_sentence || currentQuestion.correctSentence || '';
+        if (!correctSentence && currentQuestion.correct_order && currentQuestion.items) {
+           correctSentence = currentQuestion.correct_order
+             .map((id: string) => currentQuestion.items.find((i: any) => i.id === id)?.text)
+             .filter(Boolean)
+             .join(' ');
+        }
         return (
           <SentenceReorderRenderer
             key={`sr-${currentIndex}`}
-            instruction={currentQuestion.instruction || 'Sắp xếp lại câu:'}
+            instruction={currentQuestion.instruction || "Sắp xếp lại thành câu đúng"}
             words={words}
-            correctSentence={currentQuestion.correct_sentence}
+            correctSentence={correctSentence}
             onAnswer={handleAnswer}
             disabled={hasAnswered}
           />
         );
       }
-      case 'match_pair':
+      case 'matching':
+      case 'match_pair': {
+        const pairs = currentQuestion.pairs || [];
+        if (pairs.length === 0 && currentQuestion.correct_pairs && currentQuestion.column_a && currentQuestion.column_b) {
+           currentQuestion.correct_pairs.forEach((cp: any) => {
+               const leftText = currentQuestion.column_a.find((a: any) => a.id === cp.a)?.text;
+               const rightText = currentQuestion.column_b.find((b: any) => b.id === cp.b)?.text;
+               if (leftText && rightText) pairs.push({ left: leftText, right: rightText });
+           });
+        }
         return (
           <MatchPairRenderer
             key={`mp-${currentIndex}`}
             instruction={currentQuestion.instruction || 'Nối cặp từ phù hợp:'}
-            pairs={currentQuestion.pairs}
+            pairs={pairs}
+            onAnswer={handleAnswer}
+            disabled={hasAnswered}
+          />
+        );
+      }
+      case 'classification':
+      case 'categorization': {
+        const transformedGroups = currentQuestion.groups || [];
+        if (transformedGroups.length === 0 && currentQuestion.categories && currentQuestion.items) {
+           currentQuestion.categories.forEach((cat: any) => {
+               const catItems = currentQuestion.items.filter((i: any) => i.correct_category === cat.id).map((i: any) => i.text);
+               transformedGroups.push({ name: cat.label, items: catItems });
+           });
+        }
+        return (
+          <CategorizationRenderer
+            key={`cat-${currentIndex}`}
+            instruction={currentQuestion.instruction}
+            groups={transformedGroups}
+            onAnswer={handleAnswer}
+            disabled={hasAnswered}
+          />
+        );
+      }
+      case 'inline_fill_blank':
+        return (
+          <InlineFillBlankRenderer
+            key={`ifb-${currentIndex}`}
+            instruction={currentQuestion.instruction}
+            textSegments={currentQuestion.text_segments || []}
+            correctAnswers={currentQuestion.correct_answers || []}
+            wordPool={currentQuestion.word_pool}
             onAnswer={handleAnswer}
             disabled={hasAnswered}
           />
@@ -163,9 +248,10 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
         );
       }
       case 'true_false': {
-        const mcQuestion = currentQuestion.statement;
+        const mcQuestion = currentQuestion.statement || currentQuestion.question;
         const mcChoices = ["Đúng", "Sai"];
-        const mcCorrectIndex = currentQuestion.correct_answer === true || currentQuestion.correct_answer === "true" ? 0 : 1;
+        const isTrue = currentQuestion.correct_answer === true || currentQuestion.correct_answer === "true" || currentQuestion.is_correct === true || currentQuestion.is_correct === "true";
+        const mcCorrectIndex = isTrue ? 0 : 1;
         return (
           <MultipleChoiceRenderer
             key={`tf-${currentIndex}`}
@@ -174,6 +260,7 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
             correctIndex={mcCorrectIndex}
             onAnswer={handleAnswer}
             disabled={hasAnswered}
+            shuffle={false}
           />
         );
       }
@@ -271,6 +358,16 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
       </div>
 
       <div className="flex-1">
+        {currentQuestion.reading_passage && (
+          <div className="mb-6 p-4 bg-slate-800/80 rounded-xl border-l-4 border-amber-400 text-slate-200">
+            <h3 className="font-bold text-amber-400 mb-2 flex items-center gap-2">
+              <span className="text-lg">📖</span> Đoạn văn tham khảo:
+            </h3>
+            <p className="whitespace-pre-line text-[15px] leading-relaxed">
+              {currentQuestion.reading_passage}
+            </p>
+          </div>
+        )}
         {renderQuestion()}
       </div>
 

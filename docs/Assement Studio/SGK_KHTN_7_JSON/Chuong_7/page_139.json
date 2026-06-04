@@ -1,0 +1,20 @@
+{
+  "page": 139,
+  "subtitle": "III. Kết quả và thảo luận",
+  "questions": [
+    {
+      "id": "1",
+      "content": "Tại sao cánh hoa ở cốc B lại bị đổi màu?",
+      "answer": "Vì nước có pha phẩm nhuộm đã được mạch gỗ vận chuyển từ gốc lên thân và đến các cánh hoa, làm cánh hoa có màu của phẩm nhuộm."
+    },
+    {
+      "id": "2",
+      "content": "Sự xuất hiện các hạt nước ở mặt trong túi nilon của cây A chứng tỏ điều gì?",
+      "answer": "Chứng tỏ lá cây A đã thực hiện quá trình thoát hơi nước qua bề mặt lá, hơi nước bốc lên gặp túi nilon lạnh hơn nên ngưng tụ thành các hạt nước."
+    }
+  ],
+  "conclusion": [
+    "Thân cây vận chuyển nước và muối khoáng nhờ mạch gỗ.",
+    "Lá cây thực hiện quá trình thoát hơi nước."
+  ]
+}

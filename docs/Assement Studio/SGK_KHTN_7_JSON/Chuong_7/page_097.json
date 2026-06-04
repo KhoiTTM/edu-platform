@@ -1,0 +1,17 @@
+{
+  "page": 97,
+  "sections": [
+    {
+      "title": "2. Chuyển hoá năng lượng",
+      "content": "- Chuyển hoá năng lượng là sự biến đổi năng lượng từ dạng này sang dạng khác.\n- Trong cơ thể sinh vật, năng lượng hoá học tích trữ trong các hợp chất hữu cơ (thức ăn) được biến đổi thành các dạng năng lượng khác như nhiệt năng (để duy trì thân nhiệt), cơ năng (để vận động),... phục vụ cho các hoạt động sống."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Hãy chỉ ra các dạng năng lượng xuất hiện trong quá trình một người đang chạy bộ.",
+      "answer": "Hoá năng (trong thức ăn) chuyển hoá thành cơ năng (để di chuyển) và nhiệt năng (làm cơ thể nóng lên)."
+    }
+  ]
+}

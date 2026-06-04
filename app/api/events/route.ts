@@ -69,6 +69,13 @@ export async function POST(req: Request) {
       }
     }
 
+    // 6. Track Last Visited History
+    if (event.type === "lesson_visited" || event.type === "exam_visited") {
+      const type = event.type === "lesson_visited" ? 'lesson' : 'exam';
+      const { title, url } = event.metadata as any;
+      updateLastVisited(supabase, user.id, event.subject_slug, type, title, url).catch(e => console.error("Last Visited Update Error:", e));
+    }
+
     return NextResponse.json({ success: true });
   } catch (err: any) {
     console.error("API Event Error:", err);
@@ -226,5 +233,35 @@ async function updateDashboardStats(supabase: any, userId: string, subjectSlug: 
     });
   } catch (err) {
     console.error("Failed to update dashboard stats:", err);
+  }
+}
+
+async function updateLastVisited(supabase: any, userId: string, subjectSlug: string, type: 'lesson' | 'exam', title: string, url: string) {
+  try {
+    const { data: stats } = await supabase.from("user_dashboard_stats").select("*").eq("user_id", userId).single();
+    
+    let subjectProgress: any = {};
+    if (stats && stats.subject_progress) {
+      subjectProgress = stats.subject_progress;
+    }
+
+    if (!subjectProgress[subjectSlug]) {
+      subjectProgress[subjectSlug] = { sessions_completed: 0, total_minutes: 0 };
+    }
+
+    const updateObj = { title, url, updated_at: new Date().toISOString() };
+    if (type === 'lesson') {
+      subjectProgress[subjectSlug].last_lesson = updateObj;
+    } else {
+      subjectProgress[subjectSlug].last_exam = updateObj;
+    }
+
+    await supabase.from("user_dashboard_stats").upsert({
+      user_id: userId,
+      subject_progress: subjectProgress,
+      updated_at: new Date().toISOString()
+    });
+  } catch (err) {
+    console.error("Failed to update last visited:", err);
   }
 }

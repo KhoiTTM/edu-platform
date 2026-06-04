@@ -1,0 +1,16 @@
+{
+  "page": 99,
+  "lesson_title": "Bài 37: CHIA SỐ CÓ BA CHỮ SỐ CHO SỐ CÓ MỘT CHỮ SỐ",
+  "sections": [
+    {
+      "type": "khám_phá",
+      "content": "Mỗi đồ chơi làm từ 2 vỏ chai. Với 312 vỏ chai thì chúng mình sẽ làm được bao nhiêu đồ chơi nhỉ? Xếp số đồ chơi sẽ làm được vào các hộp, mỗi hộp có 5 đồ chơi thì được bao nhiêu hộp và còn dư mấy đồ chơi?",
+      "logic": [
+        "a) 312 : 2 = ?",
+        "312 : 2: 3 chia 2 được 1, viết 1; 1 nhân 2 bằng 2; 3 trừ 2 bằng 1. Hạ 1 được 11; 11 chia 2 được 5, viết 5; 5 nhân 2 bằng 10; 11 trừ 10 bằng 1. Hạ 2 được 12; 12 chia 2 được 6, viết 6; 6 nhân 2 bằng 12; 12 trừ 12 bằng 0. Vậy 312 : 2 = 156",
+        "b) 156 : 5 = ?",
+        "156 : 5: 15 chia 5 được 3, viết 3; 3 nhân 5 bằng 15; 15 trừ 15 bằng 0. Hạ 6; 6 chia 5 được 1, viết 1; 1 nhân 5 bằng 5; 6 trừ 5 bằng 1. Vậy 156 : 5 = 31 (dư 1)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "page": 8,
+  "title": "Phương pháp và kĩ năng học tập môn Khoa học tự nhiên (tiếp theo)",
+  "sections": [
+    {
+      "subtitle": "II. Kĩ năng học tập môn Khoa học tự nhiên",
+      "skills": [
+        {
+          "name": "Kĩ năng quan sát",
+          "content": "Quan sát là kĩ năng quan trọng nhất trong tìm hiểu tự nhiên. Quan sát bằng các giác quan hoặc bằng các dụng cụ đo, máy móc hỗ trợ."
+        },
+        {
+          "name": "Kĩ năng phân loại",
+          "content": "Dựa trên các đặc điểm chung, sắp xếp các sự vật, hiện tượng vào các nhóm."
+        },
+        {
+          "name": "Kĩ năng liên kết",
+          "content": "Liên kết các thông tin đã có để đưa ra các dự đoán hoặc giải thích."
+        },
+        {
+          "name": "Kĩ năng đo",
+          "content": "Sử dụng các dụng cụ đo để xác định các đại lượng vật lí."
+        },
+        {
+          "name": "Kĩ năng dự báo",
+          "content": "Dựa trên các dữ liệu đã có để đưa ra các nhận định về những gì sẽ xảy ra."
+        }
+      ]
+    }
+  ]
+}

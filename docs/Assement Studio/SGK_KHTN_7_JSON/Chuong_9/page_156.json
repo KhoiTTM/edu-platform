@@ -1,0 +1,34 @@
+{
+  "page": 156,
+  "sections": [
+    {
+      "title": "2. Điều khiển sự phát triển",
+      "content": "Điều khiển thời gian ra hoa, tạo quả bằng cách thay đổi chế độ chiếu sáng, nhiệt độ hoặc sử dụng các chất kích thích sinh trưởng.",
+      "examples": [
+        "Thắp đèn ban đêm cho thanh long để kích thích ra hoa trái vụ.",
+        "Xử lí lạnh cho hoa tulip, hoa lily để hoa nở đúng dịp Tết."
+      ]
+    },
+    {
+      "subtitle": "II. Vận dụng sinh trưởng và phát triển ở động vật trong chăn nuôi",
+      "methods": [
+        {
+          "title": "Xây dựng chuồng trại",
+          "content": "Đảm bảo nhiệt độ, độ ẩm, ánh sáng phù hợp cho từng giai đoạn phát triển của vật nuôi."
+        },
+        {
+          "title": "Chế độ dinh dưỡng",
+          "content": "Cung cấp đầy đủ và cân đối các nhóm chất dinh dưỡng theo từng đối tượng và giai đoạn sinh trưởng."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Tại sao đối với vật nuôi, việc cung cấp thức ăn đầy đủ là chưa đủ mà còn cần phải cung cấp đúng loại thức ăn?",
+      "answer": "Vì mỗi giai đoạn phát triển của vật nuôi cần các nhóm chất dinh dưỡng khác nhau. Ví dụ: lợn con cần nhiều đạm để lớn nhanh, lợn vỗ béo cần nhiều tinh bột."
+    }
+  ]
+}

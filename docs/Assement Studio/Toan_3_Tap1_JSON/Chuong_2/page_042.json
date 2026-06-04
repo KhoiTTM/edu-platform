@@ -1,0 +1,64 @@
+{
+  "page": 41,
+  "sections": [
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "a) Tìm số bị chia (theo mẫu).",
+          "items": [
+            "Mẫu: ? : 5 = 6 => 6 x 5 = 30.",
+            "? : 6 = 7",
+            "? : 4 = 32",
+            "? : 3 = 18"
+          ]
+        },
+        {
+          "id": "1",
+          "instruction": "b) Tìm số chia (theo mẫu).",
+          "items": [
+            "Mẫu: 15 : ? = 3 => 15 : 3 = 5.",
+            "24 : ? = 6",
+            "40 : ? = 5",
+            "28 : ? = 4"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Số ?",
+          "table": {
+            "headers": ["Số bị chia", "Số chia", "Thương"],
+            "rows": [
+              {"Số bị chia": 50, "Số chia": 5, "Thương": 10},
+              {"Số bị chia": "?", "Số chia": 4, "Thương": 7},
+              {"Số bị chia": 24, "Số chia": "?", "Thương": 6},
+              {"Số bị chia": "?", "Số chia": 7, "Thương": 5},
+              {"Số bị chia": 45, "Số chia": "?", "Thương": 9}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "type": "luyện_tập",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Số ?",
+          "items": [
+            "a) ? --(x 2)--> 8",
+            "b) ? --(: 5)--> 6",
+            "c) ? --(: 4)--> 7",
+            "d) ? --(x 3)--> 30"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Có 35 quả cam xếp vào các đĩa, mỗi đĩa 5 quả. Hỏi được mấy đĩa cam như vậy?",
+          "items": []
+        }
+      ]
+    }
+  ]
+}

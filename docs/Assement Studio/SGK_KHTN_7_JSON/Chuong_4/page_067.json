@@ -1,0 +1,32 @@
+{
+  "page": 67,
+  "chapter": "CHƯƠNG IV: ÂM THANH",
+  "lesson_title": "Bài 13: Độ to và độ cao của âm",
+  "learning_objectives": [
+    "Thiết kế thí nghiệm hoặc từ số liệu cho trước, rút ra được mối liên hệ giữa độ cao của âm với tần số dao động.",
+    "Rút ra được mối liên hệ giữa độ to của âm với biên độ dao động."
+  ],
+  "sections": [
+    {
+      "subtitle": "I. Độ cao của âm",
+      "subsections": [
+        {
+          "title": "1. Tần số",
+          "content": "- Số dao động trong một giây gọi là tần số.\n- Đơn vị của tần số là héc, kí hiệu là Hz."
+        },
+        {
+          "title": "2. Độ cao của âm",
+          "content": "Âm phát ra càng cao (âm bổng) khi tần số dao động càng lớn. Âm phát ra càng thấp (âm trầm) khi tần số dao động càng nhỏ."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Một vật thực hiện được 2 000 dao động trong 10 giây. Hãy tính tần số dao động của vật đó.",
+      "answer": "Tần số = 2 000 / 10 = 200 (Hz)."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "page": 110,
+  "chapter": "CHƯƠNG VII: TRAO ĐỔI CHẤT VÀ CHUYỂN HOÁ NĂNG LƯỢNG Ở SINH VẬT",
+  "lesson_title": "Bài 25: Hô hấp tế bào",
+  "learning_objectives": [
+    "Mô tả được một cách tổng quát quá trình hô hấp tế bào (ở thực vật và động vật).",
+    "Viết được phương trình hô hấp tế bào dạng chữ.",
+    "Nêu được vai trò của hô hấp tế bào với cơ thể.",
+    "Nêu được mối quan hệ hai chiều giữa quang hợp và hô hấp tế bào."
+  ],
+  "sections": [
+    {
+      "subtitle": "I. Khái niệm hô hấp tế bào",
+      "content": "Hô hấp tế bào là quá trình phân giải chất hữu cơ (chủ yếu là glucose) diễn ra trong tế bào để giải phóng năng lượng cung cấp cho các hoạt động sống của cơ thể."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "opening",
+      "content": "Năng lượng dùng cho các hoạt động sống của cơ thể (vận động, suy nghĩ,...) được lấy từ đâu và bằng cách nào?"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "page": 132,
+  "sections": [
+    {
+      "title": "Nhu cầu nước ở động vật",
+      "content": "Nhu cầu nước khác nhau tùy thuộc vào loài, kích thước cơ thể, điều kiện môi trường và trạng thái hoạt động.\n\nVí dụ: Một người trưởng thành cần khoảng 2 - 2,5 lít nước mỗi ngày. Lạc đà có thể nhịn uống nước trong nhiều ngày nhờ khả năng tích trữ và tiết kiệm nước."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Tại sao trẻ em lại cần uống nhiều nước hơn (tỉ lệ so với khối lượng cơ thể) so với người lớn?",
+      "answer": "Vì trẻ em có tốc độ trao đổi chất mạnh hơn, diện tích bề mặt cơ thể so với khối lượng lớn hơn nên dễ bị mất nước qua da và hô hấp."
+    }
+  ]
+}

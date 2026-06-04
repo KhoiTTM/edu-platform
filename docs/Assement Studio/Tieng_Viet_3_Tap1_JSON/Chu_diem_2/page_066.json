@@ -1,0 +1,33 @@
+{
+  "page": 65,
+  "sections": [
+    {
+      "type": "nói_và_nghe",
+      "content": "Các bạn xôn xao: Tên của cậu đẹp quá. Tớ cũng thích chơi cờ vua lắm. Cậu có muốn tham gia câu lạc bộ cờ vua cùng chúng tớ không? (Theo Việt Phương)",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Quan sát tranh và đóng vai bạn nhỏ để giới thiệu về bạn ấy.",
+          "items": ["Tớ tên là (...)", "Tớ sinh ngày (...)", "năm nay tớ (...) tuổi.", "Sở thích của tớ là (...)."]
+        },
+        {
+          "id": "2",
+          "instruction": "Viết một đoạn văn giới thiệu bản thân vào một tấm thẻ rồi trang trí thật đẹp.",
+          "items": []
+        },
+        {
+          "id": "3",
+          "instruction": "Đọc lại đoạn văn em viết, phát hiện lỗi và sửa lỗi (dùng từ, đặt câu, sắp xếp ý).",
+          "items": []
+        }
+      ]
+    },
+    {
+      "type": "vận_dụng",
+      "instruction": "Tìm đọc một số câu đố về đồ dùng học tập hoặc những đồ vật khác ở trường. Ví dụ:",
+      "content": "Ngăn nhỏ rồi lại ngăn to
+Đựng vở, đựng bút, đựng kho sách đầy.
+(Là cái gì?)"
+    }
+  ]
+}

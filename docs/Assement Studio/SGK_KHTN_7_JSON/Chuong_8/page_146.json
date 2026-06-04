@@ -1,0 +1,32 @@
+{
+  "page": 146,
+  "chapter": "CHƯƠNG VIII: CẢM ỨNG Ở SINH VẬT",
+  "lesson_title": "Bài 34: Vận dụng hiện tượng cảm ứng ở sinh vật vào thực tiễn",
+  "learning_objectives": [
+    "Vận dụng được các kiến thức về cảm ứng ở sinh vật để giải thích một số hiện tượng trong thực tiễn.",
+    "Nêu được ví dụ về việc vận dụng hiện tượng cảm ứng ở sinh vật trong trồng trọt, chăn nuôi và đời sống."
+  ],
+  "sections": [
+    {
+      "subtitle": "I. Vận dụng hiện tượng cảm ứng ở thực vật trong thực tiễn",
+      "content": "Con người ứng dụng các tính hướng (hướng sáng, hướng nước, hướng trọng lực, hướng tiếp xúc) để tăng năng suất và chất lượng cây trồng.",
+      "applications": [
+        {
+          "field": "Trồng trọt",
+          "examples": [
+            "Tưới nước và bón phân vào gốc để rễ đâm sâu, tưới rãnh để rễ lan rộng.",
+            "Làm giàn cho các cây leo (bầu, bí, mướp,...) dựa vào tính hướng tiếp xúc.",
+            "Trồng cây với mật độ phù hợp để cây nhận đủ ánh sáng."
+          ]
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "opening",
+      "content": "Tại sao người ta thường làm giàn cho các loại cây như mướp, bầu, bí, thiên lí...?"
+    }
+  ]
+}

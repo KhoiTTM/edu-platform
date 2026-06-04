@@ -1,0 +1,39 @@
+{
+  "page": 84,
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Đặt tính rồi tính (theo mẫu).",
+          "items": [
+            "45 : 7",
+            "60 : 2",
+            "73 : 4",
+            "39 : 3"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Số?",
+          "items": [
+            "32 Gấp 3 lần -> ? Giảm 4 lần -> ?",
+            "42 Giảm 3 lần -> ? Bớt 3 đơn vị -> ?",
+            "11 Gấp 2 lần -> ? Thêm 2 đơn vị -> ?"
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Rô-bốt dùng 35 m vải để may quần áo công nhân. Mỗi bộ quần áo công nhân hết 3 m vải. Hỏi Rô-bốt có thể may được nhiều nhất bao nhiêu bộ quần áo công nhân và còn thừa mấy mét vải?",
+          "items": []
+        },
+        {
+          "id": "4",
+          "instruction": "Trong ngày hội trồng cây, Việt trồng được 5 cây. Số cây Rô-bốt trồng được gấp 3 lần số cây của Việt. Hỏi cả hai bạn trồng được bao nhiêu cây?",
+          "items": []
+        }
+      ]
+    }
+  ]
+}

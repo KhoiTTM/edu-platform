@@ -1,0 +1,38 @@
+{
+  "page": 51,
+  "lesson_title": "Bài 16: Điểm ở giữa, trung điểm của đoạn thẳng",
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Quan sát hình vẽ rồi trả lời câu hỏi.",
+          "visual_elements": "Hình vẽ một thước kẻ có vạch chia từ 0 cm đến 14 cm. Điểm A trùng với vạch 0, điểm M trùng với vạch 3, điểm B trùng với vạch 6, điểm C trùng với vạch 13.",
+          "items": [
+            {"id": "a", "text": "Điểm M có là trung điểm của đoạn thẳng AB hay không?"},
+            {"id": "b", "text": "Điểm B có là trung điểm của đoạn thẳng AC hay không?"}
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Xác định trung điểm của đoạn thẳng MN và đoạn thẳng NP.",
+          "visual_elements": "Lưới ô vuông có đoạn thẳng MN thẳng đứng dài 4 ô, đoạn thẳng NP nằm ngang dài 6 ô. Điểm I nằm trên MN (cách N 2 ô). Các điểm K, E nằm trên NP (K cách N 3 ô, E cách N 4 ô).",
+          "items": ["Đoạn thẳng MN", "Đoạn thẳng NP"]
+        },
+        {
+          "id": "3",
+          "instruction": "Quan sát tranh rồi trả lời: Cào cào cần nhảy thêm mấy bước để đến trung điểm của đoạn thẳng AB?",
+          "visual_elements": "Hình vẽ một thanh tre được chia thành 8 đốt bằng nhau, hai đầu là A và B. Một con cào cào đang ở vị trí cuối đốt thứ hai tính từ A. Các cung nhảy của cào cào cho thấy mỗi bước nhảy dài đúng bằng 1 đốt tre.",
+          "items": []
+        },
+        {
+          "id": "4",
+          "instruction": "Việt có một đoạn dây dài 20 cm. Nếu Việt không dùng thước có vạch chia xăng-ti-mét thì bạn ấy làm như thế nào để cắt được một đoạn dây có độ dài 10 cm từ đoạn dây ban đầu?",
+          "visual_elements": "Hình vẽ bạn Việt đang ngồi ở bàn, trên bàn có kéo, các hộp quà và một sợi dây. Việt đang chuẩn bị cắt dây.",
+          "items": []
+        }
+      ]
+    }
+  ]
+}

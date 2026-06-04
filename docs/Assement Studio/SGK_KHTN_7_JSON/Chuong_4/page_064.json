@@ -1,0 +1,22 @@
+{
+  "page": 64,
+  "sections": [
+    {
+      "title": "3. Tốc độ truyền âm",
+      "content": "- Tốc độ truyền âm trong các môi trường khác nhau là khác nhau.\n- Thông thường, tốc độ truyền âm trong chất rắn lớn hơn trong chất lỏng, trong chất lỏng lớn hơn trong chất khí.\n\nVí dụ: Tốc độ truyền âm trong thép khoảng 6 100 m/s, trong nước khoảng 1 500 m/s, trong không khí ở $20^\\circ C$ khoảng 340 m/s."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "exercise",
+      "content": "Hãy so sánh tốc độ truyền âm trong các môi trường: không khí, nước, đồng.",
+      "answer": "Tốc độ truyền âm trong đồng > nước > không khí."
+    }
+  ],
+  "key_points": [
+    "Vật phát ra âm gọi là nguồn âm. Khi phát ra âm, các vật đều dao động.",
+    "Âm truyền được trong các môi trường rắn, lỏng, khí nhưng không truyền được trong chân không.",
+    "Tốc độ truyền âm trong chất rắn > chất lỏng > chất khí."
+  ]
+}

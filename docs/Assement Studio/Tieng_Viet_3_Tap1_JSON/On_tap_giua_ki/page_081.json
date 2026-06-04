@@ -1,0 +1,109 @@
+{
+  "page": 80,
+  "lesson_title": "Ôn tập giữa học kì 1",
+  "sections": [
+    {
+      "type": "đọc",
+      "title": "C",
+      "questions": [
+        {
+          "id": "question_C1",
+          "question": "Theo em, vì sao bạn nhỏ thấy bức tranh mình rất đẹp? Chọn câu trả lời hoặc nêu ý kiến khác của em."
+        }
+      ],
+      "exercises": [
+        {
+          "id": "exercise_C1_options",
+          "instruction": "Chọn câu trả lời:",
+          "items": [
+            {
+              "id": "a",
+              "text": "Vì quê hương mình đẹp."
+            },
+            {
+              "id": "b",
+              "text": "Vì bạn nhỏ vẽ giỏi."
+            },
+            {
+              "id": "c",
+              "text": "Vì bạn nhỏ yêu quê hương mình."
+            }
+          ]
+        },
+        {
+          "id": "exercise_C2_d",
+          "instruction": "d. Xếp các từ ngữ dưới đây vào nhóm thích hợp.",
+          "items": [
+            "tô",
+            "bút chì",
+            "cây gạo",
+            "bức tranh",
+            "vẽ",
+            "xóm",
+            "gọt",
+            "làng",
+            "trống",
+            "quê"
+          ]
+        },
+        {
+          "id": "exercise_C3_e",
+          "instruction": "e. Điền dấu câu thích hợp vào ô trống.",
+          "content": "Bức tranh của bạn nhỏ có nhiễu cảnh vật xóm làng, sông máng, truờng học, trời mây, quê hương."
+        }
+      ]
+    },
+    {
+      "type": "viết",
+      "title": "B. VIẾT",
+      "exercises": [
+        {
+          "id": "exercise_B1",
+          "instruction": "1. Nghe viết: Vẽ quê hương (từ đầu đến Em tô đỏ thắm)"
+        },
+        {
+          "id": "exercise_B2",
+          "instruction": "2. Lựa chọn một trong hai đề dưới đây, viết đoạn văn (4-5 câu) theo yêu cầu.",
+          "items": [
+            {
+              "id": "a",
+              "text": "Kể về một ngày ở trường của em",
+              "questions": [
+                {
+                  "id": "a1",
+                  "question": "Ngày đó bắt đầu bằng việc gì?"
+                },
+                {
+                  "id": "a2",
+                  "question": "Những việc gì diễn ra tiếp theo?"
+                },
+                {
+                  "id": "a3",
+                  "question": "Em nghĩ gì về ngày đó?"
+                }
+              ]
+            },
+            {
+              "id": "b",
+              "text": "Cảm nghĩ của em về một người bạn",
+              "questions": [
+                {
+                  "id": "b1",
+                  "question": "Người bạn đó là ai?"
+                },
+                {
+                  "id": "b2",
+                  "question": "Điều gì ở bạn khiến em nhớ nhất?"
+                },
+                {
+                  "id": "b3",
+                  "question": "Em có tình cảm thế nào với bạn?"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

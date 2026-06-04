@@ -1,0 +1,55 @@
+{
+  "page": 28,
+  "chapter": "Chủ đề 2: BẢNG NHÂN, BẢNG CHIA",
+  "lesson_title": "Bài 9. BẢNG NHÂN 6, BẢNG CHIA 6",
+  "sections": [
+    {
+      "type": "khám_phá",
+      "title": "Bảng nhân 6",
+      "content": "Mỗi con bọ rùa có 6 chấm ở cánh. Hỏi 4 con bọ rùa như vậy có bao nhiêu chấm ở cánh?",
+      "logic": [
+        "6 x 4 = ?",
+        "6 + 6 + 6 + 6 = 24",
+        "6 x 4 = 24"
+      ],
+      "table": {
+        "title": "Hoàn thành bảng nhân 6",
+        "rows": [
+          "6 x 1 = 6",
+          "6 x 2 = 12",
+          "6 x 3 = ?",
+          "6 x 4 = ?",
+          "6 x 5 = ?",
+          "6 x 6 = ?",
+          "6 x 7 = ?",
+          "6 x 8 = ?",
+          "6 x 9 = ?",
+          "6 x 10 = 60"
+        ]
+      },
+      "note": "Thêm 6 vào kết quả của 6 x 2 ta được kết quả của 6 x 3."
+    },
+    {
+      "type": "khám_phá",
+      "title": "Bảng chia 6",
+      "logic": [
+        "6 x 4 = 24 => 24 : 6 = 4"
+      ],
+      "table": {
+        "title": "Hoàn thành bảng chia 6",
+        "rows": [
+          "6 : 6 = 1",
+          "12 : 6 = 2",
+          "18 : 6 = ?",
+          "24 : 6 = ?",
+          "30 : 6 = ?",
+          "36 : 6 = ?",
+          "42 : 6 = ?",
+          "48 : 6 = ?",
+          "54 : 6 = ?",
+          "60 : 6 = 10"
+        ]
+      }
+    }
+  ]
+}

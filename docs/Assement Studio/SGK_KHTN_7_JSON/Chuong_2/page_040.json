@@ -1,0 +1,31 @@
+{
+  "page": 40,
+  "sections": [
+    {
+      "subtitle": "IV. Một số tính chất của hợp chất ion và hợp chất cộng hoá trị",
+      "subsections": [
+        {
+          "title": "1. Trạng thái và nhiệt độ nóng chảy, nhiệt độ sôi",
+          "content": "- Hợp chất ion (như muối ăn,...) thường là chất rắn, khó nóng chảy, khó bay hơi.\n- Hợp chất cộng hoá trị có thể là chất rắn (đường, iodine,...), chất lỏng (nước, ethanol,...) hoặc chất khí (carbon dioxide, ammonia,...), thường có nhiệt độ nóng chảy và nhiệt độ sôi thấp."
+        },
+        {
+          "title": "2. Tính dẫn điện",
+          "content": "- Hợp chất ion khi nóng chảy hoặc tan trong nước tạo thành dung dịch dẫn được điện.\n- Các hợp chất cộng hoá trị thường không dẫn điện."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "exercise",
+      "content": "Tại sao muối ăn (hợp chất ion) lại có nhiệt độ nóng chảy cao hơn nhiều so với đường ăn (hợp chất cộng hoá trị)?",
+      "answer": "Vì lực hút tĩnh điện giữa các ion trong hợp chất ion rất mạnh, cần nhiều năng lượng để phá vỡ liên kết, do đó nhiệt độ nóng chảy cao."
+    }
+  ],
+  "key_points": [
+    "Liên kết ion được tạo thành bởi lực hút giữa các ion mang điện tích trái dấu.",
+    "Liên kết cộng hoá trị được tạo thành bởi các cặp electron dùng chung.",
+    "Hợp chất ion thường khó nóng chảy, dẫn điện khi tan trong nước. Hợp chất cộng hoá trị thường dễ nóng chảy và không dẫn điện."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "page": 21,
+  "sections": [
+    {
+      "subtitle": "II. Cấu tạo bảng tuần hoàn các nguyên tố hoá học",
+      "subsections": [
+        {
+          "title": "1. Ô nguyên tố",
+          "content": "- Mỗi nguyên tố hoá học được xếp vào một ô trong bảng tuần hoàn, gọi là ô nguyên tố.\n- Ô nguyên tố cho biết: số hiệu nguyên tử, kí hiệu hoá học, tên nguyên tố và khối lượng nguyên tử."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Quan sát Hình 3.1, hãy cho biết ô nguyên tố oxygen cho biết những thông tin gì.",
+      "answer": "Số hiệu nguyên tử (8), Kí hiệu hoá học (O), Tên nguyên tố (Oxygen), Khối lượng nguyên tử (16)."
+    }
+  ]
+}

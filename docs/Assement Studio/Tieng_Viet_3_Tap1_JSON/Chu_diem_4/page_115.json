@@ -1,0 +1,28 @@
+{
+  "page": 114,
+  "sections": [
+    {
+      "type": "nói_và_nghe",
+      "title": "Những bậc đá chạm mây",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Quan sát tranh minh hoạ, nói về sự việc trong từng tranh."
+        },
+        {
+          "id": "2",
+          "instruction": "Kể lại từng đoạn câu chuyện theo tranh."
+        }
+      ]
+    },
+    {
+      "type": "viết",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Nghe - viết: Những bậc đá chạm mây (từ Sau năm lần sim ra quả đến hết)"
+        }
+      ]
+    }
+  ]
+}

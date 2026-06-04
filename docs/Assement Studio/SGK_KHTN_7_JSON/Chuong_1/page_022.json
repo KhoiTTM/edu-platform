@@ -1,0 +1,17 @@
+{
+  "page": 22,
+  "sections": [
+    {
+      "title": "2. Chu kì",
+      "content": "- Chu kì là tập hợp các nguyên tố hoá học có cùng số lớp electron trong nguyên tử và được sắp xếp thành một hàng theo chiều tăng dần của điện tích hạt nhân.\n- Số thứ tự của chu kì bằng số lớp electron trong nguyên tử của các nguyên tố trong chu kì đó."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Quan sát bảng tuần hoàn (Hình 3.2), hãy cho biết:\na) Bảng tuần hoàn gồm bao nhiêu chu kì? Các chu kì được đánh số như thế nào?\nb) Chu kì 1 và chu kì 3 lần lượt có bao nhiêu nguyên tố?",
+      "answer": "a) Gồm 7 chu kì, được đánh số từ 1 đến 7 bằng chữ số Ả Rập;\nb) Chu kì 1 có 2 nguyên tố, chu kì 3 có 8 nguyên tố."
+    }
+  ]
+}

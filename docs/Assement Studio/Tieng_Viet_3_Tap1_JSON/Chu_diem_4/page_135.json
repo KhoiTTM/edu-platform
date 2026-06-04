@@ -1,0 +1,23 @@
+{
+  "page": 134,
+  "lesson_title": "NHỮNG NGỌN HẢI ĐĂNG (tiếp theo)",
+  "sections": [
+    {
+      "type": "đọc",
+      "questions": [
+        {"id": "1", "question": "Nêu ích lợi của những ngọn hải đăng."},
+        {"id": "2", "question": "Những ngọn hải đăng được thắp sáng bằng gì?"},
+        {"id": "3", "question": "Người canh giữ hải đăng làm việc vất vả ra sao? Em có suy nghĩ gì về công việc của họ?"},
+        {"id": "4", "question": "Sắp xếp các ý dưới theo trình tự bài đọc."}
+      ]
+    },
+    {
+      "type": "viết",
+      "title": "Ôn chữ viết hoa: M, N",
+      "content": "1. Viết tên riêng: Mũi Né
+2. Viết câu: Tháp Mười cò bay thẳng cánh
+Nước Tháp Mười lóng lánh cá tôm.
+(Ca dao)"
+    }
+  ]
+}

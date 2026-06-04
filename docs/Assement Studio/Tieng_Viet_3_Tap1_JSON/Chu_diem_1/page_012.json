@@ -1,0 +1,52 @@
+{
+  "page": 11,
+  "sections": [
+    {
+      "type": "đọc",
+      "content": "Nhìn Sơn đen nhẻm, mắt lấp lánh khi kể chuyện, Chi chợt thấy buồn:\\n– Tớ chẳng được đi đâu.\\n– Nhưng mẹ tớ bảo cậu biết đi xe đạp rồi.\\n– Ừ, tớ ở nhà tập xe thôi.\\n– Thế cậu được đạp xe đi khắp nơi mà.\\nChi cười:\\n– Ừ nhỉ.\\nThế là Chi kể bố dạy Chi đi xe đạp. Bây giờ, Chi đã đạp xe bon bon. Con đường quen thuộc bỗng trở nên mới mẻ.\\nCứ như vậy, hai bạn thi nhau kể những trải nghiệm mùa hè.\\nNgày mai đi học rồi, nhưng mùa hè chắc sẽ theo các bạn vào lớp học.",
+      "author": "Minh Dương",
+      "questions": [
+        {
+          "id": "1",
+          "question": "Tìm những chi tiết thể hiện niềm vui khi gặp lại nhau của Chi và Sơn."
+        },
+        {
+          "id": "2",
+          "question": "Sơn đã có những trải nghiệm gì trong mùa hè?"
+        },
+        {
+          "id": "3",
+          "question": "Trải nghiệm mùa hè của Chi có gì khác với Sơn?"
+        },
+        {
+          "id": "4",
+          "question": "Theo em, vì sao khi đi học, mùa hè sẽ theo các bạn vào lớp? Chọn câu trả lời hoặc nêu ý kiến khác của em.",
+          "options": [
+            "a. Vì các bạn vẫn nhớ những chuyện về mùa hè.",
+            "b. Vì các bạn sẽ kể cho nhau nghe những chuyện về mùa hè.",
+            "c. Vì các bạn sẽ mang những đồ vật kỉ niệm của mùa hè đến lớp."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "nói_và_nghe",
+      "title": "Mùa hè của em",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Kể về điều em nhớ nhất trong kì nghỉ hè vừa qua."
+        },
+        {
+          "id": "2",
+          "instruction": "Mùa hè năm nay của em có gì khác với mùa hè năm ngoái?",
+          "items": [
+            "Gợi ý:",
+            "- Trong mỗi mùa hè, em đã làm những gì?",
+            "- Em thích mùa hè nào hơn?"
+          ]
+        }
+      ]
+    }
+  ]
+}

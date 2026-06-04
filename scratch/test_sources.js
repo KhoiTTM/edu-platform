@@ -1,0 +1,16 @@
+const { createClient } = require('@supabase/supabase-js');
+const fs = require('fs');
+
+const env = fs.readFileSync('.env.local', 'utf-8').split('\n').reduce((acc, line) => { 
+  const [k, ...v] = line.split('='); 
+  if(k && v.length) acc[k.trim()] = v.join('=').trim().replace(/^['"]|['"]$/g, ''); 
+  return acc; 
+}, {});
+
+const supabase = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY);
+
+async function run() {
+  const { data, error } = await supabase.from('content_sources').select('*').limit(1);
+  console.log('content_sources:', data, error);
+}
+run();

@@ -1,0 +1,60 @@
+{
+  "page": 38,
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "a) Giới thiệu bảng nhân, chia.",
+          "content": "Bảng gồm 10 hàng và 10 cột. Giao của hàng và cột cho kết quả phép nhân. Ngược lại dùng để tìm thương.",
+          "items": [
+            "Mẫu: 4 x 3 = 12",
+            "Mẫu: 42 : 6 = 7"
+          ]
+        },
+        {
+          "id": "1b",
+          "instruction": "b) Dựa vào bảng nhân, chia hãy tính:",
+          "items": ["4 x 6", "7 x 8", "15 : 3", "40 : 5"]
+        },
+        {
+          "id": "2",
+          "instruction": "Số ?",
+          "parts": [
+            {
+              "sub_id": "a",
+              "table": {
+                "headers": ["Thừa số", "Thừa số", "Tích"],
+                "rows": [
+                  {"ts1": 7, "ts2": 6, "tich": 42},
+                  {"ts1": 9, "ts2": 5, "tich": "?"},
+                  {"ts1": 8, "ts2": 7, "tich": "?"}
+                ]
+              }
+            },
+            {
+              "sub_id": "b",
+              "table": {
+                "headers": ["Số bị chia", "Số chia", "Thương"],
+                "rows": [
+                  {"sbc": 54, "sc": 6, "thuong": 9},
+                  {"sbc": 48, "sc": 8, "thuong": "?"},
+                  {"sbc": 63, "sc": 9, "thuong": "?"}
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Mỗi túi có 5 quả cam và 3 quả táo. Hỏi 4 túi như vậy có bao nhiêu quả cam, bao nhiêu quả táo?"
+        },
+        {
+          "id": "4",
+          "instruction": "Tìm hai số lớn hơn 1 có tích là 18."
+        }
+      ]
+    }
+  ]
+}

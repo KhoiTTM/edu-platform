@@ -1,0 +1,21 @@
+{
+  "page": 178,
+  "title": "Bài tập ôn tập chương X",
+  "exercises": [
+    {
+      "id": "1",
+      "question": "Sự thụ phấn là quá trình:\nA. Hạt phấn rơi vào đầu nhụy.\nB. Giao tử đực kết hợp với giao tử cái.\nC. Noãn phát triển thành hạt.\nD. Bầu nhụy phát triển thành quả.",
+      "answer": "A"
+    },
+    {
+      "id": "2",
+      "question": "Trong thực tiễn, người ta thường dùng phương pháp nào để nhân giống cây ăn quả (cam, bưởi)?",
+      "answer": "Phương pháp chiết cành hoặc ghép cành."
+    }
+  ],
+  "em_co_the": [
+    "Giải thích được cơ sở khoa học của các biện pháp nhân giống cây trồng.",
+    "Chứng minh được tính thống nhất của cơ thể sống.",
+    "Vận dụng kiến thức để giải thích các hiện tượng sinh sản trong tự nhiên."
+  ]
+}

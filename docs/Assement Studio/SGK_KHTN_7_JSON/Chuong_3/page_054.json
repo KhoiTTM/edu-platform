@@ -1,0 +1,22 @@
+{
+  "page": 54,
+  "sections": [
+    {
+      "subtitle": "III. Thiết bị bắn tốc độ",
+      "content": "- Thiết bị bắn tốc độ (speed gun) thường được cảnh sát giao thông sử dụng để đo tốc độ của các phương tiện đang lưu thông trên đường.\n- Thiết bị này hoạt động dựa trên nguyên lí: súng phát ra sóng vô tuyến (hoặc tia laser), khi gặp xe sóng này phản xạ trở lại súng. Dựa vào thời gian phản xạ, súng tính toán được tốc độ của xe ngay lập tức."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "exercise",
+      "content": "Nêu ưu điểm của thiết bị bắn tốc độ so với các phương pháp đo tốc độ khác.",
+      "answer": "Đo được tốc độ từ xa một cách tức thời, chính xác, không cần dùng thước hay đồng hồ bấm giây thủ công."
+    }
+  ],
+  "key_points": [
+    "Cách đo tốc độ bằng đồng hồ bấm giây: v = s/t.",
+    "Đo tốc độ bằng cổng quang điện cho độ chính xác cao.",
+    "Thiết bị bắn tốc độ dùng để kiểm tra tốc độ của các phương tiện giao thông."
+  ]
+}

@@ -21,32 +21,12 @@ interface PathNode {
 interface CurriculumMapProps {
   nodes: PathNode[];
   subjectSlug: string;
+  completedNodes?: string[];
 }
 
-export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
-  const [expandedUnits, setExpandedUnits] = useState<Set<string>>(() => {
-    // Default expand the first unit
-    const firstUnit = nodes.find(n => n.type === 'unit');
-    return new Set(firstUnit ? [firstUnit.id] : []);
-  });
-
-  const toggleUnit = (unitId: string) => {
-    setExpandedUnits(prev => {
-      const next = new Set(prev);
-      if (next.has(unitId)) next.delete(unitId);
-      else next.add(unitId);
-      return next;
-    });
-  };
-
-  // Filter visible nodes based on expansion
-  const visibleNodes = nodes.filter(n => {
-    if (n.type === 'unit') return true;
-    if ((n.type === 'lesson' || n.type === 'exam') && n.parent_id) {
-      return expandedUnits.has(n.parent_id);
-    }
-    return true;
-  });
+export function CurriculumMap({ nodes, subjectSlug, completedNodes = [] }: CurriculumMapProps) {
+  // Always show all nodes, no collapsing
+  const visibleNodes = nodes;
 
   const positions: { x: number, y: number, isUnit: boolean, index?: number }[] = [];
   let currentY = 100;
@@ -260,11 +240,10 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
             
             // Unlocked state (demo logic: first few unlocked, others too)
             const isUnlocked = true; 
-            const isCompleted = i === 0 || i === 1;
+            const isCompleted = completedNodes.includes(node.slug);
             
             // Icon
             const Icon = node.type === 'lesson' ? Play : (node.type === 'chapter' ? Crown : BookOpen);
-            const isExpanded = expandedUnits.has(node.id);
             
             return (
               <div 
@@ -281,10 +260,9 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                 {isUnitNode ? (
                   /* Purple Banner Flag Unit Node */
                   <div className="relative flex flex-col items-center mt-[-30px]">
-                    <button 
-                      onClick={() => toggleUnit(node.id)}
+                    <div 
                       className={`
-                        relative flex flex-col items-center justify-start transition-all duration-150 active:translate-y-[4px] hover:scale-105 z-10
+                        relative flex flex-col items-center justify-start z-10
                       `}
                     >
                       {/* Banner Body */}
@@ -294,14 +272,7 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                         <div className={`absolute -bottom-4 w-0 h-0 border-x-[30px] border-x-transparent border-t-[16px] ${isUnlocked ? 'border-t-purple-800' : 'border-t-slate-600'}`}></div>
                         <div className="absolute -bottom-[19px] w-0 h-0 border-x-[34px] border-x-transparent border-t-[18px] border-t-amber-300 z-[-1]"></div>
                       </div>
-                      
-                      {/* Expand / Collapse Indicator */}
-                      <div className="absolute -bottom-8 bg-amber-400 border-[3px] border-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg transition-transform duration-300 z-20" style={{ transform: isExpanded ? 'rotate(180deg)' : 'rotate(0deg)' }}>
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#78350f" strokeWidth="5" className="text-amber-900">
-                          <path d="M6 9l6 6 6-6" />
-                        </svg>
-                      </div>
-                    </button>
+                    </div>
                     {/* Wooden Pole */}
                     <div className="absolute w-3 h-24 bg-[#8b5a2b] border-r-[3px] border-[#5c3a21]/50 -bottom-10 rounded-full z-0 shadow-lg"></div>
                   </div>
@@ -328,12 +299,12 @@ export function CurriculumMap({ nodes, subjectSlug }: CurriculumMapProps) {
                     <div className="relative flex flex-col items-center justify-center w-full h-full">
                       {isCompleted ? (
                         // Completed Glassy Blue Button with 3 Stars
-                        <div className="flex flex-col items-center justify-center transition-transform relative opacity-90">
-                          <div className="w-14 h-14 rounded-full bg-gradient-to-b from-[#77d3f4] to-[#258bd5] shadow-[0_5px_0_#0f5a9e,inset_0_3px_5px_rgba(255,255,255,0.6)] border-[3px] border-white flex items-center justify-center z-10">
+                        <div className="flex flex-col items-center justify-center transition-transform relative opacity-70">
+                          <div className="w-14 h-14 rounded-full bg-gradient-to-b from-[#77d3f4] to-[#258bd5] shadow-[0_5px_0_#0f5a9e,inset_0_3px_5px_rgba(255,255,255,0.6)] border-[3px] border-white flex items-center justify-center z-10 grayscale-[50%]">
                              <span className="text-white text-2xl font-black drop-shadow-[0_2px_2px_rgba(0,0,0,0.5)]">{pos.index}</span>
                           </div>
                           {/* 3 Stars below */}
-                          <div className="absolute -bottom-4 flex justify-center w-[120%] gap-0.5 z-20">
+                          <div className="absolute -bottom-4 flex justify-center w-[120%] gap-0.5 z-20 grayscale-[50%]">
                             <Star size={14} className="text-yellow-400 fill-yellow-400 drop-shadow-md rotate-[-15deg] mt-1" />
                             <Star size={18} className="text-yellow-400 fill-yellow-400 drop-shadow-md z-10" />
                             <Star size={14} className="text-yellow-400 fill-yellow-400 drop-shadow-md rotate-[15deg] mt-1" />

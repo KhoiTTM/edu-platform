@@ -1,0 +1,37 @@
+{
+  "page": 138,
+  "lesson_title": "NGƯỜI LÀM ĐỒ CHƠI",
+  "sections": [
+    {
+      "type": "đọc",
+      "author": "Xuân Quỳnh",
+      "content": "Mấy năm gần đây, những đồ chơi của bác không được đắt hàng như trước. Ở cổng công viên, có thêm mấy hàng đồ chơi bằng nhựa.
+Một hôm, bác Nhân bảo:
+- Bác sắp về quê, về quê làm ruộng.
+Tôi suýt khóc:
+- Bác đừng về. Bác ở đây làm đồ chơi bán cho chúng cháu.
+- Nhưng độ này chả mấy ai mua đồ chơi của bác nữa. Còn một ít bột và màu, bác sẽ nặn và bán nốt trong ngày mai.
+Đêm ấy, tôi đập con lợn đất, được một ít tiền. Sáng hôm sau, tôi chia nhỏ món tiền, nhờ mấy bạn trong lớp mua giúp đồ chơi của bác.
+Chiều ấy, tôi thấy bác rất vui: Bác kể: "Hôm nay, bác bán hết hàng. Thì ra, vẫn còn nhiều bạn nhỏ thích đồ chơi của bác. Về quê, bác cũng sẽ nặn đồ chơi để bán. Nghe nói trẻ ở nông thôn còn thích thứ này hơn trẻ thành phố"."
+    },
+    {
+      "type": "đọc",
+      "title": "Câu hỏi",
+      "exercises": [
+        { "id": "1", "instruction": "Bác Nhân làm nghề gì?" },
+        { "id": "2", "instruction": "Chi tiết nào cho thấy trẻ con rất thích đồ chơi của bác Nhân?" },
+        {
+          "id": "3",
+          "instruction": "Vì sao bác Nhân muốn chuyển về quê?",
+          "items": [
+            "a. Vì bác phải về quê làm ruộng.",
+            "b. Vì trẻ con ít mua đồ chơi của bác.",
+            "c. Vì bác không muốn làm đồ chơi nữa."
+          ]
+        },
+        { "id": "4", "instruction": "Bạn nhỏ đã bí mật làm điều gì trước buổi bán cuối cùng của bác Nhân?" },
+        { "id": "5", "instruction": "Theo em, bạn nhỏ là người thế nào?" }
+      ]
+    }
+  ]
+}

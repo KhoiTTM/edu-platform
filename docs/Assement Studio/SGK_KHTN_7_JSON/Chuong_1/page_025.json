@@ -1,0 +1,21 @@
+{
+  "page": 25,
+  "sections": [
+    {
+      "title": "2. Các nguyên tố phi kim",
+      "content": "- Các nguyên tố phi kim nằm ở phía trên bên phải của bảng tuần hoàn (phần lớn các nguyên tố thuộc các nhóm VA, VIA, VIIA).\n- Nguyên tố hydrogen ở nhóm IA và boron ở nhóm IIIA cũng là phi kim."
+    },
+    {
+      "title": "3. Các nguyên tố khí hiếm",
+      "content": "- Các nguyên tố khí hiếm nằm ở nhóm VIIIA của bảng tuần hoàn."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Sử dụng bảng tuần hoàn, hãy xác định vị trí (ô, chu kì, nhóm) của các nguyên tố: Sulfur, Magnesium, Argon.",
+      "answer": "- Sulfur: ô 16, chu kì 3, nhóm VIA;\n- Magnesium: ô 12, chu kì 3, nhóm IIA;\n- Argon: ô 18, chu kì 3, nhóm VIIIA."
+    }
+  ]
+}

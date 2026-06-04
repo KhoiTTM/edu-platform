@@ -1,0 +1,32 @@
+{
+  "page": 42,
+  "sections": [
+    {
+      "subtitle": "II. Công thức hoá học",
+      "subsections": [
+        {
+          "title": "1. Công thức hoá học của đơn chất",
+          "content": "- Với đơn chất kim loại, khí hiếm và một số phi kim như C, P, S,... công thức hoá học trùng với kí hiệu hoá học. Ví dụ: Cu, Fe, He, C, S.\n- Với các đơn chất phi kim khác, phân tử thường gồm hai nguyên tử liên kết với nhau. Ví dụ: H2, O2, N2, Cl2."
+        },
+        {
+          "title": "2. Công thức hoá học của hợp chất",
+          "content": "- Công thức hoá học của hợp chất gồm kí hiệu hoá học của các nguyên tố tạo nên hợp chất kèm theo chỉ số ghi ở chân bên phải kí hiệu hoá học.\n- Công thức chung: $A_x B_y$\nTrong đó: A, B là kí hiệu hoá học của các nguyên tố; x, y là các chỉ số (nếu chỉ số bằng 1 thì không ghi)."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "exercise",
+      "content": "Viết công thức hoá học của các đơn chất sau: bạc (Ag), lưu huỳnh (S), khí fluorine (gồm 2 nguyên tử F).",
+      "answer": "- Bạc: Ag.\n- Lưu huỳnh: S.\n- Khí fluorine: F2."
+    },
+    {
+      "id": "2",
+      "type": "exercise",
+      "content": "Công thức hoá học của carbon dioxide là CO2. Em hãy cho biết các nguyên tố tạo nên chất và số lượng nguyên tử của mỗi nguyên tố trong một phân tử.",
+      "answer": "Gồm 2 nguyên tố là carbon (C) và oxygen (O). Trong một phân tử có 1 nguyên tử C và 2 nguyên tử O."
+    }
+  ]
+}

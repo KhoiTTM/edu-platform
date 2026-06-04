@@ -1,0 +1,37 @@
+{
+  "page": 53,
+  "sections": [
+    {
+      "type": "viết",
+      "title": "Viết",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Nghe viết: Lời giải toán đặc biệt (từ Huy-gô mải miết viết đến À, ra thế)"
+        },
+        {
+          "id": "2",
+          "instruction": "Tìm từ ngữ tạo bởi mỗi tiếng dưới đây:",
+          "items": [
+            "giao",
+            "dao",
+            "rao"
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Làm bài tập a hoặc b",
+          "items": [
+            "a. Tìm từ ngữ chỉ hoạt động hoặc đặc điểm có tiếng bắt đầu bằng r, d hoặc gi.",
+            "b. Giúp thỏ vượt chướng ngại vật để về nhà..."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vận_dụng",
+      "title": "Vận dụng",
+      "content": "Tìm hiểu thông tin về Đội Thiếu niên Tiền phong Hồ Chí Minh."
+    }
+  ]
+}

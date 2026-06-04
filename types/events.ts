@@ -98,11 +98,31 @@ export type QuizCompletedEvent = {
   };
 };
 
+export type LessonVisitedEvent = {
+  type: "lesson_visited";
+  subject_slug: string;
+  metadata: {
+    title: string;
+    url: string;
+  };
+};
+
+export type ExamVisitedEvent = {
+  type: "exam_visited";
+  subject_slug: string;
+  metadata: {
+    title: string;
+    url: string;
+  };
+};
+
 export type AnyLearningEvent = 
   | SpeakingTurnCompletedEvent 
   | SpeakingSessionStartedEvent
   | SpeakingSessionFinishedEvent 
   | QuizCompletedEvent
+  | LessonVisitedEvent
+  | ExamVisitedEvent
   | UniversalEvent;
 
 export interface LearningEventRecord {

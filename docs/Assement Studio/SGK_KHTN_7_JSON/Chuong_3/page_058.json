@@ -1,0 +1,20 @@
+{
+  "page": 58,
+  "title": "Bài tập Bài 10",
+  "exercises": [
+    {
+      "id": "1",
+      "question": "Đồ thị quãng đường - thời gian của một chuyển động thẳng đều là đường gì?",
+      "answer": "Là một đường thẳng đi qua gốc tọa độ."
+    },
+    {
+      "id": "2",
+      "question": "Dựa vào đồ thị ở Hình 10.3, hãy tính tốc độ của vật trên các đoạn OA và AB.",
+      "answer": "- Đoạn OA: v = 4/2 = 2 (m/s).\n- Đoạn AB: Vật đứng yên (quãng đường không đổi là 4 m), tốc độ v = 0."
+    }
+  ],
+  "key_points": [
+    "Đồ thị quãng đường - thời gian mô tả mối quan hệ giữa quãng đường đi được và thời gian.",
+    "Từ đồ thị ta xác định được quãng đường, thời gian và tốc độ của chuyển động."
+  ]
+}

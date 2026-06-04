@@ -1,0 +1,25 @@
+{
+  "page": 104,
+  "lesson_title": "Bài 38: BIỂU THỨC SỐ. TÍNH GIÁ TRỊ CỦA BIỂU THỨC SỐ",
+  "sections": [
+    {
+      "type": "khám_phá",
+      "title": "Làm quen với biểu thức",
+      "content": "a) Ví dụ về biểu thức: Tính độ dài các đường gấp khúc ABC và ABCD (như hình vẽ). Để tính độ dài đường gấp khúc ABC, ta tính: 5 + 5 hoặc 5 x 2. Để tính độ dài đường gấp khúc ABCD, ta tính: 5 + 5 + 8 hoặc 5 x 2 + 8. 5 + 5; 24 - 7; 5 x 2; 82 : 5 + 5; 5 x 2 + 8; 18 : 3 - 2; ... là các biểu thức. b) Giá trị của biểu thức: Cho biểu thức: 35 + 8 - 10. Tính: 35 + 8 - 10 = 33. Giá trị của biểu thức 35 + 8 - 10 là 33."
+    },
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Tính giá trị của biểu thức (theo mẫu).",
+          "items": [
+            "a) 27 - 7 + 30",
+            "b) 60 + 50 - 20",
+            "c) 9 x 4"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "page": 74,
+  "lesson_title": "Bài 25: PHÉP CHIA HẾT, PHÉP CHIA CÓ DƯ",
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "title": "Luyện tập",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "a) Tính. b) Chậu cây nào ở câu a ghi phép chia có số dư là 3?",
+          "items": [
+            {
+              "id": "A",
+              "logic": ["18 : 2 = 9"]
+            },
+            {
+              "id": "B",
+              "logic": ["23 : 5 = 4 (dư 3)"]
+            },
+            {
+              "id": "C",
+              "logic": ["43 : 7 = 6 (dư 1)"]
+            },
+            {
+              "id": "D",
+              "logic": ["17 : 8 = 2 (dư 1)"]
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Chọn số dư của mỗi phép chia dưới đây.",
+          "items": [
+            "17 : 2",
+            "41 : 6",
+            "19 : 7",
+            "19 : 5",
+            "34 : 6",
+            "16 : 6"
+          ],
+          "logic": ["Dư 1", "Dư 5", "Dư 4"]
+        },
+        {
+          "id": "3",
+          "instruction": "Rô-bốt chia 56 con cá vào các rổ, mỗi rổ 8 con cá. Hỏi Rô-bốt chia được bao nhiêu rổ cá như vậy?",
+          "items": []
+        }
+      ]
+    }
+  ]
+}

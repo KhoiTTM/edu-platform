@@ -1,0 +1,39 @@
+{
+  "page": 24,
+  "lesson_title": "Bài 8. LUYỆN TẬP CHUNG",
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "exercises": [
+        {
+          "id": "1",
+          "parts": [
+            {
+              "sub_id": "a",
+              "instruction": "Cân nặng của mỗi con vật được cho dưới đây. Viết tên các con vật theo thứ tự cân nặng từ bé đến lớn.",
+              "items": [
+                {"animal": "Gấu trắng Bắc Cực", "weight": "250 kg"},
+                {"animal": "Hổ", "weight": "167 kg"},
+                {"animal": "Báo", "weight": "86 kg"},
+                {"animal": "Sư tử", "weight": "155 kg"}
+              ]
+            },
+            {
+              "sub_id": "b",
+              "instruction": "Viết các số 356, 432, 728, 669, 895 thành tổng các trăm, chục và đơn vị (theo mẫu).",
+              "example": "356 = 300 + 50 + 6"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Đặt tính rồi tính.",
+          "items": [
+            "a) 64 + 73; 326 + 58; 132 + 597",
+            "b) 157 - 85; 965 - 549; 828 - 786"
+          ]
+        }
+      ]
+    }
+  ]
+}

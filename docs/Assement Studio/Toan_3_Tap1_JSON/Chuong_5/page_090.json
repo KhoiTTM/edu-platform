@@ -1,0 +1,40 @@
+{
+  "page": 90,
+  "sections": [
+    {
+      "type": "hoạt_động",
+      "visual_elements": "Hình ảnh phích nước đang rót vào 3 ca đong: 200 ml, 200 ml và 100 ml.",
+      "exercises": [
+        {
+          "id": "2",
+          "instruction": "Số ?",
+          "items": [
+            "Trong phích có 1 l nước. Rót nước ở phích sang 3 ca (như hình vẽ).",
+            "a) 1 l = ? ml.",
+            "b) Sau khi rót, lượng nước còn lại trong phích là ? ml."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "luyện_tập",
+      "visual_elements": "Hình ảnh mẹ và con đang nấu ăn trong bếp cạnh chai dầu ăn.",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Tính (theo mẫu).",
+          "items": [
+            "Mẫu: 100 ml + 20 ml = 120 ml; 8 ml x 4 = 32 ml",
+            "a) 120 ml - 20 ml",
+            "b) 12 ml x 3"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Một chai dầu ăn có 750 ml dầu. Sau khi mẹ đã dùng để nấu ăn thì trong chai còn lại 350 ml dầu. Hỏi mẹ đã dùng bao nhiêu mi-li-lít dầu để nấu ăn?",
+          "items": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "page": 92,
+  "sections": [
+    {
+      "type": "hoạt_động",
+      "visual_elements": "Hình ảnh bác sĩ đang đo nhiệt độ cho hai bạn nhỏ Việt và Nam. Hình ảnh nhiệt kế y tế chỉ 37 °C.",
+      "exercises": [
+        {
+          "id": "2",
+          "instruction": "Sử dụng nhiệt kế để đo nhiệt độ cơ thể.",
+          "items": [
+            "a) Ví dụ: Đọc trên thang đo của nhiệt kế, mức thuỷ ngân ở vạch 37 chỉ nhiệt độ cơ thể là 37 °C.",
+            "b) Số ? Dựa vào kết quả đo nhiệt độ của các bạn mà bác sĩ đã nêu (như hình vẽ):",
+            "Nhiệt độ cơ thể của Việt là ? °C;",
+            "Nhiệt độ cơ thể của Nam là ? °C."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "luyện_tập",
+      "visual_elements": "Bảng dự báo thời tiết trong ngày với các biểu tượng mặt trời, mây và mưa ứng với các nhiệt độ 27 °C, 36 °C và 15 °C.",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Dự báo nhiệt độ không khí vào các buổi trong ngày ở một địa phương được ghi theo bảng sau:",
+          "items": [
+            "Bảng: Sáng (27 °C), Trưa (36 °C), Đêm (15 °C).",
+            "a) Từng buổi trong ngày là bao nhiêu độ?",
+            "b) Thấp nhất là bao nhiêu độ, cao nhất là bao nhiêu độ?"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Có ba người đo nhiệt độ cơ thể được kết quả lần lượt là: 38 °C; 37 °C; 39 °C. Hỏi trong ba nhiệt độ trên, nhiệt độ nào cao hơn nhiệt độ cơ thể của người bình thường? Biết nhiệt độ của người bình thường là 37 °C.",
+          "items": []
+        }
+      ]
+    },
+    {
+      "type": "hoạt_động",
+      "title": "Hoạt động ở nhà",
+      "content": "Lời khuyên về việc sử dụng nhiệt kế trong đời sống.",
+      "items": [
+        "a) Khi thời tiết thay đổi, em xem nhiệt kế đo nhiệt độ không khí để biết trời nóng hay lạnh mà mặc quần áo cho phù hợp.",
+        "b) Khi thấy người sốt nóng, khó chịu, em hãy nhờ người lớn dùng nhiệt kế đo nhiệt độ cơ thể để được thăm khám kịp thời."
+      ]
+    }
+  ]
+}

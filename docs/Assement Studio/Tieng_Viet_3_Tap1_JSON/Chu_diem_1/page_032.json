@@ -1,0 +1,34 @@
+{
+  "page": 31,
+  "sections": [
+    {
+      "type": "đọc",
+      "content": "CÁCH LÀM\\nTrứng đúc thịt\\n\\nNGUYÊN LIỆU\\nTrứng gà: 3 quả\\nThịt nạc vai: 1 lạng\\nDầu ăn, nước mắm, muối, hành khô\\n\\nCÁC BƯỚC THỰC HIỆN\\n- Rửa sạch thịt, băm nhỏ hoặc xay nhuyễn.\\n- Đập trứng vào bát, cho thêm thịt xay, hành khô băm nhỏ, một chút muối, một chút nước mắm, đánh đều.\\n- Cho dầu ăn vào chảo, đun nóng. Cho hỗn hợp trứng và thịt vào dàn đều khắp chảo, rán vàng mặt dưới (từ 5 - 7 phút) với lửa nhỏ. Lật mặt còn lại, rán vàng.\\n- Bày ra đĩa.",
+      "author": "Trung Sơn",
+      "questions": [
+        {
+          "id": "1",
+          "question": "Kể tên những nguyên liệu làm món trứng đúc thịt."
+        },
+        {
+          "id": "2",
+          "question": "Khi làm món trứng đúc thịt, bước 1 cần làm những công việc gì?"
+        },
+        {
+          "id": "3",
+          "question": "Tranh bên mô tả công việc ở bước mấy? Nói lại công việc đó."
+        },
+        {
+          "id": "4",
+          "question": "Sắp xếp các nội dung dưới đây theo thứ tự làm món trứng đúc thịt.",
+          "options": [
+            "Bày ra đĩa.",
+            "Cho dầu ăn vào chảo, đun nóng.",
+            "Cho hỗn hợp trứng + thịt vào chảo, rán vàng mặt dưới.",
+            "Lật mặt còn lại, rán vàng."
+          ]
+        }
+      ]
+    }
+  ]
+}

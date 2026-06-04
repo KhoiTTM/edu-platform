@@ -1,0 +1,26 @@
+{
+  "page": 87,
+  "lesson_title": "Bài 31: GAM",
+  "sections": [
+    {
+      "type": "khám_phá",
+      "content": "a) Gói bột ngọt cân nặng 100 gam.\n• Gam là một đơn vị đo khối lượng.\n• Gam viết tắt là g.\nNgoài các quả cân 1 kg, 2 kg, 5 kg, còn có các quả cân: 1 g, 2 g, 5 g, 10 g, 20 g, 50 g, 100 g, 200 g, 500 g.\nb) 1 kg = 1 000 g; 1 000 g = 1 kg.",
+      "visual_elements": "a) Cân đĩa đang cân một gói bột ngọt với quả cân 100 g. Một bé gái hỏi: 'Có đơn vị đo cân nặng nào bé hơn một ki-lô-gam không nhỉ?'. Hình ảnh các quả cân 100 g, 200 g, 500 g.\nb) Cân đĩa đang cân một quả cân 1 kg với hai gói hàng 400 g và 600 g. Robot hỏi: 'Một ki-lô-gam bằng bao nhiêu gam nhỉ?'",
+      "exercises": []
+    },
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Số ?",
+          "items": [
+            "a) Gói đường cân nặng ? g.",
+            "b) Gói mì chính cân nặng ? g."
+          ],
+          "visual_elements": "a) Cân đĩa với gói đường và quả cân 500 g.\nb) Cân đĩa với gói mì chính và hai quả cân 100 g và 50 g."
+        }
+      ]
+    }
+  ]
+}

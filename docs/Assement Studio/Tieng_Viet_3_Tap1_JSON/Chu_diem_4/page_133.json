@@ -1,0 +1,43 @@
+{
+  "page": 132,
+  "lesson_title": "VIẾT",
+  "sections": [
+    {
+      "type": "viết",
+      "title": "1. Nghe - viết: Gió (Võ Quảng)",
+      "content": "Gió có nhiều bạn
+Các bạn lá mầm
+Có bạn trúc xanh
+Gió học nhiều bài hát
+Thổi vào cây sáo
+Thông reo vi vút
+Ve đi hát dạo
+Tặng chiếc phong cầm
+Cho gió học
+Tốt bụng hiền lành
+Và nhiều bạn khác
+Thổi vào cây
+Nhiều loại đàn
+Họ rất sẵn sàng"
+    },
+    {
+      "type": "viết",
+      "title": "2. Làm bài tập a hoặc b",
+      "exercises": [
+        {
+          "id": "a",
+          "instruction": "Chọn s hoặc x thay cho ô vuông."
+        },
+        {
+          "id": "b",
+          "instruction": "Chọn chứa ao hoặc au cho ô vuông."
+        }
+      ]
+    },
+    {
+      "type": "viết",
+      "title": "3. Tìm từ ngữ được tạo bởi mỗi tiếng dưới đây:",
+      "items": ["sao / xao", "sào / xào"]
+    }
+  ]
+}

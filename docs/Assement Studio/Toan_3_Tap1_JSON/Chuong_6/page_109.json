@@ -1,0 +1,33 @@
+{
+  "page": 109,
+  "lesson_title": "Bài 39: SO SÁNH SỐ LỚN GẤP MẤY LẦN SỐ BÉ",
+  "sections": [
+    {
+      "type": "khám_phá",
+      "content": "a) Số ô tô ở hàng dưới gấp lên 3 lần ta được số ô tô ở hàng trên: 2 x 3 = 6 (ô tô). Số ô tô ở hàng trên gấp số ô tô ở hàng dưới số lần là: 6 : 2 = 3 (lần). Muốn tìm số lớn gấp mấy lần số bé, ta lấy số lớn chia cho số bé.",
+      "logic": ["2 x 3 = 6 (ô tô)", "6 : 2 = 3 (lần)"]
+    },
+    {
+      "type": "khám_phá",
+      "content": "b) Đoạn thẳng AB dài 8 cm, đoạn thẳng CD dài 2 cm. Hỏi đoạn thẳng AB dài gấp mấy lần đoạn thẳng CD?",
+      "logic": [
+        "Tóm tắt: AB: 8 cm, CD: 2 cm",
+        "Bài giải: Đoạn thẳng AB dài gấp đoạn thẳng CD số lần là: 8 : 2 = 4 (lần). Đáp số: 4 lần."
+      ]
+    },
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Số ?",
+          "items": [
+            "Số lớn: 6, Số bé: 2, Số lớn gấp mấy lần số bé?: 3",
+            "Số lớn: 10, Số bé: 5, Số lớn gấp mấy lần số bé?: ?",
+            "Số lớn: 20, Số bé: 4, Số lớn gấp mấy lần số bé?: ?"
+          ]
+        }
+      ]
+    }
+  ]
+}

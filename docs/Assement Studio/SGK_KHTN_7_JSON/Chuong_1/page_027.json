@@ -1,0 +1,21 @@
+{
+  "page": 27,
+  "title": "Bài tập Bài 3",
+  "exercises": [
+    {
+      "id": "1",
+      "question": "Các nguyên tắc nào sau đây được dùng để sắp xếp các nguyên tố trong bảng tuần hoàn?\nA. Theo chiều tăng dần điện tích hạt nhân.\nB. Các nguyên tố có cùng số lớp electron được xếp vào cùng một hàng.\nC. Các nguyên tố có tính chất hoá học tương tự nhau được xếp vào cùng một cột.\nD. Cả A, B, C đều đúng.",
+      "answer": "D"
+    },
+    {
+      "id": "2",
+      "question": "Ô nguyên tố không cho biết thông tin nào sau đây?\nA. Số hiệu nguyên tử.\nB. Kí hiệu hoá học.\nC. Tên nguyên tố.\nD. Số lớp electron.",
+      "answer": "D"
+    },
+    {
+      "id": "3",
+      "question": "Biết nguyên tố X ở ô số 15 trong bảng tuần hoàn. Hãy cho biết:\na) Tên nguyên tố và kí hiệu hoá học của X.\nb) X là kim loại, phi kim hay khí hiếm.",
+      "answer": "a) X là Phosphorus, kí hiệu là P;\nb) X là phi kim."
+    }
+  ]
+}

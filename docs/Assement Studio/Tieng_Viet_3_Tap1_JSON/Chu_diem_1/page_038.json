@@ -1,0 +1,62 @@
+{
+  "page": 37,
+  "lesson_title": "Viết",
+  "sections": [
+    {
+      "type": "viết",
+      "title": "Nghe viết: Mùa hè lấp lánh (3 khổ thơ đầu)"
+    },
+    {
+      "type": "luyện_từ_và_câu",
+      "title": "2. Ghép các từ phù hợp với tiếng chung hoặc trung để tạo từ",
+      "exercises": [
+        {
+          "id": "ex1",
+          "instruction": "Ghép các tiếng để tạo từ",
+          "items": [
+            "thuỷ",
+            "tâm",
+            "binh",
+            "thực",
+            "hợp",
+            "thay",
+            "chớp",
+            "ăng",
+            "ông",
+            "nóng",
+            "tay"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "luyện_từ_và_câu",
+      "title": "3. Làm bài tập a hoặc b",
+      "exercises": [
+        {
+          "id": "ex2a",
+          "instruction": "a. Chọn ch hoặc tr cho ô vuông.",
+          "items": [
+            "Chị mây vừa kéo đến",
+            "bỗng loè chói mắt",
+            "sao vốn cả rồi",
+            "Soi sáng khắp ruộng vườn",
+            "Đất lòng đợi",
+            "Ơ! Trời bật lửa",
+            "Xuống đi nào, mưa ơi!",
+            "Xem lúa vừa trổ bông."
+          ]
+        },
+        {
+          "id": "ex2b",
+          "instruction": "b. Chọn v hoặc d thay cho ô vuông.",
+          "items": [
+            "Con tàu rời ga, vừa chạy vừa 'tu tu' một hồi dài.",
+            "Sân ga bỗng chốc nhộn nhịp và náo nhiệt hẳn lên.",
+            "Phía cửa ga, nhiều cánh tay giơ lên vẫy gọi người thân."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "page": 45,
+  "lesson_title": null,
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "title": null,
+      "exercises": [
+        {
+          "id": "3",
+          "instruction": "Đã khoanh vào 1/3 số cây cải bắp của hình nào? Đã khoanh vào 1/5 số cây xà lách của hình nào?",
+          "items": [
+            "Hình A",
+            "Hình B",
+            "Hình C",
+            "Hình D"
+          ]
+        },
+        {
+          "id": "4",
+          "instruction": "Số ?",
+          "items": [
+            "Mẫu: Chia 6 quả táo thành 2 phần bằng nhau. 1/2 số quả táo là 3 quả táo.",
+            "Chia 12 quả cam thành 3 phần bằng nhau. 1/3 số quả cam là ? quả cam."
+          ]
+        }
+      ]
+    }
+  ]
+}

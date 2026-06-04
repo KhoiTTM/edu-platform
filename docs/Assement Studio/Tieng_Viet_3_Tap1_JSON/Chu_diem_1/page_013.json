@@ -1,0 +1,34 @@
+{
+  "page": 12,
+  "sections": [
+    {
+      "type": "viết",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Nghe - viết: Em yêu mùa hè",
+          "items": [
+            "Em yêu mùa hè\\n\\nEm yêu mùa hè\\nCó hoa sim tím\\nMọc trên đồi quê\\nRung rinh bướm lượn.\\n\\nThong thả dắt trâu\\nTrong chiều nắng xế,\\nEm hái sim ăn\\nTrời, sao ngọt thế!\\n\\nGió mát lưng đồi\\nVe ngân ra rả\\nTrên cao lưng trời\\nDiều ai vừa thả.\\n\\nEm yêu mùa hè\\nCó trái sim ngọt\\nEm yêu đồi quê\\nCó cơn gió mát.\\n\\n(Nguyễn Thanh Toàn)"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Tìm và viết tên sự vật bắt đầu bằng c hoặc k trong các hình dưới đây:"
+        },
+        {
+          "id": "3",
+          "instruction": "Tìm thêm từ ngữ chỉ sự vật, hoạt động có tiếng bắt đầu bằng c hoặc k."
+        }
+      ]
+    },
+    {
+      "type": "vận_dụng",
+      "exercises": [
+        {
+          "id": "",
+          "instruction": "Trao đổi với người thân những mong muốn của em về kì nghỉ hè năm tới."
+        }
+      ]
+    }
+  ]
+}

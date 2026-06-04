@@ -1,0 +1,43 @@
+{
+  "page": 103,
+  "lesson_title": "",
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "exercises": [
+        {
+          "id": "2",
+          "instruction": "Tính nhẩm (theo mẫu).",
+          "items": [
+            "400 : 4",
+            "600 : 3",
+            "800 : 2"
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Số ?",
+          "content": "Biết con rô-bốt cân nặng 600 g và các khối ru-bích giống nhau. Vậy mỗi khối ru-bích cân nặng ? g."
+        },
+        {
+          "id": "4",
+          "instruction": "Chọn câu trả lời đúng.",
+          "content": "Rô-bốt, Mai và Việt lần lượt tung 3 quân cờ của mình vào một tấm bảng. Kết quả tung và số điểm của mỗi bạn nhận được như sau:",
+          "items": [
+            "Rô-bốt: 0 điểm",
+            "Mai: 375 điểm",
+            "Việt: ... điểm?",
+            "Số điểm Việt nhận được là:",
+            "A. 115 điểm",
+            "B. 125 điểm",
+            "C. 135 điểm"
+          ]
+        },
+        {
+          "id": "5",
+          "instruction": "Một trang trại có 15 con lạc đà có 1 bướu, còn lại là lạc đà có 2 bướu. Biết rằng chúng có tất cả 225 cái bướu. Hỏi trang trại đó có bao nhiêu con lạc đà có 2 bướu?"
+        }
+      ]
+    }
+  ]
+}

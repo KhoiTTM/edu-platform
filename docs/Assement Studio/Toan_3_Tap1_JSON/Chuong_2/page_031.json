@@ -1,0 +1,67 @@
+{
+  "page": 31,
+  "lesson_title": "Bài 10. BẢNG NHÂN 7, BẢNG CHIA 7",
+  "sections": [
+    {
+      "type": "khám_phá",
+      "title": "Bảng nhân 7",
+      "content": "Mỗi đội chơi kéo co có 7 bạn. Hỏi 2 đội chơi kéo co có bao nhiêu bạn?",
+      "logic": [
+        "7 x 2 = ?",
+        "7 + 7 = 14",
+        "7 x 2 = 14"
+      ],
+      "table": {
+        "title": "Hoàn thành bảng nhân 7",
+        "rows": [
+          "7 x 1 = 7",
+          "7 x 2 = 14",
+          "7 x 3 = ?",
+          "7 x 4 = ?",
+          "7 x 5 = ?",
+          "7 x 6 = ?",
+          "7 x 7 = ?",
+          "7 x 8 = ?",
+          "7 x 9 = ?",
+          "7 x 10 = 70"
+        ]
+      },
+      "note": "Thêm 7 vào kết quả của 7 x 2 ta được kết quả của 7 x 3."
+    },
+    {
+      "type": "khám_phá",
+      "title": "Bảng chia 7",
+      "logic": [
+        "7 x 2 = 14 => 14 : 7 = 2"
+      ],
+      "table": {
+        "title": "Hoàn thành bảng chia 7",
+        "rows": [
+          "7 : 7 = 1",
+          "14 : 7 = 2",
+          "21 : 7 = ?",
+          "28 : 7 = ?",
+          "35 : 7 = ?",
+          "42 : 7 = ?",
+          "49 : 7 = ?",
+          "56 : 7 = ?",
+          "63 : 7 = ?",
+          "70 : 7 = 10"
+        ]
+      }
+    },
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Số ?",
+          "parts": [
+            {"sub_id": "a", "items": ["7 x 5 = ?", "7 x 6 = ?", "7 x 9 = ?"]},
+            {"sub_id": "b", "items": ["35 : 7 = ?", "42 : 7 = ?", "63 : 7 = ?"]}
+          ]
+        }
+      ]
+    }
+  ]
+}

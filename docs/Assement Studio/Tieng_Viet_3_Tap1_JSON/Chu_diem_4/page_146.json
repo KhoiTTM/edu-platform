@@ -1,0 +1,58 @@
+{
+  "page": 146,
+  "lesson_title": "Con ngủ sớm",
+  "sections": [
+    {
+      "type": "đọc",
+      "content": "Tôi yêu em tôi
+Nó cười rúc rích
+Em náo nức nô đùa
+Mỗi khi tôi đùa
+Nó vui, nó thích.
+
+Khi bố còn bé tí
+Bà bảo đường của bé
+Chỉ đi đến trường thôi
+Có thích lái ô tô
+Có say mê sửa đổ
+Bé tìm mỗi sớm mai
+Trên trang sách.",
+      "questions": [
+        {
+          "id": "2",
+          "question": "Tìm từ ngữ chỉ tình cảm, cảm xúc trong các khổ thơ trên."
+        },
+        {
+          "id": "3",
+          "question": "Đọc đoạn thơ em thuộc trong một bài đã học."
+        },
+        {
+          "id": "4",
+          "question": "Mỗi câu trong truyện vui dưới đây thuộc kiểu câu nào?"
+        }
+      ]
+    },
+    {
+      "type": "khác",
+      "title": "5. Dựa vào các tranh dưới đây để đặt câu.",
+      "exercises": [
+        {
+          "id": "a",
+          "instruction": "Một câu hỏi"
+        },
+        {
+          "id": "b",
+          "instruction": "Một câu cảm"
+        },
+        {
+          "id": "c",
+          "instruction": "Một câu kể"
+        },
+        {
+          "id": "d",
+          "instruction": "Một câu khiến"
+        }
+      ]
+    }
+  ]
+}

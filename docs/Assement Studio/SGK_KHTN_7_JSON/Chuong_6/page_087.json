@@ -1,0 +1,26 @@
+{
+  "page": 87,
+  "sections": [
+    {
+      "subtitle": "II. Tính chất từ của nam châm",
+      "subsections": [
+        {
+          "title": "1. Sự tương tác giữa hai nam châm",
+          "content": "Khi đưa hai cực của hai nam châm lại gần nhau:\n- Hai cực cùng tên thì đẩy nhau.\n- Hai cực khác tên thì hút nhau."
+        },
+        {
+          "title": "2. Định hướng của nam châm",
+          "content": "Khi để một kim nam châm hoặc một thanh nam châm tự do, sau khi đứng yên, nó luôn chỉ theo hướng Bắc - Nam địa lí. Cực chỉ về hướng Bắc gọi là cực Bắc, cực chỉ về hướng Nam gọi là cực Nam."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Hãy làm thí nghiệm để kiểm tra sự tương tác giữa hai cực của hai nam châm.",
+      "answer": "Khi đưa hai cực Bắc (N) lại gần nhau, chúng đẩy nhau. Khi đưa cực Bắc (N) lại gần cực Nam (S), chúng hút nhau."
+    }
+  ]
+}

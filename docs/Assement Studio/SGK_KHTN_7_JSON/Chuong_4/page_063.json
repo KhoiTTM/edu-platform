@@ -1,0 +1,26 @@
+{
+  "page": 63,
+  "sections": [
+    {
+      "subtitle": "II. Sự truyền âm",
+      "subsections": [
+        {
+          "title": "1. Sự truyền âm trong không khí",
+          "content": "- Khi nguồn âm dao động, nó làm cho lớp không khí tiếp xúc với nó dao động theo. Lớp không khí này dao động làm cho lớp không khí kế tiếp dao động,... Cứ thế dao động âm được truyền đi trong không khí.\n- Sóng âm truyền đến tai làm cho màng nhĩ dao động, nhờ đó ta nghe được âm thanh."
+        },
+        {
+          "title": "2. Sự truyền âm trong các môi trường khác",
+          "content": "Âm có thể truyền qua các môi trường rắn, lỏng, khí và không thể truyền qua chân không."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Hãy tìm ví dụ cho thấy âm truyền được trong chất lỏng và chất rắn.",
+      "answer": "- Chất lỏng: Người thợ lặn ở dưới nước vẫn nghe được tiếng động cơ của thuyền.\n- Chất rắn: Áp tai xuống mặt bàn, một người gõ nhẹ ở đầu bàn bên kia ta vẫn nghe rõ tiếng gõ."
+    }
+  ]
+}

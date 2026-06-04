@@ -1,0 +1,51 @@
+{
+  "page": 28,
+  "sections": [
+    {
+      "type": "đọc",
+      "questions": [
+        {
+          "id": "1",
+          "question": "Bạn nhỏ đến bể bơi với ai? Bạn ấy được chuẩn bị những gì?"
+        },
+        {
+          "id": "2",
+          "question": "Bạn nhỏ cảm thấy thế nào trong ngày đầu đến bể bơi?"
+        },
+        {
+          "id": "3",
+          "question": "Kể lại việc học bơi của bạn ấy."
+        },
+        {
+          "id": "4",
+          "question": "Bạn nhỏ nhận ra điều gì thú vị khi biết bơi?"
+        },
+        {
+          "id": "5",
+          "question": "Theo em, việc học bơi dễ hay khó? Vì sao?"
+        }
+      ]
+    },
+    {
+      "type": "nói_và_nghe",
+      "title": "Một buổi tập luyện",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Kể về một buổi tập luyện của em (ví dụ: tập hát, tập thể dục, tập vẽ,...)",
+          "items": [
+            "Nội dung tập luyện là gì?",
+            "Em đã thực hiện các bước tập luyện như thế nào?"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Em cảm thấy thế nào về buổi tập luyện đó?",
+          "items": [
+            "Em nhớ:\\n- Mạnh dạn chia sẻ ý kiến.\\n- Chăm chú lắng nghe bạn nói."
+          ]
+        }
+      ]
+    }
+  ]
+}

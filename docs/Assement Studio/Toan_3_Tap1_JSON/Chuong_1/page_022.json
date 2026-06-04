@@ -1,0 +1,42 @@
+{
+  "page": 22,
+  "exercises": [
+    {
+      "id": "3",
+      "problem_text": "Con ốc sên bò đến cây chuối theo đường gấp khúc ABCD. Hỏi con ốc sên phải bò quãng đường dài bao nhiêu xăng-ti-mét để đến cây chuối?",
+      "segments": [
+        {"label": "AB", "length": "125 cm"},
+        {"label": "BC", "length": "380 cm"},
+        {"label": "CD", "length": "300 cm"}
+      ]
+    },
+    {
+      "id": "4",
+      "instruction": "Vẽ hình (theo mẫu).",
+      "visual_element": "Grid with a house-like shape made of a rectangle and a triangle."
+    },
+    {
+      "id": "5",
+      "instruction": "Chọn câu trả lời đúng.",
+      "question": "Trong hình bên có bao nhiêu hình tứ giác?",
+      "options": ["A. 3 hình", "B. 4 hình", "C. 5 hình", "D. 6 hình"]
+    }
+  ],
+  "sections": [
+    {
+      "type": "ôn_tập_đo_lường",
+      "exercises": [
+        {
+          "id": "1",
+          "sub_id": "a",
+          "instruction": "Số ?",
+          "items": [
+            "Quả mít cân nặng ? kg.",
+            "Quả dưa hấu cân nặng ? kg.",
+            "Quả mít nặng hơn quả dưa hấu ? kg."
+          ]
+        }
+      ]
+    }
+  ]
+}

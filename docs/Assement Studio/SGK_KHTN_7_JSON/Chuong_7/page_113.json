@@ -1,0 +1,20 @@
+{
+  "page": 113,
+  "title": "Bài tập Bài 25",
+  "exercises": [
+    {
+      "id": "1",
+      "question": "Viết phương trình hô hấp tế bào dạng chữ.",
+      "answer": "Chất hữu cơ + Oxygen $\\rightarrow$ Carbon dioxide + Nước + Năng lượng."
+    },
+    {
+      "id": "2",
+      "question": "Vì sao sau khi chạy bộ, nhịp thở của chúng ta lại tăng lên?",
+      "answer": "Vì khi vận động mạnh, cơ thể cần nhiều năng lượng hơn, do đó tốc độ hô hấp tế bào tăng lên, đòi hỏi cung cấp nhiều oxygen hơn và thải nhiều carbon dioxide hơn qua đường hô hấp."
+    }
+  ],
+  "key_points": [
+    "Hô hấp tế bào là quá trình phân giải chất hữu cơ để lấy năng lượng (ATP).",
+    "Quang hợp và hô hấp là hai quá trình trao đổi vật chất và năng lượng gắn bó mật thiết."
+  ]
+}

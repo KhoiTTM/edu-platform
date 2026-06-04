@@ -1,0 +1,32 @@
+{
+  "page": 55,
+  "chapter": "CHƯƠNG III: TỐC ĐỘ",
+  "lesson_title": "Bài 10: Đồ thị quãng đường - thời gian",
+  "learning_objectives": [
+    "Vẽ được đồ thị quãng đường - thời gian cho chuyển động thẳng.",
+    "Từ đồ thị quãng đường - thời gian cho trước, tìm được quãng đường vật đi (hoặc tốc độ, hay thời gian chuyển động của vật)."
+  ],
+  "sections": [
+    {
+      "subtitle": "I. Lập bảng ghi quãng đường đi được theo thời gian",
+      "content": "Bảng ghi số liệu về thời gian và quãng đường đi được của một vật chuyển động là cơ sở để vẽ đồ thị quãng đường - thời gian."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "opening",
+      "content": "Dựa vào bảng số liệu dưới đây (Bảng 10.1), hãy mô tả chuyển động của vật.",
+      "table": {
+        "headers": ["Thời gian t (h)", "Quãng đường s (km)"],
+        "rows": [
+          [0, 0],
+          [1, 50],
+          [2, 100],
+          [3, 150]
+        ]
+      },
+      "answer": "Vật chuyển động thẳng đều vì cứ sau mỗi giờ vật đi được quãng đường bằng nhau là 50 km."
+    }
+  ]
+}

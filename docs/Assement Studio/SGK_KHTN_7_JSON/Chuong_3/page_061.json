@@ -1,0 +1,26 @@
+{
+  "page": 61,
+  "title": "Ôn tập chương III",
+  "sections": [
+    {
+      "subtitle": "Hệ thống hoá kiến thức",
+      "content": "Tóm tắt kiến thức về tốc độ, công thức tính v = s/t, đơn vị đo, cách đo tốc độ và đồ thị quãng đường - thời gian."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "1",
+      "question": "Tính tốc độ của một vận động viên chạy 200 m hết 20 giây.",
+      "answer": "v = 200 / 20 = 10 (m/s)."
+    },
+    {
+      "id": "2",
+      "question": "Dựa vào đồ thị quãng đường - thời gian, hãy xác định quãng đường vật đi được sau 4 s biết đồ thị là một đường thẳng đi qua gốc tọa độ và điểm (2 s, 10 m).",
+      "answer": "Tốc độ của vật: v = 10 / 2 = 5 (m/s). Quãng đường sau 4 s: s = v \u00d7 t = 5 \u00d7 4 = 20 (m)."
+    }
+  ],
+  "key_points": [
+    "Tốc độ phản ánh mức độ nhanh chậm của chuyển động.",
+    "Giữ khoảng cách an toàn và tuân thủ giới hạn tốc độ là cần thiết để đảm bảo an toàn giao thông."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "page": 96,
+  "sections": [
+    {
+      "type": "hoạt_động",
+      "title": "Trò chơi: DẾ MÈN PHIÊU LƯU KÍ",
+      "content": "Cách chơi:\n- Chơi theo nhóm.\n- Người chơi bắt đầu từ ô XUẤT PHÁT. Khi đến lượt, người chơi gieo xúc xắc. Đếm số chấm ở mặt trên xúc xắc rồi di chuyển số ô bằng số chấm đó. Nếu đến ô có hình con vật thì di chuyển theo hướng mũi tên.\n- Nêu kết quả của phép tính tại ô đi đến, nếu nêu sai kết quả thì phải quay về ô xuất phát trước đó.\n- Trò chơi kết thúc khi đưa dế mèn đi được đúng một vòng, tức là trở lại ô XUẤT PHÁT.",
+      "visual_elements": "Bàn cờ trò chơi với các ô là các phép tính toán học liên quan đến các đơn vị đo lường (ml, g, mm, kg, l, cm). Hình ảnh minh họa dế mèn, các loài vật khác và cây cối."
+    }
+  ]
+}

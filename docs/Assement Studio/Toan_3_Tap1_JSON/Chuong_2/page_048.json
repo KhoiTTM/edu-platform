@@ -1,0 +1,43 @@
+{
+  "page": 47,
+  "lesson_title": null,
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "title": null,
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Tính nhẩm.",
+          "items": [
+            "6 x 4, 4 x 6, 24 : 6, 24 : 4",
+            "8 x 5, 5 x 8, 40 : 8, 40 : 5",
+            "7 x 8, 8 x 7, 56 : 7, 56 : 8"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Mẹ của Mai mua về 45 bông hoa. Mẹ bảo Mai mang hoa cắm hết vào các lọ, mỗi lọ có 9 bông. Hỏi Mai cắm được bao nhiêu lọ hoa như thế?",
+          "items": []
+        },
+        {
+          "id": "3",
+          "instruction": "a) Đã tô màu 1/5 những hình nào?",
+          "items": [
+            "Hình A",
+            "Hình B",
+            "Hình C"
+          ]
+        },
+        {
+          "id": "3b",
+          "instruction": "b) Số ?",
+          "items": [
+            "1/6 số con ếch là ? con ếch.",
+            "1/9 số con ếch là ? con ếch."
+          ]
+        }
+      ]
+    }
+  ]
+}

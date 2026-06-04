@@ -1,0 +1,30 @@
+{
+  "page": 19,
+  "sections": [
+    {
+      "type": "nói_và_nghe",
+      "title": "Sự tích loài hoa của mùa hạ",
+      "author": "Theo Truyện cổ tích nước ngoài",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Đoán nội dung từng tranh.",
+          "items": [
+            "Các loài hoa nói gì về cây xương rồng?",
+            "Chuyện gì xảy ra khi mùa hè đến?",
+            "Xương rồng đã làm gì cho các loài hoa?",
+            "Xương rồng vui mừng vì điều gì?"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Nghe kể chuyện."
+        },
+        {
+          "id": "3",
+          "instruction": "Kể lại từng đoạn của câu chuyện."
+        }
+      ]
+    }
+  ]
+}

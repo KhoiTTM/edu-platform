@@ -1,0 +1,25 @@
+{
+  "page": 30,
+  "lesson_title": "Bài 7: TẬP NẤU ĂN",
+  "sections": [
+    {
+      "type": "khởi_động",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Quan sát tranh và thực hiện yêu cầu.",
+          "items": [
+            "a. Kể tên các dụng cụ nhà bếp.",
+            "b. Cho biết tên các loại thực phẩm.",
+            "c. Đoán xem hai mẹ con đang làm gì."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "đọc",
+      "title": "TẬP NẤU ĂN",
+      "content": "Hôm nay, mình vào bếp cùng mẹ và học được công thức làm món trứng đúc thịt. Món này dễ làm mà lại ngon. Mình chia sẻ với các bạn. Các bạn thử tham khảo nhé!"
+    }
+  ]
+}

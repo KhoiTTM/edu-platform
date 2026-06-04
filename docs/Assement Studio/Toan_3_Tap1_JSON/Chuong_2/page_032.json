@@ -1,0 +1,72 @@
+{
+  "page": 32,
+  "sections": [
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "2",
+          "instruction": "Rô-bốt lấy các quả bóng ghi phép tính có kết quả bé hơn 28. Hỏi Rô-bốt lấy được bao nhiêu quả bóng?",
+          "visual_info": "Balls with calculations: 7 x 3, 56 : 7, 35 : 7, 7 x 6, 7 x 4, 49 : 7, 7 x 9, 21 : 7."
+        },
+        {
+          "id": "3",
+          "problem_text": "Mỗi tuần lễ có 7 ngày. Bố của Mai đi công tác 4 tuần lễ. Hỏi bố của Mai đi công tác bao nhiêu ngày?"
+        }
+      ]
+    },
+    {
+      "type": "luyện_tập",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Nêu các số còn thiếu.",
+          "items": [
+            "a) 7, 14, 21, ?, 35, 42, ?, 56, ?, 70",
+            "b) 70, 63, 56, ?, ?, 35, ?, 21, ?, 7"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Số ?",
+          "parts": [
+            {
+              "sub_id": "a",
+              "table": {
+                "headers": ["X", "7", "7", "7", "7", "7", "7"],
+                "rows": [
+                  {"row_val": [1, 3, 5, 7, 8, 6]},
+                  {"result": [7, "?", "?", "?", "?", "?"]}
+                ]
+              }
+            },
+            {
+              "sub_id": "b",
+              "table": {
+                "row_1": [14, 21, 35, 42, 70, 56],
+                "row_2": [7, 7, 7, 7, 7, 7],
+                "row_3": [2, "?", "?", "?", "?", "?"]
+              }
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "problem_text": "Có 42 cái cốc xếp đều vào 7 hộp. Hỏi mỗi hộp có mấy cái cốc?"
+        },
+        {
+          "id": "4",
+          "instruction": ">; <; = ?",
+          "items": [
+            "a) 7 x 5 ? 7 x 4",
+            "b) 42 : 7 ? 42 : 6",
+            "c) 7 x 2 ? 2 x 7",
+            "d) 21 : 7 ? 6 : 2",
+            "e) 7 x 8 ? 7 x 9",
+            "f) 56 : 7 ? 49 : 7"
+          ]
+        }
+      ]
+    }
+  ]
+}

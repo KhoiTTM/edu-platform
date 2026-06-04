@@ -1,0 +1,39 @@
+{
+  "page": 150,
+  "sections": [
+    {
+      "subtitle": "II. Cách tiến hành",
+      "experiment_1": {
+        "title": "1. Thí nghiệm hướng sáng của cây",
+        "steps": [
+          "Đặt một chậu cây nảy mầm vào trong hộp bìa carton có lỗ hổng ở một phía.",
+          "Đặt hộp ở nơi có ánh sáng.",
+          "Sau 2 - 3 ngày, mở hộp quan sát hướng sinh trưởng của ngọn cây."
+        ]
+      },
+      "experiment_2": {
+        "title": "2. Thí nghiệm hướng nước của rễ",
+        "steps": [
+          "Đặt cây vào khay chứa đất khô.",
+          "Đặt một cốc nước có đục lỗ nhỏ cho nước rỉ ra ở một góc khay.",
+          "Sau 3 - 5 ngày, gạt đất quan sát hướng phát triển của rễ cây."
+        ]
+      },
+      "experiment_3": {
+        "title": "3. Quan sát tập tính của động vật",
+        "steps": [
+          "Dùng kẹp chạm nhẹ vào thân con cuốn chiếu.",
+          "Quan sát phản ứng của nó."
+        ]
+      }
+    }
+  ],
+  "report": {
+    "title": "III. Kết quả và thảo luận",
+    "items": [
+      "Mô tả hiện tượng quan sát được trong các thí nghiệm.",
+      "Giải thích nguyên nhân dẫn đến các hiện tượng đó.",
+      "Kết luận về tính cảm ứng của các đối tượng thí nghiệm."
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "page": 56,
+  "sections": [
+    {
+      "subtitle": "II. Vẽ đồ thị quãng đường - thời gian",
+      "content": "Đồ thị quãng đường - thời gian là đường biểu diễn sự phụ thuộc của quãng đường s vào thời gian t.",
+      "steps": [
+        "1. Vẽ hai trục tọa độ: trục nằm ngang Ot biểu diễn thời gian, trục thẳng đứng Os biểu diễn quãng đường.",
+        "2. Xác định các điểm biểu diễn quan hệ s và t trên mặt phẳng tọa độ.",
+        "3. Nối các điểm vừa xác định."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Dựa vào bảng 10.1 ở trang 55, hãy vẽ đồ thị quãng đường - thời gian của vật.",
+      "answer": "Học sinh vẽ hệ trục tọa độ, lấy các điểm (0,0), (1,50), (2,100), (3,150) và nối chúng lại thành một đường thẳng đi qua gốc tọa độ."
+    }
+  ]
+}

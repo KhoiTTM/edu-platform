@@ -1,0 +1,28 @@
+{
+  "page": 48,
+  "chapter": "CHƯƠNG III: TỐC ĐỘ",
+  "lesson_title": "Bài 8: Tốc độ chuyển động",
+  "learning_objectives": [
+    "Tốc độ cho biết mức độ nhanh hay chậm của chuyển động.",
+    "Tính được tốc độ theo công thức $v = s/t$; nêu được đơn vị đo tốc độ."
+  ],
+  "sections": [
+    {
+      "subtitle": "I. Khái niệm tốc độ",
+      "content": "Để xác định mức độ nhanh hay chậm của chuyển động, người ta so sánh quãng đường đi được trong cùng một khoảng thời gian hoặc so sánh thời gian để đi hết cùng một quãng đường."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "opening",
+      "content": "Ở lớp 5, các em đã biết dùng tỉ số quãng đường đi được và thời gian đi quãng đường đó để xác định mức độ nhanh, chậm của chuyển động. Tỉ số này được gọi là gì?"
+    },
+    {
+      "id": "2",
+      "type": "activity",
+      "content": "Bảng dưới đây ghi kết quả cuộc chạy 60 m của một nhóm học sinh.\n\n| STT | Họ và tên | Quãng đường s (m) | Thời gian t (s) |\n| :--- | :--- | :---: | :---: |\n| 1 | Nguyễn Anh | 60 | 10 |\n| 2 | Phạm Bình | 60 | 9,5 |\n| 3 | Trần Cường | 60 | 11 |\n| 4 | Lê Dũng | 60 | 10,5 |\n\na) Ai chạy nhanh nhất? Ai chạy chậm nhất?\nb) Hãy tính quãng đường mỗi học sinh chạy được trong 1 giây.",
+      "answer": "a) Phạm Bình chạy nhanh nhất (thời gian ít nhất), Trần Cường chạy chậm nhất (thời gian nhiều nhất).\nb) Quãng đường chạy được trong 1 s:\n- Nguyễn Anh: 60/10 = 6 (m);\n- Phạm Bình: 60/9,5 \u2248 6,32 (m);\n- Trần Cường: 60/11 \u2248 5,45 (m);\n- Lê Dũng: 60/10,5 \u2248 5,71 (m)."
+    }
+  ]
+}

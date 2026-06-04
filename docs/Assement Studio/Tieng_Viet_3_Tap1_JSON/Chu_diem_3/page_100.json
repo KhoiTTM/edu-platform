@@ -1,0 +1,46 @@
+{
+  "page": 99,
+  "sections": [
+    {
+      "type": "nói_và_nghe",
+      "exercises": [
+        {
+          "id": "2",
+          "instruction": "Kể lại câu chuyện:"
+        },
+        {
+          "id": "3",
+          "instruction": "Em nghĩ gì về cô bé Na?"
+        }
+      ]
+    },
+    {
+      "type": "viết",
+      "title": "VIẾT",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Nghe - viết: Kho sách của ông bà",
+          "content": "Ông tôi có rất nhiều sách. Bà thì không có những giá sách đầy ắp như ông, nhưng bà có cả một kho sách trong trí nhớ. Tôi rất thích về nhà ông bà: Ban ngày, tôi mải miết đọc sách với ông. Buổi tối, tôi say sưa nghe kho sách của bà. Kho sách nào cũng thật kì diệu.\n(Hoàng Hà)"
+        },
+        {
+          "id": "2",
+          "instruction": "Làm bài tập a hoặc b.",
+          "items": [
+            "a. Tìm từ ngữ được tạo bởi mỗi tiếng dưới đây. Đặt câu với 2 từ ngữ tìm được. (M: sôi nổi - Các bạn giơ tay phát biểu rất sôi nổi. siêu, xiêu, sôi, xôi, sinh, xinh, sử, xử)",
+            "b. Tìm tiếng chứa uôn hoặc uông cho ô vuông. Viết vào vở các từ ngữ có tiếng đó. Cơn dông nổi lên. Trời sập tối, gió giật mạnh, cuốn phăng những đám lá rụng và thổi tung chúng lên không trung. Bụi bay mù mịt. Mẹ bỏ đám rau đang hái dở, chạy quýt đi lùa gà vịt vào chuồng. (Theo Bảo Châu)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "vận_dụng",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Làm một tấm thiệp nhỏ, trang trí thật đẹp. Viết những lời thể hiện tình cảm yêu thương hoặc lòng biết ơn của em đối với một người thân."
+        }
+      ]
+    }
+  ]
+}

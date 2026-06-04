@@ -1,0 +1,22 @@
+{
+  "page": 85,
+  "title": "Ôn tập chương V",
+  "exercises": [
+    {
+      "id": "1",
+      "question": "Phát biểu nào sau đây là đúng?\nA. Ánh sáng không mang năng lượng.\nB. Tia sáng được biểu diễn bằng đường thẳng có mũi tên chỉ hướng.\nC. Góc tới luôn lớn hơn góc phản xạ.\nD. Ảnh qua gương phẳng là ảnh thật.",
+      "answer": "B"
+    },
+    {
+      "id": "2",
+      "question": "Một người cao 1,6 m đứng trước một gương phẳng. Ảnh của người đó cao bao nhiêu?\nA. 0,8 m.\nB. 1,6 m.\nC. 3,2 m.\nD. Tùy vào khoảng cách.",
+      "answer": "B"
+    },
+    {
+      "id": "3",
+      "question": "Giải thích tại sao chữ AMBULANCE trên xe cứu thương thường được viết ngược?",
+      "answer": "Để khi người lái xe phía trước nhìn qua gương chiếu hậu (gương phẳng), ảnh của chữ này sẽ hiện ra theo chiều thuận, giúp họ dễ dàng nhận biết và nhường đường."
+    }
+  ],
+  "em_co_biet": "Gương cầu lồi và gương cầu lõm cũng tạo ra ảnh nhưng có tính chất khác với gương phẳng. Gương cầu lồi cho ảnh nhỏ hơn vật, vùng quan sát rộng. Gương cầu lõm có thể dùng để tập trung ánh sáng mặt trời."
+}

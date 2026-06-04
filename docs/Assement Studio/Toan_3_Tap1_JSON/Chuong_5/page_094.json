@@ -1,0 +1,39 @@
+{
+  "page": 94,
+  "sections": [
+    {
+      "type": "hoạt_động",
+      "visual_elements": "Hình ảnh ba nhiệt kế chỉ các mức nhiệt độ khác nhau; ba bức tranh minh họa các hoạt động trong các điều kiện thời tiết khác nhau; hình ảnh quả trứng, tạ tay, túi cà chua; hình ảnh bốn ca nước có vạch chia và ghi số ml.",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Nhiệt kế nào chỉ nhiệt độ không khí phù hợp với mỗi bức tranh?",
+          "items": [
+            "Nhiệt kế A, B, C.",
+            "Tranh 1: Bạn nhỏ đang ngồi học bài.",
+            "Tranh 2: Bạn nhỏ đang quạt vì nóng.",
+            "Tranh 3: Bạn nhỏ đang sưởi ấm bên bếp lửa."
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Chọn số cân nặng thích hợp với mỗi vật.",
+          "items": [
+            "Đồ vật: Quả trứng, tạ tay, túi cà chua.",
+            "Số cân nặng: 100 kg, 1 kg, 100 g."
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Cho bốn ca đựng lượng nước như sau:",
+          "items": [
+            "Ca A: 300 ml; Ca B: 150 ml; Ca C: 200 ml; Ca D: 250 ml.",
+            "a) Tìm ca ít nước nhất.",
+            "b) Tìm hai ca khác nhau để được 350 ml nước.",
+            "c) Tìm hai ca khác nhau để được 550 ml nước."
+          ]
+        }
+      ]
+    }
+  ]
+}

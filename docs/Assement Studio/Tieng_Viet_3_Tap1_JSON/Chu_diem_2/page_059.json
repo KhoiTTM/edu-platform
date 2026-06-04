@@ -1,0 +1,51 @@
+{
+  "page": 58,
+  "lesson_title": "Đơn xin vào Đội",
+  "sections": [
+    {
+      "type": "đọc",
+      "content": "ĐỘI THIẾU NIÊN TIỀN PHONG HỒ CHÍ MINH
+Yên Bái, ngày 22 tháng 10 năm 2022
+ĐƠN XIN VÀO ĐỘI
+Kính gửi: Ban phụ trách Đội Trường Tiểu học Nguyễn Thái Học
+Ban chỉ huy Liên đội
+Em tên là: Nguyễn Ngọc Bích
+Sinh ngày 22 tháng 12 năm 2014
+Học sinh lớp 3C Trường Tiểu học Nguyễn Thái Học.
+Sau khi được học Điều lệ và lịch sử Đội Thiếu niên Tiền phong Hồ Chí Minh, em thấy Đội là tổ chức tốt nhất để rèn luyện thiếu niên trở thành những người có ích cho đất nước.
+Em làm đơn này xin được vào Đội và xin hứa:
+- Thực hiện 5 điều Bác Hồ dạy.
+- Tuân theo Điều lệ Đội.
+- Giữ gìn danh dự Đội.
+Người làm đơn
+Nguyễn Ngọc Bích"
+    },
+    {
+      "type": "vận_dụng",
+      "questions": [
+        {
+          "id": "1",
+          "question": "Bạn Nguyễn Ngọc Bích viết đơn trên để làm gì?"
+        },
+        {
+          "id": "2",
+          "question": "Đơn được gửi cho ai?"
+        },
+        {
+          "id": "3",
+          "question": "Người viết đơn đã hứa những gì khi vào Đội?"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "2",
+          "instruction": "Điền thông tin vào mẫu đơn xin vào Đội và đối chiếu bài với bạn:"
+        },
+        {
+          "id": "3",
+          "instruction": "Đọc cho người thân nghe đơn xin vào Đội của em."
+        }
+      ]
+    }
+  ]
+}

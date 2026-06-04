@@ -1,0 +1,22 @@
+{
+  "page": 24,
+  "sections": [
+    {
+      "subtitle": "III. Vị trí của các nhóm nguyên tố kim loại, phi kim và khí hiếm trong bảng tuần hoàn",
+      "subsections": [
+        {
+          "title": "1. Các nguyên tố kim loại",
+          "content": "- Hơn 80% các nguyên tố hoá học trong bảng tuần hoàn là kim loại.\n- Các nguyên tố kim loại nằm ở bên trái và ở giữa bảng tuần hoàn (các nhóm IA, IIA, IIIA và các nhóm B)."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Hãy chỉ ra vị trí của các nguyên tố kim loại trong bảng tuần hoàn.",
+      "answer": "Các nguyên tố kim loại nằm ở hầu hết các nhóm B, nhóm IA (trừ hydrogen), nhóm IIA, IIIA (trừ boron) và một số nguyên tố ở các nhóm IVA, VA, VIA."
+    }
+  ]
+}

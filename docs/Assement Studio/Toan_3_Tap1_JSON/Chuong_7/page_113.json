@@ -1,0 +1,47 @@
+{
+  "page": 113,
+  "lesson_title": "Bài 41: ÔN TẬP PHÉP NHÂN, PHÉP CHIA TRONG PHẠM VI 100, 1000",
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Tính nhẩm.",
+          "items": [
+            "a) 20 × 3, 40 × 2, 50 × 2, 30 × 3",
+            "b) 60 : 2, 80 : 4, 90 : 3, 100 : 5"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Đặt tính rồi tính.",
+          "items": [
+            "a) 34 × 2, 15 × 6, 23 × 4",
+            "b) 69 : 3, 84 : 7, 95 : 8"
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Đ, S ?",
+          "items": [
+            "a) 28 × 3 = 84",
+            "b) 17 × 5 = 55",
+            "c) 86 : 6 = 14 dư 2",
+            "d) 79 : 3 = 25 dư 4"
+          ]
+        },
+        {
+          "id": "4",
+          "instruction": "Hai xe ô tô chở học sinh đi thăm Lăng Bác Hồ, mỗi xe chở 45 học sinh. Hỏi có tất cả bao nhiêu học sinh đi thăm Lăng Bác Hồ?",
+          "items": []
+        },
+        {
+          "id": "5",
+          "instruction": "Trong thùng có 28 l nước mắm. Hỏi cần ít nhất bao nhiêu cái can loại 5 l để chứa hết lượng nước mắm đó?",
+          "items": []
+        }
+      ]
+    }
+  ]
+}

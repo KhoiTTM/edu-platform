@@ -1,0 +1,35 @@
+{
+  "page": 57,
+  "sections": [
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Nêu tên các đỉnh và các cạnh của mỗi hình (theo mẫu).",
+          "items": [
+            "Mẫu: Hình tam giác MNP. Các đỉnh: M, N, P. Các cạnh: MN, NP, PM.",
+            "Hình tam giác DEG. Các đỉnh: D, E, G. Các cạnh: DE, EG, GD.",
+            "Hình tứ giác ABCD. Các đỉnh: A, B, C, D. Các cạnh: AB, BC, CD, DA."
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Nêu tên các hình tam giác và các hình tứ giác có trong hình dưới đây:",
+          "items": [
+            "Hình vẽ gồm các điểm A, B, C, D, E tạo thành một cấu trúc nhiều hình tam giác và tứ giác ghép lại."
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Mai đánh dấu một số điểm trên tờ giấy màu (như hình vẽ). Qua hai điểm trong các điểm đã đánh dấu, Mai có thể cắt tờ giấy theo đoạn thẳng nào để được:",
+          "items": [
+            "a) 2 hình tứ giác?",
+            "b) 1 hình tam giác và 1 hình tứ giác?"
+          ]
+        }
+      ],
+      "visual_elements": "Bài 1: Ba hình độc lập: tam giác MNP, tam giác DEG, tứ giác ABCD. Bài 2: Hình phức hợp với 5 đỉnh A, B, C, D, E. Bài 3: Hình chữ nhật ABCD với các điểm M trên cạnh AB và N trên cạnh CD."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "page": 101,
+  "sections": [
+    {
+      "title": "Phương trình quang hợp",
+      "content": "Nước + Carbon dioxide $\\xrightarrow[\text{Diệp lục}]{\text{Ánh sáng}}$ Chất hữu cơ (Glucose) + Oxygen"
+    },
+    {
+      "subtitle": "II. Đặc điểm của lá cây phù hợp với chức năng quang hợp",
+      "content": "Lá là cơ quan quang hợp chủ yếu của cây. Đặc điểm của lá giúp tối ưu hóa quá trình quang hợp:",
+      "features": [
+        "Phiến lá rộng, mỏng giúp hấp thụ nhiều ánh sáng.",
+        "Mạng lưới gân lá dày đặc giúp vận chuyển nước đến tế bào và chất hữu cơ đi nuôi cây.",
+        "Lớp biểu bì có nhiều khí khổng giúp trao đổi khí ($CO_2, O_2$) và thoát hơi nước.",
+        "Các tế bào thịt lá chứa lục lạp (trong đó có diệp lục) là nơi trực tiếp diễn ra quang hợp."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Quan sát Hình 22.2, hãy cho biết bộ phận nào của lá chứa nhiều lục lạp nhất.",
+      "answer": "Các tế bào thịt lá (đặc biệt là lớp thịt lá sát biểu bì mặt trên) chứa nhiều lục lạp nhất."
+    }
+  ]
+}

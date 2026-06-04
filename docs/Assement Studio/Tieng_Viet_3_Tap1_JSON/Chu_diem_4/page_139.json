@@ -1,0 +1,35 @@
+{
+  "page": 139,
+  "lesson_title": "NGƯỜI LÀM ĐỒ CHƠI",
+  "sections": [
+    {
+      "type": "nói_và_nghe",
+      "title": "Nói và nghe",
+      "content": "Dựa vào những gợi ý dưới đây, kể lại đoạn trong câu chuyện: Người làm đồ chơi."
+    },
+    {
+      "type": "viết",
+      "title": "Viết",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Nghe - viết: Người làm đồ chơi (từ đầu đến tinh nhanh, chăm chỉ)."
+        },
+        {
+          "id": "2",
+          "instruction": "Em muốn mượn sách ở thư viện của khu phố. Hãy viết thông tin vào phiếu mượn sách theo mẫu:",
+          "items": [
+            "Họ tên người mượn sách: ( )",
+            "Địa chỉ: ( )",
+            "Tên sách: ( )",
+            "Tác giả: ( )"
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Làm một đồ chơi mà em thích (gấp, cắt, dán, nặn,...) và giới thiệu đồ chơi đó với người thân."
+        }
+      ]
+    }
+  ]
+}

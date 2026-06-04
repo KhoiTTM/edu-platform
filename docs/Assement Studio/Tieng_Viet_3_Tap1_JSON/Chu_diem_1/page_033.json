@@ -1,0 +1,44 @@
+{
+  "page": 33,
+  "sections": [
+    {
+      "type": "khác",
+      "title": "2. Dựa vào tranh dưới đây, trao đổi về các bước rang thịt:",
+      "exercises": [
+        {
+          "id": "2",
+          "instruction": "Dựa vào tranh dưới đây, trao đổi về các bước rang thịt:",
+          "items": [
+            "Cho nước mắm, muối, hành lá",
+            "Cho dầu ăn",
+            "Rán vàng thịt",
+            "Cho hành khô"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "viết",
+      "title": "3. Viết lại các bước rang thịt ở bài tập 2"
+    },
+    {
+      "type": "đọc",
+      "title": "Bếp là vui nhất",
+      "author": "Thụy Anh",
+      "content": "Trong nhà ta Bếp là vui nhất
+Có một cái chảo "Cốp, cốp" bận rộn
+Đen nhẻm đen nhèm Là cái dao phay
+Ngọn lửa bùng lên Băm thịt mỏi tay
+Có một lọ mật Chảo kêu: "Nóng! Nóng!"
+Thái rau loẹt xoẹt Biết nói ngọt ngào
+Mẹ cất trên cao Cái nồi nhôm bóng
+Kiến không ăn vụng! Có thể soi guong
+Giúp việc cho dao Hát khúc thân thương
+Ngoan ngoãn làm sao Cái thớt nằm bẹp
+Không lời than thở! Nói cười xôn xao
+Bởi vì ở trong Trên bếp có lửa
+Rất nhiều hạt gạo! Trên lửa có nồi
+Bé đã thấy rồi Bếp là vui nhất!"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "page": 83,
+  "chapter_title": "CHỦ ĐIỂM 3: MÁI NHÀ YÊU THƯƠNG",
+  "lesson_title": "Bài 13: Ngưỡng cửa",
+  "sections": [
+    {
+      "type": "đọc",
+      "title": "NGƯỠNG CỬA (tiếp theo)",
+      "author": "Vũ Quần Phương",
+      "content": "Nơi ấy ngôi sao
+Soi vào trong giấc ngủ
+Ngọn đèn khuya bóng mẹ
+Vẫn đứng một mình trên sân.
+
+(Vũ Quần Phương)"
+    },
+    {
+      "type": "luyện_từ_và_câu",
+      "title": "Từ ngữ",
+      "content": "Ngưỡng cửa: thanh dưới của khung cửa ra vào, thường chỉ có ở nhà gỗ hoặc nhà tranh.
+Đi men: bám vào vật gì đó để đi cho vững."
+    },
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "1",
+          "question": ""Nơi ấy" trong bài thơ chỉ cái gì?"
+        },
+        {
+          "id": "2",
+          "question": ""Nơi ấy" đã chứng kiến những điều gì trong cuộc sống của bạn nhỏ?"
+        },
+        {
+          "id": "3",
+          "question": "Theo em, hình ảnh "con đường xa tắp" muốn nói đến điều gì? Chọn câu trả lời hoặc nêu ý kiến khác của em.",
+          "options": [
+            "a. Hành trình học tập còn dài lâu.",
+            "b. Nhiều điều mới mẻ chờ đón em ở phía trước.",
+            "c. Đường đến tương lai còn xa."
+          ],
+          "answer_type": "multiple_choice"
+        },
+        {
+          "id": "4",
+          "question": "Ngưỡng cửa đã nhắc bạn nhỏ nhớ tới những ai, giúp bạn nhỏ cảm nhận điều gì về những người đó?"
+        }
+      ]
+    },
+    {
+      "type": "khác",
+      "title": "Học thuộc",
+      "content": "Học thuộc 3 khổ thơ đầu."
+    }
+  ]
+}

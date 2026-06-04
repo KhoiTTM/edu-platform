@@ -1,0 +1,41 @@
+{
+  "page": 85,
+  "lesson_title": "Bài 30: MI-LI-MÉT",
+  "sections": [
+    {
+      "type": "khám_phá",
+      "content": "• Mi-li-mét là một đơn vị đo độ dài.\n• Mi-li-mét viết tắt là mm.\n• 1 cm = 10 mm; 1 m = 1 000 mm.",
+      "visual_elements": "Một cây thước đo độ dày của một que kem, vạch chia nhỏ nhất là 1 mm. Robot nói: 'Que kem này dày 1 mm.'",
+      "exercises": []
+    },
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Số ?",
+          "items": [
+            {
+              "id": "A-B",
+              "text": "Đoạn thẳng AB dài ? mm"
+            },
+            {
+              "id": "C-D",
+              "text": "Đoạn thẳng CD dài ? mm"
+            }
+          ],
+          "visual_elements": "Hai đoạn thẳng AB và CD được đặt cạnh thước kẻ để đo độ dài bằng đơn vị mm. Đoạn AB từ 0 đến 2 cm, đoạn CD từ 0 đến 3 cm."
+        },
+        {
+          "id": "2",
+          "instruction": "Số ?",
+          "items": [
+            "a) 1 cm = ? mm; 1 m = ? mm",
+            "b) 10 mm = ? cm; 1 000 mm = ? m",
+            "c) 6 cm = ? mm; 2 cm = ? mm"
+          ]
+        }
+      ]
+    }
+  ]
+}

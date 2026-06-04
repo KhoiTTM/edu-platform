@@ -1,0 +1,38 @@
+{
+  "page": 43,
+  "sections": [
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Đ, S ?",
+          "items": [
+            "Đã tô màu 1/3 hình chữ nhật. ?",
+            "Đã tô màu 1/2 hình chữ nhật. ?",
+            "Đã tô màu 1/5 hình chữ nhật. ?",
+            "Đã tô màu 1/6 hình chữ nhật. ?"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Chọn cách đọc phù hợp với cách viết một phần mấy ở mỗi hình.",
+          "items": [
+            {"left": "Hình A: 1/5", "right": "Một phần năm."},
+            {"left": "Hình B: 1/3", "right": "Một phần ba."},
+            {"left": "Hình C: 1/2", "right": "Một phần hai."},
+            {"left": "Hình D: 1/4", "right": "Một phần tư."}
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Đã khoanh vào 1/4 số hạt dẻ của hình nào?",
+          "items": [
+            "Hình A",
+            "Hình B"
+          ]
+        }
+      ]
+    }
+  ]
+}

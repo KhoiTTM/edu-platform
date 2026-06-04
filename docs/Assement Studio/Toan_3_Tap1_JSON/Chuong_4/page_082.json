@@ -1,0 +1,33 @@
+{
+  "page": 81,
+  "lesson_title": "Bài 28: BÀI TOÁN GIẢI BẰNG HAI BƯỚC TÍNH",
+  "sections": [
+    {
+      "type": "khám_phá",
+      "exercises": [
+        {
+          "id": "Bài toán 1",
+          "instruction": "Có 5 bông hoa cúc. Số hoa hồng có nhiều hơn số hoa cúc là 2 bông. Hỏi:\na) Có bao nhiêu bông hoa hồng?\nb) Có bao nhiêu bông hoa hồng và hoa cúc?",
+          "items": [
+            "a) Số bông hoa hồng có là: 5 + 2 = 7 (bông)",
+            "b) Số bông hoa hồng và hoa cúc có là: 5 + 7 = 12 (bông)",
+            "Đáp số: a) 7 bông hoa; b) 12 bông hoa."
+          ]
+        },
+        {
+          "id": "Bài toán 2",
+          "instruction": "Ngăn trên có 10 quyển sách, ngăn dưới có nhiều hơn ngăn trên 3 quyển sách. Hỏi cả hai ngăn có bao nhiêu quyển sách?",
+          "items": [
+            "Số sách ở ngăn dưới là: 10 + 3 = 13 (quyển)",
+            "Số sách ở cả hai ngăn là: 10 + 13 = 23 (quyển)",
+            "Đáp số: 23 quyển sách."
+          ]
+        }
+      ],
+      "logic": [
+        "Đây là bài toán giải bằng hai bước tính.",
+        "Trước hết, tìm số quyển sách ở ngăn dưới. Sau đó, tìm số quyển sách ở cả hai ngăn."
+      ]
+    }
+  ]
+}

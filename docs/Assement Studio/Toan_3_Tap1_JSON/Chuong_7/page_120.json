@@ -1,0 +1,51 @@
+{
+  "page": 120,
+  "lesson_title": "Bài 44: ÔN TẬP CHUNG",
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Đặt tính rồi tính.",
+          "items": [
+            "213 x 3",
+            "217 x 4",
+            "161 x 5"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Tính.",
+          "items": [
+            "69 : 3",
+            "68 : 4",
+            "80 : 5"
+          ],
+          "visual_elements": "Phép chia đặt tính theo cột dọc."
+        },
+        {
+          "id": "3",
+          "instruction": "Trong hình bên:",
+          "items": [
+            "a) Nêu tên trung điểm của các đoạn thẳng BC, ED, BM, ND.",
+            "b) Có mấy góc vuông? Nêu tên đỉnh và cạnh của mỗi góc vuông đó."
+          ],
+          "visual_elements": "Hình vẽ trên lưới ô vuông gồm các điểm A, B, C, D, E, Q, M, N, P tạo thành hình giống ngôi nhà."
+        },
+        {
+          "id": "4",
+          "instruction": "Tính giá trị của biểu thức.",
+          "items": [
+            "a) 175 + 42 - 75",
+            "b) 12 x (12 - 9)"
+          ]
+        },
+        {
+          "id": "5",
+          "instruction": "Cửa hàng nhà bà Năm có 1 thùng đựng 100 l nước mắm và 5 can, mỗi can đựng 10 l nước mắm. Hỏi cửa hàng nhà bà Năm có tất cả bao nhiêu lít nước mắm?"
+        }
+      ]
+    }
+  ]
+}

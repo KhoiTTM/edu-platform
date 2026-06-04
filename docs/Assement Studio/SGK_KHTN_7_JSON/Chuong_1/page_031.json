@@ -1,0 +1,11 @@
+{
+  "page": 31,
+  "title": "Bài tập ôn tập chương I (tiếp theo)",
+  "exercises": [
+    {
+      "id": "5",
+      "question": "Cho sơ đồ cấu tạo nguyên tử của nguyên tố X như hình bên (Hình 3.3). Hãy cho biết:\na) Số hiệu nguyên tử của X.\nb) Tên nguyên tố và kí hiệu hoá học của X.\nc) Vị trí của X trong bảng tuần hoàn (ô, chu kì, nhóm).\nd) X là kim loại, phi kim hay khí hiếm.",
+      "answer": "a) Hạt nhân có 11 proton nên số hiệu nguyên tử là 11;\nb) Tên nguyên tố: Sodium, kí hiệu: Na;\nc) Vị trí: ô 11, chu kì 3, nhóm IA;\nd) X là kim loại."
+    }
+  ]
+}

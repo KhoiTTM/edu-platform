@@ -1,0 +1,23 @@
+{
+  "page": 79,
+  "chapter": "CHƯƠNG V: ÁNH SÁNG",
+  "lesson_title": "Bài 16: Sự phản xạ ánh sáng",
+  "learning_objectives": [
+    "Nêu được các khái niệm: tia sáng tới, tia sáng phản xạ, pháp tuyến, góc tới, góc phản xạ, mặt phẳng tới.",
+    "Thực hiện được thí nghiệm rút ra định luật phản xạ ánh sáng.",
+    "Phân biệt được phản xạ và phản xạ khuếch tán."
+  ],
+  "sections": [
+    {
+      "subtitle": "I. Hiện tượng phản xạ ánh sáng",
+      "content": "Phản xạ ánh sáng là hiện tượng ánh sáng bị đổi hướng, hắt trở lại môi trường cũ khi gặp một bề mặt nhẵn bóng (như gương phẳng, mặt nước tĩnh lặng,...)."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "opening",
+      "content": "Tại sao ta có thể nhìn thấy hình ảnh của mình trong gương hay dưới mặt hồ nước tĩnh lặng?"
+    }
+  ]
+}

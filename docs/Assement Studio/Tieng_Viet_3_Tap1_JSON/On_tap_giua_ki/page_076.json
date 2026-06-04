@@ -1,0 +1,41 @@
+{
+  "page": 75,
+  "lesson_title": "Ôn tập giữa học kì 1",
+  "sections": [
+    {
+      "type": "luyện_từ_và_câu",
+      "exercises": [
+        {
+          "id": "3",
+          "instruction": "Đường từ nhà đến trường của Nam vượt qua 3 cây cầu. Hãy giúp Nam đến trường bằng cách tìm từ ngữ theo yêu cầu.",
+          "items": [
+            "Tìm 5 từ ngữ chỉ hoạt động diễn ra ở trường (M: thảo luận,)",
+            "Tìm 5 từ ngữ chỉ sự vật ở trường (M: học sinh,)",
+            "Tìm 5 từ ngữ chỉ đặc điểm của sự vật, hoạt động ở trường (M: sôi nổi,)"
+          ]
+        },
+        {
+          "id": "4",
+          "instruction": "Đặt câu với 2 - 3 từ em tìm được ở bài tập 3",
+          "items": [
+            {
+              "id": "M",
+              "text": "Các bạn học sinh lớp 3A đang thảo luận sôi nổi."
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "instruction": "Chọn dấu câu phù hợp thay cho ô vuông:",
+          "content": "Sửa chuông gọi cửa
+Một thanh niên gọi cho thợ điện phàn nàn:
+Sáng hôm qua, tôi đã gọi anh đến sửa chuông nhà tôi. Sao giờ vẫn chưa thấy đến? Các anh thật chậm!
+Người thợ điện phân trần:
+Hôm qua, tôi có tới nhà anh, bấm chuông nhưng không thấy ai mở cửa.
+Tôi đoán là mọi người đi hết rồi nên tôi đi về.
+(Trung Nguyên sưu tầm)"
+        }
+      ]
+    }
+  ]
+}

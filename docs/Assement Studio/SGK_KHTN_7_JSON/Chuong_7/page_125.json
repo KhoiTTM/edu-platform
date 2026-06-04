@@ -1,0 +1,23 @@
+{
+  "page": 125,
+  "sections": [
+    {
+      "subtitle": "II. Vai trò của nước đối với sinh vật",
+      "content": "Nước là thành phần quan trọng nhất của tế bào và cơ thể, đóng nhiều vai trò chủ chốt:",
+      "roles": [
+        "Là thành phần cấu tạo chính của tế bào và cơ thể.",
+        "Là dung môi hoà tan và vận chuyển các chất (chất dinh dưỡng, chất thải).",
+        "Là môi trường và nguyên liệu cho các phản ứng sinh hoá trong cơ thể.",
+        "Giúp điều hoà thân nhiệt (nhờ quá trình thoát hơi nước qua lá hoặc đổ mồ hôi)."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Tại sao khi bị sốt cao, chúng ta cần phải uống nhiều nước hoặc nước oresol?",
+      "answer": "Để bù lại lượng nước đã mất do vã mồ hôi và giúp hạ thân nhiệt, duy trì sự cân bằng môi trường trong cơ thể."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "page": 35,
+  "lesson_title": "MÙA HÈ LẤP LÁNH",
+  "sections": [
+    {
+      "type": "đọc",
+      "questions": [
+        {
+          "id": "1",
+          "question": "Mặt trời mùa hè có gì lạ?"
+        },
+        {
+          "id": "2",
+          "question": "Nắng mùa hè mang đến những ích lợi gì? Đối với cây, đối với hoa lá, đối với các bạn nhỏ"
+        },
+        {
+          "id": "3",
+          "question": "Ngày của mùa hè có gì đặc biệt?"
+        },
+        {
+          "id": "4",
+          "question": "Vì sao bạn nhỏ thấy 'mùa hè thật sung sướng'?"
+        },
+        {
+          "id": "5",
+          "question": "Theo em, hình ảnh 'ngày dài lấp lánh' chỉ điều gì? Chọn câu trả lời hoặc nêu ý kiến khác của em. a. Ngày có nhiều nắng. b. Ngày có nhiều niềm vui. c. Ngày mặt trời dậy sớm và đi ngủ muộn."
+        }
+      ]
+    }
+  ]
+}

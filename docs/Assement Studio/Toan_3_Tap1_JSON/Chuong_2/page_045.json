@@ -1,0 +1,32 @@
+{
+  "page": 44,
+  "lesson_title": null,
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "title": null,
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Đ, S ?",
+          "items": [
+            "a) Đã tô màu 1/7 hình tròn. ?",
+            "b) Đã tô màu 1/9 hình tròn. ?",
+            "c) Đã tô màu 1/4 hình tròn. ?",
+            "d) Đã tô màu 1/8 hình tròn. ?"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Đã tô màu 1/8 hình nào?",
+          "items": [
+            "Hình A",
+            "Hình B",
+            "Hình C",
+            "Hình D"
+          ]
+        }
+      ]
+    }
+  ]
+}

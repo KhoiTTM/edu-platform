@@ -3,7 +3,7 @@ import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { HeroMomentumCard } from "@/components/dashboard/HeroMomentumCard";
 import { LearningHeatmap } from "@/components/dashboard/LearningHeatmap";
-import { Sparkles, Trophy, Layout, PenTool, Flame, ArrowRight, Clock, Target } from "lucide-react";
+import { Sparkles, Trophy, Layout, PenTool, Flame, ArrowRight, Clock, Target, BookOpen } from "lucide-react";
 
 export default async function DashboardPage() {
   const supabase = await createClient();
@@ -118,6 +118,24 @@ export default async function DashboardPage() {
   leaderboardItems.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
   const finalLeaderboard = leaderboardItems.slice(0, 20);
 
+  const subjectProgress = dashboardStats?.subject_progress || {};
+  
+  const coreSubjects = [
+    { slug: 'toan', name: `Toán ${grade}`, icon: <BookOpen size={14} className="text-sky-400 shrink-0" /> },
+    { slug: 'tieng_viet', name: `Tiếng Việt ${grade}`, icon: <PenTool size={14} className="text-amber-400 shrink-0" /> },
+    { slug: 'tieng_anh', name: `Tiếng Anh ${grade}`, icon: <Sparkles size={14} className="text-emerald-400 shrink-0" /> },
+  ];
+
+  const continueLearningItems = coreSubjects.map(subj => {
+    const data = subjectProgress[subj.slug] || {};
+    return {
+      slug: subj.slug,
+      name: subj.name,
+      icon: subj.icon,
+      last_lesson: data.last_lesson || { title: "Chưa bắt đầu học bài", url: `/luyen-tap/${subj.slug}` },
+      last_exam: data.last_exam || { title: "Chưa có tiến độ làm bài", url: `/luyen-tap/${subj.slug}` },
+    };
+  });
   return (
     <div className="mx-auto max-w-6xl h-[calc(100dvh-6rem)] flex flex-col gap-4 select-none relative z-10 overflow-hidden">
       
@@ -145,53 +163,40 @@ export default async function DashboardPage() {
         
         {/* Left Column (Recent Sessions + Heatmap) */}
         <div className="lg:col-span-8 flex flex-col gap-6 min-h-0 h-full">
-          
-          {/* Recent Sessions List */}
-          <section className="bg-slate-900/60 p-5 rounded-[1.5rem] border-2 border-sky-500/30 shadow-md backdrop-blur-xl flex flex-col min-h-0 flex-1">
-            <h2 className="font-['Outfit'] text-sm font-black text-sky-400 uppercase tracking-widest flex items-center gap-2 mb-4 shrink-0">
-              <Clock size={16} /> Phiên học gần nhất
-            </h2>
 
-            <div className="overflow-y-auto pr-2 space-y-3 custom-scrollbar flex-1">
-              {recentSessionsList.length > 0 ? (
-                recentSessionsList.map((activity: any) => {
-                  return (
-                    <div
-                      key={`${activity.id}-${activity.type}`}
-                      className="group relative flex items-center justify-between rounded-2xl bg-slate-950/60 p-4 border border-slate-800 hover:border-sky-500/50 hover:bg-slate-900 transition-all shadow-inner"
-                    >
-                      {/* Main card link (covers entire card but sits behind content) */}
-                      <Link href={`/luyen-tap/${activity.subject}`} className="absolute inset-0 z-0 rounded-2xl" />
-                      
-                      <div className="relative z-10">
-                        <h3 className="text-sm font-black text-white group-hover:text-sky-400 transition-colors pointer-events-none">{activity.title}</h3>
-                        <p className="text-slate-500 font-bold text-[10px] uppercase tracking-wider mt-1 flex items-center gap-1.5 pointer-events-none">
-                          <Target size={12} className={activity.type === 'quiz' ? "text-emerald-500" : "text-sky-500"} />
-                          {activity.type === 'quiz' ? `Điểm: ${activity.score}/${activity.total}` : "Đã hoàn thành"} • {new Date(activity.dateStr).toLocaleDateString("vi-VN")}
-                        </p>
-                        {activity.nextUnit && activity.nextExamId && (
-                          <div className="mt-2 inline-flex items-center gap-1 text-[10px] font-bold text-emerald-300 bg-emerald-500/20 px-2 py-1 rounded relative z-20">
-                            <Link href={`/test-assessment?examId=${activity.nextExamId}`} className="hover:text-emerald-200 transition flex items-center gap-1">
-                                Gợi ý học tiếp: Bài {activity.nextUnit} <ArrowRight size={10} />
-                            </Link>
-                          </div>
-                        )}
+          {/* Continue Learning Section */}
+          <section className="bg-slate-900/60 p-5 rounded-[1.5rem] border-2 border-emerald-500/30 shadow-md backdrop-blur-xl flex flex-col shrink-0 flex-1">
+            <h2 className="font-['Outfit'] text-sm font-black text-emerald-400 uppercase tracking-widest flex items-center gap-2 mb-4">
+              <Target size={16} /> Môn học của bạn
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 flex-1 content-start overflow-y-auto pr-2 custom-scrollbar">
+              {continueLearningItems.map((item: any) => (
+                <div key={item.slug} className="rounded-2xl bg-slate-950/60 p-4 border border-slate-800 shadow-inner flex flex-col gap-3 hover:border-emerald-500/30 transition-all group">
+                  <h3 className="text-sm font-black text-white flex items-center gap-2">
+                    {item.icon} {item.name}
+                  </h3>
+                  <div className="flex flex-col gap-2">
+                    <Link href={item.last_lesson.url} className="flex items-center justify-between bg-slate-900/80 p-2.5 rounded-xl border border-slate-800 hover:border-emerald-500/50 hover:bg-slate-900 transition-all">
+                      <div className="flex items-center gap-2 min-w-0">
+                        <div className="min-w-0">
+                          <p className="text-slate-400 font-bold uppercase tracking-wider text-[9px] mb-0.5">Học bài</p>
+                          <p className="text-[11px] font-bold text-slate-200 truncate group-hover:text-emerald-400 transition-colors">{item.last_lesson.title}</p>
+                        </div>
                       </div>
-                      <div className="shrink-0 w-8 h-8 rounded-full bg-sky-500/10 flex items-center justify-center text-sky-400 group-hover:bg-sky-500 group-hover:text-white transition-colors relative z-10 pointer-events-none">
-                        <ArrowRight size={16} />
+                      <ArrowRight size={14} className="text-slate-600 group-hover:text-emerald-400 shrink-0" />
+                    </Link>
+                    <Link href={item.last_exam.url} className="flex items-center justify-between bg-slate-900/80 p-2.5 rounded-xl border border-slate-800 hover:border-emerald-500/50 hover:bg-slate-900 transition-all">
+                      <div className="flex items-center gap-2 min-w-0">
+                        <div className="min-w-0">
+                          <p className="text-slate-400 font-bold uppercase tracking-wider text-[9px] mb-0.5">Luyện tập</p>
+                          <p className="text-[11px] font-bold text-slate-200 truncate group-hover:text-emerald-400 transition-colors">{item.last_exam.title}</p>
+                        </div>
                       </div>
-                    </div>
-                  );
-                })
-              ) : (
-                <div className="flex flex-col items-center justify-center h-full text-center py-6 opacity-80">
-                  <Flame size={32} className="text-slate-600 mb-3" />
-                  <p className="text-sm font-bold text-slate-400">Chưa có môn học nào</p>
-                  <Link href="/luyen-tap" className="mt-3 text-[11px] font-black text-sky-500 uppercase tracking-widest hover:text-sky-400">
-                    Bắt đầu học ngay ➔
-                  </Link>
+                      <ArrowRight size={14} className="text-slate-600 group-hover:text-emerald-400 shrink-0" />
+                    </Link>
+                  </div>
                 </div>
-              )}
+              ))}
             </div>
           </section>
 

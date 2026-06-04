@@ -1,0 +1,62 @@
+{
+  "page": 95,
+  "lesson_title": "Bài 35: LUYỆN TẬP CHUNG",
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "visual_elements": "Hình ảnh hai chiếc cân đĩa minh họa bài tập tính khối lượng hộp quà và chùm nho.",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Tính.",
+          "items": [
+            "a) 329 ml - 135 ml; 200 g - 150 g; 392 mm + 43 mm",
+            "b) 251 ml + 262 ml; 37 g + 63 g - 30 g; 87 mm - 17 mm + 10 mm"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Số ?",
+          "items": [
+            "a) Hộp quà cân nặng ? g (biết cân thăng bằng với một bên là hộp quà và quả cân 100 g, bên kia là quả cân 500 g).",
+            "b) Chùm nho cân nặng ? g (biết cân thăng bằng với một bên là chùm nho, bên kia là quả cân 50 g và hai quả cân 100 g)."
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Cô Ba đơm 1 chiếc cúc áo hết 70 mm chỉ. Hỏi để đơm 5 chiếc cúc áo như vậy, cô Ba cần bao nhiêu mi-li-mét chỉ?",
+          "items": []
+        },
+        {
+          "id": "4",
+          "instruction": "Rô-bốt có hai cái cốc loại 150 ml và 400 ml. Chỉ dùng hai cái cốc đó, làm thế nào để Rô-bốt lấy được 250 ml nước từ thùng nước?",
+          "items": []
+        }
+      ]
+    },
+    {
+      "type": "luyện_tập",
+      "visual_elements": "Sơ đồ các phép tính nhân, chia với đơn vị đo; hình ảnh ba chiếc cân đĩa để so sánh khối lượng của ba túi A, B, C.",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Số ?",
+          "items": [
+            "a) 8 ml x 3 = ? ml; ? ml : 4 = ? ml",
+            "b) 42 g : 3 = ? g; ? g x 5 = ? g",
+            "c) 20 mm x 2 = ? mm; ? mm : 8 = ? mm"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Túi nào nặng nhất trong ba túi A, B, C như hình dưới đây?",
+          "items": [
+            "Hình 1: Quả cân 100 g và 200 g thăng bằng với túi A.",
+            "Hình 2: Quả cân 500 g thăng bằng với túi B và quả cân 200 g.",
+            "Hình 3: Túi B và túi C trên bàn cân (túi C ở vị trí thấp hơn)."
+          ]
+        }
+      ]
+    }
+  ]
+}

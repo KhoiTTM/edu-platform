@@ -1,0 +1,53 @@
+{
+  "page": 86,
+  "sections": [
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "3",
+          "instruction": "Bạn nào dài hơn?",
+          "visual_elements": "Hình ảnh ve sầu và kiến. Ve sầu nói: 'Chào kiến. Tớ có chiều dài là 3 cm.' Kiến (dưới kính lúp) nói: 'Chào ve sầu. Tớ có chiều dài là 3 mm.'"
+        }
+      ]
+    },
+    {
+      "type": "luyện_tập",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Tính.",
+          "items": [
+            "250 mm + 100 mm",
+            "420 mm - 150 mm",
+            "25 mm + 3 mm",
+            "64 mm - 15 mm",
+            "11 mm x 3",
+            "50 mm : 2"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Số ?",
+          "visual_elements": "Sơ đồ các phép tính với các đơn vị đo độ dài mm và cm. Các con số bên trái: 40 mm, 48 mm, 15 mm, 16 mm. Các phép tính ở giữa: Giảm 4 lần, Giảm 3 lần, Gấp 4 lần, Gấp 5 lần. Các ô trống kết quả bên phải có đơn vị cm và mm.",
+          "items": [
+            "40 mm -> Giảm 4 lần -> ? cm",
+            "48 mm -> Giảm 3 lần -> ? mm",
+            "15 mm -> Gấp 4 lần -> ? mm",
+            "16 mm -> Gấp 5 lần -> 80 mm"
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Ốc sên đi từ nhà đến trường. Bạn ấy đã đi được 152 mm. Quãng đường còn phải đi dài 264 mm. Hỏi quãng đường ốc sên đi từ nhà đến trường dài bao nhiêu mi-li-mét?",
+          "visual_elements": "Hình ảnh chú ốc sên đang bò trên con đường từ nhà đến trường."
+        },
+        {
+          "id": "4",
+          "instruction": "Cào cào tập nhảy mỗi ngày. Ngày đầu tiên cào cào nhảy xa được 12 mm. Một tuần sau thì cào cào nhảy xa được gấp 3 lần ngày đầu tiên. Hỏi khi đó cào cào nhảy xa được bao nhiêu mi-li-mét?",
+          "visual_elements": "Hình ảnh con cào cào đang nhảy."
+        }
+      ]
+    }
+  ]
+}

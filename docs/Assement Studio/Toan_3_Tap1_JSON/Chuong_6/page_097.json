@@ -1,0 +1,16 @@
+{
+  "page": 97,
+  "lesson_title": "Bài 36: NHÂN SỐ CÓ BA CHỮ SỐ VỚI SỐ CÓ MỘT CHỮ SỐ",
+  "sections": [
+    {
+      "type": "khám_phá",
+      "content": "Mỗi tháp hình được xếp từ 140 khối cầu. Để xếp 2 tháp hình như vậy thì cần bao nhiêu khối cầu?",
+      "logic": [
+        "a) 140 x 2 = ?",
+        "140 x 2: 2 nhân 0 bằng 0, viết 0; 2 nhân 4 bằng 8, viết 8; 2 nhân 1 bằng 2, viết 2. Vậy 140 x 2 = 280",
+        "b) 215 x 4 = ?",
+        "215 x 4: 4 nhân 5 bằng 20, viết 0 nhớ 2; 4 nhân 1 bằng 4, thêm 2 bằng 6, viết 6; 4 nhân 2 bằng 8, viết 8. Vậy 215 x 4 = 860"
+      ]
+    }
+  ]
+}

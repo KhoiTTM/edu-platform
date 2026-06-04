@@ -1,0 +1,21 @@
+{
+  "page": 154,
+  "title": "Bài tập Bài 36",
+  "exercises": [
+    {
+      "id": "1",
+      "question": "Phân biệt sinh trưởng và phát triển.",
+      "answer": "Sinh trưởng là tăng kích thước, khối lượng. Phát triển là sự biến đổi về chất (phân hoá, tạo cơ quan) bao gồm cả sinh trưởng."
+    },
+    {
+      "id": "2",
+      "question": "Nêu các nhân tố ảnh hưởng đến sinh trưởng và phát triển ở sinh vật.",
+      "answer": "Nhân tố bên trong (di truyền, hormone) và nhân tố bên ngoài (nhiệt độ, ánh sáng, nước, dinh dưỡng)."
+    }
+  ],
+  "key_points": [
+    "Sinh trưởng là sự tăng lên về kích thước và khối lượng.",
+    "Phát triển bao gồm sinh trưởng, phân hoá tế bào và phát sinh hình thái.",
+    "Sinh trưởng và phát triển chịu tác động của nhiều nhân tố."
+  ]
+}

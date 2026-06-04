@@ -1,0 +1,63 @@
+{
+  "page": 14,
+  "sections": [
+    {
+      "type": "đọc",
+      "questions": [
+        {
+          "id": "1",
+          "question": "Bạn nhỏ thích nhất điều gì khi nghỉ hè?"
+        },
+        {
+          "id": "2",
+          "question": "Những câu thơ sau giúp em hiểu điều gì về bạn nhỏ?\\nBà em cũng mừng ghê\\nKhi thấy em vào ngõ.\\nBà mỗi năm mỗi gầy\\nChắc bà luôn vất vả."
+        },
+        {
+          "id": "3",
+          "question": "Kể những việc làm nói lên tình yêu thương của bà dành cho con cháu."
+        },
+        {
+          "id": "4",
+          "question": "Theo em, vì sao bạn nhỏ thấy vui thích trong kì nghỉ hè ở quê?"
+        },
+        {
+          "id": "5",
+          "question": "Học thuộc lòng 3 khổ thơ em thích."
+        }
+      ]
+    },
+    {
+      "type": "viết",
+      "title": "Ôn chữ viết hoa: A, Ă, Â",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Viết tên riêng: Đông Anh"
+        },
+        {
+          "id": "2",
+          "instruction": "Viết câu:",
+          "items": [
+            "Ai về đến huyện Đông Anh\\nGhé xem phong cảnh Loa Thành Thục Vương.\\n(Ca dao)"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "luyện_từ_và_câu",
+      "title": "Luyện tập",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Dựa vào tranh, tìm từ ngữ chỉ sự vật, hoạt động (theo mẫu)",
+          "items": [
+            "Từ ngữ chỉ sự vật:",
+            "- Chỉ người: bác nông dân",
+            "- Chỉ con vật: con trâu",
+            "Từ ngữ chỉ hoạt động: gặt lúa, gặm cỏ"
+          ]
+        }
+      ]
+    }
+  ]
+}

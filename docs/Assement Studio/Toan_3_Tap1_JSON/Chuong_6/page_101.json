@@ -1,0 +1,41 @@
+{
+  "page": 101,
+  "lesson_title": "",
+  "sections": [
+    {
+      "type": "khám_phá",
+      "title": "",
+      "content": "Để làm mỗi cái ghế cần 7 vỏ chai. Với 714 vỏ chai thì chúng mình sẽ làm được bao nhiêu cái ghế nhỉ? Xếp số ghế sẽ làm được thành các bộ bàn ghế, mỗi bàn có 5 ghế thì xếp được bao nhiêu bộ bàn ghế và còn dư mấy ghế?",
+      "logic": [
+        "a) 714 : 7 = ?",
+        "7 chia 7 được 1, viết 1.",
+        "1 nhân 7 bằng 7; 7 trừ 7 bằng 0.",
+        "Hạ 1; 1 chia 7 được 0, viết 0.",
+        "0 nhân 7 bằng 0; 1 trừ 0 bằng 1.",
+        "Hạ 4, được 14; 14 chia 7 được 2, viết 2.",
+        "2 nhân 7 bằng 14; 14 trừ 14 bằng 0.",
+        "714 : 7 = 102",
+        "b) 102 : 5 = ?",
+        "10 chia 5 được 2, viết 2.",
+        "2 nhân 5 bằng 10; 10 trừ 10 bằng 0.",
+        "Hạ 2; 2 chia 5 được 0, viết 0.",
+        "0 nhân 5 bằng 0; 2 trừ 0 bằng 2.",
+        "102 : 5 = 20 (dư 2)"
+      ]
+    },
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Tính.",
+          "items": [
+            "a) 270 | 3",
+            "560 | 4",
+            "450 | 9"
+          ]
+        }
+      ]
+    }
+  ]
+}

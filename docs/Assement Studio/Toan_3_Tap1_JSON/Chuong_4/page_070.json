@@ -1,0 +1,30 @@
+{
+  "page": 69,
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Kết quả của mỗi phép tính được gắn với một chữ như sau:",
+          "items": [
+            { "id": "A", "text": "15 x 6" },
+            { "id": "C", "text": "11 x 8" },
+            { "id": "H", "text": "21 x 4" },
+            { "id": "M", "text": "17 x 3" },
+            { "id": "N", "text": "16 x 2" },
+            { "id": "Ô", "text": "33 x 1" },
+            { "id": "T", "text": "13 x 4" },
+            { "id": "Ư", "text": "19 x 5" }
+          ],
+          "content": "Hãy gắn các chữ vào các ô thích hợp để biết tên một di tích nổi tiếng ở nước ta: [88][84][95][90]  [51][33][52]  [88][33][52]"
+        },
+        {
+          "id": "2",
+          "instruction": "Em hãy giúp các bạn ong đổi chỗ hai thẻ số trong hình dưới đây để được phép tính đúng.",
+          "content": "Thẻ số: 4, 1 (số bị nhân); 2 (số nhân); 8, 4 (tích). Phép tính hiện tại: 41 x 2 = 84"
+        }
+      ]
+    }
+  ]
+}

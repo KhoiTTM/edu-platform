@@ -1,0 +1,20 @@
+{
+  "page": 109,
+  "subtitle": "III. Kết quả và thảo luận",
+  "questions": [
+    {
+      "id": "1",
+      "content": "Giải thích hiện tượng đổi màu của lá khi nhúng vào dung dịch iodine trong thí nghiệm 1.",
+      "answer": "Phần lá không bị che khuất quang hợp tạo tinh bột, iodine gặp tinh bột sẽ hóa xanh tím. Phần bị che không quang hợp được nên không có tinh bột, không đổi màu."
+    },
+    {
+      "id": "2",
+      "content": "Tại sao tăm bông còn tàn đỏ lại bùng cháy khi đưa vào miệng ống nghiệm A trong thí nghiệm 2?",
+      "answer": "Vì khí oxygen thu được trong ống nghiệm A là chất duy trì sự cháy, làm tàn đỏ bùng cháy."
+    }
+  ],
+  "conclusion": [
+    "Quá trình quang hợp của cây xanh tạo ra tinh bột.",
+    "Quá trình quang hợp của cây xanh giải phóng khí oxygen."
+  ]
+}

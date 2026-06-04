@@ -1,0 +1,22 @@
+{
+  "page": 35,
+  "sections": [
+    {
+      "subtitle": "II. Phân tử",
+      "subsections": [
+        {
+          "title": "1. Khái niệm phân tử",
+          "content": "- Phân tử là hạt đại diện cho chất, gồm một số nguyên tử liên kết với nhau bằng liên kết hoá học và thể hiện đầy đủ tính chất hoá học của chất.\n- Phân tử đơn chất: Gồm các nguyên tử của cùng một nguyên tố hoá học liên kết với nhau. Ví dụ: phân tử oxygen gồm 2 nguyên tử O.\n- Phân tử hợp chất: Gồm các nguyên tử của các nguyên tố hoá học khác nhau liên kết với nhau. Ví dụ: phân tử nước gồm 2 nguyên tử H và 1 nguyên tử O."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Quan sát Hình 5.5, hãy mô tả cấu tạo của phân tử nitrogen và phân tử methane.",
+      "answer": "- Phân tử nitrogen gồm 2 nguyên tử nitrogen liên kết với nhau.\n- Phân tử methane gồm 1 nguyên tử carbon liên kết với 4 nguyên tử hydrogen."
+    }
+  ]
+}

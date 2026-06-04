@@ -1,0 +1,20 @@
+{
+  "page": 21,
+  "lesson_title": "Bài 4: Lần đầu ra biển",
+  "sections": [
+    {
+      "type": "khởi_động",
+      "exercises": [
+        {
+          "id": "",
+          "instruction": "Nếu lớp em lên kế hoạch đi dã ngoại, em sẽ góp ý kiến nên đi chơi ở biển hay ở núi. Vì sao?"
+        }
+      ]
+    },
+    {
+      "type": "đọc",
+      "title": "Lần đầu ra biển",
+      "content": "A! Biển! Biển đây rồi. Thích quá!\\nThắng reo toáng lên, vượt qua bố và anh Thái chạy ào ra bãi cát. Từ thuở bé đến giờ, Thắng đã được thấy biển bao giờ đâu. Cậu đứng ngây ra nhìn biển: Ôi! Biển rộng quá, xanh quá, chẳng nhìn thấy bờ bên kia đâu.\\nThắng đi xuống gần mép nước. Ồ! Có con gì bé tẹo đang chạy trên cát. Thắng rón rén đến gần, nhưng vụt một cái, nó biến ngay vào hang."
+    }
+  ]
+}

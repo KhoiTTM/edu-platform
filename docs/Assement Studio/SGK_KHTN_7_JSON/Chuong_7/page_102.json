@@ -1,0 +1,22 @@
+{
+  "page": 102,
+  "sections": [
+    {
+      "subtitle": "III. Vai trò của quang hợp",
+      "content": "Quang hợp đóng vai trò quan trọng đối với sự sống trên Trái Đất:",
+      "roles": [
+        "Tổng hợp chất hữu cơ: Cung cấp thức ăn cho cây và các sinh vật khác, là nguồn nguyên liệu cho công nghiệp và dược phẩm.",
+        "Tích lũy năng lượng: Chuyển hoá năng lượng ánh sáng thành năng lượng hoá học trong các liên kết của chất hữu cơ.",
+        "Cân bằng khí quyển: Lấy khí carbon dioxide và giải phóng khí oxygen, giúp điều hòa không khí."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Tại sao việc trồng nhiều cây xanh lại có tác dụng giảm hiệu ứng nhà kính?",
+      "answer": "Vì cây xanh quang hợp lấy đi khí carbon dioxide (một loại khí gây hiệu ứng nhà kính chính) từ khí quyển."
+    }
+  ]
+}

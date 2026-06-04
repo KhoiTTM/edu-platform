@@ -1,0 +1,50 @@
+{
+  "page": 23,
+  "exercises": [
+    {
+      "id": "1",
+      "sub_id": "b",
+      "instruction": "Hai can dưới đây chứa đầy dầu. Cả hai can có ? l dầu.",
+      "items": ["Can 5 l", "Can 15 l"]
+    },
+    {
+      "id": "2",
+      "instruction": "Chọn câu trả lời đúng.",
+      "items": [
+        {
+          "sub_id": "a",
+          "question": "Đồng hồ bên đổ chuông lúc:",
+          "options": ["A. 3 giờ 30 phút", "B. 6 giờ 3 phút", "C. 6 giờ 15 phút", "D. 3 giờ 6 phút"]
+        },
+        {
+          "sub_id": "b",
+          "question": "Nếu ngày 4 tháng 10 là thứ Ba thì ngày 10 tháng 10 là:",
+          "options": ["A. Chủ nhật", "B. Thứ Hai", "C. Thứ Ba", "D. Thứ Tư"]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "problem_text": "Mỗi tuần gia đình cô Hoa ăn hết 5 kg gạo. Cô Hoa mua về 20 kg gạo. Hỏi gia đình cô Hoa ăn trong mấy tuần thì hết số gạo đó?"
+    },
+    {
+      "id": "4",
+      "instruction": "Tìm hai đồng hồ chỉ cùng giờ vào buổi chiều hoặc buổi tối.",
+      "clocks": [
+        {"label": "A", "time": "7:15"},
+        {"label": "B", "time": "2:15"},
+        {"label": "C", "time": "9:00"},
+        {"label": "D", "time": "5:30"},
+        {"label": "M", "time": "19:15"},
+        {"label": "N", "time": "14:15"},
+        {"label": "P", "time": "21:00"},
+        {"label": "Q", "time": "17:30"}
+      ]
+    },
+    {
+      "id": "5",
+      "type": "đố_bạn",
+      "problem_text": "Có một can 3 l và một can 5 l. Chỉ dùng hai cái can đó, làm thế nào lấy được 1 l nước từ bể nước?"
+    }
+  ]
+}

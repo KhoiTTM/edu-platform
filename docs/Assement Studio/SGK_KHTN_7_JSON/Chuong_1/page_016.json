@@ -1,0 +1,32 @@
+{
+  "page": 16,
+  "sections": [
+    {
+      "subtitle": "II. Kí hiệu hoá học",
+      "content": "- Mỗi nguyên tố hoá học được biểu diễn bằng một hoặc hai chữ cái, trong đó chữ cái đầu được viết hoa, chữ cái thứ hai (nếu có) viết thường. Biểu diễn này được gọi là kí hiệu hoá học.\n- Kí hiệu hoá học là cách viết tắt tên của nguyên tố hoá học theo tiếng Latinh hoặc tên người, tên địa danh tìm ra nguyên tố đó."
+    }
+  ],
+  "table": {
+    "title": "Tên và kí hiệu hoá học của một số nguyên tố",
+    "headers": ["Số proton", "Tên nguyên tố", "Kí hiệu hoá học"],
+    "rows": [
+      [1, "Hydrogen", "H"],
+      [2, "Helium", "He"],
+      [6, "Carbon", "C"],
+      [7, "Nitrogen", "N"],
+      [8, "Oxygen", "O"],
+      [11, "Sodium", "Na"],
+      [12, "Magnesium", "Mg"],
+      [13, "Aluminium", "Al"],
+      [20, "Calcium", "Ca"]
+    ]
+  },
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Tại sao cần phải có kí hiệu hoá học?",
+      "answer": "Để biểu diễn các nguyên tố hoá học một cách ngắn gọn, thống nhất trên toàn thế giới."
+    }
+  ]
+}

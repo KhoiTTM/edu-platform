@@ -21,11 +21,26 @@ function AssessmentContent() {
       async function load() {
         try {
           setIsLoading(true);
-          const [titleData, data] = await Promise.all([
+          const [info, data] = await Promise.all([
             getExamInfo(examId!),
             getExamQuestions(examId!)
           ]);
-          setExamTitle(titleData);
+          setExamTitle(info.title);
+
+          // Fire tracking event
+          fetch('/api/events', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              type: 'exam_visited',
+              subject_slug: info.subjectSlug,
+              metadata: {
+                title: info.title,
+                url: `/test-assessment?examId=${examId}`
+              }
+            })
+          }).catch(console.error);
+
           if (data.length === 0) {
             setError("No questions found for this exam.");
           } else {

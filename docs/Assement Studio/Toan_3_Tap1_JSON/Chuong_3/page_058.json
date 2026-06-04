@@ -1,0 +1,17 @@
+{
+  "page": 58,
+  "sections": [
+    {
+      "type": "khám_phá",
+      "title": "Hình chữ nhật, hình vuông",
+      "content": "Các bạn thảo luận về đặc điểm của hình chữ nhật và hình vuông. Bạn nữ: \"Bức tranh này có dạng hình chữ nhật.\" Rô-bốt: \"Các góc ở khung tranh đều là góc vuông.\" Bạn nam: \"Các góc của hình chữ nhật có là góc vuông không nhỉ?\"",
+      "logic": [
+        "Hình chữ nhật ABCD có: 4 cạnh và 4 góc vuông; 2 cạnh dài AB và DC có độ dài bằng nhau (AB = DC); 2 cạnh ngắn AD và BC có độ dài bằng nhau (AD = BC).",
+        "Hình vuông MNPQ có: 4 góc vuông; 4 cạnh bằng nhau.",
+        "Đặc điểm hình chữ nhật: Có 4 góc vuông, 2 cạnh dài bằng nhau, 2 cạnh ngắn bằng nhau. Cạnh dài gọi là chiều dài, cạnh ngắn gọi là chiều rộng.",
+        "Đặc điểm hình vuông: Có 4 góc vuông và 4 cạnh bằng nhau."
+      ],
+      "visual_elements": "Hình chữ nhật ABCD và hình vuông MNPQ được minh họa trên lưới ô vuông."
+    }
+  ]
+}

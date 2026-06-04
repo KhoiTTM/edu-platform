@@ -1,0 +1,35 @@
+{
+  "page": 106,
+  "sections": [
+    {
+      "type": "nói_và_nghe",
+      "content": "b. Em mong muốn có người anh, người chị hoặc người em như thế nào? Vì sao?"
+    },
+    {
+      "type": "viết",
+      "title": "VIẾT",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Nghe viết: Tôi yêu em tôi (4 khổ thơ đầu)."
+        },
+        {
+          "id": "2",
+          "instruction": "Quan sát tranh, tìm và viết tên sự vật theo yêu cầu a hoặc b",
+          "items": [
+            "a. Chứa tiếng bắt đầu bằng r, d hoặc gi. M: hàng rào",
+            "b. Chứa tiếng có uon hoặc uong: M: mướp hương"
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Tìm thêm các từ ngữ có tiếng bắt đầu bằng r, d, gi (hoặc có vần uon, uong)."
+        }
+      ]
+    },
+    {
+      "type": "viết",
+      "content": "Viết 2 - 3 câu về một việc em đã làm khiến người thân vui."
+    }
+  ]
+}

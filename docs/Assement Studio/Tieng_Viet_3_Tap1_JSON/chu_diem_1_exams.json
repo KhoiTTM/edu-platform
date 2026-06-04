@@ -1,0 +1,797 @@
+{
+  "meta": {
+    "subject": "Tiếng Việt 3 - Tập 1",
+    "version": "1.0.0",
+    "created": "2026-06-04",
+    "topic": "Chủ điểm 1: Những trải nghiệm thú vị",
+    "question_types": [
+      "multiple_choice",
+      "true_false",
+      "fill_blank",
+      "matching",
+      "sorting",
+      "classification",
+      "image_word_match",
+      "word_puzzle"
+    ],
+    "difficulty_levels": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "scoring": {
+      "easy": 5,
+      "medium": 10,
+      "hard": 15,
+      "streak_bonus_multiplier": 2,
+      "hint_cost_coins": 1
+    }
+  },
+  "exams": [
+    {
+      "id": "exam_chu_diem_1_tong_hop",
+      "title": "Đề Tổng Hợp Chủ Điểm 1: Những trải nghiệm thú vị & Những bài học mới",
+      "lessons": [
+        "Bài 1: Ngày gặp lại",
+        "Bài 2: Về thăm quê",
+        "Bài 3: Cánh rừng trong nắng",
+        "Bài 4: Luyện từ và câu",
+        "Bài 5: Nhật kí tập bơi",
+        "Bài 6: Cùng vui chơi",
+        "Bài 7: Tập nấu ăn",
+        "Bài 8: Ôn tập cuối chủ điểm"
+      ],
+      "total_questions": 20,
+      "time_limit_seconds": 900,
+      "passing_score": 70,
+      "questions": [
+        {
+          "id": "e1_q01",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 1: Ngày gặp lại",
+          "points": 5,
+          "question": "Sơn tặng Chi món quà gì khi gặp lại?",
+          "passage_ref": "Sơn giơ chiếc diều rất xinh, vẫy rối rít: – Cho cậu này.",
+          "options": [
+            {
+              "id": "a",
+              "text": "Một chiếc diều xinh",
+              "is_correct": true
+            },
+            {
+              "id": "b",
+              "text": "Một con cá",
+              "is_correct": false
+            },
+            {
+              "id": "c",
+              "text": "Một bó rau",
+              "is_correct": false
+            },
+            {
+              "id": "d",
+              "text": "Một quyển sách",
+              "is_correct": false
+            }
+          ],
+          "explanation": "Trong bài, Sơn giơ chiếc diều rất xinh và nói 'Cho cậu này' — đó là món quà tặng Chi.",
+          "reading_passage": "Chi mở tung cửa sổ đón những tia nắng đầu thu. Thế là hết hè rồi.\nNgày mai bắt đầu năm học mới.\nCó tiếng gọi ngoài cổng. Chi nhìn ra, thấy Sơn giơ chiếc diều rất xinh, vẫy rối rít:\n– Cho cậu này.\nChi mừng rỡ chạy ra. Sơn về quê từ đầu hè, giờ gặp lại, hai bạn có bao nhiêu chuyện. Sơn kể ở quê, cậu được theo ông bà đi trồng rau, câu cá. Chiều chiều, cậu thường cùng bạn thả diều. Khi diều lên cao, cậu nằm lăn ra bãi cỏ ngắm trời. Cánh diều đứng im như ngủ thiếp đi trên bầu trời xanh.\n\nNhìn Sơn đen nhẻm, mắt lấp lánh khi kể chuyện, Chi chợt thấy buồn:\n– Tớ chẳng được đi đâu.\n– Nhưng mẹ tớ bảo cậu biết đi xe đạp rồi.\n– Ừ, tớ ở nhà tập xe thôi.\n– Thế cậu được đạp xe đi khắp nơi mà.\nChi cười:\n– Ừ nhỉ.\nThế là Chi kể bố dạy Chi đi xe đạp. Bây giờ, Chi đã đạp xe bon bon. Con đường quen thuộc bỗng trở nên mới mẻ.\nCứ như vậy, hai bạn thi nhau kể những trải nghiệm mùa hè.\nNgày mai đi học rồi, nhưng mùa hè chắc sẽ theo các bạn vào lớp học."
+        },
+        {
+          "id": "e1_q02",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 1: Ngày gặp lại",
+          "points": 10,
+          "question": "Theo em, vì sao khi đi học, 'mùa hè sẽ theo các bạn vào lớp'?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Vì các bạn vẫn nhớ những chuyện về mùa hè",
+              "is_correct": false
+            },
+            {
+              "id": "b",
+              "text": "Vì các bạn sẽ kể cho nhau nghe những chuyện về mùa hè",
+              "is_correct": true
+            },
+            {
+              "id": "c",
+              "text": "Vì các bạn sẽ mang đồ vật kỉ niệm mùa hè đến lớp",
+              "is_correct": false
+            },
+            {
+              "id": "d",
+              "text": "Vì trời vẫn còn nóng như mùa hè",
+              "is_correct": false
+            }
+          ],
+          "explanation": "Câu này mang nghĩa bóng: mùa hè 'theo vào lớp' vì các bạn sẽ kể cho nhau nghe những trải nghiệm mùa hè.",
+          "reading_passage": "Chi mở tung cửa sổ đón những tia nắng đầu thu. Thế là hết hè rồi.\nNgày mai bắt đầu năm học mới.\nCó tiếng gọi ngoài cổng. Chi nhìn ra, thấy Sơn giơ chiếc diều rất xinh, vẫy rối rít:\n– Cho cậu này.\nChi mừng rỡ chạy ra. Sơn về quê từ đầu hè, giờ gặp lại, hai bạn có bao nhiêu chuyện. Sơn kể ở quê, cậu được theo ông bà đi trồng rau, câu cá. Chiều chiều, cậu thường cùng bạn thả diều. Khi diều lên cao, cậu nằm lăn ra bãi cỏ ngắm trời. Cánh diều đứng im như ngủ thiếp đi trên bầu trời xanh.\n\nNhìn Sơn đen nhẻm, mắt lấp lánh khi kể chuyện, Chi chợt thấy buồn:\n– Tớ chẳng được đi đâu.\n– Nhưng mẹ tớ bảo cậu biết đi xe đạp rồi.\n– Ừ, tớ ở nhà tập xe thôi.\n– Thế cậu được đạp xe đi khắp nơi mà.\nChi cười:\n– Ừ nhỉ.\nThế là Chi kể bố dạy Chi đi xe đạp. Bây giờ, Chi đã đạp xe bon bon. Con đường quen thuộc bỗng trở nên mới mẻ.\nCứ như vậy, hai bạn thi nhau kể những trải nghiệm mùa hè.\nNgày mai đi học rồi, nhưng mùa hè chắc sẽ theo các bạn vào lớp học."
+        },
+        {
+          "id": "e1_q03",
+          "type": "true_false",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 1: Ngày gặp lại",
+          "points": 5,
+          "question": "Chi đã đi du lịch biển trong mùa hè.",
+          "is_correct": false,
+          "explanation": "Chi không đi đâu cả — Chi ở nhà tập đi xe đạp cùng bố.",
+          "reading_passage": "Chi mở tung cửa sổ đón những tia nắng đầu thu. Thế là hết hè rồi.\nNgày mai bắt đầu năm học mới.\nCó tiếng gọi ngoài cổng. Chi nhìn ra, thấy Sơn giơ chiếc diều rất xinh, vẫy rối rít:\n– Cho cậu này.\nChi mừng rỡ chạy ra. Sơn về quê từ đầu hè, giờ gặp lại, hai bạn có bao nhiêu chuyện. Sơn kể ở quê, cậu được theo ông bà đi trồng rau, câu cá. Chiều chiều, cậu thường cùng bạn thả diều. Khi diều lên cao, cậu nằm lăn ra bãi cỏ ngắm trời. Cánh diều đứng im như ngủ thiếp đi trên bầu trời xanh.\n\nNhìn Sơn đen nhẻm, mắt lấp lánh khi kể chuyện, Chi chợt thấy buồn:\n– Tớ chẳng được đi đâu.\n– Nhưng mẹ tớ bảo cậu biết đi xe đạp rồi.\n– Ừ, tớ ở nhà tập xe thôi.\n– Thế cậu được đạp xe đi khắp nơi mà.\nChi cười:\n– Ừ nhỉ.\nThế là Chi kể bố dạy Chi đi xe đạp. Bây giờ, Chi đã đạp xe bon bon. Con đường quen thuộc bỗng trở nên mới mẻ.\nCứ như vậy, hai bạn thi nhau kể những trải nghiệm mùa hè.\nNgày mai đi học rồi, nhưng mùa hè chắc sẽ theo các bạn vào lớp học."
+        },
+        {
+          "id": "e1_q04",
+          "type": "true_false",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 1: Ngày gặp lại",
+          "points": 5,
+          "question": "Sơn về quê và được theo ông bà đi trồng rau, câu cá.",
+          "is_correct": true,
+          "explanation": "Đúng. Bài viết: 'Sơn kể ở quê, cậu được theo ông bà đi trồng rau, câu cá.'",
+          "reading_passage": "Chi mở tung cửa sổ đón những tia nắng đầu thu. Thế là hết hè rồi.\nNgày mai bắt đầu năm học mới.\nCó tiếng gọi ngoài cổng. Chi nhìn ra, thấy Sơn giơ chiếc diều rất xinh, vẫy rối rít:\n– Cho cậu này.\nChi mừng rỡ chạy ra. Sơn về quê từ đầu hè, giờ gặp lại, hai bạn có bao nhiêu chuyện. Sơn kể ở quê, cậu được theo ông bà đi trồng rau, câu cá. Chiều chiều, cậu thường cùng bạn thả diều. Khi diều lên cao, cậu nằm lăn ra bãi cỏ ngắm trời. Cánh diều đứng im như ngủ thiếp đi trên bầu trời xanh.\n\nNhìn Sơn đen nhẻm, mắt lấp lánh khi kể chuyện, Chi chợt thấy buồn:\n– Tớ chẳng được đi đâu.\n– Nhưng mẹ tớ bảo cậu biết đi xe đạp rồi.\n– Ừ, tớ ở nhà tập xe thôi.\n– Thế cậu được đạp xe đi khắp nơi mà.\nChi cười:\n– Ừ nhỉ.\nThế là Chi kể bố dạy Chi đi xe đạp. Bây giờ, Chi đã đạp xe bon bon. Con đường quen thuộc bỗng trở nên mới mẻ.\nCứ như vậy, hai bạn thi nhau kể những trải nghiệm mùa hè.\nNgày mai đi học rồi, nhưng mùa hè chắc sẽ theo các bạn vào lớp học."
+        },
+        {
+          "id": "e1_q05",
+          "type": "fill_blank",
+          "skill": "chính_tả",
+          "difficulty": "easy",
+          "lesson": "Bài 1 — Phân biệt c/k",
+          "points": 5,
+          "instruction": "Chọn 'c' hoặc 'k' để điền vào chỗ trống cho đúng chính tả:",
+          "sentences": [
+            {
+              "id": "s1",
+              "template": "__ì nghỉ hè, các bạn có nhiều trải nghiệm thú vị.",
+              "blank_position": 0,
+              "correct_answer": "K",
+              "hint": "Âm đứng trước 'i' thường dùng k"
+            },
+            {
+              "id": "s2",
+              "template": "Chiều chiều, Sơn thả __iều cùng bạn.",
+              "blank_position": 0,
+              "correct_answer": "d",
+              "hint": "diều — không liên quan c/k"
+            },
+            {
+              "id": "s3",
+              "template": "Chi tập đi xe __ạp rất chăm chỉ.",
+              "blank_position": 0,
+              "correct_answer": "đ",
+              "hint": "đạp — không liên quan c/k"
+            },
+            {
+              "id": "s4",
+              "template": "Con đường quen thuộc bỗng trở nên mới __ẻ.",
+              "blank_position": 0,
+              "correct_answer": "m",
+              "hint": "mẻ"
+            }
+          ],
+          "note": "Quy tắc: 'k' dùng trước i, e, ê; 'c' dùng trước các âm còn lại."
+        },
+        {
+          "id": "e1_q06",
+          "type": "fill_blank",
+          "skill": "chính_tả",
+          "difficulty": "medium",
+          "lesson": "Bài 3 — Phân biệt g/gh",
+          "points": 10,
+          "instruction": "Điền 'g' hoặc 'gh' vào chỗ trống:",
+          "sentences": [
+            {
+              "id": "s1",
+              "template": "Mặt trời chiếu những luồng sán__ qua kẽ lá.",
+              "blank_position": "cuối",
+              "correct_answer": "g",
+              "hint": "'sáng' — g đứng sau nguyên âm 'a'"
+            },
+            {
+              "id": "s2",
+              "template": "__ế bên cửa sổ, bà kể chuyện cho cháu nghe.",
+              "blank_position": 0,
+              "correct_answer": "Gh",
+              "hint": "'Ghế' — gh dùng trước e, ê, i"
+            },
+            {
+              "id": "s3",
+              "template": "Những con sóc nâu nhảy thoăn thoắt qua các cành __.",
+              "blank_position": "cuối",
+              "correct_answer": "cây",
+              "hint": "cây — điền từ còn thiếu"
+            },
+            {
+              "id": "s4",
+              "template": "Tiếng suối róc rách và tiếng chim hót líu __.",
+              "blank_position": "cuối",
+              "correct_answer": "lo",
+              "hint": "'líu lo'"
+            }
+          ],
+          "note": "Quy tắc: 'gh' dùng trước e, ê, i; 'g' dùng trước các nguyên âm còn lại."
+        },
+        {
+          "id": "e1_q07",
+          "type": "matching",
+          "skill": "luyện_từ_câu",
+          "difficulty": "medium",
+          "lesson": "Bài 2: Về thăm quê",
+          "points": 10,
+          "instruction": "Nối từ ngữ ở cột A với nghĩa phù hợp ở cột B:",
+          "column_a": [
+            {
+              "id": "a1",
+              "text": "chập chờn"
+            },
+            {
+              "id": "a2",
+              "text": "nhễ nhại"
+            },
+            {
+              "id": "a3",
+              "text": "vất vả"
+            },
+            {
+              "id": "a4",
+              "text": "trùng điệp"
+            }
+          ],
+          "column_b": [
+            {
+              "id": "b1",
+              "text": "Nối nhau liên tiếp như không bao giờ hết"
+            },
+            {
+              "id": "b2",
+              "text": "Ở trạng thái nửa ngủ nửa thức"
+            },
+            {
+              "id": "b3",
+              "text": "Ướt đẫm mồ hôi"
+            },
+            {
+              "id": "b4",
+              "text": "Mệt nhọc, khó khăn"
+            }
+          ],
+          "correct_pairs": [
+            {
+              "a": "a1",
+              "b": "b2"
+            },
+            {
+              "a": "a2",
+              "b": "b3"
+            },
+            {
+              "a": "a3",
+              "b": "b4"
+            },
+            {
+              "a": "a4",
+              "b": "b1"
+            }
+          ]
+        },
+        {
+          "id": "e1_q08",
+          "type": "sorting",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 1: Ngày gặp lại — diễn biến câu chuyện",
+          "points": 10,
+          "instruction": "Sắp xếp các sự việc sau theo đúng thứ tự xảy ra trong câu chuyện 'Ngày gặp lại':",
+          "items": [
+            {
+              "id": "s1",
+              "text": "Chi kể về việc học đi xe đạp cùng bố."
+            },
+            {
+              "id": "s2",
+              "text": "Sơn gọi cổng và tặng Chi chiếc diều."
+            },
+            {
+              "id": "s3",
+              "text": "Chi mở cửa sổ đón nắng đầu thu."
+            },
+            {
+              "id": "s4",
+              "text": "Sơn kể chuyện trồng rau, câu cá, thả diều ở quê."
+            },
+            {
+              "id": "s5",
+              "text": "Hai bạn thi nhau kể những trải nghiệm mùa hè."
+            }
+          ],
+          "correct_order": [
+            "s3",
+            "s2",
+            "s4",
+            "s1",
+            "s5"
+          ],
+          "reading_passage": "Chi mở tung cửa sổ đón những tia nắng đầu thu. Thế là hết hè rồi.\nNgày mai bắt đầu năm học mới.\nCó tiếng gọi ngoài cổng. Chi nhìn ra, thấy Sơn giơ chiếc diều rất xinh, vẫy rối rít:\n– Cho cậu này.\nChi mừng rỡ chạy ra. Sơn về quê từ đầu hè, giờ gặp lại, hai bạn có bao nhiêu chuyện. Sơn kể ở quê, cậu được theo ông bà đi trồng rau, câu cá. Chiều chiều, cậu thường cùng bạn thả diều. Khi diều lên cao, cậu nằm lăn ra bãi cỏ ngắm trời. Cánh diều đứng im như ngủ thiếp đi trên bầu trời xanh.\n\nNhìn Sơn đen nhẻm, mắt lấp lánh khi kể chuyện, Chi chợt thấy buồn:\n– Tớ chẳng được đi đâu.\n– Nhưng mẹ tớ bảo cậu biết đi xe đạp rồi.\n– Ừ, tớ ở nhà tập xe thôi.\n– Thế cậu được đạp xe đi khắp nơi mà.\nChi cười:\n– Ừ nhỉ.\nThế là Chi kể bố dạy Chi đi xe đạp. Bây giờ, Chi đã đạp xe bon bon. Con đường quen thuộc bỗng trở nên mới mẻ.\nCứ như vậy, hai bạn thi nhau kể những trải nghiệm mùa hè.\nNgày mai đi học rồi, nhưng mùa hè chắc sẽ theo các bạn vào lớp học."
+        },
+        {
+          "id": "e1_q09",
+          "type": "classification",
+          "skill": "luyện_từ_câu",
+          "difficulty": "medium",
+          "lesson": "Bài 2 — Từ ngữ chỉ sự vật và hoạt động",
+          "points": 10,
+          "instruction": "Xếp các từ ngữ sau vào đúng nhóm:",
+          "categories": [
+            {
+              "id": "cat1",
+              "label": "Từ ngữ chỉ người"
+            },
+            {
+              "id": "cat2",
+              "label": "Từ ngữ chỉ con vật"
+            },
+            {
+              "id": "cat3",
+              "label": "Từ ngữ chỉ hoạt động"
+            }
+          ],
+          "items": [
+            {
+              "id": "w1",
+              "text": "bác nông dân",
+              "correct_category": "cat1"
+            },
+            {
+              "id": "w2",
+              "text": "con trâu",
+              "correct_category": "cat2"
+            },
+            {
+              "id": "w3",
+              "text": "gặt lúa",
+              "correct_category": "cat3"
+            },
+            {
+              "id": "w4",
+              "text": "em học sinh",
+              "correct_category": "cat1"
+            },
+            {
+              "id": "w5",
+              "text": "gặm cỏ",
+              "correct_category": "cat3"
+            },
+            {
+              "id": "w6",
+              "text": "con sóc",
+              "correct_category": "cat2"
+            }
+          ]
+        },
+        {
+          "id": "e1_q10",
+          "type": "classification",
+          "skill": "luyện_từ_câu",
+          "difficulty": "hard",
+          "lesson": "Bài 4 — Từ ngữ chỉ đặc điểm",
+          "points": 15,
+          "instruction": "Xếp các từ ngữ in đậm vào đúng nhóm đặc điểm:",
+          "categories": [
+            {
+              "id": "cat1",
+              "label": "Từ ngữ chỉ màu sắc"
+            },
+            {
+              "id": "cat2",
+              "label": "Từ ngữ chỉ hình dáng, kích thước"
+            },
+            {
+              "id": "cat3",
+              "label": "Từ ngữ chỉ hương vị"
+            }
+          ],
+          "items": [
+            {
+              "id": "w1",
+              "text": "màu nâu nhạt",
+              "correct_category": "cat1"
+            },
+            {
+              "id": "w2",
+              "text": "thơm ngát",
+              "correct_category": "cat3"
+            },
+            {
+              "id": "w3",
+              "text": "cao nghêu",
+              "correct_category": "cat2"
+            },
+            {
+              "id": "w4",
+              "text": "nhỏ xíu",
+              "correct_category": "cat2"
+            },
+            {
+              "id": "w5",
+              "text": "màu vàng",
+              "correct_category": "cat1"
+            },
+            {
+              "id": "w6",
+              "text": "mịn màng",
+              "correct_category": "cat2"
+            }
+          ]
+        },
+        {
+          "id": "e2_q01",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 5: Nhật kí tập bơi",
+          "points": 10,
+          "question": "Bạn nhỏ nhận ra điều thú vị gì khi biết bơi?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Bơi rất dễ, chỉ cần một buổi là biết ngay",
+              "is_correct": false
+            },
+            {
+              "id": "b",
+              "text": "Khi bơi ếch thì giống ếch, khi bơi giỏi thì giống cá — đều biết bơi",
+              "is_correct": true
+            },
+            {
+              "id": "c",
+              "text": "Mẹ mua cho mũ bơi và kính bơi rất đẹp",
+              "is_correct": false
+            },
+            {
+              "id": "d",
+              "text": "Học bơi không khó chút nào",
+              "is_correct": false
+            }
+          ],
+          "explanation": "Bạn nhỏ viết: 'Hôm trước mình giống ếch, hôm nay lại giống cá. Chẳng sao, con nào cũng biết bơi mà. Giống như mình ấy.' — đây là điều thú vị bạn ấy nhận ra.",
+          "reading_passage": "Ngày... tháng...\nHôm nay, mẹ đưa mình đi tập bơi. Mình rất phấn khích vì được mẹ chuẩn bị cho một chiếc mũ bơi cùng cặp kính bơi màu hồng rất đẹp. Cô giáo cũng khen đồ bơi của mình đáng yêu. Đầu tiên, cô dạy mình tập thở. Nhưng khi thở dưới nước, mình toàn bị sặc. Mình sợ đến mức không dám xuống nước nữa. Mẹ bảo do mình chưa quen. Mẹ vỗ về, động viên mình mãi. Thế là mình tiếp tục tập luyện. Cuối buổi, mình vẫn chưa thở dưới nước được. Mình thấy hơi buồn. Mình nghĩ lần sau, mình sẽ tập tốt hơn.\n\nNgày... tháng...\nHôm nay, mình đã có cảm giác thích đi bơi. Mình không còn bị sặc nữa. Mình đã quen thở dưới nước rồi. Cô dạy mình động tác bơi ếch. Động tác đó thật lạ! Khi đạp chân, mình giống hệt như một con ếch ộp.\nNgày... tháng...\nHọc bơi chẳng dễ một chút nào. Thế mà mình đã biết bơi rồi. Mình như chú cá nhỏ tung tăng trong nước. Kể cũng lạ, hôm trước mình giống ếch, hôm nay mình lại giống cá. Chẳng sao, con nào cũng biết bơi mà. Giống như mình ấy."
+        },
+        {
+          "id": "e2_q02",
+          "type": "sorting",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 7: Tập nấu ăn — Trứng đúc thịt",
+          "points": 15,
+          "instruction": "Sắp xếp các bước làm món trứng đúc thịt theo đúng thứ tự:",
+          "items": [
+            {
+              "id": "s1",
+              "text": "Bày ra đĩa."
+            },
+            {
+              "id": "s2",
+              "text": "Rửa sạch thịt, băm nhỏ hoặc xay nhuyễn."
+            },
+            {
+              "id": "s3",
+              "text": "Lật mặt còn lại, rán vàng."
+            },
+            {
+              "id": "s4",
+              "text": "Đập trứng vào bát, cho thêm thịt xay, hành khô, muối, nước mắm, đánh đều."
+            },
+            {
+              "id": "s5",
+              "text": "Cho dầu ăn vào chảo, đun nóng, cho hỗn hợp vào rán vàng mặt dưới."
+            }
+          ],
+          "correct_order": [
+            "s2",
+            "s4",
+            "s5",
+            "s3",
+            "s1"
+          ],
+          "reading_passage": "Hôm nay, mình vào bếp cùng mẹ và học được công thức làm món trứng đúc thịt. Món này dễ làm mà lại ngon. Mình chia sẻ với các bạn. Các bạn thử tham khảo nhé!\n\nCÁCH LÀM\nTrứng đúc thịt\n\nNGUYÊN LIỆU\nTrứng gà: 3 quả\nThịt nạc vai: 1 lạng\nDầu ăn, nước mắm, muối, hành khô\n\nCÁC BƯỚC THỰC HIỆN\n- Rửa sạch thịt, băm nhỏ hoặc xay nhuyễn.\n- Đập trứng vào bát, cho thêm thịt xay, hành khô băm nhỏ, một chút muối, một chút nước mắm, đánh đều.\n- Cho dầu ăn vào chảo, đun nóng. Cho hỗn hợp trứng và thịt vào dàn đều khắp chảo, rán vàng mặt dưới (từ 5 - 7 phút) với lửa nhỏ. Lật mặt còn lại, rán vàng.\n- Bày ra đĩa."
+        },
+        {
+          "id": "e2_q03",
+          "type": "true_false",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 5: Nhật kí tập bơi",
+          "points": 5,
+          "question": "Bạn nhỏ đã biết bơi ngay từ buổi học đầu tiên.",
+          "is_correct": false,
+          "explanation": "Buổi đầu tiên bạn ấy chỉ tập quạt tay, đập chân và còn bị sặc nước, chưa biết bơi ngay.",
+          "reading_passage": "Ngày... tháng...\nHôm nay, mẹ đưa mình đi tập bơi. Mình rất phấn khích vì được mẹ chuẩn bị cho một chiếc mũ bơi cùng cặp kính bơi màu hồng rất đẹp. Cô giáo cũng khen đồ bơi của mình đáng yêu. Đầu tiên, cô dạy mình tập thở. Nhưng khi thở dưới nước, mình toàn bị sặc. Mình sợ đến mức không dám xuống nước nữa. Mẹ bảo do mình chưa quen. Mẹ vỗ về, động viên mình mãi. Thế là mình tiếp tục tập luyện. Cuối buổi, mình vẫn chưa thở dưới nước được. Mình thấy hơi buồn. Mình nghĩ lần sau, mình sẽ tập tốt hơn.\n\nNgày... tháng...\nHôm nay, mình đã có cảm giác thích đi bơi. Mình không còn bị sặc nữa. Mình đã quen thở dưới nước rồi. Cô dạy mình động tác bơi ếch. Động tác đó thật lạ! Khi đạp chân, mình giống hệt như một con ếch ộp.\nNgày... tháng...\nHọc bơi chẳng dễ một chút nào. Thế mà mình đã biết bơi rồi. Mình như chú cá nhỏ tung tăng trong nước. Kể cũng lạ, hôm trước mình giống ếch, hôm nay mình lại giống cá. Chẳng sao, con nào cũng biết bơi mà. Giống như mình ấy."
+        },
+        {
+          "id": "e2_q04",
+          "type": "fill_blank",
+          "skill": "luyện_từ_câu",
+          "difficulty": "medium",
+          "lesson": "Bài 7 — Tập nấu ăn",
+          "points": 10,
+          "instruction": "Điền từ thích hợp (đập, rửa, cho) vào chỗ trống để hoàn thành câu:",
+          "sentences": [
+            {
+              "id": "s1",
+              "template": "Trước khi nấu ăn, em phải ___ sạch thịt và rau.",
+              "blank_position": 0,
+              "correct_answer": "rửa",
+              "hint": "rửa"
+            },
+            {
+              "id": "s2",
+              "template": "Mẹ hướng dẫn em ___ trứng vào bát.",
+              "blank_position": 0,
+              "correct_answer": "đập",
+              "hint": "đập"
+            },
+            {
+              "id": "s3",
+              "template": "Sau đó, em ___ thêm hành khô và một chút muối.",
+              "blank_position": 0,
+              "correct_answer": "cho",
+              "hint": "cho"
+            }
+          ]
+        },
+        {
+          "id": "e2_q05",
+          "type": "classification",
+          "skill": "luyện_từ_câu",
+          "difficulty": "medium",
+          "lesson": "Bài 5, 7 — Từ ngữ chỉ hoạt động",
+          "points": 10,
+          "instruction": "Phân loại các từ sau vào nhóm hoạt động bơi lội hoặc nấu ăn:",
+          "categories": [
+            {
+              "id": "cat1",
+              "label": "Hoạt động bơi lội"
+            },
+            {
+              "id": "cat2",
+              "label": "Hoạt động nấu ăn"
+            }
+          ],
+          "items": [
+            {
+              "id": "w1",
+              "text": "quạt tay",
+              "correct_category": "cat1"
+            },
+            {
+              "id": "w2",
+              "text": "băm thịt",
+              "correct_category": "cat2"
+            },
+            {
+              "id": "w3",
+              "text": "đập chân",
+              "correct_category": "cat1"
+            },
+            {
+              "id": "w4",
+              "text": "rán vàng",
+              "correct_category": "cat2"
+            },
+            {
+              "id": "w5",
+              "text": "đánh đều",
+              "correct_category": "cat2"
+            },
+            {
+              "id": "w6",
+              "text": "ngụp lặn",
+              "correct_category": "cat1"
+            }
+          ]
+        },
+        {
+          "id": "e2_q06",
+          "type": "matching",
+          "skill": "luyện_từ_câu",
+          "difficulty": "easy",
+          "lesson": "Bài 8 — Ôn tập",
+          "points": 5,
+          "instruction": "Nối các từ ở cột A với từ ở cột B để tạo thành cụm từ đúng:",
+          "column_a": [
+            {
+              "id": "a1",
+              "text": "Mùa hè"
+            },
+            {
+              "id": "a2",
+              "text": "Kì nghỉ"
+            },
+            {
+              "id": "a3",
+              "text": "Bạn bè"
+            }
+          ],
+          "column_b": [
+            {
+              "id": "b1",
+              "text": "thú vị"
+            },
+            {
+              "id": "b2",
+              "text": "sôi động"
+            },
+            {
+              "id": "b3",
+              "text": "thân thiết"
+            }
+          ],
+          "correct_pairs": [
+            {
+              "a": "a1",
+              "b": "b2"
+            },
+            {
+              "a": "a2",
+              "b": "b1"
+            },
+            {
+              "a": "a3",
+              "b": "b3"
+            }
+          ]
+        },
+        {
+          "id": "e2_q07",
+          "type": "true_false",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 7: Tập nấu ăn",
+          "points": 5,
+          "question": "Món trứng đúc thịt cần dùng dầu ăn để rán.",
+          "is_correct": true,
+          "explanation": "Đúng. Trong bài có bước cho dầu ăn vào chảo đun nóng để rán.",
+          "reading_passage": "Hôm nay, mình vào bếp cùng mẹ và học được công thức làm món trứng đúc thịt. Món này dễ làm mà lại ngon. Mình chia sẻ với các bạn. Các bạn thử tham khảo nhé!\n\nCÁCH LÀM\nTrứng đúc thịt\n\nNGUYÊN LIỆU\nTrứng gà: 3 quả\nThịt nạc vai: 1 lạng\nDầu ăn, nước mắm, muối, hành khô\n\nCÁC BƯỚC THỰC HIỆN\n- Rửa sạch thịt, băm nhỏ hoặc xay nhuyễn.\n- Đập trứng vào bát, cho thêm thịt xay, hành khô băm nhỏ, một chút muối, một chút nước mắm, đánh đều.\n- Cho dầu ăn vào chảo, đun nóng. Cho hỗn hợp trứng và thịt vào dàn đều khắp chảo, rán vàng mặt dưới (từ 5 - 7 phút) với lửa nhỏ. Lật mặt còn lại, rán vàng.\n- Bày ra đĩa."
+        },
+        {
+          "id": "e2_q08",
+          "type": "word_puzzle",
+          "skill": "luyện_từ_câu",
+          "difficulty": "hard",
+          "lesson": "Bài 8 — Ôn tập cuối chủ điểm",
+          "points": 15,
+          "instruction": "Tìm 3 từ ẩn trong bảng chữ cái. Gợi ý: Các từ liên quan đến hoạt động trong chủ điểm 1.",
+          "grid_size": {
+            "rows": 4,
+            "cols": 4
+          },
+          "grid": [
+            [
+              "B",
+              "Ơ",
+              "I",
+              "X"
+            ],
+            [
+              "N",
+              "Ấ",
+              "U",
+              "Y"
+            ],
+            [
+              "C",
+              "Â",
+              "U",
+              "C"
+            ],
+            [
+              "Đ",
+              "Ạ",
+              "P",
+              "E"
+            ]
+          ],
+          "hidden_words": [
+            {
+              "word": "BƠI",
+              "direction": "horizontal",
+              "start": {
+                "row": 0,
+                "col": 0
+              },
+              "clue": "Hoạt động dưới nước trong Bài 5"
+            },
+            {
+              "word": "NẤU",
+              "direction": "horizontal",
+              "start": {
+                "row": 1,
+                "col": 0
+              },
+              "clue": "Hoạt động chuẩn bị thức ăn trong Bài 7"
+            },
+            {
+              "word": "CÂU",
+              "direction": "horizontal",
+              "start": {
+                "row": 2,
+                "col": 0
+              },
+              "clue": "Sơn về quê đi ... cá"
+            }
+          ]
+        },
+        {
+          "id": "e2_q09",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 7: Tập nấu ăn",
+          "points": 10,
+          "question": "Những nguyên liệu nào KHÔNG có trong món trứng đúc thịt?",
+          "options": [
+            {
+              "id": "a",
+              "text": "Trứng và thịt xay",
+              "is_correct": false
+            },
+            {
+              "id": "b",
+              "text": "Hành khô và nước mắm",
+              "is_correct": false
+            },
+            {
+              "id": "c",
+              "text": "Cà chua và hành tây",
+              "is_correct": true
+            },
+            {
+              "id": "d",
+              "text": "Dầu ăn và muối",
+              "is_correct": false
+            }
+          ],
+          "explanation": "Cà chua và hành tây không được nhắc đến trong bài hướng dẫn món trứng đúc thịt.",
+          "reading_passage": "Hôm nay, mình vào bếp cùng mẹ và học được công thức làm món trứng đúc thịt. Món này dễ làm mà lại ngon. Mình chia sẻ với các bạn. Các bạn thử tham khảo nhé!\n\nCÁCH LÀM\nTrứng đúc thịt\n\nNGUYÊN LIỆU\nTrứng gà: 3 quả\nThịt nạc vai: 1 lạng\nDầu ăn, nước mắm, muối, hành khô\n\nCÁC BƯỚC THỰC HIỆN\n- Rửa sạch thịt, băm nhỏ hoặc xay nhuyễn.\n- Đập trứng vào bát, cho thêm thịt xay, hành khô băm nhỏ, một chút muối, một chút nước mắm, đánh đều.\n- Cho dầu ăn vào chảo, đun nóng. Cho hỗn hợp trứng và thịt vào dàn đều khắp chảo, rán vàng mặt dưới (từ 5 - 7 phút) với lửa nhỏ. Lật mặt còn lại, rán vàng.\n- Bày ra đĩa."
+        },
+        {
+          "id": "e2_q10",
+          "type": "fill_blank",
+          "skill": "chính_tả",
+          "difficulty": "hard",
+          "lesson": "Bài 8 — Ôn tập",
+          "points": 15,
+          "instruction": "Điền 'tr' hoặc 'ch' vào chỗ trống:",
+          "sentences": [
+            {
+              "id": "s1",
+              "template": "Mùa hè, em thường được đi chơi trên bãi biển cát ___ắng.",
+              "blank_position": 0,
+              "correct_answer": "tr",
+              "hint": "trắng"
+            },
+            {
+              "id": "s2",
+              "template": "Em thích món ___ứng đúc thịt mẹ nấu.",
+              "blank_position": 0,
+              "correct_answer": "tr",
+              "hint": "trứng"
+            },
+            {
+              "id": "s3",
+              "template": "Em cũng biết ___ăm sóc cây cối trong vườn.",
+              "blank_position": 0,
+              "correct_answer": "ch",
+              "hint": "chăm"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

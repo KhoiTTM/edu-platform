@@ -1,0 +1,67 @@
+{
+  "page": 82,
+  "chapter_title": "CHỦ ĐIỂM 3: MÁI NHÀ YÊU THƯƠNG",
+  "lesson_title": "Bài 13: Ngưỡng cửa",
+  "sections": [
+    {
+      "type": "khởi_động",
+      "content": "Trao đổi với bạn để trả lời câu hỏi: Em cảm thấy thế nào nếu xa ngôi nhà của mình nhiều ngày?"
+    },
+    {
+      "type": "đọc",
+      "title": "NGƯỠNG CỬA",
+      "author": "(Trích)",
+      "content": "Nơi ấy ai quen
+Ngay từ thuở tấm bé
+Khi tay bà, tay mẹ
+Còn dắt vòng đi men.
+
+Nơi mẹ ngày đêm
+Lúc nào qua cũng vội
+Nơi bạn bè chạy tới
+Thường lúc nào cũng vui:
+
+Nơi ấy đã đưa tôi
+Buổi đầu tiên đến lớp
+Con đường xa tắp
+Vẫn đang chờ tôi đi."
+    },
+    {
+      "type": "luyện_từ_và_câu",
+      "title": "4. Mỗi câu trong mẩu chuyện dưới đây thuộc kiểu câu nào?",
+      "content": "Hai cậu bé nói chuyện với nhau:
+Đố cậu, bệnh sốt xuất huyết lây qua đường nào? CÂU HỎI
+Theo tớ, qua đường cậu ạ. CÂU KỂ
+Ôi trời! (Sao lại qua đường đó? CÂU CẢM
+Vì muỗi vằn sau khi hút máu xong sẽ đi truyền bệnh từ người này sang người khác mà!",
+      "exercises": [
+        {
+          "id": "question",
+          "instruction": "Xác định kiểu câu cho mỗi câu trong đoạn hội thoại."
+        }
+      ]
+    },
+    {
+      "type": "vận_dụng",
+      "title": "TIẾT 5",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Nói về ngôi trường của em hoặc ngôi trường mà em mơ ước.",
+          "items": [
+            "Trường của mình",
+            "Màu sơn của trường",
+            "Sân trường",
+            "Bên trong lớp học",
+            "Vườn trường",
+            "Những người trong trường"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Viết đoạn văn về một người trong trường mà em yêu quý."
+        }
+      ]
+    }
+  ]
+}

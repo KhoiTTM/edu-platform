@@ -1,0 +1,50 @@
+{
+  "page": 68,
+  "sections": [
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "2",
+          "instruction": "Tính nhẩm (theo mẫu).",
+          "items": [
+            "Mẫu: 20 x 3 = ? Nhẩm: 2 chục x 3 = 6 chục. 20 x 3 = 60",
+            "10 x 8",
+            "30 x 3",
+            "20 x 4",
+            "40 x 2"
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Có 3 bình chứa nước. Quạ phải thả 21 viên sỏi vào mỗi bình để nước dâng lên thì mới có thể uống được nước. Hỏi quạ phải thả bao nhiêu viên sỏi thì mới uống được nước ở cả 3 bình đó?"
+        }
+      ]
+    },
+    {
+      "type": "khám_phá",
+      "content": "Mỗi chùm có 26 quả nho. Vậy 3 chùm có tất cả bao nhiêu quả nho?",
+      "logic": [
+        "26 x 3 = ?",
+        "3 nhân 6 bằng 18, viết 8 nhớ 1.",
+        "3 nhân 2 bằng 6, thêm 1 bằng 7, viết 7.",
+        "26 x 3 = 78"
+      ]
+    },
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Tính.",
+          "items": [
+            { "id": "a", "text": "37 x 2" },
+            { "id": "b", "text": "16 x 4" },
+            { "id": "c", "text": "29 x 3" },
+            { "id": "d", "text": "18 x 5" }
+          ]
+        }
+      ]
+    }
+  ]
+}

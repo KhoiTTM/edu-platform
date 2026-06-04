@@ -1,0 +1,35 @@
+{
+  "page": 17,
+  "sections": [
+    {
+      "subtitle": "II. Kí hiệu hoá học (tiếp theo)",
+      "content": "Bảng 2.1 dưới đây liệt kê tên gọi và kí hiệu hoá học của 20 nguyên tố đầu tiên."
+    }
+  ],
+  "table": {
+    "title": "Bảng 2.1. Tên gọi, kí hiệu hoá học và khối lượng nguyên tử của 20 nguyên tố đầu tiên",
+    "headers": ["Số proton", "Tên nguyên tố", "Kí hiệu hoá học", "Khối lượng nguyên tử (amu)"],
+    "rows": [
+      [1, "Hydrogen", "H", 1],
+      [2, "Helium", "He", 4],
+      [3, "Lithium", "Li", 7],
+      [4, "Beryllium", "Be", 9],
+      [5, "Boron", "B", 11],
+      [6, "Carbon", "C", 12],
+      [7, "Nitrogen", "N", 14],
+      [8, "Oxygen", "O", 16],
+      [9, "Fluorine", "F", 19],
+      [10, "Neon", "Ne", 20],
+      [11, "Sodium", "Na", 23],
+      [12, "Magnesium", "Mg", 24],
+      [13, "Aluminium", "Al", 27],
+      [14, "Silicon", "Si", 28],
+      [15, "Phosphorus", "P", 31],
+      [16, "Sulfur", "S", 32],
+      [17, "Chlorine", "Cl", 35.5],
+      [18, "Argon", "Ar", 40],
+      [19, "Potassium", "K", 39],
+      [20, "Calcium", "Ca", 40]
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "page": 125,
+  "lesson_title": "CON ĐƯỜNG CỦA BÉ",
+  "sections": [
+    {
+      "type": "đọc",
+      "content": "Còn con đường của bố\nĐi trên giàn giáo cao\nNhững khung sắt nối nhau\nDựng nên bao nhà mới.\n\nVà con đường của mẹ\nLà ở trên cánh đồng\nCỏ ruộng dâu xanh tốt\nThảm lúa vàng ngát hương.\n\nBà bảo đường của bé\nChỉ đi đến trường thôi\nBé tìm mỗi sớm mai\nCon đường trên trang sách.\n(Thanh Thảo)",
+      "questions": [
+        {
+          "id": "1",
+          "question": "Ba khổ thơ đầu nhắc đến những ai? Việc của họ là gì?"
+        },
+        {
+          "id": "2",
+          "question": "Bạn nhỏ kể những gì về việc của bố mẹ mình?"
+        },
+        {
+          "id": "3",
+          "question": "Qua hình ảnh những con đường, tác giả muốn nói về điều gì?"
+        },
+        {
+          "id": "4",
+          "question": "Em hiểu \"con đường trên trang sách\" có nghĩa là gì?"
+        }
+      ]
+    }
+  ]
+}

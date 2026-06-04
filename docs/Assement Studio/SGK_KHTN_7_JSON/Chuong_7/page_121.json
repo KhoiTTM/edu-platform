@@ -1,0 +1,26 @@
+{
+  "page": 121,
+  "sections": [
+    {
+      "subtitle": "II. Trao đổi khí ở thực vật",
+      "subsections": [
+        {
+          "title": "1. Cấu tạo và chức năng của khí khổng",
+          "content": "- Khí khổng tập trung chủ yếu ở lớp biểu bì lá cây.\n- Mỗi khí khổng gồm hai tế bào hình hạt đậu nằm sát nhau, bao quanh một khe hở gọi là lỗ khí.\n- Chức năng: Giúp trao đổi khí ($CO_2, O_2$) và thoát hơi nước."
+        },
+        {
+          "title": "2. Cơ chế đóng mở khí khổng",
+          "content": "- Khi tế bào hạt đậu trương nước, thành mỏng phía ngoài căng ra làm thành dày phía trong cong theo, lỗ khí mở rộng.\n- Khi tế bào hạt đậu mất nước, lỗ khí đóng lại."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Quan sát Hình 28.2, hãy mô tả sự thay đổi của khí khổng khi cây đủ nước và khi cây thiếu nước.",
+      "answer": "- Khi đủ nước: Khí khổng mở rộng để trao đổi khí và thoát hơi nước mạnh.\n- Khi thiếu nước: Khí khổng đóng lại để hạn chế mất nước cho cây."
+    }
+  ]
+}

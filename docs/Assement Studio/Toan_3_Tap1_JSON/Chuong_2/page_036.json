@@ -1,0 +1,54 @@
+{
+  "page": 36,
+  "lesson_title": "Bài 12. BẢNG NHÂN 9, BẢNG CHIA 9",
+  "sections": [
+    {
+      "type": "khám_phá",
+      "title": "Bảng nhân 9",
+      "content": "Mỗi đội múa rồng có 9 người. Hỏi 2 đội múa rồng có bao nhiêu người?",
+      "logic": [
+        "9 x 2 = ?",
+        "9 + 9 = 18",
+        "9 x 2 = 18"
+      ],
+      "table": {
+        "title": "Hoàn thành bảng nhân 9",
+        "rows": [
+          "9 x 1 = 9",
+          "9 x 2 = 18",
+          "9 x 3 = ?",
+          "9 x 4 = ?",
+          "9 x 5 = ?",
+          "9 x 6 = ?",
+          "9 x 7 = ?",
+          "9 x 8 = ?",
+          "9 x 9 = ?",
+          "9 x 10 = 90"
+        ]
+      },
+      "note": "Thêm 9 vào kết quả của 9 x 2 ta được kết quả của 9 x 3."
+    },
+    {
+      "type": "khám_phá",
+      "title": "Bảng chia 9",
+      "logic": [
+        "9 x 2 = 18 => 18 : 9 = 2"
+      ],
+      "table": {
+        "title": "Hoàn thành bảng chia 9",
+        "rows": [
+          "9 : 9 = 1",
+          "18 : 9 = 2",
+          "27 : 9 = ?",
+          "36 : 9 = ?",
+          "45 : 9 = ?",
+          "54 : 9 = ?",
+          "63 : 9 = ?",
+          "72 : 9 = ?",
+          "81 : 9 = ?",
+          "90 : 9 = 10"
+        ]
+      }
+    }
+  ]
+}

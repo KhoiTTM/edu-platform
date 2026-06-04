@@ -1,0 +1,37 @@
+{
+  "page": 119,
+  "sections": [
+    {
+      "type": "nói_và_nghe",
+      "content": "Em thích hoặc không thích nhân vật đó ở điểm nào? (ngoại hình, tính nết, hành động, suy nghĩ, tình cảm, lời nói...)
+Nêu rõ lí do vì sao em thích hoặc không thích điều đó ở nhân vật.",
+      "exercises": [
+        {
+          "id": "3",
+          "instruction": "Viết 2 - 3 câu nêu lí do em thích hoặc không thích nhân vật trong câu chuyện đã đọc hoặc đã nghe."
+        }
+      ]
+    },
+    {
+      "type": "đọc",
+      "title": "Ai trồng cây",
+      "content": "Ai trồng cây
+Người đó có ngọn gió
+Trên vòm cây
+Chim hót lời mê say
+
+Ai trồng cây
+Người đó có bóng mát
+Trong vòm cây
+Quên nắng xa đường dài
+
+Ai trồng cây
+Người đó có hạnh phúc
+Mong chờ cây
+Mau lớn theo từng ngày
+
+(Bế Kiến Quốc)",
+      "author": "Bế Kiến Quốc"
+    }
+  ]
+}

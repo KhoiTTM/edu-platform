@@ -1,0 +1,41 @@
+{
+  "page": 17,
+  "exercises": [
+    {
+      "id": "2",
+      "instruction": "Nêu các số còn thiếu.",
+      "items": [
+        "a) 3, 6, 9, ?, ?, 18, ?, 24, ?, 30",
+        "b) 30, 27, 24, ?, ?, 15, ?, 9, ?, 3"
+      ]
+    },
+    {
+      "id": "3",
+      "problem_text": "Mỗi bàn đấu cờ vua có 3 người, gồm trọng tài và 2 người thi đấu. Hỏi 6 bàn đấu cờ vua như vậy có bao nhiêu người?"
+    }
+  ],
+  "sections": [
+    {
+      "type": "khám_phá",
+      "title": "Bảng chia 3",
+      "logic": [
+        "3 x 4 = 12 => 12 : 3 = 4"
+      ],
+      "table": {
+        "title": "Từ bảng nhân 3, hoàn thành bảng chia 3.",
+        "rows": [
+          "3 : 3 = 1",
+          "6 : 3 = 2",
+          "9 : 3 = ?",
+          "12 : 3 = ?",
+          "15 : 3 = ?",
+          "18 : 3 = ?",
+          "21 : 3 = ?",
+          "24 : 3 = ?",
+          "27 : 3 = ?",
+          "30 : 3 = 10"
+        ]
+      }
+    }
+  ]
+}

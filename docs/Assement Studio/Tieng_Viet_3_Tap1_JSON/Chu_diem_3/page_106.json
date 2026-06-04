@@ -1,0 +1,66 @@
+{
+  "page": 105,
+  "sections": [
+    {
+      "type": "đọc",
+      "author": "(Phạm Hổ)",
+      "content": "Nó thích vẽ lắm\nVẽ thỏ có đôi\nNó sợ thỏ một\nKhông có bạn chơi.\n\nKìa, nó đấy!\nĐang ở trường về\nCùng bạn bắt bướm\nCười dưới hàng tre."
+    },
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "1",
+          "question": "Khổ thơ đầu cho biết bạn nhỏ yêu em gái về điều gì?"
+        },
+        {
+          "id": "2",
+          "question": "Trong khổ thơ 2 và 3, bạn nhỏ tả em gái mình đáng yêu như thế nào?",
+          "options": [
+            "Mắt em",
+            "Miệng em",
+            "Cách làm điệu của em"
+          ]
+        },
+        {
+          "id": "3",
+          "question": "Khổ thơ nào cho thấy bạn nhỏ được em gái rất yêu quý?"
+        },
+        {
+          "id": "4",
+          "question": "Chi tiết nào cho thấy bạn nhỏ rất hiểu sở thích, tính tình của em mình?"
+        },
+        {
+          "id": "5",
+          "question": "Bài thơ giúp em hiểu điều gì về tình cảm anh chị em trong gia đình?"
+        }
+      ]
+    },
+    {
+      "type": "khác",
+      "title": "Học thuộc những khổ thơ em thích."
+    },
+    {
+      "type": "nói_và_nghe",
+      "title": "NÓI VÀ NGHE: Tình cảm anh chị em",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Cùng bạn trao đổi để hiểu nghĩa của các câu tục ngữ, ca dao dưới đây:",
+          "items": [
+            "Chị ngã em nâng.",
+            "Anh em như thể chân tay\nRách lành đùm bọc, dở hay đỡ đần."
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Chọn yêu cầu a hoặc b.",
+          "items": [
+            "a. Kể về những việc em thường làm với anh, chị hoặc em của mình.",
+            "Nêu cảm nghĩ của em khi có anh, chị hoặc em làm việc cùng."
+          ]
+        }
+      ]
+    }
+  ]
+}

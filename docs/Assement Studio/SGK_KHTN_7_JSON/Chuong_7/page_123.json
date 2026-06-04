@@ -1,0 +1,25 @@
+{
+  "page": 123,
+  "title": "Bài tập Bài 28",
+  "exercises": [
+    {
+      "id": "1",
+      "question": "Nêu cấu tạo và chức năng của khí khổng.",
+      "answer": "Cấu tạo gồm 2 tế bào hình hạt đậu bao quanh lỗ khí. Chức năng là trao đổi khí và thoát hơi nước."
+    },
+    {
+      "id": "2",
+      "question": "Tại sao khi trời nắng nóng, cây thường đóng bớt khí khổng lại?",
+      "answer": "Để giảm thiểu sự thoát hơi nước, tránh cho cây bị mất nước quá nhiều dẫn đến héo và chết."
+    },
+    {
+      "id": "3",
+      "question": "Hệ thống ống khí ở côn trùng có đặc điểm gì giúp trao đổi khí hiệu quả?",
+      "answer": "Hệ thống ống khí phân nhánh nhỏ đến tận các tế bào của cơ thể, giúp khí oxygen và carbon dioxide trao đổi trực tiếp với tế bào mà không cần qua hệ tuần hoàn."
+    }
+  ],
+  "key_points": [
+    "Khí khổng là cơ quan trao đổi khí chính ở thực vật.",
+    "Động vật trao đổi khí qua da, mang, ống khí hoặc phổi phù hợp với môi trường sống."
+  ]
+}

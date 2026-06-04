@@ -1,0 +1,46 @@
+{
+  "page": 74,
+  "lesson_title": "ÔN TẬP GIỮA HỌC KÌ 1",
+  "sections": [
+    {
+      "type": "đọc",
+      "title": "1. Đoán tên bài đọc.",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Đoán tên bài đọc.",
+          "items": [
+            {
+              "id": "a",
+              "text": "Mùa hè thật sung sướng, có nắng, có kem."
+            },
+            {
+              "id": "b",
+              "text": "Bạn nhỏ chia sẻ cách làm món đúc thịt."
+            },
+            {
+              "id": "c",
+              "text": "Các bạn nhỏ đến trường sau kì nghỉ hè."
+            },
+            {
+              "id": "d",
+              "text": "Có người thích toán bằng thơ."
+            },
+            {
+              "id": "e",
+              "text": "Cô giáo em có đôi bàn tay khéo léo."
+            },
+            {
+              "id": "g",
+              "text": "Bạn Hoàng không biết cách chấm câu."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "đọc",
+      "title": "2. Chọn đọc một trong những bài trên và chia sẻ điều em thích nhất ở bài đọc đó."
+    }
+  ]
+}

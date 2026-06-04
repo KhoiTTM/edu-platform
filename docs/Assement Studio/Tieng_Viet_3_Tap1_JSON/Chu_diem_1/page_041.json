@@ -1,0 +1,47 @@
+{
+  "page": 40,
+  "lesson_title": "ĐỌC MỞ RỘNG VÀ LUYỆN TẬP",
+  "sections": [
+    {
+      "type": "khác",
+      "title": "Đọc mở rộng",
+      "content": "1. Đọc sách nấu ăn hoặc những bài đọc về việc làm bếp.
+2. Viết phiếu đọc sách theo mẫu."
+    },
+    {
+      "type": "luyện_từ_và_câu",
+      "title": "Luyện tập",
+      "exercises": [
+        {
+          "id": "ex1",
+          "instruction": "1. Tìm các từ ngữ nói về mùa hè theo gợi ý dưới đây:",
+          "items": [
+            "Thời tiết: nóng nực",
+            "Đồ ăn thức uống: kem",
+            "Đồ dùng: quạt",
+            "Trang phục: áo phông",
+            "Hoạt động: bơi"
+          ]
+        },
+        {
+          "id": "ex2",
+          "instruction": "2. Dấu hai chấm trong câu sau đây được dùng để làm gì?",
+          "items": [
+            "Các bạn chắc chắn sẽ kể về những chuyến du lịch kì thú của mình: ra biển, lên núi, đến thăm những thành phố lớn,...",
+            "a. Để báo hiệu lời nói trực tiếp",
+            "b. Để báo hiệu phần liệt kê",
+            "c. Để báo hiệu phần giải thích"
+          ]
+        },
+        {
+          "id": "ex3",
+          "instruction": "3. Chọn dấu chấm hoặc dấu hai chấm cho ô vuông.",
+          "items": [
+            "a. Mùa hè có rất nhiều loài hoa: hoa phượng, hoa mười giờ, hoa hồng. Hoa nào cũng rực rỡ sắc màu.",
+            "b. Có nhiều hoạt động thú vị mà bạn có thể làm khi hè đến: đi cắm trại, đi tắm biển, tham gia các câu lạc bộ,..."
+          ]
+        }
+      ]
+    }
+  ]
+}

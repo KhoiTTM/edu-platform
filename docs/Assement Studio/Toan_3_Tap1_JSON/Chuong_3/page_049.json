@@ -1,0 +1,26 @@
+{
+  "page": 48,
+  "lesson_title": "Trò chơi: Cầu thang - Cầu trượt",
+  "sections": [
+    {
+      "type": "hoạt_động",
+      "title": "Cách chơi",
+      "content": "• Chơi theo nhóm.\n• Người chơi bắt đầu từ ô XUẤT PHÁT. Khi đến lượt, người chơi gieo xúc xắc. Đếm số chấm ở mặt trên xúc xắc rồi di chuyển số ô bằng số chấm đó. Nêu kết quả phép tính tại ô đi đến, nếu nêu sai kết quả thì phải quay về ô xuất phát trước đó. Khi đến chân cầu thang, em leo lên; khi đến đỉnh cầu trượt, em trượt xuống.\n• Trò chơi kết thúc khi có người về ĐÍCH.",
+      "visual_elements": "Một bảng ô vuông kích thước 6x5 chứa các phép tính nhân và chia. Có các hình vẽ bổ trợ: một con xúc xắc màu xanh lá cây, hai cái cầu thang màu vàng và một cái cầu trượt màu xanh lá cây. Các điểm mốc: 'XUẤT PHÁT' có mũi tên đỏ chỉ vào ô trống góc dưới bên phải, 'ĐÍCH' chữ màu đỏ ở ô góc trên bên phải. Cầu thang thứ nhất nối từ ô '3 x 7' lên ô '21 : 3'. Cầu thang thứ hai nối từ ô '5 x 6' lên ô '63 : 9'. Cầu trượt nối từ ô '9 x 9' xuống ô '18 : 2'.",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Thực hiện các phép tính trong bảng để di chuyển",
+          "items": [
+            "8 x 7", "24 : 4", "9 x 9", "27 : 3",
+            "48 : 6", "7 x 9", "28 : 7", "6 x 6", "32 : 8",
+            "9 : 6", "18 : 2", "3 x 5", "63 : 9", "4 x 4",
+            "21 : 3", "8 x 3", "36 : 4", "7 x 5", "50 : 5",
+            "4 x 9", "35 : 7", "5 x 6", "42 : 6", "6 x 4",
+            "56 : 8", "3 x 7", "45 : 9", "2 x 8"
+          ]
+        }
+      ]
+    }
+  ]
+}

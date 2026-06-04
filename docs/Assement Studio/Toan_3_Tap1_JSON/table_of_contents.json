@@ -1,0 +1,97 @@
+{
+  "book_title": "Toán 3 - Tập Một",
+  "series": "Kết nối tri thức với cuộc sống",
+  "publisher": "Nhà xuất bản Giáo dục Việt Nam",
+  "table_of_contents": [
+    {
+      "chapter": "Chủ đề 1: ÔN TẬP VÀ BỔ SUNG",
+      "page": 6,
+      "lessons": [
+        {"title": "Bài 1. Ôn tập các số đến 1 000", "page": 6},
+        {"title": "Bài 2. Ôn tập phép cộng, phép trừ trong phạm vi 1 000", "page": 9},
+        {"title": "Bài 3. Tìm thành phần trong phép cộng, phép trừ", "page": 11},
+        {"title": "Bài 4. Ôn tập bảng nhân 2; 5, bảng chia 2; 5", "page": 14},
+        {"title": "Bài 5. Bảng nhân 3, bảng chia 3", "page": 16},
+        {"title": "Bài 6. Bảng nhân 4, bảng chia 4", "page": 19},
+        {"title": "Bài 7. Ôn tập hình học và đo lường", "page": 21},
+        {"title": "Bài 8. Luyện tập chung", "page": 24}
+      ]
+    },
+    {
+      "chapter": "Chủ đề 2: BẢNG NHÂN, BẢNG CHIA",
+      "page": 28,
+      "lessons": [
+        {"title": "Bài 9. Bảng nhân 6, bảng chia 6", "page": 28},
+        {"title": "Bài 10. Bảng nhân 7, bảng chia 7", "page": 31},
+        {"title": "Bài 11. Bảng nhân 8, bảng chia 8", "page": 33},
+        {"title": "Bài 12. Bảng nhân 9, bảng chia 9", "page": 36},
+        {"title": "Bài 13. Tìm thành phần trong phép nhân, phép chia", "page": 39},
+        {"title": "Bài 14. Một phần mấy", "page": 42},
+        {"title": "Bài 15. Luyện tập chung", "page": 46}
+      ]
+    },
+    {
+      "chapter": "Chủ đề 3: LÀM QUEN VỚI HÌNH PHẲNG, HÌNH KHỐI",
+      "page": 49,
+      "lessons": [
+        {"title": "Bài 16. Điểm ở giữa, trung điểm của đoạn thẳng", "page": 49},
+        {"title": "Bài 17. Hình tròn. Tâm, bán kính, đường kính của hình tròn", "page": 52},
+        {"title": "Bài 18. Góc, góc vuông, góc không vuông", "page": 54},
+        {"title": "Bài 19. Hình tam giác, hình tứ giác. Hình chữ nhật, hình vuông", "page": 56},
+        {"title": "Bài 20. Thực hành vẽ góc vuông, vẽ đường tròn, hình vuông, hình chữ nhật và vẽ trang trí", "page": 61},
+        {"title": "Bài 21. Khối lập phương, khối hộp chữ nhật", "page": 63},
+        {"title": "Bài 22. Luyện tập chung", "page": 65}
+      ]
+    },
+    {
+      "chapter": "Chủ đề 4: PHÉP NHÂN, PHÉP CHIA TRONG PHẠM VI 100",
+      "page": 67,
+      "lessons": [
+        {"title": "Bài 23. Nhân số có hai chữ số với số có một chữ số", "page": 67},
+        {"title": "Bài 24. Gấp một số lên một số lần", "page": 70},
+        {"title": "Bài 25. Phép chia hết, phép chia có dư", "page": 72},
+        {"title": "Bài 26. Chia số có hai chữ số cho số có một chữ số", "page": 75},
+        {"title": "Bài 27. Giảm một số đi một số lần", "page": 79},
+        {"title": "Bài 28. Bài toán giải bằng hai bước tính", "page": 81},
+        {"title": "Bài 29. Luyện tập chung", "page": 83}
+      ]
+    },
+    {
+      "chapter": "Chủ đề 5: MỘT SỐ ĐƠN VỊ ĐO ĐỘ DÀI, KHỐI LƯỢNG, DUNG TÍCH, NHIỆT ĐỘ",
+      "page": 85,
+      "lessons": [
+        {"title": "Bài 30. Mi-li-mét", "page": 85},
+        {"title": "Bài 31. Gam", "page": 87},
+        {"title": "Bài 32. Mi-li-lít", "page": 89},
+        {"title": "Bài 33. Nhiệt độ. Đơn vị đo nhiệt độ", "page": 91},
+        {"title": "Bài 34. Thực hành và trải nghiệm với các đơn vị mi-li-mét, gam, mi-li-lít, độ C", "page": 93},
+        {"title": "Bài 35. Luyện tập chung", "page": 95}
+      ]
+    },
+    {
+      "chapter": "Chủ đề 6: PHÉP NHÂN, PHÉP CHIA TRONG PHẠM VI 1 000",
+      "page": 97,
+      "lessons": [
+        {"title": "Bài 36. Nhân số có ba chữ số với số có một chữ số", "page": 97},
+        {"title": "Bài 37. Chia số có ba chữ số cho số có một chữ số", "page": 99},
+        {"title": "Bài 38. Biểu thức số. Tính giá trị của biểu thức số", "page": 104},
+        {"title": "Bài 39. So sánh số lớn gấp mấy lần số bé", "page": 109},
+        {"title": "Bài 40. Luyện tập chung", "page": 111}
+      ]
+    },
+    {
+      "chapter": "Chủ đề 7: ÔN TẬP HỌC KÌ I",
+      "page": 113,
+      "lessons": [
+        {"title": "Bài 41. Ôn tập phép nhân, phép chia trong phạm vi 100, 1 000", "page": 113},
+        {"title": "Bài 42. Ôn tập biểu thức số", "page": 116},
+        {"title": "Bài 43. Ôn tập hình học và đo lường", "page": 118},
+        {"title": "Bài 44. Ôn tập chung", "page": 120}
+      ]
+    },
+    {
+      "chapter": "Một số thuật ngữ dùng trong sách",
+      "page": 122
+    }
+  ]
+}

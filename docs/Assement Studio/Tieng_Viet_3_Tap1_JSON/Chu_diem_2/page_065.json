@@ -1,0 +1,62 @@
+{
+  "page": 64,
+  "lesson_title": "LUYỆN TẬP",
+  "sections": [
+    {
+      "type": "luyện_từ_và_câu",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Các câu trong đoạn văn dưới đây được gọi là câu kể. Hãy xếp các câu đó vào nhóm thích hợp: Câu nêu đặc điểm, Câu nêu hoạt động, Câu giới thiệu.",
+          "items": [
+            "(1) Tớ là bút nâu.",
+            "(2) Tớ cao nhất hộp bút vì hiếm khi được gọt.",
+            "(3) Đây là bút đỏ, bạn của tớ.",
+            "(4) Bút đỏ thì thấp một mẩu vì được gọt quá nhiều.",
+            "(5) Tớ dùng keo gắn bút đỏ vào bên cạnh tớ để bạn nhìn được ra ngoài hộp bút."
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Chọn thông tin đúng về câu kể:",
+          "items": [
+            "dùng để kể, tả, giới thiệu",
+            "kết thúc bằng dấu chấm"
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Xếp các câu dưới đây vào nhóm thích hợp và giải thích vì sao em xếp như vậy:",
+          "items": [
+            {
+              "id": "a",
+              "text": "Bút nâu trông như thế nào?"
+            },
+            {
+              "id": "b",
+              "text": "Bút nâu là một người bạn tốt."
+            },
+            {
+              "id": "c",
+              "text": "Bút nâu nhảy với bút vàng lắng nghe ước mơ của bút tím."
+            },
+            {
+              "id": "d",
+              "text": "Bút nâu gắn bút đỏ vào bên cạnh mình để làm gì?"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "instruction": "Tìm dấu câu (dấu chấm; dấu chấm hỏi, dấu chấm than) thay cho ô vuông.",
+          "items": [
+            "Minh là thành viên mới của lớp 3A",
+            "Minh vừa chuyển từ trường khác đến",
+            "Bạn ấy vui vẻ giới thiệu: Tớ tên là Tuệ Minh",
+            "Tớ thích chơi cờ vua và múa ba lê"
+          ]
+        }
+      ]
+    }
+  ]
+}

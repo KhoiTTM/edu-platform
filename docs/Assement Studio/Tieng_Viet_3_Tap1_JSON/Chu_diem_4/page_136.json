@@ -1,0 +1,37 @@
+{
+  "page": 136,
+  "lesson_title": "Bác lái xe bệnh viện",
+  "sections": [
+    {
+      "type": "khác",
+      "title": "Bài tập",
+      "questions": [
+        { "id": "a", "question": "Bạn Nga viết thư cho ai?" },
+        { "id": "b", "question": "Dòng đầu bức thư ghi những gì?" },
+        { "id": "c", "question": "Đoạn nào trong thư là lời hỏi thăm?" },
+        { "id": "d", "question": "Đoạn nào trong thư là lời Nga kể về mình và gia đình?" },
+        { "id": "e", "question": "Nga mong ước điều gì? Nga chúc chú thế nào?" }
+      ]
+    },
+    {
+      "type": "khác",
+      "title": "Trao đổi với bạn",
+      "content": "Em muốn viết thư cho ai? Trong thư, em sẽ viết những gì?"
+    },
+    {
+      "type": "viết",
+      "title": "Viết 3-4 câu",
+      "content": "Dựa vào những điều đã trao đổi với bạn, em hãy viết 3-4 câu hỏi thăm tình hình của người nhận thư."
+    },
+    {
+      "type": "đọc",
+      "title": "Bác lái xe bệnh viện",
+      "author": "Trần Thanh Địch",
+      "content": "Chiếc xe cấp cứu chở mẹ của Từ đi bệnh viện: Bác lái xe ngồi trước tay lái, nét mặt bình tĩnh. Bác nhìn qua người bệnh rồi cho xe chuyển bánh.
+Chiếc xe lao đi khá nhanh mà rất êm. Thỉnh thoảng, xe chạy chậm lại vì vướng những xe phía trước, rồi xe lại lướt lên như mũi tên.
+Bác lái xe rất vững tay lái. Hình như bốn bánh xe chưa hề cán lên một viên sỏi nhỏ hay một mẩu cây khô. Khi sắp sửa gặp ổ gà là bác lái tránh được ngay. Qua mỗi chỗ rẽ, còi xe lại nổi lên, như muốn nói: "Xe cấp cứu đây! Các bạn nhường đường nhé!"
+Xe đến bệnh viện: Các cô y tá đẩy băng ca đưa mẹ của Từ vào phòng cấp cứu: Bác lái xe xách theo đôi guốc, đưa cho cô y tá: Của bệnh nhân đấy chị ạ!
+Rồi bác lên xe. Từ chưa kịp cảm ơn bác lái xe bệnh viện."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "page": 56,
+  "lesson_title": "ĐỌC MỞ RỘNG",
+  "sections": [
+    {
+      "type": "đọc",
+      "title": "Phiếu đọc sách",
+      "content": "1. Đọc câu chuyện, bài văn, bài thơ về nhà trường và viết phiếu đọc sách theo mẫu:
+PHIẾU ĐỌC SÁCH
+Ngày đọc: ...
+Tên bài: ...
+Tác giả: ...
+Cách em tìm được bài đọc: ...
+Chi tiết, câu văn, câu thơ em thích nhất: ...
+Mức độ yêu thích: ...",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Đọc câu chuyện, bài văn, bài thơ về nhà trường và viết phiếu đọc sách theo mẫu."
+        },
+        {
+          "id": "2",
+          "instruction": "Trao đổi với bạn về bài em đã đọc và chia sẻ cách em đã làm để tìm được câu chuyện, bài văn, bài thơ đó."
+        }
+      ]
+    }
+  ]
+}

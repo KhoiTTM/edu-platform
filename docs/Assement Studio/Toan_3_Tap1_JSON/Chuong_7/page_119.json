@@ -1,0 +1,42 @@
+{
+  "page": 119,
+  "sections": [
+    {
+      "type": "luyện_tập",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Tính độ dài và cân nặng:",
+          "items": [
+            "a) Tính độ dài đường gấp khúc ABCD.",
+            "b) Quả bưởi cân nặng bao nhiêu gam?"
+          ],
+          "visual_elements": "a) Đường gấp khúc ABCD với các đoạn AB = 28 mm, BC = 28 mm, CD = 28 mm. b) Cân thăng bằng với một bên là hai quả cân 500 g, bên kia là quả bưởi và quả cân 100 g."
+        },
+        {
+          "id": "2",
+          "instruction": "Chọn số đo thích hợp.",
+          "items": [
+            "a) Quyển sách Toán 3 tập một dày khoảng: A. 5 mm; B. 5 cm; C. 5 dm",
+            "b) Cái bút mực cân nặng khoảng: A. 2 g; B. 2 kg; C. 20 g",
+            "c) Lượng thuốc nước trong một lọ thuốc nhỏ mắt có khoảng: A. 15 ml; B. 15 l; C. 150 ml",
+            "d) Nhiệt độ cơ thể người bình thường khoảng: A. 35 °C; B. 37 °C; C. 38 °C"
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Tính.",
+          "items": [
+            "a) 480 mm + 120 mm; 545 mm - 45 mm; 840 mm : 3",
+            "b) 465 g + 340 g; 200 g x 5; 900 g : 6",
+            "c) 500 ml + 156 ml; 1 000 ml - 500 ml; 250 ml x 3"
+          ]
+        },
+        {
+          "id": "4",
+          "instruction": "Một gói mì tôm cân nặng 80 g, một hộp sữa cân nặng 455 g. Hỏi 3 gói mì tôm và 1 hộp sữa cân nặng bao nhiêu gam?"
+        }
+      ]
+    }
+  ]
+}

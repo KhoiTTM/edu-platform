@@ -1,0 +1,46 @@
+{
+  "page": 64,
+  "lesson_title": "Bài 21. Khối lập phương, khối hộp chữ nhật",
+  "sections": [
+    {
+      "type": "hoạt_động",
+      "visual_elements": "Mô hình khung dây và vật thể khối.",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Một chiếc khung sắt dạng khối hộp chữ nhật có các cạnh được sơn màu như hình vẽ.",
+          "items": [
+            "a) Có mấy cạnh được sơn màu xanh, mấy cạnh được sơn màu đỏ?",
+            "b) Chọn câu trả lời đúng. Người ta lắp một tấm gỗ vừa khít vào mặt trước của chiếc khung sắt đó. Miếng gỗ cần lắp có dạng hình gì?\nA. Hình tròn, B. Hình tam giác, C. Hình chữ nhật."
+          ],
+          "visual_elements": "Khung sắt khối hộp chữ nhật với 4 cạnh dọc màu xanh và 8 cạnh ngang màu đỏ."
+        },
+        {
+          "id": "2",
+          "instruction": "Số ? Ở gần mỗi đỉnh của một chiếc hộp gỗ dạng khối lập phương, bác Hà chạm ba bông hoa (như hình vẽ). Bác Hà đã chạm tất cả ? bông hoa.",
+          "visual_elements": "Một chiếc hộp gỗ hình lập phương, tại các góc có chạm khắc hình 3 bông hoa nhỏ."
+        }
+      ]
+    },
+    {
+      "type": "luyện_tập",
+      "visual_elements": "Hình vẽ minh họa các bài toán đếm cạnh và mặt của khối.",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Con kiến bò theo đường màu cam trên chiếc khung nhôm dạng khối hộp chữ nhật để đến chỗ hạt gạo (như hình vẽ). Hỏi con kiến cần bò qua mấy cạnh?",
+          "visual_elements": "Mô hình khung dây khối hộp chữ nhật, một con kiến ở một đỉnh và hạt gạo ở đỉnh đối diện, đường đi màu cam men theo 3 cạnh."
+        },
+        {
+          "id": "2",
+          "instruction": "Số ? Chú Ba làm những chiếc đèn lồng có dạng khối lập phương. Mỗi cạnh dùng một nan tre, mỗi mặt dán một tờ giấy màu.",
+          "items": [
+            "a) Mỗi chiếc đèn lồng cần dùng ? nan tre.",
+            "b) 5 chiếc đèn lồng như vậy cần dùng ? tờ giấy màu."
+          ],
+          "visual_elements": "Hình minh họa quá trình làm đèn lồng khối lập phương: từ khung nan tre đến khi dán giấy màu hoàn thiện."
+        }
+      ]
+    }
+  ]
+}

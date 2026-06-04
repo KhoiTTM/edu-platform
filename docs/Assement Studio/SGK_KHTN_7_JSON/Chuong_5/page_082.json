@@ -1,0 +1,26 @@
+{
+  "page": 82,
+  "title": "Bài tập Bài 16",
+  "exercises": [
+    {
+      "id": "1",
+      "question": "Nội dung định luật phản xạ ánh sáng là gì?",
+      "answer": "Tia phản xạ nằm trong mặt phẳng tới. Góc phản xạ bằng góc tới."
+    },
+    {
+      "id": "2",
+      "question": "Chiếu một tia sáng tới mặt gương với góc tới bằng $30^\\circ$. Tính góc phản xạ và góc hợp bởi tia tới và tia phản xạ.",
+      "answer": "Góc phản xạ $i' = i = 30^\\circ$. Góc hợp bởi tia tới và tia phản xạ là $i + i' = 30^\\circ + 30^\\circ = 60^\\circ$."
+    },
+    {
+      "id": "3",
+      "question": "Phân biệt phản xạ và phản xạ khuếch tán.",
+      "answer": "Phản xạ xảy ra trên bề mặt nhẵn, tia phản xạ song song, thấy ảnh rõ. Phản xạ khuếch tán xảy ra trên bề mặt nhám, tia phản xạ đi nhiều hướng, không thấy ảnh rõ."
+    }
+  ],
+  "key_points": [
+    "Hiện tượng ánh sáng hắt lại môi trường cũ gọi là phản xạ ánh sáng.",
+    "Định luật phản xạ: i' = i.",
+    "Bề mặt nhẵn bóng gây ra phản xạ gương, bề mặt gồ ghề gây ra phản xạ khuếch tán."
+  ]
+}

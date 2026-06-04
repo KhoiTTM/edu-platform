@@ -1,0 +1,25 @@
+{
+  "page": 69,
+  "title": "Bài tập Bài 13",
+  "exercises": [
+    {
+      "id": "1",
+      "question": "Âm phát ra càng bổng khi:\nA. Tần số dao động càng lớn.\nB. Tần số dao động càng nhỏ.\nC. Biên độ dao động càng lớn.\nD. Biên độ dao động càng nhỏ.",
+      "answer": "A"
+    },
+    {
+      "id": "2",
+      "question": "Hãy so sánh tần số dao động của hai vật, biết vật thứ nhất thực hiện 500 dao động trong 5 giây và vật thứ hai thực hiện 1 200 dao động trong 10 giây. Vật nào phát ra âm trầm hơn?",
+      "answer": "Tần số vật 1: 500 / 5 = 100 Hz. Tần số vật 2: 1 200 / 10 = 120 Hz. Vật thứ nhất phát ra âm trầm hơn vì có tần số nhỏ hơn."
+    },
+    {
+      "id": "3",
+      "question": "Nêu mối liên hệ giữa biên độ dao động và độ to của âm.",
+      "answer": "Biên độ dao động càng lớn thì âm phát ra càng to."
+    }
+  ],
+  "key_points": [
+    "Số dao động trong 1 giây gọi là tần số (Hz). Tần số càng lớn thì âm càng cao.",
+    "Độ lệch lớn nhất so với vị trí cân bằng gọi là biên độ dao động. Biên độ càng lớn thì âm càng to."
+  ]
+}

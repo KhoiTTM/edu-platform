@@ -1,0 +1,34 @@
+{
+  "page": 107,
+  "lesson_title": "Bài 38: BIỂU THỨC SỐ. TÍNH GIÁ TRỊ CỦA BIỂU THỨC SỐ",
+  "sections": [
+    {
+      "type": "khám_phá",
+      "title": "Tính giá trị của biểu thức có dấu ngoặc",
+      "content": "a) Mỗi con thỏ có 2 cái tai. Hỏi 3 con thỏ trắng và 4 con thỏ nâu có tất cả bao nhiêu cái tai?",
+      "logic": [
+        "Cách 1: Tính riêng số tai của thỏ trắng, thỏ nâu rồi cộng kết quả với nhau: 2 x 3 + 2 x 4 = 6 + 8 = 14",
+        "Cách 2: Tính tổng số thỏ rồi nhân với 2: 2 x (3 + 4) = 2 x 7 = 14",
+        "Cả hai bạn tính đều đúng.",
+        "b) Tính giá trị của biểu thức 2 x (3 + 4) như sau:",
+        "2 x (3 + 4) = 2 x 7 = 14",
+        "Nhận xét: Nếu trong biểu thức có dấu ngoặc thì ta thực hiện các phép tính ở trong ngoặc trước."
+      ]
+    },
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Tính giá trị của biểu thức (theo mẫu).",
+          "items": [
+            "Mẫu: 30 : (20 - 14) = 30 : 6 = 5",
+            "a) 45 : (5 + 4)",
+            "b) 8 x (11 - 6)",
+            "c) 42 - (42 - 5)"
+          ]
+        }
+      ]
+    }
+  ]
+}

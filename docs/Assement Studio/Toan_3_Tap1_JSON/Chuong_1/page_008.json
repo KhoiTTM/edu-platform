@@ -1,0 +1,41 @@
+{
+  "page": 8,
+  "lesson_subtitle": "Luyện tập",
+  "exercises": [
+    {
+      "id": "1",
+      "instruction": ">; <; = ?",
+      "items": [
+        "a) 505 ? 550",
+        "399 ? 401",
+        "100 ? 90 + 9",
+        "b) 400 + 70 + 5 ? 475",
+        "738 ? 700 + 30 + 7",
+        "50 + 1 ? 50 - 1"
+      ]
+    },
+    {
+      "id": "2",
+      "instruction": "Số ?",
+      "items": [
+        {"type": "caterpillar", "sequence": [310, 311, "?", "?", "?", 315, "?", "?", "?", 319]},
+        {"type": "diamonds", "sequence": [1000, 999, "?", "?", "?", 995, "?", "?", "?", 991]}
+      ]
+    },
+    {
+      "id": "3",
+      "instruction": "Sắp xếp các số 531, 513, 315, 351 theo thứ tự:",
+      "parts": ["a) Từ bé đến lớn.", "b) Từ lớn đến bé."]
+    },
+    {
+      "id": "4",
+      "instruction": "Số ?",
+      "problem_text": "Ba con lợn có cân nặng lần lượt là 99 kg, 110 kg và 101 kg. Biết lợn trắng nặng nhất và lợn đen nhẹ hơn lợn khoang.",
+      "tasks": [
+        "Con lợn trắng cân nặng ? kg.",
+        "Con lợn đen cân nặng ? kg.",
+        "Con lợn khoang cân nặng ? kg."
+      ]
+    }
+  ]
+}

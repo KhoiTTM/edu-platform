@@ -1,0 +1,43 @@
+{
+  "page": 27,
+  "exercises": [
+    {
+      "id": "1",
+      "sub_id": "b",
+      "instruction": "Tính nhẩm.",
+      "items": [
+        "0 x 6; 0 x 7; 0 x 8; 0 x 9",
+        "0 : 6; 0 : 7; 0 : 8; 0 : 9"
+      ],
+      "notes": ["Số 0 chia cho số nào khác 0 cũng bằng 0."]
+    },
+    {
+      "id": "2",
+      "instruction": "Hai phép tính nào dưới đây có cùng kết quả?",
+      "items": [
+        "0 : 6", "15 : 3", "3 x 4", "14 : 2",
+        "28 : 4", "5 x 0", "25 : 5", "2 x 6"
+      ]
+    },
+    {
+      "id": "3",
+      "problem_text": "Tổ Một có 8 bạn, mỗi bạn góp 5 quyển vở để giúp đỡ các bạn vùng bị lũ lụt. Hỏi Tổ Một góp được bao nhiêu quyển vở?"
+    },
+    {
+      "id": "4",
+      "instruction": "Tính độ dài đường gấp khúc ABCDE.",
+      "segments": [
+        {"label": "AB", "length": "3 cm"},
+        {"label": "BC", "length": "3 cm"},
+        {"label": "CD", "length": "3 cm"},
+        {"label": "DE", "length": "3 cm"}
+      ],
+      "note": "Đường gấp khúc ABCDE gồm bốn đoạn thẳng có cùng độ dài là 3 cm."
+    },
+    {
+      "id": "5",
+      "instruction": "Số ?",
+      "calculation_chain": [2, "x 6", "?", ": 3", "?", "x 0", "?", "+ 7", "?"]
+    }
+  ]
+}

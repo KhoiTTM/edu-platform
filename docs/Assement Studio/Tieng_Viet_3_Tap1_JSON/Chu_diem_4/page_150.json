@@ -1,0 +1,53 @@
+{
+  "page": 150,
+  "sections": [
+    {
+      "type": "khác",
+      "title": "Trả lời câu hỏi và thực hiện yêu cầu.",
+      "questions": [
+        {
+          "id": "a",
+          "question": "Si-skin cảm thấy thế nào khi được làm thủ thư của lớp?"
+        },
+        {
+          "id": "b",
+          "question": "Si-skin và bạn của mình đã làm những gì để bảo vệ sách?"
+        },
+        {
+          "id": "c",
+          "question": "Vì sao Si-skin ngạc nhiên khi thấy thủ thư khác mượn sách?"
+        },
+        {
+          "id": "d",
+          "question": "Vì sao Si-skin không kêu ca về việc giá ít sách nữa?"
+        },
+        {
+          "id": "e",
+          "question": "Viết 2-3 câu nêu cảm nhận của em về những việc Si-skin đã làm dưới đây:"
+        },
+        {
+          "id": "g",
+          "question": "Từ ngữ nào dưới đây chỉ đặc điểm?"
+        },
+        {
+          "id": "h",
+          "question": "Tìm trong bài đọc các câu kết thúc bằng dấu chấm than và xếp vào 2 nhóm dưới đây: Câu cảm, Câu khiến"
+        }
+      ]
+    },
+    {
+      "type": "viết",
+      "title": "3. Lựa chọn một trong hai đề sau:",
+      "exercises": [
+        {
+          "id": "a",
+          "instruction": "Viết một đoạn văn tả một đồ dùng học tập."
+        },
+        {
+          "id": "b",
+          "instruction": "Viết một đoạn văn nêu lí do em thích một nhân vật trong câu chuyện đã đọc hoặc đã nghe."
+        }
+      ]
+    }
+  ]
+}

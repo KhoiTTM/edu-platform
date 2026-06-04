@@ -1,0 +1,26 @@
+{
+  "page": 129,
+  "sections": [
+    {
+      "subtitle": "II. Sự vận chuyển các chất trong thân cây",
+      "subsections": [
+        {
+          "title": "1. Vận chuyển nước và muối khoáng (Mạch gỗ)",
+          "content": "Nước và muối khoáng được vận chuyển từ rễ lên thân và lá nhờ mạch gỗ (xylem). Động lực chính là lực hút do thoát hơi nước ở lá và lực đẩy từ rễ."
+        },
+        {
+          "title": "2. Vận chuyển chất hữu cơ (Mạch rây)",
+          "content": "Các chất hữu cơ được tổng hợp ở lá được vận chuyển đến các cơ quan dự trữ (rễ, củ, quả,...) hoặc các bộ phận đang tăng trưởng nhờ mạch rây (phloem)."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Phân biệt sự khác nhau về hướng vận chuyển của mạch gỗ và mạch rây.",
+      "answer": "- Mạch gỗ: Vận chuyển từ dưới lên (từ rễ lên lá).\n- Mạch rây: Vận chuyển theo cả hai hướng (từ lá đến các cơ quan cần thiết)."
+    }
+  ]
+}

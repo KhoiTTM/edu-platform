@@ -1,0 +1,37 @@
+{
+  "page": 59,
+  "sections": [
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "a) Trong các hình dưới đây, hình nào là hình vuông? b) Trong các hình dưới đây, những hình nào là hình chữ nhật?",
+          "items": [
+            "a) Các hình cần xét: ABCD (hình chữ nhật đứng), MNPQ (hình thoi/hình vuông xoay), EGIH (hình vuông).",
+            "b) Các hình cần xét: ABCD (hình bình hành), MNPQ (hình chữ nhật nằm ngang), EGHI (hình thang cân), RTXY (hình chữ nhật đứng)."
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Số ?",
+          "items": [
+            "Đo độ dài cạnh hình vuông ABCD và điền vào chỗ trống (? cm).",
+            "Đo chiều dài và chiều rộng của hình chữ nhật MNPQ và điền vào chỗ trống (? cm)."
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Chọn câu trả lời đúng. Để cắt tờ giấy như hình bên thành một hình vuông, Rô-bốt cần cắt theo đoạn thẳng nào dưới đây?",
+          "items": [
+            "A. Đoạn thẳng MQ.",
+            "B. Đoạn thẳng PN.",
+            "C. Đoạn thẳng PQ.",
+            "D. Đoạn thẳng MN."
+          ]
+        }
+      ],
+      "visual_elements": "Bài 1: Các hình phẳng vẽ trên lưới ô vuông để học sinh dễ nhận biết góc vuông và độ dài cạnh. Bài 2: Hình vuông ABCD và hình chữ nhật MNPQ không nằm trên lưới, yêu cầu dùng thước đo. Bài 3: Một mảnh giấy có hình dạng không đều trên lưới ô vuông, có đánh dấu các điểm M, N, P, Q."
+    }
+  ]
+}

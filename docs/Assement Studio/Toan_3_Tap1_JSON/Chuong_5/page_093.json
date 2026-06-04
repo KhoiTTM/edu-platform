@@ -1,0 +1,44 @@
+{
+  "page": 93,
+  "lesson_title": "Bài 34: THỰC HÀNH VÀ TRẢI NGHIỆM VỚI CÁC ĐƠN VỊ MI-LI-MÉT, GAM, MI-LI-LÍT, ĐỘ C",
+  "sections": [
+    {
+      "type": "hoạt_động",
+      "visual_elements": "Hình ảnh các đồ vật (đồng xu, kẹp giấy, cục tẩy) đặt cạnh thước đo; hình ảnh cục tẩy, hộp sữa, quả bí đao với các phương án khối lượng; hình ảnh bạn Mai và các quả cân; bảng ghi chép nhiệt độ.",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Số ? Đo độ dài các đồ vật theo đơn vị mi-li-mét.",
+          "items": [
+            "Đồng xu: 19 mm",
+            "Cái kẹp giấy: ? mm",
+            "Cục tẩy: ? mm"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Chọn số đo phù hợp với mỗi đồ vật trong thực tế.",
+          "items": [
+            "Cục tẩy: 20 kg hay 20 g?",
+            "Hộp sữa: 400 g hay 40 g?",
+            "Quả bí đao: 3 kg hay 3 g?"
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Em hãy giúp Mai chọn các quả cân thích hợp để cân được đúng 1 kg gạo từ một thùng gạo.",
+          "items": [
+            "Các quả cân hiện có: 100 g, 100 g, 200 g, 200 g, 500 g."
+          ]
+        },
+        {
+          "id": "4",
+          "instruction": "Sử dụng nhiệt kế, em hãy đo nhiệt độ không khí vào một số ngày trong tuần rồi ghi lại theo bảng.",
+          "items": [
+            "Bảng ghi chép nhiệt độ: Thứ Hai (? °C), Thứ Ba (? °C), Thứ Tư (? °C)."
+          ]
+        }
+      ]
+    }
+  ]
+}

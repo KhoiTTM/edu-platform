@@ -1,0 +1,25 @@
+{
+  "page": 118,
+  "sections": [
+    {
+      "subtitle": "II. Cách tiến hành",
+      "experiment_1": {
+        "title": "1. Thí nghiệm chứng minh hô hấp thải khí carbon dioxide",
+        "steps": [
+          "Cho một ít hạt nảy mầm vào bình thủy tinh.",
+          "Nút kín bình bằng nút cao su có ống dẫn khí luồn qua.",
+          "Dẫn đầu ống dẫn khí vào cốc chứa nước vôi trong.",
+          "Sau khoảng 1 - 2 giờ, quan sát hiện tượng ở cốc nước vôi trong."
+        ]
+      },
+      "experiment_2": {
+        "title": "2. Thí nghiệm chứng minh hô hấp giải phóng nhiệt năng",
+        "steps": [
+          "Cho hạt nảy mầm vào bình thủy tinh cách nhiệt (hoặc bình có bọc bông).",
+          "Cắm nhiệt kế vào giữa khối hạt qua nút cao su.",
+          "Ghi lại nhiệt độ ban đầu và nhiệt độ sau khoảng 4 - 6 giờ."
+        ]
+      }
+    }
+  ]
+}

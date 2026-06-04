@@ -1,0 +1,17 @@
+{
+  "page": 38,
+  "sections": [
+    {
+      "subtitle": "II. Liên kết ion",
+      "content": "- Liên kết ion là liên kết được hình thành bởi lực hút tĩnh điện giữa các ion mang điện tích trái dấu.\n- Các hợp chất ion thường là chất rắn ở điều kiện thường."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Quan sát Hình 6.2 và Hình 6.3, hãy mô tả sự hình thành liên kết ion trong phân tử muối ăn (NaCl) và phân tử magnesium oxide (MgO).",
+      "answer": "- NaCl: Nguyên tử Na nhường 1 electron cho nguyên tử Cl để tạo thành ion Na+ và Cl-. Hai ion hút nhau tạo liên kết ion.\n- MgO: Nguyên tử Mg nhường 2 electron cho nguyên tử O để tạo thành ion Mg2+ và O2-. Hai ion hút nhau tạo liên kết ion."
+    }
+  ]
+}

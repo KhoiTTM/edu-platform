@@ -1,0 +1,22 @@
+{
+  "page": 134,
+  "sections": [
+    {
+      "subtitle": "III. Vận chuyển các chất ở động vật",
+      "content": "Ở động vật đa bào có cấu tạo phức tạp, các chất được vận chuyển đến các tế bào nhờ hệ tuần hoàn.",
+      "circulatory_system": [
+        "Tim: Co bóp để đẩy máu đi lưu thông trong mạch.",
+        "Hệ thống mạch máu: Gồm động mạch, tĩnh mạch và mao mạch.",
+        "Máu: Vận chuyển oxygen, chất dinh dưỡng đến tế bào và vận chuyển carbon dioxide, chất thải từ tế bào đến cơ quan bài tiết."
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Quan sát Hình 31.3, hãy cho biết máu đi nuôi cơ thể là máu giàu khí gì.",
+      "answer": "Máu đi nuôi cơ thể (máu động mạch) là máu giàu khí oxygen."
+    }
+  ]
+}

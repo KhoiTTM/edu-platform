@@ -1,0 +1,26 @@
+{
+  "page": 12,
+  "sections": [
+    {
+      "subtitle": "II. Mô hình nguyên tử Rutherford - Bohr",
+      "subsections": [
+        {
+          "title": "1. Cấu tạo nguyên tử",
+          "content": "- Theo Rutherford - Bohr, nguyên tử có cấu tạo gồm hạt nhân ở giữa và các electron chuyển động xung quanh.\n- Hạt nhân nằm ở tâm nguyên tử, mang điện tích dương.\n- Các electron mang điện tích âm, chuyển động xung quanh hạt nhân theo từng lớp."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Theo Rutherford - Bohr, nguyên tử có cấu tạo như thế nào?",
+      "answer": "Nguyên tử gồm hạt nhân mang điện tích dương và vỏ nguyên tử gồm các electron mang điện tích âm chuyển động xung quanh hạt nhân."
+    }
+  ],
+  "key_points": [
+    "Nguyên tử có cấu tạo gồm hạt nhân mang điện tích dương và các electron mang điện tích âm sắp xếp thành từng lớp quanh hạt nhân.",
+    "Trong nguyên tử, số proton trong hạt nhân bằng số electron ở vỏ nguyên tử. Nguyên tử trung hòa về điện."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "page": 145,
+  "sections": [
+    {
+      "type": "luyện_từ_và_câu",
+      "exercises": [
+        {
+          "id": "3",
+          "instruction": "Đọc các câu ca dao, tục ngữ dưới đây và tìm từ ngữ thuộc một trong hai nhóm: a. Từ ngữ chỉ sự vật, b. Từ ngữ chỉ đặc điểm.",
+          "items": [
+            "Chuồn chuồn bay thấp, mưa ngập bờ ao. Chuồn chuồn bay cao, mưa rào lại tạnh.",
+            "Lên non mới biết non cao. Xuống biển cầm sào cho biết cạn, sâu.",
+            "Dòng sông bên lở, bên bồi. Bên lở thì đục, bên bồi thì trong.",
+            "Trăng mờ còn tỏ hơn sao. Dẫu rằng núi lở còn cao hơn đồi."
+          ]
+        },
+        {
+          "id": "4",
+          "instruction": "Tìm các cặp từ có nghĩa trái ngược nhau trong mỗi câu ca dao, tục ngữ trên."
+        },
+        {
+          "id": "5",
+          "instruction": "Chọn từ ngữ chỉ đặc điểm thay cho ô vuông: im ắng, róc rách, cao vút, tự tin, vàng rực.",
+          "items": [
+            "a. Ngọn tháp ...",
+            "b. Ánh nắng trên sân trường ...",
+            "c. Rừng chỉ có tiếng suối ...",
+            "d. Lên lớp 3, bạn nào cũng ... hơn."
+          ]
+        },
+        {
+          "id": "6",
+          "instruction": "Đặt 1 - 2 câu về cảnh vật nơi em ở, có từ ngữ chỉ đặc điểm."
+        }
+      ]
+    },
+    {
+      "type": "đọc",
+      "title": "TIẾT 3 - 4",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Đọc các khổ thơ dưới đây và nêu tên bài thơ chứa khổ thơ đó.",
+          "items": [
+            "Nghỉ hè em thích nhất/ Được theo mẹ về quê/ Bà em cũng mừng ghê/ Khi thấy em vào ngõ.",
+            "Một tờ giấy trắng/ Cô gấp cong cong/ Thoắt cái đã xong/ Chiếc thuyền xinh quá!",
+            "Màu khăn tuổi thiếu niên/ Suốt đời tươi thắm mãi/ Như lời ru vời vợi/ Chẳng bao giờ cách xa."
+          ]
+        }
+      ]
+    }
+  ]
+}

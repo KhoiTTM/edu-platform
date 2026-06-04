@@ -1,0 +1,34 @@
+{
+  "page": 33,
+  "chapter": "CHƯƠNG II: PHÂN TỬ. LIÊN KẾT HOÁ HỌC",
+  "lesson_title": "Bài 4: Sơ lược về phân tử",
+  "learning_objectives": [
+    "Phát biểu được khái niệm phân tử, đơn chất, hợp chất.",
+    "Đưa ra được ví dụ về đơn chất và hợp chất.",
+    "Tính được khối lượng phân tử theo đơn vị amu."
+  ],
+  "sections": [
+    {
+      "subtitle": "I. Đơn chất và hợp chất",
+      "subsections": [
+        {
+          "title": "1. Đơn chất",
+          "content": "- Đơn chất là những chất được tạo nên từ một nguyên tố hoá học.\n- Ví dụ: kim loại đồng được tạo nên từ nguyên tố Cu; khí oxygen được tạo nên từ nguyên tố O; khí helium được tạo nên từ nguyên tố He."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "opening",
+      "content": "Hàng chục triệu chất hoá học đã biết được phân loại như thế nào để dễ nghiên cứu và sử dụng?"
+    },
+    {
+      "id": "2",
+      "type": "activity",
+      "content": "Dựa vào thành phần nguyên tố, em hãy phân loại các chất trong Hình 5.1 (đồng, khí oxygen, khí helium, khí carbon dioxide, muối ăn) thành hai loại: chất được tạo nên từ một nguyên tố hoá học và chất được tạo nên từ hai nguyên tố hoá học.",
+      "answer": "- Chất tạo nên từ 1 nguyên tố: Đồng (Cu), Khí oxygen (O), Khí helium (He).\n- Chất tạo nên từ 2 nguyên tố: Khí carbon dioxide (C và O), Muối ăn (Na và Cl)."
+    }
+  ]
+}

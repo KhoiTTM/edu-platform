@@ -1,0 +1,43 @@
+{
+  "page": 79,
+  "lesson_title": "Bài 27: GIẢM MỘT SỐ ĐI MỘT SỐ LẦN",
+  "sections": [
+    {
+      "type": "khám_phá",
+      "title": "Khám phá",
+      "content": "Muốn giảm một số đi một số lần, ta lấy số đó chia cho số lần.",
+      "exercises": [
+        {
+          "id": "example",
+          "instruction": "Giảm số thỏ đi 3 lần.",
+          "items": [
+            "6 : 3 = 2.",
+            "6 con thỏ giảm đi 3 lần còn 2 con thỏ."
+          ]
+        }
+      ]
+    },
+    {
+      "type": "hoạt_động",
+      "title": "Hoạt động",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Số ?",
+          "items": [
+            "27 giảm 3 lần được 9",
+            "30 giảm 5 lần được ?",
+            "14 gấp 2 lần được ?",
+            "17 gấp 4 lần được ?",
+            "48 giảm 6 lần được ?",
+            "54 giảm 9 lần được ?"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Nam có 42 con tem. Sau khi cho các bạn một số con tem, số tem còn lại của Nam so với lúc đầu giảm đi 3 lần. Hỏi Nam còn lại bao nhiêu con tem?"
+        }
+      ]
+    }
+  ]
+}

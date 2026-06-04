@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Copy, ExternalLink, CheckCircle, Volume2, ArrowLeft, Settings, Info } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { generateSpeakingPrompt } from "@/lib/speaking/prompt-generator";
+import { generateSpeakingPrompt, generateIeltsPrompt } from "@/lib/speaking/prompt-generator";
 
 interface SpeakingLaunchpadProps {
   subjectType: 'ielts' | 'general_k12';
@@ -42,20 +42,30 @@ export function SpeakingLaunchpad({
     subjectType === 'ielts' ? 'english' : 'bilingual'
   );
   const [focus, setFocus] = useState<'general' | 'pronunciation' | 'grammar'>('general');
+  const [ieltsPart, setIeltsPart] = useState<1 | 2 | 3>(1);
+  const [targetBand, setTargetBand] = useState<string>(
+    subjectType === 'ielts' && studentLevel.includes("Band") 
+      ? studentLevel.split(" ").pop()! 
+      : "6.5"
+  );
 
   // Dynamically generate the speaking prompt on the client side based on settings
-  const promptText = generateSpeakingPrompt({
-    subjectType,
-    studentLevel,
-    topic: unitTopic,
-    lessonSummary,
-    keyVocab,
-    precedingTopics,
-    precedingVocab,
-    speed,
-    feedbackLang,
-    focus
-  });
+  const promptText = subjectType === 'ielts'
+    ? generateIeltsPrompt(unitTopic, ieltsPart, targetBand, lessonSummary, keyVocab)
+    : generateSpeakingPrompt({
+
+        subjectType,
+        studentLevel,
+        topic: unitTopic,
+        lessonSummary,
+        keyVocab,
+        precedingTopics,
+        precedingVocab,
+        speed,
+        feedbackLang,
+        focus
+      });
+
 
   const handleCopyAndGo = async (url: string) => {
     try {
@@ -68,6 +78,7 @@ export function SpeakingLaunchpad({
       window.open(url, "_blank");
     }
   };
+
 
   const handleComplete = async () => {
     setIsSubmitting(true);
@@ -133,8 +144,62 @@ export function SpeakingLaunchpad({
             </h3>
             
             <div className="space-y-4">
+              {/* IELTS Part Selection (IELTS Only) */}
+              {subjectType === 'ielts' && (
+                <div className="space-y-2">
+                  <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Phần thi IELTS Speaking:</label>
+                  <div className="grid grid-cols-3 gap-2 bg-slate-950 p-1 rounded-xl border border-slate-800">
+                    <button
+                      onClick={() => setIeltsPart(1)}
+                      className={`py-1.5 text-xs font-extrabold rounded-lg transition-all ${ieltsPart === 1 ? 'bg-sky-500 text-white shadow' : 'text-slate-500 hover:text-slate-300'}`}
+                    >
+                      Part 1
+                    </button>
+                    <button
+                      onClick={() => setIeltsPart(2)}
+                      className={`py-1.5 text-xs font-extrabold rounded-lg transition-all ${ieltsPart === 2 ? 'bg-sky-500 text-white shadow' : 'text-slate-500 hover:text-slate-300'}`}
+                    >
+                      Part 2
+                    </button>
+                    <button
+                      onClick={() => setIeltsPart(3)}
+                      className={`py-1.5 text-xs font-extrabold rounded-lg transition-all ${ieltsPart === 3 ? 'bg-sky-500 text-white shadow' : 'text-slate-500 hover:text-slate-300'}`}
+                    >
+                      Part 3
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {subjectType === 'ielts' && (
+                <div className="space-y-2">
+                  <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Target Band Goal:</label>
+                  <div className="grid grid-cols-3 gap-2 bg-slate-950 p-1 rounded-xl border border-slate-800">
+                    <button
+                      onClick={() => setTargetBand("6.5")}
+                      className={`py-1.5 text-xs font-extrabold rounded-lg transition-all ${targetBand === "6.5" ? 'bg-sky-500 text-white shadow' : 'text-slate-500 hover:text-slate-300'}`}
+                    >
+                      6.5
+                    </button>
+                    <button
+                      onClick={() => setTargetBand("7.0")}
+                      className={`py-1.5 text-xs font-extrabold rounded-lg transition-all ${targetBand === "7.0" ? 'bg-sky-500 text-white shadow' : 'text-slate-500 hover:text-slate-300'}`}
+                    >
+                      7.0
+                    </button>
+                    <button
+                      onClick={() => setTargetBand("7.5")}
+                      className={`py-1.5 text-xs font-extrabold rounded-lg transition-all ${targetBand === "7.5" ? 'bg-sky-500 text-white shadow' : 'text-slate-500 hover:text-slate-300'}`}
+                    >
+                      7.5+
+                    </button>
+                  </div>
+                </div>
+              )}
+
               {/* Speaking Speed */}
               <div className="space-y-2">
+
                 <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Tốc độ nói của AI:</label>
                 <div className="grid grid-cols-3 gap-2 bg-slate-950 p-1 rounded-xl border border-slate-800">
                   <button

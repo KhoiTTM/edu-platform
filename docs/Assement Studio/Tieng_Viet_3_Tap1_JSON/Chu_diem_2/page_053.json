@@ -1,0 +1,38 @@
+{
+  "page": 52,
+  "sections": [
+    {
+      "type": "nói_và_nghe",
+      "title": "Nói và nghe",
+      "content": "1. Nghe kể chuyện: Đội viên tương lai (Tuệ Nhi)",
+      "questions": [
+        {
+          "id": "1",
+          "question": "Chuyện gì đã xảy ra với tờ đơn xin vào Đội của Linh?"
+        },
+        {
+          "id": "2",
+          "question": "Linh đã làm gì để có tờ đơn sạch đẹp hơn?"
+        },
+        {
+          "id": "3",
+          "question": "Chuyện gì khiến Linh cảm thấy xấu hổ?"
+        },
+        {
+          "id": "4",
+          "question": "Vì sao Linh cảm thấy bất ngờ và vui vẻ?"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "2",
+          "instruction": "Dựa vào tranh và câu hỏi gợi ý, kể lại câu chuyện Đội viên tương lai."
+        },
+        {
+          "id": "3",
+          "instruction": "Nếu là Linh, khi phát hiện ra tờ đơn bị bẩn, em sẽ làm thế nào?"
+        }
+      ]
+    }
+  ]
+}

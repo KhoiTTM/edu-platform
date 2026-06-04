@@ -1,0 +1,27 @@
+{
+  "page": 176,
+  "chapter": "CHƯƠNG X: SINH SẢN Ở SINH VẬT",
+  "lesson_title": "Bài 42: Cơ thể sinh vật là một thể thống nhất",
+  "learning_objectives": [
+    "Chứng minh được cơ thể sinh vật là một thể thống nhất thông qua mối quan hệ giữa các hoạt động sống."
+  ],
+  "sections": [
+    {
+      "subtitle": "I. Mối quan hệ giữa các hoạt động sống trong cơ thể",
+      "content": "Các hoạt động sống như trao đổi chất, chuyển hoá năng lượng, cảm ứng, sinh trưởng, phát triển và sinh sản có mối quan hệ tác động qua lại lẫn nhau, đảm bảo cơ thể là một khối thống nhất."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "opening",
+      "content": "Tại sao khi một cơ quan trong cơ thể bị tổn thương thì các cơ quan khác cũng bị ảnh hưởng?"
+    },
+    {
+      "id": "2",
+      "type": "activity",
+      "content": "Hãy mô tả mối liên quan giữa quá trình trao đổi chất và năng lượng với các quá trình sống khác.",
+      "answer": "Trao đổi chất và năng lượng cung cấp nguyên liệu và năng lượng cho sinh trưởng, phát triển, cảm ứng và sinh sản. Ngược lại, các quá trình này lại tác động trở lại làm thay đổi cường độ trao đổi chất."
+    }
+  ]
+}

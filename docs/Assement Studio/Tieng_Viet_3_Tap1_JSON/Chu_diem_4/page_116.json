@@ -1,0 +1,38 @@
+{
+  "page": 115,
+  "sections": [
+    {
+      "type": "viết",
+      "exercises": [
+        {
+          "id": "2a",
+          "instruction": "Chọn ch hoặc tr thay cho ô vuông.",
+          "items": [
+            "Buổi trưa trên cao",
+            "Buổi chiều hiển hoà",
+            "Gà trgọi đấy (tạm hiểu)",
+            "Mặt trời tung nắng",
+            "Dung dăng dung dẻ",
+            "Mặt trời mau dậy",
+            "Đùa cùng mây",
+            "Mặt trời thỏ thẻ",
+            "Đỏ xinh chào"
+          ]
+        },
+        {
+          "id": "2b",
+          "instruction": "Quan sát tranh; tìm từ ngữ có chứa ăn hoặc ăng."
+        },
+        {
+          "id": "3",
+          "instruction": "Tìm thêm các từ ngữ có bắt đầu ch, tr (hoặc chứa ăn, ăng)."
+        }
+      ]
+    },
+    {
+      "type": "vận_dụng",
+      "title": "Vận dụng",
+      "content": "Kể lại một vài chi tiết em yêu thích trong câu chuyện Những bậc đá chạm mây cho người thân nghe."
+    }
+  ]
+}

@@ -4,8 +4,9 @@ import { createClient } from "@/lib/supabase/server";
 
 export async function getExamInfo(examId: string) {
   const supabase = await createClient();
-  const { data } = await supabase.from('exams').select('title').eq('id', examId).single();
-  return data?.title || "Bài Kiểm Tra";
+  const { data } = await supabase.from('exams').select('title, assessment_collections(subject_slug)').eq('id', examId).single();
+  const subjectSlug = (data?.assessment_collections as any)?.subject_slug || "toan";
+  return { title: data?.title || "Bài Kiểm Tra", subjectSlug };
 }
 
 export async function getExamQuestions(examId: string) {

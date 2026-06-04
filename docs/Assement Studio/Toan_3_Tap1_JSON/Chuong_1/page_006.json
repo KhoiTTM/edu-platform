@@ -1,0 +1,30 @@
+{
+  "page": 6,
+  "chapter": "Chủ đề 1: ÔN TẬP VÀ BỔ SUNG",
+  "lesson_title": "Bài 1. ÔN TẬP CÁC SỐ ĐẾN 1 000",
+  "exercises": [
+    {
+      "id": "1",
+      "instruction": "Nêu số và cách đọc số.",
+      "table": {
+        "headers": ["Trăm", "Chục", "Đơn vị", "Viết số", "Đọc số"],
+        "rows": [
+          {"tram": 1, "chuc": 3, "don_vi": 4, "viet_so": "134", "doc_so": "một trăm ba mươi tư"},
+          {"tram": 2, "chuc": 4, "don_vi": 5, "viet_so": "?", "doc_so": "?"},
+          {"tram": 3, "chuc": 0, "don_vi": 7, "viet_so": "?", "doc_so": "?"},
+          {"tram": "?", "chuc": "?", "don_vi": "?", "viet_so": "?", "doc_so": "hai trăm bảy mươi mốt"}
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "instruction": "Số ?",
+      "items": [
+        {"description": "Số gồm 3 trăm, 2 chục và 6 đơn vị.", "matching_number": "?"},
+        {"description": "Số gồm 5 trăm, 0 chục và 4 đơn vị.", "matching_number": "?"},
+        {"description": "Số gồm 7 trăm, 5 chục và 0 đơn vị.", "matching_number": "326"},
+        {"description": "Số gồm 9 trăm, 9 chục và 9 đơn vị.", "matching_number": "?"}
+      ]
+    }
+  ]
+}

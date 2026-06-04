@@ -1,0 +1,36 @@
+{
+  "page": 39,
+  "lesson_title": "TẠM BIỆT MÙA HÈ (tiếp theo)",
+  "sections": [
+    {
+      "type": "đọc",
+      "content": "Mùa hè của Diệu đơn giản lắm: Chiều nào Diệu cũng theo mẹ đi các mảnh vườn thu hái quả. Hết chôm chôm lại đến bơ, sấu. Được đến nhiều mảnh vườn với vô vàn cây trái khác nhau thật là thích!
+Mùa hè của Diệu là những lần đến chơi nhà bà cụ Khởi ở cuối làng. Bà bị mù nhưng vẫn có thể làm hết mọi việc trong nhà. Bà đi không cần gậy dò đường. Diệu thường tỉ tê trò chuyện với bà. Bà là cả một kho chuyện thú vị.
+Mùa hè của Diệu là những buổi ra chợ cùng mẹ. Khu chợ quê nghèo ấy thật giản dị mà gần gũi, thân quen. Diệu yêu những người cô, người bác tảo tần bán tôm, bán cua, mớ tép; yêu cả những người bà nào cũng dắt cháu đi mua một ít kẹo bột, vài chiếc bánh mì.
+Tạm biệt mùa hè, mai Diệu sẽ bước vào năm học mới.
+(Theo Vũ Thị Huyền Trang)"
+    },
+    {
+      "type": "đọc",
+      "title": "Câu hỏi",
+      "questions": [
+        {
+          "id": "q1",
+          "question": "Vì sao đêm trước ngày khai giảng, Diệu nằm mãi mà không ngủ được?"
+        },
+        {
+          "id": "q2",
+          "question": "Mùa hè, Diệu đã làm những gì?"
+        },
+        {
+          "id": "q3",
+          "question": "Nói về những trải nghiệm của Diệu trong mùa hè."
+        },
+        {
+          "id": "q4",
+          "question": "Em thích nhất trải nghiệm nào của Diệu trong mùa hè vừa qua? Vì sao?"
+        }
+      ]
+    }
+  ]
+}

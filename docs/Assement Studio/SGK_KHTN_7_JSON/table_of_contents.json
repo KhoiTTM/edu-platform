@@ -1,0 +1,103 @@
+{
+  "book_title": "Khoa học tự nhiên 7",
+  "series": "Kết nối tri thức với cuộc sống",
+  "publisher": "Nhà xuất bản Giáo dục Việt Nam",
+  "table_of_contents": [
+    {"title": "Hướng dẫn sử dụng sách", "page": 3},
+    {"title": "Lời nói đầu", "page": 4},
+    {"title": "Phương pháp và kĩ năng học tập môn Khoa học tự nhiên", "page": 7},
+    {
+      "chapter": "CHƯƠNG I: NGUYÊN TỬ. SƠ LƯỢC VỀ BẢNG TUẨN HOÀN CÁC NGUYÊN TỐ HOÁ HỌC",
+      "lessons": [
+        {"title": "Bài 1: Nguyên tử", "page": 11},
+        {"title": "Bài 2: Nguyên tố hoá học", "page": 16},
+        {"title": "Bài 3: Sơ lược về bảng tuần hoàn các nguyên tố hoá học", "page": 21}
+      ]
+    },
+    {
+      "chapter": "CHƯƠNG II: PHÂN TỬ. LIÊN KẾT HOÁ HỌC",
+      "lessons": [
+        {"title": "Bài 4: Sơ lược về phân tử", "page": 33},
+        {"title": "Bài 5: Đơn chất - Hợp chất", "page": 37},
+        {"title": "Bài 6: Giới thiệu về liên kết hoá học", "page": 41},
+        {"title": "Bài 7: Hoá trị và công thức hoá học", "page": 45}
+      ]
+    },
+    {
+      "chapter": "CHƯƠNG III: TỐC ĐỘ",
+      "lessons": [
+        {"title": "Bài 8: Tốc độ chuyển động", "page": 48},
+        {"title": "Bài 9: Đo tốc độ", "page": 52},
+        {"title": "Bài 10: Đồ thị quãng đường - thời gian", "page": 55},
+        {"title": "Bài 11: Thảo luận về ảnh hưởng của tốc độ trong an toàn giao thông", "page": 59}
+      ]
+    },
+    {
+      "chapter": "CHƯƠNG IV: ÂM THANH",
+      "lessons": [
+        {"title": "Bài 12: Sóng âm", "page": 62},
+        {"title": "Bài 13: Độ to và độ cao của âm", "page": 67},
+        {"title": "Bài 14: Phản xạ âm, chống ô nhiễm tiếng ồn", "page": 71}
+      ]
+    },
+    {
+      "chapter": "CHƯƠNG V: ÁNH SÁNG",
+      "lessons": [
+        {"title": "Bài 15: Năng lượng ánh sáng. Tia sáng, vùng tối", "page": 75},
+        {"title": "Bài 16: Sự phản xạ ánh sáng", "page": 79},
+        {"title": "Bài 17: Ảnh của vật qua gương phẳng", "page": 83}
+      ]
+    },
+    {
+      "chapter": "CHƯƠNG VI: TỪ",
+      "lessons": [
+        {"title": "Bài 18: Nam châm", "page": 86},
+        {"title": "Bài 19: Từ trường", "page": 90},
+        {"title": "Bài 20: Chế tạo nam châm điện đơn giản", "page": 93}
+      ]
+    },
+    {
+      "chapter": "CHƯƠNG VII: TRAO ĐỔI CHẤT VÀ CHUYỂN HOÁ NĂNG LƯỢNG Ở SINH VẬT",
+      "lessons": [
+        {"title": "Bài 21: Khái quát về trao đổi chất và chuyển hoá năng lượng", "page": 96},
+        {"title": "Bài 22: Quang hợp ở thực vật", "page": 100},
+        {"title": "Bài 23: Một số yếu tố ảnh hưởng đến quang hợp", "page": 104},
+        {"title": "Bài 24: Thực hành: Chứng minh quang hợp ở cây xanh", "page": 107},
+        {"title": "Bài 25: Hô hấp tế bào", "page": 110},
+        {"title": "Bài 26: Một số yếu tố ảnh hưởng đến hô hấp tế bào", "page": 114},
+        {"title": "Bài 27: Thực hành: Hô hấp ở thực vật", "page": 117},
+        {"title": "Bài 28: Trao đổi khí ở sinh vật", "page": 120},
+        {"title": "Bài 29: Vai trò của nước và chất dinh dưỡng đối với sinh vật", "page": 124},
+        {"title": "Bài 30: Trao đổi nước và chất dinh dưỡng ở thực vật", "page": 128},
+        {"title": "Bài 31: Trao đổi nước và chất dinh dưỡng ở động vật", "page": 131},
+        {"title": "Bài 32: Thực hành: Chứng minh thân vận chuyển nước và lá thoát hơi nước", "page": 137}
+      ]
+    },
+    {
+      "chapter": "CHƯƠNG VIII: CẢM ỨNG Ở SINH VẬT",
+      "lessons": [
+        {"title": "Bài 33: Cảm ứng ở sinh vật và tập tính ở động vật", "page": 142},
+        {"title": "Bài 34: Vận dụng hiện tượng cảm ứng ở sinh vật vào thực tiễn", "page": 146},
+        {"title": "Bài 35: Thực hành: Cảm ứng ở sinh vật", "page": 149}
+      ]
+    },
+    {
+      "chapter": "CHƯƠNG IX: SINH TRƯỞNG VÀ PHÁT TRIỂN Ở SINH VẬT",
+      "lessons": [
+        {"title": "Bài 36: Khái quát về sinh trưởng và phát triển ở sinh vật", "page": 151},
+        {"title": "Bài 37: Vận dụng sinh trưởng và phát triển ở sinh vật vào thực tiễn", "page": 155},
+        {"title": "Bài 38: Thực hành: Quan sát, mô tả sự sinh trưởng và phát triển ở một số sinh vật", "page": 159}
+      ]
+    },
+    {
+      "chapter": "CHƯƠNG X: SINH SẢN Ở SINH VẬT",
+      "lessons": [
+        {"title": "Bài 39: Sinh sản vô tính ở sinh vật", "page": 165},
+        {"title": "Bài 40: Sinh sản hữu tính ở sinh vật", "page": 168},
+        {"title": "Bài 41: Một số yếu tố ảnh hưởng và điều hoà, điều khiển sinh sản ở sinh vật", "page": 173},
+        {"title": "Bài 42: Cơ thể sinh vật là một thể thống nhất", "page": 176}
+      ]
+    },
+    {"title": "Giải thích một số thuật ngữ", "page": 179}
+  ]
+}

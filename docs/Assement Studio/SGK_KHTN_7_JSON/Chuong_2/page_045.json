@@ -1,0 +1,18 @@
+{
+  "page": 45,
+  "sections": [
+    {
+      "title": "3. Lập công thức hoá học của hợp chất",
+      "content": "Các bước lập công thức hoá học của hợp chất hai nguyên tố khi biết hoá trị:\n- Bước 1: Đặt công thức hoá học dạng chung $A_x B_y$.\n- Bước 2: Áp dụng quy tắc hoá trị: $x \times \text{hoá trị của } A = y \times \text{hoá trị của } B$.\n- Bước 3: Chuyển biểu thức này thành tỉ lệ: $\frac{x}{y} = \frac{\text{hoá trị của } B}{\text{hoá trị của } A} = \frac{b'}{a'}$.\n- Bước 4: Chọn x, y là những số nguyên đơn giản nhất (thường là b' và a').",
+      "example": {
+        "title": "Ví dụ: Lập công thức hoá học của hợp chất tạo bởi carbon có hoá trị IV và oxygen có hoá trị II.",
+        "steps": [
+          "Đặt công thức hoá học dạng chung: $C_x O_y$.",
+          "Theo quy tắc hoá trị: $x \times IV = y \times II$.",
+          "Chuyển thành tỉ lệ: $\frac{x}{y} = \frac{II}{IV} = \frac{1}{2}$.",
+          "Chọn x = 1, y = 2. Công thức hoá học là $CO_2$."
+        ]
+      }
+    }
+  ]
+}

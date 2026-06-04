@@ -1,0 +1,32 @@
+{
+  "page": 151,
+  "chapter": "CHƯƠNG IX: SINH TRƯỞNG VÀ PHÁT TRIỂN Ở SINH VẬT",
+  "lesson_title": "Bài 36: Khái quát về sinh trưởng và phát triển ở sinh vật",
+  "learning_objectives": [
+    "Phát biểu được khái niệm sinh trưởng và phát triển ở sinh vật.",
+    "Nêu được mối quan hệ giữa sinh trưởng và phát triển.",
+    "Chỉ ra được các nhân tố ảnh hưởng đến sinh trưởng và phát triển của sinh vật."
+  ],
+  "sections": [
+    {
+      "subtitle": "I. Khái niệm sinh trưởng và phát triển",
+      "subsections": [
+        {
+          "title": "1. Sinh trưởng",
+          "content": "Sinh trưởng là sự tăng về kích thước và khối lượng của cơ thể do sự tăng lên về số lượng và kích thước tế bào."
+        },
+        {
+          "title": "2. Phát triển",
+          "content": "Phát triển là những biến đổi của cơ thể bao gồm sinh trưởng, phân hoá tế bào và phát sinh hình thái cơ quan, cơ thể."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "opening",
+      "content": "Từ một hạt cam nhỏ bé sau khi gieo xuống đất có thể phát triển thành một cây cam to lớn. Đó là nhờ quá trình nào?"
+    }
+  ]
+}

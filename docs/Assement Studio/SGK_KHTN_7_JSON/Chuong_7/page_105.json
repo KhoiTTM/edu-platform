@@ -1,0 +1,21 @@
+{
+  "page": 105,
+  "sections": [
+    {
+      "title": "3. Nước",
+      "content": "Nước vừa là nguyên liệu trực tiếp của quang hợp, vừa tham gia vào việc điều tiết sự đóng mở khí khổng để trao đổi khí. Khi cây thiếu nước, cường độ quang hợp giảm mạnh."
+    },
+    {
+      "title": "4. Nhiệt độ",
+      "content": "Quang hợp thường diễn ra tốt nhất ở nhiệt độ từ $25^\\circ C$ đến $35^\\circ C$. Khi nhiệt độ quá cao (trên $40^\\circ C$) hoặc quá thấp (dưới $0^\\circ C$), quá trình quang hợp sẽ bị giảm hoặc ngừng hẳn."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Tại sao trong nông nghiệp, người ta thường trồng xen canh các loại cây ưa sáng và cây ưa bóng?",
+      "answer": "Để tận dụng tối đa diện tích đất, nguồn nước và đặc biệt là ánh sáng ở các tầng khác nhau, giúp tăng năng suất cây trồng trên cùng một đơn vị diện tích."
+    }
+  ]
+}

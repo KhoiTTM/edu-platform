@@ -10,6 +10,7 @@ interface MultipleChoiceRendererProps {
   explanation?: string | null;
   onAnswer: (isCorrect: boolean, answer: string) => void;
   disabled?: boolean;
+  shuffle?: boolean;
 }
 
 export function MultipleChoiceRenderer({
@@ -17,22 +18,28 @@ export function MultipleChoiceRenderer({
   options,
   correctIndex,
   onAnswer,
-  disabled = false
+  disabled = false,
+  shuffle = true
 }: MultipleChoiceRendererProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [shuffledOptions, setShuffledOptions] = useState<string[]>([]);
   const [actualCorrectIndex, setActualCorrectIndex] = useState<number>(0);
+  const [initialized, setInitialized] = useState(false);
 
   useEffect(() => {
+    if (initialized) return;
     const arr = options.map((opt, i) => ({ opt, isCorrect: i === correctIndex }));
-    for (let i = arr.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [arr[i], arr[j]] = [arr[j], arr[i]];
+    if (shuffle) {
+      for (let i = arr.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
     }
     setShuffledOptions(arr.map(a => a.opt));
     setActualCorrectIndex(arr.findIndex(a => a.isCorrect));
     setSelectedIndex(null);
-  }, [options, correctIndex]);
+    setInitialized(true);
+  }, [options, correctIndex, initialized, shuffle]);
 
   const handleSelect = (idx: number) => {
     if (disabled) return;

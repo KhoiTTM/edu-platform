@@ -1,0 +1,23 @@
+{
+  "page": 15,
+  "chapter": "CHƯƠNG I: NGUYÊN TỬ. SƠ LƯỢC VỀ BẢNG TUẨN HOÀN CÁC NGUYÊN TỐ HOÁ HỌC",
+  "lesson_title": "Bài 2: Nguyên tố hoá học",
+  "learning_objectives": [
+    "Phát biểu được khái niệm về nguyên tố hoá học và kí hiệu hoá học.",
+    "Viết được kí hiệu hoá học và đọc được tên của 20 nguyên tố đầu tiên."
+  ],
+  "sections": [
+    {
+      "subtitle": "I. Nguyên tố hoá học là gì?",
+      "content": "- Tập hợp các nguyên tử có cùng số proton trong hạt nhân được gọi là cùng một nguyên tố hoá học.\n- Các nguyên tử của cùng một nguyên tố hoá học đều có tính chất hoá học giống nhau."
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "type": "activity",
+      "content": "Hãy cho biết những hạt nhân nguyên tử nào dưới đây thuộc cùng một nguyên tố hoá học:\n- Nguyên tử A: 6 proton, 6 neutron.\n- Nguyên tử B: 7 proton, 7 neutron.\n- Nguyên tử C: 6 proton, 7 neutron.\n- Nguyên tử D: 8 proton, 8 neutron.",
+      "answer": "Nguyên tử A và C vì đều có 6 proton trong hạt nhân."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "page": 50,
+  "questions": [
+    {
+      "id": "1",
+      "type": "exercise",
+      "content": "Một người đi xe đạp đi được quãng đường 12 km trong 1 giờ. Tốc độ của người đi xe đạp là bao nhiêu?",
+      "answer": "$v = s/t = 12 / 1 = 12$ (km/h)."
+    },
+    {
+      "id": "2",
+      "type": "exercise",
+      "content": "Đổi các tốc độ sau ra đơn vị m/s:\na) 36 km/h.\nb) 54 km/h.",
+      "answer": "a) 36 km/h = 36 / 3,6 = 10 m/s.\nb) 54 km/h = 54 / 3,6 = 15 m/s."
+    }
+  ],
+  "key_points": [
+    "Tốc độ là đại lượng cho biết mức độ nhanh hay chậm của chuyển động.",
+    "Công thức tính tốc độ: $v = s/t$.",
+    "Đơn vị đo tốc độ thường dùng là m/s và km/h."
+  ]
+}

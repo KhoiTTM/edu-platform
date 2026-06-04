@@ -1,0 +1,52 @@
+{
+  "page": 12,
+  "exercises": [
+    {
+      "id": "2",
+      "instruction": "Số ?",
+      "table": {
+        "headers": ["Số hạng", "Số hạng", "Tổng"],
+        "rows": [
+          {"so_hang_1": 18, "so_hang_2": 12, "tong": 30},
+          {"so_hang_1": "?", "so_hang_2": 16, "tong": 38},
+          {"so_hang_1": 21, "so_hang_2": "?", "tong": 54},
+          {"so_hang_1": "?", "so_hang_2": 18, "tong": 40},
+          {"so_hang_1": 60, "so_hang_2": "?", "tong": 170}
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "problem_text": "Hai bến đò có tất cả 65 thuyền để chở khách đi tham quan, trong đó bến thứ nhất có 40 thuyền. Hỏi bến thứ hai có bao nhiêu thuyền?"
+    }
+  ],
+  "sections": [
+    {
+      "type": "khám_phá",
+      "title": "Tìm số bị trừ, số trừ",
+      "sub_sections": [
+        {
+          "id": "a",
+          "title": "Tìm số bị trừ",
+          "content": "Việt có một số viên bi, Việt đã cho bạn 5 viên, còn lại 3 viên bi. Hỏi lúc đầu Việt có bao nhiêu viên bi?",
+          "logic": [
+            "Số bi lúc đầu Việt có bằng tổng số bi còn lại và số bi đã cho.",
+            "Số bi Việt có là: 3 + 5 = 8 (viên)."
+          ],
+          "formula": "? - 5 = 3",
+          "rule": "Muốn tìm số bị trừ, ta lấy hiệu cộng với số trừ."
+        },
+        {
+          "id": "b",
+          "title": "Tìm số trừ",
+          "content": "Nam có 8 viên bi, Nam cho bạn một số bi và còn lại 3 viên. Hỏi Nam đã cho bạn mấy viên bi?",
+          "logic": [
+            "Nam cho bạn số viên bi là: 8 - 3 = 5 (viên)."
+          ],
+          "formula": "8 - ? = 3",
+          "rule": "Muốn tìm số trừ, ta lấy số bị trừ trừ đi hiệu."
+        }
+      ]
+    }
+  ]
+}

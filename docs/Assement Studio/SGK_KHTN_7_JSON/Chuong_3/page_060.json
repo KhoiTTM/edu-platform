@@ -1,0 +1,33 @@
+{
+  "page": 60,
+  "sections": [
+    {
+      "subtitle": "II. Một số biển báo giao thông",
+      "content": "Biển báo tốc độ dùng để quy định tốc độ tối đa hoặc tối thiểu mà các phương tiện được phép lưu thông.",
+      "signs": [
+        {
+          "type": "Biển báo tốc độ tối đa cho phép",
+          "description": "Hình tròn, viền đỏ, nền trắng, số đen ở giữa (ví dụ: số 50 nghĩa là không được đi quá 50 km/h)."
+        },
+        {
+          "type": "Biển báo tốc độ tối thiểu cho phép",
+          "description": "Hình tròn, nền xanh, số trắng ở giữa (ví dụ: số 60 nghĩa là không được đi chậm hơn 60 km/h)."
+        }
+      ]
+    },
+    {
+      "subtitle": "III. Khoảng cách an toàn giữa hai xe",
+      "content": "Khi lưu thông trên đường, người điều khiển phải giữ một khoảng cách an toàn với xe chạy liền trước để có đủ thời gian và quãng đường xử lí khi có tình huống bất ngờ xảy ra."
+    }
+  ],
+  "table": {
+    "title": "Bảng 11.1. Khoảng cách an toàn tối thiểu (theo Thông tư 31/2019/TT-BGTVT)",
+    "headers": ["Tốc độ lưu hành v (km/h)", "Khoảng cách an toàn tối thiểu d (m)"],
+    "rows": [
+      ["v \u2264 60", "35"],
+      ["60 < v \u2264 80", "55"],
+      ["80 < v \u2264 100", "70"],
+      ["100 < v \u2264 120", "100"]
+    ]
+  }
+}

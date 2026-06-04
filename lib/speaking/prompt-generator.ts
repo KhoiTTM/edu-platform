@@ -73,3 +73,59 @@ Please start the session now by greeting me appropriately, and then proceed to t
 
   return basePrompt;
 }
+
+/**
+ * Generates a strictly controlled IELTS Speaking prompt for Gemini/ChatGPT.
+ * Enforces the "Curriculum Controls AI" principle.
+ */
+export function generateIeltsPrompt(
+  unitTopic: string, 
+  part: 1 | 2 | 3, 
+  targetBand: string,
+  lessonSummary?: string,
+  keyVocab?: string[]
+): string {
+  const partGuidelines = {
+    1: `PART 1: Introduction and Interview (4-5 minutes).
+- Focus: General questions about familiar topics (Hometown, Work, Studies, etc.).
+- Your Task: Ask me 3-4 questions about "${unitTopic}". 
+- Rule: Ask ONE question at a time and wait for my response.`,
+    2: `PART 2: Individual Long Turn (3-4 minutes).
+- Focus: You provide a cue card topic and I must talk for 1-2 minutes.
+- Your Task: Provide a clear Cue Card about "${unitTopic}" with 3-4 specific points to cover.
+- Rule: Tell me I have 1 minute to prepare. Wait for me to say I'm ready or wait exactly 60 seconds if we were in a live voice session (but here, just wait for my signal).`,
+    3: `PART 3: Two-way Discussion (4-5 minutes).
+- Focus: Abstract questions related to the topic in Part 2.
+- Your Task: Ask me complex, analytical questions about "${unitTopic}" in a broader social context.
+- Rule: Push me to expand my answers and use academic vocabulary.`
+  };
+
+  const bandPersona = {
+    "6.5": "Expect some complex sentences but frequent minor errors. Help me transition to Band 7 by correcting my word choice.",
+    "7.0": "I can speak at length. Focus your feedback on idiomatic expressions and precision.",
+    "7.5": "I am highly fluent. Challenge me with very abstract follow-up questions to reach Band 8.0."
+  };
+
+  const curriculumGrounding = lessonSummary || (keyVocab && keyVocab.length > 0)
+    ? `\n[CURRICULUM CONTEXT]
+${lessonSummary ? `- Lesson Summary: ${lessonSummary}` : ""}
+${keyVocab && keyVocab.length > 0 ? `- Key Vocabulary to encourage: ${keyVocab.join(", ")}` : ""}
+` : "";
+
+  return `You are an expert IELTS Examiner. I am your candidate. 
+We are practicing for the IELTS Speaking Test, specifically ${part === 1 ? 'Part 1' : part === 2 ? 'Part 2' : 'Part 3'}.
+
+TOPIC: "${unitTopic}"
+MY TARGET BAND: ${targetBand}
+${bandPersona[targetBand as keyof typeof bandPersona] || ""}${curriculumGrounding}
+
+STRICT OPERATIONAL RULES:
+1. NO MULTI-QUESTIONS: For Parts 1 and 3, ask exactly ONE short question at a time.
+2. FEEDBACK FIRST: After I speak, provide a brief (15-20 words) correction or tip for my last answer BEFORE asking the next question.
+3. STAY IN CHARACTER: Do not say "As an AI..." or "I am a language model". You ARE the examiner.
+4. USE TOPIC CONTEXT: Focus your questions on "${unitTopic}".
+
+Please begin the session now by introducing the section and asking the first question (or providing the cue card if Part 2).`;
+}
+
+

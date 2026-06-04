@@ -1,0 +1,33 @@
+{
+  "page": 67,
+  "lesson_title": "BÀI 23: NHÂN SỐ CÓ HAI CHỮ SỐ VỚI SỐ CÓ MỘT CHỮ SỐ",
+  "sections": [
+    {
+      "type": "khám_phá",
+      "content": "Mỗi hộp có 12 chiếc bút màu. Hỏi 3 hộp có bao nhiêu chiếc bút màu?",
+      "logic": [
+        "12 + 12 + 12 = 36",
+        "12 x 3 = ?",
+        "12 x 3 = 36",
+        "Cách đặt tính rồi tính:",
+        "3 nhân 2 bằng 6, viết 6.",
+        "3 nhân 1 bằng 3, viết 3.",
+        "12 x 3 = 36"
+      ]
+    },
+    {
+      "type": "hoạt_động",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Tính.",
+          "items": [
+            { "id": "a", "text": "34 x 2" },
+            { "id": "b", "text": "13 x 3" },
+            { "id": "c", "text": "11 x 7" }
+          ]
+        }
+      ]
+    }
+  ]
+}

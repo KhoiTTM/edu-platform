@@ -1,0 +1,54 @@
+{
+  "page": 101,
+  "sections": [
+    {
+      "type": "đọc",
+      "author": "(Dương Thụy)",
+      "content": "Từ trước đến nay, ông luôn là người dắt dẫn nó đi, là người bảo vệ nó. Đây là lần đầu tiên Dương nhận ra ông không còn khỏe như trước. Mỗi một ngày trôi qua, ông sẽ già đi, còn nó sẽ mạnh mẽ hơn. Dương choàng tay ôm ông, thủ thỉ:\n- Ngoại ơi, cháu yêu ông nhiều lắm!\nDương nghĩ, từ bây giờ nó mới là người đưa tay cho ông nắm."
+    },
+    {
+      "type": "luyện_từ_và_câu",
+      "title": "Từ ngữ",
+      "content": "Tháp Bà Pô-na-ga: công trình kiến trúc tiêu biểu của văn hóa Chăm Pa ở Nha Trang.\nChạm trổ: khắc, đục lên bề mặt gỗ, đá để trang trí.\nTinh xảo: tinh vi, tỉ mỉ, khéo léo.\nChần chừ: đắn đo do dự, chưa quyết tâm ngay để làm một việc gì đó."
+    },
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "1",
+          "question": "Điểm tham quan cuối cùng của gia đình Dương là ở đâu?"
+        },
+        {
+          "id": "2",
+          "question": "Tìm những chi tiết cho thấy ông ngoại ngắm ngôi đền rất kĩ và đầy xúc động."
+        },
+        {
+          "id": "3",
+          "question": "Dương đã thay đổi những suy nghĩ về ông như thế nào?",
+          "options": [
+            "Trước khi đi du lịch, Dương nghĩ (...)",
+            "Trong khi đi du lịch, Dương nhận ra (...)"
+          ]
+        },
+        {
+          "id": "4",
+          "question": "Theo em, vì sao Dương nghĩ từ bây giờ mình mới là người đưa tay cho ông nắm?"
+        }
+      ]
+    },
+    {
+      "type": "viết",
+      "title": "VIẾT",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Ôn chữ viết hoa: G, Y. Viết tên riêng: Khánh Hòa."
+        },
+        {
+          "id": "2",
+          "instruction": "Viết câu: Khánh Hòa là xứ trầm hương / Non xanh nước biếc người thương đi về. (Ca dao)"
+        }
+      ]
+    }
+  ]
+}

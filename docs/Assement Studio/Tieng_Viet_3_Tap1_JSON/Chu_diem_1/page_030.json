@@ -1,0 +1,32 @@
+{
+  "page": 29,
+  "sections": [
+    {
+      "type": "viết",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Nghe - viết: Mặt trời nhỏ",
+          "items": [
+            "Chào mặt trời nhỏ\\nThắp lửa trên cây\\nMá đỏ hây hây\\nĐung đưa trưa nắng.\\n\\nGọi ong ủ mật\\nRủ ve chơi đàn\\nTu hú kêu vang\\nMùa hè rực rỡ.\\n\\nQuả tròn cùi trắng\\nHạt bé màu nâu\\nÁo đỏ mặt bầu\\nRủ nhau gà gật.\\n\\nMặt trời hớn hở\\nĐếm bạn cùng chơi\\nBối rối phì cười\\n\\\"Ôi sao nhiều thế!\\\"\\n(Mỹ Linh)"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Chọn ng hoặc ngh thay cho ô vuông:",
+          "items": [
+            "Vui sao đàn [...]é con\\nMiệng chúng cười mủm mỉm\\nMắt chúng [...]ác tròn\\nNhìn tay [...]ười giơ đếm\\n(Theo Huy Cận)"
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Tìm và viết từ ngữ có tiếng bắt đầu bằng ng hoặc ngh chỉ hoạt động của các bạn nhỏ trong tranh."
+        },
+        {
+          "id": "4",
+          "instruction": "Viết 2 - 3 câu ghi lại những việc em đã làm trong ngày hôm nay."
+        }
+      ]
+    }
+  ]
+}

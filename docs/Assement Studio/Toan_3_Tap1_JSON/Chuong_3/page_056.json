@@ -1,0 +1,18 @@
+{
+  "page": 56,
+  "lesson_title": "BÀI 19: HÌNH TAM GIÁC, HÌNH TỨ GIÁC. HÌNH CHỮ NHẬT, HÌNH VUÔNG",
+  "sections": [
+    {
+      "type": "khám_phá",
+      "title": "Hình tam giác, hình tứ giác",
+      "content": "Minh họa Rô-bốt và các bạn nhỏ thảo luận về hình tam giác và hình tứ giác. Rô-bốt nói: \"Điểm A là một đỉnh, đoạn AB là một cạnh của hình tam giác.\" Bạn nữ nói: \"Tớ vẽ hình tam giác này.\" Bạn nam hỏi: \"Một hình tam giác có mấy đỉnh và mấy cạnh nhỉ?\"",
+      "logic": [
+        "Hình tam giác ABC có: 3 đỉnh là: A, B, C; 3 cạnh là: AB, BC, CA.",
+        "Hình tứ giác MNPQ có: 4 đỉnh là: M, N, P, Q; 4 cạnh là: MN, NP, PQ, QM.",
+        "Hình tam giác có 3 đỉnh và 3 cạnh.",
+        "Hình tứ giác có 4 đỉnh và 4 cạnh."
+      ],
+      "visual_elements": "Hình tam giác ABC với các đỉnh A, B, C. Hình tứ giác MNPQ với các đỉnh M, N, P, Q."
+    }
+  ]
+}
