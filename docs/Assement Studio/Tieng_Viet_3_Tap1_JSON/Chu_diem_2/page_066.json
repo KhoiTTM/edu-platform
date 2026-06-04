@@ -8,7 +8,12 @@
         {
           "id": "1",
           "instruction": "Quan sát tranh và đóng vai bạn nhỏ để giới thiệu về bạn ấy.",
-          "items": ["Tớ tên là (...)", "Tớ sinh ngày (...)", "năm nay tớ (...) tuổi.", "Sở thích của tớ là (...)."]
+          "items": [
+            "Tớ tên là (...)",
+            "Tớ sinh ngày (...)",
+            "năm nay tớ (...) tuổi.",
+            "Sở thích của tớ là (...)."
+          ]
         },
         {
           "id": "2",
@@ -25,9 +30,7 @@
     {
       "type": "vận_dụng",
       "instruction": "Tìm đọc một số câu đố về đồ dùng học tập hoặc những đồ vật khác ở trường. Ví dụ:",
-      "content": "Ngăn nhỏ rồi lại ngăn to
-Đựng vở, đựng bút, đựng kho sách đầy.
-(Là cái gì?)"
+      "content": "Ngăn nhỏ rồi lại ngăn to\nĐựng vở, đựng bút, đựng kho sách đầy.\n(Là cái gì?)"
     }
   ]
 }

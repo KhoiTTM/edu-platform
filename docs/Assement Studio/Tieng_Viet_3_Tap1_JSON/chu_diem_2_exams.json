@@ -1,0 +1,2966 @@
+{
+  "meta": {
+    "subject": "Tiếng Việt 3 - Tập 1",
+    "version": "1.0.0",
+    "created": "2026-06-04",
+    "topic": "Chủ điểm 2: Mái trường mến yêu",
+    "question_types": [
+      "multiple_choice",
+      "true_false",
+      "fill_blank",
+      "matching",
+      "sorting",
+      "classification"
+    ],
+    "difficulty_levels": [
+      "easy",
+      "medium",
+      "hard"
+    ],
+    "scoring": {
+      "easy": 5,
+      "medium": 10,
+      "hard": 15,
+      "streak_bonus_multiplier": 2,
+      "hint_cost_coins": 1
+    }
+  },
+  "exams": [
+    {
+      "id": "exam_cd2_bai9",
+      "title": "Đề thi Bài 9: Đi học vui sao",
+      "description": "Đề thi trắc nghiệm và tự luận cho Đề thi Bài 9: Đi học vui sao",
+      "questions": [
+        {
+          "id": "e2_q1",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 5,
+          "question": "Câu hỏi 1 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q2",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 5,
+          "question": "Câu hỏi 2 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q3",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 5,
+          "question": "Câu hỏi 3 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q4",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 5,
+          "question": "Câu hỏi 4 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q5",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 5,
+          "question": "Câu hỏi 5 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q6",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 5,
+          "question": "Câu hỏi 6 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q7",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 5,
+          "question": "Câu hỏi 7 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q8",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 10,
+          "question": "Câu hỏi 8 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q9",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 10,
+          "question": "Câu hỏi 9 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q10",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 10,
+          "question": "Câu hỏi 10 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q11",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 10,
+          "question": "Câu hỏi 11 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q12",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 10,
+          "question": "Câu hỏi 12 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q13",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 10,
+          "question": "Câu hỏi 13 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q14",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 10,
+          "question": "Câu hỏi 14 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q15",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 15,
+          "question": "Câu hỏi 15 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q16",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 15,
+          "question": "Câu hỏi 16 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q17",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 15,
+          "question": "Câu hỏi 17 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q18",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 15,
+          "question": "Câu hỏi 18 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q19",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 15,
+          "question": "Câu hỏi 19 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q20",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 9: Đi học vui sao",
+          "points": 15,
+          "question": "Câu hỏi 20 cho bài Bài 9: Đi học vui sao",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 9: Đi học vui sao",
+          "correct_answer": "Đáp án A"
+        }
+      ]
+    },
+    {
+      "id": "exam_cd2_bai10",
+      "title": "Đề thi Bài 10: Con đường đến trường",
+      "description": "Đề thi trắc nghiệm và tự luận cho Đề thi Bài 10: Con đường đến trường",
+      "questions": [
+        {
+          "id": "e2_q21",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 5,
+          "question": "Câu hỏi 1 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q22",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 5,
+          "question": "Câu hỏi 2 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q23",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 5,
+          "question": "Câu hỏi 3 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q24",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 5,
+          "question": "Câu hỏi 4 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q25",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 5,
+          "question": "Câu hỏi 5 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q26",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 5,
+          "question": "Câu hỏi 6 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q27",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 5,
+          "question": "Câu hỏi 7 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q28",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 10,
+          "question": "Câu hỏi 8 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q29",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 10,
+          "question": "Câu hỏi 9 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q30",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 10,
+          "question": "Câu hỏi 10 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q31",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 10,
+          "question": "Câu hỏi 11 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q32",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 10,
+          "question": "Câu hỏi 12 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q33",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 10,
+          "question": "Câu hỏi 13 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q34",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 10,
+          "question": "Câu hỏi 14 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q35",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 15,
+          "question": "Câu hỏi 15 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q36",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 15,
+          "question": "Câu hỏi 16 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q37",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 15,
+          "question": "Câu hỏi 17 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q38",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 15,
+          "question": "Câu hỏi 18 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q39",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 15,
+          "question": "Câu hỏi 19 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q40",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 10: Con đường đến trường",
+          "points": 15,
+          "question": "Câu hỏi 20 cho bài Bài 10: Con đường đến trường",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 10: Con đường đến trường",
+          "correct_answer": "Đáp án A"
+        }
+      ]
+    },
+    {
+      "id": "exam_cd2_bai11",
+      "title": "Đề thi Bài 11: Lời giải toán đặc biệt",
+      "description": "Đề thi trắc nghiệm và tự luận cho Đề thi Bài 11: Lời giải toán đặc biệt",
+      "questions": [
+        {
+          "id": "e2_q41",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 5,
+          "question": "Câu hỏi 1 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q42",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 5,
+          "question": "Câu hỏi 2 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q43",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 5,
+          "question": "Câu hỏi 3 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q44",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 5,
+          "question": "Câu hỏi 4 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q45",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 5,
+          "question": "Câu hỏi 5 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q46",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 5,
+          "question": "Câu hỏi 6 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q47",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 5,
+          "question": "Câu hỏi 7 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q48",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 10,
+          "question": "Câu hỏi 8 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q49",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 10,
+          "question": "Câu hỏi 9 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q50",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 10,
+          "question": "Câu hỏi 10 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q51",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 10,
+          "question": "Câu hỏi 11 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q52",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 10,
+          "question": "Câu hỏi 12 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q53",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 10,
+          "question": "Câu hỏi 13 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q54",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 10,
+          "question": "Câu hỏi 14 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q55",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 15,
+          "question": "Câu hỏi 15 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q56",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 15,
+          "question": "Câu hỏi 16 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q57",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 15,
+          "question": "Câu hỏi 17 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q58",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 15,
+          "question": "Câu hỏi 18 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q59",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 15,
+          "question": "Câu hỏi 19 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q60",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 11: Lời giải toán đặc biệt",
+          "points": 15,
+          "question": "Câu hỏi 20 cho bài Bài 11: Lời giải toán đặc biệt",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 11: Lời giải toán đặc biệt",
+          "correct_answer": "Đáp án A"
+        }
+      ]
+    },
+    {
+      "id": "exam_cd2_bai12",
+      "title": "Đề thi Bài 12: Bài tập làm văn",
+      "description": "Đề thi trắc nghiệm và tự luận cho Đề thi Bài 12: Bài tập làm văn",
+      "questions": [
+        {
+          "id": "e2_q61",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 5,
+          "question": "Câu hỏi 1 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q62",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 5,
+          "question": "Câu hỏi 2 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q63",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 5,
+          "question": "Câu hỏi 3 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q64",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 5,
+          "question": "Câu hỏi 4 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q65",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 5,
+          "question": "Câu hỏi 5 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q66",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 5,
+          "question": "Câu hỏi 6 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q67",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 5,
+          "question": "Câu hỏi 7 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q68",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 10,
+          "question": "Câu hỏi 8 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q69",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 10,
+          "question": "Câu hỏi 9 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q70",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 10,
+          "question": "Câu hỏi 10 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q71",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 10,
+          "question": "Câu hỏi 11 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q72",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 10,
+          "question": "Câu hỏi 12 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q73",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 10,
+          "question": "Câu hỏi 13 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q74",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 10,
+          "question": "Câu hỏi 14 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q75",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 15,
+          "question": "Câu hỏi 15 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q76",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 15,
+          "question": "Câu hỏi 16 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q77",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 15,
+          "question": "Câu hỏi 17 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q78",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 15,
+          "question": "Câu hỏi 18 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q79",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 15,
+          "question": "Câu hỏi 19 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q80",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 12: Bài tập làm văn",
+          "points": 15,
+          "question": "Câu hỏi 20 cho bài Bài 12: Bài tập làm văn",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 12: Bài tập làm văn",
+          "correct_answer": "Đáp án A"
+        }
+      ]
+    },
+    {
+      "id": "exam_cd2_bai13",
+      "title": "Đề thi Bài 13: Bàn tay cô giáo",
+      "description": "Đề thi trắc nghiệm và tự luận cho Đề thi Bài 13: Bàn tay cô giáo",
+      "questions": [
+        {
+          "id": "e2_q1",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 5,
+          "question": "Câu hỏi 1 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q2",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 5,
+          "question": "Câu hỏi 2 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q3",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 5,
+          "question": "Câu hỏi 3 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q4",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 5,
+          "question": "Câu hỏi 4 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q5",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 5,
+          "question": "Câu hỏi 5 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q6",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 5,
+          "question": "Câu hỏi 6 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q7",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 5,
+          "question": "Câu hỏi 7 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q8",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 10,
+          "question": "Câu hỏi 8 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q9",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 10,
+          "question": "Câu hỏi 9 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q10",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 10,
+          "question": "Câu hỏi 10 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q11",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 10,
+          "question": "Câu hỏi 11 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q12",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 10,
+          "question": "Câu hỏi 12 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q13",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 10,
+          "question": "Câu hỏi 13 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q14",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 10,
+          "question": "Câu hỏi 14 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q15",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 15,
+          "question": "Câu hỏi 15 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q16",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 15,
+          "question": "Câu hỏi 16 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q17",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 15,
+          "question": "Câu hỏi 17 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q18",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 15,
+          "question": "Câu hỏi 18 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q19",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 15,
+          "question": "Câu hỏi 19 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q20",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 13: Bàn tay cô giáo",
+          "points": 15,
+          "question": "Câu hỏi 20 cho bài Bài 13: Bàn tay cô giáo",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 13: Bàn tay cô giáo",
+          "correct_answer": "Đáp án A"
+        }
+      ]
+    },
+    {
+      "id": "exam_cd2_bai14",
+      "title": "Đề thi Bài 14: Cuộc họp của chữ viết",
+      "description": "Đề thi trắc nghiệm và tự luận cho Đề thi Bài 14: Cuộc họp của chữ viết",
+      "questions": [
+        {
+          "id": "e2_q21",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 5,
+          "question": "Câu hỏi 1 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q22",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 5,
+          "question": "Câu hỏi 2 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q23",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 5,
+          "question": "Câu hỏi 3 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q24",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 5,
+          "question": "Câu hỏi 4 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q25",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 5,
+          "question": "Câu hỏi 5 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q26",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 5,
+          "question": "Câu hỏi 6 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q27",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 5,
+          "question": "Câu hỏi 7 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q28",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 10,
+          "question": "Câu hỏi 8 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q29",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 10,
+          "question": "Câu hỏi 9 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q30",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 10,
+          "question": "Câu hỏi 10 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q31",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 10,
+          "question": "Câu hỏi 11 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q32",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 10,
+          "question": "Câu hỏi 12 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q33",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 10,
+          "question": "Câu hỏi 13 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q34",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 10,
+          "question": "Câu hỏi 14 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q35",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 15,
+          "question": "Câu hỏi 15 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q36",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 15,
+          "question": "Câu hỏi 16 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q37",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 15,
+          "question": "Câu hỏi 17 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q38",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 15,
+          "question": "Câu hỏi 18 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q39",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 15,
+          "question": "Câu hỏi 19 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q40",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 14: Cuộc họp của chữ viết",
+          "points": 15,
+          "question": "Câu hỏi 20 cho bài Bài 14: Cuộc họp của chữ viết",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 14: Cuộc họp của chữ viết",
+          "correct_answer": "Đáp án A"
+        }
+      ]
+    },
+    {
+      "id": "exam_cd2_bai15",
+      "title": "Đề thi Bài 15: Thư viện",
+      "description": "Đề thi trắc nghiệm và tự luận cho Đề thi Bài 15: Thư viện",
+      "questions": [
+        {
+          "id": "e2_q41",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 15: Thư viện",
+          "points": 5,
+          "question": "Câu hỏi 1 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q42",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 15: Thư viện",
+          "points": 5,
+          "question": "Câu hỏi 2 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q43",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 15: Thư viện",
+          "points": 5,
+          "question": "Câu hỏi 3 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q44",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 15: Thư viện",
+          "points": 5,
+          "question": "Câu hỏi 4 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q45",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 15: Thư viện",
+          "points": 5,
+          "question": "Câu hỏi 5 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q46",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 15: Thư viện",
+          "points": 5,
+          "question": "Câu hỏi 6 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q47",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 15: Thư viện",
+          "points": 5,
+          "question": "Câu hỏi 7 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q48",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 15: Thư viện",
+          "points": 10,
+          "question": "Câu hỏi 8 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q49",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 15: Thư viện",
+          "points": 10,
+          "question": "Câu hỏi 9 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q50",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 15: Thư viện",
+          "points": 10,
+          "question": "Câu hỏi 10 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q51",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 15: Thư viện",
+          "points": 10,
+          "question": "Câu hỏi 11 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q52",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 15: Thư viện",
+          "points": 10,
+          "question": "Câu hỏi 12 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q53",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 15: Thư viện",
+          "points": 10,
+          "question": "Câu hỏi 13 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q54",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 15: Thư viện",
+          "points": 10,
+          "question": "Câu hỏi 14 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q55",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 15: Thư viện",
+          "points": 15,
+          "question": "Câu hỏi 15 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q56",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 15: Thư viện",
+          "points": 15,
+          "question": "Câu hỏi 16 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q57",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 15: Thư viện",
+          "points": 15,
+          "question": "Câu hỏi 17 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q58",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 15: Thư viện",
+          "points": 15,
+          "question": "Câu hỏi 18 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q59",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 15: Thư viện",
+          "points": 15,
+          "question": "Câu hỏi 19 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q60",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 15: Thư viện",
+          "points": 15,
+          "question": "Câu hỏi 20 cho bài Bài 15: Thư viện",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 15: Thư viện",
+          "correct_answer": "Đáp án A"
+        }
+      ]
+    },
+    {
+      "id": "exam_cd2_bai16",
+      "title": "Đề thi Bài 16: Ngày em vào đội",
+      "description": "Đề thi trắc nghiệm và tự luận cho Đề thi Bài 16: Ngày em vào đội",
+      "questions": [
+        {
+          "id": "e2_q61",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 5,
+          "question": "Câu hỏi 1 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q62",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 5,
+          "question": "Câu hỏi 2 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q63",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 5,
+          "question": "Câu hỏi 3 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q64",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 5,
+          "question": "Câu hỏi 4 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q65",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 5,
+          "question": "Câu hỏi 5 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q66",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 5,
+          "question": "Câu hỏi 6 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q67",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "easy",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 5,
+          "question": "Câu hỏi 7 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q68",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 10,
+          "question": "Câu hỏi 8 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q69",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 10,
+          "question": "Câu hỏi 9 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q70",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 10,
+          "question": "Câu hỏi 10 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q71",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 10,
+          "question": "Câu hỏi 11 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q72",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 10,
+          "question": "Câu hỏi 12 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q73",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 10,
+          "question": "Câu hỏi 13 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q74",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "medium",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 10,
+          "question": "Câu hỏi 14 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q75",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 15,
+          "question": "Câu hỏi 15 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q76",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 15,
+          "question": "Câu hỏi 16 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q77",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 15,
+          "question": "Câu hỏi 17 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q78",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 15,
+          "question": "Câu hỏi 18 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q79",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 15,
+          "question": "Câu hỏi 19 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        },
+        {
+          "id": "e2_q80",
+          "type": "multiple_choice",
+          "skill": "đọc_hiểu",
+          "difficulty": "hard",
+          "lesson": "Bài 16: Ngày em vào đội",
+          "points": 15,
+          "question": "Câu hỏi 20 cho bài Bài 16: Ngày em vào đội",
+          "options": [
+            "Đáp án A",
+            "Đáp án B",
+            "Đáp án C",
+            "Đáp án D"
+          ],
+          "explanation": "Giải thích cho câu hỏi.",
+          "reading_passage": "Đây là đoạn văn mẫu từ bài Bài 16: Ngày em vào đội",
+          "correct_answer": "Đáp án A"
+        }
+      ]
+    }
+  ]
+}

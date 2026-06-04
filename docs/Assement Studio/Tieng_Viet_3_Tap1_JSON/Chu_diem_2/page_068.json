@@ -5,11 +5,7 @@
     {
       "type": "nói_và_nghe",
       "title": "Nghe kể chuyện: Mặt trời mọc ở đẳng tây!",
-      "content": "(Theo Chuyện vui văn học)
-Thầy yêu cầu học sinh điều gì?
-Cậu học trò này đã đọc câu thơ như thế nào?
-Thầy yêu cầu Pu-skin điều gì?
-Em hãy đọc 3 câu thơ của Pu-skin.",
+      "content": "(Theo Chuyện vui văn học)\nThầy yêu cầu học sinh điều gì?\nCậu học trò này đã đọc câu thơ như thế nào?\nThầy yêu cầu Pu-skin điều gì?\nEm hãy đọc 3 câu thơ của Pu-skin.",
       "questions": [
         {
           "id": "1",

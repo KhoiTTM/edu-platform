@@ -1,0 +1,28 @@
+{
+  "page": 36,
+  "lesson_title": "Chó đốm con và mặt trời",
+  "sections": [
+    {
+      "type": "nói_và_nghe",
+      "title": "NÓI VÀ NGHE",
+      "content": "Chó đốm con và mặt trời\n(Theo 108 truyện đồng thoại nhỏ, sáng tạo lớn)",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Nghe kể chuyện.",
+          "items": [
+            "Chó đốm con nhìn thấy mặt trời mọc ở đâu?",
+            "Chó đốm con nhìn thấy mặt trời lặn ở đâu?",
+            "Chó đốm con nghĩ gì?",
+            "Điều gì làm chó đốm con ngạc nhiên?"
+          ]
+        },
+        {
+          "id": "2",
+          "instruction": "Kể lại toàn bộ câu chuyện.",
+          "items": []
+        }
+      ]
+    }
+  ]
+}

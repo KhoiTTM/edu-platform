@@ -1,38 +1,40 @@
 {
   "page": 55,
-  "lesson_title": "Cô-li-a",
+  "lesson_title": "Bài tập làm văn",
   "sections": [
     {
       "type": "đọc",
-      "content": "Nhung chẳng lẽ lại nộp một bài văn ngắn ngủn như thế này? Tôi nhìn xung quanh; mọi người vẫn viết. Lạ thật; các bạn viết gì mà nhiều thế?
-Tôi cố nghĩ, rồi viết tiếp: "Em giặt cả áo lót, áo sơ mi và quần." Cuối cùng, tôi kết thúc bài văn của mình: "Em muốn giúp mẹ nhiều việc để mẹ đỡ vất vả."
-Mấy hôm sau, sáng Chủ nhật, mẹ bảo tôi:
-- Cô-li-a này! Hôm nay con giặt áo sơ mi và quần áo lót đi nhé!
-Tôi tròn xoe mắt. Nhưng rồi tôi vui vẻ nhận lời, vì đó là việc làm mà tôi đã nói trong bài tập làm văn.
-(Theo Pi-vô-va-rô-va)",
-      "questions": [
+      "title": "Bài tập làm văn",
+      "content": "Nhưng chẳng lẽ lại nộp một bài văn ngắn ngủn như thế này? Tôi nhìn xung quanh, mọi người vẫn viết. Lạ thật, các bạn viết gì mà nhiều thế? Tôi cố nghĩ, rồi viết tiếp: “Em giặt cả áo lót, áo sơ mi và quần.”. Cuối cùng, tôi kết thúc bài văn của mình: “Em muốn giúp mẹ nhiều việc hơn, để mẹ đỡ vất vả.”.\n\nMấy hôm sau, sáng Chủ nhật, mẹ bảo tôi:\n– Cô-li-a này! Hôm nay con giặt áo sơ mi và quần áo lót đi nhé!\nTôi tròn xoe mắt. Nhưng rồi tôi vui vẻ nhận lời, vì đó là việc làm mà tôi đã nói trong bài tập làm văn.\n\n(Theo Pi-vô-va-rô-va)\n\nTừ ngữ:\n– Khăn mùi soa: khăn nhỏ và mỏng, thường bỏ túi, dùng để lau mặt, lau tay.\n– Lia lịa: nhanh và liên tiếp, không ngừng trong một thời gian ngắn.",
+      "exercises": [
         {
           "id": "1",
-          "question": "Nhắc lại đề văn mà cô giáo đã giao cho lớp."
+          "instruction": "Nhắc lại đề văn mà cô giáo đã giao cho lớp.",
+          "items": []
         },
         {
           "id": "2",
-          "question": "Vì sao Cô-li-a gặp khó khăn với đề văn này?
-a. Vì bạn ấy viết văn không tốt.
-b. Vì bạn ấy không nhớ những việc mình đã làm.
-c. Vì bạn ấy ít khi giúp mẹ."
+          "instruction": "Vì sao Cô-li-a gặp khó khăn với đề văn này?",
+          "items": [
+            "a. Vì bạn ấy viết văn không tốt.",
+            "b. Vì bạn ấy không nhớ những việc mình đã làm.",
+            "c. Vì bạn ấy ít khi giúp mẹ."
+          ]
         },
         {
           "id": "3",
-          "question": "Để bài văn dài hơn, Cô-li-a đã làm gì?"
+          "instruction": "Để bài văn dài hơn, Cô-li-a đã làm gì?",
+          "items": []
         },
         {
           "id": "4",
-          "question": "Em hãy giải thích vì sao Cô-li-a vui vẻ nhận lời mẹ làm việc nhà:"
+          "instruction": "Em hãy giải thích vì sao Cô-li-a vui vẻ nhận lời mẹ làm việc nhà.",
+          "items": []
         },
         {
           "id": "5",
-          "question": "Em có nhận xét gì về Cô-li-a?"
+          "instruction": "Em có nhận xét gì về Cô-li-a?",
+          "items": []
         }
       ]
     }

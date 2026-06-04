@@ -1,16 +1,33 @@
 {
   "page": 40,
-  "lesson_title": "ĐỌC MỞ RỘNG VÀ LUYỆN TẬP",
+  "lesson_title": "ĐỌC MỞ RỘNG & LUYỆN TẬP",
   "sections": [
     {
-      "type": "khác",
-      "title": "Đọc mở rộng",
-      "content": "1. Đọc sách nấu ăn hoặc những bài đọc về việc làm bếp.
-2. Viết phiếu đọc sách theo mẫu."
+      "type": "đọc_mở_rộng",
+      "title": "ĐỌC MỞ RỘNG",
+      "exercises": [
+        {
+          "id": "ex1",
+          "instruction": "1. Đọc sách dạy nấu ăn hoặc những bài đọc về công việc làm bếp. Viết phiếu đọc sách theo mẫu.",
+          "items": [
+            "PHIẾU ĐỌC SÁCH",
+            "– Ngày đọc: (...)",
+            "– Tên bài: (...)",
+            "– Tác giả: (...)",
+            "Món ăn hoặc hoạt động làm bếp được nói đến: (...)",
+            "Thông tin quan trọng hoặc thú vị đối với em: (...)",
+            "Mức độ yêu thích: ⭐⭐⭐⭐⭐"
+          ]
+        },
+        {
+          "id": "ex2",
+          "instruction": "2. Chia sẻ những điều em đọc được."
+        }
+      ]
     },
     {
-      "type": "luyện_từ_và_câu",
-      "title": "Luyện tập",
+      "type": "luyện_tập",
+      "title": "LUYỆN TẬP",
       "exercises": [
         {
           "id": "ex1",
@@ -25,9 +42,8 @@
         },
         {
           "id": "ex2",
-          "instruction": "2. Dấu hai chấm trong câu sau đây được dùng để làm gì?",
+          "instruction": "2. Dấu hai chấm trong câu sau đây được dùng để làm gì?\n\"Các bạn chắc chắn sẽ kể về những chuyến du lịch kì thú của mình: ra biển, lên núi, đến thăm những thành phố lớn,...\"",
           "items": [
-            "Các bạn chắc chắn sẽ kể về những chuyến du lịch kì thú của mình: ra biển, lên núi, đến thăm những thành phố lớn,...",
             "a. Để báo hiệu lời nói trực tiếp",
             "b. Để báo hiệu phần liệt kê",
             "c. Để báo hiệu phần giải thích"
@@ -35,10 +51,10 @@
         },
         {
           "id": "ex3",
-          "instruction": "3. Chọn dấu chấm hoặc dấu hai chấm cho ô vuông.",
+          "instruction": "3. Chọn dấu chấm hoặc dấu hai chấm thay cho ô vuông.",
           "items": [
-            "a. Mùa hè có rất nhiều loài hoa: hoa phượng, hoa mười giờ, hoa hồng. Hoa nào cũng rực rỡ sắc màu.",
-            "b. Có nhiều hoạt động thú vị mà bạn có thể làm khi hè đến: đi cắm trại, đi tắm biển, tham gia các câu lạc bộ,..."
+            "a. Mùa hè có rất nhiều loài hoa [ ] hoa hồng, hoa phượng, hoa mười giờ,...\nHoa nào cũng đẹp, cũng rực rỡ sắc màu [ ]",
+            "b. Có nhiều hoạt động thú vị mà bạn có thể làm khi hè đến [ ] đi cắm trại, đi tắm biển, tham gia các câu lạc bộ,..."
           ]
         }
       ]

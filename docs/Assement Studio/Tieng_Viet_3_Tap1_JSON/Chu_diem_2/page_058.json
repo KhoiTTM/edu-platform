@@ -27,25 +27,16 @@
         {
           "id": "3",
           "instruction": "Đọc câu chuyện dưới đây và thực hiện yêu cầu.",
-          "content": "Hộp bút của Na
-Trong hộp bút bé nhỏ có tiếng lao xao. Na ghé tai nghe; có tiếng bút chì:
-- Tớ được dùng nhiều nhất nên tớ chỉ còn một mẩu.
-Có tiếng tẩy đáp lại:
-- Tớ toàn vụn tẩy vì chữa cho cậu. Tớ quan trọng nhất.
-Thước kẻ lên tiếng:
-- Tớ mới quan trọng. Tớ được dùng nhiều đến mức mờ hết cả số.
-Na bối rối mở hộp bút. Cô bé thầm thì:
-- Ai cũng quan trọng vì đều là bạn thân của tớ.
-(Theo An Hạnh)",
+          "content": "Hộp bút của Na\nTrong hộp bút bé nhỏ có tiếng lao xao. Na ghé tai nghe; có tiếng bút chì:\n- Tớ được dùng nhiều nhất nên tớ chỉ còn một mẩu.\nCó tiếng tẩy đáp lại:\n- Tớ toàn vụn tẩy vì chữa cho cậu. Tớ quan trọng nhất.\nThước kẻ lên tiếng:\n- Tớ mới quan trọng. Tớ được dùng nhiều đến mức mờ hết cả số.\nNa bối rối mở hộp bút. Cô bé thầm thì:\n- Ai cũng quan trọng vì đều là bạn thân của tớ.\n(Theo An Hạnh)",
           "exercises": [
-             {
-               "id": "3a",
-               "instruction": "Hỏi - đáp về các nhân vật trong câu chuyện trên:"
-             },
-             {
-               "id": "3b",
-               "instruction": "Ghi lại 1-2 câu hỏi của em và bạn:"
-             }
+            {
+              "id": "3a",
+              "instruction": "Hỏi - đáp về các nhân vật trong câu chuyện trên:"
+            },
+            {
+              "id": "3b",
+              "instruction": "Ghi lại 1-2 câu hỏi của em và bạn:"
+            }
           ]
         }
       ]

@@ -5,11 +5,7 @@
     {
       "type": "viết",
       "title": "Ôn chữ viết hoa",
-      "content": "1. Viết tên riêng: Bình Dương
-2. Viết câu:
-Dưới hàng hiên đã gọi hè
-Đầu tường lửa lựu lập loè đâm bông.
-(Nguyễn Du)"
+      "content": "1. Viết tên riêng: Bình Dương\n2. Viết câu:\nDưới hàng hiên đã gọi hè\nĐầu tường lửa lựu lập loè đâm bông.\n(Nguyễn Du)"
     },
     {
       "type": "luyện_từ_và_câu",
@@ -18,17 +14,32 @@ Dưới hàng hiên đã gọi hè
         {
           "id": "1",
           "instruction": "Tìm những từ ngữ chỉ đặc điểm của con đường:",
-          "items": ["M: mấp mô"]
+          "items": [
+            "M: mấp mô"
+          ]
         },
         {
           "id": "2",
           "instruction": "Tìm thêm các từ ngữ chỉ đặc điểm cho mỗi nhóm dưới đây và mỗi nhóm đặt một câu với từ ngữ tìm được.",
-          "items": ["Từ ngữ chỉ màu sắc", "Từ ngữ chỉ âm thanh", "Từ ngữ chỉ hương vị"]
+          "items": [
+            "Từ ngữ chỉ màu sắc",
+            "Từ ngữ chỉ âm thanh",
+            "Từ ngữ chỉ hương vị"
+          ]
         },
         {
           "id": "3",
           "instruction": "Chọn từ chỉ đặc điểm trong khung cho ô vuông.",
-          "items": ["xanh um", "nhộn nhịp", "đỏ rực", "râm ran", "sớm", "trắng", "ngọt", "thơm"]
+          "items": [
+            "xanh um",
+            "nhộn nhịp",
+            "đỏ rực",
+            "râm ran",
+            "sớm",
+            "trắng",
+            "ngọt",
+            "thơm"
+          ]
         }
       ]
     }
