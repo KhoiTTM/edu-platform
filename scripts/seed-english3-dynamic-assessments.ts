@@ -158,28 +158,112 @@ type Question = {
 function generateQuestion(unit: number, lesson: number, index: number): Question {
   const theme = themes[unit] || themes[1];
   
-  if (lesson === 1) {
+  if (lesson === 1) { // Vocab focus
       const word = theme.vocab[index % theme.vocab.length];
       const capWord = word.charAt(0).toUpperCase() + word.slice(1);
-      const opts = shuffleOptions([word, getDistractorWord(unit, index), getDistractorWord(unit, index + 1), getDistractorWord(unit, index + 2)], word);
-      return {
-        question: `What is the correct English word for '${getVietnameseTranslation(word)}'?`,
-        options: opts,
-        correct_index: opts.indexOf(word),
-        explanation: `${capWord} nghĩa là '${getVietnameseTranslation(word)}' trong tiếng Anh.`,
-        difficulty: 1.0
-      };
-  } else if (lesson === 2) {
+      
+      const type = index % 4;
+      if (type === 0) { // Translation
+          const opts = shuffleOptions([word, getDistractorWord(unit, index), getDistractorWord(unit, index + 1), getDistractorWord(unit, index + 2)], word);
+          return {
+            question: `What is the correct English word for '${getVietnameseTranslation(word)}'?`,
+            options: opts,
+            correct_index: opts.indexOf(word),
+            explanation: `${capWord} nghĩa là '${getVietnameseTranslation(word)}' trong tiếng Anh.`,
+            difficulty: 1.0
+          };
+      } else if (type === 1) { // Odd one out
+          const w1 = theme.vocab[(index+1) % theme.vocab.length];
+          const w2 = theme.vocab[(index+2) % theme.vocab.length];
+          const distractor = getDistractorWord(unit === 1 ? 5 : 1, index);
+          const opts = shuffleOptions([word, w1, w2, distractor], distractor);
+          return {
+            question: `Choose the odd one out (Chọn từ khác loại):`,
+            options: opts,
+            correct_index: opts.indexOf(distractor),
+            explanation: `${distractor} thuộc nhóm từ vựng khác với các từ còn lại.`,
+            difficulty: 1.2
+          };
+      } else if (type === 2) { // Missing letter
+          if (word.length > 2) {
+              const randIdx = 1 + (index % (word.length - 1));
+              const missingChar = word[randIdx];
+              const displayWord = word.substring(0, randIdx) + "_" + word.substring(randIdx + 1);
+              const distractorsArr = ["a", "e", "i", "o", "u", "b", "c", "d"].filter(c => c !== missingChar);
+              const opts = shuffleOptions([missingChar, distractorsArr[0], distractorsArr[1], distractorsArr[2]], missingChar);
+              return {
+                  question: `What letter is missing: '${displayWord}'?`,
+                  options: opts,
+                  correct_index: opts.indexOf(missingChar),
+                  explanation: `Từ đầy đủ là '${word}', nên chữ cái thiếu là '${missingChar}'.`,
+                  difficulty: 1.1
+              };
+          } else {
+              return generateQuestion(unit, lesson, index + 1);
+          }
+      } else { // Scrambled word
+          if (word.length > 2) {
+             const scrambled = word.split('').sort(() => 0.5 - Math.random()).join(' / ');
+             const dist1 = getDistractorWord(unit, index);
+             const dist2 = getDistractorWord(unit, index+1);
+             const dist3 = getDistractorWord(unit, index+2);
+             const opts = shuffleOptions([word, dist1, dist2, dist3], word);
+             return {
+                  question: `Rearrange the letters to make a correct word: '${scrambled}'`,
+                  options: opts,
+                  correct_index: opts.indexOf(word),
+                  explanation: `Sắp xếp các chữ cái lại ta được từ '${word}'.`,
+                  difficulty: 1.3
+             };
+          } else {
+             return generateQuestion(unit, lesson, index + 1);
+          }
+      }
+
+  } else if (lesson === 2) { // Grammar focus
       const { questionText, options, correctText, explanation } = getGrammarQuestion(unit, index);
-      const shuffled = shuffleOptions(options, correctText);
-      return {
-        question: questionText,
-        options: shuffled,
-        correct_index: shuffled.indexOf(correctText),
-        explanation,
-        difficulty: 1.0
-      };
-  } else {
+      
+      const type = index % 3;
+      if (type === 0 || type === 1) { // Fill in the blank
+          const shuffled = shuffleOptions(options, correctText);
+          return {
+            question: questionText,
+            options: shuffled,
+            correct_index: shuffled.indexOf(correctText),
+            explanation,
+            difficulty: 1.0
+          };
+      } else { // Sentence Rearrangement
+          const cleanSentence = explanation.split('.')[0].trim(); 
+          if (cleanSentence.split(' ').length > 2 && !cleanSentence.includes('=')) {
+              const words = cleanSentence.replace(/[\?\!\.]/g, '').split(' ');
+              const scrambled = words.sort(() => 0.5 - Math.random()).join(' / ');
+              
+              const opt1 = cleanSentence;
+              const opt2 = words.sort(() => 0.5 - Math.random()).join(' ');
+              const opt3 = words.sort(() => 0.5 - Math.random()).join(' ');
+              const opt4 = words.sort(() => 0.5 - Math.random()).join(' ');
+              
+              const opts = shuffleOptions([opt1, opt2, opt3, opt4], opt1);
+              return {
+                 question: `Rearrange the words to make a correct sentence: '${scrambled}'`,
+                 options: opts,
+                 correct_index: opts.indexOf(opt1),
+                 explanation: `Thứ tự đúng là: ${opt1}`,
+                 difficulty: 1.4
+              }
+          } else {
+              const shuffled = shuffleOptions(options, correctText);
+              return {
+                question: questionText,
+                options: shuffled,
+                correct_index: shuffled.indexOf(correctText),
+                explanation,
+                difficulty: 1.0
+              };
+          }
+      }
+  } else { // Phonics focus
       const { questionText, options, correctText, explanation } = getPhonicsQuestion(unit, index);
       const shuffled = shuffleOptions(options, correctText);
       return {
