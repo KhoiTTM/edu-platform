@@ -5,6 +5,7 @@ import { ChevronRight, Home, Layout, BookOpen, Trophy, ArrowRight, Loader2, Spar
 import Link from "next/link";
 import { AssessmentRenderer } from "./AssessmentRenderer";
 import { AssessmentResultCard } from "../assessment/AssessmentResultCard";
+import { WorkbookAnswerSheet } from "./WorkbookAnswerSheet";
 import { CurriculumMap } from "./CurriculumMap";
 import { useRouter, usePathname } from "next/navigation";
 import { getFallbackQuestionsForUnit, getCumulativeQuestionsForUnit, getCumulativeVocabularyQuiz } from "@/lib/ieltsQuizzes";
@@ -1451,6 +1452,35 @@ export function LearnNodeClient({
 
           {currentPart === 'ai-tutorial' && (
             <div className="space-y-8 animate-in fade-in duration-300">
+              {node.metadata?.page && (
+                <div className="bg-gradient-to-r from-amber-500/20 to-orange-500/10 border border-amber-500/30 p-5 rounded-2xl flex items-start gap-4">
+                  <div className="p-3 bg-amber-500/20 rounded-xl text-amber-400">
+                    <BookOpen size={24} />
+                  </div>
+                  <div>
+                    <h4 className="text-amber-400 font-bold text-lg">Yêu cầu học tập</h4>
+                    <p className="text-slate-300 text-sm mt-1">
+                      Môn học này có nhiều hình ảnh và thực hành đặc thù. 
+                      {node.metadata?.drive_file_id 
+                        ? ` Sách giáo khoa đã được đính kèm bên dưới, hãy cuộn tới trang ${node.metadata.page} để xem các hình ảnh trực quan nhé!`
+                        : ` Hãy kết hợp mở Sách giáo khoa trang ${node.metadata.page} để đạt hiệu quả tốt nhất nhé!`
+                      }
+                    </p>
+                  </div>
+                </div>
+              )}
+
+              {node.metadata?.drive_file_id && (
+                <div className="w-full h-[600px] md:h-[800px] rounded-3xl overflow-hidden border-2 border-amber-500/30 shadow-2xl bg-slate-950">
+                  <iframe 
+                    src={`https://drive.google.com/file/d/${node.metadata.drive_file_id}/preview`} 
+                    width="100%" 
+                    height="100%" 
+                    allow="autoplay"
+                    className="rounded-2xl border-0"
+                  ></iframe>
+                </div>
+              )}
               <div className="bg-slate-900/40 border border-slate-800 p-8 rounded-3xl backdrop-blur-md shadow-2xl relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-[50%] h-64 bg-rose-500/5 blur-[120px] pointer-events-none" />
                 <GrammarTutorialRenderer content={node.metadata?.grammar_tutorial} />
@@ -1526,6 +1556,11 @@ export function LearnNodeClient({
                       {isSubmitting ? "Đang chấm điểm..." : "Đang tải câu hỏi..."}
                     </p>
                   </div>
+                ) : (subjectSlug === 'khtn' || subjectSlug === 'khtn-7') && currentPart === 'practice' ? (
+                  <WorkbookAnswerSheet 
+                    lessonSlug={node.slug} 
+                    driveLink="https://drive.google.com/file/d/1kCimCZYM3q-A60PXOyRhO7PROTR-2eF3/view?usp=sharing" 
+                  />
                 ) : (
                   <AssessmentRenderer 
                     questions={activeSession.questions || []}

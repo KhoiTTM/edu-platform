@@ -4,19 +4,33 @@
   "sections": [
     {
       "type": "đọc",
-      "content": "Cào cào lắc đầu, nhái bén cũng xua tay: Tớ à? Tớ hát thì ai nghe? Thế là cào cào, nhái bén, chuồn chuồn rủ nhau đi tìm tiếng hát. Dưới lớp cỏ xanh rì, mặt đất đen ẩm ướt, dế than đang xây nhà. Chốc chốc cậu dừng lại, cất tiếng hát say sưa. Khi dứt bài hát, dế than giật mình nghe thấy một tràng pháo tay lộp bộp. Cào cào từ trên nhánh cỏ nhảy xuống: Tớ là cào cào. Tiếng hát của bạn hay quá! Chuồn chuồn khẽ đập đôi cánh: Tớ là chuồn chuồn. Bạn thật là một tài năng âm nhạc. Dế than ngượng ngùng: Ôi, tớ chỉ là thợ đào đất thôi. Tớ là dế than. Nhái bén mừng rỡ: A, từ nay tớ có thêm một láng giềng hát hay, làm giỏi là dế than. Để chúng tớ giúp bạn dựng nhà. Cào cào, nhái bén, chuồn chuồn cùng xúm vào giúp dế than: Chỉ chốc lát, ngôi nhà xinh xắn bằng đất đã được xây xong dưới ô nấm giữa vùng cỏ xanh tươi.
-(Theo Lý Lan)",
+      "content": "Cào cào lắc đầu, nhái bén cũng xua tay: Tớ à? Tớ hát thì ai nghe? Thế là cào cào, nhái bén, chuồn chuồn rủ nhau đi tìm tiếng hát. Dưới lớp cỏ xanh rì, mặt đất đen ẩm ướt, dế than đang xây nhà. Chốc chốc cậu dừng lại, cất tiếng hát say sưa. Khi dứt bài hát, dế than giật mình nghe thấy một tràng pháo tay lộp bộp. Cào cào từ trên nhánh cỏ nhảy xuống: Tớ là cào cào. Tiếng hát của bạn hay quá! Chuồn chuồn khẽ đập đôi cánh: Tớ là chuồn chuồn. Bạn thật là một tài năng âm nhạc. Dế than ngượng ngùng: Ôi, tớ chỉ là thợ đào đất thôi. Tớ là dế than. Nhái bén mừng rỡ: A, từ nay tớ có thêm một láng giềng hát hay, làm giỏi là dế than. Để chúng tớ giúp bạn dựng nhà. Cào cào, nhái bén, chuồn chuồn cùng xúm vào giúp dế than: Chỉ chốc lát, ngôi nhà xinh xắn bằng đất đã được xây xong dưới ô nấm giữa vùng cỏ xanh tươi.\n(Theo Lý Lan)",
       "author": "Lý Lan"
     },
     {
       "type": "khác",
       "title": "Câu hỏi và Bài tập",
       "questions": [
-        { "id": "1", "question": "Vào sáng sớm, chuyện gì xảy ra khiến cào cào, nhái bén, chuồn chuồn chú ý?" },
-        { "id": "2", "question": "Các bạn đã phát hiện ra điều gì?" },
-        { "id": "3", "question": "Chi tiết nào cho thấy cuộc gặp gỡ của các bạn với dế than rất thân mật?" },
-        { "id": "4", "question": "Các bạn đã giúp dế than việc gì?" },
-        { "id": "5", "question": "Em nghĩ gì về việc các bạn giúp đỡ dế than?" }
+        {
+          "id": "1",
+          "question": "Vào sáng sớm, chuyện gì xảy ra khiến cào cào, nhái bén, chuồn chuồn chú ý?"
+        },
+        {
+          "id": "2",
+          "question": "Các bạn đã phát hiện ra điều gì?"
+        },
+        {
+          "id": "3",
+          "question": "Chi tiết nào cho thấy cuộc gặp gỡ của các bạn với dế than rất thân mật?"
+        },
+        {
+          "id": "4",
+          "question": "Các bạn đã giúp dế than việc gì?"
+        },
+        {
+          "id": "5",
+          "question": "Em nghĩ gì về việc các bạn giúp đỡ dế than?"
+        }
       ]
     }
   ]

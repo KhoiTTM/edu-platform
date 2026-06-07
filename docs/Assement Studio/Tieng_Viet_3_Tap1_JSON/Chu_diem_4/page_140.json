@@ -1,20 +1,79 @@
 {
-  "page": 140,
-  "lesson_title": "CÂY BÚT THẦN",
+  "page": 139,
+  "lesson_title": "Người làm đồ chơi",
   "sections": [
     {
-      "type": "khởi_động",
-      "title": "Khởi động",
-      "content": "Nếu được ban một phép lạ, em muốn mình có phép lạ gì?"
+      "type": "nói_và_nghe",
+      "title": "NÓI VÀ NGHE",
+      "content": "Dựa vào những gợi ý dưới đây, kể lại từng đoạn trong câu chuyện. Người làm đồ chơi",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Dựa vào những gợi ý dưới đây, kể lại từng đoạn trong câu chuyện.",
+          "items": [
+            {
+              "part": "1",
+              "title": "Giới thiệu nghề nghiệp của bác Nhân",
+              "questions": [
+                "Bác Nhân làm nghề gì?",
+                "Bác có yêu công việc của mình không?"
+              ]
+            },
+            {
+              "part": "2",
+              "title": "Tâm sự của bác Nhân với bạn nhỏ",
+              "questions": [
+                "Dạo này, hàng hoá của bác Nhân thế nào? Vì sao có tình trạng như vậy?",
+                "Bác Nhân muốn làm gì?"
+              ]
+            },
+            {
+              "part": "3",
+              "title": "Quyết định của bạn nhỏ",
+              "questions": [
+                "Bạn nhỏ có cảm nghĩ gì khi nghe bác Nhân kể chuyện?",
+                "Bạn nhỏ đã làm gì cho bác Nhân vui?"
+              ]
+            },
+            {
+              "part": "4",
+              "title": "Buổi bán hàng cuối cùng của bác Nhân",
+              "questions": [
+                "Buổi bán hàng đó của bác Nhân diễn ra như thế nào?",
+                "Tâm trạng của bác Nhân ra sao?"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
-      "type": "đọc",
-      "title": "CÂY BÚT THẦN",
-      "content": "Ngày xưa, có một em bé rất thông minh, tên là Mã Lương. Mã Lương rất thích vẽ. Khi kiếm củi trên núi, lúc cắt cỏ ven sông, em đều tập vẽ trên đất, trên đá. Em vẽ chim, chim hót như sắp được nghe; vẽ cá, cá bơi như sắp được trông thấy. Em ao ước có một cây bút vẽ.
-Một đêm, Mã Lương mơ thấy một cụ già tóc bạc phơ đưa cho em cây bút lấp lánh. Em reo lên: "Cây bút đẹp quá! Cháu cảm ơn ông!". Tỉnh dậy, Mã Lương thấy cây bút vẫn trong tay mình.
-Mã Lương vẽ một con chim, chim tung cánh bay; vẽ một con cá, cá vẫy đuôi trườn xuống sông. Mã Lương liền dùng bút thần vẽ cho người nghèo trong làng. Nhà nào không có cày, em vẽ cho cày. Nhà nào không có cuốc, em vẽ cho cuốc.
-Biết chuyện, một phú ông trong làng sai đầy tớ: "Mau bắt Mã Lương về cho ta!". Hắn bắt Mã Lương vẽ theo ý muốn của hắn: Mã Lương không chịu.
-Hắn nhốt em vào chuồng ngựa bỏ đói, bỏ rét. Nhưng Mã Lương vẽ bánh để ăn, vẽ lò sưởi để sưởi."
+      "type": "viết",
+      "title": "VIẾT",
+      "content": "",
+      "exercises": [
+        {
+          "id": "1",
+          "instruction": "Nghe – viết: Người làm đồ chơi (từ đầu đến tinh nhanh, chăm chỉ).",
+          "items": []
+        },
+        {
+          "id": "2",
+          "instruction": "Em muốn mượn sách ở thư viện của khu phố. Hãy viết thông tin vào phiếu mượn sách theo mẫu.",
+          "items": [
+            "PHIẾU MƯỢN SÁCH",
+            "Họ tên người mượn sách: (...)",
+            "Địa chỉ: (...)",
+            "Tên sách: (...)",
+            "Tác giả: (...)"
+          ]
+        },
+        {
+          "id": "3",
+          "instruction": "Làm một đồ chơi mà em thích (gấp, cắt, dán, nặn,...) và giới thiệu đồ chơi đó với người thân.",
+          "items": []
+        }
+      ]
     }
   ]
 }

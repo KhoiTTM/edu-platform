@@ -1,0 +1,46 @@
+{
+  "page": 8,
+  "chapter_title": "CHƯƠNG I: NGUYÊN TỬ. SƠ LƯỢC VỀ BẢNG TUẦN HOÀN CÁC NGUYÊN TỐ HOÁ HỌC",
+  "lesson_title": "BÀI 2. NGUYÊN TỬ",
+  "sections": [
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "2.4",
+          "question": "(3) Trong nguyên tử; số hạt mang điện tích dương bằng số hạt mang điện tích âm nên số hạt electron bằng số hạt neutron.\n(4) Vỏ nguyên tử, gồm các lớp electron có khoảng cách khác nhau đối với hạt nhân.\nTrong các phát biểu trên, số phát biểu đúng là",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "answer_type": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "type": "bài_tập_tự_luận",
+      "exercises": [
+        {
+          "id": "2.5",
+          "instruction": "Hãy viết tên, điện tích và khối lượng của các hạt cấu tạo nên nguyên tử vào chỗ trống để hoàn thiện bảng dưới đây.",
+          "problem": "Hạt\tĐiện tích\tKhối lượng (amu)\nProton\t?\nNeutron\t~0,00055",
+          "sub_items": []
+        },
+        {
+          "id": "2.6",
+          "instruction": "Từ Hình 2.1 mô phỏng một nguyên tử carbon; hãy cho biết trong một nguyên tử carbon có bao nhiêu hạt electron; proton; neutron.",
+          "problem": null,
+          "image_description": "Quy ước:\nElectron\nProton\nNeutron\nHình 2.1 - Illustration of a Carbon atom with labels for Electron, Proton, Neutron."
+        },
+        {
+          "id": "2.7",
+          "instruction": "Mặt Trời chứa chủ yếu hai nguyên tố hoá học là hydrogen (H) và helium (He). Hình 2.2 biểu diễn một nguyên tử hydrogen và một nguyên tử helium.",
+          "problem": "a) Hydrogen\nb) Helium\nHình 2.2",
+          "image_description": "Figure 2.2 - Diagrams of a Hydrogen atom and a Helium atom. 'Quy ước này cho tất cả các hình mô phỏng nguyên tử ở trong sách.'"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "page": 4,
+  "chapter_title": "CHƯƠNG I: NGUYÊN TỬ",
+  "lesson_title": "BÀI 1. PHƯƠNG PHÁP VÀ KĨ NĂNG HỌC TẬP MÔN KHOA HỌC TỰ NHIÊN",
+  "sections": [
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "title": "1.1. Các khẳng định trong bảng sau đúng hay sai?",
+      "content": null,
+      "image_description": null,
+      "questions": [
+        {
+          "id": "1",
+          "question": "Các kĩ năng trong học tập môn Khoa học tự nhiên gồm: quan sát, phân loại; liên kết, đo, dự báo",
+          "options": ["Đúng", "Sai"],
+          "answer_type": "multiple_choice"
+        },
+        {
+          "id": "2",
+          "question": "Phương pháp tìm hiểu tự nhiên gồm các bước: đề xuất vấn đề, đưa ra dự đoán, lập kế hoạch kiểm tra dự đoán; thực hiện kế hoạch kiểm tra dự đoán, viết báo cáo, đề xuất ý kiến (nếu có)",
+          "options": ["Đúng", "Sai"],
+          "answer_type": "multiple_choice"
+        },
+        {
+          "id": "3",
+          "question": "Đối tượng nghiên cứu của khoa học là các sự vật, hiện tượng; các thuộc tính cơ bản; sự vận động của thế giới tự nhiên",
+          "options": ["Đúng", "Sai"],
+          "answer_type": "multiple_choice"
+        },
+        {
+          "id": "4",
+          "question": "Môn Khoa học tự nhiên là môn học về các sự vật và hiện tượng trong thế giới tự nhiên nhằm hình thành và phát triển các năng lực khoa học tự nhiên và khoa học Trái Đất",
+          "options": ["Đúng", "Sai"],
+          "answer_type": "multiple_choice"
+        },
+        {
+          "id": "5",
+          "question": "Nghiên cứu các sự vật và hiện tượng tự nhiên nhằm mục đích giải quyết các vấn đề nảy sinh trong cuộc sống",
+          "options": ["Đúng", "Sai"],
+          "answer_type": "multiple_choice"
+        },
+        {
+          "id": "6",
+          "question": "Kĩ năng dự báo là kĩ năng đề xuất điều gì sẽ xảy ra dựa trên các quan sát, kiến thức, sự hiểu biết và sự suy luận của con người về sự vật và hiện tượng trong tự nhiên",
+          "options": ["Đúng", "Sai"],
+          "answer_type": "multiple_choice"
+        },
+        {
+          "id": "7",
+          "question": "Kĩ năng đo được hình thành và phát triển không theo trình tự",
+          "options": ["Đúng", "Sai"],
+          "answer_type": "multiple_choice"
+        },
+        {
+          "id": "8",
+          "question": "Trong kĩ năng đo, không cần thực hiện việc ước lượng; thực hiện các phép đo, xác định độ chính xác của kết quả đo",
+          "options": ["Đúng", "Sai"],
+          "answer_type": "multiple_choice"
+        },
+        {
+          "id": "9",
+          "question": "Môn Khoa học tự nhiên được xây dựng và phát triển trên nền tảng các môn học: Toán học, Hoá học và Sinh học",
+          "options": ["Đúng", "Sai"],
+          "answer_type": "multiple_choice"
+        }
+      ],
+      "exercises": null
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "page": 5,
+  "sections": [
+    {
+      "type": "khác",
+      "title": "Bài 1.2: Kết nối thông tin",
+      "content": "Hãy kết nối các thông tin ở cột A với cột B tạo thành sự liên kết sự vật với hiện tượng hoặc hiện tượng với hiện tượng:",
+      "exercises": [
+        {
+          "id": "1.2",
+          "instruction": "Kết nối các thông tin ở cột A với cột B",
+          "problem": "Cột A\n1) Nước mưa\n2) Một số loài thực vật\n3) Trời nắng\n4) Phân bón\nCột B\na) do ánh sáng từ Mặt Trời\nb) ảnh hưởng đến sinh trưởng và phát triển của thực vật\nc) có khi trời mưa\nd) rụng lá vào mùa đông"
+        }
+      ]
+    },
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "1.3",
+          "question": "Khẳng định nào dưới đây không đúng?",
+          "options": [
+            "A. Dự báo là kĩ năng cần thiết trong nghiên cứu khoa học tự nhiên.",
+            "B. Dự báo là kĩ năng không cần thiết của người làm nghiên cứu:",
+            "C. Dự báo là kĩ năng dự đoán điều gì sẽ xảy ra dựa vào quan sát, kiến thức, suy luận của con người, về các sự vật, hiện tượng:",
+            "D. Kĩ năng dự báo thường được sử dụng trong bước dự đoán của phương pháp tìm hiểu tự nhiên:"
+          ],
+          "answer_type": "multiple_choice"
+        },
+        {
+          "id": "1.4",
+          "question": "Con người có thể định lượng được các sự vật và hiện tượng tự nhiên dựa trên kĩ năng nào?",
+          "options": [
+            "A. Kĩ năng quan sát, phân loại.",
+            "B. Kĩ năng liên kết tri thức.",
+            "C. Kĩ năng dự báo.",
+            "D. Kĩ năng đo."
+          ],
+          "answer_type": "multiple_choice"
+        },
+        {
+          "id": "1.5",
+          "question": "Cho các bước sau:\n(1) Thực hiện phép đo ghi kết quả đo và xử lí số liệu đo.\n(2) Ước lượng để lựa chọn dụng cụ/thiết bị đo phù hợp.\n(3) Phân tích kết quả và thảo luận về kết quả nghiên cứu thu được.\n(4) Đánh giá độ chính xác của kết quả đo căn cứ vào loại dụng cụ đo và cách đo.\nTrình tự các bước hình thành kĩ năng đo là",
+          "options": [
+            "A. (1) = (2) - (3) -> (4)"
+          ],
+          "answer_type": "multiple_choice"
+        }
+      ]
+    }
+  ]
+}

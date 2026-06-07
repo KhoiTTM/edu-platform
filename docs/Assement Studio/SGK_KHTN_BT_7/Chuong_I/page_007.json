@@ -1,0 +1,73 @@
+{
+  "page": 6,
+  "sections": [
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "1.5",
+          "question": "Trình tự các bước hình thành kĩ năng đo là",
+          "options": [
+            "B. (1) = (3) = (2) = (4)",
+            "C. (3) = (2) = (4) = (1)",
+            "D. (2) = (1) = (4) = (3)"
+          ],
+          "answer_type": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "type": "bài_tập_tự_luận",
+      "exercises": [
+        {
+          "id": "1.6",
+          "instruction": "Khi đo chiều cao của một người ở các thời điểm khác nhau trong ngày; kết quả đo được ghi lại trong Bảng 1. Em hãy nhận xét và giải thích về kết quả thu được.",
+          "problem": "Bảng 1. Kết quả đo chiều cao của người ở các thời điểm trong ngày\nLần đo | Thời gian | Kết quả thu được\n1      | 6 giờ     | 162,4 cm\n2      | 12 giờ    | 161,8 cm\n3      | 18 giờ    | 161,1 cm"
+        },
+        {
+          "id": "1.7",
+          "instruction": "Vận dụng phương pháp tìm hiểu tự nhiên, em hãy tìm hiểu về hiện tượng lũ lụt và đề xuất các biện pháp phòng chống hiện tượng trên:"
+        }
+      ]
+    },
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "1.8",
+          "question": "Trong Hình 1.1, ban đầu bình a chứa nước, bình b chứa một vật rắn không thấm nước.\nKhi đổ hết nước từ bình a sang bình b thì mức nước bình b được vẽ trong hình.\nThể tích của vật rắn là",
+          "image_description": "Figure 1.1 shows two measuring cylinders. Cylinder a has water up to 50mL mark. Cylinder b has a solid object and water up to 100mL mark, with the water level rising to 125mL after pouring water from cylinder a.",
+          "options": [
+            "A. 33 mL",
+            "B. 73 mL",
+            "C. 32,5 mL",
+            "D. 35,2 mL"
+          ],
+          "answer_type": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "type": "bài_tập_tự_luận",
+      "exercises": [
+        {
+          "id": "1.9",
+          "instruction": "Làm cách nào để đo độ dày của một tờ giấy trong sách KHTN 7 bằng một thước có độ chia nhỏ nhất (ĐCNN) là 1 mm?"
+        },
+        {
+          "id": "1.10",
+          "instruction": "Làm thế nào để đo được thể tích của một giọt nước từ ống nhỏ giọt rơi xuống với một bình chia độ có ĐCNN là 0,5 cm3?"
+        },
+        {
+          "id": "1.11",
+          "instruction": "Để xác định thời gian chuyển động trên quãng đường dài 50 cm của một viên bi lăn trên một máng nghiêng; người ta dùng cổng quang và đồng hồ đo thời gian hiện số. Hỏi:",
+          "sub_items": [
+            "a) Phải chọn MODE nào của đồng hồ?",
+            "b) Phải bấm vào nút nào của đồng hồ để trên màn hình hiện lên các số 0000?",
+            "c) Phải nối các cổng quang như thế nào với các chốt ở mặt sau của đồng hồ?"
+          ]
+        }
+      ]
+    }
+  ]
+}

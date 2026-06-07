@@ -1,0 +1,120 @@
+{
+  "page": 9,
+  "sections": [
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "2.7a",
+          "question": "Dựa vào hình vẽ trên hãy cho biết: Mỗi vòng tròn xung quanh hạt nhân được gọi là gì?",
+          "options": [
+            "A. Một liên kết.",
+            "B. Một electron:",
+            "C. Một lớp vỏ electron",
+            "D. Một proton"
+          ],
+          "answer_type": "multiple_choice"
+        }
+      ],
+      "exercises": [
+        {
+          "id": "2.7b",
+          "problem": "Có bao nhiêu electron trong lớp vỏ của nguyên tử H, He? Có bao nhiêu proton trong hạt nhân của nguyên tử H, He?",
+          "answer_type": "short_answer"
+        }
+      ],
+      "image_description": "A diagram depicting an atom with circular paths around the nucleus, referenced by the question."
+    },
+    {
+      "type": "bài_tập_tự_luận",
+      "exercises": [
+        {
+          "id": "2.8",
+          "problem": "Giải thích vì sao có thể coi khối lượng nguyên tử tập trung ở hạt nhân, lấy ví dụ vể một nguyên tử để minh hoạ."
+        }
+      ]
+    },
+    {
+      "type": "bài_tập_tự_luận",
+      "instruction": "Nguyên tử lithium có 3 proton.",
+      "exercises": [
+        {
+          "id": "2.9a",
+          "problem": "Có bao nhiêu electron trong nguyên tử lithium?"
+        },
+        {
+          "id": "2.9b",
+          "problem": "Biết hạt nhân nguyên tử lithium có 4 neutron; tính khối lượng nguyên tử của lithium theo đơn vị amu:"
+        }
+      ]
+    },
+    {
+      "type": "bài_tập_tự_luận",
+      "exercises": [
+        {
+          "id": "2.10",
+          "problem": "Mô tả sự khác nhau giữa cấu tạo một nguyên tử hydrogen và cấu tạo một nguyên tử helium."
+        }
+      ]
+    },
+    {
+      "type": "khác",
+      "content": "Oxygen là nguyên tố hoá học phổ biến trong không khí, duy trì sự sống và sự cháy:",
+      "exercises": [
+        {
+          "id": "2.11",
+          "instruction": "Hoàn thiện Hình 2.3 để mô tả cấu tạo một nguyên tử oxygen."
+        }
+      ],
+      "image_description": "Hình 2.3: A figure that needs to be completed to describe the structure of an oxygen atom."
+    },
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "2.12",
+          "question": "Một nguyên tử có 10 proton trong hạt nhân; Theo mô hình nguyên tử của Ro-dơ-pho Bo, số lớp electron của nguyên tử đó là",
+          "options": [
+            "A. 1",
+            "B. 2",
+            "C. 3",
+            "D. 4"
+          ],
+          "answer_type": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "2.13",
+          "question": "Trong một nguyên tử có số proton 5, số electron trong các lớp của vỏ nguyên tử; viết từ lớp trong ra lớp ngoài; lần lượt là",
+          "options": [
+            "A. 1,8, 2",
+            "B. 2,8, 1.",
+            "C. 2, 3.",
+            "D. 3, 2"
+          ],
+          "answer_type": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "2.14",
+          "question": "Nitơ (nitrogen) là nguyên tố hoá học phổ biến trong không khí. Trong hạt nhân nguyên tử nitơ có 7 proton. Số electron trong các lớp của vỏ nguyên tử nitơ, viết từ lớp trong ra lớp ngoài, lần lượt là",
+          "options": [
+            "A. 7.",
+            "B. 2,5",
+            "C. 2, 2,3.",
+            "D. 2,4,1."
+          ],
+          "answer_type": "multiple_choice"
+        }
+      ]
+    }
+  ]
+}

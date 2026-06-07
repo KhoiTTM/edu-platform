@@ -1,0 +1,494 @@
+{
+  "bai-1": {
+    "title": "BÀI 1. PHƯƠNG PHÁP VÀ KĨ NĂNG HỌC TẬP MÔN KHOA HỌC TỰ NHIÊN",
+    "questions": [
+      {
+        "id": "1.1.1",
+        "type": "multiple_choice",
+        "page": 4,
+        "text": "Các kĩ năng trong học tập môn Khoa học tự nhiên gồm: quan sát, phân loại; liên kết, đo, dự báo",
+        "options": [
+          "Đúng",
+          "Sai"
+        ],
+        "optionsCount": 2
+      },
+      {
+        "id": "1.1.2",
+        "type": "multiple_choice",
+        "page": 4,
+        "text": "Phương pháp tìm hiểu tự nhiên gồm các bước: đề xuất vấn đề, đưa ra dự đoán, lập kế hoạch kiểm tra dự đoán; thực hiện kế hoạch kiểm tra dự đoán, viết báo cáo, đề xuất ý kiến (nếu có)",
+        "options": [
+          "Đúng",
+          "Sai"
+        ],
+        "optionsCount": 2
+      },
+      {
+        "id": "1.1.3",
+        "type": "multiple_choice",
+        "page": 4,
+        "text": "Đối tượng nghiên cứu của khoa học là các sự vật, hiện tượng; các thuộc tính cơ bản; sự vận động của thế giới tự nhiên",
+        "options": [
+          "Đúng",
+          "Sai"
+        ],
+        "optionsCount": 2
+      },
+      {
+        "id": "1.1.4",
+        "type": "multiple_choice",
+        "page": 4,
+        "text": "Môn Khoa học tự nhiên là môn học về các sự vật và hiện tượng trong thế giới tự nhiên nhằm hình thành và phát triển các năng lực khoa học tự nhiên và khoa học Trái Đất",
+        "options": [
+          "Đúng",
+          "Sai"
+        ],
+        "optionsCount": 2
+      },
+      {
+        "id": "1.1.5",
+        "type": "multiple_choice",
+        "page": 4,
+        "text": "Nghiên cứu các sự vật và hiện tượng tự nhiên nhằm mục đích giải quyết các vấn đề nảy sinh trong cuộc sống",
+        "options": [
+          "Đúng",
+          "Sai"
+        ],
+        "optionsCount": 2
+      },
+      {
+        "id": "1.1.6",
+        "type": "multiple_choice",
+        "page": 4,
+        "text": "Kĩ năng dự báo là kĩ năng đề xuất điều gì sẽ xảy ra dựa trên các quan sát, kiến thức, sự hiểu biết và sự suy luận của con người về sự vật và hiện tượng trong tự nhiên",
+        "options": [
+          "Đúng",
+          "Sai"
+        ],
+        "optionsCount": 2
+      },
+      {
+        "id": "1.1.7",
+        "type": "multiple_choice",
+        "page": 4,
+        "text": "Kĩ năng đo được hình thành và phát triển không theo trình tự",
+        "options": [
+          "Đúng",
+          "Sai"
+        ],
+        "optionsCount": 2
+      },
+      {
+        "id": "1.1.8",
+        "type": "multiple_choice",
+        "page": 4,
+        "text": "Trong kĩ năng đo, không cần thực hiện việc ước lượng; thực hiện các phép đo, xác định độ chính xác của kết quả đo",
+        "options": [
+          "Đúng",
+          "Sai"
+        ],
+        "optionsCount": 2
+      },
+      {
+        "id": "1.1.9",
+        "type": "multiple_choice",
+        "page": 4,
+        "text": "Môn Khoa học tự nhiên được xây dựng và phát triển trên nền tảng các môn học: Toán học, Hoá học và Sinh học",
+        "options": [
+          "Đúng",
+          "Sai"
+        ],
+        "optionsCount": 2
+      },
+      {
+        "id": "1.2",
+        "type": "matching",
+        "page": 5,
+        "text": "Cột A\n1) Nước mưa\n2) Một số loài thực vật\n3) Trời nắng\n4) Phân bón\nCột B\na) do ánh sáng từ Mặt Trời\nb) ảnh hưởng đến sinh trưởng và phát triển của thực vật\nc) có khi trời mưa\nd) rụng lá vào mùa đông",
+        "matchingItems": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "options": [],
+        "optionsCount": 0
+      },
+      {
+        "id": "1.3",
+        "type": "multiple_choice",
+        "page": 5,
+        "text": "Khẳng định nào dưới đây không đúng?",
+        "options": [
+          "A. Dự báo là kĩ năng cần thiết trong nghiên cứu khoa học tự nhiên.",
+          "B. Dự báo là kĩ năng không cần thiết của người làm nghiên cứu:",
+          "C. Dự báo là kĩ năng dự đoán điều gì sẽ xảy ra dựa vào quan sát, kiến thức, suy luận của con người, về các sự vật, hiện tượng:",
+          "D. Kĩ năng dự báo thường được sử dụng trong bước dự đoán của phương pháp tìm hiểu tự nhiên:"
+        ],
+        "optionsCount": 4
+      },
+      {
+        "id": "1.4",
+        "type": "multiple_choice",
+        "page": 5,
+        "text": "Con người có thể định lượng được các sự vật và hiện tượng tự nhiên dựa trên kĩ năng nào?",
+        "options": [
+          "A. Kĩ năng quan sát, phân loại.",
+          "B. Kĩ năng liên kết tri thức.",
+          "C. Kĩ năng dự báo.",
+          "D. Kĩ năng đo."
+        ],
+        "optionsCount": 4
+      },
+      {
+        "id": "1.5",
+        "type": "multiple_choice",
+        "page": 5,
+        "text": "Cho các bước sau:\n(1) Thực hiện phép đo ghi kết quả đo và xử lí số liệu đo.\n(2) Ước lượng để lựa chọn dụng cụ/thiết bị đo phù hợp.\n(3) Phân tích kết quả và thảo luận về kết quả nghiên cứu thu được.\n(4) Đánh giá độ chính xác của kết quả đo căn cứ vào loại dụng cụ đo và cách đo.\nTrình tự các bước hình thành kĩ năng đo là",
+        "options": [
+          "A. (1) = (2) - (3) -> (4)",
+          "B. (1) = (3) = (2) = (4)",
+          "C. (3) = (2) = (4) = (1)",
+          "D. (2) = (1) = (4) = (3)"
+        ],
+        "optionsCount": 4
+      },
+      {
+        "id": "1.6",
+        "type": "short_answer",
+        "page": 6,
+        "text": "Bảng 1. Kết quả đo chiều cao của người ở các thời điểm trong ngày\nLần đo | Thời gian | Kết quả thu được\n1      | 6 giờ     | 162,4 cm\n2      | 12 giờ    | 161,8 cm\n3      | 18 giờ    | 161,1 cm",
+        "matchingItems": [],
+        "options": [],
+        "optionsCount": 0
+      },
+      {
+        "id": "1.7",
+        "type": "short_answer",
+        "page": 6,
+        "text": "Vận dụng phương pháp tìm hiểu tự nhiên, em hãy tìm hiểu về hiện tượng lũ lụt và đề xuất các biện pháp phòng chống hiện tượng trên:",
+        "matchingItems": [],
+        "options": [],
+        "optionsCount": 0
+      },
+      {
+        "id": "1.8",
+        "type": "multiple_choice",
+        "page": 6,
+        "text": "Trong Hình 1.1, ban đầu bình a chứa nước, bình b chứa một vật rắn không thấm nước.\nKhi đổ hết nước từ bình a sang bình b thì mức nước bình b được vẽ trong hình.\nThể tích của vật rắn là",
+        "options": [
+          "A. 33 mL",
+          "B. 73 mL",
+          "C. 32,5 mL",
+          "D. 35,2 mL"
+        ],
+        "optionsCount": 4
+      },
+      {
+        "id": "1.9",
+        "type": "short_answer",
+        "page": 6,
+        "text": "Làm cách nào để đo độ dày của một tờ giấy trong sách KHTN 7 bằng một thước có độ chia nhỏ nhất (ĐCNN) là 1 mm?",
+        "matchingItems": [],
+        "options": [],
+        "optionsCount": 0
+      },
+      {
+        "id": "1.10",
+        "type": "short_answer",
+        "page": 6,
+        "text": "Làm thế nào để đo được thể tích của một giọt nước từ ống nhỏ giọt rơi xuống với một bình chia độ có ĐCNN là 0,5 cm3?",
+        "matchingItems": [],
+        "options": [],
+        "optionsCount": 0
+      },
+      {
+        "id": "1.11",
+        "type": "short_answer",
+        "page": 6,
+        "text": "Để xác định thời gian chuyển động trên quãng đường dài 50 cm của một viên bi lăn trên một máng nghiêng; người ta dùng cổng quang và đồng hồ đo thời gian hiện số. Hỏi:",
+        "matchingItems": [],
+        "options": [],
+        "optionsCount": 0
+      }
+    ]
+  },
+  "bai-2": {
+    "title": "BÀI 2. NGUYÊN TỬ",
+    "questions": [
+      {
+        "id": "2.1",
+        "type": "multiple_choice",
+        "page": 7,
+        "text": "Phát biểu nào sau đây không mô tả mô hình nguyên tử của Rơ-dơ-pho Bo?",
+        "options": [
+          "Nguyên tử có cấu tạo rỗng; gôm hạt nhân ở tâm nguyên tử và các electron ở vỏ nguyên tử.",
+          "Nguyên tử có cấu tạo đặc khít; gôm hạt nhân nguyên tử và các electron",
+          "Electron chuyển động xung quanh hạt nhân theo những quỹ đạo xác định tạo thành các lớp electron.",
+          "Hạt nhân nguyên tử mang điện tích dương, electron mang điện tích âm."
+        ],
+        "optionsCount": 4
+      },
+      {
+        "id": "2.2",
+        "type": "multiple_choice",
+        "page": 7,
+        "text": "Phát biểu nào sau đây không mô tả đúng vỏ nguyên tử theo mô hình nguyên tử của Rơ-dơ-pho Bo?",
+        "options": [
+          "Electron chuyển động xung quanh hạt nhân theo từng lớp khác nhau tạo thành các electron",
+          "Lớp electron trong cùng gần hạt nhân nhất có tối đa 2 electron; các lớp electron khác có chứa tối đa 8 electron hoặc nhiều hơn",
+          "Lớp electron trong cùng gần hạt nhân nhất có tối đa 8 electron; các lớp electron khác có chứa tối đa nhiều hơn 8 electron.",
+          "Các electron sắp xếp vào các lớp theo thứ tự từ trong ra ngoài cho đến hết."
+        ],
+        "optionsCount": 4
+      },
+      {
+        "id": "2.3",
+        "type": "multiple_choice",
+        "page": 7,
+        "text": "Trừ hạt nhân của nguyên tử hydrogen; hạt nhân các nguyên tử còn lại được tạo thành từ hạt",
+        "options": [
+          "electron và proton:",
+          "electron, proton và neutron.",
+          "neutron và electron",
+          "proton và neutron:"
+        ],
+        "optionsCount": 4
+      },
+      {
+        "id": "2.4",
+        "type": "short_answer",
+        "page": 7,
+        "text": "Cho các phát biểu:\n(1) Nguyên tử trung hoà về điện.\n(2) Khối lượng của nguyên tử tập trung chủ yếu ở hạt nhân.",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "optionsCount": 4
+      },
+      {
+        "id": "2.5",
+        "type": "short_answer",
+        "page": 8,
+        "text": "Hạt\tĐiện tích\tKhối lượng (amu)\nProton\t?\nNeutron\t~0,00055",
+        "matchingItems": [],
+        "options": [],
+        "optionsCount": 0
+      },
+      {
+        "id": "2.6",
+        "type": "short_answer",
+        "page": 8,
+        "text": "Từ Hình 2.1 mô phỏng một nguyên tử carbon; hãy cho biết trong một nguyên tử carbon có bao nhiêu hạt electron; proton; neutron.",
+        "matchingItems": [],
+        "options": [],
+        "optionsCount": 0
+      },
+      {
+        "id": "2.7",
+        "type": "short_answer",
+        "page": 8,
+        "text": "a) Hydrogen\nb) Helium\nHình 2.2",
+        "matchingItems": [],
+        "options": [],
+        "optionsCount": 0
+      },
+      {
+        "id": "2.7a",
+        "type": "multiple_choice",
+        "page": 9,
+        "text": "Dựa vào hình vẽ trên hãy cho biết: Mỗi vòng tròn xung quanh hạt nhân được gọi là gì?",
+        "options": [
+          "A. Một liên kết.",
+          "B. Một electron:",
+          "C. Một lớp vỏ electron",
+          "D. Một proton"
+        ],
+        "optionsCount": 4
+      },
+      {
+        "id": "2.7b",
+        "type": "short_answer",
+        "page": 9,
+        "text": "Có bao nhiêu electron trong lớp vỏ của nguyên tử H, He? Có bao nhiêu proton trong hạt nhân của nguyên tử H, He?",
+        "matchingItems": [],
+        "options": [],
+        "optionsCount": 0
+      },
+      {
+        "id": "2.8",
+        "type": "short_answer",
+        "page": 9,
+        "text": "Giải thích vì sao có thể coi khối lượng nguyên tử tập trung ở hạt nhân, lấy ví dụ vể một nguyên tử để minh hoạ.",
+        "matchingItems": [],
+        "options": [],
+        "optionsCount": 0
+      },
+      {
+        "id": "2.9a",
+        "type": "short_answer",
+        "page": 9,
+        "text": "Có bao nhiêu electron trong nguyên tử lithium?",
+        "matchingItems": [],
+        "options": [],
+        "optionsCount": 0
+      },
+      {
+        "id": "2.9b",
+        "type": "short_answer",
+        "page": 9,
+        "text": "Biết hạt nhân nguyên tử lithium có 4 neutron; tính khối lượng nguyên tử của lithium theo đơn vị amu:",
+        "matchingItems": [],
+        "options": [],
+        "optionsCount": 0
+      },
+      {
+        "id": "2.10",
+        "type": "short_answer",
+        "page": 9,
+        "text": "Mô tả sự khác nhau giữa cấu tạo một nguyên tử hydrogen và cấu tạo một nguyên tử helium.",
+        "matchingItems": [],
+        "options": [],
+        "optionsCount": 0
+      },
+      {
+        "id": "2.11",
+        "type": "short_answer",
+        "page": 9,
+        "text": "Hoàn thiện Hình 2.3 để mô tả cấu tạo một nguyên tử oxygen.",
+        "matchingItems": [],
+        "options": [],
+        "optionsCount": 0
+      },
+      {
+        "id": "2.12",
+        "type": "multiple_choice",
+        "page": 9,
+        "text": "Một nguyên tử có 10 proton trong hạt nhân; Theo mô hình nguyên tử của Ro-dơ-pho Bo, số lớp electron của nguyên tử đó là",
+        "options": [
+          "A. 1",
+          "B. 2",
+          "C. 3",
+          "D. 4"
+        ],
+        "optionsCount": 4
+      },
+      {
+        "id": "2.13",
+        "type": "multiple_choice",
+        "page": 9,
+        "text": "Trong một nguyên tử có số proton 5, số electron trong các lớp của vỏ nguyên tử; viết từ lớp trong ra lớp ngoài; lần lượt là",
+        "options": [
+          "A. 1,8, 2",
+          "B. 2,8, 1.",
+          "C. 2, 3.",
+          "D. 3, 2"
+        ],
+        "optionsCount": 4
+      },
+      {
+        "id": "2.14",
+        "type": "multiple_choice",
+        "page": 9,
+        "text": "Nitơ (nitrogen) là nguyên tố hoá học phổ biến trong không khí. Trong hạt nhân nguyên tử nitơ có 7 proton. Số electron trong các lớp của vỏ nguyên tử nitơ, viết từ lớp trong ra lớp ngoài, lần lượt là",
+        "options": [
+          "A. 7.",
+          "B. 2,5",
+          "C. 2, 2,3.",
+          "D. 2,4,1."
+        ],
+        "optionsCount": 4
+      },
+      {
+        "id": "2.15",
+        "type": "multiple_choice",
+        "page": 10,
+        "text": "Trong hạt nhân nguyên tử fluorine có 9 proton. Số electron ở lớp ngoài cùng của vỏ nguyên tử fluorine là",
+        "options": [
+          "A. 2",
+          "B. 5.",
+          "C. 7",
+          "D. 8"
+        ],
+        "optionsCount": 4
+      },
+      {
+        "id": "2.16",
+        "type": "multiple_choice",
+        "page": 10,
+        "text": "Nguyên tử calcium có 20 electron ở vỏ nguyên tử. Hạt nhân của nguyên tử calcium có số proton là",
+        "options": [
+          "A. 2",
+          "B. 10.",
+          "C. 18",
+          "D. 20."
+        ],
+        "optionsCount": 4
+      },
+      {
+        "id": "2.17",
+        "type": "multiple_choice",
+        "page": 10,
+        "text": "Nguyên tử nhôm (aluminium) có 13 electron ở vỏ. Số electron ở lớp ngoài cùng của nguyên tử nhôm là",
+        "options": [
+          "A. 2",
+          "B. 8.",
+          "C. 10.",
+          "D. 18."
+        ],
+        "optionsCount": 4
+      },
+      {
+        "id": "2.18",
+        "type": "multiple_choice",
+        "page": 10,
+        "text": "Muối ăn chứa hai nguyên tố hoá học là natri (sodium) và chlorine. Trong hạt nhân nguyên tử của các nguyên tố natri và chlorine có lần lượt 11 và 17 proton. Số electron ở lớp ngoài cùng của vỏ nguyên tử natri và chlorine lần lượt là",
+        "options": [
+          "A. 1 và 7",
+          "B. 3 và 9.",
+          "C. 9 và 15.",
+          "D. 3 và 7"
+        ],
+        "optionsCount": 4
+      },
+      {
+        "id": "2.19",
+        "type": "multiple_choice",
+        "page": 10,
+        "text": "Trong hạt nhân nguyên tử lưu huỳnh (sulfur) có 16 proton. Số electron trong các lớp của vỏ nguyên tử sulfur; viết từ lớp trong ra lớp ngoài; lần lượt là",
+        "options": [
+          "A. 2,10, 6",
+          "B. 2,6, 8",
+          "C. 2, 8,6.",
+          "D. 2, 9,5."
+        ],
+        "optionsCount": 4
+      },
+      {
+        "id": "2.20",
+        "type": "short_answer",
+        "page": 10,
+        "text": "Hãy hoàn thiện Hình 2.4 để mô tả mô hình một nguyên tử silicon.",
+        "matchingItems": [],
+        "options": [],
+        "optionsCount": 0
+      },
+      {
+        "id": "2.21",
+        "type": "multiple_choice",
+        "page": 10,
+        "text": "Hạt nhân một nguyên tử fluorine có 9 proton và 10 neutron. Khối lượng của nguyên tử fluorine xấp xỉ",
+        "options": [
+          "A. 9 amu.",
+          "B. 10 amu:",
+          "C. 19 amu.",
+          "D. 28 amu."
+        ],
+        "optionsCount": 4
+      }
+    ]
+  }
+}

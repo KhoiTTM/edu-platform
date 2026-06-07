@@ -1,0 +1,84 @@
+{
+  "page": 150,
+  "lesson_title": "",
+  "sections": [
+    {
+      "type": "đọc",
+      "title": "Trả lời câu hỏi và thực hiện yêu cầu",
+      "content": "",
+      "exercises": [
+        {
+          "id": "2",
+          "instruction": "Trả lời câu hỏi và thực hiện yêu cầu.",
+          "items": [
+            {
+              "question": "a. Si-skin cảm thấy thế nào khi được làm thủ thư của lớp?",
+              "options": [
+                "Lo lắng, ngại ngần",
+                "Hãnh diện, hào hứng",
+                "Bồn chồn, hồi hộp"
+              ]
+            },
+            {
+              "question": "b. Si-skin và bạn của mình đã làm những gì để bảo vệ sách?",
+              "options": [
+                "ngắm nghía sách, mượn sách",
+                "dán lại sách, dặn các bạn giữ sách",
+                "không cho các bạn mượn sách, giữ giá sách đầy ăm ắp"
+              ]
+            },
+            {
+              "question": "c. Vì sao Si-skin ngạc nhiên khi thấy bạn thủ thư khác mượn sách?",
+              "options": [
+                "Vì bạn ấy nghĩ rằng thủ thư chỉ quản lí sách.",
+                "Vì bạn ấy không thích đọc sách.",
+                "Vì bạn ấy muốn dành sách cho bạn khác."
+              ]
+            },
+            {
+              "question": "d. Vì sao Si-skin không kêu ca về việc giá ít sách nữa?"
+            },
+            {
+              "question": "e. Viết 2 – 3 câu nêu cảm nhận của em về những việc Si-skin đã làm dưới đây:",
+              "sub_items": [
+                "Nhắc nhở các bạn trả sách sớm",
+                "Không vui khi các bạn trả sách quá nhanh",
+                "Không muốn sách được mượn nhiều vì thích nhìn giá sách đầy ăm ắp"
+              ]
+            },
+            {
+              "question": "g. Từ ngữ nào dưới đây chỉ đặc điểm?",
+              "options": [
+                "đầy ăm ắp",
+                "gáy sách",
+                "kêu ca"
+              ]
+            },
+            {
+              "question": "h. Tìm trong bài đọc các câu kết thúc bằng dấu chấm than và xếp vào 2 nhóm dưới đây:",
+              "categories": [
+                "Câu cảm",
+                "Câu khiến"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "viết",
+      "title": "Luyện viết",
+      "content": "",
+      "exercises": [
+        {
+          "id": "3",
+          "instruction": "Lựa chọn một trong hai đề sau:",
+          "items": [
+            "a. Viết một đoạn văn tả một đồ dùng học tập.",
+            "b. Viết một đoạn văn nêu lí do em thích một nhân vật trong câu chuyện đã đọc hoặc đã nghe."
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -48,63 +48,95 @@ function makeQuestion(qText: string, opts: string[], correctVal: string, expl: s
   };
 }
 
+// Generates a single question for a given lesson
+function getQuestionForLesson(lesson: number, index: number, globalSeed: number): Question {
+  const seed = lesson * 1000 + globalSeed * 10 + index;
+  
+  if (lesson === 1) { // Đọc viết cấu tạo số
+    const num = 100 + (seed % 899);
+    const s = String(num);
+    if (index % 3 === 0) return makeQuestion(`Giá trị của chữ số ${s[1]} trong số ${num} là:`, [`${Number(s[1])*10}`, `${s[1]}`, "0", "100"], `${Number(s[1])*10}`, `Chữ số ${s[1]} ở hàng chục.`);
+    else if (index % 3 === 1) return makeQuestion(`Số liền sau của ${num} là:`, [`${num+1}`, `${num-1}`, `${num+10}`, `${num}`], `${num+1}`, "Số liền sau = số đó + 1.");
+    else return makeQuestion(`Số ${num} gồm:`, [`${s[0]} trăm, ${s[1]} chục, ${s[2]} đơn vị`, `${s[2]} trăm, ${s[1]} chục, ${s[0]} đơn vị`, "3 chữ số giống nhau", "Không biết"], `${s[0]} trăm, ${s[1]} chục, ${s[2]} đơn vị`, "Phân tích cấu tạo số.");
+  } else if (lesson === 2 || lesson === 3) { // Cộng trừ cơ bản
+    const a = 10 + (seed % 90);
+    const b = 5 + (seed % 80);
+    if (index % 2 === 0) return makeQuestion(`Tính: ${a} + ${b} = ?`, [`${a+b}`, `${a+b+10}`, `${a+b-10}`, `${a+b+1}`], `${a+b}`, "Thực hiện phép cộng.");
+    else {
+      const max = Math.max(a, b);
+      const min = Math.min(a, b);
+      return makeQuestion(`Tính: ${max} - ${min} = ?`, [`${max-min}`, `${max-min+10}`, `${max-min-10}`, `${max-min+1}`], `${max-min}`, "Thực hiện phép trừ.");
+    }
+  } else if (lesson >= 4 && lesson <= 12) { // Bảng nhân chia 3,4,6,7,8,9
+    const tables = [3, 4, 6, 7, 8, 9];
+    const m = tables[seed % tables.length];
+    const factor = (seed % 9) + 1;
+    if (index % 2 === 0) return makeQuestion(`Tính: ${m} x ${factor} = ?`, [`${m*factor}`, `${m*factor+m}`, `${m*factor-m}`, "0"], `${m*factor}`, `Bảng nhân ${m}.`);
+    else return makeQuestion(`Tính: ${factor*m} : ${m} = ?`, [`${factor}`, `${factor+1}`, `${factor-1}`, "0"], `${factor}`, `Bảng chia ${m}.`);
+  } else if (lesson >= 13 && lesson <= 16) { // Đơn vị đo độ dài, khối lượng
+    const val = 2 + (seed % 8);
+    if (index % 3 === 0) return makeQuestion(`Đổi: ${val} m = ... dm?`, [`${val*10}`, `${val*100}`, `${val}`, "10"], `${val*10}`, "1m = 10dm.");
+    else if (index % 3 === 1) return makeQuestion(`Đổi: ${val} kg = ... g?`, [`${val*1000}`, `${val*100}`, `${val*10}`, `${val}`], `${val*1000}`, "1kg = 1000g.");
+    else return makeQuestion(`Đổi: ${val} cm = ... mm?`, [`${val*10}`, `${val*100}`, `${val}`, "10"], `${val*10}`, "1cm = 10mm.");
+  } else if (lesson >= 17 && lesson <= 24) { // Biểu thức, góc, xem đồng hồ
+    if (index % 3 === 0) {
+       const a = 2 + (seed % 8);
+       const b = 2 + ((seed * 3) % 5);
+       const c = 5 + (seed % 10);
+       const ans = a * b + c;
+       return makeQuestion(`Tính giá trị biểu thức: ${a} x ${b} + ${c} = ?`, [`${ans}`, `${a*(b+c)}`, `${ans-2}`, `${ans+5}`], `${ans}`, "Nhân chia trước, cộng trừ sau.");
+    } else if (index % 3 === 1) {
+       return makeQuestion(`Góc bé hơn góc vuông là góc gì?`, ["Góc nhọn", "Góc tù", "Góc bẹt", "Góc nhọn và góc tù"], "Góc nhọn", "Góc nhọn bé hơn góc vuông.");
+    } else {
+       const hour = 1 + (seed % 12);
+       return makeQuestion(`Kim dài chỉ số 12, kim ngắn chỉ số ${hour} thì là mấy giờ?`, [`${hour} giờ`, `${hour} giờ 12 phút`, `12 giờ ${hour} phút`, "12 giờ"], `${hour} giờ`, "Kim ngắn chỉ giờ, kim dài chỉ phút.");
+    }
+  } else if (lesson >= 25 && lesson <= 40) { // Nhân chia số có 2, 3 chữ số với 1 chữ số
+    if (index % 2 === 0) {
+      const a = 11 + (seed % 40); // 2 digits
+      const b = 2 + (seed % 5); // 1 digit
+      return makeQuestion(`Tính: ${a} x ${b} = ?`, [`${a*b}`, `${a*b+10}`, `${a*b-b}`, `${a*b+b}`], `${a*b}`, "Nhân số có 2 chữ số với số có 1 chữ số.");
+    } else {
+      const b = 2 + (seed % 5); // 1 digit divisor
+      const q = 11 + (seed % 30); // 2 digits quotient
+      const a = b * q; 
+      return makeQuestion(`Tính: ${a} : ${b} = ?`, [`${q}`, `${q+1}`, `${q-1}`, `${q+10}`], `${q}`, "Chia số có 3 chữ số cho 1 chữ số.");
+    }
+  } else { // Hình học, chu vi, diện tích
+    const a = 3 + (seed % 10);
+    const b = 2 + (seed % 5);
+    if (index % 2 === 0) return makeQuestion(`Chu vi hình chữ nhật có chiều dài ${a} cm, chiều rộng ${b} cm là:`, [`${(a+b)*2} cm`, `${a+b} cm`, `${a*b} cm`, `${(a+b)*2}`], `${(a+b)*2} cm`, "Chu vi = (dài + rộng) x 2.");
+    else return makeQuestion(`Chu vi hình vuông có cạnh ${a} cm là:`, [`${a*4} cm`, `${a*2} cm`, `${a*a} cm`, `${a+4} cm`], `${a*4} cm`, "Chu vi hình vuông = cạnh x 4.");
+  }
+}
+
+// 70% current lesson, 30% cumulative
 function generateDynamicQuestions(bookLessonNumber: number, count: number): Question[] {
   const list: Question[] = [];
-  for (let i = 0; i < count; i++) {
-    const seed = bookLessonNumber * 100 + i;
-    if (bookLessonNumber === 1) {
-      const num = 100 + (seed % 899);
-      const s = String(num);
-      if (i % 3 === 0) list.push(makeQuestion(`Giá trị của chữ số ${s[1]} trong số ${num} là:`, [`${Number(s[1])*10}`, `${s[1]}`, "0", "100"], `${Number(s[1])*10}`, `Chữ số ${s[1]} ở hàng chục.`));
-      else if (i % 3 === 1) list.push(makeQuestion(`Số liền sau của ${num} là:`, [`${num+1}`, `${num-1}`, `${num+10}`, `${num}`], `${num+1}`, "Số liền sau = số đó + 1."));
-      else list.push(makeQuestion(`Số ${num} gồm:`, [`${s[0]} trăm, ${s[1]} chục, ${s[2]} đơn vị`, `${s[2]} trăm, ${s[1]} chục, ${s[0]} đơn vị`, "3 chữ số giống nhau", "Không biết"], `${s[0]} trăm, ${s[1]} chục, ${s[2]} đơn vị`, "Phân tích cấu tạo số."));
-    } else if (bookLessonNumber === 2) {
-      const a = 100 + (seed % 400);
-      const b = 100 + ((seed * 3) % 400);
-      if (i % 2 === 0) list.push(makeQuestion(`Tính: ${a} + ${b} = ?`, [`${a+b}`, `${a+b+10}`, `${a+b-10}`, `${a+b+2}`], `${a+b}`, "Thực hiện phép cộng."));
-      else {
-        const max = Math.max(a, b);
-        const min = Math.min(a, b);
-        list.push(makeQuestion(`Tính: ${max} - ${min} = ?`, [`${max-min}`, `${max-min+10}`, `${max-min-10}`, `${max-min+1}`], `${max-min}`, "Thực hiện phép trừ."));
-      }
-    } else if (bookLessonNumber === 3) {
-      const val = 10 + (seed % 50);
-      const res = 60 + (seed % 40);
-      if (i % 2 === 0) list.push(makeQuestion(`Tìm x biết: x + ${val} = ${res}`, [`${res-val}`, `${res+val}`, `${res-val+5}`, `${res-val-5}`], `${res-val}`, "x = tổng - số hạng đã biết."));
-      else list.push(makeQuestion(`Tìm x biết: x - ${val} = ${res}`, [`${res+val}`, `${res-val}`, `${res+val+10}`, `${res+val-10}`], `${res+val}`, "x = hiệu + số trừ."));
-    } else if (bookLessonNumber === 4) {
-      const m = i % 2 === 0 ? 2 : 5;
-      const factor = (seed % 9) + 1;
-      if (i % 3 === 0) list.push(makeQuestion(`Tính: ${m} x ${factor} = ?`, [`${m*factor}`, `${m*factor+m}`, `${m*factor-m}`, "0"], `${m*factor}`, "Bảng nhân."));
-      else list.push(makeQuestion(`Tính: ${factor*m} : ${m} = ?`, [`${factor}`, `${factor+1}`, `${factor-1}`, "0"], `${factor}`, "Bảng chia."));
-    } else if (bookLessonNumber === 5) {
-      const factor = (seed % 9) + 1;
-      if (i % 2 === 0) list.push(makeQuestion(`Tính: 3 x ${factor} = ?`, [`${3*factor}`, `${3*factor+3}`, `${3*factor-3}`, "3"], `${3*factor}`, "Bảng nhân 3."));
-      else list.push(makeQuestion(`Tính: ${factor*3} : 3 = ?`, [`${factor}`, `${factor+1}`, `${factor-1}`, "0"], `${factor}`, "Bảng chia 3."));
-    } else if (bookLessonNumber === 6) {
-      const factor = (seed % 9) + 1;
-      if (i % 2 === 0) list.push(makeQuestion(`Tính: 4 x ${factor} = ?`, [`${4*factor}`, `${4*factor+4}`, `${4*factor-4}`, "4"], `${4*factor}`, "Bảng nhân 4."));
-      else list.push(makeQuestion(`Tính: ${factor*4} : 4 = ?`, [`${factor}`, `${factor+1}`, `${factor-1}`, "0"], `${factor}`, "Bảng chia 4."));
-    } else if (bookLessonNumber === 7 || bookLessonNumber === 43) {
-      const val = 2 + (seed % 8);
-      if (i % 2 === 0) list.push(makeQuestion(`Đổi: ${val} m = ... dm?`, [`${val*10}`, `${val*100}`, `${val}`, "10"], `${val*10}`, "1m = 10dm."));
-      else list.push(makeQuestion(`Đổi: ${val} cm = ... mm?`, [`${val*10}`, `${val*100}`, `${val}`, "10"], `${val*10}`, "1cm = 10mm."));
-    } else if (bookLessonNumber >= 9 && bookLessonNumber <= 12) {
-      const multiplier = bookLessonNumber === 9 ? 6 : bookLessonNumber === 10 ? 7 : bookLessonNumber === 11 ? 8 : 9;
-      const factor = (seed % 9) + 1;
-      if (i % 2 === 0) list.push(makeQuestion(`Tính: ${multiplier} x ${factor} = ?`, [`${multiplier*factor}`, `${multiplier*factor+multiplier}`, `${multiplier*factor-multiplier}`, "0"], `${multiplier*factor}`, `Bảng nhân ${multiplier}.`));
-      else list.push(makeQuestion(`Tính: ${multiplier*factor} : ${multiplier} = ?`, [`${factor}`, `${factor+1}`, `${factor-1}`, "1"], `${factor}`, `Bảng chia ${multiplier}.`));
+  const currentLessonCount = Math.floor(count * 0.7); // 14 for count=20
+  const cumulativeCount = count - currentLessonCount; // 6 for count=20
+
+  for (let i = 0; i < currentLessonCount; i++) {
+    list.push(getQuestionForLesson(bookLessonNumber, i, bookLessonNumber + i));
+  }
+
+  for (let i = 0; i < cumulativeCount; i++) {
+    if (bookLessonNumber > 1) {
+        // Randomly pick a previous lesson
+        const prevLesson = 1 + Math.floor(Math.random() * (bookLessonNumber - 1));
+        list.push(getQuestionForLesson(prevLesson, i + currentLessonCount, bookLessonNumber + i * 99));
     } else {
-      const a = 10 + (seed % 90);
-      const b = 5 + (seed % 10);
-      list.push(makeQuestion(`Tính: ${a} + ${b} = ?`, [`${a+b}`, `${a+b+1}`, `${a+b-1}`, "0"], `${a+b}`, "Cộng cơ bản."));
+        // If it's the very first lesson, just give more lesson 1 questions
+        list.push(getQuestionForLesson(bookLessonNumber, i + currentLessonCount, bookLessonNumber + i * 99));
     }
   }
-  return list;
+
+  // Shuffle the final list so cumulative questions are mixed
+  return list.sort(() => 0.5 - Math.random());
 }
 
 async function seed() {
-  console.log("🚀 Starting Dynamic Grade 3 Math assessments seeding...");
+  console.log("🚀 Starting Dynamic Grade 3 Math assessments seeding (Cumulative & Textbook Aligned)...");
 
   const { data: subject } = await supabase.from('universal_subjects').select('id').eq('slug', 'toan').single();
   if (!subject) {
@@ -125,7 +157,7 @@ async function seed() {
   let {data: source} = await supabase.from('content_sources').select('id').limit(1).single();
 
   // Insert Subject Toan 3 if not exists
-  let { data: subjectNode, error: errSubFetch } = await supabase.from('curriculum_nodes').select('id, path').eq('type', 'subject').eq('path', 'toan_3').single();
+  let { data: subjectNode, error: errSubFetch } = await supabase.from('curriculum_nodes').select('id, path').eq('type', 'subject').eq('path', 'toan_3').maybeSingle();
   if (!subjectNode) {
     const { data: newSub, error: errSub } = await supabase.from('curriculum_nodes').insert({
         type: 'subject',
@@ -155,24 +187,25 @@ async function seed() {
     const chapterSlug = `chu_de_${chapterIdx + 1}`;
     const chapterPath = `toan_3.${chapterSlug}`;
     
-    let { data: topicNode } = await supabase.from('curriculum_nodes').select('id, path, title').eq('type', 'unit').eq('path', chapterPath).single();
+    let { data: topicNode } = await supabase.from('curriculum_nodes').select('id, path, title').eq('type', 'unit').eq('path', chapterPath).maybeSingle();
     if (!topicNode) {
         const { data: newTopic, error: topicErr } = await supabase.from('curriculum_nodes').insert({
             type: 'unit',
             title: chapterData.chapter,
             path: chapterPath,
             slug: chapterSlug,
-            parent_id: subjectNode.id,
-            source_id: source?.id
+            parent_id: subjectNode!.id,
+            source_id: source?.id,
+            metadata: { color: 'text-blue-500', icon: 'Calculator' }
         }).select().single();
         if (topicErr) {
             console.error("❌ Error creating topic node:", topicErr);
             process.exit(1);
         }
         topicNode = newTopic;
-        console.log(`✅ Created Topic Node: ${topicNode.title}`);
+        console.log(`✅ Created Topic Node: ${topicNode!.title}`);
     } else {
-        console.log(`✅ Found Topic Node: ${topicNode.title}`);
+        console.log(`✅ Found Topic Node: ${topicNode!.title}`);
     }
 
     for (const lesson of chapterData.lessons) {
@@ -208,11 +241,12 @@ async function seed() {
             subject_slug: 'toan',
             grade: 3,
             volume: 1,
+            units: [chapterIdx + 1], // VERY IMPORTANT for UI grouping
             status: 'published'
         };
 
         // Inject unit_id if it works
-        colData.unit_id = topicNode.id;
+        colData.unit_id = topicNode!.id;
 
         let newCol = null;
         let colError = null;
@@ -238,8 +272,9 @@ async function seed() {
             title, 
             exam_number: i, 
             total_questions: 20, 
+            duration_minutes: 20,
             generation_mode: 'balanced',
-            metadata_json: { unit_id: topicNode.id }
+            metadata_json: { unit_id: topicNode!.id }
         }).select().single();
 
         if (examErr) {

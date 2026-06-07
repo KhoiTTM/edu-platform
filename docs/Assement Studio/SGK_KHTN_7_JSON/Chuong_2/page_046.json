@@ -4,14 +4,14 @@
     {
       "id": "1",
       "type": "exercise",
-      "content": "Lập công thức hoá học của hợp chất tạo bởi:\na) Magnesium hoá trị II và oxygen hoá trị II.\nb) Aluminium hoá trị III và oxygen hoá trị II.",
-      "answer": "a) $Mg_x O_y \Rightarrow x \times II = y \times II \Rightarrow x/y = 1/1 \Rightarrow MgO$.\nb) $Al_x O_y \Rightarrow x \times III = y \times II \Rightarrow x/y = 2/3 \Rightarrow Al_2 O_3$."
+      "content": "Lập công thức hoá học của hợp chất tạo bởi:\\na) Magnesium hoá trị II và oxygen hoá trị II.\\nb) Aluminium hoá trị III và oxygen hoá trị II.",
+      "answer": "a) $Mg_x O_y \\Rightarrow x \\times II = y \\times II \\Rightarrow x/y = 1/1 \\Rightarrow MgO$.\\nb) $Al_x O_y \\Rightarrow x \\times III = y \\times II \\Rightarrow x/y = 2/3 \\Rightarrow Al_2 O_3$."
     },
     {
       "id": "2",
       "type": "exercise",
       "content": "Dựa vào bảng hoá trị, hãy xác định hoá trị của nguyên tố sắt (Fe) trong hợp chất có công thức hoá học là FeCl3, biết Cl có hoá trị I.",
-      "answer": "Gọi hoá trị của Fe là a. Ta có: $1 \times a = 3 \times I \Rightarrow a = III$. Vậy sắt có hoá trị III."
+      "answer": "Gọi hoá trị của Fe là a. Ta có: $1 \\times a = 3 \\times I \\Rightarrow a = III$. Vậy sắt có hoá trị III."
     }
   ],
   "key_points": [

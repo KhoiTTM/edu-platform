@@ -1,0 +1,140 @@
+{
+  "page": 2,
+  "sections": [
+    {
+      "type": "table_of_contents",
+      "title": "MỤC LỤC",
+      "entries": [
+        {
+          "type": "chapter",
+          "title": "CHƯƠNG I: NGUYÊN TỬ. SƠ LƯỢC VỀ BẢNG TUẦN HOÀN CÁC NGUYÊN TỐ HOÁ HỌC",
+          "page": 1,
+          "lessons": [
+            {"title": "Bài 1 Phương pháp và kĩ năng học tập môn Khoa học tự nhiên", "page": 1},
+            {"title": "Bài 2 Nguyên tử", "page": 6},
+            {"title": "Bài 3 Nguyên tố hoá học", "page": 11},
+            {"title": "Bài 4 Sơ lược về bảng tuần hoàn các nguyên tố hoá học", "page": 14}
+          ]
+        },
+        {
+          "type": "chapter",
+          "title": "CHƯƠNG II: PHÂN TỬ. LIÊN KẾT HOÁ HỌC",
+          "page": 19,
+          "lessons": [
+            {"title": "Bài 5 Phân tử. Đơn chất - Hợp chất", "page": 19},
+            {"title": "Bài 6 Giới thiệu về liên kết hoá học", "page": 23},
+            {"title": "Bài 7 Hoá trị và công thức hoá học", "page": 26}
+          ]
+        },
+        {
+          "type": "chapter",
+          "title": "CHƯƠNG III: TỐC ĐỘ",
+          "page": 29,
+          "lessons": [
+            {"title": "Bài 8 Tốc độ chuyển động", "page": 29},
+            {"title": "Bài 9 Đo tốc độ", "page": 31},
+            {"title": "Bài 10 Đồ thị quãng đường - thời gian", "page": 32},
+            {"title": "Bài 11 Thảo luận về ảnh hưởng của tốc độ trong an toàn giao thông", "page": 35}
+          ]
+        },
+        {
+          "type": "chapter",
+          "title": "CHƯƠNG IV: ÂM THANH",
+          "page": 37,
+          "lessons": [
+            {"title": "Bài 12 Âm", "page": 37},
+            {"title": "Bài 13 Độ to và độ cao của âm", "page": 38},
+            {"title": "Bài 14 Phản xạ âm, chống ô nhiễm tiếng ồn", "page": 41}
+          ]
+        },
+        {
+          "type": "chapter",
+          "title": "CHƯƠNG V: ÁNH SÁNG",
+          "page": 44,
+          "lessons": [
+            {"title": "Bài 15 Năng lượng ánh sáng. Tia sáng, vùng tối", "page": 44},
+            {"title": "Bài 16 Sự phản xạ ánh sáng", "page": 46},
+            {"title": "Bài 17 Ảnh của vật qua gương phẳng", "page": 47}
+          ]
+        },
+        {
+          "type": "chapter",
+          "title": "CHƯƠNG VI: TỪ",
+          "page": 48,
+          "lessons": [
+            {"title": "Bài 18 Nam châm", "page": 48},
+            {"title": "Bài 19 Từ trường", "page": 49},
+            {"title": "Bài 20 Chế tạo nam châm điện đơn giản", "page": 51}
+          ]
+        },
+        {
+          "type": "chapter",
+          "title": "CHƯƠNG VII: TRAO ĐỔI CHẤT VÀ CHUYỂN HOÁ NĂNG LƯỢNG Ở SINH VẬT",
+          "page": 53,
+          "lessons": [
+            {"title": "Bài 21 Khái quát về trao đổi chất và chuyển hoá năng lượng", "page": 53},
+            {"title": "Bài 22 Quang hợp ở thực vật", "page": 54},
+            {"title": "Bài 23 Một số yếu tố ảnh hưởng đến quang hợp", "page": 56},
+            {"title": "Bài 24 Thực hành: Chứng minh quang hợp ở cây xanh", "page": 57}
+          ]
+        },
+        {
+          "type": "chapter",
+          "title": "CHƯƠNG VIII: CẢM ỨNG Ở SINH VẬT",
+          "page": 76,
+          "lessons": [
+            {"title": "Bài 25 Trao đổi nước và các chất dinh dưỡng ở thực vật", "page": 59},
+            {"title": "Bài 26 Hô hấp ở thực vật", "page": 63},
+            {"title": "Bài 27 Thực hành: Hô hấp ở thực vật", "page": 64},
+            {"title": "Bài 28 Thực hành: Vận dụng một số yếu tố ảnh hưởng đến quang hợp, hô hấp", "page": 66},
+            {"title": "Bài 29 Dinh dưỡng và tiêu hóa ở động vật", "page": 68},
+            {"title": "Bài 30 Trao đổi khí ở động vật", "page": 72},
+            {"title": "Bài 31 Vận chuyển các chất ở động vật", "page": 74},
+            {"title": "Bài 32 Thực hành: Tìm hiểu một số bệnh về đường tiêu hóa", "page": 76}
+          ]
+        },
+        {
+          "type": "chapter",
+          "title": "CHƯƠNG IX: SINH TRƯỞNG VÀ PHÁT TRIỂN Ở SINH VẬT",
+          "page": 81,
+          "lessons": [
+            {"title": "Bài 33 Cảm ứng ở thực vật", "page": 78},
+            {"title": "Bài 34 Cảm ứng ở động vật", "page": 81}
+          ]
+        },
+        {
+          "type": "chapter",
+          "title": "CHƯƠNG X: SINH SẢN Ở SINH VẬT",
+          "page": 86,
+          "lessons": [
+            {"title": "Bài 35 Sinh trưởng và phát triển ở thực vật", "page": 84},
+            {"title": "Bài 36 Sinh trưởng và phát triển ở động vật", "page": 86},
+            {"title": "Bài 37 Một số yếu tố ảnh hưởng và điều hòa, điều khiển sinh sản ở sinh vật", "page": 89},
+            {"title": "Bài 38 Cơ thể sinh vật là một thể thống nhất", "page": 91}
+          ]
+        },
+        {
+          "type": "chapter",
+          "title": "Ôn tập cuối học kì I",
+          "page": 88
+        },
+        {
+          "type": "answer_key_chapter",
+          "title": "HƯỚNG DẪN GIẢI VÀ ĐÁP ÁN",
+          "entries": [
+            {"title": "Chương I: NGUYÊN TỬ. SƠ LƯỢC VỀ BẢNG TUẦN HOÀN CÁC NGUYÊN TỐ HOÁ HỌC", "page": 92},
+            {"title": "Chương II: PHÂN TỬ. LIÊN KẾT HOÁ HỌC", "page": 100},
+            {"title": "Chương III: TỐC ĐỘ", "page": 109},
+            {"title": "Chương IV: ÂM THANH", "page": 113},
+            {"title": "Chương V: ÁNH SÁNG", "page": 116},
+            {"title": "Chương VI: TỪ", "page": 120},
+            {"title": "Chương VII: TRAO ĐỔI CHẤT VÀ CHUYỂN HOÁ NĂNG LƯỢNG Ở SINH VẬT", "page": 122},
+            {"title": "Chương VIII: CẢM ỨNG Ở SINH VẬT", "page": 132},
+            {"title": "Chương IX: SINH TRƯỞNG VÀ PHÁT TRIỂN Ở SINH VẬT", "page": 135},
+            {"title": "Chương X: SINH SẢN Ở SINH VẬT", "page": 138}
+          ]
+        }
+      ]
+    }
+  ]
+}

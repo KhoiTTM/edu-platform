@@ -16,12 +16,12 @@
     {
       "id": "2",
       "question": "Tính phần trăm khối lượng của Na và Cl trong phân tử muối ăn (NaCl).",
-      "answer": "KLPT NaCl = 23 + 35,5 = 58,5 amu.\n%Na = (23 / 58,5) \u00d7 100% \u2248 39,3%.\n%Cl = (35,5 / 58,5) \u00d7 100% \u2248 60,7%."
+      "answer": "KLPT NaCl = 23 + 35,5 = 58,5 amu.\\n%Na = (23 / 58,5) \\u00d7 100% \\u2248 39,3%.\\n%Cl = (35,5 / 58,5) \\u00d7 100% \\u2248 60,7%."
     },
     {
       "id": "3",
       "question": "Lập công thức hoá học của hợp chất tạo bởi silicon (Si) hoá trị IV và oxygen (O) hoá trị II.",
-      "answer": "$Si_x O_y \Rightarrow x \times IV = y \times II \Rightarrow x/y = 2/4 = 1/2 \Rightarrow SiO_2$."
+      "answer": "$Si_x O_y \\Rightarrow x \\times IV = y \\times II \\Rightarrow x/y = 2/4 = 1/2 \\Rightarrow SiO_2$."
     }
   ]
 }

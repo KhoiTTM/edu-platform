@@ -1,0 +1,112 @@
+{
+  "page": 10,
+  "sections": [
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "2.15",
+          "question": "Trong hạt nhân nguyên tử fluorine có 9 proton. Số electron ở lớp ngoài cùng của vỏ nguyên tử fluorine là",
+          "options": [
+            "A. 2",
+            "B. 5.",
+            "C. 7",
+            "D. 8"
+          ],
+          "answer_type": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "2.16",
+          "question": "Nguyên tử calcium có 20 electron ở vỏ nguyên tử. Hạt nhân của nguyên tử calcium có số proton là",
+          "options": [
+            "A. 2",
+            "B. 10.",
+            "C. 18",
+            "D. 20."
+          ],
+          "answer_type": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "2.17",
+          "question": "Nguyên tử nhôm (aluminium) có 13 electron ở vỏ. Số electron ở lớp ngoài cùng của nguyên tử nhôm là",
+          "options": [
+            "A. 2",
+            "B. 8.",
+            "C. 10.",
+            "D. 18."
+          ],
+          "answer_type": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "2.18",
+          "question": "Muối ăn chứa hai nguyên tố hoá học là natri (sodium) và chlorine. Trong hạt nhân nguyên tử của các nguyên tố natri và chlorine có lần lượt 11 và 17 proton. Số electron ở lớp ngoài cùng của vỏ nguyên tử natri và chlorine lần lượt là",
+          "options": [
+            "A. 1 và 7",
+            "B. 3 và 9.",
+            "C. 9 và 15.",
+            "D. 3 và 7"
+          ],
+          "answer_type": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "2.19",
+          "question": "Trong hạt nhân nguyên tử lưu huỳnh (sulfur) có 16 proton. Số electron trong các lớp của vỏ nguyên tử sulfur; viết từ lớp trong ra lớp ngoài; lần lượt là",
+          "options": [
+            "A. 2,10, 6",
+            "B. 2,6, 8",
+            "C. 2, 8,6.",
+            "D. 2, 9,5."
+          ],
+          "answer_type": "multiple_choice"
+        }
+      ]
+    },
+    {
+      "type": "khác",
+      "content": "Trong hạt nhân nguyên tử của nguyên tố silicon có 14 proton; vỏ nguyên tử silicon có ba lớp electron.",
+      "exercises": [
+        {
+          "id": "2.20",
+          "instruction": "Hãy hoàn thiện Hình 2.4 để mô tả mô hình một nguyên tử silicon."
+        }
+      ],
+      "image_description": "Hình 2.4: A figure that needs to be completed to describe the model of a silicon atom."
+    },
+    {
+      "type": "câu_hỏi_trắc_nghiệm",
+      "questions": [
+        {
+          "id": "2.21",
+          "question": "Hạt nhân một nguyên tử fluorine có 9 proton và 10 neutron. Khối lượng của nguyên tử fluorine xấp xỉ",
+          "options": [
+            "A. 9 amu.",
+            "B. 10 amu:",
+            "C. 19 amu.",
+            "D. 28 amu."
+          ],
+          "answer_type": "multiple_choice"
+        }
+      ]
+    }
+  ]
+}
