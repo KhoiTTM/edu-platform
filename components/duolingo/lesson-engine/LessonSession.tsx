@@ -57,7 +57,6 @@ export const LessonSession: React.FC<Props> = ({ steps, onCompleteOverride, isRe
     }
 
     setStreak(0);
-    decreaseHeart();
     // We don't advance on wrong, but we might want to reset the timer for the next attempt
     setStepStartTime(Date.now());
   };
@@ -75,10 +74,6 @@ export const LessonSession: React.FC<Props> = ({ steps, onCompleteOverride, isRe
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentStepIndex, steps.length, results]);
-
-  if (isGameOver && !isReviewMode) {
-    return <LessonComplete isVictory={false} streak={streak} nodeId={nodeId} />;
-  }
 
   if (currentStepIndex >= steps.length) {
     if (onCompleteOverride) return null;

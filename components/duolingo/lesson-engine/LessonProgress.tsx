@@ -42,12 +42,6 @@ export const LessonProgress: React.FC<Props> = ({
       {/* Stats */}
       <div className="flex items-center gap-4">
         {streak > 0 && <StreakFlame streak={streak} />}
-        
-        {/* Hearts Counter */}
-        <div className="flex items-center gap-1 font-bold text-red-500">
-          <span className="text-xl">❤️</span>
-          <span className="text-lg">{hearts}</span>
-        </div>
       </div>
     </div>
   );
