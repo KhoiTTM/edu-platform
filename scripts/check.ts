@@ -17,10 +17,7 @@ envContent.split('\n').forEach(line => {
 const supabase = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY);
 
 async function check() {
-  await supabase.from('assessment_collections')
-    .update({ grade: 7 })
-    .eq('subject_slug', 'mindset-ielts');
-    
-  console.log("Updated mindset-ielts collections to grade 7");
+  const { data } = await supabase.from('question_bank').select('metadata_json').eq('subject_slug', 'mindset-ielts').limit(20);
+  console.log(JSON.stringify(data, null, 2));
 }
 check();
