@@ -108,4 +108,4 @@ async function seedUnit(unitNum: string) {
   console.log(`✅ Finished seeding UNIT ${unitNum}. Created ${Math.ceil(questionIds.length / CHUNK_SIZE)} exams.`);
 }
 
-seedUnit('02').catch(console.error);
+seedUnit('03').catch(console.error);
