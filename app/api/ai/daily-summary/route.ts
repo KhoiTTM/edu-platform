@@ -99,13 +99,36 @@ Ví dụ:
 "Chào Khôi! Cô thấy hôm qua em đã học Toán Unit 1 và đạt 8/10 điểm phần Tiếng Anh đấy, giỏi quá! Hôm nay mình cùng thử sức với bài học tiếp theo nhé, cô luôn ở đây để giúp em!"
 `;
 
-    const model = genAI.getGenerativeModel({ 
-      model: "gemini-1.5-flash-latest",
-      systemInstruction: systemPrompt 
-    });
+    const modelsToTry = [
+      "gemini-3.5-flash",
+      "gemini-3.1-pro",
+      "gemini-2.5-flash",
+      "gemini-1.5-flash-latest"
+    ];
 
-    const result = await model.generateContent("Hãy tóm tắt và gợi ý học tập.");
-    const responseText = result.response.text();
+    let responseText = "";
+    let lastError = "";
+
+    for (const modelName of modelsToTry) {
+      try {
+        const model = genAI.getGenerativeModel({ 
+          model: modelName,
+          systemInstruction: systemPrompt 
+        });
+
+        const result = await model.generateContent("Hãy tóm tắt và gợi ý học tập.");
+        responseText = result.response.text();
+        
+        if (responseText) break; // success
+      } catch (err: any) {
+        lastError = err.message;
+        console.warn(`Model ${modelName} failed:`, err.message);
+      }
+    }
+
+    if (!responseText) {
+      throw new Error(`Tất cả model đều lỗi. Lỗi cuối cùng: ${lastError}`);
+    }
 
     // Cache the insight in the database so the frontend can display it without querying AI constantly
     await supabase.from("user_dashboard_stats").upsert({
