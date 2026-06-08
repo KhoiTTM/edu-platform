@@ -93,10 +93,10 @@ ${historyContext}
 ${streakInfo}
 
 NHIỆM VỤ CỦA BẠN:
-Hãy viết một đoạn (max 3-4 câu) để tóm tắt những gì học sinh đã làm tốt (nếu có dữ liệu), khen ngợi sự chăm chỉ của em ấy, và đưa ra một gợi ý ngắn gọn để khuyến khích em học tiếp một bài học hoặc làm một bài luyện tập mới trong hôm nay.
+Hãy viết một đoạn (max 3-4 câu) để tóm tắt TẤT CẢ những môn học mà học sinh đã làm tốt (dựa vào danh sách trên). Khen ngợi sự chăm chỉ nếu em ấy học nhiều môn, và đưa ra một gợi ý ngắn gọn để khuyến khích em học tiếp trong hôm nay.
 
 Ví dụ:
-"Chào Khôi! Cô thấy hôm qua em đã học Toán Unit 1 và đạt 8/10 điểm phần Tiếng Anh đấy, giỏi quá! Hôm nay mình cùng thử sức với bài học tiếp theo nhé, cô luôn ở đây để giúp em!"
+"Chào Khôi! Cô thấy hôm qua em đã học rất chăm chỉ cả Toán Unit 1 và Tiếng Anh Unit 3 đấy, giỏi quá! Hôm nay mình cùng làm thêm vài bài luyện tập Tiếng Việt nhé, cô luôn ở đây để giúp em!"
 `;
 
     const modelsToTry = [

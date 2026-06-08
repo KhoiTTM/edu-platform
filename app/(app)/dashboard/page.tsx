@@ -177,17 +177,17 @@ export default async function DashboardPage() {
         <div className="lg:col-span-8 flex flex-col gap-6 min-h-0 h-full">
 
           {/* Continue Learning Section */}
-          <section className="bg-slate-900/60 p-5 rounded-[1.5rem] border-2 border-emerald-500/30 shadow-md backdrop-blur-xl flex flex-col shrink-0 flex-1">
-            <h2 className="font-['Outfit'] text-sm font-black text-emerald-400 uppercase tracking-widest flex items-center gap-2 mb-4">
-              <Target size={16} /> Môn học của bạn
+          <section className="bg-slate-900/60 p-4 rounded-[1.5rem] border-2 border-emerald-500/30 shadow-md backdrop-blur-xl flex flex-col shrink-0 flex-1">
+            <h2 className="font-['Outfit'] text-xs font-black text-emerald-400 uppercase tracking-widest flex items-center gap-2 mb-3">
+              <Target size={14} /> Môn học của bạn
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 flex-1 content-start overflow-y-auto pr-2 custom-scrollbar">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 flex-1 content-start overflow-y-auto pr-2 custom-scrollbar">
               {continueLearningItems.map((item: any) => (
-                <div key={item.slug} className="rounded-2xl bg-slate-950/60 p-4 border border-slate-800 shadow-inner flex flex-col gap-3 hover:border-emerald-500/30 transition-all group">
-                  <h3 className="text-sm font-black text-white flex items-center gap-2">
+                <div key={item.slug} className="rounded-2xl bg-slate-950/60 p-3 border border-slate-800 shadow-inner flex flex-col gap-2 hover:border-emerald-500/30 transition-all group">
+                  <h3 className="text-xs font-black text-white flex items-center gap-1.5">
                     {item.icon} {item.name}
                   </h3>
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-1.5">
                     <Link href={item.last_lesson.url} className="flex items-center justify-between bg-slate-900/80 p-2.5 rounded-xl border border-slate-800 hover:border-emerald-500/50 hover:bg-slate-900 transition-all">
                       <div className="flex items-center gap-2 min-w-0">
                         <div className="min-w-0">
@@ -213,9 +213,9 @@ export default async function DashboardPage() {
           </section>
 
           {/* Heatmap */}
-          <section className="bg-slate-900/40 p-5 rounded-[1.5rem] border-2 border-slate-800/80 backdrop-blur-md shrink-0">
-            <h2 className="font-['Outfit'] text-xs font-black text-slate-400 uppercase tracking-widest flex items-center gap-2 mb-2">
-              <Flame size={14} className="text-orange-500 fill-orange-500" /> Tần Suất Luyện Tập
+          <section className="bg-slate-900/40 p-4 rounded-[1.5rem] border-2 border-slate-800/80 backdrop-blur-md shrink-0">
+            <h2 className="font-['Outfit'] text-[10px] font-black text-slate-400 uppercase tracking-widest flex items-center gap-1.5 mb-1.5">
+              <Flame size={12} className="text-orange-500 fill-orange-500" /> Tần Suất Luyện Tập
             </h2>
             <div className="overflow-x-auto py-1">
               <LearningHeatmap dates={learningSessions.map(s => s.started_at)} />
