@@ -16,6 +16,8 @@ function AssessmentContent() {
   const [completed, setCompleted] = useState(false);
   const [results, setResults] = useState<any>(null);
 
+  const [subjectSlug, setSubjectSlug] = useState<string>("tieng_anh");
+
   useEffect(() => {
     if (examId) {
       async function load() {
@@ -26,6 +28,7 @@ function AssessmentContent() {
             getExamQuestions(examId!)
           ]);
           setExamTitle(info.title);
+          setSubjectSlug(info.subjectSlug || "tieng_anh");
 
           // Fire tracking event
           fetch('/api/events', {
@@ -71,6 +74,22 @@ function AssessmentContent() {
           localStorage.setItem('completed_exams', JSON.stringify(completedExams));
         }
         saveExamResult(examId, correctCount, answers.length);
+        
+        // Track completion to update Streak and Learning Time
+        fetch('/api/events', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            type: 'quiz_completed',
+            subject_slug: subjectSlug,
+            metadata: {
+              quiz_id: examId,
+              score,
+              total: answers.length
+            }
+          })
+        }).catch(console.error);
+        
       } catch (e) {
         console.error("Failed to save progress", e);
       }
