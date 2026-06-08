@@ -174,37 +174,37 @@ export default async function DashboardPage() {
       <div className="grid gap-6 lg:grid-cols-12 flex-1 min-h-0">
         
         {/* Left Column (Recent Sessions + Heatmap) */}
-        <div className="lg:col-span-8 flex flex-col gap-6 min-h-0 h-full">
+        <div className="lg:col-span-8 flex flex-col gap-4 min-h-0 h-full">
 
           {/* Continue Learning Section */}
-          <section className="bg-slate-900/60 p-4 rounded-[1.5rem] border-2 border-emerald-500/30 shadow-md backdrop-blur-xl flex flex-col shrink-0 flex-1">
-            <h2 className="font-['Outfit'] text-xs font-black text-emerald-400 uppercase tracking-widest flex items-center gap-2 mb-3">
+          <section className="bg-slate-900/60 p-3 rounded-2xl border-2 border-emerald-500/30 shadow-md backdrop-blur-xl flex flex-col shrink-0 flex-1">
+            <h2 className="font-['Outfit'] text-xs font-black text-emerald-400 uppercase tracking-widest flex items-center gap-2 mb-2">
               <Target size={14} /> Môn học của bạn
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 flex-1 content-start overflow-y-auto pr-2 custom-scrollbar">
-              {continueLearningItems.map((item: any) => (
-                <div key={item.slug} className="rounded-2xl bg-slate-950/60 p-3 border border-slate-800 shadow-inner flex flex-col gap-2 hover:border-emerald-500/30 transition-all group">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 flex-1 content-start overflow-y-auto pr-2 custom-scrollbar">
+              {continueLearningItems.map((item: any, idx: number) => (
+                <div key={item.slug} className="rounded-xl bg-slate-950/60 p-2 border border-slate-800 shadow-inner flex flex-col gap-1.5 hover:border-emerald-500/30 transition-all group">
                   <h3 className="text-xs font-black text-white flex items-center gap-1.5">
-                    {item.icon} {item.name}
+                    <span className="text-emerald-500 font-bold">{idx + 1}.</span> {item.icon} {item.name}
                   </h3>
-                  <div className="flex flex-col gap-1.5">
-                    <Link href={item.last_lesson.url} className="flex items-center justify-between bg-slate-900/80 p-2.5 rounded-xl border border-slate-800 hover:border-emerald-500/50 hover:bg-slate-900 transition-all">
+                  <div className="flex flex-col gap-1">
+                    <Link href={item.last_lesson.url} className="flex items-center justify-between bg-slate-900/80 p-2 rounded-lg border border-slate-800 hover:border-emerald-500/50 hover:bg-slate-900 transition-all">
                       <div className="flex items-center gap-2 min-w-0">
                         <div className="min-w-0">
-                          <p className="text-slate-400 font-bold uppercase tracking-wider text-[9px] mb-0.5">Học bài</p>
-                          <p className="text-[11px] font-bold text-slate-200 truncate group-hover:text-emerald-400 transition-colors">{item.last_lesson.title}</p>
+                          <p className="text-slate-400 font-bold uppercase tracking-wider text-[8px] mb-0.5">Học bài</p>
+                          <p className="text-[10px] font-bold text-slate-200 truncate group-hover:text-emerald-400 transition-colors">{item.last_lesson.title}</p>
                         </div>
                       </div>
-                      <ArrowRight size={14} className="text-slate-600 group-hover:text-emerald-400 shrink-0" />
+                      <ArrowRight size={12} className="text-slate-600 group-hover:text-emerald-400 shrink-0" />
                     </Link>
-                    <Link href={item.last_exam.url} className="flex items-center justify-between bg-slate-900/80 p-2.5 rounded-xl border border-slate-800 hover:border-emerald-500/50 hover:bg-slate-900 transition-all">
+                    <Link href={item.last_exam.url} className="flex items-center justify-between bg-slate-900/80 p-2 rounded-lg border border-slate-800 hover:border-emerald-500/50 hover:bg-slate-900 transition-all">
                       <div className="flex items-center gap-2 min-w-0">
                         <div className="min-w-0">
-                          <p className="text-slate-400 font-bold uppercase tracking-wider text-[9px] mb-0.5">Luyện tập</p>
-                          <p className="text-[11px] font-bold text-slate-200 truncate group-hover:text-emerald-400 transition-colors">{item.last_exam.title}</p>
+                          <p className="text-slate-400 font-bold uppercase tracking-wider text-[8px] mb-0.5">Luyện tập</p>
+                          <p className="text-[10px] font-bold text-slate-200 truncate group-hover:text-emerald-400 transition-colors">{item.last_exam.title}</p>
                         </div>
                       </div>
-                      <ArrowRight size={14} className="text-slate-600 group-hover:text-emerald-400 shrink-0" />
+                      <ArrowRight size={12} className="text-slate-600 group-hover:text-emerald-400 shrink-0" />
                     </Link>
                   </div>
                 </div>
@@ -213,7 +213,7 @@ export default async function DashboardPage() {
           </section>
 
           {/* Heatmap */}
-          <section className="bg-slate-900/40 p-4 rounded-[1.5rem] border-2 border-slate-800/80 backdrop-blur-md shrink-0">
+          <section className="bg-slate-900/40 p-3 rounded-2xl border-2 border-slate-800/80 backdrop-blur-md shrink-0">
             <h2 className="font-['Outfit'] text-[10px] font-black text-slate-400 uppercase tracking-widest flex items-center gap-1.5 mb-1.5">
               <Flame size={12} className="text-orange-500 fill-orange-500" /> Tần Suất Luyện Tập
             </h2>
