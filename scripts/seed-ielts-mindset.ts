@@ -197,7 +197,7 @@ async function processUnit() {
       const { data: newCol, error: collError } = await supabase.from("assessment_collections").insert({
           subject_slug: "mindset-ielts",
           title: `Unit 1 - Practice ${i + 1}`,
-          grade: 0,
+          grade: 7,
           volume: 1,
           status: 'published'
       }).select().single();

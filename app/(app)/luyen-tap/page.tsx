@@ -8,7 +8,7 @@ const SubjectCard = ({ subject, grade }: { subject: any, grade: number }) => {
     const colors: Record<string, any> = {
         'tieng_anh': { bg: 'bg-emerald-500', shadow: 'shadow-[0_8px_0_#059669]', icon: '📚' },
         'toan': { bg: 'bg-sky-500', shadow: 'shadow-[0_8px_0_#0284c7]', icon: '🧮' },
-        'ielts': { bg: 'bg-indigo-500', shadow: 'shadow-[0_8px_0_#4f46e5]', icon: '🎓' },
+        'mindset-ielts': { bg: 'bg-indigo-500', shadow: 'shadow-[0_8px_0_#4f46e5]', icon: '🎓' },
         'default': { bg: 'bg-slate-500', shadow: 'shadow-[0_8px_0_#475569]', icon: '📖' },
     };
     const color = colors[subject.slug] || colors.default;
