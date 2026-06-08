@@ -1,0 +1,147 @@
+[
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Identify the type of holiday.",
+    "text_segments": ["Picture A is ", "."],
+    "correct_answers": ["an adventure holiday"],
+    "word_pool": ["an adventure holiday", "a beach holiday", "a city break", "a language exchange", "a family holiday"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Identify the type of holiday.",
+    "text_segments": ["Picture B is ", "."],
+    "correct_answers": ["a city break"],
+    "word_pool": ["an adventure holiday", "a beach holiday", "a city break", "a language exchange", "a family holiday"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Identify the type of holiday.",
+    "text_segments": ["Picture C is ", "."],
+    "correct_answers": ["a language exchange"],
+    "word_pool": ["an adventure holiday", "a beach holiday", "a city break", "a language exchange", "a family holiday"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Identify the type of holiday.",
+    "text_segments": ["Picture D is ", "."],
+    "correct_answers": ["a beach holiday"],
+    "word_pool": ["an adventure holiday", "a beach holiday", "a city break", "a language exchange", "a family holiday"]
+  },
+  {
+    "type": "match_pair",
+    "instruction": "Match the activities to the type of holiday.",
+    "pairs": [
+      { "left": "go on trips, see famous buildings", "right": "city break" },
+      { "left": "go mountain climbing, go horse riding", "right": "adventure holiday" },
+      { "left": "visit beach resorts", "right": "beach holiday" },
+      { "left": "stay with host families", "right": "language exchange" }
+    ]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the verb phrases with the correct verb.",
+    "text_segments": ["", " shopping"],
+    "correct_answers": ["go"],
+    "word_pool": ["go", "visit", "stay", "see"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the verb phrases with the correct verb.",
+    "text_segments": ["", " horse-riding"],
+    "correct_answers": ["go"],
+    "word_pool": ["go", "visit", "stay", "see"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the verb phrases with the correct verb.",
+    "text_segments": ["", " local attractions"],
+    "correct_answers": ["visit"],
+    "word_pool": ["go", "visit", "stay", "see"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the verb phrases with the correct verb.",
+    "text_segments": ["", " water parks"],
+    "correct_answers": ["visit"],
+    "word_pool": ["go", "visit", "stay", "see"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the verb phrases with the correct verb.",
+    "text_segments": ["", " with a host family"],
+    "correct_answers": ["stay"],
+    "word_pool": ["go", "visit", "stay", "see"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Correct the verb form mistakes in the summary.",
+    "reading_passage": "Anna 1 study French and Spanish at school at the moment. Last summer, she 2 goes to Spain on a language exchange where she 3 stayed with a family in a village. Anna now 4 thought that the language exchange programme 5 was a good experience for her although she 6 wasn't much better at Spanish now than before.",
+    "text_segments": ["Anna ", " French and Spanish at school at the moment."],
+    "correct_answers": ["studies"],
+    "word_pool": ["study", "studies", "studied", "is studying"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Correct the verb form mistakes in the summary.",
+    "reading_passage": "Anna 1 study French and Spanish at school at the moment. Last summer, she 2 goes to Spain on a language exchange where she 3 stayed with a family in a village. Anna now 4 thought that the language exchange programme 5 was a good experience for her although she 6 wasn't much better at Spanish now than before.",
+    "text_segments": ["Last summer, she ", " to Spain on a language exchange."],
+    "correct_answers": ["went"],
+    "word_pool": ["goes", "go", "went", "is going"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Correct the verb form mistakes in the summary.",
+    "reading_passage": "Anna 1 study French and Spanish at school at the moment. Last summer, she 2 goes to Spain on a language exchange where she 3 stayed with a family in a village. Anna now 4 thought that the language exchange programme 5 was a good experience for her although she 6 wasn't much better at Spanish now than before.",
+    "text_segments": ["Anna now ", " that the language exchange programme was a good experience."],
+    "correct_answers": ["thinks"],
+    "word_pool": ["thought", "think", "thinks", "is thinking"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Correct the verb form mistakes in the summary.",
+    "reading_passage": "Anna 1 study French and Spanish at school at the moment. Last summer, she 2 goes to Spain on a language exchange where she 3 stayed with a family in a village. Anna now 4 thought that the language exchange programme 5 was a good experience for her although she 6 wasn't much better at Spanish now than before.",
+    "text_segments": ["... although she ", " much better at Spanish now than before."],
+    "correct_answers": ["isn't"],
+    "word_pool": ["wasn't", "isn't", "aren't", "doesn't"]
+  },
+  {
+    "type": "multiple_choice",
+    "instruction": "Choose the best holiday for each person.",
+    "reading_passage": "Tom is 19 and is very active. He enjoys all kinds of sports and being outdoors. He has done a lot of water sports in the past, like sailing and windsurfing but he would like to try something different for his holiday this year. He went to the beach last year, but got bored after a few days.",
+    "question": "Which is the best holiday for Tom?",
+    "options": ["A beach holiday", "A city break", "An adventure holiday", "A family holiday"],
+    "correct_index": 2
+  },
+  {
+    "type": "multiple_choice",
+    "instruction": "Choose the best holiday for each person.",
+    "reading_passage": "Julia is 16 and would like to go on holiday with her best friend from school during the summer holidays. They want to travel to a new place, visit local attractions and try new food. Their parents will not allow their daughters to be in another country without any adults, but they will allow them to travel on their own. Julia and her friend both study Spanish at school and are planning to take a Spanish exam next year.",
+    "question": "Which is the best holiday for Julia?",
+    "options": ["A language exchange", "A city break", "An adventure holiday", "A family holiday"],
+    "correct_index": 0
+  },
+  {
+    "type": "multiple_choice",
+    "instruction": "Choose the best holiday for each person.",
+    "reading_passage": "Charlie is 21 years old and has just finished university. He would like to spend the summer doing something interesting with some friends before they start looking for jobs. He prefers holidays in the countryside to holidays in cities or at the beach. He thinks that he would like to get a job working with animals in the future.",
+    "question": "Which is the best holiday for Charlie?",
+    "options": ["A language exchange", "A city break", "An adventure holiday", "A beach holiday"],
+    "correct_index": 2
+  },
+  {
+    "type": "multiple_choice",
+    "instruction": "Choose the best holiday for each person.",
+    "reading_passage": "Joanna is 32 and works as a teacher. She wants to book a holiday in August with her husband. She is usually very tired after a busy term at school and would like to go somewhere hot and near the sea. She wants to relax and not do very much.",
+    "question": "Which is the best holiday for Joanna?",
+    "options": ["A family holiday", "A city break", "An adventure holiday", "A beach holiday"],
+    "correct_index": 3
+  },
+  {
+    "type": "multiple_choice",
+    "instruction": "Choose the best holiday for each person.",
+    "reading_passage": "Roger is 50 and wants to book a holiday for his wife and two children. They would like to do some cultural activities, such as visiting museums and art galleries, but also some fun activities to entertain the children. They also love shopping.",
+    "question": "Which is the best holiday for Roger?",
+    "options": ["A family holiday", "A city break", "An adventure holiday", "A beach holiday"],
+    "correct_index": 1
+  }
+]

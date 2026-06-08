@@ -198,6 +198,7 @@ async function processUnit() {
           title: `Unit 1 - Practice ${i + 1}`,
           grade: 7,
           volume: 1,
+          units: [1],
           status: 'published'
       }).select().single();
 

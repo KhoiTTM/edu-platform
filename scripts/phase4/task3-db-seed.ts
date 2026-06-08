@@ -65,6 +65,8 @@ async function seedUnit(unitNum: string) {
   console.log(`✅ Inserted ${insertedQuestions.length} questions.`);
 
   // 4. Create assessment collections (10 questions per exam)
+  await supabase.from('assessment_collections').delete().eq('subject_slug', 'mindset-ielts').like('title', `Unit ${unitNum} - Practice%`);
+
   const questionIds = insertedQuestions.map(q => q.id);
   const CHUNK_SIZE = 10;
   
@@ -77,7 +79,8 @@ async function seedUnit(unitNum: string) {
       subject_slug: 'mindset-ielts',
       title: `Unit ${unitNum} - Practice ${chunkIndex}`,
       grade: 7,
-      volume: parseInt(unitNum, 10),
+      volume: 1,
+      units: [parseInt(unitNum, 10)],
       status: 'published'
     }).select().single();
     if (collErr) throw collErr;
@@ -108,4 +111,6 @@ async function seedUnit(unitNum: string) {
   console.log(`✅ Finished seeding UNIT ${unitNum}. Created ${Math.ceil(questionIds.length / CHUNK_SIZE)} exams.`);
 }
 
-seedUnit('03').catch(console.error);
+
+
+seedUnit('04').catch(console.error);
