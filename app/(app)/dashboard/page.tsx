@@ -2,6 +2,7 @@ import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { HeroMomentumCard } from "@/components/dashboard/HeroMomentumCard";
+import { DailySummaryWidget } from "@/components/dashboard/DailySummaryWidget";
 import { LearningHeatmap } from "@/components/dashboard/LearningHeatmap";
 import { Sparkles, Trophy, Layout, PenTool, Flame, ArrowRight, Clock, Target, BookOpen } from "lucide-react";
 
@@ -136,6 +137,16 @@ export default async function DashboardPage() {
       last_exam: data.last_exam || { title: "Chưa có tiến độ làm bài", url: `/luyen-tap/${subj.slug}` },
     };
   });
+
+  // Calculate if we should use cached insight (within last 12 hours)
+  let recentInsight = "";
+  if (dashboardStats?.last_ai_insight && dashboardStats?.last_ai_insight_at) {
+    const insightTime = new Date(dashboardStats.last_ai_insight_at).getTime();
+    if (Date.now() - insightTime < 12 * 60 * 60 * 1000) {
+      recentInsight = dashboardStats.last_ai_insight;
+    }
+  }
+
   return (
     <div className="mx-auto max-w-6xl h-[calc(100dvh-6rem)] flex flex-col gap-4 select-none relative z-10 overflow-hidden">
       
@@ -148,6 +159,7 @@ export default async function DashboardPage() {
           <p className="text-xs text-slate-400 font-bold tracking-widest uppercase mt-1">
             Học sinh lớp {grade} — Hành trình tiếp tục
           </p>
+          <DailySummaryWidget initialSummary={recentInsight} />
         </div>
         
         <div className="shrink-0">
