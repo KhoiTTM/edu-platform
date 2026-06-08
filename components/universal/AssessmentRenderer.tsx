@@ -358,6 +358,19 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
       </div>
 
       <div className="flex-1">
+        {currentQuestion.youtube_url && (
+          <div className="mb-6 rounded-xl overflow-hidden shadow-md">
+            <iframe 
+              width="100%" 
+              height="315" 
+              src={currentQuestion.youtube_url.includes('watch?v=') ? currentQuestion.youtube_url.replace('watch?v=', 'embed/') : currentQuestion.youtube_url} 
+              title="YouTube video player" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowFullScreen
+            ></iframe>
+          </div>
+        )}
         {currentQuestion.reading_passage && (
           <div className="mb-6 p-4 bg-slate-800/80 rounded-xl border-l-4 border-amber-400 text-slate-200">
             <h3 className="font-bold text-amber-400 mb-2 flex items-center gap-2">
