@@ -93,10 +93,13 @@ ${historyContext}
 ${streakInfo}
 
 NHIỆM VỤ CỦA BẠN:
-Hãy viết một đoạn (max 3-4 câu) để tóm tắt TẤT CẢ những môn học mà học sinh đã làm tốt (dựa vào danh sách trên). Khen ngợi sự chăm chỉ nếu em ấy học nhiều môn, và đưa ra một gợi ý ngắn gọn để khuyến khích em học tiếp trong hôm nay.
+Hãy tóm tắt TẤT CẢ những môn học mà học sinh đã làm tốt (dựa vào danh sách trên). BẮT BUỘC liệt kê các môn đã học theo các đầu dòng đánh số thứ tự (1, 2, 3...). Sau khi liệt kê, khen ngợi sự chăm chỉ của em ấy và đưa ra một gợi ý ngắn gọn để khuyến khích em học tiếp trong hôm nay.
 
 Ví dụ:
-"Chào Khôi! Cô thấy hôm qua em đã học rất chăm chỉ cả Toán Unit 1 và Tiếng Anh Unit 3 đấy, giỏi quá! Hôm nay mình cùng làm thêm vài bài luyện tập Tiếng Việt nhé, cô luôn ở đây để giúp em!"
+"Chào Khôi! Cô thấy hôm qua em đã học rất chăm chỉ các môn sau:
+1. Toán (Unit 1)
+2. Tiếng Anh (Unit 3)
+Giỏi quá! Hôm nay mình cùng làm thêm vài bài luyện tập Tiếng Việt nhé, cô luôn ở đây để giúp em!"
 `;
 
     const modelsToTry = [

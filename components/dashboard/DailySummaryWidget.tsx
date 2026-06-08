@@ -49,7 +49,7 @@ export function DailySummaryWidget({ initialSummary }: { initialSummary?: string
             <span className="w-1.5 h-1.5 bg-purple-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
           </div>
         ) : (
-          <p className="text-sm text-purple-100/90 leading-snug">
+          <p className="text-sm text-purple-100/90 leading-relaxed whitespace-pre-wrap">
             {summary}
           </p>
         )}
