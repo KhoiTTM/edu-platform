@@ -1,4 +1,3 @@
-import { createClient } from '@supabase/supabase-js';
 import fs from 'fs';
 import path from 'path';
 
@@ -14,10 +13,13 @@ envContent.split('\n').forEach(line => {
   }
 });
 
-const supabase = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY);
-
-async function check() {
-  const { data } = await supabase.from('concepts').select('*').limit(1);
-  console.log(data);
+async function test() {
+  try {
+    const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models?key=' + env['GEMINI_API_KEY']);
+    const data = await response.json();
+    console.log(data.models.map((m: any) => m.name));
+  } catch (err) {
+    console.error(err);
+  }
 }
-check();
+test();
