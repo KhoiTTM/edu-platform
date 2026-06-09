@@ -1,0 +1,67 @@
+[
+  {
+    "type": "match_pair",
+    "instruction": "Match the jobs with the workplaces.",
+    "pairs": [
+      { "left": "waiter, tables, chef, meal", "right": "Restaurant" },
+      { "left": "receptionist, rooms, guests, lift, cleaner", "right": "Hotel" },
+      { "left": "cash desk, clothes, changing rooms, assistant", "right": "Shop" }
+    ]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose the correct modal verb for ability and permission.",
+    "text_segments": ["At school, I was a bad student. I ", " understand maths easily."],
+    "correct_answers": ["couldn't"],
+    "word_pool": ["can", "can't", "could", "couldn't"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose the correct modal verb for ability and permission.",
+    "text_segments": ["Now, I ", " cook over 100 dishes and write books."],
+    "correct_answers": ["can"],
+    "word_pool": ["can", "can't", "could", "couldn't"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose the correct modal verb for ability and permission.",
+    "text_segments": ["When I was 16, I ", " only cook soup from a tin."],
+    "correct_answers": ["could"],
+    "word_pool": ["can", "can't", "could", "couldn't"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose the correct modal verb for ability and permission.",
+    "text_segments": ["I ", " work for really long hours any more like I could in the past."],
+    "correct_answers": ["can't"],
+    "word_pool": ["can", "can't", "could", "couldn't"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the phrase.",
+    "text_segments": ["speak another ", ""],
+    "correct_answers": ["language"],
+    "word_pool": ["language", "experience", "energy", "weekend"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the phrase.",
+    "text_segments": ["work long ", ""],
+    "correct_answers": ["hours"],
+    "word_pool": ["hours", "energy", "experience", "weekend"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the phrase.",
+    "text_segments": ["have previous ", ""],
+    "correct_answers": ["experience"],
+    "word_pool": ["experience", "energy", "language", "weekend"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the phrase.",
+    "text_segments": ["friendly and ", ""],
+    "correct_answers": ["helpful"],
+    "word_pool": ["helpful", "hard-working", "energy", "experience"]
+  }
+]

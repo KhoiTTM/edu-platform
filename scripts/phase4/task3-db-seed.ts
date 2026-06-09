@@ -113,4 +113,10 @@ async function seedUnit(unitNum: string) {
 
 
 
-seedUnit('06').catch(console.error);
+async function seedRemaining() {
+  await seedUnit('07');
+  await seedUnit('08');
+  await seedUnit('09');
+  await seedUnit('10');
+}
+seedRemaining().catch(console.error);

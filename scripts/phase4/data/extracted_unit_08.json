@@ -1,0 +1,86 @@
+[
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the phrase with the correct verb.",
+    "text_segments": ["", " cycling"],
+    "correct_answers": ["go"],
+    "word_pool": ["go", "do", "play"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the phrase with the correct verb.",
+    "text_segments": ["", " yoga"],
+    "correct_answers": ["do"],
+    "word_pool": ["go", "do", "play"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the phrase with the correct verb.",
+    "text_segments": ["", " tennis"],
+    "correct_answers": ["play"],
+    "word_pool": ["go", "do", "play"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the phrase with the correct verb.",
+    "text_segments": ["", " for a walk"],
+    "correct_answers": ["go"],
+    "word_pool": ["go", "do", "play"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the phrase with the correct verb.",
+    "text_segments": ["", " exercise"],
+    "correct_answers": ["do"],
+    "word_pool": ["go", "do", "play"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose should or shouldn't.",
+    "text_segments": ["You ", " drink water every day to stay healthy."],
+    "correct_answers": ["should"],
+    "word_pool": ["should", "shouldn't"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose should or shouldn't.",
+    "text_segments": ["You ", " play on your computer for so long."],
+    "correct_answers": ["shouldn't"],
+    "word_pool": ["should", "shouldn't"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose should or shouldn't.",
+    "text_segments": ["You ", " get enough sleep every night."],
+    "correct_answers": ["should"],
+    "word_pool": ["should", "shouldn't"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose should or shouldn't.",
+    "text_segments": ["You ", " watch too much TV."],
+    "correct_answers": ["shouldn't"],
+    "word_pool": ["should", "shouldn't"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose should or shouldn't.",
+    "text_segments": ["You ", " eat too much fast food."],
+    "correct_answers": ["shouldn't"],
+    "word_pool": ["should", "shouldn't"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose have to or don't have to.",
+    "text_segments": ["I am on holiday, so I ", " wake up early tomorrow."],
+    "correct_answers": ["don't have to"],
+    "word_pool": ["have to", "don't have to", "has to", "doesn't have to"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose have to or don't have to.",
+    "text_segments": ["Students ", " take exams at the end of the year."],
+    "correct_answers": ["have to"],
+    "word_pool": ["have to", "don't have to", "has to", "doesn't have to"]
+  }
+]
