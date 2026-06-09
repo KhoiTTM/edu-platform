@@ -1,0 +1,175 @@
+[
+  {
+    "type": "match_pair",
+    "instruction": "Match the places with the related sets of words.",
+    "pairs": [
+      { "left": "seat, ticket, platform, travel", "right": "train station" },
+      { "left": "lift, floor, clothes, toys", "right": "department store" },
+      { "left": "cars, road, sign, fast", "right": "motorway" },
+      { "left": "coffee, snack, talk, table", "right": "cafe" },
+      { "left": "houses, cars, bikes, neighbours", "right": "street" },
+      { "left": "history, visitors, building", "right": "museum" },
+      { "left": "flight, plane, passenger, pilot", "right": "airport" }
+    ]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence using a comparative adjective.",
+    "text_segments": ["My bike was expensive but my brother's was ", "."],
+    "correct_answers": ["more expensive"],
+    "word_pool": ["expensive", "more expensive", "the most expensive", "expensiver"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence using a comparative adjective.",
+    "text_segments": ["Art galleries are interesting but museums are ", "."],
+    "correct_answers": ["more interesting"],
+    "word_pool": ["interesting", "more interesting", "most interesting", "interestinger"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence using a comparative adjective.",
+    "text_segments": ["Madrid is hot but Kuwait is ", "."],
+    "correct_answers": ["hotter"],
+    "word_pool": ["hot", "more hot", "hotter", "hottest"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence using a comparative adjective.",
+    "text_segments": ["This garden is pretty but the one we saw yesterday was ", "."],
+    "correct_answers": ["prettier"],
+    "word_pool": ["pretty", "more pretty", "prettier", "the prettiest"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence using a comparative adjective.",
+    "text_segments": ["This restaurant is good but the Italian one is ", "."],
+    "correct_answers": ["better"],
+    "word_pool": ["good", "better", "best", "more good"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence using a comparative adjective.",
+    "text_segments": ["I was excited about the trip but my friend was ", "."],
+    "correct_answers": ["more excited"],
+    "word_pool": ["excited", "more excited", "the most excited"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence using a comparative adjective.",
+    "text_segments": ["Cars are noisy but motorbikes are ", "."],
+    "correct_answers": ["noisier"],
+    "word_pool": ["noisy", "more noisy", "noisier", "the noisiest"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence using a comparative adjective.",
+    "text_segments": ["I'm bad at maths but my friend is ", "."],
+    "correct_answers": ["worse"],
+    "word_pool": ["bad", "worse", "worst", "more bad"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentences using superlative adjectives.",
+    "reading_passage": "Car A: E2000, 215,000 km, 1 litre engine, 3 doors, Year 2009. Car B: E6500, 80,000 km, 1.5 litre engine, 5 doors, Year 2010. Car C: E15,000, 20,000 km, 2 litre engine, 4 doors, Year 2015.",
+    "text_segments": ["Car A is ", "."],
+    "correct_answers": ["the cheapest"],
+    "word_pool": ["cheap", "the cheapest", "the most cheap", "cheaper"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentences using superlative adjectives.",
+    "reading_passage": "Car A: E2000, 215,000 km, 1 litre engine, 3 doors, Year 2009. Car B: E6500, 80,000 km, 1.5 litre engine, 5 doors, Year 2010. Car C: E15,000, 20,000 km, 2 litre engine, 4 doors, Year 2015.",
+    "text_segments": ["Car B has ", " doors."],
+    "correct_answers": ["the most"],
+    "word_pool": ["more", "the most", "many", "most"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentences using superlative adjectives.",
+    "reading_passage": "Car A: E2000, 215,000 km, 1 litre engine, 3 doors, Year 2009. Car B: E6500, 80,000 km, 1.5 litre engine, 5 doors, Year 2010. Car C: E15,000, 20,000 km, 2 litre engine, 4 doors, Year 2015.",
+    "text_segments": ["Car C has ", " engine."],
+    "correct_answers": ["the largest"],
+    "word_pool": ["large", "larger", "the largest", "the most large"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentences using superlative adjectives.",
+    "reading_passage": "Car A: E2000, 215,000 km, 1 litre engine, 3 doors, Year 2009. Car B: E6500, 80,000 km, 1.5 litre engine, 5 doors, Year 2010. Car C: E15,000, 20,000 km, 2 litre engine, 4 doors, Year 2015.",
+    "text_segments": ["Car A has ", " kilometres on the clock."],
+    "correct_answers": ["the most"],
+    "word_pool": ["more", "the most", "many", "most"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentences using superlative adjectives.",
+    "reading_passage": "Car A: E2000, 215,000 km, 1 litre engine, 3 doors, Year 2009. Car B: E6500, 80,000 km, 1.5 litre engine, 5 doors, Year 2010. Car C: E15,000, 20,000 km, 2 litre engine, 4 doors, Year 2015.",
+    "text_segments": ["Car C is ", "."],
+    "correct_answers": ["the most expensive"],
+    "word_pool": ["expensive", "the most expensive", "more expensive", "the expensivest"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentences using superlative adjectives.",
+    "reading_passage": "Car A: E2000, 215,000 km, 1 litre engine, 3 doors, Year 2009. Car B: E6500, 80,000 km, 1.5 litre engine, 5 doors, Year 2010. Car C: E15,000, 20,000 km, 2 litre engine, 4 doors, Year 2015.",
+    "text_segments": ["Car A has ", " engine."],
+    "correct_answers": ["the smallest"],
+    "word_pool": ["small", "smaller", "the smallest", "the most small"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentences using superlative adjectives.",
+    "reading_passage": "Car A: E2000, 215,000 km, 1 litre engine, 3 doors, Year 2009. Car B: E6500, 80,000 km, 1.5 litre engine, 5 doors, Year 2010. Car C: E15,000, 20,000 km, 2 litre engine, 4 doors, Year 2015.",
+    "text_segments": ["Car B is ", "."],
+    "correct_answers": ["the oldest"],
+    "word_pool": ["old", "older", "the oldest", "the most old"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Compete the email using the correct form of the adjectives.",
+    "reading_passage": "Hi Sue, I'm on holiday in Munich and I'm having a great time. We are staying in a little hotel near the city centre. It isn't 1 (good) hotel in town but it is nice enough and it was 2 (cheap) than most of the others I looked at. It's very close to the Englischer Garten, a beautiful park that is 3 (big) than Central Park in New York! Yesterday, we went to the Deutsches Museum, a big science museum - one of 4 (large) in Europe. I liked all of it, but 5 (interesting) part for me was the space exhibition. Tomorrow, we are going to the Residezmuseum. The guidebook says it is one of 6 (fine) palaces in the whole of Germany.",
+    "text_segments": ["It isn't ", " hotel in town..."],
+    "correct_answers": ["the best"],
+    "word_pool": ["good", "better", "the best", "the goodest"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Compete the email using the correct form of the adjectives.",
+    "reading_passage": "Hi Sue, I'm on holiday in Munich and I'm having a great time. We are staying in a little hotel near the city centre. It isn't 1 (good) hotel in town but it is nice enough and it was 2 (cheap) than most of the others I looked at. It's very close to the Englischer Garten, a beautiful park that is 3 (big) than Central Park in New York! Yesterday, we went to the Deutsches Museum, a big science museum - one of 4 (large) in Europe. I liked all of it, but 5 (interesting) part for me was the space exhibition. Tomorrow, we are going to the Residezmuseum. The guidebook says it is one of 6 (fine) palaces in the whole of Germany.",
+    "text_segments": ["... but it is nice enough and it was ", " than most of the others I looked at."],
+    "correct_answers": ["cheaper"],
+    "word_pool": ["cheap", "cheaper", "the cheapest"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Compete the email using the correct form of the adjectives.",
+    "reading_passage": "Hi Sue, I'm on holiday in Munich and I'm having a great time. We are staying in a little hotel near the city centre. It isn't 1 (good) hotel in town but it is nice enough and it was 2 (cheap) than most of the others I looked at. It's very close to the Englischer Garten, a beautiful park that is 3 (big) than Central Park in New York! Yesterday, we went to the Deutsches Museum, a big science museum - one of 4 (large) in Europe. I liked all of it, but 5 (interesting) part for me was the space exhibition. Tomorrow, we are going to the Residezmuseum. The guidebook says it is one of 6 (fine) palaces in the whole of Germany.",
+    "text_segments": ["... a beautiful park that is ", " than Central Park in New York!"],
+    "correct_answers": ["bigger"],
+    "word_pool": ["big", "bigger", "the biggest", "more big"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Compete the email using the correct form of the adjectives.",
+    "reading_passage": "Hi Sue, I'm on holiday in Munich and I'm having a great time. We are staying in a little hotel near the city centre. It isn't 1 (good) hotel in town but it is nice enough and it was 2 (cheap) than most of the others I looked at. It's very close to the Englischer Garten, a beautiful park that is 3 (big) than Central Park in New York! Yesterday, we went to the Deutsches Museum, a big science museum - one of 4 (large) in Europe. I liked all of it, but 5 (interesting) part for me was the space exhibition. Tomorrow, we are going to the Residezmuseum. The guidebook says it is one of 6 (fine) palaces in the whole of Germany.",
+    "text_segments": ["... a big science museum - one of ", " in Europe."],
+    "correct_answers": ["the largest"],
+    "word_pool": ["large", "larger", "the largest"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Compete the email using the correct form of the adjectives.",
+    "reading_passage": "Hi Sue, I'm on holiday in Munich and I'm having a great time. We are staying in a little hotel near the city centre. It isn't 1 (good) hotel in town but it is nice enough and it was 2 (cheap) than most of the others I looked at. It's very close to the Englischer Garten, a beautiful park that is 3 (big) than Central Park in New York! Yesterday, we went to the Deutsches Museum, a big science museum - one of 4 (large) in Europe. I liked all of it, but 5 (interesting) part for me was the space exhibition. Tomorrow, we are going to the Residezmuseum. The guidebook says it is one of 6 (fine) palaces in the whole of Germany.",
+    "text_segments": ["I liked all of it, but ", " part for me was the space exhibition."],
+    "correct_answers": ["the most interesting"],
+    "word_pool": ["interesting", "more interesting", "the most interesting"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Compete the email using the correct form of the adjectives.",
+    "reading_passage": "Hi Sue, I'm on holiday in Munich and I'm having a great time. We are staying in a little hotel near the city centre. It isn't 1 (good) hotel in town but it is nice enough and it was 2 (cheap) than most of the others I looked at. It's very close to the Englischer Garten, a beautiful park that is 3 (big) than Central Park in New York! Yesterday, we went to the Deutsches Museum, a big science museum - one of 4 (large) in Europe. I liked all of it, but 5 (interesting) part for me was the space exhibition. Tomorrow, we are going to the Residezmuseum. The guidebook says it is one of 6 (fine) palaces in the whole of Germany.",
+    "text_segments": ["The guidebook says it is one of ", " palaces in the whole of Germany."],
+    "correct_answers": ["the finest"],
+    "word_pool": ["fine", "finer", "the finest", "the most fine"]
+  }
+]

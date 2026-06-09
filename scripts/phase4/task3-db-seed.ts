@@ -113,4 +113,4 @@ async function seedUnit(unitNum: string) {
 
 
 
-seedUnit('05').catch(console.error);
+seedUnit('06').catch(console.error);
