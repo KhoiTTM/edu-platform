@@ -16,8 +16,20 @@ envContent.split('\n').forEach(line => {
 
 const supabase = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY);
 
-async function check() {
-  const { data } = await supabase.from('assessment_collections').select('id, title, volume, units, grade').eq('subject_slug', 'mindset-ielts').order('volume');
-  console.log(JSON.stringify(data, null, 2));
+async function checkSubjects() {
+  const { data } = await supabase.from('assessment_collections').select('subject_slug, volume, units');
+  if (!data) return;
+  const subjects = new Set<string>();
+  const mapping: Record<string, any> = {};
+  data.forEach(d => {
+    subjects.add(d.subject_slug);
+    if (!mapping[d.subject_slug]) mapping[d.subject_slug] = new Set();
+    mapping[d.subject_slug].add(`Vol ${d.volume} - Units: ${JSON.stringify(d.units)}`);
+  });
+  console.log("Distinct subjects with assessment collections:", Array.from(subjects));
+  for (const s of subjects) {
+    console.log(`\n${s}:`);
+    console.log(Array.from(mapping[s]));
+  }
 }
-check();
+checkSubjects();

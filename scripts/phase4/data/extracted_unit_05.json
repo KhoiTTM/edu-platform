@@ -1,0 +1,80 @@
+[
+  {
+    "type": "match_pair",
+    "instruction": "Match the ingredients to their food categories.",
+    "pairs": [
+      { "left": "lamb, beef, chicken", "right": "Meat" },
+      { "left": "carrot, onion, garlic, spring onion, broccoli", "right": "Vegetables" },
+      { "left": "salmon, shrimps", "right": "Fish/Seafood" },
+      { "left": "rice, pasta, flour, potatoes, noodles", "right": "Carbohydrates" },
+      { "left": "salt, pepper", "right": "Other ingredients" }
+    ]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Identify the category for the food item.",
+    "text_segments": ["Lamb belongs to the category of ", "."],
+    "correct_answers": ["Meat"],
+    "word_pool": ["Meat", "Vegetables", "Fish/Seafood", "Carbohydrates", "Other ingredients"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Identify the category for the food item.",
+    "text_segments": ["Carrot belongs to the category of ", "."],
+    "correct_answers": ["Vegetables"],
+    "word_pool": ["Meat", "Vegetables", "Fish/Seafood", "Carbohydrates", "Other ingredients"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Identify the category for the food item.",
+    "text_segments": ["Salmon belongs to the category of ", "."],
+    "correct_answers": ["Fish/Seafood"],
+    "word_pool": ["Meat", "Vegetables", "Fish/Seafood", "Carbohydrates", "Other ingredients"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Identify the category for the food item.",
+    "text_segments": ["Rice belongs to the category of ", "."],
+    "correct_answers": ["Carbohydrates"],
+    "word_pool": ["Meat", "Vegetables", "Fish/Seafood", "Carbohydrates", "Other ingredients"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Identify the category for the food item.",
+    "text_segments": ["Flour belongs to the category of ", "."],
+    "correct_answers": ["Other ingredients"],
+    "word_pool": ["Meat", "Vegetables", "Fish/Seafood", "Carbohydrates", "Other ingredients"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Identify the category for the food item.",
+    "text_segments": ["Onion belongs to the category of ", "."],
+    "correct_answers": ["Vegetables"],
+    "word_pool": ["Meat", "Vegetables", "Fish/Seafood", "Carbohydrates", "Other ingredients"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Identify the category for the food item.",
+    "text_segments": ["Pasta belongs to the category of ", "."],
+    "correct_answers": ["Carbohydrates"],
+    "word_pool": ["Meat", "Vegetables", "Fish/Seafood", "Carbohydrates", "Other ingredients"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Identify the category for the food item.",
+    "text_segments": ["Garlic belongs to the category of ", "."],
+    "correct_answers": ["Vegetables"],
+    "word_pool": ["Meat", "Vegetables", "Fish/Seafood", "Carbohydrates", "Other ingredients"]
+  },
+  {
+    "type": "match_pair",
+    "instruction": "Match the ingredients with the dishes.",
+    "pairs": [
+      { "left": "noodles, beef, broccoli", "right": "Beef Chow Mein" },
+      { "left": "rice, meat, tomatoes", "right": "Al Kabsa" },
+      { "left": "flour for bread, tomatoes, cheese", "right": "Pizza" },
+      { "left": "fish, potatoes, oil", "right": "Fish and chips" },
+      { "left": "fish, prawns, coconut milk, tomato, onion", "right": "Moqueca" }
+    ]
+  }
+]
