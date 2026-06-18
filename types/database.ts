@@ -80,9 +80,15 @@ export type QuizQuestion = {
   correct_index: number;
   order_index: number;
   explanation: string | null;
-  type?: 'multiple_choice' | 'fill_in_blank' | 'matching';
+  type?: string;
   correct_answer?: string;
   exercise_title?: string;
+  instruction?: string;
+  pairs?: { left: string; right: string; }[];
+  groups?: { name: string; items: string[] }[];
+  text_segments?: string[];
+  correct_answers?: string[];
+  word_pool?: string[];
 };
 
 export type QuizAttempt = {

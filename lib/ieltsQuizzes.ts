@@ -142,64 +142,315 @@ export function getFallbackQuestionsForUnit(unitNumber: number, quizId: string):
 
   const questionsData: Record<number, Omit<QuizQuestion, "id" | "quiz_id" | "order_index">[]> = {
     1: [
+      // Page 14 Grammar Box Multiple Choice
       {
-        question: "Jack's brother is great at...",
-        options: ["building things", "cooking delicious meals", "gardening and planting flowers", "staying at home and reading"],
+        question: "What do we use the present simple for?",
+        options: [
+          "To talk about everyday routines and habits",
+          "To say how often we do something",
+          "To describe an action happening right now"
+        ],
         correct_index: 0,
-        explanation: "Jack says: 'Well, my brother is great at building things. He's always fixing stuff.'",
-        type: "matching",
-        exercise_title: "Exercise 3: Match family members to hobbies"
+        explanation: "The present simple is used to talk about everyday routines and habits (e.g., 'I get up early').",
+        type: "multiple_choice",
+        exercise_title: "Page 14 Grammar: Present Simple Usage"
       },
       {
-        question: "Jack's grandma is great at...",
-        options: ["building things", "cooking delicious meals", "gardening and planting flowers", "staying at home and reading"],
+        question: "Why do we use adverbs of frequency (e.g. never, sometimes, usually, always)?",
+        options: [
+          "To say how often we do something",
+          "To talk about what is happening at this moment",
+          "To connect two independent clauses"
+        ],
+        correct_index: 0,
+        explanation: "Adverbs of frequency show how regularly we perform an activity, ranging from 0% (never) to 100% (always).",
+        type: "multiple_choice",
+        exercise_title: "Page 14 Grammar: Adverbs of Frequency"
+      },
+      {
+        question: "What ending do verbs take in the present simple when the subject is he/she/it?",
+        options: [
+          "-s, -es, or -ies (e.g., watch -> watches, try -> tries)",
+          "-ing (e.g., watch -> watching)",
+          "-ed (e.g., watch -> watched)"
+        ],
+        correct_index: 0,
+        explanation: "For third-person singular (he/she/it), present simple regular verbs end in -s, -es, or -ies.",
+        type: "multiple_choice",
+        exercise_title: "Page 14 Grammar: Third Person Singular Ending"
+      },
+      // Page 18 Exercise 1: Match digital times with times in words (Part 1 and 2)
+      {
+        question: "Match the digital times with the times in words (Part 1):",
+        options: [],
+        correct_index: -1,
+        explanation: "05:15 = quarter past five, 08:20 = twenty past eight, 06:45 = quarter to seven, 14:30 = half past two, 20:50 = ten to nine.",
+        type: "match_pair",
+        pairs: [
+          { left: "05:15", right: "It's quarter past five" },
+          { left: "08:20", right: "It's twenty past eight" },
+          { left: "06:45", right: "It's quarter to seven" },
+          { left: "14:30", right: "It's half past two" },
+          { left: "20:50", right: "It's ten to nine" }
+        ],
+        exercise_title: "Page 18 Exercise 1: Telling the Time (Part 1)"
+      },
+      {
+        question: "Match the digital times with the times in words (Part 2):",
+        options: [],
+        correct_index: -1,
+        explanation: "09:10 = ten past nine, 15:35 = twenty-five to four, 10:05 = five past ten, 12:00 = twelve o'clock, 16:55 = five to five.",
+        type: "match_pair",
+        pairs: [
+          { left: "09:10", right: "It's ten past nine" },
+          { left: "15:35", right: "It's twenty-five to four" },
+          { left: "10:05", right: "It's five past ten" },
+          { left: "12:00", right: "It's twelve o'clock" },
+          { left: "16:55", right: "It's five to five" }
+        ],
+        exercise_title: "Page 18 Exercise 1: Telling the Time (Part 2)"
+      },
+      // Page 18 Exercise 2: Unscramble morning routine
+      {
+        question: "Unscramble the letters in brackets to complete the text about morning routine:",
+        options: [],
+        correct_index: -1,
+        explanation: "The unscrambled verbs are: have (avhe), brush (bhusr), meet (emte), catch (chact), leave (vlaee), go (og), watch (cwaht), do (od), go (og), fall (lafl).",
+        type: "inline_fill_blank",
+        text_segments: [
+          "When I get up in the morning, the first thing that I do is 1 (avhe) ",
+          " a shower. I then go to the kitchen and make breakfast. After breakfast, I 2 (bhusr) ",
+          " my teeth. Then I 3 (emte) ",
+          " my friends and we 4 (chact) ",
+          " the bus to the college. At college, we study all day, but we have a break for lunch at 12 o'clock. At four o'clock, we 5 (vlaee) ",
+          " the college and 6 (og) ",
+          " home by bus. In the evenings, I usually 7 (cwaht) ",
+          " TV, unless I have a lot of homework. I always 8 (od) ",
+          " my homework in the evenings. At night, I always 9 (og) ",
+          " to bed and 10 (lafl) ",
+          " asleep straight away."
+        ],
+        correct_answers: ["have", "brush", "meet", "catch", "leave", "go", "watch", "do", "go", "fall"],
+        exercise_title: "Page 18 Exercise 2: Unscramble Morning Routine Verbs"
+      },
+      // Page 18 Exercise 3: Categorization
+      {
+        question: "Complete the table by categorizing these words/phrases under 'Make' or 'Do':",
+        options: [],
+        correct_index: -1,
+        explanation: "Collocations with 'make' usually involve creating or producing something new (e.g. dinner, a noise, a mess, lunch, the beds). Collocations with 'do' usually involve jobs, work, or activities (e.g. homework, cleaning, laundry, shopping, housework).",
+        type: "categorization",
+        groups: [
+          { name: "Make", items: ["a mess", "the beds", "dinner", "a noise", "lunch"] },
+          { name: "Do", items: ["the cleaning", "some homework", "the laundry", "the shopping", "the housework"] }
+        ],
+        exercise_title: "Page 18 Exercise 3: Make vs Do Collocations"
+      },
+      // Page 19 Exercise 4: Complete the email
+      {
+        question: "Complete the email using the words in the box (live, work, get up, leave, have, walk, catch, finish, meet, go out):",
+        options: [],
+        correct_index: -1,
+        explanation: "1. live (apartment), 2. work (as journalists), 3. get up (very early), 4. leave (the house), 5. have (breakfast), 6. walk (there), 7. catch (the bus), 8. finish (at 4pm), 9. meet (after school), 10. go out (in the evenings).",
+        type: "inline_fill_blank",
+        text_segments: [
+          "Hi Sam,\nI'm having a great time here in France. I'm learning lots of French. My host family are very nice. They 1 ",
+          " in an apartment in an area called Pantin, and they both 2 ",
+          " as journalists. They 3 ",
+          " very early in the morning and 4 ",
+          " the house before me. I 5 ",
+          " breakfast at about 8am and then go to the language school. I usually 6 ",
+          " there, but if I'm late I 7 ",
+          " the bus. Lessons at the school 8 ",
+          " at 4pm and then we can go home. The other students are very nice and I have made lots of new friends. We 9 ",
+          " after school in a cafe or 10 ",
+          " in the evenings to the cinema."
+        ],
+        correct_answers: ["live", "work", "get up", "leave", "have", "walk", "catch", "finish", "meet", "go out"],
+        word_pool: ["walk", "leave", "have", "finish", "get up", "catch", "go out", "work", "meet", "live"],
+        exercise_title: "Page 19 Exercise 4: Harry's Email Cloze"
+      },
+      // Page 19 Exercise 5: Third-person singular conjugation (10 questions)
+      {
+        question: "Complete the sentence using the third person form of the verb in brackets:",
+        options: [],
+        correct_index: -1,
+        explanation: "For verbs ending in -sh (wash), we add -es for third person singular: washes.",
+        type: "inline_fill_blank",
+        text_segments: ["My dad ", " (wash) his car every weekend."],
+        correct_answers: ["washes"],
+        exercise_title: "Page 19 Exercise 5: Third Person Singular (1/10)"
+      },
+      {
+        question: "Complete the sentence using the third person form of the verb in brackets:",
+        options: [],
+        correct_index: -1,
+        explanation: "For verbs ending in -ch (watch), we add -es for third person singular: watches.",
+        type: "inline_fill_blank",
+        text_segments: ["Jim ", " (watch) too much TV."],
+        correct_answers: ["watches"],
+        exercise_title: "Page 19 Exercise 5: Third Person Singular (2/10)"
+      },
+      {
+        question: "Complete the sentence using the third person form of the verb in brackets:",
+        options: [],
+        correct_index: -1,
+        explanation: "For verbs ending in consonant + y (cry), we change y to i and add -es: cries.",
+        type: "inline_fill_blank",
+        text_segments: ["Adrian's baby ", " (cry) a lot."],
+        correct_answers: ["cries"],
+        exercise_title: "Page 19 Exercise 5: Third Person Singular (3/10)"
+      },
+      {
+        question: "Complete the sentence using the third person form of the verb in brackets:",
+        options: [],
+        correct_index: -1,
+        explanation: "For verbs ending in -se (practise), we add -s: practises.",
+        type: "inline_fill_blank",
+        text_segments: ["My brother is good at chess and ", " (practise) every day."],
+        correct_answers: ["practises"],
+        exercise_title: "Page 19 Exercise 5: Third Person Singular (4/10)"
+      },
+      {
+        question: "Complete the sentence using the third person form of the verb in brackets:",
+        options: [],
+        correct_index: -1,
+        explanation: "For verbs ending in -o (go), we add -es: goes.",
+        type: "inline_fill_blank",
+        text_segments: ["Olga ", " (go) jogging most evenings after work."],
+        correct_answers: ["goes"],
+        exercise_title: "Page 19 Exercise 5: Third Person Singular (5/10)"
+      },
+      {
+        question: "Complete the sentence using the third person form of the verb in brackets:",
+        options: [],
+        correct_index: -1,
+        explanation: "For the irregular verb 'do', we add -es: does.",
+        type: "inline_fill_blank",
+        text_segments: ["Tom's wife cooks and Tom ", " (do) the washing up."],
+        correct_answers: ["does"],
+        exercise_title: "Page 19 Exercise 5: Third Person Singular (6/10)"
+      },
+      {
+        question: "Complete the sentence using the third person form of the verb in brackets:",
+        options: [],
+        correct_index: -1,
+        explanation: "For verbs ending in -ch (catch), we add -es: catches.",
+        type: "inline_fill_blank",
+        text_segments: ["Anna ", " (catch) the 253 bus to college each morning."],
+        correct_answers: ["catches"],
+        exercise_title: "Page 19 Exercise 5: Third Person Singular (7/10)"
+      },
+      {
+        question: "Complete the sentence using the third person form of the verb in brackets:",
+        options: [],
+        correct_index: -1,
+        explanation: "For verbs ending in -x (relax), we add -es: relaxes.",
+        type: "inline_fill_blank",
+        text_segments: ["Nadia ", " (relax) by doing yoga."],
+        correct_answers: ["relaxes"],
+        exercise_title: "Page 19 Exercise 5: Third Person Singular (8/10)"
+      },
+      {
+        question: "Complete the sentence using the third person form of the verb in brackets:",
+        options: [],
+        correct_index: -1,
+        explanation: "For regular verbs (give), we add -s: gives.",
+        type: "inline_fill_blank",
+        text_segments: ["I think our teacher ", " (give) us far too much homework."],
+        correct_answers: ["gives"],
+        exercise_title: "Page 19 Exercise 5: Third Person Singular (9/10)"
+      },
+      {
+        question: "Complete the sentence using the third person form of the verb in brackets:",
+        options: [],
+        correct_index: -1,
+        explanation: "For multi-word verbs, we conjugate the main verb: switch -> switches off.",
+        type: "inline_fill_blank",
+        text_segments: ["My brother ", " (switch off) his light at about midnight."],
+        correct_answers: ["switches off"],
+        exercise_title: "Page 19 Exercise 5: Third Person Singular (10/10)"
+      },
+      // Page 19 Exercise 6: Read and underline the correct answer (10 MC questions)
+      {
+        question: "Choose the correct verb to complete the sentence: 'My brother works / work for a computer company in the city.'",
+        options: ["works", "work"],
+        correct_index: 0,
+        explanation: "Subject is 'My brother' (singular 'he'), so we use the third-person verb: works.",
+        type: "multiple_choice",
+        exercise_title: "Page 19 Exercise 6: Subject-Verb Agreement (1/10)"
+      },
+      {
+        question: "Choose the correct verb to complete the sentence: 'My friends and I often play / plays basketball together at the weekends.'",
+        options: ["play", "plays"],
+        correct_index: 0,
+        explanation: "Subject is 'My friends and I' (plural 'we'), so we use the base form: play.",
+        type: "multiple_choice",
+        exercise_title: "Page 19 Exercise 6: Subject-Verb Agreement (2/10)"
+      },
+      {
+        question: "Choose the correct verb to complete the sentence: 'I go to a college where everyone study / studies different languages.'",
+        options: ["study", "studies"],
         correct_index: 1,
-        explanation: "Jack says: 'She's an amazing cook. She makes all our meals, and the food is always delicious.'",
-        type: "matching",
-        exercise_title: "Exercise 3: Match family members to hobbies"
+        explanation: "Subject is 'everyone' (singular pronoun), so we use the singular verb: studies.",
+        type: "multiple_choice",
+        exercise_title: "Page 19 Exercise 6: Subject-Verb Agreement (3/10)"
       },
       {
-        question: "Jack's mother is great at...",
-        options: ["building things", "cooking delicious meals", "gardening and planting flowers", "staying at home and reading"],
-        correct_index: 2,
-        explanation: "Jack says: 'My mom loves gardening; she's always planting flowers.'",
-        type: "matching",
-        exercise_title: "Exercise 3: Match family members to hobbies"
+        question: "Choose the correct verb to complete the sentence: 'My grandparents come / comes from a small village in Germany.'",
+        options: ["come", "comes"],
+        correct_index: 0,
+        explanation: "Subject is 'My grandparents' (plural 'they'), so we use the base form: come.",
+        type: "multiple_choice",
+        exercise_title: "Page 19 Exercise 6: Subject-Verb Agreement (4/10)"
       },
       {
-        question: "Jack's father is great at...",
-        options: ["building things", "cooking delicious meals", "gardening and planting flowers", "staying at home and reading"],
-        correct_index: 3,
-        explanation: "Jack says: 'My dad is a bit lazy, he prefers staying at home and reading.'",
-        type: "matching",
-        exercise_title: "Exercise 3: Match family members to hobbies"
+        question: "Choose the correct verb to complete the sentence: 'In Britain, most school students wear / wears a uniform.'",
+        options: ["wear", "wears"],
+        correct_index: 0,
+        explanation: "Subject is 'most school students' (plural), so we use the base form: wear.",
+        type: "multiple_choice",
+        exercise_title: "Page 19 Exercise 6: Subject-Verb Agreement (5/10)"
       },
       {
-        question: "Jack's brother is so good at building that he made some of their [blank].",
-        options: [],
-        correct_index: -1,
-        correct_answer: "furniture",
-        explanation: "The brother built their furniture.",
-        type: "fill_in_blank",
-        exercise_title: "Exercise 4: Sentence Completion"
+        question: "Choose the correct verb to complete the sentence: 'In the evenings, I like / likes to chat to my friends online.'",
+        options: ["like", "likes"],
+        correct_index: 0,
+        explanation: "Subject is 'I', so we use the base form: like.",
+        type: "multiple_choice",
+        exercise_title: "Page 19 Exercise 6: Subject-Verb Agreement (6/10)"
       },
       {
-        question: "Jack's father has a gym membership but [blank] goes.",
-        options: [],
-        correct_index: -1,
-        correct_answer: "rarely",
-        explanation: "Jack mentions that his dad rarely goes to the gym despite having a membership.",
-        type: "fill_in_blank",
-        exercise_title: "Exercise 4: Sentence Completion"
+        question: "Choose the correct verb to complete the sentence: 'In my family, only my sister gets up / get up before 6am.'",
+        options: ["gets up", "get up"],
+        correct_index: 0,
+        explanation: "Subject is 'only my sister' (singular 'she'), so we use the third-person verb: gets up.",
+        type: "multiple_choice",
+        exercise_title: "Page 19 Exercise 6: Subject-Verb Agreement (7/10)"
       },
       {
-        question: "Carlos suggests bringing a [blank] book from the US as a gift for the grandma.",
-        options: [],
-        correct_index: -1,
-        correct_answer: "recipe",
-        explanation: "A recipe book is a perfect gift since she loves cooking.",
-        type: "fill_in_blank",
-        exercise_title: "Exercise 4: Sentence Completion"
+        question: "Choose the correct verb to complete the sentence: 'I have / has a dance class every Wednesday evening.'",
+        options: ["have", "has"],
+        correct_index: 0,
+        explanation: "Subject is 'I', so we use: have.",
+        type: "multiple_choice",
+        exercise_title: "Page 19 Exercise 6: Subject-Verb Agreement (8/10)"
+      },
+      {
+        question: "Choose the correct verb to complete the sentence: 'My friend is good at baking and make / makes amazing cakes.'",
+        options: ["make", "makes"],
+        correct_index: 1,
+        explanation: "The singular subject 'My friend' requires 'makes' to match 'is good' (singular third-person).",
+        type: "multiple_choice",
+        exercise_title: "Page 19 Exercise 6: Subject-Verb Agreement (9/10)"
+      },
+      {
+        question: "Choose the correct verbs to complete the sentence: 'My lunch break begin / begins at 12pm and finish / finishes at 12.45pm.'",
+        options: ["begins / finishes", "begin / finish", "begins / finish", "begin / finishes"],
+        correct_index: 0,
+        explanation: "Subject is 'My lunch break' (singular 'it'), so both verbs must be in the third-person singular: begins and finishes.",
+        type: "multiple_choice",
+        exercise_title: "Page 19 Exercise 6: Subject-Verb Agreement (10/10)"
       }
     ],
     2: [
@@ -517,13 +768,10 @@ export function getFallbackQuestionsForUnit(unitNumber: number, quizId: string):
   const rawQuestions = questionsData[normalizedUnit] || questionsData[1];
   
   return rawQuestions.map((q, idx) => ({
+    ...q,
     id: `${quizId}-fallback-${idx}`,
     quiz_id: quizId,
-    question: q.question,
-    options: q.options,
-    correct_index: q.correct_index,
     order_index: idx,
-    explanation: q.explanation,
     type: q.type || 'multiple_choice',
     correct_answer: q.correct_answer || '',
     exercise_title: q.exercise_title || 'Review Exercise'

@@ -691,7 +691,7 @@ export function LearnNodeClient({
         const rawQs = getCumulativeQuestionsForUnit(unitNum, dummySessionId, 25);
         const questionsWithType = rawQs.map(q => ({
           ...q,
-          type: 'multiple_choice'
+          type: q.type || 'multiple_choice'
         }));
         setPracticeSession({
           id: dummySessionId,
@@ -703,7 +703,7 @@ export function LearnNodeClient({
         const warmupQs = getCumulativeVocabularyQuiz(unitNum, warmupId, 10);
         const warmupQsWithType = warmupQs.map(q => ({
           ...q,
-          type: 'multiple_choice'
+          type: q.type || 'multiple_choice'
         }));
         setWarmupQuizSession({
           id: warmupId,
@@ -811,14 +811,22 @@ export function LearnNodeClient({
             <div className="p-6 mt-8 rounded-3xl bg-slate-950/50 border border-slate-850 flex flex-col sm:flex-row items-center justify-between gap-4">
               <div className="space-y-1 text-center sm:text-left">
                 <p className="font-extrabold text-white text-base">Đã nắm vững lý thuyết?</p>
-                <p className="text-xs text-slate-500">Quay lại danh sách bài tập để ôn luyện thêm.</p>
+                <p className="text-xs text-slate-500">Bắt đầu làm bài tập thực hành ngay để củng cố kiến thức.</p>
               </div>
-              <Link 
-                href="/hoc-tap/mindset-ielts/grammar"
-                className="px-6 py-3 bg-rose-600 hover:bg-rose-500 text-white font-extrabold rounded-2xl transition active:scale-95 flex items-center gap-2 shadow-lg shadow-rose-600/25"
-              >
-                Hoàn thành & Quay lại ➔
-              </Link>
+              <div className="flex flex-wrap gap-3">
+                <Link 
+                  href="/hoc-tap/mindset-ielts/grammar"
+                  className="px-5 py-3 bg-slate-800 hover:bg-slate-700 text-slate-300 font-extrabold rounded-2xl transition active:scale-95 text-xs flex items-center justify-center"
+                >
+                  Quay lại
+                </Link>
+                <button 
+                  onClick={() => setActiveSubView('quiz')}
+                  className="px-6 py-3 bg-rose-600 hover:bg-rose-500 text-white font-extrabold rounded-2xl transition active:scale-95 flex items-center gap-2 shadow-lg shadow-rose-600/25 text-xs"
+                >
+                  ✍️ Luyện bài tập ngay ➔
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -1111,7 +1119,7 @@ export function LearnNodeClient({
 
     // MAIN COORDINATOR HUB VIEW
     return (
-      <div className="max-w-6xl mx-auto space-y-6 pb-20 select-none font-sans">
+      <div className="max-w-full px-4 md:px-8 space-y-6 pb-20 select-none font-sans">
         {/* BACK TO ROADMAP BUTTON */}
         <div className="flex items-center gap-3 bg-slate-900/40 p-3 rounded-2xl border border-slate-800 shadow backdrop-blur">
           <Link
@@ -1345,7 +1353,7 @@ export function LearnNodeClient({
   }
 
   return (
-    <div className="max-w-4xl mx-auto space-y-8 pb-20 select-none">
+    <div className="max-w-full px-4 md:px-8 space-y-8 pb-20 select-none">
       <nav className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-slate-500 overflow-x-auto whitespace-nowrap scrollbar-hide pb-2">
         <Link href="/dashboard" className="hover:text-white transition-colors flex items-center gap-1">
           <Home size={12} /> Dashboard

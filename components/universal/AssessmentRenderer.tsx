@@ -104,6 +104,7 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
       case 'tap_correct_word':
       case 'vocab_to_word':
       case 'fill_blank':
+      case 'fill_in_blank':
         if (currentQuestion.sentences) {
           const textSegments: string[] = [];
           const correctAnswers: string[] = [];

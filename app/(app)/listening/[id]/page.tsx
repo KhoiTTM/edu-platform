@@ -39,10 +39,10 @@ export default async function ListeningLessonDetailPage({ params, searchParams }
 
   // Parse the Unit Number from the node slug or title (e.g., unit-1 -> 1)
   const getUnitNumber = (slug: string, title: string): number => {
-    const slugMatch = slug.match(/unit-(\d+)/i);
-    if (slugMatch) return parseInt(slugMatch[1], 10);
     const titleMatch = title.match(/U(\d+)/i);
-    return titleMatch ? parseInt(titleMatch[1], 10) : 1;
+    if (titleMatch) return parseInt(titleMatch[1], 10);
+    const slugMatch = slug.match(/unit-(\d+)/i);
+    return slugMatch ? parseInt(slugMatch[1], 10) : 1;
   };
 
   const unitNum = getUnitNumber(node.slug, node.title);
