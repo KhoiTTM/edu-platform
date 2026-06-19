@@ -89,7 +89,7 @@ async function seed() {
   }
 
   // 2. Ensure Course Node for Tiếng Việt 3
-  let { data: rootNode } = await supabase.from('curriculum_nodes').select('id, path').eq('slug', 'lop-3-tv').single();
+  let { data: rootNode } = await supabase.from('curriculum_nodes').select('id, path').eq('slug', 'lop-3').single();
   
   if (!rootNode) {
      const { data: source } = await supabase.from('content_sources').insert({
@@ -97,7 +97,7 @@ async function seed() {
      }).select().single();
 
      const { data: newRoot } = await supabase.from('curriculum_nodes').insert({
-        source_id: source?.id, type: 'course', slug: 'lop-3-tv', title: 'Tiếng Việt lớp 3',
+        source_id: source?.id, type: 'course', slug: 'lop-3', title: 'Tiếng Việt lớp 3',
         path: 'tieng_viet_3', depth: 0, sort_key: 1, metadata: {}
      }).select().single();
      rootNode = newRoot;
