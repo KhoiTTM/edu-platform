@@ -129,11 +129,14 @@ export default function SubjectMapPage() {
                       style={{ boxShadow: `0 8px 32px ${unitGlows[colorIdx]}` }}
                     >
                       <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/3 blur-2xl"></div>
-                      <div>
-                        <h2 className="text-2xl font-black tracking-wider drop-shadow-md">
-                          {(unit.unit === 7 && subject === 'toan') || (unit.unit === 11 && subject === 'tieng_anh') ? "Ôn tập Học kỳ 1" : `Unit ${unit.unit}`}
+                      <div className="flex-1 pr-4">
+                        <h2 className="text-2xl font-black tracking-wider drop-shadow-md line-clamp-1">
+                          {unit.title}
                         </h2>
-                        <p className="font-semibold text-white/80 mt-0.5 uppercase tracking-widest text-[10px]">
+                        <p className="text-xs font-bold text-white/80 mt-1 line-clamp-2">
+                          {unit.description}
+                        </p>
+                        <p className="font-bold text-white/60 mt-1.5 uppercase tracking-widest text-[9px]">
                           {isCollapsed ? "Nhấp để mở rộng" : "Nhấp để thu nhỏ"}
                         </p>
                       </div>

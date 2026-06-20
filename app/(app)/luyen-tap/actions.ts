@@ -197,11 +197,55 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
     });
   });
 
+  // Fetch actual unit names from curriculum_nodes for this subject and grade
+  const unitInfoMap = new Map<number, { title: string; description?: string }>();
+  try {
+    const { data: subjectData } = await supabase
+      .from('universal_subjects')
+      .select('id')
+      .eq('slug', subjectSlug)
+      .maybeSingle();
+
+    if (subjectData) {
+      const { data: sources } = await supabase
+        .from('content_sources')
+        .select('id')
+        .eq('subject_id', subjectData.id);
+
+      if (sources && sources.length > 0) {
+        const sourceIds = sources.map(s => s.id);
+        const { data: unitNodes } = await supabase
+          .from('curriculum_nodes')
+          .select('title, sort_key, metadata')
+          .in('source_id', sourceIds)
+          .eq('type', 'unit');
+
+        unitNodes?.forEach(node => {
+          const key = node.sort_key || 0;
+          if (key > 0) {
+            unitInfoMap.set(key, {
+              title: node.title,
+              description: (node.metadata as any)?.description || (node.metadata as any)?.summary
+            });
+          }
+        });
+      }
+    }
+  } catch (e) {
+    console.error("Error fetching unit info:", e);
+  }
+
   // Convert Maps to sorted arrays
   const result = Array.from(volumesMap.values()).map(v => ({
     ...v,
-    units: Array.from(v.units.values())
-      .sort((a: any, b: any) => a.unit - b.unit)
+    units: Array.from(v.units.values()).map((u: any) => {
+      const info = unitInfoMap.get(u.unit);
+      return {
+        ...u,
+        title: info?.title || `Chủ đề ${u.unit}`,
+        description: info?.description || `Các bài tập luyện tập củng cố kiến thức của chương ${u.unit}`
+      };
+    }).sort((a: any, b: any) => a.unit - b.unit)
   })).sort((a, b) => a.volume - b.volume);
 
   console.log(`  [ACTION-LOG] Successfully transformed to ${result.length} volumes.`);
