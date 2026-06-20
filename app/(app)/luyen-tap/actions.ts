@@ -144,6 +144,8 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
       volume,
       units,
       sequence_number,
+      exam_type,
+      semester,
       exams (
         id,
         title,
@@ -159,15 +161,42 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
 
   if (error) {
     console.error('  [ACTION-LOG] Error fetching assessment map:', error);
-    return [];
+    return { lessons: [], reviews: [] };
   }
 
   console.log(`  [ACTION-LOG] Found ${collections?.length || 0} collections.`);
 
-  // Transform to nested structure: [ { volume: 1, units: [ { unit: 1, exams: [...] } ] } ]
+  // Transform to nested structure for lessons: [ { volume: 1, units: [ { unit: 1, exams: [...] } ] } ]
   const volumesMap = new Map<number, any>();
+  const reviews: any[] = [];
 
   collections.forEach((collection) => {
+    // If it's a review, group it under reviews
+    if (collection.exam_type && collection.exam_type !== 'lesson') {
+      const exams = collection.exams.map((exam: any) => {
+        const isCompleted = completedExamIds.has(exam.id) || completedExamTitles.has(exam.title);
+        return {
+          id: exam.id,
+          title: exam.title,
+          exam_number: exam.exam_number,
+          total_questions: exam.total_questions,
+          collection_title: collection.title,
+          is_completed: isCompleted
+        };
+      });
+
+      reviews.push({
+        id: collection.id,
+        title: collection.title,
+        description: collection.title === 'Kiểm tra giữa học kỳ 1'
+          ? 'Đề ôn tập củng cố kiến thức giữa học kì 1'
+          : `Đề ôn tập củng cố kiến thức ${collection.title.toLowerCase()}`,
+        exams: exams,
+        unit: collection.units && collection.units.length > 0 ? collection.units[0] : 101
+      });
+      return;
+    }
+
     const vol = collection.volume || 1;
     if (!volumesMap.has(vol)) {
       volumesMap.set(vol, { volume: vol, units: new Map<number, any>() });
@@ -196,6 +225,22 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
       });
     });
   });
+
+  // Add final exam placeholder for Grade 3 if not present
+  if (targetGrade === 3 && subjectSlug === 'toan') {
+    const hasFinal = reviews.some(r => r.title.includes('cuối học kỳ 1') || r.title.includes('cuối kỳ 1'));
+    if (!hasFinal) {
+      reviews.push({
+        id: 'placeholder-final-1',
+        title: 'Kiểm tra cuối học kỳ 1',
+        description: 'Đề thi ôn tập củng cố kiến thức cuối học kì 1 (Đang biên soạn...)',
+        exams: [],
+        unit: 102
+      });
+    }
+  }
+
+  reviews.sort((a, b) => a.unit - b.unit);
 
   // Fetch actual unit names from curriculum_nodes for this subject and grade
   const unitInfoMap = new Map<number, { title: string; description?: string }>();
@@ -248,7 +293,7 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
   }
 
   // Convert Maps to sorted arrays
-  const result = Array.from(volumesMap.values()).map(v => ({
+  const lessonsResult = Array.from(volumesMap.values()).map(v => ({
     ...v,
     units: Array.from(v.units.values()).map((u: any) => {
       const info = unitInfoMap.get(u.unit);
@@ -260,9 +305,10 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
     }).sort((a: any, b: any) => a.unit - b.unit)
   })).sort((a, b) => a.volume - b.volume);
 
-  console.log(`  [ACTION-LOG] Successfully transformed to ${result.length} volumes.`);
-  console.log("--- [ACTION] Finished getAssessmentMap ---");
-  return result;
+  return {
+    lessons: lessonsResult,
+    reviews: reviews
+  };
 }
 
 export async function submitLesson(lessonId: string, isVictory: boolean, xp: number, streak: number) {
