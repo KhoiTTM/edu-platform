@@ -214,21 +214,33 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
 
       if (sources && sources.length > 0) {
         const sourceIds = sources.map(s => s.id);
-        const { data: unitNodes } = await supabase
+        
+        // Find course nodes matching the target grade to scope the units properly
+        const { data: courseNodes } = await supabase
           .from('curriculum_nodes')
-          .select('title, sort_key, metadata')
+          .select('id')
           .in('source_id', sourceIds)
-          .eq('type', 'unit');
+          .eq('type', 'course')
+          .or(`slug.eq.lop-${targetGrade},slug.eq.grade-${targetGrade}`);
 
-        unitNodes?.forEach(node => {
-          const key = node.sort_key || 0;
-          if (key > 0) {
-            unitInfoMap.set(key, {
-              title: node.title,
-              description: (node.metadata as any)?.description || (node.metadata as any)?.summary
-            });
-          }
-        });
+        if (courseNodes && courseNodes.length > 0) {
+          const courseNodeIds = courseNodes.map(n => n.id);
+          const { data: unitNodes } = await supabase
+            .from('curriculum_nodes')
+            .select('title, sort_key, metadata')
+            .in('parent_id', courseNodeIds)
+            .eq('type', 'unit');
+
+          unitNodes?.forEach(node => {
+            const key = node.sort_key || 0;
+            if (key > 0) {
+              unitInfoMap.set(key, {
+                title: node.title,
+                description: (node.metadata as any)?.description || (node.metadata as any)?.summary
+              });
+            }
+          });
+        }
       }
     }
   } catch (e) {
