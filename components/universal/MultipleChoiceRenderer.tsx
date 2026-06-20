@@ -11,6 +11,7 @@ interface MultipleChoiceRendererProps {
   onAnswer: (isCorrect: boolean, answer: string) => void;
   disabled?: boolean;
   shuffle?: boolean;
+  imageUrl?: string;
 }
 
 export function MultipleChoiceRenderer({
@@ -19,7 +20,8 @@ export function MultipleChoiceRenderer({
   correctIndex,
   onAnswer,
   disabled = false,
-  shuffle = true
+  shuffle = true,
+  imageUrl
 }: MultipleChoiceRendererProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [shuffledOptions, setShuffledOptions] = useState<string[]>([]);
@@ -107,6 +109,12 @@ export function MultipleChoiceRenderer({
       <div className="text-lg font-medium text-white leading-snug">
         {typeof question === 'string' ? formatText(question) : question}
       </div>
+
+      {imageUrl && (
+        <div className="my-4 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/50 flex justify-center p-2">
+          <img src={imageUrl} alt="Question Graphic" className="max-h-[300px] object-contain rounded-xl" />
+        </div>
+      )}
 
       <div className="grid gap-2">
         {shuffledOptions.map((option, idx) => {
