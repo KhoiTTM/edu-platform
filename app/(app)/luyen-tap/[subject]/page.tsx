@@ -6,79 +6,7 @@ import { motion } from "framer-motion";
 import clsx from "clsx";
 import { getAssessmentMap } from "../actions";
 import { useParams, useSearchParams } from "next/navigation";
-import { Sparkles, Star, ChevronRight } from "lucide-react";
-
-const AssessmentCard = ({
-  exam,
-  index,
-  unitColor,
-  unitShadow,
-  unitGlow,
-  isCompleted,
-}: {
-  exam: any;
-  index: number;
-  unitColor: string;
-  unitShadow: string;
-  unitGlow: string;
-  isCompleted?: boolean;
-}) => {
-  const isLocked = false; // For now all assessments are unlocked
-  const isCurrent = index === 0;
-
-  const content = (
-    <motion.div
-      whileHover={(!isLocked && !isCompleted) ? { scale: 1.03, y: -4 } : {}}
-      whileTap={(!isLocked && !isCompleted) ? { scale: 0.97 } : {}}
-      className={clsx(
-        "relative flex flex-col p-5 rounded-2xl text-white transition-all duration-300 w-full h-full border border-white/10 backdrop-blur-sm",
-        isLocked ? "bg-slate-800/50" : (isCompleted ? "bg-slate-900/60" : unitColor),
-        isLocked ? "shadow-md" : (isCompleted ? "shadow-inner border-white/5" : unitShadow),
-        isLocked ? "cursor-not-allowed opacity-80" : "cursor-pointer",
-        isCompleted && !isLocked && "opacity-40 grayscale"
-      )}
-      style={(!isLocked && !isCompleted) ? { boxShadow: `0 8px 32px 0 ${unitGlow}, inset 0 0 20px rgba(255,255,255,0.2)` } : {}}
-    >
-      {isCompleted && (
-        <div className="absolute top-2 right-2 bg-emerald-500/90 text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider z-10 shadow-sm backdrop-blur-sm">
-          Đã làm
-        </div>
-      )}
-      {isCurrent && !isCompleted && (
-        <div className="absolute -top-3 -right-3 animate-pulse">
-            <Sparkles className="text-amber-300 w-8 h-8 drop-shadow-[0_0_10px_rgba(252,211,77,0.8)]" />
-        </div>
-      )}
-      <div className="flex items-center gap-4">
-        <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-white/20 rounded-full font-black text-xl border border-white/30 shadow-inner">
-          {index + 1}
-        </div>
-        <div className="flex flex-col flex-1">
-            <h3 className="text-lg font-bold leading-tight line-clamp-2 drop-shadow-md text-white">
-                {exam.title}
-            </h3>
-            <div className="flex items-center justify-between mt-2">
-                <span className="text-sm font-semibold text-white/90 flex items-center gap-1 bg-black/20 px-2 py-1 rounded-md">
-                    <Star size={14} className="inline text-amber-300" fill="currentColor" /> 
-                    {exam.total_questions || 15} Câu
-                </span>
-                {!isLocked && (
-                    <ChevronRight size={18} className="text-white/70" />
-                )}
-            </div>
-        </div>
-      </div>
-    </motion.div>
-  );
-
-  const href = `/test-assessment?examId=${exam.id}`;
-
-  return (
-    <div className="w-full h-full">
-      {!isLocked ? <Link href={href} className="block w-full h-full">{content}</Link> : content}
-    </div>
-  );
-};
+import { Sparkles, Star, ChevronRight, CheckCircle2, Play, Trophy } from "lucide-react";
 
 export default function SubjectMapPage() {
   const params = useParams();
@@ -130,31 +58,25 @@ export default function SubjectMapPage() {
 
   let globalIndex = 0;
   
-  // Neon Space Colors
+  // Neon Space Colors for Unit Banners
   const unitColors = [
-    "bg-indigo-600/80", 
-    "bg-fuchsia-600/80", 
-    "bg-cyan-600/80", 
-    "bg-emerald-600/80"
-  ];
-  const unitShadows = [
-    "shadow-[0_4px_0_rgb(67,56,202)]", 
-    "shadow-[0_4px_0_rgb(192,38,211)]", 
-    "shadow-[0_4px_0_rgb(8,145,178)]", 
-    "shadow-[0_4px_0_rgb(5,150,105)]"
+    "bg-indigo-600/85", 
+    "bg-fuchsia-600/85", 
+    "bg-cyan-600/85", 
+    "bg-emerald-600/85"
   ];
   const unitGlows = [
-    "rgba(79,70,229,0.5)",
-    "rgba(217,70,239,0.5)",
-    "rgba(6,182,212,0.5)",
-    "rgba(16,185,129,0.5)"
+    "rgba(79,70,229,0.4)",
+    "rgba(217,70,239,0.4)",
+    "rgba(6,182,212,0.4)",
+    "rgba(16,185,129,0.4)"
   ];
 
   return (
-    <main className="mx-auto flex min-h-dvh w-full flex-col pb-20 relative">
+    <main className="mx-auto flex min-h-dvh w-full flex-col pb-20 relative text-white bg-[#0f172a]">
       <header className="sticky top-0 z-20 flex items-center justify-between border-b border-white/10 bg-slate-900/50 backdrop-blur-md px-6 py-4 shadow-lg">
         <div className="text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-400 drop-shadow-sm tracking-wide">
-            {subjectName}
+            {subjectName} {gradeNum ? `- Lớp ${gradeNum}` : ''}
         </div>
         <div className="flex items-center gap-4 font-bold">
           <div className="text-amber-400 flex items-center gap-1 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]">
@@ -184,37 +106,108 @@ export default function SubjectMapPage() {
              {volume.units.map((unit: any, unitIdx: number) => {
                 const colorIdx = (volIndex * 2 + unitIdx) % unitColors.length;
                 return (
-                  <div key={`unit-${unit.unit}`} className="mb-12 flex flex-col items-center">
+                  <div key={`unit-${unit.unit}`} className="mb-12 flex flex-col items-stretch">
                     {/* Unit Header */}
                     <div className={clsx(
-                        "mb-8 w-full rounded-2xl p-6 text-white border border-white/20 backdrop-blur-md relative overflow-hidden", 
+                        "mb-6 rounded-2xl p-5 text-white border border-white/20 backdrop-blur-md relative overflow-hidden flex justify-between items-center", 
                         unitColors[colorIdx]
                     )}
-                    style={{ boxShadow: `0 0 30px ${unitGlows[colorIdx]}` }}
+                    style={{ boxShadow: `0 8px 32px ${unitGlows[colorIdx]}` }}
                     >
                       <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/3 blur-2xl"></div>
-                      <h2 className="text-3xl font-black tracking-wider drop-shadow-md">
-                        {(unit.unit === 7 && subject === 'toan') || (unit.unit === 11 && subject === 'tieng_anh') ? "Ôn tập Học kỳ 1" : `Unit ${unit.unit}`}
-                      </h2>
-                      <p className="font-bold text-white/90 mt-1 uppercase tracking-widest text-sm">Nhiệm vụ vũ trụ</p>
+                      <div>
+                        <h2 className="text-2xl font-black tracking-wider drop-shadow-md">
+                          {(unit.unit === 7 && subject === 'toan') || (unit.unit === 11 && subject === 'tieng_anh') ? "Ôn tập Học kỳ 1" : `Unit ${unit.unit}`}
+                        </h2>
+                        <p className="font-semibold text-white/80 mt-0.5 uppercase tracking-widest text-[10px]">Danh sách đề luyện tập</p>
+                      </div>
+                      <div className="bg-white/10 px-3 py-1 rounded-full text-xs font-black border border-white/20">
+                        {unit.exams.length} Đề
+                      </div>
                     </div>
 
-                    {/* Assessments Grid */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 w-full">
-                      {unit.exams.map((exam: any) => {
-                        const currentIndex = globalIndex++;
-                        return (
-                          <AssessmentCard
-                            key={exam.id}
-                            exam={exam}
-                            index={currentIndex}
-                            unitColor={unitColors[colorIdx]}
-                            unitShadow={unitShadows[colorIdx]}
-                            unitGlow={unitGlows[colorIdx]}
-                            isCompleted={exam.is_completed || completedExams.includes(exam.id)}
-                          />
-                        );
-                      })}
+                    {/* Assessments Table Layout */}
+                    <div className="w-full overflow-hidden rounded-2xl border border-slate-800 bg-slate-950/40 backdrop-blur-md shadow-xl">
+                      <table className="w-full text-left border-collapse">
+                        <thead>
+                          <tr className="border-b border-slate-800 bg-slate-900/50 text-[10px] font-black uppercase tracking-wider text-slate-400">
+                            <th className="px-6 py-3.5 w-16 text-center">STT</th>
+                            <th className="px-6 py-3.5">Tên đề luyện tập</th>
+                            <th className="px-6 py-3.5 w-32 text-center">Số câu hỏi</th>
+                            <th className="px-6 py-3.5 w-36 text-center">Trạng thái</th>
+                            <th className="px-6 py-3.5 w-36 text-center">Thao tác</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-slate-800/60 text-sm font-bold text-slate-200">
+                          {unit.exams.map((exam: any) => {
+                            const currentIndex = ++globalIndex;
+                            const isCompleted = exam.is_completed || completedExams.includes(exam.id);
+                            
+                            return (
+                              <tr 
+                                key={exam.id} 
+                                className={clsx(
+                                  "transition-all duration-150 group hover:bg-slate-800/20",
+                                  isCompleted && "text-slate-500"
+                                )}
+                              >
+                                {/* STT */}
+                                <td className="px-6 py-4 text-center font-black text-slate-400 group-hover:text-cyan-400 transition-colors">
+                                  {currentIndex}
+                                </td>
+
+                                {/* Exam Title */}
+                                <td className="px-6 py-4">
+                                  <Link href={`/test-assessment?examId=${exam.id}`} className={clsx(
+                                    "hover:text-cyan-400 transition-colors block leading-snug",
+                                    isCompleted ? "line-through decoration-slate-600/50" : "font-extrabold"
+                                  )}>
+                                    {exam.title}
+                                  </Link>
+                                </td>
+
+                                {/* Question Count */}
+                                <td className="px-6 py-4 text-center">
+                                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-900/60 border border-slate-800 text-xs font-black text-slate-300">
+                                    <Star size={12} className="text-amber-400 fill-amber-400" />
+                                    {exam.total_questions || 15} Câu
+                                  </span>
+                                </td>
+
+                                {/* Status */}
+                                <td className="px-6 py-4 text-center">
+                                  {isCompleted ? (
+                                    <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[10px] font-black uppercase tracking-wider">
+                                      <CheckCircle2 size={12} />
+                                      Đã làm
+                                    </span>
+                                  ) : (
+                                    <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-sky-500/10 border border-sky-500/30 text-sky-400 text-[10px] font-black uppercase tracking-wider">
+                                      <Play size={12} />
+                                      Sẵn sàng
+                                    </span>
+                                  )}
+                                </td>
+
+                                {/* Action Button */}
+                                <td className="px-6 py-4 text-center">
+                                  <Link 
+                                    href={`/test-assessment?examId=${exam.id}`}
+                                    className={clsx(
+                                      "inline-flex items-center justify-center gap-1 px-4 py-1.5 rounded-xl font-black text-xs uppercase tracking-wide transition-all active:scale-95 duration-150",
+                                      isCompleted 
+                                        ? "border border-slate-700 text-slate-400 hover:bg-slate-800 hover:text-white" 
+                                        : "bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-md shadow-blue-500/10"
+                                    )}
+                                  >
+                                    {isCompleted ? "Làm lại" : "Luyện tập"}
+                                  </Link>
+                                </td>
+                              </tr>
+                            );
+                          })}
+                        </tbody>
+                      </table>
                     </div>
                   </div>
                 );
