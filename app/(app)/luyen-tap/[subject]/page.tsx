@@ -54,7 +54,7 @@ export default function SubjectMapPage() {
   const toggleUnit = (unitKey: string) => {
     setCollapsedUnits(prev => ({
       ...prev,
-      [unitKey]: !prev[unitKey]
+      [unitKey]: prev[unitKey] === false ? true : false
     }));
   };
 
@@ -114,7 +114,8 @@ export default function SubjectMapPage() {
              {volume.units.map((unit: any, unitIdx: number) => {
                 const colorIdx = (volIndex * 2 + unitIdx) % unitColors.length;
                 const unitKey = `vol-${volume.volume}-unit-${unit.unit}`;
-                const isCollapsed = !!collapsedUnits[unitKey];
+                const isCollapsed = collapsedUnits[unitKey] !== false; // Default to true (collapsed)
+                const completedCount = unit.exams.filter((exam: any) => exam.is_completed || completedExams.includes(exam.id)).length;
 
                 return (
                   <div key={`unit-${unit.unit}`} className="mb-12 flex flex-col items-stretch">
@@ -138,7 +139,7 @@ export default function SubjectMapPage() {
                       </div>
                       <div className="flex items-center gap-3 z-10">
                         <div className="bg-white/10 px-3 py-1 rounded-full text-xs font-black border border-white/20">
-                          {unit.exams.length} Đề
+                          {completedCount}/{unit.exams.length} Đề
                         </div>
                         <div className="w-8 h-8 rounded-full bg-white/15 flex items-center justify-center border border-white/20">
                           {isCollapsed ? <ChevronDown size={18} /> : <ChevronUp size={18} />}
