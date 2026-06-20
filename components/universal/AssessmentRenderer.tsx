@@ -98,7 +98,7 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
             }
             onAnswer={handleAnswer}
             disabled={hasAnswered}
-            imageUrl={currentQuestion.imageUrl || currentQuestion.metadata_json?.image_url}
+            imageUrl={currentQuestion.imageUrl || currentQuestion.image_url || currentQuestion.metadata_json?.image_url}
           />
         );
       case 'tap_correct_answer':
@@ -144,7 +144,7 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
             correctIndex={mcCorrectIndex}
             onAnswer={handleAnswer}
             disabled={hasAnswered}
-            imageUrl={currentQuestion.imageUrl || currentQuestion.metadata_json?.image_url}
+            imageUrl={currentQuestion.imageUrl || currentQuestion.image_url || currentQuestion.metadata_json?.image_url}
           />
         );
       case 'tap_word': {
