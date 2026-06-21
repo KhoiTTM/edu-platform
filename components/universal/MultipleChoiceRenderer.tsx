@@ -111,8 +111,15 @@ export function MultipleChoiceRenderer({
       </div>
 
       {imageUrl && (
-        <div className="my-4 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/50 flex justify-center p-2">
-          <img src={imageUrl} alt="Question Graphic" className="max-h-[300px] object-contain rounded-xl" />
+        <div className="my-4 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/50 flex justify-center p-4">
+          {imageUrl.startsWith('<svg') ? (
+            <div 
+              className="max-h-[300px] w-full max-w-[400px] flex items-center justify-center text-white" 
+              dangerouslySetInnerHTML={{ __html: imageUrl }} 
+            />
+          ) : (
+            <img src={imageUrl} alt="Question Graphic" className="max-h-[300px] object-contain rounded-xl" />
+          )}
         </div>
       )}
 
