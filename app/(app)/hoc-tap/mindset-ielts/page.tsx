@@ -15,6 +15,8 @@ const SKILL_COLORS: Record<string, string> = {
   reading:   'bg-amber-500/15 text-amber-400 border-amber-500/30',
   writing:   'bg-fuchsia-500/15 text-fuchsia-400 border-fuchsia-500/30',
   grammar:   'bg-rose-500/15 text-rose-400 border-rose-500/30',
+  shadowing: 'bg-indigo-500/15 text-indigo-400 border-indigo-500/30',
+  'flow-book': 'bg-blue-500/15 text-blue-400 border-blue-500/30',
 };
 
 export default async function MindsetIELTSPage() {
@@ -40,7 +42,7 @@ export default async function MindsetIELTSPage() {
     if (nodes) {
         // Map nodes to the structure expected by the UI
         lessons = nodes
-          .filter(n => n.type === 'unit') // The legacy 'lessons' are now 'unit' nodes in hierarchical engine
+          .filter(n => n.type === 'unit' || n.type === 'lesson')
           .map(n => ({
             id: n.id,
             title: n.title,
@@ -48,7 +50,7 @@ export default async function MindsetIELTSPage() {
             lesson_index: n.sort_key,
             youtube_video_id: n.metadata?.youtube_id,
             skill_focus: n.metadata?.skill_focus,
-            page_hint: n.metadata?.page_hint || `Unit ${n.slug.split('-')[1]}`,
+            page_hint: n.metadata?.page_hint || `Unit ${n.slug.split('-')[1] || ''}`,
           }));
     }
   }
@@ -131,6 +133,8 @@ export default async function MindsetIELTSPage() {
               if (skill === 'reading' || /reading|đọc/i.test(lesson.title)) skillLabels.push('Reading');
               if (skill === 'writing' || /writing|viết/i.test(lesson.title)) skillLabels.push('Writing');
               if (skill === 'grammar' || /grammar|ngữ pháp|vocabulary|từ vựng/i.test(lesson.title)) skillLabels.push('Grammar');
+              if (skill === 'shadowing' || /shadowing|chép chính tả|dictation/i.test(lesson.title) || lesson.slug === 'advice-on-family-visit') skillLabels.push('Shadowing');
+              if (['unit-8', 'unit-9', 'unit-10', 'unit-11'].includes(lesson.slug)) skillLabels.push('Flow Book');
 
               const mainSkill = skillLabels[0]?.toLowerCase() || 'reading';
 

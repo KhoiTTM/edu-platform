@@ -6,13 +6,15 @@ const skills = [
   { key: 'writing', label: 'Writing', color: 'bg-fuchsia-500' },
   { key: 'speaking', label: 'Speaking', color: 'bg-emerald-500' },
   { key: 'grammar', label: 'Grammar', color: 'bg-rose-500' },
+  { key: 'shadowing', label: 'Shadowing', color: 'bg-indigo-500' },
+  { key: 'flow-book', label: 'Flow Book', color: 'bg-blue-600' },
 ];
 
 export default function IELTSSkillsNav({ base = '/hoc-tap/mindset-ielts' }: { base?: string }) {
   return (
     <nav className="flex gap-2 items-center">
       {skills.map((s) => (
-        <Link key={s.key} href={`${base}/${s.key}`} className={`${s.color} text-white px-3 py-1 rounded-md`}>{s.label}</Link>
+        <Link key={s.key} href={`${base}/${s.key}`} className={`${s.color} text-white px-3 py-1 rounded-md text-xs font-semibold hover:opacity-90 transition`}>{s.label}</Link>
       ))}
     </nav>
   );

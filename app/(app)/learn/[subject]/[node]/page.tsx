@@ -2,6 +2,7 @@ import { createClient } from "@/lib/supabase/server";
 import { createClient as createSupabaseClient } from "@supabase/supabase-js";
 import { redirect, notFound } from "next/navigation";
 import { LearnNodeClient } from "@/components/universal/LearnNodeClient";
+import Unit3TextbookClient from "@/components/Unit3TextbookClient";
 
 export const dynamic = "force-dynamic";
 
@@ -109,6 +110,24 @@ export default async function LearnNodePage({ params }: LearnNodePageProps) {
   }
 
   // Questions are fetched dynamically via Assessment Engine on the client side
+
+  // Intercept Unit 3 (Hobbies) to show the new Textbook aligned side-by-side view
+  const unit3InitialPages: Record<string, number> = {
+    "unit-8": 34,
+    "unit-9": 36,
+    "unit-10": 38,
+    "unit-11": 41
+  };
+
+  if (unit3InitialPages[node] !== undefined) {
+    return (
+      <Unit3TextbookClient 
+        initialPage={unit3InitialPages[node]}
+        backUrl={`/hoc-tap/${subject}`}
+        subjectSlug={subject}
+      />
+    );
+  }
 
   return (
     <main className="min-h-screen bg-[#0f172a] p-4 md:p-8 lg:p-12">

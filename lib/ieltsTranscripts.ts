@@ -608,5 +608,65 @@ export const ieltsTranscripts: Record<string, IELTSTranscript> = {
         phraseNote: "Là một hành trình (Cách nói hình ảnh)"
       }
     ]
+  },
+  "T4S1": {
+    title: "Advice on family visit",
+    unitTitle: "Unit 2: House and Home (Listening & Speaking)",
+    description: "Luyện nghe và shadowing bài nghe Cambridge IELTS 20 - Test 4 - Section 1 về lời khuyên đưa người thân đi tham quan.",
+    keyVocabulary: [
+      { word: "accommodation", meaning: "chỗ ở, nơi trú ngụ tạm thời", pronunciation: "/əˌkɒm.əˈdeɪ.ʃən/" },
+      { word: "recommend", meaning: "khuyên dùng, đề xuất, giới thiệu", pronunciation: "/ˌrek.əˈmend/" },
+      { word: "central", meaning: "nằm ở trung tâm, thuộc trung ương", pronunciation: "/ˈsen.trəl/" }
+    ],
+    lines: [
+      { 
+        english: "Sandra, I seem to remember you had some family visitors staying with you recently.", 
+        vietnamese: "Sandra, mình nhớ là gần đây bạn có người nhà đến chơi phải không?",
+        keyPhrase: "family visitors",
+        phraseNote: "Khách đến chơi nhà (người thân)"
+      },
+      { 
+        english: "Yeah, that's right. My brother and his family were here a couple of months ago.", 
+        vietnamese: "Ừ, đúng rồi đó. Anh trai mình và gia đình ảnh đến đây vài tháng trước.",
+        keyPhrase: "couple of months",
+        phraseNote: "Khoảng hai hoặc vài tháng trước"
+      },
+      { 
+        english: "OK, good. Well, I wanted to ask your advice.", 
+        vietnamese: "OK, tốt quá. Mình muốn hỏi bạn vài lời khuyên.",
+        keyPhrase: "ask your advice",
+        phraseNote: "Hỏi xin lời khuyên từ ai đó"
+      },
+      { 
+        english: "I've got my cousin and her family visiting next month and as I don't have kids, I've no idea where to take them.", 
+        vietnamese: "Tháng sau mình có cô em họ và gia đình của cô ấy tới chơi, mà mình thì không có con nên không biết đưa tụi nhỏ đi đâu.",
+        keyPhrase: "no idea where",
+        phraseNote: "Không có ý tưởng gì / không biết đi đâu"
+      },
+      { 
+        english: "Right. What about accommodation? Are they going to stay with you in your flat?", 
+        vietnamese: "À, còn chỗ ở thì sao? Họ sẽ ở tại căn hộ của bạn hả?",
+        keyPhrase: "accommodation",
+        phraseNote: "Hỏi về nơi lưu trú/chỗ ở"
+      },
+      { 
+        english: "No, thankfully. There wouldn't be room. My cousin wants me to recommend a hotel.", 
+        vietnamese: "Không, may quá. Nhà mình không đủ chỗ. Cô em họ mình muốn mình giới thiệu khách sạn.",
+        keyPhrase: "recommend a hotel",
+        phraseNote: "Khuyên dùng/giới thiệu khách sạn"
+      },
+      { 
+        english: "Yes, I do actually. I always recommend people stay at the King's Hotel.", 
+        vietnamese: "Có đấy, thực ra có. Mình luôn giới thiệu mọi người ở King's Hotel.",
+        keyPhrase: "I always recommend",
+        phraseNote: "Tôi luôn luôn khuyên/đề xuất"
+      },
+      { 
+        english: "It's about five minutes walk from Murray Station, so nice and central.", 
+        vietnamese: "Cách ga Murray khoảng 5 phút đi bộ, rất trung tâm luôn.",
+        keyPhrase: "minutes walk from",
+        phraseNote: "Số phút đi bộ từ địa điểm nào đó"
+      }
+    ]
   }
 };

@@ -756,6 +756,7 @@ export function LearnNodeClient({
     const isWriting = /writing|viết/i.test(lowercaseTitle) || node.metadata?.skill_focus === 'writing';
     const isSpeaking = /speaking|nói/i.test(lowercaseTitle) || node.metadata?.skill_focus === 'speaking';
     const isGrammar = isGrammarFocus || /grammar|ngữ pháp|vocabulary|từ vựng/i.test(lowercaseTitle) || node.metadata?.skill_focus === 'grammar';
+    const isShadowing = /shadowing|chép chính tả|dictation/i.test(lowercaseTitle) || node.metadata?.skill_focus === 'shadowing';
 
     let skillName = "Đọc hiểu (Reading)";
     let skillIcon = "📖";
@@ -764,6 +765,10 @@ export function LearnNodeClient({
     if (isListening) {
       skillName = "Luyện nghe (Listening)";
       skillIcon = "🎧";
+      skillHref = `/listening/${node.id}?backUrl=${encodeURIComponent(pathname)}`;
+    } else if (isShadowing) {
+      skillName = "Chép chính tả & Shadowing (Shadowing)";
+      skillIcon = "🎙️";
       skillHref = `/listening/${node.id}?backUrl=${encodeURIComponent(pathname)}`;
     } else if (isWriting) {
       skillName = "Luyện viết (Writing)";

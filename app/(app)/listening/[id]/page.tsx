@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { ListeningClient } from "@/components/ListeningClient";
+import DictationShadowingClient from "@/components/DictationShadowingClient";
 import { ieltsTranscripts } from "@/lib/ieltsTranscripts";
 import { getFallbackQuestionsForUnit } from "@/lib/ieltsQuizzes";
 
@@ -35,6 +36,17 @@ export default async function ListeningLessonDetailPage({ params, searchParams }
 
   if (!node) {
     return notFound();
+  }
+
+  const isShadowing = node.metadata?.skill_focus === "shadowing" || node.slug === "luyen-nghe-a2-tong-ket-2025";
+  if (isShadowing) {
+    return (
+      <main className="min-h-screen bg-[#0f172a] p-4 md:p-8 lg:p-12">
+        <div className="mx-auto max-w-5xl">
+          <DictationShadowingClient backUrl={backUrl} lessonSlug={node.slug} />
+        </div>
+      </main>
+    );
   }
 
   // Parse the Unit Number from the node slug or title (e.g., unit-1 -> 1)
