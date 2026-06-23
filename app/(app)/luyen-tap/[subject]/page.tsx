@@ -5,12 +5,13 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import clsx from "clsx";
 import { getAssessmentMap } from "../actions";
-import { useParams, useSearchParams } from "next/navigation";
+import { useParams, useSearchParams, useRouter } from "next/navigation";
 import { Sparkles, Star, ChevronRight, CheckCircle2, Play, Trophy, ChevronDown, ChevronUp } from "lucide-react";
 
 export default function SubjectMapPage() {
   const params = useParams();
   const searchParams = useSearchParams();
+  const router = useRouter();
   const subject = params.subject as string;
   const gradeParam = searchParams.get("grade");
   const gradeNum = gradeParam ? parseInt(gradeParam, 10) : undefined;
@@ -21,7 +22,67 @@ export default function SubjectMapPage() {
   const [completedExams, setCompletedExams] = useState<string[]>([]);
   const [collapsedUnits, setCollapsedUnits] = useState<Record<string, boolean>>({});
   const [isLoading, setIsLoading] = useState(true);
-  
+  const [isPickingRandom, setIsPickingRandom] = useState<boolean>(false);
+
+  const handleRandomFromUnit = async (exams: any[]) => {
+    if (!exams || exams.length === 0) return;
+    setIsPickingRandom(true);
+    try {
+      const { createClient } = await import("@/lib/supabase/client");
+      const supabase = createClient();
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) {
+        setIsPickingRandom(false);
+        return;
+      }
+
+      // Fetch all attempts for this user
+      const { data: sessions } = await supabase
+        .from('learning_sessions')
+        .select('summary_metrics')
+        .eq('user_id', user.id);
+
+      const attemptsMap: Record<string, number> = {};
+      sessions?.forEach((s: any) => {
+        const metrics = s.summary_metrics as any;
+        if (metrics && metrics.type === 'exam' && metrics.exam_id) {
+          attemptsMap[metrics.exam_id] = (attemptsMap[metrics.exam_id] || 0) + 1;
+        }
+      });
+
+      // Classify unit exams
+      const unattempted = exams.filter(exam => !attemptsMap[exam.id]);
+      
+      let selectedExam;
+      if (unattempted.length > 0) {
+        const randomIndex = Math.floor(Math.random() * unattempted.length);
+        selectedExam = unattempted[randomIndex];
+      } else {
+        // Find minimum attempt count
+        let minAttempts = Infinity;
+        exams.forEach(exam => {
+          const count = attemptsMap[exam.id] || 0;
+          if (count < minAttempts) {
+            minAttempts = count;
+          }
+        });
+
+        // Filter candidates
+        const candidateExams = exams.filter(exam => (attemptsMap[exam.id] || 0) === minAttempts);
+        const randomIndex = Math.floor(Math.random() * candidateExams.length);
+        selectedExam = candidateExams[randomIndex];
+      }
+
+      if (selectedExam) {
+        router.push(`/test-assessment?examId=${selectedExam.id}`);
+      }
+    } catch (err) {
+      console.error("Error picking random exam:", err);
+    } finally {
+      setIsPickingRandom(false);
+    }
+  };
+
   const subjectName = subject ? subject.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) : '';
 
   useEffect(() => {
@@ -194,6 +255,19 @@ export default function SubjectMapPage() {
                           transition={{ duration: 0.25 }}
                           className="w-full overflow-hidden rounded-2xl border border-slate-800 bg-slate-950/40 backdrop-blur-md shadow-xl"
                         >
+                          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 px-6 py-4 border-b border-slate-800/80 bg-slate-900/30">
+                            <span className="text-xs font-bold text-slate-400">
+                              Luyện tập kiến thức của: {unit.title}
+                            </span>
+                            <button
+                              onClick={() => handleRandomFromUnit(unit.exams)}
+                              disabled={isPickingRandom}
+                              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-extrabold text-xs shadow-lg hover:shadow-orange-500/20 transition-all active:scale-95 disabled:opacity-50"
+                            >
+                              <Sparkles size={14} className="animate-pulse" />
+                              {isPickingRandom ? "Đang chọn..." : "Luyện đề Ngẫu nhiên"}
+                            </button>
+                          </div>
                           <table className="w-full text-left border-collapse">
                             <thead>
                               <tr className="border-b border-slate-800 bg-slate-900/50 text-[10px] font-black uppercase tracking-wider text-slate-400">

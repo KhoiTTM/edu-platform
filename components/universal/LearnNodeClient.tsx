@@ -505,6 +505,77 @@ export function LearnNodeClient({
   const [handcraftedExams, setHandcraftedExams] = useState<any[]>([]);
   const [isFetchingHandcrafted, setIsFetchingHandcrafted] = useState<boolean>(true);
   const [completedNodes, setCompletedNodes] = useState<string[]>([]);
+  const [activeVideoId, setActiveVideoId] = useState<string>("");
+  const [isPickingRandom, setIsPickingRandom] = useState<boolean>(false);
+
+  const handleRandomExam = async () => {
+    if (handcraftedExams.length === 0) return;
+    setIsPickingRandom(true);
+    try {
+      const { createClient } = await import("@/lib/supabase/client");
+      const supabase = createClient();
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) {
+        setIsPickingRandom(false);
+        return;
+      }
+
+      // Fetch all attempts for this user
+      const { data: sessions } = await supabase
+        .from('learning_sessions')
+        .select('summary_metrics')
+        .eq('user_id', user.id);
+
+      const attemptsMap: Record<string, number> = {};
+      sessions?.forEach((s: any) => {
+        const metrics = s.summary_metrics as any;
+        if (metrics && metrics.type === 'exam' && metrics.exam_id) {
+          attemptsMap[metrics.exam_id] = (attemptsMap[metrics.exam_id] || 0) + 1;
+        }
+      });
+
+      // Classify exams
+      const unattempted = handcraftedExams.filter(exam => !attemptsMap[exam.id]);
+      
+      let selectedExam;
+      if (unattempted.length > 0) {
+        // Pick a random unattempted exam
+        const randomIndex = Math.floor(Math.random() * unattempted.length);
+        selectedExam = unattempted[randomIndex];
+      } else {
+        // Find minimum attempt count
+        let minAttempts = Infinity;
+        handcraftedExams.forEach(exam => {
+          const count = attemptsMap[exam.id] || 0;
+          if (count < minAttempts) {
+            minAttempts = count;
+          }
+        });
+
+        // Filter exams with minimum attempts
+        const candidateExams = handcraftedExams.filter(exam => (attemptsMap[exam.id] || 0) === minAttempts);
+        const randomIndex = Math.floor(Math.random() * candidateExams.length);
+        selectedExam = candidateExams[randomIndex];
+      }
+
+      if (selectedExam) {
+        router.push(`/test-assessment?examId=${selectedExam.id}`);
+      }
+    } catch (err) {
+      console.error("Error picking random exam:", err);
+    } finally {
+      setIsPickingRandom(false);
+    }
+  };
+
+
+  useEffect(() => {
+    if (node.metadata?.videos && node.metadata.videos.length > 0) {
+      setActiveVideoId(node.metadata.videos[0].youtube_id);
+    } else {
+      setActiveVideoId(node.metadata?.youtube_id || "");
+    }
+  }, [node.id, node.metadata]);
 
   useEffect(() => {
     const fetchCompleted = async () => {
@@ -1366,7 +1437,13 @@ export function LearnNodeClient({
         {breadcrumbs.map((bc, idx) => (
           <div key={`bc-${idx}-${bc.slug}`} className="flex items-center gap-2">
             <ChevronRight size={10} />
-            <span className={idx === breadcrumbs.length - 1 ? "text-sky-400" : ""}>{bc.title}</span>
+            {idx === breadcrumbs.length - 1 ? (
+              <span className="text-sky-400">{bc.title}</span>
+            ) : (
+              <Link href={`/learn/${subjectSlug}/${bc.slug}`} className="hover:text-white transition-colors">
+                {bc.title}
+              </Link>
+            )}
           </div>
         ))}
       </nav>
@@ -1415,18 +1492,61 @@ export function LearnNodeClient({
           )}
 
           {currentPart === 'video' && (
-            <div className="space-y-8">
-              {node.metadata?.youtube_id ? (
-                <div className="w-full aspect-video rounded-3xl overflow-hidden border-2 border-slate-800 shadow-2xl">
-                  <iframe 
-                    width="100%" 
-                    height="100%" 
-                    src={`https://www.youtube.com/embed/${node.metadata.youtube_id}?rel=0`} 
-                    title="YouTube video player" 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowFullScreen
-                  ></iframe>
+            <div className="space-y-6">
+              {node.metadata?.videos && node.metadata.videos.length > 1 && (
+                <div className="flex flex-wrap gap-2 p-1.5 bg-slate-900/60 rounded-2xl border border-slate-800">
+                  {node.metadata.videos.map((vid: any) => (
+                    <button
+                      key={vid.youtube_id}
+                      onClick={() => setActiveVideoId(vid.youtube_id)}
+                      className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
+                        activeVideoId === vid.youtube_id
+                          ? "bg-sky-500 text-white shadow-lg"
+                          : "text-slate-400 hover:text-slate-200 hover:bg-slate-800/50"
+                      }`}
+                    >
+                      {vid.title || "Video"}
+                    </button>
+                  ))}
+                </div>
+              )}
+
+              {activeVideoId ? (
+                <div className="space-y-6">
+                  {/* YouTube Lecture Video */}
+                  <div className="w-full aspect-video rounded-3xl overflow-hidden border-2 border-slate-800 shadow-2xl">
+                    <iframe 
+                      width="100%" 
+                      height="100%" 
+                      src={`https://www.youtube.com/embed/${activeVideoId}?rel=0`} 
+                      title="YouTube video player" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+
+                  {/* Sách Mềm External Link Card Helper for Tiếng Anh 7 */}
+                  {subjectSlug === "tieng-anh-7" && (
+                    <div className="p-5 rounded-2xl bg-gradient-to-r from-sky-950/30 to-indigo-950/20 border border-sky-500/20 shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4">
+                      <div className="space-y-1 text-center sm:text-left">
+                        <span className="inline-flex items-center gap-1 text-[10px] font-bold text-sky-400 uppercase tracking-widest">
+                          📖 SÁCH GIÁO KHOA MỀM TƯƠNG TÁC
+                        </span>
+                        <p className="text-xs text-slate-350 mt-1 leading-relaxed">
+                          Nhấn nút bên cạnh để mở sách lật tương tác của **Tiếng Anh 7** trong tab mới để kết hợp thực hành làm bài tập.
+                        </p>
+                      </div>
+                      <a 
+                        href="https://sachmem.net/trial/books/292/units"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-6 py-3 bg-sky-600 hover:bg-sky-500 text-white font-extrabold rounded-xl transition active:scale-95 flex items-center gap-1.5 shadow-md shadow-sky-600/10 text-xs shrink-0"
+                      >
+                        🌐 Mở Sách Mềm (Web Gốc) ➔
+                      </a>
+                    </div>
+                  )}
                 </div>
               ) : (
                 <div className="p-16 text-center text-slate-500 italic bg-slate-900/50 rounded-3xl border border-slate-800">
@@ -1519,12 +1639,24 @@ export function LearnNodeClient({
               <div className="p-8 rounded-[2rem] bg-slate-900/60 border-2 border-slate-800 backdrop-blur-xl relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-sky-500/10 blur-[100px] pointer-events-none" />
                 <div className="relative z-10">
-                  <h2 className="font-['Outfit'] text-2xl font-black text-white uppercase tracking-tight flex items-center gap-2 mb-2">
-                    🏆 Bài luyện tập tính điểm
-                  </h2>
-                  <p className="text-sm text-slate-400 mb-8 font-medium">
-                    Hãy lựa chọn một đề thi dưới đây để làm bài đánh giá tính điểm và tích lũy XP.
-                  </p>
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+                    <div>
+                      <h2 className="font-['Outfit'] text-2xl font-black text-white uppercase tracking-tight flex items-center gap-2 mb-2">
+                        🏆 Bài luyện tập tính điểm
+                      </h2>
+                      <p className="text-sm text-slate-400 font-medium">
+                        Hãy lựa chọn một đề thi dưới đây hoặc làm một đề ngẫu nhiên để tích lũy XP.
+                      </p>
+                    </div>
+                    <button
+                      onClick={handleRandomExam}
+                      disabled={isPickingRandom}
+                      className="flex-shrink-0 flex items-center gap-2 px-6 py-3 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-extrabold text-sm shadow-lg hover:shadow-orange-500/20 transition-all active:scale-95 disabled:opacity-50"
+                    >
+                      <Sparkles size={16} className="animate-pulse" />
+                      {isPickingRandom ? "Đang chọn đề..." : "Luyện đề Ngẫu nhiên"}
+                    </button>
+                  </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {handcraftedExams.map((exam, index) => {

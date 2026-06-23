@@ -1,8 +1,9 @@
 import { createClient } from "@/lib/supabase/server";
-import { createClient as createSupabaseClient } from "@supabase/supabase-js";
 import { redirect, notFound } from "next/navigation";
 import { LearnNodeClient } from "@/components/universal/LearnNodeClient";
 import Unit3TextbookClient from "@/components/Unit3TextbookClient";
+import GenericTextbookClient from "@/components/GenericTextbookClient";
+import { unit4Pages } from "@/lib/data/unit4Data";
 
 export const dynamic = "force-dynamic";
 
@@ -16,10 +17,7 @@ interface LearnNodePageProps {
 export default async function LearnNodePage({ params }: LearnNodePageProps) {
   const { subject, node } = await params;
   const supabase = await createClient();
-  const adminSupabase = createSupabaseClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.SUPABASE_SERVICE_ROLE_KEY! || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-  );
+  const adminSupabase = supabase; // Use regular client to prevent Supabase module resolution errors in dev bundle
 
   const { data: { session } } = await supabase.auth.getSession();
   if (!session) redirect("/login");
@@ -125,6 +123,26 @@ export default async function LearnNodePage({ params }: LearnNodePageProps) {
         initialPage={unit3InitialPages[node]}
         backUrl={`/hoc-tap/${subject}`}
         subjectSlug={subject}
+      />
+    );
+  }
+
+  // Intercept Unit 4 (Travel)
+  const unit4InitialPages: Record<string, number> = {
+    "unit-12": 48,
+    "unit-13": 50,
+    "unit-14": 53,
+    "unit-15": 55
+  };
+
+  if (unit4InitialPages[node] !== undefined) {
+    return (
+      <GenericTextbookClient
+        pages={unit4Pages}
+        initialPage={unit4InitialPages[node]}
+        backUrl={`/hoc-tap/${subject}`}
+        subjectSlug={subject}
+        unitTitle="Unit 4: Travel and Holidays"
       />
     );
   }

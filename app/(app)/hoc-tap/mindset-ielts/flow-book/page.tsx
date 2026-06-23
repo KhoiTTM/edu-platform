@@ -32,8 +32,8 @@ export default async function FlowBookPage() {
             lesson_index: n.sort_key,
             page_hint: n.metadata?.page_hint || `Unit ${n.slug.split('-')[1] || ''}`,
           }))
-          // Currently, only Unit 3 is supported for Flow Book (unit-8, unit-9, unit-10, unit-11)
-          .filter(l => ['unit-8', 'unit-9', 'unit-10', 'unit-11'].includes(l.slug));
+          // Currently, Unit 3 and Unit 4 are supported for Flow Book
+          .filter(l => ['unit-8', 'unit-9', 'unit-10', 'unit-11', 'unit-12', 'unit-13', 'unit-14', 'unit-15'].includes(l.slug));
     }
   }
 
