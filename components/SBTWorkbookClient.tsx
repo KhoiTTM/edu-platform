@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { sbtUnit1Data, SBTSection, SBTExercise, SBTQuestion } from "@/lib/data/sbtUnit1Data";
+import { sbtPageMap } from "@/lib/data/sbtPageMap";
 import {
   ChevronLeft,
   ChevronRight,
@@ -327,7 +328,7 @@ export default function SBTWorkbookClient({
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
-                src={`/book/sbt_tienganh_07/page_${String(currentPage).padStart(3, '0')}.png`}
+                src={sbtPageMap[currentPage] ? `https://lh3.googleusercontent.com/d/${sbtPageMap[currentPage]}` : `/book/sbt_tienganh_07/page_${String(currentPage).padStart(3, '0')}.png`}
                 alt={`Workbook Page ${currentPage}`}
                 className="max-w-full max-h-full object-contain shadow-2xl rounded-xl border border-slate-800"
               />
