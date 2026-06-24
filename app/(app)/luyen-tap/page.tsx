@@ -39,7 +39,8 @@ export default async function LuyenTapPage() {
         'math': 'toan',
         'tienganh': 'tieng_anh',
         'tieng_anh': 'tieng_anh',
-        'toan': 'toan'
+        'toan': 'toan',
+        'mindset-ielts': 'tieng_anh'
     };
 
     const subjectsByGrade = await Promise.all(

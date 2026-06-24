@@ -136,7 +136,7 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
     if (!targetGrade) targetGrade = 3;
   }
 
-  const { data: collections, error } = await supabase
+  let query = supabase
     .from('assessment_collections')
     .select(`
       id,
@@ -153,9 +153,16 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
         total_questions
       )
     `)
-    .eq('subject_slug', subjectSlug)
     .eq('grade', targetGrade)
-    .eq('status', 'published')
+    .eq('status', 'published');
+
+  if (subjectSlug === 'tieng_anh') {
+    query = query.in('subject_slug', ['tieng_anh', 'mindset-ielts']);
+  } else {
+    query = query.eq('subject_slug', subjectSlug);
+  }
+
+  const { data: collections, error } = await query
     .order('volume', { ascending: true })
     .order('sequence_number', { ascending: true });
 
@@ -245,17 +252,23 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
   // Fetch actual unit names from curriculum_nodes for this subject and grade
   const unitInfoMap = new Map<number, { title: string; description?: string }>();
   try {
+    let searchSlugs = [subjectSlug];
+    if (subjectSlug === 'tieng_anh') {
+      searchSlugs.push('tieng-anh-7');
+      searchSlugs.push('mindset-ielts');
+    }
+
     const { data: subjectData } = await supabase
       .from('universal_subjects')
       .select('id')
-      .eq('slug', subjectSlug)
-      .maybeSingle();
+      .in('slug', searchSlugs);
 
-    if (subjectData) {
+    if (subjectData && subjectData.length > 0) {
+      const subjectIds = subjectData.map(s => s.id);
       const { data: sources } = await supabase
         .from('content_sources')
         .select('id')
-        .eq('subject_id', subjectData.id);
+        .in('subject_id', subjectIds);
 
       if (sources && sources.length > 0) {
         const sourceIds = sources.map(s => s.id);
@@ -296,7 +309,7 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
   const lessonsResult = Array.from(volumesMap.values()).map(v => ({
     ...v,
     units: Array.from(v.units.values()).map((u: any) => {
-      const info = unitInfoMap.get(u.unit);
+      const info = unitInfoMap.get(Number(u.unit));
       return {
         ...u,
         title: info?.title || `Chủ đề ${u.unit}`,

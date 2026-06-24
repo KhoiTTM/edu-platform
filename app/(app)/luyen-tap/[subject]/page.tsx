@@ -83,7 +83,14 @@ export default function SubjectMapPage() {
     }
   };
 
-  const subjectName = subject ? subject.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) : '';
+  const subjectTitles: Record<string, string> = {
+    'tieng_anh': 'Tiếng Anh',
+    'toan': 'Toán học',
+    'tieng-viet': 'Tiếng Việt',
+    'tieng_viet': 'Tiếng Việt',
+    'khtn': 'Khoa học tự nhiên'
+  };
+  const subjectName = subject ? (subjectTitles[subject] || subject.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())) : '';
 
   useEffect(() => {
     setMounted(true);

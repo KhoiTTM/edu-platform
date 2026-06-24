@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import { AssessmentRenderer } from '@/components/universal/AssessmentRenderer';
 import { AssessmentResultCard } from '@/components/assessment/AssessmentResultCard';
 import { getExamQuestions, getExamInfo, saveExamResult } from './actions';
+import SBTWorkbookClient from '@/components/SBTWorkbookClient';
 
 function AssessmentContent() {
   const searchParams = useSearchParams();
@@ -103,6 +104,10 @@ function AssessmentContent() {
     setCompleted(true);
   };
 
+  const isSBTUnit1 = 
+    (subjectSlug === "tieng_anh" || subjectSlug === "mindset-ielts") && 
+    (examTitle.toLowerCase().includes("unit 1") || examTitle.toLowerCase().includes("bài 1") || examId === "sbt-unit-1");
+
   if (isLoading) {
     return (
         <div className="flex flex-col items-center justify-center py-20">
@@ -117,6 +122,18 @@ function AssessmentContent() {
         <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-400 px-6 py-4 rounded-xl font-medium">
             {error}
         </div>
+    );
+  }
+
+  if (isSBTUnit1) {
+    return (
+      <div className="fixed inset-0 w-screen h-screen bg-[#0b0f19] z-50 overflow-hidden flex flex-col">
+        <SBTWorkbookClient 
+          examId={examId!} 
+          examTitle={examTitle} 
+          subjectSlug={subjectSlug}
+        />
+      </div>
     );
   }
 
