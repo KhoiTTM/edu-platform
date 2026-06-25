@@ -10,6 +10,8 @@ import SBTWorkbookClient from '@/components/SBTWorkbookClient';
 function AssessmentContent() {
   const searchParams = useSearchParams();
   const examId = searchParams.get('examId');
+  const timerParam = searchParams.get('timer');
+  const customTimer = timerParam ? parseInt(timerParam, 10) : undefined;
   const [questions, setQuestions] = useState<any[]>([]);
   const [examTitle, setExamTitle] = useState<string>("Luyện Tập Assessment");
   const [isLoading, setIsLoading] = useState(true);
@@ -18,6 +20,7 @@ function AssessmentContent() {
   const [results, setResults] = useState<any>(null);
 
   const [subjectSlug, setSubjectSlug] = useState<string>("tieng_anh");
+  const [examType, setExamType] = useState<string>("lesson");
 
   useEffect(() => {
     if (examId) {
@@ -30,6 +33,7 @@ function AssessmentContent() {
           ]);
           setExamTitle(info.title);
           setSubjectSlug(info.subjectSlug || "tieng_anh");
+          setExamType(info.examType || "lesson");
 
           // Fire tracking event
           fetch('/api/events', {
@@ -104,9 +108,9 @@ function AssessmentContent() {
     setCompleted(true);
   };
 
-  const isSBTUnit1 = 
+  const isSBTWorkbook = 
     (subjectSlug === "tieng_anh" || subjectSlug === "mindset-ielts") && 
-    (examTitle.toLowerCase().includes("unit 1") || examTitle.toLowerCase().includes("bài 1") || examId === "sbt-unit-1");
+    (examTitle.toLowerCase().includes("unit") || examTitle.toLowerCase().includes("bài") || examId?.startsWith("sbt-"));
 
   if (isLoading) {
     return (
@@ -125,7 +129,7 @@ function AssessmentContent() {
     );
   }
 
-  if (isSBTUnit1) {
+  if (isSBTWorkbook) {
     return (
       <div className="fixed inset-0 w-screen h-screen bg-[#0b0f19] z-50 overflow-hidden flex flex-col">
         <SBTWorkbookClient 
@@ -145,6 +149,7 @@ function AssessmentContent() {
             questions={questions}
             mode="quiz"
             onComplete={handleComplete}
+            timerSeconds={customTimer || (examType === 'reflex' ? 30 : undefined)}
           />
         ) : (
           <AssessmentResultCard 

@@ -18,11 +18,68 @@ export default function SubjectMapPage() {
   const [mounted, setMounted] = useState(false);
   const [volumes, setVolumes] = useState<any[]>([]);
   const [reviews, setReviews] = useState<any[]>([]);
-  const [activeTab, setActiveTab] = useState<'lesson' | 'review'>('lesson');
+  const [reflexes, setReflexes] = useState<any[]>([]);
+  const [activeTab, setActiveTab] = useState<'lesson' | 'review' | 'reflex'>('lesson');
   const [completedExams, setCompletedExams] = useState<string[]>([]);
   const [collapsedUnits, setCollapsedUnits] = useState<Record<string, boolean>>({});
   const [isLoading, setIsLoading] = useState(true);
   const [isPickingRandom, setIsPickingRandom] = useState<boolean>(false);
+  const [timerLimit, setTimerLimit] = useState<number>(30);
+
+  const handleRandomFromReflex = async (exams: any[]) => {
+    if (!exams || exams.length === 0) return;
+    setIsPickingRandom(true);
+    try {
+      const { createClient } = await import("@/lib/supabase/client");
+      const supabase = createClient();
+      const { data: { user } } = await supabase.auth.getUser();
+      if (!user) {
+        setIsPickingRandom(false);
+        return;
+      }
+
+      const { data: sessions } = await supabase
+        .from('learning_sessions')
+        .select('summary_metrics')
+        .eq('user_id', user.id);
+
+      const attemptsMap: Record<string, number> = {};
+      sessions?.forEach((s: any) => {
+        const metrics = s.summary_metrics as any;
+        if (metrics && metrics.type === 'exam' && metrics.exam_id) {
+          attemptsMap[metrics.exam_id] = (attemptsMap[metrics.exam_id] || 0) + 1;
+        }
+      });
+
+      const unattempted = exams.filter(exam => !attemptsMap[exam.id]);
+      
+      let selectedExam;
+      if (unattempted.length > 0) {
+        const randomIndex = Math.floor(Math.random() * unattempted.length);
+        selectedExam = unattempted[randomIndex];
+      } else {
+        let minAttempts = Infinity;
+        exams.forEach(exam => {
+          const count = attemptsMap[exam.id] || 0;
+          if (count < minAttempts) {
+            minAttempts = count;
+          }
+        });
+
+        const candidateExams = exams.filter(exam => (attemptsMap[exam.id] || 0) === minAttempts);
+        const randomIndex = Math.floor(Math.random() * candidateExams.length);
+        selectedExam = candidateExams[randomIndex];
+      }
+
+      if (selectedExam) {
+        router.push(`/test-assessment?examId=${selectedExam.id}&timer=${timerLimit}`);
+      }
+    } catch (err) {
+      console.error("Error picking random reflex exam:", err);
+    } finally {
+      setIsPickingRandom(false);
+    }
+  };
 
   const handleRandomFromUnit = async (exams: any[]) => {
     if (!exams || exams.length === 0) return;
@@ -100,6 +157,7 @@ export default function SubjectMapPage() {
           const data = await getAssessmentMap(subject, gradeNum);
           setVolumes(data.lessons || []);
           setReviews(data.reviews || []);
+          setReflexes(data.reflex || []);
           try {
             const stored = JSON.parse(localStorage.getItem('completed_exams') || '[]');
             setCompletedExams(stored);
@@ -175,7 +233,7 @@ export default function SubjectMapPage() {
         {/* Tab Toggle Bar */}
         {!isLoading && (
           <div className="flex justify-center mb-10">
-            <div className="flex bg-slate-900/80 p-1.5 rounded-2xl border border-white/10 backdrop-blur-sm">
+            <div className="flex bg-slate-900/80 p-1.5 rounded-2xl border border-white/10 backdrop-blur-sm gap-1 flex-wrap justify-center">
               <button
                 onClick={() => setActiveTab('lesson')}
                 className={clsx(
@@ -197,6 +255,17 @@ export default function SubjectMapPage() {
                 )}
               >
                 Luyện tập theo ôn tập
+              </button>
+              <button
+                onClick={() => setActiveTab('reflex')}
+                className={clsx(
+                  "px-6 py-2.5 rounded-xl text-sm font-black transition-all duration-200 select-none",
+                  activeTab === 'reflex' 
+                    ? "bg-gradient-to-r from-orange-500 to-rose-600 text-white shadow-lg shadow-rose-500/20" 
+                    : "text-slate-400 hover:text-white"
+                )}
+              >
+                💥 Luyện tập phản xạ
               </button>
             </div>
           </div>
@@ -499,6 +568,145 @@ export default function SubjectMapPage() {
           </div>
         )}
 
+        {/* Tab Content: Reflex */}
+        {!isLoading && activeTab === 'reflex' && (
+          <div className="flex flex-col">
+            {/* Time Settings Selector */}
+            <div className="mb-8 p-6 rounded-3xl bg-slate-900/60 border border-slate-800 backdrop-blur-sm shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+              <div>
+                <h3 className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-rose-400">⏱️ CÀI ĐẶT THỜI GIAN PHẢN XẠ</h3>
+                <p className="text-xs text-slate-400 mt-1 font-bold">Chọn giới hạn thời gian làm bài cho mỗi câu hỏi. Mặc định là 30 giây.</p>
+              </div>
+              <div className="flex items-center gap-2 bg-slate-950 p-1.5 rounded-2xl border border-slate-800">
+                {[10, 20, 30, 60].map((time) => (
+                  <button
+                    key={time}
+                    onClick={() => setTimerLimit(time)}
+                    className={clsx(
+                      "px-4 py-2 rounded-xl text-xs font-black transition-all select-none duration-150 active:scale-95",
+                      timerLimit === time 
+                        ? "bg-gradient-to-r from-orange-500 to-rose-600 text-white shadow-md shadow-rose-500/20" 
+                        : "text-slate-400 hover:text-white"
+                    )}
+                  >
+                    {time} giây
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Loop through reflex volumes */}
+            {reflexes.map((vol: any, volIdx: number) => {
+              const completedCount = vol.exams.filter((exam: any) => exam.is_completed || completedExams.includes(exam.id)).length;
+
+              return (
+                <div key={`vol-${vol.volume}`} className="mb-16">
+                   {/* Volume Header Banner with Random Exam button */}
+                   <div className="mb-6 rounded-2xl p-5 text-white border relative overflow-hidden flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-gradient-to-r from-orange-600/85 to-rose-600/85"
+                        style={{ boxShadow: `0 8px 32px rgba(244,63,94,0.4)` }}>
+                      <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/3 blur-2xl"></div>
+                      <div className="flex-1 pr-4">
+                        <h2 className="text-2xl font-black tracking-wider drop-shadow-md">
+                          {vol.title}
+                        </h2>
+                        <p className="text-xs font-bold text-white/80 mt-1">
+                          Tổng hợp các đề luyện tập phản xạ tính nhẩm nhanh.
+                        </p>
+                      </div>
+                      <div className="flex items-center gap-3 z-10 flex-wrap sm:flex-nowrap">
+                        <div className="bg-white/10 px-3 py-1 rounded-full text-xs font-black border border-white/20 whitespace-nowrap">
+                          Đã hoàn thành: {completedCount}/{vol.exams.length}
+                        </div>
+                        <button
+                          onClick={() => handleRandomFromReflex(vol.exams)}
+                          disabled={isPickingRandom}
+                          className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-white text-rose-600 font-extrabold text-xs shadow-lg transition-all active:scale-95 disabled:opacity-50 hover:bg-slate-50"
+                        >
+                          <Sparkles size={14} className="animate-pulse" />
+                          {isPickingRandom ? "Đang chọn..." : "Luyện đề Ngẫu nhiên"}
+                        </button>
+                      </div>
+                   </div>
+
+                   {/* Flat Exams Table directly under Volume */}
+                   <div className="w-full overflow-hidden rounded-2xl border border-slate-800 bg-slate-950/40 backdrop-blur-md shadow-xl">
+                      <table className="w-full text-left border-collapse">
+                        <thead>
+                          <tr className="border-b border-slate-800 bg-slate-900/50 text-[10px] font-black uppercase tracking-wider text-slate-400">
+                            <th className="px-6 py-3.5 w-16 text-center">STT</th>
+                            <th className="px-6 py-3.5">Tên đề luyện tập</th>
+                            <th className="px-6 py-3.5 w-32 text-center">Số câu hỏi</th>
+                            <th className="px-6 py-3.5 w-36 text-center">Trạng thái</th>
+                            <th className="px-6 py-3.5 w-36 text-center">Thao tác</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-slate-800/60 text-sm font-bold text-slate-200">
+                          {vol.exams.map((exam: any, examIdx: number) => {
+                            const isCompleted = exam.is_completed || completedExams.includes(exam.id);
+                            
+                            return (
+                              <tr 
+                                key={exam.id} 
+                                className={clsx(
+                                  "transition-all duration-150 group hover:bg-slate-800/20",
+                                  isCompleted && "text-slate-500"
+                                )}
+                              >
+                                <td className="px-6 py-4 text-center font-black text-slate-400 group-hover:text-orange-400 transition-colors">
+                                  {examIdx + 1}
+                                </td>
+                                <td className="px-6 py-4">
+                                  <Link href={`/test-assessment?examId=${exam.id}&timer=${timerLimit}`} className={clsx(
+                                    "hover:text-orange-400 transition-colors block leading-snug",
+                                    isCompleted ? "line-through decoration-slate-600/50" : "font-extrabold"
+                                  )}>
+                                    {exam.title}
+                                  </Link>
+                                </td>
+                                <td className="px-6 py-4 text-center">
+                                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-900/60 border border-slate-800 text-xs font-black text-slate-300">
+                                    <Star size={12} className="text-amber-400 fill-amber-400" />
+                                    {exam.total_questions || 20} Câu
+                                  </span>
+                                </td>
+                                <td className="px-6 py-4 text-center">
+                                  {isCompleted ? (
+                                    <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[10px] font-black uppercase tracking-wider">
+                                      <CheckCircle2 size={12} />
+                                      Đã làm
+                                    </span>
+                                  ) : (
+                                    <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-rose-500/10 border border-rose-500/30 text-rose-400 text-[10px] font-black uppercase tracking-wider">
+                                      <Play size={12} />
+                                      Sẵn sàng
+                                    </span>
+                                  )}
+                                </td>
+                                <td className="px-6 py-4 text-center">
+                                  <Link 
+                                    href={`/test-assessment?examId=${exam.id}&timer=${timerLimit}`}
+                                    className={clsx(
+                                      "inline-flex items-center justify-center gap-1 px-4 py-1.5 rounded-xl font-black text-xs uppercase tracking-wide transition-all active:scale-95 duration-150",
+                                      isCompleted 
+                                        ? "border border-slate-700 text-slate-400 hover:bg-slate-800 hover:text-white" 
+                                        : "bg-gradient-to-r from-orange-500 to-rose-600 hover:from-orange-400 hover:to-rose-500 text-white shadow-md shadow-rose-500/10"
+                                    )}
+                                  >
+                                    {isCompleted ? "Làm lại" : "Luyện tập"}
+                                  </Link>
+                                </td>
+                              </tr>
+                            );
+                          })}
+                        </tbody>
+                      </table>
+                   </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
         {!isLoading && activeTab === 'lesson' && volumes.length === 0 && (
           <div className="text-center py-20 text-slate-400 font-bold text-xl border-2 border-dashed border-slate-700 rounded-2xl bg-slate-800/30">
             No assessments found in this sector.
@@ -508,6 +716,12 @@ export default function SubjectMapPage() {
         {!isLoading && activeTab === 'review' && reviews.length === 0 && (
           <div className="text-center py-20 text-slate-400 font-bold text-xl border-2 border-dashed border-slate-700 rounded-2xl bg-slate-800/30">
             No review assessments found in this sector.
+          </div>
+        )}
+
+        {!isLoading && activeTab === 'reflex' && reflexes.length === 0 && (
+          <div className="text-center py-20 text-slate-400 font-bold text-xl border-2 border-dashed border-slate-700 rounded-2xl bg-slate-800/30">
+            Không tìm thấy đề luyện phản xạ cho môn học này.
           </div>
         )}
       </div>

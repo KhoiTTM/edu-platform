@@ -4,9 +4,10 @@ import { createClient } from "@/lib/supabase/server";
 
 export async function getExamInfo(examId: string) {
   const supabase = await createClient();
-  const { data } = await supabase.from('exams').select('title, assessment_collections(subject_slug)').eq('id', examId).single();
+  const { data } = await supabase.from('exams').select('title, assessment_collections(subject_slug, exam_type)').eq('id', examId).single();
   const subjectSlug = (data?.assessment_collections as any)?.subject_slug || "toan";
-  return { title: data?.title || "Bài Kiểm Tra", subjectSlug };
+  const examType = (data?.assessment_collections as any)?.exam_type || "lesson";
+  return { title: data?.title || "Bài Kiểm Tra", subjectSlug, examType };
 }
 
 export async function getExamQuestions(examId: string) {

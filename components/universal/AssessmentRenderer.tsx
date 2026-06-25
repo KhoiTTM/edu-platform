@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { MultipleChoiceRenderer } from './MultipleChoiceRenderer';
 import { TapWordRenderer } from './TapWordRenderer';
 import { SentenceReorderRenderer } from './SentenceReorderRenderer';
@@ -12,13 +12,15 @@ interface AssessmentRendererProps {
   questions: any[];
   mode: 'practice' | 'quiz' | 'exam' | 'review' | 'challenge';
   onComplete: (answers: any[]) => void;
+  timerSeconds?: number;
 }
 
 
-export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRendererProps) {
+export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds }: AssessmentRendererProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<any[]>([]);
   const [hasAnswered, setHasAnswered] = useState(false);
+  const [timeLeft, setTimeLeft] = useState<number>(timerSeconds || 0);
 
   const currentQuestion = questions[currentIndex];
 
@@ -65,6 +67,24 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
     setAnswers(newAnswers);
     setHasAnswered(true);
   };
+
+  useEffect(() => {
+    if (!timerSeconds || hasAnswered) return;
+    
+    setTimeLeft(timerSeconds);
+    const interval = setInterval(() => {
+      setTimeLeft((prev) => {
+        if (prev <= 1) {
+          clearInterval(interval);
+          handleAnswer(false, "timeout");
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [currentIndex, timerSeconds, hasAnswered]);
 
   const handleNext = () => {
     if (currentIndex < questions.length - 1) {
@@ -359,6 +379,21 @@ export function AssessmentRenderer({ questions, mode, onComplete }: AssessmentRe
           style={{ width: `${((currentIndex) / questions.length) * 100}%` }}
         />
       </div>
+
+      {timerSeconds && !hasAnswered && (
+        <div className="w-full bg-slate-800 h-6 rounded-xl mb-4 overflow-hidden relative border border-slate-700/50">
+          <div 
+            className="h-full rounded-full transition-all duration-1000 ease-linear shadow-[0_0_12px_rgba(244,63,94,0.6)]"
+            style={{ 
+              width: `${(timeLeft / timerSeconds) * 100}%`,
+              backgroundColor: timeLeft > 5 ? '#10b981' : timeLeft > 2 ? '#f59e0b' : '#ef4444' 
+            }}
+          />
+          <div className="absolute inset-0 flex items-center justify-center text-[10px] font-black text-white drop-shadow-[0_1.5px_1.5px_rgba(0,0,0,0.8)] tracking-wider">
+            ⏱️ CÒN LẠI {timeLeft} GIÂY
+          </div>
+        </div>
+      )}
 
       <div className="flex-1">
         {currentQuestion.youtube_url && (

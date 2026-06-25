@@ -168,7 +168,7 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
 
   if (error) {
     console.error('  [ACTION-LOG] Error fetching assessment map:', error);
-    return { lessons: [], reviews: [] };
+    return { lessons: [], reviews: [], reflex: [] };
   }
 
   console.log(`  [ACTION-LOG] Found ${collections?.length || 0} collections.`);
@@ -176,9 +176,10 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
   // Transform to nested structure for lessons: [ { volume: 1, units: [ { unit: 1, exams: [...] } ] } ]
   const volumesMap = new Map<number, any>();
   const reviews: any[] = [];
+  const reflexVolumesMap = new Map<number, any>();
 
   collections.forEach((collection) => {
-    // If it's a review, group it under reviews
+    // If it's a review or reflex, group it accordingly
     if (collection.exam_type && collection.exam_type !== 'lesson') {
       const exams = collection.exams.map((exam: any) => {
         const isCompleted = completedExamIds.has(exam.id) || completedExamTitles.has(exam.title);
@@ -192,15 +193,42 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
         };
       });
 
-      reviews.push({
+      const entry = {
         id: collection.id,
         title: collection.title,
-        description: collection.title === 'Kiểm tra giữa học kỳ 1'
-          ? 'Đề ôn tập củng cố kiến thức giữa học kì 1'
-          : `Đề ôn tập củng cố kiến thức ${collection.title.toLowerCase()}`,
+        description: collection.exam_type === 'reflex'
+          ? 'Luyện tập tính nhẩm nhanh với giới hạn thời gian tự chọn.'
+          : (collection.title === 'Kiểm tra giữa học kỳ 1'
+            ? 'Đề ôn tập củng cố kiến thức giữa học kì 1'
+            : `Đề ôn tập củng cố kiến thức ${collection.title.toLowerCase()}`),
         exams: exams,
         unit: collection.units && collection.units.length > 0 ? collection.units[0] : 101
-      });
+      };
+
+      if (collection.exam_type === 'reflex') {
+        const vol = collection.volume || 1;
+        if (!reflexVolumesMap.has(vol)) {
+          reflexVolumesMap.set(vol, {
+            volume: vol,
+            title: `Toán ${targetGrade} - Tập ${vol}`,
+            exams: []
+          });
+        }
+        const volEntry = reflexVolumesMap.get(vol);
+        collection.exams.forEach((exam: any) => {
+          const isCompleted = completedExamIds.has(exam.id) || completedExamTitles.has(exam.title);
+          volEntry.exams.push({
+            id: exam.id,
+            title: exam.title,
+            exam_number: exam.exam_number,
+            total_questions: exam.total_questions,
+            collection_title: collection.title,
+            is_completed: isCompleted
+          });
+        });
+      } else {
+        reviews.push(entry);
+      }
       return;
     }
 
@@ -318,9 +346,15 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
     }).sort((a: any, b: any) => a.unit - b.unit)
   })).sort((a, b) => a.volume - b.volume);
 
+  const reflexResult = Array.from(reflexVolumesMap.values()).map(v => ({
+    ...v,
+    exams: v.exams.sort((a: any, b: any) => a.exam_number - b.exam_number)
+  })).sort((a, b) => a.volume - b.volume);
+
   return {
     lessons: lessonsResult,
-    reviews: reviews
+    reviews: reviews,
+    reflex: reflexResult
   };
 }
 

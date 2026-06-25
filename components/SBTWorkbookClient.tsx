@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { sbtUnit1Data, SBTSection, SBTExercise, SBTQuestion } from "@/lib/data/sbtUnit1Data";
+import { sbtUnit2Data } from "@/lib/data/sbtUnit2Data";
 import { sbtPageMap } from "@/lib/data/sbtPageMap";
 import {
   ChevronLeft,
@@ -47,6 +48,13 @@ export default function SBTWorkbookClient({
   examTitle,
   subjectSlug = "tieng_anh"
 }: SBTWorkbookClientProps) {
+  // Determine which Unit we are viewing
+  const unitNumber = examTitle.toLowerCase().includes("unit 2") || examTitle.toLowerCase().includes("chương 2") || examId.includes("unit-2") || examTitle.toLowerCase().includes("lành mạnh") || examTitle.toLowerCase().includes("living") ? 2 : 1;
+  const workbookData = unitNumber === 2 ? sbtUnit2Data : sbtUnit1Data;
+  const pagesList = unitNumber === 2 ? [10, 11, 12, 13, 14, 15] : [3, 4, 5, 6, 7, 8];
+  const minPage = pagesList[0];
+  const maxPage = pagesList[pagesList.length - 1];
+
   // Active Section initialized based on Practice number
   const [activeSectionKey, setActiveSectionKey] = useState<string>(() => 
     getInitialSectionKey(examTitle, examId)
@@ -55,8 +63,8 @@ export default function SBTWorkbookClient({
   // Scanned page number initialized based on active section
   const [currentPage, setCurrentPage] = useState<number>(() => {
     const initialKey = getInitialSectionKey(examTitle, examId);
-    const section = sbtUnit1Data.find(s => s.key === initialKey);
-    return section && section.exercises.length > 0 ? section.exercises[0].pageNumber : 3;
+    const section = workbookData.find(s => s.key === initialKey);
+    return section && section.exercises.length > 0 ? section.exercises[0].pageNumber : minPage;
   });
   
   // Zoom level for iframe container
@@ -82,12 +90,12 @@ export default function SBTWorkbookClient({
   } | null>(null);
 
   // Find active section structure
-  const activeSection = sbtUnit1Data.find(s => s.key === activeSectionKey) || sbtUnit1Data[0];
+  const activeSection = workbookData.find(s => s.key === activeSectionKey) || workbookData[0];
 
   // Sync tab switching to update Left Page Number
   const handleSectionTabChange = (key: string) => {
     setActiveSectionKey(key);
-    const section = sbtUnit1Data.find(s => s.key === key);
+    const section = workbookData.find(s => s.key === key);
     if (section && section.exercises.length > 0) {
       // Set to first exercise's page number
       setCurrentPage(section.exercises[0].pageNumber);
@@ -143,7 +151,7 @@ export default function SBTWorkbookClient({
     let totalQuestions = 0;
     let correctCount = 0;
 
-    sbtUnit1Data.forEach(section => {
+    workbookData.forEach(section => {
       section.exercises.forEach(ex => {
         ex.questions.forEach(q => {
           totalQuestions++;
@@ -222,7 +230,7 @@ export default function SBTWorkbookClient({
 
         {/* Section Tabs */}
         <div className="flex items-center gap-1.5 bg-slate-950 p-1.5 rounded-2xl border border-slate-850 max-w-full overflow-x-auto">
-          {sbtUnit1Data.map(sec => (
+          {workbookData.map(sec => (
             <button
               key={sec.key}
               onClick={() => handleSectionTabChange(sec.key)}
@@ -268,7 +276,7 @@ export default function SBTWorkbookClient({
             <div className="flex items-center gap-1.5">
               {/* Manual Page Buttons */}
               <div className="flex items-center bg-slate-950 rounded-xl p-1 border border-slate-800 mr-2">
-                {[3, 4, 5, 6, 7, 8].map(p => (
+                {pagesList.map(p => (
                   <button
                     key={p}
                     onClick={() => setCurrentPage(p)}
@@ -337,15 +345,15 @@ export default function SBTWorkbookClient({
             {/* Prev/Next Overlay */}
             <div className="absolute bottom-6 left-6 right-6 flex justify-between pointer-events-none z-10">
               <button
-                onClick={() => setCurrentPage(prev => Math.max(3, prev - 1))}
-                disabled={currentPage === 3}
+                onClick={() => setCurrentPage(prev => Math.max(minPage, prev - 1))}
+                disabled={currentPage === minPage}
                 className="p-3 rounded-full bg-slate-900/90 hover:bg-slate-850 text-white shadow-xl pointer-events-auto transition border border-slate-800 disabled:opacity-40 disabled:cursor-not-allowed"
               >
                 <ChevronLeft className="h-5 w-5" />
               </button>
               <button
-                onClick={() => setCurrentPage(prev => Math.min(8, prev + 1))}
-                disabled={currentPage === 8}
+                onClick={() => setCurrentPage(prev => Math.min(maxPage, prev + 1))}
+                disabled={currentPage === maxPage}
                 className="p-3 rounded-full bg-slate-900/90 hover:bg-slate-850 text-white shadow-xl pointer-events-auto transition border border-slate-800 disabled:opacity-40 disabled:cursor-not-allowed"
               >
                 <ChevronRight className="h-5 w-5" />
