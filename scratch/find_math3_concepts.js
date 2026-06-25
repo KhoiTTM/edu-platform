@@ -1,0 +1,36 @@
+const { createClient } = require('@supabase/supabase-js');
+const fs = require('fs');
+const path = require('path');
+
+const envPath = path.resolve(__dirname, '../.env.local');
+const envContent = fs.readFileSync(envPath, 'utf-8');
+const env = {};
+envContent.split('\n').forEach(line => {
+  const parts = line.split('=');
+  if (parts.length >= 2) {
+    env[parts[0].trim()] = parts.slice(1).join('=').trim().replace(/^['"]|['"]$/g, '');
+  }
+});
+
+const supabase = createClient(env.NEXT_PUBLIC_SUPABASE_URL, env.SUPABASE_SERVICE_ROLE_KEY);
+
+async function run() {
+  console.log('--- Querying Concepts in DB ---');
+  const { data: concepts, error } = await supabase
+    .from('concepts')
+    .select('id, title, slug')
+    .ilike('slug', '%toan%')
+    .limit(50);
+
+  if (error) {
+    console.error('Error fetching concepts:', error);
+    return;
+  }
+
+  console.log('Sample Concepts found:');
+  concepts.forEach(c => {
+    console.log(`- ID: ${c.id}, Slug: ${c.slug}, Title: ${c.title}`);
+  });
+}
+
+run();
