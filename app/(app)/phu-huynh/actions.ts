@@ -193,6 +193,7 @@ export type ExamOption = {
   subject_slug: string;
   grade: number;
   units: number[];
+  exam_type?: string;
 };
 
 /** Get all exams for a subject and grade */
@@ -212,7 +213,8 @@ export async function getExamsForSubject(
         id,
         subject_slug,
         grade,
-        units
+        units,
+        exam_type
       )
     `)
     .eq("assessment_collections.subject_slug", subjectSlug)
@@ -231,6 +233,7 @@ export async function getExamsForSubject(
     subject_slug: e.collection?.subject_slug || "",
     grade: e.collection?.grade || 3,
     units: e.collection?.units || [],
+    exam_type: e.collection?.exam_type || "lesson",
   })) as ExamOption[];
 }
 
@@ -249,26 +252,59 @@ export async function getLessonsForSubject(
 ): Promise<LessonOption[]> {
   const supabase = await createClient();
 
+  const { data: subject } = await supabase
+    .from("universal_subjects")
+    .select("id")
+    .eq("slug", subjectSlug)
+    .maybeSingle();
+
+  if (!subject) {
+    return [];
+  }
+
+  const { data: sources } = await supabase
+    .from("content_sources")
+    .select("id")
+    .eq("subject_id", subject.id);
+
+  if (!sources || sources.length === 0) {
+    return [];
+  }
+
+  const matchedSourceIds = [];
+  for (const source of sources) {
+    const { data: rootNode } = await supabase
+      .from("curriculum_nodes")
+      .select("slug")
+      .eq("source_id", source.id)
+      .is("parent_id", null)
+      .maybeSingle();
+    
+    if (rootNode) {
+      if (grade === 0) {
+        matchedSourceIds.push(source.id);
+      } else if (rootNode.slug === `lop-${grade}` || rootNode.slug === `grade-${grade}`) {
+        matchedSourceIds.push(source.id);
+      }
+    }
+  }
+
+  if (matchedSourceIds.length === 0) {
+    return [];
+  }
+
   const { data, error } = await supabase
     .from("curriculum_nodes")
     .select(`
       id,
       title,
       slug,
-      parent:curriculum_nodes (
-        title,
-        sort_key
-      ),
-      source:content_sources!inner (
-        subject:universal_subjects!inner (
-          slug
-        ),
-        grade
+      parent:parent_id (
+        title
       )
     `)
     .eq("type", "lesson")
-    .eq("content_sources.grade", grade)
-    .eq("universal_subjects.slug", subjectSlug);
+    .in("source_id", matchedSourceIds);
 
   if (error) {
     console.error("[getLessonsForSubject] Error:", error);
@@ -277,7 +313,7 @@ export async function getLessonsForSubject(
 
   return (data || []).map((n: any) => {
     const unitTitle = n.parent?.title || "";
-    const match = unitTitle.match(/unit\s+(\d+)/i);
+    const match = unitTitle.match(/(?:unit|chủ đề|chương)\s+(\d+)/i);
     const unitNumber = match ? parseInt(match[1], 10) : undefined;
 
     return {

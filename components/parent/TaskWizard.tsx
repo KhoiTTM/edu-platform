@@ -124,6 +124,7 @@ export function TaskWizard({
   const [error, setError] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedFilterUnit, setSelectedFilterUnit] = useState<number | null>(null);
+  const [selectedExamTypeFilter, setSelectedExamTypeFilter] = useState<"all" | "lesson" | "review" | "reflex">("all");
 
   // ── Step 1: Select Student ───────────────────────────────────────────────
   const StepStudent = () => (
@@ -205,7 +206,15 @@ export function TaskWizard({
       const matchesSearch = e.title.toLowerCase().includes(searchTerm.toLowerCase());
       const matchesUnit =
         selectedFilterUnit === null || e.units.includes(selectedFilterUnit);
-      return matchesSearch && matchesUnit;
+      
+      const type = e.exam_type || "lesson";
+      const matchesType =
+        selectedExamTypeFilter === "all" ||
+        (selectedExamTypeFilter === "lesson" && type === "lesson") ||
+        (selectedExamTypeFilter === "reflex" && type === "reflex") ||
+        (selectedExamTypeFilter === "review" && type !== "lesson" && type !== "reflex");
+
+      return matchesSearch && matchesUnit && matchesType;
     });
 
     const filteredLessons = lessons.filter((l) => {
@@ -250,6 +259,52 @@ export function TaskWizard({
             📖 Bài học ({lessons.length})
           </button>
         </div>
+
+        {/* Sub-exam type selectors for "Bài luyện tập" */}
+        {taskType === "exam" && (
+          <div className="flex bg-slate-900/60 p-1.5 rounded-xl border border-slate-800/80 gap-1 flex-wrap justify-center">
+            <button
+              onClick={() => setSelectedExamTypeFilter("all")}
+              className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all select-none ${
+                selectedExamTypeFilter === "all"
+                  ? "bg-slate-700 text-white"
+                  : "text-slate-400 hover:text-white"
+              }`}
+            >
+              Tất cả
+            </button>
+            <button
+              onClick={() => setSelectedExamTypeFilter("lesson")}
+              className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all select-none ${
+                selectedExamTypeFilter === "lesson"
+                  ? "bg-cyan-600 text-white shadow-sm shadow-cyan-500/10"
+                  : "text-slate-400 hover:text-white"
+              }`}
+            >
+              Luyện theo bài học
+            </button>
+            <button
+              onClick={() => setSelectedExamTypeFilter("review")}
+              className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all select-none ${
+                selectedExamTypeFilter === "review"
+                  ? "bg-fuchsia-600 text-white shadow-sm shadow-fuchsia-500/10"
+                  : "text-slate-400 hover:text-white"
+              }`}
+            >
+              Luyện theo ôn tập
+            </button>
+            <button
+              onClick={() => setSelectedExamTypeFilter("reflex")}
+              className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all select-none ${
+                selectedExamTypeFilter === "reflex"
+                  ? "bg-orange-600 text-white shadow-sm shadow-orange-500/10"
+                  : "text-slate-400 hover:text-white"
+              }`}
+            >
+              Luyện phản xạ
+            </button>
+          </div>
+        )}
 
         {/* Filter inputs */}
         <div className="flex gap-2">

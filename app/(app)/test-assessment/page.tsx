@@ -21,6 +21,7 @@ function AssessmentContent() {
 
   const [subjectSlug, setSubjectSlug] = useState<string>("tieng_anh");
   const [examType, setExamType] = useState<string>("lesson");
+  const [grade, setGrade] = useState<number>(3);
 
   useEffect(() => {
     if (examId) {
@@ -34,6 +35,7 @@ function AssessmentContent() {
           setExamTitle(info.title);
           setSubjectSlug(info.subjectSlug || "tieng_anh");
           setExamType(info.examType || "lesson");
+          setGrade(info.grade || 3);
 
           // Fire tracking event
           fetch('/api/events', {
