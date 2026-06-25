@@ -286,8 +286,10 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
   try {
     let searchSlugs = [subjectSlug];
     if (subjectSlug === 'tieng_anh') {
-      searchSlugs.push('tieng-anh-7');
-      searchSlugs.push('mindset-ielts');
+      if (targetGrade === 7) {
+        searchSlugs.push('tieng-anh-7');
+        searchSlugs.push('mindset-ielts');
+      }
     }
 
     const { data: subjectData } = await supabase
