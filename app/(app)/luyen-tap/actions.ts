@@ -157,7 +157,11 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
     .eq('status', 'published');
 
   if (subjectSlug === 'tieng_anh') {
-    query = query.in('subject_slug', ['tieng_anh', 'mindset-ielts']);
+    if (targetGrade === 7) {
+      query = query.in('subject_slug', ['tieng_anh', 'mindset-ielts']);
+    } else {
+      query = query.eq('subject_slug', 'tieng_anh');
+    }
   } else {
     query = query.eq('subject_slug', subjectSlug);
   }
