@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
-import { BookOpen, Globe2, Calculator, FlaskConical, GraduationCap, ArrowRight, Zap } from "lucide-react";
+import { BookOpen, Globe2, Calculator, FlaskConical, GraduationCap, ArrowRight, Zap, Star } from "lucide-react";
 
 export default async function HocTapPage() {
   const supabase = await createClient();
@@ -45,13 +45,30 @@ export default async function HocTapPage() {
              return { grade: g, subjects: allSubjects.filter(s => ['toan', 'tieng_anh'].includes(s.slug)) };
           }
           if (g === 0) {
-             return { grade: g, subjects: allSubjects.filter(s => s.slug === 'mindset-ielts') };
+             return { grade: g, subjects: allSubjects.filter(s => ['mindset-ielts', 'pre-a1-starter'].includes(s.slug)) };
           }
         }
 
         return { grade: g, subjects: [] };
       }
-      return { grade: g, subjects: data || [] };
+      let gradeSubjects = data || [];
+      if (g === 0) {
+        const hasStarter = gradeSubjects.some((s: any) => s.slug === 'pre-a1-starter');
+        if (!hasStarter) {
+          gradeSubjects = [
+            ...gradeSubjects,
+            {
+              id: 'a4fe2b0c-3dac-4aa8-a78e-e1bdecba0e68',
+              slug: 'pre-a1-starter',
+              name_vi: 'Pre A1 Starter',
+              name_en: 'Pre A1 Starter',
+              description: 'Giáo trình và từ vựng chuẩn Cambridge Pre A1 Starters cho trẻ em',
+              icon: '⭐'
+            }
+          ];
+        }
+      }
+      return { grade: g, subjects: gradeSubjects };
     })
   );
 
@@ -70,12 +87,14 @@ export default async function HocTapPage() {
         case 'khoa_hoc': return <FlaskConical className={className} />;
         case 'tieng_viet': return <BookOpen className={className} />;
         case 'mindset-ielts': return <GraduationCap className={className} />;
+        case 'pre-a1-starter': return <Star className={className} />;
         default: return <BookOpen className={className} />;
     }
   };
 
   const getSubjectLink = (slug: string, grade: number) => {
     if (slug === 'mindset-ielts') return `/hoc-tap/mindset-ielts`;
+    if (slug === 'pre-a1-starter') return `/hoc-tap/pre-a1-starter`;
     // Convention: root node slug is lop-3, lop-7, or subject-specific
     const nodeSlug = grade === 0 ? (slug === 'mindset-ielts' ? 'ielts-foundation' : 'global') : `lop-${grade}`;
     return `/learn/${slug}/${nodeSlug}`;
@@ -105,7 +124,7 @@ export default async function HocTapPage() {
               if (subjects.length === 0) return null;
               
               const isUniversal = grade === 0;
-              const sectionTitle = isUniversal ? "Trạm Không Gian Chung" : `Khu Vực Lớp ${grade}`;
+              const sectionTitle = isUniversal ? "CamBridge English" : `Khu Vực Lớp ${grade}`;
               const sectionIcon = isUniversal ? <Globe2 size={24} className="text-fuchsia-400" /> : <GraduationCap size={24} className="text-sky-400" />;
 
               return (
