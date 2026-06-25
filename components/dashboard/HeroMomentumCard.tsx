@@ -1,6 +1,6 @@
 "use client";
 
-import { Flame, Timer, Trophy, ShieldAlert, Zap } from "lucide-react";
+import { Flame, Timer, Trophy } from "lucide-react";
 
 interface HeroMomentumCardProps {
   streak: number;
@@ -23,53 +23,49 @@ export function HeroMomentumCard({ streak, totalMinutes }: HeroMomentumCardProps
   };
 
   return (
-    <div className="relative overflow-hidden rounded-3xl border-2 border-[#201625] bg-gradient-to-br from-[#2e1c3b] via-[#1a0f26] to-[#0e0717] p-4 sm:p-5 shadow-[0_6px_0_#150b1a,0_10px_20px_rgba(0,0,0,0.4)] transition-all duration-300">
-      {/* Decorative magical ambient glows */}
-      <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-purple-500/10 blur-3xl pointer-events-none" />
-      <div className="absolute -bottom-10 -left-10 h-32 w-32 rounded-full bg-indigo-500/10 blur-3xl pointer-events-none" />
+    <div className="relative overflow-hidden rounded-2xl border border-[#201625] bg-gradient-to-br from-[#2e1c3b] via-[#1a0f26] to-[#0e0717] px-3 py-2 shadow-md transition-all duration-300">
+      {/* Ambient glows */}
+      <div className="absolute -right-8 -top-8 h-20 w-20 rounded-full bg-purple-500/10 blur-2xl pointer-events-none" />
+      <div className="absolute -bottom-8 -left-8 h-20 w-20 rounded-full bg-indigo-500/10 blur-2xl pointer-events-none" />
 
-      <div className="relative z-10 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+      <div className="relative z-10 flex items-center gap-3">
         
-        {/* Left Side: Avatar/Rank Info */}
-        <div className="flex items-center gap-4">
-          <div className="relative flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-tr from-purple-500 via-indigo-600 to-pink-500 border-2 border-purple-200 shadow-[0_4px_0_#3b0764,0_5px_10px_rgba(168,85,247,0.3)]">
-            <span className="text-xl filter drop-shadow-md select-none">{getRankBadge()}</span>
-            <div className="absolute top-1 left-2 right-2 h-2.5 bg-white/20 rounded-full pointer-events-none"></div>
+        {/* Rank Badge */}
+        <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gradient-to-tr from-purple-500 via-indigo-600 to-pink-500 border border-purple-200 shadow-sm">
+          <span className="text-sm filter drop-shadow-md select-none">{getRankBadge()}</span>
+        </div>
+
+        {/* Title */}
+        <div className="min-w-0">
+          <p className="text-[9px] font-black uppercase tracking-widest text-purple-400 leading-none mb-0.5">Danh hiệu</p>
+          <p className="text-xs font-black text-white uppercase truncate leading-none">{getTitle()}</p>
+        </div>
+
+        {/* Divider */}
+        <div className="h-7 w-px bg-purple-900/60 shrink-0" />
+
+        {/* Streak */}
+        <div className="flex items-center gap-1.5 shrink-0">
+          <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-gradient-to-b from-orange-400 to-red-500 text-white shadow-sm">
+            <Flame size={12} fill="currentColor" className="animate-pulse" />
           </div>
-          <div className="space-y-1">
-            <p className="text-[10px] font-black uppercase tracking-widest text-purple-400">DANH HIỆU HIỆN TẠI</p>
-            <h2 className="text-lg font-black text-white tracking-tight leading-none uppercase drop-shadow-[0_2px_4px_rgba(0,0,0,0.5)]">
-              {getTitle()}
-            </h2>
-            <div className="flex items-center gap-1.5 text-slate-400 text-xs font-semibold">
-              <Trophy size={14} className="text-yellow-400" />
-              <span>Cố gắng lên nhé!</span>
-            </div>
+          <div>
+            <p className="text-[8px] font-extrabold uppercase tracking-wider text-slate-500 leading-none">Chuỗi</p>
+            <p className="text-xs font-black text-white leading-none">{streak}N</p>
           </div>
         </div>
 
-        {/* Right Side: 3D Grids for Stats */}
-        <div className="flex flex-wrap gap-3 sm:gap-4">
-          {/* Streak Card */}
-          <div className="flex items-center gap-3 bg-slate-950/60 border border-purple-950/50 rounded-2xl p-3 shadow-inner min-w-[120px]">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-b from-orange-400 to-red-500 border-2 border-orange-200 text-white shadow-[0_4px_0_#9a3412]">
-              <Flame size={16} fill="currentColor" className="animate-pulse" />
-            </div>
-            <div>
-              <p className="text-[8px] font-extrabold uppercase tracking-wider text-slate-500">Chuỗi ngày</p>
-              <p className="text-base font-black text-white">{streak} Ngày</p>
-            </div>
-          </div>
+        {/* Divider */}
+        <div className="h-7 w-px bg-purple-900/60 shrink-0" />
 
-          {/* Focus Time Card */}
-          <div className="flex items-center gap-3 bg-slate-950/60 border border-purple-950/50 rounded-2xl p-3 shadow-inner min-w-[120px]">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-b from-sky-400 to-blue-500 border-2 border-sky-200 text-white shadow-[0_4px_0_#0369a1]">
-              <Timer size={16} />
-            </div>
-            <div>
-              <p className="text-[8px] font-extrabold uppercase tracking-wider text-slate-500">Thời gian học</p>
-              <p className="text-base font-black text-white">{totalMinutes} Phút</p>
-            </div>
+        {/* Time */}
+        <div className="flex items-center gap-1.5 shrink-0">
+          <div className="flex h-6 w-6 items-center justify-center rounded-lg bg-gradient-to-b from-sky-400 to-blue-500 text-white shadow-sm">
+            <Timer size={12} />
+          </div>
+          <div>
+            <p className="text-[8px] font-extrabold uppercase tracking-wider text-slate-500 leading-none">Giờ học</p>
+            <p className="text-xs font-black text-white leading-none">{totalMinutes}P</p>
           </div>
         </div>
 

@@ -76,5 +76,11 @@ export async function saveExamResult(examId: string, score: number, total: numbe
         total: total
       }
     });
+
+    // ✅ Mark any daily_task with this exam as completed
+    await supabase.rpc('complete_daily_task_by_exam', {
+      p_student_id: user.id,
+      p_exam_id: examId,
+    });
   }
 }

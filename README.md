@@ -419,17 +419,22 @@ export const TOAN_GRADE3_TERM_START = "2026-06-01"
 
 ### Bước 1: Database
 
-Chạy tuần tự các file SQL trong Supabase SQL Editor:
-1. `001_schema.sql` — schema cơ bản
-2. `002_lessons_curriculum_vi.sql`
-3. `003_subjects_textbook.sql`
-4. `004_toan3_tap1_curriculum.sql`
-5. `005_weekly_lesson_schedule.sql`
-6. `006_tienganh3_tap1_curriculum.sql`
-7. `008_ielts_foundation_setup.sql`
-8. `010_ielts_roadmap.sql`
-9. `012_add_skill_focus_to_lessons.sql`
-10. `013_fix_ielts_skill_focus.sql`
+Chạy lần lượt tất cả các file SQL trong thư mục `supabase/migrations` theo đúng số thứ tự của tên file (từ `001_schema.sql` đến mới nhất `047_parent_tasks_add_lesson_node_id.sql`) trong Supabase SQL Editor. 
+
+Các file migration chính:
+1. `001_schema.sql` — Schema cơ bản (profiles, auth trigger)
+2. `002` đến `004` — Curriculum Toán lớp 3 Tập 1 & Tiếng Việt
+3. `005_weekly_lesson_schedule.sql` — Lịch học tuần
+4. `006_tienganh3_tap1_curriculum.sql` — Curriculum Tiếng Anh lớp 3 Tập 1
+5. `008_ielts_foundation_setup.sql` & `010_ielts_roadmap.sql` — Lộ trình IELTS
+6. `012` & `013` — Cập nhật skill_focus cho lessons
+7. `014` đến `019` — Tính năng Speaking, Dashboard học tập, Universal Learning Engine, Concept Mastery, Visual World
+8. `020` đến `027` — Đánh giá & Ôn tập (Assessment), Ngân hàng câu hỏi (Question Bank), Adaptive Learning, Gamification, Question Partitioning
+9. `028` & `029` — Schema Assessment Studio & Quyền truy cập công khai
+10. `030` đến `036` — Thêm trường học liệu (Collections, Units, Sequence, Volume), Trigger tự động tạo sequence & tiêu đề
+11. `037` đến `041` — RPC lấy môn học theo khối lớp, dọn dẹp bảng cũ, hỗ trợ nhiều khối lớp (multi-grades profile), fix dashboard RPC
+12. `042_add_pre_a1_starter.sql` — Môn học Pre A1 Starter
+13. `043_parent_tasks.sql` đến `047_parent_tasks_add_lesson_node_id.sql` — Hệ thống nhiệm vụ phụ huynh giao (Parent Tasks), quản lý vai trò người dùng (Roles & Policies), ràng buộc exam_id & lesson_node_id cho nhiệm vụ.
 
 ### Bước 2: Storage PDF
 

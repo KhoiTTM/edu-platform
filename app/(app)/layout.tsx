@@ -20,7 +20,7 @@ export default async function StudentLayout({
 
   const { data: profile } = await supabase
     .from("profiles")
-    .select("display_name, grade")
+    .select("display_name, grade, role")
     .eq("id", user.id)
     .single();
 
@@ -59,7 +59,7 @@ export default async function StudentLayout({
 
         {/* Center: Desktop Nav */}
         <div className="flex-1 flex justify-center px-4">
-            <TopNavLinks />
+            <TopNavLinks role={profile?.role ?? "student"} />
         </div>
 
         {/* Right: Gamification Stats & Profile */}

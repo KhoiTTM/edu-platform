@@ -13,11 +13,11 @@ export default async function HocTapPage() {
   // 1. Fetch user's selected grades
   const { data: profile } = await supabase
     .from("profiles")
-    .select("grades, display_name")
+    .select("grades, display_name, role")
     .eq("id", user.id)
     .single();
 
-  const userGrades = profile?.grades || [3];
+  const userGrades = profile?.role === "admin" ? [3, 7] : (profile?.grades || [3]);
   
   // Also include Grade 0 for universal subjects like IELTS if not already there
   // but we'll handle it separately or merge it. 

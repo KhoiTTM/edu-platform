@@ -2,9 +2,8 @@ import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { HeroMomentumCard } from "@/components/dashboard/HeroMomentumCard";
-import { DailySummaryWidget } from "@/components/dashboard/DailySummaryWidget";
-import { LearningHeatmap } from "@/components/dashboard/LearningHeatmap";
-import { Sparkles, Trophy, Layout, PenTool, Flame, ArrowRight, Clock, Target, BookOpen } from "lucide-react";
+import { Sparkles, ArrowRight, Target, BookOpen, CheckSquare, Flame, Clock, PenTool } from "lucide-react";
+import { getTodayTasks, getPendingTasks } from "@/app/(app)/phu-huynh/actions";
 
 export default async function DashboardPage() {
   const supabase = await createClient();
@@ -101,24 +100,6 @@ export default async function DashboardPage() {
     }
   }
 
-  // Build the final Leaderboard array merging old quiz_attempts and new exam learning_sessions
-  const leaderboardItems = [...recent];
-  
-  for (const s of learningSessions) {
-    if (s.summary_metrics && (s.summary_metrics as any).type === 'exam') {
-      leaderboardItems.push({
-        id: s.id,
-        score: (s.summary_metrics as any).score,
-        total: (s.summary_metrics as any).total,
-        created_at: s.started_at,
-        quizzes: { title: (s.summary_metrics as any).unit_topic }
-      } as any);
-    }
-  }
-
-  leaderboardItems.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
-  const finalLeaderboard = leaderboardItems.slice(0, 20);
-
   const subjectProgress = dashboardStats?.subject_progress || {};
   
   const coreSubjects = [
@@ -138,28 +119,38 @@ export default async function DashboardPage() {
     };
   });
 
-  // Calculate if we should use cached insight (within last 12 hours)
-  let recentInsight = "";
-  if (dashboardStats?.last_ai_insight && dashboardStats?.last_ai_insight_at) {
-    const insightTime = new Date(dashboardStats.last_ai_insight_at).getTime();
-    if (Date.now() - insightTime < 12 * 60 * 60 * 1000) {
-      recentInsight = dashboardStats.last_ai_insight;
-    }
+  // Fetch today's assigned tasks from parent
+  const todayTasks = await getTodayTasks();
+  const pendingOldTasks = await getPendingTasks();
+
+  // Merge: show today tasks first, then any unfinished from previous days
+  const allTasksMap = new Map<string, any>();
+  for (const t of todayTasks) allTasksMap.set(t.id, t);
+  for (const t of pendingOldTasks) {
+    if (!allTasksMap.has(t.id)) allTasksMap.set(t.id, t);
   }
+  const displayTasks = Array.from(allTasksMap.values()).slice(0, 5);
+
+  const SUBJECT_ICONS: Record<string, string> = {
+    toan: "🔢",
+    tieng_viet: "📖",
+    tieng_anh: "🌍",
+    "mindset-ielts": "🎓",
+    "pre-a1-starter": "⭐",
+  };
 
   return (
     <div className="mx-auto max-w-6xl h-[calc(100dvh-6rem)] flex flex-col gap-4 select-none relative z-10 overflow-hidden">
       
-      {/* 1. Welcome & Stats Combined Strip */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 shrink-0">
-        <div className="flex-1 py-2">
+      {/* 1. Welcome & Stats Strip */}
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 shrink-0">
+        <div className="flex-1 py-1">
           <h1 className="font-['Outfit'] text-2xl md:text-3xl font-black tracking-tight text-white flex items-center gap-2">
             Xin chào, {firstName}! <Sparkles size={24} className="text-yellow-400 animate-pulse" />
           </h1>
           <p className="text-xs text-slate-400 font-bold tracking-widest uppercase mt-1">
             Học sinh lớp {grade} — Hành trình tiếp tục
           </p>
-          <DailySummaryWidget initialSummary={recentInsight} />
         </div>
         
         <div className="shrink-0">
@@ -171,14 +162,14 @@ export default async function DashboardPage() {
       </div>
 
       {/* 2. Main Layout Grid (fills remaining height) */}
-      <div className="grid gap-6 lg:grid-cols-12 flex-1 min-h-0">
+      <div className="grid gap-4 lg:grid-cols-12 flex-1 min-h-0">
         
-        {/* Left Column (Recent Sessions + Heatmap) */}
+        {/* Left Column - Môn học (wider) */}
         <div className="lg:col-span-8 flex flex-col gap-4 min-h-0 h-full">
 
           {/* Continue Learning Section */}
-          <section className="bg-slate-900/60 p-3 rounded-2xl border-2 border-emerald-500/30 shadow-md backdrop-blur-xl flex flex-col shrink-0 flex-1">
-            <h2 className="font-['Outfit'] text-xs font-black text-emerald-400 uppercase tracking-widest flex items-center gap-2 mb-2">
+          <section className="bg-slate-900/60 p-3 rounded-2xl border-2 border-emerald-500/30 shadow-md backdrop-blur-xl flex flex-col shrink-0 flex-1 min-h-0">
+            <h2 className="font-['Outfit'] text-xs font-black text-emerald-400 uppercase tracking-widest flex items-center gap-2 mb-2 shrink-0">
               <Target size={14} /> Môn học của bạn
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 flex-1 content-start overflow-y-auto pr-2 custom-scrollbar">
@@ -212,74 +203,91 @@ export default async function DashboardPage() {
             </div>
           </section>
 
-          {/* Heatmap */}
-          <section className="bg-slate-900/40 p-3 rounded-2xl border-2 border-slate-800/80 backdrop-blur-md shrink-0">
-            <h2 className="font-['Outfit'] text-[10px] font-black text-slate-400 uppercase tracking-widest flex items-center gap-1.5 mb-1.5">
-              <Flame size={12} className="text-orange-500 fill-orange-500" /> Tần Suất Luyện Tập
-            </h2>
-            <div className="overflow-x-auto py-1">
-              <LearningHeatmap dates={learningSessions.map(s => s.started_at)} />
-            </div>
-          </section>
         </div>
 
-        {/* Right Column (Leaderboard) */}
+        {/* Right Column - Nhiệm vụ */}
         <div className="lg:col-span-4 flex flex-col min-h-0 h-full">
-          <aside className="flex flex-col rounded-[1.5rem] border-2 border-slate-800 bg-slate-900/50 p-5 shadow-lg backdrop-blur-xl flex-1 min-h-0">
+          <aside className="flex flex-col rounded-[1.5rem] border-2 border-slate-800 bg-slate-900/50 p-4 shadow-lg backdrop-blur-xl flex-1 min-h-0">
             
-            <div className="shrink-0 mb-4">
+            <div className="shrink-0 mb-3">
               <h2 className="font-['Outfit'] text-sm font-black text-white uppercase tracking-wider flex items-center gap-2">
-                BẢNG VÀNG DANH DỰ 🏆
+                <CheckSquare size={16} className="text-yellow-400" />
+                Nhiệm Vụ
               </h2>
               <p className="text-[10px] font-extrabold text-slate-500 uppercase tracking-widest mt-1">
-                Lịch sử điểm số
+                {displayTasks.length > 0 ? `${displayTasks.filter(t => !t.completed_at).length} chưa hoàn thành` : "Hôm nay"}
               </p>
             </div>
-            
-            <div className="overflow-y-auto pr-2 space-y-3 custom-scrollbar flex-1">
-              {finalLeaderboard.length === 0 ? (
-                <div className="text-center py-8 opacity-60">
-                  <Trophy size={24} className="text-slate-600 mx-auto mb-2" />
-                  <p className="text-xs text-slate-400 font-semibold">Chưa có kết quả.</p>
+
+            {/* Real daily tasks */}
+            <div className="flex-1 overflow-y-auto pr-1 custom-scrollbar space-y-2">
+              {displayTasks.length === 0 ? (
+                <div className="rounded-xl border border-dashed border-slate-700 p-5 text-center mt-2">
+                  <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Không có nhiệm vụ</p>
+                  <p className="text-[9px] text-slate-600 mt-1">Phụ huynh chưa giao bài hôm nay ✨</p>
                 </div>
               ) : (
-                <ul className="space-y-3">
-                  {finalLeaderboard.map((row: any, index: number) => {
-                    const q = row.quizzes as { title?: string } | null;
-                    const title = q?.title ?? "Bài kiểm tra";
-                    const score = row.score as number;
-                    const total = row.total as number;
-                    const pct = total > 0 ? Math.round((score / total) * 100) : 0;
-                    const badge = index === 0 ? "🥇" : index === 1 ? "🥈" : index === 2 ? "🥉" : "⚡";
-                    
-                    return (
-                      <li key={row.id as string} className="flex items-center justify-between rounded-xl bg-slate-950/60 p-3 border border-slate-800/80 shadow-inner hover:bg-slate-900 transition-colors">
-                        <div className="flex items-center gap-2 min-w-0">
-                          <span className="text-base drop-shadow">{badge}</span>
-                          <div className="min-w-0">
-                            <p className="truncate text-xs font-black text-slate-200">
-                              {title}
-                            </p>
-                            <p className="text-[9px] text-slate-500 font-bold">
-                              {new Date(row.created_at).toLocaleDateString("vi-VN")}
-                            </p>
-                          </div>
-                        </div>
-                        <div className="shrink-0 text-right pl-2">
-                          <p className="text-xs font-black text-sky-400">{score}/{total}</p>
-                          <p className="text-[9px] font-black text-slate-500">{pct}%</p>
-                        </div>
-                      </li>
-                    );
-                  })}
-                </ul>
+                displayTasks.map((task: any) => {
+                  const isDone = !!task.completed_at;
+                  const isLesson = !!task.lesson_node_id;
+                  const taskTitle = isLesson ? (task.lesson_node?.title || "Bài học") : (task.exam?.title || "Bài luyện tập");
+                  const subjectSlug = task.exam?.collection?.subject_slug || 
+                                      task.lesson_node?.source?.subject?.slug || 
+                                      task.task?.subject_slug || "";
+                  const subjectIcon = isLesson ? "📖" : (SUBJECT_ICONS[subjectSlug] || "📚");
+                  const isToday = task.task_date === new Date().toISOString().split("T")[0];
+                  const taskUrl = isLesson 
+                    ? `/learn/${subjectSlug}/${task.lesson_node?.slug}` 
+                    : `/test-assessment?examId=${task.exam_id}`;
+
+                  return (
+                    <Link
+                      key={task.id}
+                      href={isDone ? "#" : taskUrl}
+                      className={`flex items-center gap-2.5 rounded-xl p-2.5 border transition-all group ${
+                        isDone
+                          ? "bg-slate-950/30 border-slate-800/50 opacity-60 cursor-default pointer-events-none"
+                          : isToday
+                          ? "bg-yellow-500/5 border-yellow-500/30 hover:border-yellow-400 hover:bg-yellow-500/10 shadow-[0_0_10px_rgba(234,179,8,0.1)]"
+                          : "bg-orange-500/5 border-orange-500/20 hover:border-orange-400 hover:bg-orange-500/10"
+                      }`}
+                    >
+                      {/* Checkbox */}
+                      <div className={`shrink-0 w-5 h-5 rounded-md border-2 flex items-center justify-center ${
+                        isDone
+                          ? "bg-emerald-500 border-emerald-400"
+                          : isToday
+                          ? "border-yellow-500 bg-yellow-500/10"
+                          : "border-orange-500 bg-orange-500/10"
+                      }`}>
+                        {isDone && <span className="text-[10px] text-white font-black">✓</span>}
+                        {!isDone && isToday && <Flame size={10} className="text-yellow-400" />}
+                        {!isDone && !isToday && <Clock size={10} className="text-orange-400" />}
+                      </div>
+
+                      {/* Info */}
+                      <div className="flex-1 min-w-0">
+                        <p className={`text-[10px] font-black truncate ${
+                          isDone ? "line-through text-slate-500" : isToday ? "text-yellow-200" : "text-orange-200"
+                        }`}>
+                          {subjectIcon} {taskTitle}
+                        </p>
+                        {!isToday && !isDone && (
+                          <p className="text-[9px] text-orange-400 font-bold">
+                            Từ {new Date(task.task_date).toLocaleDateString("vi-VN", { day: "2-digit", month: "2-digit" })}
+                          </p>
+                        )}
+                      </div>
+
+                      {!isDone && (
+                        <ArrowRight size={11} className={`shrink-0 ${
+                          isToday ? "text-yellow-500 group-hover:text-yellow-300" : "text-orange-500 group-hover:text-orange-300"
+                        } transition-colors`} />
+                      )}
+                    </Link>
+                  );
+                })
               )}
-            </div>
-            
-            <div className="shrink-0 mt-4 border-t border-slate-800/80 pt-4 flex gap-2">
-              <Link href="/assessment-studio" className="flex-1 flex items-center justify-center gap-1.5 rounded-xl bg-slate-800 py-3 text-[10px] font-black text-slate-300 uppercase tracking-widest hover:bg-slate-700 transition">
-                <PenTool size={12} /> Đánh giá năng lực
-              </Link>
             </div>
 
           </aside>
