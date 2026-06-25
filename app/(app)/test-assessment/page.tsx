@@ -111,6 +111,7 @@ function AssessmentContent() {
   };
 
   const isSBTWorkbook = 
+    grade === 7 &&
     (subjectSlug === "tieng_anh" || subjectSlug === "mindset-ielts") && 
     (examTitle.toLowerCase().includes("unit") || examTitle.toLowerCase().includes("bài") || examId?.startsWith("sbt-"));
 
