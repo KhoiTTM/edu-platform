@@ -1,23 +1,10 @@
 {
   "bai-1": {
-    "title": "Bài tập KHTN 7",
+    "title": "Bài 1. Phương Pháp và Kĩ Năng Học Tập",
     "pages": [
-      1,
       10,
-      19,
       28,
-      38,
-      47,
-      56,
-      65,
-      74,
-      83,
-      92,
-      101,
-      111,
-      120,
-      138,
-      147
+      38
     ],
     "questions": [
       {
@@ -32,231 +19,6 @@
         ],
         "optionsCount": 2,
         "sectionTitle": "",
-        "correctAnswer": ""
-      },
-      {
-        "id": "2",
-        "page": 3,
-        "bookPage": 10,
-        "type": "multiple_choice",
-        "text": "Câu 2. Vật nào dưới đây không phải là nguồn sáng?\nPhương pháp tìm hiểu tự nhiên gồm các bước: đề xuất vấn đề, đưa ra dự đoán, lập kế hoạch kiểm tra dự đoán; thực hiện kế hoạch kiểm tra dự đoán, viết báo cáo, đề xuất ý kiến (nếu có)\nPhương pháp tìm hiểu tự nhiên gồm các bước: đề xuất vấn đề, đưa ra dự đoán, lập kế hoạch kiểm tra dự đoán; thực hiện kế hoạch kiểm tra dự đoán, viết báo cáo, đề xuất ý kiến (nếu có)",
-        "options": [
-          "Đúng",
-          "Sai"
-        ],
-        "optionsCount": 2,
-        "sectionTitle": "",
-        "correctAnswer": ""
-      },
-      {
-        "id": "3",
-        "page": 3,
-        "bookPage": 10,
-        "type": "multiple_choice",
-        "text": "Bài 3. Nêu đặc điểm của một hạt dẻ.\nĐối tượng nghiên cứu của khoa học là các sự vật, hiện tượng; các thuộc tính cơ bản; sự vận động của thế giới tự nhiên\nĐối tượng nghiên cứu của khoa học là các sự vật, hiện tượng; các thuộc tính cơ bản; sự vận động của thế giới tự nhiên",
-        "options": [
-          "Đúng",
-          "Sai"
-        ],
-        "optionsCount": 2,
-        "sectionTitle": "",
-        "correctAnswer": "",
-        "subItems": []
-      },
-      {
-        "id": "4",
-        "page": 4,
-        "bookPage": 19,
-        "type": "multiple_choice",
-        "text": "Môn Khoa học tự nhiên là môn học về các sự vật và hiện tượng trong thế giới tự nhiên nhằm hình thành và phát triển các năng lực khoa học tự nhiên và khoa học Trái Đất\nMôn Khoa học tự nhiên là môn học về các sự vật và hiện tượng trong thế giới tự nhiên nhằm hình thành và phát triển các năng lực khoa học tự nhiên và khoa học Trái Đất",
-        "options": [
-          "Đúng",
-          "Sai"
-        ],
-        "optionsCount": 2,
-        "sectionTitle": "1.1. Các khẳng định trong bảng sau đúng hay sai?",
-        "correctAnswer": ""
-      },
-      {
-        "id": "5",
-        "page": 4,
-        "bookPage": 19,
-        "type": "multiple_choice",
-        "text": "Nghiên cứu các sự vật và hiện tượng tự nhiên nhằm mục đích giải quyết các vấn đề nảy sinh trong cuộc sống\nNghiên cứu các sự vật và hiện tượng tự nhiên nhằm mục đích giải quyết các vấn đề nảy sinh trong cuộc sống",
-        "options": [
-          "Đúng",
-          "Sai"
-        ],
-        "optionsCount": 2,
-        "sectionTitle": "1.1. Các khẳng định trong bảng sau đúng hay sai?",
-        "correctAnswer": ""
-      },
-      {
-        "id": "6",
-        "page": 4,
-        "bookPage": 19,
-        "type": "multiple_choice",
-        "text": "Kĩ năng dự báo là kĩ năng đề xuất điều gì sẽ xảy ra dựa trên các quan sát, kiến thức, sự hiểu biết và sự suy luận của con người về sự vật và hiện tượng trong tự nhiên\nKĩ năng dự báo là kĩ năng đề xuất điều gì sẽ xảy ra dựa trên các quan sát, kiến thức, sự hiểu biết và sự suy luận của con người về sự vật và hiện tượng trong tự nhiên",
-        "options": [
-          "Đúng",
-          "Sai"
-        ],
-        "optionsCount": 2,
-        "sectionTitle": "1.1. Các khẳng định trong bảng sau đúng hay sai?",
-        "correctAnswer": ""
-      },
-      {
-        "id": "7",
-        "page": 4,
-        "bookPage": 19,
-        "type": "multiple_choice",
-        "text": "Kĩ năng đo được hình thành và phát triển không theo trình tự\nKĩ năng đo được hình thành và phát triển không theo trình tự",
-        "options": [
-          "Đúng",
-          "Sai"
-        ],
-        "optionsCount": 2,
-        "sectionTitle": "1.1. Các khẳng định trong bảng sau đúng hay sai?",
-        "correctAnswer": ""
-      },
-      {
-        "id": "8",
-        "page": 4,
-        "bookPage": 19,
-        "type": "multiple_choice",
-        "text": "Trong kĩ năng đo, không cần thực hiện việc ước lượng; thực hiện các phép đo, xác định độ chính xác của kết quả đo\nTrong kĩ năng đo, không cần thực hiện việc ước lượng; thực hiện các phép đo, xác định độ chính xác của kết quả đo",
-        "options": [
-          "Đúng",
-          "Sai"
-        ],
-        "optionsCount": 2,
-        "sectionTitle": "1.1. Các khẳng định trong bảng sau đúng hay sai?",
-        "correctAnswer": ""
-      },
-      {
-        "id": "9",
-        "page": 4,
-        "bookPage": 19,
-        "type": "multiple_choice",
-        "text": "Môn Khoa học tự nhiên được xây dựng và phát triển trên nền tảng các môn học: Toán học, Hoá học và Sinh học\nMôn Khoa học tự nhiên được xây dựng và phát triển trên nền tảng các môn học: Toán học, Hoá học và Sinh học",
-        "options": [
-          "Đúng",
-          "Sai"
-        ],
-        "optionsCount": 2,
-        "sectionTitle": "1.1. Các khẳng định trong bảng sau đúng hay sai?",
-        "correctAnswer": ""
-      },
-      {
-        "id": "A1",
-        "page": 4,
-        "bookPage": 19,
-        "type": "multiple_choice",
-        "text": "Nước mưa",
-        "options": [
-          "a) do ánh sáng từ Mặt Trời"
-        ],
-        "optionsCount": 1,
-        "sectionTitle": "1.2. Hãy kết nối các thông tin ở cột A với cột B tạo thành sự liên kết sự vật với hiện tượng hoặc hiện tượng với hiện tượng:",
-        "correctAnswer": ""
-      },
-      {
-        "id": "A2",
-        "page": 4,
-        "bookPage": 19,
-        "type": "multiple_choice",
-        "text": "Một số loài thực vật",
-        "options": [
-          "b) ảnh hưởng đến sinh trưởng và phát triển của thực vật"
-        ],
-        "optionsCount": 1,
-        "sectionTitle": "1.2. Hãy kết nối các thông tin ở cột A với cột B tạo thành sự liên kết sự vật với hiện tượng hoặc hiện tượng với hiện tượng:",
-        "correctAnswer": ""
-      },
-      {
-        "id": "A3",
-        "page": 4,
-        "bookPage": 19,
-        "type": "multiple_choice",
-        "text": "Trời nắng",
-        "options": [
-          "c) có khi trời mưa"
-        ],
-        "optionsCount": 1,
-        "sectionTitle": "1.2. Hãy kết nối các thông tin ở cột A với cột B tạo thành sự liên kết sự vật với hiện tượng hoặc hiện tượng với hiện tượng:",
-        "correctAnswer": ""
-      },
-      {
-        "id": "A4",
-        "page": 4,
-        "bookPage": 19,
-        "type": "multiple_choice",
-        "text": "Phân bón",
-        "options": [
-          "d) rụng lá vào mùa đông"
-        ],
-        "optionsCount": 1,
-        "sectionTitle": "1.2. Hãy kết nối các thông tin ở cột A với cột B tạo thành sự liên kết sự vật với hiện tượng hoặc hiện tượng với hiện tượng:",
-        "correctAnswer": ""
-      },
-      {
-        "id": "A",
-        "page": 4,
-        "bookPage": 19,
-        "type": "essay",
-        "text": "Dự báo là kĩ năng cần thiết trong nghiên cứu khoa học tự nhiên.\nKĩ năng quan sát, phân loại.",
-        "options": [],
-        "optionsCount": 0,
-        "sectionTitle": "1.3. Khẳng định nào dưới đây không đúng?",
-        "correctAnswer": ""
-      },
-      {
-        "id": "B",
-        "page": 4,
-        "bookPage": 19,
-        "type": "essay",
-        "text": "Dự báo là kĩ năng không cần thiết của người làm nghiên cứu:\nKĩ năng liên kết tri thức.",
-        "options": [],
-        "optionsCount": 0,
-        "sectionTitle": "1.3. Khẳng định nào dưới đây không đúng?",
-        "correctAnswer": ""
-      },
-      {
-        "id": "C",
-        "page": 4,
-        "bookPage": 19,
-        "type": "essay",
-        "text": "Dự báo là kĩ năng dự đoán điều gì sẽ xảy ra dựa vào quan sát, kiến thức, suy luận của con người, về các sự vật, hiện tượng:\nKĩ năng dự báo.",
-        "options": [],
-        "optionsCount": 0,
-        "sectionTitle": "1.3. Khẳng định nào dưới đây không đúng?",
-        "correctAnswer": ""
-      },
-      {
-        "id": "D",
-        "page": 4,
-        "bookPage": 19,
-        "type": "essay",
-        "text": "Kĩ năng dự báo thường được sử dụng trong bước dự đoán của phương pháp tìm hiểu tự nhiên:\nKĩ năng đo.",
-        "options": [],
-        "optionsCount": 0,
-        "sectionTitle": "1.3. Khẳng định nào dưới đây không đúng?",
-        "correctAnswer": ""
-      },
-      {
-        "id": "question",
-        "page": 4,
-        "bookPage": 19,
-        "type": "multiple_choice",
-        "text": "Trình tự các bước hình thành kĩ năng đo là",
-        "options": [
-          "A. (1) -> (2) -> (3) -> (4)",
-          "B. (2) -> (1) -> (3) -> (4)",
-          "C. (2) -> (1) -> (4) -> (3)",
-          "D. (1) -> (2) -> (4) -> (3)"
-        ],
-        "optionsCount": 4,
-        "sectionTitle": "1.5. Cho các bước sau: (1) Thực hiện phép đo ghi kết quả đo và xử lí số liệu đo. (2) Ước lượng để lựa chọn dụng cụ/thiết bị đo phù hợp. (3) Phân tích kết quả và thảo luận về kết quả nghiên cứu thu được. (4) Đánh giá độ chính xác của kết quả đo căn cứ vào loại dụng cụ đo và cách đo.",
         "correctAnswer": ""
       },
       {
@@ -399,6 +161,33 @@
           "b) Phải bấm vào nút nào của đồng hồ để trên màn hình hiện lên các số 0000?",
           "c) Phải nối các cổng quang như thế nào với các chốt ở mặt sau của đồng hồ?"
         ]
+      }
+    ]
+  },
+  "bai-2": {
+    "title": "Bài 2. Nguyên Tử",
+    "pages": [
+      10,
+      47,
+      56,
+      65,
+      74,
+      83
+    ],
+    "questions": [
+      {
+        "id": "2",
+        "page": 3,
+        "bookPage": 10,
+        "type": "multiple_choice",
+        "text": "Câu 2. Vật nào dưới đây không phải là nguồn sáng?\nPhương pháp tìm hiểu tự nhiên gồm các bước: đề xuất vấn đề, đưa ra dự đoán, lập kế hoạch kiểm tra dự đoán; thực hiện kế hoạch kiểm tra dự đoán, viết báo cáo, đề xuất ý kiến (nếu có)\nPhương pháp tìm hiểu tự nhiên gồm các bước: đề xuất vấn đề, đưa ra dự đoán, lập kế hoạch kiểm tra dự đoán; thực hiện kế hoạch kiểm tra dự đoán, viết báo cáo, đề xuất ý kiến (nếu có)",
+        "options": [
+          "Đúng",
+          "Sai"
+        ],
+        "optionsCount": 2,
+        "sectionTitle": "",
+        "correctAnswer": ""
       },
       {
         "id": "2.1",
@@ -766,6 +555,32 @@
         "optionsCount": 4,
         "sectionTitle": "",
         "correctAnswer": "C"
+      }
+    ]
+  },
+  "bai-3": {
+    "title": "Bài 3. Bảng Tuần Hoàn",
+    "pages": [
+      10,
+      83,
+      92,
+      101
+    ],
+    "questions": [
+      {
+        "id": "3",
+        "page": 3,
+        "bookPage": 10,
+        "type": "multiple_choice",
+        "text": "Bài 3. Nêu đặc điểm của một hạt dẻ.\nĐối tượng nghiên cứu của khoa học là các sự vật, hiện tượng; các thuộc tính cơ bản; sự vận động của thế giới tự nhiên\nĐối tượng nghiên cứu của khoa học là các sự vật, hiện tượng; các thuộc tính cơ bản; sự vận động của thế giới tự nhiên",
+        "options": [
+          "Đúng",
+          "Sai"
+        ],
+        "optionsCount": 2,
+        "sectionTitle": "",
+        "correctAnswer": "",
+        "subItems": []
       },
       {
         "id": "3.1",
@@ -842,19 +657,6 @@
         "sectionTitle": "BÀI 3. NGUYÊN TỐ HOÁ HỌC",
         "correctAnswer": "a) Số hiệu",
         "problem": "Hình 3.1 mô tả một nguyên tử oxygen:\na) Hãy điền số thích hợp vào chỗ trống để hoàn thiện các câu sau:\nSố hiệu nguyên tử (số proton) của nguyên tố oxygen là ..?..\nKhối lượng của nguyên tử oxygen được mô tả ở hình vẽ là ..?..",
-        "subItems": []
-      },
-      {
-        "id": "b",
-        "page": 12,
-        "bookPage": 92,
-        "type": "essay",
-        "text": "",
-        "options": [],
-        "optionsCount": 0,
-        "sectionTitle": "",
-        "correctAnswer": "",
-        "problem": "Một nguyên tử oxygen có 10 neutron. Khối lượng nguyên tử oxygen đó bằng bao nhiêu?",
         "subItems": []
       },
       {
@@ -960,45 +762,32 @@
         "correctAnswer": "Kí hiệu hoá học là một hoặc hai chữ cái trong tên",
         "problem": "Em hãy tìm hiểu và cho biết vì sao một số nguyên tố hoá học có kí hiệu không chứa chữ cái đầu tiên trong tên gọi của chúng. Ví dụ: kí hiệu hoá học của nguyên tố sodium (natri) là Na.",
         "subItems": []
-      },
+      }
+    ]
+  },
+  "bai-4": {
+    "title": "Bài 4. Liên Kết Hoá Học",
+    "pages": [
+      19,
+      111,
+      120,
+      138,
+      147
+    ],
+    "questions": [
       {
-        "id": "a",
-        "page": 14,
-        "bookPage": 111,
-        "type": "essay",
-        "text": "",
-        "options": [],
-        "optionsCount": 0,
-        "sectionTitle": "",
-        "correctAnswer": "",
-        "problem": "Hạt nhân nguyên tử Na có bao nhiêu hạt proton?",
-        "subItems": []
-      },
-      {
-        "id": "c",
-        "page": 14,
-        "bookPage": 111,
-        "type": "essay",
-        "text": "",
-        "options": [],
-        "optionsCount": 0,
-        "sectionTitle": "",
-        "correctAnswer": "",
-        "problem": "Hạt nhân nguyên tử Cl có bao nhiêu hạt neutron?",
-        "subItems": []
-      },
-      {
-        "id": "d",
-        "page": 14,
-        "bookPage": 111,
-        "type": "essay",
-        "text": "",
-        "options": [],
-        "optionsCount": 0,
-        "sectionTitle": "",
-        "correctAnswer": "",
-        "problem": "Các nguyên tử nào thuộc cùng một nguyên tố hoá học?",
-        "subItems": []
+        "id": "4",
+        "page": 4,
+        "bookPage": 19,
+        "type": "multiple_choice",
+        "text": "Môn Khoa học tự nhiên là môn học về các sự vật và hiện tượng trong thế giới tự nhiên nhằm hình thành và phát triển các năng lực khoa học tự nhiên và khoa học Trái Đất\nMôn Khoa học tự nhiên là môn học về các sự vật và hiện tượng trong thế giới tự nhiên nhằm hình thành và phát triển các năng lực khoa học tự nhiên và khoa học Trái Đất",
+        "options": [
+          "Đúng",
+          "Sai"
+        ],
+        "optionsCount": 2,
+        "sectionTitle": "1.1. Các khẳng định trong bảng sau đúng hay sai?",
+        "correctAnswer": ""
       },
       {
         "id": "4.1",
@@ -1283,5 +1072,35 @@
         "subItems": []
       }
     ]
+  },
+  "bai-5": {
+    "title": "Bài 5. Năng Lượng Trong Phản Ứng Hoá Học",
+    "pages": [],
+    "questions": []
+  },
+  "bai-6": {
+    "title": "Bài 6. Tốc Độ Phản Ứng Hoá Học",
+    "pages": [],
+    "questions": []
+  },
+  "bai-7": {
+    "title": "Bài 7. Cân Bằng Hoá Học",
+    "pages": [],
+    "questions": []
+  },
+  "bai-8": {
+    "title": "Bài 8. Nước - Dung Dịch - Colloide",
+    "pages": [],
+    "questions": []
+  },
+  "bai-9": {
+    "title": "Bài 9. Ôn Tập Chương",
+    "pages": [],
+    "questions": []
+  },
+  "bai-10": {
+    "title": "Bài 10. Kiểm Tra",
+    "pages": [],
+    "questions": []
   }
 }
