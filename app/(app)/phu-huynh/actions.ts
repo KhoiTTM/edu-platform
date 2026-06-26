@@ -326,6 +326,52 @@ export async function getLessonsForSubject(
   }) as LessonOption[];
 }
 
+export type SubjectOption = {
+  slug: string;
+  name: string;
+  icon: string;
+  color: string;
+};
+
+/** Get dynamically active subjects for a given grade */
+export async function getSubjectsForGrade(grade: number): Promise<SubjectOption[]> {
+  const supabase = await createClient();
+  const { data, error } = await supabase.rpc("get_subjects_by_grade", { p_grade: grade });
+  if (error) {
+    console.error("Error get_subjects_by_grade:", error);
+    return [];
+  }
+  
+  const { data: g0Data } = await supabase.rpc("get_subjects_by_grade", { p_grade: 0 });
+  const combined = [...(data || []), ...(g0Data || [])];
+  
+  const unique = [];
+  const slugs = new Set();
+  for (const s of combined) {
+    if (!slugs.has(s.slug)) {
+      slugs.add(s.slug);
+      unique.push(s);
+    }
+  }
+  
+  const colors: Record<string, string> = {
+    toan: "sky",
+    tieng_viet: "amber",
+    tieng_anh: "emerald",
+    "tieng-anh-7": "emerald",
+    "mindset-ielts": "violet",
+    "pre-a1-starter": "pink",
+    khtn: "rose"
+  };
+  
+  return unique.map(s => ({
+    slug: s.slug,
+    name: s.name_vi || s.name_en || s.slug,
+    icon: s.icon || "📖",
+    color: colors[s.slug] || "slate"
+  }));
+}
+
 /** Get available units for a subject + grade combo (for wizard step 3) */
 export async function getUnitsForSubject(
   subjectSlug: string,

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useState, useTransition, useEffect } from "react";
 import {
   ChevronRight,
   ChevronLeft,
@@ -12,7 +12,7 @@ import {
   Loader2,
   X,
 } from "lucide-react";
-import { createParentTask } from "@/app/(app)/phu-huynh/actions";
+import { createParentTask, getSubjectsForGrade } from "@/app/(app)/phu-huynh/actions";
 import type { ExamOption, LessonOption } from "@/app/(app)/phu-huynh/actions";
 
 // ─── Types ─────────────────────────────────────────────────────────────────
@@ -111,6 +111,7 @@ export function TaskWizard({
   const [step, setStep] = useState(1);
   const [selectedStudent, setSelectedStudent] = useState<Student | null>(null);
   const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
+  const [availableSubjects, setAvailableSubjects] = useState<Subject[]>([]);
   const [taskType, setTaskType] = useState<"lesson" | "exam">("exam");
   const [exams, setExams] = useState<ExamOption[]>([]);
   const [selectedExam, setSelectedExam] = useState<ExamOption | null>(null);
@@ -126,6 +127,49 @@ export function TaskWizard({
   const [selectedFilterUnit, setSelectedFilterUnit] = useState<number | null>(null);
   const [selectedExamTypeFilter, setSelectedExamTypeFilter] = useState<"all" | "lesson" | "review" | "reflex">("all");
 
+  // Load dynamically active subjects for selected student's grade
+  useEffect(() => {
+    if (selectedStudent) {
+      getSubjectsForGrade(selectedStudent.grade).then((subs) => {
+        setAvailableSubjects(subs);
+      });
+    } else {
+      setAvailableSubjects([]);
+    }
+  }, [selectedStudent]);
+
+  // Helper auto-transitions
+  const selectStudentAndNext = (student: Student) => {
+    setSelectedStudent(student);
+    setSelectedSubject(null);
+    setSelectedExam(null);
+    setSelectedLesson(null);
+    setStep(2);
+  };
+
+  const selectSubjectAndNext = async (subj: Subject) => {
+    setSelectedSubject(subj);
+    setSelectedExam(null);
+    setSelectedLesson(null);
+    if (selectedStudent) {
+      setStep(3);
+      setLoadingExams(true);
+      setLoadingLessons(true);
+      setSearchTerm("");
+      setSelectedFilterUnit(null);
+      
+      const [e, l] = await Promise.all([
+        getExamsForSubject(subj.slug, selectedStudent.grade),
+        getLessonsForSubject(subj.slug, selectedStudent.grade)
+      ]);
+
+      setExams(e);
+      setLessons(l);
+      setLoadingExams(false);
+      setLoadingLessons(false);
+    }
+  };
+
   // ── Step 1: Select Student ───────────────────────────────────────────────
   const StepStudent = () => (
     <div className="flex flex-col gap-3">
@@ -136,7 +180,7 @@ export function TaskWizard({
         {students.map((s) => (
           <button
             key={s.id}
-            onClick={() => setSelectedStudent(s)}
+            onClick={() => selectStudentAndNext(s)}
             className={`flex items-center gap-3 p-3 rounded-xl border-2 text-left transition-all ${
               selectedStudent?.id === s.id
                 ? "border-indigo-500 bg-indigo-500/10 shadow-[0_0_12px_rgba(99,102,241,0.3)]"
@@ -168,10 +212,10 @@ export function TaskWizard({
         Chọn môn học
       </p>
       <div className="grid grid-cols-2 gap-2">
-        {subjects.map((s) => (
+        {availableSubjects.map((s) => (
           <button
             key={s.slug}
-            onClick={() => setSelectedSubject(s)}
+            onClick={() => selectSubjectAndNext(s)}
             className={`flex flex-col items-center gap-2 p-4 rounded-xl border-2 transition-all ${
               selectedSubject?.slug === s.slug
                 ? `border-${s.color}-500 bg-${s.color}-500/10`
@@ -335,6 +379,21 @@ export function TaskWizard({
           )}
         </div>
 
+        {/* Random Exam Selector */}
+        {taskType === "exam" && filteredExams.length > 0 && (
+          <button
+            onClick={() => {
+              const randomIndex = Math.floor(Math.random() * filteredExams.length);
+              const randomExam = filteredExams[randomIndex];
+              setSelectedExam(randomExam);
+              setStep(4);
+            }}
+            className="w-full py-2 rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-black text-xs uppercase tracking-wide transition-all shadow-md active:scale-[0.98] select-none"
+          >
+            🎲 Chọn ngẫu nhiên 1 đề trong bộ lọc ({filteredExams.length})
+          </button>
+        )}
+
         {isLoading ? (
           <div className="flex items-center justify-center py-8">
             <Loader2 size={20} className="animate-spin text-indigo-400" />
@@ -353,7 +412,10 @@ export function TaskWizard({
                   return (
                     <button
                       key={e.id}
-                      onClick={() => setSelectedExam(isSelected ? null : e)}
+                      onClick={() => {
+                        setSelectedExam(e);
+                        setStep(4);
+                      }}
                       className={`flex items-center justify-between p-2.5 rounded-xl border-2 transition-all text-left ${
                         isSelected
                           ? "border-indigo-500 bg-indigo-500/10 shadow-[0_0_12px_rgba(99,102,241,0.3)]"
@@ -379,7 +441,10 @@ export function TaskWizard({
                   return (
                     <button
                       key={l.id}
-                      onClick={() => setSelectedLesson(isSelected ? null : l)}
+                      onClick={() => {
+                        setSelectedLesson(l);
+                        setStep(4);
+                      }}
                       className={`flex items-center justify-between p-2.5 rounded-xl border-2 transition-all text-left ${
                         isSelected
                           ? "border-indigo-500 bg-indigo-500/10 shadow-[0_0_12px_rgba(99,102,241,0.3)]"
