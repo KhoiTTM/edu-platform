@@ -1,0 +1,29 @@
+{
+  "page": 27,
+  "elements": [
+    {
+      "id": "q_27_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "7.3. Công thức hoá học của sodium hydroxide là NaOH. Hợp chất này chứa những nguyên tố hoá học nào? một phân tử sodium hydroxide có bao nhiêu nguyên tử của mỗi nguyên tố đó?",
+      "correctAnswer": "Hợpchất sodium hydroxide (NaOH) chứa các nguyên tố hoá học Na, 0 và H. Trong một phân tử sodium hydroxide có 1 nguyên tử Na, 1 nguyên tử 0 và 1 nguyên tử H."
+    },
+    {
+      "id": "q_27_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "7.4. thức của sulfuric acid là H2SO4: a) Gọi tên các nguyên tố có trong sulfuric acid. b) Cóbao nhiêu nguyên tử của mỗi nguyên tố đótrong một phân tử sulfuric acid.",
+      "correctAnswer": "a) Các nguyên tố có trong sulfuric acid là: hydrogen; sulfur và oxygen: b) một phân tử sulfuric acid có 2 nguyên tử H; 1 nguyên tử S và 4 nguyên tử 0."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "page": 55,
+  "elements": [
+    {
+      "id": "q_55_1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "21.6. Sinh vật có thể tổn tại, sinh trưởng; phát triển và thích nghi với môi trường sống là nhờ có quá trình nào? A. Quá trình trao đổi chất và sinh sản: B. Quá trình chuyển hoá năng lượng: C Quá trình trao đổi chất và chuyển hoá năng D. Quá trình trao đổi chất và cảm",
+      "correctAnswer": "€."
+    },
+    {
+      "id": "q_55_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 21.5,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "21.7. Hãy dự đoán các tình huống có thể xảy ra khi con không được ~ cấp đủ không khí, nước uống và thức ăn.",
+      "correctAnswer": "Các tình huống có thể xảy ra nếu con người: Không được cung cấp đủ không khí: thiếu khí oxygen có thể dẫn đến tử vong. Không cung cấp đủ nước: trình trao đổi chất bị ảnh hưởng (không diễn ra hoặc diễn ra chậm) nếu kéo dài có thể dẫn đến tử vong Không đủ thức ăn: sẽ không có nguyên liệu kiến tạo cơ thể và Iượng cho cơ thể hoạt động, nếu kéo dài có thể dẫn tới tử vong:"
+    },
+    {
+      "id": "q_55_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "21.8. Giải thích hiện tượng lá cây héo khi bị tách ra khỏi thân cây.",
+      "correctAnswer": "Lá cây héo khi bịtách ra khỏi thân cây là do nước vẫn tiếp tục thoát hơi qua lá nhưng lá lại không còn được bổ sung nguổn nước từ rễ nữa."
+    },
+    {
+      "id": "q_55_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 40.5,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "21.9. Chuyển hoá lượng có vai trò gì đối với sự của sinh vật? BÀl 22. QUANG HỢP ỞTHỰC VẬT",
+      "correctAnswer": "Chuyển hoá năng lượng có vai trò cung cấp năng cho các hoạt động sống của sinh vật."
+    },
+    {
+      "id": "q_55_5",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "22.1. Hoàn thành phương trình quang dạng chữ: Ánh (1) (2) (3). +_(4) Diệp lục",
+      "correctAnswer": "(1) Carbon dioxide/Nước; (2) Nước/Carbon dioxide; (3) Glucose/Oxygen; (4) Oxygen/Glucose."
+    },
+    {
+      "id": "q_55_6",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 59.5,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "22.2. Sản phẩm của quang hợp là A. nước, carbon dioxide B.ánh sáng; diệp lục. NỐL TRI THỨ C C. oxygen, glucose D. glucose; nước. 201 GuoG S0MG",
+      "correctAnswer": "C. RÉT NỐl TRI THỨC"
+    },
+    {
+      "id": "q_55_7",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "22.3. Nêu các đặc điểm của lá cây phù hợp với chức năng quang hợp.",
+      "correctAnswer": "-Phiến lá có dạng bản diện tích bể mặt lớn giúp lá nhận được nhiểu ánh phiến lá có nhiểu gân lá giúp vận chuyển nguyên liệu và sản của trình quang hợp. Biểu bì lá có nhiểu khí khổng, cho phép CO2 khuếch tán từ môi trường vào trong tế bào lá và O2 từ tế bào lá khuếch tán ra môi trường: Tế bào lá có nhiểu lục lạp chứa diệp lục, giúp hấp thụ ánh sáng, đảm bảo cho trình quang hợp diễn ra bình thường."
+    },
+    {
+      "id": "q_55_8",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 78.5,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "22.4. Lựa chọn từ/cụm từ phù hợp trong phẩn gợi ý để hoàn thành đoạn thông tin sau: Quang hợp là trình sử (1).và khí . (2). để 2(3). và phóng _ (4) nhờ lượng - (5)_ đã được _ (6) hấp thụ: Đây là trình trao đổi chất và chuyển hoá lượng ở _ (7). trong đó trình trao đổi và chuyển hoá các chất luôn đi kèm với trình chuyển hoá _ (8) từ ~(9) biến đổi thành dạng _ (10) tích luỹ trong các phân tử_ (11) Gợi ý: oxygen; ánh diệp lục, nước, carbon dioxide; glucose; lượng, thực vật, quang năng, hoá năng, hữu cơ. 54 lượng. ứng. người cung năng sống hợp Sáng tổng quá- dụng giải hợp - năng quá năng quá quá dạng sáng, năng",
+      "correctAnswer": "(1) nước; (2) carbon dioxide; (3) glucose; (4) oxygen; (5) ánh sáng; (6) diệp lục; (7) thực vật; (8) năng Iượng; (9) quang năng; (10) hoá năng; (11) hữu cơ."
+    }
+  ]
+}

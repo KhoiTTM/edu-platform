@@ -1,0 +1,29 @@
+{
+  "page": 87,
+  "elements": [
+    {
+      "id": "q_87_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "39.2. Em hãy kể tên một số loài thực vật sinh sản sinh dưỡng trong tự nhiên. Cho biết chúng sinh sản bộ phận nào của cơ thể",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_87_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "39.4. Các loài động vật trong bảng sau sinh sản vô tính bằng hình thức nào? STT Động vật Hình thức sinh sản vô tính roi 2 San hô, thuỷ tức 3 Sao biển, giun dẹp 4 Rệp cây; ong, kiến 86 quá những, bằng hổng giâm năng Trùng",
+      "correctAnswer": "1 Phân đôi; 2 Nảy chổi; 3 - Phân mảnh; 4 - Trinh sinh:"
+    }
+  ]
+}

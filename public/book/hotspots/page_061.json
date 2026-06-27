@@ -1,0 +1,89 @@
+{
+  "page": 61,
+  "elements": [
+    {
+      "id": "q_61_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "25.3. So sánh các thành phẩn tham gia hô hấp ở tế bào động vật và tế bào thực vật.",
+      "correctAnswer": "nhau: đêu sử các nguyên liệu gổm chất hữu cơ; oxygen: Khác nhau: chấthữu cơ mà tếbàothực vậtsử cóp 'nguổn gốctừquang hợp; chất hữu cơ mà tế bào vật sử dụng được lấy từ thức ăn. 25.4 Phương trình hô hấp tế bào: Glucose + Oxygen Carbon dioxide + Nước + ATP Phương trình hô hấp tế bào và phương trình quang hợp là hai phương trình có chiểu trái ngược nhau. Cuoc SOnG"
+    },
+    {
+      "id": "q_61_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 22.86,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "25.4. Viết phương trình hô hấp tế bào. So sánh phương trình hô hấp với phương trình quang hợp:",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_61_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 33.71,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "25.5. Trong tế bào của hẩu hết các sinh vật nhân thực, trình hô hấp xảy ra trong loại bào quan nào? A Không bào. B.Lục C. Ti thể D. Nhân tế bào.",
+      "correctAnswer": "€."
+    },
+    {
+      "id": "q_61_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 44.57,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "25.6. Nhận xét nào sau đây là khi nói vê trình quang và hô hấp? A. Đây là các trình trái ngược nhau, không liên quan với nhau: B.Đây là các quá trình liên tiếp và thống nhất với nhau. CĐây là các trình có nguyên liệu giống nhau nhưng kết quả khác nhau: D. Đây là các quá trình ngược nhau nhưng phụ thuộc Iẫn nhau:",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "q_61_5",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 55.43,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "25.7. Kếtnối các thông tin ở cột A với cột B trong bảng để được nội dung phù hợp: A B 0 ETNoT a) được tích luỹ dưới dạng hợp chất 1.Hô hấp tế bào hoá (ATP) 1+ b) dễ sử dụng cho các hoạt 2 Phẩn lớn năng lượng hô hấptế bào sống của cơ thể sinh vật 3 lượng tích luỹ dưới dạng c) dưới dạng nhiệt hợpchất hoá học (ATP) trong tế bào 4. Một phẩn năng lượng được giải d) gổm mộtchuỗi các phản ứng sản phóng trong hô hấp tế bào sinh ra lượng",
+      "correctAnswer": "1 d; 2 - =b;4 - C."
+    },
+    {
+      "id": "q_61_6",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 66.29,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "25.8. Hãy thích vì sao khi đói, cơ thể người thường cử động chậm và không muốn hoạt",
+      "correctAnswer": "Khi đói, lượng đường glucose trong máu giảm, khi đó cơ thể sẽ thiếu nguyên liệu (glucose) cho hô hấp tế bào dẫn đến tình trạng thiếu Iượng cung cấp cho các hoạt động sống, vì vậy cơ thể có biểu hiện mệt mỏi , chân cử động chậm chạp:"
+    },
+    {
+      "id": "q_61_7",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 77.14,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "25.9. Vận kiến thức vể hô hấp tế bào, thích hiện tượng con người khi ở trên đỉnh núi cao thường thở nhanh hơn so với khi ở vùng đổng bằng: 60 quá lạp. đúng quá hợp7 quá quá học động Năng năng giải động. dụng giải",
+      "correctAnswer": "Khi ở trên đỉnh núi cao, không khí loãng; nổng độ oxygen thấp hơn so với ở bằng: Vì vậy để lấy đủ oxygen cân thiết cho hoạt động hô hấptế bào; con thường phải thởnhanh hơn sovới khi ởvùng đổng bằng. 126 ống ống ống phẩn ống giá ống hợp; Giống dụng dung động a; 3 năng tay đổng lượng vùng người"
+    }
+  ]
+}

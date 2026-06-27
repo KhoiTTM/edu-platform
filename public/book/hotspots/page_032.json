@@ -1,0 +1,41 @@
+{
+  "page": 32,
+  "elements": [
+    {
+      "id": "q_32_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "9.1. Tại sao cách đo tốc độ trong phòng thí nghiệm không phải là cách đo trực tiếp?",
+      "correctAnswer": "Vì đo độ dài và đo thời gian rổi dùng công thức để tính tốc độ."
+    },
+    {
+      "id": "q_32_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "9.2. Một bạn đo tốc độ đi học của mình bằng cách sau: Đếm bước đi từ nhà đến trường; Đo thời gian đi hổ bấm giây; Tính tốc độ bằng công thức: v = Biết số bước bạn đó đếm được là 1 212 bước, mỗi bước trung bình dài 0,5 m và thời gian đi là 10 min. Tính tốc độ đi của bạn đó.",
+      "correctAnswer": "s = 1 212.0,5 = 606 m 606 t =10 min = 600 s = V = = 1,01 m/s = 3,636 km/h. 600"
+    },
+    {
+      "id": "q_32_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "9.4. Sau đây là bảng ghi kết quả đo tốc độ của một ô tô đổ chơi chạy trên một tấm gỗ đặt nằm nghiêng dài 60 cm. Quãng đường Thời gian đi Lẩn đo (cm) (s) 60 1,65 2 60 1 1,68 3 VUI [6o eG 1,70 a) ĐCNN trên thước và đổng hổ bấm giây dùng trong thí nghiệm này là bao nhiêu? b) Tính độ lớn trung bình của kết quả đo tốc độ ra mIs và km/h. 31 bằng đổng chạy quá",
+      "correctAnswer": "a) ĐCNN của thước là 1 cm, ĐCNN của đổng hổ bấm giây là 0,01 s b) Lẩn đo Tốc độ (mls) Tốc độ (km/h) 0,364 1,310 2 0,357 1 ,285 3 0,353 1,271"
+    }
+  ]
+}

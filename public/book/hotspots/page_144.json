@@ -1,0 +1,41 @@
+{
+  "page": 144,
+  "elements": [
+    {
+      "id": "q_144_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "42.3. (1) chất dinh dưỡng; (2) tế bào; (3) cơ thể; (4) hoạt (5) một thể thống nhất.",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_144_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "42.4. Khi một cơ quan trong hệ hô hấp bị tổn thương (ví dụ: bị viêm phổi) thì việc lấy O2 và thải CO2 của tế bào sẽ bị ảnh hưởng. Tế bào của các cơ quan sẽ không có đủ O2 cho hoạt động trao đổi chất và năng Iượng, tế bào sẽ không có đủ năng lượng để hoạt gây tổn thương tế bào và tế bào có thể chết. thời, CO2 là sản phẩm trao đổi chất của tế bào không được đưa ra khỏi cơ thể sẽ gây độc đối với tế bào và cơ quan cơthể.Vì vậy, khi bị viêm phổi nặng có thể dẫn tới ngừng thở; gây tổn thương tim; não và nguy hiểm đến tính mạng nếu không được cấp cứu thời.",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_144_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "42.5. Khi cây cổ thụ bị xén rễ và đổ bê xung quanh, nếu mất phẩn Iớn rễ, trình cung cấp nước và chất dinh dưỡng cho cây sẽ bị ảnh hưởng, cây có thể bị chết vì thiếu nước và chất dinh dưỡng. Mặt khác, khi đổ bê xung quanh, rễ không mọc dài ra được để bám vào đất sẽ dẫn đến nguy cơ đổ cây vào mùa mưa bão. KẾT NỐL TRI THỨ C VÚI cUôc SỐNG 143 năng động sống; động Đổng trong kịp tông quá tông",
+      "correctAnswer": ""
+    }
+  ]
+}

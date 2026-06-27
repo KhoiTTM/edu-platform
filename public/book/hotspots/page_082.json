@@ -1,0 +1,29 @@
+{
+  "page": 82,
+  "elements": [
+    {
+      "id": "q_82_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "36.1. Nêu khái niệm sinh trưởng, triển ở sinh vật và mối quan hệ giữa sinh trưởng, phát triển.",
+      "correctAnswer": "Sinh trưởng là sựtăng lên vể kích thước và khối lượng cơthể do sựtăng lên vể số lượng và kích thước tế bào. Phát triển là những biến đổi diễn ra trong đời = của một cá thể. Phát triển gổm ba trình liên quan đến nhau là sinh trưởng, phân hoá tế bào, phát sinh hình thái cơ quan và cơ thể. Sinh trưởng và phát triển là hai - trình có quan hệ qua lại chặt chẽ với nhau: Sinh trưởng là tiển để của phát triển, phát triển lại làm thay đổi tốc độ của sinh trưởng:"
+    },
+    {
+      "id": "q_82_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "36.4. Tìm từ/cụm từ phù để hoàn thành thông tin sau: Mô phân sinh đỉnh giúp thân, cành và rễ tăng lên vể _ (1) Mô phân sinh bên giúp thân, cành và rễ tăng lên vể_ (2). \"| iHtc",
+      "correctAnswer": "(1) chiểu dài; (2) chiểu ngang."
+    }
+  ]
+}

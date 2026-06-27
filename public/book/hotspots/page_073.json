@@ -1,0 +1,29 @@
+{
+  "page": 73,
+  "elements": [
+    {
+      "id": "q_73_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "31.4. Chọn các từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau: Các tế bào và cơ quan trong cơ thể động vật được nuôi dưỡng bởi (1).và các chất dinh dưỡng: Oxygen được lấy từ (2). còn chất dinh dưỡng do cơ quan tiêu hoá cấp. Quá trình trao đổi chất ở các tế bào cũng như hoạt động của các cơ quan sẽ sản sinh ra các _ (3) Những sản phẩm này cẩn được vận chuyển đến cơ quan _ (4). đểthải ra ngoài. _ (5) là hệcơ quan thực hiện vận chuyển các chất trong cơ thể vật.",
+      "correctAnswer": "(1) oxygen; (2) phổi; (3) sản độc hại; (4) bài tiết; (5) hệtuẩn hoàn"
+    },
+    {
+      "id": "q_73_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "31.5. Các khẳng định sau đây đúng sai? STT Khẳng định Đúng/Sai Máu giàu oxygen có màu đỏ tươi, máu giàu carbon dioxide có màu đỏ thẫm Tốc độ máu chảy trong mao mạch chậm hơn trong 2 mạch và tĩnh mạch 3 Chỉ có nước tiểu mới chứa các chất bài tiết ra khỏi cơ thể Máu sau khi trao đổi tại mao mạch của các cơ quan đổ vể 4 tâm nhĩ của tim Trong cùng điểu kiện môi trường; nhu cẩu nước của người 5 ở các lứa tuổi đểu giống nhau 31.6 đoán điểu gì sẽ xảy ra với cơ thể nếu sự vận chuyển các chất trong cơ thể bị dừng lại. VOLcUÔc SỐNG",
+      "correctAnswer": "1 - Đ; 2 Đ; 3 = S;4 -Đ; 5 = S"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "page": 30,
+  "elements": [
+    {
+      "id": "q_30_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "8.1. Ghép một nội dung ở cột A với một nội dung phù ở cột B A B 1.Tốc độ chuyển cho biết a) đơn vị độ dài và đơn vị thời gian. 2 Tốc độ chuyển động được xác b) mIs và km/h. định c) sựnhanh, chậm của chuyển động. 3.Đơn vị tốc độ phụ thuộc vào d) quãng đường đi được trong một 4.Đơn vị của tốc độ là đơn vị thời gian.",
+      "correctAnswer": "1 C; 2 -= d; 3 = a; 4 - b. 109 46, hợp Công vững Công học công giữa nóng"
+    },
+    {
+      "id": "q_30_2",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "8.2. Sắp xếp lại các số liệu trong cột B cho phù với cột A và điển các giá trị thích hợp vào cột C của bảng sau: A. Đối tượng chuyển B. Tốc độ (mls) C. Tốc độ (kmlh) Người đi bộ RETNU 15 đến 20 2 Người đi xe đạp V 3 đến 4 Slka 2 tô 1,5 ? Tàu hoả 200 đến 300 Máy phản lực 10 đến 20",
+      "correctAnswer": "A"
+    }
+  ]
+}

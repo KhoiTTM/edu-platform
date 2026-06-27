@@ -1,0 +1,17 @@
+{
+  "page": 24,
+  "elements": [
+    {
+      "id": "q_24_1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "6.4. Phân tử methane gổm một nguyên tử carbon liên kết với bốn nguyên tử hydrogen. Khi hình thành liên kết cộng hoá trị trong methane; nguyên tử carbon góp chung bao nhiêu electron với mỗi nguyên tử hydrogen? A. Nguyên tử carbon góp chung 1 electron với mỗi nguyên tử hydrogen: B. Nguyên tử carbon góp chung 2 electron với mỗi nguyên tử hydrogen. 23 cùng ngoài cùng",
+      "correctAnswer": "A"
+    }
+  ]
+}

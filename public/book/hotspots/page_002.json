@@ -1,0 +1,293 @@
+{
+  "page": 2,
+  "elements": [
+    {
+      "id": "link_p2_1",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 10.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 20: Chế tạo nam châm điện đơn giản",
+      "correctAnswer": "52"
+    },
+    {
+      "id": "link_p2_2",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 12.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 21: Khái quát về trao đổi chất và chuyển hoá...",
+      "correctAnswer": "54"
+    },
+    {
+      "id": "link_p2_3",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 14.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 22: Quang hợp ở thực vật",
+      "correctAnswer": "55"
+    },
+    {
+      "id": "link_p2_4",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 16.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 23: Một số yếu tố ảnh hưởng đến quang hợp",
+      "correctAnswer": "57"
+    },
+    {
+      "id": "link_p2_5",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 18.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 24: Thực hành: Chứng minh quang hợp...",
+      "correctAnswer": "58"
+    },
+    {
+      "id": "link_p2_6",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 20.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 25: Hô hấp tế bào",
+      "correctAnswer": "60"
+    },
+    {
+      "id": "link_p2_7",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 22.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 26: Một số yếu tố ảnh hưởng đến hô hấp...",
+      "correctAnswer": "62"
+    },
+    {
+      "id": "link_p2_8",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 24.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 27: Thực hành: Hô hấp ở thực vật",
+      "correctAnswer": "63"
+    },
+    {
+      "id": "link_p2_9",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 26.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 28: Trao đổi khí ở sinh vật",
+      "correctAnswer": "65"
+    },
+    {
+      "id": "link_p2_10",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 28.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 29: Vai trò của nước và chất dinh dưỡng...",
+      "correctAnswer": "66"
+    },
+    {
+      "id": "link_p2_11",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 30.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 30: Trao đổi nước và chất dinh dưỡng ở thực vật",
+      "correctAnswer": "69"
+    },
+    {
+      "id": "link_p2_12",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 32.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 31: Trao đổi nước và chất dinh dưỡng ở động vật",
+      "correctAnswer": "72"
+    },
+    {
+      "id": "link_p2_13",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 34.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 32: Thực hành: Chứng minh thân vận chuyển nước...",
+      "correctAnswer": "74"
+    },
+    {
+      "id": "link_p2_14",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 36.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 33: Cảm ứng ở sinh vật và tập tính ở động vật",
+      "correctAnswer": "77"
+    },
+    {
+      "id": "link_p2_15",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 38.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 34: Vận dụng hiện tượng cảm ứng vào thực tiễn",
+      "correctAnswer": "79"
+    },
+    {
+      "id": "link_p2_16",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 40.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 35: Thực hành: Cảm ứng ở sinh vật",
+      "correctAnswer": "80"
+    },
+    {
+      "id": "link_p2_17",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 42.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 36: Khái quát về sinh trưởng và phát triển...",
+      "correctAnswer": "82"
+    },
+    {
+      "id": "link_p2_18",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 44.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 37: Ứng dụng sinh trưởng và phát triển...",
+      "correctAnswer": "83"
+    },
+    {
+      "id": "link_p2_19",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 46.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 38: Thực hành: Quan sát, mô tả sự sinh trưởng...",
+      "correctAnswer": "85"
+    },
+    {
+      "id": "link_p2_20",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 48.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 39: Sinh sản vô tính ở sinh vật",
+      "correctAnswer": "87"
+    },
+    {
+      "id": "link_p2_21",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 50.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 40: Sinh sản hữu tính ở sinh vật",
+      "correctAnswer": "89"
+    },
+    {
+      "id": "link_p2_22",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 52.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 41: Một số yếu tố ảnh hưởng và điều hoà...",
+      "correctAnswer": "90"
+    },
+    {
+      "id": "link_p2_23",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 54.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 42: Cơ thể sinh vật là một thể thống nhất",
+      "correctAnswer": "92"
+    },
+    {
+      "id": "link_p2_24",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 62.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "HƯỚNG DẪN GIẢI VÀ ĐÁP ÁN",
+      "correctAnswer": "93"
+    }
+  ]
+}

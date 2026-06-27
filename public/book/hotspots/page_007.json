@@ -1,0 +1,77 @@
+{
+  "page": 7,
+  "elements": [
+    {
+      "id": "p7_1.6",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 13,
+        "width": 83,
+        "height": 24
+      },
+      "label": "1.6. Em hãy nhận xét và giải thích về kết quả thu được ở Bảng 1.",
+      "correctAnswer": "Chiều cao cơ thể con người đạt giá trị lớn nhất vào buổi sáng khi mới ngủ dậy. Sau một ngày hoạt động, chiều cao sẽ giảm dần vào buổi trưa và buổi tối."
+    },
+    {
+      "id": "p7_1.7",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 38,
+        "width": 83,
+        "height": 5.5
+      },
+      "label": "1.7. Tìm hiểu về hiện tượng lũ lụt và đề xuất các biện pháp phòng chống.",
+      "correctAnswer": "Bước 1: Xác định vấn đề. Bước 2: Đưa ra giả thuyết. Bước 3: Lập kế hoạch. Bước 4: Thực hiện kế hoạch. Bước 5: Viết báo cáo. Bước 6: Đề xuất nghiên cứu mở rộng."
+    },
+    {
+      "id": "p7_1.8",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 44.5,
+        "width": 83,
+        "height": 21
+      },
+      "label": "1.8. Trong Hình 1.1, thể tích của vật rắn là bao nhiêu?",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "p7_1.9",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 66,
+        "width": 83,
+        "height": 5
+      },
+      "label": "1.9. Làm cách nào để đo độ dày của một tờ giấy trong sách KHTN 7 bằng thước có ĐCNN là 1 mm?",
+      "correctAnswer": "Xếp chồng chặt các tờ giấy trong sách lại, dùng thước có ĐCNN 1 mm đo độ dày cả tệp giấy rồi chia cho tổng số tờ."
+    },
+    {
+      "id": "p7_1.10",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 71.5,
+        "width": 83,
+        "height": 5.5
+      },
+      "label": "1.10. Làm thế nào để đo thể tích một giọt nước rơi từ ống nhỏ giọt với bình chia độ có ĐCNN 0,5 cm3?",
+      "correctAnswer": "Nhỏ nước từng giọt vào bình chia độ, đếm số giọt (ví dụ 100 giọt) cho tới khi đo được thể tích xác định (ví dụ 2 cm3), từ đó tính thể tích 1 giọt."
+    },
+    {
+      "id": "p7_1.11",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 77.5,
+        "width": 83,
+        "height": 18
+      },
+      "label": "1.11. Để xác định thời gian chuyển động (trả lời ý a, b, c):",
+      "correctAnswer": "a) Đặt MODE: A <-> B; b) Bấm nút RESET; c) Nối cổng 1 với chốt A, cổng 2 với chốt B."
+    }
+  ]
+}

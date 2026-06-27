@@ -1,0 +1,41 @@
+{
+  "page": 52,
+  "elements": [
+    {
+      "id": "q_52_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "19.8. Xác định chiêu của kim nam châm đặt ở N 5 hai nhánh của nam châm hình chữ U như Hình 19.7- Hinh 19.7",
+      "correctAnswer": "Đẩu bên trái của kim nam châm là cực Nam, bên phải là cực Bắc."
+    },
+    {
+      "id": "q_52_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "20.1. Làm thế nào để đổi cực từ của nam châm điện?",
+      "correctAnswer": "đổi chiêu điện chạy vào dây dẫn."
+    },
+    {
+      "id": "q_52_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "20.2. Trong điểu kiện chỉ có điện yếu chạy vào dây dẫn của nam châm điện, phải nhưthế nào để lực từ của nam châm điện mạnh hơn? 20.3*. Hình 20.1 vẽ ba nam châm điện A, B, C. Mỗi nam châm đểu có một dòng điện chạy vào dây. a) Giải thích vì sao từ trường của nam châm điện B mạnh hơn từ trường của nam châm điện A b) Giải thích vì sao từ trường của nam Lõi sắt non châm điện C mạnh hơn từ trường của nam châm điện B. Hình 20.1 51 giữa vùng thay dòng ống cùng ống",
+      "correctAnswer": "Chỉ có dòng điện yếu chạy vào dây dẫn của nam châm điện, muốn lực từ của nam châm mạnh thì phải số quấn quanh dây; đưa thêm Iõi sắt non luổn vào trong dây. 20.3*. a) Từ trường của nam châm điện B mạnh hơn từ trường của nam châm điện A vì dây B có số vòng nhiểu hơn số vòng của dây A. 121 phải dòng ống Thay ống tăng dây ống vòng ống lòng ống ống"
+    }
+  ]
+}

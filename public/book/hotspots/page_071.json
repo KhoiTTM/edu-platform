@@ -1,0 +1,29 @@
+{
+  "page": 71,
+  "elements": [
+    {
+      "id": "q_71_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "30.10. Các khẳng định sau đây hay sai? STT Khẳng định Đúng/Sai Chất hữu cơ do mạch rây vận chuyển có nguổn gốc chủ yếu từ trình quang hợp 2 Lá cây không có khả hấp thụ các chất khoáng Nước và chất khoáng hoà tan trong đất được vỏ rễ 3 hấp thụ vào tế bào hút Quá trình hấp thụ chất khoáng từ môi trường vào rễ luôn đi kèm với quá trình hấp thụ nước Để rễ cây phát triển tốt, cẩn làm cho đất tơi xốp; 5 thoáng khí trước khi trông cây và xới xáo đất; vun gốc định kì Độ ẩm không khí càng cao, sựthoát hơi nước diễn ra càng Hàm lượng nước trong tế bào khí khổng là một yếu tố quyết định sự mở của khí khổng Phẩn lớn Iượng nước mà cây hấp thụ từ rễ sẽ thoát hơi 8 qua lá Vào những ngày khô hanh, độ ẩm không khí thấp hoặc những ngày nóng; cẩn tưới nước cho cây ít hơn bình thường nắng nóng cấn tưới nước cho cây Thoát hơi nước ởlá là lực để vận chuyển nước và 10 chất khoáng từ rễ Iên lá",
+      "correctAnswer": "1 Đ; 2 - S; 3 - S; 4 Đ; 5 - Đ;6 - S; 7 - Đ;8 - Đ;9 - S; 10 Đ."
+    },
+    {
+      "id": "q_71_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "30.12. Sau khi học vể trình thoát hơi nước ở cây xanh, bạn Mai băn khoăn muốn biết xem nếu sự thoát hơi nước ở lá không diễn ra thì điểu gì sẽ xảy ra, còn Khôi thì không biết tưới nước hợp lí cho cây trổng là nhưthế nào: Em hãy giúp Mai và Khôi đáp các băn khoăn trên. 70 đúng quá năng Iông mạnh đóng, động sống quá giải",
+      "correctAnswer": "Tưới nước hợp lí cho cây nghĩa là cẩn phải dựa vào nhu cẩu nước của loài, giai đoạn sinh trưởng và phát triển của cây; đặc điểm của đất như thời tiết để quyết định lượng nước và thời gian tưới nước cho cây. Giải thích băn khoăn của Mai: Nếu thoát hơi nước ở lá không diễn ra thì sự vận chuyển nước và muối khoáng từ rễ lên thân sẽ bị chậm hoặc có thể ngừng lại; khí khổng không mở hoặc mở nhỏ nên CO2 không khuếch tán vào trong lá để cung cấp cho quang dẫn đến không đảm bảo cung cấp nước và chất dinh dưỡng cho hoạt động sống cua tế bào. Bên cạnh đó, khi nhiệt độ môi trường cao; lá cây sẽ bị đốt nếu không có sự thoát hơi nước. Nếu quá trình thoát hơi nước không diễn ra trong thời gian dài, sự sinh trưởng và triển của cây bị chậm lại, cây có thể chết 130 duy7 hằng hay ra, lông đóng, quá lông riêng trổng cũng hợp nóng phát"
+    }
+  ]
+}

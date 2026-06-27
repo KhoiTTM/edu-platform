@@ -1,0 +1,101 @@
+{
+  "page": 19,
+  "elements": [
+    {
+      "id": "q_19_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.24.b. Tên và kí hiệu hoá học của nguyên tố kim loại có trong thành phần của hemoglobin (chất có khả năng vận chuyển khí oxygen từ phổi đến các tế bào), nếu thiếu nguyên tố này cơ thể chúng ta sẽ mắc bệnh thiếu máu. Hãy kể ra ít nhất 3 ứng dụng trong đời sống của nguyên tố kim loại đó.",
+      "correctAnswer": "Nguyên tố kim loại có trong thành phẩn của hemoglobin là Fe, sắt. Mộtsố ứng dụng trong đời sống của kim loại sắtlà làm vật liệu xây dựng; làm đổ cá nhân như dao; kéo; móc quẩn á0,; làm đổ nội thất như khung cửa, cẩu thang C) Nguyên tố khí hiếm được dùng để bơm vào bóng hoặc khinh khí câu là helium, He."
+    },
+    {
+      "id": "q_19_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 21.5,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.24.c. Tên và kí hiệu hoá học của nguyên tố khí hiếm dùng để bơm vào bóng bay hoặc khinh khí cầu.",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_19_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.25. Nguyên tố xenon (Xe) có 8 electron ở lớp ngoài cùng. Hãy cho biết xenon là kim loại, phi kim hay khí hiếm? Ở điều kiện thường xenon tồn tại ở thể nào?",
+      "correctAnswer": "Vì có 8 electron ở lớp vỏ nguyên tử nên Xe thuộc nhóm VIIIA nguyên tố khí hiếm, là chất khí ở điểu kiện thường."
+    },
+    {
+      "id": "q_19_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 40.5,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.26. X là nguyên tố cần thiết cho quá trình hô hấp của sinh vật, nếu thiếu nguyên tố này sự cháy không thể xảy ra. Hãy cho biết tên, kí hiệu hoá học và vị trí (ô nguyên tố, chu kì, nhóm) của X trong bảng tuần hoàn. Nguyên tố X là kim loại, phi kim hay khí hiếm?",
+      "correctAnswer": "Nguyên tố cẩn thiết cho quá trình hô hấp của sinh vật, thiếu nó sự cháy không thể xảy ra là oxygen; kí hiệu hoá học là O; ô số 8, chu kì 2, nhóm VIA; là phi kim."
+    },
+    {
+      "id": "q_19_5",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.27. Hãy cho biết vị trí của nguyên tố Y trong bảng tuần hoàn, biết vỏ nguyên tử của nguyên tố Y có 2 lớp electron, trong đó lớp ngoài cùng có 4 electron. Từ đó cho biết Y là kim loại, phi kim hay khí hiếm?",
+      "correctAnswer": "Vì Y có 2 lớp electron ở vỏ nguyên tử và 4 electron ở lớp ngoài cùng nên Y có 6 electron; do đó Y có số hiệu nguyên tử là 6 và số thứ tự của nó trong bảng tuẩn hoàn. Vì có 2 electron nên Y thuộc chu kì 2, Y có 4 electron ở lớp ngoài cùng nên thuộc nhóm IVA. Vì thuộc nhóm IVA, chu kì 2 nên Ylà phi kim."
+    },
+    {
+      "id": "q_19_6",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 59.5,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.28a. Dựa vào bảng tuần hoàn hãy liệt kê kí hiệu hoá học và điện tích hạt nhân Z của các nguyên tố thuộc chu kì 3.",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_19_7",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.28b. Hãy xác định tên và kí hiệu hoá học của nguyên tố X biết nó thuộc chu kì 3, có điện tích hạt nhân Z > 12, dẫn điện tốt, dẫn nhiệt tốt, dẻo, dễ dát mỏng, có ánh kim. Giải thích.",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_19_8",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 78.5,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.28c. Hãy kể ra ít nhất 3 ứng dụng trong đời sống của nguyên tố X.",
+      "correctAnswer": ""
+    }
+  ]
+}

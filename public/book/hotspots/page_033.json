@@ -1,0 +1,17 @@
+{
+  "page": 33,
+  "elements": [
+    {
+      "id": "q_33_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12,
+        "width": 83,
+        "height": 7.5
+      },
+      "label": "10.1. dưới đây mô tả chuyển của một ô tô trong 4 h. Thời (h) 2 3 Quãng đường (km) 60 120 180 240 Hình vẽ nào sau đây biểu diễn đổ thị quãng đường thời gian của chuyển động trên? (km) 5 (km) 240 240 180 180 120 120 60 60 0 1 2 3 4 t (h) 0 1 2 3 4 t (h) A B (km) 5 (km) 240 240 180 180 120 120 60 60 0 1 2 3 4 t (h) 01 TRI THt 2 3 t (h) c. VÚI cUôc SỐNG D 10.2 Hình 10.1 là đổ thị quãng đường- thời gian của một vật chuyển động. (m) Dựa vào hình vẽ, hãy kiểm tra các 12 tin sau đây là đúng sai. a) Tốc độ của vật là 2 m/s. b) Sau 2 s, vật đi được 4 m. c) Từ giây thứ 4 đến giây thứ 6, vật đi t (s) được 12 m- Hình 10.1 d) Thời gian để vật đi được 8 m là 4 s 32 Bảng động gian đúng thông hay",
+      "correctAnswer": "D."
+    }
+  ]
+}

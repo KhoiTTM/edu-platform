@@ -1,0 +1,53 @@
+{
+  "page": 46,
+  "elements": [
+    {
+      "id": "q_46_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "15.5. Khi xếp chào cờ, em cân nhưthế nào để đứng với các bạn? Giải thích cách làm.",
+      "correctAnswer": "Bạn (1) cẩn di chuyển với tư thế thân thẳng, đẩu ngay ngắn, đến vị trí sao cho khi hơi nghiêng đâu ngắm bằng mắt phải (hoặc mắt trái) qua đẩu bạn (2) ngay trước em, chỉ thấy được mép ngoài vành tai (hoặc tai trái) của bạn (3). (2) (3) Tia thẳng từ mép ngoài vành tai của bạn (3) đi sát vành tai của bạn (2) đến mắt của bạn (1) khi hơi nghiêng đẩu: Do đó, khi bạn (1) thôi ngắm, đẩu ngay ngắn thì ba bạn (1), (2) (3) thẳng hàng (Hình 15.1G) Hình 15.1G 116 dụng tiếng truyển truyển tiếng truyển tiếng phải đứng truyển sáng giữ"
+    },
+    {
+      "id": "q_46_2",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "15.6. Chùm ánh sáng phát ra từ đèn pha xe máy khi chiếu xa là chùm ánh sáng A. hội tụ. B. phân kì. C. song: D. Cả A, B, C đểu sai.",
+      "correctAnswer": "€"
+    },
+    {
+      "id": "q_46_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "15.7. Trong thí nghiệm tạo với kích thước nửa tối thay đổi thế nào khi di chuyển màn chắn ra xa vật cản sáng? A Iên. B. Giảm đi. C. Không thay đổi. D. Lúc đẩu giảm đi, sau đó lên.",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "q_46_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "15.8. Bài tập thí ở nhà: Bố trí thí nghiệm như Hình 15.3: bay bịt kín miệng của chai thuỷ tinh. Đặt chai ra ngoài trời nắng trong 10 phút, quan sát sự đổi hình dạng của quả bóng mô tả và thích:. Hình 15.3",
+      "correctAnswer": "phình to ra. Nguyên nhân là do lượng ánh sáng mặt trời đã chuyển thành nhiệt đốt không khí trong chai; khí Iên nở ra tràn vào bóng làm bóng phình to ra."
+    }
+  ]
+}

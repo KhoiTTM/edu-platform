@@ -1,0 +1,56 @@
+{
+  "page": 6,
+  "elements": [
+    {
+      "id": "p6_2.2",
+      "type": "matching",
+      "bbox": {
+        "x": 12.5,
+        "y": 9.5,
+        "width": 76.5,
+        "height": 19
+      },
+      "label": "1.2. Hãy kết nối các thông tin ở cột A với cột B tạo thành sự liên kết giữa sự vật với hiện tượng",
+      "correctAnswer": "1-c, 2-d, 3-a, 4-b"
+    },
+    {
+      "id": "p6_2.3",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 30.5,
+        "width": 83,
+        "height": 18.5
+      },
+      "label": "1.3. Khẳng định nào dưới đây không đúng về kĩ năng dự báo?",
+      "value": "Đúng",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "p6_2.4",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 51.5,
+        "width": 83,
+        "height": 18.5
+      },
+      "label": "1.4. Con người có thể định lượng được các sự vật và hiện tượng tự nhiên dựa trên kĩ năng nào?",
+      "value": "Sai",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "p6_2.5",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 70.8,
+        "width": 83,
+        "height": 21
+      },
+      "label": "1.5. Trình tự các bước hình thành kĩ năng đo là:",
+      "value": "Đúng",
+      "correctAnswer": "D"
+    }
+  ]
+}

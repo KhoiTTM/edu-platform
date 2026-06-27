@@ -1,0 +1,41 @@
+{
+  "page": 66,
+  "elements": [
+    {
+      "id": "q_66_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "28.6. Phân tích sự phù hợp giữa cấu tạo của khí khổng với chức trao đổi khí ở thực vật.",
+      "correctAnswer": "Khí khổng là cơ quan trao đổi khí ở thực vật. Khí khổng thường tập trung ở mặt dưới của lá. Khí khổng thông với các khoang chứa không khí ở bên trong phiến lá nên thuận tiện cho việc trao đổi khí và thoát hơi nước Mỗi khí khổng gổm hai tế bào hình hạt đậu nằm sát nhau; thành ngoài mỏng và thành trong dày. Khi no nước, thành mỏng của tế bào khí khổng căng ra làm cho thành dày căng theo và khí khổng mở, thuận lợi cho trình thoát hơi nước Khi mất nước, thành hết và thành dày duỗi thẳng; khí khổng đóng lại, hạn chế sự thoát hơi nước. 128 ngâm phá quá nổng quá quá quá quá năng giải năng dạng Váng ứng quá hợp; quá mỏng căng"
+    },
+    {
+      "id": "q_66_2",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "29.1. Nước là dung môi hoà tan nhiểu chất trong cơ thể sống vì chúng có A. nhiệt dung riêng cao. B. liên kết hydrogen các phân tử. C. nhiệt hơi cao D.tính phân cực.",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "q_66_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "29.2. Khi tìm kiếm sự sống ở các hành tinh khác trong vũ trụ, các nhà khoa học trước hết tìm kiếm xem ở đó có nước không vì A nước được cấu tạo từ các nguyên tố quan trọng là oxygen và hydrogen. 65 động trổng động nâng đúng tăng quá quá năng bằng bằng hợp 'trong quá ngủ, học giữa bay hay",
+      "correctAnswer": "B"
+    }
+  ]
+}

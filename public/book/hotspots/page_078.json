@@ -1,0 +1,29 @@
+{
+  "page": 78,
+  "elements": [
+    {
+      "id": "q_78_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "33.5. Hãy dự đoán tình huống khi con người không phản kịp thời với các kích thích từ môi trường xung quanh (như nóng; Iạnh; gặp nguy hiểm, ).",
+      "correctAnswer": "Nếu con người không phản kịp thời với các kích thích từ môi trường sẽ ảnh hưởng đến sựtổn tại và phát triển của cơ thể, cơ thể sẽ gặp nguy hiểm."
+    },
+    {
+      "id": "q_78_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "33.9. Hãy biệt các thói quen trong bảng sau vào nhóm thói quen tốt và không tốt. Lập kế hoạch để hình thành các thói quen tốt mà bản thân chưa có. Thói quen (tập tính) Thói quen tốt Thói quen không tốt Ngủ dậy muộn KiltNoLiRLiHLc bộ buổi sáng E Đọc sách Vừa ăn cơm vừa xem ti vi Thức khuya Ăn Làm việc có kế hoạch Hút thuốc lá",
+      "correctAnswer": "Thói quen (tập tính) Thói quen tốt Thói quen không tốt Ngủ dậy muộn X Chạy bộ buổi sáng X Đọc sách X Vừa ăn cơm vừa xem ti vi X Thức khuya X Ăn uống đúng X Làm việc có kế hoạch X Hút thuốc lá X 133 ứng động Bay tiếng động ứng ứng động động động sống ứng lông giờ"
+    }
+  ]
+}

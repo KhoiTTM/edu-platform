@@ -1,0 +1,77 @@
+{
+  "page": 92,
+  "elements": [
+    {
+      "id": "q_92_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "41.7. Tại sao cẩn sinh sản ở vật; thực vật nhưng lại phải điểu chỉnh số con và khoảng cách giữa các lẩn sinh con ở người? Em hãy để xuất một số biện pháp điểu khiển sinh sản ở người. BÀl 42. CƠ THỂ SINH VẬT LÀ MỘTTHỂ THỐNG NHẤT 7nnnn",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_92_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 24.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "42.1. Nêu vai trò của tế bào cơ thể và mô tả mối quan hệ tế bào và cơ thể.",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_92_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "42.2. Thế giới sinh vật có nhiểu cấp tổ chức khác nhau, trong đó, tế bào là cấu trúc nhỏ nhất có biểu hiện đẩy đủ tính chất của sự sống. Nếu như tách rời tế bào khỏi cơ thể thì điểu gì sẽ xảy ra?",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_92_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "42.3. Chọn các từ/cụm từ phù để hoàn thành đoạn thông tin sau: Cơ thể sinh vật lấy _ (1)-, nước và chất khí (O2 hoặc CO2) từ môi trường cung cấp cho . (2). thực hiện được quá trình trao đổi chất để Iớn Iên, sinh sản và cảm từ đó giúp - (3) thực hiện được các hoạt sống: Như vậy, ~(4)ởcấpđộtế bào là cơsở cho cáchoạt động sống của cơ thể và các hoạt động sống của cơ thể lại điểu khiển các hoạt động sống của tế bào, đảm bảo cơ thể sinh vật là . (5)",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_92_5",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "42.4. Em hãy lấy một ví dụ để chứng minh cho khẳng định \"Khi một cơ quan bị tổn thương hoặc ngừng hoạt động sẽ ảnh hưởng đến toàn bộ cơ thể\"",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_92_6",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 75.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "42.5. Khi xây dựng và sửa chữa sân trường hoặc vỉa hè, người ta thường xén rễ của những cây cổ thụ để đổ bê xung quanh gốc cây. Em hãy dự đoán điểu gì có thể xảy ra đối với cây cổ thụ này và giải thích tại sao. 91 phải tăng động giữa trong hợp động ứng, tông",
+      "correctAnswer": ""
+    }
+  ]
+}

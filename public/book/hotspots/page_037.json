@@ -1,0 +1,29 @@
+{
+  "page": 37,
+  "elements": [
+    {
+      "id": "q_37_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "11.3. Khoảng cách nào sauđây là khoảng 11.1 cách an toàn theo 11.1 đối với Tốc độ lưu Khoảng cách an xe ô tô chạy với tốc độ 25 m/s? hành (km/h) toàn tối thiểu (m) A. 35 m V = 60 35 B.55 m. 60 < v < 80 55 C. 70 m: 80 < v < 100 70 D. 100m. 100 < v < 120 100",
+      "correctAnswer": "C. 10"
+    },
+    {
+      "id": "q_37_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "11.4. Camera của thiết bị bắn tốc độ đặt trên đường bộ không có giải phân cách ghi được thời gian của một ô tô tải chở 4 tấn hàng chạy từ vạch mốc 1 sang vạch mốc 2 cách nhau 10 m là 0,50 s. Hỏi xe có vi phạm quy định vể tốc độ tối đa trong Hình 11.1 không?",
+      "correctAnswer": "V = 20m/s = 72 km/h: t 0,5 Xe đã vượt quá tốc độ tối đa quy định trong Hình 11.1:xe tải trên 3,5 tấn chỉ được chạy tối đa 70 km/h: 112 2,551 2t1 bằng 21 o 251 C2)"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "page": 17,
+  "elements": [
+    {
+      "id": "q_17_1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.9. Phát biểu nào sau đây là đúng? A. Các nguyên tố kim loai tập trung hẩu hết ở góc trên bên của bảng tuẩn hoàn. B. Các nguyên tố kim loại tập trung hẩu hết ở góc dưới bên trái của tuân hoàn. C. Các nguyên tố khí hiếm nằm ở giữa tuẩn hoàn. D. Các nguyên tố phi kim nằm ở cuối bảng tuẩn hoàn.",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q_17_2",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 22.86,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.10. Phát biểu nào sau đây không đúng? A. Các nguyên tố phi kim tập trung ở các nhóm VA, VIA, VIIA. B. Các nguyên tố khí hiếm nằm ở nhóm VIIIA. C. Các nguyên tố kim loại có mặt ở tất cả các nhóm trong bảng tuẩn hoàn. D. Các nguyên tố lanthanide và actinide mỗi họ gổm 14 nguyên tố xếp thành hai dãy ở cuối bảng:",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "q_17_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 33.71,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.11. Phát biểu nào sau đây là đúng? A. Ở điểu kiện thường, tất cả các nguyên tố kim loại tổn tại ở thể rắn B.Ở điểu kiện thường, tất cả các nguyên tố phi kim tổn tại ở thể C Ởđiểu kiện thường, tất cả các khí hiếm tổn tại ở thể khí. D. Ởđiểu kiện thường, tất cả các nguyên tố phi kim tổn tại ở thể khí 4.12 Hãy cho biết tên và kí hiệu hoá học của nguyên tố ở nhóm VA, chu kì 3 và nguyên tố ở nhóm VIIIA chu kì 2",
+      "correctAnswer": "C."
+    },
+    {
+      "id": "q_17_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 44.57,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.13. Hydrogen là nguyên tố nhẹ nhất trong tất cả các nguyên tố và biến nhất trong vũ Hãy cho biết kí hiệu hoá học của nguyên tố hydrogen và cho biết nó ở chu kì nào và nhóm nào trong bảng tuẩn hoàn:",
+      "correctAnswer": "Kí hiệu hoá học H,ở chu kì 1, nhóm IA."
+    },
+    {
+      "id": "q_17_5",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 55.43,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.14. Silicon là nguyên tố biến thứ hai trên Trái Đất tổn tại chủ yếu trong cát và là chất hoá học biến nhất trong vỏ trái đất. Hãy cho biết kí hiệu hoá học của nguyên tố silicon và cho biết nó ở chu kì nào và nhóm nào trong tuẩn hoàn?",
+      "correctAnswer": "Kí hiệu hoá học Si, ở chu kì 3, nhóm IVA."
+    },
+    {
+      "id": "q_17_6",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 66.29,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.15. Viết kí hiệu hoá học và tên của các nguyên tố thuộc nhóm IA, IIA, VIIA và VIIIA ở chu kì 2",
+      "correctAnswer": "Kí hiệu hoá học và tên của các nguyên tố thuộc nhóm IA, IIA, VIIA và VIIIA ở chu kì 2 lẩn lượt là: Li; lithium; Be, beryllium; F, fluorine; Ne, neon."
+    },
+    {
+      "id": "q_17_7",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 77.14,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.16. Nguyên tố Mg thuộc chu kì 3, nhóm IIA. Hỏi nguyên tử của nguyên tố Mg có bao nhiêu lớp electron và bao nhiêu electron ở lớp ngoài cùng? 16 phải bảng bảng được riêng Iỏng. phổ tru. phổ phổ bảng",
+      "correctAnswer": "Nguyên tố có 3 lớp electron và 2 electron ở ngoài cùng. 98 bảng ông] tăng dựng tăng tăng cùng cùng lượng lượng lớp Mg"
+    }
+  ]
+}

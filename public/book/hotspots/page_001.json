@@ -1,0 +1,233 @@
+{
+  "page": 1,
+  "elements": [
+    {
+      "id": "link_p1_1",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 15.5,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 1: Phương pháp và kĩ năng học tập môn Khoa học tự nhiên",
+      "correctAnswer": "5"
+    },
+    {
+      "id": "link_p1_2",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 22.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 2: Nguyên tử",
+      "correctAnswer": "8"
+    },
+    {
+      "id": "link_p1_3",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 25.5,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 3: Nguyên tố hoá học",
+      "correctAnswer": "12"
+    },
+    {
+      "id": "link_p1_4",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 29.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 4: Sơ lược về bảng tuần hoàn các nguyên tố hoá học",
+      "correctAnswer": "15"
+    },
+    {
+      "id": "link_p1_5",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 35.5,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 5: Phân tử - Đơn chất - Hợp chất",
+      "correctAnswer": "20"
+    },
+    {
+      "id": "link_p1_6",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 39.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 6: Giới thiệu về liên kết hoá học",
+      "correctAnswer": "24"
+    },
+    {
+      "id": "link_p1_7",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 42.5,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 7: Hoá trị và công thức hoá học",
+      "correctAnswer": "27"
+    },
+    {
+      "id": "link_p1_8",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 49.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 8: Tốc độ chuyển động",
+      "correctAnswer": "30"
+    },
+    {
+      "id": "link_p1_9",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 52.5,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 9: Đo tốc độ",
+      "correctAnswer": "32"
+    },
+    {
+      "id": "link_p1_10",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 55.5,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 10: Đồ thị quãng đường - thời gian",
+      "correctAnswer": "33"
+    },
+    {
+      "id": "link_p1_11",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 62.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 11: Thảo luận về ảnh hưởng của tốc độ...",
+      "correctAnswer": "36"
+    },
+    {
+      "id": "link_p1_12",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 68.5,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 12: Sóng âm",
+      "correctAnswer": "38"
+    },
+    {
+      "id": "link_p1_13",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 72.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 13: Độ to và độ cao của âm",
+      "correctAnswer": "39"
+    },
+    {
+      "id": "link_p1_14",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 75.5,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 14: Phản xạ âm, chống ô nhiễm tiếng ồn",
+      "correctAnswer": "42"
+    },
+    {
+      "id": "link_p1_15",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 82.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 15: Năng lượng ánh sáng. Tia sáng, vùng tối",
+      "correctAnswer": "45"
+    },
+    {
+      "id": "link_p1_16",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 85.5,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 16: Sự phản xạ ánh sáng",
+      "correctAnswer": "47"
+    },
+    {
+      "id": "link_p1_17",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 89.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 17: Ảnh của vật qua gương phẳng",
+      "correctAnswer": "48"
+    },
+    {
+      "id": "link_p1_18",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 92.5,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 18: Nam châm",
+      "correctAnswer": "49"
+    },
+    {
+      "id": "link_p1_19",
+      "type": "link",
+      "bbox": {
+        "x": 10.5,
+        "y": 95.0,
+        "width": 79.0,
+        "height": 2.5
+      },
+      "label": "Bài 19: Từ trường",
+      "correctAnswer": "50"
+    }
+  ]
+}

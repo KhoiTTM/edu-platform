@@ -1,0 +1,89 @@
+{
+  "page": 11,
+  "elements": [
+    {
+      "id": "q_11_1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "2.15. Trong hạt nhân nguyên tử fluorine có 9 proton. Số electron ở lớp ngoài cùng của vỏ nguyên tử fluorine là",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "q_11_2",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 22.86,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "2.16. Nguyên tử calcium có 20 electron ở vỏ nguyên tử. Hạt nhân của nguyên tử calcium có số proton là",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "q_11_3",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 33.71,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "2.17. Nguyên tử nhôm (aluminium) có 13 electron ở vỏ. Số electron ở lớp ngoài cùng của nguyên tử nhôm là",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "q_11_4",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 44.57,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "2.18. Muối ăn chứa hai nguyên tố hoá học là natri (sodium) và chlorine. Trong hạt nhân nguyên tử của các nguyên tố natri và chlorine có lần lượt 11 và 17 proton. Số electron ở lớp ngoài cùng của vỏ nguyên tử natri và chlorine lần lượt là",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "q_11_5",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 55.43,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "2.19. Trong hạt nhân nguyên tử lưu huỳnh (sulfur) có 16 proton. Số electron trong các lớp của vỏ nguyên tử sulfur; viết từ lớp trong ra lớp ngoài; lần lượt là",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "q_11_6",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 66.29,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "2.20. Hãy hoàn thiện Hình 2.4 để mô tả mô hình một nguyên tử silicon.",
+      "correctAnswer": "Mô hình bên mô tả cấu tạo một nguyên tử silicon: +14"
+    },
+    {
+      "id": "q_11_7",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 77.14,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "2.21. Hạt nhân một nguyên tử fluorine có 9 proton và 10 neutron. Khối lượng của nguyên tử fluorine xấp xỉ",
+      "correctAnswer": "C"
+    }
+  ]
+}

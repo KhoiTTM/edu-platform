@@ -1,0 +1,53 @@
+{
+  "page": 90,
+  "elements": [
+    {
+      "id": "q_90_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "40.4. Phân biệt hoa đơn tính và hoa lưỡng tính. Lấy ví dụ vể hoa đơn tính và hoa tính",
+      "correctAnswer": "Ở hoa đơn tính, trong một hoa chỉ có một bộ phận sinh sản đực (nhị) hoặc bộ phận sinh sản cái (nhuỵ). Hoa tính có cả nhuỵ và nhị trên cùng một hoa. Ví dụ hoa đơn tính: hoa mướp, hoa dưa chuột, hoa bẩu; hoa bí, hoa ngô. 2 hoa lưỡng tính: hoa dâm bụt, hoa bưởi, hoa ly; hoa cải,"
+    },
+    {
+      "id": "q_90_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "40.5. Phân biệt hình thức đẻ trứng và đẻ con ở động vật. Vẽ sơ đổ mô tả các giai đoạn của trình sinh sản hữu tính ở gà.",
+      "correctAnswer": "Ở động vật đẻ (ví dụ: rùa, rắn, một số loài cá, gà) phôi phát triển ngoài cơ thể mẹ, vì vậy phôi và con non ít được bảo vệ. Ở động vật đẻ con (ví dụ: chó, lợn, thỏ, mèo) phôi được hình thành và phát triển trong cơ thể 139 gỗ dòng ngót, lang; rộng hạt. lưỡng trứng"
+    },
+    {
+      "id": "q_90_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "40.6. Vẽ sơ đổ các giai đoạn sinh sản hữu tính ở cây thích tại sao khi ruộng ngô nếp trổng gẩn tẻthì khi thu hoạch có những bắp ngô có cả hạt ngô nếp và hạt ngô tẻ trong một bắp.",
+      "correctAnswer": "Ngô thụ phấn nhờ gió hoặc nhờ côn vì vậy nếu hai ruộng ngô tẻ và nếp gẩn nhau; khi hoa ngô trổ bông cùng thời điểm sẽ xảy ra hiện tượng hạt phấn của cây ngô tẻ sẽ nhờ hoặc côn rơi vào hoa cái của cây ngô nếp và ngược lại. Vì vậy, khi hình thành bắp ngô tẻ có một số hạt ngô nếp và một số bắp ngô nếp có lẫn hạt ngô tẻ Ưc cờ Hoa cái (hoa đực) 0 GuoC (có dạng cụm hoa) Hình thành giao tử Hạt phấn Noãn Thụ phấn Giao tử đực Giao tử cái Thụ tinh tử Phát triển phôi Phôi (phôi nằm trong hạt) 140 trống trứng trùng trổng trùng7 ngô gió trùng Bông Hợp"
+    },
+    {
+      "id": "q_90_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "40.8. Hiện nay; nhiểu giống mới có suất cao; chất lượng tốt. Dựa trên những kiến thức đã học; em hãy dự đoán biện pháp được sử để tạo ra những giống ngô đó.",
+      "correctAnswer": ""
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "page": 68,
+  "elements": [
+    {
+      "id": "q_68_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "29.7. Các khẳng định sau đây sai? STT Khẳng định Đúng /Sai Protein tham gia cấu tạo tế bào và cơ thể sinh vật 2 Lipid là nguổn dự trữ năng lượng cho cơ thể 3 Chất xơ không thuộc nhóm carbohydrate người, thiếu vitamin D gây bệnh quáng gà 5 Ở người, thiếu vitamin A gây bệnh còi xương Nitrogen là thành phẩn cấu tạo nên các chất hữu cơ quan 6 trong trong tế bào thực vậtnhưdiệplục, protein; nucleic acid, Một số loại chất khoáng như Cu; Mo, Bo, cây trổng cẩn một lượng rất nhỏ nhưng không thể thiếu 8 Nhu cẩu các chất khoáng giống nhau ởtất cả các loài thực vật 9 Cây trổng khi bị thiếu nitrogen, lá sẽ có màu 10 Cây trổng khi bịthiếu magnesium (Mg) lá sẽ có màu xanh đậm",
+      "correctAnswer": "1 Đ; 2 Đ; 3 - S;4 -S;5 - S;6 - Đ; 7 - Đ;8 - S; 9 - Đ; 10 5."
+    },
+    {
+      "id": "q_68_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "29.8. Kể tên một số loại phân bón mà em biết và nêu vai trò của chúng đối với thực vật. M 1 STT Tên loại phân bón Vai trò đối với thực vật 501| 0 mu 2 3",
+      "correctAnswer": "Tên loại STT Vai trò đối với thực vật phân bón cấp nitrogen cho cây trổng. Bón phân đạm thúc đẩy trình trưởng của cây; làm cho cây ra nhiểu nhánh, Phân đạm phân cành, ra lá nhiểu, lá có kích thước to, màu xanh đậm quang hợp tốt, làm năng suất của cây. Cung cấp phosphorus cho cây; kích thích cây đẻ nhánh, 2 Phân lân phân cành, ra hoa, đậu quả, tham gia vào trình chín của quả, giúp hạt chắc _ cấp potassium cho cây, tham gia vào trình chuyển hoá lượng, hoá các chất dinh dưỡng 3 Phân kali để suất và chất lượng sản. Giúp cây cao khả hút nước, giữ nước, chống chịu với các điểu kiện bất lợi của môi trường 129 bằng quá thay bằng thông, đông tăng tăng quá đông 72 Cung quá tăng tăng quá quả to; Cung quá đổng năng trổng tăng năng nông nâng năng"
+    },
+    {
+      "id": "q_68_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "29.9. Em hãy giải thích vì sao cây bị héo khi thiếu nước?",
+      "correctAnswer": "Tế bào thực vật chứa khoảng 70% là nước, ở thực vật thuỷ sinh, tỉ lệ này có thể lên đến 90%. Tế bào thực vật khi có đủ nước sẽ cứng và chắc Ngược lại, khi thiếu nước tế bào sẽ không - trì được hình dạng, mất sức trương nước dẫn đến hiện tượng cây bị héo."
+    }
+  ]
+}

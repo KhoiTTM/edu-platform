@@ -1,0 +1,53 @@
+{
+  "page": 29,
+  "elements": [
+    {
+      "id": "q_29_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "7.12. Chọn câu trả lời đúng: A. Hợp chất ammonia có thức hoá học là NH4. B.Hợp chất carbon monoxide có thức hoá học là C Hợp chất iron(Ill) oxide có thức hoá học là 02: D. Hợp chất zinc oxide có công thức hoá học là ZnO.",
+      "correctAnswer": "D."
+    },
+    {
+      "id": "q_29_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "7.13. Cho biết công thức hoá học của chất được tạo bởỉ hai nguyên tố Xvà 0 (oxygen); Y và H (hydrogen) lẩn lượt là XO, YH3: Hãy lập thức hoá học của hợp chất giữa X với Y; biết X và Y có hoá trị bằng hoá trị của chúng trong các chất XO và YH;.",
+      "correctAnswer": "Vì thức hoá học của chất của X và 0 là XO nên Xcó hoá trị II. chất của Yvà Hlà YH; nên Y có hoá trị III. Gọi công thức hoá học của chất giữa X và Ylà XaYb: Áp dụng quy tắc hoá trị: a 3 a-ll = b-Ill = 3a=3;b = 2 b 2 Công thức hoá học của chất giữa X và Y là X;Yz:"
+    },
+    {
+      "id": "q_29_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "7.16. Tỉ lệ khối lượng giữa hai nguyên tố carbon và hydrogen trong chất methane luôn không đổi là 3 1.Hãy lập công thức hoá học của khí methane, biết khối lượng nguyên tử của C = 12;H =1-",
+      "correctAnswer": "Gọi công thức của khí methane là CxHy ta có: mc 12.* = 3 =X = 1 >x = Ly = 4 = CH4' mh 1-y y 4"
+    },
+    {
+      "id": "q_29_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "7.17. Nguyên tử của các nguyên tố X, Y và Z lẩn lượt có 8, 17 và 11 electron. Nguyên tử neon và argon lẩn lượt có 10 và 18 electron: a) Xác định công thức hoá học của các hợp chất được tạo thành từ các nguyên tử của các nguyên tố sau: (i) X và Z (ii) Yvà Z (iii) X với X b) Kiểu liên kết hoá học giữa các nguyên tử trong các hợp chất trên là liên kết gì? c) đoán hai tính chất của hợp chất được tạo thành trong trường hợp a(i) và a(ii) . 28 công công CO2: công Fes hợp công được SO, SO4 hợp hợp Dự",
+      "correctAnswer": "a) Nguyên tố X có Z = 8, thuộc nhóm VIA, là phi kim; nguyên tố Y có Z = 17, thuộc nhóm VIIA, là phi kim; nguyên tố Z có Z = 11, thuộc nhóm IA, là kim loại. Công thức hoá học của các chất tạo thành từ nguyên tử các nguyên tố: (i) Xvà Z:Xthiếu 2 electron thì bên vững giống khíhiếm Ne; Zthừa 1 electron so với khí hiếm Ne. Dođó 2 nguyên tử Z nhường 2 electron cho 1 nguyên tử X thức hoá học là Z2X (quy ước viết kim loai trước phi kim). (ii) Y và Z: Y thiếu electron thì bên giống khí hiếm Ar; Z thừa electron so với khí hiếm Ne. Do đó 1 nguyên tử Z nhường 1 electron cho 1 nguyên tử Y thức hoá là ZY (iii) X với X: Đơn chất giữa 2 nguyên tử X có thức hoá học là Xz: b) Kiểu liên kết hoá học các nguyên tử trong Z2X: liên kết ion; trong ZY: liên kết ion; trong Xz: liên kết cộng hoá trị. c) Hai tính chất của các hợp chất ion ZX2 và ZY: tan trong nước, là chất rắn có nhiệt độ chảy cao"
+    }
+  ]
+}

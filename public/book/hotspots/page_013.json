@@ -1,0 +1,65 @@
+{
+  "page": 13,
+  "elements": [
+    {
+      "id": "q_13_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "3.5.b. Một nguyên tử oxygen có 10 neutron. Khối lượng nguyên tử oxygen đó bằng bao nhiêu?",
+      "correctAnswer": "Khối lượng của nguyên tử oxygen đó là 18amu:"
+    },
+    {
+      "id": "q_13_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 27.2,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "3.6. Hình 3.2 mô tả các nguyên tử X, Y, Z và T:\nHãy sử dụng Bảng 3.1 trang 21 SGK và cho biết các nguyên tử X, Y, Z, T thuộc các nguyên tố hoá học nào. Các nguyên tử nào có cùng số lớp electron?",
+      "correctAnswer": "Nguyên tử X là nguyên tử hydrogen; nguyên tử Y là nguyên tử helium; nguyên tử Zlà nguyên tử carbon; nguyên tử Tlà nguyên tử neon. Nguyên tử hydrogen và nguyên tử helium có số lớp electron; nguyên tử carbon và nguyên tử neon có số lớp electron. 95 ngoài, cùng cùng"
+    },
+    {
+      "id": "q_13_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 42.4,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "3.7. Cho biết số hiệu nguyên tử của đồng là 29, của bạc là 47, của vàng là 79. Hãy xác định số electron, số proton trong mỗi nguyên tử đồng, bạc, vàng. Em có xác định được số neutron trong hạt nhân các nguyên tử này không?",
+      "correctAnswer": "Trong nguyên tử; số electron = số proton = số hiệu nguyên tử. Như vậy: Trong nguyên tử số electron = số proton = 29. nguyên tử bạc, số electron = số proton = 47. Trong nguyên tử vàng; số electron = số proton = 79. Từ số electron chỉ xác định được số proton trong nguyên tử, không xác định số neutron"
+    },
+    {
+      "id": "q_13_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 57.6,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "3.8. Điền những thông tin còn thiếu để hoàn thiện bảng sau đây theo mẫu.\n\n| Nguyên tố | beryllium | silicon | calcium |\n|---|---|---|---|\n| Số hiệu nguyên tử | 4 | 14 | 20 |\n| Khối lượng nguyên tử (amu) | 9 | 28 | 40 |\n| Số proton | 4 | ..?.. | ..?.. |\n| Số neutron | 5 | ..?.. | ..?.. |\n| Số electron | 4 | ..?.. | ..?.. |\n| Sự sắp xếp electron vào lớp vỏ nguyên tử(*) | 2, 2 | ..?.. | ..?.. |\n\n(*): từ trái sang phải tương ứng với từ lớp trong ra lớp ngoài.",
+      "correctAnswer": "Nguyên tố beryllium silicon calcium Số hiệu nguyên tử 4 14 20 Khối lượng nguyên tử (amu) 9 28 40 Số proton 4 14 20 Số neutron 5 14 20 Số electron 4 14 20 Sựsắpxếpelectron vàolớp vỏ nguyên tử (từ trái sang tương với từ 2, 2 2, 8, 4 2,8, 8, 2 lớp trong ra lớp ngoài)"
+    },
+    {
+      "id": "q_13_5",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 72.8,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "3.9. Tất cả các nguyên tử thuộc cùng một nguyên tố hoá học có đặc điểm gì chung?",
+      "correctAnswer": "Tất cả các nguyên tử thuộc vể một nguyên tố hoá học đểu có cùng số hiệu nguyên tử (số proton), do đó có số electron."
+    }
+  ]
+}

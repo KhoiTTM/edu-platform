@@ -1,0 +1,65 @@
+{
+  "page": 20,
+  "elements": [
+    {
+      "id": "q_20_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "5.1. Một phân tử nước chứa hai nguyên tử hydrogen và một oxygen: Nước là A. một hợp chất. B.một đơn chất. C một hỗn hợp: D. một nguyên tố hoá",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "q_20_2",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 27.2,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "5.2. Đèn neon chứa A. các phân tử khí neon B. các nguyên tử neon (Ne) rẽ không liên kết với nhau C một đại phân tử khổng lổ chứa rất nhiểu nguyên tử neon. D.một nguyên tử neon:",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q_20_3",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 42.4,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "5.3. Một bình khí oxygen chứa A. các phân tử 02: B. các nguyên tử oxygen riêng rẽ không liên kết với nhau. C một đại phân tử khổng lổ chứa rất nhiểu nguyên tử oxygen: n U D.một phân tử 02.",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "q_20_4",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 57.6,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "5.4. Lõi dây điện chứa A. các phân tử B. các nguyên tử Cu rẽ không liên kết với nhau. C. rất nhiêu nguyên tử Cu liên kết với nhau: D. một nguyên tử Cu:",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "q_20_5",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 72.8,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "5.5. Cho các hình sau; trong đó mỗi vòng tròn biểu diễn 1 nguyên tử, các tròn đen và biểu diễn các nguyên tử của các nguyên tố hoá học khác nhau. 19 học Nez riêng bằng đổng Cuz' riêng trắng vòng",
+      "correctAnswer": "Hộp B chứa các phân tử của một đơn chất. Hộp C chứa các phân tử của một hợp chất. 100 duy ngân dùng bay tổng bằng Iớp ứng khung dựng"
+    }
+  ]
+}

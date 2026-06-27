@@ -1,0 +1,41 @@
+{
+  "page": 48,
+  "elements": [
+    {
+      "id": "q_48_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "17.2. Cẩn bố trí gương phẳng như thế nào để có ảnh ngược chiểu với vật?",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_48_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "17.3. Một vật nhỏ mũi tên AB đặt trước B' mộtgương phẳng choảnh AB' nhưHình 17.1 Em hãy vẽ Hình 17.1 vào vở và chỉ ra vị trí A A' của gương phẳng bằng hình vẽ Hình 17.1",
+      "correctAnswer": "Xem Hình 17.1G. Vận tính chất ảnh đối xứng với vật qua gương: vị trí gương phẳng G thoả mãn MB = MB' và NA = NA: Hình 17.1G"
+    },
+    {
+      "id": "q_48_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "17.4. Một người đặt mắt tại điểm Mtrước một gương phẳng để quan sát ảnh của bức tường phía sau lưng (Hình 17.2) M a) Vẽ hình chỉ ra khoảng PQ trên tường mà đó quan sát được NoT TRI Guong phẳng b) Nếu tiến lại gẩn gương thì khoảng PQ 8 0NG U tăng lên giảm đi? Hình 17.2 17.5*. Một người khi tư vấn lắp gương cho một của hàng quẩn áo, đã nói 'Muốn soi được toàn thân cẩn lắp gương phẳng có chiểu cao tối thiểu bằng chiêu 2 cao cơ thể\" Người đó nói không? Em hãy thích câu trả lời của mình. 17.6* Một người cao 1,60 m, đứng cách một vũng nước nhỏ trên mặt sân 2 m nhìn thấy ảnh của đỉnh một cột điện qua vũng nước. Khoảng cách từ vũng nước đến cột điện là 10 m (theo đường đi qua chỗ người đó và nước). Sử dụng thước học tập có ĐCNN đến mm, chọn tỉ xích cm với m, em hãy vẽ hình biểu diễn hiện tượng trên, từ đó xác định chiểu cao cột điện. Coi mắt cách đỉnh đẩu 10 cm. 47 gẩn dạng Tường người hay rằng:\" đúng giải thẳng đứng vũng ứng7",
+      "correctAnswer": "a) Xem Hình 17.2G. Tường Nguyên tắc chung: để quan sát được ảnh của vật qua gương thì tia sáng tới xuất phát từ vật, chiếu vào M gương cho tia phản xạ đi vào mắt người quan sát. Vẽ hai tia hạn của chùm phản xạ chiếu vào mắt (hai tia đi qua mép trên và mép dưới của gương) . Kéo dài hai tia sáng phản xạ cắt đường đối xứng với tường tại P' và Hình 17.2G Q';từ đó xác định được P (giới hạn trên) và Q (giới hạn dưới) mà mắt còn quan sát được qua gương. b) Nếu tiến lại gẩn gương thì khoảng PQ lên do góc tạo bởi hai tia giới hạn của chùm phản xạ chiếu vào mắt mở hơn: Đ 17.5*. Người đó nói đúng. Giải thích: xem Hình 17.3G. M M Để soi được đỉnh đẩu Đ thì tia sáng tới từ Đ qua mép gương O1 cho tia phản xạ qua mắt M. Để soi được bàn chân Cthì tia sáng tới từ C qua mép gương O2 cho tia sáng phản xạ qua mắt M. Hình 17.3G 118 dụng phải sáng giới thẳng tăng rộng sáng"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "page": 22,
+  "elements": [
+    {
+      "id": "q_22_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "5.10. Trong các hình vẽ dưới đây, các tròn có kích thước khác nhau biểu diễn các nguyên tử của các nguyên tố khác nhau. Hình vẽ nào biểu diễn khí hydrogen chloride? A B Hình 5.3",
+      "correctAnswer": "Hình C. Các hình A, D biểu diễn đơn chất, hình B biểu diễn hỗn 2 đơn chất, hình C biểu diễn chất (khí khí hydrogen chloride là chất) 5.11 . D Chất nguyên chất J| Chất Hỗn V Đơn chất chất Sắt X Đường ăn + Nước cất X Nước cam X Nước biển X Không khí trong X bóng Nhôm X Nước cất X 101 hợp, hợp Hợp Hợp Hợp học. Hợp hợp hợp hợp hợp Hợp quả bay"
+    },
+    {
+      "id": "q_22_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "5.12. Cho các cụm từ sau: nguyên tử, đơn chất, không thể, hoá học, hợpchất, vật lí, nguyên tố hoá học. Chọn một trong các cụm từ cho ở trên điển vào mỗi chỗ để hoàn thiện các câu sau (chú ý: một từ có thể sử dụng nhiểu lẩn hoặc không sử dụng) a) Đơn chất là chất chỉ chứa một loại ? b) Một đơn chất .? bị phân chia thành các đơn chất khác nữa c) Hợp chất là chất được tạo nên từhai nhiểu . ? khác nhau. Các nguyên tử trong hợp chất liên kết .? với nhau: 21 vòng hợp hợp Hợp bay trổng hay",
+      "correctAnswer": "a) Đơn chất là chất chỉ chứa một loại nguyên tử. b) Một đơn chất không thể bị phân chia thành các đơn chất khác nữa. c) chất là chất được tạo nên từ hai nhiểu nguyên tố hoá học. Các nguyên tử trong chất liên kết hoá học với nhau. d) Không thể phân tách hợp chất thành các đơn chất tạo nên chúng; hoặc phân tách thành các hợp chất khác các phương pháp vật lí. Tính chất của các hợp chất thường khác với tính chất của các đơn chất tạo nên chúng."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "page": 85,
+  "elements": [
+    {
+      "id": "q_85_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "37.8. Vận dụng những hiểu biết vể đời của sâu hại, đê xuất biện pháp phòng ngừa và diệt trừ sâu hại để bảo vệ mùa màng. Lấy ví dụ một loài cụ thể. BÀl 38. THỰC HÀNH: QUAN SÁT, MÔ TẢ SỰ SINH TRƯỞNG VÀ PHÁT TRIỂN Ở MỘT SỐ SINH VẬT",
+      "correctAnswer": "Để phòng ngừa và tiêu diệt sâu hại, cẩn tìm hiểu vòng đời của sâu hại; Cócác biện phápphù để tiêu diệt một giai đoạn trong vòng đời của chúng (tốt nhất là giai đoạn trứng hoặc ấu trùng); đánh giá mức độ thành công của biện pháp để có kế ch điểu chỉnh nhằm bảo vệ mùa màng tốt nhất."
+    },
+    {
+      "id": "q_85_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "38.2. Tại sao trước khi gieo hạt nên hạt trong nước ấm có nhiệt độ từ 35 % đến 40 %C? RETTOTTRTToC",
+      "correctAnswer": "Trước khi gieo nên hạt nước ấm (từ 35 % đến 40 %C) với mục đích cấp độ ẩm và nhiệt độ hợp cho hạt, giúp tăng trình hô hấp tế bào của hạt, phá vỡ trạng thái ngủ nghỉ của hạt, tạo điểu kiện thuận lợi để hạt nảy mẩm."
+    },
+    {
+      "id": "q_85_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "38.3. Thông qua hoạt gieo hạt và theo dõi sự biến đổi của cây từ giai đoạn hạt đến cây trưởng thành; em phân biệt biểu hiện của trình sinh trưởng và phát triển ở thực vật theo mẫu sau: Biểu hiện Quá trình sinh trưởng Quá trình phát triển Sự nảy mẩm Thân dài ra Số lượng lá tăng thêm Lá to lên Rễ dài ra Mọc chổi nách 84 vòng đúng trổng trổng sáng; ngâm động hãy quá",
+      "correctAnswer": "Biểu hiện Quá trình sinh trưởng Quá trình phát triển Sự nảy mẩm X Thân dài ra X Số lượng lá tăng thêm X Lá to lên X Rễ dài ra X Mọc chổi nách 137 a;4 - hợp năng dụng hay quá hay quá sáng phù sáng năng lượng, đúng dụng hợp hoạ ngâm trong phù quá cung"
+    }
+  ]
+}

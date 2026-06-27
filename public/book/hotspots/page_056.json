@@ -1,0 +1,17 @@
+{
+  "page": 56,
+  "elements": [
+    {
+      "id": "q_56_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "22.6. Ghép đặc điểm của lá phù hợp với vai trò trong quang hợp. Đặc điểm của lá Vai trò trong quang 1.Lớpbiểu bì lá có nhiểu khí khổng 2. Trên phiến lá có nhiểu lá a) Tăng khả năng hấp thụ ánh 3.Tế bào lá chứa nhiểu lục lạp b) Giúpvận chuyển nguyên liệu và sản phẩm 4. Diện tích bê mặt lớn của quang hợp c) Khí dễ dàng khuếch tán từ bên 5. Phiến lá có dạng bản ngoài vào bên trong lá và khí O2 hơi nước WIL khuếch tán từtrong lá ra ngoài môitrường",
+      "correctAnswer": "1 b; 3 - a;4 - a; 5 - a."
+    }
+  ]
+}

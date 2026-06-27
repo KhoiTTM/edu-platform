@@ -1,0 +1,149 @@
+{
+  "page": 15,
+  "elements": [
+    {
+      "id": "q_15_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 5.07
+      },
+      "label": "3.13.a. Hạt nhân nguyên tử Na có bao nhiêu hạt proton?",
+      "correctAnswer": "Hạt nhân nguyên tử Na có 11 proton."
+    },
+    {
+      "id": "q_15_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 18.33,
+        "width": 83.0,
+        "height": 5.07
+      },
+      "label": "3.13.b. Nguyên tử S có bao nhiêu electron?",
+      "correctAnswer": "Nguyên tử S có 16 electron. oton: TKUC"
+    },
+    {
+      "id": "q_15_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 24.67,
+        "width": 83.0,
+        "height": 5.07
+      },
+      "label": "3.13.c. Hạt nhân nguyên tử Cl có bao nhiêu hạt neutron?",
+      "correctAnswer": "Hạt nhân nguyên tử Cl có 18 hạt neutron. 0NG"
+    },
+    {
+      "id": "q_15_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 5.07
+      },
+      "label": "3.13.d. Các nguyên tử nào thuộc cùng một nguyên tố hoá học?",
+      "correctAnswer": "Hai nguyên tử Kcó khối lượng nguyên tử là 39 và 40, nhưng đểu có số hiệu nguyên tử là 19 nên đểu là nguyên tố K (kali)"
+    },
+    {
+      "id": "q_15_5",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 5.07
+      },
+      "label": "3.14.a. Hạt nhân của nguyên tử Ne có khối lượng 22 amu có bao nhiêu hạt proton và neutron?",
+      "correctAnswer": "Hạt nhân của nguyên tử Ne khối lượng 22amu có 10 proton và 12 neutron:"
+    },
+    {
+      "id": "q_15_6",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 43.67,
+        "width": 83.0,
+        "height": 5.07
+      },
+      "label": "3.14.b. Hãy giải thích vì sao hai loại nguyên tử đó đều thuộc cùng một nguyên tố hoá học Ne.",
+      "correctAnswer": "Vì các loại nguyên tửđó đểu có số proton trong hạt nhân là 10, nên chúng đểu thuộc nguyên tố hoá học Ne."
+    },
+    {
+      "id": "q_15_7",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 5.07
+      },
+      "label": "3.15.a. Kể tên 5 nguyên tố hoá học có trong không khí.",
+      "correctAnswer": "5 nguyên tố có trong không khí: nitơ; oxygen; carbon; argon, hydrogen:"
+    },
+    {
+      "id": "q_15_8",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 56.33,
+        "width": 83.0,
+        "height": 5.07
+      },
+      "label": "3.15.b. Kể tên 4 nguyên tố hoá học có trong nước biển.",
+      "correctAnswer": "4 nguyên tố có trong nước biển: hydrogen; oxygen; natri; chlorine (có thể kể thêm cả các nguyên tố calcium và magnesium)."
+    },
+    {
+      "id": "q_15_9",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 5.07
+      },
+      "label": "3.15.c. Kể tên 4 nguyên tố hoá học chiếm thành phần phần trăm khối lượng lớn nhất trong cơ thể con người.",
+      "correctAnswer": "4 nguyên tố hoá học chiếm trăm khối lượng lớn nhất của cơ thể con người: carbon, oxygen; hydrogen, nitơ: 97 gọi , gọi gọi cùng phẩn"
+    },
+    {
+      "id": "q_15_10",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 5.07
+      },
+      "label": "4.1. Nhà bác học Men-đê-lê-ép là người nước nào? Các nguyên tố hoá học trong bảng tuần hoàn do ông xây dựng được sắp xếp theo nguyên tắc nào?",
+      "correctAnswer": "Nhàbác học Men-đê-lê-ép là người nước Nga. Các nguyên tố hoá học trong tuẩn hoàn do xây được sắp xếp theo chiểu dẩn khối Iượng nguyên tử."
+    },
+    {
+      "id": "q_15_11",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 75.33,
+        "width": 83.0,
+        "height": 5.07
+      },
+      "label": "4.2.a. Bảng tuần hoàn của Men-đê-lê-ép sắp xếp các nguyên tố theo chiều ..(1).. nguyên tử.",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_15_12",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 81.67,
+        "width": 83.0,
+        "height": 5.07
+      },
+      "label": "4.2.b. Ngày nay, bảng tuần hoàn các nguyên tố hoá học sắp xếp các nguyên tố theo chiều ..(2).. nguyên tử. Các nguyên tố ..(3).. có cùng số lớp electron trong nguyên tử, còn các nguyên tố ..(4).. có tính chất gần giống nhau.",
+      "correctAnswer": ""
+    }
+  ]
+}

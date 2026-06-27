@@ -1,0 +1,29 @@
+{
+  "page": 47,
+  "elements": [
+    {
+      "id": "q_47_1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "16.1. Chỉ ra phát biểu sai. A. Ánh bị hắt trở lại khi gặp mặt cách là hiện tượng Xạ ánh sáng. B. Phản xạ ánh sáng chỉ xảy ra trên mặt gương: C. Tia sáng xạ nằm trong mặt phẳng chứa tia sáng tới và pháp tuyến tại điểm tới. D.Góc phảnxạ làgóc tạo bởi tia sáng phản xạ và đường pháp tuyến tại điểm tới. 16.2*. Sắp xếp các thao tác thí nghiệm sau sao cho thứ tự để rút ra mối quan hệ giữa tới và góc phản xạ trong hiện tượng xạ ánh Di chuyển đèn để có trị góc tới 109, quan sát tia sáng phản xạ, đọc góc xạ, ghi vào số liệu. (1) Bật đèn chiếu tia tới, quan sát tia phản xạ. (2) So sánh góc phản xạ và góc tới. Rút ra kết luận vể quan hệ phản xạ và góc tới. (3) Điêu chỉnh vị trí đèn để góc tới; đọc giá trị góc phản xạ tương ghi vào số liệu: Lặp lại thí nghiệm với 4 lẩn các - trịkhác nhau của 'góctới (4)",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q_47_2",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "16.3. Chiếu một tia sáng tới chếch một góc 20\" vào một gương phẳng (Hình 16.1) ta được tia sáng phản xạ tạo với tia tới một góc RTTỨ C 20 A. 409. B. 709. C. 800 D. 140\" Hình 16.1 V LG 16.4 Một tia mặt trời buổi sáng lọt qua khe cửa chếch 45\" so với mặt đất (coi mặt đất nằm ngang). Cân đặt gương phẳng như thế nào để thu được tia sáng phản xạ rọi thẳng đứng vào một bể cá dưới nển nhà: Vẽ hình.",
+      "correctAnswer": "D"
+    }
+  ]
+}

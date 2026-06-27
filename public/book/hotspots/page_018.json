@@ -1,0 +1,101 @@
+{
+  "page": 18,
+  "elements": [
+    {
+      "id": "q_18_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.17. Biết nguyên tố P ở nhóm VA, chu kì 3. Hãy cho biết nhận định sau đúng hay sai và giải thích: \"Nguyên tử P có 5 lớp electron và 3 electron ở lớp ngoài cùng\".",
+      "correctAnswer": "Nhận định đó sai vì nguyên tử P có 3 lớp electron và 5 electron ở lớp cùng."
+    },
+    {
+      "id": "q_18_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 21.5,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.18. Trong tự nhiên có khoảng 25 nguyên tố cần thiết cho sự sống. Trong đó nguyên tố X (thuộc nhóm VIIA, chu kì 5 trong bảng tuần hoàn) là nguyên tố vi lượng mà hằng ngày con người cần khoảng 0,15 miligam cho hoạt động của tuyến giáp, nếu thiếu nguyên tố X có thể gây bướu cổ. Dựa vào bảng tuần hoàn hãy cho biết kí hiệu hoá học, tên nguyên tố, số hiệu và khối lượng nguyên tử của nguyên tố X.",
+      "correctAnswer": "Nguyên tố Xcó kí hiệu hoá học là I, tên nguyên tố: iodine; số hiệu: 53, khối nguyên tử 127 amu."
+    },
+    {
+      "id": "q_18_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.19. Nguyên tố X (Z = 11) là nguyên tố có trong thành phần của muối ăn. Hãy cho biết tên nguyên tố X và vẽ mô hình sắp xếp electron ở vỏ nguyên tử X. X có bao nhiêu lớp electron, bao nhiêu electron ở lớp ngoài cùng? Từ đó cho biết X thuộc chu kì nào, nhóm nào trong bảng tuần hoàn?",
+      "correctAnswer": "X là natri (Na). Nguyên tử X có 3 lớp electron; 1 electron ở lớp ngoài X thuộc chu kì 3, nhóm IA. Mô hình sắp xếp electron ở vỏ nguyên tử của nguyên tố X: Na"
+    },
+    {
+      "id": "q_18_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 40.5,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.20. Nguyên tố X (Z = 20) là thành phần không thể thiếu trong sản phẩm sữa. Sự thiếu hụt một lượng rất nhỏ của X trong cơ thể đã ảnh hưởng tới sự hình thành và phát triển của xương và răng, nhưng nếu cơ thể thừa nguyên tố X lại có thể dẫn đến bệnh sỏi thận. Hãy cho biết tên nguyên tố X và vẽ mô hình sắp xếp electron ở vỏ nguyên tử X. X có bao nhiêu lớp electron, bao nhiêu electron ở lớp ngoài cùng. Từ đó cho biết X thuộc chu kì nào, nhóm nào trong bảng tuần hoàn.",
+      "correctAnswer": "Xlà calcium (Ca). Mô hình sắp xếp electron ở vỏ nguyên tử của X: KE FhỨc uúummCsÃNG Nguyên tử Xcó 4 lớp electron; 2 electron ở lớp ngoài cùng. X thuộc chu kì 4, nhóm IIA trong bảng tuân hoàn."
+    },
+    {
+      "id": "q_18_5",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.21. Dựa vào bảng tuần hoàn, hãy cho biết trong số các nguyên tố: Na, K, Mg, Ba, Be, B, C, N, O, Ar, những nguyên tố nào thuộc cùng chu kì, đó là chu kì nào?",
+      "correctAnswer": "Các nguyên tố Na, Mg, Ar thuộc chu kì 3 Các nguyên tố Be, B, C, N, 0 thuộc chu kì 2"
+    },
+    {
+      "id": "q_18_6",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 59.5,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.22. Dựa vào bảng tuần hoàn, hãy cho biết trong số các nguyên tố: Na, K, Mg, Ba, Be, B, C, N, O, Ar, những nguyên tố nào thuộc cùng một nhóm, đó là nhóm nào?",
+      "correctAnswer": "Các nguyên tố Na, Kthuộc nhóm IA; các nguyên tố Mg, Ba, Be thuộc nhóm IIA."
+    },
+    {
+      "id": "q_18_7",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.23. Dựa vào bảng tuần hoàn, hãy cho biết trong số các nguyên tố: Na, Cl, Fe, K, Kr, Mg, Ba, C, N, S, Ar, những nguyên tố nào là kim loại. Những nguyên tố nào là phi kim? Những nguyên tố nào là khí hiếm?",
+      "correctAnswer": "a) Các nguyên tố Na, Fe, K, Mg; Ba là kim loại. b) Các nguyên tố CI, C, N, S là phi kim: c) Các nguyên tố khí hiếm là Kr, Ar. 99 ngoài lượng cùng: cùng cùng cùng cùng"
+    },
+    {
+      "id": "q_18_8",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 78.5,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.24. Hãy tìm hiểu và cho biết:\na) Tên và kí hiệu hoá học của nguyên tố kim loại duy nhất tồn tại ở thể lỏng, ở điều kiện thường. Dựa vào bảng tuần hoàn, hãy cho biết nguyên tố đó ở ô số bao nhiêu.",
+      "correctAnswer": "a) Nguyên tố kim loại nhất tổn tại ở thể lỏng ở điểu kiện thường là Hg, thuỷ (mercury) ô số 80. b) Nguyên tố kim loại có trong thành phẩn của hemoglobin là Fe, sắt. Mộtsố ứng dụng trong đời sống của kim loại sắtlà làm vật liệu xây dựng; làm đổ cá nhân như dao; kéo; móc quẩn á0,; làm đổ nội thất như khung cửa, cẩu thang C) Nguyên tố khí hiếm được dùng để bơm vào bóng hoặc khinh khí câu là helium, He."
+    }
+  ]
+}

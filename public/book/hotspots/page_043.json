@@ -1,0 +1,17 @@
+{
+  "page": 43,
+  "elements": [
+    {
+      "id": "q_43_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "14.8. Người ta dụng hiện tượng phản xạ âm để đo độ sâu của biển. âm có tân số cao (siêu âm) từ con tàu trên mặt biển phát ra truyển phát và tới đáy biển (Hình 14.3). Tại đó sóng thu sóng âm âm bị phản xạ trở lại và được một Đường truyển của sóng âm thiết bị trên tàu ghi lại. Trong một truyển đi phép đo độ sâu của đáy biển người ta 7 và phản xạ ghi lại được từlúc phát ra siêu âm đến S 0nG khi nhận được âm phản xạ là 1,2 s. Biết tốc độ truyển âm trong nước biển là Đáy biển 1 500 m/s. Tính độ sâu của đáy biển. Hình 14.3",
+      "correctAnswer": "Độ sâu của đáy biển: h = 900 m 2 2"
+    }
+  ]
+}

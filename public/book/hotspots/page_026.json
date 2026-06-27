@@ -1,0 +1,29 @@
+{
+  "page": 26,
+  "elements": [
+    {
+      "id": "q_26_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "6.10. Điên các số thích hợp vào các ô còn để hoàn thành sau: Sự sắp xếp Nguyên Số hiệu Khối lượng Số Số electron tố nguyên tử nguyên tử proton neutron trong các lớp 2 12 H 0",
+      "correctAnswer": "Số hiệu Khối Sựsắpxếp Nguyên Số Số nguyên lượng electron trong tố proton neutron tử nguyên tử các lớp 6 12 2, 4 H"
+    },
+    {
+      "id": "q_26_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "6.13. Đơn chất magnesium và đơn chất chlorine phản ứng với nhau tạo thành hợp chất magnesium chloride; là hợp chất có cấu trúc tinh thể a) Vẽ sơđổ môtả sựhình thành liên kết ion trong chất MgCI2 từ các nguyên tử Mg và Cl (xem hình 6.2, trang 37 SGK). Cho biết số proton trong hạt nhân của Mg là 12 và của Cl là 17. b) Lậpbảng mô tả một số tính chất của đơn chất magnesium; đơn chất chlorine và hợp chất magnesium chloride Các tính chất bao gổm: (i) thể của chất ở nhiệt độ phòng (25 %C). (ii) tính tan trong nước (hoặc phản ứng với nước) (iii) màu sắc. (iv) tính dẫn điện: 25 trống bảng dụng CO2' giải hay nóng hợp",
+      "correctAnswer": "a) Sơ đổ mô tả sự hình thành liên kết ion trong hợp chất MgCI2 từ các nguyên tử Mg và CI: 17 4+12 +12 ion Mg?+ Nguyên tử Mg 17 Hai nguyên tử CI Hai ion CI b) mô tả một số tính chất của đơn chất magnesium; đơn chất chlorine và chất magnesium chloride. Chất Tính tan 1 Thể (ở 25 %C) Màu sắc Tính dẫn điện Tính chất trong nước Magnesium Rắn Không tan Dẫn điện Chlorine Khí Ít tan Vàng Không dẫn điện Magnesium Dẫn điện khi tan Rắn Tan nhiêu Trắng chloride trong nước"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "page": 16,
+  "elements": [
+    {
+      "id": "q_16_1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.3. Phát biểu nào sau đây là đúng?",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "q_16_2",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 24.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.6. Phát biểu nào sau đây không đúng?",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q_16_3",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.7. Phát biểu nào sau đây là đúng?",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q_16_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.4. Dựa vào bảng tuần hoàn hãy cho biết kí hiệu hoá học, tên nguyên tố, số hiệu nguyên tử và khối lượng nguyên tử của các nguyên tố ở ô số 3, 9.",
+      "correctAnswer": "Kí hiệu hoá học, tên nguyên tố, số hiệu và khối nguyên tử của các nguyên tố ở ô số 3,9 lẩn lượt là: Ôsố 3:kí hiệu hoá học Li; tên nguyên tố lithium; số hiệu nguyên tử 3 và khối nguyên tử 7 amu. Ôsố 9:kí hiệu hoá học F, tên nguyên tố fluorine; số hiệu nguyên tử 9 và khối lượng nguyên tử 19 amu:"
+    },
+    {
+      "id": "q_16_5",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.5. a) ..?. chính là số thứ tự của nguyên tố trong bảng tuần hoàn.\nb) Nguyên tử của các nguyên tố thuộc cùng chu kì có cùng ..?..\nc) Nguyên tử của các nguyên tố cùng nhóm A có ..?.. bằng nhau.",
+      "correctAnswer": "a) Số hiệu nguyên tử. b) số lớp electron. c) số electron ở lớp ngoài cùng:"
+    },
+    {
+      "id": "q_16_6",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 75.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "4.8. Bảng tuần hoàn các nguyên tố hoá học gồm các nguyên tố kim loại, ..(1).. và khí hiếm. Trong đó nguyên tố ..(2).. chiếm đến 80% tổng số nguyên tố.",
+      "correctAnswer": "(1) phi kim; (2) kim im loại NỔ] TRI THUC"
+    }
+  ]
+}

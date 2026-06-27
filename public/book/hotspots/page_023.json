@@ -1,0 +1,41 @@
+{
+  "page": 23,
+  "elements": [
+    {
+      "id": "q_23_1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "5.14. Hình 5.4 mô tả một phân tử chứa carbon, hydrogen và oxygen. carbon hydrogen oxygen Hình 5.4 Số nguyên tử của mỗi nguyên tố carbon, hydrogen và oxygen có trong một phân tử chất này lẩn lượt là A. 1, 6, 2 B. 2,5, 1. C. 2,6, 1. D. 6, 2, 1",
+      "correctAnswer": "€."
+    },
+    {
+      "id": "q_23_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "5.15. Cho ba nguyên tố hoá học là carbon (C), hydrogen (H) và oxygen (O). Sự kết hợp giữa hai số ba nguyên tố, hoặc giữa ba nguyên tố hoá học này với nhau tạo ra rất nhiêu chất. Hãy tính khối | phân tử và phẩn trăm khối lượng của mỗi nguyên tố trong các chất sau: a) CO2 (khí carbon dioxide; là khí cẩn thiết cho quá trình quang hợp) b) CH4 (methane; là thành phẩn chính của khí thiên nhiên). c) C12H220n1 (đường ăn) Cuug SuNg (Biết khối lượng nguyên tử của các nguyên tố: C = 12;H = 1;0 = 16).",
+      "correctAnswer": "a) Khối lượng phân tử CO2: M =12 + 2.16 = 44 (amu) Thành phẩn phẩn trăm vể khối lượng mỗi nguyên tố: 12 %C = 100% 27,3%; 44 2 .16 %0 = 1009 ~ 72,7%. 44 b) Khối lượng phân tử CH4; M=12+4.1 = 16 (amu) . Thành phẩn phẩn trăm vể khối mỗi nguyên tố: KE %C 12 1009 75%; 16 V O%h 421.1009 = 25%. G 16 c) Khối lượng tử C12H22011: M =12.12 + 22.1 + 11.16 = 342 (amu) Thành phẩn phẩn trăm vể khối lượng mỗi nguyên tố: 12 .12 %C 1009 ~ 42,1%; 342 22 1 %H = 1009 ~ 6,4%; 342 11.16 %0 = 100% ~ 51,5% 342 102 hay Hợp hợp bằng lượng phân"
+    },
+    {
+      "id": "q_23_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "5.16. Hãy tìm hiểu và cho biết vì sao buckminsterfullerene và carbon nanotube (Hình 5.5) đểu là đơn chất carbon? a) buckminsterfullerene b) carbon nanotube Hình 5.5 22 hợp hợp phân ứng 1,2 9. trong hợp Iượng hợp",
+      "correctAnswer": "Vì buckminsterfullerene và carbon nanotube chỉ chứa một loại nguyên tửcarbon, nên chúng cũng là đơn chất carbon."
+    }
+  ]
+}

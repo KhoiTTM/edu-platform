@@ -1,0 +1,53 @@
+{
+  "page": 14,
+  "elements": [
+    {
+      "id": "q_14_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "3.10. Điền kí hiệu hóa học vào bảng sau:\n\nTên nguyên tố | Kí hiệu hoá học của nguyên tố\n---|---\nCalcium |\nCarbon |\nOxygen |\nNitơ |\nBeryllium |\nHydrogen |\nKali (potassium) |\nNeon |\nChlorine |\nSắt (iron) |",
+      "correctAnswer": "Tên nguyên tố Kí hiệu hoá học của nguyên tố Calcium 1 Ca Carbon C Oxygen 0 Nitơ N Beryllium Be Hydrogen H Kali K Neon Ne Chlorine CI Sắt Fe 96 đổng Trong được phải ứng7 cùng"
+    },
+    {
+      "id": "q_14_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "3.11a. Phần trăm của các nguyên tố hoá học ngoài hydrogen và helium có trong Mặt Trời là bao nhiêu?",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_14_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "3.11b. Một trong các nguyên tố khác có trong Mặt Trời là neon. Hạt nhân nguyên tử neon có 10 proton. Hãy cho biết số electron trong lớp vỏ nguyên tử neon. Hãy vẽ mô hình mô tả nguyên tử neon.",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_14_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "3.12. Em hãy tìm hiểu và cho biết vì sao một số nguyên tố hoá học có kí hiệu không chứa chữ cái đầu tiên trong tên gọi của chúng. Ví dụ: kí hiệu hoá học của nguyên tố sodium (natri) là Na.",
+      "correctAnswer": "Kí hiệu hoá học là một hoặc hai chữ cái trong tên của nguyên tố, trong đó chữ cái đẩu in hoa và chữ cái sau in thường: Một số nguyên tố có tên gọi hiện nay theo IUPAC và tên ban đẩu không giống nhau; nên kí hiệu hoá học không chứa chữ cái đẩu trong tên theo IUPAC của chúng:. Ví dụ: Nguyên tố hoá học sodium; trước đây được gọi là natrum theo tiếng Ả Rập; \"natrum nghĩa là muối tự nhiên, bởi vì nguyên tố này có trong thành phẩn của muối ăn, do đó nó có kí hiệu hoá học là Na"
+    }
+  ]
+}

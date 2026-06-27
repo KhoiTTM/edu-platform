@@ -1,0 +1,53 @@
+{
+  "page": 69,
+  "elements": [
+    {
+      "id": "q_69_1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "30.2. Ở thực vật; các chất nào dưới đây thường được vận chuyển từ rễ lên lá? A. Chất hữu cơ và chất khoáng: B. Nước và chất khoáng: C. Chất hữu cơ và nước. D. Nước, chất hữu cơ và chất khoáng.",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q_69_2",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "30.3. Trong các loài thực vật sau loài nào có rễ dài nhất? A. Cây dừa. B. Cây cà chua. C. Cây cỏ lạc đà. D. Cây lúa nước.",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "q_69_3",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "30.4. Hiện tượng nào dưới đây cho thấy sự vận chuyển chất hữu cơ theo mạch rây từ lá đến các bộ phận khác của cây? A. Mép lá có các giọt nước nhỏ vào những ngày ẩm không khí cao. B. Khi cắt bỏ một khoanh vỏ ở thân cây thì sau một thời gian, phẩn mép vỏ phía trên bị phình to. C Lá cây bị héo quắt do Mặt Trời đốt nóng. D. Nhựa rỉ ra từ gốc cây bị chặt bỏ thân.",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q_69_4",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "30.5. Nhu cẩu nước của cây thấp nhất trong điểu kiện thời tiết nào dưới đây? A. Mùa hè, nhiệt độ cao, độ ẩm trung bình: B. Mùa thu; nhiệt độ trung bình, độ ẩm trung bình. C. Mùa đông; nhiệt độ thấp; độ ẩm thấp. D. Mùa xuân, nhiệt độ trung bình, độ ẩm cao. 68 Lông đây, na ngày độ =",
+      "correctAnswer": "D"
+    }
+  ]
+}
