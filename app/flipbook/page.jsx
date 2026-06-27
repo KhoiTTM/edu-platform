@@ -26,6 +26,33 @@ export default function FlipbookPage() {
       .then((res) => res.json())
       .then((data) => {
         setMetadata(data);
+        
+        // Handle URL search parameters to jump to target page/lesson
+        const params = new URLSearchParams(window.location.search);
+        const pageParam = params.get('page');
+        const lessonParam = params.get('lesson');
+
+        if (pageParam) {
+          const pageNum = parseInt(pageParam);
+          const idx = data.pages.findIndex(p => p.id === pageNum);
+          if (idx !== -1) setCurrentPageIndex(idx);
+        } else if (lessonParam) {
+          // If lesson is provided, we can look inside pages content or metadata to find matching lesson label
+          // Map Lesson 1 to page 5, Lesson 2 to page 9, Lesson 3 to page 10, Lesson 4 to page 33, Lesson 5 to page 77, etc.
+          const lessonNum = parseInt(lessonParam);
+          const lessonPageMap = {
+            1: 5,
+            2: 9,
+            3: 10,
+            4: 33,
+            5: 77
+          };
+          const targetPage = lessonPageMap[lessonNum];
+          if (targetPage) {
+            const idx = data.pages.findIndex(p => p.id === targetPage);
+            if (idx !== -1) setCurrentPageIndex(idx);
+          }
+        }
       })
       .catch((err) => console.error('Failed to load book metadata', err));
   }, []);

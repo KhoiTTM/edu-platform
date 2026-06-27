@@ -115,12 +115,37 @@ function AssessmentContent() {
     (subjectSlug === "tieng_anh" || subjectSlug === "mindset-ielts") && 
     (examTitle.toLowerCase().includes("unit") || examTitle.toLowerCase().includes("bài") || examId?.startsWith("sbt-"));
 
+  const isKHTNWorkbook =
+    grade === 7 &&
+    subjectSlug === "khtn" &&
+    (examTitle.toLowerCase().includes("bài") || examId?.startsWith("bai-"));
+
+  useEffect(() => {
+    if (!isLoading && isKHTNWorkbook) {
+      // Redirect to flipbook with query param
+      const match = examTitle.match(/bài\s+(\d+)/i);
+      const pageNum = match ? match[1] : "1";
+      // Let's redirect to flipbook and let the flipbook component handle jumping to the correct page index
+      // Map lesson numbers to page numbers in metadata if needed, but for now redirecting to /flipbook
+      window.location.href = `/flipbook?lesson=${pageNum}`;
+    }
+  }, [isLoading, isKHTNWorkbook, examTitle]);
+
   if (isLoading) {
     return (
         <div className="flex flex-col items-center justify-center py-20">
             <div className="w-12 h-12 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin"></div>
             <p className="mt-4 font-bold text-slate-500">Loading Exam Questions...</p>
         </div>
+    );
+  }
+
+  if (isKHTNWorkbook) {
+    return (
+      <div className="flex flex-col items-center justify-center py-20 text-white">
+        <div className="w-12 h-12 border-4 border-violet-500 border-t-transparent rounded-full animate-spin"></div>
+        <p className="mt-4 font-extrabold text-slate-400">Đang chuyển hướng sang sách bài tập Flipbook...</p>
+      </div>
     );
   }
 

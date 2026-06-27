@@ -216,6 +216,14 @@ export default function SubjectMapPage() {
             {subjectName} {gradeNum ? `- Lớp ${gradeNum}` : ''}
         </div>
         <div className="flex items-center gap-4 font-bold">
+          {subject === "khtn" && gradeNum === 7 && (
+            <Link
+              href="/flipbook"
+              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white font-extrabold text-xs shadow-lg shadow-indigo-500/20 transition-all active:scale-95 border border-indigo-500/30"
+            >
+              📚 Mở Sách Bài Tập (Flipbook)
+            </Link>
+          )}
           <div className="text-amber-400 flex items-center gap-1 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)]">
             🔥 12 Days
           </div>
