@@ -19,7 +19,7 @@ export default function SubjectMapPage() {
   const [volumes, setVolumes] = useState<any[]>([]);
   const [reviews, setReviews] = useState<any[]>([]);
   const [reflexes, setReflexes] = useState<any[]>([]);
-  const [activeTab, setActiveTab] = useState<'lesson' | 'review' | 'reflex'>('lesson');
+  const [activeTab, setActiveTab] = useState<'lesson' | 'review' | 'reflex' | 'sbt'>('lesson');
   const [completedExams, setCompletedExams] = useState<string[]>([]);
   const [collapsedUnits, setCollapsedUnits] = useState<Record<string, boolean>>({});
   const [isLoading, setIsLoading] = useState(true);
@@ -218,7 +218,7 @@ export default function SubjectMapPage() {
         <div className="flex items-center gap-4 font-bold">
           {subject === "khtn" && gradeNum === 7 && (
             <Link
-              href="/flipbook"
+              href="/flipbooks/khtn-7-sbt"
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white font-extrabold text-xs shadow-lg shadow-indigo-500/20 transition-all active:scale-95 border border-indigo-500/30"
             >
               📚 Mở Sách Bài Tập (Flipbook)
@@ -275,6 +275,19 @@ export default function SubjectMapPage() {
               >
                 💥 Luyện tập phản xạ
               </button>
+              {subject === 'khtn' && gradeNum === 7 && (
+                <button
+                  onClick={() => setActiveTab('sbt')}
+                  className={clsx(
+                    "px-6 py-2.5 rounded-xl text-sm font-black transition-all duration-200 select-none",
+                    activeTab === 'sbt' 
+                      ? "bg-gradient-to-r from-violet-500 to-indigo-600 text-white shadow-lg shadow-indigo-500/20" 
+                      : "text-slate-400 hover:text-white"
+                  )}
+                >
+                  📚 Luyện tập theo Sách bài tập
+                </button>
+              )}
             </div>
           </div>
         )}
@@ -730,6 +743,39 @@ export default function SubjectMapPage() {
         {!isLoading && activeTab === 'reflex' && reflexes.length === 0 && (
           <div className="text-center py-20 text-slate-400 font-bold text-xl border-2 border-dashed border-slate-700 rounded-2xl bg-slate-800/30">
             Không tìm thấy đề luyện phản xạ cho môn học này.
+          </div>
+        )}
+
+        {/* Tab Content: SBT Flipbook */}
+        {!isLoading && activeTab === 'sbt' && (
+          <div className="max-w-3xl mx-auto mt-6">
+            <motion.div
+              initial={{ opacity: 0, y: 15 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="p-8 rounded-3xl bg-gradient-to-br from-slate-900 via-indigo-950/40 to-slate-900 border border-indigo-500/20 backdrop-blur-md shadow-2xl flex flex-col items-center text-center gap-6 relative overflow-hidden group"
+            >
+              <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl group-hover:bg-indigo-500/15 transition-all duration-300"></div>
+              
+              <div className="w-20 h-20 rounded-2xl bg-gradient-to-r from-violet-500 to-indigo-600 flex items-center justify-center text-4xl shadow-lg shadow-indigo-500/30">
+                📚
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-violet-300 to-indigo-300 uppercase tracking-wider">
+                  Sách bài tập tương tác
+                </h3>
+                <p className="text-slate-300 font-bold mt-3 text-sm leading-relaxed max-w-md mx-auto">
+                  Luyện tập các bài tập trong Sách bài tập Khoa học tự nhiên 7 trực tiếp trên sách số tương tác. Làm bài và xem đáp án ngay lập tức.
+                </p>
+              </div>
+
+              <Link
+                href="/flipbooks/khtn-7-sbt"
+                className="mt-4 px-8 py-3.5 rounded-2xl bg-gradient-to-r from-violet-600 to-indigo-600 hover:from-violet-500 hover:to-indigo-500 text-white font-extrabold text-sm shadow-xl shadow-indigo-500/20 hover:shadow-indigo-500/30 border border-indigo-500/30 hover:scale-105 transition-all duration-200 active:scale-95"
+              >
+                📖 Mở Sách bài tập (Flipbook)
+              </Link>
+            </motion.div>
           </div>
         )}
       </div>

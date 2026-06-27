@@ -122,12 +122,9 @@ function AssessmentContent() {
 
   useEffect(() => {
     if (!isLoading && isKHTNWorkbook) {
-      // Redirect to flipbook with query param
       const match = examTitle.match(/bài\s+(\d+)/i);
       const pageNum = match ? match[1] : "1";
-      // Let's redirect to flipbook and let the flipbook component handle jumping to the correct page index
-      // Map lesson numbers to page numbers in metadata if needed, but for now redirecting to /flipbook
-      window.location.href = `/flipbook?lesson=${pageNum}`;
+      window.location.href = `/flipbooks/khtn-7-sbt?lesson=${pageNum}`;
     }
   }, [isLoading, isKHTNWorkbook, examTitle]);
 

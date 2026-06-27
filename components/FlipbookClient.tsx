@@ -221,7 +221,25 @@ export default function FlipbookClient({ bookSlug }: FlipbookClientProps) {
     <div className="app-container">
       {/* Header */}
       <header className="app-header">
-        <div className="header-logo">
+        <div className="header-logo" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <button 
+            onClick={() => window.location.href = '/luyen-tap/khtn?grade=7'}
+            style={{
+              backgroundColor: '#18181b',
+              color: '#d4d4d8',
+              border: '1px solid #27272a',
+              padding: '6px 12px',
+              borderRadius: '8px',
+              fontSize: '12px',
+              fontWeight: 600,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px'
+            }}
+          >
+            ⬅ Quay lại Luyện tập
+          </button>
           <span className="header-title">{metadata.title}</span>
           <span className="header-badge">Split View (60:40)</span>
         </div>
