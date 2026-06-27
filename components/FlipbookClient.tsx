@@ -93,7 +93,7 @@ export default function FlipbookClient({ bookSlug }: FlipbookClientProps) {
 
   // Fetch hotspots and load answers from localStorage
   useEffect(() => {
-    if (!metadata) return;
+    if (!metadata || !metadata.pages || !metadata.pages[currentPageIndex]) return;
     const pageNum = metadata.pages[currentPageIndex].id;
     const pageStr = String(pageNum).padStart(3, '0');
 
