@@ -226,6 +226,39 @@ quiz_attempts: id, user_id, quiz_id, score, total, created_at
 | `lesson_index` | Số thứ tự bài |
 | `start_time`, `end_time` | TIME |
 
+#### `flipbooks` — metadata chung của các sách bài tập tương tác (Flipbook)
+| Cột | Kiểu | Ghi chú |
+|-----|------|---------|
+| `id` | uuid PK | Tự động sinh |
+| `slug` | varchar(100) UNIQUE | e.g. `khtn-7-sbt`, `tieng-anh-7-sbt` |
+| `title` | varchar(255) | Tên sách hiển thị |
+| `grade` | integer | Lớp học (e.g. 7) |
+| `subject_slug` | varchar(100) | Slug môn học (e.g. `khtn`) |
+| `total_pages` | integer | Tổng số trang sách |
+
+#### `flipbook_pages` — hình ảnh và nội dung OCR từng trang sách
+| Cột | Kiểu | Ghi chú |
+|-----|------|---------|
+| `id` | uuid PK | Tự động sinh |
+| `flipbook_id` | uuid FK | Liên kết bảng `flipbooks` |
+| `page_number` | integer | Số trang tương ứng (1-indexed) |
+| `image_url` | varchar(512) | Đường dẫn CDN/Google Drive hình ảnh trang |
+| `ocr_content` | text | Nội dung văn bản thô (tuỳ chọn) |
+
+*Mối quan hệ:* `UNIQUE(flipbook_id, page_number)`.
+
+#### `flipbook_hotspots` — toạ độ và nội dung câu hỏi tương tác trên từng trang
+| Cột | Kiểu | Ghi chú |
+|-----|------|---------|
+| `id` | uuid PK | Tự động sinh |
+| `flipbook_id` | uuid FK | Liên kết bảng `flipbooks` |
+| `page_number` | integer | Số trang chứa điểm tương tác |
+| `hotspot_id` | varchar(100) | Định danh duy nhất của hotspot (e.g. `q_15_1`) |
+| `type` | varchar(50) | Kiểu tương tác (`link`, `input`, `mcq`, `audio`) |
+| `bbox` | jsonb | Tỷ lệ toạ độ và kích thước khung dạng `%` `{x, y, width, height}` |
+| `label` | text | Gợi ý/Tiêu đề nhỏ của câu hỏi |
+| `correct_answer` | text | Đáp án chuẩn hoặc số trang đích (đối với `link`) |
+
 ---
 
 ## 5. Authentication & Middleware
@@ -412,6 +445,24 @@ export const TOAN_GRADE3_TERM_START = "2026-06-01"
         - Floating: DictionaryPopup
         - Right panel: AITeacherChat (hybrid scripted + Gemini)
 ```
+
+### Học sinh lớp 7 — Luyện tập Sách bài tập tương tác (Flipbook)
+
+```
+/luyen-tap/khtn?grade=7 
+    → click tab "Luyện tập theo Sách bài tập"
+    → click "Mở Sách bài tập (Flipbook)" hoặc click đề bài tập dạng "Bài 1..." ở tab Bài học
+    → Chuyển hướng sang /flipbooks/khtn-7-sbt (định tuyến động)
+        - API /api/flipbooks/[bookSlug]/metadata: Lấy thông tin sách & danh sách trang
+        - API /api/flipbooks/[bookSlug]/hotspots/[pageNum]: Lấy toạ độ điểm tương tác câu hỏi
+        - Giao diện FlipbookClient.tsx (Split layout 60:40)
+        - Left Panel: Render hình ảnh trang sách + vẽ các hotspot tương tác (mcq, input, link, audio)
+        - Right Panel: Hiển thị các ô nhập đáp án tương ứng
+        - Header: Nút "Quay lại Luyện tập" điều hướng trở lại dashboard luyen-tap
+```
+
+**Cơ chế dự phòng (Local Fallback):**
+Để tăng tính ổn định khi chạy Local/Development hoặc khi Supabase chưa kịp chạy migrations, hai API route chính của Flipbook (`/api/flipbooks/[bookSlug]/metadata` và `/api/flipbooks/[bookSlug]/hotspots/[pageNum]`) đã được tích hợp cơ chế tự động phát hiện lỗi DB hoặc bảng trống. Nếu có lỗi xảy ra, API sẽ tự động đọc ngược dữ liệu tĩnh từ thư mục `public/book/metadata.json` và `public/book/hotspots/page_XXX.json` để giao diện luôn chạy mượt mà.
 
 ---
 
