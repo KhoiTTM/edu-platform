@@ -331,6 +331,18 @@ export default function FlipbookClient({ bookSlug }: FlipbookClientProps) {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
+                  cursor: h.type === 'link' ? 'pointer' : 'default',
+                }}
+                onClick={() => {
+                  if (h.type === 'link') {
+                    const targetPageNum = parseInt(h.correctAnswer || '');
+                    if (!isNaN(targetPageNum) && targetPageNum >= 1 && targetPageNum <= metadata.pages.length) {
+                      const idx = metadata.pages.findIndex(p => p.id === targetPageNum);
+                      if (idx !== -1) setCurrentPageIndex(idx);
+                    }
+                  } else {
+                    setSelectedHotspotId(h.id);
+                  }
                 }}
                 onMouseEnter={() => setHoveredHotspotId(h.id)}
                 onMouseLeave={() => setHoveredHotspotId(null)}
@@ -402,6 +414,40 @@ export default function FlipbookClient({ bookSlug }: FlipbookClientProps) {
             </div>
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+              {currentPage.id <= 4 && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                  <span style={{ fontSize: '12px', fontWeight: 600, color: '#60a5fa' }}>Các liên kết chuyển trang nhanh:</span>
+                  {hotspots.filter(h => h.type === 'link').map((h, i) => (
+                    <button
+                      key={h.id}
+                      onClick={() => {
+                        const targetPageNum = parseInt(h.correctAnswer || '');
+                        if (!isNaN(targetPageNum) && targetPageNum >= 1 && targetPageNum <= metadata.pages.length) {
+                          const idx = metadata.pages.findIndex(p => p.id === targetPageNum);
+                          if (idx !== -1) setCurrentPageIndex(idx);
+                        }
+                      }}
+                      style={{
+                        textAlign: 'left',
+                        padding: '10px 14px',
+                        backgroundColor: '#18181b',
+                        border: '1px solid #27272a',
+                        borderRadius: '8px',
+                        color: '#d4d4d8',
+                        fontSize: '13px',
+                        cursor: 'pointer',
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center'
+                      }}
+                    >
+                      <span style={{ flex: 1 }}>🔗 {h.label || `Bài học ${i+1}`}</span>
+                      <span style={{ fontSize: '11px', color: '#60a5fa', fontWeight: 'bold' }}>Trang {h.correctAnswer} ➜</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+
               {currentPage.id > 4 && hotspots.map((h, index) => {
                 const isSelected = selectedHotspotId === h.id;
                 const showCheck = showResults && h.correctAnswer;
