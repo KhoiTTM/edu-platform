@@ -22,6 +22,26 @@ export async function GET(
       .single();
 
     if (fbError || !flipbook) {
+      if (bookSlug === 'khtn-7-sbt') {
+        const fs = require('fs');
+        const path = require('path');
+        const pageStr = String(pageNumber).padStart(3, '0');
+        const hotspotPath = path.join(process.cwd(), `public/book/hotspots/page_${pageStr}.json`);
+        if (fs.existsSync(hotspotPath)) {
+          const hotspotsData = JSON.parse(fs.readFileSync(hotspotPath, 'utf-8'));
+          return NextResponse.json({
+            page: pageNumber,
+            elements: (hotspotsData.elements || []).map((h: any) => ({
+              id: h.id,
+              type: h.type,
+              bbox: h.bbox,
+              label: h.label,
+              correctAnswer: h.correctAnswer
+            }))
+          });
+        }
+      }
+
       return NextResponse.json(
         { error: 'Flipbook not found' },
         { status: 404 }

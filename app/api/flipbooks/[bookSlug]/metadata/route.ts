@@ -21,6 +21,31 @@ export async function GET(
       .single();
 
     if (fbError || !flipbook) {
+      // Fallback for local development when database migrations haven't run or table doesn't exist
+      if (bookSlug === 'khtn-7-sbt') {
+        const fs = require('fs');
+        const path = require('path');
+        const metadataPath = path.join(process.cwd(), 'public/book/metadata.json');
+        if (fs.existsSync(metadataPath)) {
+          const metadata = JSON.parse(fs.readFileSync(metadataPath, 'utf-8'));
+          return NextResponse.json({
+            bookId: 'khtn-7-sbt',
+            bookSlug: 'khtn-7-sbt',
+            title: metadata.title,
+            grade: 7,
+            subjectSlug: 'khtn',
+            pageWidth: 511.0,
+            pageHeight: 726.0,
+            pages: metadata.pages.map((p: any) => ({
+              id: p.id,
+              image: p.image,
+              width: 511.0,
+              height: 726.0
+            }))
+          });
+        }
+      }
+
       return NextResponse.json(
         { error: 'Flipbook not found' },
         { status: 404 }

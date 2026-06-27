@@ -1,0 +1,1 @@
+const { createClient } = require('@supabase/supabase-js'); const supabase = createClient('undefined', 'undefined'); supabase.from('flipbooks').select('*').then(r => console.log(JSON.stringify(r.data, null, 2)));
