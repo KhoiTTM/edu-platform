@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { updateUserGrades } from "@/app/(app)/settings/actions";
+import { updateUserGrades } from "@/app/(app)/(administration)/settings/actions";
 import { Check, Loader2, Save, GraduationCap, Sparkles } from "lucide-react";
 import { useRouter } from "next/navigation";
 

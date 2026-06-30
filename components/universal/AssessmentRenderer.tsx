@@ -7,6 +7,7 @@ import { SentenceReorderRenderer } from './SentenceReorderRenderer';
 import { MatchPairRenderer } from './MatchPairRenderer';
 import { CategorizationRenderer } from './CategorizationRenderer';
 import { InlineFillBlankRenderer } from './InlineFillBlankRenderer';
+import { CrosswordRenderer } from './CrosswordRenderer';
 
 interface AssessmentRendererProps {
   questions: any[];
@@ -219,6 +220,19 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds }
             key={`mp-${currentIndex}`}
             instruction={currentQuestion.instruction || 'Nối cặp từ phù hợp:'}
             pairs={pairs}
+            onAnswer={handleAnswer}
+            disabled={hasAnswered}
+          />
+        );
+      }
+      case 'crossword': {
+        return (
+          <CrosswordRenderer
+            key={`cw-${currentIndex}`}
+            instruction={currentQuestion.instruction || currentQuestion.question || 'Hoàn thành ô chữ:'}
+            rows={currentQuestion.rows || 0}
+            cols={currentQuestion.cols || 0}
+            entries={currentQuestion.entries || []}
             onAnswer={handleAnswer}
             disabled={hasAnswered}
           />

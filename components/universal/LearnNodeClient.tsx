@@ -9,7 +9,7 @@ import { WorkbookAnswerSheet } from "./WorkbookAnswerSheet";
 import { CurriculumMap } from "./CurriculumMap";
 import { useRouter, usePathname } from "next/navigation";
 import { getFallbackQuestionsForUnit, getCumulativeQuestionsForUnit, getCumulativeVocabularyQuiz } from "@/lib/ieltsQuizzes";
-import AITeacherChat from "@/components/AITeacherChat";
+import AITeacherChat from "@/components/learning/AITeacherChat";
 
 interface LearnNodeClientProps {
   node: {

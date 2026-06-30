@@ -1,0 +1,692 @@
+{
+  "collection": {
+    "title": "Kiểm Tra Giữa Kỳ 1",
+    "subject_slug": "toan",
+    "grade": 3,
+    "volume": 1,
+    "units": [
+      101
+    ],
+    "sequence_number": 1,
+    "exam_type": "midterm",
+    "reference_book": "Kết nối tri thức với cuộc sống",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 21,
+      "title": "Đề kiểm tra giữa học kỳ 1 - Đề số 21",
+      "duration_minutes": 40,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tích của 6 và 4 là:",
+            "options": [
+              "24",
+              "10",
+              "20",
+              "28"
+            ],
+            "correct_index": 0,
+            "explanation": "6 x 4 = 24."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Biết hiệu là 245, số trừ là 162, số bị trừ là:",
+            "options": [
+              "83",
+              "407",
+              "397",
+              "417"
+            ],
+            "correct_index": 1,
+            "explanation": "Số bị trừ = Hiệu + Số trừ = 245 + 162 = 407."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Cho dãy số: 3, 6, 9, 12, ..., 27, 30. Bốn số thích hợp điền vào chỗ chấm lần lượt là:",
+            "options": [
+              "15, 18, 21, 24",
+              "16, 17, 18, 19",
+              "13, 14, 15, 16",
+              "18, 21, 24, 27"
+            ],
+            "correct_index": 0,
+            "explanation": "Quy luật tăng 3 đơn vị: 15, 18, 21, 24."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Ba điểm A, B, C thẳng hàng (như hình). Đoạn thẳng AC dài 16 cm và B là trung điểm của AC. Khoảng cách từ B đến A là:",
+            "options": [
+              "8 cm",
+              "9 cm",
+              "7 cm",
+              "16 cm"
+            ],
+            "correct_index": 0,
+            "explanation": "B là trung điểm nên BA = AC : 2 = 16 : 2 = 8 (cm).",
+            "image_url": "/images/exam-toan3-gk1/diem-thang-hang.svg"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Số thích hợp điền vào ô trống: 6 × ▢ = 54 là:",
+            "options": [
+              "9",
+              "10",
+              "8",
+              "11"
+            ],
+            "correct_index": 0,
+            "explanation": "6 × 9 = 54."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Bố An xây một bể cá hình chữ nhật và xếp 8 lá súng hình tròn nối nhau theo chiều dài. Mỗi lá súng có đường kính 3 dm. Chiều dài của bể cá là:",
+            "options": [
+              "3 x 8 = 24 dm",
+              "8 x 3 = 24 dm",
+              "4 x 3 = 12 dm",
+              "2 x 3 = 6 dm"
+            ],
+            "correct_index": 0,
+            "explanation": "8 lá đường kính 3 dm: 3 x 8 = 24 (dm).",
+            "image_url": "/images/exam-toan3-gk1/hinh-tron-tam-o.svg"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính: 7 × 8 = ▢",
+            "correct_answer": "56",
+            "explanation": "7 × 8 = 56."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính: 8 × 6 = ▢",
+            "correct_answer": "48",
+            "explanation": "8 × 6 = 48."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính: 72 : 8 = ▢",
+            "correct_answer": "9",
+            "explanation": "72 : 8 = 9."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính: 36 : 6 = ▢",
+            "correct_answer": "6",
+            "explanation": "36 : 6 = 6."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Đặt tính rồi tính: 727 + 29 = ▢",
+            "correct_answer": "756",
+            "explanation": "727 + 29 = 756."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Đặt tính rồi tính: 431 - 180 = ▢",
+            "correct_answer": "251",
+            "explanation": "431 - 180 = 251."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp: 6 x ▢ = 54",
+            "correct_answer": "9",
+            "explanation": "6 x 9 = 54."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp: ▢ + 169 = 582",
+            "correct_answer": "413",
+            "explanation": "413 + 169 = 582."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp: 27 : ▢ = 9",
+            "correct_answer": "3",
+            "explanation": "27 : 3 = 9."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp: 605 - ▢ = 461",
+            "correct_answer": "144",
+            "explanation": "605 - 144 = 461."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/2 số con bọ cánh cam trong tổng số 20 con là ▢ con.",
+            "correct_answer": "10",
+            "explanation": "20 : 2 = 10."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/5 số con bọ cánh cam trong tổng số 20 con là ▢ con.",
+            "correct_answer": "4",
+            "explanation": "20 : 5 = 4."
+          }
+        },
+        {
+          "type": "word_problem",
+          "difficulty": 1.3,
+          "metadata_json": {
+            "question": "Gia đình An có 8 người. Sau bữa cơm, mỗi người ăn 3 miếng cam. Hỏi cả nhà ăn hết bao nhiêu miếng cam?",
+            "correct_answer": "24",
+            "explanation": "3 × 8 = 24 (miếng)."
+          }
+        },
+        {
+          "type": "word_problem",
+          "difficulty": 1.3,
+          "metadata_json": {
+            "question": "An lấy 6 quả cam và cắt thành các miếng nhỏ để đủ 24 miếng cho cả nhà. Hỏi An nên cắt mỗi quả cam thành mấy miếng?",
+            "correct_answer": "4",
+            "explanation": "24 : 6 = 4 (miếng)."
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 22,
+      "title": "Đề kiểm tra giữa học kỳ 1 - Đề số 22",
+      "duration_minutes": 40,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tích của 7 và 6 là:",
+            "options": [
+              "42",
+              "13",
+              "38",
+              "46"
+            ],
+            "correct_index": 0,
+            "explanation": "7 x 6 = 42."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Biết hiệu là 289, số trừ là 175, số bị trừ là:",
+            "options": [
+              "114",
+              "464",
+              "454",
+              "474"
+            ],
+            "correct_index": 1,
+            "explanation": "Số bị trừ = Hiệu + Số trừ = 289 + 175 = 464."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Cho dãy số: 4, 8, 12, 16, ..., 36, 40. Bốn số thích hợp điền vào chỗ chấm lần lượt là:",
+            "options": [
+              "20, 24, 28, 32",
+              "21, 22, 23, 24",
+              "17, 18, 19, 20",
+              "24, 28, 32, 36"
+            ],
+            "correct_index": 0,
+            "explanation": "Quy luật tăng 4 đơn vị: 20, 24, 28, 32."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Ba điểm A, B, C thẳng hàng (như hình). Đoạn thẳng AC dài 20 cm và B là trung điểm của AC. Khoảng cách từ B đến A là:",
+            "options": [
+              "10 cm",
+              "11 cm",
+              "9 cm",
+              "20 cm"
+            ],
+            "correct_index": 0,
+            "explanation": "B là trung điểm nên BA = AC : 2 = 20 : 2 = 10 (cm).",
+            "image_url": "/images/exam-toan3-gk1/diem-thang-hang.svg"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Số thích hợp điền vào ô trống: 7 × ▢ = 56 là:",
+            "options": [
+              "8",
+              "9",
+              "7",
+              "10"
+            ],
+            "correct_index": 0,
+            "explanation": "7 × 8 = 56."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Bố An xây một bể cá hình chữ nhật và xếp 8 lá súng hình tròn nối nhau theo chiều dài. Mỗi lá súng có đường kính 4 dm. Chiều dài của bể cá là:",
+            "options": [
+              "4 x 8 = 32 dm",
+              "8 x 4 = 32 dm",
+              "4 x 4 = 16 dm",
+              "2 x 4 = 8 dm"
+            ],
+            "correct_index": 0,
+            "explanation": "8 lá đường kính 4 dm: 4 x 8 = 32 (dm).",
+            "image_url": "/images/exam-toan3-gk1/hinh-tron-tam-o.svg"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính: 9 × 7 = ▢",
+            "correct_answer": "63",
+            "explanation": "9 × 7 = 63."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính: 6 × 8 = ▢",
+            "correct_answer": "48",
+            "explanation": "6 × 8 = 48."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính: 64 : 8 = ▢",
+            "correct_answer": "8",
+            "explanation": "64 : 8 = 8."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính: 45 : 5 = ▢",
+            "correct_answer": "9",
+            "explanation": "45 : 5 = 9."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Đặt tính rồi tính: 521 + 199 = ▢",
+            "correct_answer": "720",
+            "explanation": "521 + 199 = 720."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Đặt tính rồi tính: 534 - 218 = ▢",
+            "correct_answer": "316",
+            "explanation": "534 - 218 = 316."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp: 8 x ▢ = 72",
+            "correct_answer": "9",
+            "explanation": "8 x 9 = 72."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp: ▢ + 245 = 687",
+            "correct_answer": "442",
+            "explanation": "442 + 245 = 687."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp: 32 : ▢ = 8",
+            "correct_answer": "4",
+            "explanation": "32 : 4 = 8."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp: 820 - ▢ = 560",
+            "correct_answer": "260",
+            "explanation": "820 - 260 = 560."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/4 số con bọ cánh cam trong tổng số 20 con là ▢ con.",
+            "correct_answer": "5",
+            "explanation": "20 : 4 = 5."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/2 số con bọ cánh cam trong tổng số 18 con là ▢ con.",
+            "correct_answer": "9",
+            "explanation": "18 : 2 = 9."
+          }
+        },
+        {
+          "type": "word_problem",
+          "difficulty": 1.3,
+          "metadata_json": {
+            "question": "Gia đình An có 6 người. Sau bữa cơm, mỗi người ăn 4 miếng cam. Hỏi cả nhà ăn hết bao nhiêu miếng cam?",
+            "correct_answer": "24",
+            "explanation": "4 × 6 = 24 (miếng)."
+          }
+        },
+        {
+          "type": "word_problem",
+          "difficulty": 1.3,
+          "metadata_json": {
+            "question": "An lấy 8 quả cam và cắt thành các miếng nhỏ để đủ 24 miếng cho cả nhà. Hỏi An nên cắt mỗi quả cam thành mấy miếng?",
+            "correct_answer": "3",
+            "explanation": "24 : 8 = 3 (miếng)."
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 23,
+      "title": "Đề kiểm tra giữa học kỳ 1 - Đề số 23",
+      "duration_minutes": 40,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tích của 8 và 5 là:",
+            "options": [
+              "40",
+              "13",
+              "36",
+              "44"
+            ],
+            "correct_index": 0,
+            "explanation": "8 x 5 = 40."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Biết hiệu là 312, số trừ là 188, số bị trừ là:",
+            "options": [
+              "124",
+              "500",
+              "490",
+              "510"
+            ],
+            "correct_index": 1,
+            "explanation": "Số bị trừ = Hiệu + Số trừ = 312 + 188 = 500."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Cho dãy số: 5, 10, 15, 20, ..., 45, 50. Bốn số thích hợp điền vào chỗ chấm lần lượt là:",
+            "options": [
+              "25, 30, 35, 40",
+              "26, 27, 28, 29",
+              "21, 22, 23, 24",
+              "30, 35, 40, 45"
+            ],
+            "correct_index": 0,
+            "explanation": "Quy luật tăng 5 đơn vị: 25, 30, 35, 40."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Ba điểm A, B, C thẳng hàng (như hình). Đoạn thẳng AC dài 24 cm và B là trung điểm của AC. Khoảng cách từ B đến A là:",
+            "options": [
+              "12 cm",
+              "13 cm",
+              "11 cm",
+              "24 cm"
+            ],
+            "correct_index": 0,
+            "explanation": "B là trung điểm nên BA = AC : 2 = 24 : 2 = 12 (cm).",
+            "image_url": "/images/exam-toan3-gk1/diem-thang-hang.svg"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Số thích hợp điền vào ô trống: 9 × ▢ = 81 là:",
+            "options": [
+              "9",
+              "10",
+              "8",
+              "11"
+            ],
+            "correct_index": 0,
+            "explanation": "9 × 9 = 81."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Bố An xây một bể cá hình chữ nhật và xếp 8 lá súng hình tròn nối nhau theo chiều dài. Mỗi lá súng có đường kính 5 dm. Chiều dài của bể cá là:",
+            "options": [
+              "5 x 8 = 40 dm",
+              "8 x 5 = 40 dm",
+              "4 x 5 = 20 dm",
+              "2 x 5 = 10 dm"
+            ],
+            "correct_index": 0,
+            "explanation": "8 lá đường kính 5 dm: 5 x 8 = 40 (dm).",
+            "image_url": "/images/exam-toan3-gk1/hinh-tron-tam-o.svg"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính: 8 × 9 = ▢",
+            "correct_answer": "72",
+            "explanation": "8 × 9 = 72."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính: 7 × 7 = ▢",
+            "correct_answer": "49",
+            "explanation": "7 × 7 = 49."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính: 54 : 6 = ▢",
+            "correct_answer": "9",
+            "explanation": "54 : 6 = 9."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính: 63 : 7 = ▢",
+            "correct_answer": "9",
+            "explanation": "63 : 7 = 9."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Đặt tính rồi tính: 638 + 275 = ▢",
+            "correct_answer": "913",
+            "explanation": "638 + 275 = 913."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Đặt tính rồi tính: 702 - 418 = ▢",
+            "correct_answer": "284",
+            "explanation": "702 - 418 = 284."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp: 9 x ▢ = 54",
+            "correct_answer": "6",
+            "explanation": "9 x 6 = 54."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp: ▢ + 314 = 756",
+            "correct_answer": "442",
+            "explanation": "442 + 314 = 756."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp: 45 : ▢ = 9",
+            "correct_answer": "5",
+            "explanation": "45 : 5 = 9."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp: 750 - ▢ = 430",
+            "correct_answer": "320",
+            "explanation": "750 - 320 = 430."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/3 số con bọ cánh cam trong tổng số 24 con là ▢ con.",
+            "correct_answer": "8",
+            "explanation": "24 : 3 = 8."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/4 số con bọ cánh cam trong tổng số 24 con là ▢ con.",
+            "correct_answer": "6",
+            "explanation": "24 : 4 = 6."
+          }
+        },
+        {
+          "type": "word_problem",
+          "difficulty": 1.3,
+          "metadata_json": {
+            "question": "Gia đình An có 7 người. Sau bữa cơm, mỗi người ăn 3 miếng cam. Hỏi cả nhà ăn hết bao nhiêu miếng cam?",
+            "correct_answer": "21",
+            "explanation": "3 × 7 = 21 (miếng)."
+          }
+        },
+        {
+          "type": "word_problem",
+          "difficulty": 1.3,
+          "metadata_json": {
+            "question": "An lấy 7 quả cam và cắt thành các miếng nhỏ để đủ 21 miếng cho cả nhà. Hỏi An nên cắt mỗi quả cam thành mấy miếng?",
+            "correct_answer": "3",
+            "explanation": "21 : 7 = 3 (miếng)."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -24,7 +24,7 @@ import {
   ArrowRight
 } from "lucide-react";
 import confetti from "canvas-confetti";
-import { saveExamResult } from "@/app/(app)/test-assessment/actions";
+import { saveExamResult } from "@/app/(app)/(assessment)/test-assessment/actions";
 
 interface SBTWorkbookClientProps {
   examId: string;

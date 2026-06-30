@@ -36,3 +36,4 @@ yarn-error.log*
 # Ignore local PDF books
 *.pdf
 content/*.pdf
+/public/books

@@ -44,7 +44,10 @@
       "Bash(node -e \"const w = require\\('/home/khoittm/projects/edu-platform/content/khtn-7-workbook.json'\\); console.log\\(JSON.stringify\\(w['bai-2'].questions.find\\(q => q.id === '2.4'\\), null, 2\\)\\)\")",
       "Bash(node -e \"const w = require\\('/home/khoittm/projects/edu-platform/content/khtn-7-workbook.json'\\); console.log\\(Object.keys\\(w\\)\\); console.log\\('bai-2 questions:', w['bai-2']?.questions?.length\\)\")",
       "Bash(node -e \"const w = require\\('/home/khoittm/projects/edu-platform/content/khtn-7-workbook.json'\\); const q24 = w['bai-1'].questions.find\\(q => q.id === '2.4'\\); console.log\\(q24 ? 'Question 2.4 found! Text length: ' + q24.text.length : 'Question 2.4 not found'\\); if \\(q24\\) console.log\\('Text:', q24.text.substring\\(0, 200\\)\\)\")",
-      "Bash(npm install *)"
+      "Bash(npm install *)",
+      "Bash(curl -s -D - -o /dev/null \"http://localhost:3002/review\")",
+      "Bash(npx --yes playwright --version)",
+      "Bash(python3 -c ' *)"
     ],
     "additionalDirectories": [
       "/tmp",

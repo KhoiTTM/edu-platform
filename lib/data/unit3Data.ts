@@ -14,6 +14,7 @@ export interface TextbookPage {
   title: string;
   exercises: Exercise[];
   audioUrl?: string; // Optional audio file path
+  youtubeId?: string; // Real YouTube video ID, takes priority over audioUrl when present
 }
 
 export const unit3Pages: TextbookPage[] = [

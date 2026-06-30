@@ -1,0 +1,868 @@
+[
+  {
+    "id": "khtn7-1-1",
+    "bai": 1,
+    "cau": 1,
+    "type": "essay",
+    "stem": "Các bảng sau đúng hay sai? Khẳng định STT Đúng /Sai năng Các kĩ trong học tập môn Khoa học tự nhiên gổm: quan sát, phân loai; liên kết, đo; dự báo Phương pháp tìm hiểu tự nhiên gổm các bước: để xuất vấn đê, đưa ra dự đoán, Iập kế hoạch kiểm tra dự đoán; thực hiện kế hoạch kiểm tra dự đoán, viết báo cáo; để xuất ý kiến (nếu có) Đối tượng nghiên cứu của khoa học là các sự vật, hiện tượng, các thuộc tính cơ bản, sự vận động của thế giới tựnhiên;- Môn Khoa học tự nhiên là môn học vê các sự vật và hiện tượng trong thế giới tự nhiên nhằm hình thành phát triển các năng lực khoa học tự nhiên và khoa và học Trái Đất Nghiên cứu các sự vật và hiện tượng tự nhiên không mục đích giải quyết các vấn đê nảy sinh trong nhằm cuộc sống năng dự báo là kĩ năng để xuất điểu gì sẽ xảy ra dựa Kĩ trên các quan sát, kiến thức sự hiểu biết và sự suy luận của con người vể sựvật và hiện tượng trong tự nhiên Kĩ năng đo được hình thành và phát triển không theo trình tự Trong kĩ năng đo, không cẩn thực hiện việc ước Iượng, thực hiện các phép đo; xác định độ chính xác của kết quả đo Môn Khoa học tự nhiên được xây dựng và phát triển trên tảng học: nên các môn Toán học, Hoá học và Sinh học",
+    "answer": "1 = Đ; 2 = Đ; 3 = Đ; 4 - Đ; 5 = S; 6 = Đ; 7 = S; 8 = S; 9 = S."
+  },
+  {
+    "id": "khtn7-1-2",
+    "bai": 1,
+    "cau": 2,
+    "type": "essay",
+    "stem": "Hãy kết nối các thông tin ở cột A với cột B tạo thành sự liên kết giữa sự vật với hiện tượng hoặc hiện tượng với hiện tượng:. Cột A Cột B 1) Nước mưa a) do ánh sáng từ Mặt Trời b) ảnh hưởng đến sinh trưởng và phát triển của 2) Một số loài thực vật thực vật 3) Trời nắng c) có khi trời mưa 4) Phân bón rụng lá vào mùa đông Khẳng",
+    "answer": "1 = C; 2 = d; 3 - a; 4 = b."
+  },
+  {
+    "id": "khtn7-1-3",
+    "bai": 1,
+    "cau": 3,
+    "type": "multiple_choice",
+    "stem": "định nào dưới đây không đúng? năng cẩn thiết trong nghiên cứu khoa học tự nhiên:",
+    "answer": "B.",
+    "options": [
+      "Dự báo là kĩ",
+      "Dựbáo là kĩ năng không cẩn thiết của người làm nghiên cứu:",
+      "Dự báo là kĩ năng dự đoán điêu gì sẽ xảy ra dựa vào quan sát, kiến thức, suy luận của con người, vể các sự vật, hiện tượng: năng dự báo thường được sử dụng trong bước dự đoán của phương",
+      "Kĩ pháp tìm hiểu tự nhiên"
+    ]
+  },
+  {
+    "id": "khtn7-1-4",
+    "bai": 1,
+    "cau": 4,
+    "type": "essay",
+    "stem": "Con người có thể định lượng được các sự vật và hiện tượng tự nhiên dựa trên kĩ năng nào? Ố| TRITHÚC A Kĩ năng quan sát, phân loai. B. Kĩ năng liên kết tri thức. Cuôc SŨN G 1C | C. Kĩ năng dự báo. D. Kĩ năng đo.",
+    "answer": "D."
+  },
+  {
+    "id": "khtn7-1-5",
+    "bai": 1,
+    "cau": 5,
+    "type": "essay",
+    "stem": "Cho các bước sau: (1) Thực hiện phép đo; ghi kết quả đo và xử lí số liệu đo. (2) Ước lượng để lựa chọn dụng cụ/thiết bị đo phù hợp. (3) Phân tích kết quả và thảo luận vể kết quả nghiên cứu thu được. (4) Đánh giá độ chính xác của kết quả đo căn cứ vào loai dụng cụđo và cách đo. Trình tự các bước hình thành kĩ năng đo là A. (1) - (2) - (3) - (4). 5 B. (1) = (3) = (2) = (4) C(3) = (2) = (4) = (1). D.(2) = (1) = (4) _ (3)",
+    "answer": "D"
+  },
+  {
+    "id": "khtn7-1-6",
+    "bai": 1,
+    "cau": 6,
+    "type": "essay",
+    "stem": "Khi đo chiểu cao của một người ở các thời điểm khác nhau trong ngày; kết quả đo được ghi lại trong Bảng 1.Em hãy nhận xét và giải thích vể kết quả thu được. Bảng 1. Kết quả đo chiểu cao của người ở các thời điểm trong ngày Lân đo Thời gian Kết quả thu được 6 giờ 162,4 cm 12 giờ 161,8 cm 18 giờ 161,1 cm",
+    "answer": "Lẩn đo 1: Cao nhất do mới ngủ dậy, đĩa sụn ở cột sống chưa bị nén bởi trọng lực cơ thể Lẩn đo 2:Thấp hơn do đĩa sụn ở cột sống bị nén bởi trọng lực cơ thể sau 6giờ. Lân đo 3: Thấp hơn nữa do đĩa sụn ở cột sống bị nén bởi trọng lực cơ thể sau 12 giờ."
+  },
+  {
+    "id": "khtn7-1-7",
+    "bai": 1,
+    "cau": 7,
+    "type": "essay",
+    "stem": "Vận dụng phương pháp tìm hiểu tự nhiên, em hãy tìm hiểu vể hiện tượng lũ lụt và để xuất các biện pháp phòng chống hiện tượng trên.",
+    "answer": "Nghiên cứu vể hiện tượng lũ lụt và để xuất các biện pháp phòng chống hiện tượng lũ lụt Bước 1: Xác định vấn để \"Tại sao hiện tượng thiên tai lũ lụt lại xảy ra? Bước 2: Đưa ra giả thuyết: Lũ lụt là hậu quả của rừng đẩu nguôn bị mất. Bước 3: Lậpkế hoạch thực hiện: Để xuất các phương pháp tìm hiểu \"rừng đẩu nguổn bị mất có liên quan đến lũ lụt hay không?\" Bước 4: Thực hiện kế hoạch theo các phương pháp ở bước 3 bao gổm việc thu thập; phân tích số liệu nhằm chứng minh có hoặc không mối liên quan giữa rừng đâu nguổn bị mất và hiện tượng lũ lụt: Bước 5: Viết báo cáo quy trình nghiên cứu vể hậu quả của mất rừng đẩu nguổn có liên quan đến tình trạng thiên tai lũ lụt. Trong trường hợp không tìm thấy sự liên quan thì xây dựng lại giả thuyết khoa học. 92 Bước 6: Để xuất tiếp tục nghiên cứu mở rộng đối với các nguyên nhân gây lũ lụt khác"
+  },
+  {
+    "id": "khtn7-1-8",
+    "bai": 1,
+    "cau": 8,
+    "type": "multiple_choice",
+    "stem": "Trong Hình 1.1, ban đâu bình a chứa nước, b) bình b chứa một vật rắn không thấm nước: 1 125 100 Khi đổ hết nước từ bình sang bình b thì mức nước trong bình b được vẽ trong hình. Thể tích của vật rắn là KeT TRI ThUC",
+    "answer": "A",
+    "options": [
+      "33 mL",
+      "73 mL",
+      "32,5 mL",
+      "35,2 mL Vorctoc SŨNG Hình 1.1 bằng"
+    ]
+  },
+  {
+    "id": "khtn7-1-9",
+    "bai": 1,
+    "cau": 9,
+    "type": "essay",
+    "stem": "Làm cách nào để đo độ dày của một tờ giấy trong sách KHTN 7 một thước có độ chia nhỏ nhất (ĐCNN) là mm?",
+    "answer": "Dựa vào số trang tính số tờ giấy trong sách. Ép chặt các tờ giấy bên trong sách (không chứa hai tờ bìa ngoài) và dùng thước có ĐCNN mm để đo độ dày. dày tờ giấy bằng cách lấy độ dày của sách chia cho tổng Tính độ của số tờ."
+  },
+  {
+    "id": "khtn7-1-10",
+    "bai": 1,
+    "cau": 10,
+    "type": "essay",
+    "stem": "Làm thế nào đểđo được thể tích của một giọt nướctừ- 'ống nhỏ giọt rơi xuống với một bình chia độ có ĐCNN là 0,5 cm3?",
+    "answer": "Cho nước nhỏ giọt vào bình chứa. Đếm số giọt cho tới khi mực nước trong bình được khoảng từ 1 cm đến 2 Từđó suy ra thể tích của một giọt. Chú cm? ý: nên làm việc theo nhóm 2 người."
+  },
+  {
+    "id": "khtn7-1-11",
+    "bai": 1,
+    "cau": 11,
+    "type": "essay",
+    "stem": "Để xác định thời gian chuyển động trên quãng đường dài 50 cm của một viên bi lăn trên một máng nghiêng; người ta dùng cổng quang và đổng hổ đo thời gian hiện số. Hỏi: a) Phải chọn MODE nào của đổng ! hổ? đổng | hổ để trên màn hình hiện Iên các số 0OOO? b) Phải bấm vào nút nào của c) Phải nối các cổng - quang nhưthế nào với các chốt ở mặt sau của đổng hổ? 6",
+    "answer": "a) Đặt MODE: A < B. b) Bấm nút RESET. c) Nối cổng quang 1 với chốt A; cổng quang 2 với chốt B"
+  },
+  {
+    "id": "khtn7-2-1",
+    "bai": 2,
+    "cau": 1,
+    "type": "essay",
+    "stem": "Phát biểu nào sau đây không đúng môtả mô hình nguyên tử của Rơ-dơ-pho Bo? Nguyên tử có cấu tạo rỗng, A gổm hạt nhân ở tâm nguyên tử và các electron ở vỏ nguyên tử. Nguyên tử có cấu tạo đặc khít; gổm hạt nhân nguyên tử và các electron: B C. Electron chuyển động xung quanh hạt nhân theo những quỹ đạo xác định tạo thành các lớp electron: D.Hạt nhân nguyên tử mang điện tích dương, electron mang điện tích âm",
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-2-2",
+    "bai": 2,
+    "cau": 2,
+    "type": "multiple_choice",
+    "stem": "Phátbiểu nào sau đâykhông tả đúng vỏ nguyên tửtheomô hình nguyên mô tử của Rơ-dơ-pho - Bo?",
+    "answer": "C.",
+    "options": [
+      "Electron chuyển động xung quanh hạt nhân theo từng lớp khác nhau tạo thành các lớp electron",
+      "Lớp electron trong cùng gẩn hạt nhân nhất có tối đa 2 electron; các lớp electron khác có chứa tối đa 8 electron hoặc nhiêu hơn",
+      "Lớp electron trong cùng hạt nhân nhất có tối đa 8 electron; các lớp gẩn electron khác có chứa tối đa nhiêu hơn 8 electron:",
+      "Cácelectron sắp xếp vào các lớp theo thứ tựtừ trong ra ngoài cho đến hết"
+    ]
+  },
+  {
+    "id": "khtn7-2-3",
+    "bai": 2,
+    "cau": 3,
+    "type": "multiple_choice",
+    "stem": "Trừ hạt nhân của nguyên tử hydrogen; hạt nhân các nguyên tử còn lại được tạo thành từ hạt",
+    "answer": "D.",
+    "options": [
+      "electron và proton",
+      "electron, proton và neutron",
+      "neutron và electron:",
+      "proton và neutron"
+    ]
+  },
+  {
+    "id": "khtn7-2-4",
+    "bai": 2,
+    "cau": 4,
+    "type": "multiple_choice",
+    "stem": "Cho các phát biểu: (1) Nguyên tử trung hoà vể điện. (2) Khối lượng của nguyên tử tập trung chủ yếu ở hạt nhân. (3) Trong nguyên tử; số hạt mang điện tích dương bằng số hạt mang điện tích âm nên số hạt electron bằng số hạt neutron: (4) Vỏ nguyên tử, gổm các lớp electron có khoảng cách khác nhau đối với hạt nhân:. Trong các phát biểu trên, số phát biểu đúng là",
+    "answer": "C. Các phát biểu đúng là (1), (2), (4). Bảng",
+    "options": [
+      "1-",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "id": "khtn7-2-5",
+    "bai": 2,
+    "cau": 5,
+    "type": "essay",
+    "stem": "Hãy viết tên, điện tích và khối lượng của các hạt cấu tạo nên nguyên tử vào chỗ trống để hoàn thiện bảng dưới đây. Khối lượng (amu) Hạt Điện tích Proton Neutron ~0,00055",
+    "answer": "tên, điện tích và khối lượng của các hạt cấu tạo nên nguyên tử Hat Điện tích Khối lượng (amu) Proton 41 Neutron Electron ~0,00055 93"
+  },
+  {
+    "id": "khtn7-2-6",
+    "bai": 2,
+    "cau": 6,
+    "type": "essay",
+    "stem": "Từ Hình 2.1 mô phỏng một nguyên tử carbon; hãy cho biết trong một nguyên tử carbon có bao nhiêu hạt electron; proton; neutron: Quy ước\"\" : Electron Proton TR| TH Neutron VoT CUỘ Hinh2TỐ M G",
+    "answer": "Một nguyên tử carbon có 6 electron; 6 proton; 6 neutron:"
+  },
+  {
+    "id": "khtn7-2-7",
+    "bai": 2,
+    "cau": 7,
+    "type": "multiple_choice",
+    "stem": "Mặt Trời chứa chủ yếu hai nguyên tố hoá học là hydrogen (H) và helium (He) Hình 2.2 biểu diễn một nguyên tử hydrogen và một nguyên tử helium a) Hydrogen b) Helium Hình 2.2 Quy ước này dùng cho tất cả các hình mô phỏng nguyên tửở trong sách. 8 Dựa vào hình vẽ trên hãy cho biết: a) Mỗi vòng tròn xung quanh hạt nhân được gọi là gì?",
+    "answer": "a) €. b) Nguyên tửH có 1 electron; proton; nguyên tử He có 2 electron; 2 proton.",
+    "options": [
+      "Một liên kết",
+      "Một electron",
+      "Một lớp vỏ electron",
+      "Một proton: b) Có bao nhiêu electron trong lớp vỏ của nguyên tử H, He? Có bao nhiêu proton trong hạt nhân của nguyên tử H, He?"
+    ]
+  },
+  {
+    "id": "khtn7-2-8",
+    "bai": 2,
+    "cau": 8,
+    "type": "essay",
+    "stem": "Giải thích vì sao có thể coi khối lượng nguyên tử tập trung ở hạt nhân; Iấy ví dụ vể một nguyên tử để minh hoạ: Nguyên tử lithium có 3 proton:",
+    "answer": "Nguyên tửđược tạo thànhtừ ba loại hạt là electron; proton; neutron: Khối lượng tổng khối lượng của các hạt có trong nguyên tử. Tuy nhiên, do nguyên tử là khối lượng của electron nhỏ hơn khối lượng của proton và neutron rất nhiểu nên có thể coi khối lượng electron là không đáng kể so với khối lượng của nguyên tử, hay nói cách khác; có thể coi khối lượng nguyên tửtập trung ở hạt nhân: Ví dụ: Nguyên tử carbon có 6 electron; 6 proton và 6 neutron. Khối lượng của nguyên tử là: 6 .0,00055 +6 .1 +6.1 = 12,0033 (amu) xấp xỉ khối lượng hạt nhân là 12 amu:"
+  },
+  {
+    "id": "khtn7-2-9",
+    "bai": 2,
+    "cau": 9,
+    "type": "essay",
+    "stem": "a) Có bao nhiêu electron trong nguyên tử lithium? b) Biết hạt nhân nguyên tử lithium có 4 neutron; tính khối lượng nguyên tử của lithium theo đơn vị amu.",
+    "answer": "Nguyên tử lithium có 3 electron. Khối lượng nguyên tử của lithium là 7 amu."
+  },
+  {
+    "id": "khtn7-2-10",
+    "bai": 2,
+    "cau": 10,
+    "type": "essay",
+    "stem": "Mô tả sự khác nhau giữa cấu tạo một nguyên tử hydrogen và cấu tạo một nguyên tử helium.",
+    "answer": "Một nguyên tử hydrogen có 1 electron ở vỏ nguyên tử và proton ở hạt nhân nguyên tử. Nguyên tử helium có 2 electron ở vỏ nguyên tử, hạt nhân nguyên tử gổm 2 proton và 2 neutron:"
+  },
+  {
+    "id": "khtn7-2-11",
+    "bai": 2,
+    "cau": 11,
+    "type": "essay",
+    "stem": "Oxygen là nguyên tố hoá học phổ biến trong không khí, duy trì sự sống và sự cháỵ Hoàn thiện Hình 2.3 để mô tả cấu tạo một nguyên tử oxygen. KÉT NỐA TRITHU ` VÓL Guâc SÃNG Hình 2.3",
+    "answer": "Mô hình mô tả cấu tạo một nguyên tử oxygen: KET Miuc V@ ( ( 8juG"
+  },
+  {
+    "id": "khtn7-2-12",
+    "bai": 2,
+    "cau": 12,
+    "type": "multiple_choice",
+    "stem": "Một nguyên tử có 10 proton trong hạt nhân. Theo mô hình nguyên tử của Ro-dơ-pho - Bo, số lớp electron của nguyên tử đó là",
+    "answer": "B.",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "id": "khtn7-2-13",
+    "bai": 2,
+    "cau": 13,
+    "type": "multiple_choice",
+    "stem": "Trong một nguyên tử có số proton bằng 5, số electron trong các lớp của vỏ nguyên tử; viết từ lớp trong ra lớp ngoài; lẩn lượt là",
+    "answer": "C. Nguyên tử có số proton = 5 = Số electron = 5. Lớp electron bên trong gẩn hạt nhân có 2 electron; lớp bên ngoài có 5 - 2 = 3 electron:",
+    "options": [
+      "1,8,2",
+      "2,8, 1",
+      "2, 3",
+      "3, 2"
+    ]
+  },
+  {
+    "id": "khtn7-2-14",
+    "bai": 2,
+    "cau": 14,
+    "type": "multiple_choice",
+    "stem": "Nitơ (nitrogen) là nguyên tố hoá học phổ biến trong không khí. Trong hạt nhân nguyên tử nitơ có 7 proton. Số electron trong các lớp của vỏ nguyên tử nitơ, viết từ lớp trong ra lớp ngoài; lẩn lượt là",
+    "answer": "B. Nguyên tử nitơ có số proton = 7 = Số electron = 7. Lớp electron bên trong gẩn hạt nhân có 2 electron; lớp bên ngoài có 7 - 2 = 5 electron.",
+    "options": [
+      "7",
+      "2, 5",
+      "2, 2, 3",
+      "2,4,1"
+    ]
+  },
+  {
+    "id": "khtn7-2-15",
+    "bai": 2,
+    "cau": 15,
+    "type": "multiple_choice",
+    "stem": "Trong hạt nhân nguyên tử fluorine có 9 proton: Số electron ở lớp ngoài cùng của vỏ nguyên tử fluorine là",
+    "answer": "C. Nguyên tử fluorine có số proton = 9 = Số electron = 9.Lớp electron bên trong gẩn hạt nhân có 2 electron; lớp bên ngoài có 9 _ 2 = 7 electron. 94",
+    "options": [
+      "2",
+      "5",
+      "7",
+      "8"
+    ]
+  },
+  {
+    "id": "khtn7-2-16",
+    "bai": 2,
+    "cau": 16,
+    "type": "multiple_choice",
+    "stem": "Nguyên tử calcium có 20 electron ở vỏ nguyên tử. Hạt nhân của nguyên tử calcium có số proton là",
+    "answer": "D.",
+    "options": [
+      "2",
+      "10",
+      "18",
+      "20. Nguyên tử nhôm (aluminium) có 13 electron ở vỏ. Số electron ở Iớp trong"
+    ]
+  },
+  {
+    "id": "khtn7-2-17",
+    "bai": 2,
+    "cau": 17,
+    "type": "multiple_choice",
+    "stem": "cùng của nguyên tử nhôm là",
+    "answer": "A.",
+    "options": [
+      "2",
+      "8",
+      "10",
+      ""
+    ]
+  },
+  {
+    "id": "khtn7-2-19",
+    "bai": 2,
+    "cau": 19,
+    "type": "multiple_choice",
+    "stem": "Trong hạt nhân nguyên tử lưu huỳnh (sulfur) có 16 proton. Số electron trong các lớp của vỏ nguyên tử sulfur; viết từ lớp trong ra lớp ngoài; lẩn lượt là",
+    "answer": "C.",
+    "options": [
+      "2, 10, 6",
+      "2,6, 8",
+      "2,8,6",
+      "2, 9,5"
+    ]
+  },
+  {
+    "id": "khtn7-2-20",
+    "bai": 2,
+    "cau": 20,
+    "type": "essay",
+    "stem": "Trong hạt nhân nguyên tử của nguyên tố silicon có 14 proton; vỏ nguyên tử silicon có ba lớp electron. Hãy hoàn thiện Hình n Hình 24€ để mô tả mô hình một E 7u 177 nguyên tử silicon V1 ~nG 14 Hình 2.4",
+    "answer": "Mô hình bên mô tả cấu tạo một nguyên tử silicon:"
+  },
+  {
+    "id": "khtn7-2-21",
+    "bai": 2,
+    "cau": 21,
+    "type": "essay",
+    "stem": "Hạt nhân một nguyên tử fluorine có 9 proton và 10 neutron: Khối lượng của nguyên tử fluorine xấp xỉ bằng A 9 amu B. 10 amu: C. 19 amu D. 28 amu. 10",
+    "answer": "€. Khối Iượng của một nguyên tử xấp xỉ bằng khối lượng của hạt nhân_ Khối lượng của nguyên tử fluorine = 9 . 1 + 10 1 = 19 (amu)."
+  },
+  {
+    "id": "khtn7-2-22",
+    "bai": 2,
+    "cau": 22,
+    "type": "multiple_choice",
+    "stem": "Muối ăn chứa hai nguyên tố hoá học là natri và chlorine: Trong hạt nhân nguyên tử của các nguyên tố natri và chlorine có lẩn lượt 11 và 17 proton. Số electron trong các lớp của vỏ nguyên tử natri và chlorine; viết từ lớp trong ra lớp ngoài; lẩn lượt là",
+    "answer": "C. Gu@C S 0NG",
+    "options": [
+      "2,9 và 2, 10, 5",
+      "2, 9 và 2,8, 7",
+      "2,8, 1 và 2,8,7",
+      "2,8,1 và 2,8,5. BÀl 3. NGUYÊN TỐ HOÁ HỌC 06000ioia0iel0ieae0il0iee0ioo0ig0in0iagi8i0ieeeiooieo0ioe0ieaoid8il0iooooia0ie0iuiaaail0ieooieaioo0inoiaieleio"
+    ]
+  },
+  {
+    "id": "khtn7-3-1",
+    "bai": 3,
+    "cau": 1,
+    "type": "multiple_choice",
+    "stem": "Đổng (copper) và carbon là các",
+    "answer": "D.",
+    "options": [
+      "hợp chất",
+      "hỗn hợp. cùng một nguyên tố hoá học",
+      "nguyên tử thuộc",
+      "nguyên tố hoá học"
+    ]
+  },
+  {
+    "id": "khtn7-3-2",
+    "bai": 3,
+    "cau": 2,
+    "type": "essay",
+    "stem": "Kí hiệu nào sau đây là kí hiệu hoá học của nguyên tố magnesium? A MG. B. Mg. C mg: D.mG",
+    "answer": "B."
+  },
+  {
+    "id": "khtn7-3-3",
+    "bai": 3,
+    "cau": 3,
+    "type": "essay",
+    "stem": "Đến nay con người đã tìm ra bao nhiêu nguyên tố hoá học? A 118 B. 94. C. 20. D. 1 000 000.",
+    "answer": "A"
+  },
+  {
+    "id": "khtn7-3-4",
+    "bai": 3,
+    "cau": 4,
+    "type": "multiple_choice",
+    "stem": "Vàng và carbon có tính chất khác nhau vì vàng là nguyên tố kim loại còn carbon là nguyên tố HU",
+    "answer": "A.",
+    "options": [
+      "phi kim",
+      "đơn chất",
+      "hợp chất",
+      "khí hiếm oxygen: , 8 0MG"
+    ]
+  },
+  {
+    "id": "khtn7-3-5",
+    "bai": 3,
+    "cau": 5,
+    "type": "essay",
+    "stem": "Hình 3.1 mô tả một nguyên tử Hình 3.1 a) Hãy điển số thích hợp vào chỗ trống để hoàn thiện các câu sau: Số hiệu nguyên tử (số proton) của nguyên tố oxygen là _? Khối lượng của nguyên tử oxygen được mô tả ở hình vẽ là .?. 11 bằng b) Một nguyên tử oxygen có 10 neutron. Khối lượng nguyên tử oxygen đó bao nhiêu?",
+    "answer": "a) Số hiệu nguyên tử (số proton) của nguyên tố oxygen là 8 Khối lượng nguyên tử của nguyên tử oxygen được mô tả ở hình vẽ là 16 amu: b) Khối lượng của nguyên tử oxygen đó là 18 amu:"
+  },
+  {
+    "id": "khtn7-3-6",
+    "bai": 3,
+    "cau": 6,
+    "type": "essay",
+    "stem": "Hình 3.2 mô tả các nguyên tử X, Y, Zvà T: X Hình 3.2 Hãy sửdụng Bảng 3.1 trang 21 SGK và cho biết các nguyên tử X, Y; Z, T thuộc các nguyên tố hoá học nào. Các nguyên tử nào có cùng số lớp electron?",
+    "answer": "Nguyên tử X là nguyên tử hydrogen; nguyên tử Y là nguyên tử helium; nguyên tử Zlà nguyên tử carbon; nguyên tử T là nguyên tử neon. Nguyên tử hydrogen và nguyên tử helium có cùng số lớp electron; nguyên tử carbon và nguyên tử neon có cùng số lớp electron. 95"
+  },
+  {
+    "id": "khtn7-3-7",
+    "bai": 3,
+    "cau": 7,
+    "type": "essay",
+    "stem": "Cho biết số hiệu nguyên tử của đổng là 29, của bạc là 47, của vàng là 79. Hãy xác định số electron, số proton trong mỗi nguyên tử đổng, bạc, vàng: Em có xác định được số neutron trong hạt nhân các nguyên tử này không?",
+    "answer": "Trong nguyên tử; số electron = số proton = số hiệu nguyên tử. Như vậy: Trong nguyên tử đổng; số electron = số proton = 29. Trong nguyên tử bạc, số electron số proton = 47 Trong nguyên tử vàng; số electron = số proton = 79. Từ số electron chỉ xác định được số proton trong nguyên tử, không xác định được số neutron"
+  },
+  {
+    "id": "khtn7-3-8",
+    "bai": 3,
+    "cau": 8,
+    "type": "essay",
+    "stem": "Điển những thông tin còn thiếu để hoàn thiện bảng đây theo mẫu: sau Nguyên tốI beryllium silicon calcium Số hiệu nguyên tử 4 14 20 Khối lượng nguyên tử (amu) 28 40 Số proton Số neutron 5 22 Số electron 2 . 2. Sự sắp xếp electron vào lớp vỏ 2, 2 nguyên tử ) từtrái sang phải tương ứng) với từ lớp trong ra lớp ngoài.",
+    "answer": "Nguyên tố beryllium silicon calcium Số hiệu nguyên tử 14 20 Khối lượng nguyên tử (amu) 28 40 Số proton 14 20 Số neutron 5 14 20 Số electron 14 20 Sựsắpxếpelectron vào lớp vỏ nguyên tử (từ trái sang phải tương ứng với từ 2, 2 2, 8, 4 2,8, 8, 2 lớp trong ra lớp ngoài)"
+  },
+  {
+    "id": "khtn7-3-9",
+    "bai": 3,
+    "cau": 9,
+    "type": "essay",
+    "stem": "Tất cảcác nguyên tửthuộc cùng một nguyên tố hoáhọc có đặcđiểmgì",
+    "answer": "Tất cả các nguyên tử thuộc vể một nguyên tố hoá học đểu có cùng số hiệu nguyên tử (số proton), do đó có cùng số electron:"
+  },
+  {
+    "id": "khtn7-3-10",
+    "bai": 3,
+    "cau": 10,
+    "type": "essay",
+    "stem": "Hãy điển các kí hiệu hoá học phù hợp vào ô tương ứng với tên gọi của nguyên tố. Tên nguyên tố Kí hiệu hoá học của nguyên tố Calcium Carbon Oxygen Nitơ Beryllium Hydrogen Kali (potassium) Neon Chlorine Sắt (iron)",
+    "answer": "Tên nguyên tố Kí hiệu hoá học của nguyên tố Mâ Calcium Ca Carbon C Oxygen 0 Nitơ : Beryllium Hydrogen Kali Neon Ne Chlorine CI Sắt Fe 96"
+  },
+  {
+    "id": "khtn7-3-11",
+    "bai": 3,
+    "cau": 11,
+    "type": "essay",
+    "stem": "Mặt Trời chứa khoảng 73% hydrogen và 25% helium; còn lại là các nguyên tố hoá học khác Phẩn trăm của các nguyên tố hoá học ngoài hydrogen và helium có trong a) Mặt Trời là bao nhiêu? Một trong các nguyên tố khác có trong Mặt Trời là neon Hạt nhân nguyên b) tử neon có 10 proton. Hãy cho biết số electron trong lớp vỏ nguyên tử neon. Hãy vẽ mô hình mô tả nguyên tử neon.",
+    "answer": "a) Phẩn trăm của các nguyên tố hoá học ngoài hydrogen và helium có trong Mặt Trời là: 1009 739 259 = 2%. b) Vì trong nguyên tử; số electron bằng số proton nên số electron trong lớp vỏ nguyên tử neon là 10. Mô hình mô tả nguyên tử neon: Ne"
+  },
+  {
+    "id": "khtn7-3-12",
+    "bai": 3,
+    "cau": 12,
+    "type": "essay",
+    "stem": "Em hãy tìm hiểu và cho biết vì sao một số nguyên tố hoá học có kí hiệu không chứa chữ cái đẩu tiên trong tên gọi của chúng: Ví dụ: kí hiệu hoá học của nguyên tố sodium (natri) là Na.",
+    "answer": "Kí hiệu hoá học là một hoặc hai chữ cái trong tên gọi của nguyên tố, trong đó chữ cái đẩu in hoa và chữ cái sau in thường. Một số nguyên tố có tên gọi hiện nay theo IUPAC và tên gọi ban đẩu không giống nhau; nên kí hiệu hoá học không chứa chữ cái đẩu trong tên gọi theo IUPAC của chúng. Ví dụ: Nguyên tố hoá học sodium; trước đây được gọi là natrum, theo tiếng Ả Rập, \"natrum\" nghĩa là muối tự nhiên, bởi vì nguyên tố này có trong thành phẩn của muối ăn, do đó nó có kí hiệu hoá học là Na."
+  },
+  {
+    "id": "khtn7-3-13",
+    "bai": 3,
+    "cau": 13,
+    "type": "essay",
+    "stem": "Cho bảng số liệu sau: Kí hiệu hoá học Ne Na CI K K 5 Ar Ca Khối lượng nguyên tử 19 22 23 32 35 39 39 40 40 Số hiệu nguyên tử 10 11 16 | 17 18 19 19 20 13 bảng số liệu, hãy cho biết: Từ Hạt nhân nguyên tử Na có bao nhiêu hạt proton? a) b) Nguyên tử S có bao nhiêu electron? c) Hạt nhân nguyên tử Cl có bao nhiêu hạt neutron? Các nguyên tử nào thuộc cùng một nguyên tố hoá học? d)",
+    "answer": "a) Hạt nhân nguyên tử Na có 11 proton. roton: TKUC b) Nguyên tử S có 16 electron. ŨNG c) Hạt nhân nguyên tử Cl có 18 hạt neutron. d) Hai nguyên tử K có khối lượng nguyên tử là 39và 40, nhưng đểu có số hiệu nguyên tử là 19 nên đểu là nguyên tố K (kali)"
+  },
+  {
+    "id": "khtn7-3-14",
+    "bai": 3,
+    "cau": 14,
+    "type": "essay",
+    "stem": "Trong tự nhiên có hai loại nguyên tử đểu thuộc- cùng một nguyên tố hoá học là Ne (Z = 10). Một loại là các nguyên tử Ne có khối lượng nguyên tử là 20amu và loại còn lại là các nguyên tử Ne có khối lượng nguyên tử là 22 amu. a) Hạt nhân của nguyên tử Ne có khối lượng 22 amu có bao nhiêu hạt proton và neutron? b) Hãy giải thích vì sao hai loai nguyên tử đó đểu thuộc cùng một nguyên tố hoá học Ne.",
+    "answer": "a) Hạt nhân của nguyên tử Ne khối lượng 22amu có 10 proton và 12 neutron: b) Vì các loại nguyên tử đó đểu có cùng số proton trong hạt nhân là 10, nên chúng đểu thuộc nguyên tố hoá học Ne."
+  },
+  {
+    "id": "khtn7-3-15",
+    "bai": 3,
+    "cau": 15,
+    "type": "essay",
+    "stem": "Chocácnguyêntốhoá họcsau: carbon, hydrogen; oxygen; nitơ; phosphorus, chlorine, Iưu huỳnh, calcium, kali, sắt, iodine và argon. a) Kể tên 5 nguyên tố hoá học có trong không khí. b) Kể tên 4 nguyên tố hoá học có trong nước biển. Kể tên 4 nguyên tố hoá học chiếm thành phân phẩn trăm khối lượng Iớn c) nhất trong cơ thể con người. KÊT Nấa TRi THUc BÀl4.SƠ LƯỢCVỂBẢNGTUẨN HOÀN CÁC NGUYÊNTỐ HOÁ HỌC",
+    "answer": "a) 5 nguyên tố có trong không khí: nitơ; oxygen; carbon; argon, hydrogen. b) 4 nguyên tố có trong nước biển: hydrogen; oxygen; natri; chlorine (có thể kểthêm cả các nguyên tố calcium và magnesium) c) 4 nguyên tố hoá học chiếm phẩn trăm khối lượng lớn nhất của cơ thể con người: carbon, oxygen, hydrogen; nitơ. 97"
+  },
+  {
+    "id": "khtn7-4-1",
+    "bai": 4,
+    "cau": 1,
+    "type": "essay",
+    "stem": "Nhà bác học Men-đê-lê-ép là người nước nào? Các nguyên tố hoá học trong bảng tuẩn hoàn do ông xây dựng được sắp xếp theo nguyên tắc nào? \"tăng \"tăng",
+    "answer": "Nhàbác học Men-đê-lê-ép là người nước Nga. Các nguyên tố hoá học trong bảng tuẩn hoàn do ông xây dựng được sắp xếp theo chiểu tăng dẩn khối lượng nguyên tử."
+  },
+  {
+    "id": "khtn7-4-2",
+    "bai": 4,
+    "cau": 2,
+    "type": "essay",
+    "stem": "Cho các cụm từ: dẩn khối lượng\" dẩn điện tích hạt nhân\" \"cùng cột\" \"cùng hàng\" Chọn cụm từthích hợpđiển vào các vị trí có đánh số (1) (2) (3), (4) để hoàn thành các nội dung sau. a) Bảng tuẩn hoàn của Men-đê-lê-ép sắp xếp các nguyên tố theo chiểu _(1)- nguyên tử. b) Ngày nay, bảng tuẩn hoàn các nguyên tố hoá học sắp xếp các nguyên tố theo chiêu . (2) - nguyên tử Các nguyên tố . (3)có cùng số lớp electron trong nguyên tử; còn các nguyên tố . (4) có tính chất gẩn giống nhau: 14",
+    "answer": "(1): tăng dẩn khối lượng; (2): tăng dân điện tích hạt nhân; (3): cùng hàng; (4): cùng cột."
+  },
+  {
+    "id": "khtn7-4-3",
+    "bai": 4,
+    "cau": 3,
+    "type": "essay",
+    "stem": "Phát biểu nào sau đây là đúng? Bảng tuẩn hoàn gổm 116 nguyên tố hoá học. A B. Bảng tuẩn hoàn gổm 6 chu kì. Bảng tuẩn hoàn gổm 8 nhóm A và 8 nhóm B. C. D. Các nguyên tố trong bảng tuân hoàn được xếp theo chiểu tăng dẩn khối lượng nguyên tử bảng tuẩn hoàn hãy cho biết kí hiệu hoá học, tên nguyên tố, số hiệu",
+    "answer": "C."
+  },
+  {
+    "id": "khtn7-4-4",
+    "bai": 4,
+    "cau": 4,
+    "type": "essay",
+    "stem": "Dựa vào nguyên tử và khối lượng nguyên tử của các nguyên tố ở ô số 3,9.",
+    "answer": "Kí hiệu hoá học, tên nguyên tố, số hiệu và khối lượng nguyên tử của các nguyên tố ở ô số 3,9 lẩn lượt là: Ôsố 3:kí hiệu hoá học Li; tên nguyên tố lithium; số hiệu nguyên tử 3 và khối Iượng nguyên tử 7 amu: Ôsố 9:kí hiệu hoá học F, tên nguyên tố fluorine; số hiệu nguyên tử 9 và khối lượng nguyên tử 19 amu."
+  },
+  {
+    "id": "khtn7-4-5",
+    "bai": 4,
+    "cau": 5,
+    "type": "essay",
+    "stem": "Chọn cụm từ thích hợp điển vào chỗ trống để hoàn thành các câu sau: 2chính là số thứ tự của nguyên tố trong bảng tuẩn hoàn:. a) b) Nguyên tử của các nguyên tố thuộc cùng chu kì có cùng .? . c) Nguyên tử của các nguyên tố cùng nhóm A có .?. bằng nhau:",
+    "answer": "a) Số hiệu nguyên tử. b) số lớp electron:. c) số electron ở lớp ngoài cùng:"
+  },
+  {
+    "id": "khtn7-4-6",
+    "bai": 4,
+    "cau": 6,
+    "type": "essay",
+    "stem": "Phát biểu nào sau đây không đúng? Bảng tuẩn hoàn gổm 3 chu kì nhỏ và 4 chu kì lớn. A B. Số thứ tự của chu kì bằng số electron ở lớp ngoài cùng của nguyên tử các nguyên tố thuộc chu kì đó. C. Số thứ tự của chu kì bằng số lớp electron của nguyên tử các nguyên tố thuộc chu kì đó. D. Các nguyên tố trong cùng chu kì được sắp xếp theo chiểu điện tích hạt nhân tăng dẩn: U@C S ONG",
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-4-7",
+    "bai": 4,
+    "cau": 7,
+    "type": "essay",
+    "stem": "Phát biểu nào sau đây là đúng? A Nhóm gổm các nguyên tố mà nguyên tử của chúng có số electron lớp ngoài cùng bằng nhau và được xếp vào cùng một hàng. B. Các nguyên tố cùng nhóm có tính chất gẩn giống nhau: C. Bảng tuẩn hoàn gổm 8 nhóm được kí hiệu từ 1 đến 8. D.Các nguyên tố trong nhóm được xếpthành một cột theo chiểu khối lượng nguyên tử tăng dẩn:.",
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-4-8",
+    "bai": 4,
+    "cau": 8,
+    "type": "essay",
+    "stem": "Chọn từlcụm từ thích hợp điển vào chỗ trống có đánh số (1), (2) để hoàn thành các câu sau: \"Bảng tuẩn hoàn các nguyên tố hoá học gổm các nguyên tố kim loại; -(1).và tổng - khí hiếm. Trong đó nguyên tố .(2). chiếm đến 80%- số nguyên tố\" 15",
+    "answer": "(1) phi kim; (2) kim"
+  },
+  {
+    "id": "khtn7-4-9",
+    "bai": 4,
+    "cau": 9,
+    "type": "essay",
+    "stem": "Phát biểu nào sau đây là đúng? A. Các nguyên tố kim loại tập trung hẩu hết ở góc trên bên phải của bảng tuẩn hoàn: B. Các nguyên tố kim loại tập trung hẩu hết ở góc dưới bên trái của bảng tuẩn hoàn: C Các nguyên tố khí hiếm nằm ở giữa bảng tuẩn hoàn: D. Các nguyên tố phi kim nằm ở cuối bảng tuẩn hoàn:.",
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-4-10",
+    "bai": 4,
+    "cau": 10,
+    "type": "essay",
+    "stem": "Phát biểu nào sau đây không đúng? A. Các nguyên tố phi kim tập trung ở các nhóm VA, VIA, VIIA. B. Các nguyên tố khí hiếm nẳm ở nhóm VIIIA. C Các nguyên tố kim loại có mặt ở tất cả các nhóm trong bảng tuân hoàn:. D.Các nguyên tố lanthanide và actinide; mỗi họ gổm 14 nguyên tố được xếp riêng thành hai dãy ở cuối bảng:",
+    "answer": "C."
+  },
+  {
+    "id": "khtn7-4-11",
+    "bai": 4,
+    "cau": 11,
+    "type": "multiple_choice",
+    "stem": "Phát biểu nào sau đây là đúng?",
+    "answer": "C.",
+    "options": [
+      "Ở điểu kiện thường, tất cả các nguyên tố kim loại tổn tại ở thể rắn",
+      "Ở điểu kiện thường; tất cả các nguyên tố phi kim tổn tại ở thể Iỏng",
+      "Ởđiểu kiện thường, tất cả các khí hiếm tổn tại ở thể khí",
+      "Ở điểu kiện thường, tất cả các nguyên tố phi kim tổn tại ở thể khí"
+    ]
+  },
+  {
+    "id": "khtn7-4-12",
+    "bai": 4,
+    "cau": 12,
+    "type": "essay",
+    "stem": "Hãy cho biết tên và kí hiệu hoá học của nguyên tố ở nhóm VA; chu kì 3 và nguyên tố ở nhóm VIIIA chu kì 2",
+    "answer": "Nguyên tố ở nhóm VA, chu kì 3 là P; phosphorus; nguyên tố ở nhóm VIIIA chu kì 2 là Ne, neon."
+  },
+  {
+    "id": "khtn7-4-13",
+    "bai": 4,
+    "cau": 13,
+    "type": "essay",
+    "stem": "Hydrogen là nguyên tố nhẹ nhất trong tất cả các nguyên tố và phổ biến nhất trong vũ trụ. Hãy cho biết kí hiệu hoá học của nguyên tố hydrogen và cho biết nó ở chu kì nào và nhóm nào trong bảng tuẩn hoàn:",
+    "answer": "Kí hiệu hoá học H,ở chu kì 1, nhóm IA."
+  },
+  {
+    "id": "khtn7-4-14",
+    "bai": 4,
+    "cau": 14,
+    "type": "essay",
+    "stem": "Silicon là nguyên tố phổ biến thứ hai trên Trái Đất; tổn tại chủ yếu trong cát và là chất hoá học phổ biến nhất trong vỏ trái đất. Hãy cho biết kí hiệu hoá học của nguyên tố silicon và cho biết nó ở chu kì nào và nhóm nào trong bảng tuân hoàn?",
+    "answer": "Kí hiệu hoá học Si, ở chu kì 3, nhóm IVA."
+  },
+  {
+    "id": "khtn7-4-15",
+    "bai": 4,
+    "cau": 15,
+    "type": "essay",
+    "stem": "Viết kí hiệu hoá học và tên của các nguyên tố thuộc nhóm IA, IIA, VIIA và VIIIA ở chu kì 2",
+    "answer": "Kí hiệu hoá học và tên của các nguyên tố thuộc nhóm IA, IIA, VIIA và VIIIA ở chu kì 2 lẩn Iượt là: Li; lithium; Be, beryllium; F, fluorine; Ne, neon."
+  },
+  {
+    "id": "khtn7-4-16",
+    "bai": 4,
+    "cau": 16,
+    "type": "essay",
+    "stem": "Nguyên tố Mg thuộc chu kì 3, nhóm IIA. Hỏi nguyên tử của nguyên tố Mg có bao nhiêu lớp electron và bao nhiêu electron ở lớp ngoài cùng? 16",
+    "answer": "Nguyên tố Mg có 3 lớp electron và 2 electron ở lớp ngoài cùng. 98"
+  },
+  {
+    "id": "khtn7-4-17",
+    "bai": 4,
+    "cau": 17,
+    "type": "essay",
+    "stem": "Biết nguyên tố P ở nhóm VA, chu kì 3. Hãy cho biết nhận định sau đúng hay sai và giải thích: \"Nguyên tửP có 5 lớp electron và 3 electronở lớp ngoài cùng\"",
+    "answer": "Nhận định đó sai vì nguyên tử P có 3 lớp electron và 5 electron ở lớp ngoài cùng."
+  },
+  {
+    "id": "khtn7-4-18",
+    "bai": 4,
+    "cau": 18,
+    "type": "essay",
+    "stem": "Trong tự nhiên có khoảng 25 nguyên tố cẩn thiết cho sự sống. Trong đó nguyên tố X (thuộc nhóm VIIA; chu kì 5 trong bảng tuẩn hoàn) là nguyên tố hằng ngày con người cẩn khoảng 0,15 miligam cho hoạt động vi lượng mà của tuyến giáp; nếu thiếu nguyên tố X có thể gây bướu cổ. Dựa vào bảng tuẩn hoàn hãy cho biết kí hiệu hoá học, tên nguyên tố, số hiệu và khối lượng nguyên tử của nguyên tố X",
+    "answer": "Nguyên tố Xcó kí hiệu hoá học là I, tên nguyên tố: iodine; số hiệu: 53, khối lượng nguyên tử 127 amu: electron ở lớp ngoài cùng:"
+  },
+  {
+    "id": "khtn7-4-19",
+    "bai": 4,
+    "cau": 19,
+    "type": "essay",
+    "stem": "Nguyên tố X (Z = 11) là nguyên tố có trong thành của muối ăn: Hãy phẩn cho biết tên nguyên tố X và vẽ mô hình sắp xếp electron ở vỏ nguyên tử X. X có bao nhiêu lớp electron; bao nhiêu electron ở lớp ngoài cùng? Từ đó cho biết X thuộc chu kì nào; nhóm nào trong bảng tuẩn hoàn? Nguyên tố X (Z = 20) là thành phẩn không thể thiếu trong sản phẩm sữa:",
+    "answer": "X là natri (Na). Nguyên tử X có 3 lớp electron; X thuộc chu kì 3, nhóm IA. Mô hình sắp xếp electron ở vỏ nguyên tử của nguyên tố X: Na"
+  },
+  {
+    "id": "khtn7-4-20",
+    "bai": 4,
+    "cau": 20,
+    "type": "essay",
+    "stem": "hưởng Sự thiếu hụt một lượng rất nhỏ của X trong cơ thể đã ảnh tới sự hình thành và phát triển của xương và răng, nhưng nếu cơ thể thừa nguyên tố X lại có thể dẫn đến bệnh sỏi thận Hãy cho biết tên nguyên tố Xvà vẽ mô hình sắp xếp electron ở vỏ nguyên tử X. X có bao nhiêu lớp electron; bao nhiêu electron ở lớp ngoài cùng. Từ đó cho biết X thuộc chu kì nào, nhóm nào trong bảng tuẩn hoàn.",
+    "answer": "Xlà calcium (Ca). Mô hình sắp xếp electron ở vỏ nguyên tử của X: KE 7 HỨ C ÁLOMOCSÃAf Nguyên tử Xcó 4 lớp electron; 2 electron ở lớp ngoài cùng. X thuộc chu kì 4, nhóm IIA trong bảng tuân hoàn"
+  },
+  {
+    "id": "khtn7-4-21",
+    "bai": 4,
+    "cau": 21,
+    "type": "essay",
+    "stem": "Dựa vào bảng tuẩn hoàn, hãy cho biết trong số các nguyên tố: Na, K, Mg, Ba, Be, B, C, N, 0, Ar, những nguyên tố nào thuộc cùng chu kì, đó là VOI CUoc SỐNG chu kì nào?",
+    "answer": "Các nguyên tố Na, Mg, Ar thuộc cùng chu kì 3. Các nguyên tố Be, B, C, N, O thuộc cùng chu kì 2. 4.22. Các nguyên tố Na, Kthuộc cùng nhóm IA; các nguyên tố Mg, Ba, Be thuộc cùng nhóm IIA."
+  },
+  {
+    "id": "khtn7-4-22",
+    "bai": 4,
+    "cau": 22,
+    "type": "essay",
+    "stem": "Dựa vào bảng tuẩn hoàn, hãy cho biết trong số các nguyên tố: Na, K, Mg, Ba, Be, B, C, N, 0, Ar, những nguyên tố nào thuộc cùng một nhóm, đó là nhóm nào? bảng tuẩn hoàn, hãy cho biết trong số các nguyên tố: Na, Cl, Fe, K,",
+    "answer": null
+  },
+  {
+    "id": "khtn7-4-23",
+    "bai": 4,
+    "cau": 23,
+    "type": "essay",
+    "stem": "Dựa vào Kr, Mg, Ba, C, N; S, Ar; những nguyên tố nào là kim loại. Những nguyên tố nào là phi kim? Những nguyên tố nào là khí hiếm?",
+    "answer": "a) Các nguyên tố Na, Fe, K, Mg, Ba là kim loai. b) Các nguyên tố CI; C, N; S là phi kim. c) Các nguyên tố khí hiếm là Kr, Ar. 99 duy nhất tôn tại ở thể lỏng 5 ở điểu kiện thường là Hg,"
+  },
+  {
+    "id": "khtn7-4-24",
+    "bai": 4,
+    "cau": 24,
+    "type": "essay",
+    "stem": "Hãy tìm hiểu và cho biết: a) Tên và kí hiệu hoá học của nguyên tố kim loại duy nhất tổn tại ở thể lỏng, ' ở điểu kiện thường. Dựa vào bảng 'tuẩn hoàn; hãy cho biết nguyên tố đó ở ô số bao nhiêu. 17 Tên và kí hiệu hoá học của nguyên tố kim loại có trong thành phẩn của b) hemoglobin (chất có khả năng vận chuyển khí oxygen từ phổi đến các tế bào) nếu thiếu nguyên tố này cơ thể chúng ta sẽ mắc bệnh thiếu máu. Hãy kể ra ít nhất 3 ứng dụng trong đời sống của nguyên tố kim loại đó. c) Tên và kí hiệu hoá học của nguyên tố khí hiếm dùng để bơm vào bóng bay hoặc khinh khí câu.",
+    "answer": "a) Nguyên tố kim loại thuỷ ngân (mercury), ô số 80. b) Nguyên tố kim loại có trong thành phẩn của hemoglobin là Fe; sắt. Mộtsố ứng dụng trong đời sống của kim loại sắt là làm vật liệu xây dựng; làm đổ dùng cá nhân như dao, kéo; móc quẩn áo,; làm đổ nội thất như khung cửa, cẩu thang c) Nguyên tố khí hiếm được dùng để bơm vào bóng bay hoặc khinh khí câu là helium, He_"
+  },
+  {
+    "id": "khtn7-4-25",
+    "bai": 4,
+    "cau": 25,
+    "type": "essay",
+    "stem": "Nguyên tố xenon (Xe) có 8 electron ở lớp ngoài cùng. Hãy cho biết xenon là kim Ioại, phi kim hay khí hiếm? Ở điểu kiện thường xenon tổn tại ở thể nào?",
+    "answer": "Vì có 8 electron ở lớp vỏ nguyên tử nên Xe thuộc nhóm VIIIA nguyên tố khí hiếm, là chất khí ở điểu kiện thường."
+  },
+  {
+    "id": "khtn7-4-26",
+    "bai": 4,
+    "cau": 26,
+    "type": "essay",
+    "stem": "Xlà nguyên tốcẩn thiết cho quá trình hô hấpcủa sinh vật, nếuthiếu nguyên tố này sự cháy không thể xảy ra. Hãy cho biết tên, kí hiệu hoá học và vị trí (ô nguyên tố, chu kì, nhóm) của X trong bảng tuẩn hoàn: Nguyên tố X là kim loại, phi kim hay khí hiếm?",
+    "answer": "Nguyên tố cẩn thiết cho quá trình hô hấp của sinh vật; thiếu nó sự cháy không thể xảy ra là oxygen; kí hiệu hoá học là O;ô số 8, chu kì 2, nhóm VIA; là phi kim:."
+  },
+  {
+    "id": "khtn7-4-27",
+    "bai": 4,
+    "cau": 27,
+    "type": "essay",
+    "stem": "Hãy cho biết vị trí của nguyên tố Y trong bảng tuẩn hoàn, biết vỏ nguyên tử của nguyên tố Y có 2 lớp electron; trong đó lớp ngoài cùng có 4 electron. Từ đó cho biết Y là kim loại , phi kim hay khí hiếm?",
+    "answer": "Vì Ycó 2 lớp electron ở vỏ nguyên tử và 4 electron ở lớp ngoài cùng nên Y tổng 6 electron; do đó Y có số hiệu nguyên tử là 6 và bằng số thứ tự của có nó trong bảng tuẩn hoàn. Vì có 2 lớp electron nên Y thuộc chu kì 2, Y có 4 electron ở Iớp ngoài cùng nên thuộc nhóm IVA. Vì thuộc nhóm IVA, chu kì 2 nên Ylà phi kim"
+  },
+  {
+    "id": "khtn7-4-28",
+    "bai": 4,
+    "cau": 28,
+    "type": "essay",
+    "stem": "a) Dựa vào bảng tuẩn hoàn hãy liệt kê kí hiệu hoá học và điện tích hạt nhân Z của các nguyên tố thuộc chu kì 3 Hãy xác định tên và kí hiệu hoá học của nguyên tố X biết nó thuộc chu kì 3, b) có điện tích hạt nhân Z > 12, dẫn điện tốt, dẫn nhiệt tốt, dẻo, dễ dát mỏng, có ánh kim. Giải thích c) Hãy kể ra ít nhất 3 ứng dụng trong đời sống của nguyên tố X 18",
+    "answer": "a) Các nguyên tố ở chu kì 3 là: Na (11), Mg (12), Al (13), Si (14), P (15), S (16) CI (17), Ar (18). KẾT (Alvìc TAng b) Nguyên tố đó là nhôm vì các nguyên tố thuộc chu kì 3, có Z > 12 chỉcó Al là kim loai có các tính chất như trên. s016 c) Nhôm được ứng dụng trong công nghiệp như làm vỏ thân máy bay, khung xe máy, ; các vật dụng trong gia đình như nổi, chậu, thìa, ; trong xây dựng khung như cửa,-"
+  },
+  {
+    "id": "khtn7-5-1",
+    "bai": 5,
+    "cau": 1,
+    "type": "multiple_choice",
+    "stem": "Một phân tử nước chứa hai nguyên tử hydrogen và một oxygen: Nước là",
+    "options": [
+      "một hợp chất",
+      "một đơn chất",
+      "một hỗn hợp",
+      "một nguyên tố hoá học"
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "khtn7-5-2",
+    "bai": 5,
+    "cau": 2,
+    "type": "multiple_choice",
+    "stem": "Đèn neon chứa",
+    "options": [
+      "các phân tử khí neon Nez riêng không",
+      "các nguyên tử neon (Ne) rẽ liên kết với nhau",
+      "một đại phân tử khổng lổ chứa rất nhiểu nguyên tử neon:",
+      "một nguyên tử neon:"
+    ],
+    "answer": "B."
+  },
+  {
+    "id": "khtn7-5-3",
+    "bai": 5,
+    "cau": 3,
+    "type": "multiple_choice",
+    "stem": "Một bình khí oxygen chứa",
+    "options": [
+      "các phân tử 02'",
+      "các nguyên tử oxygen riêng rẽ không liên kết với nhau:",
+      "một đại phân tử khổng lổ chứa rất nhiểu nguyên tử oxygen. n",
+      "một phân tử O2"
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "khtn7-5-4",
+    "bai": 5,
+    "cau": 4,
+    "type": "multiple_choice",
+    "stem": "Lõi dây điện bằng đổng chứa",
+    "options": [
+      "các phân tử Cuz:",
+      "các nguyên tử Cu riêng rẽ không liên kết với nhau:",
+      "rất nhiểu nguyên tử Cu liên kết với nhau:",
+      "một nguyên tử Cu:"
+    ],
+    "answer": "C."
+  },
+  {
+    "id": "khtn7-5-5",
+    "bai": 5,
+    "cau": 5,
+    "type": "essay",
+    "stem": "Cho các hình sau, trong đó mỗi vòng tròn biểu diễn nguyên tử, các vòng tròn đen và trắng biểu diễn các nguyên tử của các nguyên tố hoá học khác nhau: 19 Hộp nào chứa: a) Các phân tử của một đơn chất? b) Các phân tử của một hợp chất? nguyên tử của một đơn chất? Hình 5.1 c) Các Có hộp nào chứa hỗn hợp không? Hãy giải thích.",
+    "answer": "Hộp B chứa các phân tử của một đơn chất. Hộp C chứa các phân tử của một hợp chất. 100 Hộp A chứa các nguyên tử của một đơn chất. Không có hộp nào chứa hỗn hợp; vì các hộp đểu chỉ chứa một chất."
+  },
+  {
+    "id": "khtn7-5-6",
+    "bai": 5,
+    "cau": 6,
+    "type": "essay",
+    "stem": "Trong các chất hoá học: Li; N2 CO, Cl2, S8 NaCl, chất nào là đơn chất, chất nào là hợp chất?",
+    "answer": "Các đơn chất là: Li; N2' Cl2' S8: Các hợp chất là CO, NaCI."
+  },
+  {
+    "id": "khtn7-5-7",
+    "bai": 5,
+    "cau": 7,
+    "type": "essay",
+    "stem": "Các hợp chất sau đây được tạo thành từ bao nhiêu nguyên tố hoá học? CH,OH. a) CuO b) CaCO3. c) HNO3. d) NaOH:",
+    "answer": "a) Hợp chất CuO được tạo thành từ 2 nguyên tố hoá học b) Hợp chất CaCO; được tạo thành từ 3 nguyên tố hoá học. HNO; được tạo thành từ 3 nguyên tố hoá học. Hợp chất d) Hợp chất NaOH được tạo thành từ 3 nguyên tố hoá học. e) Hợp chất CH;OH được tạo thành từ 3 nguyên tố hoá học"
+  },
+  {
+    "id": "khtn7-5-8",
+    "bai": 5,
+    "cau": 8,
+    "type": "essay",
+    "stem": "Có bao nhiêu nguyên tử trong mỗi phân tửcác chất sau: d) CH4; 5O2' a) N2: b) CO2. c) 03. e) g) C2H4.",
+    "answer": "Số nguyên tử trong mỗi phân tử các chất lẩn lượt là: a) 2; b) 3; c) 3; d) 5; e) 3; 9) 6. 5.9.Hình C - (1); Hình E - (2); Hình A = (3); Hình B - (4); Hình D (5)."
+  },
+  {
+    "id": "khtn7-5-9",
+    "bai": 5,
+    "cau": 9,
+    "type": "essay",
+    "stem": "Trong các hình vẽ dưới đây, mỗi hình vuông biểu diễn một chiếc hộp chứa; vòng vòng mỗi tròn biểu diễn một nguyên tử; các tròn màu đen, xanh lam nhạt và trắng biểu diễn các nguyên tử của các nguyên tố hoá học khác nhau: H Jn 1 Hình 5.2 Hãy ghép mỗi hình trên với một mô tả dưới đây cho phù hợp: Mỗi hình chỉ được sử dụng 1 lẩn. (1) Đơn chất tinh khiết chỉ chứa loại nguyên tử. (2) Hỗn hợp 2 đơn chất có hai loại nguyên tử không liên kết với nhau: (3) Hợp chất tinh khiết - chỉ chứa một loại phân tử. (4) Hỗn hợp 2 hợp chất có hai loại phân tử trong hộp. (5) Hỗn hợp gổm đơn chất và hợp chất. 20",
+    "answer": null
+  },
+  {
+    "id": "khtn7-5-10",
+    "bai": 5,
+    "cau": 10,
+    "type": "essay",
+    "stem": "Trong các hình vẽ dưới đây, các vòng tròn có kích thước khác nhau biểu diễn các nguyên tử của các nguyên tố khác nhau: Hình vẽ nào biểu diễn khí hydrogen chloride? Hình 5.3 bảng",
+    "answer": "Hình C. Các hình A, D biểu diễn đơn chất, hình B biểu diễn hỗn hợp 2 đơn chất, hình C biểu diễn hợp chất (khí khí hydrogen chloride là hợp chất)"
+  },
+  {
+    "id": "khtn7-5-11",
+    "bai": 5,
+    "cau": 11,
+    "type": "essay",
+    "stem": "Đánh dấu (x) vào ô thích hợp để hoàn thiện sau vể sự phân loai một số chất. Chất nguyên chất Chất Hỗn hợp Đơn chất Hợp chất Sắt X Đường ăn + Nước cất Nước cam Nước biển Không khí trong quả EoNUC bóng bay 1 Nhôm Nước cất",
+    "answer": "0o E Chất nguyên chất Hỗn hợp Chất V Đơn chất Hợp chất Sắt X Đường ăn + Nước cất X Nước cam X Nước biển X Không khí trong quả X bóng E bay Nhôm X Nước cất X 101"
+  },
+  {
+    "id": "khtn7-5-12",
+    "bai": 5,
+    "cau": 12,
+    "type": "essay",
+    "stem": "Cho các cụm từ sau: nguyên tử, đơn chất, không thể, hoá học, hợp chất, vật nguyên tố hoá học lí, Chọn một trong các cụm từ cho ởtrên điển vào mỗi chỗ trống để hoàn thiện các câu sau (chú ý: một từ có thể sử dụng nhiểu lẩn hoặc không sử dụng). a) Đơn chất là chất chỉ chứa một loại b) Một đơn chất . ? bị phân chia thành các đơn chất khác nữa. Hợp chất là chất được tạo nên từ hai hay nhiểu . ?. khác nhau. Các nguyên tử c) trong hợp chất liên kết . ? . với nhau: 21 d) Không thể phân tách hợp chất thành các đơn chất tạo nên chúng; hoặc phân tách thành các hợp chất khác bằng các phương pháp .?. Tính chất của các hợp chất thường khác với tính chất của các đơn chất tạo nên chúng:",
+    "answer": "a) Đơn chất là chất chỉ chứa một loại nguyên tử. b) Một đơn chất không thể bị phân chia thành các đơn chất khác nữa. c) Hợp chất là chất được tạo nên từ hai hay nhiểu nguyên tố hoá học. Các nguyên tử trong hợp chất liên kết hoáhọc với nhau. d) Không thể phân tách hợp chất thành các đơn chất tạo nên chúng; hoặc phân tách thành các hợp chất khác bằng các phương pháp vật lí. Tính chất của các hợp chất thường khác với tính chất của các đơn chất tạo nên chúng."
+  },
+  {
+    "id": "khtn7-5-13",
+    "bai": 5,
+    "cau": 13,
+    "type": "multiple_choice",
+    "stem": "Trong phân tử nước, cứ 16,0g oxygen có tương ứng 2,0g hydrogen Mộtgiọt nước chứa 0,1 g hydrogen thì khối lượng của oxygen có trong giọt nước đó là",
+    "options": [
+      "1,6 g",
+      "1,2 g",
+      "0,9g-",
+      "0,8 g"
+    ],
+    "answer": "D."
+  },
+  {
+    "id": "khtn7-5-14",
+    "bai": 5,
+    "cau": 14,
+    "type": "multiple_choice",
+    "stem": "Hình 5.4 mô tả một phân tử chứa carbon, hydrogen và oxygen. carbon hydrogen oxygen Hình 5.4 Số nguyên tử của mỗi nguyên tố carbon, hydrogen và oxygen có trong một phân tử chất này lẩn lượt là",
+    "options": [
+      "1,6, 2",
+      "2,5, 1",
+      "2,6, 1",
+      "6, 2, 1"
+    ],
+    "answer": "C."
+  },
+  {
+    "id": "khtn7-5-15",
+    "bai": 5,
+    "cau": 15,
+    "type": "essay",
+    "stem": "Cho ba nguyên tố hoá học là carbon (C), hydrogen (H) và oxygen (0). Sự kết hợp giữa hai trong số ba nguyên tố, hoặc giữa ba nguyên tố hoá học này với nhau tạo ra rất nhiểu hợp chất. Hãy tính khối lượng phân tửvà phẩn trăm khối lượng của mỗi nguyên tố trong các hợp chất sau: a) CO2 (khí carbon dioxide, là khí cẩn thiết cho quá trình quang hợp). b) CH4 (methane; là thành phẩn chính của khí thiên nhiên). Co sung C12H22011 (đường ăn) c) (Biết khối lượng nguyên tử của các nguyên tố: C = 12;H = 1;0 = 16). Hãy tìm hiểu và cho biết vì sao buckminsterfullerene và carbon nanotube",
+    "answer": "a) Khối lượng phân tử CO2: M =12 + 2.16 = 44 (amu). Thành phẩn phân trăm vể khối lượng mỗi nguyên tố: 12 %C 1009 ~ 27,39; 44 2 . 16 %0 = 1009 ~ 72,7% 44 b) Khối lượng phân tử CH4: M =12+4.1 = 16 (amu) Thành phẩn phẩn trăm vể khối lượng mỗi nguyên tố: KE %C= 12 .100% 75%; UC 16 44.1009 V0%H = =25%. G 16 c) Khối lượng phân tử C12H22011: M =12.12 + 22.1 + 11.16 = 342 (amu). Thành phẩn phẩn trăm vể khối lượng mỗi nguyên tố: %C = 12 .12 1009 ~ 42,1%; 342 22 .1 %H = 100% ~ 6,4%; 342 11.16 %0 = 1009 ~ 51,59 342 102"
+  },
+  {
+    "id": "khtn7-5-16",
+    "bai": 5,
+    "cau": 16,
+    "type": "essay",
+    "stem": "(Hình 5.5) đểu là đơn chất carbon? a) buckminsterfullerene b) carbon nanotube Hình 5.5 22",
+    "answer": "Vì buckminsterfullerene và carbon nanotube chỉ chứa một loại nguyên tửcarbon, nên chúng cũng là đơn chất carbon:"
+  }
+]

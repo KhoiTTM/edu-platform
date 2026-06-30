@@ -1,0 +1,44 @@
+{
+  "_comment": "Template chung exam-bank. Copy file này, đổi nội dung, đặt tên content/exam-bank/<subject>-<grade>-<slug>.json rồi chạy: npx tsx scripts/seed-exam-bank.ts <file>. Các field bắt đầu bằng _ sẽ bị generator bỏ qua.",
+  "collection": {
+    "title": "Kiểm tra giữa học kỳ 1",
+    "subject_slug": "toan",
+    "grade": 3,
+    "volume": 1,
+    "units": [101],
+    "sequence_number": 1,
+    "exam_type": "midterm",
+    "reference_book": "Kết nối tri thức với cuộc sống",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 1,
+      "title": "Đề kiểm tra giữa học kỳ 1 - Đề số 1",
+      "duration_minutes": 45,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.0,
+          "metadata_json": {
+            "question": "Tích của 6 và 4 là:",
+            "options": ["24", "10", "20", "28"],
+            "correct_index": 0,
+            "explanation": "6 x 4 = 24.",
+            "tags": ["nhan-chia"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính kết quả phép tính: 6 x ___ = 54",
+            "choices": ["7", "8", "9", "6"],
+            "correct_answer": "9",
+            "tags": ["tim-x"]
+          }
+        }
+      ]
+    }
+  ]
+}

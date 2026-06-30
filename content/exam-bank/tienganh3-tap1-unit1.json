@@ -1,0 +1,350 @@
+{
+  "collection": {
+    "title": "SBT Tiếng Anh 3 - Tập 1",
+    "subject_slug": "tieng_anh",
+    "grade": 3,
+    "volume": 1,
+    "units": [
+      1
+    ],
+    "sequence_number": 1,
+    "exam_type": "midterm",
+    "reference_book": "Global Success - Tiếng Anh 3 Tập 1",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 1,
+      "title": "Unit 1: Hello - Đề số 1",
+      "duration_minutes": 25,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "A. PHONICS — Từ nào bắt đầu bằng âm /h/?",
+            "options": [
+              "hello",
+              "bye",
+              "name",
+              "pen"
+            ],
+            "correct_index": 0,
+            "explanation": "\"hello\" bắt đầu bằng âm /h/.",
+            "tags": [
+              "unit-1",
+              "phonics"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "A. PHONICS — Từ nào bắt đầu bằng âm /b/?",
+            "options": [
+              "bye",
+              "hi",
+              "old",
+              "fine"
+            ],
+            "correct_index": 0,
+            "explanation": "\"bye\" bắt đầu bằng âm /b/.",
+            "tags": [
+              "unit-1",
+              "phonics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "A. PHONICS — Điền chữ còn thiếu: _ello (lời chào)",
+            "choices": [
+              "h",
+              "b",
+              "m",
+              "n"
+            ],
+            "correct_answer": "h",
+            "explanation": "hello.",
+            "tags": [
+              "unit-1",
+              "phonics"
+            ]
+          }
+        },
+        {
+          "type": "crossword",
+          "difficulty": 1.2,
+          "metadata_json": {
+            "question": "A. DO THE PUZZLE — Hoàn thành ô chữ các lời chào:",
+            "rows": 5,
+            "cols": 2,
+            "entries": [
+              {
+                "number": 1,
+                "direction": "down",
+                "row": 0,
+                "col": 0,
+                "answer": "HELLO",
+                "clue": "Lời chào (đầy đủ)"
+              },
+              {
+                "number": 2,
+                "direction": "across",
+                "row": 0,
+                "col": 0,
+                "answer": "HI",
+                "clue": "Lời chào (ngắn, thân mật)"
+              }
+            ],
+            "tags": [
+              "unit-1",
+              "phonics",
+              "puzzle"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Nối câu với câu đáp lại phù hợp:",
+            "pairs": [
+              {
+                "left": "Hello.",
+                "right": "Hi."
+              },
+              {
+                "left": "How are you?",
+                "right": "I'm fine, thank you."
+              },
+              {
+                "left": "Goodbye.",
+                "right": "Bye."
+              }
+            ],
+            "tags": [
+              "unit-1",
+              "greetings"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Điền từ: \"Hi. ___ Nam.\" (giới thiệu tên)",
+            "choices": [
+              "I'm",
+              "It's",
+              "You",
+              "How"
+            ],
+            "correct_answer": "I'm",
+            "explanation": "\"I'm Nam.\" = Mình là Nam.",
+            "tags": [
+              "unit-1",
+              "introduce"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Bạn vẫy tay chào (như hình). Em nói gì?",
+            "options": [
+              "Hello!",
+              "Goodbye!",
+              "Thank you!",
+              "No."
+            ],
+            "correct_index": 0,
+            "image_url": "/images/exam-tienganh3-u1/wave-hello.svg",
+            "explanation": "Vẫy tay gặp nhau → chào \"Hello!\".",
+            "tags": [
+              "unit-1",
+              "greetings"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Đáp lại: \"How are you?\" → \"I'm ___, thank you.\"",
+            "choices": [
+              "fine",
+              "bye",
+              "hello",
+              "name"
+            ],
+            "correct_answer": "fine",
+            "explanation": "\"I'm fine, thank you.\"",
+            "tags": [
+              "unit-1",
+              "greetings"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 1.2,
+          "metadata_json": {
+            "question": "B. MAKE SENTENCES — Sắp xếp thành câu đúng:",
+            "words": [
+              "I'm",
+              "thank",
+              "fine",
+              "you"
+            ],
+            "correct_sentence": "I'm fine thank you",
+            "tags": [
+              "unit-1",
+              "greetings"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 1.2,
+          "metadata_json": {
+            "question": "B. MAKE SENTENCES — Sắp xếp thành câu đúng:",
+            "words": [
+              "Mai",
+              "Hello",
+              "I'm"
+            ],
+            "correct_sentence": "Hello I'm Mai",
+            "tags": [
+              "unit-1",
+              "introduce"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "C. SPEAKING — Khi tạm biệt bạn, em nói:",
+            "options": [
+              "Goodbye!",
+              "Hello!",
+              "How old are you?",
+              "Thank you."
+            ],
+            "correct_index": 0,
+            "explanation": "Tạm biệt → \"Goodbye!\" (hoặc Bye!).",
+            "tags": [
+              "unit-1",
+              "greetings"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "D. READING — Đọc và khoanh đáp án đúng: \"Hi! I'm Linh.\" Đây là lời:",
+            "options": [
+              "chào và giới thiệu tên",
+              "tạm biệt",
+              "cảm ơn",
+              "hỏi tuổi"
+            ],
+            "correct_index": 0,
+            "explanation": "\"Hi! I'm Linh.\" = chào và giới thiệu tên.",
+            "tags": [
+              "unit-1",
+              "reading"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "difficulty": 1.2,
+          "metadata_json": {
+            "question": "D. READING — Read and match — Nối lời với tình huống:",
+            "pairs": [
+              {
+                "left": "Hello.",
+                "right": "gặp nhau"
+              },
+              {
+                "left": "Goodbye.",
+                "right": "chia tay"
+              },
+              {
+                "left": "Thank you.",
+                "right": "cảm ơn"
+              }
+            ],
+            "tags": [
+              "unit-1",
+              "reading"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "E. WRITING — Nhìn hành động (vẫy tay) và viết: Đây là lời chào \"___\".",
+            "choices": [
+              "Hello",
+              "Bye",
+              "Fine",
+              "Name"
+            ],
+            "correct_answer": "Hello",
+            "image_url": "/images/exam-tienganh3-u1/hand-wave.svg",
+            "explanation": "Vẫy tay → Hello.",
+            "tags": [
+              "unit-1",
+              "writing"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.2,
+          "metadata_json": {
+            "question": "E. WRITING — Viết từ còn thiếu: \"Good___.\" (lời tạm biệt)",
+            "choices": [
+              "bye",
+              "hi",
+              "old",
+              "fine"
+            ],
+            "correct_answer": "bye",
+            "explanation": "Goodbye = tạm biệt.",
+            "tags": [
+              "unit-1",
+              "writing"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 1.2,
+          "metadata_json": {
+            "question": "E. WRITING — Sắp xếp thành câu chào đúng:",
+            "words": [
+              "I'm",
+              "Hi",
+              "Bill"
+            ],
+            "correct_sentence": "Hi I'm Bill",
+            "tags": [
+              "unit-1",
+              "writing"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
