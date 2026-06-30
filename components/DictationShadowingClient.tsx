@@ -168,7 +168,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
     } else {
       setActiveSentenceIndex(null);
     }
-  }, [currentTime, step, sentences, currentSentenceIndex]);
+  }, [currentTime, step, sentences, currentSentenceIndex, getPlayOffsetSeconds]);
 
   // Setup Web Speech API for recognition in Shadowing mode
   useEffect(() => {

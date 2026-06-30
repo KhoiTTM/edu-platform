@@ -37,9 +37,6 @@ export default async function StudentLayout({
 
   return (
     <div className="min-h-dvh flex flex-col relative text-white font-['Outfit']">
-      {/* Import Game-like typography */}
-      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet" />
-
       {/* Global Background */}
       <SpaceBackground />
 
