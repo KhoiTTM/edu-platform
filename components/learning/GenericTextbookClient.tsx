@@ -5,14 +5,13 @@ import Link from "next/link";
 import { TextbookPage, Exercise } from "@/lib/data/unit3Data"; // Import types
 import { 
   BookOpen, 
-  ChevronLeft, 
-  ChevronRight, 
-  Play, 
+  ChevronLeft,
+  Play,
   Pause, 
   CheckCircle, 
   HelpCircle,
-  Maximize2,
-  Volume2
+  Volume2,
+  ExternalLink
 } from "lucide-react";
 import confetti from "canvas-confetti";
 
@@ -32,9 +31,6 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
 
   const activePage = pages[currentPageIndex];
 
-  // Image zoom state
-  const [zoomScale, setZoomScale] = useState(1);
-  const [isFullscreen, setIsFullscreen] = useState(false);
 
   // User input answers state
   const [userAnswers, setUserAnswers] = useState<Record<string, string>>({});
@@ -157,6 +153,18 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
           >
             <ChevronLeft className="h-4 w-4" /> Quay Lại
           </Link>
+
+          {/* Mở sách giáo trình ở tab trình duyệt khác */}
+          <a
+            href={`https://online.flipbuilder.com/sdtta/bsjh/mobile/index.html#p=${activePage.pageNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-sky-600/90 hover:bg-sky-500 border border-sky-500 text-white transition text-xs font-medium"
+            title="Mở sách giáo trình ở tab mới"
+          >
+            <ExternalLink className="h-4 w-4" /> Mở Sách (tab mới)
+          </a>
+
           <div className="h-4 w-[1px] bg-slate-800"></div>
           <div>
             <h1 className="text-sm font-bold tracking-tight text-white flex items-center gap-1.5">
@@ -173,7 +181,6 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
               key={p.pageNumber}
               onClick={() => {
                 setCurrentPageIndex(idx);
-                setIsFullscreen(false);
               }}
               className={`px-3 py-1 rounded-lg text-xs font-semibold whitespace-nowrap transition-all duration-300 ${
                 currentPageIndex === idx
@@ -187,65 +194,11 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
         </div>
       </header>
 
-      {/* ── MAIN SPLIT WINDOW ────────────────────────────────────────────── */}
-      <div className="flex-1 flex flex-col md:flex-row overflow-hidden">
-        
-        {/* LEFT PANEL: Textbook 3D Flipbook Iframe */}
-        <div className={`flex-1 flex flex-col bg-slate-950 relative overflow-hidden border-r border-slate-800 transition-all duration-500 ${
-          isFullscreen ? "fixed inset-0 z-50 p-4" : ""
-        }`}>
-          {/* Controls toolbar */}
-          <div className="flex items-center justify-between p-3 bg-slate-900/60 border-b border-slate-850 z-10 backdrop-blur">
-            <span className="text-xs font-medium text-slate-300 flex items-center gap-1.5">
-              <Maximize2 className="h-3.5 w-3.5 text-sky-400" /> Bản Quét Sách: Trang {activePage.pageNumber} ({activePage.title})
-            </span>
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => setIsFullscreen(!isFullscreen)}
-                className="p-1.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition"
-                title={isFullscreen ? "Exit Fullscreen" : "Fullscreen"}
-              >
-                <Maximize2 className="h-4 w-4" />
-              </button>
-            </div>
-          </div>
+      {/* ── MAIN WINDOW: 100% INTERACTIVE ─────────────────────────────────── */}
+      <div className="flex-1 flex flex-col overflow-hidden">
 
-          {/* Scrolled container */}
-          <div className="flex-1 overflow-hidden relative w-full h-full bg-slate-900">
-            <iframe 
-              src={`https://online.flipbuilder.com/sdtta/bsjh/mobile/index.html#p=${activePage.pageNumber}`}
-              title={`Textbook Page ${activePage.pageNumber}`}
-              className="w-full h-full border-0"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-presentation"
-            />
-          </div>
-
-          {/* Quick Page Prev/Next overlay */}
-          <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between pointer-events-none z-10">
-            <button
-              onClick={() => {
-                if (currentPageIndex > 0) setCurrentPageIndex(prev => prev - 1);
-              }}
-              disabled={currentPageIndex === 0}
-              className={`p-2.5 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-slate-700 text-slate-200 pointer-events-auto transition flex items-center justify-center disabled:opacity-40 disabled:cursor-not-allowed`}
-            >
-              <ChevronLeft className="h-5 w-5" />
-            </button>
-            <button
-              onClick={() => {
-                if (currentPageIndex < pages.length - 1) setCurrentPageIndex(prev => prev + 1);
-              }}
-              disabled={currentPageIndex === pages.length - 1}
-              className={`p-2.5 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-slate-700 text-slate-200 pointer-events-auto transition flex items-center justify-center disabled:opacity-40 disabled:cursor-not-allowed`}
-            >
-              <ChevronRight className="h-5 w-5" />
-            </button>
-          </div>
-        </div>
-
-        {/* RIGHT PANEL: Interactive Forms Workspace */}
-        <div className="flex-1 flex flex-col bg-slate-900 overflow-y-auto p-6 md:p-8 space-y-6">
+        {/* INTERACTIVE FORMS WORKSPACE (full width) */}
+        <div className="flex-1 flex flex-col bg-slate-900 overflow-y-auto p-6 md:p-8 space-y-6 w-full max-w-5xl mx-auto">
           <div className="border-b border-slate-800 pb-4">
             <span className="text-[10px] font-bold text-sky-400 uppercase tracking-widest block">INTERACTIVE STUDY WORKSPACE</span>
             <h2 className="text-xl font-extrabold text-white mt-1">Trang {activePage.pageNumber}: {activePage.title}</h2>
