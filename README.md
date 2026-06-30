@@ -284,3 +284,5 @@ Ngoài ra có ~98 script một lần trong `scripts/` (tiền tố `seed-*`, `ge
 - [ ] Mở rộng pipeline OCR Quiz Text-Only cho các bài còn lại của sách SBT KHTN 7 (đã làm Bài 1-5, trang 1-23; còn ~124 trang/nhiều bài).
 - [ ] Xây màn hình "Lịch sử làm bài" riêng cho học sinh tự xem lại chi tiết các lần quiz đã làm (hiện dữ liệu chi tiết từng câu đã lưu trong `learning_sessions.summary_metrics.answers`, nhưng chưa có UI đọc lại — `/dashboard` và `/phu-huynh` chỉ hiện tóm tắt điểm, không hiện chi tiết câu).
 - [ ] Mở rộng role `teacher`/`admin`.
+
+<!-- Trigger Vercel Deploy: 2026-06-30T09:49:04.098Z -->
