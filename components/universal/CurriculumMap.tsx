@@ -75,7 +75,7 @@ export function CurriculumMap({ nodes, subjectSlug, completedNodes = [] }: Curri
       setCollapsedUnits(initialCollapsed);
       setInitialized(true);
     }
-  }, [nodes, completedNodes, initialized]);
+  }, [nodes, completedNodes, initialized, getGroupCompletion, groups]);
 
   const toggleUnit = (unitId: string) => {
     setCollapsedUnits(prev => ({
