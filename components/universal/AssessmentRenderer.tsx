@@ -121,7 +121,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds }
             onAnswer={handleAnswer}
             disabled={hasAnswered}
             imageUrl={currentQuestion.imageUrl || currentQuestion.image_url || currentQuestion.metadata_json?.image_url}
-            audioText={currentQuestion.metadata_json?.audio_text || currentQuestion.metadata_json?.audioText}
+            audioText={currentQuestion.audio_text || currentQuestion.audioText || currentQuestion.metadata_json?.audio_text || currentQuestion.metadata_json?.audioText}
           />
         );
       case 'tap_correct_answer':
