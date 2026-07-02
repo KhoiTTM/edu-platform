@@ -31,14 +31,20 @@ export function SentenceReorderRenderer({
 
   const handleSelect = (index: number) => {
     if (disabled) return;
+    setSelectedIndices(prev => {
+      if (prev.includes(index)) return prev;
+      return [...prev, index];
+    });
     setAvailableIndices(prev => prev.filter(i => i !== index));
-    setSelectedIndices(prev => [...prev, index]);
   };
 
   const handleUnselect = (index: number) => {
     if (disabled) return;
     setSelectedIndices(prev => prev.filter(i => i !== index));
-    setAvailableIndices(prev => [...prev, index]);
+    setAvailableIndices(prev => {
+      if (prev.includes(index)) return prev;
+      return [...prev, index];
+    });
   };
 
   const handleSubmit = () => {

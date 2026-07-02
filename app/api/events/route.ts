@@ -76,6 +76,24 @@ export async function POST(req: Request) {
       updateLastVisited(supabase, user.id, event.subject_slug, type, title, url).catch(e => console.error("Last Visited Update Error:", e));
     }
 
+    // 7. Write lesson visit to learning_sessions so parent history page can see it
+    if (event.type === "lesson_visited") {
+      const { title } = event.metadata as any;
+      const now = new Date().toISOString();
+      supabase.from("learning_sessions").insert({
+        user_id: user.id,
+        subject_slug: event.subject_slug,
+        started_at: now,
+        ended_at: now,
+        summary_metrics: {
+          type: "lesson",
+          unit_topic: title,
+        },
+      }).then(({ error }) => {
+        if (error) console.error("Failed to insert lesson session:", error);
+      });
+    }
+
     return NextResponse.json({ success: true });
   } catch (err: any) {
     console.error("API Event Error:", err);

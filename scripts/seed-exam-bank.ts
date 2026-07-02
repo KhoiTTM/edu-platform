@@ -45,6 +45,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 // (đồng bộ với components/universal/AssessmentRenderer.tsx — cập nhật khi renderer đổi)
 const RENDERABLE_TYPES = new Set([
   'multiple_choice',
+  'listening_multiple_choice',
   'tap_correct_answer', 'tap_correct_word', 'vocab_to_word',
   'fill_blank', 'fill_in_blank', 'inline_fill_blank',
   'tap_word',
@@ -161,6 +162,7 @@ function validate(data: ExamBankFile): { errors: string[]; warnings: string[] } 
       // Kiểm tra ràng buộc theo từng loại
       switch (q.type) {
         case 'multiple_choice':
+        case 'listening_multiple_choice':
         case 'tap_correct_answer':
         case 'tap_correct_word':
         case 'vocab_to_word':
@@ -310,31 +312,78 @@ async function seedExam(collectionId: string, c: CollectionSpec, e: ExamSpec) {
     console.log(`  ✓ Tao de #${e.exam_number}: ${e.title}`);
   }
 
-  for (let i = 0; i < e.questions.length; i++) {
-    const q = e.questions[i];
-    const { data: newQ, error: qErr } = await supabase
-      .from('question_bank')
-      .insert({
-        concept_id: null,
-        subject_slug: c.subject_slug,
-        grade: c.grade,
-        type: q.type,
-        difficulty: q.difficulty ?? 1.0,
-        metadata_json: q.metadata_json,
-        source: 'manual_import',
-        source_anchor: { book: c.reference_book ?? null, exam: e.title },
-        status: 'approved',
-      })
-      .select('id')
-      .single();
-    if (qErr || !newQ) {
-      console.error(`    ❌ Loi cau ${i + 1} de #${e.exam_number}:`, qErr?.message);
-      continue;
+  // Retry helper to handle cloud db network/fetch timeouts
+  const runWithRetry = async <T>(fn: () => Promise<T>, retries = 5, delayMs = 1000): Promise<T> => {
+    let lastErr: any;
+    for (let attempt = 0; attempt < retries; attempt++) {
+      try {
+        const res = await fn();
+        return res;
+      } catch (err) {
+        lastErr = err;
+        if (attempt < retries - 1) {
+          await new Promise(resolve => setTimeout(resolve, delayMs));
+        }
+      }
     }
-    const { error: linkErr } = await supabase
-      .from('exam_questions')
-      .insert({ exam_id: examId, question_bank_id: newQ.id, order_index: i });
-    if (linkErr) console.error(`    ❌ Loi noi cau ${i + 1}:`, linkErr.message);
+    throw lastErr;
+  };
+
+  // Prepare questions bulk payload
+  const qPayloads = e.questions.map((q) => ({
+    concept_id: null,
+    subject_slug: c.subject_slug,
+    grade: c.grade,
+    type: q.type,
+    difficulty: q.difficulty ?? 1.0,
+    metadata_json: q.metadata_json,
+    source: 'manual_import',
+    source_anchor: { book: c.reference_book ?? null, exam: e.title },
+    status: 'approved',
+  }));
+
+  let newQs: any[] = [];
+  let qErr: any = null;
+
+  try {
+    const res = await runWithRetry(async () => {
+      return await supabase
+        .from('question_bank')
+        .insert(qPayloads)
+        .select('id');
+    });
+    newQs = res.data || [];
+    qErr = res.error;
+  } catch (err: any) {
+    qErr = { message: err?.message || 'Network fetch failed after retries' };
+  }
+
+  if (qErr || newQs.length === 0) {
+    console.error(`    ❌ Loi insert cau hoi cho de #${e.exam_number}:`, qErr?.message);
+    return;
+  }
+
+  // Link questions to the exam
+  const linkPayloads = newQs.map((q, idx) => ({
+    exam_id: examId,
+    question_bank_id: q.id,
+    order_index: idx
+  }));
+
+  let linkErr: any = null;
+  try {
+    const res = await runWithRetry(async () => {
+      return await supabase
+        .from('exam_questions')
+        .insert(linkPayloads);
+    });
+    linkErr = res.error;
+  } catch (err: any) {
+    linkErr = { message: err?.message || 'Network fetch failed after retries' };
+  }
+
+  if (linkErr) {
+    console.error(`    ❌ Loi noi cau hoi cho de #${e.exam_number}:`, linkErr.message);
   }
 }
 

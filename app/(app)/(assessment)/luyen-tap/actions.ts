@@ -351,6 +351,15 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
     exams: v.exams.sort((a: any, b: any) => a.exam_number - b.exam_number)
   })).sort((a, b) => a.volume - b.volume);
 
+  if (subjectSlug === 'pre-a1-starter') {
+    lessonsResult.forEach((vol: any) => {
+      vol.units.forEach((unit: any) => {
+        unit.title = "Worldlist";
+        unit.description = "Luyện tập từ vựng Pre A1 Starters Cambridge.";
+      });
+    });
+  }
+
   return {
     lessons: lessonsResult,
     reviews: reviews,

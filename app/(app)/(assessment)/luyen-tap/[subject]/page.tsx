@@ -275,6 +275,14 @@ export default function SubjectMapPage() {
                   📚 Luyện tập theo Sách bài tập
                 </button>
               )}
+              {['tieng_anh', 'tieng-anh-7', 'english', 'mindset-ielts'].includes(subject) && gradeNum === 7 && (
+                <button
+                  onClick={() => router.push('/sach-bai-tap/sbt-tienganh7')}
+                  className="px-6 py-2.5 rounded-xl text-sm font-black transition-all duration-200 select-none text-slate-400 hover:text-white"
+                >
+                  📚 Luyện tập theo Sách bài tập
+                </button>
+              )}
             </div>
           </div>
         )}

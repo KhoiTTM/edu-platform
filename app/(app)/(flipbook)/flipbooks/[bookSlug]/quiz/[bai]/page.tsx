@@ -27,6 +27,10 @@ const LESSON_TITLES: Record<string, Record<number, string>> = {
     3: "Bài 3. Nguyên tố hoá học",
     4: "Bài 4. Sơ lược về bảng tuần hoàn các nguyên tố hoá học",
     5: "Bài 5. Phân tử - Đơn chất - Hợp chất",
+    6: "Bài 6. Giới thiệu về liên kết hoá học",
+    7: "Bài 7. Hoá trị và công thức hoá học",
+    8: "Bài 8. Tốc độ chuyển động",
+    9: "Bài 9. Đo tốc độ",
   },
 };
 

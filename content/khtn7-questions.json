@@ -864,5 +864,435 @@
     "type": "essay",
     "stem": "(Hình 5.5) đểu là đơn chất carbon? a) buckminsterfullerene b) carbon nanotube Hình 5.5 22",
     "answer": "Vì buckminsterfullerene và carbon nanotube chỉ chứa một loại nguyên tửcarbon, nên chúng cũng là đơn chất carbon:"
+  },
+  {
+    "id": "khtn7-6-1",
+    "bai": 6,
+    "cau": 1,
+    "type": "essay",
+    "stem": "a) Điền các thông tin còn thiếu để hoàn thành bảng sau về các kim loại. Nguyên tố Na Mg Al Số thứ tự của nhóm trong bảng tuần hoàn Số electron ở lớp ngoài cùng Số electron nhường đi để đạt được lớp electron ngoài cùng giống khí hiếm Điện tích ion tạo thành b) Hãy nhận xét về số thứ tự của nhóm trong bảng tuần hoàn và điện tích của các ion kim loại tạo thành.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-6-2",
+    "bai": 6,
+    "cau": 2,
+    "type": "essay",
+    "stem": "a) Điền các thông tin còn thiếu để hoàn thành bảng sau về các phi kim. Nguyên tố Cl O Số thứ tự của nhóm trong bảng tuần hoàn Số electron ở lớp ngoài cùng Số electron nhận vào để đạt được lớp electron ngoài cùng giống khí hiếm Điện tích ion tạo thành b) Hãy nhận xét về mối quan hệ giữa số thứ tự của nhóm trong bảng tuần hoàn và điện tích của các ion phi kim tạo thành.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-6-3",
+    "bai": 6,
+    "cau": 3,
+    "type": "essay",
+    "stem": "a) Liên kết cộng hoá trị là gì? b) Liên kết cộng hoá trị khác với liên kết ion như thế nào? c) Liên kết cộng hoá trị và liên kết ion có điểm gì tương tự nhau?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-6-4",
+    "bai": 6,
+    "cau": 4,
+    "type": "multiple_choice",
+    "stem": "Phân tử methane gồm một nguyên tử carbon liên kết với bốn nguyên tử hydrogen. Khi hình thành liên kết cộng hoá trị trong methane, nguyên tử carbon góp chung bao nhiêu electron với mỗi nguyên tử hydrogen?",
+    "options": [
+      "Nguyên tử carbon góp chung 1 electron với mỗi nguyên tử hydrogen.",
+      "Nguyên tử carbon góp chung 2 electron với mỗi nguyên tử hydrogen.",
+      "Nguyên tử carbon góp chung 3 electron với mỗi nguyên tử hydrogen.",
+      "Nguyên tử carbon góp chung 4 electron với mỗi nguyên tử hydrogen."
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "khtn7-6-5",
+    "bai": 6,
+    "cau": 5,
+    "type": "multiple_choice",
+    "stem": "Liên kết giữa các nguyên tử trong phân tử nước là liên kết",
+    "options": [
+      "cộng hoá trị.",
+      "ion.",
+      "kim loại.",
+      "phi kim."
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "khtn7-6-6",
+    "bai": 6,
+    "cau": 6,
+    "type": "multiple_choice",
+    "stem": "Liên kết hoá học giữa các nguyên tử oxygen và hydrogen trong phân tử nước được hình thành bằng cách",
+    "options": [
+      "nguyên tử oxygen nhận electron, nguyên tử hydrogen nhường electron.",
+      "nguyên tử oxygen nhường electron, nguyên tử hydrogen nhận electron.",
+      "nguyên tử oxygen và nguyên tử hydrogen góp chung electron.",
+      "nguyên tử oxygen và nguyên tử hydrogen góp chung proton."
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "khtn7-6-7",
+    "bai": 6,
+    "cau": 7,
+    "type": "multiple_choice",
+    "stem": "Trong phân tử oxygen (O₂), khi hai nguyên tử oxygen liên kết với nhau, chúng",
+    "options": [
+      "góp chung proton.",
+      "chuyển electron từ nguyên tử này sang nguyên tử kia.",
+      "chuyển proton từ nguyên tử này sang nguyên tử kia.",
+      "góp chung electron."
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "khtn7-6-8",
+    "bai": 6,
+    "cau": 8,
+    "type": "multiple_choice",
+    "stem": "Trong phân tử KCl, nguyên tử K (kali) và nguyên tử Cl (chlorine) liên kết với nhau bằng liên kết",
+    "options": [
+      "cộng hoá trị.",
+      "ion.",
+      "kim loại.",
+      "phi kim."
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-6-9",
+    "bai": 6,
+    "cau": 9,
+    "type": "essay",
+    "stem": "Hãy vẽ sơ đồ hình thành liên kết ion trong các phân tử sau, sử dụng các dấu chấm để biểu diễn các electron (tương tự hình 6.2 trang 37 SGK): a) Lithium fluoride (LiF). b) Calcium oxide (CaO). c) Potassium oxide (K₂O).",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-6-10",
+    "bai": 6,
+    "cau": 10,
+    "type": "essay",
+    "stem": "Điền các số thích hợp vào các ô còn trống để hoàn thành bảng sau:\nNguyên tố | Số hiệu nguyên tử | Khối lượng nguyên tử | Số proton | Số neutron | Sự sắp xếp electron trong các lớp\nC | ? | 12 | 6 | ? | ...\nH | 1 | ? | ? | 0 | ...",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-6-11",
+    "bai": 6,
+    "cau": 11,
+    "type": "essay",
+    "stem": "Hãy vẽ sơ đồ biểu diễn sự hình thành liên kết cộng hoá trị trong các phân tử sau, sử dụng các dấu chấm để biểu diễn các electron (tương tự như hình 6.5 trang 38 SGK): a) Chlorine, Cl₂. b) Hydrogen sulphide, H₂S. c) Carbon dioxide, CO₂.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-6-12",
+    "bai": 6,
+    "cau": 12,
+    "type": "essay",
+    "stem": "Hãy giải thích các câu sau dựa trên tính chất của liên kết (ion hay cộng hoá trị) giữa các nguyên tử trong phân tử các chất. a) Vì sao ammonia là chất khí ở nhiệt độ phòng? b) Vì sao nhiệt độ nóng chảy của sodium chloride và iodine rất khác nhau? Nhiệt độ nóng chảy của chất nào cao hơn?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-6-13",
+    "bai": 6,
+    "cau": 13,
+    "type": "essay",
+    "stem": "Đơn chất magnesium và đơn chất chlorine phản ứng với nhau tạo thành hợp chất magnesium chloride, là hợp chất có cấu trúc tinh thể. a) Vẽ sơ đồ mô tả sự hình thành liên kết ion trong hợp chất MgCl₂ từ các nguyên tử Mg và Cl (xem hình 6.2, trang 37 SGK). Cho biết số proton trong hạt nhân của Mg là 12 và của Cl là 17. b) Lập bảng mô tả một số tính chất của đơn chất magnesium, đơn chất chlorine và hợp chất magnesium chloride. Các tính chất bao gồm: (i) thể của chất ở nhiệt độ phòng (25°C), (ii) tính tan trong nước (hoặc phản ứng với nước), (iii) màu sắc, (iv) tính dẫn điện.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-7-1",
+    "bai": 7,
+    "cau": 1,
+    "type": "multiple_choice",
+    "stem": "Đơn chất nitơ bao gồm các phân tử chứa hai nguyên tử nitơ. Công thức hoá học của đơn chất nitơ là",
+    "options": [
+      "N.",
+      "N².",
+      "N₂.",
+      "N2."
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "khtn7-7-2",
+    "bai": 7,
+    "cau": 2,
+    "type": "multiple_choice",
+    "stem": "Một phân tử của hợp chất carbon dioxide chứa một nguyên tử carbon và hai nguyên tử oxygen. Công thức hoá học của hợp chất carbon dioxide là",
+    "options": [
+      "CO₂.",
+      "CO².",
+      "CO2.",
+      "Co₂."
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "khtn7-7-3",
+    "bai": 7,
+    "cau": 3,
+    "type": "essay",
+    "stem": "Công thức hoá học của sodium hydroxide là NaOH. Hợp chất này chứa những nguyên tố hoá học nào? Trong một phân tử sodium hydroxide có bao nhiêu nguyên tử của mỗi nguyên tố đó?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-7-4",
+    "bai": 7,
+    "cau": 4,
+    "type": "essay",
+    "stem": "Công thức của sulfuric acid là H₂SO₄. a) Gọi tên các nguyên tố có trong sulfuric acid. b) Có bao nhiêu nguyên tử của mỗi nguyên tố đó trong một phân tử sulfuric acid.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-7-5",
+    "bai": 7,
+    "cau": 5,
+    "type": "essay",
+    "stem": "Hãy viết công thức hoá học của các hợp chất sau đây: a) Magnesium oxide, biết một phân tử của nó chứa một nguyên tử magnesium và một nguyên tử oxygen. b) Copper sulfate, biết một phân tử của nó chứa một nguyên tử đồng, một nguyên tử sulfur và bốn nguyên tử oxygen. c) Đường ăn, biết một phân tử của nó chứa 12 nguyên tử carbon, 22 nguyên tử hydrogen và 11 nguyên tử oxygen.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-7-6",
+    "bai": 7,
+    "cau": 6,
+    "type": "essay",
+    "stem": "Điền công thức hoá học và mô tả số lượng các nguyên tử của các nguyên tố vào chỗ trống để hoàn thiện bảng sau:\nCông thức hoá học | Một phân tử hợp chất đó bao gồm\nMgO | ..(1)..\n..(2).. | Một nguyên tử sulfur liên kết với hai nguyên tử oxygen\n..(3).. | Một nguyên tử nhôm liên kết với ba nguyên tử chlorine\n..(4).. | Một nguyên tử calcium liên kết với một nguyên tử lưu huỳnh\nMgCO₃ | ..(5)..",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-7-7",
+    "bai": 7,
+    "cau": 7,
+    "type": "multiple_choice",
+    "stem": "Hình 7 mô tả phân tử khí methane CH₄. a) Trong hợp chất này, nguyên tử C sử dụng bao nhiêu electron lớp ngoài cùng của nó để tạo các liên kết cộng hoá trị với các nguyên tử H?",
+    "options": [
+      "2.",
+      "4.",
+      "8.",
+      "10. b) Cho biết mỗi một cặp electron dùng chung giữa nguyên tử C và nguyên tử H tương ứng với một liên kết cộng hoá trị, thì nguyên tử C tạo được bao nhiêu liên kết cộng hoá trị với các nguyên tử H? A. 2. B. 4. C. 8. D. 10."
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-7-8",
+    "bai": 7,
+    "cau": 8,
+    "type": "essay",
+    "stem": "Hãy xác định hoá trị của các nguyên tố C, Si trong các hợp chất sau: a) CCl₄, biết trong hợp chất này Cl có hoá trị I. b) SiO₂, biết trong hợp chất này O có hoá trị II.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-7-9",
+    "bai": 7,
+    "cau": 9,
+    "type": "essay",
+    "stem": "Hãy viết công thức hoá học và gọi tên của hợp chất được tạo thành từ sự kết hợp giữa các đơn chất sau: a) sắt và chlorine, biết trong hợp chất này sắt hoá trị III và chlorine hoá trị I. b) natri và oxygen, biết natri hoá trị I và oxygen hoá trị II. c) hydrogen và fluorine, biết hydrogen hoá trị I và fluorine hoá trị I. d) kali và chlorine, biết kali hoá trị I và chlorine hoá trị I. e) calcium, carbon và oxygen, biết calcium hoá trị II và nhóm nguyên tử CO₃ có hoá trị II.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-7-10",
+    "bai": 7,
+    "cau": 10,
+    "type": "essay",
+    "stem": "Sử dụng thông tin ở Bảng hoá trị thường gặp của một số nguyên tố hoá học (Bảng 7.2 trang 43 SGK), hãy viết công thức hoá học của: a) copper(I) oxide (hợp chất hai nguyên tố giữa Cu và O, trong đó Cu có hoá trị I). b) zinc phosphate (hợp chất chứa Zn liên kết với nhóm nguyên tử PO₄). c) calcium carbonate (hợp chất chứa Ca liên kết với nhóm nguyên tử CO₃). d) sodium hydroxide (hợp chất chứa Na liên kết với nhóm nguyên tử OH).",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-7-11",
+    "bai": 7,
+    "cau": 11,
+    "type": "essay",
+    "stem": "Hãy tính hoá trị của đồng và sắt trong các hợp chất sau: Cu(OH)₂, Fe(NO₃)₃. (Biết hoá trị của nhóm OH là I và của nhóm NO₃ là I).",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-7-12",
+    "bai": 7,
+    "cau": 12,
+    "type": "multiple_choice",
+    "stem": "Chọn câu trả lời đúng:",
+    "options": [
+      "Hợp chất ammonia có công thức hoá học là NH₄.",
+      "Hợp chất carbon monoxide có công thức hoá học là CO₂.",
+      "Hợp chất iron(III) oxide có công thức hoá học là Fe₃O₂.",
+      "Hợp chất zinc oxide có công thức hoá học là ZnO."
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "khtn7-7-13",
+    "bai": 7,
+    "cau": 13,
+    "type": "essay",
+    "stem": "Cho biết công thức hoá học của hợp chất được tạo bởi hai nguyên tố X và O (oxygen), Y và H (hydrogen) lần lượt là XO, YH₃. Hãy lập công thức hoá học của hợp chất giữa X với Y, biết X và Y có hoá trị bằng hoá trị của chúng trong các chất XO và YH₃.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-7-14",
+    "bai": 7,
+    "cau": 14,
+    "type": "essay",
+    "stem": "Lập công thức hoá học và tính khối lượng phân tử của hợp chất được tạo thành bởi: a) K và Cl, Ba và Cl, Al và Cl. b) K và nhóm SO₄, Ba và nhóm SO₄, Al và nhóm SO₄. (Biết khối lượng nguyên tử của K = 39; Cl = 35,5; Ba = 137; Al = 27; S = 32; O = 16).",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-7-15",
+    "bai": 7,
+    "cau": 15,
+    "type": "essay",
+    "stem": "Xác định thành phần phần trăm của các nguyên tố trong các hợp chất sau: a) Si và O trong hợp chất SiO₂ (là thành phần chính của thuỷ tinh). b) Na và Cl trong hợp chất NaCl (muối ăn). (Biết khối lượng nguyên tử của Si = 28; O = 16; Na = 23, Cl = 35,5).",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-7-16",
+    "bai": 7,
+    "cau": 16,
+    "type": "essay",
+    "stem": "Tỉ lệ khối lượng giữa hai nguyên tố carbon và hydrogen trong hợp chất methane luôn không đổi là 3 : 1. Hãy lập công thức hoá học của khí methane, biết khối lượng nguyên tử của C = 12; H = 1.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-7-17",
+    "bai": 7,
+    "cau": 17,
+    "type": "essay",
+    "stem": "Nguyên tử của các nguyên tố X, Y và Z lần lượt có 8, 17 và 11 electron. Nguyên tử neon và argon lần lượt có 10 và 18 electron. a) Xác định công thức hoá học của các hợp chất được tạo thành từ các nguyên tử của các nguyên tố sau: (i) X và Z, (ii) Y và Z, (iii) X với X. b) Kiểu liên kết hoá học giữa các nguyên tử trong các hợp chất trên là liên kết gì? c) Dự đoán hai tính chất của hợp chất được tạo thành trong trường hợp a(i) và a(ii).",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-8-1",
+    "bai": 8,
+    "cau": 1,
+    "type": "essay",
+    "stem": "Ghép một nội dung ở cột A với một nội dung phù hợp ở cột B.\nCột A:\n1. Tốc độ chuyển động cho biết\n2. Tốc độ chuyển động được xác định bằng\n3. Đơn vị tốc độ phụ thuộc vào\n4. Đơn vị của tốc độ là\nCột B:\na) đơn vị độ dài và đơn vị thời gian.\nb) m/s và km/h.\nc) sự nhanh, chậm của chuyển động.\nd) quãng đường đi được trong một đơn vị thời gian.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-8-2",
+    "bai": 8,
+    "cau": 2,
+    "type": "essay",
+    "stem": "Sắp xếp lại các số liệu trong cột B cho phù hợp với cột A và điền các giá trị thích hợp vào cột C của bảng sau:\nA. Đối tượng chuyển động | B. Tốc độ (m/s) | C. Tốc độ (km/h)\nNgười đi bộ | 1,7 đến 2,0 | ...?\nNgười đi xe đạp | 3 đến 4 | ...?\nÔ tô | 1,5 | ...?\nTàu hoả | 200 đến 300 | ...?\nMáy bay phản lực | 10 đến 20 | ...?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-8-3",
+    "bai": 8,
+    "cau": 3,
+    "type": "essay",
+    "stem": "Tìm số thích hợp để điền vào chỗ trống:\na) 10 m/s = ...?... km/h.\nb) ...?... km/h = 15 m/s.\nc) 45 km/h = ...?... m/s.\nd) 120 cm/s = ...?... m/s = ...?... km/h.\ne) 120 km/h = ...?... m/s = ...?... cm/s.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-8-4",
+    "bai": 8,
+    "cau": 4,
+    "type": "multiple_choice",
+    "stem": "Công thức tính tốc độ là",
+    "options": [
+      "v = s.t.",
+      "v = t/s.",
+      "v = s/t.",
+      "v = s/t²."
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "khtn7-8-5",
+    "bai": 8,
+    "cau": 5,
+    "type": "multiple_choice",
+    "stem": "Ba bạn An, Bình, Đông học cùng lớp. Khi tan học, ba bạn đi cùng chiều trên đường về nhà. Tốc độ của An là 6,2 km/h, của Bình là 1,5 m/s, của Đông là 72 m/min. Kết luận nào sau đây là đúng?",
+    "options": [
+      "Bạn An đi nhanh nhất.",
+      "Bạn Bình đi nhanh nhất.",
+      "Bạn Đông đi nhanh nhất.",
+      "Ba bạn đi nhanh như nhau."
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "khtn7-8-6",
+    "bai": 8,
+    "cau": 6,
+    "type": "multiple_choice",
+    "stem": "Đường sắt Hà Nội – Đà Nẵng dài khoảng 880 km. Nếu tốc độ trung bình của một tàu hoả là 55 km/h thì thời gian tàu chạy từ Hà Nội đến Đà Nẵng là",
+    "options": [
+      "8 h.",
+      "16 h.",
+      "24 h.",
+      "32 h."
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-8-7",
+    "bai": 8,
+    "cau": 7,
+    "type": "multiple_choice",
+    "stem": "Bạn Linh đi xe đạp từ nhà đến trường, trong 20 min đầu đi được đoạn đường dài 6 km. Đoạn đường còn lại dài 8 km đi với tốc độ 12 km/h. Tốc độ đi xe đạp của bạn Linh trên cả quãng đường từ nhà đến trường là",
+    "options": [
+      "15 km/h.",
+      "14 km/h.",
+      "7,5 km/h.",
+      "7 km/h."
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-8-8",
+    "bai": 8,
+    "cau": 8,
+    "type": "essay",
+    "stem": "Đội chạy tiếp sức 4×100 m nữ Việt Nam đã xuất sắc giành Huy chương Vàng ở SEA Games 29 khi đạt thành tích 43 s 88, phá kỉ lục SEA Games. Huy chương Bạc ở nội dung này thuộc về đội tuyển Thái Lan (44 s 62), huy chương đồng thuộc về đội tuyển Philippin (44 s 81). Tính tốc độ của mỗi đội tuyển trên đường đua.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-8-9",
+    "bai": 8,
+    "cau": 9,
+    "type": "essay",
+    "stem": "Lúc 7 h sáng, một mô tô đi từ Thành phố Hồ Chí Minh đến Biên Hoà cách nhau 30 km. Lúc 7 h 20 min, mô tô còn cách Biên Hoà 10 km. Hỏi nếu mô tô đi liên tục không nghỉ với tốc độ không thay đổi thì sẽ đến Biên Hoà lúc mấy giờ?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-8-10",
+    "bai": 8,
+    "cau": 10,
+    "type": "essay",
+    "stem": "Trên một cung đường dốc gồm ba đoạn: lên dốc, đường bằng và xuống dốc. Một ô tô lên dốc hết 30 min, chạy trên đoạn đường bằng với tốc độ 60 km/h trong 10 min, xuống dốc cũng trong 10 min. Biết tốc độ khi lên dốc bằng nửa tốc độ trên đoạn đường bằng, tốc độ khi xuống dốc gấp 1,5 lần tốc độ trên đoạn đường bằng. Tính độ dài cung đường trên.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-9-1",
+    "bai": 9,
+    "cau": 1,
+    "type": "essay",
+    "stem": "Tại sao cách đo tốc độ trong phòng thí nghiệm không phải là cách đo trực tiếp?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-9-2",
+    "bai": 9,
+    "cau": 2,
+    "type": "essay",
+    "stem": "Một bạn đo tốc độ đi học của mình bằng cách sau:\n– Đếm bước đi từ nhà đến trường;\n– Đo thời gian đi bằng đồng hồ bấm giây;\n– Tính tốc độ bằng công thức: v = s/t.\nBiết số bước bạn đó đếm được là 1 212 bước, mỗi bước trung bình dài 0,5 m và thời gian đi là 10 min. Tính tốc độ đi của bạn đó.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-9-3",
+    "bai": 9,
+    "cau": 3,
+    "type": "essay",
+    "stem": "Camera của một thiết bị bắn tốc độ ghi được thời gian một ô tô chạy từ vạch mốc 1 sang vạch mốc 2, cách nhau 10 m là 0,50 s. Hỏi ô tô có vượt quá tốc độ cho phép là 60 km/h không?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-9-4",
+    "bai": 9,
+    "cau": 4,
+    "type": "essay",
+    "stem": "Sau đây là bảng ghi kết quả đo tốc độ của một ô tô đồ chơi chạy trên một tấm gỗ đặt nằm nghiêng dài 60 cm.\nLần đo | Quãng đường (cm) | Thời gian đi (s)\n1 | 60 | 1,65\n2 | 60 | 1,68\n3 | 60 | 1,70\na) ĐCNN trên thước và đồng hồ bấm giây dùng trong thí nghiệm này là bao nhiêu?\nb) Tính độ lớn trung bình của kết quả đo tốc độ ra m/s và km/h.",
+    "answer": ""
   }
 ]

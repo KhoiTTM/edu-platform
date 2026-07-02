@@ -1,0 +1,68 @@
+{
+  "title": "Toán 7 - Ôn tập học kì 1 - Đề số 1",
+  "metadata": {
+    "subject": "Toán",
+    "grade": 7,
+    "volume": 1,
+    "units": [
+      1
+    ],
+    "book": "Đề thi học kì 1 Hà Nội"
+  },
+  "questions": [
+    {
+      "type": "multiple_choice",
+      "question_data": {
+        "question": "Thực hiện phép tính: \\( \\frac{3}{7} + \\frac{4}{7} \\cdot \\frac{2}{3} - \\frac{1}{3} \\)",
+        "options": [
+          "\\( \\frac{10}{21} \\)",
+          "\\( \\frac{11}{21} \\)",
+          "\\( \\frac{9}{21} \\)",
+          "\\( \\frac{13}{21} \\)"
+        ],
+        "correct_index": 0,
+        "explanation": "Ta có: \\( \\frac{3}{7} + \\frac{4}{7} \\cdot \\frac{2}{3} - \\frac{1}{3} = \\frac{3}{7} + \\frac{8}{21} - \\frac{1}{3} \\). Để thực hiện phép tính, ta quy đồng mẫu số:\n\\( = \\frac{9}{21} + \\frac{8}{21} - \\frac{7}{21} = \\frac{9+8-7}{21} = \\frac{10}{21} \\)."
+      },
+      "source_anchor": {
+        "book": "Bộ đề học kì 1 môn Toán lớp 7 Hà Nội",
+        "page": 2
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "question_data": {
+        "question": "Tìm \\( x \\) biết: \\( \\left| x - \\frac{1}{2} \\right| = \\frac{3}{4} \\)",
+        "options": [
+          "\\( x = \\frac{5}{4} \\) hoặc \\( x = -\\frac{1}{4} \\)",
+          "\\( x = \\frac{5}{4} \\)",
+          "\\( x = -\\frac{1}{4} \\)",
+          "\\( x = \\frac{1}{4} \\) hoặc \\( x = -\\frac{5}{4} \\)"
+        ],
+        "correct_index": 0,
+        "explanation": "Ta có \\( \\left| x - \\frac{1}{2} \\right| = \\frac{3}{4} \\). Điều này có nghĩa là:\nTrường hợp 1: \\( x - \\frac{1}{2} = \\frac{3}{4} \\Rightarrow x = \\frac{3}{4} + \\frac{1}{2} = \\frac{3}{4} + \\frac{2}{4} = \\frac{5}{4} \\).\nTrường hợp 2: \\( x - \\frac{1}{2} = -\\frac{3}{4} \\Rightarrow x = -\\frac{3}{4} + \\frac{1}{2} = -\\frac{3}{4} + \\frac{2}{4} = -\\frac{1}{4} \\).\nVậy \\( x = \\frac{5}{4} \\) hoặc \\( x = -\\frac{1}{4} \\)."
+      },
+      "source_anchor": {
+        "book": "Bộ đề học kì 1 môn Toán lớp 7 Hà Nội",
+        "page": 2
+      }
+    },
+    {
+      "type": "multiple_choice",
+      "question_data": {
+        "question": "Cho hai đường thẳng \\( a \\) và \\( b \\) song song với nhau. Đường thẳng \\( c \\) cắt \\( a \\) tại A và cắt \\( b \\) tại B. Biết \\( \\widehat{A_1} = 70^\\circ \\) (trong đó \\( \\widehat{A_1} \\) và \\( \\widehat{B_2} \\) là hai góc đồng vị). Tính số đo \\( \\widehat{B_2} \\).",
+        "options": [
+          "\\( 70^\\circ \\)",
+          "\\( 110^\\circ \\)",
+          "\\( 20^\\circ \\)",
+          "\\( 160^\\circ \\)"
+        ],
+        "correct_index": 0,
+        "explanation": "Vì đường thẳng \\( a \\) song song với đường thẳng \\( b \\) (\\( a \\parallel b \\)) và \\( \\widehat{A_1} \\) cùng vị trí với \\( \\widehat{B_2} \\) (hai góc đồng vị), nên chúng bằng nhau. \nDo đó, \\( \\widehat{B_2} = \\widehat{A_1} = 70^\\circ \\)."
+      },
+      "source_anchor": {
+        "book": "Bộ đề học kì 1 môn Toán lớp 7 Hà Nội",
+        "page": 2
+      }
+    }
+  ]
+}

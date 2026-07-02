@@ -101,6 +101,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds }
   const renderQuestion = () => {
     switch (currentQuestion.type) {
       case 'multiple_choice':
+      case 'listening_multiple_choice':
         return (
           <MultipleChoiceRenderer
             key={`mc-${currentIndex}`}
@@ -120,6 +121,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds }
             onAnswer={handleAnswer}
             disabled={hasAnswered}
             imageUrl={currentQuestion.imageUrl || currentQuestion.image_url || currentQuestion.metadata_json?.image_url}
+            audioText={currentQuestion.metadata_json?.audio_text || currentQuestion.metadata_json?.audioText}
           />
         );
       case 'tap_correct_answer':

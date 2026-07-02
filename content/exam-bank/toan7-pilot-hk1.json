@@ -1,0 +1,637 @@
+{
+  "collection": {
+    "title": "Kiểm Tra Giữa Kỳ 1",
+    "subject_slug": "toan",
+    "grade": 7,
+    "volume": 1,
+    "units": [
+      101
+    ],
+    "sequence_number": 1,
+    "exam_type": "final",
+    "reference_book": "Bộ đề học kì 1 môn Toán lớp 7 Hà Nội",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 1,
+      "title": "Đề số 1",
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cho tỉ lệ thức $ \\frac{x}{6} = \\frac{10}{3} $. Giá trị của $ x $ là:",
+            "options": [
+              "A. $ x = 20 $",
+              "B. $ x = 10 $",
+              "C. $ x = 5 $",
+              "D. $ x = 2 $"
+            ],
+            "correct_index": 0,
+            "explanation": "Từ tỉ lệ thức $ \\frac{x}{6} = \\frac{10}{3} $, ta có $ x = \\frac{10 \\cdot 6}{3} = \\frac{60}{3} = 20 $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Căn bậc hai số học của 81 là:",
+            "options": [
+              "A. $ -9 $",
+              "B. $ 9 $",
+              "C. $ 81 $",
+              "D. $ -81 $"
+            ],
+            "correct_index": 1,
+            "explanation": "Căn bậc hai số học của một số $ a $ không âm là số $ x $ không âm sao cho $ x^2 = a $. Vậy căn bậc hai số học của 81 là $ \\sqrt{81} = 9 $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Làm tròn số 32,567 đến chữ số thập phân thứ nhất ta được:",
+            "options": [
+              "A. 32,5",
+              "B. 32,6",
+              "C. 32,57",
+              "D. 32,56"
+            ],
+            "correct_index": 1,
+            "explanation": "Để làm tròn số 32,567 đến chữ số thập phân thứ nhất, ta xét chữ số thập phân thứ hai là 6. Vì $ 6 \\ge 5 $, ta làm tròn lên chữ số thập phân thứ nhất. Vậy 32,567 làm tròn đến chữ số thập phân thứ nhất là 32,6."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cho hai đường thẳng $ a, b $ phân biệt và đường thẳng $ c $. Nếu $ a \\perp c $ và $ b \\perp c $ thì:",
+            "options": [
+              "A. $ a // b $",
+              "B. $ a \\perp b $",
+              "C. $ a $ cắt $ b $",
+              "D. $ a $ trùng $ b $"
+            ],
+            "correct_index": 0,
+            "explanation": "Trong hình học, nếu hai đường thẳng phân biệt cùng vuông góc với một đường thẳng thứ ba thì chúng song song với nhau. Do đó, nếu $ a \\perp c $ và $ b \\perp c $, thì $ a // b $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Kết quả của phép tính $ A = \\frac{2}{5} - \\frac{1}{7} \\cdot \\frac{7}{2} $ là:",
+            "options": [
+              "A. $ \\frac{1}{10} $",
+              "B. $ -\\frac{1}{10} $",
+              "C. $ \\frac{3}{10} $",
+              "D. $ -\\frac{3}{10} $"
+            ],
+            "correct_index": 1,
+            "explanation": "$ A = \\frac{2}{5} - \\frac{1}{7} \\cdot \\frac{7}{2} = \\frac{2}{5} - \\frac{1}{2} = \\frac{4}{10} - \\frac{5}{10} = -\\frac{1}{10} $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Kết quả của phép tính $ B = 3\\frac{1}{2} - \\left(\\frac{1}{4}\\right)^2 : 25\\% $ là:",
+            "options": [
+              "A. $ \\frac{13}{4} $",
+              "B. $ \\frac{11}{4} $",
+              "C. $ \\frac{27}{4} $",
+              "D. $ \\frac{15}{4} $"
+            ],
+            "correct_index": 0,
+            "explanation": "$ B = 3\\frac{1}{2} - \\left(\\frac{1}{4}\\right)^2 : 25\\% $. Ta có $ 3\\frac{1}{2} = \\frac{7}{2} $, $ \\left(\\frac{1}{4}\\right)^2 = \\frac{1}{16} $, $ 25\\% = \\frac{25}{100} = \\frac{1}{4} $.\nVậy $ B = \\frac{7}{2} - \\frac{1}{16} : \\frac{1}{4} = \\frac{7}{2} - \\frac{1}{16} \\cdot 4 = \\frac{7}{2} - \\frac{1}{4} = \\frac{14}{4} - \\frac{1}{4} = \\frac{13}{4} $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Giá trị của $ x $ thỏa mãn $ \\frac{3}{4} - x = \\frac{1}{2} $ là:",
+            "options": [
+              "A. $ x = \\frac{1}{4} $",
+              "B. $ x = \\frac{5}{4} $",
+              "C. $ x = -\\frac{1}{4} $",
+              "D. $ x = \\frac{1}{2} $"
+            ],
+            "correct_index": 0,
+            "explanation": "$ \\frac{3}{4} - x = \\frac{1}{2} \\Rightarrow x = \\frac{3}{4} - \\frac{1}{2} \\Rightarrow x = \\frac{3}{4} - \\frac{2}{4} \\Rightarrow x = \\frac{1}{4} $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Giá trị của $ x $ thỏa mãn $ |x - 1| + 0,25 = \\sqrt{\\frac{1}{4}} $ là:",
+            "options": [
+              "A. $ x = 1,25 $ hoặc $ x = 0,75 $",
+              "B. $ x = 0,75 $",
+              "C. $ x = 1,25 $",
+              "D. $ x = 0,25 $ hoặc $ x = -0,25 $"
+            ],
+            "correct_index": 0,
+            "explanation": "$ |x - 1| + 0,25 = \\sqrt{\\frac{1}{4}} $. Ta có $ \\sqrt{\\frac{1}{4}} = \\frac{1}{2} = 0,5 $.\nVậy $ |x - 1| + 0,25 = 0,5 \\Rightarrow |x - 1| = 0,5 - 0,25 \\Rightarrow |x - 1| = 0,25 $.\nTrường hợp 1: $ x - 1 = 0,25 \\Rightarrow x = 1 + 0,25 = 1,25 $.\nTrường hợp 2: $ x - 1 = -0,25 \\Rightarrow x = 1 - 0,25 = 0,75 $.\nVậy $ x = 1,25 $ hoặc $ x = 0,75 $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Ba lớp 7A, 7B, 7C có tất cả 102 học sinh. Số học sinh của lớp 7A, 7B, 7C tỉ lệ với 8; 9; 10. Số học sinh của mỗi lớp lần lượt là:",
+            "options": [
+              "A. 7A: 32 học sinh; 7B: 36 học sinh; 7C: 40 học sinh.",
+              "B. 7A: $ \\frac{272}{9} $ học sinh; 7B: 34 học sinh; 7C: $ \\frac{340}{9} $ học sinh.",
+              "C. 7A: 30 học sinh; 7B: 35 học sinh; 7C: 37 học sinh.",
+              "D. 7A: 24 học sinh; 7B: 27 học sinh; 7C: 30 học sinh."
+            ],
+            "correct_index": 1,
+            "explanation": "Gọi số học sinh của ba lớp 7A, 7B, 7C lần lượt là $ x, y, z $.\nTheo đề bài, ta có $ x+y+z = 102 $ và $ \\frac{x}{8} = \\frac{y}{9} = \\frac{z}{10} $.\nÁp dụng tính chất của dãy tỉ số bằng nhau, ta có:\n$ \\frac{x}{8} = \\frac{y}{9} = \\frac{z}{10} = \\frac{x+y+z}{8+9+10} = \\frac{102}{27} = \\frac{34}{9} $.\nTừ đó:\n$ x = 8 \\cdot \\frac{34}{9} = \\frac{272}{9} $ (học sinh)\n$ y = 9 \\cdot \\frac{34}{9} = 34 $ (học sinh)\n$ z = 10 \\cdot \\frac{34}{9} = \\frac{340}{9} $ (học sinh)\nLưu ý: Kết quả này cho thấy số học sinh của lớp 7A và 7C không phải là số nguyên, điều này có thể là do lỗi trong đề bài gốc. Tuy nhiên, đây là kết quả chính xác theo các số liệu đã cho."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cho tam giác $ ABC $ vuông tại $ A $. $ M $ là trung điểm của $ AC $. Trên tia đối của tia $ MB $ lấy điểm $ D $ sao cho $ MD = MB $. Chọn khẳng định đúng về mối quan hệ giữa $ \\triangle AMB $ và $ \\triangle CMD $.",
+            "options": [
+              "A. $ \\triangle AMB = \\triangle CMD $ (Cạnh - Góc - Cạnh)",
+              "B. $ \\triangle AMB = \\triangle CMD $ (Góc - Cạnh - Góc)",
+              "C. $ \\triangle AMB $ đồng dạng với $ \\triangle CMD $",
+              "D. $ \\triangle AMB $ không bằng $ \\triangle CMD $"
+            ],
+            "correct_index": 0,
+            "explanation": "Xét $ \\triangle AMB $ và $ \\triangle CMD $:\n- $ AM = MC $ (vì $ M $ là trung điểm của $ AC $)\n- $ \\angle AMB = \\angle CMD $ (hai góc đối đỉnh)\n- $ MB = MD $ (theo giả thiết)\nVậy $ \\triangle AMB = \\triangle CMD $ (c.g.c)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ kết quả $ \\triangle AMB = \\triangle CMD $ ở câu trước, hãy cho biết mối hệ giữa đường thẳng $ CD $ và $ AC $.",
+            "options": [
+              "A. $ CD \\perp AC $",
+              "B. $ CD // AC $",
+              "C. $ CD $ cắt $ AC $ tại $ M $",
+              "D. $ CD $ là đường trung trực của $ AC $"
+            ],
+            "correct_index": 0,
+            "explanation": "Vì $ \\triangle AMB = \\triangle CMD $ (chứng minh ở câu a) nên ta suy ra $ \\angle MAB = \\angle MCD $ (hai góc tương ứng).\nHai góc này ở vị trí so le trong so với đường thẳng $ AC $ cắt hai đường thẳng $ AB $ và $ CD $.\nDo đó, $ AB // CD $.\nMà $ \\triangle ABC $ vuông tại $ A $, tức là $ AB \\perp AC $.\nVì $ AB // CD $ và $ AB \\perp AC $, suy ra $ CD \\perp AC $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cho tam giác $ ABC $ vuông tại $ A $. $ M $ là trung điểm của $ AC $. Trên tia đối của tia $ MB $ lấy điểm $ D $ sao cho $ MD = MB $. Gọi $ N $ là trung điểm của $ CD $. Chọn khẳng định đúng.",
+            "options": [
+              "A. $ MN // AD $",
+              "B. $ A, M, N $ thẳng hàng",
+              "C. $ MN \\perp AC $",
+              "D. $ MN \\perp AD $"
+            ],
+            "correct_index": 0,
+            "explanation": "Từ chứng minh ở câu a), ta có $ M $ là trung điểm của $ AC $ và $ M $ là trung điểm của $ BD $ (vì $ MB = MD $ và $ D $ nằm trên tia đối của $ MB $).\nVì $ M $ là trung điểm của $ AC $ và $ N $ là trung điểm của $ CD $, trong $ \\triangle ACD $, $ MN $ là đường trung bình của tam giác $ ACD $.\nTheo tính chất đường trung bình của tam giác, $ MN // AD $ và $ MN = \\frac{1}{2} AD $.\nDo đó, khẳng định $ MN // AD $ là đúng. (Lưu ý: Khẳng định \"A, M, N thẳng hàng\" là không thể xảy ra trừ khi tam giác suy biến)."
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 2,
+      "title": "Đề số 2",
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Tính giá trị của biểu thức: $ (5^{10})^2 $",
+            "options": [
+              "$ 5^{20} $",
+              "$ 5^{12} $",
+              "$ 5^{5} $",
+              "Đáp án khác"
+            ],
+            "correct_index": 0,
+            "explanation": "Ta áp dụng công thức luỹ thừa của luỹ thừa: $ (a^m)^n = a^{m \\cdot n} $. Do đó, $ (5^{10})^2 = 5^{10 \\cdot 2} = 5^{20} $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cho biết $ y $ tỉ lệ thuận với $ x $ theo hệ số tỉ lệ $ -3 $. Nếu $ y = -21 $, giá trị của $ x $ là:",
+            "options": [
+              "$ -7 $",
+              "$ 63 $",
+              "$ 7 $",
+              "Đáp án khác"
+            ],
+            "correct_index": 2,
+            "explanation": "Vì $ y $ tỉ lệ thuận với $ x $ theo hệ số tỉ lệ $ -3 $, ta có công thức: $ y = -3x $. Thay $ y = -21 $ vào, ta được: $ -21 = -3x $. Chia cả hai vế cho $ -3 $, ta có: $ x = \\frac{-21}{-3} = 7 $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Số $ x $ trong tỉ lệ thức $ \\frac{x}{2} = \\frac{5}{-10} $ là:",
+            "options": [
+              "$ 2 $",
+              "$ 1 $",
+              "$ -1 $",
+              "Cả B và C đều đúng"
+            ],
+            "correct_index": 2,
+            "explanation": "Ta có tỉ lệ thức $ \\frac{x}{2} = \\frac{5}{-10} $. Rút gọn phân số ở vế phải: $ \\frac{5}{-10} = -\\frac{1}{2} $. Vậy ta có $ \\frac{x}{2} = -\\frac{1}{2} $. Do đó, $ x = -1 $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Giá trị của căn bậc hai $ \\frac{25}{36} $ là:",
+            "options": [
+              "$ \\pm\\frac{5}{6} $",
+              "$ \\frac{5}{6} $",
+              "$ -\\frac{5}{6} $",
+              "Đáp án khác"
+            ],
+            "correct_index": 1,
+            "explanation": "Căn bậc hai của một số không âm $ a $ là một số $ x $ sao cho $ x^2 = a $. Trong ngữ cảnh này, 'giá trị của căn bậc hai' thường ám chỉ căn bậc hai số học (giá trị dương). Ta có $ \\sqrt{\\frac{25}{36}} = \\frac{\\sqrt{25}}{\\sqrt{36}} = \\frac{5}{6} $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cho đường thẳng $ c $ cắt hai đường thẳng song song $ a $ và $ b $ tạo ra hai góc so le trong $ A_1 $ và $ B_3 $. Nếu $ A_1 = 80^\\circ $ thì số đo $ B_3 $ là:",
+            "options": [
+              "$ 80^\\circ $",
+              "$ 100^\\circ $",
+              "$ 90^\\circ $",
+              "$ 60^\\circ $"
+            ],
+            "correct_index": 0,
+            "explanation": "Khi một đường thẳng cắt hai đường thẳng song song, các cặp góc so le trong bằng nhau. Vì $ a \\parallel b $ và $ A_1 $, $ B_3 $ là hai góc so le trong, nên $ B_3 = A_1 = 80^\\circ $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Nếu đường thẳng $ xx' $ vuông góc với đường thẳng $ yy' $ và $ xx' $ song song với đường thẳng $ zz' $, thì điều gì đúng?",
+            "options": [
+              "$ yy' \\perp zz' $",
+              "$ yy' \\parallel zz' $",
+              "$ xx' \\parallel yy' $",
+              "$ zz' \\parallel yy' $"
+            ],
+            "correct_index": 0,
+            "explanation": "Nếu một đường thẳng vuông góc với một trong hai đường thẳng song song thì nó cũng vuông góc với đường thẳng kia. Vì $ xx' \\perp yy' $ và $ xx' \\parallel zz' $, suy ra $ yy' \\perp zz' $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cho $ \\triangle ABC = \\triangle MNP $. Biết $ BC = 5 $ cm, thì độ dài cạnh $ NP $ là:",
+            "options": [
+              "$ 5 $ cm",
+              "$ 4 $ cm",
+              "$ 6 $ cm",
+              "$ 3 $ cm"
+            ],
+            "correct_index": 0,
+            "explanation": "Khi hai tam giác bằng nhau, các cặp cạnh tương ứng và các cặp góc tương ứng của chúng bằng nhau. Cạnh $ BC $ của $ \\triangle ABC $ tương ứng với cạnh $ NP $ của $ \\triangle MNP $. Do đó, $ NP = BC = 5 $ cm."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cho $ \\triangle ABC $ và $ \\triangle MIK $ có $ AB = MI $, $ \\widehat{A} = \\widehat{M} $. Điều kiện để hai tam giác bằng nhau theo trường hợp góc-cạnh-góc (g.c.g) là:",
+            "options": [
+              "$ \\widehat{B} = \\widehat{I} $",
+              "$ BC = IK $",
+              "$ AC = MK $",
+              "$ \\widehat{C} = \\widehat{K} $"
+            ],
+            "correct_index": 0,
+            "explanation": "Trường hợp bằng nhau góc-cạnh-góc (g.c.g) yêu cầu một cạnh và hai góc kề của cạnh đó trong tam giác này bằng một cạnh và hai góc kề của cạnh đó trong tam giác kia. Chúng ta đã có cạnh $ AB = MI $ và góc $ \\widehat{A} = \\widehat{M} $. Để áp dụng g.c.g với cạnh $ AB $ (tương ứng $ MI $), ta cần góc còn lại kề với cạnh đó, tức là $ \\widehat{B} $ và $ \\widehat{I} $. Vậy điều kiện cần là $ \\widehat{B} = \\widehat{I} $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Thực hiện phép tính (hợp lý nếu có thể): $ -\\frac{3}{5} + \\frac{4}{3} - \\frac{3}{5} + \\frac{5}{3} $",
+            "options": [
+              "$ \\frac{9}{5} $",
+              "$ \\frac{3}{5} $",
+              "$ \\frac{6}{5} $",
+              "$ \\frac{12}{5} $"
+            ],
+            "correct_index": 0,
+            "explanation": "Ta nhóm các số hạng có cùng mẫu số: $ \\left(-\\frac{3}{5} - \\frac{3}{5}\\right) + \\left(\\frac{4}{3} + \\frac{5}{3}\\right) $. Tính tổng của từng nhóm: $ -\\frac{6}{5} + \\frac{9}{3} $. Rút gọn $ \\frac{9}{3} = 3 $. Vậy ta có: $ -\\frac{6}{5} + 3 = -\\frac{6}{5} + \\frac{15}{5} = \\frac{15-6}{5} = \\frac{9}{5} $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Thực hiện phép tính: $ \\left(\\frac{1}{6} - \\frac{4}{5}\\right) - \\left(\\frac{1}{6} + \\frac{4}{5}\\right) $",
+            "options": [
+              "$ \\frac{8}{5} $",
+              "$ -\\frac{8}{5} $",
+              "$ 0 $",
+              "$ \\frac{1}{6} $"
+            ],
+            "correct_index": 1,
+            "explanation": "Đầu tiên, ta bỏ dấu ngoặc: $ \\frac{1}{6} - \\frac{4}{5} - \\frac{1}{6} - \\frac{4}{5} $. Sau đó, nhóm các số hạng giống nhau: $ \\left(\\frac{1}{6} - \\frac{1}{6}\\right) + \\left(-\\frac{4}{5} - \\frac{4}{5}\\right) $. Tính tổng của từng nhóm: $ 0 + \\left(-\\frac{8}{5}\\right) = -\\frac{8}{5} $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Thực hiện phép tính: $ \\frac{2^{10} \\cdot 4^8}{8^2 \\cdot 2^{20}} $",
+            "options": [
+              "$ 1 $",
+              "$ 2 $",
+              "$ \\frac{1}{2} $",
+              "$ 4 $"
+            ],
+            "correct_index": 0,
+            "explanation": "Để thực hiện phép tính, ta đưa tất cả về cùng cơ số 2: $ 4 = 2^2 $ và $ 8 = 2^3 $. \nBiểu thức trở thành: $ \\frac{2^{10} \\cdot (2^2)^8}{(2^3)^2 \\cdot 2^{20}} = \\frac{2^{10} \\cdot 2^{16}}{2^6 \\cdot 2^{20}} $. Áp dụng quy tắc $ a^m \\cdot a^n = a^{m+n} $ và $ \\frac{a^m}{a^n} = a^{m-n} $: $ \\frac{2^{10+16}}{2^{6+20}} = \\frac{2^{26}}{2^{26}} = 2^{26-26} = 2^0 = 1 $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cho hàm số $ f(x) = 5x $. Tính $ f(-2) $ và $ f\\left(\\frac{1}{3}\\right) $.",
+            "options": [
+              "$ f(-2)=-10, f\\left(\\frac{1}{3}\\right)=\\frac{5}{3} $",
+              "$ f(-2)=10, f\\left(\\frac{1}{3}\\right)=-\\frac{5}{3} $",
+              "$ f(-2)=-10, f\\left(\\frac{1}{3}\\right)=5 $",
+              "$ f(-2)=5, f\\left(\\frac{1}{3}\\right)=\\frac{10}{3} $"
+            ],
+            "correct_index": 0,
+            "explanation": "Với hàm số $ f(x) = 5x $:\nĐể tính $ f(-2) $, ta thay $ x = -2 $ vào hàm số: $ f(-2) = 5 \\cdot (-2) = -10 $.\nĐể tính $ f\\left(\\frac{1}{3}\\right) $, ta thay $ x = \\frac{1}{3} $ vào hàm số: $ f\\left(\\frac{1}{3}\\right) = 5 \\cdot \\frac{1}{3} = \\frac{5}{3} $.\n(Ghi chú: Hàm số $ f(x) = 5x $ được giả định để giải quyết các câu hỏi này do thiếu thông tin trong đề gốc, tuy nhiên đây là một dạng hàm số tuyến tính đơn giản phù hợp với ngữ cảnh.)"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cho hàm số $ f(x) = 5x $. Tìm $ x $ biết $ f(x) = 10 $.",
+            "options": [
+              "$ x=2 $",
+              "$ x=-2 $",
+              "$ x=5 $",
+              "$ x=10 $"
+            ],
+            "correct_index": 0,
+            "explanation": "Với hàm số $ f(x) = 5x $. Để tìm $ x $ khi $ f(x) = 10 $, ta đặt phương trình: $ 5x = 10 $. Chia cả hai vế cho $ 5 $: $ x = \\frac{10}{5} = 2 $.\n(Ghi chú: Hàm số $ f(x) = 5x $ được giả định để giải quyết các câu hỏi này do thiếu thông tin trong đề gốc, tuy nhiên đây là một dạng hàm số tuyến tính đơn giản phù hợp với ngữ cảnh.)"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Tìm $ x $ biết: $ \\frac{3(x-2)^3}{8} = -\\frac{27}{64} $",
+            "options": [
+              "$ \\frac{1}{2} $",
+              "$ 2 - \\frac{\\sqrt[3]{9}}{2} $",
+              "$ \\frac{5}{4} $",
+              "$ \\frac{3}{2} $"
+            ],
+            "correct_index": 1,
+            "explanation": "Ta giải phương trình: $ \\frac{3(x-2)^3}{8} = -\\frac{27}{64} $.\nNhân cả hai vế với $ 8 $: $ 3(x-2)^3 = -\\frac{27}{64} \\cdot 8 = -\\frac{27}{8} $.\nChia cả hai vế cho $ 3 $: $ (x-2)^3 = -\\frac{27}{8} \\div 3 = -\\frac{27}{8 \\cdot 3} = -\\frac{27}{24} = -\\frac{9}{8} $.\nLấy căn bậc ba cả hai vế: $ x-2 = \\sqrt[3]{-\\frac{9}{8}} = -\\frac{\\sqrt[3]{9}}{\\sqrt[3]{8}} = -\\frac{\\sqrt[3]{9}}{2} $.\nChuyển $ -2 $ sang vế phải: $ x = 2 - \\frac{\\sqrt[3]{9}}{2} $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Tại 'Ngày hội đọc sách', ba lớp 7A1, 7A2, 7A3 chuẩn bị sách tỉ lệ nghịch với $ 5, 6, 8 $. Tổng cộng có $ 59 $ quyển sách. Tính số sách mỗi lớp.",
+            "options": [
+              "Lớp 7A1: 24 quyển, 7A2: 20 quyển, 7A3: 15 quyển",
+              "Lớp 7A1: 20 quyển, 7A2: 24 quyển, 7A3: 15 quyển",
+              "Lớp 7A1: 24 quyển, 7A2: 15 quyển, 7A3: 20 quyển",
+              "Lớp 7A1: 15 quyển, 7A2: 20 quyển, 7A3: 24 quyển"
+            ],
+            "correct_index": 0,
+            "explanation": "Gọi số sách của ba lớp 7A1, 7A2, 7A3 lần lượt là $ s_1, s_2, s_3 $.\nTheo đề bài, $ s_1, s_2, s_3 $ tỉ lệ nghịch với $ 5, 6, 8 $, nghĩa là chúng tỉ lệ thuận với $ \\frac{1}{5}, \\frac{1}{6}, \\frac{1}{8} $.\nTa có: $ \\frac{s_1}{\\frac{1}{5}} = \\frac{s_2}{\\frac{1}{6}} = \\frac{s_3}{\\frac{1}{8}} $. Điều này tương đương với $ 5s_1 = 6s_2 = 8s_3 $.\nÁp dụng tính chất dãy tỉ số bằng nhau:\nĐặt $ 5s_1 = 6s_2 = 8s_3 = k $. Khi đó: $ s_1 = \\frac{k}{5}, s_2 = \\frac{k}{6}, s_3 = \\frac{k}{8} $.\nTổng số sách là $ 59 $ quyển, nên: $ s_1 + s_2 + s_3 = 59 $.\n$ \\frac{k}{5} + \\frac{k}{6} + \\frac{k}{8} = 59 $.\nQuy đồng mẫu số chung là $ 120 $:\n$ \\frac{24k}{120} + \\frac{20k}{120} + \\frac{15k}{120} = 59 $.\n$ \\frac{(24+20+15)k}{120} = 59 $.\n$ \\frac{59k}{120} = 59 $.\n$ k = 120 $.\nVậy số sách của mỗi lớp là:\n$ s_1 = \\frac{120}{5} = 24 $ (quyển)\n$ s_2 = \\frac{120}{6} = 20 $ (quyển)\n$ s_3 = \\frac{120}{8} = 15 $ (quyển)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cho góc nhọn $ xOy $. Trên tia $ Ox $ lấy điểm $ A $, trên tia $ Oy $ lấy điểm $ B $ sao cho $ OA = OB $. Gọi $ M $ là trung điểm của đoạn thẳng $ AB $. Chứng minh $ \\triangle OMA = \\triangle OMB $ theo trường hợp nào?",
+            "options": [
+              "$ c.c.c $",
+              "$ c.g.c $",
+              "$ g.c.g $",
+              "$ \\triangle OMA $ không bằng $ \\triangle OMB $"
+            ],
+            "correct_index": 0,
+            "explanation": "Xét $ \\triangle OMA $ và $ \\triangle OMB $:\n- $ OA = OB $ (theo giả thiết)\n- $ OM $ là cạnh chung\n- $ MA = MB $ (vì $ M $ là trung điểm của $ AB $)\nVậy $ \\triangle OMA = \\triangle OMB $ theo trường hợp cạnh-cạnh-cạnh (c.c.c)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Trong hình vẽ của Bài 4, trên tia $ OM $ lấy điểm $ K $ sao cho $ M $ nằm giữa $ O $ và $ K $. Để chứng minh $ AK = BK $, ta có thể chứng minh hai tam giác nào bằng nhau theo trường hợp c.g.c (cạnh-góc-cạnh)?",
+            "options": [
+              "$ \\triangle AOK = \\triangle BOK $",
+              "$ \\triangle AKM = \\triangle BKM $",
+              "$ \\triangle OAK = \\triangle OBK $ (g.c.g)",
+              "$ \\triangle OMA = \\triangle OMB $ (c.c.c)"
+            ],
+            "correct_index": 0,
+            "explanation": "Từ kết quả của câu trước, $ \\triangle OMA = \\triangle OMB $, suy ra $ \\widehat{AOM} = \\widehat{BOM} $ (hai góc tương ứng). Do $ K $ nằm trên tia $ OM $, nên $ \\widehat{AOK} = \\widehat{BOK} $.\nXét $ \\triangle AOK $ và $ \\triangle BOK $:\n- $ OA = OB $ (theo giả thiết)\n- $ \\widehat{AOK} = \\widehat{BOK} $ (chứng minh trên)\n- $ OK $ là cạnh chung\nVậy $ \\triangle AOK = \\triangle BOK $ theo trường hợp cạnh-góc-cạnh (c.g.c). Từ đó suy ra $ AK = BK $ (hai cạnh tương ứng)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cho góc nhọn $ xOy $ có $ OA = OB $. Nếu $ \\widehat{xOy} = 60^\\circ $, tính số đo góc $ \\widehat{OAB} $.",
+            "options": [
+              "$ 60^\\circ $",
+              "$ 30^\\circ $",
+              "$ 45^\\circ $",
+              "$ 90^\\circ $"
+            ],
+            "correct_index": 0,
+            "explanation": "Xét $ \\triangle OAB $:\n- $ OA = OB $ (theo giả thiết), nên $ \\triangle OAB $ là tam giác cân tại $ O $.\n- Trong tam giác cân, hai góc ở đáy bằng nhau: $ \\widehat{OAB} = \\widehat{OBA} $.\n- Tổng ba góc trong một tam giác là $ 180^\\circ $: $ \\widehat{xOy} + \\widehat{OAB} + \\widehat{OBA} = 180^\\circ $.\nThay $ \\widehat{xOy} = 60^\\circ $ và $ \\widehat{OBA} = \\widehat{OAB} $ vào, ta có:\n$ 60^\\circ + 2 \\cdot \\widehat{OAB} = 180^\\circ $.\n$ 2 \\cdot \\widehat{OAB} = 180^\\circ - 60^\\circ = 120^\\circ $.\n$ \\widehat{OAB} = \\frac{120^\\circ}{2} = 60^\\circ $.\n(Lưu ý: Khi một tam giác cân có góc ở đỉnh bằng $ 60^\\circ $, nó là tam giác đều)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Trong hình vẽ của Bài 4, qua $ K $ kẻ đường thẳng song song với $ AB $ cắt $ Ox $ tại $ E $ và $ Oy $ tại $ F $. $ AF $ cắt $ BE $ tại $ N $. Điều gì chứng minh rằng $ O, M, N $ thẳng hàng?",
+            "options": [
+              "$ O, M, N $ nằm trên tia phân giác của $ \\widehat{xOy} $ do tính đối xứng của hình.",
+              "$ N $ là trọng tâm của $ \\triangle OEF $.",
+              "$ N $ là trực tâm của $ \\triangle OEF $.",
+              "$ N $ là tâm đường tròn ngoại tiếp $ \\triangle OAB $."
+            ],
+            "correct_index": 0,
+            "explanation": "Từ câu a, ta đã chứng minh $ \\triangle OMA = \\triangle OMB $, suy ra $ OM $ là tia phân giác của $ \\widehat{xOy} $.\nHơn nữa, vì $ OA = OB $, $ \\triangle OAB $ là tam giác cân tại $ O $, nên $ OM $ cũng là đường trung trực của $ AB $.\nVì $ EF \\parallel AB $ và $ OM \\perp AB $, nên $ OM \\perp EF $. Đồng thời, $ \\triangle OEF $ là tam giác cân tại $ O $ (do $ \\triangle OAB \\sim \\triangle OEF $ và $ OA=OB $ kéo theo $ OE=OF $). Do đó $ OM $ cũng là đường trung trực của $ EF $.\nĐường thẳng chứa $ OM $ là trục đối xứng của toàn bộ hình (bao gồm cả $ \\triangle OAB $ và $ \\triangle OEF $). Các đoạn thẳng $ AF $ và $ BE $ là các đường đối xứng nhau qua trục $ OM $ (vì $ OA=OB, OE=OF $). Do đó, giao điểm $ N $ của hai đường đối xứng này phải nằm trên trục đối xứng $ OM $. Vậy $ O, M, N $ thẳng hàng."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Tìm các số nguyên dương $ x, y, z $ thỏa mãn phương trình: $ x + y + z = xyz $.",
+            "options": [
+              "Các hoán vị của $ (1, 2, 3) $",
+              "Chỉ $ (1, 1, 1) $",
+              "Chỉ $ (2, 2, 2) $",
+              "Không có số nguyên dương $ x, y, z $ nào thỏa mãn."
+            ],
+            "correct_index": 0,
+            "explanation": "Không mất tính tổng quát, giả sử $ 1 \\le x \\le y \\le z $.\nChia cả hai vế của phương trình $ x + y + z = xyz $ cho $ xyz $, ta được:\n$ \\frac{1}{yz} + \\frac{1}{xz} + \\frac{1}{xy} = 1 $.\n\nTrường hợp 1: $ x = 1 $\nThay $ x = 1 $ vào phương trình: $ 1 + y + z = yz $.\nSắp xếp lại: $ yz - y - z = 1 $.\nCộng 1 vào cả hai vế để phân tích thành nhân tử (phương pháp Sophie Germain):\n$ yz - y - z + 1 = 1 + 1 $\n$ y(z-1) - (z-1) = 2 $\n$ (y-1)(z-1) = 2 $.\nVì $ y, z $ là các số nguyên dương và $ 1 \\le y \\le z $, suy ra $ y-1 $ và $ z-1 $ là các số nguyên không âm và $ y-1 \\le z-1 $.\nCác cặp nhân tử nguyên của 2 là $ (1, 2) $.\nDo đó, $ y-1 = 1 \\Rightarrow y = 2 $.\nVà $ z-1 = 2 \\Rightarrow z = 3 $.\nVậy ta có nghiệm $ (x, y, z) = (1, 2, 3) $.\n\nTrường hợp 2: $ x \\ge 2 $\nNếu $ x \\ge 2 $, thì theo giả định $ x \\le y \\le z $, ta có $ y \\ge 2 $ và $ z \\ge 2 $.\nKhi đó:\n$ xy \\ge 2 \\cdot 2 = 4 \\Rightarrow \\frac{1}{xy} \\le \\frac{1}{4} $.\n$ xz \\ge 2 \\cdot 2 = 4 \\Rightarrow \\frac{1}{xz} \\le \\frac{1}{4} $.\n$ yz \\ge 2 \\cdot 2 = 4 \\Rightarrow \\frac{1}{yz} \\le \\frac{1}{4} $.\nCộng các bất đẳng thức này lại: $ \\frac{1}{xy} + \\frac{1}{xz} + \\frac{1}{yz} \\le \\frac{1}{4} + \\frac{1}{4} + \\frac{1}{4} = \\frac{3}{4} $.\nNhưng từ phương trình ban đầu, ta có $ \\frac{1}{xy} + \\frac{1}{xz} + \\frac{1}{yz} = 1 $.\nVì $ \\frac{3}{4} < 1 $, nên không có nghiệm nào thỏa mãn khi $ x \\ge 2 $.\n\nVậy, các bộ số nguyên dương $ (x, y, z) $ thỏa mãn phương trình là các hoán vị của $ (1, 2, 3) $."
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 3,
+      "title": "Đề số 3",
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cho tỉ lệ thức $ \\frac{x}{3} = \\frac{y}{5} $ và $ x+y = 32 $. Giá trị của $ x, y $ là:",
+            "options": [
+              "A. $ x=12, y=20 $",
+              "B. $ x=20, y=12 $",
+              "C. $ x=10, y=22 $",
+              "D. $ x=15, y=17 $"
+            ],
+            "correct_index": 0,
+            "explanation": "Áp dụng tính chất của dãy tỉ số bằng nhau:\n$ \\frac{x}{3} = \\frac{y}{5} = \\frac{x+y}{3+5} = \\frac{32}{8} = 4 $.\nTừ đó, $ x = 3 \\cdot 4 = 12 $ và $ y = 5 \\cdot 4 = 20 $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Căn bậc hai số học của $ \\frac{4}{9} $ là:",
+            "options": [
+              "A. $ \\frac{2}{3} $",
+              "B. $ -\\frac{2}{3} $",
+              "C. $ \\frac{4}{9} $",
+              "D. $ -\\frac{4}{9} $"
+            ],
+            "correct_index": 0,
+            "explanation": "Căn bậc hai số học của một số không âm $ a $ là số $ x $ không âm sao cho $ x^2 = a $.\nVậy căn bậc hai số học của $ \\frac{4}{9} $ là $ \\sqrt{\\frac{4}{9}} = \\frac{2}{3} $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Làm tròn số 12,345 đến chữ số thập phân thứ hai ta được:",
+            "options": [
+              "A. 12,3",
+              "B. 12,34",
+              "C. 12,35",
+              "D. 12,346"
+            ],
+            "correct_index": 2,
+            "explanation": "Để làm tròn số 12,345 đến chữ số thập phân thứ hai, ta xét chữ số thập phân thứ ba là 5. Vì $ 5 \\ge 5 $, ta làm tròn lên chữ số thập phân thứ hai. Vậy 12,345 làm tròn đến chữ số thập phân thứ hai là 12,35."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cho hai đường thẳng $ a, b $ phân biệt. Nếu $ a \\perp b $ và $ c \\perp b $ thì:",
+            "options": [
+              "A. $ a // c $",
+              "B. $ a \\perp c $",
+              "C. $ a $ cắt $ c $",
+              "D. $ a $ trùng $ c $"
+            ],
+            "correct_index": 0,
+            "explanation": "Trong hình học, nếu hai đường thẳng phân biệt cùng vuông góc với một đường thẳng thứ ba thì chúng song song với nhau. Do đó, nếu $ a \\perp b $ và $ c \\perp b $, thì $ a // c $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Kết quả của phép tính $ A = \\frac{3}{4} + \\frac{1}{2} : \\frac{4}{5} $ là:",
+            "options": [
+              "A. $ \\frac{11}{8} $",
+              "B. $ \\frac{1}{2} $",
+              "C. $ \\frac{5}{8} $",
+              "D. $ \\frac{9}{8} $"
+            ],
+            "correct_index": 0,
+            "explanation": "$ A = \\frac{3}{4} + \\frac{1}{2} : \\frac{4}{5} $. Thực hiện phép chia trước:\n$ A = \\frac{3}{4} + \\frac{1}{2} \\cdot \\frac{5}{4} = \\frac{3}{4} + \\frac{5}{8} $.\nQuy đồng mẫu số: $ A = \\frac{6}{8} + \\frac{5}{8} = \\frac{11}{8} $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Kết quả của phép tính $ B = \\left( \\frac{-2}{3} \\right)^2 + \\sqrt{0,25} - \\left|\\frac{-1}{3}\\right| $ là:",
+            "options": [
+              "A. $ \\frac{11}{18} $",
+              "B. $ \\frac{5}{18} $",
+              "C. $ \\frac{7}{18} $",
+              "D. $ \\frac{1}{2} $"
+            ],
+            "correct_index": 0,
+            "explanation": "$ B = \\left( \\frac{-2}{3} \\right)^2 + \\sqrt{0,25} - \\left|\\frac{-1}{3}\\right| $.\nTa có: $ \\left( \\frac{-2}{3} \\right)^2 = \\frac{4}{9} $, $ \\sqrt{0,25} = \\sqrt{\\frac{1}{4}} = \\frac{1}{2} $, $ \\left|\\frac{-1}{3}\\right| = \\frac{1}{3} $.\nVậy $ B = \\frac{4}{9} + \\frac{1}{2} - \\frac{1}{3} $.\nQuy đồng mẫu số chung là 18:\n$ B = \\frac{4 \\cdot 2}{9 \\cdot 2} + \\frac{1 \\cdot 9}{2 \\cdot 9} - \\frac{1 \\cdot 6}{3 \\cdot 6} = \\frac{8}{18} + \\frac{9}{18} - \\frac{6}{18} = \\frac{8+9-6}{18} = \\frac{11}{18} $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Giá trị của $ x $ thỏa mãn $ x + \\frac{1}{3} = \\frac{3}{5} $ là:",
+            "options": [
+              "A. $ x = \\frac{4}{15} $",
+              "B. $ x = \\frac{14}{15} $",
+              "C. $ x = -\\frac{4}{15} $",
+              "D. $ x = \\frac{1}{2} $"
+            ],
+            "correct_index": 0,
+            "explanation": "$ x + \\frac{1}{3} = \\frac{3}{5} \\Rightarrow x = \\frac{3}{5} - \\frac{1}{3} $.\nQuy đồng mẫu số: $ x = \\frac{3 \\cdot 3}{5 \\cdot 3} - \\frac{1 \\cdot 5}{3 \\cdot 5} = \\frac{9}{15} - \\frac{5}{15} = \\frac{4}{15} $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Giá trị của $ x $ thỏa mãn $ (x - 1)^2 = 4 $ là:",
+            "options": [
+              "A. $ x = 3 $ hoặc $ x = -1 $",
+              "B. $ x = 3 $",
+              "C. $ x = -1 $",
+              "D. $ x = 5 $"
+            ],
+            "correct_index": 0,
+            "explanation": "$ (x - 1)^2 = 4 $.\nSuy ra $ x - 1 = 2 $ hoặc $ x - 1 = -2 $.\nTrường hợp 1: $ x - 1 = 2 \\Rightarrow x = 2 + 1 = 3 $.\nTrường hợp 2: $ x - 1 = -2 \\Rightarrow x = -2 + 1 = -1 $.\nVậy $ x = 3 $ hoặc $ x = -1 $."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Ba lớp 7A, 7B, 7C trồng được 180 cây. Số cây của các lớp 7A, 7B, 7C theo thứ tự tỉ lệ với 4; 5; 6. Tính số cây mỗi lớp trồng được.",
+            "options": [
+              "A. 7A: 48 cây; 7B: 60 cây; 7C: 72 cây.",
+              "B. 7A: 40 cây; 7B: 50 cây; 7C: 90 cây.",
+              "C. 7A: 50 cây; 7B: 60 cây; 7C: 70 cây.",
+              "D. 7A: 45 cây; 7B: 55 cây; 7C: 80 cây."
+            ],
+            "correct_index": 0,
+            "explanation": "Gọi số cây trồng được của ba lớp 7A, 7B, 7C lần lượt là $ x, y, z $.\nTheo đề bài, ta có $ x+y+z = 180 $ và $ \\frac{x}{4} = \\frac{y}{5} = \\frac{z}{6} $.\nÁp dụng tính chất của dãy tỉ số bằng nhau, ta có:\n$ \\frac{x}{4} = \\frac{y}{5} = \\frac{z}{6} = \\frac{x+y+z}{4+5+6} = \\frac{180}{15} = 12 $.\nTừ đó:\n$ x = 4 \\cdot 12 = 48 $ (cây)\n$ y = 5 \\cdot 12 = 60 $ (cây)\n$ z = 6 \\cdot 12 = 72 $ (cây)\nVậy số cây trồng được của ba lớp 7A, 7B, 7C lần lượt là 48 cây, 60 cây và 72 cây."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cho tam giác $ ABC $ có $ AB = AC $. Tia phân giác của góc $ A $ cắt $ BC $ tại $ M $. Chọn khẳng định đúng về mối quan hệ giữa $ \\triangle AMB $ và $ \\triangle AMC $.",
+            "options": [
+              "A. $ \\triangle AMB = \\triangle AMC $ (Cạnh - Góc - Cạnh)",
+              "B. $ \\triangle AMB = \\triangle AMC $ (Góc - Cạnh - Góc)",
+              "C. $ \\triangle AMB $ đồng dạng với $ \\triangle AMC $",
+              "D. $ \\triangle AMB $ không bằng $ \\triangle AMC $"
+            ],
+            "correct_index": 0,
+            "explanation": "Xét $ \\triangle AMB $ và $ \\triangle AMC $:\n- $ AB = AC $ (theo giả thiết)\n- $ \\angle BAM = \\angle CAM $ (vì $ AM $ là tia phân giác của $ \\angle A $)\n- $ AM $ là cạnh chung\nVậy $ \\triangle AMB = \\triangle AMC $ (c.g.c)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ kết quả $ \\triangle AMB = \\triangle AMC $ ở câu trước, hãy chọn khẳng định đúng về mối quan hệ giữa $ AM $ và $ BC $, và vị trí của điểm $ M $ trên $ BC $.",
+            "options": [
+              "A. $ AM \\perp BC $ và $ M $ là trung điểm của $ BC $",
+              "B. $ AM // BC $ và $ M $ là trung điểm của $ BC $",
+              "C. $ AM \\perp BC $ nhưng $ M $ không là trung điểm của $ BC $",
+              "D. $ AM $ là tia phân giác của $ \\angle BMC $"
+            ],
+            "correct_index": 0,
+            "explanation": "Vì $ \\triangle AMB = \\triangle AMC $ (chứng minh ở câu a), suy ra:\n- $ MB = MC $ (hai cạnh tương ứng), do đó $ M $ là trung điểm của $ BC $.\n- $ \\angle AMB = \\angle AMC $ (hai góc tương ứng).\nMà $ \\angle AMB + \\angle AMC = 180^\\circ $ (hai góc kề bù).\nNên $ \\angle AMB = \\angle AMC = \\frac{180^\\circ}{2} = 90^\\circ $.\nVậy $ AM \\perp BC $.\nCả hai khẳng định đều đúng."
+          }
+        }
+      ]
+    }
+  ]
+}

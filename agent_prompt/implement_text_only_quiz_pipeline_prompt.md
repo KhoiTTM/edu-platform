@@ -108,4 +108,6 @@ Không có `bbox`, `hotspot`, `image` — vì luồng này không cần ảnh tr
 
 ## Tham khảo thực tế đã chạy
 
-`content/khtn7-questions.json` (91 câu, Bài 1-5 sách SBT KHTN 7, trang 1-23) và `content/khtn7-answer-key.json` (361 đáp án, trang 93-138 — đủ dùng cho nhiều bài hơn 5, dự phòng cho lần OCR câu hỏi tiếp theo).
+`content/khtn7-questions.json` (121 câu, Bài 1–7 sách SBT KHTN 7, trang 1–29) và `content/khtn7-answer-key.json` (361 đáp án, trang 93–138 — đủ dùng cho toàn bộ sách, không cần OCR lại).
+
+**Tiến độ và hướng dẫn làm tiếp từng bài:** xem `docs/khtn7_sbt_progress.md` — file này ghi rõ bài nào đã xong, bài nào chưa, trang PDF tương ứng, và toàn bộ code mẫu từng bước để agent có thể làm bài tiếp theo ngay mà không cần hỏi lại.

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Check, X } from "lucide-react";
+import { Check, X, Volume2 } from "lucide-react";
 
 interface MultipleChoiceRendererProps {
   question: React.ReactNode;
@@ -12,6 +12,20 @@ interface MultipleChoiceRendererProps {
   disabled?: boolean;
   shuffle?: boolean;
   imageUrl?: string;
+  audioText?: string;
+}
+
+function speak(text: string) {
+  if (typeof window === "undefined" || !window.speechSynthesis) return;
+  try {
+    window.speechSynthesis.cancel();
+    const utt = new SpeechSynthesisUtterance(text);
+    utt.lang = "en-US";
+    utt.rate = 0.8;
+    window.speechSynthesis.speak(utt);
+  } catch (e) {
+    console.error("Speech play failed:", e);
+  }
 }
 
 export function MultipleChoiceRenderer({
@@ -21,7 +35,8 @@ export function MultipleChoiceRenderer({
   onAnswer,
   disabled = false,
   shuffle = true,
-  imageUrl
+  imageUrl,
+  audioText
 }: MultipleChoiceRendererProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [shuffledOptions, setShuffledOptions] = useState<string[]>([]);
@@ -42,6 +57,12 @@ export function MultipleChoiceRenderer({
     setSelectedIndex(null);
     setInitialized(true);
   }, [options, correctIndex, initialized, shuffle]);
+
+  useEffect(() => {
+    if (initialized && audioText) {
+      speak(audioText);
+    }
+  }, [initialized, audioText]);
 
   const handleSelect = (idx: number) => {
     if (disabled) return;
@@ -82,8 +103,10 @@ export function MultipleChoiceRenderer({
           .replace(/\\supset/g, '⊃')
           .replace(/\\cap/g, '∩')
           .replace(/\\cup/g, '∪')
-          .replace(/\\le/g, '≤')
-          .replace(/\\ge/g, '≥')
+          .replace(/\\le(?![a-zA-Z])/g, '≤')
+          .replace(/\\ge(?![a-zA-Z])/g, '≥')
+          .replace(/\\left/g, '')
+          .replace(/\\right/g, '')
           .replace(/\\times/g, '×')
           .replace(/\\div/g, '÷')
           .replace(/\\cdot/g, '·')
@@ -109,6 +132,19 @@ export function MultipleChoiceRenderer({
       <div className="text-lg font-medium text-white leading-snug">
         {typeof question === 'string' ? formatText(question) : question}
       </div>
+
+      {audioText && (
+        <div className="flex items-center gap-3 py-1">
+          <button
+            onClick={() => speak(audioText)}
+            type="button"
+            className="flex items-center gap-2 px-4 py-2 bg-sky-500 hover:bg-sky-400 text-white font-black rounded-xl shadow-[0_4px_0_rgb(14,165,233)] active:translate-y-0.5 active:shadow-none transition-all text-xs"
+          >
+            <Volume2 size={16} />
+            Nghe phát âm (Listen)
+          </button>
+        </div>
+      )}
 
       {imageUrl && (
         <div className="my-4 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/50 flex justify-center p-4">
