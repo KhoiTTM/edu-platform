@@ -1294,5 +1294,659 @@
     "type": "essay",
     "stem": "Sau đây là bảng ghi kết quả đo tốc độ của một ô tô đồ chơi chạy trên một tấm gỗ đặt nằm nghiêng dài 60 cm.\nLần đo | Quãng đường (cm) | Thời gian đi (s)\n1 | 60 | 1,65\n2 | 60 | 1,68\n3 | 60 | 1,70\na) ĐCNN trên thước và đồng hồ bấm giây dùng trong thí nghiệm này là bao nhiêu?\nb) Tính độ lớn trung bình của kết quả đo tốc độ ra m/s và km/h.",
     "answer": ""
+  },
+  {
+    "id": "khtn7-10-1",
+    "bai": 10,
+    "cau": 1,
+    "type": "multiple_choice",
+    "stem": "Bảng dưới đây mô tả chuyển động của một ô tô trong 4 h. Thời gian (h): 1, 2, 3, 4 Quãng đường (km): 60, 120, 180, 240 Hình vẽ nào sau đây biểu diễn đúng đồ thị quãng đường – thời gian của chuyển động trên?",
+    "options": [
+      "Đường nằm ngang ở s = 60 km.",
+      "Đường bậc thang tăng dần.",
+      "Đường thẳng đứng rồi nằm ngang.",
+      "Đường thẳng xiên tăng đều từ gốc tọa độ."
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "khtn7-10-2",
+    "bai": 10,
+    "cau": 2,
+    "type": "essay",
+    "stem": "Hình 10.1 là đồ thị quãng đường – thời gian của một vật chuyển động. Dựa vào hình vẽ, hãy kiểm tra các thông tin sau đây là đúng hay sai.\na) Tốc độ của vật là 2 m/s.\nb) Sau 2 s, vật đi được 4 m.\nc) Từ giây thứ 4 đến giây thứ 6, vật đi được 12 m.\nd) Thời gian để vật đi được 8 m là 4 s.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-10-3",
+    "bai": 10,
+    "cau": 3,
+    "type": "multiple_choice",
+    "stem": "Lúc 1 h sáng, một đoàn tàu hoả chạy từ ga A đến ga B với tốc độ 60 km/h, đến ga B lúc 2 h và dừng ở ga B 15 min. Sau đó, đoàn tàu tiếp tục chạy với tốc độ cũ thì đến ga C lúc 3 h 15 min. Hình vẽ nào sau đây biểu diễn đúng đồ thị quãng đường – thời gian của đoàn tàu nói trên?",
+    "options": [
+      "Tăng từ 0→60, nằm ngang, tăng tiếp lên 120 (nằm ngang bắt đầu từ t=2).",
+      "Tăng từ 0→60 lúc t=1, nằm ngang từ t=2 đến t=2,25, tăng tiếp lên 120.",
+      "Tăng liên tục đến 120 lúc t=2.",
+      "Tăng đều liên tục đến 120 lúc t=3."
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-10-4",
+    "bai": 10,
+    "cau": 4,
+    "type": "multiple_choice",
+    "stem": "Minh và Nam đi xe đạp trên một đoạn đường thẳng. Trên Hình 10.2, đoạn thẳng OM là đồ thị quãng đường – thời gian của Minh, đoạn thẳng ON là đồ thị quãng đường – thời gian của Nam. Mô tả nào sau đây không đúng?",
+    "options": [
+      "Minh và Nam xuất phát cùng một lúc.",
+      "Tốc độ của Minh lớn hơn tốc độ của Nam.",
+      "Quãng đường Minh đi ngắn hơn quãng đường Nam đi.",
+      "Thời gian đạp xe của Nam nhiều hơn thời gian đạp xe của Minh."
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "khtn7-10-5",
+    "bai": 10,
+    "cau": 5,
+    "type": "multiple_choice",
+    "stem": "Đồ thị quãng đường – thời gian ở Hình 10.3 mô tả chuyển động của các vật 1, 2, 3 có tốc độ tương ứng là v₁, v₂, v₃, cho thấy",
+    "options": [
+      "v₁ = v₂ = v₃.",
+      "v₁ > v₂ > v₃.",
+      "v₁ < v₂ < v₃.",
+      "v₁ = v₂ > v₃."
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-10-6",
+    "bai": 10,
+    "cau": 6,
+    "type": "essay",
+    "stem": "Hình 10.4 là đồ thị quãng đường – thời gian của một chuyển động. Hãy dựa vào đồ thị, viết một đề bài tập có 3 câu hỏi rồi giải.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-10-7",
+    "bai": 10,
+    "cau": 7,
+    "type": "essay",
+    "stem": "Hình 10.5 là đồ thị quãng đường – thời gian của một người đi xe đạp và một người đi mô tô. Biết mô tô chuyển động nhanh hơn xe đạp.\na) Đường biểu diễn nào ứng với chuyển động của xe đạp?\nb) Tính tốc độ của mỗi chuyển động.\nc) Sau bao lâu thì hai xe gặp nhau?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-10-8",
+    "bai": 10,
+    "cau": 8,
+    "type": "essay",
+    "stem": "Một người đi xe đạp, sau khi đi được 8 km với tốc độ 12 km/h thì dừng lại để sửa xe trong 40 min, sau đó đi tiếp 12 km với tốc độ 9 km/h.\na) Vẽ đồ thị quãng đường – thời gian của người đi xe đạp.\nb) Xác định tốc độ của người đi xe đạp trên cả quãng đường.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-10-9",
+    "bai": 10,
+    "cau": 9,
+    "type": "essay",
+    "stem": "Một mô tô chuyển động trên quãng đường s km. Trong nửa thời gian đầu t₁, mô tô chuyển động với tốc độ v₁ = 40 km/h; trong nửa thời gian còn lại t₂, mô tô chuyển động với tốc độ v₂ = 60 km/h.\na) Vẽ đồ thị quãng đường – thời gian của mô tô.\nb) Xác định tốc độ v của mô tô trên cả quãng đường.\nc) Hãy so sánh các giá trị v, v₁, v₂ và tìm biểu thức tổng quát về mối liên hệ giữa v, v₁, v₂.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-10-10",
+    "bai": 10,
+    "cau": 10,
+    "type": "essay",
+    "stem": "Một mô tô chuyển động trên quãng đường s km. Trong nửa quãng đường đầu s₁, mô tô chuyển động với tốc độ v₁ = 60 km/h, nửa quãng đường còn lại s₂, mô tô chuyển động với tốc độ v₂ = 40 km/h.\na) Vẽ đồ thị quãng đường – thời gian của mô tô.\nb) Xác định tốc độ v của mô tô trên cả quãng đường.\nc) Hãy so sánh các giá trị v, v₁, v₂ và tìm biểu thức tổng quát về mối liên hệ giữa v, v₁, v₂.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-11-1",
+    "bai": 11,
+    "cau": 1,
+    "type": "multiple_choice",
+    "stem": "Xe buýt chạy trên đường bộ không có giải phân cách cứng với tốc độ v nào sau đây là tuân thủ quy định về tốc độ tối đa được chỉ ra trong Hình 11.1?",
+    "options": [
+      "50 km/h < v < 80 km/h.",
+      "70 km/h < v < 80 km/h.",
+      "60 km/h < v < 70 km/h.",
+      "50 km/h < v < 60 km/h."
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "khtn7-11-2",
+    "bai": 11,
+    "cau": 2,
+    "type": "multiple_choice",
+    "stem": "Ô tô chạy trên đường cao tốc có biển báo tốc độ như trong Hình 11.2 với tốc độ v nào sau đây là an toàn?",
+    "options": [
+      "Khi trời mưa: 100 km/h < v < 120 km/h.",
+      "Khi trời nắng: 100 km/h < v < 120 km/h.",
+      "Khi trời mưa: 100 km/h < v < 110 km/h.",
+      "Khi trời nắng: v > 120 km/h."
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-11-3",
+    "bai": 11,
+    "cau": 3,
+    "type": "multiple_choice",
+    "stem": "Khoảng cách nào sau đây là khoảng cách an toàn theo Bảng 11.1 đối với xe ô tô chạy với tốc độ 25 m/s?",
+    "options": [
+      "35 m.",
+      "55 m.",
+      "70 m.",
+      "100 m."
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "khtn7-11-4",
+    "bai": 11,
+    "cau": 4,
+    "type": "essay",
+    "stem": "Camera của thiết bị bắn tốc độ đặt trên đường bộ không có giải phân cách cứng ghi được thời gian của một ô tô tải chở 4 tấn hàng chạy từ vạch mốc 1 sang vạch mốc 2 cách nhau 10 m là 0,50 s. Hỏi xe có vi phạm quy định về tốc độ tối đa trong Hình 11.1 không?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-11-5",
+    "bai": 11,
+    "cau": 5,
+    "type": "essay",
+    "stem": "Hãy dùng quy tắc \"3 giây\" để xác định khoảng cách an toàn của xe ô tô chạy với tốc độ 70 km/h. Khoảng cách tính được này có phù hợp với quy định về tốc độ tối đa trong Bảng 11.1 không? Tại sao?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-11-6",
+    "bai": 11,
+    "cau": 6,
+    "type": "essay",
+    "stem": "a) Dựa vào Bảng 11.2, hãy vẽ đồ thị biểu diễn sự thay đổi về số vụ tai nạn giao thông hàng năm trong bảng thống kê của Uỷ ban An toàn giao thông Quốc gia. Trục tung biểu diễn số vụ tai nạn được làm tròn tới hàng trăm. Trục hoành biểu diễn thời gian theo đơn vị năm.\nb) Hãy dựa vào đồ thị để đưa ra nhận xét về tình hình tai nạn giao thông ở nước ta từ năm 2016 đến năm 2020.\n(Bảng 11.2: Năm 2016: 21589 vụ, 8685 người chết; 2017: 20080 vụ, 8279 người chết; 2018: 18232 vụ, 8125 người chết; 2019: 17626 vụ, 7624 người chết; 2020: 14510 vụ, 6700 người chết)",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-12-1",
+    "bai": 12,
+    "cau": 1,
+    "type": "essay",
+    "stem": "Giải thích âm từ một dây đàn ghita được gảy truyển đến tai ta như thế nào.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-12-2",
+    "bai": 12,
+    "cau": 2,
+    "type": "multiple_choice",
+    "stem": "Âm thanh không thể truyển trong",
+    "options": [
+      "chất lỏng:",
+      "chất rắn.",
+      "chất khí",
+      "chân không."
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "khtn7-12-3",
+    "bai": 12,
+    "cau": 3,
+    "type": "essay",
+    "stem": "Chỉ ra câu nào đúng, câu nào sai trong các câu dưới đây. a) Âm thanh được tạo ra từ nguồn âm; các nguồn âm đều dao động. b) Âm thanh được truyền tới tai ta qua môi trường không khí. c) Âm thanh có thể truyền trong chất rắn, lỏng và khí. d) Âm thanh có thể truyền trong chân không.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-12-4",
+    "bai": 12,
+    "cau": 4,
+    "type": "multiple_choice",
+    "stem": "Âm thanh không truyền được trong chân không vì",
+    "options": [
+      "chân không không có trọng lượng.",
+      "chân không không có vật chất.",
+      "chân không là môi trường trong suốt.",
+      "chân không không đặt được nguồn âm."
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-12-5",
+    "bai": 12,
+    "cau": 5,
+    "type": "essay",
+    "stem": "Em hãy giải thích tại sao trong thực tế người ta thường dùng những vật liệu như vải, bông, xốp cao su để cách âm.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-12-6",
+    "bai": 12,
+    "cau": 6,
+    "type": "essay",
+    "stem": "Ở loài voi, khi con đầu đàn tìm thấy thức ăn hoặc phát hiện thấy nguy hiểm, chúng thường giậm chân xuống đất để thông báo cho nhau. Em hãy giải thích hiện tượng này.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-12-7",
+    "bai": 12,
+    "cau": 7,
+    "type": "essay",
+    "stem": "Giả sử trong không gian vũ trụ thuộc hệ Mặt Trời có hai thiên thạch va chạm với nhau thì ở trên Trái Đất ta có nghe thấy âm thanh của vụ nổ này không? Tại sao?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-12-8",
+    "bai": 12,
+    "cau": 8,
+    "type": "multiple_choice",
+    "stem": "Một người nhìn thấy tia chớp trước khi nghe thấy tiếng sấm 5 s. Cho rằng thời gian ánh sáng truyền từ chỗ phát ra tiếng sấm đến mắt ta là không đáng kể và tốc độ truyền âm trong không khí là 340 m/s. Người đó đứng cách nơi phát ra tiếng sấm một khoảng là",
+    "options": [
+      "1,7 km.",
+      "68 km.",
+      "850 m.",
+      "68 m."
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "khtn7-12-9",
+    "bai": 12,
+    "cau": 9,
+    "type": "essay",
+    "stem": "Một người dùng búa gõ vào đường ray xe lửa, một người khác đứng cách đó 432 m và áp một tai vào đường ray xe lửa thì nghe thấy hai tiếng gõ cách nhau 1,2 s. Xác định tốc độ truyền âm trong không khí. Biết tốc độ truyền âm trong thép là 6 100 m/s.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-12-10",
+    "bai": 12,
+    "cau": 10,
+    "type": "essay",
+    "stem": "Với các dụng cụ thí nghiệm gồm: một ít hạt gạo; một cái bát sứ; một thìa inox; một cái chảo bằng kim loại; một màng nylon bọc thức ăn; vài dây cao su. Hãy thiết kế phương án thí nghiệm chứng tỏ rằng khi dùng thìa inox gõ vào đáy chảo phát ra âm thanh dưới dạng sóng âm có thể truyền qua không khí tới màng nylon căng trên miệng bát sứ.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-13-1",
+    "bai": 13,
+    "cau": 1,
+    "type": "essay",
+    "stem": "Một vật dao động phát ra âm có tần số 50 Hz và một vật khác phát ra âm có tần số 90 Hz. Vật nào dao động nhanh hơn? Vật nào phát ra âm thấp hơn?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-13-2",
+    "bai": 13,
+    "cau": 2,
+    "type": "essay",
+    "stem": "Hãy tìm hiểu xem khi vặn cho dây đàn căng hơn thì âm phát ra sẽ cao hơn hay thấp hơn; tần số lớn hơn hay nhỏ hơn.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-13-3",
+    "bai": 13,
+    "cau": 3,
+    "type": "multiple_choice",
+    "stem": "Trong các trường hợp dưới đây, khi nào vật phát ra âm to hơn?",
+    "options": [
+      "Khi tần số dao động lớn hơn.",
+      "Khi vật dao động mạnh hơn.",
+      "Khi vật dao động nhanh hơn.",
+      "Khi vật dao động yếu hơn."
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-13-4",
+    "bai": 13,
+    "cau": 4,
+    "type": "multiple_choice",
+    "stem": "Biên độ dao động là",
+    "options": [
+      "số dao động trong một giây.",
+      "độ lệch so với vị trí ban đầu của vật trong một giây.",
+      "độ lệch lớn nhất so với vị trí cân bằng khi vật dao động.",
+      "khoảng cách lớn nhất giữa hai vị trí mà vật dao động thực hiện được."
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "khtn7-13-5",
+    "bai": 13,
+    "cau": 5,
+    "type": "multiple_choice",
+    "stem": "Biên độ dao động của vật càng lớn khi",
+    "options": [
+      "vật dao động càng nhanh.",
+      "vật dao động với tần số càng lớn.",
+      "vật dao động càng chậm.",
+      "vật dao động càng mạnh."
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "khtn7-13-6",
+    "bai": 13,
+    "cau": 6,
+    "type": "multiple_choice",
+    "stem": "Ta nghe tiếng trống to hơn khi gõ mạnh vào mặt trống và nhỏ hơn khi gõ nhẹ là vì",
+    "options": [
+      "gõ mạnh làm tần số dao động của mặt trống lớn hơn.",
+      "gõ mạnh làm biên độ dao động của mặt trống lớn hơn.",
+      "gõ mạnh làm thành trống dao động mạnh hơn.",
+      "gõ mạnh làm dùi trống dao động mạnh hơn."
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-13-7",
+    "bai": 13,
+    "cau": 7,
+    "type": "multiple_choice",
+    "stem": "Vật nào sau đây dao động với tần số lớn nhất?",
+    "options": [
+      "Trong 30 s, con lắc thực hiện được 1 500 dao động.",
+      "Trong 10 s, mặt trống thực hiện được 1 000 dao động.",
+      "Trong 2 s, dây đàn thực hiện được 988 dao động.",
+      "Trong 15 s, dây cao su thực hiện được 1 900 dao động."
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "khtn7-13-8",
+    "bai": 13,
+    "cau": 8,
+    "type": "multiple_choice",
+    "stem": "Khi nào âm phát ra là âm bổng?",
+    "options": [
+      "Khi âm phát ra có tần số thấp.",
+      "Khi âm phát ra có tần số cao.",
+      "Khi âm nghe nhỏ.",
+      "Khi âm nghe to."
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-13-9",
+    "bai": 13,
+    "cau": 9,
+    "type": "essay",
+    "stem": "Giải thích tại sao khi thổi còi, muốn tiếng còi phát ra to và vang xa thì ta cần phải thổi mạnh vào còi.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-13-10",
+    "bai": 13,
+    "cau": 10,
+    "type": "essay",
+    "stem": "Khi con ong bay đi tìm mật thì đập cánh 880 lần trong 2 s, còn khi đã kiếm đủ mật bay về tổ thì đập cánh 600 lần trong 2 s. Nghe tiếng kêu vo ve của ong, em có thể biết được ong đang đi tìm mật hay đang chở mật về tổ không? Giải thích.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-13-11",
+    "bai": 13,
+    "cau": 11,
+    "type": "essay",
+    "stem": "Em có thể làm thí nghiệm để tạo ra một giai điệu với các âm thanh trầm bổng khác nhau từ những chiếc cốc thuỷ tinh như sau: Xếp những chiếc cốc thuỷ tinh giống nhau thành hàng. Cho vào cốc thứ nhất một ít nước, cốc thứ hai nhiều hơn cốc thứ nhất, sau đó cứ tăng dần mức nước lên. Dùng bút chì gõ vào chiếc cốc có ít nước nhất và lắng nghe âm thanh. Rồi gõ vào chiếc cốc có nhiều nước nhất và để ý sự khác biệt giữa hai âm thanh. Cho biết cốc nào âm thanh trầm hơn?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-13-12",
+    "bai": 13,
+    "cau": 12,
+    "type": "essay",
+    "stem": "Có hai chiếc micro được kết nối với máy hiện sóng, dao động kí do âm thanh phát ra từ loa thứ nhất và loa thứ hai lần lượt được ghi trong Hình 13.2a và 13.2b. Hãy so sánh biên độ và tần số dao động của hai âm thanh này.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-14-1",
+    "bai": 14,
+    "cau": 1,
+    "type": "essay",
+    "stem": "Thế nào là âm phản xạ? Âm phản xạ có lợi hay có hại? Nêu ví dụ.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-14-2",
+    "bai": 14,
+    "cau": 2,
+    "type": "multiple_choice",
+    "stem": "Trong những trường hợp dưới đây, hiện tượng nào ứng dụng phản xạ âm?",
+    "options": [
+      "Xác định độ sâu của đáy biển.",
+      "Nói chuyện qua điện thoại.",
+      "Nói trong phòng thu âm qua hệ thống loa.",
+      "Nói trong hội trường thông qua hệ thống loa."
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "khtn7-14-3",
+    "bai": 14,
+    "cau": 3,
+    "type": "multiple_choice",
+    "stem": "Kết luận nào sau đây là đúng?",
+    "options": [
+      "Vật phản xạ âm tốt là những vật có bề mặt sần sùi, mềm, xốp.",
+      "Vật phản xạ âm kém là những vật có bề mặt nhẵn, cứng.",
+      "Vật phản xạ âm tốt là những vật có kích thước lớn.",
+      "Vật phản xạ âm kém là những vật mềm, xốp, có bề mặt sần sùi."
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "khtn7-14-4",
+    "bai": 14,
+    "cau": 4,
+    "type": "multiple_choice",
+    "stem": "Những vật phản xạ âm tốt là",
+    "options": [
+      "gạch, gỗ, vải.",
+      "thép, vải, xốp.",
+      "vải nhung, gốm.",
+      "sắt, thép, đá."
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "khtn7-14-5",
+    "bai": 14,
+    "cau": 5,
+    "type": "multiple_choice",
+    "stem": "Những vật hấp thụ âm tốt là vật",
+    "options": [
+      "có bề mặt nhẵn, cứng.",
+      "sáng, phẳng.",
+      "phản xạ âm kém.",
+      "phản xạ âm tốt."
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "khtn7-14-6",
+    "bai": 14,
+    "cau": 6,
+    "type": "multiple_choice",
+    "stem": "Hai cậu bé đứng tại hai điểm A và B trước một toà nhà cao. Khi cậu bé đứng ở A thổi to một tiếng còi thì cậu bé đứng ở B nghe thấy hai tiếng còi cách nhau 1 s. Tốc độ truyền âm của tiếng còi là",
+    "options": [
+      "150 m/s.",
+      "300 m/s.",
+      "350 m/s.",
+      "500 m/s."
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-14-7",
+    "bai": 14,
+    "cau": 7,
+    "type": "essay",
+    "stem": "Một người đứng trên mép hòn đảo cách vách núi phía trước 3 000 m, giữa vách núi và hòn đảo có một chiếc tàu thuỷ neo đậu. Khi tàu hú còi, người này nghe thấy hai tiếng còi cách nhau 4 s. Xác định khoảng cách từ tàu tới đảo. Biết tốc độ truyền âm trong không khí là 340 m/s.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-14-8",
+    "bai": 14,
+    "cau": 8,
+    "type": "essay",
+    "stem": "Người ta ứng dụng hiện tượng phản xạ sóng âm để đo độ sâu của biển. Sóng âm có tần số cao (siêu âm) từ con tàu trên mặt biển phát ra truyền tới đáy biển. Tại đó sóng âm bị phản xạ trở lại và được một thiết bị trên tàu ghi lại. Trong một phép đo độ sâu của đáy biển người ta ghi lại được từ lúc phát ra siêu âm đến khi nhận được âm phản xạ là 1,2 s. Biết tốc độ truyền âm trong nước biển là 1 500 m/s. Tính độ sâu của đáy biển.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-14-9",
+    "bai": 14,
+    "cau": 9,
+    "type": "multiple_choice",
+    "stem": "Âm thanh nào dưới đây là nguồn gây ô nhiễm tiếng ồn?",
+    "options": [
+      "Những âm thanh được tạo ra từ những dao động có tần số cao.",
+      "Những âm thanh được tạo ra từ những dao động có biên độ lớn.",
+      "Những âm thanh được tạo ra từ những dao động có biên độ lớn và tần số cao.",
+      "Những âm thanh to, kéo dài dội tới tai người nghe gây ảnh hưởng xấu đến sức khoẻ."
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "khtn7-14-10",
+    "bai": 14,
+    "cau": 10,
+    "type": "multiple_choice",
+    "stem": "Trường hợp nào sau đây có ô nhiễm tiếng ồn?",
+    "options": [
+      "Tiếng còi xe cứu thương.",
+      "Tiếng thầy giáo giảng bài trong giờ học.",
+      "Tiếng sấm dội tới tai người trưởng thành.",
+      "Bệnh viện, trạm xá cạnh chợ."
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "khtn7-14-11",
+    "bai": 14,
+    "cau": 11,
+    "type": "essay",
+    "stem": "Tại sao để việc ghi âm trên băng, đĩa đạt chất lượng cao, những ca sĩ thường được mời đến những phòng ghi âm chuyên dụng chứ không phải tại nhà hát?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-14-12",
+    "bai": 14,
+    "cau": 12,
+    "type": "essay",
+    "stem": "Người ta thường sử dụng những biện pháp nào để chống ô nhiễm tiếng ồn?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-14-13",
+    "bai": 14,
+    "cau": 13,
+    "type": "essay",
+    "stem": "Hãy chỉ ra trường hợp gây ô nhiễm tiếng ồn ở nơi em sinh sống hoặc một nơi nào khác em được biết. Đề ra một số biện pháp để chống sự ô nhiễm tiếng ồn đó.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-15-1",
+    "bai": 15,
+    "cau": 1,
+    "type": "multiple_choice",
+    "stem": "Dụng cụ thí nghiệm thu năng lượng ánh sáng chuyển hoá thành điện năng, gồm:",
+    "options": [
+      "pin quang điện, bóng đèn LED, dây nối.",
+      "đèn pin, pin quang điện, điện kế, dây nối.",
+      "đèn pin, pin quang điện, bóng đèn LED.",
+      "pin quang điện, dây nối."
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "khtn7-15-2",
+    "bai": 15,
+    "cau": 2,
+    "type": "multiple_choice",
+    "stem": "Máy tính cầm tay sử dụng năng lượng mặt trời đã chuyển hoá năng lượng ánh sáng thành",
+    "options": [
+      "điện năng.",
+      "nhiệt năng.",
+      "hoá năng.",
+      "cơ năng."
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "khtn7-15-3",
+    "bai": 15,
+    "cau": 3,
+    "type": "multiple_choice",
+    "stem": "Hình 15.1 biểu diễn một tia sáng truyền trong không khí, mũi tên cho ta biết",
+    "options": [
+      "màu sắc của ánh sáng.",
+      "hướng truyền của ánh sáng.",
+      "tốc độ truyền ánh sáng.",
+      "độ mạnh yếu của ánh sáng."
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-15-4",
+    "bai": 15,
+    "cau": 4,
+    "type": "multiple_choice",
+    "stem": "Một mục tiêu di động giữa A và B ở bên kia một bức tường, trên bức tường có một lỗ thủng nhỏ. Ở bên này bức tường, quan sát viên cần phải đặt mắt quan sát trong khoảng nào để nhìn thấy mục tiêu?",
+    "options": [
+      "Từ P đến M.",
+      "Từ M đến N.",
+      "Từ M đến Q.",
+      "Từ P đến N."
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-15-5",
+    "bai": 15,
+    "cau": 5,
+    "type": "essay",
+    "stem": "Khi xếp hàng chào cờ, em cần phải ngắm như thế nào để đứng thẳng hàng với các bạn? Giải thích cách làm.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-15-6",
+    "bai": 15,
+    "cau": 6,
+    "type": "multiple_choice",
+    "stem": "Chùm ánh sáng phát ra từ đèn pha xe máy khi chiếu xa là chùm ánh sáng",
+    "options": [
+      "hội tụ.",
+      "phân kì.",
+      "song song.",
+      "Cả A, B, C đều sai."
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "khtn7-15-7",
+    "bai": 15,
+    "cau": 7,
+    "type": "multiple_choice",
+    "stem": "Trong thí nghiệm tạo bóng với nguồn sáng rộng, kích thước bóng nửa tối thay đổi thế nào khi di chuyển màn chắn ra xa vật cản sáng?",
+    "options": [
+      "Tăng lên.",
+      "Giảm đi.",
+      "Không thay đổi.",
+      "Lúc đầu giảm đi, sau đó tăng lên."
+    ],
+    "answer": "A"
+  },
+  {
+    "id": "khtn7-15-8",
+    "bai": 15,
+    "cau": 8,
+    "type": "essay",
+    "stem": "Bài tập thí nghiệm ở nhà: Bố trí thí nghiệm như Hình 15.3: dùng quả bóng bay bịt kín miệng của chai thuỷ tinh. Đặt chai ra ngoài trời nắng trong 10 phút, quan sát sự thay đổi hình dạng của quả bóng bay, mô tả và giải thích.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-15-9",
+    "bai": 15,
+    "cau": 9,
+    "type": "essay",
+    "stem": "Hoạt động trải nghiệm ở sân trường: Dùng một chiếc thước dây có ĐCNN đến 1 cm, chiếc thước kẻ có ĐCNN đến 1 mm, chiếc cọc cao 1 m và bóng của nó, em hãy trình bày cách xác định chiều cao cột cờ trường em vào một ngày có nắng. Coi chùm ánh sáng mặt trời chiếu xuống Trái Đất trong phạm vi hẹp là chùm sáng song song.",
+    "answer": ""
   }
 ]

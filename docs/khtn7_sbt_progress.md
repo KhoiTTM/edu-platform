@@ -5,8 +5,8 @@
 
 ## Trạng thái hiện tại
 
-**Đã OCR xong: Bài 1–7** (121 câu, trang 1–29)  
-**Tiếp theo: Bài 8** (bắt đầu trang 30, index PDF 29)
+**Đã OCR xong: Bài 1–15** (195 câu, trang 1–45)  
+**Tiếp theo: Bài 16** (bắt đầu trang 46, index PDF 45)
 
 ## Bảng theo dõi
 
@@ -21,8 +21,13 @@
 | 7 | Hoá trị và công thức hoá học | 26–29 | 17 | 4 | ✅ Xong |
 | 8 | Tốc độ chuyển động | 30–31 | 10 | 4 | ✅ Xong |
 | 9 | Đo tốc độ | 32 | 4 | 0 | ✅ Xong |
-| 10 | Đồ thị quãng đường – thời gian | ? | ? | ? | ⏳ Chưa làm |
-| 11–? | (các bài tiếp theo) | ? | ? | ? | ⏳ Chưa làm |
+| 10 | Đồ thị quãng đường – thời gian | 33–35 | 10 | 4 | ✅ Xong |
+| 11 | Thảo luận về ảnh hưởng của tốc độ trong an toàn giao thông | 35–37 | 6 | 3 | ✅ Xong |
+| 12 | Sóng âm | 38–39 | 10 | 3 | ✅ Xong |
+| 13 | Độ to và độ cao của âm | 39–41 | 12 | 6 | ✅ Xong |
+| 14 | Phản xạ âm, chống ô nhiễm tiếng ồn | 41–43 | 13 | 6 | ✅ Xong |
+| 15 | Năng lượng ánh sáng. Tia sáng, vùng tối | 44–45 | 9 | 5 | ✅ Xong |
+| 16–? | (các bài tiếp theo) | 46+ | ? | ? | ⏳ Chưa làm |
 
 > Trang bắt đầu của bài chưa OCR chỉ là ước tính — **luôn render ảnh xác nhận** trước khi OCR (xem Bước 0 trong `agent_prompt/implement_text_only_quiz_pipeline_prompt.md`).
 

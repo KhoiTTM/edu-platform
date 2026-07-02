@@ -48,6 +48,19 @@ Có màn hình explorer trong khu **Phụ Huynh**: tab "Exam Bank" tại `/phu-h
 Lọc theo môn → lớp → loại đề (`exam_type`) → bộ đề, xem chi tiết câu hỏi/đáp án theo schema.
 Chỉ ĐỌC — không sửa/seed từ đây; tạo đề vẫn qua generator (mục 4).
 
+## 2c. "Luyện tập theo sách" (answer-sheet) — KHÁC exam-bank
+
+Một cơ chế RIÊNG, dùng cho sách có bản quyền (không được tái tạo đề vào hệ thống):
+- Route `/sach-bai-tap/[slug]`, component `components/assessment/AnswerSheetRenderer.tsx`,
+  action `app/(app)/(assessment)/sach-bai-tap/actions.ts`.
+- Data `content/[slug]-answers.json` — CHỈ chứa đáp án ngắn/từ khóa + số câu + trang,
+  KHÔNG chứa đề bài. Học sinh đọc đề ở link sách gốc (Flipbook), nhập đáp án → chấm.
+- Loại chấm: `text`/`choice` (khớp đáp án), `keywords` (câu chứa đủ từ khóa), `essay`
+  (không chấm, có thể kèm `sample` = đáp án gợi ý gốc để tham khảo sau khi nộp).
+- Lưu lịch sử: `learning_sessions` với `type='exam'`, `sub_type='book_practice'`.
+- Hiện dùng cho: `sbt-tienganh7-answers.json` (SBT Tiếng Anh 7). Bản quyền: xem `docs/SACH_BAI_TAP.md`.
+Đây KHÔNG phải exam-bank (không dùng generator, không vào `assessment_collections`).
+
 ## 3. Định dạng `metadata_json` theo `type` câu hỏi
 
 **`multiple_choice`** — chọn 1 đáp án:

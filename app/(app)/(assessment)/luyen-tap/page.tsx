@@ -36,7 +36,8 @@ export default async function LuyenTapPage() {
 
             let availableSubjectSlugs = Array.from(new Set([
                 ...(units?.map((u: any) => subjectMap[u.subject] || u.subject) || []),
-                ...(collections?.map((c: any) => subjectMap[c.subject_slug] || c.subject_slug) || [])
+                ...(collections?.map((c: any) => subjectMap[c.subject_slug] || c.subject_slug) || []),
+                ...(g === 7 ? ['khtn'] : []),
             ]));
 
             if (g === 0) {
@@ -57,6 +58,15 @@ export default async function LuyenTapPage() {
                 .in('slug', availableSubjectSlugs);
 
             let gradeSubjects = subjects || [];
+            if (g === 7) {
+                const hasKhtn = gradeSubjects.some((s: any) => s.slug === 'khtn');
+                if (!hasKhtn) {
+                    gradeSubjects = [
+                        ...gradeSubjects,
+                        { id: 'khtn-7', slug: 'khtn', name_vi: 'Khoa học tự nhiên 7', name_en: 'KHTN 7', description: 'Luyện tập sách bài tập KHTN 7', icon: '🧬' }
+                    ];
+                }
+            }
             if (g === 0) {
                 const hasStarter = gradeSubjects.some((s: any) => s.slug === 'pre-a1-starter');
                 if (!hasStarter) {
@@ -92,6 +102,7 @@ export default async function LuyenTapPage() {
             case 'toan': return <Calculator className={className} />;
             case 'tieng_anh': return <Globe2 className={className} />;
             case 'pre-a1-starter': return <Star className={className} />;
+            case 'khtn': return <FlaskConical className={className} />;
             default: return <BookOpen className={className} />;
         }
     };

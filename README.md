@@ -82,6 +82,7 @@ Component tương ứng: `components/assessment/`. Engine: `lib/assessment/` (ai
 | `/luyen-tap`, `/luyen-tap/[subject]` | Trang Luyện tập, phân tab theo `exam_type` (môn `pre-a1-starter` tại `/luyen-tap/pre-a1-starter?grade=3` chứa 20 đề từ vựng) |
 | `/luyen-tap/lesson/[nodeId]` | Luyện tập theo bài học cụ thể |
 | `/luyen-tap/review` | Trang xem lại bài đã làm |
+| `/sach-bai-tap/[slug]` | **Luyện tập theo sách** (phiếu đáp án): chọn Unit → nhập đáp án đọc từ sách gốc (link Flipbook) → chấm + lưu lịch sử. Component `AnswerSheetRenderer`, action `sach-bai-tap/actions.ts`, data `content/[slug]-answers.json` (chỉ đáp án ngắn/từ khóa, KHÔNG chứa đề bài — tránh bản quyền). Vào từ nút "Luyện tập theo Sách bài tập" ở tab Tiếng Anh lớp 7. |
 | `/assessment-studio`, `/assessment-studio/collections/[id]` | CMS quản lý đề thi |
 | `/assessment-studio/exams/[examId]/{preview,review}` | Xem trước / duyệt đề |
 | `/test-assessment` | Trang test runtime lấy đề (`getExamQuestions`) |

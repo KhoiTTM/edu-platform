@@ -12,10 +12,8 @@ export async function getExamInfo(examId: string) {
 }
 
 export async function getExamQuestions(examId: string) {
-  console.log(`
---- [ACTION] getExamQuestions for examId: ${examId} ---`);
   const supabase = await createClient();
-  
+
   const { data, error } = await supabase
     .from('exam_questions')
     .select(`
@@ -32,20 +30,16 @@ export async function getExamQuestions(examId: string) {
     .order('order_index', { ascending: true });
 
   if (error) {
-    console.error('  [ACTION-LOG] Error fetching exam questions:', error);
+    console.error('[getExamQuestions] Error:', error);
     return [];
   }
 
-  // Lấy dữ liệu assessment làm gốc, giữ nguyên metadata_json
-  const questions = data.map((eq: any) => ({
+  return data.map((eq: any) => ({
     id: eq.question_bank.id,
     type: eq.question_bank.type,
     concept_id: eq.question_bank.concept_id,
-    ...eq.question_bank.metadata_json // Spread các trường instruction/words hoặc question/options
+    ...eq.question_bank.metadata_json,
   }));
-
-  console.log(`  [ACTION-LOG] Successfully fetched ${questions.length} questions.`);
-  return questions;
 }
 
 export async function saveExamResult(examId: string, score: number, total: number) {
@@ -63,7 +57,7 @@ export async function saveExamResult(examId: string, score: number, total: numbe
     const coll = examData.assessment_collections as any;
     const subjectSlug = (Array.isArray(coll) ? coll[0]?.subject_slug : coll?.subject_slug) || 'tieng_anh';
     const now = new Date().toISOString();
-    
+
     await supabase.from('learning_sessions').insert({
       user_id: user.id,
       subject_slug: subjectSlug,
@@ -73,12 +67,11 @@ export async function saveExamResult(examId: string, score: number, total: numbe
         type: 'exam',
         exam_id: examId,
         unit_topic: examData.title,
-        score: score,
-        total: total
-      }
+        score,
+        total,
+      },
     });
 
-    // ✅ Mark any daily_task with this exam as completed
     await supabase.rpc('complete_daily_task_by_exam', {
       p_student_id: user.id,
       p_exam_id: examId,

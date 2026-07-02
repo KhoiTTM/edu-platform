@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Layout, BookOpen, Target, PenTool, Settings, Users } from "lucide-react";
+import { Layout, BookOpen, Target, Settings, Users } from "lucide-react";
 
 export function TopNavLinks({ role = "student" }: { role?: string }) {
   const pathname = usePathname();
@@ -11,7 +11,6 @@ export function TopNavLinks({ role = "student" }: { role?: string }) {
     { href: "/dashboard", label: "Trang chủ", icon: Layout, color: "text-sky-400", activeBg: "bg-sky-500/20", border: "border-sky-500" },
     { href: "/hoc-tap", label: "Học bài", icon: BookOpen, color: "text-emerald-400", activeBg: "bg-emerald-500/20", border: "border-emerald-500" },
     { href: "/luyen-tap", label: "Luyện tập", icon: Target, color: "text-fuchsia-400", activeBg: "bg-fuchsia-500/20", border: "border-fuchsia-500" },
-    { href: "/assessment-studio", label: "Đánh giá", icon: PenTool, color: "text-amber-400", activeBg: "bg-amber-500/20", border: "border-amber-500" },
     ...(role === "parent" || role === "admin"
       ? [{ href: "/phu-huynh", label: "Phụ Huynh", icon: Users, color: "text-violet-400", activeBg: "bg-violet-500/20", border: "border-violet-500" }]
       : []),

@@ -137,7 +137,7 @@ export default async function DashboardPage() {
       icon: subj.icon,
       title: session ? (session.summary_metrics?.unit_topic || "Bài luyện tập gần nhất") : "Chưa có tiến độ",
       score: hasScore ? `${session.summary_metrics.score}/${session.summary_metrics.total}` : null,
-      url: session?.summary_metrics?.exam_id ? `/test-assessment?examId=${session.summary_metrics.exam_id}` : `/luyen-tap/${subj.slug}?grade=${grade}`
+      url: `/luyen-tap/${subj.slug}?grade=${grade}`
     };
   });
 
@@ -320,15 +320,9 @@ export default async function DashboardPage() {
                                             task.task?.subject_slug || "";
                         const subjectIcon = isLesson ? "📖" : (SUBJECT_ICONS[subjectSlug] || "📚");
                         const isToday = task.task_date === todayStr;
-                        let taskUrl = isLesson 
-                          ? `/learn/${subjectSlug}/${task.lesson_node?.slug}` 
+                        let taskUrl = isLesson
+                          ? `/learn/${subjectSlug}/${task.lesson_node?.slug}`
                           : `/test-assessment?examId=${task.exam_id}`;
-
-                        if (!isLesson && subjectSlug === 'khtn' && task.exam?.collection?.title?.startsWith('SBT KHTN 7')) {
-                          const baiNum = task.task?.unit_numbers?.[0] || task.exam?.exam_number || 1;
-                          taskTitle = `SBT KHTN 7 - ${task.exam?.title}`;
-                          taskUrl = `/flipbooks/khtn7/quiz/${baiNum}`;
-                        }
 
                         return (
                           <Link

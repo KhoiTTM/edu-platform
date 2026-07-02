@@ -26,15 +26,21 @@ const BOOK_SOURCE_URLS: Record<string, string> = {
 // Add entries here as more lessons get OCR'd into content/[bookSlug]-questions.json.
 const LESSON_TITLES: Record<string, Record<number, string>> = {
   khtn7: {
-    1: "Bài 1. Phương pháp và kĩ năng học tập môn Khoa học tự nhiên",
-    2: "Bài 2. Nguyên tử",
-    3: "Bài 3. Nguyên tố hoá học",
-    4: "Bài 4. Sơ lược về bảng tuần hoàn các nguyên tố hoá học",
-    5: "Bài 5. Phân tử - Đơn chất - Hợp chất",
-    6: "Bài 6. Giới thiệu về liên kết hoá học",
-    7: "Bài 7. Hoá trị và công thức hoá học",
-    8: "Bài 8. Tốc độ chuyển động",
-    9: "Bài 9. Đo tốc độ",
+    1: "SBT - KHTN 7 - Bài 1. Phương pháp và kĩ năng học tập môn Khoa học tự nhiên",
+    2: "SBT - KHTN 7 - Bài 2. Nguyên tử",
+    3: "SBT - KHTN 7 - Bài 3. Nguyên tố hoá học",
+    4: "SBT - KHTN 7 - Bài 4. Sơ lược về bảng tuần hoàn các nguyên tố hoá học",
+    5: "SBT - KHTN 7 - Bài 5. Phân tử - Đơn chất - Hợp chất",
+    6: "SBT - KHTN 7 - Bài 6. Giới thiệu về liên kết hoá học",
+    7: "SBT - KHTN 7 - Bài 7. Hoá trị và công thức hoá học",
+    8: "SBT - KHTN 7 - Bài 8. Tốc độ chuyển động",
+    9: "SBT - KHTN 7 - Bài 9. Đo tốc độ",
+    10: "SBT - KHTN 7 - Bài 10. Đồ thị quãng đường – thời gian",
+    11: "SBT - KHTN 7 - Bài 11. Thảo luận về ảnh hưởng của tốc độ trong an toàn giao thông",
+    12: "SBT - KHTN 7 - Bài 12. Sóng âm",
+    13: "SBT - KHTN 7 - Bài 13. Độ to và độ cao của âm",
+    14: "SBT - KHTN 7 - Bài 14. Phản xạ âm, chống ô nhiễm tiếng ồn",
+    15: "SBT - KHTN 7 - Bài 15. Năng lượng ánh sáng. Tia sáng, vùng tối",
   },
 };
 
