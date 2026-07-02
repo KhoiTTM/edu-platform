@@ -107,19 +107,19 @@ export default async function LuyenTapPage() {
                     ← Bảng điều khiển
                 </Link>
 
-                <header className="rounded-[2.5rem] border border-slate-800 bg-gradient-to-br from-indigo-950/30 via-slate-900/60 to-slate-950 p-8 md:p-10 shadow-2xl backdrop-blur-md mb-16 relative overflow-hidden text-center">
-                    <div className="absolute right-0 top-0 -mt-10 -mr-10 h-44 w-44 rounded-full bg-cyan-500/10 blur-3xl pointer-events-none" />
-                    <div className="relative">
-                        <span className="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/10 px-3.5 py-1 text-xs font-semibold text-cyan-400 border border-cyan-500/20 uppercase tracking-widest mb-4">
+                <header className="rounded-3xl border border-slate-800/80 bg-gradient-to-br from-indigo-950/30 via-slate-900/60 to-slate-950 py-4 px-6 shadow-xl backdrop-blur-md mb-8 relative overflow-hidden flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                    <div className="absolute right-0 top-0 -mt-6 -mr-6 h-24 w-24 bg-cyan-500/5 blur-2xl pointer-events-none" />
+                    <div className="relative text-left">
+                        <span className="inline-flex items-center gap-1 rounded-full bg-cyan-500/10 px-2 py-0.5 text-[9px] font-semibold text-cyan-400 border border-cyan-500/20 uppercase tracking-widest">
                             🚀 Cosmic Practice Station
                         </span>
-                        <h1 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 tracking-tight uppercase">
+                        <h1 className="text-xl md:text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 tracking-tight uppercase mt-1">
                             Trung Tâm Luyện Tập
                         </h1>
-                        <p className="mt-4 text-sm md:text-base text-slate-400 max-w-xl mx-auto leading-relaxed">
-                            Chọn một môn học dưới đây để bắt đầu thử thách kiến thức và rèn luyện phản xạ học tập.
-                        </p>
                     </div>
+                    <p className="text-xs text-slate-400 max-w-sm md:text-right leading-relaxed font-semibold relative z-10">
+                        Chọn một môn học dưới đây để bắt đầu thử thách kiến thức và rèn luyện phản xạ học tập.
+                    </p>
                 </header>
 
                 <div className="space-y-16">
