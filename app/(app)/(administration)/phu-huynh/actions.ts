@@ -320,7 +320,8 @@ export async function getExamsForSubject(
             .select('id')
             .eq('subject_slug', 'khtn')
             .eq('grade', 7)
-            .eq('title', colTitle)
+            .is('exam_type', null)
+            .contains('units', [bai])
             .maybeSingle();
             
           let colId = existingCol?.id;
