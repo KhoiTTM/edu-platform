@@ -57,6 +57,9 @@ export default async function HocTapPage() {
             }
           ];
         }
+      } else {
+        // Prevent Cambridge subjects leaking into grade categories
+        gradeSubjects = gradeSubjects.filter((s: any) => !['pre-a1-starter', 'mindset-ielts'].includes(s.slug));
       }
       return { grade: g, subjects: gradeSubjects };
     })

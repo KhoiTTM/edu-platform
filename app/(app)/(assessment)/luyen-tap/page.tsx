@@ -42,6 +42,9 @@ export default async function LuyenTapPage() {
             if (g === 0) {
                 // Ensure universal subjects are fetched
                 availableSubjectSlugs = Array.from(new Set([...availableSubjectSlugs, 'pre-a1-starter', 'mindset-ielts']));
+            } else {
+                // Prevent Cambridge subjects leaking into grade categories
+                availableSubjectSlugs = availableSubjectSlugs.filter(slug => !['pre-a1-starter', 'mindset-ielts'].includes(slug));
             }
 
             if (availableSubjectSlugs.length === 0) {
