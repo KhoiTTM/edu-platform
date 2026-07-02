@@ -1,7 +1,20 @@
 "use server";
 
 import { createClient } from "@/lib/supabase/server";
+import { createClient as createSupabaseClient } from "@supabase/supabase-js";
 import { revalidatePath } from "next/cache";
+
+// Helper to create admin client with service role to bypass RLS for parent operations
+async function getAdminClient() {
+  const access = await checkParentAccess();
+  if (!access.hasAccess) {
+    throw new Error("Unauthorized access to parent admin client");
+  }
+  return createSupabaseClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL || "",
+    process.env.SUPABASE_SERVICE_ROLE_KEY || ""
+  );
+}
 
 // ─── Types ─────────────────────────────────────────────────────────────────
 
@@ -113,23 +126,25 @@ export async function getStudentList(): Promise<StudentProfile[]> {
 export async function getStudentHistory(
   studentId: string
 ): Promise<LearningHistoryEntry[]> {
-  const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
-  if (!user) return [];
+  try {
+    const adminClient = await getAdminClient();
+    const { data, error } = await adminClient
+      .from("learning_sessions")
+      .select("id, subject_slug, started_at, ended_at, duration_seconds, summary_metrics")
+      .eq("user_id", studentId)
+      .order("started_at", { ascending: false })
+      .limit(50);
 
-  const { data, error } = await supabase
-    .from("learning_sessions")
-    .select("id, subject_slug, started_at, ended_at, duration_seconds, summary_metrics")
-    .eq("user_id", studentId)
-    .order("started_at", { ascending: false })
-    .limit(50);
+    if (error) {
+      console.error("[getStudentHistory] Error:", error);
+      return [];
+    }
 
-  if (error) {
-    console.error("[getStudentHistory] Error:", error);
+    return (data || []) as LearningHistoryEntry[];
+  } catch (e) {
+    console.error("[getStudentHistory] Authorization error:", e);
     return [];
   }
-
-  return (data || []) as LearningHistoryEntry[];
 }
 
 /** Get all parent tasks created by the current user */
