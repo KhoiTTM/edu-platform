@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "img.youtube.com", pathname: "/vi/**" },
     ],
   },
+  transpilePackages: ["katex"],
 };
 
 export default nextConfig;
