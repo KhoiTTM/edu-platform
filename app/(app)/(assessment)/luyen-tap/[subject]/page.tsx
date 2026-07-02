@@ -182,6 +182,16 @@ export default function SubjectMapPage() {
     };
   }, [subject, gradeNum]);
 
+  useEffect(() => {
+    if (activeTab === 'workbook') {
+      if (subject === 'khtn' && gradeNum === 7) {
+        router.push('/flipbooks/khtn7/quiz');
+      } else if (['tieng_anh', 'tieng-anh-7', 'english', 'mindset-ielts'].includes(subject) && gradeNum === 7) {
+        router.push('/sach-bai-tap/sbt-tienganh7');
+      }
+    }
+  }, [activeTab, subject, gradeNum, router]);
+
   const toggleUnit = (unitKey: string) => {
     setCollapsedUnits(prev => ({
       ...prev,
