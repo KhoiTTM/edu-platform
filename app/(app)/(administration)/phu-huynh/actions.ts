@@ -158,7 +158,6 @@ export async function getMyParentTasks(): Promise<ParentTask[]> {
   const { data, error } = await supabase
     .from("parent_tasks")
     .select("*")
-    .eq("parent_id", user.id)
     .order("created_at", { ascending: false });
 
   if (error) {
@@ -504,7 +503,8 @@ export async function getTodayTasks(): Promise<DailyTask[]> {
       ),
       task:parent_tasks (
         subject_slug,
-        unit_numbers
+        unit_numbers,
+        is_active
       )
     `)
     .eq("student_id", user.id)
@@ -516,7 +516,8 @@ export async function getTodayTasks(): Promise<DailyTask[]> {
     return [];
   }
 
-  return (data || []) as unknown as DailyTask[];
+  const activeDailyTasks = (data || []).filter((d: any) => d.task && d.task.is_active);
+  return activeDailyTasks as unknown as DailyTask[];
 }
 
 /** Get ALL pending daily tasks for the current student (not yet completed) */
@@ -557,7 +558,8 @@ export async function getPendingTasks(): Promise<DailyTask[]> {
       ),
       task:parent_tasks (
         subject_slug,
-        unit_numbers
+        unit_numbers,
+        is_active
       )
     `)
     .eq("student_id", user.id)
@@ -570,7 +572,8 @@ export async function getPendingTasks(): Promise<DailyTask[]> {
     return [];
   }
 
-  return (data || []) as unknown as DailyTask[];
+  const activeDailyTasks = (data || []).filter((d: any) => d.task && d.task.is_active);
+  return activeDailyTasks as unknown as DailyTask[];
 }
 
 // ─── Exam Bank Explorer (read-only) ─────────────────────────────────────────

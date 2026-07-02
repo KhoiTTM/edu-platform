@@ -100,22 +100,44 @@ export default async function DashboardPage() {
     }
   }
 
-  const subjectProgress = dashboardStats?.subject_progress || {};
-  
-  const coreSubjects = [
-    { slug: 'toan', name: `Toán ${grade}`, icon: <BookOpen size={14} className="text-sky-400 shrink-0" /> },
-    { slug: 'tieng_viet', name: `Tiếng Việt ${grade}`, icon: <PenTool size={14} className="text-amber-400 shrink-0" /> },
-    { slug: 'tieng_anh', name: `Tiếng Anh ${grade}`, icon: <Sparkles size={14} className="text-emerald-400 shrink-0" /> },
-  ];
+  const coreSubjects = grade === 7
+    ? [
+        { slug: 'toan', name: 'Toán 7', icon: '🔢' },
+        { slug: 'tieng_viet', name: 'Tiếng Việt 7', icon: '📖' },
+        { slug: 'tieng_anh', name: 'Tiếng Anh 7', icon: '🌍' },
+        { slug: 'khtn', name: 'KHTN 7', icon: '🧬' },
+        { slug: 'mindset-ielts', name: 'IELTS Mindset', icon: '🎓' }
+      ]
+    : [
+        { slug: 'toan', name: 'Toán 3', icon: '🔢' },
+        { slug: 'tieng_viet', name: 'Tiếng Việt 3', icon: '📖' },
+        { slug: 'tieng_anh', name: 'Tiếng Anh 3', icon: '🌍' },
+        { slug: 'pre-a1-starter', name: 'Pre A1 Starter', icon: '⭐' }
+      ];
 
-  const continueLearningItems = coreSubjects.map(subj => {
-    const data = subjectProgress[subj.slug] || {};
+  const sessions = sessionsRes.data || [];
+
+  const recentLessons = coreSubjects.map(subj => {
+    const session = sessions.find((s: any) => s.subject_slug === subj.slug && s.summary_metrics?.type !== 'exam');
     return {
       slug: subj.slug,
       name: subj.name,
       icon: subj.icon,
-      last_lesson: data.last_lesson || { title: "Chưa bắt đầu học bài", url: `/luyen-tap/${subj.slug}` },
-      last_exam: data.last_exam || { title: "Chưa có tiến độ làm bài", url: `/luyen-tap/${subj.slug}` },
+      title: session ? (session.summary_metrics?.unit_topic || "Bài học gần nhất") : "Chưa bắt đầu học bài",
+      url: session?.summary_metrics?.lesson_url || (subj.slug === 'pre-a1-starter' ? '/hoc-tap/pre-a1-starter/starters-wordlist' : `/hoc-tap/${subj.slug}`)
+    };
+  });
+
+  const recentExams = coreSubjects.map(subj => {
+    const session = sessions.find((s: any) => s.subject_slug === subj.slug && s.summary_metrics?.type === 'exam');
+    const hasScore = session?.summary_metrics?.score !== undefined && session?.summary_metrics?.total !== undefined;
+    return {
+      slug: subj.slug,
+      name: subj.name,
+      icon: subj.icon,
+      title: session ? (session.summary_metrics?.unit_topic || "Bài luyện tập gần nhất") : "Chưa có tiến độ",
+      score: hasScore ? `${session.summary_metrics.score}/${session.summary_metrics.total}` : null,
+      url: session?.summary_metrics?.exam_id ? `/test-assessment?examId=${session.summary_metrics.exam_id}` : `/luyen-tap/${subj.slug}?grade=${grade}`
     };
   });
 
@@ -185,38 +207,72 @@ export default async function DashboardPage() {
         <div className="lg:col-span-8 flex flex-col gap-4 min-h-0 h-full">
 
           {/* Continue Learning Section */}
-          <section className="bg-slate-900/60 p-3 rounded-2xl border-2 border-emerald-500/30 shadow-md backdrop-blur-xl flex flex-col shrink-0 flex-1 min-h-0">
-            <h2 className="font-['Outfit'] text-xs font-black text-emerald-400 uppercase tracking-widest flex items-center gap-2 mb-2 shrink-0">
-              <Target size={14} /> Môn học của bạn
+          <section className="bg-slate-900/60 p-4 rounded-2xl border-2 border-emerald-500/30 shadow-md backdrop-blur-xl flex flex-col shrink-0 flex-1 min-h-0">
+            <h2 className="font-['Outfit'] text-xs font-black text-emerald-400 uppercase tracking-widest flex items-center gap-2 mb-3 shrink-0">
+              <Target size={14} /> Tiến độ học tập của bạn
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 flex-1 content-start overflow-y-auto pr-2 custom-scrollbar">
-              {continueLearningItems.map((item: any, idx: number) => (
-                <div key={item.slug} className="rounded-xl bg-slate-950/60 p-2 border border-slate-800 shadow-inner flex flex-col gap-1.5 hover:border-emerald-500/30 transition-all group">
-                  <h3 className="text-xs font-black text-white flex items-center gap-1.5">
-                    <span className="text-emerald-500 font-bold">{idx + 1}.</span> {item.icon} {item.name}
-                  </h3>
-                  <div className="flex flex-col gap-1">
-                    <Link href={item.last_lesson.url} className="flex items-center justify-between bg-slate-900/80 p-2 rounded-lg border border-slate-800 hover:border-emerald-500/50 hover:bg-slate-900 transition-all">
-                      <div className="flex items-center gap-2 min-w-0">
-                        <div className="min-w-0">
-                          <p className="text-slate-400 font-bold uppercase tracking-wider text-[8px] mb-0.5">Học bài</p>
-                          <p className="text-[10px] font-bold text-slate-200 truncate group-hover:text-emerald-400 transition-colors">{item.last_lesson.title}</p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 flex-1 min-h-0 overflow-y-auto pr-2 custom-scrollbar">
+              
+              {/* Group 1: Bài Học (Lessons) */}
+              <div className="flex flex-col gap-2 min-h-0">
+                <h3 className="text-xs font-black text-sky-400 uppercase tracking-widest flex items-center gap-1.5 pb-1 border-b border-slate-800/80 shrink-0">
+                  📖 Bài Học (Lessons)
+                </h3>
+                <div className="flex flex-col gap-2 overflow-y-auto pr-1">
+                  {recentLessons.map((item: any) => (
+                    <Link
+                      key={item.slug}
+                      href={item.url}
+                      className="rounded-xl bg-slate-950/60 p-2.5 border border-slate-800 hover:border-sky-500/30 hover:bg-slate-900/60 shadow-inner flex items-center justify-between gap-3 group transition-all"
+                    >
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-center gap-1.5">
+                          <span className="text-sm shrink-0">{item.icon}</span>
+                          <span className="text-[10px] font-black text-slate-400 uppercase tracking-wider truncate">{item.name}</span>
                         </div>
+                        <p className="text-[11px] font-bold text-slate-200 mt-1 truncate group-hover:text-sky-400 transition-colors">
+                          {item.title}
+                        </p>
                       </div>
-                      <ArrowRight size={12} className="text-slate-600 group-hover:text-emerald-400 shrink-0" />
+                      <ArrowRight size={12} className="text-slate-600 group-hover:text-sky-400 transition-all group-hover:translate-x-0.5" />
                     </Link>
-                    <Link href={item.last_exam.url} className="flex items-center justify-between bg-slate-900/80 p-2 rounded-lg border border-slate-800 hover:border-emerald-500/50 hover:bg-slate-900 transition-all">
-                      <div className="flex items-center gap-2 min-w-0">
-                        <div className="min-w-0">
-                          <p className="text-slate-400 font-bold uppercase tracking-wider text-[8px] mb-0.5">Luyện tập</p>
-                          <p className="text-[10px] font-bold text-slate-200 truncate group-hover:text-emerald-400 transition-colors">{item.last_exam.title}</p>
-                        </div>
-                      </div>
-                      <ArrowRight size={12} className="text-slate-600 group-hover:text-emerald-400 shrink-0" />
-                    </Link>
-                  </div>
+                  ))}
                 </div>
-              ))}
+              </div>
+
+              {/* Group 2: Bài Luyện Tập (Practice) */}
+              <div className="flex flex-col gap-2 min-h-0">
+                <h3 className="text-xs font-black text-violet-400 uppercase tracking-widest flex items-center gap-1.5 pb-1 border-b border-slate-800/80 shrink-0">
+                  📝 Bài Luyện Tập (Practice)
+                </h3>
+                <div className="flex flex-col gap-2 overflow-y-auto pr-1">
+                  {recentExams.map((item: any) => (
+                    <Link
+                      key={item.slug}
+                      href={item.url}
+                      className="rounded-xl bg-slate-950/60 p-2.5 border border-slate-800 hover:border-violet-500/30 hover:bg-slate-900/60 shadow-inner flex items-center justify-between gap-3 group transition-all"
+                    >
+                      <div className="min-w-0 flex-1">
+                        <div className="flex items-center gap-1.5">
+                          <span className="text-sm shrink-0">{item.icon}</span>
+                          <span className="text-[10px] font-black text-slate-400 uppercase tracking-wider truncate">{item.name}</span>
+                          {item.score && (
+                            <span className="ml-auto text-[9px] font-black px-1.5 py-0.5 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-400">
+                              {item.score}
+                            </span>
+                          )}
+                        </div>
+                        <p className="text-[11px] font-bold text-slate-200 mt-1 truncate group-hover:text-violet-400 transition-colors">
+                          {item.title}
+                        </p>
+                      </div>
+                      <ArrowRight size={12} className="text-slate-600 group-hover:text-violet-400 transition-all group-hover:translate-x-0.5" />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+
             </div>
           </section>
 
