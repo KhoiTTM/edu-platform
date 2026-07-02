@@ -471,89 +471,42 @@ export function TaskWizard({
     );
   };
 
-  // ── Step 4: Frequency ────────────────────────────────────────────────────
-  const StepFrequency = () => (
+  // ── Step 4: Confirm ─────────────────────────────────────────────────────
+  const StepConfirm = () => (
     <div className="flex flex-col gap-4">
-      <div>
-        <p className="text-xs text-slate-400 font-bold uppercase tracking-widest mb-3">
-          Tần suất giao bài
-        </p>
-        <div className="flex flex-col gap-2">
-          {FREQUENCY_OPTIONS.map((f) => (
-            <button
-              key={f.id}
-              onClick={() => {
-                setFrequency(f.id);
-                setActiveDays(f.days);
-              }}
-              className={`flex items-center justify-between p-3 rounded-xl border-2 text-left transition-all ${
-                frequency === f.id
-                  ? "border-indigo-500 bg-indigo-500/10"
-                  : "border-slate-700 bg-slate-800/60 hover:border-slate-600"
-              }`}
-            >
-              <div>
-                <p className="font-black text-white text-sm">{f.label}</p>
-                <p className="text-[10px] text-slate-400">{f.desc}</p>
-              </div>
-              {frequency === f.id && (
-                <CheckCircle2 size={16} className="text-indigo-400" />
-              )}
-            </button>
-          ))}
+      <div className="text-center py-4">
+        <div className="w-12 h-12 rounded-full bg-indigo-500/10 border-2 border-indigo-500/30 flex items-center justify-center mx-auto text-indigo-400 mb-3 animate-pulse">
+          ✓
+        </div>
+        <h3 className="font-black text-white text-sm uppercase tracking-wide">Xác nhận giao nhiệm vụ</h3>
+        <p className="text-[10px] text-slate-500 mt-1 max-w-xs mx-auto">Vui lòng kiểm tra lại thông tin dưới đây trước khi giao bài cho học sinh.</p>
+      </div>
+
+      <div className="rounded-xl bg-slate-800/80 border border-slate-700 p-4 space-y-3">
+        <div>
+          <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Học sinh nhận</span>
+          <p className="text-xs text-slate-200 font-bold mt-0.5">👤 {selectedStudent?.display_name}</p>
+        </div>
+
+        <div>
+          <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Môn học</span>
+          <p className="text-xs text-slate-200 font-bold mt-0.5">📚 {selectedSubject?.name}</p>
+        </div>
+
+        <div>
+          <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Nội dung bài làm</span>
+          <p className="text-xs text-indigo-300 font-bold mt-0.5">
+            {taskType === "exam" ? (
+              <>📝 Đề thi: <span className="text-white">{selectedExam?.title || "Chưa chọn đề"}</span></>
+            ) : (
+              <>📖 Bài học: <span className="text-white">{selectedLesson?.title || "Chưa chọn bài học"}</span></>
+            )}
+          </p>
         </div>
       </div>
 
-      {/* Custom day picker */}
-      <div>
-        <p className="text-xs text-slate-400 font-bold uppercase tracking-widest mb-2">
-          Hoặc chọn ngày thủ công
-        </p>
-        <div className="flex gap-1.5">
-          {DAY_LABELS.map((label, i) => {
-            const dayNum = i + 1;
-            const isOn = activeDays.includes(dayNum);
-            return (
-              <button
-                key={dayNum}
-                onClick={() => {
-                  setFrequency("daily"); // reset to custom
-                  setActiveDays((prev) =>
-                    isOn ? prev.filter((d) => d !== dayNum) : [...prev, dayNum]
-                  );
-                }}
-                className={`flex-1 py-2 rounded-lg text-[10px] font-black uppercase tracking-wide border-2 transition-all ${
-                  isOn
-                    ? "border-indigo-500 bg-indigo-500/20 text-indigo-300"
-                    : "border-slate-700 bg-slate-800/50 text-slate-500 hover:border-slate-600"
-                }`}
-              >
-                {label}
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
-      {/* Summary */}
-      <div className="rounded-xl bg-slate-800/80 border border-slate-700 p-3 mt-1">
-        <p className="text-[10px] text-slate-500 uppercase tracking-widest font-bold mb-1">
-          Tóm tắt nhiệm vụ
-        </p>
-        <p className="text-xs text-slate-300 font-bold">
-          👤 {selectedStudent?.display_name}
-        </p>
-        <p className="text-xs text-slate-300 font-bold">
-          📚 {selectedSubject?.name}
-          {taskType === "exam" ? (
-            selectedExam ? ` · Đề: ${selectedExam.title}` : " · Lỗi: Chưa chọn đề"
-          ) : (
-            selectedLesson ? ` · Bài học: ${selectedLesson.title}` : " · Lỗi: Chưa chọn bài học"
-          )}
-        </p>
-        <p className="text-xs text-slate-300 font-bold">
-          🗓 {activeDays.length} ngày / tuần
-        </p>
+      <div className="rounded-xl bg-slate-950/40 border border-slate-800 px-4 py-3 text-[10px] font-semibold text-slate-400 leading-relaxed text-center">
+        💡 Nhiệm vụ sẽ xuất hiện trên bảng điều khiển của học sinh ngay hôm nay.
       </div>
     </div>
   );
@@ -640,7 +593,7 @@ export function TaskWizard({
         {step === 1 && <StepStudent />}
         {step === 2 && <StepSubject />}
         {step === 3 && <StepExamsAndLessons />}
-        {step === 4 && <StepFrequency />}
+        {step === 4 && <StepConfirm />}
       </div>
 
       {error && (

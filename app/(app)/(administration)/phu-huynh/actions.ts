@@ -40,6 +40,8 @@ export type ParentTask = {
   lesson_node_id?: string | null;
   lesson_title?: string;
   student?: StudentProfile;
+  completed_at?: string | null;
+  score_text?: string;
 };
 
 export type DailyTask = {
@@ -172,19 +174,23 @@ export async function getMyParentTasks(): Promise<ParentTask[]> {
     const examIds = [...new Set(tasks.map((t) => t.exam_id).filter(Boolean))] as string[];
     const nodeIds = [...new Set(tasks.map((t) => t.lesson_node_id).filter(Boolean))] as string[];
 
-    const [profilesRes, examsRes, nodesRes] = await Promise.all([
+    const [profilesRes, examsRes, nodesRes, dailyRes, sessionsRes] = await Promise.all([
       supabase.from("profiles").select("id, display_name, email, grade").in("id", studentIds),
       examIds.length > 0
         ? supabase.from("exams").select("id, title").in("id", examIds)
         : Promise.resolve({ data: [] }),
       nodeIds.length > 0
         ? supabase.from("curriculum_nodes").select("id, title").in("id", nodeIds)
-        : Promise.resolve({ data: [] })
+        : Promise.resolve({ data: [] }),
+      supabase.from("daily_tasks").select("task_id, completed_at").in("task_id", tasks.map(t => t.id)),
+      supabase.from("learning_sessions").select("user_id, summary_metrics").in("user_id", studentIds)
     ]);
 
     const profileMap = new Map((profilesRes.data || []).map((p) => [p.id, p]));
     const examMap = new Map((examsRes.data || []).map((e) => [e.id, e]));
     const nodeMap = new Map((nodesRes.data || []).map((n) => [n.id, n]));
+    const dailyMap = new Map((dailyRes.data || []).map((d) => [d.task_id, d]));
+    const sessions = sessionsRes.data || [];
 
     tasks.forEach((task) => {
       task.student = profileMap.get(task.student_id) as StudentProfile;
@@ -194,6 +200,34 @@ export async function getMyParentTasks(): Promise<ParentTask[]> {
       if (task.lesson_node_id) {
         task.lesson_title = nodeMap.get(task.lesson_node_id)?.title || "Bài học cụ thể";
       }
+
+      // Completion details
+      const daily = dailyMap.get(task.id);
+      task.completed_at = daily ? daily.completed_at : null;
+
+      let scoreText = "";
+      if (task.exam_id) {
+        const matched = sessions.find(s => 
+          s.user_id === task.student_id && 
+          s.summary_metrics?.exam_id === task.exam_id
+        );
+        if (matched) {
+          const s = matched.summary_metrics?.score;
+          const t = matched.summary_metrics?.total;
+          if (s !== undefined && t !== undefined) {
+            scoreText = `${s}/${t}`;
+          }
+        }
+      } else if (task.lesson_node_id) {
+        const matched = sessions.find(s => 
+          s.user_id === task.student_id && 
+          s.summary_metrics?.lesson_node_id === task.lesson_node_id
+        );
+        if (matched) {
+          scoreText = "Đã xong";
+        }
+      }
+      task.score_text = scoreText;
     });
   }
 
@@ -348,25 +382,22 @@ export type SubjectOption = {
   color: string;
 };
 
-/** Get dynamically active subjects for a given grade */
 export async function getSubjectsForGrade(grade: number): Promise<SubjectOption[]> {
   const supabase = await createClient();
-  const { data, error } = await supabase.rpc("get_subjects_by_grade", { p_grade: grade });
-  if (error) {
-    console.error("Error get_subjects_by_grade:", error);
+  
+  // Define subjects matching the student grade + Cambridge English for all grades
+  const slugsForGrade = grade === 7
+    ? ['toan', 'tieng_anh', 'tieng-anh-7', 'tieng_viet', 'khtn', 'pre-a1-starter', 'mindset-ielts']
+    : ['toan', 'tieng_anh', 'tieng_viet', 'pre-a1-starter', 'mindset-ielts'];
+
+  const { data: subjects, error } = await supabase
+    .from("universal_subjects")
+    .select("slug, name_vi, name_en, icon")
+    .in("slug", slugsForGrade);
+
+  if (error || !subjects) {
+    console.error("Error fetching universal subjects for grade:", error);
     return [];
-  }
-  
-  const { data: g0Data } = await supabase.rpc("get_subjects_by_grade", { p_grade: 0 });
-  const combined = [...(data || []), ...(g0Data || [])];
-  
-  const unique = [];
-  const slugs = new Set();
-  for (const s of combined) {
-    if (!slugs.has(s.slug)) {
-      slugs.add(s.slug);
-      unique.push(s);
-    }
   }
   
   const colors: Record<string, string> = {
@@ -379,7 +410,7 @@ export async function getSubjectsForGrade(grade: number): Promise<SubjectOption[
     khtn: "rose"
   };
   
-  return unique.map(s => ({
+  return subjects.map(s => ({
     slug: s.slug,
     name: s.name_vi || s.name_en || s.slug,
     icon: s.icon || "📖",

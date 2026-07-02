@@ -123,13 +123,29 @@ export default async function DashboardPage() {
   const todayTasks = await getTodayTasks();
   const pendingOldTasks = await getPendingTasks();
 
-  // Merge: show today tasks first, then any unfinished from previous days
+  // Merge: show today tasks first, then any unfinished from previous days (hide completed tasks)
   const allTasksMap = new Map<string, any>();
-  for (const t of todayTasks) allTasksMap.set(t.id, t);
-  for (const t of pendingOldTasks) {
-    if (!allTasksMap.has(t.id)) allTasksMap.set(t.id, t);
+  for (const t of todayTasks) {
+    if (!t.completed_at) {
+      allTasksMap.set(t.id, t);
+    }
   }
-  const displayTasks = Array.from(allTasksMap.values()).slice(0, 5);
+  for (const t of pendingOldTasks) {
+    if (!t.completed_at && !allTasksMap.has(t.id)) {
+      allTasksMap.set(t.id, t);
+    }
+  }
+  const displayTasks = Array.from(allTasksMap.values());
+
+  const todayStr = new Date().toISOString().split("T")[0];
+  const groupedTasks: Record<string, any[]> = {};
+  displayTasks.forEach((task: any) => {
+    const dateKey = task.task_date === todayStr 
+      ? "Hôm nay" 
+      : new Date(task.task_date).toLocaleDateString("vi-VN", { day: "2-digit", month: "2-digit", year: "numeric" });
+    if (!groupedTasks[dateKey]) groupedTasks[dateKey] = [];
+    groupedTasks[dateKey].push(task);
+  });
 
   const SUBJECT_ICONS: Record<string, string> = {
     toan: "🔢",
@@ -221,73 +237,82 @@ export default async function DashboardPage() {
             </div>
 
             {/* Real daily tasks */}
-            <div className="flex-1 overflow-y-auto pr-1 custom-scrollbar space-y-2">
+            <div className="flex-1 overflow-y-auto pr-1 custom-scrollbar space-y-4">
               {displayTasks.length === 0 ? (
                 <div className="rounded-xl border border-dashed border-slate-700 p-5 text-center mt-2">
                   <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Không có nhiệm vụ</p>
                   <p className="text-[9px] text-slate-600 mt-1">Phụ huynh chưa giao bài hôm nay ✨</p>
                 </div>
               ) : (
-                displayTasks.map((task: any) => {
-                  const isDone = !!task.completed_at;
-                  const isLesson = !!task.lesson_node_id;
-                  const taskTitle = isLesson ? (task.lesson_node?.title || "Bài học") : (task.exam?.title || "Bài luyện tập");
-                  const subjectSlug = task.exam?.collection?.subject_slug || 
-                                      task.lesson_node?.source?.subject?.slug || 
-                                      task.task?.subject_slug || "";
-                  const subjectIcon = isLesson ? "📖" : (SUBJECT_ICONS[subjectSlug] || "📚");
-                  const isToday = task.task_date === new Date().toISOString().split("T")[0];
-                  const taskUrl = isLesson 
-                    ? `/learn/${subjectSlug}/${task.lesson_node?.slug}` 
-                    : `/test-assessment?examId=${task.exam_id}`;
+                Object.entries(groupedTasks).map(([dateKey, dateTasks]) => (
+                  <div key={dateKey} className="space-y-2">
+                    {/* Date label heading */}
+                    <div className="flex items-center gap-1.5 text-slate-500 pl-1">
+                      <Clock size={10} />
+                      <span className="text-[9px] font-black uppercase tracking-wider">
+                        {dateKey === "Hôm nay" ? "Hôm nay" : `Hạn ngày ${dateKey}`}
+                      </span>
+                    </div>
 
-                  return (
-                    <Link
-                      key={task.id}
-                      href={isDone ? "#" : taskUrl}
-                      className={`flex items-center gap-2.5 rounded-xl p-2.5 border transition-all group ${
-                        isDone
-                          ? "bg-slate-950/30 border-slate-800/50 opacity-60 cursor-default pointer-events-none"
-                          : isToday
-                          ? "bg-yellow-500/5 border-yellow-500/30 hover:border-yellow-400 hover:bg-yellow-500/10 shadow-[0_0_10px_rgba(234,179,8,0.1)]"
-                          : "bg-orange-500/5 border-orange-500/20 hover:border-orange-400 hover:bg-orange-500/10"
-                      }`}
-                    >
-                      {/* Checkbox */}
-                      <div className={`shrink-0 w-5 h-5 rounded-md border-2 flex items-center justify-center ${
-                        isDone
-                          ? "bg-emerald-500 border-emerald-400"
-                          : isToday
-                          ? "border-yellow-500 bg-yellow-500/10"
-                          : "border-orange-500 bg-orange-500/10"
-                      }`}>
-                        {isDone && <span className="text-[10px] text-white font-black">✓</span>}
-                        {!isDone && isToday && <Flame size={10} className="text-yellow-400" />}
-                        {!isDone && !isToday && <Clock size={10} className="text-orange-400" />}
-                      </div>
+                    <div className="space-y-1.5">
+                      {dateTasks.map((task: any) => {
+                        const isDone = !!task.completed_at;
+                        const isLesson = !!task.lesson_node_id;
+                        const taskTitle = isLesson ? (task.lesson_node?.title || "Bài học") : (task.exam?.title || "Bài luyện tập");
+                        const subjectSlug = task.exam?.collection?.subject_slug || 
+                                            task.lesson_node?.source?.subject?.slug || 
+                                            task.task?.subject_slug || "";
+                        const subjectIcon = isLesson ? "📖" : (SUBJECT_ICONS[subjectSlug] || "📚");
+                        const isToday = task.task_date === todayStr;
+                        const taskUrl = isLesson 
+                          ? `/learn/${subjectSlug}/${task.lesson_node?.slug}` 
+                          : `/test-assessment?examId=${task.exam_id}`;
 
-                      {/* Info */}
-                      <div className="flex-1 min-w-0">
-                        <p className={`text-[10px] font-black truncate ${
-                          isDone ? "line-through text-slate-500" : isToday ? "text-yellow-200" : "text-orange-200"
-                        }`}>
-                          {subjectIcon} {taskTitle}
-                        </p>
-                        {!isToday && !isDone && (
-                          <p className="text-[9px] text-orange-400 font-bold">
-                            Từ {new Date(task.task_date).toLocaleDateString("vi-VN", { day: "2-digit", month: "2-digit" })}
-                          </p>
-                        )}
-                      </div>
+                        return (
+                          <Link
+                            key={task.id}
+                            href={isDone ? "#" : taskUrl}
+                            className={`flex items-center gap-2.5 rounded-xl p-2.5 border transition-all group ${
+                              isDone
+                                ? "bg-slate-950/30 border-slate-800/50 opacity-60 cursor-default pointer-events-none"
+                                : isToday
+                                ? "bg-yellow-500/5 border-yellow-500/30 hover:border-yellow-400 hover:bg-yellow-500/10 shadow-[0_0_10px_rgba(234,179,8,0.1)]"
+                                : "bg-orange-500/5 border-orange-500/20 hover:border-orange-400 hover:bg-orange-500/10"
+                            }`}
+                          >
+                            {/* Checkbox */}
+                            <div className={`shrink-0 w-5 h-5 rounded-md border-2 flex items-center justify-center ${
+                              isDone
+                                ? "bg-emerald-500 border-emerald-400"
+                                : isToday
+                                ? "border-yellow-500 bg-yellow-500/10"
+                                : "border-orange-500 bg-orange-500/10"
+                            }`}>
+                              {isDone && <span className="text-[10px] text-white font-black">✓</span>}
+                              {!isDone && isToday && <Flame size={10} className="text-yellow-400" />}
+                              {!isDone && !isToday && <Clock size={10} className="text-orange-400" />}
+                            </div>
 
-                      {!isDone && (
-                        <ArrowRight size={11} className={`shrink-0 ${
-                          isToday ? "text-yellow-500 group-hover:text-yellow-300" : "text-orange-500 group-hover:text-orange-300"
-                        } transition-colors`} />
-                      )}
-                    </Link>
-                  );
-                })
+                            {/* Info */}
+                            <div className="flex-1 min-w-0">
+                              <p className={`text-[10px] font-black truncate ${
+                                isDone ? "line-through text-slate-500" : isToday ? "text-yellow-200" : "text-orange-200"
+                              }`}>
+                                {subjectIcon} {taskTitle}
+                              </p>
+                            </div>
+
+                            {!isDone && (
+                              <ArrowRight size={11} className={`shrink-0 ${
+                                isToday ? "text-yellow-500 group-hover:text-yellow-300" : "text-orange-500 group-hover:text-orange-300"
+                              } transition-colors`} />
+                            )}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ))
               )}
             </div>
 
