@@ -166,19 +166,45 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
 
   if (error) {
     console.error('  [ACTION-LOG] Error fetching assessment map:', error);
-    return { lessons: [], reviews: [], reflex: [] };
+    return { lessons: [], workbooks: [], reviews: [], reflex: [] };
   }
 
   console.log(`  [ACTION-LOG] Found ${collections?.length || 0} collections.`);
 
-  // Transform to nested structure for lessons: [ { volume: 1, units: [ { unit: 1, exams: [...] } ] } ]
+  // Transform to nested structure: lessons, workbooks, reviews, reflex
   const volumesMap = new Map<number, any>();
+  const workbookVolumesMap = new Map<number, any>();
   const reviews: any[] = [];
   const reflexVolumesMap = new Map<number, any>();
 
   collections.forEach((collection) => {
-    // If it's a review or reflex, group it accordingly
-    if (collection.exam_type && collection.exam_type !== 'lesson') {
+    // 1. Reflex Category
+    if (collection.exam_type === 'reflex') {
+      const vol = collection.volume || 1;
+      if (!reflexVolumesMap.has(vol)) {
+        reflexVolumesMap.set(vol, {
+          volume: vol,
+          title: `Toán ${targetGrade} - Tập ${vol}`,
+          exams: []
+        });
+      }
+      const volEntry = reflexVolumesMap.get(vol);
+      collection.exams.forEach((exam: any) => {
+        const isCompleted = completedExamIds.has(exam.id) || completedExamTitles.has(exam.title);
+        volEntry.exams.push({
+          id: exam.id,
+          title: exam.title,
+          exam_number: exam.exam_number,
+          total_questions: exam.total_questions,
+          collection_title: collection.title,
+          is_completed: isCompleted
+        });
+      });
+      return;
+    }
+
+    // 2. Review Category (midterm & final)
+    if (collection.exam_type === 'midterm' || collection.exam_type === 'final') {
       const exams = collection.exams.map((exam: any) => {
         const isCompleted = completedExamIds.has(exam.id) || completedExamTitles.has(exam.title);
         return {
@@ -194,49 +220,53 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
       const entry = {
         id: collection.id,
         title: collection.title,
-        description: collection.exam_type === 'reflex'
-          ? 'Luyện tập tính nhẩm nhanh với giới hạn thời gian tự chọn.'
-          : (collection.title === 'Kiểm tra giữa học kỳ 1'
-            ? 'Đề ôn tập củng cố kiến thức giữa học kì 1'
-            : `Đề ôn tập củng cố kiến thức ${collection.title.toLowerCase()}`),
+        description: collection.title === 'Kiểm tra giữa học kỳ 1'
+          ? 'Đề ôn tập củng cố kiến thức giữa học kì 1'
+          : `Đề ôn tập củng cố kiến thức ${collection.title.toLowerCase()}`,
         exams: exams,
         unit: collection.units && collection.units.length > 0 ? collection.units[0] : 101
       };
-
-      if (collection.exam_type === 'reflex') {
-        const vol = collection.volume || 1;
-        if (!reflexVolumesMap.has(vol)) {
-          reflexVolumesMap.set(vol, {
-            volume: vol,
-            title: `Toán ${targetGrade} - Tập ${vol}`,
-            exams: []
-          });
-        }
-        const volEntry = reflexVolumesMap.get(vol);
-        collection.exams.forEach((exam: any) => {
-          const isCompleted = completedExamIds.has(exam.id) || completedExamTitles.has(exam.title);
-          volEntry.exams.push({
-            id: exam.id,
-            title: exam.title,
-            exam_number: exam.exam_number,
-            total_questions: exam.total_questions,
-            collection_title: collection.title,
-            is_completed: isCompleted
-          });
-        });
-      } else {
-        reviews.push(entry);
-      }
+      reviews.push(entry);
       return;
     }
 
-    const vol = collection.volume || 1;
-    if (!volumesMap.has(vol)) {
-      volumesMap.set(vol, { volume: vol, units: new Map<number, any>() });
+    // 3. Lesson Category
+    if (collection.exam_type === 'lesson') {
+      const vol = collection.volume || 1;
+      if (!volumesMap.has(vol)) {
+        volumesMap.set(vol, { volume: vol, units: new Map<number, any>() });
+      }
+
+      const volumeEntry = volumesMap.get(vol);
+      const unitId = collection.units && collection.units.length > 0 ? collection.units[0] : 0;
+
+      if (!volumeEntry.units.has(unitId)) {
+        volumeEntry.units.set(unitId, { unit: unitId, exams: [] });
+      }
+
+      const unitEntry = volumeEntry.units.get(unitId);
+      
+      collection.exams.forEach((exam: any) => {
+        const isCompleted = completedExamIds.has(exam.id) || completedExamTitles.has(exam.title);
+        unitEntry.exams.push({
+          id: exam.id,
+          title: exam.title,
+          exam_number: exam.exam_number,
+          total_questions: exam.total_questions,
+          collection_title: collection.title,
+          is_completed: isCompleted
+        });
+      });
+      return;
     }
 
-    const volumeEntry = volumesMap.get(vol);
-    // Use the first unit in the array or 0 for "General/Review"
+    // 4. Default Workbook Category
+    const vol = collection.volume || 1;
+    if (!workbookVolumesMap.has(vol)) {
+      workbookVolumesMap.set(vol, { volume: vol, units: new Map<number, any>() });
+    }
+
+    const volumeEntry = workbookVolumesMap.get(vol);
     const unitId = collection.units && collection.units.length > 0 ? collection.units[0] : 0;
 
     if (!volumeEntry.units.has(unitId)) {
@@ -245,7 +275,6 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
 
     const unitEntry = volumeEntry.units.get(unitId);
     
-    // Add exams from this collection
     collection.exams.forEach((exam: any) => {
       const isCompleted = completedExamIds.has(exam.id) || completedExamTitles.has(exam.title);
       unitEntry.exams.push({
@@ -259,30 +288,14 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
     });
   });
 
-  // Add final exam placeholder for Grade 3 if not present
-  if (targetGrade === 3 && subjectSlug === 'toan') {
-    const hasFinal = reviews.some(r => r.title.includes('cuối học kỳ 1') || r.title.includes('cuối kỳ 1'));
-    if (!hasFinal) {
-      reviews.push({
-        id: 'placeholder-final-1',
-        title: 'Kiểm tra cuối học kỳ 1',
-        description: 'Đề thi ôn tập củng cố kiến thức cuối học kì 1 (Đang biên soạn...)',
-        exams: [],
-        unit: 102
-      });
-    }
-  }
-
   reviews.sort((a, b) => a.unit - b.unit);
 
-  // Fetch actual unit names from curriculum_nodes for this subject and grade
   const unitInfoMap = new Map<number, { title: string; description?: string }>();
   try {
     let searchSlugs = [subjectSlug];
     if (subjectSlug === 'tieng_anh') {
       if (targetGrade === 7) {
         searchSlugs.push('tieng-anh-7');
-        // KHÔNG thêm 'mindset-ielts' — tránh kéo tên unit của sách IELTS vào Tiếng Anh 7
       }
     }
 
@@ -301,40 +314,40 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
       if (sources && sources.length > 0) {
         const sourceIds = sources.map(s => s.id);
         
-        // Find course nodes matching the target grade to scope the units properly
-        const { data: courseNodes } = await supabase
+        const { data: unitNodes } = await supabase
           .from('curriculum_nodes')
-          .select('id')
-          .in('source_id', sourceIds)
-          .eq('type', 'course')
-          .or(`slug.eq.lop-${targetGrade},slug.eq.grade-${targetGrade}`);
+          .select('title, sort_key, metadata')
+          .eq('node_type', 'unit')
+          .in('source_id', sourceIds);
 
-        if (courseNodes && courseNodes.length > 0) {
-          const courseNodeIds = courseNodes.map(n => n.id);
-          const { data: unitNodes } = await supabase
-            .from('curriculum_nodes')
-            .select('title, sort_key, metadata')
-            .in('parent_id', courseNodeIds)
-            .eq('type', 'unit');
-
-          unitNodes?.forEach(node => {
-            const key = node.sort_key || 0;
-            if (key > 0) {
-              unitInfoMap.set(key, {
-                title: node.title,
-                description: (node.metadata as any)?.description || (node.metadata as any)?.summary
-              });
-            }
-          });
-        }
+        unitNodes?.forEach(node => {
+          const key = node.sort_key || 0;
+          if (key > 0) {
+            unitInfoMap.set(key, {
+              title: node.title,
+              description: (node.metadata as any)?.description || (node.metadata as any)?.summary
+            });
+          }
+        });
       }
     }
   } catch (e) {
     console.error("Error fetching unit info:", e);
   }
 
-  // Convert Maps to sorted arrays
   const lessonsResult = Array.from(volumesMap.values()).map(v => ({
+    ...v,
+    units: Array.from(v.units.values()).map((u: any) => {
+      const info = unitInfoMap.get(Number(u.unit));
+      return {
+        ...u,
+        title: info?.title || `Chủ đề ${u.unit}`,
+        description: info?.description || `Các bài tập luyện tập củng cố kiến thức của chương ${u.unit}`
+      };
+    }).sort((a: any, b: any) => a.unit - b.unit)
+  })).sort((a, b) => a.volume - b.volume);
+
+  const workbooksResult = Array.from(workbookVolumesMap.values()).map(v => ({
     ...v,
     units: Array.from(v.units.values()).map((u: any) => {
       const info = unitInfoMap.get(Number(u.unit));
@@ -354,7 +367,13 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
   if (subjectSlug === 'pre-a1-starter') {
     lessonsResult.forEach((vol: any) => {
       vol.units.forEach((unit: any) => {
-        unit.title = "Worldlist";
+        unit.title = "Wordlist";
+        unit.description = "Luyện tập từ vựng Pre A1 Starters Cambridge.";
+      });
+    });
+    workbooksResult.forEach((vol: any) => {
+      vol.units.forEach((unit: any) => {
+        unit.title = "Wordlist";
         unit.description = "Luyện tập từ vựng Pre A1 Starters Cambridge.";
       });
     });
@@ -362,6 +381,7 @@ export async function getAssessmentMap(subjectSlug: string, grade?: number) {
 
   return {
     lessons: lessonsResult,
+    workbooks: workbooksResult,
     reviews: reviews,
     reflex: reflexResult
   };

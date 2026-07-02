@@ -17,9 +17,10 @@ export default function SubjectMapPage() {
   const gradeNum = gradeParam ? parseInt(gradeParam, 10) : undefined;
   const [mounted, setMounted] = useState(false);
   const [volumes, setVolumes] = useState<any[]>([]);
+  const [workbooks, setWorkbooks] = useState<any[]>([]);
   const [reviews, setReviews] = useState<any[]>([]);
   const [reflexes, setReflexes] = useState<any[]>([]);
-  const [activeTab, setActiveTab] = useState<'lesson' | 'review' | 'reflex'>('lesson');
+  const [activeTab, setActiveTab] = useState<'lesson' | 'workbook' | 'review' | 'reflex'>('lesson');
   const [completedExams, setCompletedExams] = useState<string[]>([]);
   const [collapsedUnits, setCollapsedUnits] = useState<Record<string, boolean>>({});
   const [isLoading, setIsLoading] = useState(true);
@@ -156,6 +157,7 @@ export default function SubjectMapPage() {
           setIsLoading(true);
           const data = await getAssessmentMap(subject, gradeNum);
           setVolumes(data.lessons || []);
+          setWorkbooks(data.workbooks || []);
           setReviews(data.reviews || []);
           setReflexes(data.reflex || []);
           try {
@@ -246,6 +248,17 @@ export default function SubjectMapPage() {
                 Luyện tập theo bài học
               </button>
               <button
+                onClick={() => setActiveTab('workbook')}
+                className={clsx(
+                  "px-6 py-2.5 rounded-xl text-sm font-black transition-all duration-200 select-none",
+                  activeTab === 'workbook' 
+                    ? "bg-gradient-to-r from-emerald-500 to-teal-600 text-white shadow-lg shadow-teal-500/20" 
+                    : "text-slate-400 hover:text-white"
+                )}
+              >
+                Luyện tập theo Sách bài tập
+              </button>
+              <button
                 onClick={() => setActiveTab('review')}
                 className={clsx(
                   "px-6 py-2.5 rounded-xl text-sm font-black transition-all duration-200 select-none",
@@ -254,7 +267,7 @@ export default function SubjectMapPage() {
                     : "text-slate-400 hover:text-white"
                 )}
               >
-                Luyện tập theo ôn tập
+                Ôn Tập
               </button>
               <button
                 onClick={() => setActiveTab('reflex')}
@@ -265,24 +278,8 @@ export default function SubjectMapPage() {
                     : "text-slate-400 hover:text-white"
                 )}
               >
-                💥 Luyện tập phản xạ
+                Luyện Tập phản xạ
               </button>
-              {subject === 'khtn' && gradeNum === 7 && (
-                <button
-                  onClick={() => router.push('/flipbooks/khtn7/quiz')}
-                  className="px-6 py-2.5 rounded-xl text-sm font-black transition-all duration-200 select-none text-slate-400 hover:text-white"
-                >
-                  📚 Luyện tập theo Sách bài tập
-                </button>
-              )}
-              {['tieng_anh', 'tieng-anh-7', 'english', 'mindset-ielts'].includes(subject) && gradeNum === 7 && (
-                <button
-                  onClick={() => router.push('/sach-bai-tap/sbt-tienganh7')}
-                  className="px-6 py-2.5 rounded-xl text-sm font-black transition-all duration-200 select-none text-slate-400 hover:text-white"
-                >
-                  📚 Luyện tập theo Sách bài tập
-                </button>
-              )}
             </div>
           </div>
         )}
@@ -306,6 +303,159 @@ export default function SubjectMapPage() {
 
                 return (
                   <div key={`unit-${unit.unit}`} className="mb-12 flex flex-col items-stretch">
+                    {/* Unit Header (Click to Toggle) */}
+                    <div 
+                      onClick={() => toggleUnit(unitKey)}
+                      className={clsx(
+                        "mb-6 rounded-2xl p-5 text-white border border-white/20 backdrop-blur-md relative overflow-hidden flex justify-between items-center cursor-pointer select-none active:scale-[0.99] transition-transform duration-100", 
+                        unitColors[colorIdx]
+                      )}
+                      style={{ boxShadow: `0 8px 32px ${unitGlows[colorIdx]}` }}
+                    >
+                      <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/3 blur-2xl"></div>
+                      <div className="flex-1 pr-4">
+                        <h2 className="text-2xl font-black tracking-wider drop-shadow-md line-clamp-1">
+                          {unit.title}
+                        </h2>
+                        <p className="text-xs font-bold text-white/80 mt-1 line-clamp-2">
+                          {unit.description}
+                        </p>
+                        <p className="font-bold text-white/60 mt-1.5 uppercase tracking-widest text-[9px]">
+                          {isCollapsed ? "Nhấp để mở rộng" : "Nhấp để thu nhỏ"}
+                        </p>
+                      </div>
+                      <div className="flex items-center gap-3 z-10">
+                        <div className="bg-white/10 px-3 py-1 rounded-full text-xs font-black border border-white/20">
+                          {completedCount}/{unit.exams.length} Đề
+                        </div>
+                        <div className="w-8 h-8 rounded-full bg-white/15 flex items-center justify-center border border-white/20">
+                          {isCollapsed ? <ChevronDown size={18} /> : <ChevronUp size={18} />}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Assessments Table Layout */}
+                    <AnimatePresence initial={false}>
+                      {!isCollapsed && (
+                        <motion.div 
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.25 }}
+                          className="w-full overflow-hidden rounded-2xl border border-slate-800 bg-slate-950/40 backdrop-blur-md shadow-xl"
+                        >
+                          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 px-6 py-4 border-b border-slate-800/80 bg-slate-900/30">
+                            <span className="text-xs font-bold text-slate-400">
+                              Luyện tập kiến thức của: {unit.title}
+                            </span>
+                            <button
+                              onClick={() => handleRandomFromUnit(unit.exams)}
+                              disabled={isPickingRandom}
+                              className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-extrabold text-xs shadow-lg hover:shadow-orange-500/20 transition-all active:scale-95 disabled:opacity-50"
+                            >
+                              <Sparkles size={14} className="animate-pulse" />
+                              {isPickingRandom ? "Đang chọn..." : "Luyện đề Ngẫu nhiên"}
+                            </button>
+                          </div>
+                          <table className="w-full text-left border-collapse">
+                            <thead>
+                              <tr className="border-b border-slate-800 bg-slate-900/50 text-[10px] font-black uppercase tracking-wider text-slate-400">
+                                <th className="px-6 py-3.5 w-16 text-center">STT</th>
+                                <th className="px-6 py-3.5">Tên đề luyện tập</th>
+                                <th className="px-6 py-3.5 w-32 text-center">Số câu hỏi</th>
+                                <th className="px-6 py-3.5 w-36 text-center">Trạng thái</th>
+                                <th className="px-6 py-3.5 w-36 text-center">Thao tác</th>
+                              </tr>
+                            </thead>
+                            <tbody className="divide-y divide-slate-800/60 text-sm font-bold text-slate-200">
+                              {unit.exams.map((exam: any) => {
+                                const currentIndex = ++globalIndex;
+                                const isCompleted = exam.is_completed || completedExams.includes(exam.id);
+                                
+                                return (
+                                  <tr 
+                                    key={exam.id} 
+                                    className={clsx(
+                                      "transition-all duration-150 group hover:bg-slate-800/20",
+                                      isCompleted && "text-slate-500"
+                                    )}
+                                  >
+                                    <td className="px-6 py-4 text-center font-black text-slate-400 group-hover:text-cyan-400 transition-colors">
+                                      {currentIndex}
+                                    </td>
+                                    <td className="px-6 py-4">
+                                      <Link href={`/test-assessment?examId=${exam.id}`} className={clsx(
+                                        "hover:text-cyan-400 transition-colors block leading-snug",
+                                        isCompleted ? "line-through decoration-slate-600/50" : "font-extrabold"
+                                      )}>
+                                        {exam.title}
+                                      </Link>
+                                    </td>
+                                    <td className="px-6 py-4 text-center">
+                                      <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-900/60 border border-slate-800 text-xs font-black text-slate-300">
+                                        <Star size={12} className="text-amber-400 fill-amber-400" />
+                                        {exam.total_questions || 15} Câu
+                                      </span>
+                                    </td>
+                                    <td className="px-6 py-4 text-center">
+                                      {isCompleted ? (
+                                        <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[10px] font-black uppercase tracking-wider">
+                                          <CheckCircle2 size={12} />
+                                          Đã làm
+                                        </span>
+                                      ) : (
+                                        <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-sky-500/10 border border-sky-500/30 text-sky-400 text-[10px] font-black uppercase tracking-wider">
+                                          <Play size={12} />
+                                          Sẵn sàng
+                                        </span>
+                                      )}
+                                    </td>
+                                    <td className="px-6 py-4 text-center">
+                                      <Link 
+                                        href={`/test-assessment?examId=${exam.id}`}
+                                        className={clsx(
+                                          "inline-flex items-center justify-center gap-1 px-4 py-1.5 rounded-xl font-black text-xs uppercase tracking-wide transition-all active:scale-95 duration-150",
+                                          isCompleted 
+                                            ? "border border-slate-700 text-slate-400 hover:bg-slate-800 hover:text-white" 
+                                            : "bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-md shadow-blue-500/10"
+                                        )}
+                                      >
+                                        {isCompleted ? "Làm lại" : "Luyện tập"}
+                                      </Link>
+                                    </td>
+                                  </tr>
+                                );
+                              })}
+                            </tbody>
+                          </table>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                );
+             })}
+          </div>
+        ))}
+
+        {/* Tab Content: Workbooks */}
+        {!isLoading && activeTab === 'workbook' && workbooks.map((volume, volIndex) => (
+          <div key={`work-vol-${volume.volume}`} className="mb-16">
+             <div className="mb-10 flex items-center gap-6">
+                <div className="h-px flex-1 bg-gradient-to-r from-transparent via-emerald-500 to-transparent opacity-50"></div>
+                <h2 className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400 uppercase tracking-[0.2em] drop-shadow-lg">
+                    Tập {volume.volume}
+                </h2>
+                <div className="h-px flex-1 bg-gradient-to-r from-transparent via-emerald-500 to-transparent opacity-50"></div>
+             </div>
+
+             {volume.units.map((unit: any, unitIdx: number) => {
+                const colorIdx = (volIndex * 2 + unitIdx) % unitColors.length;
+                const unitKey = `work-vol-${volume.volume}-unit-${unit.unit}`;
+                const isCollapsed = collapsedUnits[unitKey] !== false; // Default to true (collapsed)
+                const completedCount = unit.exams.filter((exam: any) => exam.is_completed || completedExams.includes(exam.id)).length;
+
+                return (
+                  <div key={`work-unit-${unit.unit}`} className="mb-12 flex flex-col items-stretch">
                     {/* Unit Header (Click to Toggle) */}
                     <div 
                       onClick={() => toggleUnit(unitKey)}
@@ -745,6 +895,14 @@ export default function SubjectMapPage() {
         {!isLoading && activeTab === 'review' && reviews.length === 0 && (
           <div className="text-center py-20 text-slate-400 font-bold text-xl border-2 border-dashed border-slate-700 rounded-2xl bg-slate-800/30">
             No review assessments found in this sector.
+          </div>
+        )}
+
+        {!isLoading && activeTab === 'workbook' && workbooks.length === 0 && (
+          <div className="text-center py-20 bg-slate-900/30 rounded-3xl border border-white/5 backdrop-blur-md">
+            <Trophy size={48} className="mx-auto text-slate-600 mb-4 animate-bounce" />
+            <p className="text-slate-400 font-extrabold tracking-wider text-sm uppercase">Hiện tại chưa có đề luyện tập Sách bài tập</p>
+            <p className="text-[10px] text-slate-500 mt-2 font-bold uppercase tracking-wider">Hệ thống đang được cập nhật thêm các đề luyện tập mới ✨</p>
           </div>
         )}
 

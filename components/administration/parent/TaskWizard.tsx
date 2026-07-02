@@ -125,7 +125,7 @@ export function TaskWizard({
   const [error, setError] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedFilterUnit, setSelectedFilterUnit] = useState<number | null>(null);
-  const [selectedExamTypeFilter, setSelectedExamTypeFilter] = useState<"all" | "lesson" | "review" | "reflex">("all");
+  const [selectedExamTypeFilter, setSelectedExamTypeFilter] = useState<"lesson" | "workbook" | "review" | "reflex">("lesson");
 
   // Load dynamically active subjects for selected student's grade
   useEffect(() => {
@@ -251,12 +251,12 @@ export function TaskWizard({
       const matchesUnit =
         selectedFilterUnit === null || e.units.includes(selectedFilterUnit);
       
-      const type = e.exam_type || "lesson";
+      const type = e.exam_type;
       const matchesType =
-        selectedExamTypeFilter === "all" ||
         (selectedExamTypeFilter === "lesson" && type === "lesson") ||
+        (selectedExamTypeFilter === "workbook" && !type) ||
         (selectedExamTypeFilter === "reflex" && type === "reflex") ||
-        (selectedExamTypeFilter === "review" && type !== "lesson" && type !== "reflex");
+        (selectedExamTypeFilter === "review" && (type === "midterm" || type === "final"));
 
       return matchesSearch && matchesUnit && matchesType;
     });
@@ -308,16 +308,6 @@ export function TaskWizard({
         {taskType === "exam" && (
           <div className="flex bg-slate-900/60 p-1.5 rounded-xl border border-slate-800/80 gap-1 flex-wrap justify-center">
             <button
-              onClick={() => setSelectedExamTypeFilter("all")}
-              className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all select-none ${
-                selectedExamTypeFilter === "all"
-                  ? "bg-slate-700 text-white"
-                  : "text-slate-400 hover:text-white"
-              }`}
-            >
-              Tất cả
-            </button>
-            <button
               onClick={() => setSelectedExamTypeFilter("lesson")}
               className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all select-none ${
                 selectedExamTypeFilter === "lesson"
@@ -328,6 +318,16 @@ export function TaskWizard({
               Luyện theo bài học
             </button>
             <button
+              onClick={() => setSelectedExamTypeFilter("workbook")}
+              className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all select-none ${
+                selectedExamTypeFilter === "workbook"
+                  ? "bg-emerald-600 text-white shadow-sm shadow-emerald-500/10"
+                  : "text-slate-400 hover:text-white"
+              }`}
+            >
+              Luyện theo Sách bài tập
+            </button>
+            <button
               onClick={() => setSelectedExamTypeFilter("review")}
               className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all select-none ${
                 selectedExamTypeFilter === "review"
@@ -335,7 +335,7 @@ export function TaskWizard({
                   : "text-slate-400 hover:text-white"
               }`}
             >
-              Luyện theo ôn tập
+              Ôn Tập
             </button>
             <button
               onClick={() => setSelectedExamTypeFilter("reflex")}
