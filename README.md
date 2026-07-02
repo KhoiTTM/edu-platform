@@ -64,7 +64,8 @@ Component tương ứng: `components/learning/`, `components/universal/` (Univer
 |---|---|
 | `/hoc-tap` | Trang chọn môn học |
 | `/hoc-tap/[subject]` | Danh sách bài học theo môn |
-| `/hoc-tap/pre-a1-starter`, `/starters-wordlist`, `/starters-wordlist/learn`, `/starters-wordlist/flipbook` | Pre A1 Starter + wordlist + flipbook |
+| `/hoc-tap/pre-a1-starter` | Trang chọn giáo trình Pre A1 Starter |
+| `/hoc-tap/pre-a1-starter/starters-wordlist` | Giao diện học từ vựng (Flipbook & học thẻ từ) |
 | `/hoc-tap/mindset-ielts` | Roadmap IELTS Foundation theo Unit |
 | `/hoc-tap/mindset-ielts/{grammar,listening,reading,speaking,writing,shadowing,flow-book}` | Từng kỹ năng/luồng riêng |
 | `/learn/[subject]/[node]` | Universal Learning Engine — coordinator chung |
@@ -78,7 +79,7 @@ Component tương ứng: `components/assessment/`. Engine: `lib/assessment/` (ai
 
 | Route | Mô tả |
 |---|---|
-| `/luyen-tap`, `/luyen-tap/[subject]` | Trang Luyện tập, phân tab theo `exam_type` (xem `docs/EXAM_BANK.md`) |
+| `/luyen-tap`, `/luyen-tap/[subject]` | Trang Luyện tập, phân tab theo `exam_type` (môn `pre-a1-starter` tại `/luyen-tap/pre-a1-starter?grade=3` chứa 20 đề từ vựng) |
 | `/luyen-tap/lesson/[nodeId]` | Luyện tập theo bài học cụ thể |
 | `/luyen-tap/review` | Trang xem lại bài đã làm |
 | `/assessment-studio`, `/assessment-studio/collections/[id]` | CMS quản lý đề thi |
@@ -188,7 +189,8 @@ edu-platform/
 │
 ├── docs/
 │   ├── CONTEXT.md             # ⚠️ Bắt buộc đọc — kiến trúc lõi + luật cứng cho agent
-│   └── EXAM_BANK.md           # Quy ước dữ liệu phân hệ exam-bank
+│   ├── EXAM_BANK.md           # Quy ước dữ liệu phân hệ exam-bank
+│   └── PRE_A1_STARTER.md      # Quy ước dữ liệu & luyện nghe môn Pre A1 Starter Wordlist
 │
 ├── agent_prompt/               # Hướng dẫn quy trình cho agent tương lai
 │   ├── implement_pdf_scan_pipeline_prompt.md         # Luồng Hotspot/Review
@@ -260,7 +262,7 @@ python src/main.py <path-to-pdf> --slug <book-slug> --pages 10
 | `npm run start` | Production server |
 | `npm run lint` | ESLint |
 | `npm run generate:toan3` | Tái tạo SQL curriculum Toán 3 từ `scripts/generate-toan3-sql.ts` |
-| `npx tsx scripts/seed-exam-bank.ts <file\|thư-mục> [--dry-run]` | Generator chung nạp đề exam-bank (xem `docs/EXAM_BANK.md`) |
+| `npx tsx scripts/seed-exam-bank.ts <file\|thư-mục> [--dry-run]` | Generator nạp đề exam-bank hỗ trợ Bulk Insert hàng loạt & tự động Retry khi lỗi mạng |
 
 Ngoài ra có ~98 script một lần trong `scripts/` (tiền tố `seed-*`, `generate-*`, `check-*`, `fix-*`, `migrate-*`, `cleanup-*`) — chạy qua `npx tsx scripts/<file>.ts`, đọc nội dung từng file trước khi chạy vì đây là script tác động trực tiếp DB.
 

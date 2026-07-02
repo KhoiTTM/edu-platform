@@ -19,3 +19,7 @@ Quy tắc bắt buộc đối với tất cả Agent hoạt động trong worksp
    - Nội dung đề phải GỐC (không sao chép sách có bản quyền); với Tiếng Anh 3 chỉ dùng từ trong `docs/TIENGANH3_TAP1_SCOPE.md`.
 
 4. **CẢNH BÁO MÔI TRƯỜNG GHI FILE LỚN**: công cụ ghi đôi khi cắt cụt file >~11KB (chèn NUL ở cuối). Sau khi sửa file lớn, LUÔN verify bằng `tsc --noEmit` / parser; nếu cụt, vá đuôi qua shell hoặc khôi phục từ git.
+
+5. **PRE A1 STARTER & BULK SEEDING**:
+   - Khi tạo câu hỏi liên quan đến phát âm (TTS) cho môn `pre-a1-starter`, sử dụng thuộc tính `audio_text` trong `metadata_json` với kiểu câu hỏi `listening_multiple_choice`.
+   - Nạp đề thi qua seeder `seed-exam-bank.ts` phải sử dụng cấu trúc Bulk Insert tích hợp sẵn (tự động gom nhóm các câu hỏi thành 1 request và liên kết hàng loạt) để tối ưu hóa hiệu suất và tránh lỗi mạng cloud. Bắt buộc đọc kĩ tài liệu `docs/PRE_A1_STARTER.md`.
