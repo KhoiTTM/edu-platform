@@ -18,10 +18,6 @@ export default async function HocTapPage() {
     .single();
 
   const userGrades = profile?.role === "admin" ? [3, 7] : (profile?.grades || [3]);
-  
-  // Also include Grade 0 for universal subjects like IELTS if not already there
-  // but we'll handle it separately or merge it. 
-  // For now, let's fetch subjects for each selected grade + grade 0.
   const gradesToFetch = [...new Set([...userGrades, 0])].sort((a, b) => a - b);
 
   // 2. Fetch subjects for each grade
@@ -31,16 +27,11 @@ export default async function HocTapPage() {
       
       if (error) {
         console.error(`Error fetching subjects for grade ${g}:`, error);
-        
-        // Fallback: If RPC fails, try to fetch all subjects and filter them manually
-        // This is a safety measure to ensure the dashboard doesn't stay empty.
         const { data: allSubjects } = await supabase
           .from("universal_subjects")
           .select("id, slug, name_vi, name_en, description, icon");
         
         if (allSubjects) {
-          // Heuristic: If it's a known grade, show Math and English by default
-          // unless the RPC failure was due to some other critical issue.
           if (g === 3 || g === 7) {
              return { grade: g, subjects: allSubjects.filter(s => ['toan', 'tieng_anh'].includes(s.slug)) };
           }
@@ -48,7 +39,6 @@ export default async function HocTapPage() {
              return { grade: g, subjects: allSubjects.filter(s => ['mindset-ielts', 'pre-a1-starter'].includes(s.slug)) };
           }
         }
-
         return { grade: g, subjects: [] };
       }
       let gradeSubjects = data || [];
@@ -73,11 +63,11 @@ export default async function HocTapPage() {
   );
 
   const neonColors = [
-    { border: "border-cyan-500/50", text: "text-cyan-400", glow: "0 0 30px rgba(6,182,212,0.3)" },
-    { border: "border-fuchsia-500/50", text: "text-fuchsia-400", glow: "0 0 30px rgba(217,70,239,0.3)" },
-    { border: "border-emerald-500/50", text: "text-emerald-400", glow: "0 0 30px rgba(16,185,129,0.3)" },
-    { border: "border-amber-500/50", text: "text-amber-400", glow: "0 0 30px rgba(245,158,11,0.3)" },
-    { border: "border-indigo-500/50", text: "text-indigo-400", glow: "0 0 30px rgba(99,102,241,0.3)" },
+    { border: "border-cyan-500/20 hover:border-cyan-400/50", text: "text-cyan-400", glow: "rgba(6,182,212,0.15)" },
+    { border: "border-fuchsia-500/20 hover:border-fuchsia-400/50", text: "text-fuchsia-400", glow: "rgba(217,70,239,0.15)" },
+    { border: "border-emerald-500/20 hover:border-emerald-400/50", text: "text-emerald-400", glow: "rgba(16,185,129,0.15)" },
+    { border: "border-amber-500/20 hover:border-amber-400/50", text: "text-amber-400", glow: "rgba(245,158,11,0.15)" },
+    { border: "border-indigo-500/20 hover:border-indigo-400/50", text: "text-indigo-400", glow: "rgba(99,102,241,0.15)" },
   ];
 
   const getSubjectIcon = (slug: string, className: string) => {
@@ -95,14 +85,17 @@ export default async function HocTapPage() {
   const getSubjectLink = (slug: string, grade: number) => {
     if (slug === 'mindset-ielts') return `/hoc-tap/mindset-ielts`;
     if (slug === 'pre-a1-starter') return `/hoc-tap/pre-a1-starter`;
-    // Convention: root node slug is lop-3, lop-7, or subject-specific
     const nodeSlug = grade === 0 ? (slug === 'mindset-ielts' ? 'ielts-foundation' : 'global') : `lop-${grade}`;
     return `/learn/${slug}/${nodeSlug}`;
   };
 
   return (
-    <div className="flex min-h-dvh w-full flex-col pb-20 relative">
-      <div className="mx-auto max-w-5xl w-full px-6 py-12 relative z-10">
+    <div className="flex min-h-dvh w-full flex-col pb-20 relative text-white bg-[#0f172a]">
+      {/* Cosmic Blurry Nebulas */}
+      <div className="absolute top-20 left-10 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-600/10 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="mx-auto max-w-6xl w-full px-6 py-12 relative z-10">
           <Link
             href="/dashboard"
             className="inline-flex items-center gap-2 text-sm font-bold text-sky-400 hover:text-sky-300 transition-colors bg-sky-900/30 px-4 py-2 rounded-full border border-sky-500/30 backdrop-blur-md mb-8"
@@ -110,70 +103,72 @@ export default async function HocTapPage() {
             ← Bảng điều khiển
           </Link>
 
-          <header className="mb-16 flex flex-col items-center text-center">
-            <h1 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-400 drop-shadow-sm tracking-wide uppercase">
-              Hệ thống Trạm Tri thức
-            </h1>
-            <p className="mt-4 text-slate-300 font-bold text-sm tracking-widest uppercase opacity-70">
-              Chọn lộ trình học tập của bạn
-            </p>
+          <header className="rounded-[2.5rem] border border-slate-800 bg-gradient-to-br from-indigo-950/30 via-slate-900/60 to-slate-950 p-8 md:p-10 shadow-2xl backdrop-blur-md mb-16 relative overflow-hidden text-center">
+            <div className="absolute right-0 top-0 -mt-10 -mr-10 h-44 w-44 rounded-full bg-cyan-500/10 blur-3xl pointer-events-none" />
+            <div className="relative">
+                <span className="inline-flex items-center gap-1.5 rounded-full bg-cyan-500/10 px-3.5 py-1 text-xs font-semibold text-cyan-400 border border-cyan-500/20 uppercase tracking-widest mb-4">
+                    🚀 Cosmic Knowledge Portal
+                </span>
+                <h1 className="text-4xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-400 tracking-tight uppercase">
+                  Hệ thống Trạm Tri thức
+                </h1>
+                <p className="mt-4 text-sm md:text-base text-slate-400 max-w-xl mx-auto leading-relaxed">
+                  Chọn một trạm tri thức dưới đây để bắt đầu hành trình chinh phục kiến thức của bạn.
+                </p>
+            </div>
           </header>
 
-          <div className="space-y-20">
+          <div className="space-y-16">
             {subjectsByGrade.map(({ grade, subjects }, groupIndex) => {
               if (subjects.length === 0) return null;
               
               const isUniversal = grade === 0;
               const sectionTitle = isUniversal ? "CamBridge English" : `Khu Vực Lớp ${grade}`;
-              const sectionIcon = isUniversal ? <Globe2 size={24} className="text-fuchsia-400" /> : <GraduationCap size={24} className="text-sky-400" />;
+              const sectionIcon = isUniversal ? <Globe2 size={20} className="text-fuchsia-400" /> : <GraduationCap size={20} className="text-sky-400" />;
 
               return (
-                <section key={grade} className="animate-in fade-in slide-in-from-bottom-8 duration-700" style={{ animationDelay: `${groupIndex * 150}ms` }}>
-                  <div className="flex items-center gap-4 mb-8">
-                    <div className={`p-3 rounded-2xl bg-white/5 border-2 ${isUniversal ? 'border-fuchsia-500/30' : 'border-sky-500/30'} backdrop-blur-md`}>
+                <section key={grade} className="space-y-6">
+                  <div className="flex items-center gap-4 border-b border-slate-800/80 pb-3">
+                    <div className={`p-2 rounded-xl bg-white/5 border ${isUniversal ? 'border-fuchsia-500/30' : 'border-sky-500/30'} backdrop-blur-md`}>
                       {sectionIcon}
                     </div>
                     <div>
-                      <h2 className="text-2xl font-black text-white tracking-tight uppercase">
+                      <h2 className="text-lg font-black text-white uppercase tracking-widest">
                         {sectionTitle}
                       </h2>
-                      <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mt-0.5">
-                        {isUniversal ? "Tài nguyên học tập cho mọi lứa tuổi" : `Giáo trình chuẩn cho học sinh khối ${grade}`}
-                      </p>
                     </div>
-                    <div className="flex-1 h-px bg-gradient-to-r from-slate-800 to-transparent ml-4"></div>
                   </div>
 
-                  <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  <ul className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                     {subjects.map((subject: any, index: number) => {
                       const color = neonColors[(index + groupIndex) % neonColors.length];
                       return (
                         <li key={subject.slug}>
                           <Link
                             href={getSubjectLink(subject.slug, grade)}
-                            className={`group flex min-h-[200px] flex-col rounded-[2.5rem] border-2 bg-slate-900/50 p-7 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:bg-slate-800/80 ${color.border} relative overflow-hidden`}
-                            style={{ boxShadow: color.glow }}
+                            className={`group relative flex flex-col justify-between min-h-[150px] rounded-3xl border-2 bg-gradient-to-br from-slate-900/40 via-slate-900/60 to-slate-950 p-5 backdrop-blur-md hover:-translate-y-1.5 transition-all duration-300 overflow-hidden ${color.border}`}
+                            style={{ boxShadow: `0 8px 30px ${color.glow}` }}
                           >
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/3 blur-2xl group-hover:bg-white/10 transition-colors"></div>
+                            <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/3 blur-2xl group-hover:bg-white/10 transition-colors"></div>
                             
-                            <div className="flex justify-between items-start mb-8 relative z-10">
-                                <div className={`p-4 rounded-2xl bg-black/40 border border-white/10 shadow-inner ${color.text}`}>
-                                    {getSubjectIcon(subject.slug, "w-8 h-8")}
+                            <div className="flex justify-between items-start mb-2 relative z-10">
+                                <div className={`p-2 rounded-xl bg-black/40 border border-white/10 ${color.text}`}>
+                                    {getSubjectIcon(subject.slug, "w-6 h-6")}
                                 </div>
-                                <div className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white/10 transition-colors border border-white/5 group-hover:border-white/20">
-                                    <ArrowRight className={`w-6 h-6 text-white/50 group-hover:text-white transition-all group-hover:translate-x-0.5`} />
+                                <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-white/10 transition-colors border border-white/5 group-hover:border-white/20">
+                                    <ArrowRight className="w-4 h-4 text-white/50 group-hover:text-white transition-all group-hover:translate-x-0.5" />
                                 </div>
                             </div>
                             
                             <div className="mt-auto relative z-10">
-                                <span className="font-black text-2xl tracking-tight text-white drop-shadow-md">
+                                <h3 className="font-black text-lg tracking-tight text-white leading-tight">
                                     {subject.name_vi}
-                                </span>
-                                <div className="flex items-center gap-2 mt-2">
-                                  <span className={`text-[10px] font-black uppercase tracking-widest ${color.text}`}>
+                                </h3>
+                                <div className="flex items-center gap-1.5 mt-2">
+                                  <span className={`text-[8px] font-black uppercase tracking-widest ${color.text}`}>
                                     Vào trạm học
                                   </span>
-                                  <Zap size={10} className={`${color.text} animate-pulse`} />
+                                  <Zap size={8} className={`${color.text} animate-pulse`} />
                                 </div>
                             </div>
                           </Link>
