@@ -273,7 +273,7 @@ export async function getExamsForSubject(
     return [];
   }
 
-  const results = (data || []).map((e: any) => ({
+  return (data || []).map((e: any) => ({
     id: e.id,
     title: e.title,
     total_questions: e.total_questions || 0,
@@ -283,44 +283,6 @@ export async function getExamsForSubject(
     units: e.collection?.units || [],
     exam_type: e.collection?.exam_type || "lesson",
   })) as ExamOption[];
-
-  if (subjectSlug === "khtn" && grade === 7) {
-    const khtn7Lessons: Record<number, string> = {
-      1: "Bài 1: Phương pháp và kĩ năng học tập môn KHTN",
-      2: "Bài 2: Nguyên tử",
-      3: "Bài 3: Nguyên tố hoá học",
-      4: "Bài 4: Sơ lược về bảng tuần hoàn các nguyên tố hoá học",
-      5: "Bài 5: Phân tử - Đơn chất - Hợp chất",
-      6: "Bài 6: Giới thiệu về liên kết hoá học",
-      7: "Bài 7: Hoá trị và công thức hoá học",
-      8: "Bài 8: Tốc độ chuyển động",
-      9: "Bài 9: Đo tốc độ",
-      10: "Bài 10: Đồ thị quãng đường – thời gian",
-      11: "Bài 11: Thảo luận về ảnh hưởng của tốc độ trong an toàn giao thông",
-      12: "Bài 12: Sóng âm",
-      13: "Bài 13: Độ to và độ cao của âm",
-      14: "Bài 14: Phản xạ âm, chống ô nhiễm tiếng ồn",
-      15: "Bài 15: Năng lượng ánh sáng. Tia sáng, vùng tối"
-    };
-
-    const virtualExams = Object.entries(khtn7Lessons).map(([baiStr, title]) => {
-      const bai = parseInt(baiStr, 10);
-      return {
-        id: `khtn7-sbt-bai-${bai}`,
-        title: `SBT KHTN 7 - ${title}`,
-        total_questions: 10,
-        collection_id: `khtn7-sbt-col-${bai}`,
-        subject_slug: "khtn",
-        grade: 7,
-        units: [bai],
-        exam_type: undefined, // workbook (exam_type IS NULL)
-      };
-    });
-
-    results.push(...virtualExams);
-  }
-
-  return results;
 }
 
 export type LessonOption = {
