@@ -765,8 +765,7 @@ export async function toggleParentTask(taskId: string, isActive: boolean) {
   const { error } = await supabase
     .from("parent_tasks")
     .update({ is_active: isActive, updated_at: new Date().toISOString() })
-    .eq("id", taskId)
-    .eq("parent_id", user.id);
+    .eq("id", taskId);
 
   if (error) return { error: error.message };
 
@@ -783,8 +782,7 @@ export async function deleteParentTask(taskId: string) {
   const { error } = await supabase
     .from("parent_tasks")
     .delete()
-    .eq("id", taskId)
-    .eq("parent_id", user.id);
+    .eq("id", taskId);
 
   if (error) return { error: error.message };
 
