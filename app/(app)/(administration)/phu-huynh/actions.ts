@@ -609,7 +609,9 @@ export async function getTodayTasks(): Promise<DailyTask[]> {
         total_questions,
         collection:assessment_collections (
           subject_slug,
-          title
+          title,
+          units,
+          exam_type
         )
       ),
       lesson_node:curriculum_nodes (
@@ -664,7 +666,9 @@ export async function getPendingTasks(): Promise<DailyTask[]> {
         total_questions,
         collection:assessment_collections (
           subject_slug,
-          title
+          title,
+          units,
+          exam_type
         )
       ),
       lesson_node:curriculum_nodes (

@@ -320,8 +320,18 @@ export default async function DashboardPage() {
                                             task.task?.subject_slug || "";
                         const subjectIcon = isLesson ? "📖" : (SUBJECT_ICONS[subjectSlug] || "📚");
                         const isToday = task.task_date === todayStr;
+
+                        // Determine task URL — KHTN 7 SBT (exam_type=null) → flipbook quiz
+                        const isKhtn7Sbt = !isLesson
+                          && task.exam?.collection?.subject_slug === 'khtn'
+                          && task.exam?.collection?.exam_type === null;
+                        const baiNum = isKhtn7Sbt
+                          ? (task.exam?.collection?.units?.[0] ?? 1)
+                          : null;
                         let taskUrl = isLesson
                           ? `/learn/${subjectSlug}/${task.lesson_node?.slug}`
+                          : isKhtn7Sbt
+                          ? `/flipbooks/khtn7/quiz/${baiNum}`
                           : `/test-assessment?examId=${task.exam_id}`;
 
                         return (
