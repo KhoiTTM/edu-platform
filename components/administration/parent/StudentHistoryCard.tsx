@@ -76,12 +76,115 @@ type Props = {
 
 export function StudentHistoryCard({ studentName, studentGrade, history }: Props) {
   const [expanded, setExpanded] = useState(false);
-  const stats = calcStats(history);
+  const [timeFilter, setTimeFilter] = useState<'all' | '1d' | '7d'>('all');
+  const [subjectFilter, setSubjectFilter] = useState<string>('all');
+  const [typeFilter, setTypeFilter] = useState<'all' | 'learning' | 'exam'>('all');
 
-  const displayHistory = expanded ? history : history.slice(0, 5);
+  // Filter history entries based on user selection
+  const filteredHistory = history.filter((entry) => {
+    // 1. Time Filter
+    if (timeFilter !== 'all') {
+      const entryTime = new Date(entry.started_at).getTime();
+      const cutoff = timeFilter === '1d' 
+        ? Date.now() - 24 * 60 * 60 * 1000 
+        : Date.now() - 7 * 24 * 60 * 60 * 1000;
+      if (entryTime < cutoff) return false;
+    }
+
+    // 2. Subject Filter
+    if (subjectFilter !== 'all' && entry.subject_slug !== subjectFilter) {
+      return false;
+    }
+
+    // 3. Type Filter
+    if (typeFilter !== 'all') {
+      const isExam = entry.summary_metrics?.type === 'exam';
+      if (typeFilter === 'learning' && isExam) return false;
+      if (typeFilter === 'exam' && !isExam) return false;
+    }
+
+    return true;
+  });
+
+  const stats = calcStats(filteredHistory);
+  const displayHistory = expanded ? filteredHistory : filteredHistory.slice(0, 5);
+
+  // Extract unique subjects available in current history for dynamic subject filter
+  const uniqueSubjects = Array.from(new Set(history.map(h => h.subject_slug)));
 
   return (
     <div className="rounded-2xl border-2 border-slate-800 bg-slate-900/60 backdrop-blur-xl overflow-hidden">
+      {/* Filters Bar */}
+      <div className="bg-slate-950/40 px-4 py-3 border-b border-slate-800/80 flex flex-col gap-3.5">
+        {/* Time filters */}
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-[9px] font-black text-slate-500 uppercase tracking-wider w-16">Thời gian:</span>
+          {(['all', '1d', '7d'] as const).map((t) => (
+            <button
+              key={t}
+              onClick={() => setTimeFilter(t)}
+              className={`px-3 py-1 rounded-lg border-2 text-[9px] font-black uppercase tracking-wider transition-all ${
+                timeFilter === t
+                  ? "border-sky-500 bg-sky-500/10 text-sky-400"
+                  : "border-slate-800 bg-slate-900/40 text-slate-400 hover:border-slate-700 hover:text-white"
+              }`}
+            >
+              {t === 'all' ? 'Tất cả' : t === '1d' ? '24 Giờ' : '7 Ngày'}
+            </button>
+          ))}
+        </div>
+
+        {/* Type filters */}
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-[9px] font-black text-slate-500 uppercase tracking-wider w-16">Hình thức:</span>
+          {(['all', 'learning', 'exam'] as const).map((t) => (
+            <button
+              key={t}
+              onClick={() => setTypeFilter(t)}
+              className={`px-3 py-1 rounded-lg border-2 text-[9px] font-black uppercase tracking-wider transition-all ${
+                typeFilter === t
+                  ? "border-indigo-500 bg-indigo-500/10 text-indigo-400"
+                  : "border-slate-800 bg-slate-900/40 text-slate-400 hover:border-slate-700 hover:text-white"
+              }`}
+            >
+              {t === 'all' ? 'Tất cả' : t === 'learning' ? 'Học Bài' : 'Luyện Tập'}
+            </button>
+          ))}
+        </div>
+
+        {/* Subject filters */}
+        {uniqueSubjects.length > 0 && (
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="text-[9px] font-black text-slate-500 uppercase tracking-wider w-16">Môn học:</span>
+            <button
+              onClick={() => setSubjectFilter('all')}
+              className={`px-3 py-1 rounded-lg border-2 text-[9px] font-black uppercase tracking-wider transition-all ${
+                subjectFilter === 'all'
+                  ? "border-emerald-500 bg-emerald-500/10 text-emerald-400"
+                  : "border-slate-800 bg-slate-900/40 text-slate-400 hover:border-slate-700 hover:text-white"
+              }`}
+            >
+              Tất cả
+            </button>
+            {uniqueSubjects.map((subSlug) => {
+              const meta = SUBJECT_META[subSlug] || { label: subSlug };
+              return (
+                <button
+                  key={subSlug}
+                  onClick={() => setSubjectFilter(subSlug)}
+                  className={`px-3 py-1 rounded-lg border-2 text-[9px] font-black uppercase tracking-wider transition-all ${
+                    subjectFilter === subSlug
+                      ? "border-emerald-500 bg-emerald-500/10 text-emerald-400"
+                      : "border-slate-800 bg-slate-900/40 text-slate-400 hover:border-slate-700 hover:text-white"
+                  }`}
+                >
+                  {meta.label}
+                </button>
+              );
+            })}
+          </div>
+        )}
+      </div>
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-slate-800">
         <div className="flex items-center gap-3">
@@ -115,7 +218,7 @@ export function StudentHistoryCard({ studentName, studentGrade, history }: Props
       </div>
 
       {/* History list */}
-      {history.length === 0 ? (
+      {filteredHistory.length === 0 ? (
         <div className="px-4 py-6 text-center">
           <p className="text-slate-500 text-sm">Chưa có lịch sử học tập</p>
         </div>
@@ -182,7 +285,7 @@ export function StudentHistoryCard({ studentName, studentGrade, history }: Props
       )}
 
       {/* Show more */}
-      {history.length > 5 && (
+      {filteredHistory.length > 5 && (
         <button
           onClick={() => setExpanded(!expanded)}
           className="w-full flex items-center justify-center gap-2 py-2.5 text-[10px] font-black text-slate-500 uppercase tracking-widest hover:text-slate-300 hover:bg-slate-800/30 transition-all border-t border-slate-800/60"
@@ -193,7 +296,7 @@ export function StudentHistoryCard({ studentName, studentGrade, history }: Props
             </>
           ) : (
             <>
-              <ChevronDown size={12} /> Xem thêm {history.length - 5} buổi
+              <ChevronDown size={12} /> Xem thêm {filteredHistory.length - 5} buổi
             </>
           )}
         </button>
