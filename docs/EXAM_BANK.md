@@ -28,12 +28,13 @@ Runtime `app/(app)/(assessment)/test-assessment/actions.ts → getExamQuestions(
 
 Trang `/luyen-tap/[subject]` (`getAssessmentMap`) phân tab **chỉ dựa vào `exam_type`** của collection:
 
-| `exam_type`                | Tab hiển thị                     |
-|----------------------------|----------------------------------|
-| `lesson` (hoặc NULL)       | Luyện tập theo bài học           |
-| `reflex`                   | Luyện tập phản xạ (có timer)     |
-| bất kỳ giá trị khác        | **Luyện tập theo ôn tập**        |
-| (vd `midterm`, `final`)    | → rơi vào tab "theo ôn tập"      |
+| `exam_type`                         | Tab hiển thị                   |
+|-------------------------------------|--------------------------------|
+| `null`                              | Luyện tập theo sách (workbook) |
+| `lesson`                            | Luyện tập theo bài học         |
+| `reflex`                            | Luyện tập phản xạ (có timer)   |
+| `review`, `midterm`, `final`, `exam`| **Tab Ôn Tập**                 |
+| bất kỳ giá trị khác                | Luyện tập theo bài học         |
 
 Chỉ collection `status = 'published'` mới hiện ra. Đặt `draft` để giấu tạm.
 Cả tab "ôn tập" và "bài học" đều có nút **"Luyện đề Ngẫu nhiên"** (`handleRandomFromUnit`).
