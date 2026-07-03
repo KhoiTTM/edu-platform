@@ -2452,5 +2452,73 @@
     "question": "Quan sát Hình 22 (sơ đồ quá trình quang hợp ở cây xanh), gọi tên các quá trình được đánh số trong hình và tên của những yếu tố liên quan đến quá trình đó.",
     "answer": null,
     "explanation": "Sơ đồ quang hợp thường bao gồm:\n- Nguyên liệu vào: CO₂ (từ khí khổng), H₂O (từ rễ qua thân), ánh sáng (hấp thụ bởi diệp lục trong lục lạp).\n- Sản phẩm ra: O₂ (thoát qua khí khổng), glucose (tích luỹ hoặc vận chuyển).\n- Diễn ra tại: lục lạp trong tế bào lá."
+  },
+  {
+    "id": "khtn7-23-1",
+    "bai": 23,
+    "type": "mcq",
+    "question": "Các yếu tố chủ yếu ngoài môi trường ảnh hưởng đến quang hợp là:",
+    "options": [
+      "Nước, hàm lượng khí carbon dioxide, hàm lượng khí oxygen.",
+      "Nước, hàm lượng khí carbon dioxide, ánh sáng, nhiệt độ.",
+      "Nước, hàm lượng khí oxygen, ánh sáng.",
+      "Nước, hàm lượng khí oxygen, nhiệt độ."
+    ],
+    "answer": "B",
+    "explanation": "Các yếu tố ngoài môi trường ảnh hưởng đến quang hợp gồm: nước, CO₂, ánh sáng và nhiệt độ."
+  },
+  {
+    "id": "khtn7-23-2",
+    "bai": 23,
+    "type": "mcq",
+    "question": "Chọn đáp án đúng khi nói về nhu cầu ánh sáng của cây ưa sáng và cây ưa bóng:",
+    "options": [
+      "Các cây ưa sáng không cần nhiều ánh sáng mạnh, các cây ưa bóng không cần nhiều ánh sáng.",
+      "Các cây ưa sáng cần nhiều ánh sáng mạnh; cây ưa bóng không cần nhiều ánh sáng.",
+      "Các cây ưa sáng cần nhiều ánh sáng mạnh; cây ưa bóng không cần ánh sáng.",
+      "Các cây ưa sáng không cần ánh sáng; cây ưa bóng cần ánh sáng mạnh."
+    ],
+    "answer": "B",
+    "explanation": "Cây ưa sáng cần cường độ ánh sáng cao để quang hợp tốt; cây ưa bóng thích nghi với ánh sáng yếu, không cần nhiều ánh sáng mạnh."
+  },
+  {
+    "id": "khtn7-23-3",
+    "bai": 23,
+    "type": "essay",
+    "question": "Các khẳng định sau đây đúng hay sai?\n1. Cây ưa sáng có nhu cầu ánh sáng thấp.\n2. Cường độ quang hợp tỉ lệ thuận với cường độ ánh sáng.\n3. Khi tế bào khí khổng mất nước thì khí khổng mở để CO₂ khuếch tán vào trong lá.\n4. Đa số thực vật bậc cao ở vùng nhiệt đới, khi nhiệt độ thấp (dưới 10°C) thường làm cho rễ cây bị thối, cây không hút được nước, ảnh hưởng đến quang hợp.\n5. Không có quang hợp thì không có sự sống trên Trái Đất.",
+    "answer": null,
+    "explanation": "1. Sai — cây ưa sáng cần ánh sáng cao.\n2. Sai — chỉ đúng đến một giới hạn, sau đó cường độ quang hợp không tăng thêm (bão hòa ánh sáng).\n3. Sai — khi khí khổng mất nước, khí khổng đóng lại.\n4. Đúng.\n5. Đúng."
+  },
+  {
+    "id": "khtn7-23-4",
+    "bai": 23,
+    "type": "essay",
+    "question": "Chọn các từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau:\nQuang hợp hấp thụ khí ___(1)___ góp phần giảm hiệu ứng nhà kính, cung cấp ___(2)___ cho hô hấp của các sinh vật và ___(3)___. Quang hợp tạo ___(4)___, là nguồn chất dinh dưỡng, ___(5)___ cho cơ thể thực vật và các sinh vật dị dưỡng, đồng thời cung cấp ___(6)___ cho ngành công nghiệp và dược liệu cho con người.",
+    "answer": null,
+    "explanation": "(1) carbon dioxide (CO₂); (2) oxygen (O₂); (3) động vật/con người; (4) chất hữu cơ (glucose); (5) năng lượng; (6) nguyên liệu"
+  },
+  {
+    "id": "khtn7-23-5",
+    "bai": 23,
+    "type": "essay",
+    "question": "Kể tên các loại cây cảnh trồng trong nhà mà vẫn tươi tốt. Em hãy giải thích cơ sở khoa học của hiện tượng đó.",
+    "answer": null,
+    "explanation": "Ví dụ: cây trầu bà, cây lưỡi hổ, cây kim tiền, cây dương xỉ...\nCơ sở khoa học: đây là các cây ưa bóng, có khả năng quang hợp ở cường độ ánh sáng thấp (ánh sáng tán xạ trong nhà). Chúng đã thích nghi với điều kiện thiếu ánh sáng, có nhiều lục lạp và diệp lục để tận dụng ánh sáng yếu."
+  },
+  {
+    "id": "khtn7-23-6",
+    "bai": 23,
+    "type": "essay",
+    "question": "Bà ngoại của Mai gieo hạt rau cải ở vườn. Sau một tuần, cây cải đã lớn và chen chúc nhau. Mai thấy bà nhổ bớt những cây cải mọc gần nhau. Hãy giải thích ý nghĩa việc làm của bà.",
+    "answer": null,
+    "explanation": "Khi cây mọc chen chúc, các cây che khuất nhau, mỗi cây nhận được ít ánh sáng hơn → cường độ quang hợp giảm → cây sinh trưởng kém. Nhổ bớt cây (tỉa thưa) giúp các cây còn lại nhận đủ ánh sáng để quang hợp tốt hơn, phát triển mạnh và cho năng suất cao hơn."
+  },
+  {
+    "id": "khtn7-23-7",
+    "bai": 23,
+    "type": "essay",
+    "question": "Theo em, hình ảnh về bảo vệ rừng/cây xanh nói lên điều gì? Qua đó em muốn gửi thông điệp gì đến bạn bè và người thân? Em sẽ có những hành động cụ thể gì để thực hiện thông điệp đó?",
+    "answer": null,
+    "explanation": "Hình ảnh nói lên: tầm quan trọng của cây xanh/rừng đối với sự sống — cung cấp oxygen, hấp thụ CO₂, điều hòa khí hậu.\nThông điệp: hãy bảo vệ rừng và trồng cây xanh.\nHành động cụ thể: không chặt phá cây, tham gia trồng cây, tắt điện khi không dùng, hạn chế rác thải nhựa, tuyên truyền bảo vệ môi trường."
   }
 ]

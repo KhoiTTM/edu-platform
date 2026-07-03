@@ -34,6 +34,7 @@ async function getAssessmentMap(subject: string, grade?: number) {
       20: "Bài 20: Chế tạo nam châm điện đơn giản",
       21: "Bài 21: Khái quát về trao đổi chất và chuyển hoá năng lượng",
       22: "Bài 22: Quang hợp ở thực vật",
+      23: "Bài 23: Một số yếu tố ảnh hưởng đến quang hợp",
     };
     const countByBai: Record<number, number> = {};
     for (const q of questions as any[]) {

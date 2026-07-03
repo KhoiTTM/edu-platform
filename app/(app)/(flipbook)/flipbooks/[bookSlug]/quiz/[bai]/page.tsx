@@ -44,6 +44,7 @@ const LESSON_TITLES: Record<string, Record<number, string>> = {
     20: "SBT - KHTN 7 - Bài 20. Chế tạo nam châm điện đơn giản",
     21: "SBT - KHTN 7 - Bài 21. Khái quát về trao đổi chất và chuyển hoá năng lượng",
     22: "SBT - KHTN 7 - Bài 22. Quang hợp ở thực vật",
+    23: "SBT - KHTN 7 - Bài 23. Một số yếu tố ảnh hưởng đến quang hợp",
   },
 };
 
