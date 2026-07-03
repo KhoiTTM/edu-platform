@@ -2243,5 +2243,68 @@
       "Ở vùng Bắc Cực và Nam Cực"
     ],
     "answer": "D"
+  },
+  {
+    "id": "khtn7-20-1",
+    "bai": 20,
+    "cau": 1,
+    "type": "essay",
+    "stem": "Làm thế nào để thay đổi cực từ của nam châm điện?",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-20-2",
+    "bai": 20,
+    "cau": 2,
+    "type": "essay",
+    "stem": "Trong điều kiện chỉ có dòng điện yếu chạy vào ống dây dẫn của nam châm điện, làm thế nào để lực từ của nam châm điện mạnh hơn?",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-20-3",
+    "bai": 20,
+    "cau": 3,
+    "type": "essay",
+    "stem": "Hình 20.1 vẽ ba nam châm điện A, B, C. Mỗi nam châm đều có cùng dòng điện chạy vào ống dây.\na) Giải thích vì sao từ trường của nam châm điện B mạnh hơn từ trường của nam châm điện A.\nb) Giải thích vì sao từ trường của nam châm điện C mạnh hơn từ trường của nam châm điện B.\nc) Bằng cách nào có thể xác định các vị trí bên ngoài nam châm điện C cũng có từ trường?",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-20-4",
+    "bai": 20,
+    "cau": 4,
+    "type": "essay",
+    "stem": "Hãy đánh giá đúng hoặc sai các câu sau về nam châm điện:\n1. Nam châm điện chỉ gồm một ống dây dẫn.\n2. Từ trường của nam châm điện tương tự từ trường của nam châm thẳng.\n3. Từ trường của nam châm điện tồn tại ngay cả sau khi ngắt dòng điện chạy vào ống dây dẫn.\n4. Từ trường của nam châm điện phụ thuộc dòng điện chạy vào ống dây và lõi sắt trong lòng ống dây.",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-20-5",
+    "bai": 20,
+    "cau": 5,
+    "type": "essay",
+    "stem": "Xác định cực của nam châm điện khi có dòng điện chạy trong ống dây như Hình 20.2 (biết đầu B là cực N, đầu còn lại chưa biết).",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-20-6",
+    "bai": 20,
+    "cau": 6,
+    "type": "essay",
+    "stem": "Một kim nam châm đặt trước đầu ống dây của nam châm điện. Đổi chiều dòng điện trong ống dây có hiện tượng gì xảy ra? Giải thích.",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-20-7",
+    "bai": 20,
+    "cau": 7,
+    "type": "essay",
+    "stem": "Dòng điện vào động cơ điện thường rất lớn, có khi đến hàng nghìn ampe. Nếu để công tắc điện trực tiếp ở mạch điện này thì rất nguy hiểm, cho nên người ta dùng rơle điện từ. Hình 20.4 là sơ đồ mô tả ứng dụng của rơle điện từ: (1) nam châm điện; (2) thanh thép đàn hồi; (3) công tắc điện; (4) lò xo; (5) động cơ điện. Hãy giải thích hoạt động của thiết bị này.",
+    "options": [],
+    "answer": null
   }
 ]
