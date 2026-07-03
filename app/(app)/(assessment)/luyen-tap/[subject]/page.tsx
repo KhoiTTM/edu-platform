@@ -37,6 +37,7 @@ async function getAssessmentMap(subject: string, grade?: number) {
       23: "Bài 23: Một số yếu tố ảnh hưởng đến quang hợp",
       24: "Bài 24: Thực hành: Chứng minh quang hợp ở cây xanh",
       25: "Bài 25: Hô hấp tế bào",
+      26: "Bài 26: Một số yếu tố ảnh hưởng đến hô hấp tế bào",
     };
     const countByBai: Record<number, number> = {};
     for (const q of questions as any[]) {

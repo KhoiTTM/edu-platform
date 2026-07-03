@@ -2672,5 +2672,73 @@
     "question": "Vận dụng kiến thức về hô hấp tế bào, giải thích hiện tượng con người khi ở trên đỉnh núi cao thường thở nhanh hơn so với khi ở vùng đồng bằng.",
     "answer": null,
     "explanation": "Ở trên đỉnh núi cao, không khí loãng, nồng độ oxygen thấp hơn so với vùng đồng bằng. Vì vậy, để lấy đủ lượng oxygen cần thiết cho hoạt động hô hấp tế bào, con người phải thở nhanh hơn so với khi ở vùng đồng bằng."
+  },
+  {
+    "id": "khtn7-26-1",
+    "bai": 26,
+    "type": "mcq",
+    "question": "Cây xanh hô hấp vào thời gian nào trong ngày?",
+    "options": [
+      "Ban đêm.",
+      "Buổi sáng.",
+      "Cả ngày và đêm.",
+      "Ban ngày."
+    ],
+    "answer": "C",
+    "explanation": "Hô hấp tế bào diễn ra liên tục cả ngày lẫn đêm để cung cấp năng lượng cho các hoạt động sống của cây."
+  },
+  {
+    "id": "khtn7-26-2",
+    "bai": 26,
+    "type": "mcq",
+    "question": "Trong các nhận định dưới đây, có bao nhiêu nhận định đúng?\n(1) Tuỳ theo từng nhóm nông sản mà có cách bảo quản khác nhau.\n(2) Để bảo quản nông sản, cần làm ngưng quá trình hô hấp tế bào.\n(3) Cần lưu ý điều chỉnh các yếu tố: hàm lượng nước, khí carbon dioxide, khí oxygen và nhiệt độ khi bảo quản nông sản.\n(4) Cường độ hô hấp tỉ lệ thuận với hàm lượng nước trong các loại hạt.\n(5) Phơi khô nông sản sau thu hoạch là cách bảo quản nông sản tốt nhất.",
+    "options": [
+      "2.",
+      "3.",
+      "4.",
+      "5."
+    ],
+    "answer": "B",
+    "explanation": "Các ý đúng là: (1), (3), (4). Ý (2) sai — không thể làm ngưng hoàn toàn hô hấp, chỉ hạn chế. Ý (5) sai — phơi khô chỉ phù hợp với một số loại nông sản."
+  },
+  {
+    "id": "khtn7-26-3",
+    "bai": 26,
+    "type": "essay",
+    "question": "Lựa chọn cách bảo quản phù hợp cho các loại nông sản bằng cách ghép cột A với cột B:\nCột A: 1. Rau muống, cà chua, hành tây, bắp ngô tươi, dưa chuột, bắp cải, quả cam; 2. Hạt lúa, hạt ngô, hạt đỗ, hạt lạc; 3. Nấm đùi gà, nấm kim châm; 4. Khoai tây, dưa hấu.\nCột B: a) Phơi khô hoặc sấy khô; b) Để nơi khô ráo, thoáng khí; c) Để trong túi nylon hút chân không; d) Để trong túi nylon kín hoặc đục lỗ và bảo quản trong ngăn mát tủ lạnh.",
+    "answer": null,
+    "explanation": "1 - d; 2 - a; 3 - c; 4 - b."
+  },
+  {
+    "id": "khtn7-26-4",
+    "bai": 26,
+    "type": "essay",
+    "question": "Bạn An làm 2 thí nghiệm với hạt lạc: TN1 dùng hạt cất 3 tháng, TN2 dùng hạt cất 1 năm. Cả hai cùng ngâm nước và ủ nảy mầm trong điều kiện giống nhau.\na) Bạn An làm thí nghiệm trên nhằm mục đích gì?\nb) Em hãy dự đoán kết quả thí nghiệm và giải thích.\nc) Từ thí nghiệm trên, em rút ra kết luận gì?",
+    "answer": null,
+    "explanation": "a) Mục đích: chứng minh thời gian bảo quản hạt có ảnh hưởng tới hô hấp, thể hiện qua tỉ lệ nảy mầm của hạt giống.\nb) Dự đoán: TN1 có số hạt nảy mầm nhiều hơn TN2. Hạt bảo quản lâu vẫn xảy ra hô hấp phân giải chất dự trữ, làm giảm khả năng nảy mầm.\nc) Kết luận: ngoài các yếu tố nhiệt độ, oxygen, CO₂, độ ẩm, khả năng nảy mầm của hạt còn phụ thuộc vào thời gian bảo quản hạt giống."
+  },
+  {
+    "id": "khtn7-26-5",
+    "bai": 26,
+    "type": "essay",
+    "question": "Sau khi thu hoạch các loại hạt (ngô, thóc, đậu, lạc,...), cần thực hiện biện pháp nào để bảo quản? Vì sao để bảo quản các loại hạt giống nên đựng trong chum, vại, thùng mà không nên đựng trong bao tải (cói hoặc vải)?",
+    "answer": null,
+    "explanation": "Cần phơi hoặc sấy khô để giảm hàm lượng nước trong hạt, hạn chế hô hấp.\nNên đựng trong chum, vại, thùng kín để ngăn cách hạt với độ ẩm, nhiệt độ và oxygen từ môi trường, tránh hạt hô hấp mạnh và nảy mầm.\nKhông nên đựng trong bao tải (cói, vải) vì bao tải không kín, hạt vẫn hút ẩm và hấp thụ oxygen để hô hấp, làm giảm chất lượng hạt và có thể nảy mầm."
+  },
+  {
+    "id": "khtn7-26-6",
+    "bai": 26,
+    "type": "essay",
+    "question": "Tại sao trong nhiều siêu thị rau tươi được gói trong túi nylon có đục lỗ và để trong ngăn mát, trong khi khoai tây, cà rốt lại không cần bảo quản như vậy?",
+    "answer": null,
+    "explanation": "Rau tươi có hàm lượng nước cao, hô hấp mạnh → cần bảo quản trong ngăn mát để hạn chế hô hấp; túi đục lỗ giúp hơi nước thoát ra không đọng lại làm thối nhũn rau.\nKhoai tây và cà rốt có hàm lượng nước thấp hơn, hô hấp yếu hơn → chỉ cần bảo quản ở nơi khô ráo, thoáng khí là đủ."
+  },
+  {
+    "id": "khtn7-26-7",
+    "bai": 26,
+    "type": "essay",
+    "question": "Vận dụng kiến thức về hô hấp tế bào trong bảo quản nông sản, em hãy lấy ví dụ cách bảo quản phù hợp với các loại nông sản khác nhau và giải thích ý nghĩa.",
+    "answer": null,
+    "explanation": "Ví dụ:\n- Gạo, ngô hạt: phơi khô, đựng trong thùng kín → giảm nước và oxygen, hạn chế hô hấp.\n- Rau cải, xà lách: cho vào túi đục lỗ, để ngăn mát → giảm nhiệt độ và thoát hơi nước, hạn chế hô hấp.\n- Nấm tươi: hút chân không → loại oxygen, ngưng hô hấp hiếu khí.\n- Khoai lang, sắn: để nơi thoáng mát, khô ráo → giảm độ ẩm và nhiệt độ.\nÝ nghĩa chung: các biện pháp đều nhằm giảm cường độ hô hấp tế bào để bảo tồn chất hữu cơ, duy trì chất lượng nông sản."
   }
 ]

@@ -47,6 +47,7 @@ const LESSON_TITLES: Record<string, Record<number, string>> = {
     23: "SBT - KHTN 7 - Bài 23. Một số yếu tố ảnh hưởng đến quang hợp",
     24: "SBT - KHTN 7 - Bài 24. Thực hành: Chứng minh quang hợp ở cây xanh",
     25: "SBT - KHTN 7 - Bài 25. Hô hấp tế bào",
+    26: "SBT - KHTN 7 - Bài 26. Một số yếu tố ảnh hưởng đến hô hấp tế bào",
   },
 };
 
