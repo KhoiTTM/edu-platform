@@ -1,0 +1,164 @@
+{
+  "toan_7_tap_1": {
+    "chuong_i_so_huu_ti": {
+      "bai_1_tap_hop_so_huu_ti": {
+        "dinh_nghia": "Số hữu tỉ là số viết được dưới dạng phân số a/b (a, b thuộc Z, b khác 0)",
+        "tap_hop": "Kí hiệu là Q",
+        "so_doi": "Mỗi số hữu tỉ đều có một số đối duy nhất"
+      },
+      "bai_2_phep_tinh_so_huu_ti": {
+        "quy_tac": "Viết dưới dạng phân số rồi áp dụng quy tắc cộng, trừ, nhân, chia phân số",
+        "tinh_chat": "Giao hoán, kết hợp, phân phối"
+      },
+      "bai_3_luy_thua_so_huu_ti": {
+        "cong_thuc_nhan": "x^m * x^n = x^{m+n}",
+        "cong_thuc_chia": "x^m : x^n = x^{m-n} (x khác 0)",
+        "luy_thua_cua_luy_thua": "(x^m)^n = x^{m*n}"
+      },
+      "bai_4_thu_tu_thuc_hien_va_chuyen_ve": {
+        "thu_tu": "Lũy thừa -> Nhân, chia -> Cộng, trừ. Ngoặc: () -> [] -> {}",
+        "quy_tac_chuyen_ve": "Khi chuyển một số hạng từ vế này sang vế kia, phải đổi dấu số hạng đó"
+      }
+    },
+    "chuong_ii_so_thuc": {
+      "bai_5_so_thap_phan_va_lam_tron": {
+        "phan_loai": "Số thập phân hữu hạn và vô hạn tuần hoàn",
+        "lam_tron": "Dựa trên độ chính xác cho trước"
+      },
+      "bai_6_so_vo_ti_va_can_bac_hai": {
+        "so_vo_ti": "Số thập phân vô hạn không tuần hoàn (kí hiệu I)",
+        "can_bac_hai_so_hoc": "Số x không âm sao cho x^2 = a (kí hiệu √a)"
+      },
+      "bai_7_tap_hop_so_thuc": {
+        "dinh_nghia": "Gồm số hữu tỉ và số vô tỉ (kí hiệu R)",
+        "gia_tri_tuyet_doi": "Khoảng cách từ điểm a đến gốc O trên trục số (kí hiệu |a|)"
+      }
+    },
+    "chuong_iii_goc_va_duong_thang_song_song": {
+      "bai_8_goc_dac_biet_va_tia_phan_giac": {
+        "goc_ke_bu": "Tổng bằng 180 độ",
+        "goc_doi_dinh": "Bằng nhau",
+        "tia_phan_giac": "Chia một góc thành hai góc bằng nhau"
+      },
+      "bai_9_va_10_duong_thang_song_song": {
+        "dau_hieu_nhan_biet": "Cặp góc so le trong bằng nhau hoặc đồng vị bằng nhau",
+        "tien_de_euclid": "Qua một điểm ngoài đường thẳng chỉ có duy nhất một đường thẳng song song với nó"
+      },
+      "bai_11_dinh_li_va_chung_minh": {
+        "cau_truc": "Giả thiết (nếu) và Kết luận (thì)"
+      }
+    },
+    "chuong_iv_tam_giac_bang_nhau": {
+      "bai_12_tong_cac_goc": "Tổng ba góc trong một tam giác bằng 180 độ",
+      "bai_13_14_cac_truong_hop_bang_nhau": [
+        "Cạnh - Cạnh - Cạnh (c.c.c)",
+        "Cạnh - Góc - Cạnh (c.g.c)",
+        "Góc - Cạnh - Góc (g.c.g)"
+      ],
+      "bai_15_tam_giac_vuong": "Các trường hợp: cạnh huyền-góc nhọn, cạnh huyền-cạnh góc vuông",
+      "bai_16_tam_giac_can_va_trung_truc": {
+        "tam_giac_can": "Hai cạnh bên bằng nhau, hai góc ở đáy bằng nhau",
+        "duong_trung_truc": "Vuông góc tại trung điểm của đoạn thẳng"
+      }
+    },
+    "chuong_v_thong_ke": {
+      "bai_17_du_lieu": "Phân loại dữ liệu định lượng (số) và định tính (không là số)",
+      "bai_18_bieu_do_quat_tron": "So sánh các phần trong toàn bộ (tổng 100%)",
+      "bai_19_bieu_do_doan_thang": "Biểu diễn sự thay đổi của đại lượng theo thời gian"
+    }
+  }
+}
+
+[
+  {
+    "stt": 1,
+    "topic": "Số thực (Real Numbers)",
+    "concept": "Tập hợp số vô tỉ (I) và số hữu tỉ (Q)",
+    "detail": "Số vô tỉ (I) là số viết được dưới dạng số thập phân vô hạn không tuần hoàn (Ví dụ: sqrt(5), sqrt(7)). Các số căn bậc hai của số chính phương (ví dụ sqrt(25) = 5) là số hữu tỉ.",
+    "exams": ["Đề 01", "Đề 03"]
+  },
+  {
+    "stt": 2,
+    "topic": "Số thực (Real Numbers)",
+    "concept": "Căn bậc hai số học",
+    "detail": "Căn bậc hai số học của một số a không âm (a >= 0) là số x không âm sao cho x^2 = a (Ký hiệu: x = sqrt(a)).",
+    "exams": ["Đề 01", "Đề 03"]
+  },
+  {
+    "stt": 3,
+    "topic": "Số thực (Real Numbers)",
+    "concept": "Làm tròn số và độ chính xác",
+    "detail": "Khi làm tròn số với độ chính xác cho trước (ví dụ 0,005 - tương đương làm tròn đến hàng phần nghìn): nếu chữ số ngay sau hàng làm tròn >= 5 thì tăng 1 đơn vị, ngược lại nếu < 5 thì giữ nguyên.",
+    "exams": ["Đề 02"]
+  },
+  {
+    "stt": 4,
+    "topic": "Số thực (Real Numbers)",
+    "concept": "Giá trị tuyệt đối của một số thực |x|",
+    "detail": "Giá trị tuyệt đối của x là khoảng cách từ điểm x đến điểm 0 trên trục số. |x| = x nếu x >= 0 và |x| = -x nếu x < 0. Nếu |x| = a (a >= 0) thì x = a hoặc x = -a.",
+    "exams": ["Đề 01", "Đề 02", "Đề 03"]
+  },
+  {
+    "stt": 5,
+    "topic": "Hình học trực quan",
+    "concept": "Tia phân giác của một góc",
+    "detail": "Tia phân giác của một góc là tia nằm giữa hai cạnh của góc và tạo với hai cạnh ấy hai góc bằng nhau.",
+    "exams": ["Đề 02", "Đề 03"]
+  },
+  {
+    "stt": 6,
+    "topic": "Hình học trực quan",
+    "concept": "Góc đối đỉnh",
+    "detail": "Hai góc đối đỉnh là hai góc mà mỗi cạnh của góc này là tia đối của một cạnh của góc kia. Hai góc đối đỉnh thì bằng nhau.",
+    "exams": ["Đề 03"]
+  },
+  {
+    "stt": 7,
+    "topic": "Hình học trực quan",
+    "concept": "Đường thẳng song song & Tiên đề Ơ-clit",
+    "detail": "Qua một điểm ở ngoài một đường thẳng chỉ có duy nhất một đường thẳng song song với đường thẳng đó. Nếu hai đường thẳng song song thì các cặp góc so le trong bằng nhau, các cặp góc đồng vị bằng nhau.",
+    "exams": ["Đề 01", "Đề 03"]
+  },
+  {
+    "stt": 8,
+    "topic": "Hình học trực quan",
+    "concept": "Định lý Toán học (Giả thiết & Kết luận)",
+    "detail": "Giả thiết (GT) của định lý là phần nằm giữa từ 'Nếu' và từ 'thì' (điều kiện cho trước). Kết luận (KL) là phần nằm sau từ 'thì' (điều cần chứng minh hoặc suy ra).",
+    "exams": ["Đề 03"]
+  },
+  {
+    "stt": 9,
+    "topic": "Tam giác (Triangles)",
+    "concept": "Tổng ba góc trong một tam giác",
+    "detail": "Tổng số đo ba góc trong một tam giác luôn bằng 180 độ. Trong tam giác đều, mỗi góc bằng 60 độ. Trong tam giác vuông cân, hai góc nhọn bằng nhau và bằng 45 độ.",
+    "exams": ["Đề 01", "Đề 02"]
+  },
+  {
+    "stt": 10,
+    "topic": "Tam giác (Triangles)",
+    "concept": "Hai tam giác bằng nhau",
+    "detail": "Hai tam giác bằng nhau nếu các cạnh tương ứng bằng nhau và các góc tương ứng bằng nhau (Ví dụ: c.c.c, c.g.c, g.c.g). Khi ký hiệu bằng nhau phải viết đúng thứ tự đỉnh tương ứng.",
+    "exams": ["Đề 01", "Đề 02"]
+  },
+  {
+    "stt": 11,
+    "topic": "Tam giác (Triangles)",
+    "concept": "Tam giác cân",
+    "detail": "Tam giác có hai cạnh bằng nhau (hoặc hai góc ở đáy bằng nhau) là tam giác cân. Nếu tam giác cân có một góc tù thì góc đó chắc chắn là góc ở đỉnh.",
+    "exams": ["Đề 01", "Đề 03"]
+  },
+  {
+    "stt": 12,
+    "topic": "Thống kê (Statistics)",
+    "concept": "Phương pháp thu thập dữ liệu",
+    "detail": "Gồm quan sát trực tiếp, làm thí nghiệm, lập bảng câu hỏi (khảo sát trực tuyến/trực tiếp), hoặc phỏng vấn trực tiếp đối tượng.",
+    "exams": ["Đề 01"]
+  },
+  {
+    "stt": 13,
+    "topic": "Thống kê (Statistics)",
+    "concept": "Phân loại dữ liệu",
+    "detail": "Dữ liệu gồm: Dữ liệu là số (số liệu) và Dữ liệu không phải là số. Dữ liệu không phải số gồm loại có thể sắp thứ tự (ví dụ: cấp độ, mức độ) và loại không thể sắp thứ tự (ví dụ: danh sách tên hoạt động).",
+    "exams": ["Đề 01"]
+  }
+]
