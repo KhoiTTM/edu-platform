@@ -28,12 +28,13 @@ Runtime `app/(app)/(assessment)/test-assessment/actions.ts → getExamQuestions(
 
 Trang `/luyen-tap/[subject]` (`getAssessmentMap`) phân tab **chỉ dựa vào `exam_type`** của collection:
 
-| `exam_type`                | Tab hiển thị                     |
-|----------------------------|----------------------------------|
-| `lesson` (hoặc NULL)       | Luyện tập theo bài học           |
-| `reflex`                   | Luyện tập phản xạ (có timer)     |
-| bất kỳ giá trị khác        | **Luyện tập theo ôn tập**        |
-| (vd `midterm`, `final`)    | → rơi vào tab "theo ôn tập"      |
+| `exam_type`                         | Tab hiển thị                   |
+|-------------------------------------|--------------------------------|
+| `null`                              | Luyện tập theo sách (workbook) |
+| `lesson`                            | Luyện tập theo bài học         |
+| `reflex`                            | Luyện tập phản xạ (có timer)   |
+| `review`, `midterm`, `final`, `exam`| **Tab Ôn Tập**                 |
+| bất kỳ giá trị khác                | Luyện tập theo bài học         |
 
 Chỉ collection `status = 'published'` mới hiện ra. Đặt `draft` để giấu tạm.
 Cả tab "ôn tập" và "bài học" đều có nút **"Luyện đề Ngẫu nhiên"** (`handleRandomFromUnit`).
@@ -117,6 +118,59 @@ Ngoài `multiple_choice` và `fill_blank`, generator + runtime còn hỗ trợ: 
 `shape_identify`, `clock_read`. Loại `essay`/`short_answer` nạp được nhưng runtime
 CHƯA có giao diện riêng (sẽ rơi vào default) — generator sẽ cảnh báo.
 
+## 3b. Render công thức toán học (KaTeX / MathJax)
+
+Môn **Toán** (và bất kỳ môn nào có ký hiệu toán học) dùng **MathJax 3** để render inline.
+
+### Quy ước viết LaTeX trong `metadata_json`
+
+Bọc công thức trong dấu `$...$`:
+
+```json
+{ "question": "Khẳng định sai là:",
+  "options": [
+    "$\\sqrt{25} \\in \\mathbb{I}$",
+    "$8{,}(45) \\in \\mathbb{Q}$",
+    "$\\dfrac{20}{5} \\in \\mathbb{Z}$",
+    "$\\sqrt{7} \\in \\mathbb{I}$"
+  ],
+  "correct_index": 0,
+  "explanation": "$\\sqrt{25} = 5 \\in \\mathbb{Z}$, không phải số vô tỉ $\\mathbb{I}$."
+}
+```
+
+**Lưu ý JSON escaping:** dấu `\` trong JSON phải viết `\\`, vì vậy:
+- `\sqrt{x}` → `"$\\sqrt{x}$"`
+- `\dfrac{a}{b}` → `"$\\dfrac{a}{b}$"`
+- `\mathbb{Q}` → `"$\\mathbb{Q}$"`
+
+### Cách hoạt động (runtime)
+
+- `MultipleChoiceRenderer.tsx` parse token `$...$` trong chuỗi và render qua component `KaTeXSpan`.
+- `KaTeXSpan` dùng **`import("katex")` dynamic** trong `useEffect` (client-only) để tránh Webpack SSR error.
+- **MathJax 3** được load từ CDN (jsDelivr) qua `<script>` trong `app/layout.tsx` — làm fallback cho các vị trí ngoài `MultipleChoiceRenderer` nếu cần.
+- CSS KaTeX (`app/katex.min.css`) và fonts (`public/fonts/`) được **sinh tự động** khi build/install qua `scripts/setup-katex.mjs` (postinstall + build hook). Hai thư mục này nằm trong `.gitignore`, không commit.
+
+### Lỗi đã biết & fix
+
+| Lỗi | Nguyên nhân | Fix |
+|-----|-------------|-----|
+| `Module not found: Can't resolve 'katex'` | Webpack không resolve ESM package katex | `transpilePackages: ["katex"]` trong `next.config.ts` |
+| CSS/fonts katex không load | File `.gitignore`'d, không có trên server | `postinstall` script tự copy |
+| `import katex from "katex"` lỗi | Static import trong client component | Dùng dynamic `import("katex")` trong `useEffect` |
+
+### Ký hiệu hay dùng (Toán 7)
+
+| Ký hiệu | LaTeX | Ghi chú |
+|---------|-------|---------|
+| Căn bậc 2 | `\sqrt{x}` | |
+| Phân số | `\dfrac{a}{b}` | `\dfrac` to hơn `\frac` |
+| Tập số | `\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}, \mathbb{I}` | |
+| Số thập phân | `8{,}(45)` | dấu phẩy không bị coi là dấu phân cách |
+| Thuộc / Không thuộc | `\in, \notin` | |
+| Tuyệt đối | `\|x\|` hoặc `\lvert x \rvert` | |
+| Lũy thừa | `x^{2}` | |
+
 ## 3 cách tạo file JSON (đều đổ về cùng template này)
 
 - **Procedural**: script sinh tham số (vd cách đã làm cho Toán 3 đề 14–20). Đáp án do code tính nên luôn đúng; nhược điểm là lặp khuôn.
@@ -186,24 +240,16 @@ Nếu seed báo lỗi `null value in column "concept_id" ... violates not-null c
 → migration 048 CHƯA chạy trên DB đó. Chạy:
 `ALTER TABLE public.question_bank ALTER COLUMN concept_id DROP NOT NULL;`
 
-**b) Cột `title` của `assessment_collections` bị TRIGGER ghi đè.**
-Trigger `trigger_reorder_assessment_collections` (hàm `reorder_assessment_sequences_trigger`
-+ `generate_assessment_title`) tự sinh lại `title` từ `units`/`sequence_number` SAU MỖI
-INSERT/UPDATE. Vì vậy `UPDATE ... SET title = '...'` thường bị kéo về tên tự sinh ngay
-(RETURNING thấy giá trị mới nhưng SELECT sau đó thấy tên cũ — dấu hiệu kinh điển).
-→ Muốn đổi tên cố định, phải sửa hàm `generate_assessment_title`. Trạng thái hiện tại
-(migration `051`): hàm + trigger nhận thêm `exam_type`. CHỈ `exam_type='midterm'` mới được
-tên cố định — Toán giữa kỳ (units chứa 101) → "Kiểm Tra Giữa Kỳ 1"; Tiếng Anh 3 midterm →
-"SBT Tiếng Anh 3 - Tập 1". Đề luyện-theo-bài (`exam_type IS NULL`) vẫn ghép tên theo công thức.
-⚠️ KHÔNG đổi tên collection bằng `UPDATE ... SET title` — trigger sẽ ghi đè lại theo hàm.
-⚠️ Khi UPDATE hàng loạt theo subject+grade, NHỚ lọc `exam_type` để không đổi nhầm tên 120+ đề
-luyện-theo-bài (lỗi migration 050 đã từng mắc, 051 sửa lại).
+**b) Cột `title` của `assessment_collections` và Trigger tự động sinh tên:**
+Từ migration `053`, trigger tự động sinh tên `trigger_reorder_assessment_collections` đã được **xóa bỏ hoàn toàn**. Tiêu đề của `assessment_collections` sẽ do người dùng chỉ định trực tiếp khi nạp/seed dữ liệu (và không bao giờ bị ghi đè tự động nữa).
 
-**c) `units = [101]` (Toán) là mã quy ước cho nhóm đề giữa kỳ** (không phải unit học thật).
-Tiếng Anh 3 midterm dùng `units=[1..5]` (theo Unit) + `exam_type='midterm'` để phân biệt với
-đề luyện-theo-bài cùng units nhưng `exam_type IS NULL`.
+**c) Quy ước `units` cho đề thi và Gom nhóm UI:**
+Hệ thống hiển thị gom các collection có cùng `(subject, grade, volume, units, exam_type)` vào 1 nhóm trên UI.
+- **CẢNH BÁO:** Nếu 2 collection khác nhau trong cùng một môn học dùng chung `units`, chúng sẽ bị gộp lại làm một trên UI. Luôn sử dụng các mảng `units` khác nhau (ví dụ: `[101]`, `[102]`, `[99]`, `[2]`) để tách nhóm các kỳ thi độc lập.
 
-**d) Trùng collection cùng tên:** generator tìm collection theo `(subject_slug, grade, title)`.
-Nếu `collection.title` trong file JSON KHÁC tên collection đích trong DB, generator tạo
-collection MỚI → sinh nhiều thẻ trùng tên ở tab ôn tập. Luôn để `title` trong file khớp
-đúng tên collection đích trước khi seed nối thêm đề.
+**d) Hỗ trợ liên kết tài liệu ngoài (External URL):**
+Bảng `exams` hỗ trợ cột `external_url`. Khi cột này được gán giá trị link (ví dụ: Link Flipbook), UI sẽ hiển thị nút "Mở Flipbook" hướng học sinh làm bài trên liên kết ngoài thay vì mở giao diện thi/kiểm tra truyền thống.
+
+**e) Trùng collection cùng tên:**
+Generator tìm collection theo `(subject_slug, grade, title)`. Nếu `collection.title` trong file JSON khác tên collection đích trong DB, generator tạo collection mới. Vì vậy hãy kiểm tra kỹ `title` trong file JSON trước khi seed.
+

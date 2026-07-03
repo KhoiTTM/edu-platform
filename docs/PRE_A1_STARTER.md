@@ -19,7 +19,7 @@ Mỗi đề thi (từ Đề 01 đến Đề 20) chứa **20 câu hỏi** đượ
    * Sử dụng công nghệ **Web Speech API (TTS)** để tự động phát âm thanh tiếng Anh chuẩn giọng bản xứ khi câu hỏi xuất hiện.
    * Hiển thị nút loa **Listen (Nghe phát âm)** để học sinh bấm nghe lại.
    * Yêu cầu học sinh nghe để chọn cách viết tiếng Anh đúng hoặc nghĩa tiếng Việt tương ứng.
-3. **Luyện chính tả (`fill_blank`)** - *4 câu*: Ẩn một chữ cái ngẫu nhiên ở giữa từ tiếng Anh và yêu cầu điền ký tự thiếu để hoàn chỉnh từ (Ví dụ: `d _ g` -> `o`).
+3. **Luyện chính tả (`multiple_choice` dạng điền chữ)** - *4 câu*: Chọn chữ cái còn thiếu điền vào chỗ trống để tạo thành từ đúng (Ví dụ: `a _ _ l e` -> chọn `pp`).
 4. **Sắp xếp cấu trúc câu (`sentence_reorder`)** - *4 câu*: Học sinh sắp xếp các từ xáo trộn thành câu tiếng Anh hoàn chỉnh và có nghĩa (Ví dụ: `This is my head`, `I can see a cat`...).
    * *Lưu ý*: Component [SentenceReorderRenderer.tsx](file:///d:/Backups/Projects/edu-platform/components/universal/SentenceReorderRenderer.tsx) đã được trang bị bộ lọc chặn double-click nhằm tránh lỗi trùng lặp key React.
 
@@ -28,19 +28,11 @@ Mỗi đề thi (từ Đề 01 đến Đề 20) chứa **20 câu hỏi** đượ
 ## 3. Kiến trúc Database & Hiển thị Dashboard
 * **Database mapping**:
   * Đề được nạp vào bảng `assessment_collections` dưới `subject_slug: "pre-a1-starter"` và `grade: 3` (để hiển thị cho các khối lớp tiểu học).
-  * Do trigger tự động đổi tên `generate_assessment_title` trên database sẽ rename bộ đề luyện này thành `"English Grade 3 - Vol 1 - Unit 1 - Ex 1"`.
-  * Do đó, hệ thống đã bypass bằng cách override tiêu đề hiển thị tại Server Action [actions.ts](file:///d:/Backups/Projects/edu-platform/app/%28app%29/%28assessment%29/luyen-tap/actions.ts#L354):
-    ```typescript
-    if (subjectSlug === 'pre-a1-starter') {
-      lessonsResult.forEach((vol) => {
-        vol.units.forEach((unit) => {
-          unit.title = "Worldlist";
-          unit.description = "Luyện tập từ vựng Pre A1 Starters Cambridge.";
-        });
-      });
-    }
-    ```
-    Giúp giao diện dashboard của môn học hiển thị đúng tiêu đề **Worldlist** và bên dưới là danh sách **Đề 01 - Đề 20**.
+  * **Trigger tự động sinh tên đã bị xóa bỏ hoàn toàn (ở migration 053)**. Tiêu đề nhóm hiển thị trên UI chính là tiêu đề của collection được đặt khi seed:
+    1. **"Wordlist"** (`exam_type = 'lesson'`, `units = [1]`): Nhóm đề luyện theo bài học.
+    2. **"Wordlist"** (`exam_type = 'reflex'`, `units = [99]`): Nhóm đề luyện phản xạ nhanh (hỗ trợ thu gọn/mở rộng, tính giờ).
+    3. **"Three Practice Test"** (`exam_type = 'lesson'`, `units = [2]`): Nhóm đề liên kết tài liệu ngoài.
+  * **Hỗ trợ liên kết tài liệu ngoài (External URL)**: Đề thi trong nhóm "Three Practice Test" có trường `external_url` được thiết lập trỏ tới link Flipbook. Khi học sinh bấm vào, UI sẽ hiển thị nút "Mở Flipbook" để học sinh làm trực tiếp trên link ngoài.
 
 * **Lịch sử làm bài (Attempts)**:
   * Sau khi làm bài xong, điểm số và chi tiết bài làm của học sinh sẽ tự động được lưu vào bảng `learning_sessions` thông qua cấu trúc JSONB chuẩn với `summary_metrics.type = "exam"`.
@@ -53,4 +45,6 @@ Hệ thống nạp đề thông qua script [seed-exam-bank.ts](file:///d:/Backup
 Lệnh chạy nạp lại/đồng bộ:
 ```bash
 npx tsx scripts/seed-exam-bank.ts content/exam-bank/starters-wordlist-pilot.json
+npx tsx scripts/seed-exam-bank.ts content/exam-bank/pre-a1-starter-wordlist-reflex-batch2.json
 ```
+

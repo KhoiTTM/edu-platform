@@ -12,7 +12,32 @@ export default function PreA1StarterPage() {
       glowColor: 'rgba(245,158,11,0.3)',
       totalPages: 19,
       icon: '⭐',
-      path: '/hoc-tap/pre-a1-starter/starters-wordlist'
+      path: '/hoc-tap/pre-a1-starter/starters-wordlist',
+      isExternal: false
+    },
+    {
+      id: 'get-ready-starters',
+      title: 'Get Ready For Starters - OXFORD',
+      description: 'Giáo trình chuẩn bị cho kỳ thi Cambridge English Starters từ nhà xuất bản Oxford.',
+      coverColor: 'from-violet-500 to-purple-600',
+      textColor: 'text-purple-400',
+      glowColor: 'rgba(139,92,246,0.3)',
+      totalPages: 120,
+      icon: '📖',
+      path: 'https://online.flipbuilder.com/sdtta/dime/',
+      isExternal: true
+    },
+    {
+      id: 'fun-for-starters',
+      title: 'Fun For Starters - 4th Edition',
+      description: 'Giáo trình ôn luyện kỹ năng thi Cambridge English Starters phiên bản thứ 4 sinh động và thú vị.',
+      coverColor: 'from-sky-500 to-blue-600',
+      textColor: 'text-sky-400',
+      glowColor: 'rgba(14,165,233,0.3)',
+      totalPages: 112,
+      icon: '🎉',
+      path: 'https://online.flipbuilder.com/sdtta/ptjs/',
+      isExternal: true
     }
   ];
 
@@ -54,6 +79,8 @@ export default function PreA1StarterPage() {
               <Link 
                 key={book.id} 
                 href={book.path}
+                target={book.isExternal ? "_blank" : undefined}
+                rel={book.isExternal ? "noopener noreferrer" : undefined}
                 className="group flex flex-col justify-between min-h-[260px] rounded-[2.5rem] border-2 border-slate-800 bg-slate-900/40 p-7 backdrop-blur-md hover:border-amber-500/50 hover:-translate-y-1.5 hover:bg-slate-800/60 transition-all duration-300 relative overflow-hidden"
                 style={{ boxShadow: `0 8px 30px ${book.glowColor}` }}
               >
