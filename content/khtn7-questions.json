@@ -2390,5 +2390,67 @@
     "question": "Chuyển hoá năng lượng có vai trò gì đối với sự sống của sinh vật?",
     "answer": null,
     "explanation": "Chuyển hoá năng lượng cung cấp năng lượng (ATP) cho mọi hoạt động sống: sinh trưởng, vận động, sinh sản, cảm ứng. Không có chuyển hoá năng lượng, sinh vật không thể duy trì các hoạt động sống và sẽ chết."
+  },
+  {
+    "id": "khtn7-22-1",
+    "bai": 22,
+    "type": "essay",
+    "question": "Hoàn thành phương trình quang hợp bằng chữ:\nÁnh sáng\n___(1)___ + ___(2)___ → ___(3)___ + ___(4)___\nDiệp lục",
+    "answer": null,
+    "explanation": "(1) Carbon dioxide (CO₂); (2) Nước (H₂O); (3) Glucose (chất hữu cơ); (4) Oxygen (O₂)\nPhương trình: CO₂ + H₂O → Glucose + O₂ (nhờ ánh sáng và diệp lục)"
+  },
+  {
+    "id": "khtn7-22-2",
+    "bai": 22,
+    "type": "mcq",
+    "question": "Sản phẩm của quang hợp là:",
+    "options": [
+      "Nước, carbon dioxide.",
+      "Ánh sáng, diệp lục.",
+      "Oxygen, glucose.",
+      "Glucose, nước."
+    ],
+    "answer": "C",
+    "explanation": "Quang hợp tạo ra oxygen và glucose từ CO₂ và H₂O nhờ năng lượng ánh sáng và diệp lục."
+  },
+  {
+    "id": "khtn7-22-3",
+    "bai": 22,
+    "type": "essay",
+    "question": "Nêu các đặc điểm của lá cây phù hợp với chức năng quang hợp.",
+    "answer": null,
+    "explanation": "1. Phiến lá dạng bản mỏng, diện tích bề mặt lớn → tăng khả năng hấp thụ ánh sáng.\n2. Lớp biểu bì có nhiều khí khổng → CO₂ khuếch tán vào, O₂ và hơi nước thoát ra.\n3. Tế bào lá chứa nhiều lục lạp → hấp thụ năng lượng ánh sáng.\n4. Hệ gân lá phát triển → vận chuyển nước, muối khoáng vào và chất hữu cơ ra."
+  },
+  {
+    "id": "khtn7-22-4",
+    "bai": 22,
+    "type": "essay",
+    "question": "Lựa chọn từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau:\nQuang hợp là quá trình sử dụng ___(1)___ và khí ___(2)___ để tổng hợp ___(3)___ và giải phóng ___(4)___, nhờ năng lượng ___(5)___ đã được ___(6)___ hấp thụ. Đây là quá trình trao đổi chất và chuyển hoá năng lượng ở ___(7)___, trong đó quá trình trao đổi và chuyển hoá các chất luôn đi kèm với quá trình chuyển hoá ___(8)___ từ dạng ___(9)___ biến đổi thành dạng ___(10)___ tích luỹ trong các phân tử ___(11)___.\n(Gợi ý: oxygen; ánh sáng; diệp lục; nước; carbon dioxide; glucose; năng lượng; thực vật; quang năng; hoá năng; hữu cơ)",
+    "answer": null,
+    "explanation": "(1) nước; (2) carbon dioxide; (3) glucose; (4) oxygen; (5) ánh sáng; (6) diệp lục; (7) thực vật; (8) năng lượng; (9) quang năng; (10) hoá năng; (11) hữu cơ"
+  },
+  {
+    "id": "khtn7-22-5",
+    "bai": 22,
+    "type": "essay",
+    "question": "Các khẳng định sau đây đúng hay sai?\n1. Chỉ có lá mới có khả năng thực hiện quang hợp.\n2. Nước là nguyên liệu của quang hợp, được rễ cây hút từ môi trường bên ngoài vào và vận chuyển qua thân lên lá.\n3. Không có ánh sáng, cây vẫn quang hợp được.\n4. Trong quang hợp, năng lượng được biến đổi từ quang năng thành hoá năng.\n5. Trong lá cây, lục lạp tập trung nhiều ở tế bào lá.",
+    "answer": null,
+    "explanation": "1. Sai — các bộ phận xanh khác (thân non, vỏ quả xanh) cũng có thể quang hợp.\n2. Đúng.\n3. Sai — quang hợp cần ánh sáng.\n4. Đúng.\n5. Đúng."
+  },
+  {
+    "id": "khtn7-22-6",
+    "bai": 22,
+    "type": "essay",
+    "question": "Ghép đặc điểm của lá phù hợp với vai trò trong quang hợp:\nĐặc điểm: 1. Lớp biểu bì lá có nhiều khí khổng; 2. Trên phiến lá có nhiều gân lá; 3. Tế bào lá chứa nhiều lục lạp; 4. Diện tích bề mặt lớn; 5. Phiến lá có dạng bản mỏng.\nVai trò: a) Tăng khả năng hấp thụ ánh sáng; b) Giúp vận chuyển nguyên liệu và sản phẩm của quang hợp; c) Khí CO₂ dễ khuếch tán từ bên ngoài vào bên trong lá và khí O₂, hơi nước khuếch tán từ trong lá ra ngoài môi trường.",
+    "answer": null,
+    "explanation": "1 - c; 2 - b; 3 - a; 4 - a; 5 - c\n(Phiến lá mỏng và có khí khổng giúp trao đổi khí; gân lá vận chuyển; lục lạp hấp thụ ánh sáng; diện tích lớn tăng hấp thụ ánh sáng)"
+  },
+  {
+    "id": "khtn7-22-7",
+    "bai": 22,
+    "type": "essay",
+    "question": "Quan sát Hình 22 (sơ đồ quá trình quang hợp ở cây xanh), gọi tên các quá trình được đánh số trong hình và tên của những yếu tố liên quan đến quá trình đó.",
+    "answer": null,
+    "explanation": "Sơ đồ quang hợp thường bao gồm:\n- Nguyên liệu vào: CO₂ (từ khí khổng), H₂O (từ rễ qua thân), ánh sáng (hấp thụ bởi diệp lục trong lục lạp).\n- Sản phẩm ra: O₂ (thoát qua khí khổng), glucose (tích luỹ hoặc vận chuyển).\n- Diễn ra tại: lục lạp trong tế bào lá."
   }
 ]
