@@ -49,6 +49,7 @@ const LESSON_TITLES: Record<string, Record<number, string>> = {
     25: "SBT - KHTN 7 - Bài 25. Hô hấp tế bào",
     26: "SBT - KHTN 7 - Bài 26. Một số yếu tố ảnh hưởng đến hô hấp tế bào",
     27: "SBT - KHTN 7 - Bài 27. Thực hành: Hô hấp ở thực vật",
+    28: "SBT - KHTN 7 - Bài 28. Trao đổi khí ở sinh vật",
   },
 };
 

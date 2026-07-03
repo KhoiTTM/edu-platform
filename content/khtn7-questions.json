@@ -2788,5 +2788,87 @@
     "question": "Tại sao trong thí nghiệm quan sát hô hấp ở hạt nảy mầm, cốc nước vôi trong ở chuông có đĩa hạt đậu nảy mầm có váng đục trên bề mặt?",
     "answer": null,
     "explanation": "Hạt nảy mầm hô hấp tế bào thải ra khí CO₂. CO₂ phản ứng với nước vôi trong Ca(OH)₂ tạo kết tủa CaCO₃ không tan, làm nước vôi đục và có váng trắng trên bề mặt: CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O."
+  },
+  {
+    "id": "khtn7-28-1",
+    "bai": 28,
+    "type": "mcq",
+    "question": "Trao đổi khí ở sinh vật là quá trình:",
+    "options": [
+      "Lấy khí O₂ từ môi trường vào cơ thể và thải khí CO₂ từ cơ thể ra môi trường.",
+      "Lấy khí CO₂ từ môi trường vào cơ thể và thải khí O₂ từ cơ thể ra môi trường.",
+      "Lấy khí O₂ hoặc CO₂ từ môi trường vào cơ thể, đồng thời thải khí CO₂ hoặc O₂ từ cơ thể ra môi trường.",
+      "Lấy khí CO₂ từ môi trường vào cơ thể, đồng thời thải khí O₂ và CO₂ ra ngoài môi trường."
+    ],
+    "answer": "C",
+    "explanation": "Trao đổi khí ở sinh vật bao gồm cả hô hấp (lấy O₂, thải CO₂) và quang hợp ở thực vật (lấy CO₂, thải O₂) — tùy quá trình và điều kiện."
+  },
+  {
+    "id": "khtn7-28-2",
+    "bai": 28,
+    "type": "mcq",
+    "question": "Trao đổi khí ở thực vật diễn ra thông qua quá trình nào?",
+    "options": [
+      "Quang hợp và thoát hơi nước.",
+      "Hô hấp.",
+      "Thoát hơi nước.",
+      "Quang hợp và hô hấp."
+    ],
+    "answer": "D",
+    "explanation": "Trao đổi khí ở thực vật diễn ra qua quang hợp (lấy CO₂, thải O₂) và hô hấp (lấy O₂, thải CO₂), cả hai đều qua khí khổng."
+  },
+  {
+    "id": "khtn7-28-3",
+    "bai": 28,
+    "type": "mcq",
+    "question": "Trong quá trình quang hợp ở thực vật, các khí được trao đổi qua khí khổng như thế nào?",
+    "options": [
+      "CO₂ và O₂ khuếch tán từ môi trường vào trong tế bào lá, hơi nước thoát ra.",
+      "O₂ và CO₂ khuếch tán từ trong tế bào lá ra môi trường.",
+      "O₂ khuếch tán từ môi trường vào trong tế bào lá, CO₂ khuếch tán từ trong tế bào lá ra môi trường.",
+      "CO₂ khuếch tán từ môi trường vào trong tế bào lá, O₂ khuếch tán từ trong tế bào lá ra môi trường."
+    ],
+    "answer": "D",
+    "explanation": "Trong quang hợp: CO₂ là nguyên liệu đi vào tế bào lá; O₂ là sản phẩm thoát ra ngoài qua khí khổng."
+  },
+  {
+    "id": "khtn7-28-4",
+    "bai": 28,
+    "type": "essay",
+    "question": "Chọn các từ/cụm từ phù hợp để hoàn thành đoạn thông tin về trao đổi khí ở động vật và thực vật:\nKhi cây được chiếu sáng và được cung cấp đủ nước, ___(1)___ mở, CO₂ từ môi trường khuếch tán vào tế bào lá và O₂ từ tế bào lá khuếch tán ra ngoài môi trường trong quá trình ___(2)___; ngược lại O₂ từ ngoài môi trường khuếch tán vào tế bào lá và CO₂ từ tế bào lá khuếch tán ra ngoài môi trường trong quá trình ___(3)___. Khí CO₂ do con người và động vật thải ra cung cấp cho cây xanh thực hiện quá trình quang hợp, tạo ra O₂ cung cấp cho hoạt động ___(4)___ của con người và động vật. Vì vậy trồng nhiều cây xanh sẽ giúp cho hoạt động ___(5)___ ở sinh vật diễn ra hiệu quả và nâng cao chất lượng cuộc sống.",
+    "answer": null,
+    "explanation": "(1) khí khổng; (2) quang hợp; (3) hô hấp; (4) hô hấp; (5) trao đổi khí."
+  },
+  {
+    "id": "khtn7-28-5",
+    "bai": 28,
+    "type": "essay",
+    "question": "Các khẳng định sau đây đúng hay sai?\n1. Độ mở của khí khổng tăng dần từ sáng đến tối.\n2. Khi cây thiếu ánh sáng và nước, quá trình trao đổi khí sẽ bị hạn chế.\n3. Ở tất cả các loài thực vật, khí khổng tập trung chủ yếu ở mặt trên của lá.\n4. Lau bụi cho lá là một biện pháp giúp quá trình trao đổi khí ở thực vật diễn ra thuận lợi.",
+    "answer": null,
+    "explanation": "1 - Sai (ban đêm khí khổng đóng lại); 2 - Đúng; 3 - Sai (thường tập trung ở mặt dưới của lá); 4 - Đúng."
+  },
+  {
+    "id": "khtn7-28-6",
+    "bai": 28,
+    "type": "essay",
+    "question": "Phân tích sự phù hợp giữa cấu tạo của khí khổng với chức năng trao đổi khí ở thực vật.",
+    "answer": null,
+    "explanation": "Khí khổng gồm hai tế bào hình hạt đậu nằm sát nhau, thành ngoài mỏng, thành trong dày. Khí khổng thông với các khoang chứa không khí bên trong phiến lá → thuận tiện cho trao đổi khí và thoát hơi nước.\nKhi tế bào no nước: thành mỏng căng → thành dày cong → khí khổng mở → CO₂ vào, O₂ ra.\nKhi tế bào mất nước: thành dày duỗi thẳng → khí khổng đóng → hạn chế thoát hơi nước và trao đổi khí."
+  },
+  {
+    "id": "khtn7-28-7",
+    "bai": 28,
+    "type": "essay",
+    "question": "Giải thích tại sao khi sưởi ấm bằng than hoặc củi trong phòng kín, người trong phòng có thể bị ngất hoặc nguy hiểm đến tính mạng. Em hãy đề xuất biện pháp giúp hạn chế nguy hiểm.",
+    "answer": null,
+    "explanation": "Khi đốt than, củi trong phòng kín, O₂ bị tiêu hao dần; đồng thời sinh ra khí CO và CO₂. Khi hít vào cơ thể, CO và CO₂ thay thế O₂ liên kết với tế bào hồng cầu, dẫn đến thiếu O₂ cho hô hấp tế bào, gây ngất và có thể tử vong.\nBiện pháp: mở cửa hoặc cửa sổ để khí lưu thông; không đốt than, củi khi ngủ; dùng thiết bị sưởi điện an toàn hơn."
+  },
+  {
+    "id": "khtn7-28-8",
+    "bai": 28,
+    "type": "essay",
+    "question": "Tại sao khi ở trong phòng kín đông người một thời gian thì nhịp hô hấp của cơ thể thường tăng? Em hãy đề xuất biện pháp để quá trình trao đổi khí ở người diễn ra thuận lợi khi ở trong phòng đông người, phòng ngủ, lớp học.",
+    "answer": null,
+    "explanation": "Trong phòng kín đông người, CO₂ ngày càng tăng, O₂ ngày càng giảm do hô hấp. Không khí hít vào thiếu O₂ nên nhịp hô hấp tăng để lấy đủ O₂ cho cơ thể.\nBiện pháp: mở cửa sổ, lắp quạt thông gió, trồng cây xanh trong phòng để đảm bảo thông thoáng và duy trì nồng độ O₂ phù hợp."
   }
 ]
