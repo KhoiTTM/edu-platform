@@ -2740,5 +2740,53 @@
     "question": "Vận dụng kiến thức về hô hấp tế bào trong bảo quản nông sản, em hãy lấy ví dụ cách bảo quản phù hợp với các loại nông sản khác nhau và giải thích ý nghĩa.",
     "answer": null,
     "explanation": "Ví dụ:\n- Gạo, ngô hạt: phơi khô, đựng trong thùng kín → giảm nước và oxygen, hạn chế hô hấp.\n- Rau cải, xà lách: cho vào túi đục lỗ, để ngăn mát → giảm nhiệt độ và thoát hơi nước, hạn chế hô hấp.\n- Nấm tươi: hút chân không → loại oxygen, ngưng hô hấp hiếu khí.\n- Khoai lang, sắn: để nơi thoáng mát, khô ráo → giảm độ ẩm và nhiệt độ.\nÝ nghĩa chung: các biện pháp đều nhằm giảm cường độ hô hấp tế bào để bảo tồn chất hữu cơ, duy trì chất lượng nông sản."
+  },
+  {
+    "id": "khtn7-27-1",
+    "bai": 27,
+    "type": "essay",
+    "question": "Muốn hạt nảy mầm nhanh thì trước khi gieo hạt cần làm gì? Giải thích cơ sở khoa học của cách làm đó.",
+    "answer": null,
+    "explanation": "Ngâm hạt trong nước ấm trước khi gieo. Cơ sở khoa học: nước ấm làm mềm vỏ hạt, giúp hạt hút nước nhanh, phá vỡ trạng thái ngủ nghỉ, kích thích hô hấp tế bào cung cấp năng lượng cho quá trình nảy mầm."
+  },
+  {
+    "id": "khtn7-27-2",
+    "bai": 27,
+    "type": "essay",
+    "question": "Sắp xếp các bước sau theo đúng tiến trình thí nghiệm chứng minh hô hấp ở hạt nảy mầm:\n(1) Chọn những hạt chắc, không bị vỡ, không bị mọt.\n(2) Cho hạt ra đĩa Petri có lót bông ẩm hoặc giấy thấm ẩm.\n(3) Để đĩa trong tủ ấm hoặc nơi có ánh sáng mặt trời để hạt nảy mầm.\n(4) Ngâm hạt vào nước ấm.\n(5) Quan sát hiện tượng xảy ra ở cốc nước vôi trong.\n(6) Đặt đĩa Petri có hạt nảy mầm cùng cốc nước vôi trong vào chuông A. Đặt cốc nước vôi trong vào chuông B.",
+    "answer": null,
+    "explanation": "Trình tự đúng: (1) → (4) → (2) → (3) → (6) → (5)."
+  },
+  {
+    "id": "khtn7-27-3",
+    "bai": 27,
+    "type": "essay",
+    "question": "Các khẳng định sau đây đúng hay sai khi nói về thí nghiệm chứng minh hô hấp ở thực vật?\n1. Ngâm hạt trong nước ấm trước khi gieo là để rửa sạch các chất bẩn bám vào vỏ hạt.\n2. Lót bông hoặc giấy đã thấm ẩm rồi đặt trong đĩa Petri để tránh chuột và sâu bọ ăn hạt.\n3. Hạt sau khi ngâm nước tiếp tục được để ở tủ ấm hoặc nơi khô thoáng để có điều kiện nhiệt độ thích hợp, kích thích hạt nảy mầm.\n4. Mục đích của việc đậy chuông kín trong thí nghiệm là để carbon dioxide của không khí không vào bên trong chuông được.\n5. Cốc nước vôi trong ở chuông có hạt nảy mầm trở nên đục và có váng trắng trên bề mặt, còn ở chuông không có hạt nảy mầm thì không có hiện tượng đó.",
+    "answer": null,
+    "explanation": "1 - Sai (ngâm nước ấm để làm mềm vỏ hạt, kích thích nảy mầm); 2 - Sai (bông ẩm để cung cấp độ ẩm cho hạt nảy mầm); 3 - Đúng; 4 - Đúng; 5 - Đúng."
+  },
+  {
+    "id": "khtn7-27-4",
+    "bai": 27,
+    "type": "essay",
+    "question": "Hoa chia 300g hạt lạc thành hai phần bằng nhau: một phần cất vào túi nylon hút chân không, một phần để trên đĩa trong phòng. Sau 7 ngày, trên đĩa nhiều hạt nảy mầm, trong túi nylon không có hạt nảy mầm.\na) Thí nghiệm chứng minh điều gì?\nb) Hiện tượng hạt lạc nảy mầm liên quan đến quá trình sinh lí nào?\nc) Tại sao hạt lạc để trên đĩa nảy mầm còn hạt trong túi nylon thì không?",
+    "answer": null,
+    "explanation": "a) Chứng minh: nồng độ oxygen, độ ẩm phù hợp giúp hạt thực hiện hô hấp tế bào, cung cấp năng lượng cho quá trình nảy mầm.\nb) Liên quan đến quá trình hô hấp tế bào.\nc) Hạt trong túi nylon hút chân không thiếu oxygen và độ ẩm không phù hợp, hô hấp tế bào không diễn ra đủ mạnh để cung cấp năng lượng cho hạt nảy mầm."
+  },
+  {
+    "id": "khtn7-27-5",
+    "bai": 27,
+    "type": "essay",
+    "question": "Bạn An ủ hạt ngô trong túi vải ẩm. Khoảng 3 ngày sau khi hạt nhú mầm, An thấy túi ngô ấm lên. Hãy giải thích hiện tượng trên.",
+    "answer": null,
+    "explanation": "Khi hạt nảy mầm, quá trình hô hấp tế bào diễn ra mạnh để cung cấp năng lượng cho sự sinh trưởng. Một phần năng lượng giải phóng dưới dạng nhiệt, làm cho túi ngô ấm lên."
+  },
+  {
+    "id": "khtn7-27-6",
+    "bai": 27,
+    "type": "essay",
+    "question": "Tại sao trong thí nghiệm quan sát hô hấp ở hạt nảy mầm, cốc nước vôi trong ở chuông có đĩa hạt đậu nảy mầm có váng đục trên bề mặt?",
+    "answer": null,
+    "explanation": "Hạt nảy mầm hô hấp tế bào thải ra khí CO₂. CO₂ phản ứng với nước vôi trong Ca(OH)₂ tạo kết tủa CaCO₃ không tan, làm nước vôi đục và có váng trắng trên bề mặt: CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O."
   }
 ]
