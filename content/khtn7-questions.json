@@ -2588,5 +2588,89 @@
     "question": "Ở thí nghiệm chứng minh quang hợp giải phóng khí oxygen, nếu đưa que đóm còn tàn đỏ lên miệng ống nghiệm mà que đóm không cháy, theo em nguyên nhân nào dẫn đến hiện tượng đó? Em hãy đề xuất cách nhận biết khác trong thí nghiệm chứng minh quang hợp giải phóng khí oxygen.",
     "answer": null,
     "explanation": "Nguyên nhân que đóm không cháy: lượng oxygen tạo ra chưa đủ lớn (thời gian theo dõi chưa đủ, ánh sáng yếu, ít cành rong).\nCách khác: Cắm ngập cành rong đuôi chó trong ống nghiệm có nước (ngọn quay xuống đáy, cuống hướng lên miệng, cuống ngập dưới mặt nước khoảng 2 cm), đặt sát đèn điện. Sau khoảng 30 phút có thể quan sát các bọt khí oxygen tạo thành nổi lên."
+  },
+  {
+    "id": "khtn7-25-1",
+    "bai": 25,
+    "type": "essay",
+    "question": "Chọn từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau:\nHô hấp tế bào là quá trình phân giải các phân tử chất ___(1)___, với sự tham gia của ___(2)___, tạo thành khí ___(3)___ và nước, đồng thời sinh ra năng lượng dễ sử dụng cung cấp cho các ___(4)___ của cơ thể.",
+    "answer": null,
+    "explanation": "(1) hữu cơ; (2) khí oxygen; (3) carbon dioxide; (4) hoạt động."
+  },
+  {
+    "id": "khtn7-25-2",
+    "bai": 25,
+    "type": "essay",
+    "question": "Chọn từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau:\nQuá trình hô hấp ở cơ thể sinh vật xảy ra trong ___(1)___ của tế bào, tại đó các chất ___(2)___ tổng hợp được từ quá trình ___(3)___ hoặc từ thức ăn được phân giải thành ___(4)___ và carbon dioxide, đồng thời giải phóng ra ___(5)___.",
+    "answer": null,
+    "explanation": "(1) ti thể; (2) hữu cơ; (3) quang hợp; (4) nước; (5) năng lượng."
+  },
+  {
+    "id": "khtn7-25-3",
+    "bai": 25,
+    "type": "essay",
+    "question": "So sánh các thành phần tham gia hô hấp ở tế bào động vật và tế bào thực vật.",
+    "answer": null,
+    "explanation": "Giống nhau: đều sử dụng các nguyên liệu gồm chất hữu cơ và oxygen.\nKhác nhau: chất hữu cơ mà tế bào thực vật sử dụng có nguồn gốc từ quang hợp; chất hữu cơ mà tế bào động vật sử dụng được lấy từ thức ăn."
+  },
+  {
+    "id": "khtn7-25-4",
+    "bai": 25,
+    "type": "essay",
+    "question": "Viết phương trình hô hấp tế bào. So sánh phương trình hô hấp với phương trình quang hợp.",
+    "answer": null,
+    "explanation": "Phương trình hô hấp tế bào:\nGlucose + Oxygen → Carbon dioxide + Nước + ATP (năng lượng)\n\nSo sánh: Phương trình hô hấp tế bào và phương trình quang hợp là hai phương trình có chiều trái ngược nhau — quang hợp tổng hợp glucose từ CO₂ và H₂O (tích luỹ năng lượng), hô hấp phân giải glucose thành CO₂ và H₂O (giải phóng năng lượng)."
+  },
+  {
+    "id": "khtn7-25-5",
+    "bai": 25,
+    "type": "mcq",
+    "question": "Trong tế bào của hầu hết các sinh vật nhân thực, quá trình hô hấp xảy ra trong loại bào quan nào?",
+    "options": [
+      "Không bào.",
+      "Lục lạp.",
+      "Ti thể.",
+      "Nhân tế bào."
+    ],
+    "answer": "C",
+    "explanation": "Hô hấp tế bào xảy ra chủ yếu trong ti thể, nơi diễn ra chuỗi phản ứng tạo ra ATP."
+  },
+  {
+    "id": "khtn7-25-6",
+    "bai": 25,
+    "type": "mcq",
+    "question": "Nhận xét nào sau đây là đúng khi nói về quá trình quang hợp và hô hấp?",
+    "options": [
+      "Đây là các quá trình trái ngược nhau, không liên quan với nhau.",
+      "Đây là các quá trình liên tiếp và thống nhất với nhau.",
+      "Đây là các quá trình có nguyên liệu giống nhau nhưng kết quả khác nhau.",
+      "Đây là các quá trình ngược nhau nhưng phụ thuộc lẫn nhau."
+    ],
+    "answer": "D",
+    "explanation": "Quang hợp và hô hấp là hai quá trình ngược chiều nhau nhưng phụ thuộc lẫn nhau: sản phẩm của quang hợp (glucose, O₂) là nguyên liệu của hô hấp và ngược lại."
+  },
+  {
+    "id": "khtn7-25-7",
+    "bai": 25,
+    "type": "essay",
+    "question": "Kết nối các thông tin ở cột A với cột B để được nội dung phù hợp:\nCột A: 1. Hô hấp tế bào; 2. Phần lớn năng lượng hô hấp tế bào; 3. Năng lượng tích luỹ dưới dạng hợp chất hoá học (ATP) trong tế bào; 4. Một phần năng lượng được sản phóng trong hô hấp tế bào.\nCột B: a) được tích luỹ dưới dạng hợp chất hoá học (ATP); b) dễ sử dụng cho các hoạt động sống của cơ thể sinh vật; c) dưới dạng nhiệt; d) gồm một chuỗi các phản ứng sinh ra năng lượng.",
+    "answer": null,
+    "explanation": "1 - d; 2 - a; 3 - b; 4 - c."
+  },
+  {
+    "id": "khtn7-25-8",
+    "bai": 25,
+    "type": "essay",
+    "question": "Hãy giải thích vì sao khi đói, cơ thể người thường cử động chậm và không muốn hoạt động.",
+    "answer": null,
+    "explanation": "Khi đói, lượng đường glucose trong máu giảm, cơ thể thiếu nguyên liệu (glucose) cho hô hấp tế bào dẫn đến tình trạng thiếu năng lượng cung cấp cho các hoạt động sống, vì vậy cơ thể có biểu hiện mệt mỏi, tay chân cử động chậm chạp."
+  },
+  {
+    "id": "khtn7-25-9",
+    "bai": 25,
+    "type": "essay",
+    "question": "Vận dụng kiến thức về hô hấp tế bào, giải thích hiện tượng con người khi ở trên đỉnh núi cao thường thở nhanh hơn so với khi ở vùng đồng bằng.",
+    "answer": null,
+    "explanation": "Ở trên đỉnh núi cao, không khí loãng, nồng độ oxygen thấp hơn so với vùng đồng bằng. Vì vậy, để lấy đủ lượng oxygen cần thiết cho hoạt động hô hấp tế bào, con người phải thở nhanh hơn so với khi ở vùng đồng bằng."
   }
 ]
