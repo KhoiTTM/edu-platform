@@ -55,6 +55,7 @@ const LESSON_TITLES: Record<string, Record<number, string>> = {
     27: "SBT - KHTN 7 - Bài 27. Thực hành: Hô hấp ở thực vật",
     28: "SBT - KHTN 7 - Bài 28. Trao đổi khí ở sinh vật",
     29: "SBT - KHTN 7 - Bài 29. Vai trò của nước và chất dinh dưỡng đối với sinh vật",
+    30: "SBT - KHTN 7 - Bài 30. Trao đổi nước và chất dinh dưỡng ở thực vật",
   },
 };
 

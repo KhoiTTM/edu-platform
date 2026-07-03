@@ -2986,5 +2986,143 @@
     "question": "Ở người, iodine là thành phần cấu tạo của hormone tuyến giáp. Nếu chế độ ăn thiếu iodine sẽ có nguy cơ bị bệnh bướu cổ. Em hãy nêu một số loại thức ăn nên có trong bữa ăn hằng ngày để phòng tránh bệnh bướu cổ.",
     "answer": null,
     "explanation": "Các loại thức ăn giàu iodine nên bổ sung: cá biển, hải sản (tôm, cua, mực), rong biển/tảo bẹ, trứng gà, rau cần, muối iodine. Sử dụng muối iodine trong nấu ăn hằng ngày là biện pháp đơn giản và hiệu quả nhất để phòng bướu cổ."
+  },
+  {
+    "id": "khtn7-30-1",
+    "bai": 30,
+    "type": "mcq",
+    "question": "Một cành hoa bị héo sau khi được cắm vào nước một thời gian thì cành hoa tươi trở lại. Cấu trúc nào sau đây có vai trò quan trọng trong hiện tượng trên?",
+    "options": [
+      "Mạch rây.",
+      "Mạch gỗ.",
+      "Lông hút.",
+      "Vỏ rễ."
+    ],
+    "answer": "B",
+    "explanation": "Mạch gỗ vận chuyển nước và muối khoáng từ rễ lên thân, lá. Khi cắm cành hoa vào nước, mạch gỗ hút nước lên giúp cành hoa tươi trở lại."
+  },
+  {
+    "id": "khtn7-30-2",
+    "bai": 30,
+    "type": "mcq",
+    "question": "Ở thực vật, các chất nào dưới đây thường được vận chuyển từ rễ lên lá?",
+    "options": [
+      "Chất hữu cơ và chất khoáng.",
+      "Nước và chất khoáng.",
+      "Chất hữu cơ và nước.",
+      "Nước, chất hữu cơ và chất khoáng."
+    ],
+    "answer": "B",
+    "explanation": "Mạch gỗ vận chuyển nước và muối khoáng (chất vô cơ) từ rễ lên lá. Chất hữu cơ được vận chuyển qua mạch rây."
+  },
+  {
+    "id": "khtn7-30-3",
+    "bai": 30,
+    "type": "mcq",
+    "question": "Trong các loài thực vật sau đây, loài nào có rễ dài nhất?",
+    "options": [
+      "Cây dừa.",
+      "Cây cà chua.",
+      "Cây cỏ lạc đà.",
+      "Cây lúa nước."
+    ],
+    "answer": "C",
+    "explanation": "Cây cỏ lạc đà (cây lạc đà) sống ở sa mạc khô hạn phát triển rễ rất dài để tìm kiếm nguồn nước sâu trong lòng đất."
+  },
+  {
+    "id": "khtn7-30-4",
+    "bai": 30,
+    "type": "mcq",
+    "question": "Hiện tượng nào dưới đây cho thấy sự vận chuyển chất hữu cơ theo mạch rây từ lá đến các bộ phận khác của cây?",
+    "options": [
+      "Mép lá có các giọt nước nhỏ vào những ngày độ ẩm không khí cao.",
+      "Khi cắt bỏ một khoanh vỏ ở thân cây thì sau một thời gian, mép vỏ phía trên bị phình to.",
+      "Lá cây bị héo quắt do Mặt Trời đốt nóng.",
+      "Nhựa rỉ ra từ gốc cây bị chặt bỏ thân."
+    ],
+    "answer": "B",
+    "explanation": "Mạch rây nằm trong vỏ cây. Khi cắt bỏ khoanh vỏ, mạch rây bị đứt → chất hữu cơ từ lá không vận chuyển xuống được, tích lại ở mép vỏ phía trên làm phình to."
+  },
+  {
+    "id": "khtn7-30-5",
+    "bai": 30,
+    "type": "mcq",
+    "question": "Nhu cầu nước của cây thấp nhất trong điều kiện thời tiết nào dưới đây?",
+    "options": [
+      "Mùa hè, nhiệt độ cao, độ ẩm trung bình.",
+      "Mùa thu, nhiệt độ trung bình, độ ẩm trung bình.",
+      "Mùa đông, nhiệt độ thấp, độ ẩm thấp.",
+      "Mùa xuân, nhiệt độ trung bình, độ ẩm cao."
+    ],
+    "answer": "D",
+    "explanation": "Mùa xuân có độ ẩm cao, cây thoát hơi nước ít hơn → nhu cầu nước thấp nhất. Nhiệt độ cao và độ ẩm thấp làm thoát hơi nước mạnh hơn."
+  },
+  {
+    "id": "khtn7-30-6",
+    "bai": 30,
+    "type": "mcq",
+    "question": "Con đường thoát hơi nước qua khí khổng có những đặc điểm nào?\n(1) Được điều chỉnh bằng việc đóng, mở khí khổng.\n(2) Tốc độ thoát hơi nước nhanh.\n(3) Không được điều chỉnh bằng việc đóng, mở khí khổng.\n(4) Tốc độ thoát hơi nước chậm.",
+    "options": [
+      "(1), (2).",
+      "(2), (3).",
+      "(3), (4).",
+      "(1), (4)."
+    ],
+    "answer": "A",
+    "explanation": "Thoát hơi nước qua khí khổng: được điều chỉnh bằng cơ chế đóng/mở khí khổng và tốc độ thoát hơi nước nhanh (chiếm ~90% lượng nước thoát ra)."
+  },
+  {
+    "id": "khtn7-30-7",
+    "bai": 30,
+    "type": "mcq",
+    "question": "Khi đưa cây đi trồng nơi khác, người ta thường làm gì để tránh cho cây không bị mất nước?",
+    "options": [
+      "Nhúng ngập cây vào nước.",
+      "Tỉa bớt cành, lá.",
+      "Cắt ngắn rễ.",
+      "Tưới đẫm nước cho cây."
+    ],
+    "answer": "B",
+    "explanation": "Tỉa bớt cành lá giúp giảm diện tích lá, từ đó giảm thoát hơi nước trong khi bộ rễ chưa phục hồi hoàn toàn sau khi bứng cây."
+  },
+  {
+    "id": "khtn7-30-8",
+    "bai": 30,
+    "type": "essay",
+    "question": "Chọn các từ/cụm từ thích hợp điền vào chỗ trống:\na) Nước và muối khoáng hoà tan trong đất được ___(1)___ của rễ hấp thụ, sau đó được chuyển qua phần ___(2)___ rồi thâm nhập vào ___(3)___ và tiếp tục được vận chuyển lên các bộ phận khác của cây.\nb) Thoát hơi nước có thể diễn ra qua bề mặt lá hoặc qua khí khổng. Cơ chế điều chỉnh sự thoát hơi nước chính là cơ chế điều tiết ___(1)___. Khi tế bào khí khổng ___(2)___ sẽ căng ra, khí khổng ___(3)___ để hơi nước thoát ra ngoài. Khi tế bào khí khổng bị ___(4)___ sẽ xẹp xuống, khí khổng sẽ ___(5)___ làm hạn chế sự thoát hơi nước.",
+    "answer": null,
+    "explanation": "a) (1) lông hút; (2) vỏ rễ; (3) mạch gỗ.\nb) (1) sự đóng, mở của khí khổng; (2) đủ nước/no nước; (3) mở rộng; (4) mất nước; (5) đóng lại."
+  },
+  {
+    "id": "khtn7-30-9",
+    "bai": 30,
+    "type": "essay",
+    "question": "Đôi khi ta có thể thấy hiện tượng có các giọt nước ở mép lá vào buổi sáng sớm. Hãy giải thích nguyên nhân của hiện tượng này.",
+    "answer": null,
+    "explanation": "Vào buổi sáng sớm, độ ẩm không khí cao, không khí đạt trạng thái bão hoà hơi nước. Nước vận chuyển từ mạch gỗ lên lá không thể thoát hơi qua khí khổng được, bị ứ đọng lại và thoát ra thành các giọt nước nhỏ ở mép lá (hiện tượng ứ giọt)."
+  },
+  {
+    "id": "khtn7-30-10",
+    "bai": 30,
+    "type": "essay",
+    "question": "Các khẳng định sau đây đúng hay sai?\n1. Chất hữu cơ do mạch rây vận chuyển có nguồn gốc chủ yếu từ quá trình quang hợp.\n2. Lá cây không có khả năng hấp thụ các chất khoáng.\n3. Nước và chất khoáng hoà tan trong đất được vỏ rễ hấp thụ vào tế bào lông hút.\n4. Quá trình hấp thụ chất khoáng từ môi trường vào rễ luôn đi kèm với quá trình hấp thụ nước.\n5. Để rễ cây phát triển tốt, cần làm cho đất tơi xốp, thoáng khí trước khi trồng cây và xới xáo đất, vun gốc định kì.\n6. Độ ẩm không khí càng cao, sự thoát hơi nước diễn ra càng mạnh.\n7. Hàm lượng nước trong tế bào khí khổng là một yếu tố quyết định sự đóng mở của khí khổng.\n8. Phần lớn lượng nước mà cây hấp thụ từ rễ sẽ thoát hơi qua lá.\n9. Vào những ngày khô hanh, độ ẩm không khí thấp hoặc những ngày nắng nóng cần tưới nước cho cây ít hơn bình thường.\n10. Thoát hơi nước ở lá là động lực để vận chuyển nước và chất khoáng từ rễ lên lá.",
+    "answer": null,
+    "explanation": "1-Đ; 2-S (lá có thể hấp thụ qua phun lá); 3-S (lông hút hấp thụ, không phải vỏ rễ); 4-Đ; 5-Đ; 6-S (độ ẩm cao → thoát hơi nước yếu hơn); 7-Đ; 8-Đ; 9-S (ngày khô nóng cần tưới nhiều hơn); 10-Đ."
+  },
+  {
+    "id": "khtn7-30-11",
+    "bai": 30,
+    "type": "essay",
+    "question": "Sau những trận mưa lớn kéo dài, hầu hết cây trong vườn bị ngập úng lâu và bị chết. Tại sao khi bị ngập nước cây lại chết mặc dù nước có vai trò rất quan trọng đối với sự sống của cây?",
+    "answer": null,
+    "explanation": "Do ngập nước lâu ngày, rễ cây bị thiếu oxygen nên quá trình hô hấp ở rễ bị ngừng trệ. Điều này khiến tế bào rễ (đặc biệt tế bào lông hút) bị huỷ hoại, mất khả năng hút nước và chất khoáng. Kết quả là cây bị chết do thiếu nước và dinh dưỡng trong tế bào, dù rễ đang ngập trong nước."
+  },
+  {
+    "id": "khtn7-30-12",
+    "bai": 30,
+    "type": "essay",
+    "question": "Giải thích: a) Tưới nước hợp lí cho cây trồng là như thế nào? b) Nếu sự thoát hơi nước ở lá không diễn ra thì điều gì sẽ xảy ra?",
+    "answer": null,
+    "explanation": "a) Tưới nước hợp lí: dựa vào nhu cầu nước của loài cây, giai đoạn sinh trưởng, đặc điểm đất và thời tiết để quyết định lượng nước và thời điểm tưới phù hợp.\nb) Nếu thoát hơi nước không diễn ra: vận chuyển nước và muối khoáng từ rễ lên thân bị chậm hoặc ngừng; khí khổng không mở nên CO₂ không vào được lá → quang hợp bị ảnh hưởng; nhiệt độ lá tăng cao do không có sự bay hơi làm mát. Về lâu dài, cây sinh trưởng chậm và có thể chết."
   }
 ]
