@@ -40,6 +40,7 @@ async function getAssessmentMap(subject: string, grade?: number) {
       26: "Bài 26: Một số yếu tố ảnh hưởng đến hô hấp tế bào",
       27: "Bài 27: Thực hành: Hô hấp ở thực vật",
       28: "Bài 28: Trao đổi khí ở sinh vật",
+      29: "Bài 29: Vai trò của nước và chất dinh dưỡng đối với sinh vật",
     };
     const countByBai: Record<number, number> = {};
     for (const q of questions as any[]) {

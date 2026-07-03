@@ -2870,5 +2870,121 @@
     "question": "Tại sao khi ở trong phòng kín đông người một thời gian thì nhịp hô hấp của cơ thể thường tăng? Em hãy đề xuất biện pháp để quá trình trao đổi khí ở người diễn ra thuận lợi khi ở trong phòng đông người, phòng ngủ, lớp học.",
     "answer": null,
     "explanation": "Trong phòng kín đông người, CO₂ ngày càng tăng, O₂ ngày càng giảm do hô hấp. Không khí hít vào thiếu O₂ nên nhịp hô hấp tăng để lấy đủ O₂ cho cơ thể.\nBiện pháp: mở cửa sổ, lắp quạt thông gió, trồng cây xanh trong phòng để đảm bảo thông thoáng và duy trì nồng độ O₂ phù hợp."
+  },
+  {
+    "id": "khtn7-29-1",
+    "bai": 29,
+    "type": "mcq",
+    "question": "Nước là dung môi hoà tan nhiều chất trong cơ thể sống vì chúng có:",
+    "options": [
+      "Nhiệt dung riêng cao.",
+      "Liên kết hydrogen giữa các phân tử.",
+      "Nhiệt bay hơi cao.",
+      "Tính phân cực."
+    ],
+    "answer": "D",
+    "explanation": "Nước có tính phân cực (đầu O mang điện âm, đầu H mang điện dương) nên có khả năng hoà tan nhiều chất ion và phân cực khác."
+  },
+  {
+    "id": "khtn7-29-2",
+    "bai": 29,
+    "type": "mcq",
+    "question": "Khi tìm kiếm sự sống ở các hành tinh khác trong vũ trụ, các nhà khoa học trước hết tìm kiếm xem ở đó có nước không vì:",
+    "options": [
+      "Nước được cấu tạo từ các nguyên tố quan trọng là oxygen và hydrogen.",
+      "Nước là thành phần chủ yếu của mọi tế bào và cơ thể sống, giúp tế bào tiến hành chuyển hoá vật chất và duy trì sự sống.",
+      "Nước là dung môi hoà tan nhiều chất cần thiết cho các hoạt động của tế bào.",
+      "Nước là môi trường sống của nhiều loài sinh vật."
+    ],
+    "answer": "B",
+    "explanation": "Nước là thành phần chủ yếu của mọi tế bào và cơ thể sống, không có nước thì các quá trình chuyển hoá vật chất không thể diễn ra và sự sống không tồn tại."
+  },
+  {
+    "id": "khtn7-29-3",
+    "bai": 29,
+    "type": "mcq",
+    "question": "Loài thực vật nào sau đây có thể thích nghi với môi trường khô hạn, thiếu nước kéo dài?",
+    "options": [
+      "Sen.",
+      "Hoa hồng.",
+      "Ngô.",
+      "Xương rồng."
+    ],
+    "answer": "D",
+    "explanation": "Xương rồng có thân mọng nước, lá biến thành gai để giảm thoát hơi nước, thích nghi với môi trường khô hạn."
+  },
+  {
+    "id": "khtn7-29-4",
+    "bai": 29,
+    "type": "mcq",
+    "question": "Cây trồng nào dưới đây cần nhiều đạm hơn những cây còn lại?",
+    "options": [
+      "Củ đậu.",
+      "Lạc.",
+      "Cà rốt.",
+      "Rau muống."
+    ],
+    "answer": "D",
+    "explanation": "Rau muống là cây lấy lá nên cần nhiều nitrogen (đạm) để tổng hợp diệp lục và protein cho lá phát triển tốt."
+  },
+  {
+    "id": "khtn7-29-5",
+    "bai": 29,
+    "type": "mcq",
+    "question": "Một số nguyên tố khoáng cây trồng cần một lượng rất nhỏ nhưng không thể thiếu như Cu, Bo, Mo. Các nguyên tố này tham gia cấu tạo nên:",
+    "options": [
+      "Diệp lục.",
+      "Các chất hữu cơ xây dựng nên tế bào.",
+      "Các enzyme xúc tác cho các phản ứng hoá học trong tế bào.",
+      "Protein và nucleic acid."
+    ],
+    "answer": "C",
+    "explanation": "Các nguyên tố vi lượng (Cu, Bo, Mo...) chủ yếu tham gia cấu tạo hoặc hoạt hoá các enzyme xúc tác phản ứng sinh hoá trong tế bào."
+  },
+  {
+    "id": "khtn7-29-6",
+    "bai": 29,
+    "type": "mcq",
+    "question": "Cơ thể sẽ gặp nguy hiểm nếu không được bổ sung nước kịp thời trong những trường hợp nào dưới đây?\n(1) Sốt cao. (2) Đi dạo. (3) Hoạt động thể thao ngoài trời với cường độ mạnh. (4) Ngồi xem phim. (5) Nôn mửa và tiêu chảy.",
+    "options": [
+      "(1), (3), (5).",
+      "(1), (2), (3).",
+      "(1), (3), (4).",
+      "(2), (4), (5)."
+    ],
+    "answer": "A",
+    "explanation": "Sốt cao, hoạt động thể thao mạnh và nôn mửa/tiêu chảy đều gây mất nước lớn, cần bổ sung nước kịp thời để tránh nguy hiểm."
+  },
+  {
+    "id": "khtn7-29-7",
+    "bai": 29,
+    "type": "essay",
+    "question": "Các khẳng định sau đây đúng hay sai?\n1. Protein tham gia cấu tạo tế bào và cơ thể sinh vật.\n2. Lipid là nguồn dự trữ năng lượng cho cơ thể.\n3. Chất xơ không thuộc nhóm carbohydrate.\n4. Ở người, thiếu vitamin D gây bệnh quáng gà.\n5. Ở người, thiếu vitamin A gây bệnh còi xương.\n6. Nitrogen là thành phần cấu tạo nên các chất hữu cơ quan trọng trong tế bào thực vật như diệp lục, protein, nucleic acid.\n7. Một số loại chất khoáng như Cu, Mo, Bor cây trồng cần một lượng rất nhỏ nhưng không thể thiếu.\n8. Nhu cầu các chất khoáng giống nhau ở tất cả các loài thực vật.\n9. Cây trồng khi bị thiếu nitrogen, lá sẽ có màu vàng.\n10. Cây trồng khi bị thiếu magnesium (Mg), lá sẽ có màu xanh đậm.",
+    "answer": null,
+    "explanation": "1-Đ; 2-Đ; 3-S (chất xơ là carbohydrate); 4-S (thiếu vitamin D gây còi xương, thiếu vitamin A gây quáng gà); 5-S (thiếu vitamin A gây quáng gà); 6-Đ; 7-Đ; 8-S (nhu cầu khoáng khác nhau theo loài); 9-Đ; 10-S (thiếu Mg lá vàng vì Mg là thành phần diệp lục)."
+  },
+  {
+    "id": "khtn7-29-8",
+    "bai": 29,
+    "type": "essay",
+    "question": "Kể tên một số loại phân bón mà em biết và nêu vai trò của chúng đối với thực vật.",
+    "answer": null,
+    "explanation": "1. Phân đạm: cung cấp nitrogen, thúc đẩy tăng trưởng, cây ra nhiều lá, lá xanh đậm, quang hợp tốt.\n2. Phân lân: cung cấp phosphorus, kích thích đẻ nhánh, ra hoa đậu quả, hạt chắc.\n3. Phân kali: cung cấp potassium, tham gia chuyển hoá năng lượng, giúp cây hút nước, chống chịu điều kiện bất lợi."
+  },
+  {
+    "id": "khtn7-29-9",
+    "bai": 29,
+    "type": "essay",
+    "question": "Em hãy giải thích vì sao cây bị héo khi thiếu nước?",
+    "answer": null,
+    "explanation": "Tế bào thực vật chứa khoảng 70% nước (thực vật thuỷ sinh có thể tới 90%). Khi có đủ nước, tế bào cứng và chắc nhờ áp suất thẩm thấu. Khi thiếu nước, tế bào không duy trì được hình dạng, mất sức trương nước dẫn đến hiện tượng cây bị héo."
+  },
+  {
+    "id": "khtn7-29-10",
+    "bai": 29,
+    "type": "essay",
+    "question": "Ở người, iodine là thành phần cấu tạo của hormone tuyến giáp. Nếu chế độ ăn thiếu iodine sẽ có nguy cơ bị bệnh bướu cổ. Em hãy nêu một số loại thức ăn nên có trong bữa ăn hằng ngày để phòng tránh bệnh bướu cổ.",
+    "answer": null,
+    "explanation": "Các loại thức ăn giàu iodine nên bổ sung: cá biển, hải sản (tôm, cua, mực), rong biển/tảo bẹ, trứng gà, rau cần, muối iodine. Sử dụng muối iodine trong nấu ăn hằng ngày là biện pháp đơn giản và hiệu quả nhất để phòng bướu cổ."
   }
 ]
