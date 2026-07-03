@@ -17,6 +17,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { createClient } from '@supabase/supabase-js';
+import ws from 'ws';
 
 // ---- Load .env.local (giống các seed script khác trong repo) ----
 const envPath = path.resolve('.env.local');
@@ -39,7 +40,7 @@ if (!supabaseUrl || !supabaseKey) {
   console.error('❌ Thiếu NEXT_PUBLIC_SUPABASE_URL hoặc SUPABASE key trong .env.local');
   process.exit(1);
 }
-const supabase = createClient(supabaseUrl, supabaseKey);
+const supabase = createClient(supabaseUrl, supabaseKey, { realtime: { transport: ws } });
 
 // ---- Loại câu hỏi runtime AssessmentRenderer render được ----
 // (đồng bộ với components/universal/AssessmentRenderer.tsx — cập nhật khi renderer đổi)

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Check, X, Volume2 } from "lucide-react";
 
 interface MultipleChoiceRendererProps {
@@ -13,6 +13,21 @@ interface MultipleChoiceRendererProps {
   shuffle?: boolean;
   imageUrl?: string;
   audioText?: string;
+}
+
+function KaTeXSpan({ latex }: { latex: string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  useEffect(() => {
+    import("katex").then((katex) => {
+      if (ref.current) {
+        ref.current.innerHTML = katex.default.renderToString(latex, {
+          throwOnError: false,
+          displayMode: false,
+        });
+      }
+    });
+  }, [latex]);
+  return <span ref={ref}>{latex}</span>;
 }
 
 function speak(text: string) {
@@ -71,60 +86,31 @@ export function MultipleChoiceRenderer({
   };
 
   // Helper to format inline tags and math
-  const formatText = (text: string) => {
+  const formatText = (text: string): React.ReactNode => {
     if (typeof text !== 'string') return text;
-    
-    // First, translate fractions \frac{A}{B} and \sqrt{X} to styled symbols
-    let processed = text
-      .replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, 
-        '<span class="inline-flex flex-col text-center align-middle mx-1"><span class="border-b border-current px-1 text-[11px] leading-none pb-0.5">$1</span><span class="text-[11px] leading-none pt-0.5">$2</span></span>'
-      )
-      .replace(/\\sqrt\{([^{}]+)\}/g, '√$1');
 
-    let formatted = processed
-      .replace(/\$([^\$]+)\$/g, (match, p1) => {
-        let math = p1
-          // Geometry & Trig symbols
-          .replace(/\\widehat\{([^{}]+)\}/g, '∠$1')
-          .replace(/\\circ/g, '°')
-          .replace(/\\parallel/g, '∥')
-          .replace(/\\perp/g, '⊥')
-          // Symbols
-          .replace(/\\in/g, '∈')
-          .replace(/\\neq/g, '≠')
-          .replace(/\\mathbb\{Z\}/g, 'ℤ')
-          .replace(/\\mathbb\{Q\}/g, 'ℚ')
-          .replace(/\\mathbb\{R\}/g, 'ℝ')
-          .replace(/\\mathbb\{N\}/g, 'ℕ')
-          .replace(/\\mathbb\{C\}/g, 'ℂ')
-          .replace(/\\notin/g, '∉')
-          .replace(/\\square/g, '□')
-          .replace(/\\subset/g, '⊂')
-          .replace(/\\supset/g, '⊃')
-          .replace(/\\cap/g, '∩')
-          .replace(/\\cup/g, '∪')
-          .replace(/\\le(?![a-zA-Z])/g, '≤')
-          .replace(/\\ge(?![a-zA-Z])/g, '≥')
-          .replace(/\\left/g, '')
-          .replace(/\\right/g, '')
-          .replace(/\\times/g, '×')
-          .replace(/\\div/g, '÷')
-          .replace(/\\cdot/g, '·')
-          .replace(/\\approx/g, '≈')
-          .replace(/\\pm/g, '±')
-          .replace(/\\degree/g, '°')
-          .replace(/\\alpha/g, 'α')
-          .replace(/\\beta/g, 'β')
-          .replace(/\\gamma/g, 'γ')
-          .replace(/\\Delta/g, 'Δ')
-          .replace(/\^\{?([^\{\}]+)\}?/g, '<sup>$1</sup>')
-          .replace(/_\{?([^\{\}]+)\}?/g, '<sub>$1</sub>');
-        return `<span class="font-mono text-amber-300 bg-amber-500/5 px-1 py-0.5 rounded border border-amber-500/10 italic">${math}</span>`;
-      })
-      .replace(/`([^`]+)`/g, '<code class="bg-rose-500/10 border border-rose-500/20 text-rose-300 rounded px-1.5 py-0.5 font-mono text-[13px]">$1</code>')
-      .replace(/\*\*([^*]+)\*\*/g, '<strong class="text-white font-extrabold">$1</strong>')
-      .replace(/\*([^*]+)\*/g, '<span class="text-amber-400 font-medium italic">$1</span>');
-    return <span dangerouslySetInnerHTML={{ __html: formatted }} />;
+    const tokens = text.split(/(\$[^$]+\$|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g);
+
+    return (
+      <span>
+        {tokens.map((token, i) => {
+          if (token.startsWith('$') && token.endsWith('$')) {
+            const latex = token.slice(1, -1);
+            return <KaTeXSpan key={i} latex={latex} />;
+          }
+          if (token.startsWith('**') && token.endsWith('**')) {
+            return <strong key={i} className="text-white font-extrabold">{token.slice(2, -2)}</strong>;
+          }
+          if (token.startsWith('*') && token.endsWith('*')) {
+            return <span key={i} className="text-amber-400 font-medium italic">{token.slice(1, -1)}</span>;
+          }
+          if (token.startsWith('`') && token.endsWith('`')) {
+            return <code key={i} className="bg-rose-500/10 border border-rose-500/20 text-rose-300 rounded px-1.5 py-0.5 font-mono text-[13px]">{token.slice(1, -1)}</code>;
+          }
+          return <span key={i}>{token}</span>;
+        })}
+      </span>
+    );
   };
 
   return (

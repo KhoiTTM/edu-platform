@@ -8,6 +8,7 @@ import { MatchPairRenderer } from './MatchPairRenderer';
 import { CategorizationRenderer } from './CategorizationRenderer';
 import { InlineFillBlankRenderer } from './InlineFillBlankRenderer';
 import { CrosswordRenderer } from './CrosswordRenderer';
+import { MathText } from './MathText';
 
 interface AssessmentRendererProps {
   questions: any[];
@@ -21,6 +22,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds }
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<any[]>([]);
   const [hasAnswered, setHasAnswered] = useState(false);
+  const [essayDone, setEssayDone] = useState(false);
   const [timeLeft, setTimeLeft] = useState<number>(timerSeconds || 0);
 
   const currentQuestion = questions[currentIndex];
@@ -91,6 +93,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds }
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(currentIndex + 1);
       setHasAnswered(false);
+      setEssayDone(false);
     } else {
       onComplete(answers);
     }
@@ -361,11 +364,47 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds }
           />
         );
       }
+      case 'essay': {
+        const essayExplanation = currentQuestion.explanation || currentQuestion.metadata_json?.explanation;
+        return (
+          <div className="flex flex-col gap-6 p-6 bg-slate-800/60 rounded-xl border border-slate-700">
+            <div className="text-white font-semibold text-base leading-relaxed">
+              <MathText text={currentQuestion.question || currentQuestion.stem || ""} />
+            </div>
+            <p className="text-xs text-slate-400 italic">Câu tự luận — tự làm vào vở rồi bấm bên dưới.</p>
+            {!essayDone ? (
+              <button
+                onClick={() => setEssayDone(true)}
+                className="w-full px-4 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-xl text-white font-bold transition-colors"
+              >
+                Đã làm xong — xem hướng dẫn giải →
+              </button>
+            ) : (
+              <div className="flex flex-col gap-4">
+                {essayExplanation && (
+                  <div className="p-4 bg-emerald-900/30 border border-emerald-500/40 rounded-xl">
+                    <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-2">Hướng dẫn giải</p>
+                    <div className="text-slate-200 text-sm leading-relaxed">
+                      <MathText text={essayExplanation} />
+                    </div>
+                  </div>
+                )}
+                <button
+                  onClick={() => { setEssayDone(false); handleAnswer(true, "essay_done"); }}
+                  className="w-full px-4 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-xl text-white font-bold transition-colors"
+                >
+                  Tiếp theo →
+                </button>
+              </div>
+            )}
+          </div>
+        );
+      }
       default:
         return (
           <div className="text-center p-8 bg-slate-800 rounded-xl text-slate-400">
             Unsupported question type: {currentQuestion.type}
-            <button 
+            <button
               onClick={() => handleAnswer(true, "skipped")}
               className="mt-4 block w-full px-4 py-2 bg-slate-700 hover:bg-slate-600 rounded-lg text-white"
             >

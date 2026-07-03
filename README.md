@@ -111,7 +111,7 @@ Route group này **chưa có `page.tsx`** (runtime đọc đề qua `(assessment
 
 - **Tạo/nạp đề:** generator chung `scripts/seed-exam-bank.ts` — nhận 1 file, nhiều file hoặc cả thư mục `content/exam-bank/`, validate đa loại câu hỏi, hỗ trợ `--dry-run`. Idempotent theo `(subject_slug, grade, title)` + `exam_number`.
 - **Xem đề (read-only):** tab **"Exam Bank"** trong `/phu-huynh` (`components/administration/parent/ExamBankExplorer.tsx` + action `getExamBankData`) — lọc môn/lớp/loại đề, xem chi tiết câu hỏi theo schema.
-- **Loại câu hỏi:** render bởi `components/universal/AssessmentRenderer.tsx` — gồm `multiple_choice`, `fill_blank`, `matching`, `sentence_reorder`, `crossword` (ô chữ, renderer `CrosswordRenderer.tsx`) và nhiều loại khác.
+- **Loại câu hỏi:** render bởi `components/universal/AssessmentRenderer.tsx` — gồm `multiple_choice`, `fill_blank`, `matching`, `sentence_reorder`, `crossword` (ô chữ, renderer `CrosswordRenderer.tsx`), `essay` (tự luận — hiện câu hỏi, học sinh làm vào vở rồi bấm tiếp) và nhiều loại khác.
 
 Tài liệu quy ước dữ liệu + **các bẫy đã biết** (migration 048 `concept_id` nullable; migration 049/050/051 + trigger tự sinh `title` theo `exam_type`; mã `units=[101]` cho đề giữa kỳ Toán): [`docs/EXAM_BANK.md`](./docs/EXAM_BANK.md). Scope từ vựng Tiếng Anh 3: [`docs/TIENGANH3_TAP1_SCOPE.md`](./docs/TIENGANH3_TAP1_SCOPE.md). **Đọc EXAM_BANK.md mục 6 trước khi chạy SQL trực tiếp lên `assessment_collections`/`question_bank`.**
 
@@ -176,7 +176,7 @@ edu-platform/
 │
 ├── content/                  # Dữ liệu tĩnh dạng file (JSON/PDF) — KHÔNG chứa runtime data
 │   ├── khtn-7-workbook.json   # Workbook KHTN 7 soạn tay, 10 bài — vẫn dùng bởi components/universal/WorkbookAnswerSheet.tsx (Universal Learning Engine, KHÔNG liên quan flipbook)
-│   ├── khtn7-questions.json   # Output luồng Quiz Text-Only — danh sách câu hỏi phẳng có đáp án, dùng bởi /flipbooks/khtn7/quiz
+│   ├── khtn7-questions.json   # Output luồng Quiz Text-Only — 216 câu (Bài 1–18), dùng bởi /flipbooks/khtn7/quiz và /luyen-tap/khtn?grade=7 (đọc JSON trực tiếp, không qua DB)
 │   ├── khtn7-answer-key.json  # Đáp án thô trích từ phần "HƯỚNG DẪN GIẢI" của sách, key "Bài.Câu"
 │   ├── english7-workbook.json
 │   ├── assessments/           # Đề thi import thủ công (xem AGENT_INSTRUCTIONS.md trong đó)
@@ -284,7 +284,7 @@ Ngoài ra có ~98 script một lần trong `scripts/` (tiền tố `seed-*`, `ge
 
 - [ ] Xây UI cho `(question-bank)` và `(exam-bank)` — hiện 2 route group này chưa có `page.tsx`, chỉ là tầng dữ liệu.
 - [ ] Hoàn thiện `lib/mastery/` (mới có `engine.ts` cơ bản) và `lib/adaptive/` (adaptive recommendation thật, hiện chỉ có sync engine).
-- [ ] Mở rộng pipeline OCR Quiz Text-Only cho các bài còn lại của sách SBT KHTN 7 (đã làm Bài 1-5, trang 1-23; còn ~124 trang/nhiều bài).
+- [ ] Mở rộng pipeline OCR Quiz Text-Only cho các bài còn lại của sách SBT KHTN 7 (đã làm Bài 1–18, trang 1–49, 216 câu; tiếp theo Bài 19 trang 49; xem tiến độ chi tiết tại `docs/khtn7_sbt_progress.md`).
 - [ ] Xây màn hình "Lịch sử làm bài" riêng cho học sinh tự xem lại chi tiết các lần quiz đã làm (hiện dữ liệu chi tiết từng câu đã lưu trong `learning_sessions.summary_metrics.answers`, nhưng chưa có UI đọc lại — `/dashboard` và `/phu-huynh` chỉ hiện tóm tắt điểm, không hiện chi tiết câu).
 - [ ] Mở rộng role `teacher`/`admin`.
 

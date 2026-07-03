@@ -5,29 +5,54 @@
 
 ## Trạng thái hiện tại
 
-**Đã OCR xong: Bài 1–15** (195 câu, trang 1–45)  
-**Tiếp theo: Bài 16** (bắt đầu trang 46, index PDF 45)
+**✅ HOÀN THÀNH TOÀN BỘ: Bài 1–42** (394 câu, trang 1–91)
 
 ## Bảng theo dõi
 
-| Bài | Tên bài | Trang PDF | Số câu | MCQ | Trạng thái |
-|-----|---------|-----------|--------|-----|------------|
-| 1 | Phương pháp và kĩ năng học tập môn Khoa học tự nhiên | 1–4 | 11 | 2 | ✅ Xong |
-| 2 | Nguyên tử | 5–10 | 21 | 12 | ✅ Xong |
-| 3 | Nguyên tố hoá học | 11–14 | 15 | 2 | ✅ Xong |
-| 4 | Sơ lược về bảng tuần hoàn các nguyên tố hoá học | 15–19 | 28 | 1 | ✅ Xong |
-| 5 | Phân tử - Đơn chất - Hợp chất | 20–23 | 16 | 6 | ✅ Xong |
-| 6 | Giới thiệu về liên kết hoá học | 24–25 | 13 | 5 | ✅ Xong |
-| 7 | Hoá trị và công thức hoá học | 26–29 | 17 | 4 | ✅ Xong |
-| 8 | Tốc độ chuyển động | 30–31 | 10 | 4 | ✅ Xong |
-| 9 | Đo tốc độ | 32 | 4 | 0 | ✅ Xong |
-| 10 | Đồ thị quãng đường – thời gian | 33–35 | 10 | 4 | ✅ Xong |
-| 11 | Thảo luận về ảnh hưởng của tốc độ trong an toàn giao thông | 35–37 | 6 | 3 | ✅ Xong |
-| 12 | Sóng âm | 38–39 | 10 | 3 | ✅ Xong |
-| 13 | Độ to và độ cao của âm | 39–41 | 12 | 6 | ✅ Xong |
-| 14 | Phản xạ âm, chống ô nhiễm tiếng ồn | 41–43 | 13 | 6 | ✅ Xong |
-| 15 | Năng lượng ánh sáng. Tia sáng, vùng tối | 44–45 | 9 | 5 | ✅ Xong |
-| 16–? | (các bài tiếp theo) | 46+ | ? | ? | ⏳ Chưa làm |
+| Bài | Tên bài | Trang PDF | Số câu | Trạng thái |
+|-----|---------|-----------|--------|------------|
+| 1 | Phương pháp và kĩ năng học tập môn Khoa học tự nhiên | 1–4 | 11 | ✅ Xong |
+| 2 | Nguyên tử | 5–10 | 22 | ✅ Xong |
+| 3 | Nguyên tố hoá học | 11–14 | 15 | ✅ Xong |
+| 4 | Sơ lược về bảng tuần hoàn các nguyên tố hoá học | 15–19 | 28 | ✅ Xong |
+| 5 | Phân tử - Đơn chất - Hợp chất | 20–23 | 16 | ✅ Xong |
+| 6 | Giới thiệu về liên kết hoá học | 24–25 | 13 | ✅ Xong |
+| 7 | Hoá trị và công thức hoá học | 26–29 | 17 | ✅ Xong |
+| 8 | Tốc độ chuyển động | 30–31 | 10 | ✅ Xong |
+| 9 | Đo tốc độ | 32 | 4 | ✅ Xong |
+| 10 | Đồ thị quãng đường – thời gian | 33–35 | 10 | ✅ Xong |
+| 11 | Thảo luận về ảnh hưởng của tốc độ trong an toàn giao thông | 35–37 | 6 | ✅ Xong |
+| 12 | Sóng âm | 38–39 | 10 | ✅ Xong |
+| 13 | Độ to và độ cao của âm | 39–41 | 12 | ✅ Xong |
+| 14 | Phản xạ âm, chống ô nhiễm tiếng ồn | 41–43 | 13 | ✅ Xong |
+| 15 | Năng lượng ánh sáng. Tia sáng, vùng tối | 44–45 | 9 | ✅ Xong |
+| 16 | Sự phản xạ ánh sáng | 46 | 6 | ✅ Xong |
+| 17 | Ảnh của vật qua gương phẳng | 47 | 6 | ✅ Xong |
+| 18 | Nam châm | 48–49 | 9 | ✅ Xong |
+| 19 | Từ trường | 49–51 | 9 | ✅ Xong |
+| 20 | Chế tạo nam châm điện đơn giản | 51–53 | 7 | ✅ Xong |
+| 21 | Khái quát về trao đổi chất và chuyển hoá năng lượng | 54–56 | 9 | ✅ Xong |
+| 22 | Quang hợp ở thực vật | 56–58 | 7 | ✅ Xong |
+| 23 | Một số yếu tố ảnh hưởng đến quang hợp | 58–59 | 7 | ✅ Xong |
+| 24 | Thực hành: Chứng minh quang hợp ở cây xanh | 59–60 | 7 | ✅ Xong |
+| 25 | Hô hấp tế bào | 60–62 | 9 | ✅ Xong |
+| 26 | Một số yếu tố ảnh hưởng đến hô hấp tế bào | 62–63 | 7 | ✅ Xong |
+| 27 | Thực hành: Hô hấp ở thực vật | 63–64 | 6 | ✅ Xong |
+| 28 | Trao đổi khí ở sinh vật | 64–65 | 8 | ✅ Xong |
+| 29 | Vai trò của nước và chất dinh dưỡng đối với sinh vật | 65–68 | 10 | ✅ Xong |
+| 30 | Trao đổi nước và chất dinh dưỡng ở thực vật | 68–71 | 12 | ✅ Xong |
+| 31 | Trao đổi nước và chất dinh dưỡng ở động vật | 71–73 | 8 | ✅ Xong |
+| 32 | Thực hành: Chứng minh thân vận chuyển nước và lá thoát hơi nước | 73 | 5 | ✅ Xong |
+| 33 | Cảm ứng ở sinh vật và tập tính ở động vật | 76–78 | 10 | ✅ Xong |
+| 34 | Vận dụng hiện tượng cảm ứng ở sinh vật vào thực tiễn | 78–80 | 5 | ✅ Xong |
+| 35 | Thực hành: Cảm ứng ở sinh vật | 79–80 | 2 | ✅ Xong |
+| 36 | Khái quát về sinh trưởng và phát triển ở sinh vật | 81–82 | 7 | ✅ Xong |
+| 37 | Ứng dụng sinh trưởng và phát triển ở sinh vật vào thực tiễn | 82–84 | 8 | ✅ Xong |
+| 38 | Thực hành: Quan sát, mô tả sự sinh trưởng và phát triển ở một số sinh vật | 84–85 | 5 | ✅ Xong |
+| 39 | Sinh sản vô tính ở sinh vật | 86–88 | 9 | ✅ Xong |
+| 40 | Sinh sản hữu tính ở sinh vật | 88–89 | 9 | ✅ Xong |
+| 41 | Một số yếu tố ảnh hưởng và điều hoà, điều khiển sinh sản ở sinh vật | 89–91 | 7 | ✅ Xong |
+| 42 | Cơ thể sinh vật là một thể thống nhất | 91 | 5 | ✅ Xong |
 
 > Trang bắt đầu của bài chưa OCR chỉ là ước tính — **luôn render ảnh xác nhận** trước khi OCR (xem Bước 0 trong `agent_prompt/implement_text_only_quiz_pipeline_prompt.md`).
 

@@ -37,3 +37,7 @@ yarn-error.log*
 *.pdf
 content/*.pdf
 /public/books
+
+# KaTeX (generated — run: cp node_modules/katex/dist/katex.min.css app/katex.min.css && sed -i 's|url(fonts/|url(/fonts/|g' app/katex.min.css)
+app/katex.min.css
+public/fonts/

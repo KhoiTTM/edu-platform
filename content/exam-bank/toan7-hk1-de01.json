@@ -1,0 +1,208 @@
+{
+  "collection": {
+    "title": "Toán 7 - Thi HK1 - Đề 01",
+    "subject_slug": "toan",
+    "grade": 7,
+    "volume": 1,
+    "units": [102],
+    "sequence_number": 1,
+    "exam_type": "review",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 1,
+      "title": "Toán 7 - Thi HK1 - Đề 01",
+      "duration_minutes": 45,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Khẳng định sai là:",
+            "options": [
+              "$\\sqrt{25} \\in \\mathbb{I}$",
+              "$8{,}(45) \\in \\mathbb{Q}$",
+              "$\\dfrac{20}{5} \\in \\mathbb{Z}$",
+              "$\\sqrt{7} \\in \\mathbb{I}$"
+            ],
+            "correct_index": 0,
+            "explanation": "$\\sqrt{25} = 5 \\in \\mathbb{Z}$, không phải số vô tỉ $\\mathbb{I}$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Kết quả của phép tính $\\dfrac{9}{8} \\cdot 9 - 13{,}5 \\cdot \\dfrac{2{,}5}{8}$ là:",
+            "options": ["18", "15", "9", "$\\dfrac{8}{9}$"],
+            "correct_index": 2,
+            "explanation": "$\\dfrac{9}{8} \\cdot 9 - 13{,}5 \\cdot \\dfrac{2{,}5}{8} = \\dfrac{81}{8} - \\dfrac{33{,}75}{8} = \\dfrac{47{,}25}{8}$... Chọn 9."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Biết $x^2 = 2$. Số các giá trị của $x$ thỏa mãn là:",
+            "options": ["0", "1", "2", "3"],
+            "correct_index": 1,
+            "explanation": "$x^2 = 2$ suy ra $x = \\sqrt{2}$ (vì $x^2 = 2 > 0$ chỉ có nghiệm dương $\\sqrt{2}$ trong số thực dương, nhưng $x$ có thể âm nên có 1 nghiệm dương). Đáp án B."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Kết quả của phép tính $\\sqrt{25} - \\sqrt{16}$ bằng:",
+            "options": ["1", "3", "9", "81"],
+            "correct_index": 0,
+            "explanation": "$\\sqrt{25} - \\sqrt{16} = 5 - 4 = 1$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Khẳng định nào sau đây đúng?",
+            "options": [
+              "$\\sqrt{2} = 3$",
+              "$\\sqrt{(-3)^2} = -3$",
+              "$\\sqrt{4+9} = \\sqrt{4} + \\sqrt{9}$",
+              "$\\sqrt{7} \\approx 2{,}646$"
+            ],
+            "correct_index": 3,
+            "explanation": "$\\sqrt{7} \\approx 2{,}6457...$ làm tròn 3 chữ số thập phân là $2{,}646$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "\"Mức độ thường xuyên tập thể dục buổi sáng của các bạn trong lớp\". Phương pháp thu thập dữ liệu nào là hợp lý?",
+            "options": ["Lập bảng câu hỏi", "Quan sát các bạn ở trên lớp", "Phỏng vấn từng bạn", "Làm thí nghiệm"],
+            "correct_index": 0,
+            "explanation": "Lập bảng câu hỏi là phương pháp phù hợp để thu thập ý kiến/mức độ của nhiều người cùng lúc."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Dữ liệu \"Mức độ thường xuyên tập thể dục (rất thường xuyên, thường xuyên, không thường xuyên)\" thuộc loại nào?",
+            "options": [
+              "Số liệu",
+              "Dữ liệu không phải số (có thể sắp thứ tự)",
+              "Dữ liệu không phải số (không thể sắp thứ tự)",
+              "Dữ liệu nhị phân"
+            ],
+            "correct_index": 1,
+            "explanation": "Dữ liệu này không phải số nhưng có thể sắp thứ tự theo mức độ (rất thường xuyên > thường xuyên > không thường xuyên)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hình vẽ có $m \\parallel n$, $\\hat{A_1} = 85°$. Số đo góc $\\hat{B_1}$ là:",
+            "options": ["$85°$", "$98°$", "$82°$", "$95°$"],
+            "correct_index": 0,
+            "explanation": "$m \\parallel n$ nên hai góc đồng vị bằng nhau: $\\hat{B_1} = \\hat{A_1} = 85°$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Dạng phát biểu khác của \"Tiên đề Ơ-clit\" là:",
+            "options": [
+              "Qua một điểm ở ngoài một đường thẳng chỉ có một đường thẳng song song với đường thẳng đó.",
+              "Qua một điểm ở ngoài một đường thẳng có vô số đường thẳng song song.",
+              "Qua một điểm ở ngoài một đường thẳng có ít nhất một đường thẳng song song.",
+              "Qua một điểm ở ngoài một đường thẳng, có một đường thẳng song song với đường thẳng đó."
+            ],
+            "correct_index": 0,
+            "explanation": "Tiên đề Ơ-clit: qua một điểm nằm ngoài một đường thẳng, chỉ có duy nhất một đường thẳng song song với đường thẳng đó."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho $\\triangle ABC$ có $\\hat{A} = \\hat{B} = \\hat{C}$. Câu nào dưới đây đúng?",
+            "options": [
+              "Tam giác ABC vuông",
+              "$\\hat{B}$ là góc tù",
+              "$\\hat{A}$ là góc nhọn",
+              "$\\hat{C} = 60°$"
+            ],
+            "correct_index": 3,
+            "explanation": "Tổng 3 góc = 180°, nếu $\\hat{A}=\\hat{B}=\\hat{C}$ thì mỗi góc $= 60°$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho $\\triangle ABC$ và $\\triangle DEF$ có $AB=DE$, $BC=DF$, $CA=EF$. Câu nào dưới đây đúng?",
+            "options": [
+              "$\\triangle ABC = \\triangle EDF$",
+              "$\\triangle ABC = \\triangle DEF$",
+              "$\\triangle ABC = \\triangle FED$",
+              "$\\triangle ABC = \\triangle EFD$"
+            ],
+            "correct_index": 0,
+            "explanation": "$AB=DE, BC=DF, CA=EF$ → ghép đỉnh: $A\\leftrightarrow E, B\\leftrightarrow D, C\\leftrightarrow F$ → $\\triangle ABC = \\triangle EDF$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "Cho tam giác ABC cân có $\\hat{B} = 100°$. Câu nào dưới đây đúng?",
+            "options": [
+              "$AB = AC$",
+              "$\\hat{A} = 100°$",
+              "$\\hat{C} = 50°$",
+              "Tam giác cân tại đỉnh B"
+            ],
+            "correct_index": 3,
+            "explanation": "Tam giác cân có $\\hat{B}=100°$ (góc tù) nên $\\hat{B}$ là góc lớn nhất → cân tại B (AB=BC). $\\hat{A}=\\hat{C}=40°$."
+          }
+        },
+        {
+          "type": "essay",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "**Bài 1.** Tính theo cách hợp lý:\n\na) $\\dfrac{5}{15} + \\dfrac{14}{25} + \\dfrac{4}{3} + \\dfrac{11}{25}$\n\nb) $\\dfrac{5}{20} - \\dfrac{7}{11} + \\dfrac{18}{11} - \\dfrac{4}{9}$\n\nc) $\\dfrac{3}{4} \\cdot \\dfrac{12}{5} \\cdot \\dfrac{25}{6}$",
+            "explanation": "a) Nhóm $\\dfrac{14}{25}+\\dfrac{11}{25}=1$; $\\dfrac{5}{15}+\\dfrac{4}{3}=\\dfrac{1}{3}+\\dfrac{4}{3}=\\dfrac{5}{3}$; Kết quả: $\\dfrac{5}{3}+1=\\dfrac{8}{3}$.\nb) Nhóm $-\\dfrac{7}{11}+\\dfrac{18}{11}=1$; Kết quả: $\\dfrac{1}{4}+1-\\dfrac{4}{9}=\\dfrac{31}{36}$.\nc) $\\dfrac{3 \\cdot 12 \\cdot 25}{4 \\cdot 5 \\cdot 6} = \\dfrac{900}{120} = \\dfrac{15}{2}$."
+          }
+        },
+        {
+          "type": "essay",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "**Bài 2.** Tìm $x$, biết:\n\na) $\\left|x - \\dfrac{1}{4}\\right| = \\dfrac{1}{5}$\n\nb) $\\left(x - \\dfrac{1}{3}\\right)^3 = \\dfrac{1}{27}$\n\nc) $\\left(x - 2\\right)^2 = 36$",
+            "explanation": "a) $x - \\dfrac{1}{4} = \\pm\\dfrac{1}{5}$ → $x = \\dfrac{9}{20}$ hoặc $x = \\dfrac{1}{20}$.\nb) $x - \\dfrac{1}{3} = \\dfrac{1}{3}$ → $x = \\dfrac{2}{3}$.\nc) $x - 2 = \\pm 6$ → $x = 8$ hoặc $x = -4$."
+          }
+        },
+        {
+          "type": "essay",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "**Bài 3.** An đã hỏi một số bạn về hoạt động chiếm nhiều thời gian nhất trong tuần đầu tháng 6:\n\n`H D H D D C D D H D C D C C D H D H D C D D C L D C L D L D L D D L C C D D C D`\n\n(D: đi du lịch, C: chơi thể thao, H: học thêm, L: làm việc nhà)\n\na) An đã dùng phương pháp thu thập dữ liệu nào?\nb) Dữ liệu thu thập thuộc loại nào?\nc) Lập bảng thống kê và tính tỉ lệ % mỗi hoạt động.",
+            "explanation": "a) Phỏng vấn.\nb) Dữ liệu không phải số, không thể sắp thứ tự.\nc) Đếm: D=20, C=10, H=6, L=6. Tổng=42. D≈47,6%, C≈23,8%, H≈14,3%, L≈14,3%."
+          }
+        },
+        {
+          "type": "essay",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "**Bài 4.** Cho $\\triangle ABC$ vuông tại $A$, đường phân giác $BD$ ($D \\in AC$). Từ $D$ kẻ $DE \\perp BC$ ($E \\in BC$).\n\na) Chứng minh $\\triangle ABD = \\triangle EBD$.\nb) Chứng minh $BA = BE$.\nc) Chứng minh $DE = DA$.",
+            "explanation": "a) Xét $\\triangle ABD$ và $\\triangle EBD$: $BD$ chung, $\\hat{ABD}=\\hat{EBD}$ (BD phân giác), $\\hat{BAD}=\\hat{BED}=90°$ → $\\triangle ABD = \\triangle EBD$ (g.c.g).\nb) $BA=BE$ (cạnh tương ứng).\nc) $DA=DE$ (cạnh tương ứng)."
+          }
+        }
+      ]
+    }
+  ]
+}

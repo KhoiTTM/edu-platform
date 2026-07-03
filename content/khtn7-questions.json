@@ -1948,5 +1948,1911 @@
     "type": "essay",
     "stem": "Hoạt động trải nghiệm ở sân trường: Dùng một chiếc thước dây có ĐCNN đến 1 cm, chiếc thước kẻ có ĐCNN đến 1 mm, chiếc cọc cao 1 m và bóng của nó, em hãy trình bày cách xác định chiều cao cột cờ trường em vào một ngày có nắng. Coi chùm ánh sáng mặt trời chiếu xuống Trái Đất trong phạm vi hẹp là chùm sáng song song.",
     "answer": ""
+  },
+  {
+    "id": "khtn7-16-1",
+    "bai": 16,
+    "cau": 1,
+    "type": "multiple_choice",
+    "stem": "Chỉ ra phát biểu sai.",
+    "options": [
+      "Ánh sáng bị hắt trở lại khi gặp mặt phân cách là hiện tượng phản xạ ánh sáng.",
+      "Phản xạ ánh sáng chỉ xảy ra trên mặt gương.",
+      "Tia sáng phản xạ nằm trong mặt phẳng chứa tia tới và pháp tuyến tại điểm tới.",
+      "Góc phản xạ là góc tạo bởi tia sáng phản xạ và đường pháp tuyến tại điểm tới."
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-16-2",
+    "bai": 16,
+    "cau": 2,
+    "type": "essay",
+    "stem": "Sắp xếp các thao tác thí nghiệm sau sao cho đúng thứ tự để rút ra mối quan hệ giữa góc tới và góc phản xạ trong hiện tượng phản xạ ánh sáng:\n– Di chuyển đèn để có giá trị góc tới 10°, quan sát tia sáng phản xạ, đọc góc phản xạ, ghi vào bảng số liệu. (1)\n– Bật đèn chiếu tia sáng tới, quan sát tia sáng phản xạ. (2)\n– So sánh góc phản xạ và góc tới. Rút ra kết luận về quan hệ giữa góc phản xạ và góc tới. (3)\n– Điều chỉnh vị trí đèn để tăng góc tới; đọc giá trị góc phản xạ tương ứng, ghi vào bảng số liệu. Lặp lại thí nghiệm với 4 lần các giá trị khác nhau của góc tới. (4)",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-16-3",
+    "bai": 16,
+    "cau": 3,
+    "type": "multiple_choice",
+    "stem": "Chiếu một tia sáng tới chếch một góc 20° vào một gương phẳng (Hình 16.1) ta được tia sáng phản xạ tạo với tia sáng tới một góc",
+    "options": [
+      "40°.",
+      "70°.",
+      "80°.",
+      "140°."
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "khtn7-16-4",
+    "bai": 16,
+    "cau": 4,
+    "type": "essay",
+    "stem": "Một tia mặt trời buổi sáng lọt qua khe chếch 45° so với mặt đất (coi mặt đất nằm ngang). Cần đặt gương phẳng như thế nào để thu được tia sáng phản xạ rọi thẳng đứng vào một bể cá dưới nền nhà. Vẽ hình.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-16-5",
+    "bai": 16,
+    "cau": 5,
+    "type": "essay",
+    "stem": "Phản xạ ánh sáng trên mặt hồ lăn tăn gợn sóng là phản xạ gương hay phản xạ khuếch tán?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-16-6",
+    "bai": 16,
+    "cau": 6,
+    "type": "essay",
+    "stem": "Hai gương phẳng G₁ và G₂ đặt vuông góc với nhau (Hình 16.2). Tia sáng SI chiếu chếch 45° vào gương phẳng G₁.\na) Vẽ Hình 16.2 vào vở và vẽ đường truyền của tia sáng lần lượt phản xạ qua G₁, G₂.\nb) Nêu nhận xét về đường truyền của tia sáng tới SI và tia sáng phản xạ cuối cùng (tia ló).",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-17-1",
+    "bai": 17,
+    "cau": 1,
+    "type": "multiple_choice",
+    "stem": "Chỉ ra phát biểu sai. Ảnh của vật qua gương phẳng",
+    "options": [
+      "là ảnh ảo, kích thước luôn bằng kích thước của vật.",
+      "là ảnh ảo, kích thước càng lớn khi vật càng gần gương phẳng.",
+      "là ảnh ảo, đối xứng với vật qua gương phẳng.",
+      "là ảnh ảo, khoảng cách từ ảnh tới gương phẳng bằng khoảng cách từ vật tới gương phẳng."
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-17-2",
+    "bai": 17,
+    "cau": 2,
+    "type": "essay",
+    "stem": "Cần bố trí gương phẳng như thế nào để có ảnh ngược chiều với vật?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-17-3",
+    "bai": 17,
+    "cau": 3,
+    "type": "essay",
+    "stem": "Một vật nhỏ dạng mũi tên AB đặt trước một gương phẳng cho ảnh A'B' như Hình 17.1. Em hãy vẽ Hình 17.1 vào vở và chỉ ra vị trí của gương phẳng bằng hình vẽ.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-17-4",
+    "bai": 17,
+    "cau": 4,
+    "type": "essay",
+    "stem": "Một người đặt mắt tại điểm M trước một gương phẳng để quan sát ảnh của bức tường phía sau lưng (Hình 17.2).\na) Vẽ hình chỉ ra khoảng PQ trên tường mà người đó quan sát được.\nb) Nếu tiến lại gần gương thì khoảng PQ tăng lên hay giảm đi?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-17-5",
+    "bai": 17,
+    "cau": 5,
+    "type": "essay",
+    "stem": "Một người khi tư vấn lắp gương cho một cửa hàng quần áo, đã nói rằng: \"Muốn soi được toàn thân cần lắp gương phẳng có chiều cao tối thiểu bằng 1/2 chiều cao cơ thể\". Người đó nói đúng không? Em hãy giải thích câu trả lời của mình.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-17-6",
+    "bai": 17,
+    "cau": 6,
+    "type": "essay",
+    "stem": "Một người cao 1,60 m, đứng cách một vũng nước nhỏ trên mặt sân 2 m, nhìn thấy ảnh của đỉnh một cột điện qua vũng nước. Khoảng cách từ vũng nước đến cột điện là 10 m (theo đường thẳng đi qua chỗ người đó đứng và vũng nước). Sử dụng thước học tập có ĐCNN đến 1 mm, chọn tỉ xích 1 cm ứng với 1 m, em hãy vẽ hình biểu diễn hiện tượng trên, từ đó xác định chiều cao cột điện. Coi mắt cách đỉnh đầu 10 cm.",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-18-1",
+    "bai": 18,
+    "cau": 1,
+    "type": "essay",
+    "stem": "Có hai thanh nam châm. Thanh nam châm thứ nhất được sơn màu, một nửa màu xanh trên ghi chữ S, nửa kia màu đỏ trên ghi chữ N. Thanh nam châm thứ hai không đánh dấu cực. Làm thế nào xác định được các cực của nam châm này?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-18-2",
+    "bai": 18,
+    "cau": 2,
+    "type": "essay",
+    "stem": "Hãy khoanh vào từ \"Đúng\" hoặc \"Sai\" các câu dưới đây nói về nam châm.\n1. Nam châm hút được tất cả các vật bằng kim loại. (Đúng / Sai)\n2. Nam châm nào cũng có 2 cực: một cực gọi là cực Bắc, một cực gọi là cực Nam. (Đúng / Sai)\n3. Hai nam châm cứ để gần nhau là hút nhau. (Đúng / Sai)\n4. Kim la bàn là một kim nam châm. Đầu kim la bàn chỉ hướng Bắc là đầu cực Nam của kim nam châm. (Đúng / Sai)",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-18-3",
+    "bai": 18,
+    "cau": 3,
+    "type": "multiple_choice",
+    "stem": "Mạt sắt đặt ở chỗ nào trên thanh nam châm thì bị hút mạnh nhất?",
+    "options": [
+      "Ở phần giữa của thanh.",
+      "Chỉ ở đầu cực Bắc của thanh nam châm.",
+      "Chỉ ở đầu cực Nam của thanh nam châm.",
+      "Ở cả hai đầu cực Bắc và cực Nam của thanh nam châm."
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "khtn7-18-4",
+    "bai": 18,
+    "cau": 4,
+    "type": "essay",
+    "stem": "Một nam châm vĩnh cửu hình chữ U, sơn đánh dấu cực trên nam châm đã bị tróc, bằng những cách nào xác định được cực của nam châm này?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-18-5",
+    "bai": 18,
+    "cau": 5,
+    "type": "multiple_choice",
+    "stem": "Một thanh nam châm bị gãy làm hai thì",
+    "options": [
+      "một nửa là cực Bắc, một nửa là cực Nam.",
+      "cả hai nửa đều mất từ tính.",
+      "mỗi nửa đều là một nam châm có hai cực Bắc – Nam.",
+      "mỗi nửa đều là một nam châm và cực của mỗi nửa ở chỗ đứt gãy cùng tên."
+    ],
+    "answer": "C"
+  },
+  {
+    "id": "khtn7-18-6",
+    "bai": 18,
+    "cau": 6,
+    "type": "essay",
+    "stem": "Xác định cực của kim nam châm ở Hình 18.1 (kim nam châm đặt gần thanh nam châm có cực S và N).",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-18-7",
+    "bai": 18,
+    "cau": 7,
+    "type": "essay",
+    "stem": "Xác định cực của kim nam châm ở Hình 18.2 (kim nam châm đặt gần thanh nam châm có cực N và S).",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-18-8",
+    "bai": 18,
+    "cau": 8,
+    "type": "multiple_choice",
+    "stem": "Trái Đất là một nam châm khổng lồ vì",
+    "options": [
+      "Trái Đất hút mọi vật về phía nó.",
+      "kim của la bàn đặt trên mặt đất luôn chỉ theo hướng Bắc – Nam.",
+      "Trái Đất có Bắc cực và Nam cực.",
+      "ở Trái Đất có nhiều quặng sắt."
+    ],
+    "answer": "B"
+  },
+  {
+    "id": "khtn7-18-9",
+    "bai": 18,
+    "cau": 9,
+    "type": "essay",
+    "stem": "Quan sát hai thanh nam châm đặt trong ống thuỷ tinh ở Hình 18.3. Tại sao thanh nam châm B lại lơ lửng phía trên thanh nam châm A?",
+    "answer": ""
+  },
+  {
+    "id": "khtn7-19-1",
+    "bai": 19,
+    "cau": 1,
+    "type": "essay",
+    "stem": "Trong thí nghiệm Oersted, một kim nam châm tự do đặt cân bằng song song với một đoạn dây dẫn AB, khi cho dòng điện chạy vào trong dây dẫn thì kim nam châm quay lệch khỏi vị trí ban đầu. Giải thích tại sao.",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-19-2",
+    "bai": 19,
+    "cau": 2,
+    "type": "essay",
+    "stem": "Hãy vẽ các đường sức từ đi qua các điểm A, B, C (biết phía trái là cực S, phía phải là cực N của nam châm thẳng).",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-19-3",
+    "bai": 19,
+    "cau": 3,
+    "type": "essay",
+    "stem": "Hãy vẽ một số đường sức từ trong khoảng giữa hai nam châm đặt gần nhau (hai cực cùng tên đối diện nhau: S-N | N-S).",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-19-4",
+    "bai": 19,
+    "cau": 4,
+    "type": "essay",
+    "stem": "Hãy vẽ một số đường sức từ của nam châm chữ U (cực N bên trái, cực S bên phải).",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-19-5",
+    "bai": 19,
+    "cau": 5,
+    "type": "essay",
+    "stem": "Xác định cực của nam châm thẳng khi biết chiều của kim nam châm đặt tại vị trí bên cạnh (kim nam châm có đầu N chỉ về phía cực chưa biết của nam châm).",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-19-6",
+    "bai": 19,
+    "cau": 6,
+    "type": "essay",
+    "stem": "Hãy đánh giá đúng hoặc sai các câu sau về từ trường:\n1. Từ trường chỉ có ở xung quanh nam châm vĩnh cửu.\n2. Từ trường tồn tại xung quanh nam châm, xung quanh dòng điện và xung quanh Trái Đất.\n3. Kim nam châm tự do là dụng cụ xác định tại một điểm nào đó có từ trường hay không.\n4. La bàn chỉ là dụng cụ xác định phương hướng, không thể xác định sự tồn tại của từ trường.",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-19-7",
+    "bai": 19,
+    "cau": 7,
+    "type": "multiple_choice",
+    "stem": "Lực từ tác dụng lên kim nam châm đặt tại vị trí nào trên hình là mạnh nhất (vị trí 1 ở giữa hai cực, vị trí 2 và 3 gần cực, vị trí 4 xa cực)?",
+    "options": [
+      "Vị trí 1",
+      "Vị trí 2",
+      "Vị trí 3",
+      "Vị trí 4"
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "khtn7-19-8",
+    "bai": 19,
+    "cau": 8,
+    "type": "essay",
+    "stem": "Xác định chiều của kim nam châm đặt ở giữa hai nhánh của nam châm hình chữ U (cực N bên trái, cực S bên phải).",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-19-9",
+    "bai": 19,
+    "cau": 9,
+    "type": "multiple_choice",
+    "stem": "Từ trường của Trái Đất mạnh nhất ở những vùng nào?",
+    "options": [
+      "Ở xích đạo",
+      "Chỉ ở Bắc Cực",
+      "Chỉ ở vùng Nam Cực",
+      "Ở vùng Bắc Cực và Nam Cực"
+    ],
+    "answer": "D"
+  },
+  {
+    "id": "khtn7-20-1",
+    "bai": 20,
+    "cau": 1,
+    "type": "essay",
+    "stem": "Làm thế nào để thay đổi cực từ của nam châm điện?",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-20-2",
+    "bai": 20,
+    "cau": 2,
+    "type": "essay",
+    "stem": "Trong điều kiện chỉ có dòng điện yếu chạy vào ống dây dẫn của nam châm điện, làm thế nào để lực từ của nam châm điện mạnh hơn?",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-20-3",
+    "bai": 20,
+    "cau": 3,
+    "type": "essay",
+    "stem": "Hình 20.1 vẽ ba nam châm điện A, B, C. Mỗi nam châm đều có cùng dòng điện chạy vào ống dây.\na) Giải thích vì sao từ trường của nam châm điện B mạnh hơn từ trường của nam châm điện A.\nb) Giải thích vì sao từ trường của nam châm điện C mạnh hơn từ trường của nam châm điện B.\nc) Bằng cách nào có thể xác định các vị trí bên ngoài nam châm điện C cũng có từ trường?",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-20-4",
+    "bai": 20,
+    "cau": 4,
+    "type": "essay",
+    "stem": "Hãy đánh giá đúng hoặc sai các câu sau về nam châm điện:\n1. Nam châm điện chỉ gồm một ống dây dẫn.\n2. Từ trường của nam châm điện tương tự từ trường của nam châm thẳng.\n3. Từ trường của nam châm điện tồn tại ngay cả sau khi ngắt dòng điện chạy vào ống dây dẫn.\n4. Từ trường của nam châm điện phụ thuộc dòng điện chạy vào ống dây và lõi sắt trong lòng ống dây.",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-20-5",
+    "bai": 20,
+    "cau": 5,
+    "type": "essay",
+    "stem": "Xác định cực của nam châm điện khi có dòng điện chạy trong ống dây như Hình 20.2 (biết đầu B là cực N, đầu còn lại chưa biết).",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-20-6",
+    "bai": 20,
+    "cau": 6,
+    "type": "essay",
+    "stem": "Một kim nam châm đặt trước đầu ống dây của nam châm điện. Đổi chiều dòng điện trong ống dây có hiện tượng gì xảy ra? Giải thích.",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-20-7",
+    "bai": 20,
+    "cau": 7,
+    "type": "essay",
+    "stem": "Dòng điện vào động cơ điện thường rất lớn, có khi đến hàng nghìn ampe. Nếu để công tắc điện trực tiếp ở mạch điện này thì rất nguy hiểm, cho nên người ta dùng rơle điện từ. Hình 20.4 là sơ đồ mô tả ứng dụng của rơle điện từ: (1) nam châm điện; (2) thanh thép đàn hồi; (3) công tắc điện; (4) lò xo; (5) động cơ điện. Hãy giải thích hoạt động của thiết bị này.",
+    "options": [],
+    "answer": null
+  },
+  {
+    "id": "khtn7-21-1",
+    "bai": 21,
+    "type": "essay",
+    "question": "Chọn các từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau:\nChuyển hoá năng lượng là sự ___(1)___ năng lượng từ dạng này sang dạng khác như từ ___(2)___ thành hoá năng; từ hoá năng thành nhiệt năng. Năng lượng thường được tích luỹ trong ___(3)___. Sự trao đổi chất và chuyển hoá ___(4)___ gắn liền với nhau; quá trình này được coi là một trong những đặc tính ___(5)___ của sự sống.",
+    "answer": null,
+    "explanation": "Gợi ý: (1) biến đổi; (2) quang năng/cơ năng; (3) hợp chất hữu cơ/ATP; (4) năng lượng; (5) cơ bản"
+  },
+  {
+    "id": "khtn7-21-2",
+    "bai": 21,
+    "type": "essay",
+    "question": "Cho các yếu tố: thức ăn; oxygen; carbon dioxide; nhiệt năng; chất thải; chất hữu cơ; ATP. Xác định những yếu tố mà cơ thể người lấy vào; thải ra và tích luỹ trong cơ thể.",
+    "answer": null,
+    "explanation": "Lấy vào: thức ăn, oxygen. Thải ra: carbon dioxide, nhiệt năng, chất thải. Tích luỹ: chất hữu cơ, ATP."
+  },
+  {
+    "id": "khtn7-21-3",
+    "bai": 21,
+    "type": "essay",
+    "question": "Cho các yếu tố: chất khoáng; năng lượng; oxygen; carbon dioxide; chất hữu cơ; nước. Xác định yếu tố lấy vào, thải ra và tích luỹ trong cơ thể thực vật.",
+    "answer": null,
+    "explanation": "Lấy vào: chất khoáng, nước, carbon dioxide, năng lượng ánh sáng. Thải ra: oxygen, hơi nước. Tích luỹ: chất hữu cơ."
+  },
+  {
+    "id": "khtn7-21-4",
+    "bai": 21,
+    "type": "essay",
+    "question": "Chọn các từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau:\nTrao đổi chất và chuyển hoá ___(1)___ là đặc điểm cơ bản của sự sống; quá trình này có hai vai trò cơ bản là ___(2)___ cơ thể. Nhờ trao đổi chất nên cơ thể tự đổi mới thông qua quá trình đồng hoá và dị hoá. Đồng hoá là quá trình ___(3)___ các chất đơn giản thành các chất phức tạp. Dị hoá là quá trình ___(4)___ các chất phức tạp thành các chất đơn giản và tạo ra năng lượng.",
+    "answer": null,
+    "explanation": "Gợi ý: (1) năng lượng; (2) cung cấp năng lượng và kiến tạo; (3) tổng hợp; (4) phân giải"
+  },
+  {
+    "id": "khtn7-21-5",
+    "bai": 21,
+    "type": "mcq",
+    "question": "Trao đổi chất và chuyển hoá năng lượng có vai trò quan trọng đối với:",
+    "options": [
+      "Sự chuyển hoá của sinh vật.",
+      "Sự biến đổi các chất.",
+      "Sự trao đổi năng lượng.",
+      "Sự sống của sinh vật."
+    ],
+    "answer": "D",
+    "explanation": "Trao đổi chất và chuyển hoá năng lượng là đặc điểm cơ bản duy trì sự sống của sinh vật."
+  },
+  {
+    "id": "khtn7-21-6",
+    "bai": 21,
+    "type": "mcq",
+    "question": "Sinh vật có thể tồn tại, sinh trưởng, phát triển và thích nghi với môi trường là nhờ có quá trình nào?",
+    "options": [
+      "Quá trình trao đổi chất và sinh sản.",
+      "Quá trình chuyển hoá năng lượng.",
+      "Quá trình trao đổi chất và chuyển hoá năng lượng.",
+      "Quá trình trao đổi chất và cảm ứng."
+    ],
+    "answer": "C",
+    "explanation": "Trao đổi chất và chuyển hoá năng lượng là quá trình giúp sinh vật tồn tại, sinh trưởng, phát triển và thích nghi với môi trường."
+  },
+  {
+    "id": "khtn7-21-7",
+    "bai": 21,
+    "type": "essay",
+    "question": "Hãy dự đoán các tình huống có thể xảy ra khi con người không được cung cấp đủ không khí, nước uống và thức ăn.",
+    "answer": null,
+    "explanation": "Thiếu không khí (oxygen): tế bào không hô hấp được, thiếu năng lượng, có thể tử vong trong vài phút. Thiếu nước: mất nước, rối loạn chuyển hoá, tử vong sau vài ngày. Thiếu thức ăn: cơ thể dùng dự trữ (glycogen, mỡ, protein), suy kiệt dần."
+  },
+  {
+    "id": "khtn7-21-8",
+    "bai": 21,
+    "type": "essay",
+    "question": "Giải thích hiện tượng lá cây héo khi bị tách ra khỏi thân cây.",
+    "answer": null,
+    "explanation": "Khi lá bị tách ra khỏi thân, lá không còn nhận được nước và muối khoáng từ rễ qua thân. Lá vẫn tiếp tục thoát hơi nước qua khí khổng nhưng không được bù đắp, dẫn đến mất nước → tế bào mất áp suất thẩm thấu → lá héo."
+  },
+  {
+    "id": "khtn7-21-9",
+    "bai": 21,
+    "type": "essay",
+    "question": "Chuyển hoá năng lượng có vai trò gì đối với sự sống của sinh vật?",
+    "answer": null,
+    "explanation": "Chuyển hoá năng lượng cung cấp năng lượng (ATP) cho mọi hoạt động sống: sinh trưởng, vận động, sinh sản, cảm ứng. Không có chuyển hoá năng lượng, sinh vật không thể duy trì các hoạt động sống và sẽ chết."
+  },
+  {
+    "id": "khtn7-22-1",
+    "bai": 22,
+    "type": "essay",
+    "question": "Hoàn thành phương trình quang hợp bằng chữ:\nÁnh sáng\n___(1)___ + ___(2)___ → ___(3)___ + ___(4)___\nDiệp lục",
+    "answer": null,
+    "explanation": "(1) Carbon dioxide (CO₂); (2) Nước (H₂O); (3) Glucose (chất hữu cơ); (4) Oxygen (O₂)\nPhương trình: CO₂ + H₂O → Glucose + O₂ (nhờ ánh sáng và diệp lục)"
+  },
+  {
+    "id": "khtn7-22-2",
+    "bai": 22,
+    "type": "mcq",
+    "question": "Sản phẩm của quang hợp là:",
+    "options": [
+      "Nước, carbon dioxide.",
+      "Ánh sáng, diệp lục.",
+      "Oxygen, glucose.",
+      "Glucose, nước."
+    ],
+    "answer": "C",
+    "explanation": "Quang hợp tạo ra oxygen và glucose từ CO₂ và H₂O nhờ năng lượng ánh sáng và diệp lục."
+  },
+  {
+    "id": "khtn7-22-3",
+    "bai": 22,
+    "type": "essay",
+    "question": "Nêu các đặc điểm của lá cây phù hợp với chức năng quang hợp.",
+    "answer": null,
+    "explanation": "1. Phiến lá dạng bản mỏng, diện tích bề mặt lớn → tăng khả năng hấp thụ ánh sáng.\n2. Lớp biểu bì có nhiều khí khổng → CO₂ khuếch tán vào, O₂ và hơi nước thoát ra.\n3. Tế bào lá chứa nhiều lục lạp → hấp thụ năng lượng ánh sáng.\n4. Hệ gân lá phát triển → vận chuyển nước, muối khoáng vào và chất hữu cơ ra."
+  },
+  {
+    "id": "khtn7-22-4",
+    "bai": 22,
+    "type": "essay",
+    "question": "Lựa chọn từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau:\nQuang hợp là quá trình sử dụng ___(1)___ và khí ___(2)___ để tổng hợp ___(3)___ và giải phóng ___(4)___, nhờ năng lượng ___(5)___ đã được ___(6)___ hấp thụ. Đây là quá trình trao đổi chất và chuyển hoá năng lượng ở ___(7)___, trong đó quá trình trao đổi và chuyển hoá các chất luôn đi kèm với quá trình chuyển hoá ___(8)___ từ dạng ___(9)___ biến đổi thành dạng ___(10)___ tích luỹ trong các phân tử ___(11)___.\n(Gợi ý: oxygen; ánh sáng; diệp lục; nước; carbon dioxide; glucose; năng lượng; thực vật; quang năng; hoá năng; hữu cơ)",
+    "answer": null,
+    "explanation": "(1) nước; (2) carbon dioxide; (3) glucose; (4) oxygen; (5) ánh sáng; (6) diệp lục; (7) thực vật; (8) năng lượng; (9) quang năng; (10) hoá năng; (11) hữu cơ"
+  },
+  {
+    "id": "khtn7-22-5",
+    "bai": 22,
+    "type": "essay",
+    "question": "Các khẳng định sau đây đúng hay sai?\n1. Chỉ có lá mới có khả năng thực hiện quang hợp.\n2. Nước là nguyên liệu của quang hợp, được rễ cây hút từ môi trường bên ngoài vào và vận chuyển qua thân lên lá.\n3. Không có ánh sáng, cây vẫn quang hợp được.\n4. Trong quang hợp, năng lượng được biến đổi từ quang năng thành hoá năng.\n5. Trong lá cây, lục lạp tập trung nhiều ở tế bào lá.",
+    "answer": null,
+    "explanation": "1. Sai — các bộ phận xanh khác (thân non, vỏ quả xanh) cũng có thể quang hợp.\n2. Đúng.\n3. Sai — quang hợp cần ánh sáng.\n4. Đúng.\n5. Đúng."
+  },
+  {
+    "id": "khtn7-22-6",
+    "bai": 22,
+    "type": "essay",
+    "question": "Ghép đặc điểm của lá phù hợp với vai trò trong quang hợp:\nĐặc điểm: 1. Lớp biểu bì lá có nhiều khí khổng; 2. Trên phiến lá có nhiều gân lá; 3. Tế bào lá chứa nhiều lục lạp; 4. Diện tích bề mặt lớn; 5. Phiến lá có dạng bản mỏng.\nVai trò: a) Tăng khả năng hấp thụ ánh sáng; b) Giúp vận chuyển nguyên liệu và sản phẩm của quang hợp; c) Khí CO₂ dễ khuếch tán từ bên ngoài vào bên trong lá và khí O₂, hơi nước khuếch tán từ trong lá ra ngoài môi trường.",
+    "answer": null,
+    "explanation": "1 - c; 2 - b; 3 - a; 4 - a; 5 - a\n(Khí khổng và phiến mỏng → trao đổi khí; gân lá → vận chuyển; lục lạp và diện tích lớn → hấp thụ ánh sáng)"
+  },
+  {
+    "id": "khtn7-22-7",
+    "bai": 22,
+    "type": "essay",
+    "question": "Quan sát Hình 22 (sơ đồ quá trình quang hợp ở cây xanh), gọi tên các quá trình được đánh số trong hình và tên của những yếu tố liên quan đến quá trình đó.",
+    "answer": null,
+    "explanation": "Sơ đồ quang hợp thường bao gồm:\n- Nguyên liệu vào: CO₂ (từ khí khổng), H₂O (từ rễ qua thân), ánh sáng (hấp thụ bởi diệp lục trong lục lạp).\n- Sản phẩm ra: O₂ (thoát qua khí khổng), glucose (tích luỹ hoặc vận chuyển).\n- Diễn ra tại: lục lạp trong tế bào lá."
+  },
+  {
+    "id": "khtn7-23-1",
+    "bai": 23,
+    "type": "mcq",
+    "question": "Các yếu tố chủ yếu ngoài môi trường ảnh hưởng đến quang hợp là:",
+    "options": [
+      "Nước, hàm lượng khí carbon dioxide, hàm lượng khí oxygen.",
+      "Nước, hàm lượng khí carbon dioxide, ánh sáng, nhiệt độ.",
+      "Nước, hàm lượng khí oxygen, ánh sáng.",
+      "Nước, hàm lượng khí oxygen, nhiệt độ."
+    ],
+    "answer": "B",
+    "explanation": "Các yếu tố ngoài môi trường ảnh hưởng đến quang hợp gồm: nước, CO₂, ánh sáng và nhiệt độ."
+  },
+  {
+    "id": "khtn7-23-2",
+    "bai": 23,
+    "type": "mcq",
+    "question": "Chọn đáp án đúng khi nói về nhu cầu ánh sáng của cây ưa sáng và cây ưa bóng:",
+    "options": [
+      "Các cây ưa sáng không cần nhiều ánh sáng mạnh, các cây ưa bóng không cần nhiều ánh sáng.",
+      "Các cây ưa sáng cần nhiều ánh sáng mạnh; cây ưa bóng không cần nhiều ánh sáng.",
+      "Các cây ưa sáng cần nhiều ánh sáng mạnh; cây ưa bóng không cần ánh sáng.",
+      "Các cây ưa sáng không cần ánh sáng; cây ưa bóng cần ánh sáng mạnh."
+    ],
+    "answer": "B",
+    "explanation": "Cây ưa sáng cần cường độ ánh sáng cao để quang hợp tốt; cây ưa bóng thích nghi với ánh sáng yếu, không cần nhiều ánh sáng mạnh."
+  },
+  {
+    "id": "khtn7-23-3",
+    "bai": 23,
+    "type": "essay",
+    "question": "Các khẳng định sau đây đúng hay sai?\n1. Cây ưa sáng có nhu cầu ánh sáng thấp.\n2. Cường độ quang hợp tỉ lệ thuận với cường độ ánh sáng.\n3. Khi tế bào khí khổng mất nước thì khí khổng mở để CO₂ khuếch tán vào trong lá.\n4. Đa số thực vật bậc cao ở vùng nhiệt đới, khi nhiệt độ thấp (dưới 10°C) thường làm cho rễ cây bị thối, cây không hút được nước, ảnh hưởng đến quang hợp.\n5. Không có quang hợp thì không có sự sống trên Trái Đất.",
+    "answer": null,
+    "explanation": "1. Sai — cây ưa sáng cần ánh sáng cao.\n2. Sai — chỉ đúng đến một giới hạn, sau đó cường độ quang hợp không tăng thêm (bão hòa ánh sáng).\n3. Sai — khi khí khổng mất nước, khí khổng đóng lại.\n4. Đúng.\n5. Đúng."
+  },
+  {
+    "id": "khtn7-23-4",
+    "bai": 23,
+    "type": "essay",
+    "question": "Chọn các từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau:\nQuang hợp hấp thụ khí ___(1)___ góp phần giảm hiệu ứng nhà kính, cung cấp ___(2)___ cho hô hấp của các sinh vật và ___(3)___. Quang hợp tạo ___(4)___, là nguồn chất dinh dưỡng, ___(5)___ cho cơ thể thực vật và các sinh vật dị dưỡng, đồng thời cung cấp ___(6)___ cho ngành công nghiệp và dược liệu cho con người.",
+    "answer": null,
+    "explanation": "(1) carbon dioxide; (2) oxygen; (3) điều hoà khí hậu; (4) chất hữu cơ; (5) năng lượng; (6) nguyên liệu"
+  },
+  {
+    "id": "khtn7-23-5",
+    "bai": 23,
+    "type": "essay",
+    "question": "Kể tên các loại cây cảnh trồng trong nhà mà vẫn tươi tốt. Em hãy giải thích cơ sở khoa học của hiện tượng đó.",
+    "answer": null,
+    "explanation": "Ví dụ: cây trầu bà, cây lưỡi hổ, cây kim tiền, cây dương xỉ...\nCơ sở khoa học: đây là các cây ưa bóng, có khả năng quang hợp ở cường độ ánh sáng thấp (ánh sáng tán xạ trong nhà). Chúng đã thích nghi với điều kiện thiếu ánh sáng, có nhiều lục lạp và diệp lục để tận dụng ánh sáng yếu."
+  },
+  {
+    "id": "khtn7-23-6",
+    "bai": 23,
+    "type": "essay",
+    "question": "Bà ngoại của Mai gieo hạt rau cải ở vườn. Sau một tuần, cây cải đã lớn và chen chúc nhau. Mai thấy bà nhổ bớt những cây cải mọc gần nhau. Hãy giải thích ý nghĩa việc làm của bà.",
+    "answer": null,
+    "explanation": "Khi cây mọc chen chúc, các cây che khuất nhau, mỗi cây nhận được ít ánh sáng hơn → cường độ quang hợp giảm → cây sinh trưởng kém. Nhổ bớt cây (tỉa thưa) giúp các cây còn lại nhận đủ ánh sáng để quang hợp tốt hơn, phát triển mạnh và cho năng suất cao hơn."
+  },
+  {
+    "id": "khtn7-23-7",
+    "bai": 23,
+    "type": "essay",
+    "question": "Theo em, hình ảnh về bảo vệ rừng/cây xanh nói lên điều gì? Qua đó em muốn gửi thông điệp gì đến bạn bè và người thân? Em sẽ có những hành động cụ thể gì để thực hiện thông điệp đó?",
+    "answer": null,
+    "explanation": "Hình ảnh nói lên: tầm quan trọng của cây xanh/rừng đối với sự sống — cung cấp oxygen, hấp thụ CO₂, điều hòa khí hậu.\nThông điệp: hãy bảo vệ rừng và trồng cây xanh.\nHành động cụ thể: không chặt phá cây, tham gia trồng cây, tắt điện khi không dùng, hạn chế rác thải nhựa, tuyên truyền bảo vệ môi trường."
+  },
+  {
+    "id": "khtn7-24-1",
+    "bai": 24,
+    "type": "essay",
+    "question": "Sắp xếp các bước sau đây theo đúng trình tự thí nghiệm chứng minh quang hợp giải phóng oxygen:\n(1) Để một cốc ở chỗ tối hoặc bọc giấy đen, cốc còn lại để ra chỗ nắng.\n(2) Lấy 2 cành rong đuôi chó cho vào 2 ống nghiệm đã đổ đầy nước rồi úp vào 2 cốc nước đầy sao cho bọt khí không lọt vào.\n(3) Đưa que đóm còn tàn đỏ vào miệng ống nghiệm.\n(4) Theo dõi khoảng 6 giờ; nhẹ nhàng rút 2 cành rong ra, bịt kín ống nghiệm và lấy ống nghiệm ra khỏi 2 cốc rồi lật ngược lại.",
+    "answer": null,
+    "explanation": "Trình tự đúng: (2) → (1) → (4) → (3)."
+  },
+  {
+    "id": "khtn7-24-2",
+    "bai": 24,
+    "type": "mcq",
+    "question": "Khi nuôi cá cảnh trong bể kính, có thể làm tăng dưỡng khí cho cá bằng cách nào?",
+    "options": [
+      "Thả rong hoặc cây thuỷ sinh khác vào bể cá.",
+      "Tăng nhiệt độ trong bể.",
+      "Thắp đèn cả ngày và đêm.",
+      "Đổ thêm nước vào bể cá."
+    ],
+    "answer": "A",
+    "explanation": "Rong và cây thuỷ sinh quang hợp tạo ra oxygen hoà tan trong nước, cung cấp dưỡng khí cho cá."
+  },
+  {
+    "id": "khtn7-24-3",
+    "bai": 24,
+    "type": "essay",
+    "question": "Dựa vào nội dung bài thực hành, hãy cho biết những khẳng định sau đây đúng hay sai:\n(1) Sử dụng băng giấy đen bịt kín một phần lá ở cả 2 mặt nhằm không cho lá tiếp nhận ánh sáng, diệp lục ở phần lá bịt kín sẽ không hấp thụ ánh sáng để quang hợp tạo thành tinh bột.\n(2) Phần lá bị bịt kín bằng giấy đen vẫn tổng hợp được tinh bột.\n(3) Phần lá không dán băng giấy đen trong thí nghiệm trên tổng hợp được tinh bột.\n(4) Sử dụng băng giấy đen có thể biết được lá cây chỉ tổng hợp tinh bột khi có ánh sáng.\n(5) Thả thêm cành rong vào bể cá vì rong có tác dụng ức chế sự phát triển của các vi sinh vật gây hại cho cá.\n(6) Nguyên nhân làm que đóm còn tàn đỏ cháy bùng lên là do trong ống nghiệm có carbon dioxide.",
+    "answer": null,
+    "explanation": "(1) Đúng; (2) Sai — không có ánh sáng nên không quang hợp được; (3) Đúng; (4) Đúng; (5) Sai — rong thả vào để quang hợp tạo oxygen cho cá, không phải để ức chế vi sinh vật; (6) Sai — que đóm cháy là do trong ống nghiệm có oxygen (O₂), không phải CO₂."
+  },
+  {
+    "id": "khtn7-24-4",
+    "bai": 24,
+    "type": "mcq",
+    "question": "Vì sao trong thí nghiệm chứng minh tinh bột được tạo thành trong quang hợp lại sử dụng iodine làm thuốc thử?",
+    "options": [
+      "Dung dịch iodine phản ứng với tinh bột tạo màu xanh tím đặc trưng.",
+      "Chỉ có dung dịch iodine mới tác dụng với tinh bột.",
+      "Dung dịch iodine dễ tìm.",
+      "Dung dịch iodine phản ứng với tinh bột tạo màu đỏ đặc trưng."
+    ],
+    "answer": "A",
+    "explanation": "Iodine phản ứng đặc trưng với tinh bột tạo màu xanh tím, giúp nhận biết dễ dàng sự có mặt của tinh bột trong lá."
+  },
+  {
+    "id": "khtn7-24-5",
+    "bai": 24,
+    "type": "essay",
+    "question": "Quan sát Hình 24 (thí nghiệm với cây xanh và chuột trong chuông kín):\na) Mô tả hiện tượng quan sát được trong mỗi hình a, b, c. Giải thích các hiện tượng đó.\nb) Thí nghiệm trong hình chứng minh điều gì?",
+    "answer": null,
+    "explanation": "a) Hình a: Cây xanh trong chuông kín không có CO₂ → lá đổi màu, cây rũ cành lá vì không quang hợp được.\nHình b: Chuột trong chuông kín không có O₂ → chuột chết.\nHình c: Cây xanh và chuột cùng trong chuông kín → cả hai sống tốt vì chuột hô hấp thải CO₂ cho cây quang hợp; cây quang hợp thải O₂ cho chuột hô hấp.\nb) Thí nghiệm chứng minh: quang hợp cần CO₂ làm nguyên liệu và giải phóng O₂ cung cấp cho hô hấp của động vật."
+  },
+  {
+    "id": "khtn7-24-6",
+    "bai": 24,
+    "type": "essay",
+    "question": "Tại sao trong thí nghiệm chứng minh tinh bột được tạo thành trong quang hợp lại phải để chậu cây khoai lang trong bóng tối hai ngày?",
+    "answer": null,
+    "explanation": "Phải để chậu cây trong bóng tối hai ngày để quang hợp không xảy ra, lượng tinh bột đang có sẵn trong lá sẽ được vận chuyển đến các cơ quan khác. Đảm bảo khi dán băng giấy đen vào thì vị trí đó không còn tinh bột nữa — tránh kết quả sai khi nhỏ iodine."
+  },
+  {
+    "id": "khtn7-24-7",
+    "bai": 24,
+    "type": "essay",
+    "question": "Ở thí nghiệm chứng minh quang hợp giải phóng khí oxygen, nếu đưa que đóm còn tàn đỏ lên miệng ống nghiệm mà que đóm không cháy, theo em nguyên nhân nào dẫn đến hiện tượng đó? Em hãy đề xuất cách nhận biết khác trong thí nghiệm chứng minh quang hợp giải phóng khí oxygen.",
+    "answer": null,
+    "explanation": "Nguyên nhân que đóm không cháy: lượng oxygen tạo ra chưa đủ lớn (thời gian theo dõi chưa đủ, ánh sáng yếu, ít cành rong).\nCách khác: Cắm ngập cành rong đuôi chó trong ống nghiệm có nước (ngọn quay xuống đáy, cuống hướng lên miệng, cuống ngập dưới mặt nước khoảng 2 cm), đặt sát đèn điện. Sau khoảng 30 phút có thể quan sát các bọt khí oxygen tạo thành nổi lên."
+  },
+  {
+    "id": "khtn7-25-1",
+    "bai": 25,
+    "type": "essay",
+    "question": "Chọn từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau:\nHô hấp tế bào là quá trình phân giải các phân tử chất ___(1)___, với sự tham gia của ___(2)___, tạo thành khí ___(3)___ và nước, đồng thời sinh ra năng lượng dễ sử dụng cung cấp cho các ___(4)___ của cơ thể.",
+    "answer": null,
+    "explanation": "(1) hữu cơ; (2) khí oxygen; (3) carbon dioxide; (4) hoạt động."
+  },
+  {
+    "id": "khtn7-25-2",
+    "bai": 25,
+    "type": "essay",
+    "question": "Chọn từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau:\nQuá trình hô hấp ở cơ thể sinh vật xảy ra trong ___(1)___ của tế bào, tại đó các chất ___(2)___ tổng hợp được từ quá trình ___(3)___ hoặc từ thức ăn được phân giải thành ___(4)___ và carbon dioxide, đồng thời giải phóng ra ___(5)___.",
+    "answer": null,
+    "explanation": "(1) ti thể; (2) hữu cơ; (3) quang hợp; (4) nước; (5) năng lượng."
+  },
+  {
+    "id": "khtn7-25-3",
+    "bai": 25,
+    "type": "essay",
+    "question": "So sánh các thành phần tham gia hô hấp ở tế bào động vật và tế bào thực vật.",
+    "answer": null,
+    "explanation": "Giống nhau: đều sử dụng các nguyên liệu gồm chất hữu cơ và oxygen.\nKhác nhau: chất hữu cơ mà tế bào thực vật sử dụng có nguồn gốc từ quang hợp; chất hữu cơ mà tế bào động vật sử dụng được lấy từ thức ăn."
+  },
+  {
+    "id": "khtn7-25-4",
+    "bai": 25,
+    "type": "essay",
+    "question": "Viết phương trình hô hấp tế bào. So sánh phương trình hô hấp với phương trình quang hợp.",
+    "answer": null,
+    "explanation": "Phương trình hô hấp tế bào:\nGlucose + Oxygen → Carbon dioxide + Nước + ATP (năng lượng)\n\nSo sánh: Phương trình hô hấp tế bào và phương trình quang hợp là hai phương trình có chiều trái ngược nhau — quang hợp tổng hợp glucose từ CO₂ và H₂O (tích luỹ năng lượng), hô hấp phân giải glucose thành CO₂ và H₂O (giải phóng năng lượng)."
+  },
+  {
+    "id": "khtn7-25-5",
+    "bai": 25,
+    "type": "mcq",
+    "question": "Trong tế bào của hầu hết các sinh vật nhân thực, quá trình hô hấp xảy ra trong loại bào quan nào?",
+    "options": [
+      "Không bào.",
+      "Lục lạp.",
+      "Ti thể.",
+      "Nhân tế bào."
+    ],
+    "answer": "C",
+    "explanation": "Hô hấp tế bào xảy ra chủ yếu trong ti thể, nơi diễn ra chuỗi phản ứng tạo ra ATP."
+  },
+  {
+    "id": "khtn7-25-6",
+    "bai": 25,
+    "type": "mcq",
+    "question": "Nhận xét nào sau đây là đúng khi nói về quá trình quang hợp và hô hấp?",
+    "options": [
+      "Đây là các quá trình trái ngược nhau, không liên quan với nhau.",
+      "Đây là các quá trình liên tiếp và thống nhất với nhau.",
+      "Đây là các quá trình có nguyên liệu giống nhau nhưng kết quả khác nhau.",
+      "Đây là các quá trình ngược nhau nhưng phụ thuộc lẫn nhau."
+    ],
+    "answer": "D",
+    "explanation": "Quang hợp và hô hấp là hai quá trình ngược chiều nhau nhưng phụ thuộc lẫn nhau: sản phẩm của quang hợp (glucose, O₂) là nguyên liệu của hô hấp và ngược lại."
+  },
+  {
+    "id": "khtn7-25-7",
+    "bai": 25,
+    "type": "essay",
+    "question": "Kết nối các thông tin ở cột A với cột B để được nội dung phù hợp:\nCột A: 1. Hô hấp tế bào; 2. Phần lớn năng lượng hô hấp tế bào; 3. Năng lượng tích luỹ dưới dạng hợp chất hoá học (ATP) trong tế bào; 4. Một phần năng lượng được sản phóng trong hô hấp tế bào.\nCột B: a) được tích luỹ dưới dạng hợp chất hoá học (ATP); b) dễ sử dụng cho các hoạt động sống của cơ thể sinh vật; c) dưới dạng nhiệt; d) gồm một chuỗi các phản ứng sinh ra năng lượng.",
+    "answer": null,
+    "explanation": "1 - d; 2 - a; 3 - b; 4 - c."
+  },
+  {
+    "id": "khtn7-25-8",
+    "bai": 25,
+    "type": "essay",
+    "question": "Hãy giải thích vì sao khi đói, cơ thể người thường cử động chậm và không muốn hoạt động.",
+    "answer": null,
+    "explanation": "Khi đói, lượng đường glucose trong máu giảm, cơ thể thiếu nguyên liệu (glucose) cho hô hấp tế bào dẫn đến tình trạng thiếu năng lượng cung cấp cho các hoạt động sống, vì vậy cơ thể có biểu hiện mệt mỏi, tay chân cử động chậm chạp."
+  },
+  {
+    "id": "khtn7-25-9",
+    "bai": 25,
+    "type": "essay",
+    "question": "Vận dụng kiến thức về hô hấp tế bào, giải thích hiện tượng con người khi ở trên đỉnh núi cao thường thở nhanh hơn so với khi ở vùng đồng bằng.",
+    "answer": null,
+    "explanation": "Ở trên đỉnh núi cao, không khí loãng, nồng độ oxygen thấp hơn so với vùng đồng bằng. Vì vậy, để lấy đủ lượng oxygen cần thiết cho hoạt động hô hấp tế bào, con người phải thở nhanh hơn so với khi ở vùng đồng bằng."
+  },
+  {
+    "id": "khtn7-26-1",
+    "bai": 26,
+    "type": "mcq",
+    "question": "Cây xanh hô hấp vào thời gian nào trong ngày?",
+    "options": [
+      "Ban đêm.",
+      "Buổi sáng.",
+      "Cả ngày và đêm.",
+      "Ban ngày."
+    ],
+    "answer": "C",
+    "explanation": "Hô hấp tế bào diễn ra liên tục cả ngày lẫn đêm để cung cấp năng lượng cho các hoạt động sống của cây."
+  },
+  {
+    "id": "khtn7-26-2",
+    "bai": 26,
+    "type": "mcq",
+    "question": "Trong các nhận định dưới đây, có bao nhiêu nhận định đúng?\n(1) Tuỳ theo từng nhóm nông sản mà có cách bảo quản khác nhau.\n(2) Để bảo quản nông sản, cần làm ngưng quá trình hô hấp tế bào.\n(3) Cần lưu ý điều chỉnh các yếu tố: hàm lượng nước, khí carbon dioxide, khí oxygen và nhiệt độ khi bảo quản nông sản.\n(4) Cường độ hô hấp tỉ lệ thuận với hàm lượng nước trong các loại hạt.\n(5) Phơi khô nông sản sau thu hoạch là cách bảo quản nông sản tốt nhất.",
+    "options": [
+      "2.",
+      "3.",
+      "4.",
+      "5."
+    ],
+    "answer": "B",
+    "explanation": "Các ý đúng là: (1), (3), (4). Ý (2) sai — không thể làm ngưng hoàn toàn hô hấp, chỉ hạn chế. Ý (5) sai — phơi khô chỉ phù hợp với một số loại nông sản."
+  },
+  {
+    "id": "khtn7-26-3",
+    "bai": 26,
+    "type": "essay",
+    "question": "Lựa chọn cách bảo quản phù hợp cho các loại nông sản bằng cách ghép cột A với cột B:\nCột A: 1. Rau muống, cà chua, hành tây, bắp ngô tươi, dưa chuột, bắp cải, quả cam; 2. Hạt lúa, hạt ngô, hạt đỗ, hạt lạc; 3. Nấm đùi gà, nấm kim châm; 4. Khoai tây, dưa hấu.\nCột B: a) Phơi khô hoặc sấy khô; b) Để nơi khô ráo, thoáng khí; c) Để trong túi nylon hút chân không; d) Để trong túi nylon kín hoặc đục lỗ và bảo quản trong ngăn mát tủ lạnh.",
+    "answer": null,
+    "explanation": "1 - d; 2 - a; 3 - c; 4 - b."
+  },
+  {
+    "id": "khtn7-26-4",
+    "bai": 26,
+    "type": "essay",
+    "question": "Bạn An làm 2 thí nghiệm với hạt lạc: TN1 dùng hạt cất 3 tháng, TN2 dùng hạt cất 1 năm. Cả hai cùng ngâm nước và ủ nảy mầm trong điều kiện giống nhau.\na) Bạn An làm thí nghiệm trên nhằm mục đích gì?\nb) Em hãy dự đoán kết quả thí nghiệm và giải thích.\nc) Từ thí nghiệm trên, em rút ra kết luận gì?",
+    "answer": null,
+    "explanation": "a) Mục đích: chứng minh thời gian bảo quản hạt có ảnh hưởng tới hô hấp, thể hiện qua tỉ lệ nảy mầm của hạt giống.\nb) Dự đoán: TN1 có số hạt nảy mầm nhiều hơn TN2. Hạt bảo quản lâu vẫn xảy ra hô hấp phân giải chất dự trữ, làm giảm khả năng nảy mầm.\nc) Kết luận: ngoài các yếu tố nhiệt độ, oxygen, CO₂, độ ẩm, khả năng nảy mầm của hạt còn phụ thuộc vào thời gian bảo quản hạt giống."
+  },
+  {
+    "id": "khtn7-26-5",
+    "bai": 26,
+    "type": "essay",
+    "question": "Sau khi thu hoạch các loại hạt (ngô, thóc, đậu, lạc,...), cần thực hiện biện pháp nào để bảo quản? Vì sao để bảo quản các loại hạt giống nên đựng trong chum, vại, thùng mà không nên đựng trong bao tải (cói hoặc vải)?",
+    "answer": null,
+    "explanation": "Cần phơi hoặc sấy khô để giảm hàm lượng nước trong hạt, hạn chế hô hấp.\nNên đựng trong chum, vại, thùng kín để ngăn cách hạt với độ ẩm, nhiệt độ và oxygen từ môi trường, tránh hạt hô hấp mạnh và nảy mầm.\nKhông nên đựng trong bao tải (cói, vải) vì bao tải không kín, hạt vẫn hút ẩm và hấp thụ oxygen để hô hấp, làm giảm chất lượng hạt và có thể nảy mầm."
+  },
+  {
+    "id": "khtn7-26-6",
+    "bai": 26,
+    "type": "essay",
+    "question": "Tại sao trong nhiều siêu thị rau tươi được gói trong túi nylon có đục lỗ và để trong ngăn mát, trong khi khoai tây, cà rốt lại không cần bảo quản như vậy?",
+    "answer": null,
+    "explanation": "Rau tươi có hàm lượng nước cao, hô hấp mạnh → cần bảo quản trong ngăn mát để hạn chế hô hấp; túi đục lỗ giúp hơi nước thoát ra không đọng lại làm thối nhũn rau.\nKhoai tây và cà rốt có hàm lượng nước thấp hơn, hô hấp yếu hơn → chỉ cần bảo quản ở nơi khô ráo, thoáng khí là đủ."
+  },
+  {
+    "id": "khtn7-26-7",
+    "bai": 26,
+    "type": "essay",
+    "question": "Vận dụng kiến thức về hô hấp tế bào trong bảo quản nông sản, em hãy lấy ví dụ cách bảo quản phù hợp với các loại nông sản khác nhau và giải thích ý nghĩa.",
+    "answer": null,
+    "explanation": "Ví dụ:\n- Gạo, ngô hạt: phơi khô, đựng trong thùng kín → giảm nước và oxygen, hạn chế hô hấp.\n- Rau cải, xà lách: cho vào túi đục lỗ, để ngăn mát → giảm nhiệt độ và thoát hơi nước, hạn chế hô hấp.\n- Nấm tươi: hút chân không → loại oxygen, ngưng hô hấp hiếu khí.\n- Khoai lang, sắn: để nơi thoáng mát, khô ráo → giảm độ ẩm và nhiệt độ.\nÝ nghĩa chung: các biện pháp đều nhằm giảm cường độ hô hấp tế bào để bảo tồn chất hữu cơ, duy trì chất lượng nông sản."
+  },
+  {
+    "id": "khtn7-27-1",
+    "bai": 27,
+    "type": "essay",
+    "question": "Muốn hạt nảy mầm nhanh thì trước khi gieo hạt cần làm gì? Giải thích cơ sở khoa học của cách làm đó.",
+    "answer": null,
+    "explanation": "Ngâm hạt trong nước ấm trước khi gieo. Cơ sở khoa học: nước ấm làm mềm vỏ hạt, giúp hạt hút nước nhanh, phá vỡ trạng thái ngủ nghỉ, kích thích hô hấp tế bào cung cấp năng lượng cho quá trình nảy mầm."
+  },
+  {
+    "id": "khtn7-27-2",
+    "bai": 27,
+    "type": "essay",
+    "question": "Sắp xếp các bước sau theo đúng tiến trình thí nghiệm chứng minh hô hấp ở hạt nảy mầm:\n(1) Chọn những hạt chắc, không bị vỡ, không bị mọt.\n(2) Cho hạt ra đĩa Petri có lót bông ẩm hoặc giấy thấm ẩm.\n(3) Để đĩa trong tủ ấm hoặc nơi có ánh sáng mặt trời để hạt nảy mầm.\n(4) Ngâm hạt vào nước ấm.\n(5) Quan sát hiện tượng xảy ra ở cốc nước vôi trong.\n(6) Đặt đĩa Petri có hạt nảy mầm cùng cốc nước vôi trong vào chuông A. Đặt cốc nước vôi trong vào chuông B.",
+    "answer": null,
+    "explanation": "Trình tự đúng: (1) → (4) → (2) → (3) → (6) → (5)."
+  },
+  {
+    "id": "khtn7-27-3",
+    "bai": 27,
+    "type": "essay",
+    "question": "Các khẳng định sau đây đúng hay sai khi nói về thí nghiệm chứng minh hô hấp ở thực vật?\n1. Ngâm hạt trong nước ấm trước khi gieo là để rửa sạch các chất bẩn bám vào vỏ hạt.\n2. Lót bông hoặc giấy đã thấm ẩm rồi đặt trong đĩa Petri để tránh chuột và sâu bọ ăn hạt.\n3. Hạt sau khi ngâm nước tiếp tục được để ở tủ ấm hoặc nơi khô thoáng để có điều kiện nhiệt độ thích hợp, kích thích hạt nảy mầm.\n4. Mục đích của việc đậy chuông kín trong thí nghiệm là để carbon dioxide của không khí không vào bên trong chuông được.\n5. Cốc nước vôi trong ở chuông có hạt nảy mầm trở nên đục và có váng trắng trên bề mặt, còn ở chuông không có hạt nảy mầm thì không có hiện tượng đó.",
+    "answer": null,
+    "explanation": "1 - Sai (ngâm nước ấm để làm mềm vỏ hạt, kích thích nảy mầm); 2 - Sai (bông ẩm để cung cấp độ ẩm cho hạt nảy mầm); 3 - Đúng; 4 - Đúng; 5 - Đúng."
+  },
+  {
+    "id": "khtn7-27-4",
+    "bai": 27,
+    "type": "essay",
+    "question": "Hoa chia 300g hạt lạc thành hai phần bằng nhau: một phần cất vào túi nylon hút chân không, một phần để trên đĩa trong phòng. Sau 7 ngày, trên đĩa nhiều hạt nảy mầm, trong túi nylon không có hạt nảy mầm.\na) Thí nghiệm chứng minh điều gì?\nb) Hiện tượng hạt lạc nảy mầm liên quan đến quá trình sinh lí nào?\nc) Tại sao hạt lạc để trên đĩa nảy mầm còn hạt trong túi nylon thì không?",
+    "answer": null,
+    "explanation": "a) Chứng minh: nồng độ oxygen, độ ẩm phù hợp giúp hạt thực hiện hô hấp tế bào, cung cấp năng lượng cho quá trình nảy mầm.\nb) Liên quan đến quá trình hô hấp tế bào.\nc) Hạt trong túi nylon hút chân không thiếu oxygen và độ ẩm không phù hợp, hô hấp tế bào không diễn ra đủ mạnh để cung cấp năng lượng cho hạt nảy mầm."
+  },
+  {
+    "id": "khtn7-27-5",
+    "bai": 27,
+    "type": "essay",
+    "question": "Bạn An ủ hạt ngô trong túi vải ẩm. Khoảng 3 ngày sau khi hạt nhú mầm, An thấy túi ngô ấm lên. Hãy giải thích hiện tượng trên.",
+    "answer": null,
+    "explanation": "Khi hạt nảy mầm, quá trình hô hấp tế bào diễn ra mạnh để cung cấp năng lượng cho sự sinh trưởng. Một phần năng lượng giải phóng dưới dạng nhiệt, làm cho túi ngô ấm lên."
+  },
+  {
+    "id": "khtn7-27-6",
+    "bai": 27,
+    "type": "essay",
+    "question": "Tại sao trong thí nghiệm quan sát hô hấp ở hạt nảy mầm, cốc nước vôi trong ở chuông có đĩa hạt đậu nảy mầm có váng đục trên bề mặt?",
+    "answer": null,
+    "explanation": "Hạt nảy mầm hô hấp tế bào thải ra khí CO₂. CO₂ phản ứng với nước vôi trong Ca(OH)₂ tạo kết tủa CaCO₃ không tan, làm nước vôi đục và có váng trắng trên bề mặt: CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O."
+  },
+  {
+    "id": "khtn7-28-1",
+    "bai": 28,
+    "type": "mcq",
+    "question": "Trao đổi khí ở sinh vật là quá trình:",
+    "options": [
+      "Lấy khí O₂ từ môi trường vào cơ thể và thải khí CO₂ từ cơ thể ra môi trường.",
+      "Lấy khí CO₂ từ môi trường vào cơ thể và thải khí O₂ từ cơ thể ra môi trường.",
+      "Lấy khí O₂ hoặc CO₂ từ môi trường vào cơ thể, đồng thời thải khí CO₂ hoặc O₂ từ cơ thể ra môi trường.",
+      "Lấy khí CO₂ từ môi trường vào cơ thể, đồng thời thải khí O₂ và CO₂ ra ngoài môi trường."
+    ],
+    "answer": "C",
+    "explanation": "Trao đổi khí ở sinh vật bao gồm cả hô hấp (lấy O₂, thải CO₂) và quang hợp ở thực vật (lấy CO₂, thải O₂) — tùy quá trình và điều kiện."
+  },
+  {
+    "id": "khtn7-28-2",
+    "bai": 28,
+    "type": "mcq",
+    "question": "Trao đổi khí ở thực vật diễn ra thông qua quá trình nào?",
+    "options": [
+      "Quang hợp và thoát hơi nước.",
+      "Hô hấp.",
+      "Thoát hơi nước.",
+      "Quang hợp và hô hấp."
+    ],
+    "answer": "D",
+    "explanation": "Trao đổi khí ở thực vật diễn ra qua quang hợp (lấy CO₂, thải O₂) và hô hấp (lấy O₂, thải CO₂), cả hai đều qua khí khổng."
+  },
+  {
+    "id": "khtn7-28-3",
+    "bai": 28,
+    "type": "mcq",
+    "question": "Trong quá trình quang hợp ở thực vật, các khí được trao đổi qua khí khổng như thế nào?",
+    "options": [
+      "CO₂ và O₂ khuếch tán từ môi trường vào trong tế bào lá, hơi nước thoát ra.",
+      "O₂ và CO₂ khuếch tán từ trong tế bào lá ra môi trường.",
+      "O₂ khuếch tán từ môi trường vào trong tế bào lá, CO₂ khuếch tán từ trong tế bào lá ra môi trường.",
+      "CO₂ khuếch tán từ môi trường vào trong tế bào lá, O₂ khuếch tán từ trong tế bào lá ra môi trường."
+    ],
+    "answer": "D",
+    "explanation": "Trong quang hợp: CO₂ là nguyên liệu đi vào tế bào lá; O₂ là sản phẩm thoát ra ngoài qua khí khổng."
+  },
+  {
+    "id": "khtn7-28-4",
+    "bai": 28,
+    "type": "essay",
+    "question": "Chọn các từ/cụm từ phù hợp để hoàn thành đoạn thông tin về trao đổi khí ở động vật và thực vật:\nKhi cây được chiếu sáng và được cung cấp đủ nước, ___(1)___ mở, CO₂ từ môi trường khuếch tán vào tế bào lá và O₂ từ tế bào lá khuếch tán ra ngoài môi trường trong quá trình ___(2)___; ngược lại O₂ từ ngoài môi trường khuếch tán vào tế bào lá và CO₂ từ tế bào lá khuếch tán ra ngoài môi trường trong quá trình ___(3)___. Khí CO₂ do con người và động vật thải ra cung cấp cho cây xanh thực hiện quá trình quang hợp, tạo ra O₂ cung cấp cho hoạt động ___(4)___ của con người và động vật. Vì vậy trồng nhiều cây xanh sẽ giúp cho hoạt động ___(5)___ ở sinh vật diễn ra hiệu quả và nâng cao chất lượng cuộc sống.",
+    "answer": null,
+    "explanation": "(1) khí khổng; (2) quang hợp; (3) hô hấp; (4) hô hấp; (5) trao đổi khí."
+  },
+  {
+    "id": "khtn7-28-5",
+    "bai": 28,
+    "type": "essay",
+    "question": "Các khẳng định sau đây đúng hay sai?\n1. Độ mở của khí khổng tăng dần từ sáng đến tối.\n2. Khi cây thiếu ánh sáng và nước, quá trình trao đổi khí sẽ bị hạn chế.\n3. Ở tất cả các loài thực vật, khí khổng tập trung chủ yếu ở mặt trên của lá.\n4. Lau bụi cho lá là một biện pháp giúp quá trình trao đổi khí ở thực vật diễn ra thuận lợi.",
+    "answer": null,
+    "explanation": "1 - Sai (ban đêm khí khổng đóng lại); 2 - Đúng; 3 - Sai (thường tập trung ở mặt dưới của lá); 4 - Đúng."
+  },
+  {
+    "id": "khtn7-28-6",
+    "bai": 28,
+    "type": "essay",
+    "question": "Phân tích sự phù hợp giữa cấu tạo của khí khổng với chức năng trao đổi khí ở thực vật.",
+    "answer": null,
+    "explanation": "Khí khổng gồm hai tế bào hình hạt đậu nằm sát nhau, thành ngoài mỏng, thành trong dày. Khí khổng thông với các khoang chứa không khí bên trong phiến lá → thuận tiện cho trao đổi khí và thoát hơi nước.\nKhi tế bào no nước: thành mỏng căng → thành dày cong → khí khổng mở → CO₂ vào, O₂ ra.\nKhi tế bào mất nước: thành dày duỗi thẳng → khí khổng đóng → hạn chế thoát hơi nước và trao đổi khí."
+  },
+  {
+    "id": "khtn7-28-7",
+    "bai": 28,
+    "type": "essay",
+    "question": "Giải thích tại sao khi sưởi ấm bằng than hoặc củi trong phòng kín, người trong phòng có thể bị ngất hoặc nguy hiểm đến tính mạng. Em hãy đề xuất biện pháp giúp hạn chế nguy hiểm.",
+    "answer": null,
+    "explanation": "Khi đốt than, củi trong phòng kín, O₂ bị tiêu hao dần; đồng thời sinh ra khí CO và CO₂. Khi hít vào cơ thể, CO và CO₂ thay thế O₂ liên kết với tế bào hồng cầu, dẫn đến thiếu O₂ cho hô hấp tế bào, gây ngất và có thể tử vong.\nBiện pháp: mở cửa hoặc cửa sổ để khí lưu thông; không đốt than, củi khi ngủ; dùng thiết bị sưởi điện an toàn hơn."
+  },
+  {
+    "id": "khtn7-28-8",
+    "bai": 28,
+    "type": "essay",
+    "question": "Tại sao khi ở trong phòng kín đông người một thời gian thì nhịp hô hấp của cơ thể thường tăng? Em hãy đề xuất biện pháp để quá trình trao đổi khí ở người diễn ra thuận lợi khi ở trong phòng đông người, phòng ngủ, lớp học.",
+    "answer": null,
+    "explanation": "Trong phòng kín đông người, CO₂ ngày càng tăng, O₂ ngày càng giảm do hô hấp. Không khí hít vào thiếu O₂ nên nhịp hô hấp tăng để lấy đủ O₂ cho cơ thể.\nBiện pháp: mở cửa sổ, lắp quạt thông gió, trồng cây xanh trong phòng để đảm bảo thông thoáng và duy trì nồng độ O₂ phù hợp."
+  },
+  {
+    "id": "khtn7-29-1",
+    "bai": 29,
+    "type": "mcq",
+    "question": "Nước là dung môi hoà tan nhiều chất trong cơ thể sống vì chúng có:",
+    "options": [
+      "Nhiệt dung riêng cao.",
+      "Liên kết hydrogen giữa các phân tử.",
+      "Nhiệt bay hơi cao.",
+      "Tính phân cực."
+    ],
+    "answer": "D",
+    "explanation": "Nước có tính phân cực (đầu O mang điện âm, đầu H mang điện dương) nên có khả năng hoà tan nhiều chất ion và phân cực khác."
+  },
+  {
+    "id": "khtn7-29-2",
+    "bai": 29,
+    "type": "mcq",
+    "question": "Khi tìm kiếm sự sống ở các hành tinh khác trong vũ trụ, các nhà khoa học trước hết tìm kiếm xem ở đó có nước không vì:",
+    "options": [
+      "Nước được cấu tạo từ các nguyên tố quan trọng là oxygen và hydrogen.",
+      "Nước là thành phần chủ yếu của mọi tế bào và cơ thể sống, giúp tế bào tiến hành chuyển hoá vật chất và duy trì sự sống.",
+      "Nước là dung môi hoà tan nhiều chất cần thiết cho các hoạt động của tế bào.",
+      "Nước là môi trường sống của nhiều loài sinh vật."
+    ],
+    "answer": "B",
+    "explanation": "Nước là thành phần chủ yếu của mọi tế bào và cơ thể sống, không có nước thì các quá trình chuyển hoá vật chất không thể diễn ra và sự sống không tồn tại."
+  },
+  {
+    "id": "khtn7-29-3",
+    "bai": 29,
+    "type": "mcq",
+    "question": "Loài thực vật nào sau đây có thể thích nghi với môi trường khô hạn, thiếu nước kéo dài?",
+    "options": [
+      "Sen.",
+      "Hoa hồng.",
+      "Ngô.",
+      "Xương rồng."
+    ],
+    "answer": "D",
+    "explanation": "Xương rồng có thân mọng nước, lá biến thành gai để giảm thoát hơi nước, thích nghi với môi trường khô hạn."
+  },
+  {
+    "id": "khtn7-29-4",
+    "bai": 29,
+    "type": "mcq",
+    "question": "Cây trồng nào dưới đây cần nhiều đạm hơn những cây còn lại?",
+    "options": [
+      "Củ đậu.",
+      "Lạc.",
+      "Cà rốt.",
+      "Rau muống."
+    ],
+    "answer": "D",
+    "explanation": "Rau muống là cây lấy lá nên cần nhiều nitrogen (đạm) để tổng hợp diệp lục và protein cho lá phát triển tốt."
+  },
+  {
+    "id": "khtn7-29-5",
+    "bai": 29,
+    "type": "mcq",
+    "question": "Một số nguyên tố khoáng cây trồng cần một lượng rất nhỏ nhưng không thể thiếu như Cu, Bo, Mo. Các nguyên tố này tham gia cấu tạo nên:",
+    "options": [
+      "Diệp lục.",
+      "Các chất hữu cơ xây dựng nên tế bào.",
+      "Các enzyme xúc tác cho các phản ứng hoá học trong tế bào.",
+      "Protein và nucleic acid."
+    ],
+    "answer": "C",
+    "explanation": "Các nguyên tố vi lượng (Cu, Bo, Mo...) chủ yếu tham gia cấu tạo hoặc hoạt hoá các enzyme xúc tác phản ứng sinh hoá trong tế bào."
+  },
+  {
+    "id": "khtn7-29-6",
+    "bai": 29,
+    "type": "mcq",
+    "question": "Cơ thể sẽ gặp nguy hiểm nếu không được bổ sung nước kịp thời trong những trường hợp nào dưới đây?\n(1) Sốt cao. (2) Đi dạo. (3) Hoạt động thể thao ngoài trời với cường độ mạnh. (4) Ngồi xem phim. (5) Nôn mửa và tiêu chảy.",
+    "options": [
+      "(1), (3), (5).",
+      "(1), (2), (3).",
+      "(1), (3), (4).",
+      "(2), (4), (5)."
+    ],
+    "answer": "A",
+    "explanation": "Sốt cao, hoạt động thể thao mạnh và nôn mửa/tiêu chảy đều gây mất nước lớn, cần bổ sung nước kịp thời để tránh nguy hiểm."
+  },
+  {
+    "id": "khtn7-29-7",
+    "bai": 29,
+    "type": "essay",
+    "question": "Các khẳng định sau đây đúng hay sai?\n1. Protein tham gia cấu tạo tế bào và cơ thể sinh vật.\n2. Lipid là nguồn dự trữ năng lượng cho cơ thể.\n3. Chất xơ không thuộc nhóm carbohydrate.\n4. Ở người, thiếu vitamin D gây bệnh quáng gà.\n5. Ở người, thiếu vitamin A gây bệnh còi xương.\n6. Nitrogen là thành phần cấu tạo nên các chất hữu cơ quan trọng trong tế bào thực vật như diệp lục, protein, nucleic acid.\n7. Một số loại chất khoáng như Cu, Mo, Bor cây trồng cần một lượng rất nhỏ nhưng không thể thiếu.\n8. Nhu cầu các chất khoáng giống nhau ở tất cả các loài thực vật.\n9. Cây trồng khi bị thiếu nitrogen, lá sẽ có màu vàng.\n10. Cây trồng khi bị thiếu magnesium (Mg), lá sẽ có màu xanh đậm.",
+    "answer": null,
+    "explanation": "1-Đ; 2-Đ; 3-S (chất xơ là carbohydrate); 4-S (thiếu vitamin D gây còi xương, thiếu vitamin A gây quáng gà); 5-S (thiếu vitamin A gây quáng gà); 6-Đ; 7-Đ; 8-S (nhu cầu khoáng khác nhau theo loài); 9-Đ; 10-S (thiếu Mg lá vàng vì Mg là thành phần diệp lục)."
+  },
+  {
+    "id": "khtn7-29-8",
+    "bai": 29,
+    "type": "essay",
+    "question": "Kể tên một số loại phân bón mà em biết và nêu vai trò của chúng đối với thực vật.",
+    "answer": null,
+    "explanation": "1. Phân đạm: cung cấp nitrogen, thúc đẩy tăng trưởng, cây ra nhiều lá, lá xanh đậm, quang hợp tốt.\n2. Phân lân: cung cấp phosphorus, kích thích đẻ nhánh, ra hoa đậu quả, hạt chắc.\n3. Phân kali: cung cấp potassium, tham gia chuyển hoá năng lượng, giúp cây hút nước, chống chịu điều kiện bất lợi."
+  },
+  {
+    "id": "khtn7-29-9",
+    "bai": 29,
+    "type": "essay",
+    "question": "Em hãy giải thích vì sao cây bị héo khi thiếu nước?",
+    "answer": null,
+    "explanation": "Tế bào thực vật chứa khoảng 70% nước (thực vật thuỷ sinh có thể tới 90%). Khi có đủ nước, tế bào cứng và chắc nhờ áp suất thẩm thấu. Khi thiếu nước, tế bào không duy trì được hình dạng, mất sức trương nước dẫn đến hiện tượng cây bị héo."
+  },
+  {
+    "id": "khtn7-29-10",
+    "bai": 29,
+    "type": "essay",
+    "question": "Ở người, iodine là thành phần cấu tạo của hormone tuyến giáp. Nếu chế độ ăn thiếu iodine sẽ có nguy cơ bị bệnh bướu cổ. Em hãy nêu một số loại thức ăn nên có trong bữa ăn hằng ngày để phòng tránh bệnh bướu cổ.",
+    "answer": null,
+    "explanation": "Các loại thức ăn giàu iodine nên bổ sung: cá biển, hải sản (tôm, cua, mực), rong biển/tảo bẹ, trứng gà, rau cần, muối iodine. Sử dụng muối iodine trong nấu ăn hằng ngày là biện pháp đơn giản và hiệu quả nhất để phòng bướu cổ."
+  },
+  {
+    "id": "khtn7-30-1",
+    "bai": 30,
+    "type": "mcq",
+    "question": "Một cành hoa bị héo sau khi được cắm vào nước một thời gian thì cành hoa tươi trở lại. Cấu trúc nào sau đây có vai trò quan trọng trong hiện tượng trên?",
+    "options": [
+      "Mạch rây.",
+      "Mạch gỗ.",
+      "Lông hút.",
+      "Vỏ rễ."
+    ],
+    "answer": "B",
+    "explanation": "Mạch gỗ vận chuyển nước và muối khoáng từ rễ lên thân, lá. Khi cắm cành hoa vào nước, mạch gỗ hút nước lên giúp cành hoa tươi trở lại."
+  },
+  {
+    "id": "khtn7-30-2",
+    "bai": 30,
+    "type": "mcq",
+    "question": "Ở thực vật, các chất nào dưới đây thường được vận chuyển từ rễ lên lá?",
+    "options": [
+      "Chất hữu cơ và chất khoáng.",
+      "Nước và chất khoáng.",
+      "Chất hữu cơ và nước.",
+      "Nước, chất hữu cơ và chất khoáng."
+    ],
+    "answer": "B",
+    "explanation": "Mạch gỗ vận chuyển nước và muối khoáng (chất vô cơ) từ rễ lên lá. Chất hữu cơ được vận chuyển qua mạch rây."
+  },
+  {
+    "id": "khtn7-30-3",
+    "bai": 30,
+    "type": "mcq",
+    "question": "Trong các loài thực vật sau đây, loài nào có rễ dài nhất?",
+    "options": [
+      "Cây dừa.",
+      "Cây cà chua.",
+      "Cây cỏ lạc đà.",
+      "Cây lúa nước."
+    ],
+    "answer": "C",
+    "explanation": "Cây cỏ lạc đà (cây lạc đà) sống ở sa mạc khô hạn phát triển rễ rất dài để tìm kiếm nguồn nước sâu trong lòng đất."
+  },
+  {
+    "id": "khtn7-30-4",
+    "bai": 30,
+    "type": "mcq",
+    "question": "Hiện tượng nào dưới đây cho thấy sự vận chuyển chất hữu cơ theo mạch rây từ lá đến các bộ phận khác của cây?",
+    "options": [
+      "Mép lá có các giọt nước nhỏ vào những ngày độ ẩm không khí cao.",
+      "Khi cắt bỏ một khoanh vỏ ở thân cây thì sau một thời gian, mép vỏ phía trên bị phình to.",
+      "Lá cây bị héo quắt do Mặt Trời đốt nóng.",
+      "Nhựa rỉ ra từ gốc cây bị chặt bỏ thân."
+    ],
+    "answer": "B",
+    "explanation": "Mạch rây nằm trong vỏ cây. Khi cắt bỏ khoanh vỏ, mạch rây bị đứt → chất hữu cơ từ lá không vận chuyển xuống được, tích lại ở mép vỏ phía trên làm phình to."
+  },
+  {
+    "id": "khtn7-30-5",
+    "bai": 30,
+    "type": "mcq",
+    "question": "Nhu cầu nước của cây thấp nhất trong điều kiện thời tiết nào dưới đây?",
+    "options": [
+      "Mùa hè, nhiệt độ cao, độ ẩm trung bình.",
+      "Mùa thu, nhiệt độ trung bình, độ ẩm trung bình.",
+      "Mùa đông, nhiệt độ thấp, độ ẩm thấp.",
+      "Mùa xuân, nhiệt độ trung bình, độ ẩm cao."
+    ],
+    "answer": "D",
+    "explanation": "Mùa xuân có độ ẩm cao, cây thoát hơi nước ít hơn → nhu cầu nước thấp nhất. Nhiệt độ cao và độ ẩm thấp làm thoát hơi nước mạnh hơn."
+  },
+  {
+    "id": "khtn7-30-6",
+    "bai": 30,
+    "type": "mcq",
+    "question": "Con đường thoát hơi nước qua khí khổng có những đặc điểm nào?\n(1) Được điều chỉnh bằng việc đóng, mở khí khổng.\n(2) Tốc độ thoát hơi nước nhanh.\n(3) Không được điều chỉnh bằng việc đóng, mở khí khổng.\n(4) Tốc độ thoát hơi nước chậm.",
+    "options": [
+      "(1), (2).",
+      "(2), (3).",
+      "(3), (4).",
+      "(1), (4)."
+    ],
+    "answer": "A",
+    "explanation": "Thoát hơi nước qua khí khổng: được điều chỉnh bằng cơ chế đóng/mở khí khổng và tốc độ thoát hơi nước nhanh (chiếm ~90% lượng nước thoát ra)."
+  },
+  {
+    "id": "khtn7-30-7",
+    "bai": 30,
+    "type": "mcq",
+    "question": "Khi đưa cây đi trồng nơi khác, người ta thường làm gì để tránh cho cây không bị mất nước?",
+    "options": [
+      "Nhúng ngập cây vào nước.",
+      "Tỉa bớt cành, lá.",
+      "Cắt ngắn rễ.",
+      "Tưới đẫm nước cho cây."
+    ],
+    "answer": "B",
+    "explanation": "Tỉa bớt cành lá giúp giảm diện tích lá, từ đó giảm thoát hơi nước trong khi bộ rễ chưa phục hồi hoàn toàn sau khi bứng cây."
+  },
+  {
+    "id": "khtn7-30-8",
+    "bai": 30,
+    "type": "essay",
+    "question": "Chọn các từ/cụm từ thích hợp điền vào chỗ trống:\na) Nước và muối khoáng hoà tan trong đất được ___(1)___ của rễ hấp thụ, sau đó được chuyển qua phần ___(2)___ rồi thâm nhập vào ___(3)___ và tiếp tục được vận chuyển lên các bộ phận khác của cây.\nb) Thoát hơi nước có thể diễn ra qua bề mặt lá hoặc qua khí khổng. Cơ chế điều chỉnh sự thoát hơi nước chính là cơ chế điều tiết ___(1)___. Khi tế bào khí khổng ___(2)___ sẽ căng ra, khí khổng ___(3)___ để hơi nước thoát ra ngoài. Khi tế bào khí khổng bị ___(4)___ sẽ xẹp xuống, khí khổng sẽ ___(5)___ làm hạn chế sự thoát hơi nước.",
+    "answer": null,
+    "explanation": "a) (1) lông hút; (2) vỏ rễ; (3) mạch gỗ.\nb) (1) sự đóng, mở của khí khổng; (2) đủ nước/no nước; (3) mở rộng; (4) mất nước; (5) đóng lại."
+  },
+  {
+    "id": "khtn7-30-9",
+    "bai": 30,
+    "type": "essay",
+    "question": "Đôi khi ta có thể thấy hiện tượng có các giọt nước ở mép lá vào buổi sáng sớm. Hãy giải thích nguyên nhân của hiện tượng này.",
+    "answer": null,
+    "explanation": "Vào buổi sáng sớm, độ ẩm không khí cao, không khí đạt trạng thái bão hoà hơi nước. Nước vận chuyển từ mạch gỗ lên lá không thể thoát hơi qua khí khổng được, bị ứ đọng lại và thoát ra thành các giọt nước nhỏ ở mép lá (hiện tượng ứ giọt)."
+  },
+  {
+    "id": "khtn7-30-10",
+    "bai": 30,
+    "type": "essay",
+    "question": "Các khẳng định sau đây đúng hay sai?\n1. Chất hữu cơ do mạch rây vận chuyển có nguồn gốc chủ yếu từ quá trình quang hợp.\n2. Lá cây không có khả năng hấp thụ các chất khoáng.\n3. Nước và chất khoáng hoà tan trong đất được vỏ rễ hấp thụ vào tế bào lông hút.\n4. Quá trình hấp thụ chất khoáng từ môi trường vào rễ luôn đi kèm với quá trình hấp thụ nước.\n5. Để rễ cây phát triển tốt, cần làm cho đất tơi xốp, thoáng khí trước khi trồng cây và xới xáo đất, vun gốc định kì.\n6. Độ ẩm không khí càng cao, sự thoát hơi nước diễn ra càng mạnh.\n7. Hàm lượng nước trong tế bào khí khổng là một yếu tố quyết định sự đóng mở của khí khổng.\n8. Phần lớn lượng nước mà cây hấp thụ từ rễ sẽ thoát hơi qua lá.\n9. Vào những ngày khô hanh, độ ẩm không khí thấp hoặc những ngày nắng nóng cần tưới nước cho cây ít hơn bình thường.\n10. Thoát hơi nước ở lá là động lực để vận chuyển nước và chất khoáng từ rễ lên lá.",
+    "answer": null,
+    "explanation": "1-Đ; 2-S (lá có thể hấp thụ qua phun lá); 3-S (lông hút hấp thụ, không phải vỏ rễ); 4-Đ; 5-Đ; 6-S (độ ẩm cao → thoát hơi nước yếu hơn); 7-Đ; 8-Đ; 9-S (ngày khô nóng cần tưới nhiều hơn); 10-Đ."
+  },
+  {
+    "id": "khtn7-30-11",
+    "bai": 30,
+    "type": "essay",
+    "question": "Sau những trận mưa lớn kéo dài, hầu hết cây trong vườn bị ngập úng lâu và bị chết. Tại sao khi bị ngập nước cây lại chết mặc dù nước có vai trò rất quan trọng đối với sự sống của cây?",
+    "answer": null,
+    "explanation": "Do ngập nước lâu ngày, rễ cây bị thiếu oxygen nên quá trình hô hấp ở rễ bị ngừng trệ. Điều này khiến tế bào rễ (đặc biệt tế bào lông hút) bị huỷ hoại, mất khả năng hút nước và chất khoáng. Kết quả là cây bị chết do thiếu nước và dinh dưỡng trong tế bào, dù rễ đang ngập trong nước."
+  },
+  {
+    "id": "khtn7-30-12",
+    "bai": 30,
+    "type": "essay",
+    "question": "Giải thích: a) Tưới nước hợp lí cho cây trồng là như thế nào? b) Nếu sự thoát hơi nước ở lá không diễn ra thì điều gì sẽ xảy ra?",
+    "answer": null,
+    "explanation": "a) Tưới nước hợp lí: dựa vào nhu cầu nước của loài cây, giai đoạn sinh trưởng, đặc điểm đất và thời tiết để quyết định lượng nước và thời điểm tưới phù hợp.\nb) Nếu thoát hơi nước không diễn ra: vận chuyển nước và muối khoáng từ rễ lên thân bị chậm hoặc ngừng; khí khổng không mở nên CO₂ không vào được lá → quang hợp bị ảnh hưởng; nhiệt độ lá tăng cao do không có sự bay hơi làm mát. Về lâu dài, cây sinh trưởng chậm và có thể chết."
+  },
+  {
+    "id": "khtn7-31-1",
+    "bai": 31,
+    "type": "mcq",
+    "question": "Các hoạt động nào sau đây giúp bảo vệ hệ tiêu hoá khoẻ mạnh?\n(1) Rửa tay trước khi ăn. (2) Ăn chín, uống sôi. (3) Ăn thịt, cá tái để không bị mất chất dinh dưỡng trong quá trình chế biến. (4) Không ăn thức ăn đã bị ôi thiu. (5) Vừa ăn vừa tranh thủ đọc sách, xem ti vi để tiết kiệm thời gian. (6) Ăn tối muộn để cung cấp chất dinh dưỡng cho cơ thể khi ngủ.",
+    "options": [
+      "(1), (2), (3), (4), (5), (6).",
+      "(1), (2), (3), (5), (6).",
+      "(1), (2), (4).",
+      "(1), (2), (5), (6)."
+    ],
+    "answer": "C",
+    "explanation": "(1) rửa tay và (2) ăn chín uống sôi giúp tránh vi khuẩn; (4) không ăn ôi thiu tránh ngộ độc. Các ý (3), (5), (6) đều có hại cho hệ tiêu hoá."
+  },
+  {
+    "id": "khtn7-31-2",
+    "bai": 31,
+    "type": "mcq",
+    "question": "Theo khuyến nghị của Viện Dinh dưỡng Quốc gia, trẻ vị thành niên nên bổ sung nước theo tỉ lệ 40 mL/kg cân nặng. Một học sinh lớp 8 có cân nặng 50 kg cần uống bao nhiêu nước trong một ngày?",
+    "options": [
+      "2 000 mL.",
+      "1 500 mL.",
+      "1 000 mL.",
+      "3 000 mL."
+    ],
+    "answer": "A",
+    "explanation": "40 mL × 50 kg = 2 000 mL = 2 lít nước mỗi ngày."
+  },
+  {
+    "id": "khtn7-31-3",
+    "bai": 31,
+    "type": "mcq",
+    "question": "Hoạt động nào sau đây giúp bảo vệ tim và mạch máu?\n(1) Hạn chế ăn thức ăn nhiều dầu mỡ. (2) Thường xuyên sử dụng các chất kích thích như rượu, bia, thuốc lá. (3) Lao động vừa sức, nghỉ ngơi hợp lí. (4) Giữ tinh thần lạc quan, vui vẻ. (5) Thường xuyên kiểm tra huyết áp. (6) Kiểm tra sức khoẻ định kì.",
+    "options": [
+      "(1), (3), (4), (5), (6).",
+      "(1), (2), (3), (5), (6).",
+      "(1), (2), (4).",
+      "(1), (2), (5), (6)."
+    ],
+    "answer": "A",
+    "explanation": "Các hoạt động (1), (3), (4), (5), (6) đều có lợi cho tim mạch. Ý (2) dùng rượu bia, thuốc lá gây hại cho tim mạch."
+  },
+  {
+    "id": "khtn7-31-4",
+    "bai": 31,
+    "type": "essay",
+    "question": "Chọn các từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau:\nCác tế bào và cơ quan trong cơ thể động vật được nuôi dưỡng bởi ___(1)___ và các chất dinh dưỡng. Oxygen được lấy từ ___(2)___, còn chất dinh dưỡng do cơ quan tiêu hoá cung cấp. Quá trình trao đổi chất ở các tế bào cũng như hoạt động của các cơ quan sẽ sản sinh ra các ___(3)___. Những sản phẩm này cần được vận chuyển đến cơ quan ___(4)___ để thải ra ngoài. ___(5)___ là hệ cơ quan thực hiện vận chuyển các chất trong cơ thể động vật.",
+    "answer": null,
+    "explanation": "(1) oxygen; (2) phổi; (3) sản phẩm độc hại; (4) bài tiết; (5) hệ tuần hoàn."
+  },
+  {
+    "id": "khtn7-31-5",
+    "bai": 31,
+    "type": "essay",
+    "question": "Các khẳng định sau đây đúng hay sai?\n1. Máu giàu oxygen có màu đỏ tươi, máu giàu carbon dioxide có màu đỏ thẫm.\n2. Tốc độ máu chảy trong mao mạch chậm hơn trong động mạch và tĩnh mạch.\n3. Chỉ có nước tiểu mới chứa các chất bài tiết ra khỏi cơ thể.\n4. Máu sau khi trao đổi tại mao mạch của các cơ quan đổ về tâm nhĩ phải của tim.\n5. Trong cùng điều kiện môi trường, nhu cầu nước của người ở các lứa tuổi đều giống nhau.",
+    "answer": null,
+    "explanation": "1-Đ; 2-Đ; 3-S (chất bài tiết còn có trong mồ hôi, CO₂ qua hơi thở...); 4-Đ; 5-S (nhu cầu nước khác nhau theo lứa tuổi, cân nặng, hoạt động)."
+  },
+  {
+    "id": "khtn7-31-6",
+    "bai": 31,
+    "type": "essay",
+    "question": "Dự đoán điều gì sẽ xảy ra với cơ thể nếu sự vận chuyển các chất trong cơ thể bị dừng lại.",
+    "answer": null,
+    "explanation": "Nếu vận chuyển các chất bị dừng lại: tế bào thiếu oxygen và chất dinh dưỡng → trao đổi chất trong tế bào dừng lại → tế bào chết. Chất độc do tế bào thải ra không được vận chuyển đến cơ quan bài tiết → cơ thể bị nhiễm độc. Cơ thể sẽ có nguy cơ tử vong nếu không được cấp cứu kịp thời."
+  },
+  {
+    "id": "khtn7-31-7",
+    "bai": 31,
+    "type": "essay",
+    "question": "Ở những người có chế độ ăn nhiều dầu mỡ, ít vận động sẽ có nguy cơ mạch máu bị xơ vữa, lòng mạch bị hẹp lại. Điều này ảnh hưởng như thế nào đến sự lưu thông máu và sức khoẻ? Để vận chuyển các chất trong cơ thể được thuận lợi, chúng ta cần có chế độ dinh dưỡng và vận động như thế nào?",
+    "answer": null,
+    "explanation": "Lòng mạch hẹp làm máu lưu thông chậm hơn, gây thiếu máu cục bộ. Nghiêm trọng hơn có thể gây tắc nghẽn, vỡ mạch máu → nhồi máu cơ tim, nhồi máu não, đột quỵ, liệt, thậm chí tử vong.\nChế độ dinh dưỡng: ăn ít dầu mỡ, nhiều rau xanh, hoa quả, hạn chế muối và đường.\nVận động: tập thể dục đều đặn, tránh ngồi lâu một chỗ."
+  },
+  {
+    "id": "khtn7-31-8",
+    "bai": 31,
+    "type": "essay",
+    "question": "Dựa vào sự biến đổi thức ăn trong ống tiêu hoá của người, hãy mô tả những gì xảy ra trước và sau khi tiêu hoá tại: Miệng, Dạ dày, Ruột non, Ruột già. Rút ra nhận xét về sự phối hợp hoạt động của các cơ quan trong ống tiêu hoá.",
+    "answer": null,
+    "explanation": "Miệng: thức ăn (cơm, cá, thịt, rau) → được nghiền nhỏ, thấm nước bọt, một phần tinh bột biến đổi thành đường maltose.\nDạ dày: thức ăn đã nghiền nhỏ → thấm đều dịch vị, protein chuỗi dài bị cắt thành đoạn ngắn, thức ăn trở thành dịch bán lỏng.\nRuột non: dịch bán lỏng → các chất dinh dưỡng đơn giản (amino acid, glucose, glycerol, acid béo) được hấp thụ vào máu; chất cặn bã và nước tiếp tục xuống ruột già.\nRuột già: chất cặn bã và nước → hấp thụ bớt nước, hình thành phân.\nNhận xét: các hoạt động tiêu hoá diễn ra nối tiếp; sản phẩm của cơ quan trước là nguyên liệu cho cơ quan tiếp theo, giúp tiêu hoá và hấp thụ thức ăn hiệu quả."
+  },
+  {
+    "id": "khtn7-32-1",
+    "bai": 32,
+    "type": "mcq",
+    "question": "Cắt một cành hoa trắng rồi cắm vào cốc nước pha màu tím. Sau một thời gian, cánh hoa sẽ có màu gì?",
+    "options": [
+      "Màu trắng.",
+      "Không màu.",
+      "Màu tím.",
+      "Màu vàng."
+    ],
+    "answer": "C",
+    "explanation": "Mạch gỗ vận chuyển nước màu tím từ cuống lên cánh hoa, làm cánh hoa chuyển sang màu tím — chứng minh thân vận chuyển nước."
+  },
+  {
+    "id": "khtn7-32-2",
+    "bai": 32,
+    "type": "mcq",
+    "question": "Hiện tượng nào dưới đây cho thấy sự vận chuyển nước từ rễ lên thân ở thực vật?",
+    "options": [
+      "Khi cắt bỏ một khoanh vỏ ở thân, mép vỏ phía dưới bị phình to.",
+      "Khi cắt bỏ một khoanh vỏ ở thân, mép vỏ phía trên bị phình to.",
+      "Hiện tượng lá cây bị héo quắt do Mặt Trời đốt nóng.",
+      "Khi ngắt bỏ phần thân của cây, ở vết cắt có rỉ nhựa."
+    ],
+    "answer": "D",
+    "explanation": "Khi ngắt bỏ thân, nhựa (nước và muối khoáng) từ rễ tiếp tục được đẩy lên qua mạch gỗ và rỉ ra ở vết cắt — chứng minh nước được vận chuyển từ rễ lên thân."
+  },
+  {
+    "id": "khtn7-32-3",
+    "bai": 32,
+    "type": "mcq",
+    "question": "Khi tiến hành thí nghiệm chứng minh lá thoát hơi nước, nên chọn loại túi có đặc điểm gì để trùm lên lá?",
+    "options": [
+      "Túi nylon kín, trong suốt.",
+      "Túi có đục lỗ thủng.",
+      "Túi nylon kín, màu đen.",
+      "Túi vải."
+    ],
+    "answer": "A",
+    "explanation": "Túi nylon kín và trong suốt giúp quan sát hơi nước đọng lại bên trong — chứng minh lá thoát hơi nước, đồng thời không cho hơi nước thoát ra ngoài."
+  },
+  {
+    "id": "khtn7-32-4",
+    "bai": 32,
+    "type": "essay",
+    "question": "Các khẳng định sau đây đúng hay sai?\n1. Mạch gỗ vận chuyển nước và muối khoáng trong thân.\n2. Khi tiến hành thí nghiệm chứng minh lá thoát hơi nước, nên ngừng tưới nước cho cây để đất trong chậu thật khô.\n3. Lá là cơ quan duy nhất của cây có thể thoát hơi nước.\n4. Trong thí nghiệm chứng minh lá thoát hơi nước, thời gian quan sát thấy hơi nước ở túi nylon có thể thay đổi tuỳ thuộc loài cây, điều kiện thời tiết.\n5. Nên sử dụng cành hoa màu trắng trong thí nghiệm chứng minh thân vận chuyển nước.",
+    "answer": null,
+    "explanation": "1-Đ; 2-S (cần tưới đủ nước để cây thoát hơi nước bình thường); 3-S (thân non, vỏ quả xanh cũng có thể thoát hơi nước); 4-Đ; 5-Đ (hoa trắng dễ quan sát màu nhuộm)."
+  },
+  {
+    "id": "khtn7-32-5",
+    "bai": 32,
+    "type": "essay",
+    "question": "Bạn An thiết kế thí nghiệm chứng minh lá thoát hơi nước bằng cách trùm túi nylon trong suốt lên cả cây (bao gồm cả chậu đất). Bạn Thuỷ cho rằng có một bước chưa chính xác. Theo em, bước nào chưa chính xác và điều đó ảnh hưởng như thế nào đến kết quả thí nghiệm?",
+    "answer": null,
+    "explanation": "Bước chưa chính xác: An trùm túi nylon lên cả chậu đất. Khi đất ẩm ngoài sáng cũng có thể bốc hơi nước vào túi → không thể kết luận hơi nước trong túi chỉ do lá thoát ra.\nCần sửa: chỉ trùm túi nylon kín phần lá cây, không bao gồm chậu đất, để đảm bảo hơi nước quan sát được chỉ do lá thoát ra."
+  },
+  {
+    "id": "khtn7-33-1",
+    "bai": 33,
+    "type": "mcq",
+    "question": "Cảm ứng ở sinh vật là phản ứng của sinh vật với các kích thích:",
+    "options": [
+      "Từ môi trường.",
+      "Từ môi trường ngoài cơ thể.",
+      "Từ môi trường trong cơ thể.",
+      "Từ các sinh vật khác."
+    ],
+    "answer": "A",
+    "explanation": "Cảm ứng là phản ứng của sinh vật với kích thích từ môi trường (bao gồm cả môi trường trong và ngoài cơ thể)."
+  },
+  {
+    "id": "khtn7-33-2",
+    "bai": 33,
+    "type": "mcq",
+    "question": "Các tác nhân của môi trường tác động tới cơ thể sinh vật được gọi là:",
+    "options": [
+      "Các nhận biết.",
+      "Các kích thích.",
+      "Các cảm ứng.",
+      "Các phản ứng."
+    ],
+    "answer": "B",
+    "explanation": "Tác nhân môi trường tác động lên cơ thể sinh vật được gọi là kích thích (như ánh sáng, nhiệt độ, nước, âm thanh...)."
+  },
+  {
+    "id": "khtn7-33-3",
+    "bai": 33,
+    "type": "essay",
+    "question": "Hoàn thành thông tin trong bảng: xác định kích thích tương ứng với mỗi hiện tượng cảm ứng:\n1. Rễ cây mọc dài về phía có nước.\n2. Thân cây mọc cong về phía có ánh sáng.\n3. Thân cây trầu không bám vào thân cây cau.\n4. Những con vịt bỏ chạy khi bị người xua đuổi.\n5. Chó vẫy đuôi khi nghe tiếng bước chân người quen.",
+    "answer": null,
+    "explanation": "1. Kích thích: nước (hướng nước).\n2. Kích thích: ánh sáng (hướng sáng).\n3. Kích thích: tiếp xúc vật thể (hướng tiếp xúc).\n4. Kích thích: tác động cơ học/âm thanh từ người.\n5. Kích thích: âm thanh (tiếng bước chân quen thuộc)."
+  },
+  {
+    "id": "khtn7-33-4",
+    "bai": 33,
+    "type": "essay",
+    "question": "Quan sát các hiện tượng cảm ứng và hoàn thành bảng: nêu kích thích và hiện tượng cảm ứng của các sinh vật sau: Lợn, Bướm đêm, Chim sẻ, Cây hoa hướng dương, Cây đậu (rễ cây).",
+    "answer": null,
+    "explanation": "Lợn: kích thích — tác động cơ học mạnh; phản ứng — bỏ chạy, kêu.\nBướm đêm: kích thích — ánh sáng; phản ứng — bay tới nơi phát sáng.\nChim sẻ: kích thích — âm thanh/bóng của kẻ thù; phản ứng — bay đi.\nCây hoa hướng dương: kích thích — ánh sáng mặt trời; phản ứng — hoa quay về phía mặt trời.\nCây đậu (rễ): kích thích — trọng lực và nước; phản ứng — rễ mọc xuống đất về phía có nước."
+  },
+  {
+    "id": "khtn7-33-5",
+    "bai": 33,
+    "type": "essay",
+    "question": "Hãy dự đoán tình huống khi con người không phản ứng kịp thời với các kích thích từ môi trường xung quanh (như nóng, lạnh, gặp nguy hiểm...).",
+    "answer": null,
+    "explanation": "Nếu con người không phản ứng kịp thời với kích thích từ môi trường, cơ thể sẽ bị ảnh hưởng đến sự tồn tại và phát triển: có thể bị bỏng khi tiếp xúc vật nóng mà không rút tay, bị cóng lạnh, không tránh được nguy hiểm dẫn đến thương tích hoặc tử vong."
+  },
+  {
+    "id": "khtn7-33-6",
+    "bai": 33,
+    "type": "essay",
+    "question": "So sánh hiện tượng cảm ứng của thực vật với động vật.",
+    "answer": null,
+    "explanation": "Giống nhau: đều là phản ứng của sinh vật với kích thích từ môi trường để tồn tại và phát triển.\nKhác nhau: cảm ứng ở thực vật thường diễn ra chậm (hàng giờ đến hàng ngày); cảm ứng ở động vật diễn ra nhanh hơn nhiều (tức thì hoặc trong vài giây) nhờ hệ thần kinh."
+  },
+  {
+    "id": "khtn7-33-7",
+    "bai": 33,
+    "type": "essay",
+    "question": "Tập tính là gì? Nêu một số tập tính phổ biến ở động vật.",
+    "answer": null,
+    "explanation": "Tập tính là một chuỗi những phản ứng trả lời các kích thích đến từ môi trường bên trong hoặc bên ngoài cơ thể, đảm bảo cho động vật tồn tại và phát triển.\nVí dụ: tập tính di cư của chim; tập tính ngủ đông của gấu; tập tính săn mồi của sư tử; tập tính làm tổ của chim."
+  },
+  {
+    "id": "khtn7-33-8",
+    "bai": 33,
+    "type": "essay",
+    "question": "Tìm hiểu tập tính của một số động vật và hoàn thành bảng: mô tả phản ứng của các động vật sau khi gặp kích thích:\n1. Gà mẹ nhìn thấy diều hâu.\n2. Chó giữ nhà nhìn thấy người lạ.\n3. Lợn con mới sinh ra.\n4. Đàn sư tử đói nhìn thấy con mồi.",
+    "answer": null,
+    "explanation": "1. Gà mẹ xù lông, chiến đấu chống lại diều hâu, bảo vệ đàn con.\n2. Chó sủa, gầm gừ, xông ra.\n3. Lợn con tìm vú mẹ để bú (tập tính bẩm sinh).\n4. Đàn sư tử rình, đuổi theo, tấn công con mồi."
+  },
+  {
+    "id": "khtn7-33-9",
+    "bai": 33,
+    "type": "essay",
+    "question": "Phân biệt các thói quen sau vào nhóm thói quen tốt và không tốt: Ngủ dậy muộn; Chạy bộ buổi sáng; Đọc sách; Vừa ăn cơm vừa xem ti vi; Thức khuya; Ăn uống đúng giờ; Làm việc có kế hoạch; Hút thuốc lá.",
+    "answer": null,
+    "explanation": "Thói quen tốt: chạy bộ buổi sáng, đọc sách, ăn uống đúng giờ, làm việc có kế hoạch.\nThói quen không tốt: ngủ dậy muộn, vừa ăn cơm vừa xem ti vi, thức khuya, hút thuốc lá."
+  },
+  {
+    "id": "khtn7-33-10",
+    "bai": 33,
+    "type": "essay",
+    "question": "Lấy các ví dụ về tập tính bẩm sinh và tập tính học được ở sinh vật.",
+    "answer": null,
+    "explanation": "Tập tính bẩm sinh (do gen quy định, không cần học): sư tử săn mồi, thỏ chạy trốn khi thấy kẻ thù, tập tính di cư của chim, gấu bắc cực ngủ đông, lợn con tìm vú mẹ.\nTập tính học được (hình thành qua quá trình sống): chó ngồi theo lệnh chủ, tập tính ăn uống đúng giờ của vật nuôi, người đi xe đạp, học sinh đọc sách theo giờ."
+  },
+  {
+    "id": "khtn7-34-1",
+    "bai": 34,
+    "type": "essay",
+    "question": "Ghép các hiện tượng cảm ứng của vật nuôi (cột A) với lợi ích đối với con người (cột B):\nCột A: 1. Ăn uống đúng giờ; 2. Đi vệ sinh đúng chỗ; 3. Nghe hiệu lệnh là về chuồng; 4. Nghe hiệu lệnh là đến ăn.\nCột B: a) Giảm lãng phí thức ăn và quản lí được nguồn thức ăn; b) Giúp vật nuôi hình thành thói quen tốt, nhờ đó sinh trưởng và phát triển tốt hơn; c) Hạn chế sự mất vệ sinh và giảm công vệ sinh chuồng trại; d) Giúp người chăn nuôi giảm công lùa vật nuôi về chuồng.",
+    "answer": null,
+    "explanation": "1 - b; 2 - c; 3 - d; 4 - a."
+  },
+  {
+    "id": "khtn7-34-2",
+    "bai": 34,
+    "type": "essay",
+    "question": "Con người đã vận dụng những hiểu biết về hiện tượng cảm ứng ở sinh vật vào đời sống như thế nào? Hoàn thành bảng:\n1. Tính hướng sáng của côn trùng gây hại.\n2. Tính hướng sáng của cá.\n3. Chim di cư về phương nam tránh rét.\n4. Rễ cây tránh xa hoá chất độc hại.\n5. Chim yến cư trú và làm tổ ở những nơi ánh sáng rất yếu.",
+    "answer": null,
+    "explanation": "1. Dùng đèn để bẫy côn trùng gây hại.\n2. Dùng đèn để thu hút cá vào lưới (đánh cá bằng ánh sáng).\n3. Dự báo thời tiết theo mùa dựa vào sự di cư của chim.\n4. Không bón phân hoá học gần rễ cây; trồng cây cách xa vùng ô nhiễm.\n5. Làm nhà yến trong môi trường tối, ít ánh sáng để chim yến đến ở và lấy tổ yến."
+  },
+  {
+    "id": "khtn7-34-3",
+    "bai": 34,
+    "type": "essay",
+    "question": "Nêu những ví dụ về việc vận dụng hiện tượng cảm ứng ở sinh vật vào trồng trọt, chăn nuôi và đời sống.",
+    "answer": null,
+    "explanation": "Trồng trọt: chiếu sáng bổ sung để kéo dài ngày cho cây ra hoa; làm giàn cho cây leo (hướng tiếp xúc); tưới nhỏ giọt dẫn rễ về phía có nước.\nChăn nuôi: huấn luyện vật nuôi ăn đúng giờ, về chuồng theo hiệu lệnh; dùng đèn dụ cá, tôm.\nĐời sống: dùng đèn bẫy côn trùng hại mùa màng; trồng cây xanh điều hoà không khí."
+  },
+  {
+    "id": "khtn7-34-4",
+    "bai": 34,
+    "type": "essay",
+    "question": "Đọc sách là một thói quen tốt, là tập tính học được ở người. Vận dụng kiến thức về cảm ứng ở sinh vật, xây dựng các bước để hình thành thói quen đọc sách cho bản thân.",
+    "answer": null,
+    "explanation": "Bước 1: Chọn sách phù hợp với sở thích và lứa tuổi.\nBước 2: Chọn thời gian đọc cố định mỗi ngày (ví dụ: 30 phút trước khi ngủ).\nBước 3: Tạo không gian đọc yên tĩnh, đủ ánh sáng.\nBước 4: Lặp lại đều đặn hằng ngày cho đến khi hình thành thói quen.\nBước 5: Tăng dần thời gian và đa dạng loại sách."
+  },
+  {
+    "id": "khtn7-34-5",
+    "bai": 34,
+    "type": "essay",
+    "question": "Khi nuôi gà, vịt, người dân chỉ cần gọi bằng tiếng quen thuộc là gà, vịt từ xa đã chạy về để ăn. Nêu cách thức hình thành tập tính này cho vật nuôi.",
+    "answer": null,
+    "explanation": "Gọi vật nuôi bằng cùng một tiếng gọi/hiệu lệnh vào những thời điểm nhất định mỗi ngày, đồng thời cho ăn ngay sau khi gọi. Lặp lại nhiều lần, vật nuôi sẽ liên kết tiếng gọi với việc được ăn → hình thành tập tính học được: nghe tiếng gọi quen là chạy về."
+  },
+  {
+    "id": "khtn7-35-1",
+    "bai": 35,
+    "type": "essay",
+    "question": "Thiết kế thí nghiệm chứng minh tính hướng nước, hướng sáng, hướng tiếp xúc của thực vật. Trình bày cách tiến hành, dự đoán kết quả, giải thích và kết luận.",
+    "answer": null,
+    "explanation": "Hướng nước: đặt 2 chậu cây con, một bên tưới nước, một bên để khô. Sau vài ngày, rễ mọc về phía có nước → kết luận rễ có tính hướng nước.\nHướng sáng: trồng cây trong hộp kín có lỗ nhỏ một bên. Sau vài ngày, thân cây cong về phía có ánh sáng → kết luận thân có tính hướng sáng dương.\nHướng tiếp xúc: trồng cây thân leo (bầu, bí, đậu) gần cọc. Sau vài ngày, tua cuốn và thân quấn quanh cọc → kết luận cây có tính hướng tiếp xúc."
+  },
+  {
+    "id": "khtn7-35-2",
+    "bai": 35,
+    "type": "essay",
+    "question": "Thực hành hình thành tập tính học được cho vật nuôi: hình thành thói quen ăn uống đúng giờ cho một số vật nuôi phổ biến (chó, mèo, lợn, gà, cá...). Mô tả tiến trình, kết quả và so sánh thời gian hình thành thói quen giữa các vật nuôi.",
+    "answer": null,
+    "explanation": "Tiến trình: (1) Chọn thức ăn phù hợp. (2) Xác định khung giờ cho ăn cố định. (3) Cho ăn đúng giờ, dùng âm thanh làm hiệu lệnh trước mỗi lần cho ăn. (4) Lặp lại nhiều ngày. (5) Quan sát phản ứng (kêu, chạy đến chỗ ăn đúng giờ).\nKết quả: sau khoảng 1-2 tuần, vật nuôi sẽ có biểu hiện đòi ăn đúng giờ.\nSo sánh: chó, mèo hình thành thói quen nhanh hơn (4-7 ngày) so với gà, lợn (7-14 ngày) vì khả năng học tập khác nhau giữa các loài."
+  },
+  {
+    "id": "khtn7-36-1",
+    "bai": 36,
+    "type": "essay",
+    "question": "Nêu khái niệm sinh trưởng, phát triển ở sinh vật và mối quan hệ giữa sinh trưởng và phát triển.",
+    "answer": null,
+    "explanation": "Sinh trưởng là sự tăng lên về kích thước và khối lượng cơ thể do sự tăng lên về số lượng và kích thước tế bào.\nPhát triển là những biến đổi diễn ra trong vòng đời sinh vật bao gồm sinh trưởng, phân hoá tế bào và phát sinh hình thái.\nMối quan hệ: sinh trưởng và phát triển gắn liền với nhau; sinh trưởng là cơ sở của phát triển, phát triển diễn ra dựa trên nền tảng sinh trưởng."
+  },
+  {
+    "id": "khtn7-36-2",
+    "bai": 36,
+    "type": "essay",
+    "question": "Vì sao nhiều loài thực vật sinh trưởng vô thời hạn?",
+    "answer": null,
+    "explanation": "Nhiều loài thực vật có các mô phân sinh (nhóm tế bào chưa phân hoá) nên duy trì được khả năng phân chia liên tục trong suốt đời sống của chúng (ngoại trừ thời kì nghỉ ngủ), giúp cây có thể sinh trưởng vô thời hạn."
+  },
+  {
+    "id": "khtn7-36-3",
+    "bai": 36,
+    "type": "mcq",
+    "question": "Ở thực vật có hai loại mô phân sinh là:",
+    "options": [
+      "Mô phân sinh đỉnh và mô phân sinh bên.",
+      "Mô phân sinh cành và mô phân sinh rễ.",
+      "Mô phân sinh lá và mô phân sinh thân.",
+      "Mô phân sinh ngọn và mô phân sinh rễ."
+    ],
+    "answer": "A",
+    "explanation": "Thực vật có mô phân sinh đỉnh (giúp tăng chiều dài) và mô phân sinh bên (giúp tăng chiều ngang/đường kính)."
+  },
+  {
+    "id": "khtn7-36-4",
+    "bai": 36,
+    "type": "essay",
+    "question": "Tìm từ/cụm từ phù hợp để hoàn thành thông tin sau:\nMô phân sinh đỉnh giúp thân, cành và rễ tăng lên về ___(1)___. Mô phân sinh bên giúp thân, cành và rễ tăng lên về ___(2)___.",
+    "answer": null,
+    "explanation": "(1) chiều dài; (2) chiều ngang (đường kính)."
+  },
+  {
+    "id": "khtn7-36-5",
+    "bai": 36,
+    "type": "essay",
+    "question": "Lựa chọn tên loại mô phân sinh phù hợp thay thế cho các vị trí đánh số (1), (2), (3) trong sơ đồ cấu tạo thân cây (Hình 36).",
+    "answer": null,
+    "explanation": "(1) và (3): mô phân sinh đỉnh (ở ngọn thân và ngọn rễ).\n(2): mô phân sinh bên (nằm giữa mạch gỗ và mạch rây, giúp thân tăng đường kính)."
+  },
+  {
+    "id": "khtn7-36-6",
+    "bai": 36,
+    "type": "essay",
+    "question": "Mô tả đặc điểm thể hiện các dấu hiệu của sinh trưởng và phát triển ở người.",
+    "answer": null,
+    "explanation": "Sinh trưởng: cơ thể tăng lên về chiều cao và cân nặng qua các giai đoạn.\nPhát triển: phát sinh các cơ quan trong giai đoạn phôi; phát sinh các đặc điểm giới tính khi dậy thì; hoàn thiện chức năng sinh lí các cơ quan theo độ tuổi."
+  },
+  {
+    "id": "khtn7-36-7",
+    "bai": 36,
+    "type": "essay",
+    "question": "Dùng vôi vẽ một vòng quanh thân cây (ví dụ cây phượng) cách mặt đất khoảng 1 m. Dự đoán khoảng cách từ mặt đất đến vết vôi ở các năm sau và giải thích.",
+    "answer": null,
+    "explanation": "Khoảng cách từ mặt đất đến vòng vôi không thay đổi qua các năm. Vì cây cao lên là do mô phân sinh đỉnh (ở ngọn cây) phân chia tế bào, phần thân phía dưới không kéo dài thêm — vết vôi vẫn ở vị trí cũ cách mặt đất 1 m."
+  },
+  {
+    "id": "khtn7-37-1",
+    "bai": 37,
+    "type": "mcq",
+    "question": "Nhiệt độ môi trường cực thuận đối với sinh vật là gì?",
+    "options": [
+      "Mức nhiệt cao nhất mà sinh vật có thể chịu đựng.",
+      "Mức nhiệt thích hợp nhất đối với sự sinh trưởng và phát triển của sinh vật.",
+      "Mức nhiệt thấp nhất mà sinh vật có thể chịu đựng.",
+      "Mức nhiệt ngoài khoảng nhiệt độ mà sinh vật có thể sinh trưởng và phát triển."
+    ],
+    "answer": "B",
+    "explanation": "Nhiệt độ cực thuận là mức nhiệt tối ưu giúp sinh vật sinh trưởng và phát triển tốt nhất."
+  },
+  {
+    "id": "khtn7-37-2",
+    "bai": 37,
+    "type": "mcq",
+    "question": "Ở thực vật, ánh sáng là nhân tố ảnh hưởng trực tiếp hoặc gián tiếp đến bao nhiêu quá trình trong số: a) Sinh trưởng; b) Thụ phấn; c) Quang hợp; d) Thoát hơi nước; e) Phát triển; g) Ra hoa; h) Hình thành quả?",
+    "options": [
+      "6.",
+      "3.",
+      "7.",
+      "4."
+    ],
+    "answer": "A",
+    "explanation": "Ánh sáng ảnh hưởng đến 6 quá trình: a) sinh trưởng; c) quang hợp; d) thoát hơi nước; e) phát triển; g) ra hoa; h) hình thành quả. Thụ phấn (b) chủ yếu do gió và côn trùng."
+  },
+  {
+    "id": "khtn7-37-3",
+    "bai": 37,
+    "type": "mcq",
+    "question": "Ở động vật, ánh sáng là nhân tố ảnh hưởng trực tiếp hoặc gián tiếp đến bao nhiêu quá trình trong số: a) Hấp thụ calcium; b) Chuyển hoá protein; c) Hình thành xương; d) Ổn định thân nhiệt; e) Hấp thụ nước; g) Chuyển hoá năng lượng; h) Bài tiết chất thải?",
+    "options": [
+      "6.",
+      "4.",
+      "7.",
+      "5."
+    ],
+    "answer": "B",
+    "explanation": "Ánh sáng ảnh hưởng đến 4 quá trình ở động vật: a) hấp thụ calcium; c) hình thành xương; d) ổn định thân nhiệt; g) chuyển hoá năng lượng."
+  },
+  {
+    "id": "khtn7-37-4",
+    "bai": 37,
+    "type": "essay",
+    "question": "Nước chiếm tỉ lệ bao nhiêu trong cơ thể người và đóng vai trò gì? Từ những kiến thức đó em rút ra nhận xét và vận dụng như thế nào trong cuộc sống?",
+    "answer": null,
+    "explanation": "Nước chiếm khoảng 70% khối lượng cơ thể người. Vai trò: cấu tạo tế bào sống, là môi trường cho trao đổi chất và chuyển hoá năng lượng.\nVận dụng: cần uống đủ nước mỗi ngày (khoảng 2 lít), tăng uống nước khi trời nóng, vận động mạnh hoặc bị bệnh. Tránh để cơ thể bị thiếu nước."
+  },
+  {
+    "id": "khtn7-37-5",
+    "bai": 37,
+    "type": "essay",
+    "question": "Đề xuất các biện pháp canh tác giúp cây trồng sinh trưởng tốt, cho năng suất cao dựa trên các yếu tố bên ngoài: Nhiệt độ, Ánh sáng, Chất dinh dưỡng, Độ ẩm.",
+    "answer": null,
+    "explanation": "Nhiệt độ: làm nhà kính khi quá nóng/lạnh; phủ rơm rạ sau khi gieo hạt giữ ấm.\nÁnh sáng: trồng đúng mật độ tránh che khuất nhau; chiếu sáng bổ sung khi thiếu nắng.\nChất dinh dưỡng: bón phân đúng loại, đúng lượng, đúng thời điểm.\nĐộ ẩm: tưới nước đều đặn; thoát nước tốt tránh úng ngập."
+  },
+  {
+    "id": "khtn7-37-6",
+    "bai": 37,
+    "type": "essay",
+    "question": "Ghép thông tin cột A với cột B:\nCột A: 1. Sự sinh trưởng và phát triển của cây; 2. Chất kích thích; 3. Chất ức chế; 4. Con người đã sử dụng chất kích thích; 5. Con người đã sử dụng chất ức chế.\nCột B: a) kìm hãm sự sinh trưởng và phát triển của cây trồng; b) chịu ảnh hưởng bởi các yếu tố từ bên trong cơ thể là chất kích thích và chất ức chế; c) kìm hãm sự nảy mầm để bảo quản nông sản; d) làm cho cây sinh trưởng và phát triển nhanh; e) để kích thích sự ra hoa hoặc tạo quả của cây trồng.",
+    "answer": null,
+    "explanation": "1 - b; 2 - d; 3 - a; 4 - e; 5 - c."
+  },
+  {
+    "id": "khtn7-37-7",
+    "bai": 37,
+    "type": "essay",
+    "question": "Đề xuất các biện pháp trong chăn nuôi để vật nuôi sinh trưởng tốt, cho năng suất cao dựa trên các yếu tố: Dinh dưỡng, Nhiệt độ, Ánh sáng, Chất kích thích sinh trưởng.",
+    "answer": null,
+    "explanation": "Dinh dưỡng: cho ăn đầy đủ cả lượng và chất, phù hợp đặc điểm từng loài.\nNhiệt độ: xây chuồng trại có khả năng chống nóng, chống lạnh.\nÁnh sáng: đảm bảo chuồng nuôi đủ ánh sáng; chiếu sáng nhân tạo nếu cần.\nChất kích thích sinh trưởng: sử dụng đúng liều lượng, đúng loại theo quy định, không lạm dụng chất tăng trưởng."
+  },
+  {
+    "id": "khtn7-37-8",
+    "bai": 37,
+    "type": "essay",
+    "question": "Vận dụng những hiểu biết về vòng đời của sâu hại, đề xuất biện pháp phòng ngừa và diệt trừ sâu hại để bảo vệ mùa màng. Lấy ví dụ một loài cụ thể.",
+    "answer": null,
+    "explanation": "Cần tìm hiểu vòng đời của sâu hại và có biện pháp phù hợp để tiêu diệt ở giai đoạn dễ tổn thương nhất (tốt nhất là giai đoạn trứng hoặc ấu trùng).\nVí dụ sâu bướm hại rau: phun thuốc trừ sâu sinh học khi sâu còn là ấu trùng nhỏ; bẫy đèn bắt bướm trưởng thành; bắt và tiêu diệt ổ trứng; dùng màng phủ nylon che luống rau tránh bướm đẻ trứng."
+  },
+  {
+    "id": "khtn7-38-1",
+    "bai": 38,
+    "type": "essay",
+    "question": "Sắp xếp các bước tiến hành sau đây để được quy trình đúng khi tiến hành thí nghiệm quan sát sự sinh trưởng và phát triển của thực vật:\n(1) Chuẩn bị các loại hạt khác nhau rồi ngâm hạt trong nước ấm (khoảng 40°C).\n(2) Gieo các loại hạt đã nảy mầm vào các chậu đã dán nhãn, dùng vòi sương tưới nước làm ẩm đất.\n(3) Chuẩn bị các chậu nhựa có kích thước giống nhau, dán tên cây, cho đất tơi xốp và nhiều mùn.\n(4) Quan sát sự nảy mầm, phân hoá rễ, thân, lá của các cây trong mỗi chậu.\n(5) Đặt các chậu vào môi trường đủ ánh sáng, tưới nước hằng ngày và theo dõi.",
+    "answer": null,
+    "explanation": "Trình tự đúng: (1) → (3) → (2) → (5) → (4)."
+  },
+  {
+    "id": "khtn7-38-2",
+    "bai": 38,
+    "type": "essay",
+    "question": "Tại sao trước khi gieo hạt nên ngâm hạt trong nước ấm có nhiệt độ từ 35°C đến 40°C?",
+    "answer": null,
+    "explanation": "Ngâm hạt trong nước ấm (35–40°C) với mục đích cung cấp độ ẩm và nhiệt độ phù hợp cho hạt, giúp tăng quá trình hô hấp tế bào, kích hoạt các enzyme, làm mềm vỏ hạt, phá vỡ trạng thái ngủ nghỉ và giúp hạt nảy mầm nhanh hơn."
+  },
+  {
+    "id": "khtn7-38-3",
+    "bai": 38,
+    "type": "essay",
+    "question": "Phân biệt biểu hiện của quá trình sinh trưởng và phát triển ở thực vật dựa trên các hiện tượng: Sự nảy mầm; Thân dài ra; Số lượng lá tăng thêm; Lá to lên; Rễ dài ra; Mọc chồi nách.",
+    "answer": null,
+    "explanation": "Sinh trưởng (tăng kích thước/số lượng): Thân dài ra ✓; Lá to lên ✓; Rễ dài ra ✓.\nPhát triển (biến đổi hình thái/chức năng): Sự nảy mầm ✓; Số lượng lá tăng thêm ✓; Mọc chồi nách ✓."
+  },
+  {
+    "id": "khtn7-38-4",
+    "bai": 38,
+    "type": "essay",
+    "question": "Khi quan sát, mô tả sự sinh trưởng và phát triển ở một số động vật qua tranh ảnh, video, cần thực hiện những yêu cầu nào?",
+    "answer": null,
+    "explanation": "Cần thực hiện: (1) Các giai đoạn sinh trưởng, phát triển của mỗi loài. (2) Hình thái và kích thước cơ thể sinh vật ở mỗi giai đoạn. (3) Biểu hiện của mối quan hệ giữa sinh trưởng và phát triển. (4) Điểm giống và khác nhau trong quá trình sinh trưởng và phát triển ở các loài.\nKhông bắt buộc: cách chuyển động, hoạt động dinh dưỡng, các đặc điểm cấu tạo chi tiết."
+  },
+  {
+    "id": "khtn7-38-5",
+    "bai": 38,
+    "type": "essay",
+    "question": "So sánh quá trình sinh trưởng và phát triển giữa bướm và gà.",
+    "answer": null,
+    "explanation": "Bướm: sinh trưởng và phát triển qua biến thái hoàn toàn (trứng → sâu/ấu trùng → nhộng → bướm trưởng thành). Các giai đoạn khác nhau về hình thái và môi trường sống hoàn toàn.\nGà: sinh trưởng và phát triển không qua biến thái (trứng → gà con → gà trưởng thành). Hình thái tương tự nhau qua các giai đoạn, chỉ khác kích thước và một số đặc điểm phụ.\nĐiểm chung: đều trải qua các giai đoạn, có sự tăng kích thước và hoàn thiện chức năng sinh lí."
+  },
+  {
+    "id": "khtn7-39-1",
+    "bai": 39,
+    "type": "essay",
+    "question": "Lựa chọn từ/cụm từ phù hợp trong phần gợi ý để hoàn thành đoạn thông tin sau:\nSinh sản là một trong những ...(1)... của cơ thể sống. Từ ...(2)... cơ thể ban đầu, qua quá trình ...(3)... sẽ tạo ra cho thế hệ sau những ...(4)..., đảm bảo sự phát triển liên tục của loài. Có ...(5)... hình thức sinh sản ở sinh vật là ...(6)... và ...(7)...\nGợi ý: đặc trưng cơ bản, đặc điểm, một, những, sinh sản, phân chia, cơ thể mới, hai, sinh sản vô tính, sinh sản hữu tính, sinh sản sinh dưỡng.",
+    "answer": null,
+    "explanation": "(1) đặc trưng cơ bản; (2) một; (3) sinh sản; (4) cơ thể mới; (5) hai; (6) sinh sản vô tính; (7) sinh sản hữu tính."
+  },
+  {
+    "id": "khtn7-39-2",
+    "bai": 39,
+    "type": "essay",
+    "question": "Em hãy kể tên một số loài thực vật sinh sản sinh dưỡng trong tự nhiên. Cho biết chúng sinh sản bằng bộ phận nào của cơ thể.",
+    "answer": null,
+    "explanation": "Ví dụ:\n- Khoai tây: sinh sản bằng củ (thân củ).\n- Gừng, nghệ: sinh sản bằng thân rễ.\n- Rau má: sinh sản bằng thân bò.\n- Lá bỏng (sống đời): sinh sản bằng lá.\n- Chuối: sinh sản bằng chồi thân (chồi cây con)."
+  },
+  {
+    "id": "khtn7-39-3",
+    "bai": 39,
+    "type": "mcq",
+    "question": "Vì sao khi nhân giống cam, chanh, bưởi, hồng xiêm,... người ta thường chiết cành mà không sử dụng phương pháp giâm cành?",
+    "options": [
+      "Thời gian ra rễ của các cây trên rất chậm.",
+      "Những cây đó có giá trị kinh tế cao.",
+      "Cành của các cây đó quá to nên không giâm cành được.",
+      "Khả năng vận chuyển các chất dinh dưỡng của các cây này kém vì mạch gỗ nhỏ."
+    ],
+    "answer": "D",
+    "explanation": "Cam, chanh, bưởi, hồng xiêm có mạch gỗ nhỏ, khả năng vận chuyển nước và chất dinh dưỡng từ thân xuống cành cắt rất kém nên cành giâm khó ra rễ. Chiết cành cho phép cành vẫn gắn với cây mẹ nhận dinh dưỡng trong khi ra rễ."
+  },
+  {
+    "id": "khtn7-39-4",
+    "bai": 39,
+    "type": "essay",
+    "question": "Các loài động vật trong bảng sau sinh sản vô tính bằng hình thức nào?\n1. Trùng roi\n2. San hô, thuỷ tức\n3. Sao biển, giun dẹp\n4. Rệp cây, ong, kiến",
+    "answer": null,
+    "explanation": "1. Trùng roi: phân đôi (phân chia tế bào theo chiều dọc).\n2. San hô, thuỷ tức: nảy chồi.\n3. Sao biển, giun dẹp: tái sinh (phân mảnh).\n4. Rệp cây, ong, kiến: trinh sinh (sinh sản từ trứng không thụ tinh)."
+  },
+  {
+    "id": "khtn7-39-5",
+    "bai": 39,
+    "type": "essay",
+    "question": "Các khẳng định sau đây đúng hay sai?\n1. Sinh sản vô tính là hình thức sinh sản chỉ có sự tham gia của một cơ thể (mẹ)\n2. Con sinh ra từ sinh sản vô tính mang đặc điểm của hai cơ thể\n3. Một cơ thể mẹ ban đầu sinh sản vô tính luôn tạo ra hai cơ thể mới\n4. Vi khuẩn, nguyên sinh vật, nấm có hình thức sinh sản vô tính\n5. Trong sinh sản sinh dưỡng, cơ thể mới được tạo thành từ các bộ phận, cơ quan sinh dưỡng của cơ thể mẹ\n6. Biện pháp để nhân giống của một loài với số lượng lớn, có thể giữ nguyên đặc tính mong muốn và sạch bệnh là nuôi cấy mô tế bào",
+    "answer": null,
+    "explanation": "1. Đúng — sinh sản vô tính chỉ cần một cơ thể mẹ.\n2. Sai — con sinh ra từ sinh sản vô tính chỉ mang đặc điểm của một cơ thể (mẹ), giống hệt cơ thể mẹ.\n3. Sai — số cơ thể mới tạo ra phụ thuộc hình thức: phân đôi → 2; nảy chồi → 1 chồi hoặc nhiều chồi; phân mảnh → nhiều cơ thể.\n4. Đúng.\n5. Đúng.\n6. Đúng."
+  },
+  {
+    "id": "khtn7-39-6",
+    "bai": 39,
+    "type": "essay",
+    "question": "Hình 39 mô tả quy trình của phương pháp chiết cành. Quan sát hình và giải thích tại sao sau khi bó bầu đất vào vết khoanh vỏ, rễ chỉ có thể mọc ra từ mép vỏ phía trên của vết cắt.",
+    "answer": null,
+    "explanation": "Khi khoanh vỏ, mạch rây bị cắt đứt làm chất hữu cơ (đường) bị ứ lại ở mép vỏ phía trên vết cắt. Chất hữu cơ tích lũy nhiều cùng với độ ẩm của bầu đất kích thích tế bào tượng tầng phân chia tạo mô sẹo và từ đó hình thành rễ bất định. Vì mạch rây bị cắt, phía dưới không nhận được chất hữu cơ nên không mọc rễ được."
+  },
+  {
+    "id": "khtn7-39-7",
+    "bai": 39,
+    "type": "essay",
+    "question": "Tại sao khi ghép cành phải buộc chặt cành ghép vào gốc ghép?",
+    "answer": null,
+    "explanation": "Phải buộc chặt để tầng sinh mạch (tượng tầng) của cành ghép và gốc ghép tiếp xúc khít với nhau. Khi tượng tầng hai bên liền nhau, tế bào phân chia tạo mô liên kết giúp mạch dẫn thông suốt, cành ghép có thể nhận nước và chất dinh dưỡng từ gốc ghép mà sống và phát triển."
+  },
+  {
+    "id": "khtn7-39-8",
+    "bai": 39,
+    "type": "essay",
+    "question": "Hãy kể tên các loài cây trồng ở địa phương em được trồng và nhân giống bằng các phương pháp nhân giống vô tính. Giải thích lí do lựa chọn các phương pháp khác nhau cho từng nhóm cây.",
+    "answer": null,
+    "explanation": "Ví dụ:\n- Giâm cành: sắn, mía, khoai lang — cành dễ ra rễ, nhanh nhân giống với số lượng lớn.\n- Chiết cành: bưởi, cam, nhãn, vải — cây mạch gỗ nhỏ, khó giâm; chiết cành đảm bảo tỉ lệ sống cao và giữ đặc tính tốt của cây mẹ.\n- Ghép cành/mắt: hồng, xoài, ổi ghép — cải thiện năng suất, chất lượng quả; sử dụng gốc ghép khỏe chống sâu bệnh.\n- Nhân từ củ/thân rễ: gừng, nghệ, khoai tây — dễ thực hiện, đảm bảo di truyền đặc tính tốt."
+  },
+  {
+    "id": "khtn7-39-9",
+    "bai": 39,
+    "type": "essay",
+    "question": "Nghỉ hè, Lan được bố mẹ cho về quê chơi với ông bà. Ông rủ Lan ra vườn làm cỏ với ông để chuẩn bị trồng rau. Ông chỉ cho Lan một số loại cỏ cần phải nhổ bỏ, nếu không chúng sẽ cạnh tranh với cây rau về ánh sáng, nước, chất dinh dưỡng,... làm cho rau còi cọc, chậm lớn, thậm chí bị sâu bệnh. Ông dặn phải nhổ hết gốc, bỏ toàn bộ thân rễ ngầm dưới đất thì cỏ mới không mọc lại được. Em hãy giải thích cho Lan hiểu tại sao ông lại hướng dẫn như vậy.",
+    "answer": null,
+    "explanation": "Nhiều loại cỏ có khả năng sinh sản sinh dưỡng bằng thân rễ ngầm dưới đất. Nếu chỉ nhổ bỏ phần trên mặt đất mà để lại thân rễ, các mắt/chồi trên thân rễ sẽ nảy mầm và tạo ra cây cỏ mới. Vì vậy phải nhổ hết gốc và loại bỏ toàn bộ thân rễ ngầm mới ngăn cỏ mọc lại."
+  },
+  {
+    "id": "khtn7-40-1",
+    "bai": 40,
+    "type": "mcq",
+    "question": "Sinh sản hữu tính ở sinh vật là quá trình",
+    "options": [
+      "tạo ra cơ thể mới từ một phần của cơ thể mẹ hoặc bố.",
+      "tạo ra cơ thể mới từ sự kết hợp giữa cơ thể mẹ và cơ thể bố.",
+      "hợp nhất giữa giao tử đực và giao tử cái tạo thành hợp tử, hợp tử phát triển thành cơ thể mới.",
+      "tạo ra cơ thể mới từ cơ quan sinh dưỡng của cơ thể mẹ."
+    ],
+    "answer": "C",
+    "explanation": "Sinh sản hữu tính là quá trình hợp nhất giao tử đực và giao tử cái (thụ tinh) tạo hợp tử, hợp tử phát triển thành cơ thể mới."
+  },
+  {
+    "id": "khtn7-40-2",
+    "bai": 40,
+    "type": "essay",
+    "question": "Chọn các từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau:\nTrong sinh sản hữu tính ở thực vật, giao tử đực được hình thành trong ...(1)..., giao tử cái được hình thành trong ...(2)... Quá trình vận chuyển hạt phấn đến bầu nhuỵ là ...(3).... Thụ tinh là quá trình kết hợp giữa giao tử đực và giao tử cái tạo thành ...(4)... Hợp tử phân chia và phát triển thành phôi nằm trong hạt. Bầu nhuỵ biến đổi thành quả chứa hạt, ...(5)... do noãn phát triển thành.",
+    "answer": null,
+    "explanation": "(1) hạt phấn (bao phấn); (2) noãn (bầu nhuỵ); (3) thụ phấn; (4) hợp tử; (5) hạt."
+  },
+  {
+    "id": "khtn7-40-3",
+    "bai": 40,
+    "type": "essay",
+    "question": "Các khẳng định sau đây đúng hay sai?\n1. Bầu nhuỵ không xảy ra thụ tinh sẽ phát triển thành quả không hạt\n2. Hoa thụ phấn nhờ gió, côn trùng và tác động của con người\n3. Các động vật có thụ tinh ngoài thường sống ở trên cạn\n4. Noãn đã thụ tinh phát triển thành hợp tử, hợp tử phát triển thành hạt\n5. Phôi phát triển bên trong cơ thể mẹ đối với các động vật đẻ trứng và đẻ con",
+    "answer": null,
+    "explanation": "1. Đúng — bầu nhuỵ không thụ tinh vẫn có thể phát triển thành quả không hạt (ví dụ chuối, dưa hấu không hạt).\n2. Đúng.\n3. Sai — các động vật có thụ tinh ngoài thường sống ở dưới nước (cá, ếch nhái).\n4. Sai — noãn đã thụ tinh phát triển thành hạt; hợp tử nằm trong noãn phát triển thành phôi.\n5. Sai — phôi phát triển bên trong cơ thể mẹ chỉ ở động vật đẻ con; động vật đẻ trứng thì phôi phát triển bên ngoài cơ thể mẹ."
+  },
+  {
+    "id": "khtn7-40-4",
+    "bai": 40,
+    "type": "essay",
+    "question": "Phân biệt hoa đơn tính và hoa lưỡng tính. Lấy ví dụ về hoa đơn tính và hoa lưỡng tính.",
+    "answer": null,
+    "explanation": "Hoa lưỡng tính: có cả nhị (giao tử đực) và nhuỵ (giao tử cái) trên cùng một hoa. Ví dụ: hoa hồng, hoa bưởi, hoa đậu.\nHoa đơn tính: chỉ có nhị hoặc chỉ có nhuỵ (hoa đực và hoa cái riêng). Ví dụ: hoa ngô (hoa đực ở cờ, hoa cái ở bắp), hoa bầu bí, hoa mướp."
+  },
+  {
+    "id": "khtn7-40-5",
+    "bai": 40,
+    "type": "essay",
+    "question": "Phân biệt hình thức đẻ trứng và đẻ con ở động vật. Vẽ sơ đồ mô tả các giai đoạn của quá trình sinh sản hữu tính ở gà.",
+    "answer": null,
+    "explanation": "Đẻ trứng: phôi phát triển bên ngoài cơ thể mẹ trong trứng (ví dụ: gà, rùa, cá, ếch).\nĐẻ con: phôi phát triển bên trong tử cung của cơ thể mẹ, được nuôi dưỡng qua nhau thai (ví dụ: chó, mèo, bò, người).\nSơ đồ sinh sản hữu tính ở gà: Gà trống (giao tử đực - tinh trùng) + Gà mái (giao tử cái - trứng) → Thụ tinh trong → Hợp tử → Phôi phát triển trong trứng → Gà con nở ra."
+  },
+  {
+    "id": "khtn7-40-6",
+    "bai": 40,
+    "type": "essay",
+    "question": "Vẽ sơ đồ các giai đoạn sinh sản hữu tính ở cây ngô, giải thích tại sao khi ruộng ngô nếp trồng gần ruộng ngô tẻ thì khi thu hoạch có những bắp ngô có cả hạt ngô nếp và hạt ngô tẻ trong cùng một bắp.",
+    "answer": null,
+    "explanation": "Sơ đồ sinh sản hữu tính ở ngô: Hạt phấn (hoa đực ở cờ) → Thụ phấn nhờ gió → Đến hoa cái (bắp ngô) → Thụ tinh → Hợp tử → Hạt ngô.\nGiải thích: Ngô thụ phấn nhờ gió; hạt phấn của ngô tẻ bay sang và thụ phấn cho một số hoa cái của cây ngô nếp (và ngược lại). Mỗi hoa cái thụ phấn từ nguồn khác nhau tạo ra hạt mang đặc tính khác nhau, dẫn đến trong cùng một bắp ngô có cả hạt nếp và hạt tẻ."
+  },
+  {
+    "id": "khtn7-40-7",
+    "bai": 40,
+    "type": "essay",
+    "question": "So sánh hình thức sinh sản vô tính và sinh sản hữu tính ở sinh vật theo mẫu bảng (Giống nhau / Khác nhau).",
+    "answer": null,
+    "explanation": "Giống nhau: đều tạo ra cơ thể mới từ cơ thể ban đầu; đều đảm bảo sự duy trì và phát triển của loài.\nKhác nhau:\n- Sinh sản vô tính: chỉ có 1 cơ thể tham gia; không có sự kết hợp giao tử; con giống hệt mẹ về mặt di truyền; tạo ra nhiều cá thể nhanh trong điều kiện thuận lợi.\n- Sinh sản hữu tính: có 2 cơ thể (đực và cái) tham gia; có sự kết hợp giao tử đực và cái (thụ tinh); con có đặc tính của cả bố và mẹ; tạo ra sự đa dạng di truyền, thích nghi tốt hơn với môi trường biến đổi."
+  },
+  {
+    "id": "khtn7-40-8",
+    "bai": 40,
+    "type": "essay",
+    "question": "Hiện nay, nhiều giống ngô mới có năng suất cao, chất lượng tốt. Dựa trên những kiến thức đã học, em hãy dự đoán biện pháp được sử dụng để tạo ra những giống ngô đó.",
+    "answer": null,
+    "explanation": "Các biện pháp có thể được sử dụng: lai tạo giống (thụ phấn chéo có chọn lọc giữa các giống ngô tốt); ứng dụng công nghệ sinh học như chỉnh sửa gen hoặc chuyển gen để tăng năng suất và kháng sâu bệnh; nuôi cấy mô để nhân nhanh các dòng ưu việt; lai tạo ra giống ngô lai F1 kết hợp ưu thế lai."
+  },
+  {
+    "id": "khtn7-40-9",
+    "bai": 40,
+    "type": "essay",
+    "question": "Vụ trước, bà của Hoa trồng giống lúa mới, bà thấy giống lúa này cho năng suất cao, nấu cơm dẻo và thơm, vụ này bà muốn tiếp tục trồng giống lúa đó nên bà đi mua lúa giống. Hoa thắc mắc tại sao không lấy hạt lúa nhà mình vừa thu hoạch để trồng tiếp vụ này. Em hãy vận dụng những kiến thức đã học để giải thích cho Hoa hiểu.",
+    "answer": null,
+    "explanation": "Giống lúa bà trồng là giống lúa lai F1 (hạt giống lai). Trong sinh sản hữu tính, con cái kết hợp đặc tính di truyền từ cả bố lẫn mẹ, nên thế hệ F2 (hạt thu hoạch từ lúa F1) sẽ bị phân li tính trạng — không đồng đều, năng suất và chất lượng giảm so với F1. Vì vậy mỗi vụ phải mua hạt giống F1 mới để đảm bảo năng suất và chất lượng ổn định."
+  },
+  {
+    "id": "khtn7-41-1",
+    "bai": 41,
+    "type": "mcq",
+    "question": "Trong điều khiển sinh sản ở động vật, những biện pháp nào thúc đẩy trứng chín nhanh và chín hàng loạt?",
+    "options": [
+      "Sử dụng hormone hoặc thay đổi yếu tố môi trường.",
+      "Nuôi cấy phôi, thụ tinh nhân tạo.",
+      "Nuôi cấy phôi, thay đổi các yếu tố môi trường.",
+      "Sử dụng hormone."
+    ],
+    "answer": "A",
+    "explanation": "Để thúc đẩy trứng chín nhanh và chín hàng loạt, người ta sử dụng hormone kích thích rụng trứng hoặc thay đổi yếu tố môi trường (ánh sáng, nhiệt độ) nhằm kích thích sinh sản."
+  },
+  {
+    "id": "khtn7-41-2",
+    "bai": 41,
+    "type": "essay",
+    "question": "Giải thích tại sao khi trồng thanh long, để kích thích ra hoa trái vụ, người ta thường thắp đèn vào ban đêm (từ 6 giờ đến 10 giờ trong một đêm, kéo dài khoảng 15 đến 20 đêm). Biết rằng, thanh long chỉ ra hoa, tạo quả vào mùa hè.",
+    "answer": null,
+    "explanation": "Thanh long ra hoa khi có ngày dài (mùa hè, ánh sáng nhiều giờ). Bằng cách thắp đèn ban đêm, người trồng kéo dài thời gian chiếu sáng nhân tạo, đánh lừa cây rằng đang là mùa hè. Điều này kích thích cây tổng hợp hormone ra hoa, giúp thanh long ra hoa trái vụ (mùa đông) và tăng số vụ thu hoạch trong năm."
+  },
+  {
+    "id": "khtn7-41-3",
+    "bai": 41,
+    "type": "essay",
+    "question": "Để tăng hiệu suất thụ phấn ở thực vật, người ta thường sử dụng biện pháp gì? Lấy ví dụ về một số cây trồng thường được thụ phấn nhân tạo trong trồng trọt.",
+    "answer": null,
+    "explanation": "Biện pháp: thụ phấn nhân tạo (dùng bông hoặc dụng cụ lấy phấn hoa từ hoa đực và chuyển sang nhụy hoa cái đúng thời điểm nở).\nVí dụ: ngô (tách cờ lấy phấn rắc vào bắp); mướp, bí, bầu (dùng hoa đực quét vào nhụy hoa cái); vani; chà là."
+  },
+  {
+    "id": "khtn7-41-4",
+    "bai": 41,
+    "type": "essay",
+    "question": "Các khẳng định sau đây đúng hay sai?\n1. Thụ tinh nhân tạo có tác dụng là sử dụng hiệu quả các con đực mang đặc điểm tốt\n2. Bảo vệ các loài côn trùng thụ phấn trong tự nhiên làm tăng hiệu quả thụ phấn cho cây trồng\n3. Sử dụng hormone nhân tạo để kích thích ra hoa, phân hoá hoa đực hoặc hoa cái\n4. Kích thích cây thanh long ra hoa trái vụ bằng cách thắp đèn chiếu sáng vào ban đêm\n5. Nuôi cấy phôi ở động vật bao gồm các bước: tách tinh trùng thành hai loại rồi cho thụ tinh với trứng trong ống nghiệm, sau đó nuôi cấy hợp tử trong môi trường nhân tạo",
+    "answer": null,
+    "explanation": "1. Đúng — một con đực ưu tú có thể cung cấp tinh trùng cho nhiều con cái, khai thác tối đa ưu điểm di truyền.\n2. Đúng.\n3. Đúng — hormone nhân tạo (như ethylene, gibberellin) có thể kích thích ra hoa hoặc phân hóa giới tính hoa.\n4. Đúng.\n5. Sai — nuôi cấy phôi bao gồm: kích thích siêu rụng trứng ở con cái cho phôi, lấy phôi, nuôi cấy và cấy ghép phôi vào con cái khác (không phải tách tinh trùng thành hai loại)."
+  },
+  {
+    "id": "khtn7-41-5",
+    "bai": 41,
+    "type": "essay",
+    "question": "Nghiên cứu những thí nghiệm dưới đây rồi rút ra nhận xét về sự sinh sản của động vật phụ thuộc vào những yếu tố nào của môi trường.\nThí nghiệm 1: Gà mái thường đẻ 1 quả trứng/ngày, khi tăng chế độ chiếu sáng lên 16 giờ/ngày thì gà đẻ 2 quả trứng/ngày.\nThí nghiệm 2: Cá rô phi Việt Nam có nguồn gốc ở vùng xích đạo, nơi nhiệt độ trung bình là 30°C, mỗi năm đẻ 11 lứa. Nếu nuôi cá ở nhiệt độ từ 16°C đến 18°C thì cá ngừng sinh sản.\nThí nghiệm 3: Cóc đẻ rộ trong tháng 4 nên sau khi đẻ, khối lượng hai buồng trứng giảm. Sau đó, nếu được ăn đầy đủ thì đến tháng 10, hai buồng trứng phục hồi khối lượng và lại có khả năng sinh sản.",
+    "answer": null,
+    "explanation": "Nhận xét:\n- Thí nghiệm 1: Ánh sáng ảnh hưởng đến sinh sản — tăng thời gian chiếu sáng làm tăng số trứng đẻ ra.\n- Thí nghiệm 2: Nhiệt độ ảnh hưởng đến sinh sản — nhiệt độ thấp hơn ngưỡng tối thiểu làm cá ngừng sinh sản.\n- Thí nghiệm 3: Dinh dưỡng (thức ăn) ảnh hưởng đến sinh sản — cung cấp đủ dinh dưỡng giúp buồng trứng phục hồi và động vật sinh sản trở lại.\nKết luận: Sinh sản ở động vật chịu ảnh hưởng của các yếu tố môi trường: ánh sáng, nhiệt độ và dinh dưỡng."
+  },
+  {
+    "id": "khtn7-41-6",
+    "bai": 41,
+    "type": "essay",
+    "question": "Một trang trại nuôi bò lấy thịt có số lượng bò đực rất lớn. Theo em, để duy trì nguồn bò đực với số lượng lớn, trang trại này nên thực hiện biện pháp gì?",
+    "answer": null,
+    "explanation": "Trang trại nên áp dụng biện pháp thụ tinh nhân tạo kết hợp phân loại tinh trùng mang nhiễm sắc thể Y (quyết định giới tính đực). Bằng cách dùng tinh trùng Y để thụ tinh nhân tạo cho bò cái, tỉ lệ bò đực sinh ra sẽ tăng cao. Ngoài ra có thể kết hợp nuôi cấy phôi từ bò đực ưu tú để nhân nhanh số lượng."
+  },
+  {
+    "id": "khtn7-41-7",
+    "bai": 41,
+    "type": "essay",
+    "question": "Tại sao cần phải tăng sinh sản ở động vật, thực vật nhưng lại phải điều chỉnh số con và khoảng cách giữa các lần sinh con ở người? Em hãy đề xuất một số biện pháp điều khiển sinh sản ở người.",
+    "answer": null,
+    "explanation": "Tăng sinh sản ở động vật, thực vật: nhằm cung cấp đủ thực phẩm, nguyên liệu cho con người; bảo tồn các loài quý hiếm; phát triển kinh tế nông nghiệp.\nĐiều chỉnh sinh sản ở người: dân số thế giới tăng nhanh gây áp lực về tài nguyên, môi trường, chất lượng cuộc sống; cần điều chỉnh để đảm bảo chất lượng nuôi dưỡng, giáo dục con cái và phát triển bền vững.\nBiện pháp điều khiển sinh sản ở người: sử dụng các biện pháp tránh thai; kế hoạch hóa gia đình; giáo dục giới tính; hỗ trợ sinh sản cho các cặp vợ chồng vô sinh (thụ tinh ống nghiệm)."
+  },
+  {
+    "id": "khtn7-42-1",
+    "bai": 42,
+    "type": "essay",
+    "question": "Nêu vai trò của tế bào trong cơ thể và mô tả mối quan hệ giữa tế bào và cơ thể.",
+    "answer": null,
+    "explanation": "Vai trò của tế bào: tế bào là đơn vị cấu trúc và chức năng cơ bản của cơ thể; mọi hoạt động sống của cơ thể đều diễn ra ở cấp độ tế bào (trao đổi chất, năng lượng, sinh sản, cảm ứng).\nMối quan hệ: tế bào → mô → cơ quan → hệ cơ quan → cơ thể. Các tế bào hợp tác với nhau tạo nên cơ thể thống nhất; cơ thể điều khiển hoạt động của tế bào thông qua thần kinh và hormone; ngược lại, trạng thái tế bào ảnh hưởng đến toàn bộ cơ thể."
+  },
+  {
+    "id": "khtn7-42-2",
+    "bai": 42,
+    "type": "essay",
+    "question": "Thế giới sinh vật có nhiều cấp tổ chức khác nhau, trong đó, tế bào là cấu trúc nhỏ nhất có biểu hiện đầy đủ tính chất của sự sống. Nếu như tách rời tế bào khỏi cơ thể thì điều gì sẽ xảy ra?",
+    "answer": null,
+    "explanation": "Nếu tách rời tế bào khỏi cơ thể, tế bào sẽ mất dần khả năng sống và chết đi (trừ trường hợp được nuôi cấy trong môi trường nhân tạo đặc biệt). Nguyên nhân: tế bào không còn được cung cấp chất dinh dưỡng, oxy và các tín hiệu điều hòa từ cơ thể; các sản phẩm bài tiết tích lũy gây độc. Điều này chứng tỏ tế bào và cơ thể có mối quan hệ mật thiết, không thể tách rời."
+  },
+  {
+    "id": "khtn7-42-3",
+    "bai": 42,
+    "type": "essay",
+    "question": "Chọn các từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau:\nCơ thể sinh vật lấy ...(1)..., nước và chất khí (O₂ hoặc CO₂) từ môi trường cung cấp cho ...(2)... thực hiện được quá trình trao đổi chất để lớn lên, sinh sản và cảm ứng, từ đó giúp ...(3)... thực hiện được các hoạt động sống. Như vậy, ...(4)... ở cấp độ tế bào là cơ sở cho các hoạt động sống của cơ thể và các hoạt động sống của cơ thể lại điều khiển các hoạt động sống của tế bào, đảm bảo cơ thể sinh vật là ...(5)....",
+    "answer": null,
+    "explanation": "(1) chất dinh dưỡng; (2) tế bào; (3) cơ thể; (4) trao đổi chất và chuyển hoá năng lượng; (5) một thể thống nhất."
+  },
+  {
+    "id": "khtn7-42-4",
+    "bai": 42,
+    "type": "essay",
+    "question": "Em hãy lấy một ví dụ để chứng minh cho khẳng định \"Khi một cơ quan bị tổn thương hoặc ngừng hoạt động sẽ ảnh hưởng đến toàn bộ cơ thể\".",
+    "answer": null,
+    "explanation": "Ví dụ: Khi tim ngừng đập (cơ quan bị tổn thương), máu không được bơm đến các cơ quan khác → não thiếu oxy sau vài phút sẽ tổn thương không phục hồi; phổi, thận, gan cũng dần ngừng hoạt động → toàn bộ cơ thể chết. Điều này chứng tỏ các cơ quan trong cơ thể có mối quan hệ mật thiết, một cơ quan bị ảnh hưởng kéo theo toàn bộ cơ thể."
+  },
+  {
+    "id": "khtn7-42-5",
+    "bai": 42,
+    "type": "essay",
+    "question": "Khi xây dựng và sửa chữa sân trường hoặc vỉa hè, người ta thường xén rễ của những cây cổ thụ để đổ bê tông xung quanh gốc cây. Em hãy dự đoán điều gì có thể xảy ra đối với cây cổ thụ này và giải thích tại sao.",
+    "answer": null,
+    "explanation": "Dự đoán: cây cổ thụ sẽ sinh trưởng kém, lá vàng úa, dần héo và có thể chết.\nGiải thích: Rễ cây có chức năng hút nước và muối khoáng từ đất cung cấp cho toàn cây. Khi rễ bị xén bớt, lượng nước và chất dinh dưỡng hút lên giảm → lá không đủ nguyên liệu quang hợp, cây thiếu hụt năng lượng và chất hữu cơ → toàn bộ cơ thể cây suy yếu. Ngoài ra, bê tông bịt kín mặt đất ngăn rễ hô hấp và phát triển thêm làm tình trạng càng tệ hơn."
   }
 ]
