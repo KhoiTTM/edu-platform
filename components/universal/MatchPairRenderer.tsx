@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useMemo } from 'react';
+import { formatText } from './formatText';
 
 interface MatchPairRendererProps {
   instruction: string;
@@ -86,7 +87,7 @@ export function MatchPairRenderer({
                     : 'bg-slate-800 border-slate-700 text-slate-200 hover:bg-slate-700 shadow-[0_4px_0_rgb(30,41,59)]'
                 }`}
               >
-                {item}
+                {formatText(item)}
               </button>
             );
           })}
@@ -113,7 +114,7 @@ export function MatchPairRenderer({
                     : 'bg-slate-800 border-slate-700 text-slate-200 hover:bg-slate-700 shadow-[0_4px_0_rgb(30,41,59)]'
                 }`}
               >
-                {item}
+                {formatText(item)}
               </button>
             );
           })}
