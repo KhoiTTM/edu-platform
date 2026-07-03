@@ -28,6 +28,9 @@ async function getAssessmentMap(subject: string, grade?: number) {
       14: "Bài 14: Phản xạ âm, chống ô nhiễm tiếng ồn",
       15: "Bài 15: Năng lượng ánh sáng. Tia sáng, vùng tối",
       16: "Bài 16: Sự phản xạ ánh sáng",
+      17: "Bài 17: Ảnh của vật qua gương phẳng",
+      18: "Bài 18: Nam châm",
+      19: "Bài 19: Từ trường",
     };
     const countByBai: Record<number, number> = {};
     for (const q of questions as any[]) {
@@ -49,7 +52,7 @@ async function getAssessmentMap(subject: string, grade?: number) {
 
   let query = supabase
     .from("assessment_collections")
-    .select(`id, title, volume, units, sequence_number, exam_type, subject_slug, grade, exams (id, title, total_questions, exam_number)`)
+    .select(`id, title, volume, units, sequence_number, exam_type, subject_slug, grade, exams (id, title, total_questions, exam_number, external_url)`)
     .eq("subject_slug", subject)
     .eq("status", "published")
     .order("volume", { ascending: true })
@@ -124,6 +127,7 @@ export default function SubjectMapPage() {
   const [activeTab, setActiveTab] = useState<"lesson" | "workbook" | "review" | "reflex">("lesson");
   const [completedExams, setCompletedExams] = useState<string[]>([]);
   const [collapsedUnits, setCollapsedUnits] = useState<Record<string, boolean>>({});
+  const [collapsedReflex, setCollapsedReflex] = useState<Record<string, boolean>>({});
   const [isLoading, setIsLoading] = useState(true);
   const [isPickingRandom, setIsPickingRandom] = useState(false);
   const [timerLimit, setTimerLimit] = useState(30);
@@ -237,19 +241,24 @@ export default function SubjectMapPage() {
         <tbody className="divide-y divide-slate-800/60 text-sm font-bold text-slate-200">
           {exams.map((exam: any, idx: number) => {
             const isCompleted = exam.is_completed || completedExams.includes(exam.id);
-            const href = `/test-assessment?examId=${exam.id}${timer ? `&timer=${timer}` : ""}`;
+            // Nếu đề có external_url → mở link ngoài (Flipbook, PDF...)
+            const externalUrl = exam.external_url || exam.metadata_json?.external_url;
+            const href = externalUrl ?? `/test-assessment?examId=${exam.id}${timer ? `&timer=${timer}` : ""}`;
+            const isExternal = !!externalUrl;
             return (
               <tr key={exam.id} className={clsx("transition-all duration-150 group hover:bg-slate-800/20", isCompleted && "text-slate-500")}>
                 <td className="px-6 py-4 text-center font-black text-slate-400 group-hover:text-cyan-400 transition-colors">{++globalIndex}</td>
                 <td className="px-6 py-4">
-                  <Link href={href} className={clsx("hover:text-cyan-400 transition-colors block leading-snug", isCompleted ? "line-through decoration-slate-600/50" : "font-extrabold")}>
+                  <Link href={href} target={isExternal ? "_blank" : undefined} rel={isExternal ? "noopener noreferrer" : undefined}
+                    className={clsx("hover:text-cyan-400 transition-colors block leading-snug", isCompleted ? "line-through decoration-slate-600/50" : "font-extrabold")}>
                     {exam.title}
                   </Link>
                 </td>
                 <td className="px-6 py-4 text-center">
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-900/60 border border-slate-800 text-xs font-black text-slate-300">
-                    <Star size={12} className="text-amber-400 fill-amber-400" />{exam.total_questions || 15} Câu
-                  </span>
+                  {isExternal
+                    ? <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-violet-500/10 border border-violet-500/30 text-xs font-black text-violet-400">📖 Flipbook</span>
+                    : <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-900/60 border border-slate-800 text-xs font-black text-slate-300"><Star size={12} className="text-amber-400 fill-amber-400" />{exam.total_questions || 15} Câu</span>
+                  }
                 </td>
                 <td className="px-6 py-4 text-center">
                   {isCompleted
@@ -257,9 +266,12 @@ export default function SubjectMapPage() {
                     : <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-sky-500/10 border border-sky-500/30 text-sky-400 text-[10px] font-black uppercase tracking-wider"><Play size={12} />Sẵn sàng</span>}
                 </td>
                 <td className="px-6 py-4 text-center">
-                  <Link href={href} className={clsx("inline-flex items-center justify-center gap-1 px-4 py-1.5 rounded-xl font-black text-xs uppercase tracking-wide transition-all active:scale-95 duration-150",
-                    isCompleted ? "border border-slate-700 text-slate-400 hover:bg-slate-800 hover:text-white" : "bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-md shadow-blue-500/10")}>
-                    {isCompleted ? "Làm lại" : "Luyện tập"}
+                  <Link href={href} target={isExternal ? "_blank" : undefined} rel={isExternal ? "noopener noreferrer" : undefined}
+                    className={clsx("inline-flex items-center justify-center gap-1 px-4 py-1.5 rounded-xl font-black text-xs uppercase tracking-wide transition-all active:scale-95 duration-150",
+                      isExternal
+                        ? "bg-gradient-to-r from-violet-500 to-purple-600 hover:from-violet-400 hover:to-purple-500 text-white shadow-md shadow-purple-500/10"
+                        : isCompleted ? "border border-slate-700 text-slate-400 hover:bg-slate-800 hover:text-white" : "bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-md shadow-blue-500/10")}>
+                    {isExternal ? "Mở Flipbook" : isCompleted ? "Làm lại" : "Luyện tập"}
                   </Link>
                 </td>
               </tr>
@@ -478,22 +490,53 @@ export default function SubjectMapPage() {
                 ))}
               </div>
             </div>
-            {reflexes.map((vol: any) => (
-              <div key={`reflex-${vol.volume}`} className="mb-16">
-                <div className="mb-6 rounded-2xl p-5 text-white border relative overflow-hidden flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-gradient-to-r from-orange-600/85 to-rose-600/85"
-                  style={{ boxShadow: "0 8px 32px rgba(244,63,94,0.4)" }}>
-                  <div className="flex-1 pr-4">
-                    <h2 className="text-2xl font-black tracking-wider drop-shadow-md">{vol.title}</h2>
+            {reflexes.map((vol: any) => {
+              const reflexKey = `reflex-${vol.volume}`;
+              const isReflexCollapsed = collapsedReflex[reflexKey] !== false;
+              const doneCount = (vol.exams || []).filter((e: any) => completedExams.includes(e.id)).length;
+              return (
+                <div key={reflexKey} className="mb-10">
+                  {/* Header card — click to toggle */}
+                  <div
+                    onClick={() => setCollapsedReflex(prev => ({ ...prev, [reflexKey]: !isReflexCollapsed }))}
+                    className="mb-4 rounded-2xl p-5 text-white border relative overflow-hidden flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-gradient-to-r from-orange-600/85 to-rose-600/85 cursor-pointer active:scale-[0.99] transition-transform duration-100 select-none"
+                    style={{ boxShadow: "0 8px 32px rgba(244,63,94,0.4)" }}>
+                    <div className="flex-1 pr-4">
+                      <h2 className="text-2xl font-black tracking-wider drop-shadow-md">{vol.title}</h2>
+                      <p className="font-bold text-white/60 mt-1 uppercase tracking-widest text-[9px]">{isReflexCollapsed ? "Nhấp để mở rộng" : "Nhấp để thu nhỏ"}</p>
+                    </div>
+                    <div className="flex items-center gap-3 z-10">
+                      <div className="bg-white/10 px-3 py-1 rounded-full text-xs font-black border border-white/20">
+                        {doneCount}/{(vol.exams || []).length} Đề
+                      </div>
+                      <button
+                        onClick={(e) => { e.stopPropagation(); pickRandom(vol.exams, timerLimit); }}
+                        disabled={isPickingRandom}
+                        className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-white text-rose-600 font-extrabold text-xs shadow-lg transition-all active:scale-95 disabled:opacity-50 hover:bg-slate-50">
+                        <Sparkles size={14} className="animate-pulse" />
+                        {isPickingRandom ? "Đang chọn..." : "Ngẫu nhiên"}
+                      </button>
+                      <div className="w-8 h-8 rounded-full bg-white/15 flex items-center justify-center border border-white/20">
+                        {isReflexCollapsed ? <ChevronDown size={18} /> : <ChevronUp size={18} />}
+                      </div>
+                    </div>
                   </div>
-                  <button onClick={() => pickRandom(vol.exams, timerLimit)} disabled={isPickingRandom}
-                    className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-white text-rose-600 font-extrabold text-xs shadow-lg transition-all active:scale-95 disabled:opacity-50 hover:bg-slate-50">
-                    <Sparkles size={14} className="animate-pulse" />
-                    {isPickingRandom ? "Đang chọn..." : "Luyện đề Ngẫu nhiên"}
-                  </button>
+                  {/* Collapsible exam list */}
+                  <AnimatePresence initial={false}>
+                    {!isReflexCollapsed && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.25 }}
+                        className="overflow-hidden">
+                        <ExamTable exams={vol.exams} timer={timerLimit} />
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
-                <ExamTable exams={vol.exams} timer={timerLimit} />
-              </div>
-            ))}
+              );
+            })}
             {reflexes.length === 0 && (
               <div className="text-center py-20 text-slate-400 font-bold text-xl border-2 border-dashed border-slate-700 rounded-2xl bg-slate-800/30">Không có đề luyện phản xạ.</div>
             )}
