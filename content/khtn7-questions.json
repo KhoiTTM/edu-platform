@@ -2520,5 +2520,73 @@
     "question": "Theo em, hình ảnh về bảo vệ rừng/cây xanh nói lên điều gì? Qua đó em muốn gửi thông điệp gì đến bạn bè và người thân? Em sẽ có những hành động cụ thể gì để thực hiện thông điệp đó?",
     "answer": null,
     "explanation": "Hình ảnh nói lên: tầm quan trọng của cây xanh/rừng đối với sự sống — cung cấp oxygen, hấp thụ CO₂, điều hòa khí hậu.\nThông điệp: hãy bảo vệ rừng và trồng cây xanh.\nHành động cụ thể: không chặt phá cây, tham gia trồng cây, tắt điện khi không dùng, hạn chế rác thải nhựa, tuyên truyền bảo vệ môi trường."
+  },
+  {
+    "id": "khtn7-24-1",
+    "bai": 24,
+    "type": "essay",
+    "question": "Sắp xếp các bước sau đây theo đúng trình tự thí nghiệm chứng minh quang hợp giải phóng oxygen:\n(1) Để một cốc ở chỗ tối hoặc bọc giấy đen, cốc còn lại để ra chỗ nắng.\n(2) Lấy 2 cành rong đuôi chó cho vào 2 ống nghiệm đã đổ đầy nước rồi úp vào 2 cốc nước đầy sao cho bọt khí không lọt vào.\n(3) Đưa que đóm còn tàn đỏ vào miệng ống nghiệm.\n(4) Theo dõi khoảng 6 giờ; nhẹ nhàng rút 2 cành rong ra, bịt kín ống nghiệm và lấy ống nghiệm ra khỏi 2 cốc rồi lật ngược lại.",
+    "answer": null,
+    "explanation": "Trình tự đúng: (2) → (1) → (4) → (3)."
+  },
+  {
+    "id": "khtn7-24-2",
+    "bai": 24,
+    "type": "mcq",
+    "question": "Khi nuôi cá cảnh trong bể kính, có thể làm tăng dưỡng khí cho cá bằng cách nào?",
+    "options": [
+      "Thả rong hoặc cây thuỷ sinh khác vào bể cá.",
+      "Tăng nhiệt độ trong bể.",
+      "Thắp đèn cả ngày và đêm.",
+      "Đổ thêm nước vào bể cá."
+    ],
+    "answer": "A",
+    "explanation": "Rong và cây thuỷ sinh quang hợp tạo ra oxygen hoà tan trong nước, cung cấp dưỡng khí cho cá."
+  },
+  {
+    "id": "khtn7-24-3",
+    "bai": 24,
+    "type": "essay",
+    "question": "Dựa vào nội dung bài thực hành, hãy cho biết những khẳng định sau đây đúng hay sai:\n(1) Sử dụng băng giấy đen bịt kín một phần lá ở cả 2 mặt nhằm không cho lá tiếp nhận ánh sáng, diệp lục ở phần lá bịt kín sẽ không hấp thụ ánh sáng để quang hợp tạo thành tinh bột.\n(2) Phần lá bị bịt kín bằng giấy đen vẫn tổng hợp được tinh bột.\n(3) Phần lá không dán băng giấy đen trong thí nghiệm trên tổng hợp được tinh bột.\n(4) Sử dụng băng giấy đen có thể biết được lá cây chỉ tổng hợp tinh bột khi có ánh sáng.\n(5) Thả thêm cành rong vào bể cá vì rong có tác dụng ức chế sự phát triển của các vi sinh vật gây hại cho cá.\n(6) Nguyên nhân làm que đóm còn tàn đỏ cháy bùng lên là do trong ống nghiệm có carbon dioxide.",
+    "answer": null,
+    "explanation": "(1) Đúng; (2) Sai — không có ánh sáng nên không quang hợp được; (3) Đúng; (4) Đúng; (5) Sai — rong thả vào để quang hợp tạo oxygen cho cá, không phải để ức chế vi sinh vật; (6) Sai — que đóm cháy là do trong ống nghiệm có oxygen (O₂), không phải CO₂."
+  },
+  {
+    "id": "khtn7-24-4",
+    "bai": 24,
+    "type": "mcq",
+    "question": "Vì sao trong thí nghiệm chứng minh tinh bột được tạo thành trong quang hợp lại sử dụng iodine làm thuốc thử?",
+    "options": [
+      "Dung dịch iodine phản ứng với tinh bột tạo màu xanh tím đặc trưng.",
+      "Chỉ có dung dịch iodine mới tác dụng với tinh bột.",
+      "Dung dịch iodine dễ tìm.",
+      "Dung dịch iodine phản ứng với tinh bột tạo màu đỏ đặc trưng."
+    ],
+    "answer": "A",
+    "explanation": "Iodine phản ứng đặc trưng với tinh bột tạo màu xanh tím, giúp nhận biết dễ dàng sự có mặt của tinh bột trong lá."
+  },
+  {
+    "id": "khtn7-24-5",
+    "bai": 24,
+    "type": "essay",
+    "question": "Quan sát Hình 24 (thí nghiệm với cây xanh và chuột trong chuông kín):\na) Mô tả hiện tượng quan sát được trong mỗi hình a, b, c. Giải thích các hiện tượng đó.\nb) Thí nghiệm trong hình chứng minh điều gì?",
+    "answer": null,
+    "explanation": "a) Hình a: Cây xanh trong chuông kín không có CO₂ → lá đổi màu, cây rũ cành lá vì không quang hợp được.\nHình b: Chuột trong chuông kín không có O₂ → chuột chết.\nHình c: Cây xanh và chuột cùng trong chuông kín → cả hai sống tốt vì chuột hô hấp thải CO₂ cho cây quang hợp; cây quang hợp thải O₂ cho chuột hô hấp.\nb) Thí nghiệm chứng minh: quang hợp cần CO₂ làm nguyên liệu và giải phóng O₂ cung cấp cho hô hấp của động vật."
+  },
+  {
+    "id": "khtn7-24-6",
+    "bai": 24,
+    "type": "essay",
+    "question": "Tại sao trong thí nghiệm chứng minh tinh bột được tạo thành trong quang hợp lại phải để chậu cây khoai lang trong bóng tối hai ngày?",
+    "answer": null,
+    "explanation": "Phải để chậu cây trong bóng tối hai ngày để quang hợp không xảy ra, lượng tinh bột đang có sẵn trong lá sẽ được vận chuyển đến các cơ quan khác. Đảm bảo khi dán băng giấy đen vào thì vị trí đó không còn tinh bột nữa — tránh kết quả sai khi nhỏ iodine."
+  },
+  {
+    "id": "khtn7-24-7",
+    "bai": 24,
+    "type": "essay",
+    "question": "Ở thí nghiệm chứng minh quang hợp giải phóng khí oxygen, nếu đưa que đóm còn tàn đỏ lên miệng ống nghiệm mà que đóm không cháy, theo em nguyên nhân nào dẫn đến hiện tượng đó? Em hãy đề xuất cách nhận biết khác trong thí nghiệm chứng minh quang hợp giải phóng khí oxygen.",
+    "answer": null,
+    "explanation": "Nguyên nhân que đóm không cháy: lượng oxygen tạo ra chưa đủ lớn (thời gian theo dõi chưa đủ, ánh sáng yếu, ít cành rong).\nCách khác: Cắm ngập cành rong đuôi chó trong ống nghiệm có nước (ngọn quay xuống đáy, cuống hướng lên miệng, cuống ngập dưới mặt nước khoảng 2 cm), đặt sát đèn điện. Sau khoảng 30 phút có thể quan sát các bọt khí oxygen tạo thành nổi lên."
   }
 ]

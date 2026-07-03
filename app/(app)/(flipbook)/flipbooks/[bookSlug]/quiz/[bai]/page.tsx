@@ -45,6 +45,7 @@ const LESSON_TITLES: Record<string, Record<number, string>> = {
     21: "SBT - KHTN 7 - Bài 21. Khái quát về trao đổi chất và chuyển hoá năng lượng",
     22: "SBT - KHTN 7 - Bài 22. Quang hợp ở thực vật",
     23: "SBT - KHTN 7 - Bài 23. Một số yếu tố ảnh hưởng đến quang hợp",
+    24: "SBT - KHTN 7 - Bài 24. Thực hành: Chứng minh quang hợp ở cây xanh",
   },
 };
 
