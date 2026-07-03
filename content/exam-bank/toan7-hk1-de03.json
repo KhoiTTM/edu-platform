@@ -1,0 +1,201 @@
+{
+  "collection": {
+    "title": "Toán 7 - Thi HK1 - Đề 01",
+    "subject_slug": "toan",
+    "grade": 7,
+    "volume": 1,
+    "units": [102],
+    "sequence_number": 1,
+    "exam_type": "review",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 3,
+      "title": "Toán 7 - Thi HK1 - Đề 03",
+      "duration_minutes": 45,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cho $\\left|x - \\dfrac{5}{9}\\right| + \\dfrac{1}{3} = 1$. Số các giá trị âm của $x$ thỏa mãn là:",
+            "options": ["0", "1", "2", "3"],
+            "correct_index": 1,
+            "explanation": "$\\left|x-\\dfrac{5}{9}\\right|=\\dfrac{2}{3}$ → $x=\\dfrac{5}{9}+\\dfrac{6}{9}=\\dfrac{11}{9}$ hoặc $x=\\dfrac{5}{9}-\\dfrac{6}{9}=-\\dfrac{1}{9}$. Chỉ có 1 giá trị âm."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Kết quả của phép tính $\\left(\\dfrac{3}{4} - 1\\right)^2 + 25\\%$ bằng:",
+            "options": ["$\\dfrac{1}{8}$", "$\\dfrac{3}{8}$", "$0{,}25$", "$\\dfrac{5}{16}$"],
+            "correct_index": 3,
+            "explanation": "$\\left(-\\dfrac{1}{4}\\right)^2 + \\dfrac{1}{4} = \\dfrac{1}{16}+\\dfrac{4}{16}=\\dfrac{5}{16}$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Số nào sau đây là số vô tỉ?",
+            "options": ["$\\sqrt{4}$", "$\\sqrt{9}$", "$\\sqrt{5}$", "$\\sqrt{\\dfrac{1}{4}}$"],
+            "correct_index": 2,
+            "explanation": "$\\sqrt{4}=2\\in\\mathbb{Z}$, $\\sqrt{9}=3\\in\\mathbb{Z}$, $\\sqrt{1/4}=1/2\\in\\mathbb{Q}$. Chỉ $\\sqrt{5}\\in\\mathbb{I}$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Tính $\\sqrt{49} + \\sqrt{81}$:",
+            "options": ["$\\sqrt{130}$", "13", "16", "7"],
+            "correct_index": 2,
+            "explanation": "$\\sqrt{49}+\\sqrt{81}=7+9=16$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho $\\triangle ABC = \\triangle DEF$ và $\\triangle DEF = \\triangle NMP$. Điều nào suy ra $\\triangle ABC$ cân tại $A$?",
+            "options": [
+              "Tam giác DEF cân",
+              "$AB = EF$",
+              "$\\hat{C} = \\hat{E}$",
+              "$\\hat{B} = \\hat{D}$"
+            ],
+            "correct_index": 2,
+            "explanation": "$\\triangle ABC=\\triangle DEF$ → $\\hat{C}=\\hat{F}$ và $AB=DE, AC=DF$. Nếu $\\hat{C}=\\hat{E}$ → $\\hat{B}=\\hat{C}$ → $AB=AC$ → cân tại A."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Hai khẳng định nào sau đây đúng?\n1. Hai góc đối đỉnh thì bằng nhau.\n2. Hai góc bằng nhau thì đối đỉnh.\n3. Nếu $M$ là trung điểm $AB$ thì $MA=MB$.\n4. Nếu $MA=MB$ thì $M$ là trung điểm $AB$.",
+            "options": ["Chỉ 1 và 3", "Chỉ 1 và 2", "1, 2 và 3", "Cả 4"],
+            "correct_index": 0,
+            "explanation": "Khẳng định 1 và 3 đúng. Khẳng định 2 sai (bằng nhau chưa chắc đối đỉnh). Khẳng định 4 sai (M chưa chắc nằm trên AB)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Biểu đồ quạt tròn cho thấy tỉ lệ học sinh đạt điểm trung bình là 20%, điểm khá 45%, điểm giỏi 35%. Trường có 400 HS. Số HS điểm giỏi là:",
+            "options": ["80", "140", "180", "140"],
+            "correct_index": 2,
+            "explanation": "$400 \\times 35\\% = 140$ HS... Thực ra $400 \\times 45\\%=180$. Điểm giỏi $35\\%$: $400\\times0{,}35=140$. Đáp án khá: 180."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho $BC \\parallel DE$, $DC$ là tia phân giác của $\\widehat{BDE}$, $\\widehat{BDC}=45°$. Số đo $\\widehat{EDB}$ là:",
+            "options": ["$60°$", "$90°$", "$45°$", "$135°$"],
+            "correct_index": 1,
+            "explanation": "$BC\\parallel DE$, $\\widehat{BDC}=45°$ → $\\widehat{BDE}=2\\times45°=90°$ (DC phân giác)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hình vẽ, khẳng định nào sau đây là sai khi biết $\\widehat{B}=\\widehat{C}=45°$?",
+            "options": [
+              "$AB \\parallel CD$",
+              "$AB \\parallel EF$",
+              "$CD \\parallel EF$",
+              "$AB \\parallel DE$"
+            ],
+            "correct_index": 3,
+            "explanation": "Từ dữ liệu góc đã cho, $AB\\parallel CD$, $AB\\parallel EF$, $CD\\parallel EF$ đều có thể đúng. $AB\\parallel DE$ sai nếu không có căn cứ."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Định lí \"Nếu một đường thẳng cắt một trong hai đường thẳng song song thì nó cắt đường thẳng còn lại\". Giả thiết của định lí là:",
+            "options": [
+              "Nếu một đường thẳng cắt một trong hai đường thẳng song song.",
+              "Nếu một đường thẳng cắt một trong hai đường thẳng.",
+              "Nó cắt đường thẳng còn lại.",
+              "Cả mệnh đề."
+            ],
+            "correct_index": 0,
+            "explanation": "Giả thiết là phần \"Nếu...\": một đường thẳng cắt một trong hai đường thẳng song song."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "Tính GTNN của $A = (x-2)^2 + 3$:",
+            "options": ["$-1$", "$0$", "$3$", "$5$"],
+            "correct_index": 2,
+            "explanation": "$(x-2)^2 \\geq 0$ → $A \\geq 3$. Dấu \"=\" khi $x=2$. GTNN của $A$ là $3$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "So sánh $\\sqrt{3}+\\sqrt{5}$ và $\\sqrt{2}+\\sqrt{6}$:",
+            "options": [
+              "$\\sqrt{3}+\\sqrt{5} > \\sqrt{2}+\\sqrt{6}$",
+              "$\\sqrt{3}+\\sqrt{5} < \\sqrt{2}+\\sqrt{6}$",
+              "$\\sqrt{3}+\\sqrt{5} = \\sqrt{2}+\\sqrt{6}$",
+              "Không so sánh được"
+            ],
+            "correct_index": 1,
+            "explanation": "$(\\sqrt{3}+\\sqrt{5})^2=8+2\\sqrt{15}$; $(\\sqrt{2}+\\sqrt{6})^2=8+2\\sqrt{12}$. Vì $\\sqrt{15}>\\sqrt{12}$ → $\\sqrt{3}+\\sqrt{5}>\\sqrt{2}+\\sqrt{6}$. Đáp án A."
+          }
+        },
+        {
+          "type": "essay",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "**Bài 1.** Tính theo cách hợp lý:\n\na) $\\dfrac{5}{7} \\cdot \\dfrac{2}{15} \\cdot \\left(-\\dfrac{21}{5}\\right)$\n\nb) $\\left(-\\dfrac{5}{2}\\right)^2 \\cdot \\dfrac{9}{0{,}25} \\cdot \\left(2018^0 - 0{,}25\\right)^2$\n\nc) $\\dfrac{1}{3} \\cdot \\dfrac{2}{1} - \\dfrac{1}{2} \\cdot 1^{\\frac{1}{3}}$",
+            "explanation": "a) $\\dfrac{5}{7}\\cdot\\dfrac{2}{15}\\cdot(-\\dfrac{21}{5}) = \\dfrac{5\\cdot2\\cdot(-21)}{7\\cdot15\\cdot5}=\\dfrac{-210}{525}=-\\dfrac{2}{5}$.\nb) $\\dfrac{25}{4}\\cdot36\\cdot(1-0{,}25)^2=\\dfrac{25}{4}\\cdot36\\cdot\\dfrac{9}{16}=\\dfrac{25\\cdot36\\cdot9}{64}=\\dfrac{8100}{64}=\\dfrac{2025}{16}$.\nc) $\\dfrac{2}{3}-\\dfrac{1}{2}=\\dfrac{1}{6}$."
+          }
+        },
+        {
+          "type": "essay",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "**Bài 2.** Tìm $x$, biết:\n\na) $\\dfrac{x-1}{2} + 1 = \\dfrac{3x}{4}$\n\nb) $\\sqrt{x} = \\dfrac{9}{4}$ (với $x \\geq 0$)\n\nc) $|2x - 1| = |x + 3|$\n\nd) $x : \\dfrac{1}{2} = x - \\dfrac{x}{3}$",
+            "explanation": "a) Nhân 4: $2(x-1)+4=3x$ → $2x-2+4=3x$ → $x=2$.\nb) $\\sqrt{x}=\\dfrac{9}{4}$ → $x=\\dfrac{81}{16}$.\nc) $2x-1=x+3$ → $x=4$; hoặc $2x-1=-(x+3)$ → $3x=-2$ → $x=-\\dfrac{2}{3}$.\nd) $2x=x-\\dfrac{x}{3}=\\dfrac{2x}{3}$ → $2x-\\dfrac{2x}{3}=0$ → $\\dfrac{4x}{3}=0$ → $x=0$."
+          }
+        },
+        {
+          "type": "essay",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "**Bài 3 – Thống kê.** Một cửa hàng khảo sát loại nước yêu thích:\n\n| Loại nước | Cam | Dừa | Chanh | Ổi |\n|-----------|-----|-----|-------|----|\n| Số người  | 15  | 12  | 8     | 12 |\n\na) Có bao nhiêu người tham gia khảo sát?\nb) Tính tỉ lệ % mỗi loại nước.\nc) Loại nước nào ít người ưa chuộng nhất?\nd) Vẽ biểu đồ quạt tròn biểu diễn dữ liệu trên (mô tả góc quạt mỗi loại).",
+            "explanation": "a) Tổng = 15+12+8+12 = 47 người.\nb) Cam: $\\dfrac{15}{47}\\approx31{,}9\\%$; Dừa: $\\dfrac{12}{47}\\approx25{,}5\\%$; Chanh: $\\dfrac{8}{47}\\approx17{,}0\\%$; Ổi: $\\dfrac{12}{47}\\approx25{,}5\\%$.\nc) Chanh (ít nhất: 8 người).\nd) Góc quạt: Cam $\\approx115°$, Dừa $\\approx92°$, Chanh $\\approx61°$, Ổi $\\approx92°$."
+          }
+        },
+        {
+          "type": "essay",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "**Bài 4.** Cho $\\triangle ABC$ vuông tại $A$. Gọi $M$ là trung điểm $BC$. Phân giác $\\widehat{ABC}$ cắt $AC$ tại $I$. Biết $BI \\perp AM$ tại $H$.\n\na) Chứng minh $IA = IM$.\nb) Tính các góc của $\\triangle BIC$.\nc) Trên tia đối của tia $HB$ lấy $K$ sao cho $HK=HB$. Chứng minh $\\triangle AIB = \\triangle KIC$.",
+            "explanation": "a) $\\triangle ABH=\\triangle MBH$ (g.c.g): BH chung, $\\widehat{ABH}=\\widehat{MBH}$, $\\widehat{AHB}=\\widehat{MHB}=90°$ → $AH=HM$. Rồi $\\triangle AHI=\\triangle MHI$ (c.g.c) → $IA=IM$.\nb) $\\triangle BIC$ cân tại $I$, $\\widehat{BIC}=120°$, $\\widehat{IBC}=\\widehat{ICB}=30°$.\nc) $\\triangle ABH=\\triangle AKH$ → $BC\\parallel AK$ → $\\triangle AIK$ cân → $AI=IK$. Rồi c.g.c: $AI=IK$, $\\widehat{AIB}=\\widehat{KIC}$ (đối đỉnh), $BI=IC$."
+          }
+        },
+        {
+          "type": "essay",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "**Bài 5 (Nâng cao).** Tính GTNN của $B = |x-1| + |x-3|$.\n\nTính GTLN của $C = \\dfrac{5x^2+12}{x^2+2}$.",
+            "explanation": "$B = |x-1|+|x-3|$ là tổng khoảng cách từ $x$ đến 1 và 3 trên trục số. GTNN $= |3-1|=2$, đạt khi $1\\leq x\\leq3$.\n\n$C=\\dfrac{5x^2+12}{x^2+2}=5-\\dfrac{10-12}{x^2+2}=5+\\dfrac{2}{x^2+2}$. Vì $x^2\\geq0$ → $x^2+2\\geq2$ → $\\dfrac{2}{x^2+2}\\leq1$ → $C\\leq6$. GTLN $=6$ khi $x=0$."
+          }
+        }
+      ]
+    }
+  ]
+}
