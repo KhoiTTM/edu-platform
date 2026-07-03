@@ -32,6 +32,7 @@ async function getAssessmentMap(subject: string, grade?: number) {
       18: "Bài 18: Nam châm",
       19: "Bài 19: Từ trường",
       20: "Bài 20: Chế tạo nam châm điện đơn giản",
+      21: "Bài 21: Khái quát về trao đổi chất và chuyển hoá năng lượng",
     };
     const countByBai: Record<number, number> = {};
     for (const q of questions as any[]) {

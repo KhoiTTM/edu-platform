@@ -42,6 +42,7 @@ const LESSON_TITLES: Record<string, Record<number, string>> = {
     18: "SBT - KHTN 7 - Bài 18. Nam châm",
     19: "SBT - KHTN 7 - Bài 19. Từ trường",
     20: "SBT - KHTN 7 - Bài 20. Chế tạo nam châm điện đơn giản",
+    21: "SBT - KHTN 7 - Bài 21. Khái quát về trao đổi chất và chuyển hoá năng lượng",
   },
 };
 

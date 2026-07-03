@@ -2306,5 +2306,89 @@
     "stem": "Dòng điện vào động cơ điện thường rất lớn, có khi đến hàng nghìn ampe. Nếu để công tắc điện trực tiếp ở mạch điện này thì rất nguy hiểm, cho nên người ta dùng rơle điện từ. Hình 20.4 là sơ đồ mô tả ứng dụng của rơle điện từ: (1) nam châm điện; (2) thanh thép đàn hồi; (3) công tắc điện; (4) lò xo; (5) động cơ điện. Hãy giải thích hoạt động của thiết bị này.",
     "options": [],
     "answer": null
+  },
+  {
+    "id": "khtn7-21-1",
+    "bai": 21,
+    "type": "essay",
+    "question": "Chọn các từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau:\nChuyển hoá năng lượng là sự ___(1)___ năng lượng từ dạng này sang dạng khác như từ ___(2)___ thành hoá năng; từ hoá năng thành nhiệt năng. Năng lượng thường được tích luỹ trong ___(3)___. Sự trao đổi chất và chuyển hoá ___(4)___ gắn liền với nhau; quá trình này được coi là một trong những đặc tính ___(5)___ của sự sống.",
+    "answer": null,
+    "explanation": "Gợi ý: (1) biến đổi; (2) quang năng/cơ năng; (3) hợp chất hữu cơ/ATP; (4) năng lượng; (5) cơ bản"
+  },
+  {
+    "id": "khtn7-21-2",
+    "bai": 21,
+    "type": "essay",
+    "question": "Cho các yếu tố: thức ăn; oxygen; carbon dioxide; nhiệt năng; chất thải; chất hữu cơ; ATP. Xác định những yếu tố mà cơ thể người lấy vào; thải ra và tích luỹ trong cơ thể.",
+    "answer": null,
+    "explanation": "Lấy vào: thức ăn, oxygen. Thải ra: carbon dioxide, nhiệt năng, chất thải. Tích luỹ: chất hữu cơ, ATP."
+  },
+  {
+    "id": "khtn7-21-3",
+    "bai": 21,
+    "type": "essay",
+    "question": "Cho các yếu tố: chất khoáng; năng lượng; oxygen; carbon dioxide; chất hữu cơ; nước. Xác định yếu tố lấy vào, thải ra và tích luỹ trong cơ thể thực vật.",
+    "answer": null,
+    "explanation": "Lấy vào: chất khoáng, nước, carbon dioxide, năng lượng ánh sáng. Thải ra: oxygen, hơi nước. Tích luỹ: chất hữu cơ."
+  },
+  {
+    "id": "khtn7-21-4",
+    "bai": 21,
+    "type": "essay",
+    "question": "Chọn các từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau:\nTrao đổi chất và chuyển hoá ___(1)___ là đặc điểm cơ bản của sự sống; quá trình này có hai vai trò cơ bản là ___(2)___ cơ thể. Nhờ trao đổi chất nên cơ thể tự đổi mới thông qua quá trình đồng hoá và dị hoá. Đồng hoá là quá trình ___(3)___ các chất đơn giản thành các chất phức tạp. Dị hoá là quá trình ___(4)___ các chất phức tạp thành các chất đơn giản và tạo ra năng lượng.",
+    "answer": null,
+    "explanation": "Gợi ý: (1) năng lượng; (2) duy trì và phát triển; (3) tổng hợp; (4) phân giải"
+  },
+  {
+    "id": "khtn7-21-5",
+    "bai": 21,
+    "type": "mcq",
+    "question": "Trao đổi chất và chuyển hoá năng lượng có vai trò quan trọng đối với:",
+    "options": [
+      "Sự chuyển hoá của sinh vật.",
+      "Sự biến đổi các chất.",
+      "Sự trao đổi năng lượng.",
+      "Sự sống của sinh vật."
+    ],
+    "answer": "D",
+    "explanation": "Trao đổi chất và chuyển hoá năng lượng là đặc điểm cơ bản duy trì sự sống của sinh vật."
+  },
+  {
+    "id": "khtn7-21-6",
+    "bai": 21,
+    "type": "mcq",
+    "question": "Sinh vật có thể tồn tại, sinh trưởng, phát triển và thích nghi với môi trường là nhờ có quá trình nào?",
+    "options": [
+      "Quá trình trao đổi chất và sinh sản.",
+      "Quá trình chuyển hoá năng lượng.",
+      "Quá trình trao đổi chất và chuyển hoá năng lượng.",
+      "Quá trình trao đổi chất và cảm ứng."
+    ],
+    "answer": "C",
+    "explanation": "Trao đổi chất và chuyển hoá năng lượng là quá trình giúp sinh vật tồn tại, sinh trưởng, phát triển và thích nghi với môi trường."
+  },
+  {
+    "id": "khtn7-21-7",
+    "bai": 21,
+    "type": "essay",
+    "question": "Hãy dự đoán các tình huống có thể xảy ra khi con người không được cung cấp đủ không khí, nước uống và thức ăn.",
+    "answer": null,
+    "explanation": "Thiếu không khí (oxygen): tế bào không hô hấp được, thiếu năng lượng, có thể tử vong trong vài phút. Thiếu nước: mất nước, rối loạn chuyển hoá, tử vong sau vài ngày. Thiếu thức ăn: cơ thể dùng dự trữ (glycogen, mỡ, protein), suy kiệt dần."
+  },
+  {
+    "id": "khtn7-21-8",
+    "bai": 21,
+    "type": "essay",
+    "question": "Giải thích hiện tượng lá cây héo khi bị tách ra khỏi thân cây.",
+    "answer": null,
+    "explanation": "Khi lá bị tách ra khỏi thân, lá không còn nhận được nước và muối khoáng từ rễ qua thân. Lá vẫn tiếp tục thoát hơi nước qua khí khổng nhưng không được bù đắp, dẫn đến mất nước → tế bào mất áp suất thẩm thấu → lá héo."
+  },
+  {
+    "id": "khtn7-21-9",
+    "bai": 21,
+    "type": "essay",
+    "question": "Chuyển hoá năng lượng có vai trò gì đối với sự sống của sinh vật?",
+    "answer": null,
+    "explanation": "Chuyển hoá năng lượng cung cấp năng lượng (ATP) cho mọi hoạt động sống: sinh trưởng, vận động, sinh sản, cảm ứng. Không có chuyển hoá năng lượng, sinh vật không thể duy trì các hoạt động sống và sẽ chết."
   }
 ]
