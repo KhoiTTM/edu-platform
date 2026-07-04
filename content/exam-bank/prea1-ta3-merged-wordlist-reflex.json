@@ -1,0 +1,5523 @@
+{
+  "collection": {
+    "title": "Wordlist Pre A1 vs TA3",
+    "subject_slug": "pre-a1-starter",
+    "grade": 3,
+    "volume": 1,
+    "units": [
+      98
+    ],
+    "sequence_number": 98,
+    "exam_type": "reflex",
+    "reference_book": "Pre A1 Starters Wordlist + Tieng Anh 3",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 1,
+      "title": "Wordlist Pre A1 vs TA3 - De 01",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"brown\"** ⌚ nghĩa là gì?",
+            "options": [
+              "vâng",
+              "giáo viên",
+              "dừng lại",
+              "màu nâu"
+            ],
+            "correct_index": 3,
+            "explanation": "**brown** = **màu nâu** ⌚",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"robot\"** 👨 nghĩa là gì?",
+            "options": [
+              "xúc xích",
+              "người máy",
+              "bảng đen",
+              "cánh tay"
+            ],
+            "correct_index": 1,
+            "explanation": "**robot** = **người máy** 👨",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"mặt trời\"** 🎨 trong tiếng Anh là gì?",
+            "options": [
+              "sun",
+              "doll",
+              "football",
+              "onion"
+            ],
+            "correct_index": 0,
+            "explanation": "**mặt trời** = **sun** 🎨",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"chuối\"** 🤖 trong tiếng Anh là gì?",
+            "options": [
+              "banana",
+              "dining room",
+              "people",
+              "day"
+            ],
+            "correct_index": 0,
+            "explanation": "**chuối** = **banana** 🤖",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"anh/em trai\"** 👨‍👩‍👧‍👦 trong tiếng Anh là gì?",
+            "options": [
+              "grey",
+              "ten",
+              "brother",
+              "sausage"
+            ],
+            "correct_index": 2,
+            "explanation": "**anh/em trai** = **brother** 👨‍👩‍👧‍👦",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"plane\"** 🚌 nghĩa là gì?",
+            "options": [
+              "màu tím",
+              "hai bàn chân",
+              "xin chào",
+              "máy bay"
+            ],
+            "correct_index": 3,
+            "explanation": "**plane** = **máy bay** 🚌",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"bảng chữ cái\"** 🏠 trong tiếng Anh là gì?",
+            "options": [
+              "alphabet",
+              "please",
+              "bathroom",
+              "kick"
+            ],
+            "correct_index": 0,
+            "explanation": "**bảng chữ cái** = **alphabet** 🏠",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"ba (3)\"** trong tiếng Anh là gì?",
+            "options": [
+              "three",
+              "duck",
+              "pencil case",
+              "leg"
+            ],
+            "correct_index": 0,
+            "explanation": "**ba (3)** = **three**",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "fruit",
+            "options": [
+              "boat",
+              "nine",
+              "brother",
+              "fruit"
+            ],
+            "correct_index": 3,
+            "explanation": "Bạn nghe thấy từ **fruit** 🍗 (trái cây).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "chat",
+            "options": [
+              "chat",
+              "hand",
+              "motorbike",
+              "street"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **chat** (nói chuyện).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "word puzzle",
+            "options": [
+              "word puzzle",
+              "two",
+              "eye",
+              "cake"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **word puzzle** (trò chơi ô chữ).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "chicken",
+            "options": [
+              "gym",
+              "table",
+              "baseball",
+              "chicken"
+            ],
+            "correct_index": 3,
+            "explanation": "Bạn nghe thấy từ **chicken** 🐦 (gà).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **e r a s _ r** (nghĩa: tẩy)",
+            "options": [
+              "e",
+              "a",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **eraser** = tẩy.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **c o m p u t _ r** (nghĩa: máy tính)",
+            "options": [
+              "e",
+              "a",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **computer** = máy tính.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **c r o c o d i l _** (nghĩa: cá sấu)",
+            "options": [
+              "e",
+              "a",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **crocodile** = cá sấu.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **c h o c o l a t _** (nghĩa: sô cô la)",
+            "options": [
+              "e",
+              "a",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **chocolate** = sô cô la.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "can",
+              "run",
+              "She",
+              "swim",
+              "and"
+            ],
+            "correct_sentence": "She can swim and run",
+            "explanation": "Câu đúng: **She can swim and run**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "your",
+              "name",
+              "is",
+              "What"
+            ],
+            "correct_sentence": "What is your name",
+            "explanation": "Câu đúng: **What is your name**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "my",
+              "book",
+              "This",
+              "is"
+            ],
+            "correct_sentence": "This is my book",
+            "explanation": "Câu đúng: **This is my book**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "They",
+              "play",
+              "football",
+              "school",
+              "at"
+            ],
+            "correct_sentence": "They play football at school",
+            "explanation": "Câu đúng: **They play football at school**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 2,
+      "title": "Wordlist Pre A1 vs TA3 - De 02",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"cờ\"** trong tiếng Anh là gì?",
+            "options": [
+              "yellow",
+              "chess",
+              "ice cream",
+              "face"
+            ],
+            "correct_index": 1,
+            "explanation": "**cờ** = **chess**",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"nhà\"** 🗄 trong tiếng Anh là gì?",
+            "options": [
+              "that",
+              "garden",
+              "house",
+              "apartment"
+            ],
+            "correct_index": 2,
+            "explanation": "**nhà** = **house** 🗄",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"bookshop\"** 🏅 nghĩa là gì?",
+            "options": [
+              "hiệu sách",
+              "bóng rổ",
+              "máy bay",
+              "rắn"
+            ],
+            "correct_index": 0,
+            "explanation": "**bookshop** = **hiệu sách** 🏅",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"animal\"** 🧍 nghĩa là gì?",
+            "options": [
+              "động vật",
+              "cửa ra vào",
+              "câu cá",
+              "bóng chuyền"
+            ],
+            "correct_index": 0,
+            "explanation": "**animal** = **động vật** 🧍",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"thịt\"** 🍦 trong tiếng Anh là gì?",
+            "options": [
+              "sport",
+              "sing",
+              "morning",
+              "meat"
+            ],
+            "correct_index": 3,
+            "explanation": "**thịt** = **meat** 🍦",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"letter\"** 📗 nghĩa là gì?",
+            "options": [
+              "chữ cái",
+              "vẽ/tô màu",
+              "em bé",
+              "bé gái"
+            ],
+            "correct_index": 0,
+            "explanation": "**letter** = **chữ cái** 📗",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"water\"** 🟢 nghĩa là gì?",
+            "options": [
+              "nước",
+              "màu xám",
+              "màu tím",
+              "nước ép"
+            ],
+            "correct_index": 0,
+            "explanation": "**water** = **nước** 🟢",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"phòng tắm\"** 🍅 trong tiếng Anh là gì?",
+            "options": [
+              "ruler",
+              "dress",
+              "jeans",
+              "bathroom"
+            ],
+            "correct_index": 3,
+            "explanation": "**phòng tắm** = **bathroom** 🍅",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "frog",
+            "options": [
+              "grandma",
+              "frog",
+              "my",
+              "park"
+            ],
+            "correct_index": 1,
+            "explanation": "Bạn nghe thấy từ **frog** 🦆 (ếch).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "five",
+            "options": [
+              "colour",
+              "five",
+              "horse",
+              "vietnamese"
+            ],
+            "correct_index": 1,
+            "explanation": "Bạn nghe thấy từ **five** (năm (5)).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "pear",
+            "options": [
+              "child",
+              "chess",
+              "nose",
+              "pear"
+            ],
+            "correct_index": 3,
+            "explanation": "Bạn nghe thấy từ **pear** 🍋 (lê).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "you",
+            "options": [
+              "you",
+              "purple",
+              "juice",
+              "mouse"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **you** (bạn, các bạn).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **w a t e r m e l o _** (nghĩa: dưa hấu)",
+            "options": [
+              "n",
+              "m",
+              "p",
+              "t"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **watermelon** = dưa hấu.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **b o o k c a s _** (nghĩa: kệ sách)",
+            "options": [
+              "e",
+              "a",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **bookcase** = kệ sách.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **m o t o r b i k _** (nghĩa: xe máy)",
+            "options": [
+              "e",
+              "a",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **motorbike** = xe máy.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **f o o t b _ l l** (nghĩa: bóng đá)",
+            "options": [
+              "a",
+              "e",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **football** = bóng đá.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "can",
+              "dance",
+              "sing",
+              "He",
+              "and"
+            ],
+            "correct_sentence": "He can sing and dance",
+            "explanation": "Câu đúng: **He can sing and dance**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "open",
+              "Please",
+              "book",
+              "your"
+            ],
+            "correct_sentence": "Please open your book",
+            "explanation": "Câu đúng: **Please open your book**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "Go",
+              "and",
+              "now",
+              "out",
+              "play"
+            ],
+            "correct_sentence": "Go out and play now",
+            "explanation": "Câu đúng: **Go out and play now**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "Stand",
+              "up",
+              "please"
+            ],
+            "correct_sentence": "Stand up please",
+            "explanation": "Câu đúng: **Stand up please**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 3,
+      "title": "Wordlist Pre A1 vs TA3 - De 03",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"cà rốt\"** 🍌 trong tiếng Anh là gì?",
+            "options": [
+              "carrot",
+              "keyboard",
+              "cousin",
+              "yes"
+            ],
+            "correct_index": 0,
+            "explanation": "**cà rốt** = **carrot** 🍌",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"paint\"** 📷 nghĩa là gì?",
+            "options": [
+              "thuyền",
+              "đồ chơi",
+              "kem",
+              "vẽ/tô màu"
+            ],
+            "correct_index": 3,
+            "explanation": "**paint** = **vẽ/tô màu** 📷",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"màu xanh lam\"** 👕 trong tiếng Anh là gì?",
+            "options": [
+              "blue",
+              "house",
+              "please",
+              "hit"
+            ],
+            "correct_index": 0,
+            "explanation": "**màu xanh lam** = **blue** 👕",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"phòng học\"** 📺 trong tiếng Anh là gì?",
+            "options": [
+              "classroom",
+              "clock",
+              "horse",
+              "kick"
+            ],
+            "correct_index": 0,
+            "explanation": "**phòng học** = **classroom** 📺",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"anh chị em họ\"** 👶 trong tiếng Anh là gì?",
+            "options": [
+              "dance",
+              "shirt",
+              "cousin",
+              "rug"
+            ],
+            "correct_index": 2,
+            "explanation": "**anh chị em họ** = **cousin** 👶",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"một (1)\"** trong tiếng Anh là gì?",
+            "options": [
+              "arm",
+              "pink",
+              "one",
+              "spider"
+            ],
+            "correct_index": 2,
+            "explanation": "**một (1)** = **one**",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"chicken\"** 🐦 nghĩa là gì?",
+            "options": [
+              "thịt gà",
+              "mèo",
+              "hành lang",
+              "gà"
+            ],
+            "correct_index": 3,
+            "explanation": "**chicken** = **gà** 🐦",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"armchair\"** 🍚 nghĩa là gì?",
+            "options": [
+              "bóng bàn",
+              "ghế bành",
+              "đi vào",
+              "túi xách"
+            ],
+            "correct_index": 1,
+            "explanation": "**armchair** = **ghế bành** 🍚",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "coconut",
+            "options": [
+              "yes",
+              "bread",
+              "fruit",
+              "coconut"
+            ],
+            "correct_index": 3,
+            "explanation": "Bạn nghe thấy từ **coconut** 🍔 (dừa).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "girl",
+            "options": [
+              "chicken",
+              "dress",
+              "girl",
+              "football"
+            ],
+            "correct_index": 2,
+            "explanation": "Bạn nghe thấy từ **girl** 👦 (bé gái).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "kitchen",
+            "options": [
+              "kitchen",
+              "window",
+              "sea",
+              "juice"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **kitchen** 🍽 (nhà bếp).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "day",
+            "options": [
+              "page",
+              "television",
+              "doll",
+              "day"
+            ],
+            "correct_index": 3,
+            "explanation": "Bạn nghe thấy từ **day** 🎾 (ngày).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **b a d m i n t _ n** (nghĩa: cầu lông)",
+            "options": [
+              "o",
+              "a",
+              "e",
+              "i"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **badminton** = cầu lông.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **t e a c h _ r** (nghĩa: giáo viên)",
+            "options": [
+              "e",
+              "a",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **teacher** = giáo viên.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **a _ _ l e** (nghĩa: táo)",
+            "options": [
+              "pp",
+              "bb",
+              "tt",
+              "ff"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **apple** = táo.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **g i r a f _ e** (nghĩa: hươu cao cổ)",
+            "options": [
+              "f",
+              "b",
+              "d",
+              "g"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **giraffe** = hươu cao cổ.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "and",
+              "draw",
+              "paint",
+              "I",
+              "like",
+              "to"
+            ],
+            "correct_sentence": "I like to draw and paint",
+            "explanation": "Câu đúng: **I like to draw and paint**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "I",
+              "a",
+              "have",
+              "case",
+              "pencil"
+            ],
+            "correct_sentence": "I have a pencil case",
+            "explanation": "Câu đúng: **I have a pencil case**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "I",
+              "Hello",
+              "teacher",
+              "am",
+              "your"
+            ],
+            "correct_sentence": "Hello I am your teacher",
+            "explanation": "Câu đúng: **Hello I am your teacher**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "friend",
+              "ruler",
+              "My",
+              "has",
+              "a"
+            ],
+            "correct_sentence": "My friend has a ruler",
+            "explanation": "Câu đúng: **My friend has a ruler**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 4,
+      "title": "Wordlist Pre A1 vs TA3 - De 04",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"trang sách\"** 💻 trong tiếng Anh là gì?",
+            "options": [
+              "rug",
+              "page",
+              "run",
+              "alien"
+            ],
+            "correct_index": 1,
+            "explanation": "**trang sách** = **page** 💻",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"fries\"** 🥕 nghĩa là gì?",
+            "options": [
+              "thuyền",
+              "đi vào",
+              "khoai tây chiên",
+              "sân chơi"
+            ],
+            "correct_index": 2,
+            "explanation": "**fries** = **khoai tây chiên** 🥕",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"person\"** 👴 nghĩa là gì?",
+            "options": [
+              "người",
+              "dê",
+              "câu cá",
+              "đồ chơi"
+            ],
+            "correct_index": 0,
+            "explanation": "**person** = **người** 👴",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"helicopter\"** 🏙 nghĩa là gì?",
+            "options": [
+              "trực thăng",
+              "của bạn, của các bạn",
+              "màu vàng",
+              "hai bàn chân"
+            ],
+            "correct_index": 0,
+            "explanation": "**helicopter** = **trực thăng** 🏙",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"cake\"** 🍎 nghĩa là gì?",
+            "options": [
+              "bánh ngọt",
+              "họ, chúng nó",
+              "chuột",
+              "dòng kẻ"
+            ],
+            "correct_index": 0,
+            "explanation": "**cake** = **bánh ngọt** 🍎",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"cừu\"** 🐒 trong tiếng Anh là gì?",
+            "options": [
+              "draw",
+              "sheep",
+              "brother",
+              "gym"
+            ],
+            "correct_index": 1,
+            "explanation": "**cừu** = **sheep** 🐒",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"kính mắt\"** 👜 trong tiếng Anh là gì?",
+            "options": [
+              "jeans",
+              "glasses",
+              "foot",
+              "piano"
+            ],
+            "correct_index": 1,
+            "explanation": "**kính mắt** = **glasses** 👜",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"thư viện\"** trong tiếng Anh là gì?",
+            "options": [
+              "family",
+              "library",
+              "clothes",
+              "floor"
+            ],
+            "correct_index": 1,
+            "explanation": "**thư viện** = **library**",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "dining room",
+            "options": [
+              "school",
+              "floor",
+              "mirror",
+              "dining room"
+            ],
+            "correct_index": 3,
+            "explanation": "Bạn nghe thấy từ **dining room** 🛏 (phòng ăn).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "basketball",
+            "options": [
+              "train",
+              "room",
+              "basketball",
+              "vietnamese"
+            ],
+            "correct_index": 2,
+            "explanation": "Bạn nghe thấy từ **basketball** 📄 (bóng rổ).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "swim",
+            "options": [
+              "horse",
+              "handbag",
+              "swim",
+              "pear"
+            ],
+            "correct_index": 2,
+            "explanation": "Bạn nghe thấy từ **swim** 📸 (bơi).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "teacher",
+            "options": [
+              "picture",
+              "teacher",
+              "horse",
+              "apartment"
+            ],
+            "correct_index": 1,
+            "explanation": "Bạn nghe thấy từ **teacher** ⌨ (giáo viên).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **p e n c _ l** (nghĩa: bút chì)",
+            "options": [
+              "i",
+              "a",
+              "e",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **pencil** = bút chì.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **l i b r _ r y** (nghĩa: thư viện)",
+            "options": [
+              "a",
+              "e",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **library** = thư viện.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **e l e _ h a n t** (nghĩa: voi)",
+            "options": [
+              "p",
+              "b",
+              "f",
+              "g"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **elephant** = voi.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **b a n _ _ a** (nghĩa: chuối)",
+            "options": [
+              "an",
+              "in",
+              "on",
+              "en"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **banana** = chuối.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "football",
+              "school",
+              "They",
+              "play",
+              "at"
+            ],
+            "correct_sentence": "They play football at school",
+            "explanation": "Câu đúng: **They play football at school**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "can",
+              "dance",
+              "sing",
+              "He",
+              "and"
+            ],
+            "correct_sentence": "He can sing and dance",
+            "explanation": "Câu đúng: **He can sing and dance**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "friend",
+              "My",
+              "ruler",
+              "has",
+              "a"
+            ],
+            "correct_sentence": "My friend has a ruler",
+            "explanation": "Câu đúng: **My friend has a ruler**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "like",
+              "and",
+              "draw",
+              "I",
+              "paint",
+              "to"
+            ],
+            "correct_sentence": "I like to draw and paint",
+            "explanation": "Câu đúng: **I like to draw and paint**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 5,
+      "title": "Wordlist Pre A1 vs TA3 - De 05",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"giờ ra chơi, giờ giải lao\"** trong tiếng Anh là gì?",
+            "options": [
+              "break time",
+              "family",
+              "phone",
+              "boy"
+            ],
+            "correct_index": 0,
+            "explanation": "**giờ ra chơi, giờ giải lao** = **break time**",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"playground\"** nghĩa là gì?",
+            "options": [
+              "thư viện",
+              "ảnh chụp",
+              "tẩy",
+              "sân chơi"
+            ],
+            "correct_index": 3,
+            "explanation": "**playground** = **sân chơi**",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"burger\"** 👩 nghĩa là gì?",
+            "options": [
+              "chín (9)",
+              "bánh mì kẹp",
+              "bàn chân",
+              "mũi"
+            ],
+            "correct_index": 1,
+            "explanation": "**burger** = **bánh mì kẹp** 👩",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"body\"** 🦶 nghĩa là gì?",
+            "options": [
+              "giờ ra chơi, giờ giải lao",
+              "đậu",
+              "chanh xanh",
+              "cơ thể"
+            ],
+            "correct_index": 3,
+            "explanation": "**body** = **cơ thể** 🦶",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"picture\"** 🏠 nghĩa là gì?",
+            "options": [
+              "đèn bàn",
+              "mười (10)",
+              "xúc xích",
+              "bức tranh/ảnh"
+            ],
+            "correct_index": 3,
+            "explanation": "**picture** = **bức tranh/ảnh** 🏠",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"đài phát thanh\"** 🏠 trong tiếng Anh là gì?",
+            "options": [
+              "that",
+              "bookcase",
+              "radio",
+              "crocodile"
+            ],
+            "correct_index": 2,
+            "explanation": "**đài phát thanh** = **radio** 🏠",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"bốn (4)\"** trong tiếng Anh là gì?",
+            "options": [
+              "four",
+              "window",
+              "radio",
+              "burger"
+            ],
+            "correct_index": 0,
+            "explanation": "**bốn (4)** = **four**",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"pink\"** 🟤 nghĩa là gì?",
+            "options": [
+              "thằn lằn",
+              "túi xách",
+              "lê",
+              "màu hồng"
+            ],
+            "correct_index": 3,
+            "explanation": "**pink** = **màu hồng** 🟤",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "chicken",
+            "options": [
+              "please",
+              "chicken",
+              "lamp",
+              "onion"
+            ],
+            "correct_index": 1,
+            "explanation": "Bạn nghe thấy từ **chicken** 🫘 (thịt gà).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "hand",
+            "options": [
+              "people",
+              "fruit",
+              "animal",
+              "hand"
+            ],
+            "correct_index": 3,
+            "explanation": "Bạn nghe thấy từ **hand** 💪 (bàn tay).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "plane",
+            "options": [
+              "stand up",
+              "bath",
+              "monster",
+              "plane"
+            ],
+            "correct_index": 3,
+            "explanation": "Bạn nghe thấy từ **plane** 🚌 (máy bay).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "yellow",
+            "options": [
+              "dance",
+              "pencil case",
+              "fishing",
+              "yellow"
+            ],
+            "correct_index": 3,
+            "explanation": "Bạn nghe thấy từ **yellow** 🌸 (màu vàng).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **c l a s s r _ _ m** (nghĩa: phòng học)",
+            "options": [
+              "oo",
+              "ee",
+              "aa",
+              "ii"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **classroom** = phòng học.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **t e l e v i s i o _** (nghĩa: ti vi)",
+            "options": [
+              "n",
+              "m",
+              "p",
+              "t"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **television** = ti vi.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **p l a y g r o u n _** (nghĩa: sân chơi)",
+            "options": [
+              "d",
+              "b",
+              "g",
+              "t"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **playground** = sân chơi.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **p i n e a p p l _** (nghĩa: dứa/khóm)",
+            "options": [
+              "e",
+              "a",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **pineapple** = dứa/khóm.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "please",
+              "Sit",
+              "down"
+            ],
+            "correct_sentence": "Sit down please",
+            "explanation": "Câu đúng: **Sit down please**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "open",
+              "book",
+              "Please",
+              "your"
+            ],
+            "correct_sentence": "Please open your book",
+            "explanation": "Câu đúng: **Please open your book**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "teacher",
+              "Hello",
+              "I",
+              "am",
+              "your"
+            ],
+            "correct_sentence": "Hello I am your teacher",
+            "explanation": "Câu đúng: **Hello I am your teacher**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "I",
+              "a",
+              "have",
+              "case",
+              "pencil"
+            ],
+            "correct_sentence": "I have a pencil case",
+            "explanation": "Câu đúng: **I have a pencil case**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 6,
+      "title": "Wordlist Pre A1 vs TA3 - De 06",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"táo\"** 🧑 trong tiếng Anh là gì?",
+            "options": [
+              "fish",
+              "apple",
+              "bus",
+              "juice"
+            ],
+            "correct_index": 1,
+            "explanation": "**táo** = **apple** 🧑",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"wall\"** 🖼 nghĩa là gì?",
+            "options": [
+              "bức tường",
+              "chuột",
+              "họ, chúng nó",
+              "cây"
+            ],
+            "correct_index": 0,
+            "explanation": "**wall** = **bức tường** 🖼",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"vườn\"** 🪑 trong tiếng Anh là gì?",
+            "options": [
+              "thank you",
+              "hippo",
+              "girl",
+              "garden"
+            ],
+            "correct_index": 3,
+            "explanation": "**vườn** = **garden** 🪑",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"cow\"** 🐱 nghĩa là gì?",
+            "options": [
+              "cá sấu",
+              "động vật",
+              "bò",
+              "kẹo"
+            ],
+            "correct_index": 2,
+            "explanation": "**cow** = **bò** 🐱",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"badminton\"** 🔡 nghĩa là gì?",
+            "options": [
+              "cầu lông",
+              "chín (9)",
+              "quần vợt",
+              "trang sách"
+            ],
+            "correct_index": 0,
+            "explanation": "**badminton** = **cầu lông** 🔡",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"tennis\"** 🎹 nghĩa là gì?",
+            "options": [
+              "quần vợt",
+              "cà chua",
+              "màu cam",
+              "mở, há (miệng)"
+            ],
+            "correct_index": 0,
+            "explanation": "**tennis** = **quần vợt** 🎹",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"cà chua\"** 🍐 trong tiếng Anh là gì?",
+            "options": [
+              "ice cream",
+              "tomato",
+              "leg",
+              "kick"
+            ],
+            "correct_index": 1,
+            "explanation": "**cà chua** = **tomato** 🍐",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"floor\"** 🔤 nghĩa là gì?",
+            "options": [
+              "sàn nhà",
+              "nụ cười",
+              "hai (2)",
+              "áo sơ mi"
+            ],
+            "correct_index": 0,
+            "explanation": "**floor** = **sàn nhà** 🔤",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "my",
+            "options": [
+              "family",
+              "playground",
+              "my",
+              "hat"
+            ],
+            "correct_index": 2,
+            "explanation": "Bạn nghe thấy từ **my** (của tôi).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "two",
+            "options": [
+              "two",
+              "desk",
+              "yes",
+              "bed"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **two** (hai (2)).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "orange",
+            "options": [
+              "orange",
+              "motorbike",
+              "body",
+              "do"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **orange** 🔵 (màu cam).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "break time",
+            "options": [
+              "break time",
+              "mr",
+              "orange",
+              "jump"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **break time** (giờ ra chơi, giờ giải lao).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **s a n d w i c _**",
+            "options": [
+              "h",
+              "k",
+              "b",
+              "t"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **sandwich**.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **b e d r _ o m** (nghĩa: phòng ngủ)",
+            "options": [
+              "o",
+              "a",
+              "e",
+              "i"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **bedroom** = phòng ngủ.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **n o t e b _ o k** (nghĩa: vở viết)",
+            "options": [
+              "o",
+              "a",
+              "e",
+              "i"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **notebook** = vở viết.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **v o l l e y b _ l l** (nghĩa: bóng chuyền)",
+            "options": [
+              "a",
+              "e",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **volleyball** = bóng chuyền.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "run",
+              "She",
+              "can",
+              "swim",
+              "and"
+            ],
+            "correct_sentence": "She can swim and run",
+            "explanation": "Câu đúng: **She can swim and run**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "and",
+              "now",
+              "Go",
+              "out",
+              "play"
+            ],
+            "correct_sentence": "Go out and play now",
+            "explanation": "Câu đúng: **Go out and play now**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "is",
+              "name",
+              "your",
+              "What"
+            ],
+            "correct_sentence": "What is your name",
+            "explanation": "Câu đúng: **What is your name**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "This",
+              "my",
+              "is",
+              "book"
+            ],
+            "correct_sentence": "This is my book",
+            "explanation": "Câu đúng: **This is my book**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 7,
+      "title": "Wordlist Pre A1 vs TA3 - De 07",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"tủ đựng đồ\"** 🚿 trong tiếng Anh là gì?",
+            "options": [
+              "cupboard",
+              "fishing",
+              "pen",
+              "monkey"
+            ],
+            "correct_index": 0,
+            "explanation": "**tủ đựng đồ** = **cupboard** 🚿",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"đóng, gấp (sách)\"** trong tiếng Anh là gì?",
+            "options": [
+              "close",
+              "smile",
+              "alphabet",
+              "dining room"
+            ],
+            "correct_index": 0,
+            "explanation": "**đóng, gấp (sách)** = **close**",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"chào tạm biệt\"** trong tiếng Anh là gì?",
+            "options": [
+              "goodbye",
+              "grapes",
+              "mum",
+              "guitar"
+            ],
+            "correct_index": 0,
+            "explanation": "**chào tạm biệt** = **goodbye**",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"đuôi\"** 🐍 trong tiếng Anh là gì?",
+            "options": [
+              "T-shirt",
+              "mirror",
+              "tail",
+              "room"
+            ],
+            "correct_index": 2,
+            "explanation": "**đuôi** = **tail** 🐍",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"mèo\"** 🐾 trong tiếng Anh là gì?",
+            "options": [
+              "cat",
+              "photo",
+              "dad",
+              "candy"
+            ],
+            "correct_index": 0,
+            "explanation": "**mèo** = **cat** 🐾",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"hi\"** nghĩa là gì?",
+            "options": [
+              "bóng rổ",
+              "xin chào",
+              "buổi sáng",
+              "màu sắc"
+            ],
+            "correct_index": 1,
+            "explanation": "**hi** = **xin chào**",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"go out\"** nghĩa là gì?",
+            "options": [
+              "trang sách",
+              "quần áo",
+              "đi ra",
+              "bàn"
+            ],
+            "correct_index": 2,
+            "explanation": "**go out** = **đi ra**",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"open\"** nghĩa là gì?",
+            "options": [
+              "bảng đen",
+              "thư viện",
+              "bà, cô",
+              "mở, há (miệng)"
+            ],
+            "correct_index": 3,
+            "explanation": "**open** = **mở, há (miệng)**",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "lemon",
+            "options": [
+              "basketball",
+              "spider",
+              "dog",
+              "lemon"
+            ],
+            "correct_index": 3,
+            "explanation": "Bạn nghe thấy từ **lemon** 🐟 (chanh vàng).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "cupboard",
+            "options": [
+              "cupboard",
+              "play",
+              "seven",
+              "people"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **cupboard** 🚿 (tủ đựng đồ).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "sun",
+            "options": [
+              "sun",
+              "this",
+              "hippo",
+              "rice"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **sun** 🎨 (mặt trời).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "picture",
+            "options": [
+              "garden",
+              "school bag",
+              "stop",
+              "picture"
+            ],
+            "correct_index": 3,
+            "explanation": "Bạn nghe thấy từ **picture** 🏠 (bức tranh/ảnh).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **h e l i c o p t e _** (nghĩa: trực thăng)",
+            "options": [
+              "r",
+              "n",
+              "m",
+              "d"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **helicopter** = trực thăng.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **s w i m m i n _**",
+            "options": [
+              "g",
+              "d",
+              "b",
+              "t"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **swimming**.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **b u t t e r f l _**",
+            "options": [
+              "y",
+              "i",
+              "e",
+              "a"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **butterfly**.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **b a s k e t b _ l l** (nghĩa: bóng rổ)",
+            "options": [
+              "a",
+              "e",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **basketball** = bóng rổ.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "open",
+              "book",
+              "Please",
+              "your"
+            ],
+            "correct_sentence": "Please open your book",
+            "explanation": "Câu đúng: **Please open your book**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "They",
+              "school",
+              "at",
+              "play",
+              "football"
+            ],
+            "correct_sentence": "They play football at school",
+            "explanation": "Câu đúng: **They play football at school**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "and",
+              "She",
+              "can",
+              "run",
+              "swim"
+            ],
+            "correct_sentence": "She can swim and run",
+            "explanation": "Câu đúng: **She can swim and run**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "your",
+              "Hello",
+              "I",
+              "teacher",
+              "am"
+            ],
+            "correct_sentence": "Hello I am your teacher",
+            "explanation": "Câu đúng: **Hello I am your teacher**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 8,
+      "title": "Wordlist Pre A1 vs TA3 - De 08",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"cá sấu\"** 🐔 trong tiếng Anh là gì?",
+            "options": [
+              "my",
+              "crocodile",
+              "library",
+              "chat"
+            ],
+            "correct_index": 1,
+            "explanation": "**cá sấu** = **crocodile** 🐔",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"gương\"** 🌸 trong tiếng Anh là gì?",
+            "options": [
+              "english",
+              "mirror",
+              "afternoon",
+              "yes"
+            ],
+            "correct_index": 1,
+            "explanation": "**gương** = **mirror** 🌸",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"đánh/đập\"** 🏸 trong tiếng Anh là gì?",
+            "options": [
+              "guitar",
+              "glasses",
+              "alien",
+              "hit"
+            ],
+            "correct_index": 3,
+            "explanation": "**đánh/đập** = **hit** 🏸",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"bé gái\"** 👦 trong tiếng Anh là gì?",
+            "options": [
+              "guitar",
+              "girl",
+              "rice",
+              "plane"
+            ],
+            "correct_index": 1,
+            "explanation": "**bé gái** = **girl** 👦",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"màu vàng\"** 🌸 trong tiếng Anh là gì?",
+            "options": [
+              "cat",
+              "toy",
+              "baseball",
+              "yellow"
+            ],
+            "correct_index": 3,
+            "explanation": "**màu vàng** = **yellow** 🌸",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"tất/vớ\"** 👔 trong tiếng Anh là gì?",
+            "options": [
+              "friend",
+              "sock",
+              "window",
+              "stop"
+            ],
+            "correct_index": 1,
+            "explanation": "**tất/vớ** = **sock** 👔",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"hổ\"** 🕷 trong tiếng Anh là gì?",
+            "options": [
+              "goodbye",
+              "tiger",
+              "box",
+              "body"
+            ],
+            "correct_index": 1,
+            "explanation": "**hổ** = **tiger** 🕷",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"music room\"** nghĩa là gì?",
+            "options": [
+              "phòng âm nhạc",
+              "giáo viên",
+              "khuôn mặt",
+              "đánh/đập"
+            ],
+            "correct_index": 0,
+            "explanation": "**music room** = **phòng âm nhạc**",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "notebook",
+            "options": [
+              "five",
+              "notebook",
+              "desk",
+              "pineapple"
+            ],
+            "correct_index": 1,
+            "explanation": "Bạn nghe thấy từ **notebook** (vở viết).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "hall",
+            "options": [
+              "play",
+              "sausage",
+              "hall",
+              "baby"
+            ],
+            "correct_index": 2,
+            "explanation": "Bạn nghe thấy từ **hall** 🕐 (hành lang).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "trousers",
+            "options": [
+              "house",
+              "green",
+              "trousers",
+              "body"
+            ],
+            "correct_index": 2,
+            "explanation": "Bạn nghe thấy từ **trousers** 👟 (quần dài).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "photo",
+            "options": [
+              "photo",
+              "shoe",
+              "touch",
+              "how"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **photo** 🤾 (ảnh chụp).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **c l a s s r _ _ m** (nghĩa: phòng học)",
+            "options": [
+              "oo",
+              "ee",
+              "aa",
+              "ii"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **classroom** = phòng học.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **t e l e v i s i o _** (nghĩa: ti vi)",
+            "options": [
+              "n",
+              "m",
+              "p",
+              "t"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **television** = ti vi.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **c o m p u t _ r** (nghĩa: máy tính)",
+            "options": [
+              "e",
+              "a",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **computer** = máy tính.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **p i n e a p p l _** (nghĩa: dứa/khóm)",
+            "options": [
+              "e",
+              "a",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **pineapple** = dứa/khóm.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "What",
+              "is",
+              "it",
+              "colour"
+            ],
+            "correct_sentence": "What colour is it",
+            "explanation": "Câu đúng: **What colour is it**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "down",
+              "Sit",
+              "please"
+            ],
+            "correct_sentence": "Sit down please",
+            "explanation": "Câu đúng: **Sit down please**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "dance",
+              "and",
+              "can",
+              "He",
+              "sing"
+            ],
+            "correct_sentence": "He can sing and dance",
+            "explanation": "Câu đúng: **He can sing and dance**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "friend",
+              "My",
+              "a",
+              "ruler",
+              "has"
+            ],
+            "correct_sentence": "My friend has a ruler",
+            "explanation": "Câu đúng: **My friend has a ruler**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 9,
+      "title": "Wordlist Pre A1 vs TA3 - De 09",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"nước chanh\"** 🍟 trong tiếng Anh là gì?",
+            "options": [
+              "lemonade",
+              "ten",
+              "crocodile",
+              "picture"
+            ],
+            "correct_index": 0,
+            "explanation": "**nước chanh** = **lemonade** 🍟",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"afternoon\"** 🌊 nghĩa là gì?",
+            "options": [
+              "bàn tay",
+              "buổi chiều",
+              "đồng hồ treo tường",
+              "ô tô"
+            ],
+            "correct_index": 1,
+            "explanation": "**afternoon** = **buổi chiều** 🌊",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"bóng chuyền\"** trong tiếng Anh là gì?",
+            "options": [
+              "have",
+              "giraffe",
+              "volleyball",
+              "goodbye"
+            ],
+            "correct_index": 2,
+            "explanation": "**bóng chuyền** = **volleyball**",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"pencil\"** 🗑 nghĩa là gì?",
+            "options": [
+              "trực thăng",
+              "váy/đầm",
+              "sô cô la",
+              "bút chì"
+            ],
+            "correct_index": 3,
+            "explanation": "**pencil** = **bút chì** 🗑",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"hà mã\"** 🦒 trong tiếng Anh là gì?",
+            "options": [
+              "hippo",
+              "dad",
+              "pen",
+              "train"
+            ],
+            "correct_index": 0,
+            "explanation": "**hà mã** = **hippo** 🦒",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"váy/đầm\"** 👕 trong tiếng Anh là gì?",
+            "options": [
+              "friend",
+              "bookcase",
+              "dress",
+              "giraffe"
+            ],
+            "correct_index": 2,
+            "explanation": "**váy/đầm** = **dress** 👕",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"cây\"** 🚁 trong tiếng Anh là gì?",
+            "options": [
+              "tree",
+              "badminton",
+              "stop",
+              "mr"
+            ],
+            "correct_index": 0,
+            "explanation": "**cây** = **tree** 🚁",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"touch\"** nghĩa là gì?",
+            "options": [
+              "lê",
+              "thước kẻ",
+              "chơi",
+              "chạm"
+            ],
+            "correct_index": 3,
+            "explanation": "**touch** = **chạm**",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "elephant",
+            "options": [
+              "elephant",
+              "television",
+              "radio",
+              "T-shirt"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **elephant** 🐕 (voi).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "tree",
+            "options": [
+              "come in",
+              "fries",
+              "tree",
+              "board"
+            ],
+            "correct_index": 2,
+            "explanation": "Bạn nghe thấy từ **tree** 🚁 (cây).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "boat",
+            "options": [
+              "chess",
+              "sofa",
+              "pen",
+              "boat"
+            ],
+            "correct_index": 3,
+            "explanation": "Bạn nghe thấy từ **boat** 🎤 (thuyền).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "woman",
+            "options": [
+              "our",
+              "draw",
+              "woman",
+              "piano"
+            ],
+            "correct_index": 2,
+            "explanation": "Bạn nghe thấy từ **woman** 👥 (phụ nữ).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **t e a c h _ r** (nghĩa: giáo viên)",
+            "options": [
+              "e",
+              "a",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **teacher** = giáo viên.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **p e n c _ l** (nghĩa: bút chì)",
+            "options": [
+              "i",
+              "a",
+              "e",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **pencil** = bút chì.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **b e d r _ o m** (nghĩa: phòng ngủ)",
+            "options": [
+              "o",
+              "a",
+              "e",
+              "i"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **bedroom** = phòng ngủ.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **m o t o r b i k _** (nghĩa: xe máy)",
+            "options": [
+              "e",
+              "a",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **motorbike** = xe máy.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "your",
+              "name",
+              "is",
+              "What"
+            ],
+            "correct_sentence": "What is your name",
+            "explanation": "Câu đúng: **What is your name**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "to",
+              "draw",
+              "paint",
+              "I",
+              "like",
+              "and"
+            ],
+            "correct_sentence": "I like to draw and paint",
+            "explanation": "Câu đúng: **I like to draw and paint**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "Stand",
+              "please",
+              "up"
+            ],
+            "correct_sentence": "Stand up please",
+            "explanation": "Câu đúng: **Stand up please**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "Go",
+              "out",
+              "now",
+              "play",
+              "and"
+            ],
+            "correct_sentence": "Go out and play now",
+            "explanation": "Câu đúng: **Go out and play now**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 10,
+      "title": "Wordlist Pre A1 vs TA3 - De 10",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"bảy (7)\"** trong tiếng Anh là gì?",
+            "options": [
+              "dog",
+              "seven",
+              "morning",
+              "hippo"
+            ],
+            "correct_index": 1,
+            "explanation": "**bảy (7)** = **seven**",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"alien\"** 🟣 nghĩa là gì?",
+            "options": [
+              "người ngoài hành tinh",
+              "trái cây",
+              "hiệu sách",
+              "tôi"
+            ],
+            "correct_index": 0,
+            "explanation": "**alien** = **người ngoài hành tinh** 🟣",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"evening\"** 🤾 nghĩa là gì?",
+            "options": [
+              "cặp sách",
+              "chanh xanh",
+              "buổi tối",
+              "cá sấu"
+            ],
+            "correct_index": 2,
+            "explanation": "**evening** = **buổi tối** 🤾",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"của tôi\"** trong tiếng Anh là gì?",
+            "options": [
+              "flower",
+              "my",
+              "goodbye",
+              "hat"
+            ],
+            "correct_index": 1,
+            "explanation": "**của tôi** = **my**",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"fine\"** nghĩa là gì?",
+            "options": [
+              "khoẻ, tốt",
+              "đài phát thanh",
+              "bé gái",
+              "nhà thể chất"
+            ],
+            "correct_index": 0,
+            "explanation": "**fine** = **khoẻ, tốt**",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"dừng lại\"** 📅 trong tiếng Anh là gì?",
+            "options": [
+              "hat",
+              "stop",
+              "yes",
+              "park"
+            ],
+            "correct_index": 1,
+            "explanation": "**dừng lại** = **stop** 📅",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"bookcase\"** 🏠 nghĩa là gì?",
+            "options": [
+              "kệ sách",
+              "đồ chơi",
+              "tiếng Việt",
+              "đi bộ"
+            ],
+            "correct_index": 0,
+            "explanation": "**bookcase** = **kệ sách** 🏠",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"vịt\"** 🐊 trong tiếng Anh là gì?",
+            "options": [
+              "classroom",
+              "swim",
+              "black",
+              "duck"
+            ],
+            "correct_index": 3,
+            "explanation": "**vịt** = **duck** 🐊",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "meat",
+            "options": [
+              "chicken",
+              "boat",
+              "coconut",
+              "meat"
+            ],
+            "correct_index": 3,
+            "explanation": "Bạn nghe thấy từ **meat** 🍦 (thịt).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "floor",
+            "options": [
+              "floor",
+              "jump",
+              "white",
+              "three"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **floor** 🔤 (sàn nhà).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "purple",
+            "options": [
+              "purple",
+              "two",
+              "handbag",
+              "bookshop"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **purple** 🟢 (màu tím).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "kick",
+            "options": [
+              "trousers",
+              "park",
+              "kick",
+              "basketball"
+            ],
+            "correct_index": 2,
+            "explanation": "Bạn nghe thấy từ **kick** ⚾ (đá (bóng)).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **s w i m m i n _**",
+            "options": [
+              "g",
+              "d",
+              "b",
+              "t"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **swimming**.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **l i b r _ r y** (nghĩa: thư viện)",
+            "options": [
+              "a",
+              "e",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **library** = thư viện.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **b a n _ _ a** (nghĩa: chuối)",
+            "options": [
+              "an",
+              "in",
+              "on",
+              "en"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **banana** = chuối.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **c r o c o d i l _** (nghĩa: cá sấu)",
+            "options": [
+              "e",
+              "a",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **crocodile** = cá sấu.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "I",
+              "pencil",
+              "case",
+              "have",
+              "a"
+            ],
+            "correct_sentence": "I have a pencil case",
+            "explanation": "Câu đúng: **I have a pencil case**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "This",
+              "book",
+              "my",
+              "is"
+            ],
+            "correct_sentence": "This is my book",
+            "explanation": "Câu đúng: **This is my book**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "now",
+              "play",
+              "Go",
+              "out",
+              "and"
+            ],
+            "correct_sentence": "Go out and play now",
+            "explanation": "Câu đúng: **Go out and play now**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "Stand",
+              "please",
+              "up"
+            ],
+            "correct_sentence": "Stand up please",
+            "explanation": "Câu đúng: **Stand up please**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 11,
+      "title": "Wordlist Pre A1 vs TA3 - De 11",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"line\"** 🏫 nghĩa là gì?",
+            "options": [
+              "bóng bàn",
+              "xin chào",
+              "bơi",
+              "dòng kẻ"
+            ],
+            "correct_index": 3,
+            "explanation": "**line** = **dòng kẻ** 🏫",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"bye\"** nghĩa là gì?",
+            "options": [
+              "cầu lông",
+              "của bạn, của các bạn",
+              "khỉ",
+              "chào tạm biệt"
+            ],
+            "correct_index": 3,
+            "explanation": "**bye** = **chào tạm biệt**",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"diều\"** 🏀 trong tiếng Anh là gì?",
+            "options": [
+              "kite",
+              "plane",
+              "sand",
+              "ear"
+            ],
+            "correct_index": 0,
+            "explanation": "**diều** = **kite** 🏀",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"nói chuyện\"** trong tiếng Anh là gì?",
+            "options": [
+              "hand",
+              "hair",
+              "chat",
+              "leg"
+            ],
+            "correct_index": 2,
+            "explanation": "**nói chuyện** = **chat**",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"màu xanh lá\"** 🌈 trong tiếng Anh là gì?",
+            "options": [
+              "green",
+              "banana",
+              "lemon",
+              "motorbike"
+            ],
+            "correct_index": 0,
+            "explanation": "**màu xanh lá** = **green** 🌈",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"that\"** nghĩa là gì?",
+            "options": [
+              "phụ nữ",
+              "đây",
+              "đài phát thanh",
+              "đó, kia"
+            ],
+            "correct_index": 3,
+            "explanation": "**that** = **đó, kia**",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"đường phố\"** 🌆 trong tiếng Anh là gì?",
+            "options": [
+              "street",
+              "name",
+              "five",
+              "candy"
+            ],
+            "correct_index": 0,
+            "explanation": "**đường phố** = **street** 🌆",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"bird\"** 🦁 nghĩa là gì?",
+            "options": [
+              "bàn phím",
+              "chim",
+              "người ngoài hành tinh",
+              "quần jeans"
+            ],
+            "correct_index": 1,
+            "explanation": "**bird** = **chim** 🦁",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "mr",
+            "options": [
+              "mr",
+              "line",
+              "giraffe",
+              "clock"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **mr** (ông).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "book",
+            "options": [
+              "book",
+              "walk",
+              "what",
+              "banana"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **book** 🛋 (sách).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "chocolate",
+            "options": [
+              "chocolate",
+              "english",
+              "candy",
+              "woman"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **chocolate** 🍞 (sô cô la).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "hello",
+            "options": [
+              "hello",
+              "music room",
+              "our",
+              "cook"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **hello** (xin chào).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **p l a y g r o u n _** (nghĩa: sân chơi)",
+            "options": [
+              "d",
+              "b",
+              "g",
+              "t"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **playground** = sân chơi.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **e l e _ h a n t** (nghĩa: voi)",
+            "options": [
+              "p",
+              "b",
+              "f",
+              "g"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **elephant** = voi.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **b a s k e t b _ l l** (nghĩa: bóng rổ)",
+            "options": [
+              "a",
+              "e",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **basketball** = bóng rổ.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **s a n d w i c _**",
+            "options": [
+              "h",
+              "k",
+              "b",
+              "t"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **sandwich**.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "is",
+              "your",
+              "name",
+              "What"
+            ],
+            "correct_sentence": "What is your name",
+            "explanation": "Câu đúng: **What is your name**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "can",
+              "She",
+              "and",
+              "swim",
+              "run"
+            ],
+            "correct_sentence": "She can swim and run",
+            "explanation": "Câu đúng: **She can swim and run**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "What",
+              "colour",
+              "is",
+              "it"
+            ],
+            "correct_sentence": "What colour is it",
+            "explanation": "Câu đúng: **What colour is it**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "down",
+              "Sit",
+              "please"
+            ],
+            "correct_sentence": "Sit down please",
+            "explanation": "Câu đúng: **Sit down please**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 12,
+      "title": "Wordlist Pre A1 vs TA3 - De 12",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"kem\"** 🥥 trong tiếng Anh là gì?",
+            "options": [
+              "pink",
+              "ice cream",
+              "cat",
+              "foot"
+            ],
+            "correct_index": 1,
+            "explanation": "**kem** = **ice cream** 🥥",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"dừa\"** 🍔 trong tiếng Anh là gì?",
+            "options": [
+              "baby",
+              "robot",
+              "sun",
+              "coconut"
+            ],
+            "correct_index": 3,
+            "explanation": "**dừa** = **coconut** 🍔",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"baseball\"** 🖱 nghĩa là gì?",
+            "options": [
+              "bóng chày",
+              "hổ",
+              "nước chanh",
+              "bóng chuyền"
+            ],
+            "correct_index": 0,
+            "explanation": "**baseball** = **bóng chày** 🖱",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"phòng\"** 🍳 trong tiếng Anh là gì?",
+            "options": [
+              "milk",
+              "room",
+              "board",
+              "hair"
+            ],
+            "correct_index": 1,
+            "explanation": "**phòng** = **room** 🍳",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"mũ\"** 👗 trong tiếng Anh là gì?",
+            "options": [
+              "open",
+              "phone",
+              "woman",
+              "hat"
+            ],
+            "correct_index": 3,
+            "explanation": "**mũ** = **hat** 👗",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"skirt\"** 👖 nghĩa là gì?",
+            "options": [
+              "chân váy",
+              "hoa",
+              "ngồi xuống",
+              "dứa/khóm"
+            ],
+            "correct_index": 0,
+            "explanation": "**skirt** = **chân váy** 👖",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"eight\"** nghĩa là gì?",
+            "options": [
+              "tám (8)",
+              "tôi",
+              "bánh mì kẹp",
+              "gì"
+            ],
+            "correct_index": 0,
+            "explanation": "**eight** = **tám (8)**",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"rug\"** 💡 nghĩa là gì?",
+            "options": [
+              "mũi",
+              "mọi người",
+              "thảm nhỏ",
+              "sàn nhà"
+            ],
+            "correct_index": 2,
+            "explanation": "**rug** = **thảm nhỏ** 💡",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "tomato",
+            "options": [
+              "mango",
+              "no",
+              "tomato",
+              "sun"
+            ],
+            "correct_index": 2,
+            "explanation": "Bạn nghe thấy từ **tomato** 🍐 (cà chua).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "sock",
+            "options": [
+              "what",
+              "sock",
+              "letter",
+              "it"
+            ],
+            "correct_index": 1,
+            "explanation": "Bạn nghe thấy từ **sock** 👔 (tất/vớ).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "train",
+            "options": [
+              "classroom",
+              "brother",
+              "chicken",
+              "train"
+            ],
+            "correct_index": 3,
+            "explanation": "Bạn nghe thấy từ **train** ✈ (tàu hoả).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "animal",
+            "options": [
+              "animal",
+              "sheep",
+              "how",
+              "ruler"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **animal** 🧍 (động vật).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **a _ _ l e** (nghĩa: táo)",
+            "options": [
+              "pp",
+              "bb",
+              "tt",
+              "ff"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **apple** = táo.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **c h o c o l a t _** (nghĩa: sô cô la)",
+            "options": [
+              "e",
+              "a",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **chocolate** = sô cô la.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **w a t e r m e l o _** (nghĩa: dưa hấu)",
+            "options": [
+              "n",
+              "m",
+              "p",
+              "t"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **watermelon** = dưa hấu.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **g i r a f _ e** (nghĩa: hươu cao cổ)",
+            "options": [
+              "f",
+              "b",
+              "d",
+              "g"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **giraffe** = hươu cao cổ.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "sing",
+              "and",
+              "can",
+              "He",
+              "dance"
+            ],
+            "correct_sentence": "He can sing and dance",
+            "explanation": "Câu đúng: **He can sing and dance**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "open",
+              "Please",
+              "book",
+              "your"
+            ],
+            "correct_sentence": "Please open your book",
+            "explanation": "Câu đúng: **Please open your book**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "a",
+              "My",
+              "friend",
+              "has",
+              "ruler"
+            ],
+            "correct_sentence": "My friend has a ruler",
+            "explanation": "Câu đúng: **My friend has a ruler**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "They",
+              "at",
+              "football",
+              "play",
+              "school"
+            ],
+            "correct_sentence": "They play football at school",
+            "explanation": "Câu đúng: **They play football at school**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 13,
+      "title": "Wordlist Pre A1 vs TA3 - De 13",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"sô cô la\"** 🍞 trong tiếng Anh là gì?",
+            "options": [
+              "chocolate",
+              "cupboard",
+              "sit down",
+              "candy"
+            ],
+            "correct_index": 0,
+            "explanation": "**sô cô la** = **chocolate** 🍞",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"football\"** 👩‍🏫 nghĩa là gì?",
+            "options": [
+              "bánh ngọt",
+              "bóng đá",
+              "bàn học",
+              "quần vợt"
+            ],
+            "correct_index": 1,
+            "explanation": "**football** = **bóng đá** 👩‍🏫",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"fly\"** 🚶 nghĩa là gì?",
+            "options": [
+              "xúc xích",
+              "chạy",
+              "bay",
+              "tai"
+            ],
+            "correct_index": 2,
+            "explanation": "**fly** = **bay** 🚶",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"vietnamese\"** nghĩa là gì?",
+            "options": [
+              "đi ra",
+              "chạm",
+              "tiếng Việt",
+              "bạn, các bạn"
+            ],
+            "correct_index": 2,
+            "explanation": "**vietnamese** = **tiếng Việt**",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"eraser\"** 🏫 nghĩa là gì?",
+            "options": [
+              "chạy",
+              "hai bàn chân",
+              "tủ đựng đồ",
+              "tẩy"
+            ],
+            "correct_index": 3,
+            "explanation": "**eraser** = **tẩy** 🏫",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"T-shirt\"** 👘 nghĩa là gì?",
+            "options": [
+              "anh/em trai",
+              "xin chào",
+              "mắt",
+              "áo phông"
+            ],
+            "correct_index": 3,
+            "explanation": "**T-shirt** = **áo phông** 👘",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"túi xách tay\"** 👗 trong tiếng Anh là gì?",
+            "options": [
+              "handbag",
+              "goat",
+              "piano",
+              "bye"
+            ],
+            "correct_index": 0,
+            "explanation": "**túi xách tay** = **handbag** 👗",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"dining room\"** 🛏 nghĩa là gì?",
+            "options": [
+              "dừng lại",
+              "ếch",
+              "tất/vớ",
+              "phòng ăn"
+            ],
+            "correct_index": 3,
+            "explanation": "**dining room** = **phòng ăn** 🛏",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "tiger",
+            "options": [
+              "flower",
+              "tiger",
+              "chat",
+              "girl"
+            ],
+            "correct_index": 1,
+            "explanation": "Bạn nghe thấy từ **tiger** 🕷 (hổ).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "family",
+            "options": [
+              "beans",
+              "cow",
+              "family",
+              "foot"
+            ],
+            "correct_index": 2,
+            "explanation": "Bạn nghe thấy từ **family** 👦 (gia đình).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "egg",
+            "options": [
+              "kitchen",
+              "armchair",
+              "egg",
+              "camera"
+            ],
+            "correct_index": 2,
+            "explanation": "Bạn nghe thấy từ **egg** 🎂 (trứng).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "do",
+            "options": [
+              "walk",
+              "playground",
+              "do",
+              "mouse"
+            ],
+            "correct_index": 2,
+            "explanation": "Bạn nghe thấy từ **do** (làm).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **v o l l e y b _ l l** (nghĩa: bóng chuyền)",
+            "options": [
+              "a",
+              "e",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **volleyball** = bóng chuyền.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **b u t t e r f l _**",
+            "options": [
+              "y",
+              "i",
+              "e",
+              "a"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **butterfly**.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **n o t e b _ o k** (nghĩa: vở viết)",
+            "options": [
+              "o",
+              "a",
+              "e",
+              "i"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **notebook** = vở viết.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **e r a s _ r** (nghĩa: tẩy)",
+            "options": [
+              "e",
+              "a",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **eraser** = tẩy.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "I",
+              "your",
+              "Hello",
+              "am",
+              "teacher"
+            ],
+            "correct_sentence": "Hello I am your teacher",
+            "explanation": "Câu đúng: **Hello I am your teacher**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "What",
+              "colour",
+              "is",
+              "it"
+            ],
+            "correct_sentence": "What colour is it",
+            "explanation": "Câu đúng: **What colour is it**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "can",
+              "She",
+              "and",
+              "swim",
+              "run"
+            ],
+            "correct_sentence": "She can swim and run",
+            "explanation": "Câu đúng: **She can swim and run**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "sing",
+              "and",
+              "can",
+              "He",
+              "dance"
+            ],
+            "correct_sentence": "He can sing and dance",
+            "explanation": "Câu đúng: **He can sing and dance**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 14,
+      "title": "Wordlist Pre A1 vs TA3 - De 14",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"khỉ\"** 🐴 trong tiếng Anh là gì?",
+            "options": [
+              "it",
+              "family",
+              "crocodile",
+              "monkey"
+            ],
+            "correct_index": 3,
+            "explanation": "**khỉ** = **monkey** 🐴",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"sáu (6)\"** trong tiếng Anh là gì?",
+            "options": [
+              "sea",
+              "six",
+              "pencil",
+              "bird"
+            ],
+            "correct_index": 1,
+            "explanation": "**sáu (6)** = **six**",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"quả bóng\"** 〰 trong tiếng Anh là gì?",
+            "options": [
+              "please",
+              "ice cream",
+              "kick",
+              "ball"
+            ],
+            "correct_index": 3,
+            "explanation": "**quả bóng** = **ball** 〰",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"bed\"** 💧 nghĩa là gì?",
+            "options": [
+              "nước ép",
+              "đường phố",
+              "giường",
+              "máy ảnh"
+            ],
+            "correct_index": 2,
+            "explanation": "**bed** = **giường** 💧",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"trousers\"** 👟 nghĩa là gì?",
+            "options": [
+              "quần dài",
+              "gia đình",
+              "đánh/đập",
+              "của tôi"
+            ],
+            "correct_index": 0,
+            "explanation": "**trousers** = **quần dài** 👟",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"you\"** nghĩa là gì?",
+            "options": [
+              "bạn, các bạn",
+              "đậu Hà Lan",
+              "vịt",
+              "voi"
+            ],
+            "correct_index": 0,
+            "explanation": "**you** = **bạn, các bạn**",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"giày\"** 🧥 trong tiếng Anh là gì?",
+            "options": [
+              "tree",
+              "go out",
+              "sheep",
+              "shoe"
+            ],
+            "correct_index": 3,
+            "explanation": "**giày** = **shoe** 🧥",
+            "tags": [
+              "vocab",
+              "vi-to-en"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"bath\"** 🌭 nghĩa là gì?",
+            "options": [
+              "bồn tắm",
+              "màu vàng",
+              "tên",
+              "máy tính"
+            ],
+            "correct_index": 0,
+            "explanation": "**bath** = **bồn tắm** 🌭",
+            "tags": [
+              "vocab",
+              "en-to-vi"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "bathroom",
+            "options": [
+              "open",
+              "speak",
+              "motorbike",
+              "bathroom"
+            ],
+            "correct_index": 3,
+            "explanation": "Bạn nghe thấy từ **bathroom** 🍅 (phòng tắm).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "lorry",
+            "options": [
+              "kite",
+              "child",
+              "hi",
+              "lorry"
+            ],
+            "correct_index": 3,
+            "explanation": "Bạn nghe thấy từ **lorry** 🌤 (xe tải).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "guitar",
+            "options": [
+              "guitar",
+              "dog",
+              "sport",
+              "mum"
+            ],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **guitar** ⛱ (đàn ghi-ta).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "vietnamese",
+            "options": [
+              "room",
+              "vietnamese",
+              "run",
+              "horse"
+            ],
+            "correct_index": 1,
+            "explanation": "Bạn nghe thấy từ **vietnamese** (tiếng Việt).",
+            "tags": [
+              "listening",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **b o o k c a s _** (nghĩa: kệ sách)",
+            "options": [
+              "e",
+              "a",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **bookcase** = kệ sách.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **b a d m i n t _ n** (nghĩa: cầu lông)",
+            "options": [
+              "o",
+              "a",
+              "e",
+              "i"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **badminton** = cầu lông.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **f o o t b _ l l** (nghĩa: bóng đá)",
+            "options": [
+              "a",
+              "e",
+              "i",
+              "o"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **football** = bóng đá.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **h e l i c o p t e _** (nghĩa: trực thăng)",
+            "options": [
+              "r",
+              "n",
+              "m",
+              "d"
+            ],
+            "correct_index": 0,
+            "explanation": "Đáp án: **helicopter** = trực thăng.",
+            "tags": [
+              "spelling",
+              "vocab"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "This",
+              "my",
+              "is",
+              "book"
+            ],
+            "correct_sentence": "This is my book",
+            "explanation": "Câu đúng: **This is my book**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "Go",
+              "and",
+              "out",
+              "play",
+              "now"
+            ],
+            "correct_sentence": "Go out and play now",
+            "explanation": "Câu đúng: **Go out and play now**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "They",
+              "play",
+              "football",
+              "at",
+              "school"
+            ],
+            "correct_sentence": "They play football at school",
+            "explanation": "Câu đúng: **They play football at school**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Sắp xếp các từ sau thành câu đúng:",
+            "words": [
+              "I",
+              "have",
+              "a",
+              "pencil",
+              "case"
+            ],
+            "correct_sentence": "I have a pencil case",
+            "explanation": "Câu đúng: **I have a pencil case**",
+            "tags": [
+              "sentence",
+              "grammar"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

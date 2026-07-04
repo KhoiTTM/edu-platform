@@ -124,13 +124,14 @@ async function getAssessmentMap(subject: string, grade?: number) {
   const reviews = toVolumes(reviewMap);
   const workbooks = workbookList.sort((a, b) => a.bai - b.bai);
 
-  const reflexMap = new Map<number, any>();
+  const reflexMap = new Map<string, any>();
   for (const c of collections as any[]) {
     if (c.exam_type !== "reflex") continue;
-    if (!reflexMap.has(c.volume)) reflexMap.set(c.volume, { volume: c.volume, title: c.title, exams: [] });
-    reflexMap.get(c.volume)!.exams.push(...(c.exams || []));
+    const key = c.id as string;
+    if (!reflexMap.has(key)) reflexMap.set(key, { id: c.id, volume: c.volume, title: c.title, sequence_number: c.sequence_number ?? 99, exams: [] });
+    reflexMap.get(key)!.exams.push(...(c.exams || []));
   }
-  const reflex = Array.from(reflexMap.values()).sort((a, b) => a.volume - b.volume);
+  const reflex = Array.from(reflexMap.values()).sort((a, b) => a.sequence_number - b.sequence_number);
 
   return { lessons, workbooks, reviews, reflex };
 }
@@ -514,11 +515,11 @@ export default function SubjectMapPage() {
               </div>
             </div>
             {reflexes.map((vol: any) => {
-              const reflexKey = `reflex-${vol.volume}`;
+              const reflexKey = `reflex-${vol.id ?? vol.volume}`;
               const isReflexCollapsed = collapsedReflex[reflexKey] !== false;
               const doneCount = (vol.exams || []).filter((e: any) => completedExams.includes(e.id)).length;
               return (
-                <div key={reflexKey} className="mb-10">
+                <div key={vol.id ?? reflexKey} className="mb-10">
                   {/* Header card — click to toggle */}
                   <div
                     onClick={() => setCollapsedReflex(prev => ({ ...prev, [reflexKey]: !isReflexCollapsed }))}
