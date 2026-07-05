@@ -14,14 +14,16 @@ export default {
       },
       colors: {
         surface: {
-          DEFAULT: "var(--background)",
-          raised: "var(--card)",
+          DEFAULT: "rgb(var(--background) / <alpha-value>)",
+          raised: "rgb(var(--card) / <alpha-value>)",
+          // Slightly darker than DEFAULT, used for full-screen reader/textbook views
+          deep: "#0b0f19",
         },
         ink: {
-          DEFAULT: "var(--foreground)",
-          muted: "var(--foreground-muted)",
+          DEFAULT: "rgb(var(--foreground) / <alpha-value>)",
+          muted: "rgb(var(--foreground-muted) / <alpha-value>)",
         },
-        line: "var(--border)",
+        line: "rgb(var(--border) / <alpha-value>)",
         brand: {
           50: "#f0f9ff",
           100: "#e0f2fe",

@@ -51,14 +51,14 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="flex min-h-dvh flex-col bg-[#020617] bg-gradient-to-b from-slate-900/30 to-[#020617]">
+    <div className="flex min-h-dvh flex-col bg-slate-950 bg-gradient-to-b from-slate-900/30 to-slate-950">
       <header className="flex items-center justify-between px-4 py-5 sm:px-8 border-b border-slate-900">
         <Link href="/" className="flex items-center gap-2">
           <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-sky-600 text-sm font-bold text-white shadow-lg shadow-sky-500/20">
-            B
+            E
           </span>
           <span className="font-display text-lg font-semibold text-white">
-            BrightPath
+            EduVerse
           </span>
         </Link>
         <Link
