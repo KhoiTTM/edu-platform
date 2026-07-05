@@ -38,3 +38,10 @@ Quy tắc bắt buộc đối với tất cả Agent hoạt động trong worksp
    - **KHÔNG** seed KHTN 7 lên DB. Nếu thấy rows `subject_slug='khtn' AND grade=7` trong `assessment_collections` — đó là data cũ chưa xóa, không dùng.
    - Khi thêm bài mới: chạy OCR pipeline → append vào `content/khtn7-questions.json` → cập nhật `LESSON_TITLES` trong 2 file route (`flipbooks/[bookSlug]/quiz/page.tsx` và `quiz/[bai]/page.tsx`). Xem tiến độ và quy trình tại `docs/khtn7_sbt_progress.md`.
    - Câu hỏi loại `essay` trong SBT KHTN 7 được hiển thị bởi `FlipbookQuizClient` (học sinh tự làm vào vở, `isCorrect = null`) — không tính vào điểm MCQ.
+
+8. **NHIỀU MÁY CÙNG LÀM VIỆC TRÊN REPO NÀY (Linux + Windows)**:
+   - User chạy agent trên ít nhất 2 máy (Linux và Windows) cùng trỏ vào repo GitHub `KhoiTTM/edu-platform`. Công cụ đồng bộ giữa 2 máy chỉ sync **file code**, KHÔNG sync lịch sử Git — mỗi máy có `.git` độc lập.
+   - Sự cố đã xảy ra (2026-07-05): 26 commit nằm im trên Linux từ 2026-06-26 không được push; trong lúc đó Windows tạo và push 148 commit refactor lớn lên GitHub. Hai nhánh phân kỳ (diverged) cả `ahead` lẫn `behind`, phải xử lý bằng WIP commit + merge `-X theirs` + resolve tay 11 file conflict.
+   - **BẮT BUỘC** đầu mỗi phiên: chạy `git fetch origin && git status -sb` trước khi sửa bất kỳ file nào. Nếu thấy cả `ahead` và `behind` đều khác 0 → đây là phân kỳ thật, DỪNG LẠI và hỏi user chiến lược merge (không tự ý chọn `-X ours`/`-X theirs`).
+   - Với việc sửa nhiều file/nhiều bước (refactor, đổi theme...), ưu tiên tạo nhánh riêng thay vì commit thẳng vào `main`, để giảm nguy cơ đụng độ với phiên đang chạy song song trên máy kia.
+   - Trước khi kết thúc phiên, nếu còn commit chưa push, hỏi user có muốn push ngay không — không để tồn đọng nhiều ngày như sự cố trên.
