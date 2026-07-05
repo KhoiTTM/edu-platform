@@ -13,6 +13,15 @@ export default {
         display: ["var(--font-outfit)", "system-ui", "sans-serif"],
       },
       colors: {
+        surface: {
+          DEFAULT: "var(--background)",
+          raised: "var(--card)",
+        },
+        ink: {
+          DEFAULT: "var(--foreground)",
+          muted: "var(--foreground-muted)",
+        },
+        line: "var(--border)",
         brand: {
           50: "#f0f9ff",
           100: "#e0f2fe",
