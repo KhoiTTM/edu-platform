@@ -270,7 +270,7 @@ export default async function LearnNodePage({ params }: LearnNodePageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-[#0f172a] p-4 md:p-8 lg:p-12">
+    <main className="min-h-screen bg-surface p-4 md:p-8 lg:p-12">
       <LearnNodeClient 
         node={nodeData as any}
         breadcrumbs={breadcrumbs as any}

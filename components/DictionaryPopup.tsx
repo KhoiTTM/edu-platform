@@ -149,9 +149,9 @@ export function DictionaryPopup() {
     <div className="fixed bottom-6 right-6 z-[9999] flex flex-col items-end">
       {/* Dictionary Panel */}
       {isOpen && (
-        <div className="mb-4 w-[340px] sm:w-[380px] overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/95 shadow-2xl shadow-sky-500/10 backdrop-blur-xl transition-all duration-300 animate-in slide-in-from-bottom-5">
+        <div className="mb-4 w-[340px] sm:w-[380px] overflow-hidden rounded-2xl border border-line bg-surface/95 shadow-2xl shadow-sky-500/10 backdrop-blur-xl transition-all duration-300 animate-in slide-in-from-bottom-5">
           {/* Header */}
-          <div className="flex items-center justify-between border-b border-slate-800 bg-slate-950/50 px-4 py-3">
+          <div className="flex items-center justify-between border-b border-line bg-slate-950/50 px-4 py-3">
             <div className="flex items-center gap-2">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-sky-500/10 text-sky-400">
                 <Languages size={18} />
@@ -163,7 +163,7 @@ export function DictionaryPopup() {
             </div>
             <button
               onClick={() => setIsOpen(false)}
-              className="rounded-lg p-1.5 text-slate-400 hover:bg-slate-800 hover:text-white transition"
+              className="rounded-lg p-1.5 text-slate-400 hover:bg-surface-raised hover:text-white transition"
               title="Thu nhỏ"
             >
               <X size={16} />
@@ -173,7 +173,7 @@ export function DictionaryPopup() {
           {/* Body */}
           <div className="max-h-[420px] overflow-y-auto p-4 space-y-4 scrollbar-thin">
             {/* Mode selection tabs */}
-            <div className="grid grid-cols-2 gap-1 rounded-xl bg-slate-950 p-1 border border-slate-800">
+            <div className="grid grid-cols-2 gap-1 rounded-xl bg-slate-950 p-1 border border-line">
               <button
                 type="button"
                 onClick={() => {
@@ -183,7 +183,7 @@ export function DictionaryPopup() {
                 }}
                 className={`flex items-center justify-center gap-1.5 rounded-lg py-1.5 text-center text-xs font-semibold transition ${
                   mode === "quick"
-                    ? "bg-slate-800 text-sky-400 shadow-sm"
+                    ? "bg-surface-raised text-sky-400 shadow-sm"
                     : "text-slate-500 hover:text-slate-300"
                 }`}
               >
@@ -199,7 +199,7 @@ export function DictionaryPopup() {
                 }}
                 className={`flex items-center justify-center gap-1.5 rounded-lg py-1.5 text-center text-xs font-semibold transition ${
                   mode === "ai"
-                    ? "bg-slate-800 text-sky-400 shadow-sm"
+                    ? "bg-surface-raised text-sky-400 shadow-sm"
                     : "text-slate-500 hover:text-slate-300"
                 }`}
               >
@@ -216,7 +216,7 @@ export function DictionaryPopup() {
                   placeholder={mode === "quick" ? "Gõ từ cần dịch nhanh..." : "Nhờ AI giải thích chi tiết từ..."}
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
-                  className="w-full rounded-xl border border-slate-800 bg-slate-950 py-2.5 pl-3 pr-10 text-sm text-slate-200 placeholder-slate-600 outline-none ring-offset-slate-900 transition focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
+                  className="w-full rounded-xl border border-line bg-slate-950 py-2.5 pl-3 pr-10 text-sm text-slate-200 placeholder-slate-600 outline-none ring-offset-slate-900 transition focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
                 />
                 <button
                   type="submit"
@@ -230,7 +230,7 @@ export function DictionaryPopup() {
 
             {/* Quick history toggle */}
             {history.length > 0 && (
-              <div className="border-t border-slate-800/50 pt-2">
+              <div className="border-t border-line/50 pt-2">
                 <button
                   type="button"
                   onClick={() => setShowHistory(!showHistory)}
@@ -250,7 +250,7 @@ export function DictionaryPopup() {
                           if (h.mode) setMode(h.mode);
                           handleSearch(undefined, h.query, h.mode);
                         }}
-                        className="inline-flex items-center gap-1 rounded-lg bg-slate-950 border border-slate-800/80 px-2 py-1 text-xs text-slate-400 hover:border-sky-500/40 hover:text-sky-400 transition"
+                        className="inline-flex items-center gap-1 rounded-lg bg-slate-950 border border-line/80 px-2 py-1 text-xs text-slate-400 hover:border-sky-500/40 hover:text-sky-400 transition"
                       >
                         {h.query}
                         <span className="text-[8px] text-slate-600">({h.mode === "ai" ? "AI" : "Nhanh"})</span>
@@ -289,7 +289,7 @@ export function DictionaryPopup() {
             {result && (
               <div
                 ref={resultRef}
-                className="rounded-xl border border-slate-800 bg-slate-950 p-4 shadow-inner space-y-2 animate-in fade-in"
+                className="rounded-xl border border-line bg-slate-950 p-4 shadow-inner space-y-2 animate-in fade-in"
               >
                 <div className="flex items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-sky-500">
                   {mode === "quick" ? <Zap size={10} /> : <Sparkles size={10} />} 
@@ -325,7 +325,7 @@ export function DictionaryPopup() {
         onClick={() => setIsOpen(!isOpen)}
         className={`flex h-14 w-14 items-center justify-center rounded-full bg-sky-600 text-white shadow-lg transition-all duration-300 hover:scale-105 active:scale-95 ${
           isOpen
-            ? "bg-slate-800 ring-2 ring-slate-700 shadow-slate-950/50"
+            ? "bg-surface-raised ring-2 ring-slate-700 shadow-slate-950/50"
             : "hover:bg-sky-500 shadow-sky-500/20 hover:shadow-sky-500/40"
         }`}
         title="Từ điển Anh - Việt"

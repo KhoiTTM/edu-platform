@@ -150,17 +150,17 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
   };
 
   return (
-    <div className="flex flex-col h-screen text-slate-100 bg-[#0b0f19]">
+    <div className="flex flex-col h-screen text-slate-100 bg-surface-deep">
       {/* ── HEADER ────────────────────────────────────────────────────────── */}
-      <header className="flex items-center justify-between px-6 py-4 bg-[#0f172a] border-b border-slate-800 shadow-md">
+      <header className="flex items-center justify-between px-6 py-4 bg-surface border-b border-line shadow-md">
         <div className="flex items-center gap-3">
           <Link
             href={backUrl}
-            className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-850 hover:bg-slate-800 border border-slate-700 text-slate-300 hover:text-white transition text-xs font-medium"
+            className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-850 hover:bg-surface-raised border border-line text-slate-300 hover:text-white transition text-xs font-medium"
           >
             <ChevronLeft className="h-4 w-4" /> Quay Lại
           </Link>
-          <div className="h-4 w-[1px] bg-slate-800"></div>
+          <div className="h-4 w-[1px] bg-surface-raised"></div>
           <div>
             <h1 className="text-sm font-bold tracking-tight text-white flex items-center gap-1.5">
               <BookOpen className="h-4 w-4 text-sky-400" /> IELTS Foundation Textbook Alignment
@@ -170,7 +170,7 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
         </div>
 
         {/* Page Selector Tabs */}
-        <div className="flex items-center gap-2 overflow-x-auto max-w-full md:max-w-[40%] bg-slate-950 p-1.5 rounded-xl border border-slate-800">
+        <div className="flex items-center gap-2 overflow-x-auto max-w-full md:max-w-[40%] bg-slate-950 p-1.5 rounded-xl border border-line">
           {unit3Pages.map((p, idx) => (
             <button
               key={p.pageNumber}
@@ -181,7 +181,7 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
               className={`px-3 py-1 rounded-lg text-xs font-semibold whitespace-nowrap transition-all duration-300 ${
                 currentPageIndex === idx
                   ? "bg-gradient-to-r from-sky-600 to-indigo-600 text-white shadow-md shadow-sky-500/10 scale-105"
-                  : "text-slate-400 hover:text-white hover:bg-slate-900"
+                  : "text-slate-400 hover:text-white hover:bg-surface"
               }`}
             >
               Tr. {p.pageNumber}
@@ -194,18 +194,18 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
       <div className="flex-1 flex flex-col md:flex-row overflow-hidden">
         
         {/* LEFT PANEL: Textbook Image Scanner */}
-        <div className={`flex-1 flex flex-col bg-slate-950 relative overflow-hidden border-r border-slate-800 transition-all duration-500 ${
+        <div className={`flex-1 flex flex-col bg-slate-950 relative overflow-hidden border-r border-line transition-all duration-500 ${
           isFullscreen ? "fixed inset-0 z-50 p-4" : ""
         }`}>
           {/* Controls toolbar */}
-          <div className="flex items-center justify-between p-3 bg-slate-900/60 border-b border-slate-850 z-10 backdrop-blur">
+          <div className="flex items-center justify-between p-3 bg-surface/60 border-b border-slate-850 z-10 backdrop-blur">
             <span className="text-xs font-medium text-slate-300 flex items-center gap-1.5">
               <Maximize2 className="h-3.5 w-3.5 text-sky-400" /> Bản Quét Sách: Trang {activePage.pageNumber} ({activePage.title})
             </span>
             <div className="flex items-center gap-2">
               <button
                 onClick={() => setZoomScale(prev => Math.max(0.6, prev - 0.15))}
-                className="p-1.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition"
+                className="p-1.5 rounded bg-surface-raised hover:bg-slate-700 text-slate-300 hover:text-white transition"
                 title="Zoom Out"
               >
                 <ZoomOut className="h-4 w-4" />
@@ -215,21 +215,21 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
               </span>
               <button
                 onClick={() => setZoomScale(prev => Math.min(2.5, prev + 0.15))}
-                className="p-1.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition"
+                className="p-1.5 rounded bg-surface-raised hover:bg-slate-700 text-slate-300 hover:text-white transition"
                 title="Zoom In"
               >
                 <ZoomIn className="h-4 w-4" />
               </button>
               <button
                 onClick={() => setZoomScale(1)}
-                className="p-1.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition"
+                className="p-1.5 rounded bg-surface-raised hover:bg-slate-700 text-slate-300 hover:text-white transition"
                 title="Reset Zoom"
               >
                 <RotateCcw className="h-4 w-4" />
               </button>
               <button
                 onClick={() => setIsFullscreen(!isFullscreen)}
-                className="p-1.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition"
+                className="p-1.5 rounded bg-surface-raised hover:bg-slate-700 text-slate-300 hover:text-white transition"
                 title={isFullscreen ? "Exit Fullscreen" : "Fullscreen"}
               >
                 <Maximize2 className="h-4 w-4" />
@@ -238,7 +238,7 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
           </div>
 
           {/* Scrolled container */}
-          <div className="flex-1 overflow-hidden relative w-full h-full bg-slate-900">
+          <div className="flex-1 overflow-hidden relative w-full h-full bg-surface">
             <iframe 
               src={`https://online.flipbuilder.com/sdtta/bsjh/mobile/index.html#p=${activePage.pageNumber}`}
               title={`Textbook Page ${activePage.pageNumber}`}
@@ -255,7 +255,7 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
                 if (currentPageIndex > 0) setCurrentPageIndex(prev => prev - 1);
               }}
               disabled={currentPageIndex === 0}
-              className={`p-2.5 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-slate-700 text-slate-200 pointer-events-auto transition flex items-center justify-center disabled:opacity-40 disabled:cursor-not-allowed`}
+              className={`p-2.5 rounded-full bg-surface/80 hover:bg-surface-raised border border-line text-slate-200 pointer-events-auto transition flex items-center justify-center disabled:opacity-40 disabled:cursor-not-allowed`}
             >
               <ChevronLeft className="h-5 w-5" />
             </button>
@@ -264,7 +264,7 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
                 if (currentPageIndex < unit3Pages.length - 1) setCurrentPageIndex(prev => prev + 1);
               }}
               disabled={currentPageIndex === unit3Pages.length - 1}
-              className={`p-2.5 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-slate-700 text-slate-200 pointer-events-auto transition flex items-center justify-center disabled:opacity-40 disabled:cursor-not-allowed`}
+              className={`p-2.5 rounded-full bg-surface/80 hover:bg-surface-raised border border-line text-slate-200 pointer-events-auto transition flex items-center justify-center disabled:opacity-40 disabled:cursor-not-allowed`}
             >
               <ChevronRight className="h-5 w-5" />
             </button>
@@ -272,15 +272,15 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
         </div>
 
         {/* RIGHT PANEL: Interactive Forms Workspace */}
-        <div className="flex-1 flex flex-col bg-slate-900 overflow-y-auto p-6 md:p-8 space-y-6">
-          <div className="border-b border-slate-800 pb-4">
+        <div className="flex-1 flex flex-col bg-surface overflow-y-auto p-6 md:p-8 space-y-6">
+          <div className="border-b border-line pb-4">
             <span className="text-[10px] font-bold text-sky-400 uppercase tracking-widest block">INTERACTIVE STUDY WORKSPACE</span>
             <h2 className="text-xl font-extrabold text-white mt-1">Trang {activePage.pageNumber}: {activePage.title}</h2>
           </div>
 
           {/* LISTENING AUDIO PLAYER (Page 35) */}
           {activePage.audioUrl && (
-            <div className="p-5 rounded-2xl bg-gradient-to-br from-slate-950 to-slate-900 border border-slate-800 shadow-lg space-y-4">
+            <div className="p-5 rounded-2xl bg-gradient-to-br from-slate-950 to-slate-900 border border-line shadow-lg space-y-4">
               <div className="flex items-center gap-3">
                 <div className="p-2.5 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400">
                   <Volume2 className="h-5 w-5 animate-pulse" />
@@ -310,7 +310,7 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
                   max={duration || 100}
                   value={currentTime}
                   onChange={handleAudioSeek}
-                  className="flex-1 h-1.5 rounded-lg bg-slate-800 appearance-none cursor-pointer accent-sky-500"
+                  className="flex-1 h-1.5 rounded-lg bg-surface-raised appearance-none cursor-pointer accent-sky-500"
                 />
                 <span className="text-[10px] text-slate-400 font-mono w-[35px]">
                   {formatTime(duration)}
@@ -335,14 +335,14 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
                 </button>
 
                 {/* Speed Controls */}
-                <div className="flex items-center gap-1.5 bg-slate-950 p-1 rounded-xl border border-slate-800">
+                <div className="flex items-center gap-1.5 bg-slate-950 p-1 rounded-xl border border-line">
                   {[0.75, 1.0, 1.25, 1.5].map(speed => (
                     <button
                       key={speed}
                       onClick={() => handleSpeedChange(speed)}
                       className={`px-2 py-1 rounded-lg text-[9px] font-bold transition-all ${
                         playbackRate === speed 
-                          ? "bg-slate-800 text-white" 
+                          ? "bg-surface-raised text-white" 
                           : "text-slate-500 hover:text-slate-350"
                       }`}
                     >
@@ -360,7 +360,7 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
               const showResult = showResults[activePage.pageNumber];
 
               return (
-                <div key={ex.id} className="p-6 rounded-2xl bg-slate-950/40 border border-slate-800/80 shadow-md space-y-4 hover:border-slate-800 transition">
+                <div key={ex.id} className="p-6 rounded-2xl bg-slate-950/40 border border-line/80 shadow-md space-y-4 hover:border-line transition">
                   <div className="flex items-start justify-between gap-3">
                     <h3 className="text-sm font-extrabold text-slate-100 flex items-center gap-2">
                       <span className="h-1.5 w-1.5 rounded-full bg-sky-400"></span>
@@ -379,7 +379,7 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
                         const isCorrect = ex.correctAnswers[0] === optionLetter;
                         const isWrongSelected = isSelected && !isCorrect;
 
-                        let borderClass = "border-slate-800 bg-slate-900/40 hover:bg-slate-900";
+                        let borderClass = "border-line bg-surface/40 hover:bg-surface";
                         if (showResult) {
                           if (isCorrect) borderClass = "border-emerald-600 bg-emerald-950/20 text-emerald-350";
                           else if (isWrongSelected) borderClass = "border-rose-600 bg-rose-950/20 text-rose-350";
@@ -418,7 +418,7 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
                             return currentVal.trim().toLowerCase() === opt || (opt.length > 3 && currentVal.trim().toLowerCase().includes(opt));
                           });
 
-                          let inputClass = "bg-slate-950 border-slate-800 text-white focus:border-sky-500 focus:ring-1 focus:ring-sky-500";
+                          let inputClass = "bg-slate-950 border-line text-white focus:border-sky-500 focus:ring-1 focus:ring-sky-500";
                           if (showResult) {
                             inputClass = isCorrect 
                               ? "bg-emerald-950/20 border-emerald-600 text-emerald-300 font-bold" 
@@ -460,7 +460,7 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
                       <div className="grid gap-4 md:grid-cols-2">
                         {/* Present Simple Column */}
                         <div className="p-4 rounded-xl bg-slate-950/60 border border-slate-850 space-y-3">
-                          <span className="text-[10px] font-bold text-sky-400 uppercase tracking-wider block border-b border-slate-800 pb-2">
+                          <span className="text-[10px] font-bold text-sky-400 uppercase tracking-wider block border-b border-line pb-2">
                             Present Simple Verbs
                           </span>
                           
@@ -474,7 +474,7 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
                               
                               const isCorrect = currentVal.trim().toLowerCase() === correctVal.toLowerCase();
 
-                              let inputClass = "bg-slate-900 border-slate-800 focus:border-sky-500";
+                              let inputClass = "bg-surface border-line focus:border-sky-500";
                               if (showResult) {
                                 inputClass = isCorrect 
                                   ? "bg-emerald-950/20 border-emerald-600 text-emerald-300" 
@@ -504,7 +504,7 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
 
                         {/* Present Continuous Column */}
                         <div className="p-4 rounded-xl bg-slate-950/60 border border-slate-850 space-y-3">
-                          <span className="text-[10px] font-bold text-indigo-400 uppercase tracking-wider block border-b border-slate-800 pb-2">
+                          <span className="text-[10px] font-bold text-indigo-400 uppercase tracking-wider block border-b border-line pb-2">
                             Present Continuous Verbs
                           </span>
                           
@@ -518,7 +518,7 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
                               
                               const isCorrect = currentVal.trim().toLowerCase() === correctVal.toLowerCase();
 
-                              let inputClass = "bg-slate-900 border-slate-800 focus:border-indigo-500";
+                              let inputClass = "bg-surface border-line focus:border-indigo-500";
                               if (showResult) {
                                 inputClass = isCorrect 
                                   ? "bg-emerald-950/20 border-emerald-600 text-emerald-300" 
@@ -560,7 +560,7 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
                         placeholder={ex.placeholder || "Enter your written answer response..."}
                         value={userAnswers[`${activePage.pageNumber}-${ex.id}-0`] || ""}
                         onChange={(e) => handleInputChange(ex.id, 0, e.target.value)}
-                        className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs outline-none focus:border-sky-500 transition duration-200"
+                        className="w-full bg-slate-950 border border-line rounded-xl px-4 py-3 text-xs outline-none focus:border-sky-500 transition duration-200"
                       />
                       
                       {showResult && (
@@ -579,7 +579,7 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
           </div>
 
           {/* CHECK ANSWERS CTA FOOTER */}
-          <div className="flex items-center justify-between p-5 bg-slate-950 rounded-2xl border border-slate-800 sticky bottom-0 z-10 shadow-lg">
+          <div className="flex items-center justify-between p-5 bg-slate-950 rounded-2xl border border-line sticky bottom-0 z-10 shadow-lg">
             <div>
               <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">SUBMIT WORKSPACE</span>
               <p className="text-xs font-bold text-slate-350 mt-0.5">Click to verify answers for this book page</p>
@@ -594,7 +594,7 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
                   setUserAnswers(resetObj);
                   setShowResults(prev => ({ ...prev, [activePage.pageNumber]: false }));
                 }}
-                className="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white text-xs font-semibold transition"
+                className="px-4 py-2 rounded-xl bg-surface border border-line text-slate-400 hover:text-white text-xs font-semibold transition"
               >
                 Reset Page
               </button>

@@ -63,7 +63,7 @@ export default async function SpeakingPage() {
           const unit = unitMatch?.[1] ?? '?';
 
           const card = (
-            <div className={`group flex flex-col gap-3 rounded-2xl border p-5 backdrop-blur-md transition-all duration-200 border-slate-800 bg-slate-900/30 hover:border-emerald-500/40 hover:bg-slate-900/60 hover:shadow-lg cursor-pointer`}>
+            <div className={`group flex flex-col gap-3 rounded-2xl border p-5 backdrop-blur-md transition-all duration-200 border-line bg-surface/30 hover:border-emerald-500/40 hover:bg-surface/60 hover:shadow-lg cursor-pointer`}>
               <div className="flex items-center justify-between">
                 <span className="rounded-md bg-emerald-950/60 px-2 py-0.5 text-[10px] font-bold text-emerald-400 border border-emerald-900/40 uppercase">
                   Unit {unit}
@@ -97,7 +97,7 @@ export default async function SpeakingPage() {
       </div>
 
       {lessons.length === 0 && (
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/30 p-10 text-center">
+        <div className="rounded-2xl border border-line bg-surface/30 p-10 text-center">
           <p className="text-slate-400">Không có buổi Speaking nào.</p>
         </div>
       )}

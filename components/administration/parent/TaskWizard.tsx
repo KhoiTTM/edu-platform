@@ -71,7 +71,7 @@ function StepIndicator({ current, total }: { current: number; total: number }) {
                     ? "bg-emerald-500 border-emerald-400 text-white"
                     : isActive
                     ? "bg-indigo-500 border-indigo-400 text-white shadow-[0_0_12px_rgba(99,102,241,0.6)]"
-                    : "bg-slate-800 border-slate-700 text-slate-500"
+                    : "bg-surface-raised border-line text-slate-500"
                 }`}
               >
                 {isDone ? <CheckCircle2 size={14} /> : idx}
@@ -184,7 +184,7 @@ export function TaskWizard({
             className={`flex items-center gap-3 p-3 rounded-xl border-2 text-left transition-all ${
               selectedStudent?.id === s.id
                 ? "border-indigo-500 bg-indigo-500/10 shadow-[0_0_12px_rgba(99,102,241,0.3)]"
-                : "border-slate-700 bg-slate-800/60 hover:border-slate-600 hover:bg-slate-800"
+                : "border-line bg-surface-raised/60 hover:border-slate-600 hover:bg-surface-raised"
             }`}
           >
             <div className="w-9 h-9 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center font-black text-white text-sm shrink-0">
@@ -219,7 +219,7 @@ export function TaskWizard({
             className={`flex flex-col items-center gap-2 p-4 rounded-xl border-2 transition-all ${
               selectedSubject?.slug === s.slug
                 ? `border-${s.color}-500 bg-${s.color}-500/10`
-                : "border-slate-700 bg-slate-800/60 hover:border-slate-600"
+                : "border-line bg-surface-raised/60 hover:border-slate-600"
             }`}
           >
             <span className="text-2xl">{s.icon}</span>
@@ -275,7 +275,7 @@ export function TaskWizard({
     return (
       <div className="flex flex-col gap-3">
         {/* Toggle between Lesson and Exam */}
-        <div className="flex bg-slate-950/60 p-1 rounded-xl border border-slate-800">
+        <div className="flex bg-slate-950/60 p-1 rounded-xl border border-line">
           <button
             onClick={() => {
               setTaskType("exam");
@@ -306,7 +306,7 @@ export function TaskWizard({
 
         {/* Sub-exam type selectors for "Bài luyện tập" */}
         {taskType === "exam" && (
-          <div className="flex bg-slate-900/60 p-1.5 rounded-xl border border-slate-800/80 gap-1 flex-wrap justify-center">
+          <div className="flex bg-surface/60 p-1.5 rounded-xl border border-line/80 gap-1 flex-wrap justify-center">
             <button
               onClick={() => setSelectedExamTypeFilter("lesson")}
               className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all select-none ${
@@ -357,7 +357,7 @@ export function TaskWizard({
             placeholder={taskType === "exam" ? "Tìm đề luyện tập..." : "Tìm bài học..."}
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="flex-1 bg-slate-800/80 border-2 border-slate-700 rounded-xl px-3 py-1.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-all font-bold"
+            className="flex-1 bg-surface-raised/80 border-2 border-line rounded-xl px-3 py-1.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-all font-bold"
           />
           {uniqueUnits.length > 0 && (
             <select
@@ -367,7 +367,7 @@ export function TaskWizard({
                   e.target.value === "" ? null : Number(e.target.value)
                 )
               }
-              className="bg-slate-800/80 border-2 border-slate-700 rounded-xl px-3 py-1.5 text-xs text-white font-bold focus:outline-none focus:border-indigo-500 transition-all"
+              className="bg-surface-raised/80 border-2 border-line rounded-xl px-3 py-1.5 text-xs text-white font-bold focus:outline-none focus:border-indigo-500 transition-all"
             >
               <option value="">Tất cả Unit</option>
               {uniqueUnits.map((u) => (
@@ -419,7 +419,7 @@ export function TaskWizard({
                       className={`flex items-center justify-between p-2.5 rounded-xl border-2 transition-all text-left ${
                         isSelected
                           ? "border-indigo-500 bg-indigo-500/10 shadow-[0_0_12px_rgba(99,102,241,0.3)]"
-                          : "border-slate-700 bg-slate-800/60 hover:border-slate-600"
+                          : "border-line bg-surface-raised/60 hover:border-slate-600"
                       }`}
                     >
                       <div className="min-w-0 flex-1">
@@ -448,7 +448,7 @@ export function TaskWizard({
                       className={`flex items-center justify-between p-2.5 rounded-xl border-2 transition-all text-left ${
                         isSelected
                           ? "border-indigo-500 bg-indigo-500/10 shadow-[0_0_12px_rgba(99,102,241,0.3)]"
-                          : "border-slate-700 bg-slate-800/60 hover:border-slate-600"
+                          : "border-line bg-surface-raised/60 hover:border-slate-600"
                       }`}
                     >
                       <div className="min-w-0 flex-1">
@@ -482,7 +482,7 @@ export function TaskWizard({
         <p className="text-[10px] text-slate-500 mt-1 max-w-xs mx-auto">Vui lòng kiểm tra lại thông tin dưới đây trước khi giao bài cho học sinh.</p>
       </div>
 
-      <div className="rounded-xl bg-slate-800/80 border border-slate-700 p-4 space-y-3">
+      <div className="rounded-xl bg-surface-raised/80 border border-line p-4 space-y-3">
         <div>
           <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Học sinh nhận</span>
           <p className="text-xs text-slate-200 font-bold mt-0.5">👤 {selectedStudent?.display_name}</p>
@@ -505,7 +505,7 @@ export function TaskWizard({
         </div>
       </div>
 
-      <div className="rounded-xl bg-slate-950/40 border border-slate-800 px-4 py-3 text-[10px] font-semibold text-slate-400 leading-relaxed text-center">
+      <div className="rounded-xl bg-slate-950/40 border border-line px-4 py-3 text-[10px] font-semibold text-slate-400 leading-relaxed text-center">
         💡 Nhiệm vụ sẽ xuất hiện trên bảng điều khiển của học sinh ngay hôm nay.
       </div>
     </div>
@@ -602,18 +602,18 @@ export function TaskWizard({
         </p>
       )}
 
-      <div className="flex items-center justify-between gap-3 pt-2 border-t border-slate-800">
+      <div className="flex items-center justify-between gap-3 pt-2 border-t border-line">
         {step > 1 ? (
           <button
             onClick={() => setStep((s) => s - 1)}
-            className="flex items-center gap-1.5 px-4 py-2 rounded-xl border-2 border-slate-700 text-slate-300 font-black text-xs uppercase tracking-wide hover:bg-slate-700 transition-all"
+            className="flex items-center gap-1.5 px-4 py-2 rounded-xl border-2 border-line text-slate-300 font-black text-xs uppercase tracking-wide hover:bg-slate-700 transition-all"
           >
             <ChevronLeft size={14} /> Quay lại
           </button>
         ) : (
           <button
             onClick={onCancel}
-            className="px-4 py-2 rounded-xl border-2 border-slate-700 text-slate-500 font-black text-xs uppercase tracking-wide hover:bg-slate-700 hover:text-white transition-all"
+            className="px-4 py-2 rounded-xl border-2 border-line text-slate-500 font-black text-xs uppercase tracking-wide hover:bg-slate-700 hover:text-white transition-all"
           >
             Hủy
           </button>

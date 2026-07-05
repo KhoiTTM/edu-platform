@@ -111,9 +111,9 @@ function WarmupCard({ sessionInfo, studentName, onWarmupComplete }: WarmupCardPr
   const warmupQuestion = getWarmupQuestion(sessionInfo.title);
 
   return (
-    <div className="rounded-2xl border border-slate-700/60 bg-slate-900/60 shadow-xl backdrop-blur-md overflow-hidden">
+    <div className="rounded-2xl border border-line/60 bg-surface/60 shadow-xl backdrop-blur-md overflow-hidden">
       {/* Header */}
-      <div className="flex items-center gap-3 px-4 py-3 border-b border-slate-800 bg-slate-950/50">
+      <div className="flex items-center gap-3 px-4 py-3 border-b border-line bg-slate-950/50">
         <div className="flex h-8 w-8 items-center justify-center rounded-full bg-sky-600 text-white shadow-lg shadow-sky-500/20 shrink-0">
           <Bot size={16} />
         </div>
@@ -135,7 +135,7 @@ function WarmupCard({ sessionInfo, studentName, onWarmupComplete }: WarmupCardPr
           <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky-900/50 text-sky-400">
             <Bot size={13} />
           </div>
-          <div className="rounded-2xl rounded-tl-none bg-slate-800/70 border border-slate-700/50 px-4 py-3 text-sm text-slate-200 leading-relaxed max-w-[85%]">
+          <div className="rounded-2xl rounded-tl-none bg-surface-raised/70 border border-line/50 px-4 py-3 text-sm text-slate-200 leading-relaxed max-w-[85%]">
             Hey {studentName}! Before we listen...
             <br />
             <span className="font-medium text-white">{warmupQuestion}</span>
@@ -151,7 +151,7 @@ function WarmupCard({ sessionInfo, studentName, onWarmupComplete }: WarmupCardPr
               onChange={(e) => setUserInput(e.target.value)}
               onKeyDown={handleKeyDown}
               placeholder="Type your answer... (or press Enter to send)"
-              className="flex-1 resize-none rounded-xl border border-slate-700 bg-slate-800/60 px-3.5 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 transition leading-relaxed"
+              className="flex-1 resize-none rounded-xl border border-line bg-surface-raised/60 px-3.5 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 transition leading-relaxed"
             />
             <button
               onClick={handleSubmit}
@@ -182,7 +182,7 @@ function WarmupCard({ sessionInfo, studentName, onWarmupComplete }: WarmupCardPr
             <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky-900/50 text-sky-400">
               <Bot size={13} />
             </div>
-            <div className="flex items-center gap-2 rounded-2xl rounded-tl-none bg-slate-800/70 border border-slate-700/50 px-4 py-2.5">
+            <div className="flex items-center gap-2 rounded-2xl rounded-tl-none bg-surface-raised/70 border border-line/50 px-4 py-2.5">
               <Loader2 size={14} className="animate-spin text-sky-400 shrink-0" />
               <span className="text-xs text-slate-400 transition-all duration-500">{loadingMsg}</span>
             </div>
@@ -196,7 +196,7 @@ function WarmupCard({ sessionInfo, studentName, onWarmupComplete }: WarmupCardPr
               <div className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky-900/50 text-sky-400">
                 <Bot size={13} />
               </div>
-              <div className="rounded-2xl rounded-tl-none bg-slate-800/70 border border-slate-700/50 px-4 py-3 text-sm text-slate-200 leading-relaxed max-w-[85%] whitespace-pre-wrap">
+              <div className="rounded-2xl rounded-tl-none bg-surface-raised/70 border border-line/50 px-4 py-3 text-sm text-slate-200 leading-relaxed max-w-[85%] whitespace-pre-wrap">
                 {ariaResponse}
               </div>
             </div>
@@ -367,9 +367,9 @@ function LessonChatPanel({
   }, [messages]);
 
   return (
-    <div className="flex h-[620px] flex-col overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/50 shadow-xl backdrop-blur-md transition-all duration-300">
+    <div className="flex h-[620px] flex-col overflow-hidden rounded-2xl border border-line bg-surface/50 shadow-xl backdrop-blur-md transition-all duration-300">
       {/* Header */}
-      <div className="border-b border-slate-800 bg-slate-950/60 px-4 py-3">
+      <div className="border-b border-line bg-slate-950/60 px-4 py-3">
         <div className="flex items-center gap-3">
           <div className="flex h-8 w-8 items-center justify-center rounded-full bg-sky-600 text-white shadow-lg shadow-sky-500/20">
             <Bot size={18} />
@@ -387,7 +387,7 @@ function LessonChatPanel({
           <div key={i} className={`flex gap-3 ${m.role === "user" ? "flex-row-reverse" : ""}`}>
             <div
               className={`mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full ${
-                m.role === "user" ? "bg-slate-800 text-slate-400 text-xs font-bold" : "bg-sky-900/50 text-sky-400"
+                m.role === "user" ? "bg-surface-raised text-slate-400 text-xs font-bold" : "bg-sky-900/50 text-sky-400"
               }`}
             >
               {m.role === "user" ? (studentName[0]?.toUpperCase() ?? "S") : <Bot size={14} />}
@@ -396,7 +396,7 @@ function LessonChatPanel({
               className={`group relative max-w-[85%] rounded-2xl px-4 py-2.5 text-sm leading-relaxed ${
                 m.role === "user"
                   ? "bg-sky-600 text-white rounded-tr-none shadow-lg shadow-sky-500/10"
-                  : "bg-slate-900/80 text-slate-200 border border-slate-800 rounded-tl-none shadow-sm"
+                  : "bg-surface/80 text-slate-200 border border-line rounded-tl-none shadow-sm"
               }`}
             >
               <div className="whitespace-pre-wrap">{m.content}</div>
@@ -409,7 +409,7 @@ function LessonChatPanel({
             <div className="mt-1 flex h-7 w-7 items-center justify-center rounded-full bg-sky-900/50 text-sky-400">
               <Bot size={14} />
             </div>
-            <div className="flex items-center gap-2 rounded-2xl bg-slate-900/80 border border-slate-800 px-4 py-2">
+            <div className="flex items-center gap-2 rounded-2xl bg-surface/80 border border-line px-4 py-2">
               <Loader2 size={16} className="animate-spin text-sky-500" />
               <span className="text-xs text-slate-400">Giáo viên đang phản hồi...</span>
             </div>
@@ -418,14 +418,14 @@ function LessonChatPanel({
       </div>
 
       {/* Input */}
-      <div className="border-t border-slate-800 bg-slate-950/80 p-4">
+      <div className="border-t border-line bg-slate-950/80 p-4">
         <form onSubmit={(e) => { e.preventDefault(); handleSend(input); }} className="flex gap-2">
           <input
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder="Trả lời hoặc đặt câu hỏi có dấu '?'..."
-            className="flex-1 rounded-xl border border-slate-700 bg-slate-800 px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 transition"
+            className="flex-1 rounded-xl border border-line bg-surface-raised px-4 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 transition"
             disabled={isLoading}
           />
           <button

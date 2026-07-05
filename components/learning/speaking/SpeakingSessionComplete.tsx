@@ -61,11 +61,11 @@ export function SpeakingSessionComplete({
       </div>
 
       <div className="grid grid-cols-2 gap-4">
-        <div className="p-6 bg-slate-800/50 border border-slate-700 rounded-3xl text-center space-y-1 hover:bg-slate-800 transition-colors">
+        <div className="p-6 bg-surface-raised/50 border border-line rounded-3xl text-center space-y-1 hover:bg-surface-raised transition-colors">
           <p className="text-3xl font-black text-white">{turnCount}</p>
           <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Turns Spoken</p>
         </div>
-        <div className="p-6 bg-slate-800/50 border border-slate-700 rounded-3xl text-center space-y-1 hover:bg-slate-800 transition-colors">
+        <div className="p-6 bg-surface-raised/50 border border-line rounded-3xl text-center space-y-1 hover:bg-surface-raised transition-colors">
           <p className="text-3xl font-black text-white">{avgWords}</p>
           <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500">Avg Words / Turn</p>
         </div>
@@ -104,7 +104,7 @@ export function SpeakingSessionComplete({
       <div className="flex flex-col sm:flex-row gap-4 pt-4">
         <Link 
           href="/dashboard"
-          className="flex-1 px-8 py-4 bg-slate-800 text-white rounded-2xl font-bold hover:bg-slate-700 transition flex items-center justify-center gap-2"
+          className="flex-1 px-8 py-4 bg-surface-raised text-white rounded-2xl font-bold hover:bg-slate-700 transition flex items-center justify-center gap-2"
         >
           <ArrowLeft size={18} /> Back to Lessons
         </Link>

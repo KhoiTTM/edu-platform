@@ -113,9 +113,9 @@ export function StudentHistoryCard({ studentName, studentGrade, history }: Props
   const uniqueSubjects = Array.from(new Set(history.map(h => h.subject_slug)));
 
   return (
-    <div className="rounded-2xl border-2 border-slate-800 bg-slate-900/60 backdrop-blur-xl overflow-hidden">
+    <div className="rounded-2xl border-2 border-line bg-surface/60 backdrop-blur-xl overflow-hidden">
       {/* Filters Bar */}
-      <div className="bg-slate-950/40 px-4 py-3 border-b border-slate-800/80 flex flex-col gap-3.5">
+      <div className="bg-slate-950/40 px-4 py-3 border-b border-line/80 flex flex-col gap-3.5">
         {/* Time filters */}
         <div className="flex flex-wrap items-center gap-2">
           <span className="text-[9px] font-black text-slate-500 uppercase tracking-wider w-16">Thời gian:</span>
@@ -126,7 +126,7 @@ export function StudentHistoryCard({ studentName, studentGrade, history }: Props
               className={`px-3 py-1 rounded-lg border-2 text-[9px] font-black uppercase tracking-wider transition-all ${
                 timeFilter === t
                   ? "border-sky-500 bg-sky-500/10 text-sky-400"
-                  : "border-slate-800 bg-slate-900/40 text-slate-400 hover:border-slate-700 hover:text-white"
+                  : "border-line bg-surface/40 text-slate-400 hover:border-line hover:text-white"
               }`}
             >
               {t === 'all' ? 'Tất cả' : t === '1d' ? '24 Giờ' : '7 Ngày'}
@@ -144,7 +144,7 @@ export function StudentHistoryCard({ studentName, studentGrade, history }: Props
               className={`px-3 py-1 rounded-lg border-2 text-[9px] font-black uppercase tracking-wider transition-all ${
                 typeFilter === t
                   ? "border-indigo-500 bg-indigo-500/10 text-indigo-400"
-                  : "border-slate-800 bg-slate-900/40 text-slate-400 hover:border-slate-700 hover:text-white"
+                  : "border-line bg-surface/40 text-slate-400 hover:border-line hover:text-white"
               }`}
             >
               {t === 'all' ? 'Tất cả' : t === 'learning' ? 'Học Bài' : 'Luyện Tập'}
@@ -161,7 +161,7 @@ export function StudentHistoryCard({ studentName, studentGrade, history }: Props
               className={`px-3 py-1 rounded-lg border-2 text-[9px] font-black uppercase tracking-wider transition-all ${
                 subjectFilter === 'all'
                   ? "border-emerald-500 bg-emerald-500/10 text-emerald-400"
-                  : "border-slate-800 bg-slate-900/40 text-slate-400 hover:border-slate-700 hover:text-white"
+                  : "border-line bg-surface/40 text-slate-400 hover:border-line hover:text-white"
               }`}
             >
               Tất cả
@@ -175,7 +175,7 @@ export function StudentHistoryCard({ studentName, studentGrade, history }: Props
                   className={`px-3 py-1 rounded-lg border-2 text-[9px] font-black uppercase tracking-wider transition-all ${
                     subjectFilter === subSlug
                       ? "border-emerald-500 bg-emerald-500/10 text-emerald-400"
-                      : "border-slate-800 bg-slate-900/40 text-slate-400 hover:border-slate-700 hover:text-white"
+                      : "border-line bg-surface/40 text-slate-400 hover:border-line hover:text-white"
                   }`}
                 >
                   {meta.label}
@@ -186,7 +186,7 @@ export function StudentHistoryCard({ studentName, studentGrade, history }: Props
         )}
       </div>
       {/* Header */}
-      <div className="flex items-center justify-between px-4 py-3 border-b border-slate-800">
+      <div className="flex items-center justify-between px-4 py-3 border-b border-line">
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center font-black text-white text-sm shrink-0">
             {studentName.charAt(0).toUpperCase()}
@@ -240,7 +240,7 @@ export function StudentHistoryCard({ studentName, studentGrade, history }: Props
             return (
               <div
                 key={entry.id}
-                className="flex items-center gap-3 px-4 py-2.5 hover:bg-slate-800/30 transition-colors"
+                className="flex items-center gap-3 px-4 py-2.5 hover:bg-surface-raised/30 transition-colors"
               >
                 <span className="text-lg shrink-0">{meta.icon}</span>
                 <div className="flex-1 min-w-0">
@@ -266,7 +266,7 @@ export function StudentHistoryCard({ studentName, studentGrade, history }: Props
                             : score / total >= 0.5
                             ? "text-amber-400 border-amber-500/30 bg-amber-500/10"
                             : "text-rose-400 border-rose-500/30 bg-rose-500/10"
-                          : "text-slate-400 border-slate-700 bg-slate-800"
+                          : "text-slate-400 border-line bg-surface-raised"
                       }`}
                     >
                       {hasScore ? `${score}/${total}` : "Đã làm"}
@@ -288,7 +288,7 @@ export function StudentHistoryCard({ studentName, studentGrade, history }: Props
       {filteredHistory.length > 5 && (
         <button
           onClick={() => setExpanded(!expanded)}
-          className="w-full flex items-center justify-center gap-2 py-2.5 text-[10px] font-black text-slate-500 uppercase tracking-widest hover:text-slate-300 hover:bg-slate-800/30 transition-all border-t border-slate-800/60"
+          className="w-full flex items-center justify-center gap-2 py-2.5 text-[10px] font-black text-slate-500 uppercase tracking-widest hover:text-slate-300 hover:bg-surface-raised/30 transition-all border-t border-line/60"
         >
           {expanded ? (
             <>

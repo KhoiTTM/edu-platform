@@ -210,7 +210,7 @@ export function KHTNClipper({ lessonSlug, initialPage = 1, onPageChange }: KHTNC
   const imageUrl = getImageUrl(displayPage);
 
   return (
-    <div className="flex flex-col h-full bg-slate-900 rounded-2xl overflow-hidden border border-slate-800 shadow-lg">
+    <div className="flex flex-col h-full bg-surface rounded-2xl overflow-hidden border border-line shadow-lg">
       <div className="bg-gradient-to-r from-indigo-600 to-cyan-600 px-4 py-3 text-white font-bold flex items-center justify-between">
         <span className="text-sm">📖 Sách Bài Tập</span>
         <span className="text-xs bg-white/20 px-2 py-1 rounded">
@@ -234,7 +234,7 @@ export function KHTNClipper({ lessonSlug, initialPage = 1, onPageChange }: KHTNC
         )}
       </div>
 
-      <div className="bg-slate-800 px-4 py-3 flex items-center justify-between border-t border-slate-700 flex-wrap gap-2">
+      <div className="bg-surface-raised px-4 py-3 flex items-center justify-between border-t border-line flex-wrap gap-2">
         <button
           onClick={handlePrevPage}
           disabled={currentPage === 1}

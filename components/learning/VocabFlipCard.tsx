@@ -24,7 +24,7 @@ export function VocabFlipCard({ word, meaning, pronunciation, example }: Props) 
         }`}
       >
         {/* Front Side */}
-        <div className="absolute inset-0 backface-hidden rounded-xl border border-slate-800 bg-slate-950/60 p-4 flex flex-col justify-center items-center text-center shadow-md">
+        <div className="absolute inset-0 backface-hidden rounded-xl border border-line bg-slate-950/60 p-4 flex flex-col justify-center items-center text-center shadow-md">
           <p className="text-sm font-bold text-white tracking-tight">{word}</p>
           <p className="mt-1 text-[10px] font-mono text-slate-500">{pronunciation}</p>
           <div className="mt-3 flex items-center gap-1 text-[9px] font-bold text-sky-400 uppercase tracking-wider opacity-60 group-hover:opacity-100 transition-opacity">

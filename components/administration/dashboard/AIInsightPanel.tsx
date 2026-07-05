@@ -37,7 +37,7 @@ export function AIInsightPanel({ initialInsight, lastInsightAt }: AIInsightPanel
   };
 
   return (
-    <div className="relative rounded-[2.5rem] border-4 border-[#1e293b] bg-slate-900/60 p-6 shadow-[0_12px_0_#0f172a,0_20px_40px_rgba(0,0,0,0.5)] backdrop-blur-xl overflow-hidden group transition-all duration-300 hover:scale-[1.01] h-full flex flex-col justify-between">
+    <div className="relative rounded-[2.5rem] border-4 border-surface-raised bg-surface/60 p-6 shadow-[0_12px_0_#0f172a,0_20px_40px_rgba(0,0,0,0.5)] backdrop-blur-xl overflow-hidden group transition-all duration-300 hover:scale-[1.01] h-full flex flex-col justify-between">
       {/* Glow Effects */}
       <div className="absolute -right-4 -bottom-4 h-24 w-24 rounded-full bg-sky-500/10 blur-3xl group-hover:bg-sky-500/15 transition-colors duration-700" />
       
@@ -57,10 +57,10 @@ export function AIInsightPanel({ initialInsight, lastInsightAt }: AIInsightPanel
             <button
               onClick={generateInsight}
               disabled={isLoading}
-              className={`p-1.5 rounded-xl transition-all border border-slate-700 active:translate-y-[2px] active:shadow-none shadow-[0_2px_0_#1e293b] ${
+              className={`p-1.5 rounded-xl transition-all border border-line active:translate-y-[2px] active:shadow-none shadow-[0_2px_0_#1e293b] ${
                 isLoading 
-                  ? "bg-slate-800 text-slate-500 animate-spin" 
-                  : "bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white"
+                  ? "bg-surface-raised text-slate-500 animate-spin" 
+                  : "bg-surface-raised text-slate-300 hover:bg-slate-700 hover:text-white"
               }`}
               title="Cập nhật nhận xét"
             >
@@ -68,7 +68,7 @@ export function AIInsightPanel({ initialInsight, lastInsightAt }: AIInsightPanel
             </button>
           </div>
           
-          <div className="relative bg-slate-950/40 border border-slate-800/80 rounded-2xl p-4 shadow-inner">
+          <div className="relative bg-slate-950/40 border border-line/80 rounded-2xl p-4 shadow-inner">
             <p className="text-xs text-slate-200 leading-relaxed italic pr-2 font-medium">
               &ldquo;{insight}&rdquo;
             </p>

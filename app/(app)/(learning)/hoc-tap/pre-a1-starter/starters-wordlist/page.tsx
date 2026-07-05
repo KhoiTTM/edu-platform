@@ -6,12 +6,12 @@ import { vocabTopics, allVocabWords } from "@/lib/data/startersVocabulary";
 
 export default function StartersWordlistHomePage() {
   return (
-    <div className="min-h-screen bg-[#0b0f19] text-slate-100 flex flex-col">
+    <div className="min-h-screen bg-surface-deep text-slate-100 flex flex-col">
       {/* Header */}
-      <header className="border-b border-slate-800 bg-[#0f172a] px-6 py-4 flex items-center gap-4">
+      <header className="border-b border-line bg-surface px-6 py-4 flex items-center gap-4">
         <Link
           href="/hoc-tap/pre-a1-starter"
-          className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-slate-700 bg-slate-800 text-slate-300 hover:text-white text-xs font-medium transition"
+          className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-line bg-surface-raised text-slate-300 hover:text-white text-xs font-medium transition"
         >
           <ChevronLeft size={15} /> Quay lại
         </Link>
@@ -84,7 +84,7 @@ export default function StartersWordlistHomePage() {
             <Link
               key={topic.id}
               href={`/hoc-tap/pre-a1-starter/starters-wordlist/learn?topic=${topic.id}`}
-              className="group flex flex-col items-center gap-2 p-4 rounded-2xl border border-slate-800 bg-slate-900/40 hover:border-slate-600 hover:bg-slate-800/60 transition-all text-center"
+              className="group flex flex-col items-center gap-2 p-4 rounded-2xl border border-line bg-surface/40 hover:border-slate-600 hover:bg-surface-raised/60 transition-all text-center"
             >
               <span className="text-3xl group-hover:scale-110 transition-transform">{topic.emoji}</span>
               <span className="text-xs font-bold text-slate-300 group-hover:text-white transition leading-tight">{topic.title}</span>

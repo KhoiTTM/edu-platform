@@ -83,7 +83,7 @@ export default async function MindsetIELTSPage() {
           <p className="mt-2 text-sm text-slate-300 max-w-xl">
             Toàn bộ lộ trình học IELTS Foundation bám sát giáo trình. Click vào từng buổi để bắt đầu học.
           </p>
-          <div className="mt-5 flex items-center gap-6 border-t border-slate-800 pt-4">
+          <div className="mt-5 flex items-center gap-6 border-t border-line pt-4">
             <div>
               <p className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Tổng buổi học</p>
               <p className="text-2xl font-bold text-white">{lessons.length} Buổi</p>
@@ -143,10 +143,10 @@ export default async function MindsetIELTSPage() {
               const isActive = true;
 
               const card = (
-                <div className={`group flex flex-col gap-3 rounded-2xl border bg-slate-900/30 p-4 backdrop-blur-md transition-all duration-200 h-full ${
+                <div className={`group flex flex-col gap-3 rounded-2xl border bg-surface/30 p-4 backdrop-blur-md transition-all duration-200 h-full ${
                   isActive
-                    ? 'border-slate-800 hover:border-sky-500/40 hover:bg-slate-900/60 hover:shadow-lg hover:shadow-sky-950/20 cursor-pointer'
-                    : 'border-slate-800/50 opacity-60 cursor-not-allowed'
+                    ? 'border-line hover:border-sky-500/40 hover:bg-surface/60 hover:shadow-lg hover:shadow-sky-950/20 cursor-pointer'
+                    : 'border-line/50 opacity-60 cursor-not-allowed'
                 }`}>
                   <div className="flex items-start justify-between gap-2">
                     <span className="text-[10px] font-bold text-slate-500">Buổi {lesson.lesson_index}</span>
@@ -159,7 +159,7 @@ export default async function MindsetIELTSPage() {
                         ✓ Sẵn sàng
                       </span>
                     ) : (
-                      <span className="rounded-full bg-slate-800 px-2 py-0.5 text-[10px] text-slate-500 border border-slate-700">
+                      <span className="rounded-full bg-surface-raised px-2 py-0.5 text-[10px] text-slate-500 border border-line">
                         Tự học
                       </span>
                     )}
@@ -205,7 +205,7 @@ export default async function MindsetIELTSPage() {
       ))}
 
       {lessons.length === 0 && (
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/30 p-10 text-center">
+        <div className="rounded-2xl border border-line bg-surface/30 p-10 text-center">
           <p className="text-slate-400">Chưa có dữ liệu buổi học.</p>
           <p className="mt-2 text-xs text-slate-600">
             Vui lòng chạy migration SQL trong Supabase Dashboard.

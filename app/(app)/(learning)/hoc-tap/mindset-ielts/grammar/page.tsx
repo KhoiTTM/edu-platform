@@ -75,7 +75,7 @@ export default async function GrammarPage() {
               href={`/learn/mindset-ielts/${lesson.slug}?focus=grammar`}
               className="block group"
             >
-              <div className="flex flex-col gap-4 rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-900/40 to-slate-950/20 p-5 shadow-xl transition-all duration-300 hover:border-rose-500/40 hover:from-slate-900/60 hover:to-slate-950/40 hover:shadow-rose-950/10 cursor-pointer h-full relative overflow-hidden group">
+              <div className="flex flex-col gap-4 rounded-2xl border border-line bg-gradient-to-b from-slate-900/40 to-slate-950/20 p-5 shadow-xl transition-all duration-300 hover:border-rose-500/40 hover:from-slate-900/60 hover:to-slate-950/40 hover:shadow-rose-950/10 cursor-pointer h-full relative overflow-hidden group">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-rose-500/5 blur-[40px] pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity" />
                 
                 <div className="flex items-center justify-between">
@@ -111,7 +111,7 @@ export default async function GrammarPage() {
       </div>
 
       {lessons.length === 0 && (
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/30 p-12 text-center flex flex-col items-center justify-center space-y-2">
+        <div className="rounded-2xl border border-line bg-surface/30 p-12 text-center flex flex-col items-center justify-center space-y-2">
           <BookOpen size={32} className="text-slate-600" />
           <p className="text-xs text-slate-500 font-semibold">Hiện chưa có buổi ôn luyện Ngữ pháp & Từ vựng nào được xuất bản.</p>
         </div>

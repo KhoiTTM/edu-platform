@@ -28,7 +28,7 @@ export function EquationRenderer({
 
   return (
     <div className="space-y-6">
-      <div className="p-6 rounded-2xl bg-slate-950/50 border border-slate-800 text-center">
+      <div className="p-6 rounded-2xl bg-slate-950/50 border border-line text-center">
         {/* In a real scenario, we would use KaTeX here to render the question */}
         <div className="text-2xl font-bold text-white mb-2">
             {question}
@@ -43,12 +43,12 @@ export function EquationRenderer({
           onChange={(e) => setInputValue(e.target.value)}
           disabled={disabled}
           placeholder="Kết quả..."
-          className={`flex-1 bg-slate-900/50 border-2 rounded-2xl px-6 py-4 text-white text-xl font-bold transition-all outline-none focus:ring-4 focus:ring-sky-500/20 ${
+          className={`flex-1 bg-surface/50 border-2 rounded-2xl px-6 py-4 text-white text-xl font-bold transition-all outline-none focus:ring-4 focus:ring-sky-500/20 ${
             disabled
               ? inputValue.trim() === correctAnswer
                 ? "border-emerald-500 bg-emerald-500/10"
                 : "border-rose-500 bg-rose-500/10"
-              : "border-slate-800 focus:border-sky-500"
+              : "border-line focus:border-sky-500"
           }`}
         />
 

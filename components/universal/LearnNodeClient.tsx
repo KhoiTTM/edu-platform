@@ -152,7 +152,7 @@ function GrammarTutorialRenderer({ content }: { content: string }) {
                       return (
                         <div key={bidx} className="grid gap-3 sm:grid-cols-2 my-2">
                           {items.map((item, iidx) => (
-                            <div key={iidx} className="p-3.5 rounded-2xl border border-slate-800 bg-slate-950/40 shadow-sm flex flex-col gap-1 hover:border-rose-500/10 transition">
+                            <div key={iidx} className="p-3.5 rounded-2xl border border-line bg-slate-950/40 shadow-sm flex flex-col gap-1 hover:border-rose-500/10 transition">
                               {item.key && (
                                 <span className="text-[11px] font-black text-rose-300">
                                   {item.key}
@@ -171,7 +171,7 @@ function GrammarTutorialRenderer({ content }: { content: string }) {
                     if (trimmed.startsWith('> ')) {
                       const lines = trimmed.split('\n').map(l => l.replace(/^>\s*/, '').replace(/`/g, '').trim()).filter(Boolean);
                       return (
-                        <div key={bidx} className="my-3 rounded-2xl border border-slate-800 bg-slate-950/60 overflow-hidden shadow-lg">
+                        <div key={bidx} className="my-3 rounded-2xl border border-line bg-slate-950/60 overflow-hidden shadow-lg">
                           <div className="p-4 font-mono text-xs text-amber-300 space-y-1.5 bg-gradient-to-r from-slate-950 via-slate-900/30 to-slate-950">
                             {lines.map((line, lidx) => (
                               <p key={lidx} className="flex gap-2 leading-relaxed">
@@ -216,8 +216,8 @@ function GrammarTutorialRenderer({ content }: { content: string }) {
             if (trimmed.startsWith('> ')) {
               const lines = trimmed.split('\n').map(l => l.replace(/^>\s*/, '').replace(/`/g, '').trim()).filter(Boolean);
               return (
-                <div key={bidx} className="my-4 rounded-2xl border border-slate-800 bg-slate-950/60 overflow-hidden shadow-lg">
-                  <div className="bg-slate-900 px-4 py-2 border-b border-slate-850 flex items-center justify-between">
+                <div key={bidx} className="my-4 rounded-2xl border border-line bg-slate-950/60 overflow-hidden shadow-lg">
+                  <div className="bg-surface px-4 py-2 border-b border-slate-850 flex items-center justify-between">
                     <span className="text-[10px] font-mono text-slate-500 flex items-center gap-1.5 uppercase font-bold">
                       <Terminal size={12} className="text-rose-500" /> Công thức cấu trúc
                     </span>
@@ -305,7 +305,7 @@ function GrammarTutorialRenderer({ content }: { content: string }) {
             }
 
             return (
-              <div key={bidx} className="p-4 rounded-2xl bg-slate-900/30 border border-slate-850/60 text-xs md:text-sm text-slate-300 leading-relaxed">
+              <div key={bidx} className="p-4 rounded-2xl bg-surface/30 border border-slate-850/60 text-xs md:text-sm text-slate-300 leading-relaxed">
                 {formatText(trimmed)}
               </div>
             );
@@ -423,7 +423,7 @@ function GrammarTutorialRenderer({ content }: { content: string }) {
             className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition-all duration-300 relative ${
               activeTab === sec.index
                 ? "bg-rose-600 text-white shadow-lg shadow-rose-600/20 scale-[1.02]"
-                : "bg-slate-950/60 border border-slate-850 text-slate-400 hover:text-white hover:border-slate-700"
+                : "bg-slate-950/60 border border-slate-850 text-slate-400 hover:text-white hover:border-line"
             }`}
           >
             {tabIcons[sec.index]}
@@ -819,6 +819,69 @@ export function LearnNodeClient({
     }
   };
 
+  // ── KHTN 7 Lesson Layout ──────────────────────────────────────────────────
+  if (subjectSlug === "khtn" && node.type === "lesson") {
+    const hasTutorial = !!node.metadata?.grammar_tutorial;
+    const backHref = `/learn/khtn/lop-7`;
+
+    if (activeSubView === 'theory' || (hasTutorial && activeSubView === 'hub')) {
+      return (
+        <div className="max-w-4xl mx-auto space-y-6 pb-20 font-sans animate-in fade-in duration-300">
+          <div className="flex items-center gap-3 bg-surface/40 p-3 rounded-2xl border border-line shadow backdrop-blur">
+            <Link
+              href={backHref}
+              className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-surface-raised border border-line text-slate-400 hover:text-white transition"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg>
+            </Link>
+            <div>
+              <span className="text-[10px] font-bold text-slate-500 uppercase block tracking-wider">Khoa học tự nhiên 7</span>
+              <span className="text-xs font-bold text-emerald-400">Quay lại danh sách bài</span>
+            </div>
+          </div>
+
+          <div className="bg-surface/40 border border-emerald-950/40 p-8 rounded-3xl backdrop-blur-md shadow-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-[50%] h-64 bg-emerald-500/5 blur-[120px] pointer-events-none" />
+            <h1 className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-emerald-200 tracking-tight uppercase mb-6 border-b border-line pb-4">
+              📗 {node.title}
+            </h1>
+
+            {hasTutorial ? (
+              <div className="max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
+                <GrammarTutorialRenderer content={node.metadata?.grammar_tutorial} />
+              </div>
+            ) : (
+              <p className="text-slate-500 italic">Bài học này chưa có nội dung lý thuyết.</p>
+            )}
+
+            <div className="p-6 mt-8 rounded-3xl bg-slate-950/50 border border-line flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="space-y-1 text-center sm:text-left">
+                <p className="font-extrabold text-white text-base">Đã nắm vững lý thuyết?</p>
+                <p className="text-xs text-slate-500">Làm bài tập trắc nghiệm để kiểm tra kiến thức ngay.</p>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                <Link
+                  href={backHref}
+                  className="px-5 py-3 bg-surface-raised hover:bg-slate-700 text-slate-300 font-extrabold rounded-2xl transition active:scale-95 text-xs"
+                >
+                  Quay lại
+                </Link>
+                <button
+                  onClick={() => setActiveSubView('quiz')}
+                  className="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold rounded-2xl transition active:scale-95 flex items-center gap-2 shadow-lg shadow-emerald-600/25 text-xs"
+                >
+                  ✍️ Luyện bài tập ngay ➔
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+  }
+
   if (subjectSlug === "mindset-ielts") {
     // IELTS Coordinator Layout
     const lowercaseTitle = node.title.toLowerCase();
@@ -859,10 +922,10 @@ export function LearnNodeClient({
     if (isGrammar && activeSubView === 'hub') {
       return (
         <div className="max-w-4xl mx-auto space-y-6 pb-20 select-none font-sans animate-in fade-in duration-300">
-          <div className="flex items-center gap-3 bg-slate-900/40 p-3 rounded-2xl border border-slate-800 shadow backdrop-blur">
+          <div className="flex items-center gap-3 bg-surface/40 p-3 rounded-2xl border border-line shadow backdrop-blur">
             <Link
               href="/hoc-tap/mindset-ielts/grammar"
-              className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-white transition"
+              className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-surface-raised border border-line text-slate-400 hover:text-white transition"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -874,12 +937,12 @@ export function LearnNodeClient({
             </div>
           </div>
 
-          <div className="bg-slate-900/40 border border-rose-950/40 p-8 rounded-3xl backdrop-blur-md shadow-2xl relative overflow-hidden">
+          <div className="bg-surface/40 border border-rose-950/40 p-8 rounded-3xl backdrop-blur-md shadow-2xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-[50%] h-64 bg-rose-500/5 blur-[120px] pointer-events-none" />
-            <h1 className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-rose-200 tracking-tight uppercase mb-6 border-b border-slate-800 pb-4">
+            <h1 className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-rose-200 tracking-tight uppercase mb-6 border-b border-line pb-4">
               📝 {node.title.replace(/^Buổi \d+:\s*/, '')}
             </h1>
-            
+
             <div className="max-h-[60vh] overflow-y-auto pr-2 custom-scrollbar">
               <GrammarTutorialRenderer content={node.metadata?.grammar_tutorial} />
             </div>
@@ -890,13 +953,13 @@ export function LearnNodeClient({
                 <p className="text-xs text-slate-500">Bắt đầu làm bài tập thực hành ngay để củng cố kiến thức.</p>
               </div>
               <div className="flex flex-wrap gap-3">
-                <Link 
+                <Link
                   href="/hoc-tap/mindset-ielts/grammar"
-                  className="px-5 py-3 bg-slate-800 hover:bg-slate-700 text-slate-300 font-extrabold rounded-2xl transition active:scale-95 text-xs flex items-center justify-center"
+                  className="px-5 py-3 bg-surface-raised hover:bg-slate-700 text-slate-300 font-extrabold rounded-2xl transition active:scale-95 text-xs flex items-center justify-center"
                 >
                   Quay lại
                 </Link>
-                <button 
+                <button
                   onClick={() => setActiveSubView('quiz')}
                   className="px-6 py-3 bg-rose-600 hover:bg-rose-500 text-white font-extrabold rounded-2xl transition active:scale-95 flex items-center gap-2 shadow-lg shadow-rose-600/25 text-xs"
                 >
@@ -913,10 +976,10 @@ export function LearnNodeClient({
     if (activeSubView === 'theory') {
       return (
         <div className="max-w-4xl mx-auto space-y-6 pb-20 select-none font-sans animate-in fade-in duration-300">
-          <div className="flex items-center gap-3 bg-slate-900/40 p-3 rounded-2xl border border-slate-800 shadow backdrop-blur">
+          <div className="flex items-center gap-3 bg-surface/40 p-3 rounded-2xl border border-line shadow backdrop-blur">
             <button
               onClick={() => setActiveSubView('hub')}
-              className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-white transition"
+              className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-surface-raised border border-line text-slate-400 hover:text-white transition"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -928,9 +991,9 @@ export function LearnNodeClient({
             </div>
           </div>
 
-          <div className="bg-slate-900/40 border border-slate-800 p-8 rounded-3xl backdrop-blur-md shadow-2xl relative overflow-hidden">
+          <div className="bg-surface/40 border border-line p-8 rounded-3xl backdrop-blur-md shadow-2xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-[50%] h-64 bg-amber-500/5 blur-[120px] pointer-events-none" />
-            <h1 className="text-2xl font-black text-white tracking-tight uppercase mb-6 border-b border-slate-800 pb-4">
+            <h1 className="text-2xl font-black text-white tracking-tight uppercase mb-6 border-b border-line pb-4">
               📘 HƯỚNG DẪN HỌC LÝ THUYẾT & TỪ VỰNG
             </h1>
             
@@ -938,7 +1001,7 @@ export function LearnNodeClient({
               <GrammarTutorialRenderer content={node.metadata?.grammar_tutorial} />
             </div>
 
-            <div className="p-6 mt-8 rounded-3xl bg-slate-950/50 border border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="p-6 mt-8 rounded-3xl bg-slate-950/50 border border-line/80 flex flex-col sm:flex-row items-center justify-between gap-4">
               <div className="space-y-1 text-center sm:text-left">
                 <p className="font-extrabold text-white text-base">Đã nắm rõ lý thuyết?</p>
                 <p className="text-xs text-slate-500">Hãy nhấn hoàn thành để quay về làm các bước tiếp theo.</p>
@@ -968,10 +1031,10 @@ export function LearnNodeClient({
 
       return (
         <div className="max-w-4xl mx-auto space-y-6 pb-20 select-none font-sans animate-in fade-in duration-300">
-          <div className="flex items-center gap-3 bg-slate-900/40 p-3 rounded-2xl border border-slate-800 shadow backdrop-blur">
+          <div className="flex items-center gap-3 bg-surface/40 p-3 rounded-2xl border border-line shadow backdrop-blur">
             <button
               onClick={() => setActiveSubView('hub')}
-              className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-white transition"
+              className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-surface-raised border border-line text-slate-400 hover:text-white transition"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -983,7 +1046,7 @@ export function LearnNodeClient({
             </div>
           </div>
 
-          <div className="bg-slate-900/40 border border-slate-800 p-8 rounded-3xl backdrop-blur-md shadow-2xl relative overflow-hidden space-y-6">
+          <div className="bg-surface/40 border border-line p-8 rounded-3xl backdrop-blur-md shadow-2xl relative overflow-hidden space-y-6">
             <div className="absolute top-0 right-0 w-[50%] h-64 bg-sky-500/5 blur-[120px] pointer-events-none" />
             
             <div>
@@ -1003,7 +1066,7 @@ export function LearnNodeClient({
               <div className="bg-slate-950/60 p-5 rounded-2xl border border-slate-850 space-y-2">
                 <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest">BƯỚC A: MỞ SÁCH HỌC</span>
                 <p className="text-xs text-slate-200 leading-relaxed">
-                  Em hãy mở sách giáo trình Mindset for IELTS tại phần bài: <strong className="text-white bg-slate-900 px-2 py-0.5 rounded border border-slate-800">{pageNumStr}</strong>. Đọc lý thuyết và hoàn thành các bài tập viết/đọc trong sách.
+                  Em hãy mở sách giáo trình Mindset for IELTS tại phần bài: <strong className="text-white bg-surface px-2 py-0.5 rounded border border-line">{pageNumStr}</strong>. Đọc lý thuyết và hoàn thành các bài tập viết/đọc trong sách.
                 </p>
               </div>
 
@@ -1016,19 +1079,19 @@ export function LearnNodeClient({
             </div>
 
             {/* ChatGPT Prompt box */}
-            <div className="bg-slate-950/80 p-5 rounded-2xl border border-slate-800 space-y-3">
+            <div className="bg-slate-950/80 p-5 rounded-2xl border border-line space-y-3">
               <div className="flex items-center justify-between">
                 <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Prompt chuẩn gửi ChatGPT / AI bên ngoài:</span>
                 <button
                   onClick={copyPrompt}
                   className={`px-3 py-1.5 rounded-lg text-[10px] font-bold transition flex items-center gap-1.5 ${
-                    chatGptPromptCopied ? "bg-emerald-600 text-white" : "bg-slate-800 text-slate-300 hover:bg-slate-700"
+                    chatGptPromptCopied ? "bg-emerald-600 text-white" : "bg-surface-raised text-slate-300 hover:bg-slate-700"
                   }`}
                 >
                   {chatGptPromptCopied ? "✓ Đã sao chép!" : "Copy Prompt"}
                 </button>
               </div>
-              <div className="bg-slate-900/50 p-4 rounded-xl border border-slate-850 text-xs text-slate-300 font-mono select-all leading-relaxed whitespace-pre-wrap">
+              <div className="bg-surface/50 p-4 rounded-xl border border-slate-850 text-xs text-slate-300 font-mono select-all leading-relaxed whitespace-pre-wrap">
                 {chatGptPrompt}
               </div>
               <div className="flex flex-wrap gap-2 pt-1">
@@ -1076,10 +1139,10 @@ export function LearnNodeClient({
     if (activeSubView === 'warmup') {
       return (
         <div className="max-w-4xl mx-auto space-y-6 pb-20 select-none font-sans animate-in fade-in duration-300">
-          <div className="flex items-center gap-3 bg-slate-900/40 p-3 rounded-2xl border border-slate-800 shadow backdrop-blur">
+          <div className="flex items-center gap-3 bg-surface/40 p-3 rounded-2xl border border-line shadow backdrop-blur">
             <button
               onClick={() => setActiveSubView('hub')}
-              className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-white transition"
+              className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-surface-raised border border-line text-slate-400 hover:text-white transition"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -1091,12 +1154,12 @@ export function LearnNodeClient({
             </div>
           </div>
 
-          <div className="bg-slate-900/40 border border-slate-800 p-8 rounded-3xl backdrop-blur-md shadow-2xl relative overflow-hidden">
+          <div className="bg-surface/40 border border-line p-8 rounded-3xl backdrop-blur-md shadow-2xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-[50%] h-64 bg-amber-500/5 blur-[120px] pointer-events-none" />
             <h1 className="text-2xl font-black text-white tracking-tight uppercase mb-2">
               🔥 KHỞI ĐỘNG: ÔN TẬP TỪ VỰNG LŨY KẾ
             </h1>
-            <p className="text-xs text-slate-400 mb-6 border-b border-slate-800 pb-4">
+            <p className="text-xs text-slate-400 mb-6 border-b border-line pb-4">
               Hệ thống tự động lựa chọn 10 từ vựng từ các bài học trước để kiểm tra trí nhớ của em. Hãy chọn đáp án nghĩa tiếng Việt đúng nhất.
             </p>
 
@@ -1126,10 +1189,10 @@ export function LearnNodeClient({
     if (activeSubView === 'quiz') {
       return (
         <div className="max-w-4xl mx-auto space-y-6 pb-20 select-none font-sans animate-in fade-in duration-300">
-          <div className="flex items-center gap-3 bg-slate-900/40 p-3 rounded-2xl border border-slate-800 shadow backdrop-blur">
+          <div className="flex items-center gap-3 bg-surface/40 p-3 rounded-2xl border border-line shadow backdrop-blur">
             <button
               onClick={() => setActiveSubView('hub')}
-              className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-white transition"
+              className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-surface-raised border border-line text-slate-400 hover:text-white transition"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -1141,9 +1204,9 @@ export function LearnNodeClient({
             </div>
           </div>
 
-          <div className="bg-slate-900/40 border border-slate-800 p-8 rounded-3xl backdrop-blur-md shadow-2xl relative overflow-hidden">
+          <div className="bg-surface/40 border border-line p-8 rounded-3xl backdrop-blur-md shadow-2xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-[50%] h-64 bg-amber-500/5 blur-[120px] pointer-events-none" />
-            <h1 className="text-2xl font-black text-white tracking-tight uppercase mb-6 border-b border-slate-800 pb-4">
+            <h1 className="text-2xl font-black text-white tracking-tight uppercase mb-6 border-b border-line pb-4">
               📝 BÀI TẬP TRẮC NGHIỆM CỦNG CỐ TÍCH LŨY
             </h1>
 
@@ -1168,7 +1231,7 @@ export function LearnNodeClient({
                         setResultData(null);
                         setCurrentPart('practice');
                       }}
-                      className="px-5 py-3 bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold rounded-2xl transition"
+                      className="px-5 py-3 bg-surface-raised hover:bg-slate-700 text-slate-200 font-bold rounded-2xl transition"
                     >
                       Làm lại bài trắc nghiệm
                     </button>
@@ -1197,10 +1260,10 @@ export function LearnNodeClient({
     return (
       <div className="max-w-full px-4 md:px-8 space-y-6 pb-20 select-none font-sans">
         {/* BACK TO ROADMAP BUTTON */}
-        <div className="flex items-center gap-3 bg-slate-900/40 p-3 rounded-2xl border border-slate-800 shadow backdrop-blur">
+        <div className="flex items-center gap-3 bg-surface/40 p-3 rounded-2xl border border-line shadow backdrop-blur">
           <Link
             href={`/hoc-tap/${subjectSlug}`}
-            className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-white transition"
+            className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-surface-raised border border-line text-slate-400 hover:text-white transition"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -1213,7 +1276,7 @@ export function LearnNodeClient({
         </div>
 
         {/* HEADER BRAND CARD */}
-        <header className="rounded-2xl border border-slate-800 bg-gradient-to-br from-slate-900/80 via-slate-900/50 to-slate-950 p-6 shadow-xl backdrop-blur-md relative overflow-hidden">
+        <header className="rounded-2xl border border-line bg-gradient-to-br from-slate-900/80 via-slate-900/50 to-slate-950 p-6 shadow-xl backdrop-blur-md relative overflow-hidden">
           <div className="absolute right-0 top-0 -mt-8 -mr-8 h-32 w-32 rounded-full bg-amber-500/10 blur-3xl pointer-events-none" />
           <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-500/10 px-3 py-1 text-xs font-semibold text-amber-400 border border-amber-500/20">
             {skillIcon} IELTS SESSION COORDINATOR
@@ -1232,8 +1295,8 @@ export function LearnNodeClient({
           <div className="lg:col-span-7 space-y-6">
             
             {/* Step-by-Step timeline */}
-            <div className="rounded-2xl border border-slate-800 bg-slate-900/20 p-6 shadow-xl backdrop-blur-md space-y-6">
-              <h2 className="text-sm font-bold uppercase tracking-wider text-slate-400 border-b border-slate-800 pb-3">
+            <div className="rounded-2xl border border-line bg-surface/20 p-6 shadow-xl backdrop-blur-md space-y-6">
+              <h2 className="text-sm font-bold uppercase tracking-wider text-slate-400 border-b border-line pb-3">
                 🎯 LỘ TRÌNH NHIỆM VỤ (STEP BY STEP)
               </h2>
 
@@ -1242,7 +1305,7 @@ export function LearnNodeClient({
                 {/* STEP 1: WARMUP RETRIEVAL */}
                 <div className="relative pl-8 border-l-2 border-slate-850 pb-4">
                   <div className={`absolute -left-[11px] top-0 flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-bold ${
-                    warmupCompleted ? "bg-emerald-600 text-white" : "bg-slate-800 border border-slate-700 text-slate-400"
+                    warmupCompleted ? "bg-emerald-600 text-white" : "bg-surface-raised border border-line text-slate-400"
                   }`}>
                     1
                   </div>
@@ -1278,7 +1341,7 @@ export function LearnNodeClient({
                 {/* STEP 2: TEXTBOOK STUDY */}
                 <div className="relative pl-8 border-l-2 border-slate-850 pb-4">
                   <div className={`absolute -left-[11px] top-0 flex h-5 w-5 items-center justify-center rounded-full text-[10px] font-bold ${
-                    bookCompleted ? "bg-emerald-600 text-white" : "bg-slate-800 border border-slate-700 text-slate-400"
+                    bookCompleted ? "bg-emerald-600 text-white" : "bg-surface-raised border border-line text-slate-400"
                   }`}>
                     2
                   </div>
@@ -1313,7 +1376,7 @@ export function LearnNodeClient({
 
                 {/* STEP 3: THEORY */}
                 <div className="relative pl-8 border-l-2 border-slate-850 pb-4">
-                  <div className="absolute -left-[11px] top-0 flex h-5 w-5 items-center justify-center rounded-full bg-slate-800 border border-slate-700 text-[10px] font-bold text-slate-400">
+                  <div className="absolute -left-[11px] top-0 flex h-5 w-5 items-center justify-center rounded-full bg-surface-raised border border-line text-[10px] font-bold text-slate-400">
                     3
                   </div>
                   <div>
@@ -1324,7 +1387,7 @@ export function LearnNodeClient({
                     {node.metadata?.grammar_tutorial ? (
                       <button
                         onClick={() => setActiveSubView('theory')}
-                        className="mt-3 inline-flex min-h-[36px] items-center justify-center gap-1.5 rounded-xl bg-slate-800 border border-slate-700 px-4 text-xs font-bold text-slate-300 transition hover:bg-slate-700 hover:text-white"
+                        className="mt-3 inline-flex min-h-[36px] items-center justify-center gap-1.5 rounded-xl bg-surface-raised border border-line px-4 text-xs font-bold text-slate-300 transition hover:bg-slate-700 hover:text-white"
                       >
                         📘 Bắt đầu học Lý thuyết ➔
                       </button>
@@ -1337,7 +1400,7 @@ export function LearnNodeClient({
                 {/* STEP 4: PRACTICE SKILL */}
                 {skillHref && (
                   <div className="relative pl-8 border-l-2 border-slate-850 pb-4">
-                    <div className="absolute -left-[11px] top-0 flex h-5 w-5 items-center justify-center rounded-full bg-slate-800 border border-slate-700 text-[10px] font-bold text-slate-400">
+                    <div className="absolute -left-[11px] top-0 flex h-5 w-5 items-center justify-center rounded-full bg-surface-raised border border-line text-[10px] font-bold text-slate-400">
                       4
                     </div>
                     <div>
@@ -1347,7 +1410,7 @@ export function LearnNodeClient({
                       </p>
                       <Link
                         href={skillHref}
-                        className="mt-3 inline-flex min-h-[38px] items-center justify-center gap-1.5 rounded-xl bg-slate-850 border border-slate-700 px-4 text-xs font-bold text-slate-300 transition hover:bg-slate-700 hover:text-white"
+                        className="mt-3 inline-flex min-h-[38px] items-center justify-center gap-1.5 rounded-xl bg-slate-850 border border-line px-4 text-xs font-bold text-slate-300 transition hover:bg-slate-700 hover:text-white"
                       >
                         {skillIcon} Vào Phòng {skillName} ➔
                       </Link>
@@ -1357,7 +1420,7 @@ export function LearnNodeClient({
 
                 {/* STEP 5: COMPREHENSION QUIZ */}
                 <div className="relative pl-8 border-l-2 border-slate-850 pb-4">
-                  <div className="absolute -left-[11px] top-0 flex h-5 w-5 items-center justify-center rounded-full bg-slate-800 border border-slate-700 text-[10px] font-bold text-slate-400">
+                  <div className="absolute -left-[11px] top-0 flex h-5 w-5 items-center justify-center rounded-full bg-surface-raised border border-line text-[10px] font-bold text-slate-400">
                     5
                   </div>
                   <div>
@@ -1380,7 +1443,7 @@ export function LearnNodeClient({
                       ) : (
                         <button
                           onClick={() => setActiveSubView('quiz')}
-                          className="inline-flex min-h-[38px] items-center justify-center gap-1.5 rounded-xl bg-slate-800 border border-slate-700 px-4 text-xs font-bold text-slate-300 transition hover:bg-slate-700 hover:text-white"
+                          className="inline-flex min-h-[38px] items-center justify-center gap-1.5 rounded-xl bg-surface-raised border border-line px-4 text-xs font-bold text-slate-300 transition hover:bg-slate-700 hover:text-white"
                         >
                           📝 Bắt đầu làm Quiz ➔
                         </button>
@@ -1391,7 +1454,7 @@ export function LearnNodeClient({
 
                 {/* STEP 6: REFLEX SPEAKING */}
                 <div className="relative pl-8 pb-4">
-                  <div className="absolute -left-[11px] top-0 flex h-5 w-5 items-center justify-center rounded-full bg-slate-800 border border-slate-700 text-[10px] font-bold text-slate-400">
+                  <div className="absolute -left-[11px] top-0 flex h-5 w-5 items-center justify-center rounded-full bg-surface-raised border border-line text-[10px] font-bold text-slate-400">
                     6
                   </div>
                   <div>
@@ -1469,7 +1532,7 @@ export function LearnNodeClient({
       ) : !completed ? (
         <div className="space-y-6">
           {!isExam && (
-            <div className="grid grid-cols-3 gap-2 bg-slate-900/50 p-2.5 rounded-2xl border border-slate-800 shadow-inner text-center text-xs font-bold">
+            <div className="grid grid-cols-3 gap-2 bg-surface/50 p-2.5 rounded-2xl border border-line shadow-inner text-center text-xs font-bold">
               <button 
                 onClick={() => currentPart !== 'quiz' && setCurrentPart(isGrammar ? 'ai-tutorial' : 'video')}
                 className={`py-2 rounded-xl transition ${currentPart === (isGrammar ? 'ai-tutorial' : 'video') ? 'bg-sky-500 text-white shadow' : 'text-slate-500 hover:text-slate-300'}`}
@@ -1494,7 +1557,7 @@ export function LearnNodeClient({
           {currentPart === 'video' && (
             <div className="space-y-6">
               {node.metadata?.videos && node.metadata.videos.length > 1 && (
-                <div className="flex flex-wrap gap-2 p-1.5 bg-slate-900/60 rounded-2xl border border-slate-800">
+                <div className="flex flex-wrap gap-2 p-1.5 bg-surface/60 rounded-2xl border border-line">
                   {node.metadata.videos.map((vid: any) => (
                     <button
                       key={vid.youtube_id}
@@ -1502,7 +1565,7 @@ export function LearnNodeClient({
                       className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
                         activeVideoId === vid.youtube_id
                           ? "bg-sky-500 text-white shadow-lg"
-                          : "text-slate-400 hover:text-slate-200 hover:bg-slate-800/50"
+                          : "text-slate-400 hover:text-slate-200 hover:bg-surface-raised/50"
                       }`}
                     >
                       {vid.title || "Video"}
@@ -1514,7 +1577,7 @@ export function LearnNodeClient({
               {activeVideoId ? (
                 <div className="space-y-6">
                   {/* YouTube Lecture Video */}
-                  <div className="w-full aspect-video rounded-3xl overflow-hidden border-2 border-slate-800 shadow-2xl">
+                  <div className="w-full aspect-video rounded-3xl overflow-hidden border-2 border-line shadow-2xl">
                     <iframe 
                       width="100%" 
                       height="100%" 
@@ -1549,12 +1612,12 @@ export function LearnNodeClient({
                   )}
                 </div>
               ) : (
-                <div className="p-16 text-center text-slate-500 italic bg-slate-900/50 rounded-3xl border border-slate-800">
+                <div className="p-16 text-center text-slate-500 italic bg-surface/50 rounded-3xl border border-line">
                   Bài học này chưa có video bài giảng.
                 </div>
               )}
 
-              <div className="p-6 rounded-3xl bg-slate-900/40 border border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="p-6 rounded-3xl bg-surface/40 border border-line flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div className="space-y-1 text-center sm:text-left">
                   <p className="font-extrabold text-white text-base">Xem xong video rồi?</p>
                   <p className="text-xs text-slate-500">
@@ -1566,7 +1629,7 @@ export function LearnNodeClient({
                 <div className="flex flex-wrap gap-3 justify-center sm:justify-end w-full sm:w-auto">
                   <button 
                     onClick={() => setCurrentPart('practice')}
-                    className={`px-5 py-3 ${hasSpeaking ? 'bg-slate-800 hover:bg-slate-700 text-white border border-slate-700' : 'bg-sky-600 hover:bg-sky-500 text-white'} font-extrabold rounded-2xl transition active:scale-95 flex items-center gap-2`}
+                    className={`px-5 py-3 ${hasSpeaking ? 'bg-surface-raised hover:bg-slate-700 text-white border border-line' : 'bg-sky-600 hover:bg-sky-500 text-white'} font-extrabold rounded-2xl transition active:scale-95 flex items-center gap-2`}
                   >
                     Bắt đầu luyện tập <ChevronRight size={18} />
                   </button>
@@ -1614,11 +1677,11 @@ export function LearnNodeClient({
                   ></iframe>
                 </div>
               )}
-              <div className="bg-slate-900/40 border border-slate-800 p-8 rounded-3xl backdrop-blur-md shadow-2xl relative overflow-hidden">
+              <div className="bg-surface/40 border border-line p-8 rounded-3xl backdrop-blur-md shadow-2xl relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-[50%] h-64 bg-rose-500/5 blur-[120px] pointer-events-none" />
                 <GrammarTutorialRenderer content={node.metadata?.grammar_tutorial} />
                 
-                <div className="p-6 mt-8 rounded-3xl bg-slate-950/50 border border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="p-6 mt-8 rounded-3xl bg-slate-950/50 border border-line/80 flex flex-col sm:flex-row items-center justify-between gap-4">
                   <div className="space-y-1 text-center sm:text-left">
                     <p className="font-extrabold text-white text-base">Đã nắm rõ lý thuyết?</p>
                     <p className="text-xs text-slate-500">Chuyển sang làm bài luyện tập không tính điểm để kiểm tra hiểu biết nhé!</p>
@@ -1636,7 +1699,7 @@ export function LearnNodeClient({
 
           {currentPart === 'quiz' && handcraftedExams.length > 0 ? (
             <div className="space-y-6 animate-in fade-in duration-500">
-              <div className="p-8 rounded-[2rem] bg-slate-900/60 border-2 border-slate-800 backdrop-blur-xl relative overflow-hidden">
+              <div className="p-8 rounded-[2rem] bg-surface/60 border-2 border-line backdrop-blur-xl relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-sky-500/10 blur-[100px] pointer-events-none" />
                 <div className="relative z-10">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
@@ -1664,7 +1727,7 @@ export function LearnNodeClient({
                         <Link 
                           key={exam.id}
                           href={`/test-assessment?examId=${exam.id}`}
-                          className="group relative flex flex-col justify-between p-6 rounded-2xl bg-slate-950/40 border border-slate-850 hover:border-sky-500/50 hover:bg-slate-900/50 transition-all duration-300 hover:-translate-y-1 shadow-lg"
+                          className="group relative flex flex-col justify-between p-6 rounded-2xl bg-slate-950/40 border border-slate-850 hover:border-sky-500/50 hover:bg-surface/50 transition-all duration-300 hover:-translate-y-1 shadow-lg"
                         >
                           <div className="flex items-start gap-4">
                             <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 bg-sky-500/10 group-hover:bg-sky-500/20 text-sky-400 rounded-full font-black text-xl border border-sky-500/20">
@@ -1695,7 +1758,7 @@ export function LearnNodeClient({
             return (
               <div className="space-y-6 animate-in fade-in duration-300">
                 {isLoading || !activeSession ? (
-                  <div className="flex flex-col items-center justify-center p-16 bg-slate-900/50 rounded-3xl border border-slate-800">
+                  <div className="flex flex-col items-center justify-center p-16 bg-surface/50 rounded-3xl border border-line">
                     <Loader2 className="animate-spin text-sky-500 mb-4" size={40} />
                     <p className="text-slate-400 font-bold">
                       {isSubmitting ? "Đang chấm điểm..." : "Đang tải câu hỏi..."}

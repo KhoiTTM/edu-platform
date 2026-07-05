@@ -42,7 +42,7 @@ export default async function SettingsPage() {
       </div>
 
       {/* Main Settings Card */}
-      <section className="bg-slate-900/60 p-8 rounded-[2.5rem] border-2 border-slate-800 shadow-xl backdrop-blur-xl relative overflow-hidden">
+      <section className="bg-surface/60 p-8 rounded-[2.5rem] border-2 border-line shadow-xl backdrop-blur-xl relative overflow-hidden">
         <div className="relative z-10">
           <h2 className="font-['Outfit'] text-lg font-black text-white flex items-center gap-2 mb-6">
             <ShieldCheck size={20} className="text-emerald-400" />

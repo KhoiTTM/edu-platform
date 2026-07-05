@@ -87,7 +87,7 @@ export function InlineFillBlankRenderer({
         {instruction}
       </div>
 
-      <div className="text-xl leading-relaxed text-slate-200 bg-slate-800/30 p-6 rounded-xl border border-slate-700">
+      <div className="text-xl leading-relaxed text-slate-200 bg-surface-raised/30 p-6 rounded-xl border border-line">
         {textSegments.map((segment, idx) => (
           <React.Fragment key={`seg-${idx}`}>
             <span>{segment}</span>
@@ -106,7 +106,7 @@ export function InlineFillBlankRenderer({
                             : 'border-rose-500 text-rose-400 line-through'
                           : userAnswers[idx]
                             ? 'border-slate-400 text-sky-300'
-                            : 'border-slate-500 bg-slate-800'
+                            : 'border-slate-500 bg-surface-raised'
                     }`}
                   >
                     {userAnswers[idx] || (activeBlankIndex === idx ? '...' : '')}
@@ -117,7 +117,7 @@ export function InlineFillBlankRenderer({
                     value={userAnswers[idx]}
                     onChange={(e) => handleInputChange(idx, e.target.value)}
                     disabled={disabled}
-                    className={`w-24 bg-slate-900 border-b-2 px-2 py-1 text-center font-bold text-sky-300 outline-none focus:border-sky-500 transition-all ${
+                    className={`w-24 bg-surface border-b-2 px-2 py-1 text-center font-bold text-sky-300 outline-none focus:border-sky-500 transition-all ${
                       disabled
                         ? userAnswers[idx].trim().toLowerCase() === correctAnswers[idx].toLowerCase()
                           ? 'border-emerald-500 text-emerald-400'
@@ -151,7 +151,7 @@ export function InlineFillBlankRenderer({
                   disabled={isUsed || activeBlankIndex === null}
                   className={`px-4 py-2 rounded-lg font-medium transition-all ${
                     isUsed
-                      ? 'bg-slate-800 text-slate-600 opacity-50 cursor-not-allowed'
+                      ? 'bg-surface-raised text-slate-600 opacity-50 cursor-not-allowed'
                       : activeBlankIndex !== null
                         ? 'bg-white text-slate-800 hover:bg-sky-100 shadow-[0_4px_0_rgb(203,213,225)] hover:translate-y-[2px] hover:shadow-[0_2px_0_rgb(203,213,225)]'
                         : 'bg-slate-700 text-slate-400 cursor-not-allowed'

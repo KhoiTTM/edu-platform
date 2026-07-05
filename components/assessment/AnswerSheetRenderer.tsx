@@ -90,7 +90,7 @@ export function AnswerSheetRenderer({
 
   return (
     <div className="flex flex-col gap-6 w-full text-white">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-2xl bg-slate-900/60 border border-indigo-500/20">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 rounded-2xl bg-surface/60 border border-indigo-500/20">
         <div>
           <h2 className="text-xl font-black">{unitTitle}</h2>
           <p className="text-xs text-slate-400 font-bold mt-0.5">
@@ -108,8 +108,8 @@ export function AnswerSheetRenderer({
       </div>
 
       {sections.map((s) => (
-        <div key={s.code} className="rounded-2xl border border-slate-800 bg-slate-950/40 overflow-hidden">
-          <div className="px-4 py-2.5 bg-slate-900/60 border-b border-slate-800 flex items-center gap-2">
+        <div key={s.code} className="rounded-2xl border border-line bg-slate-950/40 overflow-hidden">
+          <div className="px-4 py-2.5 bg-surface/60 border-b border-line flex items-center gap-2">
             <span className="w-6 h-6 rounded-md bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-300 text-xs font-black">
               {s.code}
             </span>
@@ -147,7 +147,7 @@ export function AnswerSheetRenderer({
                           ? "border-emerald-500 bg-emerald-500/10"
                           : ok === false
                           ? "border-rose-500 bg-rose-500/10"
-                          : "border-slate-700 bg-slate-800";
+                          : "border-line bg-surface-raised";
                       return (
                         <div key={k} className="flex items-start gap-1">
                           <span className="text-[10px] text-slate-500 font-black w-4 text-right mt-2">{i + 1}.</span>
@@ -214,7 +214,7 @@ export function AnswerSheetRenderer({
           Nộp bài
         </button>
       ) : (
-        <div className="self-center text-center p-5 rounded-2xl bg-slate-900/60 border border-emerald-500/30">
+        <div className="self-center text-center p-5 rounded-2xl bg-surface/60 border border-emerald-500/30">
           <p className="text-sm text-slate-400 font-bold">Kết quả (chỉ tính phần chấm được)</p>
           <p className="text-3xl font-black text-emerald-400 mt-1">
             {result?.score}/{result?.total}

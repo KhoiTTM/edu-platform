@@ -79,12 +79,12 @@ export function MatchPairRenderer({
                 onClick={() => setSelectedLeft(item)}
                 className={`p-4 rounded-2xl border-2 font-bold transition-all text-center min-h-[64px] flex items-center justify-center ${
                   isMatched 
-                    ? 'bg-slate-800 border-slate-700 text-slate-500 opacity-50 cursor-default'
+                    ? 'bg-surface-raised border-line text-slate-500 opacity-50 cursor-default'
                     : isError && isSelected
                     ? 'bg-rose-500 border-rose-400 text-white shadow-[0_4px_0_rgb(225,29,72)]'
                     : isSelected
                     ? 'bg-sky-500 border-sky-400 text-white shadow-[0_4px_0_rgb(14,165,233)]'
-                    : 'bg-slate-800 border-slate-700 text-slate-200 hover:bg-slate-700 shadow-[0_4px_0_rgb(30,41,59)]'
+                    : 'bg-surface-raised border-line text-slate-200 hover:bg-slate-700 shadow-[0_4px_0_rgb(30,41,59)]'
                 }`}
               >
                 {formatText(item)}
@@ -106,12 +106,12 @@ export function MatchPairRenderer({
                 onClick={() => setSelectedRight(item)}
                 className={`p-4 rounded-2xl border-2 font-bold transition-all text-center min-h-[64px] flex items-center justify-center ${
                   isMatched 
-                    ? 'bg-slate-800 border-slate-700 text-slate-500 opacity-50 cursor-default'
+                    ? 'bg-surface-raised border-line text-slate-500 opacity-50 cursor-default'
                     : isError && isSelected
                     ? 'bg-rose-500 border-rose-400 text-white shadow-[0_4px_0_rgb(225,29,72)]'
                     : isSelected
                     ? 'bg-sky-500 border-sky-400 text-white shadow-[0_4px_0_rgb(14,165,233)]'
-                    : 'bg-slate-800 border-slate-700 text-slate-200 hover:bg-slate-700 shadow-[0_4px_0_rgb(30,41,59)]'
+                    : 'bg-surface-raised border-line text-slate-200 hover:bg-slate-700 shadow-[0_4px_0_rgb(30,41,59)]'
                 }`}
               >
                 {formatText(item)}

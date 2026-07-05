@@ -138,7 +138,7 @@ export default async function HocTapSubjectPage({ params, searchParams }: Props)
       />
 
       {lessons.length === 0 ? (
-        <p className="mt-8 rounded-2xl border border-dashed border-slate-700 bg-slate-900/50 p-8 text-center text-slate-500">
+        <p className="mt-8 rounded-2xl border border-dashed border-line bg-surface/50 p-8 text-center text-slate-500">
           Chưa có bài nào cho tập {activeVolume}. Chọn tập khác hoặc thêm dữ liệu
           trong Supabase.
         </p>

@@ -143,13 +143,13 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
   };
 
   return (
-    <div className="flex flex-col h-screen text-slate-100 bg-[#0b0f19]">
+    <div className="flex flex-col h-screen text-slate-100 bg-surface-deep">
       {/* ── HEADER ────────────────────────────────────────────────────────── */}
-      <header className="flex items-center justify-between px-6 py-4 bg-[#0f172a] border-b border-slate-800 shadow-md">
+      <header className="flex items-center justify-between px-6 py-4 bg-surface border-b border-line shadow-md">
         <div className="flex items-center gap-3">
           <Link
             href={backUrl}
-            className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#1e293b] hover:bg-slate-800 border border-slate-700 text-slate-300 hover:text-white transition text-xs font-medium"
+            className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-raised hover:bg-surface-raised border border-line text-slate-300 hover:text-white transition text-xs font-medium"
           >
             <ChevronLeft className="h-4 w-4" /> Quay Lại
           </Link>
@@ -165,7 +165,7 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
             <ExternalLink className="h-4 w-4" /> Mở Sách (tab mới)
           </a>
 
-          <div className="h-4 w-[1px] bg-slate-800"></div>
+          <div className="h-4 w-[1px] bg-surface-raised"></div>
           <div>
             <h1 className="text-sm font-bold tracking-tight text-white flex items-center gap-1.5">
               <BookOpen className="h-4 w-4 text-sky-400" /> IELTS Foundation Textbook Alignment
@@ -175,7 +175,7 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
         </div>
 
         {/* Page Selector Tabs */}
-        <div className="flex items-center gap-2 overflow-x-auto max-w-full md:max-w-[40%] bg-slate-950 p-1.5 rounded-xl border border-slate-800">
+        <div className="flex items-center gap-2 overflow-x-auto max-w-full md:max-w-[40%] bg-slate-950 p-1.5 rounded-xl border border-line">
           {pages.map((p, idx) => (
             <button
               key={p.pageNumber}
@@ -185,7 +185,7 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
               className={`px-3 py-1 rounded-lg text-xs font-semibold whitespace-nowrap transition-all duration-300 ${
                 currentPageIndex === idx
                   ? "bg-gradient-to-r from-sky-600 to-indigo-600 text-white shadow-md shadow-sky-500/10 scale-105"
-                  : "text-slate-400 hover:text-white hover:bg-slate-900"
+                  : "text-slate-400 hover:text-white hover:bg-surface"
               }`}
             >
               Tr. {p.pageNumber}
@@ -198,15 +198,15 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
       <div className="flex-1 flex flex-col overflow-hidden">
 
         {/* INTERACTIVE FORMS WORKSPACE (full width) */}
-        <div className="flex-1 flex flex-col bg-slate-900 overflow-y-auto p-6 md:p-8 space-y-6 w-full max-w-5xl mx-auto">
-          <div className="border-b border-slate-800 pb-4">
+        <div className="flex-1 flex flex-col bg-surface overflow-y-auto p-6 md:p-8 space-y-6 w-full max-w-5xl mx-auto">
+          <div className="border-b border-line pb-4">
             <span className="text-[10px] font-bold text-sky-400 uppercase tracking-widest block">INTERACTIVE STUDY WORKSPACE</span>
             <h2 className="text-xl font-extrabold text-white mt-1">Trang {activePage.pageNumber}: {activePage.title}</h2>
           </div>
 
           {/* LISTENING VIDEO PLAYER (real YouTube audio) */}
           {activePage.youtubeId && (
-            <div className="p-5 rounded-2xl bg-gradient-to-br from-slate-950 to-slate-900 border border-slate-800 shadow-lg space-y-4">
+            <div className="p-5 rounded-2xl bg-gradient-to-br from-slate-950 to-slate-900 border border-line shadow-lg space-y-4">
               <div className="flex items-center gap-3">
                 <div className="p-2.5 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400">
                   <Volume2 className="h-5 w-5 animate-pulse" />
@@ -217,7 +217,7 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
                 </div>
               </div>
 
-              <div className="overflow-hidden rounded-xl border border-slate-800">
+              <div className="overflow-hidden rounded-xl border border-line">
                 <div className="relative aspect-video w-full">
                   <iframe
                     title={activePage.title}
@@ -235,7 +235,7 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
 
           {/* LISTENING AUDIO PLAYER (placeholder audio fallback) */}
           {activePage.audioUrl && !activePage.youtubeId && (
-            <div className="p-5 rounded-2xl bg-gradient-to-br from-slate-950 to-slate-900 border border-slate-800 shadow-lg space-y-4">
+            <div className="p-5 rounded-2xl bg-gradient-to-br from-slate-950 to-slate-900 border border-line shadow-lg space-y-4">
               <div className="flex items-center gap-3">
                 <div className="p-2.5 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400">
                   <Volume2 className="h-5 w-5 animate-pulse" />
@@ -269,7 +269,7 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
                     max={duration || 0}
                     value={currentTime}
                     onChange={handleAudioSeek}
-                    className="h-1 w-full cursor-pointer appearance-none rounded-lg bg-slate-800 accent-sky-400"
+                    className="h-1 w-full cursor-pointer appearance-none rounded-lg bg-surface-raised accent-sky-400"
                   />
                   <div className="flex justify-between text-[10px] text-slate-500 font-mono">
                     <span>{formatTime(currentTime)}</span>
@@ -302,7 +302,7 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
               const showResult = showResults[activePage.pageNumber] || false;
 
               return (
-                <div key={ex.id} className="p-5 rounded-2xl border border-slate-800 bg-slate-950/20 space-y-4">
+                <div key={ex.id} className="p-5 rounded-2xl border border-line bg-slate-950/20 space-y-4">
                   <div>
                     <h3 className="text-sm font-bold text-white flex items-start gap-2">
                       <HelpCircle className="h-4.5 w-4.5 text-sky-400 shrink-0 mt-0.5" />
@@ -367,7 +367,7 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
                           const isSelected = currentVal === optKey;
                           const isCorrect = ex.correctAnswers[0] === optKey;
 
-                          let btnClass = "border-slate-850 hover:bg-slate-900 text-slate-300";
+                          let btnClass = "border-slate-850 hover:bg-surface text-slate-300";
                           if (isSelected) {
                             btnClass = "border-sky-500 bg-sky-500/10 text-sky-400";
                           }
@@ -404,7 +404,7 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
                         placeholder={ex.placeholder || "Enter your written answer response..."}
                         value={userAnswers[`${activePage.pageNumber}-${ex.id}-0`] || ""}
                         onChange={(e) => handleInputChange(ex.id, 0, e.target.value)}
-                        className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-xs outline-none focus:border-sky-500 transition duration-200"
+                        className="w-full bg-slate-950 border border-line rounded-xl px-4 py-3 text-xs outline-none focus:border-sky-500 transition duration-200"
                       />
                       
                       {showResult && (
@@ -423,7 +423,7 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
           </div>
 
           {/* CHECK ANSWERS CTA FOOTER */}
-          <div className="flex items-center justify-between p-5 bg-slate-950 rounded-2xl border border-slate-800 sticky bottom-0 z-10 shadow-lg">
+          <div className="flex items-center justify-between p-5 bg-slate-950 rounded-2xl border border-line sticky bottom-0 z-10 shadow-lg">
             <div>
               <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">SUBMIT WORKSPACE</span>
               <p className="text-xs font-bold text-slate-350 mt-0.5">Click to verify answers for this book page</p>
@@ -438,7 +438,7 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
                   setUserAnswers(resetObj);
                   setShowResults(prev => ({ ...prev, [activePage.pageNumber]: false }));
                 }}
-                className="px-4 py-2 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white text-xs font-semibold transition"
+                className="px-4 py-2 rounded-xl bg-surface border border-line text-slate-400 hover:text-white text-xs font-semibold transition"
               >
                 Reset Page
               </button>

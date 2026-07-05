@@ -112,7 +112,7 @@ export function SpeakingJourneyClient({
         <div className="flex items-center gap-4">
           <Link 
             href="/dashboard"
-            className="p-2 hover:bg-slate-800 rounded-full text-slate-400 transition"
+            className="p-2 hover:bg-surface-raised rounded-full text-slate-400 transition"
           >
             <ChevronLeft size={24} />
           </Link>
@@ -158,7 +158,7 @@ export function SpeakingJourneyClient({
 
             {messages.length === 0 && !error && !isAriaThinking && (
               <div className="flex flex-col items-center justify-center h-full space-y-4 opacity-50">
-                <div className="w-12 h-12 rounded-full border-2 border-slate-700 border-t-sky-500 animate-spin" />
+                <div className="w-12 h-12 rounded-full border-2 border-line border-t-sky-500 animate-spin" />
                 <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">Waking up Aria...</p>
               </div>
             )}
@@ -203,13 +203,13 @@ export function SpeakingJourneyClient({
               <div className="flex gap-2 animate-in slide-in-from-bottom-2 duration-500">
                 <button
                   onClick={requestRetry}
-                  className="text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-white hover:border-slate-600 transition flex items-center gap-1.5"
+                  className="text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-lg bg-surface-raised border border-line text-slate-400 hover:text-white hover:border-slate-600 transition flex items-center gap-1.5"
                 >
                   <RefreshCw size={12} /> Try that again
                 </button>
                 <button
                   onClick={requestHint}
-                  className="text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-white hover:border-slate-600 transition flex items-center gap-1.5"
+                  className="text-[10px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-lg bg-surface-raised border border-line text-slate-400 hover:text-white hover:border-slate-600 transition flex items-center gap-1.5"
                 >
                   <Sparkles size={12} /> Give me a hint
                 </button>

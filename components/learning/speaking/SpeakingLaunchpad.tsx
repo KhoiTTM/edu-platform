@@ -121,7 +121,7 @@ export function SpeakingLaunchpad({
         <ArrowLeft size={16} /> Quay lại bài học
       </Link>
 
-      <div className="bg-slate-900/60 p-8 rounded-[2rem] border border-slate-800 shadow-2xl relative overflow-hidden backdrop-blur-xl">
+      <div className="bg-surface/60 p-8 rounded-[2rem] border border-line shadow-2xl relative overflow-hidden backdrop-blur-xl">
         {/* Glow effect */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-32 bg-sky-500/20 blur-[100px] pointer-events-none" />
 
@@ -138,8 +138,8 @@ export function SpeakingLaunchpad({
         <div className="space-y-6">
 
           {/* AI Teacher Configuration Panel */}
-          <div className="bg-slate-950/40 rounded-2xl p-6 border border-slate-800/80 space-y-5">
-            <h3 className="text-sm font-black text-white uppercase tracking-wider flex items-center gap-2 border-b border-slate-800 pb-3">
+          <div className="bg-slate-950/40 rounded-2xl p-6 border border-line/80 space-y-5">
+            <h3 className="text-sm font-black text-white uppercase tracking-wider flex items-center gap-2 border-b border-line pb-3">
               <Settings className="text-sky-400" size={18} /> Cấu hình Giáo viên AI
             </h3>
             
@@ -148,7 +148,7 @@ export function SpeakingLaunchpad({
               {subjectType === 'ielts' && (
                 <div className="space-y-2">
                   <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Phần thi IELTS Speaking:</label>
-                  <div className="grid grid-cols-3 gap-2 bg-slate-950 p-1 rounded-xl border border-slate-800">
+                  <div className="grid grid-cols-3 gap-2 bg-slate-950 p-1 rounded-xl border border-line">
                     <button
                       onClick={() => setIeltsPart(1)}
                       className={`py-1.5 text-xs font-extrabold rounded-lg transition-all ${ieltsPart === 1 ? 'bg-sky-500 text-white shadow' : 'text-slate-500 hover:text-slate-300'}`}
@@ -174,7 +174,7 @@ export function SpeakingLaunchpad({
               {subjectType === 'ielts' && (
                 <div className="space-y-2">
                   <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Target Band Goal:</label>
-                  <div className="grid grid-cols-3 gap-2 bg-slate-950 p-1 rounded-xl border border-slate-800">
+                  <div className="grid grid-cols-3 gap-2 bg-slate-950 p-1 rounded-xl border border-line">
                     <button
                       onClick={() => setTargetBand("6.5")}
                       className={`py-1.5 text-xs font-extrabold rounded-lg transition-all ${targetBand === "6.5" ? 'bg-sky-500 text-white shadow' : 'text-slate-500 hover:text-slate-300'}`}
@@ -201,7 +201,7 @@ export function SpeakingLaunchpad({
               <div className="space-y-2">
 
                 <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Tốc độ nói của AI:</label>
-                <div className="grid grid-cols-3 gap-2 bg-slate-950 p-1 rounded-xl border border-slate-800">
+                <div className="grid grid-cols-3 gap-2 bg-slate-950 p-1 rounded-xl border border-line">
                   <button
                     onClick={() => setSpeed('slow')}
                     className={`py-1.5 text-xs font-extrabold rounded-lg transition-all ${speed === 'slow' ? 'bg-sky-500 text-white shadow' : 'text-slate-500 hover:text-slate-300'}`}
@@ -226,7 +226,7 @@ export function SpeakingLaunchpad({
               {/* Feedback Language */}
               <div className="space-y-2">
                 <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Ngôn ngữ giải thích lỗi sai:</label>
-                <div className="grid grid-cols-2 gap-2 bg-slate-950 p-1 rounded-xl border border-slate-800">
+                <div className="grid grid-cols-2 gap-2 bg-slate-950 p-1 rounded-xl border border-line">
                   <button
                     onClick={() => setFeedbackLang('english')}
                     className={`py-1.5 text-xs font-extrabold rounded-lg transition-all ${feedbackLang === 'english' ? 'bg-sky-500 text-white shadow' : 'text-slate-500 hover:text-slate-300'}`}
@@ -245,7 +245,7 @@ export function SpeakingLaunchpad({
               {/* Practice Focus */}
               <div className="space-y-2">
                 <label className="text-xs font-bold text-slate-400 uppercase tracking-wider">Trọng tâm kiểm tra & sửa lỗi:</label>
-                <div className="grid grid-cols-3 gap-2 bg-slate-950 p-1 rounded-xl border border-slate-800">
+                <div className="grid grid-cols-3 gap-2 bg-slate-950 p-1 rounded-xl border border-line">
                   <button
                     onClick={() => setFocus('general')}
                     className={`py-1.5 text-xs font-extrabold rounded-lg transition-all ${focus === 'general' ? 'bg-sky-500 text-white shadow' : 'text-slate-500 hover:text-slate-300'}`}
@@ -270,7 +270,7 @@ export function SpeakingLaunchpad({
           </div>
 
           {/* Instructions */}
-          <div className="bg-slate-950/50 rounded-2xl p-6 border border-slate-800">
+          <div className="bg-slate-950/50 rounded-2xl p-6 border border-line">
             <h3 className="text-sm font-black text-white uppercase tracking-widest mb-4 flex items-center gap-2">
               <span className="w-6 h-6 rounded-full bg-sky-500 text-white flex items-center justify-center text-xs">1</span> 
               Cách thực hiện
@@ -290,7 +290,7 @@ export function SpeakingLaunchpad({
               </li>
             </ul>
             {keyVocab && keyVocab.length > 0 && (
-              <div className="mt-4 pt-4 border-t border-slate-800/80 flex items-start gap-2 text-xs text-slate-500">
+              <div className="mt-4 pt-4 border-t border-line/80 flex items-start gap-2 text-xs text-slate-500">
                 <Info size={14} className="text-sky-400 flex-shrink-0 mt-0.5" />
                 <p>
                   <span className="text-slate-300 font-bold">Từ vựng mục tiêu:</span> {keyVocab.join(", ")}. Hãy cố gắng sử dụng các từ này trong buổi nói nhé!
@@ -305,7 +305,7 @@ export function SpeakingLaunchpad({
               className="flex-1 relative group overflow-hidden rounded-2xl p-1 animate-pulse"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-sky-500 via-indigo-500 to-sky-500 opacity-70 group-hover:opacity-100 transition-opacity animate-gradient-x" />
-              <div className="relative bg-slate-900 px-4 py-4 rounded-xl flex items-center justify-center gap-2 transition-transform group-hover:scale-[0.99] group-active:scale-95 h-full">
+              <div className="relative bg-surface px-4 py-4 rounded-xl flex items-center justify-center gap-2 transition-transform group-hover:scale-[0.99] group-active:scale-95 h-full">
                 {copied === "https://gemini.google.com" ? (
                   <>
                     <CheckCircle className="text-emerald-400 animate-bounce" />
@@ -326,7 +326,7 @@ export function SpeakingLaunchpad({
               className="flex-1 relative group overflow-hidden rounded-2xl p-1"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 via-teal-500 to-emerald-500 opacity-70 group-hover:opacity-100 transition-opacity animate-gradient-x" />
-              <div className="relative bg-slate-900 px-4 py-4 rounded-xl flex items-center justify-center gap-2 transition-transform group-hover:scale-[0.99] group-active:scale-95 h-full">
+              <div className="relative bg-surface px-4 py-4 rounded-xl flex items-center justify-center gap-2 transition-transform group-hover:scale-[0.99] group-active:scale-95 h-full">
                 {copied === "https://chatgpt.com" ? (
                   <>
                     <CheckCircle className="text-emerald-400 animate-bounce" />
@@ -344,7 +344,7 @@ export function SpeakingLaunchpad({
           </div>
 
           {/* Completion area */}
-          <div className="pt-6 mt-6 border-t border-slate-800/80">
+          <div className="pt-6 mt-6 border-t border-line/80">
             <h3 className="text-sm font-black text-white uppercase tracking-widest mb-4 flex items-center gap-2">
               <span className="w-6 h-6 rounded-full bg-slate-700 text-white flex items-center justify-center text-xs">2</span> 
               Sau khi nói xong

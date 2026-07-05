@@ -78,17 +78,17 @@ export default function StartersWordlistClient({ initialPage = 1, backUrl = "/ho
   };
 
   return (
-    <div className="flex flex-col h-screen text-slate-100 bg-[#0b0f19]">
+    <div className="flex flex-col h-screen text-slate-100 bg-surface-deep">
       {/* ── HEADER ────────────────────────────────────────────────────────── */}
-      <header className="flex items-center justify-between px-6 py-4 bg-[#0f172a] border-b border-slate-800 shadow-md">
+      <header className="flex items-center justify-between px-6 py-4 bg-surface border-b border-line shadow-md">
         <div className="flex items-center gap-3">
           <Link
             href={backUrl}
-            className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-850 hover:bg-slate-800 border border-slate-700 text-slate-300 hover:text-white transition text-xs font-medium"
+            className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-850 hover:bg-surface-raised border border-line text-slate-300 hover:text-white transition text-xs font-medium"
           >
             <ChevronLeft className="h-4 w-4" /> Quay Lại
           </Link>
-          <div className="h-4 w-[1px] bg-slate-800"></div>
+          <div className="h-4 w-[1px] bg-surface-raised"></div>
           <div>
             <h1 className="text-sm font-bold tracking-tight text-white flex items-center gap-1.5">
               <BookOpen className="h-4 w-4 text-sky-400" /> Starters Wordlist Picture Book
@@ -98,7 +98,7 @@ export default function StartersWordlistClient({ initialPage = 1, backUrl = "/ho
         </div>
 
         {/* Page Selector Tabs */}
-        <div className="flex items-center gap-2 overflow-x-auto max-w-full md:max-w-[40%] bg-slate-950 p-1.5 rounded-xl border border-slate-800">
+        <div className="flex items-center gap-2 overflow-x-auto max-w-full md:max-w-[40%] bg-slate-950 p-1.5 rounded-xl border border-line">
           {startersWordlistPages.map((p, idx) => (
             <button
               key={p.pageNumber}
@@ -109,7 +109,7 @@ export default function StartersWordlistClient({ initialPage = 1, backUrl = "/ho
               className={`px-3 py-1 rounded-lg text-xs font-semibold whitespace-nowrap transition-all duration-300 ${
                 currentPageIndex === idx
                   ? "bg-gradient-to-r from-sky-600 to-indigo-600 text-white shadow-md shadow-sky-500/10 scale-105"
-                  : "text-slate-400 hover:text-white hover:bg-slate-900"
+                  : "text-slate-400 hover:text-white hover:bg-surface"
               }`}
             >
               Tr. {p.pageNumber}
@@ -122,18 +122,18 @@ export default function StartersWordlistClient({ initialPage = 1, backUrl = "/ho
       <div className="flex-1 flex flex-col md:flex-row overflow-hidden">
         
         {/* LEFT PANEL: Textbook Image Scanner (Google Drive Hosted) */}
-        <div className={`flex-1 flex flex-col bg-slate-950 relative overflow-hidden border-r border-slate-800 transition-all duration-500 ${
+        <div className={`flex-1 flex flex-col bg-slate-950 relative overflow-hidden border-r border-line transition-all duration-500 ${
           isFullscreen ? "fixed inset-0 z-50 p-4" : ""
         }`}>
           {/* Controls toolbar */}
-          <div className="flex items-center justify-between p-3 bg-slate-900/60 border-b border-slate-850 z-10 backdrop-blur">
+          <div className="flex items-center justify-between p-3 bg-surface/60 border-b border-slate-850 z-10 backdrop-blur">
             <span className="text-xs font-medium text-slate-300 flex items-center gap-1.5">
               <Maximize2 className="h-3.5 w-3.5 text-sky-400" /> Trang {activePage.pageNumber} / {startersWordlistPages.length}
             </span>
             <div className="flex items-center gap-2">
               <button
                 onClick={() => setZoomScale(prev => Math.max(0.5, prev - 0.15))}
-                className="p-1.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition"
+                className="p-1.5 rounded bg-surface-raised hover:bg-slate-700 text-slate-300 hover:text-white transition"
                 title="Zoom Out"
               >
                 <ZoomOut className="h-4 w-4" />
@@ -143,21 +143,21 @@ export default function StartersWordlistClient({ initialPage = 1, backUrl = "/ho
               </span>
               <button
                 onClick={() => setZoomScale(prev => Math.min(3, prev + 0.15))}
-                className="p-1.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition"
+                className="p-1.5 rounded bg-surface-raised hover:bg-slate-700 text-slate-300 hover:text-white transition"
                 title="Zoom In"
               >
                 <ZoomIn className="h-4 w-4" />
               </button>
               <button
                 onClick={() => setZoomScale(1)}
-                className="p-1.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition"
+                className="p-1.5 rounded bg-surface-raised hover:bg-slate-700 text-slate-300 hover:text-white transition"
                 title="Reset Zoom"
               >
                 <RotateCcw className="h-4 w-4" />
               </button>
               <button
                 onClick={() => setIsFullscreen(!isFullscreen)}
-                className="p-1.5 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white transition"
+                className="p-1.5 rounded bg-surface-raised hover:bg-slate-700 text-slate-300 hover:text-white transition"
                 title={isFullscreen ? "Exit Fullscreen" : "Fullscreen"}
               >
                 <Maximize2 className="h-4 w-4" />
@@ -166,7 +166,7 @@ export default function StartersWordlistClient({ initialPage = 1, backUrl = "/ho
           </div>
 
           {/* Image Container with Zoom & Scroll */}
-          <div className="flex-1 overflow-auto relative w-full h-full bg-slate-900 flex items-center justify-center p-4">
+          <div className="flex-1 overflow-auto relative w-full h-full bg-surface flex items-center justify-center p-4">
             <div 
               className="relative transition-transform duration-200 ease-out select-none"
               style={{ transform: `scale(${zoomScale})` }}
@@ -175,7 +175,7 @@ export default function StartersWordlistClient({ initialPage = 1, backUrl = "/ho
               <img 
                 src={`https://lh3.googleusercontent.com/d/${activePage.imageId}`}
                 alt={`Starters Wordlist page ${activePage.pageNumber}`}
-                className="max-w-full max-h-[75vh] object-contain rounded-lg shadow-2xl border border-slate-700"
+                className="max-w-full max-h-[75vh] object-contain rounded-lg shadow-2xl border border-line"
               />
             </div>
           </div>
@@ -187,7 +187,7 @@ export default function StartersWordlistClient({ initialPage = 1, backUrl = "/ho
                 if (currentPageIndex > 0) setCurrentPageIndex(prev => prev - 1);
               }}
               disabled={currentPageIndex === 0}
-              className={`p-2.5 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-slate-700 text-slate-200 pointer-events-auto transition flex items-center justify-center disabled:opacity-40 disabled:cursor-not-allowed`}
+              className={`p-2.5 rounded-full bg-surface/80 hover:bg-surface-raised border border-line text-slate-200 pointer-events-auto transition flex items-center justify-center disabled:opacity-40 disabled:cursor-not-allowed`}
             >
               <ChevronLeft className="h-5 w-5" />
             </button>
@@ -196,7 +196,7 @@ export default function StartersWordlistClient({ initialPage = 1, backUrl = "/ho
                 if (currentPageIndex < startersWordlistPages.length - 1) setCurrentPageIndex(prev => prev + 1);
               }}
               disabled={currentPageIndex === startersWordlistPages.length - 1}
-              className={`p-2.5 rounded-full bg-slate-900/80 hover:bg-slate-800 border border-slate-700 text-slate-200 pointer-events-auto transition flex items-center justify-center disabled:opacity-40 disabled:cursor-not-allowed`}
+              className={`p-2.5 rounded-full bg-surface/80 hover:bg-surface-raised border border-line text-slate-200 pointer-events-auto transition flex items-center justify-center disabled:opacity-40 disabled:cursor-not-allowed`}
             >
               <ChevronRight className="h-5 w-5" />
             </button>
@@ -204,8 +204,8 @@ export default function StartersWordlistClient({ initialPage = 1, backUrl = "/ho
         </div>
 
         {/* RIGHT PANEL: Text Content & Interaction */}
-        <div className="flex-1 flex flex-col bg-slate-900 overflow-y-auto p-6 md:p-8 space-y-6">
-          <div className="border-b border-slate-800 pb-4 flex justify-between items-start">
+        <div className="flex-1 flex flex-col bg-surface overflow-y-auto p-6 md:p-8 space-y-6">
+          <div className="border-b border-line pb-4 flex justify-between items-start">
             <div>
               <span className="text-[10px] font-bold text-sky-400 uppercase tracking-widest block">Nội dung học tập</span>
               <h2 className="text-xl font-extrabold text-white mt-1">Trang {activePage.pageNumber}</h2>
@@ -225,7 +225,7 @@ export default function StartersWordlistClient({ initialPage = 1, backUrl = "/ho
           </div>
 
           {/* Book text details */}
-          <div className="p-6 rounded-2xl bg-[#0f172a] border border-slate-800 shadow-inner flex-1 flex flex-col">
+          <div className="p-6 rounded-2xl bg-surface border border-line shadow-inner flex-1 flex flex-col">
             <div className="text-slate-300 text-sm leading-relaxed whitespace-pre-wrap flex-1 overflow-y-auto font-medium">
               {activePage.content.trim() ? (
                 activePage.content
@@ -238,7 +238,7 @@ export default function StartersWordlistClient({ initialPage = 1, backUrl = "/ho
           </div>
 
           {/* Footer actions */}
-          <div className="flex justify-end pt-4 border-t border-slate-800 gap-3">
+          <div className="flex justify-end pt-4 border-t border-line gap-3">
             <button 
               onClick={celebratePage}
               className="inline-flex items-center justify-center gap-1 px-5 py-2.5 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white font-black text-xs uppercase tracking-wide shadow-md shadow-emerald-500/10 transition-all active:scale-95 duration-150"

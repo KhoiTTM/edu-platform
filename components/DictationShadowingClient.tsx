@@ -378,7 +378,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
     const targetWords = normalize(currentSentence.content).split(/\s+/);
 
     return (
-      <div className="p-4 bg-slate-900/60 border border-slate-800 rounded-xl">
+      <div className="p-4 bg-surface/60 border border-line rounded-xl">
         <h4 className="text-xs font-semibold text-slate-400 mb-2">Giọng nói bạn vừa ghi âm được nhận diện:</h4>
         <p className="text-base text-slate-200">
           {speechTranscript.split(/\s+/).map((word, i) => {
@@ -428,7 +428,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
 
     return (
       <div className="space-y-4">
-        <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-2">
+        <div className="p-4 rounded-xl bg-surface/60 border border-line space-y-2">
           <div className="flex items-center gap-2 text-xs font-semibold text-emerald-400">
             <CheckCircle className="h-4 w-4" />
             <span>Đáp án chuẩn:</span>
@@ -446,7 +446,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
           </p>
         </div>
 
-        <div className="p-4 rounded-xl bg-slate-900/60 border border-slate-800 space-y-2">
+        <div className="p-4 rounded-xl bg-surface/60 border border-line space-y-2">
           <div className="flex items-center gap-2 text-xs font-semibold text-sky-400">
             <Info className="h-4 w-4" />
             <span>Bạn đã nhập:</span>
@@ -472,7 +472,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
       {/* Dictionary Popup Card */}
       {clickedWord && popupPos && (
         <div 
-          className="absolute z-50 w-72 p-4 bg-slate-850 border border-slate-700 rounded-2xl shadow-xl shadow-black/40 backdrop-blur-md animate-in fade-in slide-in-from-bottom-2 duration-200"
+          className="absolute z-50 w-72 p-4 bg-slate-850 border border-line rounded-2xl shadow-xl shadow-black/40 backdrop-blur-md animate-in fade-in slide-in-from-bottom-2 duration-200"
           style={{ 
             left: `${popupPos.x}px`, 
             top: `${popupPos.y}px`,
@@ -494,7 +494,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
               </button>
               <button 
                 onClick={() => setClickedWord(null)}
-                className="p-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-slate-100 transition"
+                className="p-1 rounded-lg bg-surface-raised hover:bg-slate-700 text-slate-400 hover:text-slate-100 transition"
               >
                 <X className="h-4 w-4" />
               </button>
@@ -514,7 +514,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
       )}
 
       {/* Top Banner Navigation */}
-      <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between border-b border-slate-800 pb-5">
+      <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between border-b border-line pb-5">
         <div>
           <Link href={backUrl} className="inline-flex items-center text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition mb-1">
             ← Quay lại buổi học
@@ -525,7 +525,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
         </div>
 
         {/* Wizard step indicator */}
-        <div className="flex items-center gap-2 bg-slate-900/60 p-1.5 border border-slate-800 rounded-xl">
+        <div className="flex items-center gap-2 bg-surface/60 p-1.5 border border-line rounded-xl">
           {[1, 2, 3, 4, 5].map((s) => (
             <button
               key={s}
@@ -541,7 +541,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
               className={`px-3 py-1 text-xs font-bold rounded-lg transition-all duration-150 ${
                 step === s 
                   ? "bg-indigo-500 text-white shadow-md shadow-indigo-500/20" 
-                  : "text-slate-400 hover:text-slate-200 hover:bg-slate-800/40"
+                  : "text-slate-400 hover:text-slate-200 hover:bg-surface-raised/40"
               }`}
             >
               Bước {s}
@@ -588,7 +588,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
       <div className="grid gap-6 lg:grid-cols-12">
         {/* Left column: YouTube Video Iframe */}
         <div className="lg:col-span-7 space-y-4">
-          <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-slate-800 bg-slate-950 shadow-2xl">
+          <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-line bg-slate-950 shadow-2xl">
             <div id="youtube-player" className="absolute inset-0 w-full h-full" />
             
             {/* Dark Cover overlay for Steps 3, 4, and 5 to prevent subtitle cheating */}
@@ -596,7 +596,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
               <div className="absolute inset-0 bg-slate-950 flex flex-col items-center justify-center space-y-4 z-10 p-6 text-center select-none">
                 <div className="relative flex items-center justify-center">
                   <div className="absolute h-20 w-20 rounded-full bg-indigo-500/10 animate-ping" />
-                  <div className="relative h-14 w-14 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center shadow-lg">
+                  <div className="relative h-14 w-14 rounded-full bg-surface border border-line flex items-center justify-center shadow-lg">
                     <Headphones className="h-6 w-6 text-indigo-400" />
                   </div>
                 </div>
@@ -611,11 +611,11 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
           </div>
 
           {/* Subtitle helper controls inside Player control board */}
-          <div className="flex items-center justify-between bg-slate-900/40 border border-slate-800 p-4 rounded-2xl">
+          <div className="flex items-center justify-between bg-surface/40 border border-line p-4 rounded-2xl">
             <button
               onClick={handleTogglePlay}
               disabled={!playerReady}
-              className="flex items-center justify-center gap-2 rounded-xl bg-indigo-500 hover:bg-indigo-600 disabled:bg-slate-800 px-5 py-2 text-sm font-bold text-white shadow-lg transition duration-200"
+              className="flex items-center justify-center gap-2 rounded-xl bg-indigo-500 hover:bg-indigo-600 disabled:bg-surface-raised px-5 py-2 text-sm font-bold text-white shadow-lg transition duration-200"
             >
               {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
               <span>{isPlaying ? "Tạm Dừng" : "Phát Video"}</span>
@@ -624,7 +624,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
             {/* Playback rate select */}
             <div className="flex items-center gap-2">
               <span className="text-xs font-semibold text-slate-400">Tốc độ:</span>
-              <div className="flex rounded-lg overflow-hidden bg-slate-800 border border-slate-700">
+              <div className="flex rounded-lg overflow-hidden bg-surface-raised border border-line">
                 {[0.75, 1, 1.25, 1.5].map((rate) => (
                   <button
                     key={rate}
@@ -645,7 +645,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
         <div className="lg:col-span-5 h-[480px] flex flex-col">
           {step === 3 ? (
             /* Step 3: No Subtitles text */
-            <div className="flex-1 flex flex-col items-center justify-center border border-slate-800 bg-slate-900/20 rounded-2xl p-6 text-center space-y-4">
+            <div className="flex-1 flex flex-col items-center justify-center border border-line bg-surface/20 rounded-2xl p-6 text-center space-y-4">
               <div className="relative flex items-center justify-center">
                 <div className="absolute h-24 w-24 rounded-full bg-indigo-500/10 animate-ping" />
                 <div className="relative h-16 w-16 rounded-full bg-indigo-500/20 flex items-center justify-center border border-indigo-500/30">
@@ -659,13 +659,13 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
             </div>
           ) : step === 4 ? (
             /* Step 4: Dictation (Chép chính tả) Workspace */
-            <div className="flex-1 flex flex-col border border-slate-800 bg-slate-900/30 rounded-2xl p-5 space-y-4 overflow-y-auto">
+            <div className="flex-1 flex flex-col border border-line bg-surface/30 rounded-2xl p-5 space-y-4 overflow-y-auto">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-extrabold text-indigo-400 uppercase tracking-widest">
                   Chép chính tả — Câu {currentSentenceIndex + 1}/{sentences.length}
                 </span>
 
-                <div className="flex bg-slate-950 rounded-lg p-0.5 border border-slate-800">
+                <div className="flex bg-slate-950 rounded-lg p-0.5 border border-line">
                   <button
                     onClick={() => { setDictationMode("easy"); resetSentenceStates(); }}
                     className={`px-2 py-0.5 text-[10px] font-bold rounded-md transition ${dictationMode === "easy" ? "bg-indigo-500 text-white" : "text-slate-400"}`}
@@ -700,10 +700,10 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
                               setEasyShowAnswers(false);
                             }}
                             placeholder="..."
-                            className={`mx-1 px-1.5 py-0.5 w-20 text-center text-sm font-semibold border rounded bg-slate-900 outline-none focus:border-indigo-500 transition duration-150 ${
+                            className={`mx-1 px-1.5 py-0.5 w-20 text-center text-sm font-semibold border rounded bg-surface outline-none focus:border-indigo-500 transition duration-150 ${
                               easyChecked 
                                 ? (isCorrect ? "border-emerald-500/80 text-emerald-400 bg-emerald-500/5" : "border-rose-500/80 text-rose-450 bg-rose-500/5") 
-                                : "border-slate-800 text-slate-200"
+                                : "border-line text-slate-200"
                             }`}
                           />
                         );
@@ -720,7 +720,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
                         onChange={(e) => setHardInput(e.target.value)}
                         placeholder="Hãy gõ lại toàn bộ câu nói bạn nghe được vào đây..."
                         rows={3}
-                        className="w-full text-sm p-3 rounded-xl border border-slate-800 bg-slate-900 text-slate-150 placeholder-slate-500 outline-none focus:border-indigo-500 transition"
+                        className="w-full text-sm p-3 rounded-xl border border-line bg-surface text-slate-150 placeholder-slate-500 outline-none focus:border-indigo-500 transition"
                       />
                     ) : (
                       renderHardDiff()
@@ -730,7 +730,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
 
                 {/* Show bilingual reference translations if checked or revealed */}
                 {(easyShowAnswers || hardShowAnswers) && (
-                  <div className="border-t border-slate-800/80 pt-3 space-y-1">
+                  <div className="border-t border-line/80 pt-3 space-y-1">
                     <div className="text-xs text-slate-500 font-semibold flex items-center gap-1">
                       <Eye className="h-3 w-3 text-indigo-400" />
                       Đáp án & Dịch nghĩa:
@@ -750,7 +750,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
                 <div className="flex gap-2">
                   <button
                     onClick={handleReplaySegment}
-                    className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-800 text-slate-300 font-bold text-xs transition"
+                    className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 rounded-xl border border-line bg-surface/50 hover:bg-surface-raised text-slate-300 font-bold text-xs transition"
                   >
                     <Volume2 className="h-4 w-4 text-indigo-400" />
                     Nghe lại câu này
@@ -767,7 +767,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
                       </button>
                       <button
                         onClick={() => setEasyShowAnswers(!easyShowAnswers)}
-                        className="p-2.5 rounded-xl border border-slate-800 bg-slate-900/30 text-slate-400 hover:text-slate-100 transition"
+                        className="p-2.5 rounded-xl border border-line bg-surface/30 text-slate-400 hover:text-slate-100 transition"
                         title="Xem đáp án"
                       >
                         <Eye className="h-4 w-4" />
@@ -778,7 +778,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
                       {hardChecked ? (
                         <button
                           onClick={() => setHardChecked(false)}
-                          className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-xs transition"
+                          className="flex-1 inline-flex items-center justify-center gap-1.5 py-2.5 rounded-xl bg-surface-raised hover:bg-slate-700 text-slate-200 font-bold text-xs transition"
                         >
                           <RotateCcw className="h-4 w-4" />
                           Sửa lại
@@ -795,7 +795,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
                       )}
                       <button
                         onClick={() => setHardShowAnswers(!hardShowAnswers)}
-                        className="p-2.5 rounded-xl border border-slate-800 bg-slate-900/30 text-slate-400 hover:text-slate-100 transition"
+                        className="p-2.5 rounded-xl border border-line bg-surface/30 text-slate-400 hover:text-slate-100 transition"
                         title="Xem đáp án"
                       >
                         <Eye className="h-4 w-4" />
@@ -805,7 +805,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
                 </div>
 
                 {/* Navigation sentence */}
-                <div className="flex items-center justify-between pt-2 border-t border-slate-800">
+                <div className="flex items-center justify-between pt-2 border-t border-line">
                   <button
                     onClick={() => {
                       if (currentSentenceIndex > 0) {
@@ -838,7 +838,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
             </div>
           ) : step === 5 ? (
             /* Step 5: Shadowing interactive speak module */
-            <div className="flex-1 flex flex-col border border-slate-800 bg-slate-900/30 rounded-2xl p-6 space-y-4 overflow-y-auto">
+            <div className="flex-1 flex flex-col border border-line bg-surface/30 rounded-2xl p-6 space-y-4 overflow-y-auto">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-extrabold text-indigo-400 uppercase tracking-widest">
                   Shadowing — Câu {currentSentenceIndex + 1}/{sentences.length}
@@ -854,7 +854,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
               </div>
 
               {/* Text Card */}
-              <div className="p-4 bg-slate-950/60 border border-slate-800 rounded-xl space-y-2">
+              <div className="p-4 bg-slate-950/60 border border-line rounded-xl space-y-2">
                 <p className="text-base text-slate-100 font-medium leading-relaxed">
                   {renderInteractiveSentenceText(currentSentence.content)}
                 </p>
@@ -863,7 +863,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
                 </p>
               </div>
 
-              <div className="p-4 bg-slate-900/30 border border-slate-800 rounded-xl">
+              <div className="p-4 bg-surface/30 border border-line rounded-xl">
                 <p className="text-xs font-semibold text-slate-500 mb-1">Dịch nghĩa:</p>
                 <p className="text-sm text-slate-300 italic">{currentSentence.contentVi}</p>
               </div>
@@ -877,7 +877,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
                   {/* Replay audio of sentence */}
                   <button
                     onClick={handleReplaySegment}
-                    className="flex-1 inline-flex items-center justify-center gap-2 py-2.5 rounded-xl border border-slate-700 bg-slate-800 hover:bg-slate-750 text-slate-200 font-bold text-sm transition"
+                    className="flex-1 inline-flex items-center justify-center gap-2 py-2.5 rounded-xl border border-line bg-surface-raised hover:bg-slate-750 text-slate-200 font-bold text-sm transition"
                   >
                     <RotateCcw className="h-4 w-4 text-indigo-400" />
                     Nghe mẫu
@@ -912,7 +912,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
                 )}
 
                 {/* Navigation sentence */}
-                <div className="flex items-center justify-between pt-2 border-t border-slate-800">
+                <div className="flex items-center justify-between pt-2 border-t border-line">
                   <button
                     onClick={() => {
                       if (currentSentenceIndex > 0) {
@@ -945,7 +945,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
             </div>
           ) : (
             /* Step 1 & 2: Subtitle/Transcript List */
-            <div className="flex-1 flex flex-col border border-slate-800 bg-slate-900/30 rounded-2xl p-4 overflow-hidden">
+            <div className="flex-1 flex flex-col border border-line bg-surface/30 rounded-2xl p-4 overflow-hidden">
               <div className="flex items-center justify-between mb-3">
                 <span className="text-xs font-bold text-slate-400">Bản phụ đề chạy theo video:</span>
                 <span className="text-[10px] text-indigo-400 bg-indigo-500/10 px-2 py-0.5 rounded border border-indigo-500/20 font-bold">
@@ -964,12 +964,12 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
                       className={`p-3 rounded-xl cursor-pointer border transition duration-200 ${
                         isActive
                           ? "bg-indigo-500/10 border-indigo-500/40 shadow-md shadow-indigo-500/5 scale-[1.01]"
-                          : "bg-slate-950/20 border-slate-900 hover:bg-slate-900/40 hover:border-slate-800"
+                          : "bg-slate-950/20 border-slate-900 hover:bg-surface/40 hover:border-line"
                       }`}
                     >
                       <div className="flex items-start gap-2.5">
                         <span className={`text-[10px] font-mono mt-0.5 px-1.5 py-0.5 rounded ${
-                          isActive ? "bg-indigo-500 text-white" : "bg-slate-900 text-slate-500"
+                          isActive ? "bg-indigo-500 text-white" : "bg-surface text-slate-500"
                         }`}>
                           {idx + 1}
                         </span>
@@ -998,11 +998,11 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
       </div>
 
       {/* Footer wizard navigation */}
-      <div className="flex items-center justify-between border-t border-slate-800 pt-5">
+      <div className="flex items-center justify-between border-t border-line pt-5">
         <button
           onClick={handlePrevStep}
           disabled={step === 1}
-          className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl border border-slate-800 hover:bg-slate-900 text-slate-300 hover:text-white text-sm font-semibold disabled:opacity-40 disabled:hover:bg-transparent transition duration-150"
+          className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl border border-line hover:bg-surface text-slate-300 hover:text-white text-sm font-semibold disabled:opacity-40 disabled:hover:bg-transparent transition duration-150"
         >
           <ChevronLeft className="h-4 w-4" />
           Bước trước

@@ -367,7 +367,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds }
       case 'essay': {
         const essayExplanation = currentQuestion.explanation || currentQuestion.metadata_json?.explanation;
         return (
-          <div className="flex flex-col gap-6 p-6 bg-slate-800/60 rounded-xl border border-slate-700">
+          <div className="flex flex-col gap-6 p-6 bg-surface-raised/60 rounded-xl border border-line">
             <div className="text-white font-semibold text-base leading-relaxed">
               <MathText text={currentQuestion.question || currentQuestion.stem || ""} />
             </div>
@@ -402,7 +402,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds }
       }
       default:
         return (
-          <div className="text-center p-8 bg-slate-800 rounded-xl text-slate-400">
+          <div className="text-center p-8 bg-surface-raised rounded-xl text-slate-400">
             Unsupported question type: {currentQuestion.type}
             <button
               onClick={() => handleAnswer(true, "skipped")}
@@ -416,19 +416,19 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds }
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto p-4 md:p-6 bg-slate-900 border border-slate-800 rounded-2xl shadow-xl flex flex-col max-h-[85vh] overflow-y-auto">
+    <div className="w-full max-w-2xl mx-auto p-4 md:p-6 bg-surface border border-line rounded-2xl shadow-xl flex flex-col max-h-[85vh] overflow-y-auto">
       <div className="flex justify-between items-center mb-3">
         <div className="text-sm font-semibold text-slate-400">
           Question {currentIndex + 1} of {questions.length}
         </div>
         <div className="flex items-center gap-2">
-          <div className="flex text-emerald-400 font-bold bg-slate-800 px-3 py-1 rounded-lg">
+          <div className="flex text-emerald-400 font-bold bg-surface-raised px-3 py-1 rounded-lg">
             ⭐ Score: {answers.filter(a => a.isCorrect).length * 10}
           </div>
         </div>
       </div>
 
-      <div className="w-full bg-slate-800 h-2 rounded-full mb-4 overflow-hidden">
+      <div className="w-full bg-surface-raised h-2 rounded-full mb-4 overflow-hidden">
         <div 
           className="bg-sky-500 h-full rounded-full transition-all duration-500 ease-out"
           style={{ width: `${((currentIndex) / questions.length) * 100}%` }}
@@ -436,7 +436,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds }
       </div>
 
       {timerSeconds && !hasAnswered && (
-        <div className="w-full bg-slate-800 h-6 rounded-xl mb-4 overflow-hidden relative border border-slate-700/50">
+        <div className="w-full bg-surface-raised h-6 rounded-xl mb-4 overflow-hidden relative border border-line/50">
           <div 
             className="h-full rounded-full transition-all duration-1000 ease-linear shadow-[0_0_12px_rgba(244,63,94,0.6)]"
             style={{ 
@@ -465,7 +465,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds }
           </div>
         )}
         {currentQuestion.reading_passage && (
-          <div className="mb-6 p-4 bg-slate-800/80 rounded-xl border-l-4 border-amber-400 text-slate-200">
+          <div className="mb-6 p-4 bg-surface-raised/80 rounded-xl border-l-4 border-amber-400 text-slate-200">
             <h3 className="font-bold text-amber-400 mb-2 flex items-center gap-2">
               <span className="text-lg">📖</span> Đoạn văn tham khảo:
             </h3>
@@ -478,7 +478,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds }
       </div>
 
       {hasAnswered && (
-        <div className="mt-4 border-t border-slate-700 pt-4">
+        <div className="mt-4 border-t border-line pt-4">
           <button 
             onClick={handleNext}
             className="w-full py-3 bg-emerald-500 text-white font-bold text-lg rounded-xl shadow-[0_4px_0_rgb(16,185,129)] active:translate-y-[4px] active:shadow-none hover:bg-emerald-400 transition-all"

@@ -118,10 +118,10 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
   return (
     <div className="space-y-6">
       {/* ── HEADER BACK ROW ─────────────────────────────────────────────────── */}
-      <div className="flex items-center gap-3 bg-slate-900/40 p-3 rounded-2xl border border-slate-800 shadow backdrop-blur">
+      <div className="flex items-center gap-3 bg-surface/40 p-3 rounded-2xl border border-line shadow backdrop-blur">
         <Link
           href={backUrl}
-          className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-slate-800 border border-slate-700 text-slate-400 hover:text-white transition"
+          className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-surface-raised border border-line text-slate-400 hover:text-white transition"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -150,7 +150,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
               >
                 <div className={`h-2.5 w-2.5 rounded-full transition-all duration-500 ${
                   isActive ? "bg-sky-500 ring-4 ring-sky-500/20 scale-125" : 
-                  isDone ? "bg-emerald-500" : isAccessible ? "bg-sky-900/50" : "bg-slate-800"
+                  isDone ? "bg-emerald-500" : isAccessible ? "bg-sky-900/50" : "bg-surface-raised"
                 }`} />
                 <span className={`text-[9px] font-bold uppercase tracking-tighter transition-colors ${
                   isActive ? "text-sky-400" : isDone ? "text-emerald-500" : isAccessible ? "text-sky-900" : "text-slate-600"
@@ -158,7 +158,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
                   {p === 'book' ? 'textbook' : p}
                 </span>
               </button>
-              {idx < 3 && <div className={`h-[1px] w-8 sm:w-12 mb-4 transition-colors ${isDone ? "bg-emerald-500/50" : "bg-slate-800"}`} />}
+              {idx < 3 && <div className={`h-[1px] w-8 sm:w-12 mb-4 transition-colors ${isDone ? "bg-emerald-500/50" : "bg-surface-raised"}`} />}
             </div>
           );
         })}
@@ -170,7 +170,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
       <div className="lg:col-span-7 space-y-6">
         
         {/* Youtube Embedded Player Card */}
-        <div className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-950/60 shadow-xl backdrop-blur-md">
+        <div className="overflow-hidden rounded-2xl border border-line bg-slate-950/60 shadow-xl backdrop-blur-md">
           <div className="aspect-video w-full">
             <iframe
               src={`https://www.youtube.com/embed/${lesson.youtube_video_id}?autoplay=0&rel=0&modestbranding=1`}
@@ -180,7 +180,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
               className="h-full w-full border-0"
             ></iframe>
           </div>
-          <div className="p-4 bg-slate-900/40">
+          <div className="p-4 bg-surface/40">
             <span className="inline-block rounded bg-sky-950/80 px-2 py-0.5 text-[9px] font-bold text-sky-400 uppercase tracking-wide border border-sky-900/40">
               Unit {unitNumber} · IELTS LISTENING
             </span>
@@ -195,7 +195,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
 
         {/* STEP 1 CONTENT: Active Listening — Chunk Checkpoints */}
         {sessionPhase === "listen" && (
-          <div className="rounded-2xl border border-slate-800 bg-slate-900/20 p-6 shadow-xl backdrop-blur-md space-y-5">
+          <div className="rounded-2xl border border-line bg-surface/20 p-6 shadow-xl backdrop-blur-md space-y-5">
             <div>
               <h2 className="text-base font-bold text-white flex items-center gap-2">
                 <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-sky-500/10 text-xs font-extrabold text-sky-400 border border-sky-500/20">
@@ -231,7 +231,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
 
         {/* STEP 2: TEXTBOOK STUDY */}
         {sessionPhase === "book" && (
-          <div className="rounded-2xl border border-slate-800 bg-slate-900/20 p-6 shadow-xl backdrop-blur-md space-y-6">
+          <div className="rounded-2xl border border-line bg-surface/20 p-6 shadow-xl backdrop-blur-md space-y-6">
             <div>
               <span className="inline-flex items-center gap-1.5 rounded-full bg-sky-500/10 px-3 py-1 text-xs font-semibold text-sky-400 border border-sky-500/20 mb-3">
                 📖 TEXTBOOK STUDY STEP
@@ -249,7 +249,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
               <div className="bg-slate-950/60 p-5 rounded-2xl border border-slate-850 space-y-2">
                 <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest">BƯỚC A: MỞ SÁCH LÀM BÀI</span>
                 <p className="text-xs text-slate-200 leading-relaxed">
-                  Em hãy mở sách giáo trình Mindset for IELTS tại phần Listening: <strong className="text-white bg-slate-900 px-2 py-0.5 rounded border border-slate-800">{lesson.page_hint || `Unit ${unitNum}`}</strong>. Đọc lý thuyết và hoàn thành các bài tập nghe trong sách.
+                  Em hãy mở sách giáo trình Mindset for IELTS tại phần Listening: <strong className="text-white bg-surface px-2 py-0.5 rounded border border-line">{lesson.page_hint || `Unit ${unitNum}`}</strong>. Đọc lý thuyết và hoàn thành các bài tập nghe trong sách.
                 </p>
               </div>
 
@@ -267,7 +267,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
               const chatGptPrompt = `Hãy đóng vai là một giáo viên dạy IELTS chuyên nghiệp. Hãy hướng dẫn tôi học sách Mindset for IELTS phần Listening ${pageNumStr} có chủ đề "${lesson.title}". Hãy đưa ra 3 bài tập nhỏ bám sát nội dung này, sau đó chấm điểm và sửa lỗi ngữ pháp một cách chi tiết cho tôi bằng tiếng Việt nhé!`;
 
               return (
-                <div className="bg-slate-950/80 p-5 rounded-2xl border border-slate-800 space-y-3">
+                <div className="bg-slate-950/80 p-5 rounded-2xl border border-line space-y-3">
                   <div className="flex items-center justify-between">
                     <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Prompt chuẩn gửi ChatGPT / AI bên ngoài:</span>
                     <button
@@ -277,13 +277,13 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
                         setTimeout(() => setChatGptPromptCopied(false), 2000);
                       }}
                       className={`px-3 py-1.5 rounded-lg text-[10px] font-bold transition flex items-center gap-1.5 ${
-                        chatGptPromptCopied ? "bg-emerald-600 text-white" : "bg-slate-800 text-slate-300 hover:bg-slate-700"
+                        chatGptPromptCopied ? "bg-emerald-600 text-white" : "bg-surface-raised text-slate-300 hover:bg-slate-700"
                       }`}
                     >
                       {chatGptPromptCopied ? "✓ Đã sao chép!" : "Copy Prompt"}
                     </button>
                   </div>
-                  <div className="bg-slate-900/50 p-4 rounded-xl border border-slate-850 text-xs text-slate-300 font-mono select-all leading-relaxed whitespace-pre-wrap">
+                  <div className="bg-surface/50 p-4 rounded-xl border border-slate-850 text-xs text-slate-300 font-mono select-all leading-relaxed whitespace-pre-wrap">
                     {chatGptPrompt}
                   </div>
                   <div className="flex flex-wrap gap-2 pt-1">
@@ -326,7 +326,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
 
         {/* STEP 3 CONTENT: EXPLORE — Bilingual Transcript */}
         {sessionPhase === "explore" && (
-          <div className="rounded-2xl border border-slate-800 bg-slate-900/20 p-6 shadow-xl backdrop-blur-md space-y-6">
+          <div className="rounded-2xl border border-line bg-surface/20 p-6 shadow-xl backdrop-blur-md space-y-6">
             <div className="flex items-center justify-between gap-4 flex-wrap">
               <h2 className="text-base font-bold text-white flex items-center gap-2">
                 <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-emerald-500/10 text-xs font-extrabold text-emerald-400 border border-emerald-500/20">
@@ -364,7 +364,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
             </div>
 
             {/* Key Vocabulary Analysis card */}
-            <div className="border-t border-slate-800 pt-5">
+            <div className="border-t border-line pt-5">
               <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
                 📚 TỪ VỰNG TIÊU ĐIỂM (Tap to Flip)
               </h3>
@@ -384,7 +384,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
 
         {/* PHASE 3 CONTENT: SPEAK — Speaking & Shadowing */}
         {sessionPhase === "speak" && (
-          <div className="rounded-2xl border border-slate-800 bg-slate-900/20 p-6 shadow-xl backdrop-blur-md space-y-5">
+          <div className="rounded-2xl border border-line bg-surface/20 p-6 shadow-xl backdrop-blur-md space-y-5">
             <div className="flex items-center justify-between gap-4 flex-wrap">
               <h2 className="text-base font-bold text-white flex items-center gap-2">
                 <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-indigo-500/10 text-xs font-extrabold text-indigo-400 border border-indigo-500/20">
@@ -428,7 +428,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
 
         {/* PHASE 4 CONTENT: CHECK — Comprehension Quiz */}
         {sessionPhase === "check" && (
-          <div className="rounded-2xl border border-slate-800 bg-slate-900/20 p-6 shadow-xl backdrop-blur-md space-y-6">
+          <div className="rounded-2xl border border-line bg-surface/20 p-6 shadow-xl backdrop-blur-md space-y-6">
             <h2 className="text-base font-bold text-white flex items-center gap-2">
               <span className="flex h-6 w-6 items-center justify-center rounded-lg bg-amber-500/10 text-xs font-extrabold text-amber-400 border border-amber-500/20">
                 ✓
@@ -466,7 +466,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
                 {/* Question body card */}
                 {questions[currentQuestionIdx] && (
                   <div className="space-y-4">
-                    <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-5 space-y-4">
+                    <div className="rounded-xl border border-line bg-slate-950/40 p-5 space-y-4">
                       <h3 className="text-sm font-bold text-white leading-relaxed">
                         {questions[currentQuestionIdx].question}
                       </h3>
@@ -488,8 +488,8 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
                                     ? "border-emerald-500/50 bg-emerald-500/10 text-emerald-400"
                                     : isSelected
                                       ? "border-rose-500/50 bg-rose-500/10 text-rose-400"
-                                      : "border-slate-800/50 bg-slate-900/10 text-slate-600"
-                                  : "border-slate-800/80 bg-slate-900/20 text-slate-300 hover:border-slate-700 hover:bg-slate-900/50"
+                                      : "border-line/50 bg-surface/10 text-slate-600"
+                                  : "border-line/80 bg-surface/20 text-slate-300 hover:border-line hover:bg-surface/50"
                               }`}
                             >
                               <span>{option}</span>
@@ -503,7 +503,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
 
                     {/* Immediate Explanation */}
                     {selectedAnswers[questions[currentQuestionIdx].id] !== undefined && (
-                      <div className="rounded-xl bg-slate-950/60 border border-slate-800 p-4 space-y-2 animate-in fade-in slide-in-from-top-2 duration-300">
+                      <div className="rounded-xl bg-slate-950/60 border border-line p-4 space-y-2 animate-in fade-in slide-in-from-top-2 duration-300">
                         <p className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Explanation</p>
                         <p className="text-xs text-slate-300 leading-relaxed italic">
                           {questions[currentQuestionIdx].explanation}
@@ -534,14 +534,14 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
       <div className="lg:col-span-5 space-y-6">
         
         {/* Unit metadata script card */}
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/20 p-5 shadow-xl backdrop-blur-md">
-          <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5 border-b border-slate-800 pb-2">
+        <div className="rounded-2xl border border-line bg-surface/20 p-5 shadow-xl backdrop-blur-md">
+          <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5 border-b border-line pb-2">
             📰 TÓM TẮT CHỦ ĐỀ NGHE
           </h3>
           <p className="mt-3 text-xs text-slate-300 leading-relaxed">
             {transcript.description}
           </p>
-          <div className="mt-4 rounded-xl bg-slate-950/60 border border-slate-800/80 p-3.5">
+          <div className="mt-4 rounded-xl bg-slate-950/60 border border-line/80 p-3.5">
             <h4 className="text-[10px] font-bold text-sky-400 uppercase tracking-wider">🎯 Mẹo Luyện Thi Nghe:</h4>
             <ul className="mt-2 text-[11px] text-slate-400 leading-relaxed list-disc list-inside space-y-1">
               <li>Chú ý các số từ, tên riêng hay ngày tháng được phát âm.</li>
@@ -553,8 +553,8 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
 
         {/* Dynamic explanations panel if quiz is submitted */}
         {quizSubmitted && (
-          <div className="rounded-2xl border border-slate-800 bg-slate-900/20 p-5 shadow-xl backdrop-blur-md space-y-4">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-amber-400 flex items-center gap-1.5 border-b border-slate-800 pb-2">
+          <div className="rounded-2xl border border-line bg-surface/20 p-5 shadow-xl backdrop-blur-md space-y-4">
+            <h3 className="text-xs font-bold uppercase tracking-wider text-amber-400 flex items-center gap-1.5 border-b border-line pb-2">
               📖 ĐÁP ÁN & GIẢI THÍCH CHI TIẾT
             </h3>
             <div className="space-y-4 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">
@@ -581,7 +581,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
                     <p className="mt-0.5 text-[11px] text-slate-300">
                       Đáp án đúng: <span className="text-emerald-400 font-bold">{displayCorrectAns}</span>
                     </p>
-                    <p className="mt-2 text-[10px] text-slate-400 leading-relaxed border-t border-slate-800/80 pt-1.5 italic">
+                    <p className="mt-2 text-[10px] text-slate-400 leading-relaxed border-t border-line/80 pt-1.5 italic">
                       🔍 Giải thích: {q.explanation}
                     </p>
                   </div>

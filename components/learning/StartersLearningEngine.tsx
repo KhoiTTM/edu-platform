@@ -80,7 +80,7 @@ function FlashcardView({ words }: { words: VocabWord[] }) {
       {/* Progress */}
       <div className="w-full flex items-center gap-3">
         <span className="text-xs text-slate-400 min-w-[40px]">{idx + 1}/{words.length}</span>
-        <div className="flex-1 h-2 bg-slate-800 rounded-full overflow-hidden">
+        <div className="flex-1 h-2 bg-surface-raised rounded-full overflow-hidden">
           <div
             className="h-full bg-gradient-to-r from-sky-500 to-indigo-500 rounded-full transition-all duration-500"
             style={{ width: `${((idx + 1) / words.length) * 100}%` }}
@@ -101,7 +101,7 @@ function FlashcardView({ words }: { words: VocabWord[] }) {
         >
           {/* Front */}
           <div
-            className="w-full rounded-3xl border-2 border-slate-700 bg-gradient-to-br from-slate-800 to-slate-900 p-10 flex flex-col items-center justify-center gap-4 min-h-[260px] shadow-2xl"
+            className="w-full rounded-3xl border-2 border-line bg-gradient-to-br from-slate-800 to-slate-900 p-10 flex flex-col items-center justify-center gap-4 min-h-[260px] shadow-2xl"
             style={{ backfaceVisibility: "hidden" }}
           >
             <span className="text-6xl mb-2">{word.emoji || "📖"}</span>
@@ -140,7 +140,7 @@ function FlashcardView({ words }: { words: VocabWord[] }) {
         </button>
         <button
           onClick={() => speak(word.english)}
-          className="px-4 py-3 rounded-2xl border border-slate-700 bg-slate-800/60 text-slate-400 hover:text-white hover:bg-slate-700 transition"
+          className="px-4 py-3 rounded-2xl border border-line bg-surface-raised/60 text-slate-400 hover:text-white hover:bg-slate-700 transition"
         >
           <Volume2 size={16} />
         </button>
@@ -158,14 +158,14 @@ function FlashcardView({ words }: { words: VocabWord[] }) {
         <button
           onClick={() => go(-1)}
           disabled={idx === 0}
-          className="p-2 rounded-xl border border-slate-700 bg-slate-800 text-slate-400 hover:text-white disabled:opacity-30 transition"
+          className="p-2 rounded-xl border border-line bg-surface-raised text-slate-400 hover:text-white disabled:opacity-30 transition"
         >
           <ChevronLeft size={18} />
         </button>
         <button
           onClick={() => go(1)}
           disabled={idx === words.length - 1}
-          className="p-2 rounded-xl border border-slate-700 bg-slate-800 text-slate-400 hover:text-white disabled:opacity-30 transition"
+          className="p-2 rounded-xl border border-line bg-surface-raised text-slate-400 hover:text-white disabled:opacity-30 transition"
         >
           <ChevronRight size={18} />
         </button>
@@ -292,7 +292,7 @@ function MultipleChoiceQuiz({
       </div>
 
       {/* Progress bar */}
-      <div className="h-2 bg-slate-800 rounded-full overflow-hidden">
+      <div className="h-2 bg-surface-raised rounded-full overflow-hidden">
         <div
           className="h-full bg-gradient-to-r from-indigo-500 to-sky-500 rounded-full transition-all duration-500"
           style={{ width: `${((qIdx + 1) / total) * 100}%` }}
@@ -300,7 +300,7 @@ function MultipleChoiceQuiz({
       </div>
 
       {/* Question card */}
-      <div className="rounded-3xl border-2 border-slate-700 bg-gradient-to-br from-slate-800 to-slate-900 p-8 text-center shadow-xl">
+      <div className="rounded-3xl border-2 border-line bg-gradient-to-br from-slate-800 to-slate-900 p-8 text-center shadow-xl">
         <span className="text-5xl mb-4 block">{word.emoji || "📖"}</span>
         {direction === "vi-to-en" && (
           <p className="text-3xl font-black text-white mb-2">{word.vietnamese}</p>
@@ -329,7 +329,7 @@ function MultipleChoiceQuiz({
           const isCorrect = choice.id === word.id;
           const isSelected = choice.id === selected;
           let cls =
-            "border-slate-700 bg-slate-800/40 text-slate-200 hover:border-sky-500/50 hover:bg-slate-700/60";
+            "border-line bg-surface-raised/40 text-slate-200 hover:border-sky-500/50 hover:bg-slate-700/60";
           if (answered && isCorrect)
             cls = "border-emerald-500 bg-emerald-500/15 text-emerald-200";
           else if (answered && isSelected && !isCorrect)
@@ -474,7 +474,7 @@ function ListeningQuiz({
         </div>
       </div>
 
-      <div className="h-2 bg-slate-800 rounded-full overflow-hidden">
+      <div className="h-2 bg-surface-raised rounded-full overflow-hidden">
         <div
           className="h-full bg-gradient-to-r from-violet-500 to-purple-500 rounded-full transition-all duration-500"
           style={{ width: `${((qIdx + 1) / total) * 100}%` }}
@@ -499,7 +499,7 @@ function ListeningQuiz({
         {choices.map(choice => {
           const isCorrect = choice.id === word.id;
           const isSelected = choice.id === selected;
-          let cls = "border-slate-700 bg-slate-800/40 hover:border-violet-500/50 hover:bg-slate-700/60";
+          let cls = "border-line bg-surface-raised/40 hover:border-violet-500/50 hover:bg-slate-700/60";
           if (answered && isCorrect) cls = "border-emerald-500 bg-emerald-500/15";
           else if (answered && isSelected && !isCorrect) cls = "border-rose-500 bg-rose-500/15";
 
@@ -598,7 +598,7 @@ function ResultScreen({
         ].map(item => (
           <div
             key={item.label}
-            className={`rounded-2xl bg-gradient-to-br ${item.bg} border border-slate-800 p-5 text-center`}
+            className={`rounded-2xl bg-gradient-to-br ${item.bg} border border-line p-5 text-center`}
           >
             <p className={`text-2xl font-black ${item.color}`}>{item.value}</p>
             <p className="text-xs text-slate-400 mt-1">{item.label}</p>
@@ -615,7 +615,7 @@ function ResultScreen({
         </button>
         <button
           onClick={onBack}
-          className="w-full py-3 rounded-2xl border border-slate-700 bg-slate-800/40 text-slate-300 hover:bg-slate-700/60 font-semibold text-sm transition"
+          className="w-full py-3 rounded-2xl border border-line bg-surface-raised/40 text-slate-300 hover:bg-slate-700/60 font-semibold text-sm transition"
         >
           Chọn chủ đề khác
         </button>
@@ -653,7 +653,7 @@ function TopicSelector({ onSelect }: { onSelect: (topicId: string | null) => voi
           <button
             key={topic.id}
             onClick={() => onSelect(topic.id)}
-            className="group flex items-center gap-4 px-5 py-4 rounded-2xl border border-slate-700 bg-slate-800/40 hover:border-slate-600 hover:bg-slate-700/60 transition-all duration-200 text-left"
+            className="group flex items-center gap-4 px-5 py-4 rounded-2xl border border-line bg-surface-raised/40 hover:border-slate-600 hover:bg-slate-700/60 transition-all duration-200 text-left"
           >
             <span className="text-3xl">{topic.emoji}</span>
             <div className="flex-1 min-w-0">
@@ -800,12 +800,12 @@ export default function StartersLearningEngine({
   };
 
   return (
-    <div className="min-h-screen bg-[#0b0f19] text-slate-100 flex flex-col">
+    <div className="min-h-screen bg-surface-deep text-slate-100 flex flex-col">
       {/* Top Bar */}
-      <header className="border-b border-slate-800 bg-[#0f172a] px-6 py-4 flex items-center gap-4 flex-wrap">
+      <header className="border-b border-line bg-surface px-6 py-4 flex items-center gap-4 flex-wrap">
         <Link
           href={backUrl}
-          className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-slate-700 bg-slate-800 text-slate-300 hover:text-white text-xs font-medium transition"
+          className="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-line bg-surface-raised text-slate-300 hover:text-white text-xs font-medium transition"
         >
           <ChevronLeft size={15} /> Quay lại sách
         </Link>

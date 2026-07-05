@@ -101,7 +101,7 @@ export function CategorizationRenderer({
       </div>
 
       {/* Word Pool */}
-      <div className="min-h-[60px] p-4 bg-slate-800/50 rounded-xl border-2 border-dashed border-slate-700 flex flex-wrap gap-2 items-center justify-center">
+      <div className="min-h-[60px] p-4 bg-surface-raised/50 rounded-xl border-2 border-dashed border-line flex flex-wrap gap-2 items-center justify-center">
         {allItems.length === 0 ? (
           <span className="text-slate-500 text-sm">Đã xếp hết từ</span>
         ) : (
@@ -134,7 +134,7 @@ export function CategorizationRenderer({
                   ? checkAnswer()
                     ? 'border-emerald-500 bg-emerald-900/10'
                     : 'border-rose-500 bg-rose-900/10'
-                  : 'border-slate-700 bg-slate-800/30'
+                  : 'border-line bg-surface-raised/30'
             }`}
           >
             <div className="text-center font-bold text-slate-300 mb-3 uppercase text-sm tracking-wider">
@@ -180,7 +180,7 @@ export function CategorizationRenderer({
       )}
 
       {disabled && (
-        <div className="mt-4 p-4 rounded-xl bg-slate-800 border border-slate-700">
+        <div className="mt-4 p-4 rounded-xl bg-surface-raised border border-line">
           <h4 className="font-bold text-slate-300 mb-2">Đáp án đúng:</h4>
           <div className="space-y-2">
             {groups.map((group, idx) => (

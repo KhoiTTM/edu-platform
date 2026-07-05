@@ -29,7 +29,7 @@ export function TopNavLinks({ role = "student" }: { role?: string }) {
               key={link.href}
               href={link.href}
               className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl font-black uppercase tracking-wider text-sm transition-all duration-300 border-2
-                ${isActive ? `${link.activeBg} ${link.border} ${link.color} shadow-[0_0_15px_rgba(255,255,255,0.1)]` : `border-transparent text-slate-400 hover:bg-slate-800 hover:text-white`}`}
+                ${isActive ? `${link.activeBg} ${link.border} ${link.color} shadow-[0_0_15px_rgba(255,255,255,0.1)]` : `border-transparent text-slate-400 hover:bg-surface-raised hover:text-white`}`}
             >
               <Icon size={18} className={`${isActive ? '' : 'text-slate-500'}`} />
               {link.label}
@@ -39,7 +39,7 @@ export function TopNavLinks({ role = "student" }: { role?: string }) {
       </nav>
 
       {/* Mobile Bottom */}
-      <nav className="fixed bottom-0 left-0 right-0 z-50 flex border-t-2 border-slate-800/80 bg-[#0f172a]/95 px-2 py-2 md:hidden justify-around pb-safe">
+      <nav className="fixed bottom-0 left-0 right-0 z-50 flex border-t-2 border-line/80 bg-surface/95 px-2 py-2 md:hidden justify-around pb-safe">
         {links.map(link => {
           const isActive = pathname === link.href || (link.href !== "/dashboard" && pathname?.startsWith(link.href));
           const Icon = link.icon;

@@ -129,7 +129,7 @@ export function CrosswordRenderer({
                         ? 'bg-rose-500/20 border-rose-500 text-rose-300'
                         : isRight
                         ? 'bg-emerald-500/20 border-emerald-500 text-emerald-300'
-                        : 'bg-slate-800 border-slate-600 text-white focus:border-sky-400'
+                        : 'bg-surface-raised border-slate-600 text-white focus:border-sky-400'
                     }`}
                   />
                 </div>

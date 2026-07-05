@@ -160,7 +160,7 @@ export default async function LessonPage({ params }: Props) {
         {/* Textbook link/embed */}
         {subjectSlug === "mindset-ielts" ? (
           subjectRow?.textbook_pdf_url && (
-            <div className="rounded-2xl border border-slate-800 bg-slate-900/50 p-5 shadow-xl backdrop-blur-md flex flex-col justify-between">
+            <div className="rounded-2xl border border-line bg-surface/50 p-5 shadow-xl backdrop-blur-md flex flex-col justify-between">
               <div>
                 <h3 className="font-display text-base font-semibold text-white">📖 Sách giáo trình</h3>
                 <p className="mt-1.5 text-xs text-slate-300 font-medium">{subjectRow.textbook_title || "Mindset for IELTS Foundation"}</p>
@@ -193,8 +193,8 @@ export default async function LessonPage({ params }: Props) {
         <div className={subjectSlug === "mindset-ielts" ? "lg:col-span-4 space-y-8" : "space-y-10"}>
           {/* IELTS Supplemental Resources */}
           {subjectSlug === "mindset-ielts" && (
-            <section className="rounded-2xl border border-slate-800 bg-slate-900/50 p-5 shadow-xl backdrop-blur-md space-y-4">
-              <h2 className="font-display text-sm font-semibold text-white border-b border-slate-800 pb-2">
+            <section className="rounded-2xl border border-line bg-surface/50 p-5 shadow-xl backdrop-blur-md space-y-4">
+              <h2 className="font-display text-sm font-semibold text-white border-b border-line pb-2">
                 🔗 Tài nguyên bổ trợ
               </h2>
               
@@ -270,7 +270,7 @@ export default async function LessonPage({ params }: Props) {
             </section>
           ) : (
             subjectSlug !== "mindset-ielts" && (
-              <p className="rounded-2xl border border-dashed border-slate-800 bg-slate-900/50 p-6 text-center text-sm text-slate-400 backdrop-blur-md">
+              <p className="rounded-2xl border border-dashed border-line bg-surface/50 p-6 text-center text-sm text-slate-400 backdrop-blur-md">
                 Chưa có bài tập thực hành cho bài này.
               </p>
             )
@@ -278,7 +278,7 @@ export default async function LessonPage({ params }: Props) {
 
           {/* MATH & ENGLISH GRADE 3: General Optional Quiz link */}
           {subjectSlug !== "mindset-ielts" && Q && (
-            <section className="rounded-2xl border border-slate-800 bg-slate-900/50 p-5 sm:p-6 shadow-xl backdrop-blur-md">
+            <section className="rounded-2xl border border-line bg-surface/50 p-5 sm:p-6 shadow-xl backdrop-blur-md">
               <h2 className="font-display text-lg font-semibold text-white">
                 Kiểm tra tổng hợp (tùy chọn)
               </h2>
@@ -303,18 +303,18 @@ export default async function LessonPage({ params }: Props) {
                 studentName={profile?.display_name || "Học sinh"} 
               />
               
-              <div className="rounded-2xl border border-slate-800 bg-slate-900/50 p-5 shadow-xl backdrop-blur-md">
+              <div className="rounded-2xl border border-line bg-surface/50 p-5 shadow-xl backdrop-blur-md">
                 <h3 className="text-sm font-semibold text-white flex items-center gap-2">
                   <span className="flex h-5 w-5 items-center justify-center rounded-full bg-amber-950 text-amber-400 text-[10px] border border-amber-800/50">P</span>
                   Dành cho Phụ huynh
                 </h3>
                 <div className="mt-3 space-y-3">
                   <label className="flex items-start gap-3 cursor-pointer group">
-                    <input type="checkbox" className="mt-1 h-4 w-4 rounded border-slate-700 bg-slate-800 text-sky-600 focus:ring-sky-500" />
+                    <input type="checkbox" className="mt-1 h-4 w-4 rounded border-line bg-surface-raised text-sky-600 focus:ring-sky-500" />
                     <span className="text-xs text-slate-400 group-hover:text-white transition">Xác nhận con đã bắt đầu học đúng giờ</span>
                   </label>
                   <label className="flex items-start gap-3 cursor-pointer group">
-                    <input type="checkbox" className="mt-1 h-4 w-4 rounded border-slate-700 bg-slate-800 text-sky-600 focus:ring-sky-500" />
+                    <input type="checkbox" className="mt-1 h-4 w-4 rounded border-line bg-surface-raised text-sky-600 focus:ring-sky-500" />
                     <span className="text-xs text-slate-400 group-hover:text-white transition">Kiểm tra Checklist cuối buổi</span>
                   </label>
                 </div>

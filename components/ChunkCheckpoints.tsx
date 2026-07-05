@@ -99,10 +99,10 @@ function CheckpointCard({ checkpoint, index, total, onDone }: CheckpointCardProp
         state === "correct"
           ? "border-emerald-700/60 bg-emerald-950/30"
           : state === "revealed"
-          ? "border-slate-700/60 bg-slate-900/40"
+          ? "border-line/60 bg-surface/40"
           : state === "hinted"
           ? "border-amber-700/50 bg-amber-950/20"
-          : "border-sky-700/40 bg-slate-900/60"
+          : "border-sky-700/40 bg-surface/60"
       }`}
     >
       {/* ── Header ── */}
@@ -184,7 +184,7 @@ function CheckpointCard({ checkpoint, index, total, onDone }: CheckpointCardProp
                       ? "Type the missing word(s)..."
                       : "Type your answer..."
                   }
-                  className="flex-1 rounded-xl border border-slate-700 bg-slate-800/60 px-3.5 py-2 text-sm text-white placeholder:text-slate-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 transition"
+                  className="flex-1 rounded-xl border border-line bg-surface-raised/60 px-3.5 py-2 text-sm text-white placeholder:text-slate-500 focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 transition"
                   autoComplete="off"
                 />
                 <button
@@ -238,7 +238,7 @@ function CheckpointCard({ checkpoint, index, total, onDone }: CheckpointCardProp
 
         {/* ── Revealed state ── */}
         {state === "revealed" && (
-          <div className="rounded-xl bg-slate-800/40 border border-slate-700/40 px-3.5 py-2.5 space-y-1.5 animate-in fade-in duration-300">
+          <div className="rounded-xl bg-surface-raised/40 border border-line/40 px-3.5 py-2.5 space-y-1.5 animate-in fade-in duration-300">
             <div className="flex items-center gap-1.5">
               <Sparkles size={13} className="text-sky-400 shrink-0" />
               <p className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Learning Moment</p>
@@ -308,7 +308,7 @@ export function ChunkCheckpoints({ checkpoints, onComplete }: Props) {
       </div>
 
       {/* ── Progress bar ── */}
-      <div className="h-1 rounded-full bg-slate-800 overflow-hidden">
+      <div className="h-1 rounded-full bg-surface-raised overflow-hidden">
         <div
           className="h-full rounded-full bg-sky-500 transition-all duration-500"
           style={{ width: `${pct}%` }}

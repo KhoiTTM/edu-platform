@@ -57,7 +57,7 @@ export default async function FlowBookPage() {
           const unit = unitMatch?.[1] ?? '3';
 
           const card = (
-            <div className="group flex flex-col gap-3 rounded-2xl border border-slate-800 bg-slate-900/30 hover:border-blue-500/40 hover:bg-slate-900/60 hover:shadow-lg transition-all duration-200 p-5 cursor-pointer h-full">
+            <div className="group flex flex-col gap-3 rounded-2xl border border-line bg-surface/30 hover:border-blue-500/40 hover:bg-surface/60 hover:shadow-lg transition-all duration-200 p-5 cursor-pointer h-full">
               <div className="flex items-center justify-between">
                 <span className="rounded-md bg-blue-950/60 px-2 py-0.5 text-[10px] font-bold text-blue-400 border border-blue-900/40 uppercase">
                   Unit {unit}
@@ -88,7 +88,7 @@ export default async function FlowBookPage() {
       </div>
 
       {lessons.length === 0 && (
-        <div className="rounded-2xl border border-slate-800 bg-slate-900/30 p-10 text-center">
+        <div className="rounded-2xl border border-line bg-surface/30 p-10 text-center">
           <p className="text-slate-400">Chưa có buổi học giáo trình nào được hỗ trợ.</p>
         </div>
       )}

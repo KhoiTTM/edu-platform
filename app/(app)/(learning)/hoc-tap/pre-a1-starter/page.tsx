@@ -42,7 +42,7 @@ export default function PreA1StarterPage() {
   ];
 
   return (
-    <div className="flex min-h-dvh w-full flex-col pb-20 relative text-white bg-[#0f172a]">
+    <div className="flex min-h-dvh w-full flex-col pb-20 relative text-white bg-surface">
       <div className="mx-auto max-w-5xl w-full px-6 py-12 relative z-10">
         <Link
           href="/hoc-tap"
@@ -69,7 +69,7 @@ export default function PreA1StarterPage() {
 
         {/* Books List Grid */}
         <div className="space-y-6">
-          <div className="flex items-center gap-3 border-b border-slate-800 pb-3">
+          <div className="flex items-center gap-3 border-b border-line pb-3">
             <BookOpen className="text-sky-400 h-5 w-5" />
             <h2 className="text-lg font-bold text-white uppercase tracking-wider">Danh Sách Giáo Trình</h2>
           </div>
@@ -81,7 +81,7 @@ export default function PreA1StarterPage() {
                 href={book.path}
                 target={book.isExternal ? "_blank" : undefined}
                 rel={book.isExternal ? "noopener noreferrer" : undefined}
-                className="group flex flex-col justify-between min-h-[260px] rounded-[2.5rem] border-2 border-slate-800 bg-slate-900/40 p-7 backdrop-blur-md hover:border-amber-500/50 hover:-translate-y-1.5 hover:bg-slate-800/60 transition-all duration-300 relative overflow-hidden"
+                className="group flex flex-col justify-between min-h-[260px] rounded-[2.5rem] border-2 border-line bg-surface/40 p-7 backdrop-blur-md hover:border-amber-500/50 hover:-translate-y-1.5 hover:bg-surface-raised/60 transition-all duration-300 relative overflow-hidden"
                 style={{ boxShadow: `0 8px 30px ${book.glowColor}` }}
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/3 blur-2xl group-hover:bg-white/10 transition-colors"></div>
@@ -90,7 +90,7 @@ export default function PreA1StarterPage() {
                   <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${book.coverColor} flex items-center justify-center text-3xl shadow-lg`}>
                     {book.icon}
                   </div>
-                  <span className="rounded-full bg-slate-800/80 px-3 py-1 text-[10px] font-black text-slate-400 border border-slate-700 uppercase whitespace-nowrap">
+                  <span className="rounded-full bg-surface-raised/80 px-3 py-1 text-[10px] font-black text-slate-400 border border-line uppercase whitespace-nowrap">
                     {book.totalPages} Trang
                   </span>
                 </div>
@@ -103,7 +103,7 @@ export default function PreA1StarterPage() {
                     {book.description}
                   </p>
                   
-                  <div className="flex items-center gap-2 mt-5 pt-4 border-t border-slate-800/60">
+                  <div className="flex items-center gap-2 mt-5 pt-4 border-t border-line/60">
                     <span className="text-[10px] font-black uppercase tracking-widest text-sky-400 group-hover:text-sky-300">
                       Mở sách học ngay
                     </span>

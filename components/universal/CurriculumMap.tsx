@@ -464,7 +464,7 @@ export function CurriculumMap({ nodes, subjectSlug, completedNodes = [] }: Curri
 
                     {/* Permanent Lesson Title Label on the side - aligned for 900px board */}
                     <Link href={`/learn/${subjectSlug}/${node.slug}`} className="block">
-                      <div className={`absolute top-1/2 -translate-y-1/2 bg-slate-900/95 border border-slate-700/80 hover:border-sky-500 text-slate-200 hover:text-white px-3 py-1.5 rounded-xl text-[10px] font-black shadow-lg max-w-[200px] truncate whitespace-nowrap z-20 ${pos.x < 450 ? 'left-16 text-left origin-left' : 'right-16 text-right origin-right'} transition-all cursor-pointer`}>
+                      <div className={`absolute top-1/2 -translate-y-1/2 bg-surface/95 border border-line/80 hover:border-sky-500 text-slate-200 hover:text-white px-3 py-1.5 rounded-xl text-[10px] font-black shadow-lg max-w-[200px] truncate whitespace-nowrap z-20 ${pos.x < 450 ? 'left-16 text-left origin-left' : 'right-16 text-right origin-right'} transition-all cursor-pointer`}>
                         {node.title.replace(/^Buổi \d+:\s*/, '')}
                       </div>
                     </Link>

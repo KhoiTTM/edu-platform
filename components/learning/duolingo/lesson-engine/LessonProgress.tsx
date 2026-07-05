@@ -22,9 +22,9 @@ export const LessonProgress: React.FC<Props> = ({
   const progressPercent = totalSteps > 0 ? (currentStepIndex / totalSteps) * 100 : 0;
 
   return (
-    <div className="sticky top-0 z-50 flex items-center justify-between gap-4 px-4 py-4 bg-white dark:bg-slate-900 border-b-2 border-slate-200 dark:border-slate-800">
+    <div className="sticky top-0 z-50 flex items-center justify-between gap-4 px-4 py-4 bg-surface border-b-2 border-line">
       {/* Progress Bar Container */}
-      <div className="flex-1 h-4 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden relative">
+      <div className="flex-1 h-4 bg-surface-raised rounded-full overflow-hidden relative">
         <div 
           className="absolute top-0 left-0 h-full bg-green-500 transition-all duration-300 rounded-full"
           style={{ width: `${progressPercent}%` }}

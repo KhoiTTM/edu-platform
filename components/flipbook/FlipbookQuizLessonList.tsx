@@ -64,7 +64,7 @@ export function FlipbookQuizLessonList({
             href={sourceBookUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-cyan-400 text-xs font-bold transition-colors border border-slate-700"
+            className="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-raised hover:bg-slate-700 text-cyan-400 text-xs font-bold transition-colors border border-line"
           >
             <BookOpen size={14} />
             Xem sách gốc
@@ -78,7 +78,7 @@ export function FlipbookQuizLessonList({
           <Link
             key={lesson.bai}
             href={`/flipbooks/${bookSlug}/quiz/${lesson.bai}`}
-            className="flex items-center justify-between p-4 rounded-xl bg-slate-900 border border-slate-800 hover:border-cyan-500/50 hover:bg-slate-800/80 transition-all group"
+            className="flex items-center justify-between p-4 rounded-xl bg-surface border border-line hover:border-cyan-500/50 hover:bg-surface-raised/80 transition-all group"
           >
             <div className="flex items-center gap-4">
               <div className="w-10 h-10 shrink-0 rounded-lg bg-cyan-500/10 text-cyan-400 font-black flex items-center justify-center">

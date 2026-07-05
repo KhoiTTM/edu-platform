@@ -20,7 +20,7 @@ export function AriaConversationBubble({
       </div>
       
       <div className="space-y-2 max-w-[85%]">
-        <div className="bg-slate-800/80 border border-slate-700 text-white p-4 rounded-2xl rounded-tl-none shadow-sm relative overflow-hidden group">
+        <div className="bg-surface-raised/80 border border-line text-white p-4 rounded-2xl rounded-tl-none shadow-sm relative overflow-hidden group">
           <div className="absolute inset-0 bg-gradient-to-br from-sky-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
           
           {isTyping ? (

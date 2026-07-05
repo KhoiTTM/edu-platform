@@ -41,12 +41,12 @@ export function FillBlankRenderer({
           onChange={(e) => setInputValue(e.target.value)}
           disabled={disabled}
           placeholder="Nhập câu trả lời của bạn..."
-          className={`w-full bg-slate-900/50 border-2 rounded-2xl px-6 py-4 text-white text-lg transition-all outline-none focus:ring-4 focus:ring-sky-500/20 ${
+          className={`w-full bg-surface/50 border-2 rounded-2xl px-6 py-4 text-white text-lg transition-all outline-none focus:ring-4 focus:ring-sky-500/20 ${
             disabled
               ? inputValue.trim().toLowerCase() === correctAnswer.toLowerCase()
                 ? "border-emerald-500 bg-emerald-500/10"
                 : "border-rose-500 bg-rose-500/10"
-              : "border-slate-800 focus:border-sky-500"
+              : "border-line focus:border-sky-500"
           }`}
         />
 

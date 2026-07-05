@@ -59,8 +59,8 @@ export function SpeakingInputArea({
           onChange={(e) => setText(e.target.value)}
           disabled={isDisabled}
           placeholder={isDisabled ? "Aria is responding..." : isListening ? "Listening... speak now 🎤" : placeholder}
-          className={`w-full min-h-[100px] bg-slate-900/50 border ${
-            isListening ? "border-sky-500 ring-2 ring-sky-500/20" : isDisabled ? "border-slate-800 opacity-50" : "border-slate-700 hover:border-slate-600"
+          className={`w-full min-h-[100px] bg-surface/50 border ${
+            isListening ? "border-sky-500 ring-2 ring-sky-500/20" : isDisabled ? "border-line opacity-50" : "border-line hover:border-slate-600"
           } rounded-2xl p-4 pr-12 text-white placeholder:text-slate-500 focus:outline-none focus:border-sky-500 transition-all resize-none`}
           onKeyDown={(e) => {
             if (e.key === "Enter" && !e.shiftKey) {
@@ -86,7 +86,7 @@ export function SpeakingInputArea({
             className={`p-3 rounded-full transition-all ${
               isListening 
                 ? "bg-rose-500 text-white animate-pulse" 
-                : "bg-slate-800 text-sky-400 hover:bg-slate-700 disabled:opacity-20"
+                : "bg-surface-raised text-sky-400 hover:bg-slate-700 disabled:opacity-20"
             }`}
           >
             {isListening ? <Square size={20} fill="currentColor" /> : <Mic size={20} />}

@@ -61,11 +61,11 @@ export function SettingsForm({ initialGrades }: SettingsFormProps) {
               className={`relative flex flex-col items-start p-6 rounded-[2rem] border-2 transition-all text-left group overflow-hidden ${
                 isSelected
                   ? "bg-sky-500/20 border-sky-400 shadow-[0_0_20px_rgba(56,189,248,0.2)]"
-                  : "bg-slate-900/40 border-slate-800 hover:border-slate-700"
+                  : "bg-surface/40 border-line hover:border-line"
               }`}
             >
               <div className="flex items-center justify-between w-full mb-2">
-                <div className={`p-2 rounded-xl ${isSelected ? "bg-sky-500 text-white" : "bg-slate-800 text-slate-400"}`}>
+                <div className={`p-2 rounded-xl ${isSelected ? "bg-sky-500 text-white" : "bg-surface-raised text-slate-400"}`}>
                   <GraduationCap size={24} />
                 </div>
                 {isSelected && (

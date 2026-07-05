@@ -207,7 +207,7 @@ export default async function DashboardPage() {
         <div className="lg:col-span-8 flex flex-col gap-4 min-h-0 h-full">
 
           {/* Continue Learning Section */}
-          <section className="bg-slate-900/60 p-4 rounded-2xl border-2 border-emerald-500/30 shadow-md backdrop-blur-xl flex flex-col shrink-0 flex-1 min-h-0">
+          <section className="bg-surface/60 p-4 rounded-2xl border-2 border-emerald-500/30 shadow-md backdrop-blur-xl flex flex-col shrink-0 flex-1 min-h-0">
             <h2 className="font-['Outfit'] text-xs font-black text-emerald-400 uppercase tracking-widest flex items-center gap-2 mb-3 shrink-0">
               <Target size={14} /> Tiến độ học tập của bạn
             </h2>
@@ -216,7 +216,7 @@ export default async function DashboardPage() {
               
               {/* Group 1: Bài Học (Lessons) */}
               <div className="flex flex-col gap-2 min-h-0">
-                <h3 className="text-xs font-black text-sky-400 uppercase tracking-widest flex items-center gap-1.5 pb-1 border-b border-slate-800/80 shrink-0">
+                <h3 className="text-xs font-black text-sky-400 uppercase tracking-widest flex items-center gap-1.5 pb-1 border-b border-line/80 shrink-0">
                   📖 Bài Học (Lessons)
                 </h3>
                 <div className="flex flex-col gap-2 overflow-y-auto pr-1">
@@ -224,7 +224,7 @@ export default async function DashboardPage() {
                     <Link
                       key={item.slug}
                       href={item.url}
-                      className="rounded-xl bg-slate-950/60 p-2.5 border border-slate-800 hover:border-sky-500/30 hover:bg-slate-900/60 shadow-inner flex items-center justify-between gap-3 group transition-all"
+                      className="rounded-xl bg-slate-950/60 p-2.5 border border-line hover:border-sky-500/30 hover:bg-surface/60 shadow-inner flex items-center justify-between gap-3 group transition-all"
                     >
                       <div className="min-w-0 flex-1">
                         <div className="flex items-center gap-1.5">
@@ -243,7 +243,7 @@ export default async function DashboardPage() {
 
               {/* Group 2: Bài Luyện Tập (Practice) */}
               <div className="flex flex-col gap-2 min-h-0">
-                <h3 className="text-xs font-black text-violet-400 uppercase tracking-widest flex items-center gap-1.5 pb-1 border-b border-slate-800/80 shrink-0">
+                <h3 className="text-xs font-black text-violet-400 uppercase tracking-widest flex items-center gap-1.5 pb-1 border-b border-line/80 shrink-0">
                   📝 Bài Luyện Tập (Practice)
                 </h3>
                 <div className="flex flex-col gap-2 overflow-y-auto pr-1">
@@ -251,7 +251,7 @@ export default async function DashboardPage() {
                     <Link
                       key={item.slug}
                       href={item.url}
-                      className="rounded-xl bg-slate-950/60 p-2.5 border border-slate-800 hover:border-violet-500/30 hover:bg-slate-900/60 shadow-inner flex items-center justify-between gap-3 group transition-all"
+                      className="rounded-xl bg-slate-950/60 p-2.5 border border-line hover:border-violet-500/30 hover:bg-surface/60 shadow-inner flex items-center justify-between gap-3 group transition-all"
                     >
                       <div className="min-w-0 flex-1">
                         <div className="flex items-center gap-1.5">
@@ -280,7 +280,7 @@ export default async function DashboardPage() {
 
         {/* Right Column - Nhiệm vụ */}
         <div className="lg:col-span-4 flex flex-col min-h-0 h-full">
-          <aside className="flex flex-col rounded-[1.5rem] border-2 border-slate-800 bg-slate-900/50 p-4 shadow-lg backdrop-blur-xl flex-1 min-h-0">
+          <aside className="flex flex-col rounded-[1.5rem] border-2 border-line bg-surface/50 p-4 shadow-lg backdrop-blur-xl flex-1 min-h-0">
             
             <div className="shrink-0 mb-3">
               <h2 className="font-['Outfit'] text-sm font-black text-white uppercase tracking-wider flex items-center gap-2">
@@ -295,7 +295,7 @@ export default async function DashboardPage() {
             {/* Real daily tasks */}
             <div className="flex-1 overflow-y-auto pr-1 custom-scrollbar space-y-4">
               {displayTasks.length === 0 ? (
-                <div className="rounded-xl border border-dashed border-slate-700 p-5 text-center mt-2">
+                <div className="rounded-xl border border-dashed border-line p-5 text-center mt-2">
                   <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Không có nhiệm vụ</p>
                   <p className="text-[9px] text-slate-600 mt-1">Phụ huynh chưa giao bài hôm nay ✨</p>
                 </div>
@@ -340,7 +340,7 @@ export default async function DashboardPage() {
                             href={isDone ? "#" : taskUrl}
                             className={`flex items-center gap-2.5 rounded-xl p-2.5 border transition-all group ${
                               isDone
-                                ? "bg-slate-950/30 border-slate-800/50 opacity-60 cursor-default pointer-events-none"
+                                ? "bg-slate-950/30 border-line/50 opacity-60 cursor-default pointer-events-none"
                                 : isToday
                                 ? "bg-yellow-500/5 border-yellow-500/30 hover:border-yellow-400 hover:bg-yellow-500/10 shadow-[0_0_10px_rgba(234,179,8,0.1)]"
                                 : "bg-orange-500/5 border-orange-500/20 hover:border-orange-400 hover:bg-orange-500/10"

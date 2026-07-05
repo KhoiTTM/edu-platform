@@ -85,7 +85,7 @@ function HistorySection({ students }: { students: StudentProfile[] }) {
             className={`flex items-center gap-2 px-3 py-1.5 rounded-xl border-2 font-bold text-xs transition-all ${
               selectedStudentId === s.id
                 ? "border-indigo-500 bg-indigo-500/10 text-indigo-300"
-                : "border-slate-700 bg-slate-800/50 text-slate-400 hover:border-slate-600 hover:text-white"
+                : "border-line bg-surface-raised/50 text-slate-400 hover:border-slate-600 hover:text-white"
             }`}
           >
             <div className="w-5 h-5 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-white text-[9px] font-black">
@@ -150,7 +150,7 @@ function TasksSection({ students }: { students: StudentProfile[] }) {
 
       {/* Wizard or button */}
       {showWizard ? (
-        <div className="rounded-2xl bg-slate-900/80 border-2 border-indigo-500/30 shadow-[0_0_30px_rgba(99,102,241,0.15)] p-5">
+        <div className="rounded-2xl bg-surface/80 border-2 border-indigo-500/30 shadow-[0_0_30px_rgba(99,102,241,0.15)] p-5">
           <TaskWizard
             students={students}
             subjects={SUBJECTS}
@@ -254,13 +254,13 @@ export default function ParentPage() {
       </div>
 
       {/* Tab switcher */}
-      <div className="flex gap-1.5 bg-slate-900/60 border-2 border-slate-800 rounded-2xl p-1.5">
+      <div className="flex gap-1.5 bg-surface/60 border-2 border-line rounded-2xl p-1.5">
         <button
           onClick={() => setTab("tasks")}
           className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl font-black text-xs uppercase tracking-wider transition-all ${
             tab === "tasks"
               ? "bg-indigo-600 text-white border-2 border-indigo-400 shadow-[0_3px_0_rgba(55,48,163,1)]"
-              : "text-slate-400 hover:text-white hover:bg-slate-800 border-2 border-transparent"
+              : "text-slate-400 hover:text-white hover:bg-surface-raised border-2 border-transparent"
           }`}
         >
           <Target size={14} />
@@ -271,7 +271,7 @@ export default function ParentPage() {
           className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl font-black text-xs uppercase tracking-wider transition-all ${
             tab === "history"
               ? "bg-indigo-600 text-white border-2 border-indigo-400 shadow-[0_3px_0_rgba(55,48,163,1)]"
-              : "text-slate-400 hover:text-white hover:bg-slate-800 border-2 border-transparent"
+              : "text-slate-400 hover:text-white hover:bg-surface-raised border-2 border-transparent"
           }`}
         >
           <History size={14} />
@@ -282,7 +282,7 @@ export default function ParentPage() {
           className={`flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl font-black text-xs uppercase tracking-wider transition-all ${
             tab === "exambank"
               ? "bg-indigo-600 text-white border-2 border-indigo-400 shadow-[0_3px_0_rgba(55,48,163,1)]"
-              : "text-slate-400 hover:text-white hover:bg-slate-800 border-2 border-transparent"
+              : "text-slate-400 hover:text-white hover:bg-surface-raised border-2 border-transparent"
           }`}
         >
           <Database size={14} />

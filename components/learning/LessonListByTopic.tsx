@@ -26,7 +26,7 @@ export function LessonListByTopic({ lessons }: Props) {
               <li key={lesson.id}>
                 <Link
                   href={`/lessons/${lesson.id}`}
-                  className="group relative flex min-h-[64px] flex-col rounded-2xl border-2 border-slate-700 bg-slate-800 px-5 py-4 shadow-[0_6px_0_#334155] transition-all duration-150 hover:bg-slate-700 active:translate-y-[6px] active:shadow-none sm:flex-row sm:items-center sm:justify-between"
+                  className="group relative flex min-h-[64px] flex-col rounded-2xl border-2 border-line bg-surface-raised px-5 py-4 shadow-[0_6px_0_#334155] transition-all duration-150 hover:bg-slate-700 active:translate-y-[6px] active:shadow-none sm:flex-row sm:items-center sm:justify-between"
                 >
                   <div className="min-w-0 flex-1">
                     <div className="flex flex-wrap items-center gap-2">
@@ -40,7 +40,7 @@ export function LessonListByTopic({ lessons }: Props) {
                           Video
                         </span>
                       ) : (
-                        <span className="rounded-full bg-slate-800 px-2 py-0.5 text-[10px] font-semibold uppercase text-slate-400 border border-slate-700">
+                        <span className="rounded-full bg-surface-raised px-2 py-0.5 text-[10px] font-semibold uppercase text-slate-400 border border-line">
                           Sách
                         </span>
                       )}

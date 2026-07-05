@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #0f172a; /* Deep Slate Blue */
-  --foreground: #f8fafc; /* Light Slate */
-  --card: #1e293b;
-  --border: #334155;
-  --accent: #38bdf8;
+  /* R G B triplets (no rgb() wrapper) so Tailwind's opacity modifiers
+     (bg-surface/80, text-ink/50, ...) work via rgb(var(--x) / <alpha-value>). */
+  --background: 15 23 42; /* #0f172a Deep Slate Blue */
+  --foreground: 248 250 252; /* #f8fafc Light Slate */
+  --foreground-muted: 148 163 184; /* #94a3b8 Slate 400 */
+  --card: 30 41 59; /* #1e293b */
+  --border: 51 65 85; /* #334155 */
+  --accent: 56 189 248; /* #38bdf8 */
 }
 
 html {
@@ -15,8 +18,8 @@ html {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: rgb(var(--foreground));
+  background: rgb(var(--background));
 }
 
 @layer utilities {

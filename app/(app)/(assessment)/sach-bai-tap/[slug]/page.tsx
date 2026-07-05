@@ -95,7 +95,7 @@ export default function BookPracticePage() {
           href={data.book.flipbook_url}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 mt-2 px-4 py-2 rounded-xl bg-slate-800 border border-slate-700 hover:bg-slate-700 font-bold text-sm transition-all"
+          className="inline-flex items-center gap-2 mt-2 px-4 py-2 rounded-xl bg-surface-raised border border-line hover:bg-slate-700 font-bold text-sm transition-all"
         >
           📖 Mở toàn bộ Sách bài tập (bản gốc)
         </a>
@@ -111,7 +111,7 @@ export default function BookPracticePage() {
             <button
               key={u.unit}
               onClick={() => setActiveUnit(u)}
-              className="flex items-center justify-between gap-3 p-4 rounded-2xl border border-slate-800 bg-slate-900/40 hover:bg-slate-800/60 hover:border-indigo-500/40 transition-all text-left"
+              className="flex items-center justify-between gap-3 p-4 rounded-2xl border border-line bg-surface/40 hover:bg-surface-raised/60 hover:border-indigo-500/40 transition-all text-left"
             >
               <div>
                 <p className="font-black">{u.title}</p>

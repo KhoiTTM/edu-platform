@@ -167,7 +167,7 @@ export function FlipbookQuizClient({
     return (
       <div className="max-w-2xl mx-auto">
         {breadcrumbNav}
-        <div className="bg-slate-900 rounded-2xl p-6 flex flex-col items-center justify-center border border-slate-800">
+        <div className="bg-surface rounded-2xl p-6 flex flex-col items-center justify-center border border-line">
           <CheckCircle size={64} className="text-emerald-500 mb-6" />
           <h2 className="text-3xl font-black text-white mb-2">Hoàn Thành!</h2>
           <p className="text-slate-400 mb-2 text-lg">Bạn đã trả lời {answeredCount} / {questions.length} câu hỏi</p>
@@ -186,7 +186,7 @@ export function FlipbookQuizClient({
             {breadcrumbs.length > 0 && (
               <Link
                 href={breadcrumbs[breadcrumbs.length - 1].href}
-                className="px-6 py-3 rounded-xl border border-slate-700 text-slate-300 font-bold hover:bg-slate-800 transition-colors"
+                className="px-6 py-3 rounded-xl border border-line text-slate-300 font-bold hover:bg-surface-raised transition-colors"
               >
                 Chọn bài khác
               </Link>
@@ -201,7 +201,7 @@ export function FlipbookQuizClient({
   const selectedIdx = answers[current.id] !== undefined ? Number(answers[current.id]) : null;
 
   return (
-    <div className="h-full bg-slate-900 rounded-2xl p-6 border border-slate-800 flex flex-col max-w-2xl mx-auto">
+    <div className="h-full bg-surface rounded-2xl p-6 border border-line flex flex-col max-w-2xl mx-auto">
       <div className="mb-6">
         {breadcrumbNav}
         <div className="flex items-center justify-between gap-3 mb-3">
@@ -214,14 +214,14 @@ export function FlipbookQuizClient({
               href={sourceBookUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-cyan-400 text-xs font-bold transition-colors border border-slate-700"
+              className="shrink-0 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-raised hover:bg-slate-700 text-cyan-400 text-xs font-bold transition-colors border border-line"
             >
               <BookOpen size={14} />
               Xem trang sách gốc
             </a>
           )}
         </div>
-        <div className="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
+        <div className="w-full bg-surface-raised rounded-full h-2 overflow-hidden">
           <div
             className="bg-gradient-to-r from-cyan-500 to-blue-600 h-full transition-all duration-300"
             style={{ width: `${progressPercent}%` }}
@@ -233,7 +233,7 @@ export function FlipbookQuizClient({
       </div>
 
       <div className="flex-1 overflow-y-auto mb-6">
-        <div className="bg-slate-800/50 rounded-xl p-5 border border-slate-700">
+        <div className="bg-surface-raised/50 rounded-xl p-5 border border-line">
           <p className="text-white mb-6 leading-relaxed whitespace-pre-wrap">{current.stem}</p>
 
           {current.type === "multiple_choice" && current.options && (
@@ -257,7 +257,7 @@ export function FlipbookQuizClient({
                         : "bg-slate-700 border-transparent hover:bg-slate-600"
                     )}
                   >
-                    <span className="w-6 h-6 shrink-0 rounded-full bg-slate-900/40 flex items-center justify-center text-xs font-bold text-white">
+                    <span className="w-6 h-6 shrink-0 rounded-full bg-surface/40 flex items-center justify-center text-xs font-bold text-white">
                       {String.fromCharCode(65 + idx)}
                     </span>
                     <span className="text-white text-sm flex-1">{option}</span>
@@ -309,7 +309,7 @@ export function FlipbookQuizClient({
         <button
           onClick={handlePrev}
           disabled={currentIdx === 0}
-          className="flex-1 px-4 py-3 rounded-xl border border-slate-700 text-slate-300 font-bold hover:bg-slate-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          className="flex-1 px-4 py-3 rounded-xl border border-line text-slate-300 font-bold hover:bg-surface-raised disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
         >
           ← Câu Trước
         </button>

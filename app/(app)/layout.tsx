@@ -41,7 +41,7 @@ export default async function StudentLayout({
       <SpaceBackground />
 
       {/* Top Navigation Bar */}
-      <header className="sticky top-0 z-40 flex items-center justify-between border-b-2 border-slate-800/80 bg-[#0f172a]/80 backdrop-blur-md px-4 md:px-8 py-3 shadow-[0_4px_30px_rgba(0,0,0,0.5)]">
+      <header className="sticky top-0 z-40 flex items-center justify-between border-b-2 border-line/80 bg-surface/80 backdrop-blur-md px-4 md:px-8 py-3 shadow-[0_4px_30px_rgba(0,0,0,0.5)]">
         
         {/* Left: Brand / Logo */}
         <Link href="/dashboard" className="flex items-center gap-3">
@@ -76,12 +76,12 @@ export default async function StudentLayout({
                 </div>
             </div>
 
-            <div className="flex items-center gap-3 border-l-2 border-slate-700/50 pl-3 md:pl-4">
+            <div className="flex items-center gap-3 border-l-2 border-line/50 pl-3 md:pl-4">
                 <div className="hidden sm:block text-right">
                     <p className="truncate font-black text-white uppercase tracking-tight text-sm max-w-[100px]">{name}</p>
                     <p className="text-[10px] font-bold text-sky-400 uppercase tracking-widest">Lớp {grade}</p>
                 </div>
-                <SignOutButton className="rounded-xl border-2 border-slate-700 bg-slate-800/80 px-3 py-2 text-[10px] font-black text-slate-300 uppercase tracking-widest shadow-[0_3px_0_#1e293b] active:translate-y-[2px] active:shadow-none transition-all hover:bg-slate-700 hover:text-white" />
+                <SignOutButton className="rounded-xl border-2 border-line bg-surface-raised/80 px-3 py-2 text-[10px] font-black text-slate-300 uppercase tracking-widest shadow-[0_3px_0_#1e293b] active:translate-y-[2px] active:shadow-none transition-all hover:bg-slate-700 hover:text-white" />
             </div>
         </div>
       </header>

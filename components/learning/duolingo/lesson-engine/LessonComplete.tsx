@@ -66,10 +66,10 @@ export const LessonComplete: React.FC<LessonCompleteProps> = ({ isVictory, xp = 
         </div>
         
         <div className="space-y-2">
-          <h2 className="text-4xl font-black text-slate-800 dark:text-white tracking-tight">
+          <h2 className="text-4xl font-black text-ink tracking-tight">
             {isVictory ? 'Mission Accomplished! 🎉' : 'Game Over'}
           </h2>
-          <p className="text-lg font-bold text-slate-500 dark:text-slate-400">
+          <p className="text-lg font-bold text-ink-muted">
             {isVictory ? 'You successfully completed the lesson.' : 'You ran out of hearts.'}
           </p>
         </div>
@@ -90,7 +90,7 @@ export const LessonComplete: React.FC<LessonCompleteProps> = ({ isVictory, xp = 
         {!isVictory && (
           <Link
             href="/luyen-tap/review"
-            className="w-full px-8 py-4 bg-white dark:bg-slate-800 text-purple-600 dark:text-purple-400 rounded-3xl font-black text-xl transition-all shadow-[0_6px_0_rgb(226,232,240)] dark:shadow-[0_6px_0_rgb(30,41,59)] border-2 border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-700 active:translate-y-1 active:shadow-none flex items-center justify-center gap-2"
+            className="w-full px-8 py-4 bg-surface-raised text-purple-400 rounded-3xl font-black text-xl transition-all shadow-[0_6px_0_rgb(30,41,59)] border-2 border-line hover:bg-slate-700 active:translate-y-1 active:shadow-none flex items-center justify-center gap-2"
           >
             RESTORE HEARTS ❤️
           </Link>

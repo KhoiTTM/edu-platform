@@ -52,13 +52,13 @@ function QuestionCard({ q }: { q: ExamBankQuestion }) {
   const correctAns = !isMC ? String(m.correct_answer ?? "") : undefined;
 
   return (
-    <div className="rounded-xl border border-slate-800 bg-slate-950/40 p-4">
+    <div className="rounded-xl border border-line bg-slate-950/40 p-4">
       <div className="flex items-start justify-between gap-3 mb-2">
         <p className="text-sm font-bold text-slate-100 leading-relaxed whitespace-pre-wrap">
           <span className="text-cyan-400 mr-1.5">{q.order_index + 1}.</span>
           {m.question || <span className="italic text-slate-500">(thiếu nội dung)</span>}
         </p>
-        <span className="shrink-0 text-[9px] font-black uppercase tracking-wider px-2 py-1 rounded-md bg-slate-800 text-slate-400 border border-slate-700">
+        <span className="shrink-0 text-[9px] font-black uppercase tracking-wider px-2 py-1 rounded-md bg-surface-raised text-slate-400 border border-line">
           {isMC ? "Trắc nghiệm" : "Điền"}
         </span>
       </div>
@@ -79,7 +79,7 @@ function QuestionCard({ q }: { q: ExamBankQuestion }) {
               className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-xs font-bold border ${
                 correct
                   ? "bg-emerald-500/10 border-emerald-500/40 text-emerald-300"
-                  : "bg-slate-900/40 border-slate-800 text-slate-300"
+                  : "bg-surface/40 border-line text-slate-300"
               }`}
             >
               {correct && <CheckCircle2 size={12} className="shrink-0 text-emerald-400" />}
@@ -101,10 +101,10 @@ function QuestionCard({ q }: { q: ExamBankQuestion }) {
 function ExamRow({ exam }: { exam: ExamBankExam }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="rounded-xl border border-slate-800 bg-slate-900/40 overflow-hidden">
+    <div className="rounded-xl border border-line bg-surface/40 overflow-hidden">
       <button
         onClick={() => setOpen((o) => !o)}
-        className="w-full flex items-center justify-between gap-3 px-4 py-3 hover:bg-slate-800/40 transition-colors"
+        className="w-full flex items-center justify-between gap-3 px-4 py-3 hover:bg-surface-raised/40 transition-colors"
       >
         <div className="flex items-center gap-2.5 text-left">
           <span className="w-7 h-7 rounded-lg bg-cyan-500/15 border border-cyan-500/30 flex items-center justify-center text-cyan-300 text-xs font-black shrink-0">
@@ -113,7 +113,7 @@ function ExamRow({ exam }: { exam: ExamBankExam }) {
           <span className="text-sm font-bold text-slate-100">{exam.title}</span>
         </div>
         <div className="flex items-center gap-2 shrink-0">
-          <span className="text-[10px] font-black text-slate-400 px-2 py-0.5 rounded-full bg-slate-800 border border-slate-700">
+          <span className="text-[10px] font-black text-slate-400 px-2 py-0.5 rounded-full bg-surface-raised border border-line">
             {exam.questions.length || exam.total_questions} câu
           </span>
           {open ? <ChevronUp size={16} className="text-slate-400" /> : <ChevronDown size={16} className="text-slate-400" />}
@@ -192,7 +192,7 @@ export function ExamBankExplorer({ subjects }: { subjects: SubjectOpt[] }) {
   return (
     <div className="flex flex-col gap-4">
       {/* Filters */}
-      <div className="rounded-2xl bg-slate-900/60 border-2 border-slate-800 p-4 flex flex-col gap-3">
+      <div className="rounded-2xl bg-surface/60 border-2 border-line p-4 flex flex-col gap-3">
         {/* Subject */}
         <div>
           <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Môn học</p>
@@ -204,7 +204,7 @@ export function ExamBankExplorer({ subjects }: { subjects: SubjectOpt[] }) {
                 className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border-2 font-bold text-xs transition-all ${
                   subject === s.slug
                     ? "border-indigo-500 bg-indigo-500/10 text-indigo-300"
-                    : "border-slate-700 bg-slate-800/50 text-slate-400 hover:border-slate-600 hover:text-white"
+                    : "border-line bg-surface-raised/50 text-slate-400 hover:border-slate-600 hover:text-white"
                 }`}
               >
                 <span>{s.icon}</span>
@@ -225,7 +225,7 @@ export function ExamBankExplorer({ subjects }: { subjects: SubjectOpt[] }) {
                 className={`px-3 py-1.5 rounded-xl border-2 font-bold text-xs transition-all ${
                   grade === g
                     ? "border-cyan-500 bg-cyan-500/10 text-cyan-300"
-                    : "border-slate-700 bg-slate-800/50 text-slate-400 hover:border-slate-600 hover:text-white"
+                    : "border-line bg-surface-raised/50 text-slate-400 hover:border-slate-600 hover:text-white"
                 }`}
               >
                 Lớp {g}
@@ -253,7 +253,7 @@ export function ExamBankExplorer({ subjects }: { subjects: SubjectOpt[] }) {
                   className={`px-3 py-1.5 rounded-xl border-2 font-bold text-xs transition-all ${
                     typeFilter === f.key
                       ? "border-fuchsia-500 bg-fuchsia-500/10 text-fuchsia-300"
-                      : "border-slate-700 bg-slate-800/50 text-slate-400 hover:border-slate-600 hover:text-white"
+                      : "border-line bg-surface-raised/50 text-slate-400 hover:border-slate-600 hover:text-white"
                   }`}
                 >
                   {f.label}
@@ -275,7 +275,7 @@ export function ExamBankExplorer({ subjects }: { subjects: SubjectOpt[] }) {
                 className={`px-3 py-1.5 rounded-xl border-2 font-bold text-xs transition-all ${
                   collectionFilter === "all"
                     ? "border-violet-500 bg-violet-500/10 text-violet-300"
-                    : "border-slate-700 bg-slate-800/50 text-slate-400 hover:border-slate-600 hover:text-white"
+                    : "border-line bg-surface-raised/50 text-slate-400 hover:border-slate-600 hover:text-white"
                 }`}
               >
                 Tất cả
@@ -287,7 +287,7 @@ export function ExamBankExplorer({ subjects }: { subjects: SubjectOpt[] }) {
                   className={`px-3 py-1.5 rounded-xl border-2 font-bold text-xs transition-all ${
                     collectionFilter === c.id
                       ? "border-violet-500 bg-violet-500/10 text-violet-300"
-                      : "border-slate-700 bg-slate-800/50 text-slate-400 hover:border-slate-600 hover:text-white"
+                      : "border-line bg-surface-raised/50 text-slate-400 hover:border-slate-600 hover:text-white"
                   }`}
                 >
                   {c.title}

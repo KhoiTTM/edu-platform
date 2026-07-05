@@ -93,7 +93,7 @@ export default async function HocTapPage() {
   };
 
   return (
-    <div className="flex min-h-dvh w-full flex-col pb-20 relative text-white bg-[#0f172a]">
+    <div className="flex min-h-dvh w-full flex-col pb-20 relative text-white bg-surface">
       {/* Cosmic Blurry Nebulas */}
       <div className="absolute top-20 left-10 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-600/10 rounded-full blur-3xl pointer-events-none" />
@@ -106,7 +106,7 @@ export default async function HocTapPage() {
             ← Bảng điều khiển
           </Link>
 
-          <header className="rounded-3xl border border-slate-800/80 bg-gradient-to-br from-indigo-950/30 via-slate-900/60 to-slate-950 py-4 px-6 shadow-xl backdrop-blur-md mb-8 relative overflow-hidden flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <header className="rounded-3xl border border-line/80 bg-gradient-to-br from-indigo-950/30 via-slate-900/60 to-slate-950 py-4 px-6 shadow-xl backdrop-blur-md mb-8 relative overflow-hidden flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div className="absolute right-0 top-0 -mt-6 -mr-6 h-24 w-24 bg-cyan-500/5 blur-2xl pointer-events-none" />
             <div className="relative text-left">
                 <span className="inline-flex items-center gap-1 rounded-full bg-cyan-500/10 px-2 py-0.5 text-[9px] font-semibold text-cyan-400 border border-cyan-500/20 uppercase tracking-widest">
@@ -131,7 +131,7 @@ export default async function HocTapPage() {
 
               return (
                 <section key={grade} className="space-y-6">
-                  <div className="flex items-center gap-4 border-b border-slate-800/80 pb-3">
+                  <div className="flex items-center gap-4 border-b border-line/80 pb-3">
                     <div className={`p-2 rounded-xl bg-white/5 border ${isUniversal ? 'border-fuchsia-500/30' : 'border-sky-500/30'} backdrop-blur-md`}>
                       {sectionIcon}
                     </div>
@@ -185,7 +185,7 @@ export default async function HocTapPage() {
           </div>
 
           {subjectsByGrade.every(g => g.subjects.length === 0) && (
-             <div className="mt-20 rounded-[3rem] border-2 border-dashed border-slate-700 bg-slate-900/40 p-16 text-center text-slate-400 backdrop-blur-md shadow-2xl animate-in fade-in duration-1000">
+             <div className="mt-20 rounded-[3rem] border-2 border-dashed border-line bg-surface/40 p-16 text-center text-slate-400 backdrop-blur-md shadow-2xl animate-in fade-in duration-1000">
              <Globe2 className="w-20 h-20 mx-auto mb-6 opacity-30 text-slate-500 animate-pulse" />
              <p className="text-2xl font-black text-white uppercase tracking-tight">Chưa có trạm không gian nào</p>
              <p className="mt-4 text-sm text-slate-500 font-bold max-w-xs mx-auto">

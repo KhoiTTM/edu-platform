@@ -47,7 +47,7 @@ export function WritingClient({ task, studentName = "Học sinh", backUrl = "/ho
           <div className="flex items-center gap-2">
             <Link
               href={backUrl}
-              className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-slate-800 text-slate-400 hover:text-white transition"
+              className="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-surface-raised text-slate-400 hover:text-white transition"
             >
               <ArrowLeft size={14} />
             </Link>
@@ -80,8 +80,8 @@ export function WritingClient({ task, studentName = "Học sinh", backUrl = "/ho
         {/* LEFT COLUMN: PROMPT & OUTLINE (Col span 7) */}
         <section className="lg:col-span-7 space-y-6">
           {/* Writing Prompt card */}
-          <div className="rounded-2xl border border-slate-800 bg-slate-900/20 p-6 shadow-xl backdrop-blur-md space-y-4">
-            <h2 className="text-sm font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5 border-b border-slate-800 pb-3">
+          <div className="rounded-2xl border border-line bg-surface/20 p-6 shadow-xl backdrop-blur-md space-y-4">
+            <h2 className="text-sm font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5 border-b border-line pb-3">
               <Edit3 size={16} className="text-fuchsia-400" />
               ĐỀ BÀI (WRITING TASK)
             </h2>
@@ -104,7 +104,7 @@ export function WritingClient({ task, studentName = "Học sinh", backUrl = "/ho
           </div>
 
           {/* Outline Structure & Vocabulary Bank */}
-          <div className="rounded-2xl border border-slate-800 bg-slate-900/20 p-6 shadow-xl backdrop-blur-md space-y-5">
+          <div className="rounded-2xl border border-line bg-surface/20 p-6 shadow-xl backdrop-blur-md space-y-5">
             <div>
               <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 border-b border-slate-850 pb-2">
                 📋 GỢI Ý CẤU TRÚC ĐOẠN VĂN
@@ -141,7 +141,7 @@ export function WritingClient({ task, studentName = "Học sinh", backUrl = "/ho
         {/* RIGHT COLUMN: EDITOR & CHECKS (Col span 5) */}
         <div className="lg:col-span-5 space-y-6">
           {/* TAB BAR */}
-          <div className="flex rounded-xl bg-slate-950/60 p-1 border border-slate-800 text-xs font-bold">
+          <div className="flex rounded-xl bg-slate-950/60 p-1 border border-line text-xs font-bold">
             <button
               onClick={() => setActiveTab("editor")}
               className={`flex-1 py-2 rounded-lg transition-all ${
@@ -178,8 +178,8 @@ export function WritingClient({ task, studentName = "Học sinh", backUrl = "/ho
 
           {/* TAB CONTENT: WRITING EDITOR */}
           {activeTab === "editor" && (
-            <div className="rounded-2xl border border-slate-800 bg-slate-900/20 p-5 shadow-xl backdrop-blur-md space-y-4">
-              <div className="flex justify-between items-center border-b border-slate-800 pb-2.5">
+            <div className="rounded-2xl border border-line bg-surface/20 p-5 shadow-xl backdrop-blur-md space-y-4">
+              <div className="flex justify-between items-center border-b border-line pb-2.5">
                 <span className="text-xs font-bold text-slate-400">KHÔNG GIAN SOẠN THẢO</span>
                 <span className={`text-[10px] font-bold px-2 py-0.5 rounded ${
                   wordCount > 0 ? "bg-fuchsia-500/10 text-fuchsia-400 border border-fuchsia-500/20" : "bg-slate-950 text-slate-600"
@@ -193,7 +193,7 @@ export function WritingClient({ task, studentName = "Học sinh", backUrl = "/ho
                 disabled={submitted}
                 onChange={(e) => setStudentText(e.target.value)}
                 placeholder="Nhấp chuột vào đây và bắt đầu viết câu trả lời của em bằng tiếng Anh..."
-                className="w-full min-h-[220px] rounded-xl border border-slate-800 bg-slate-950 p-4 text-xs md:text-sm text-slate-200 placeholder-slate-650 outline-none ring-offset-slate-900 transition focus:border-fuchsia-500 focus:ring-1 focus:ring-fuchsia-500 font-sans leading-relaxed resize-y custom-scrollbar"
+                className="w-full min-h-[220px] rounded-xl border border-line bg-slate-950 p-4 text-xs md:text-sm text-slate-200 placeholder-slate-650 outline-none ring-offset-slate-900 transition focus:border-fuchsia-500 focus:ring-1 focus:ring-fuchsia-500 font-sans leading-relaxed resize-y custom-scrollbar"
               />
 
               <div className="flex gap-3 pt-2">
@@ -211,7 +211,7 @@ export function WritingClient({ task, studentName = "Học sinh", backUrl = "/ho
                 ) : (
                   <button
                     onClick={handleReset}
-                    className="flex-1 inline-flex min-h-[42px] items-center justify-center gap-1.5 rounded-xl bg-slate-800 px-4 text-xs font-bold text-slate-300 transition hover:bg-slate-700 hover:text-white"
+                    className="flex-1 inline-flex min-h-[42px] items-center justify-center gap-1.5 rounded-xl bg-surface-raised px-4 text-xs font-bold text-slate-300 transition hover:bg-slate-700 hover:text-white"
                   >
                     <RefreshCw size={12} /> Viết lại từ đầu
                   </button>
@@ -222,8 +222,8 @@ export function WritingClient({ task, studentName = "Học sinh", backUrl = "/ho
 
           {/* TAB CONTENT: SELF-EVALUATION CHECKLIST */}
           {activeTab === "checklist" && (
-            <div className="rounded-2xl border border-slate-800 bg-slate-900/20 p-5 shadow-xl backdrop-blur-md space-y-4">
-              <div className="flex items-center justify-between border-b border-slate-800 pb-2.5">
+            <div className="rounded-2xl border border-line bg-surface/20 p-5 shadow-xl backdrop-blur-md space-y-4">
+              <div className="flex items-center justify-between border-b border-line pb-2.5">
                 <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
                   <CheckSquare size={14} className="text-fuchsia-400" />
                   BẢN TỰ ĐÁNH GIÁ (SELF-CHECKLIST)
@@ -243,14 +243,14 @@ export function WritingClient({ task, studentName = "Học sinh", backUrl = "/ho
                       className={`flex items-start gap-3 rounded-xl border p-3 cursor-pointer transition select-none ${
                         isChecked
                           ? "border-emerald-500/40 bg-emerald-500/5 text-slate-200"
-                          : "border-slate-850 bg-slate-950/40 text-slate-400 hover:border-slate-800"
+                          : "border-slate-850 bg-slate-950/40 text-slate-400 hover:border-line"
                       }`}
                     >
                       <input
                         type="checkbox"
                         checked={isChecked}
                         onChange={() => handleCheckboxToggle(idx)}
-                        className="mt-0.5 h-4 w-4 rounded border-slate-700 bg-slate-800 text-fuchsia-600 focus:ring-fuchsia-500"
+                        className="mt-0.5 h-4 w-4 rounded border-line bg-surface-raised text-fuchsia-600 focus:ring-fuchsia-500"
                       />
                       <span className="text-xs leading-relaxed">{item}</span>
                     </label>
@@ -271,8 +271,8 @@ export function WritingClient({ task, studentName = "Học sinh", backUrl = "/ho
 
           {/* TAB CONTENT: MODEL ANSWERS */}
           {activeTab === "model" && (
-            <div className="rounded-2xl border border-slate-800 bg-slate-900/20 p-5 shadow-xl backdrop-blur-md space-y-4">
-              <div className="flex items-center justify-between border-b border-slate-800 pb-2.5">
+            <div className="rounded-2xl border border-line bg-surface/20 p-5 shadow-xl backdrop-blur-md space-y-4">
+              <div className="flex items-center justify-between border-b border-line pb-2.5">
                 <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
                   <Award size={14} className="text-fuchsia-400" />
                   BÀI VIẾT MẪU (BAND 4.5 - 5.0)

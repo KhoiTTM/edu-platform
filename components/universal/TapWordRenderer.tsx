@@ -27,7 +27,7 @@ export function TapWordRenderer({ instruction, words = [], correctWord, onAnswer
       
       <div className="flex flex-wrap gap-3 justify-center">
         {words.map((word, idx) => {
-          let stateClass = 'bg-slate-800 border-slate-700 text-slate-200 hover:bg-slate-700 shadow-[0_4px_0_rgb(30,41,59)]';
+          let stateClass = 'bg-surface-raised border-line text-slate-200 hover:bg-slate-700 shadow-[0_4px_0_rgb(30,41,59)]';
           
           if (disabled) {
             if (word === correctWord) {
@@ -35,7 +35,7 @@ export function TapWordRenderer({ instruction, words = [], correctWord, onAnswer
             } else if (word === selected) {
               stateClass = 'bg-rose-500 border-rose-400 text-white shadow-none';
             } else {
-              stateClass = 'bg-slate-800/50 border-slate-700/50 text-slate-500 shadow-none cursor-not-allowed';
+              stateClass = 'bg-surface-raised/50 border-line/50 text-slate-500 shadow-none cursor-not-allowed';
             }
           } else if (selected === word) {
             stateClass = 'bg-sky-500 border-sky-400 text-white shadow-[0_4px_0_rgb(14,165,233)]';

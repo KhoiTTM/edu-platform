@@ -68,7 +68,7 @@ export function SentenceReorderRenderer({
       <div className={`min-h-[80px] p-4 border-2 rounded-2xl flex flex-wrap gap-2 items-center transition-colors ${
           disabled && isCorrectResult === true ? 'bg-emerald-500/10 border-emerald-500' :
           disabled && isCorrectResult === false ? 'bg-rose-500/10 border-rose-500' :
-          'bg-slate-800/50 border-dashed border-slate-700'
+          'bg-surface-raised/50 border-dashed border-line'
       }`}>
         <AnimatePresence mode="popLayout">
           {selectedIndices.map((idx) => (
@@ -109,7 +109,7 @@ export function SentenceReorderRenderer({
               exit={{ scale: 0.8, opacity: 0 }}
               onClick={() => handleSelect(idx)}
               disabled={disabled}
-              className="px-4 py-2 bg-slate-800 border-2 border-slate-700 text-slate-200 font-bold rounded-xl shadow-[0_4px_0_rgb(30,41,59)] hover:bg-slate-700 active:translate-y-1 active:shadow-none transition-all"
+              className="px-4 py-2 bg-surface-raised border-2 border-line text-slate-200 font-bold rounded-xl shadow-[0_4px_0_rgb(30,41,59)] hover:bg-slate-700 active:translate-y-1 active:shadow-none transition-all"
             >
               {words[idx]}
             </motion.button>

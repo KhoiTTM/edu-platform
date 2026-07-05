@@ -79,8 +79,8 @@ function TaskRow({
     <div
       className={`rounded-xl border-2 p-3 transition-all ${
         task.is_active
-          ? "border-slate-700 bg-slate-900/40"
-          : "border-slate-800/50 bg-slate-900/10 opacity-60"
+          ? "border-line bg-surface/40"
+          : "border-line/50 bg-surface/10 opacity-60"
       }`}
     >
       <div className="flex items-center justify-between gap-3 flex-wrap sm:flex-nowrap">
@@ -123,7 +123,7 @@ function TaskRow({
                 Đã làm {task.score_text ? `(${task.score_text})` : ""}
               </span>
             ) : (
-              <span className="flex items-center gap-1 text-[9px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full border border-slate-700 bg-slate-800/80 text-slate-400">
+              <span className="flex items-center gap-1 text-[9px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full border border-line bg-surface-raised/80 text-slate-400">
                 <Clock size={10} />
                 Chưa làm
               </span>
@@ -141,7 +141,7 @@ function TaskRow({
                   className={`p-1.5 rounded-lg border-2 transition-all ${
                     task.is_active
                       ? "text-emerald-400 border-emerald-500/40 bg-emerald-500/10 hover:bg-emerald-500/20"
-                      : "text-slate-500 border-slate-700 bg-slate-800 hover:text-emerald-400 hover:border-emerald-500/40"
+                      : "text-slate-500 border-line bg-surface-raised hover:text-emerald-400 hover:border-emerald-500/40"
                   }`}
                 >
                   {task.is_active ? <Power size={11} /> : <PowerOff size={11} />}
@@ -152,7 +152,7 @@ function TaskRow({
                   className={`p-1.5 rounded-lg border-2 transition-all ${
                     confirmDelete
                       ? "text-white border-rose-500 bg-rose-500 animate-pulse"
-                      : "text-slate-500 border-slate-700 bg-slate-800 hover:text-rose-400 hover:border-rose-500/40 hover:bg-rose-500/10"
+                      : "text-slate-500 border-line bg-surface-raised hover:text-rose-400 hover:border-rose-500/40 hover:bg-rose-500/10"
                   }`}
                 >
                   <Trash2 size={11} />
@@ -182,7 +182,7 @@ type Props = {
 export function ActiveTasksList({ tasks, onChanged }: Props) {
   if (tasks.length === 0) {
     return (
-      <div className="rounded-2xl border-2 border-dashed border-slate-700/60 p-8 text-center bg-slate-950/20">
+      <div className="rounded-2xl border-2 border-dashed border-line/60 p-8 text-center bg-slate-950/20">
         <p className="text-slate-500 text-sm font-bold">Chưa có nhiệm vụ nào</p>
         <p className="text-slate-600 text-xs mt-1">
           Nhấn &quot;Giao Nhiệm Vụ&quot; để tạo nhiệm vụ đầu tiên
@@ -210,7 +210,7 @@ export function ActiveTasksList({ tasks, onChanged }: Props) {
       {Object.entries(grouped).map(([studentName, dates]) => (
         <div key={studentName} className="space-y-4">
           {/* Student Heading */}
-          <div className="flex items-center gap-2 border-b border-slate-800 pb-2">
+          <div className="flex items-center gap-2 border-b border-line pb-2">
             <div className="w-6 h-6 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400">
               <User size={12} />
             </div>
@@ -219,7 +219,7 @@ export function ActiveTasksList({ tasks, onChanged }: Props) {
             </h3>
           </div>
 
-          <div className="space-y-4 pl-2 border-l border-slate-800/80">
+          <div className="space-y-4 pl-2 border-l border-line/80">
             {Object.entries(dates).map(([date, dateTasks]) => (
               <div key={date} className="space-y-2">
                 {/* Date Header */}

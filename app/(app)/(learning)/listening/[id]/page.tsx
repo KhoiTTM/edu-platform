@@ -41,7 +41,7 @@ export default async function ListeningLessonDetailPage({ params, searchParams }
   const isShadowing = node.metadata?.skill_focus === "shadowing" || node.slug === "luyen-nghe-a2-tong-ket-2025";
   if (isShadowing) {
     return (
-      <main className="min-h-screen bg-[#0f172a] p-4 md:p-8 lg:p-12">
+      <main className="min-h-screen bg-surface p-4 md:p-8 lg:p-12">
         <div className="mx-auto max-w-5xl">
           <DictationShadowingClient backUrl={backUrl} lessonSlug={node.slug} />
         </div>
@@ -103,7 +103,7 @@ export default async function ListeningLessonDetailPage({ params, searchParams }
   } as any;
 
   return (
-    <main className="min-h-screen bg-[#0f172a] p-4 md:p-8 lg:p-12">
+    <main className="min-h-screen bg-surface p-4 md:p-8 lg:p-12">
       <div className="mx-auto max-w-5xl">
         <ListeningClient
           lesson={lessonData}

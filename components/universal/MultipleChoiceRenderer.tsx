@@ -91,7 +91,7 @@ export function MultipleChoiceRenderer({
       )}
 
       {imageUrl && (
-        <div className="my-4 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/50 flex justify-center p-4">
+        <div className="my-4 overflow-hidden rounded-2xl border border-white/10 bg-surface/50 flex justify-center p-4">
           {imageUrl.startsWith('<svg') ? (
             <div 
               className="max-h-[300px] w-full max-w-[400px] flex items-center justify-center text-white" 
@@ -109,9 +109,9 @@ export function MultipleChoiceRenderer({
           const isCorrect = idx === actualCorrectIndex;
           const showResult = disabled && (isSelected || isCorrect);
           
-          let borderClass = "border-slate-800 bg-slate-900/50 hover:bg-slate-800 hover:border-slate-700 cursor-pointer";
+          let borderClass = "border-line bg-surface/50 hover:bg-surface-raised hover:border-line cursor-pointer";
           if (disabled) {
-            borderClass = "border-slate-800 bg-slate-900/50 opacity-50 cursor-not-allowed";
+            borderClass = "border-line bg-surface/50 opacity-50 cursor-not-allowed";
           }
           if (showResult) {
             if (isCorrect) borderClass = "border-emerald-500 bg-emerald-500/10 text-emerald-400 opacity-100 font-bold z-10";
@@ -129,7 +129,7 @@ export function MultipleChoiceRenderer({
                 <span className={`inline-flex h-8 w-8 items-center justify-center rounded-lg border text-xs font-bold mr-4 transition-colors ${
                   showResult && isCorrect ? "bg-emerald-500 border-emerald-400 text-white" :
                   showResult && isSelected ? "bg-rose-500 border-rose-400 text-white" :
-                  "bg-slate-800 border-slate-700 text-slate-400 group-hover:text-white group-hover:border-sky-500/50"
+                  "bg-surface-raised border-line text-slate-400 group-hover:text-white group-hover:border-sky-500/50"
                 }`}>
                   {String.fromCharCode(65 + idx)}
                 </span>

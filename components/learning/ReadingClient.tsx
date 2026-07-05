@@ -238,7 +238,7 @@ export function ReadingClient({ lesson, studentName = "Học sinh", backUrl = "/
           <div className="flex items-center gap-2">
             <Link
               href={backUrl}
-              className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-slate-900 border border-slate-800 text-slate-400 hover:text-white hover:border-slate-700 transition"
+              className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-surface border border-line text-slate-400 hover:text-white hover:border-line transition"
             >
               <ArrowLeft size={16} />
             </Link>
@@ -260,7 +260,7 @@ export function ReadingClient({ lesson, studentName = "Học sinh", backUrl = "/
             className={`inline-flex min-h-[42px] items-center justify-center gap-2 rounded-xl px-5 text-xs font-black transition-all duration-300 shadow-md ${
               showTranslation
                 ? "bg-amber-600 hover:bg-amber-500 text-white shadow-amber-600/20"
-                : "bg-slate-900 border border-slate-800 text-slate-300 hover:bg-slate-800 hover:text-white"
+                : "bg-surface border border-line text-slate-300 hover:bg-surface-raised hover:text-white"
             }`}
           >
             {showTranslation ? <EyeOff size={14} /> : <Eye size={14} />}
@@ -274,8 +274,8 @@ export function ReadingClient({ lesson, studentName = "Học sinh", backUrl = "/
         
         {/* LEFT COLUMN: PASSAGE (Col span 7) */}
         <section className="lg:col-span-7 space-y-6">
-          <div className="rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-900/40 to-slate-950/20 p-6 md:p-8 shadow-xl backdrop-blur-md space-y-6">
-            <div className="flex items-center justify-between border-b border-slate-800/80 pb-4">
+          <div className="rounded-2xl border border-line bg-gradient-to-b from-slate-900/40 to-slate-950/20 p-6 md:p-8 shadow-xl backdrop-blur-md space-y-6">
+            <div className="flex items-center justify-between border-b border-line/80 pb-4">
               <h2 className="text-xs font-black uppercase tracking-wider text-slate-400 flex items-center gap-2">
                 <BookOpen size={16} className="text-amber-500" />
                 READING PASSAGE
@@ -287,7 +287,7 @@ export function ReadingClient({ lesson, studentName = "Học sinh", backUrl = "/
 
             <div className="space-y-6 text-slate-300 leading-relaxed font-sans text-sm md:text-base select-text">
               {lesson.paragraphs.map((p, idx) => (
-                <div key={idx} className="p-5 rounded-2xl border border-slate-900 bg-slate-950/40 hover:border-slate-800 hover:bg-slate-950/60 transition-all duration-300 space-y-3 shadow-sm group">
+                <div key={idx} className="p-5 rounded-2xl border border-slate-900 bg-slate-950/40 hover:border-line hover:bg-slate-950/60 transition-all duration-300 space-y-3 shadow-sm group">
                   <div className="text-[10px] text-slate-600 font-mono font-bold tracking-wider">PARAGRAPH {idx + 1}</div>
                   <p className="text-slate-200 font-light hover:text-white leading-loose text-[14px] md:text-[15px] transition-colors">
                     {highlightKeyWords(p.english, lesson.vocabulary)}
@@ -304,8 +304,8 @@ export function ReadingClient({ lesson, studentName = "Học sinh", backUrl = "/
 
           {/* VÍ DỤ MINH HỌA THỰC TẾ (Example Sentences Section) */}
           {exampleSentences.length > 0 && (
-            <div className="rounded-2xl border border-slate-800 bg-gradient-to-br from-slate-900/40 to-slate-950/30 p-6 shadow-xl backdrop-blur-md space-y-5">
-              <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+            <div className="rounded-2xl border border-line bg-gradient-to-br from-slate-900/40 to-slate-950/30 p-6 shadow-xl backdrop-blur-md space-y-5">
+              <div className="flex items-center justify-between border-b border-line pb-3">
                 <h3 className="text-xs font-black uppercase tracking-wider text-amber-400 flex items-center gap-1.5">
                   <Sparkles size={14} className="text-amber-500" />
                   Ví dụ minh họa thực tế (Bổ trợ đọc)
@@ -321,7 +321,7 @@ export function ReadingClient({ lesson, studentName = "Học sinh", backUrl = "/
                   return (
                     <div 
                       key={idx} 
-                      className="rounded-xl border border-slate-850 bg-slate-950/50 p-4 space-y-2 hover:border-slate-800 transition-colors flex flex-col md:flex-row justify-between items-start md:items-center gap-3 group"
+                      className="rounded-xl border border-slate-850 bg-slate-950/50 p-4 space-y-2 hover:border-line transition-colors flex flex-col md:flex-row justify-between items-start md:items-center gap-3 group"
                     >
                       <div className="space-y-1.5 flex-1">
                         <span className="inline-block text-[9px] font-bold text-amber-400 bg-amber-950/60 px-2 py-0.5 rounded border border-amber-900/50">
@@ -340,14 +340,14 @@ export function ReadingClient({ lesson, studentName = "Học sinh", backUrl = "/
                       <div className="flex items-center gap-2 shrink-0 self-end md:self-auto">
                         <button
                           onClick={() => speakText(ex.english)}
-                          className="h-8 w-8 rounded-lg bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-400 hover:text-white flex items-center justify-center transition"
+                          className="h-8 w-8 rounded-lg bg-surface border border-line hover:border-line text-slate-400 hover:text-white flex items-center justify-center transition"
                           title="Nghe phát âm bản xứ"
                         >
                           <Volume2 size={14} />
                         </button>
                         <button
                           onClick={() => toggleExampleTranslate(idx)}
-                          className="h-8 w-8 rounded-lg bg-slate-900 border border-slate-850 text-slate-400 hover:text-amber-400 flex items-center justify-center transition"
+                          className="h-8 w-8 rounded-lg bg-surface border border-slate-850 text-slate-400 hover:text-amber-400 flex items-center justify-center transition"
                           title="Dịch câu ví dụ"
                         >
                           <Languages size={14} />
@@ -393,8 +393,8 @@ export function ReadingClient({ lesson, studentName = "Học sinh", backUrl = "/
 
           {/* TAB CONTENT: QUIZ */}
           {activeTab === "quiz" && (
-            <div className="rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-900/40 to-slate-950/20 p-5 shadow-xl backdrop-blur-md space-y-5">
-              <div className="flex items-center justify-between border-b border-slate-800 pb-3">
+            <div className="rounded-2xl border border-line bg-gradient-to-b from-slate-900/40 to-slate-950/20 p-5 shadow-xl backdrop-blur-md space-y-5">
+              <div className="flex items-center justify-between border-b border-line pb-3">
                 <h3 className="text-xs font-black uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
                   <HelpCircle size={14} className="text-amber-500" />
                   ĐỌC HIỂU TỔNG HỢP ({totalQuestionsLength} CÂU)
@@ -457,7 +457,7 @@ export function ReadingClient({ lesson, studentName = "Học sinh", backUrl = "/
                                         : "border-slate-900 bg-slate-950/20 text-slate-500"
                                     : isSelected
                                       ? "border-amber-500 bg-amber-500/10 text-amber-400 font-bold"
-                                      : "border-slate-850 bg-slate-900/30 text-slate-400 hover:border-slate-700 hover:bg-slate-900/50"
+                                      : "border-slate-850 bg-surface/30 text-slate-400 hover:border-line hover:bg-surface/50"
                                 }`}
                               >
                                 <span>{option}</span>
@@ -470,7 +470,7 @@ export function ReadingClient({ lesson, studentName = "Học sinh", backUrl = "/
 
                         {/* Explanation displayed after submission */}
                         {quizSubmitted && (
-                          <div className="mt-3 rounded-lg bg-slate-900/50 border border-slate-850 p-3 text-[11px] text-slate-400 leading-relaxed italic">
+                          <div className="mt-3 rounded-lg bg-surface/50 border border-slate-850 p-3 text-[11px] text-slate-400 leading-relaxed italic">
                             <strong className="text-amber-500/90 not-italic block mb-0.5">Giải thích:</strong>
                             {q.explanation}
                           </div>
@@ -482,7 +482,7 @@ export function ReadingClient({ lesson, studentName = "Học sinh", backUrl = "/
 
                 {/* Part 2: True/False/Not Given Questions */}
                 {tfngStatements.length > 0 && (
-                  <div className="space-y-4 pt-4 border-t border-slate-800">
+                  <div className="space-y-4 pt-4 border-t border-line">
                     <h4 className="text-xs font-black uppercase text-amber-500 tracking-wider">
                       Part 2: IELTS True / False / Not Given
                     </h4>
@@ -514,7 +514,7 @@ export function ReadingClient({ lesson, studentName = "Học sinh", backUrl = "/
                                           : "border-slate-900 bg-slate-950/20 text-slate-650"
                                       : isSelected
                                         ? "border-amber-500 bg-amber-500/10 text-amber-400 font-bold"
-                                        : "border-slate-850 bg-slate-900/30 text-slate-400 hover:border-slate-700 hover:bg-slate-900/50"
+                                        : "border-slate-850 bg-surface/30 text-slate-400 hover:border-line hover:bg-surface/50"
                                   }`}
                                 >
                                   {choice}
@@ -525,7 +525,7 @@ export function ReadingClient({ lesson, studentName = "Học sinh", backUrl = "/
 
                           {/* Explanation displayed after submission */}
                           {quizSubmitted && (
-                            <div className="mt-3 rounded-lg bg-slate-900/50 border border-slate-850 p-3 text-[11px] text-slate-400 leading-relaxed italic">
+                            <div className="mt-3 rounded-lg bg-surface/50 border border-slate-850 p-3 text-[11px] text-slate-400 leading-relaxed italic">
                               <strong className="text-amber-500/90 block mb-0.5">
                                 Đáp án đúng: <span className="text-emerald-400 font-bold">{stmt.correct}</span>
                               </strong>
@@ -552,7 +552,7 @@ export function ReadingClient({ lesson, studentName = "Học sinh", backUrl = "/
                 ) : (
                   <button
                     onClick={restartQuiz}
-                    className="w-full inline-flex min-h-[44px] items-center justify-center gap-1.5 rounded-xl bg-slate-800 px-4 text-xs font-bold text-slate-300 transition hover:bg-slate-700 hover:text-white"
+                    className="w-full inline-flex min-h-[44px] items-center justify-center gap-1.5 rounded-xl bg-surface-raised px-4 text-xs font-bold text-slate-300 transition hover:bg-slate-700 hover:text-white"
                   >
                     <RefreshCw size={12} /> Làm Lại Quiz Đọc Hiểu
                   </button>
@@ -563,8 +563,8 @@ export function ReadingClient({ lesson, studentName = "Học sinh", backUrl = "/
 
           {/* TAB CONTENT: KEY VOCABULARY */}
           {activeTab === "vocab" && (
-            <div className="rounded-2xl border border-slate-800 bg-gradient-to-b from-slate-900/40 to-slate-950/20 p-5 shadow-xl backdrop-blur-md space-y-4 animate-in fade-in duration-300">
-              <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5 border-b border-slate-800 pb-3">
+            <div className="rounded-2xl border border-line bg-gradient-to-b from-slate-900/40 to-slate-950/20 p-5 shadow-xl backdrop-blur-md space-y-4 animate-in fade-in duration-300">
+              <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5 border-b border-line pb-3">
                 📚 TỪ VỰNG TIÊU ĐIỂM (Tap to Flip)
               </h3>
               <p className="text-[11px] text-slate-400 leading-relaxed font-medium">

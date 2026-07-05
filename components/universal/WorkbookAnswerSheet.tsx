@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Book, CheckCircle, ChevronRight, FileText, Send, AlertCircle } from "lucide-react";
-import workbookData from "@/content/khtn-7-workbook.json";
+import workbookData from "@/content/workbooks/khtn-7-workbook.json";
 
 interface WorkbookAnswerSheetProps {
   lessonSlug: string;
@@ -21,7 +21,7 @@ export function WorkbookAnswerSheet({ lessonSlug, driveLink }: WorkbookAnswerShe
 
   if (!data) {
     return (
-      <div className="p-8 text-center text-slate-400 bg-slate-900/50 rounded-3xl border border-slate-800">
+      <div className="p-8 text-center text-slate-400 bg-surface/50 rounded-3xl border border-line">
         <AlertCircle className="w-12 h-12 mx-auto mb-4 opacity-50" />
         <p>Hiện tại chưa có bài tập Sách Bài Tập (SBT) cho bài học này.</p>
       </div>
@@ -57,7 +57,7 @@ export function WorkbookAnswerSheet({ lessonSlug, driveLink }: WorkbookAnswerShe
               className={`w-10 h-10 rounded-xl font-bold transition-all ${
                 answers[q.id] === opt 
                   ? 'bg-rose-600 text-white shadow-lg shadow-rose-600/30' 
-                  : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+                  : 'bg-surface-raised text-slate-300 hover:bg-slate-700'
               }`}
             >
               {opt}
@@ -77,7 +77,7 @@ export function WorkbookAnswerSheet({ lessonSlug, driveLink }: WorkbookAnswerShe
               className={`px-4 py-2 rounded-xl font-bold transition-all ${
                 answers[q.id] === opt 
                   ? 'bg-rose-600 text-white shadow-lg shadow-rose-600/30' 
-                  : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+                  : 'bg-surface-raised text-slate-300 hover:bg-slate-700'
               }`}
             >
               {opt}
@@ -93,14 +93,14 @@ export function WorkbookAnswerSheet({ lessonSlug, driveLink }: WorkbookAnswerShe
           <div className="flex flex-col gap-2">
             {q.matchingItems.map((item: string) => (
                <div key={item} className="flex items-center gap-2">
-                  <span className="w-8 h-8 flex items-center justify-center bg-slate-800 text-slate-300 font-bold rounded-lg shrink-0">{item}</span>
+                  <span className="w-8 h-8 flex items-center justify-center bg-surface-raised text-slate-300 font-bold rounded-lg shrink-0">{item}</span>
                   <span className="text-slate-500 font-bold">→</span>
                   <input
                     type="text"
                     value={answers[`${q.id}_${item}`] || ''}
                     onChange={(e) => handleAnswerChange(`${q.id}_${item}`, e.target.value)}
                     placeholder="..."
-                    className="w-16 text-center bg-slate-900 border border-slate-700 rounded-lg px-2 py-1.5 text-slate-200 focus:outline-none focus:border-rose-500 focus:ring-1 focus:ring-rose-500 font-bold uppercase"
+                    className="w-16 text-center bg-surface border border-line rounded-lg px-2 py-1.5 text-slate-200 focus:outline-none focus:border-rose-500 focus:ring-1 focus:ring-rose-500 font-bold uppercase"
                     maxLength={2}
                   />
                </div>
@@ -118,7 +118,7 @@ export function WorkbookAnswerSheet({ lessonSlug, driveLink }: WorkbookAnswerShe
           value={answers[q.id] || ''}
           onChange={(e) => handleAnswerChange(q.id, e.target.value)}
           placeholder="Nhập đáp án của bạn..."
-          className="w-full max-w-md bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-slate-200 focus:outline-none focus:border-rose-500 focus:ring-1 focus:ring-rose-500"
+          className="w-full max-w-md bg-surface border border-line rounded-xl px-4 py-2.5 text-slate-200 focus:outline-none focus:border-rose-500 focus:ring-1 focus:ring-rose-500"
         />
       );
     }
@@ -142,7 +142,7 @@ export function WorkbookAnswerSheet({ lessonSlug, driveLink }: WorkbookAnswerShe
 
   return (
     <div className="space-y-8 animate-in fade-in duration-500 pb-20">
-      <div className="bg-gradient-to-br from-slate-800/80 to-slate-900 border border-slate-700 rounded-3xl p-6 md:p-8 shadow-xl">
+      <div className="bg-gradient-to-br from-slate-800/80 to-slate-900 border border-line rounded-3xl p-6 md:p-8 shadow-xl">
         <div className="flex flex-col md:flex-row gap-6 items-start md:items-center justify-between">
           <div className="space-y-2">
             <h2 className="text-2xl font-black text-white flex items-center gap-3">
@@ -170,13 +170,13 @@ export function WorkbookAnswerSheet({ lessonSlug, driveLink }: WorkbookAnswerShe
           const page = parseInt(pageStr);
           const qs = questionsByPage[page];
           return (
-            <div key={page} className="bg-slate-900/50 border border-slate-800 rounded-3xl overflow-hidden">
-              <div className="bg-slate-800/50 px-6 py-3 border-b border-slate-800 flex items-center gap-2">
+            <div key={page} className="bg-surface/50 border border-line rounded-3xl overflow-hidden">
+              <div className="bg-surface-raised/50 px-6 py-3 border-b border-line flex items-center gap-2">
                 <span className="text-xs font-black text-rose-400 uppercase tracking-widest">Trang {page}</span>
               </div>
               <div className="p-6 grid gap-6 md:grid-cols-2">
                 {qs.map((q: any, idx: number) => (
-                  <div key={idx} className="flex flex-col gap-3 bg-slate-900/40 p-4 rounded-2xl border border-slate-800">
+                  <div key={idx} className="flex flex-col gap-3 bg-surface/40 p-4 rounded-2xl border border-line">
                     <span className="text-sm font-bold text-rose-400">
                       Câu {q.id}
                     </span>
@@ -186,13 +186,13 @@ export function WorkbookAnswerSheet({ lessonSlug, driveLink }: WorkbookAnswerShe
                     {q.options && q.options.length > 0 && (
                       <div className="space-y-2 mt-1">
                         {q.options.map((opt: string, oIdx: number) => (
-                          <div key={oIdx} className="text-xs text-slate-400 bg-slate-950 p-3 rounded-lg border border-slate-800">
+                          <div key={oIdx} className="text-xs text-slate-400 bg-slate-950 p-3 rounded-lg border border-line">
                             {opt}
                           </div>
                         ))}
                       </div>
                     )}
-                    <div className="mt-2 pt-3 border-t border-slate-800">
+                    <div className="mt-2 pt-3 border-t border-line">
                       {renderInputForType(q)}
                     </div>
                   </div>
@@ -203,7 +203,7 @@ export function WorkbookAnswerSheet({ lessonSlug, driveLink }: WorkbookAnswerShe
         })}
       </div>
 
-      <div className="flex justify-end pt-6 border-t border-slate-800">
+      <div className="flex justify-end pt-6 border-t border-line">
         <button
           onClick={handleSubmit}
           className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-3.5 rounded-2xl font-bold shadow-lg shadow-emerald-600/20 transition-all active:scale-95 text-lg"

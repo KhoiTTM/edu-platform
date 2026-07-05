@@ -33,7 +33,7 @@ export function LessonPractice({ questions }: Props) {
   }
 
   return (
-    <section className="rounded-2xl border border-slate-800 bg-slate-900/50 p-5 shadow-xl backdrop-blur-md sm:p-6">
+    <section className="rounded-2xl border border-line bg-surface/50 p-5 shadow-xl backdrop-blur-md sm:p-6">
       <h2 className="font-display text-xl font-semibold text-white">
         Bài tập — chấm ngay từng câu
       </h2>
@@ -50,7 +50,7 @@ export function LessonPractice({ questions }: Props) {
           return (
             <li
               key={q.id}
-              className="rounded-2xl border border-slate-800 bg-slate-950/30 p-4 sm:p-5"
+              className="rounded-2xl border border-line bg-slate-950/30 p-4 sm:p-5"
             >
               <p className="text-xs font-semibold uppercase tracking-wide text-sky-500">
                 Câu {idx + 1}
@@ -63,7 +63,7 @@ export function LessonPractice({ questions }: Props) {
                 {opts.map((opt, i) => {
                   const selected = choice === i;
                   const isCorrect = i === q.correct_index;
-                  let ring = "border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-700 hover:bg-slate-800/80";
+                  let ring = "border-line bg-surface text-slate-300 hover:border-line hover:bg-surface-raised/80";
                   if (st !== "idle" && selected) {
                     ring = isCorrect
                       ? "border-emerald-500 bg-emerald-950/30 text-emerald-400"
@@ -81,7 +81,7 @@ export function LessonPractice({ questions }: Props) {
                       onClick={() => pickOption(q, i)}
                       className={`flex min-h-[48px] w-full items-center rounded-xl border-2 px-3 py-2.5 text-left text-sm font-medium transition ${ring}`}
                     >
-                      <span className="mr-2 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-slate-800 text-xs font-bold text-slate-300 ring-1 ring-slate-700">
+                      <span className="mr-2 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-surface-raised text-xs font-bold text-slate-300 ring-1 ring-slate-700">
                         {String.fromCharCode(65 + i)}
                       </span>
                       {opt}

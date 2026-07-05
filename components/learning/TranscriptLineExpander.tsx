@@ -19,15 +19,15 @@ export function TranscriptLineExpander({ english, vietnamese, index, keyPhrase, 
     <div 
       className={`group rounded-xl border transition-all duration-300 ${
         isExpanded 
-          ? "border-emerald-500/50 bg-slate-900/80 shadow-lg" 
-          : "border-slate-800 bg-slate-950/30 hover:bg-slate-950/70"
+          ? "border-emerald-500/50 bg-surface/80 shadow-lg" 
+          : "border-line bg-slate-950/30 hover:bg-slate-950/70"
       }`}
     >
       <button
         onClick={() => setIsExpanded(!isExpanded)}
         className="w-full p-3.5 text-left flex items-start gap-3"
       >
-        <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-lg bg-slate-900 text-[10px] font-bold text-slate-500 border border-slate-800">
+        <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-lg bg-surface text-[10px] font-bold text-slate-500 border border-line">
           {index + 1}
         </span>
         <div className="flex-1 min-w-0">
@@ -80,7 +80,7 @@ export function TranscriptLineExpander({ english, vietnamese, index, keyPhrase, 
               className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-[10px] font-bold transition-all active:scale-95 shadow-sm ${
                 isSaid 
                   ? "bg-emerald-500 text-white ring-2 ring-emerald-500/20" 
-                  : "bg-slate-800 text-slate-300 hover:bg-slate-700 hover:text-white"
+                  : "bg-surface-raised text-slate-300 hover:bg-slate-700 hover:text-white"
               }`}
             >
               {isSaid ? <CheckCircle2 size={12} /> : null}

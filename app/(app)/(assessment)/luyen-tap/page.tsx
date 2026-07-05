@@ -108,7 +108,7 @@ export default async function LuyenTapPage() {
     };
 
     return (
-        <div className="flex min-h-dvh w-full flex-col pb-20 relative text-white bg-[#0f172a]">
+        <div className="flex min-h-dvh w-full flex-col pb-20 relative text-white bg-surface">
             {/* Cosmic Blurry Nebulas */}
             <div className="absolute top-20 left-10 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
             <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyan-600/10 rounded-full blur-3xl pointer-events-none" />
@@ -121,7 +121,7 @@ export default async function LuyenTapPage() {
                     ← Bảng điều khiển
                 </Link>
 
-                <header className="rounded-3xl border border-slate-800/80 bg-gradient-to-br from-indigo-950/30 via-slate-900/60 to-slate-950 py-4 px-6 shadow-xl backdrop-blur-md mb-8 relative overflow-hidden flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <header className="rounded-3xl border border-line/80 bg-gradient-to-br from-indigo-950/30 via-slate-900/60 to-slate-950 py-4 px-6 shadow-xl backdrop-blur-md mb-8 relative overflow-hidden flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                     <div className="absolute right-0 top-0 -mt-6 -mr-6 h-24 w-24 bg-cyan-500/5 blur-2xl pointer-events-none" />
                     <div className="relative text-left">
                         <span className="inline-flex items-center gap-1 rounded-full bg-cyan-500/10 px-2 py-0.5 text-[9px] font-semibold text-cyan-400 border border-cyan-500/20 uppercase tracking-widest">
@@ -147,7 +147,7 @@ export default async function LuyenTapPage() {
 
                             return (
                                 <section key={grade} className="space-y-6">
-                                    <div className="flex items-center gap-4 border-b border-slate-800/80 pb-3">
+                                    <div className="flex items-center gap-4 border-b border-line/80 pb-3">
                                         <div className={`p-2 rounded-xl bg-white/5 border ${isUniversal ? 'border-fuchsia-500/30' : 'border-sky-500/30'} backdrop-blur-md`}>
                                             {sectionIcon}
                                         </div>
@@ -199,7 +199,7 @@ export default async function LuyenTapPage() {
                             );
                         })
                     ) : (
-                        <div className="p-16 text-center border border-dashed border-slate-800 bg-slate-950/40 backdrop-blur-md rounded-3xl">
+                        <div className="p-16 text-center border border-dashed border-line bg-slate-950/40 backdrop-blur-md rounded-3xl">
                             <BookOpen className="mx-auto h-12 w-12 text-slate-600 mb-4" />
                             <h3 className="text-xl font-bold text-slate-300">Chưa có môn học</h3>
                             <p className="text-slate-500 text-sm mt-2 max-w-sm mx-auto">Hiện tại chưa có môn luyện tập nào được chỉ định cho tài khoản của bạn. Vui lòng liên hệ quản trị viên.</p>

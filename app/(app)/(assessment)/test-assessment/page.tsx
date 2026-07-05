@@ -103,7 +103,7 @@ function AssessmentContent() {
 
   if (error) {
     return (
-      <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-400 px-6 py-4 rounded-xl font-medium">
+      <div className="bg-red-900/20 border border-red-800 text-red-400 px-6 py-4 rounded-xl font-medium">
         {error}
       </div>
     );
@@ -111,7 +111,7 @@ function AssessmentContent() {
 
   return (
     <div className="w-full flex flex-col items-center">
-      <h1 className="text-4xl font-black text-slate-800 dark:text-white mb-8 text-center">{examTitle}</h1>
+      <h1 className="text-4xl font-black text-ink mb-8 text-center">{examTitle}</h1>
       {!completed ? (
         <AssessmentRenderer
           questions={questions}
@@ -133,7 +133,7 @@ function AssessmentContent() {
 
 export default function TestAssessmentPage() {
   return (
-    <div className="min-h-screen bg-sky-50 dark:bg-indigo-950 flex flex-col items-center justify-center p-8 transition-colors duration-300">
+    <div className="min-h-screen bg-surface flex flex-col items-center justify-center p-8">
       <Suspense fallback={
         <div className="flex flex-col items-center justify-center py-20">
           <div className="w-12 h-12 border-4 border-emerald-500 border-t-transparent rounded-full animate-spin"></div>

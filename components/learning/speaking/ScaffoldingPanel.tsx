@@ -42,7 +42,7 @@ export function ScaffoldingPanel({ unitId, unitTopic, sessionNumber }: Scaffoldi
 
   return (
     <div className="space-y-4 animate-in fade-in zoom-in-95 duration-700">
-      <div className="p-4 bg-slate-800/40 border border-slate-700 rounded-2xl space-y-3">
+      <div className="p-4 bg-surface-raised/40 border border-line rounded-2xl space-y-3">
         <div className="flex items-center gap-2 text-sky-400">
           <MessageSquare size={16} />
           <h4 className="text-[10px] font-bold uppercase tracking-wider">
@@ -53,7 +53,7 @@ export function ScaffoldingPanel({ unitId, unitTopic, sessionNumber }: Scaffoldi
           {starters.map((starter) => (
             <span 
               key={starter}
-              className="px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-xl text-xs text-slate-300 hover:text-white hover:border-sky-500/50 transition cursor-default"
+              className="px-3 py-1.5 bg-surface-raised border border-line rounded-xl text-xs text-slate-300 hover:text-white hover:border-sky-500/50 transition cursor-default"
             >
               {starter}
             </span>
@@ -61,7 +61,7 @@ export function ScaffoldingPanel({ unitId, unitTopic, sessionNumber }: Scaffoldi
         </div>
       </div>
 
-      <div className="p-4 bg-slate-800/40 border border-slate-700 rounded-2xl space-y-3">
+      <div className="p-4 bg-surface-raised/40 border border-line rounded-2xl space-y-3">
         <div className="flex items-center gap-2 text-amber-400">
           <Lightbulb size={16} />
           <h4 className="text-[10px] font-bold uppercase tracking-wider">{wordsTitle}</h4>
@@ -70,7 +70,7 @@ export function ScaffoldingPanel({ unitId, unitTopic, sessionNumber }: Scaffoldi
           {displayWords.map((word) => (
             <span 
               key={word}
-              className="px-3 py-1.5 bg-slate-800 border border-slate-700 rounded-xl text-xs text-slate-300 hover:text-white hover:border-amber-500/50 transition cursor-default"
+              className="px-3 py-1.5 bg-surface-raised border border-line rounded-xl text-xs text-slate-300 hover:text-white hover:border-amber-500/50 transition cursor-default"
             >
               {word}
             </span>

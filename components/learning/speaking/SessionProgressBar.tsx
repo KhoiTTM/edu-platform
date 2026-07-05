@@ -16,7 +16,7 @@ export function SessionProgressBar({ currentTurn, totalTurns, sessionNumber }: S
         <span>{currentTurn} / {totalTurns} turns</span>
       </div>
       
-      <div className="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
+      <div className="h-1.5 w-full bg-surface-raised rounded-full overflow-hidden">
         <div 
           className="h-full bg-gradient-to-r from-sky-500 to-indigo-500 transition-all duration-1000 ease-out"
           style={{ width: `${percentage}%` }}
@@ -28,7 +28,7 @@ export function SessionProgressBar({ currentTurn, totalTurns, sessionNumber }: S
           <div 
             key={i}
             className={`h-1 flex-1 rounded-full transition-colors duration-500 ${
-              i < currentTurn ? "bg-sky-500" : "bg-slate-800"
+              i < currentTurn ? "bg-sky-500" : "bg-surface-raised"
             }`}
           />
         ))}

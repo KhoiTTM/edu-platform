@@ -4,7 +4,7 @@ export const dynamic = "force-dynamic";
 
 export default function StartersFlipbookPage() {
   return (
-    <main className="min-h-screen bg-[#0b0f19]">
+    <main className="min-h-screen bg-surface-deep">
       <StartersWordlistClient backUrl="/hoc-tap/pre-a1-starter/starters-wordlist" />
     </main>
   );

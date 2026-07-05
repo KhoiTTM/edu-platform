@@ -132,14 +132,14 @@ export function SpeakingFollowUpBox({ studentName, lessonTitle, lessonSummary, s
             }`}
           >
             <div className={`h-8 w-8 rounded-full flex items-center justify-center shrink-0 border ${
-              m.role === "user" ? "bg-slate-800 border-slate-700" : "bg-indigo-600/20 border-indigo-500/30"
+              m.role === "user" ? "bg-surface-raised border-line" : "bg-indigo-600/20 border-indigo-500/30"
             }`}>
               {m.role === "user" ? <User size={14} className="text-slate-400" /> : <Sparkles size={14} className="text-indigo-400" />}
             </div>
             <div className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-xs leading-relaxed shadow-sm ${
               m.role === "user" 
                 ? "bg-indigo-600 text-white rounded-tr-none" 
-                : "bg-slate-900/80 border border-white/5 text-slate-200 rounded-tl-none"
+                : "bg-surface/80 border border-white/5 text-slate-200 rounded-tl-none"
             }`}>
               {m.content}
             </div>
@@ -151,7 +151,7 @@ export function SpeakingFollowUpBox({ studentName, lessonTitle, lessonSummary, s
             <div className="h-8 w-8 rounded-full bg-indigo-600/20 border border-indigo-500/30 flex items-center justify-center">
               <Sparkles size={14} className="text-indigo-400" />
             </div>
-            <div className="bg-slate-900/80 border border-white/5 rounded-2xl px-4 py-2.5 rounded-tl-none">
+            <div className="bg-surface/80 border border-white/5 rounded-2xl px-4 py-2.5 rounded-tl-none">
               <div className="flex gap-1">
                 <div className="h-1.5 w-1.5 rounded-full bg-indigo-400 animate-bounce" />
                 <div className="h-1.5 w-1.5 rounded-full bg-indigo-400 animate-bounce [animation-delay:0.2s]" />
@@ -170,7 +170,7 @@ export function SpeakingFollowUpBox({ studentName, lessonTitle, lessonSummary, s
             className={`flex h-10 w-10 items-center justify-center rounded-full transition-all active:scale-90 shrink-0 ${
               isListening 
                 ? "bg-rose-600 text-white animate-pulse" 
-                : "bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-white"
+                : "bg-surface-raised text-slate-400 hover:bg-slate-700 hover:text-white"
             }`}
           >
             <Mic size={18} />
@@ -182,7 +182,7 @@ export function SpeakingFollowUpBox({ studentName, lessonTitle, lessonSummary, s
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && sendMessage(input)}
             placeholder="Type your message..."
-            className="flex-1 rounded-full bg-slate-900 border border-slate-800 px-5 py-2.5 text-xs text-white focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 transition-all"
+            className="flex-1 rounded-full bg-surface border border-line px-5 py-2.5 text-xs text-white focus:border-indigo-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 transition-all"
           />
 
           <button
