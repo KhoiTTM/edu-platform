@@ -240,24 +240,16 @@ Nếu seed báo lỗi `null value in column "concept_id" ... violates not-null c
 → migration 048 CHƯA chạy trên DB đó. Chạy:
 `ALTER TABLE public.question_bank ALTER COLUMN concept_id DROP NOT NULL;`
 
-**b) Cột `title` của `assessment_collections` bị TRIGGER ghi đè.**
-Trigger `trigger_reorder_assessment_collections` (hàm `reorder_assessment_sequences_trigger`
-+ `generate_assessment_title`) tự sinh lại `title` từ `units`/`sequence_number` SAU MỖI
-INSERT/UPDATE. Vì vậy `UPDATE ... SET title = '...'` thường bị kéo về tên tự sinh ngay
-(RETURNING thấy giá trị mới nhưng SELECT sau đó thấy tên cũ — dấu hiệu kinh điển).
-→ Muốn đổi tên cố định, phải sửa hàm `generate_assessment_title`. Trạng thái hiện tại
-(migration `051`): hàm + trigger nhận thêm `exam_type`. CHỈ `exam_type='midterm'` mới được
-tên cố định — Toán giữa kỳ (units chứa 101) → "Kiểm Tra Giữa Kỳ 1"; Tiếng Anh 3 midterm →
-"SBT Tiếng Anh 3 - Tập 1". Đề luyện-theo-bài (`exam_type IS NULL`) vẫn ghép tên theo công thức.
-⚠️ KHÔNG đổi tên collection bằng `UPDATE ... SET title` — trigger sẽ ghi đè lại theo hàm.
-⚠️ Khi UPDATE hàng loạt theo subject+grade, NHỚ lọc `exam_type` để không đổi nhầm tên 120+ đề
-luyện-theo-bài (lỗi migration 050 đã từng mắc, 051 sửa lại).
+**b) Cột `title` của `assessment_collections` và Trigger tự động sinh tên:**
+Từ migration `053`, trigger tự động sinh tên `trigger_reorder_assessment_collections` đã được **xóa bỏ hoàn toàn**. Tiêu đề của `assessment_collections` sẽ do người dùng chỉ định trực tiếp khi nạp/seed dữ liệu (và không bao giờ bị ghi đè tự động nữa).
 
-**c) `units = [101]` (Toán) là mã quy ước cho nhóm đề giữa kỳ** (không phải unit học thật).
-Tiếng Anh 3 midterm dùng `units=[1..5]` (theo Unit) + `exam_type='midterm'` để phân biệt với
-đề luyện-theo-bài cùng units nhưng `exam_type IS NULL`.
+**c) Quy ước `units` cho đề thi và Gom nhóm UI:**
+Hệ thống hiển thị gom các collection có cùng `(subject, grade, volume, units, exam_type)` vào 1 nhóm trên UI.
+- **CẢNH BÁO:** Nếu 2 collection khác nhau trong cùng một môn học dùng chung `units`, chúng sẽ bị gộp lại làm một trên UI. Luôn sử dụng các mảng `units` khác nhau (ví dụ: `[101]`, `[102]`, `[99]`, `[2]`) để tách nhóm các kỳ thi độc lập.
 
-**d) Trùng collection cùng tên:** generator tìm collection theo `(subject_slug, grade, title)`.
-Nếu `collection.title` trong file JSON KHÁC tên collection đích trong DB, generator tạo
-collection MỚI → sinh nhiều thẻ trùng tên ở tab ôn tập. Luôn để `title` trong file khớp
-đúng tên collection đích trước khi seed nối thêm đề.
+**d) Hỗ trợ liên kết tài liệu ngoài (External URL):**
+Bảng `exams` hỗ trợ cột `external_url`. Khi cột này được gán giá trị link (ví dụ: Link Flipbook), UI sẽ hiển thị nút "Mở Flipbook" hướng học sinh làm bài trên liên kết ngoài thay vì mở giao diện thi/kiểm tra truyền thống.
+
+**e) Trùng collection cùng tên:**
+Generator tìm collection theo `(subject_slug, grade, title)`. Nếu `collection.title` trong file JSON khác tên collection đích trong DB, generator tạo collection mới. Vì vậy hãy kiểm tra kỹ `title` trong file JSON trước khi seed.
+

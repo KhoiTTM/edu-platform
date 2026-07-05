@@ -1,0 +1,316 @@
+{
+  "title": "MATH 3 - Tập 1 - Bài 3 (Đề 2)",
+  "metadata": {
+    "subject": "Toán",
+    "grade": 3,
+    "volume": 1,
+    "book": "Toán 3 - Kết nối tri thức",
+    "lessons": [
+      3
+    ],
+    "total_questions": 15,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "435 + 177 = ___",
+        "correct_answer": "612",
+        "choices": [
+          "622",
+          "606",
+          "621",
+          "612"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 3",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "346 + 235 = ___",
+        "correct_answer": "581",
+        "choices": [
+          "185",
+          "591",
+          "590",
+          "581"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 3",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "123 + 263 = ___",
+        "correct_answer": "386",
+        "choices": [
+          "386",
+          "390",
+          "396",
+          "683"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 3",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "488 + 377 = ___",
+        "correct_answer": "865",
+        "choices": [
+          "856",
+          "865",
+          "874",
+          "875"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 3",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "393 + 398 = ___",
+        "correct_answer": "791",
+        "choices": [
+          "792",
+          "783",
+          "794",
+          "791"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 3",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "121 + 173 = ___",
+        "correct_answer": "294",
+        "choices": [
+          "303",
+          "294",
+          "285",
+          "304"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 3",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "115 + 220 = ___",
+        "correct_answer": "335",
+        "choices": [
+          "327",
+          "347",
+          "345",
+          "335"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 3",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "150 + 290 = ___",
+        "correct_answer": "440",
+        "choices": [
+          "455",
+          "431",
+          "450",
+          "440"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 3",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "191 + 460 = ___",
+        "correct_answer": "651",
+        "choices": [
+          "651",
+          "646",
+          "659",
+          "642"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 3",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "187 + 330 = ___",
+        "correct_answer": "517",
+        "choices": [
+          "517",
+          "524",
+          "521",
+          "715"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 3",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "366 + 350 = ___",
+        "correct_answer": "716",
+        "choices": [
+          "713",
+          "717",
+          "617",
+          "716"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 3",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "434 + 170 = ___",
+        "correct_answer": "604",
+        "choices": [
+          "613",
+          "610",
+          "616",
+          "604"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 3",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "486 + 300 = ___",
+        "correct_answer": "786",
+        "choices": [
+          "786",
+          "790",
+          "687",
+          "793"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 3",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "407 + 143 = ___",
+        "correct_answer": "550",
+        "choices": [
+          "546",
+          "560",
+          "55",
+          "550"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 3",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "fill_blank",
+      "instruction": "Tính tổng",
+      "question_data": {
+        "question": "225 + 361 = ___",
+        "correct_answer": "586",
+        "choices": [
+          "586",
+          "576",
+          "596",
+          "594"
+        ]
+      },
+      "source_anchor": {
+        "book": "Toán 3",
+        "lesson": "Bài 3",
+        "page": 0
+      }
+    }
+  ]
+}

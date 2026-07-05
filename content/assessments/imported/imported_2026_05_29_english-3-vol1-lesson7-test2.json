@@ -1,0 +1,380 @@
+{
+  "title": "ENGLISH 3 - Tập 1 - Bài 7 (Đề 2)",
+  "metadata": {
+    "subject": "english",
+    "grade": 3,
+    "volume": 1,
+    "book": "english 3 - Kết nối tri thức",
+    "lessons": [
+      7
+    ],
+    "total_questions": 15,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "open",
+            "right": "mở"
+          },
+          {
+            "left": "close",
+            "right": "đóng"
+          },
+          {
+            "left": "book",
+            "right": "quyển sách"
+          },
+          {
+            "left": "stand up",
+            "right": "đứng lên"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "My",
+          "Linh",
+          "is",
+          "name"
+        ],
+        "correct_sentence": "My name is Linh."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "giáo viên",
+        "correct_word": "teacher",
+        "choices": [
+          "teacher",
+          "this",
+          "friend",
+          "that"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "vào trong",
+        "correct_word": "come in",
+        "choices": [
+          "book",
+          "open",
+          "stand up",
+          "come in",
+          "close",
+          "sit down"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "quyển sách",
+        "correct_word": "book",
+        "choices": [
+          "stand up",
+          "book",
+          "come in",
+          "sit down",
+          "close",
+          "open"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "hobby",
+            "right": "sở thích"
+          },
+          {
+            "left": "singing",
+            "right": "ca hát"
+          },
+          {
+            "left": "swimming",
+            "right": "bơi lội"
+          },
+          {
+            "left": "dancing",
+            "right": "nhảy múa"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "open",
+            "right": "mở"
+          },
+          {
+            "left": "close",
+            "right": "đóng"
+          },
+          {
+            "left": "book",
+            "right": "quyển sách"
+          },
+          {
+            "left": "stand up",
+            "right": "đứng lên"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "what",
+            "right": "cái gì"
+          },
+          {
+            "left": "name",
+            "right": "tên"
+          },
+          {
+            "left": "my",
+            "right": "của tôi"
+          },
+          {
+            "left": "your",
+            "right": "của bạn"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "Yes",
+          "I",
+          "dancing",
+          "like"
+        ],
+        "correct_sentence": "Yes, I like dancing."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "in",
+          "come",
+          "I",
+          "May"
+        ],
+        "correct_sentence": "May I come in?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "your",
+          "Open",
+          "book",
+          "please"
+        ],
+        "correct_sentence": "Open your book, please."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "open",
+            "right": "mở"
+          },
+          {
+            "left": "close",
+            "right": "đóng"
+          },
+          {
+            "left": "book",
+            "right": "quyển sách"
+          },
+          {
+            "left": "stand up",
+            "right": "đứng lên"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "this",
+            "right": "đây"
+          },
+          {
+            "left": "that",
+            "right": "kia"
+          },
+          {
+            "left": "friend",
+            "right": "người bạn"
+          },
+          {
+            "left": "teacher",
+            "right": "giáo viên"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "đóng",
+        "correct_word": "close",
+        "choices": [
+          "come in",
+          "sit down",
+          "stand up",
+          "book",
+          "close",
+          "open"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "vào trong",
+        "correct_word": "come in",
+        "choices": [
+          "stand up",
+          "book",
+          "close",
+          "open",
+          "come in",
+          "sit down"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    }
+  ]
+}

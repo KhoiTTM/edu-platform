@@ -1,0 +1,246 @@
+{
+  "collection": {
+    "title": "PreA1Starter - Wordlist - Phản xạ",
+    "subject_slug": "pre-a1-starter",
+    "grade": 3,
+    "volume": 1,
+    "units": [99],
+    "sequence_number": 99,
+    "exam_type": "reflex",
+    "reference_book": "Pre A1 Starters Wordlist",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 1,
+      "title": "PreA1Starter - Wordlist - Phản xạ - Đề 01",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"head\"** nghĩa là gì? 👤",
+            "options": ["đầu", "tay", "chân", "mắt"],
+            "correct_index": 0,
+            "explanation": "**head** = **đầu** 👤",
+            "tags": ["vocab", "en-to-vi", "my-body"]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"mèo\"** trong tiếng Anh là gì? 🐱",
+            "options": ["dog", "bird", "cat", "cow"],
+            "correct_index": 2,
+            "explanation": "**mèo** = **cat** 🐱",
+            "tags": ["vocab", "vi-to-en", "at-the-zoo"]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "elephant",
+            "options": ["elephant", "giraffe", "monkey", "hippo"],
+            "correct_index": 0,
+            "explanation": "Bạn nghe thấy từ **elephant** 🐘 (voi).",
+            "tags": ["listening", "vocab", "at-the-zoo"]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **a _ _ l e** (nghĩa là táo 🍎)",
+            "options": ["pp", "bb", "tt", "ff"],
+            "correct_index": 0,
+            "explanation": "**a pp l e** = **apple** 🍎 (táo).",
+            "tags": ["spelling", "food"]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"blue\"** nghĩa là màu gì? 🔵",
+            "options": ["màu đỏ", "màu xanh lam", "màu vàng", "màu xanh lá"],
+            "correct_index": 1,
+            "explanation": "**blue** = **màu xanh lam** 🔵",
+            "tags": ["vocab", "en-to-vi", "colours"]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn nghĩa tiếng Việt đúng:",
+            "audio_text": "teacher",
+            "options": ["bác sĩ", "giáo viên", "học sinh", "bố"],
+            "correct_index": 1,
+            "explanation": "**teacher** = **giáo viên** 👩‍🏫",
+            "tags": ["listening", "vocab", "at-school"]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"family\"** nghĩa là gì? 👨‍👩‍👧‍👦",
+            "options": ["bạn bè", "gia đình", "lớp học", "đồ chơi"],
+            "correct_index": 1,
+            "explanation": "**family** = **gia đình** 👨‍👩‍👧‍👦",
+            "tags": ["vocab", "en-to-vi", "family"]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **d _ g** (nghĩa là chó 🐕)",
+            "options": ["o", "a", "i", "u"],
+            "correct_index": 0,
+            "explanation": "**d o g** = **dog** 🐕 (chó).",
+            "tags": ["spelling", "at-the-zoo"]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"xe buýt\"** trong tiếng Anh là gì? 🚌",
+            "options": ["car", "bus", "train", "boat"],
+            "correct_index": 1,
+            "explanation": "**xe buýt** = **bus** 🚌",
+            "tags": ["vocab", "vi-to-en", "my-street"]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn từ tiếng Anh bạn nghe được:",
+            "audio_text": "banana",
+            "options": ["apple", "mango", "banana", "orange"],
+            "correct_index": 2,
+            "explanation": "Bạn nghe thấy từ **banana** 🍌 (chuối).",
+            "tags": ["listening", "vocab", "food"]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"bedroom\"** nghĩa là gì? 🛏",
+            "options": ["nhà bếp", "phòng khách", "phòng ngủ", "phòng tắm"],
+            "correct_index": 2,
+            "explanation": "**bedroom** = **phòng ngủ** 🛏",
+            "tags": ["vocab", "en-to-vi", "at-home"]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **s _ n d** (nghĩa là cát 🏖)",
+            "options": ["a", "e", "o", "i"],
+            "correct_index": 0,
+            "explanation": "**s a n d** = **sand** 🏖 (cát).",
+            "tags": ["spelling", "sports-beach"]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"swim\"** nghĩa là gì? 🏊",
+            "options": ["chạy", "nhảy", "bơi", "đi bộ"],
+            "correct_index": 2,
+            "explanation": "**swim** = **bơi** 🏊",
+            "tags": ["vocab", "en-to-vi", "sports-beach"]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"áo khoác\"** trong tiếng Anh là gì? 🧥",
+            "options": ["shirt", "dress", "jacket", "sock"],
+            "correct_index": 2,
+            "explanation": "**áo khoác** = **jacket** 🧥",
+            "tags": ["vocab", "vi-to-en", "clothes"]
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Nghe và chọn nghĩa tiếng Việt đúng:",
+            "audio_text": "football",
+            "options": ["bóng rổ", "bóng chày", "cầu lông", "bóng đá"],
+            "correct_index": 3,
+            "explanation": "**football** = **bóng đá** ⚽",
+            "tags": ["listening", "vocab", "sports-beach"]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Chọn chữ cái còn thiếu để hoàn thành từ: **m _ l k** (nghĩa là sữa 🥛)",
+            "options": ["i", "a", "o", "e"],
+            "correct_index": 0,
+            "explanation": "**m i l k** = **milk** 🥛 (sữa).",
+            "tags": ["spelling", "food"]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"book\"** nghĩa là gì? 📗",
+            "options": ["bút chì", "thước kẻ", "sách", "bảng đen"],
+            "correct_index": 2,
+            "explanation": "**book** = **sách** 📗",
+            "tags": ["vocab", "en-to-vi", "at-school"]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"màu đỏ\"** trong tiếng Anh là gì? 🔴",
+            "options": ["blue", "red", "green", "pink"],
+            "correct_index": 1,
+            "explanation": "**màu đỏ** = **red** 🔴",
+            "tags": ["vocab", "vi-to-en", "colours"]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"park\"** nghĩa là gì? 🌳",
+            "options": ["đường phố", "cửa hàng", "công viên", "bến xe"],
+            "correct_index": 2,
+            "explanation": "**park** = **công viên** 🌳",
+            "tags": ["vocab", "en-to-vi", "my-street"]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "**\"bàn tay\"** trong tiếng Anh là gì? ✋",
+            "options": ["foot", "arm", "leg", "hand"],
+            "correct_index": 3,
+            "explanation": "**bàn tay** = **hand** ✋",
+            "tags": ["vocab", "vi-to-en", "my-body"]
+          }
+        }
+      ]
+    }
+  ]
+}

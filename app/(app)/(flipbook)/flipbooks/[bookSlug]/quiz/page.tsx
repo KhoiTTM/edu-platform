@@ -56,6 +56,18 @@ const LESSON_TITLES: Record<string, Record<number, string>> = {
     28: "SBT - KHTN 7 - Bài 28. Trao đổi khí ở sinh vật",
     29: "SBT - KHTN 7 - Bài 29. Vai trò của nước và chất dinh dưỡng đối với sinh vật",
     30: "SBT - KHTN 7 - Bài 30. Trao đổi nước và chất dinh dưỡng ở thực vật",
+    31: "SBT - KHTN 7 - Bài 31. Trao đổi nước và chất dinh dưỡng ở động vật",
+    32: "SBT - KHTN 7 - Bài 32. Thực hành: Chứng minh thân vận chuyển nước và lá thoát hơi nước",
+    33: "SBT - KHTN 7 - Bài 33. Cảm ứng ở sinh vật và tập tính ở động vật",
+    34: "SBT - KHTN 7 - Bài 34. Vận dụng hiện tượng cảm ứng ở sinh vật vào thực tiễn",
+    35: "SBT - KHTN 7 - Bài 35. Thực hành: Cảm ứng ở sinh vật",
+    36: "SBT - KHTN 7 - Bài 36. Khái quát về sinh trưởng và phát triển ở sinh vật",
+    37: "SBT - KHTN 7 - Bài 37. Ứng dụng sinh trưởng và phát triển ở sinh vật vào thực tiễn",
+    38: "SBT - KHTN 7 - Bài 38. Thực hành: Quan sát, mô tả sự sinh trưởng và phát triển ở một số sinh vật",
+    39: "SBT - KHTN 7 - Bài 39. Sinh sản vô tính ở sinh vật",
+    40: "SBT - KHTN 7 - Bài 40. Sinh sản hữu tính ở sinh vật",
+    41: "SBT - KHTN 7 - Bài 41. Một số yếu tố ảnh hưởng và điều hoà, điều khiển sinh sản ở sinh vật",
+    42: "SBT - KHTN 7 - Bài 42. Cơ thể sinh vật là một thể thống nhất",
   },
 };
 

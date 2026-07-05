@@ -1,0 +1,41 @@
+{
+  "page": 60,
+  "elements": [
+    {
+      "id": "q_60_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "24.5. Quan sát Hình 24, trả lời các câu hỏi và yêu cẩu sau: b) Hình 24 a) Mô tả hiện tượng quan sát được trong mỗi hình a, b, c. Giải thích các hiện tượng đó. b) Thí nghiệm trong hình chứng minh điểu gì?",
+      "correctAnswer": "a) Mô tả hiện tượng và giải thích Hình Hiện tượng Giải thích Cây xanh bị chuông kín Lá đổi màu và cây có biểu hiện rũ a) không có CO2 nên không quang cành, lá hợp được Chuột ở trong chuông kín không b) Chuột chết có O2để hô hấp KET N01 sử CO2 do chuột hô hấp thải ra để quang hợp c) Cây xanh tốt và chuột sống 0 Cây quang nhả O2 cung cấp cho chuột hô hấp b) Mục đích của thí nghiệm: Chứng minh quang hợpởthực vật (cây xanh) cẩn CO2 làm nguyên liệu: Chứng minh vai trò của quang hợp trong việc phóng O2 cung cấp cho trình hô hấp của động vật (chuột)"
+    },
+    {
+      "id": "q_60_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "24.6. Tại sao trong thí nghiệm chứng minh tinh bột được tạo thành trong quang hợp lại phải để chậu cây khoai trong bóng tối hai ngày?",
+      "correctAnswer": "Phải để chậu cây khoai trong bóng tối hai ngày để cho quang không xảy ra, lượng tinh bột có sẵn trong lá sẽ được cung cấp cho các cơ quan, bộ phận của cây. Đảm bảo khi dán giấy đen vào thì vị trí đó không còn tinh bột nữa. 125 trổng động: chụp Cây dụng hợp giải quá lang hợp đang băng"
+    },
+    {
+      "id": "q_60_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "25.2. Chọn từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau: Quá trình hô hấp ở cơ thể sinh vật xảy ra trong _ (1)- của tế bào, tại đó các chất. (2) hợp được từ quá trình _ (3). hoặc từ thức ăn được phân giải thành . (4)_ và carbon dioxide; đổng thời phóng ra _ (5) 59 CO; lang ống quá đổng tổng giải",
+      "correctAnswer": ""
+    }
+  ]
+}

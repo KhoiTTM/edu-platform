@@ -1,0 +1,41 @@
+{
+  "page": 89,
+  "elements": [
+    {
+      "id": "q_89_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "39.9. Nghỉ hè, Lan được bố mẹ cho vể chơi với bà. rủ Lan ra vườn làm cỏ với để chuẩn bị trổng rau. chỉ cho Lan một số loại cỏ cẩn phải nhổ bỏ, nếu không chúng sẽ cạnh tranh với cây rau vể ánh nước, chất dinh dưỡng, làm cho rau còi cọc; chậm Iớn, thậm chí bị sâu bệnh: dặn nhổ hết gốc, bỏ toàn bộ thân rễ dưới đất thì cỏ mới không mọc lại được: Em hãy thích cho Lan hiểu tại sao lại hướng dẫn như vậy. BÀl 40. SINH SẢN HỮU TÍNH Ở SINH VẬT",
+      "correctAnswer": "Nhiểu loài cỏ dại có khả năng sinh sản bằng thân rễ nên chỉ cẩn sót lại một mẩu thân rễ là từ đó có thể mọc chổi và ra rễ, phát triển thành cây mới, có khả năng lan khi có điểu kiện thời tiết thuận lợi (mưa, đất ẩm) Vì vậy; muốn diệt cỏ dại hại cây trổng cẩn phải nhặtbỏ toàn bộ thân rễ ngẩm dưới đất."
+    },
+    {
+      "id": "q_89_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "40.1. Sinh sản hữu tính ở sinh vật là trình A tạo ra cơ thể mới từ một phẩn của cơ thể mẹ hoặc bố. B tạo ra cơ thể mới từ sự kết hợp giữa cơ thể mẹ và cơ thể bố. C hợp nhất giao tử đực và giao tử cái tạo thành hợp tử, hợp tử phát triển thành cơ thể mới. D. tạo ra cơ thể mới từ cơ quan sinh dưỡng của cơ thể mẹ 40.2 Chọn các từ/cụm từ phù để hoàn thành đoạn thông tin sau: Trong sinh sản hữu tính ởthực vật, giao tử đực được hình thành trong _(1)- giao tử cái được hình thành trong (2). Quá trình vận chuyển hạt phấn đến bẩu nhuỵ là _ (3) Thụ tinh là quá trình kết hợp giữa giao tử đực và giao tử cái tạo thành _ (4) tử phân chia và phát triển thành phôi nằm trong hạt. Bẩu biến đổi thành quả chứa hạt, (5) do noãn phát triển thành.",
+      "correctAnswer": "C. VoL GuoG S 0NG"
+    },
+    {
+      "id": "q_89_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "40.3. Các khẳng định sau đúng sai? Stitu STT Khẳng định Đúng/Sai Bâu không xảy ra thụ tinh sẽ phát triển thành không hạt 2 Hoa thụ phấn nhờ côn trùng và tác động của con người 3 Các động vật có thụ tinh ngoài thường sống ở trên cạn Noãn đã thụ tinh phát triển thành hợp tử, hợp tử phát triển thành hạt Phôi phát triển bên trong cơ thể mẹ đối với các động vật đẻ 5 trứng và đẻ con 88 Ông quê ông Ông ông sáng, Ông ngẩm phải giải ông quá giữa hợp Hợp nhuỵ đây hay quả nhuỵ gió,",
+      "correctAnswer": "1 Đ; 2 Đ; 3 = S;4 -S;5 = S"
+    }
+  ]
+}

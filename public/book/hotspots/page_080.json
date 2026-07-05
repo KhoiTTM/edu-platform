@@ -1,0 +1,41 @@
+{
+  "page": 80,
+  "elements": [
+    {
+      "id": "q_80_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "34.3. Em hãy nêu những ví dụ vể việc dụng hiện tượng cảm ở sinh vật vào trổng trọt; chăn nuôi và đời sống.",
+      "correctAnswer": "Trong trổng trọt, con người đã dụng tính hướng sáng, hướng tiếp xúc, hướng nước để có chế độ chiếu làm giàn, tưới nước; hợp lí; có các biện pháp tiêu diệt côn gây hại. 9 Uiu Trong chăn nuôi, con người hình thành tập tính tốt cho vật nuôi như: ăn, ngủ giờ; đi vệ sinh chỗ; nghe hiệu lệnh đến ăn; Con người các tập tính của vật trong việc đánh bắt, huấn luyện động vật."
+    },
+    {
+      "id": "q_80_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "35.1. Em hãy thiết kế thí nghiệm chứng minh tính hướng nước, hướng sáng, hướng tiếp xúc của thực vật. Trình bày cách tiến hành, dự đoán kết quả, thích hiện tượng quan sát được rổi hoàn thành thông tin vào theo mẫu sau: Cách Hiện tượng/ Thí nghiệm Giải thích Kết luận tiến hành Kết Chứng minh tính KE N01 RITAUL hướng nước của cây Chứng minh tính +oud504 hướng sáng của cây Chứng minh tính hướng tiếp xúc của cây Lưuý: HS cẩn cho biết các đối tượng thực vật phù cho mỗi thí nghiệm (ví dụ: Thí nghiệm chứng minh tính hướng tiếp xúc nên chọn cây thân leo cây thân gỗ).",
+      "correctAnswer": "Gợi ý:_ Các nhóm cây phù hợp cho các thí nghiệm như: Thí nghiệm chứng minh tính hướng nước của cây: nên chọn các cây non, rễ phát triển. Thí nghiệm chứng minh tính hướng sáng của cây: nên chọn các cây thân mểm; cây non (ví dụ: cây hoa mười giờ; cây đỗ,). Thí nghiệm chứng minh tính hướng tiếp xúc của cây: nhóm cây phù hợp với thí nghiệm này là các cây thân leo như mướp; đậu, bẩu, bí Các thiết kế thí nghiệm HS dựa trên cơ sở cách làm thí nghiệm trong SGK."
+    },
+    {
+      "id": "q_80_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "35.2. Thực hành hình thành tập tính học được cho vật nuôi: Hình thành thói quen ăn uống đúng giờ cho một số vật nuôi biến như chó, mèo, Iợn, cá, theo trình tự các bước sau: 79 ứng ứng dựng ứng tiếng giải bảng quả hợp hay phổ gà,",
+      "correctAnswer": "HS thực hành với các vật nuôi tự chọn và hoàn thành bảng kết theo mẫu:"
+    }
+  ]
+}

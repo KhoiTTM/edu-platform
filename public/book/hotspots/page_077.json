@@ -1,0 +1,44 @@
+{
+  "page": 77,
+  "elements": [
+    {
+      "id": "q_77_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12,
+        "width": 83,
+        "height": 7.5
+      },
+      "label": "33.1. Cảm ở sinh vật là phản của sinh vật với các kích thích A.từ môi trường. B.từ môi trường ngoài cơ thể. C. từ môi trường trong cơ thể D. từ các sinh vật khác.",
+      "correctAnswer": "A. KẾT NỐL TRI THỨc",
+      "value": ""
+    },
+    {
+      "id": "q_77_2",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83,
+        "height": 7.5
+      },
+      "label": "33.2. Các tác nhân của môi trường tác tới cơ thể sinh vật được gọi là gì? A. Các nhận biết. B. Các kích thích C. Các cảm D. Các phản",
+      "correctAnswer": "B",
+      "value": ""
+    },
+    {
+      "id": "q_77_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83,
+        "height": 7.5
+      },
+      "label": "33.4. Quan sát các hiện tượng cảm ứng của một số sinh vật thường gặp thực tiễn và hoàn thành các thông tin vào bảng theo mẫu sau: Tên sinh vật Kích thích Hiện tượng cảm Lợn Bướm đêm Chim sẻ Cây hoa hướng dương Cây đậu (rễ cây) 76 ứng ứng động ứng: ứng. phía sáng trong ứng",
+      "correctAnswer": "Tên sinh vật Kích thích Hiện tượng cảm Lợn Bịtác cơhọcmạnh Bỏ chạy; kêu, Bướm đêm Ánh sáng Bay tới nơi phát sáng đi xa khỏi nơi phát ra Chim sẻ Nghe mạnh âm thanh Cây hoa hướng dương |Ánh sáng Vươn vể phía ánh sáng Cây đậu (rễ cây) Nước Mọc dài vể phía có nước",
+      "value": ""
+    }
+  ]
+}

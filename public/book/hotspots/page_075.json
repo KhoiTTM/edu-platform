@@ -1,0 +1,29 @@
+{
+  "page": 75,
+  "elements": [
+    {
+      "id": "q_75_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "32.4. Các khẳng định sau đây hay sai? STT Khẳng định Đúng/Sai Mạch gỗ vận chuyển nước và muối khoáng trong thân Khi tiến hành thí nghiệm chứng minh lá thoát hơi nước, 2 nên ngừng tưới nước cho cây để đất trong chậu thật khô 3 Lá là cơ quan nhất của cây có thể thoát hơi nước Trong thí nghiệm chứng minh lá thoát hơi nước, thời gian quan sát thấy hơi nước ở túi nylon có thể thay đổi tuỳ thuộc loài cây; điểu kiện thời tiết Nên sử dụng cành hoa màu trắng trong thí nghiệm 5 chứng minh thân vận chuyển nước",
+      "correctAnswer": "1 Đ; 2 S;3 S; 4 = Đ; 5 = Đ."
+    },
+    {
+      "id": "q_75_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "32.5. Bạn An đã chuẩn bị hai chậu cây và thiết kế thí nghiệm chứng minh lá thoát hơi nước như sau: Bước 1: Dán nhãn chậu cây thứ nhất là chậu A, chậu còn lại là B. Bước 2: Ngắt toàn bộ lá cây ở chậu A, cây ở chậu B nguyên lá. Bước 3: Trùm nylon trong suốt lên cây trong chậu A và chậu B, đặt hai chậu cây ra ngoài (Hình 32.1). Bước 4: Sau khoảng thời gian từ 30 đến 60 phút, quan sát hiện tượng trong túi nylon trùm trên cây A và cây B (Hình 322).c Uo c Chậu A Chậu B Hình 32.1. Trùm túi nylon trong suốt lên mỗi chậu cây; đặt chậu cây ra ngoài 74 đúng duy giữ túi sáng sáng",
+      "correctAnswer": "Trong bước 3, An đã trùm túi nylon lên cả chậu đất. Khi đất ẩm ở ngoài cũng có thể bốc hơi tạo nên hơi nước. Do đó, để thu được kết quả chính xác, chỉ nên trùm túi nylon kín phẩn lá cây mà không trùm vào chậu đất. CHUƠNG VIIL. CẢM ÚNG Ở SINH VẬT"
+    }
+  ]
+}

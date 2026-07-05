@@ -1,0 +1,101 @@
+{
+  "page": 10,
+  "elements": [
+    {
+      "id": "p10_2.7",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 3.5,
+        "width": 83,
+        "height": 17
+      },
+      "label": "2.7. Dựa vào hình vẽ 2.2 hãy cho biết (ý a, b):",
+      "correctAnswer": "a) C; b) Nguyên tử H có 1 electron, 1 proton; nguyên tử He có 2 electron, 2 proton."
+    },
+    {
+      "id": "p10_2.8",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 22,
+        "width": 83,
+        "height": 5.5
+      },
+      "label": "2.8. Giải thích vì sao có thể coi khối lượng nguyên tử tập trung ở hạt nhân.",
+      "correctAnswer": "Do khối lượng của electron rất nhỏ so với proton và neutron (~0.00055 so với 1), nên khối lượng nguyên tử tập trung chủ yếu ở hạt nhân."
+    },
+    {
+      "id": "p10_2.9",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 28.5,
+        "width": 83,
+        "height": 11
+      },
+      "label": "2.9. Cho Lithium có 3 proton (ý a, b):",
+      "correctAnswer": "a) 3 electron; b) 7 amu."
+    },
+    {
+      "id": "p10_2.10",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 40.5,
+        "width": 83,
+        "height": 5.5
+      },
+      "label": "2.10. Mô tả sự khác nhau giữa cấu tạo nguyên tử hydrogen và helium.",
+      "correctAnswer": "Hydrogen có 1 electron ở vỏ và 1 proton ở hạt nhân. Helium có 2 electron ở vỏ, 2 proton và 2 neutron ở hạt nhân."
+    },
+    {
+      "id": "p10_2.11",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 47,
+        "width": 83,
+        "height": 16
+      },
+      "label": "2.11. Oxygen là nguyên tố phổ biến... Hoàn thiện Hình 2.3 mô tả cấu tạo.",
+      "correctAnswer": "Mô hình cấu tạo nguyên tử oxygen gồm hạt nhân ở giữa (8 proton và 8 neutron) và vỏ ngoài gồm 8 electron xếp trên 2 lớp (lớp trong 2e, lớp ngoài 6e)."
+    },
+    {
+      "id": "p10_2.12",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 64,
+        "width": 83,
+        "height": 8
+      },
+      "label": "2.12. Nguyên tử có 10 proton, số lớp electron là:",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "p10_2.13",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 73,
+        "width": 83,
+        "height": 8.5
+      },
+      "label": "2.13. Nguyên tử có số proton bằng 5, viết số electron từ lớp trong ra ngoài:",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "p10_2.14",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 82.5,
+        "width": 83,
+        "height": 11.5
+      },
+      "label": "2.14. Nguyên tử nitơ có 7 proton. Số electron trong các lớp từ trong ra ngoài:",
+      "correctAnswer": "B"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "page": 57,
+  "elements": [
+    {
+      "id": "q_57_1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "23.1. Các yếu tố chủ yếu ngoài môi trường ảnh hưởng đến quang hợp là A. nước, hàm Iượng khí carbon dioxide; hàm lượng khí oxygen: B. nước, hàm lượng khí carbon dioxide; ánh sáng, nhiệt độ C. nước, hàm lượng khí oxygen; ánh sáng. D. nước, hàm lượng khí oxygen; nhiệt độ.",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q_57_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "23.2. Chọn đáp án đúng khi nói vê nhu cẩu ánh sáng của cây ưa sáng và cây ưa A Các cây ưa không cẩn nhiểu ánh mạnh, các cây ưa không cẩn nhiểu ánh sáng. B. Các cây ưa cẩn nhiểu ánh mạnh, cây ưa không cẩn nhiểu ánh sáng. C. Các cây ưa sáng cẩn nhiểu ánh sáng mạnh, cây ưa bóng không cẩn ánh D. Các cây ưa sáng không cẩn ánh sáng; cây ưa cẩn ánh sáng mạnh.",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q_57_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "23.3. Các khẳng định sau đây đúng sai? Đúng/ STT Khẳng định Sai Cây ưa sáng có nhu cẩu ánh sáng thấp noc 2 Cường độ quang hợp tỉ lệ thuận với cường độ ánh sáng Khi tế bào khí khổng mất nước thì khí khổng mở để CO2 3 khuếch tán vào trong lá Đa số thực vật bậc cao ở nhiệt đới, khi nhiệt độ thấp (dưới 10 'C) thường làm cho rễ cây bị thối, cây không hút được nước, ảnh hưởng đến quang 5 Không có quang hợpthì không có sự trên Trái Đất",
+      "correctAnswer": "1 S; 2 S; 3 = S;4 -Đ; 5 Đ 2 - sai vì khi cường độ ánh sáng tăng cao sẽ đốt nóng lá, dẫn đến giảm cường độ quang hợp. Cường độ quang hợp chỉ tăng theo cường độ ánh sáng đến một mức độ nhất định."
+    },
+    {
+      "id": "q_57_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "23.4. Chọn các từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau: Quang hợp hấp thụ khí _ (1)- góp phẩn hiệu ứng nhà kính; cung cấp ~(2)cho hô hấp của các sinh vật và . (3) Quang hợp tạo _ (4)-, là 56 bóng. sáng sáng bóng sáng sáng bóng sáng. bóng hay vùng hợp sống] giảm nguổn",
+      "correctAnswer": "(1) carbon dioxide; (2) oxygen; (3) điểu hoà không khí; (4) chất hữu cơ; (5) năng lượng; (6) nguyên liệu:"
+    }
+  ]
+}

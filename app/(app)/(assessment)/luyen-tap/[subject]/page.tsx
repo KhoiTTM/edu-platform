@@ -10,7 +10,7 @@ import { Sparkles, Star, ChevronRight, CheckCircle2, Play, Trophy, ChevronDown, 
 async function getAssessmentMap(subject: string, grade?: number) {
   // KHTN 7: đọc từ JSON thay vì DB
   if (subject === "khtn" && grade === 7) {
-    const { default: questions } = await import("@/content/khtn7-questions.json");
+    const { default: questions } = await import("@/content/workbooks/khtn7-questions.json");
     const LESSON_TITLES: Record<number, string> = {
       1: "Bài 1: Phương pháp và kĩ năng học tập môn Khoa học tự nhiên",
       2: "Bài 2: Nguyên tử",
@@ -42,6 +42,18 @@ async function getAssessmentMap(subject: string, grade?: number) {
       28: "Bài 28: Trao đổi khí ở sinh vật",
       29: "Bài 29: Vai trò của nước và chất dinh dưỡng đối với sinh vật",
       30: "Bài 30: Trao đổi nước và chất dinh dưỡng ở thực vật",
+      31: "Bài 31: Trao đổi nước và chất dinh dưỡng ở động vật",
+      32: "Bài 32: Thực hành: Chứng minh thân vận chuyển nước và lá thoát hơi nước",
+      33: "Bài 33: Cảm ứng ở sinh vật và tập tính ở động vật",
+      34: "Bài 34: Vận dụng hiện tượng cảm ứng ở sinh vật vào thực tiễn",
+      35: "Bài 35: Thực hành: Cảm ứng ở sinh vật",
+      36: "Bài 36: Khái quát về sinh trưởng và phát triển ở sinh vật",
+      37: "Bài 37: Ứng dụng sinh trưởng và phát triển ở sinh vật vào thực tiễn",
+      38: "Bài 38: Thực hành: Quan sát, mô tả sự sinh trưởng và phát triển ở một số sinh vật",
+      39: "Bài 39: Sinh sản vô tính ở sinh vật",
+      40: "Bài 40: Sinh sản hữu tính ở sinh vật",
+      41: "Bài 41: Một số yếu tố ảnh hưởng và điều hoà, điều khiển sinh sản ở sinh vật",
+      42: "Bài 42: Cơ thể sinh vật là một thể thống nhất",
     };
     const countByBai: Record<number, number> = {};
     for (const q of questions as any[]) {
@@ -55,7 +67,30 @@ async function getAssessmentMap(subject: string, grade?: number) {
         total_questions: count,
       }))
       .sort((a, b) => a.bai - b.bai);
-    return { lessons: [], workbooks, reviews: [], reflex: [] };
+    // Fetch reviews from DB (lesson/reflex exams still served from static JSON above)
+    const { createClient: createClientForKhtn } = await import("@/lib/supabase/client");
+    const supabaseKhtn = createClientForKhtn();
+    const REVIEW_TYPES_KHTN = new Set(["review", "midterm", "final", "exam"]);
+    const { data: khtnCollections } = await supabaseKhtn
+      .from("assessment_collections")
+      .select(`id, title, volume, units, sequence_number, exam_type, exams (id, title, total_questions, exam_number, external_url)`)
+      .eq("subject_slug", "khtn")
+      .eq("grade", 7)
+      .eq("status", "published")
+      .in("exam_type", ["review", "midterm", "final", "exam"]);
+    const reviewMapKhtn = new Map<number, { volume: number; units: Map<number, any> }>();
+    for (const c of (khtnCollections || []) as any[]) {
+      if (!REVIEW_TYPES_KHTN.has(c.exam_type)) continue;
+      const unitNum = Array.isArray(c.units) ? c.units[0] : 1;
+      if (!reviewMapKhtn.has(c.volume)) reviewMapKhtn.set(c.volume, { volume: c.volume, units: new Map() });
+      const volEntry = reviewMapKhtn.get(c.volume)!;
+      if (!volEntry.units.has(unitNum)) volEntry.units.set(unitNum, { unit: unitNum, title: c.title, exams: [] });
+      volEntry.units.get(unitNum)!.exams.push(...(c.exams || []));
+    }
+    const reviewsKhtn = Array.from(reviewMapKhtn.values())
+      .sort((a, b) => a.volume - b.volume)
+      .map((v) => ({ volume: v.volume, units: Array.from(v.units.values()).sort((a, b) => a.unit - b.unit) }));
+    return { lessons: [], workbooks, reviews: reviewsKhtn, reflex: [] };
   }
 
   const { createClient } = await import("@/lib/supabase/client");
@@ -112,13 +147,14 @@ async function getAssessmentMap(subject: string, grade?: number) {
   const reviews = toVolumes(reviewMap);
   const workbooks = workbookList.sort((a, b) => a.bai - b.bai);
 
-  const reflexMap = new Map<number, any>();
+  const reflexMap = new Map<string, any>();
   for (const c of collections as any[]) {
     if (c.exam_type !== "reflex") continue;
-    if (!reflexMap.has(c.volume)) reflexMap.set(c.volume, { volume: c.volume, title: c.title, exams: [] });
-    reflexMap.get(c.volume)!.exams.push(...(c.exams || []));
+    const key = c.id as string;
+    if (!reflexMap.has(key)) reflexMap.set(key, { id: c.id, volume: c.volume, title: c.title, sequence_number: c.sequence_number ?? 99, exams: [] });
+    reflexMap.get(key)!.exams.push(...(c.exams || []));
   }
-  const reflex = Array.from(reflexMap.values()).sort((a, b) => a.volume - b.volume);
+  const reflex = Array.from(reflexMap.values()).sort((a, b) => a.sequence_number - b.sequence_number);
 
   return { lessons, workbooks, reviews, reflex };
 }
@@ -218,7 +254,7 @@ export default function SubjectMapPage() {
   };
 
   if (!mounted || !subject) return (
-    <div className="flex items-center justify-center h-full bg-slate-900 text-white">
+    <div className="flex items-center justify-center h-full bg-surface text-white">
       <p>Loading subject...</p>
     </div>
   );
@@ -228,9 +264,9 @@ export default function SubjectMapPage() {
   const unitGlows = ["rgba(79,70,229,0.4)", "rgba(217,70,239,0.4)", "rgba(6,182,212,0.4)", "rgba(16,185,129,0.4)"];
 
   const ExamTable = ({ exams, onRandom, timer }: { exams: any[]; onRandom?: () => void; timer?: number }) => (
-    <div className="w-full overflow-hidden rounded-2xl border border-slate-800 bg-slate-950/40 backdrop-blur-md shadow-xl">
+    <div className="w-full overflow-hidden rounded-2xl border border-line bg-slate-950/40 backdrop-blur-md shadow-xl">
       {onRandom && (
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 px-6 py-4 border-b border-slate-800/80 bg-slate-900/30">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 px-6 py-4 border-b border-line/80 bg-surface/30">
           <span className="text-xs font-bold text-slate-400">Danh sách đề luyện tập</span>
           <button onClick={onRandom} disabled={isPickingRandom}
             className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-extrabold text-xs shadow-lg transition-all active:scale-95 disabled:opacity-50">
@@ -241,7 +277,7 @@ export default function SubjectMapPage() {
       )}
       <table className="w-full text-left border-collapse">
         <thead>
-          <tr className="border-b border-slate-800 bg-slate-900/50 text-[10px] font-black uppercase tracking-wider text-slate-400">
+          <tr className="border-b border-line bg-surface/50 text-[10px] font-black uppercase tracking-wider text-slate-400">
             <th className="px-6 py-3.5 w-16 text-center">STT</th>
             <th className="px-6 py-3.5">Tên đề luyện tập</th>
             <th className="px-6 py-3.5 w-32 text-center">Số câu</th>
@@ -257,7 +293,7 @@ export default function SubjectMapPage() {
             const href = externalUrl ?? `/test-assessment?examId=${exam.id}${timer ? `&timer=${timer}` : ""}`;
             const isExternal = !!externalUrl;
             return (
-              <tr key={exam.id} className={clsx("transition-all duration-150 group hover:bg-slate-800/20", isCompleted && "text-slate-500")}>
+              <tr key={exam.id} className={clsx("transition-all duration-150 group hover:bg-surface-raised/20", isCompleted && "text-slate-500")}>
                 <td className="px-6 py-4 text-center font-black text-slate-400 group-hover:text-cyan-400 transition-colors">{++globalIndex}</td>
                 <td className="px-6 py-4">
                   <Link href={href} target={isExternal ? "_blank" : undefined} rel={isExternal ? "noopener noreferrer" : undefined}
@@ -268,7 +304,7 @@ export default function SubjectMapPage() {
                 <td className="px-6 py-4 text-center">
                   {isExternal
                     ? <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-violet-500/10 border border-violet-500/30 text-xs font-black text-violet-400">📖 Flipbook</span>
-                    : <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-900/60 border border-slate-800 text-xs font-black text-slate-300"><Star size={12} className="text-amber-400 fill-amber-400" />{exam.total_questions || 15} Câu</span>
+                    : <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface/60 border border-line text-xs font-black text-slate-300"><Star size={12} className="text-amber-400 fill-amber-400" />{exam.total_questions || 15} Câu</span>
                   }
                 </td>
                 <td className="px-6 py-4 text-center">
@@ -281,7 +317,7 @@ export default function SubjectMapPage() {
                     className={clsx("inline-flex items-center justify-center gap-1 px-4 py-1.5 rounded-xl font-black text-xs uppercase tracking-wide transition-all active:scale-95 duration-150",
                       isExternal
                         ? "bg-gradient-to-r from-violet-500 to-purple-600 hover:from-violet-400 hover:to-purple-500 text-white shadow-md shadow-purple-500/10"
-                        : isCompleted ? "border border-slate-700 text-slate-400 hover:bg-slate-800 hover:text-white" : "bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-md shadow-blue-500/10")}>
+                        : isCompleted ? "border border-line text-slate-400 hover:bg-surface-raised hover:text-white" : "bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-md shadow-blue-500/10")}>
                     {isExternal ? "Mở Flipbook" : isCompleted ? "Làm lại" : "Luyện tập"}
                   </Link>
                 </td>
@@ -294,8 +330,8 @@ export default function SubjectMapPage() {
   );
 
   return (
-    <main className="mx-auto flex min-h-dvh w-full flex-col pb-20 relative text-white bg-[#0f172a]">
-      <header className="sticky top-0 z-20 flex items-center justify-between border-b border-white/10 bg-slate-900/50 backdrop-blur-md px-6 py-4 shadow-lg">
+    <main className="mx-auto flex min-h-dvh w-full flex-col pb-20 relative text-white bg-surface">
+      <header className="sticky top-0 z-20 flex items-center justify-between border-b border-white/10 bg-surface/50 backdrop-blur-md px-6 py-4 shadow-lg">
         <div className="text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-400 drop-shadow-sm tracking-wide">
           {subjectName} {gradeNum ? `- Lớp ${gradeNum}` : ""}
         </div>
@@ -311,7 +347,7 @@ export default function SubjectMapPage() {
 
         {!isLoading && (
           <div className="flex justify-center mb-10">
-            <div className="flex bg-slate-900/80 p-1.5 rounded-2xl border border-white/10 backdrop-blur-sm gap-1 flex-wrap justify-center">
+            <div className="flex bg-surface/80 p-1.5 rounded-2xl border border-white/10 backdrop-blur-sm gap-1 flex-wrap justify-center">
               <button onClick={() => setActiveTab("lesson")}
                 className={clsx("px-6 py-2.5 rounded-xl text-sm font-black transition-all duration-200 select-none",
                   activeTab === "lesson" ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-lg shadow-blue-500/20" : "text-slate-400 hover:text-white")}>
@@ -380,19 +416,19 @@ export default function SubjectMapPage() {
           </div>
         ))}
         {!isLoading && activeTab === "lesson" && volumes.length === 0 && (
-          <div className="text-center py-20 text-slate-400 font-bold text-xl border-2 border-dashed border-slate-700 rounded-2xl bg-slate-800/30">Chưa có đề luyện tập.</div>
+          <div className="text-center py-20 text-slate-400 font-bold text-xl border-2 border-dashed border-line rounded-2xl bg-surface-raised/30">Chưa có đề luyện tập.</div>
         )}
 
         {/* Workbook / SBT */}
         {!isLoading && activeTab === "workbook" && (
-          <div className="w-full overflow-hidden rounded-2xl border border-slate-800 bg-slate-950/40 backdrop-blur-md shadow-xl">
-            <div className="flex items-center justify-between gap-4 px-6 py-4 border-b border-slate-800/80 bg-slate-900/30">
+          <div className="w-full overflow-hidden rounded-2xl border border-line bg-slate-950/40 backdrop-blur-md shadow-xl">
+            <div className="flex items-center justify-between gap-4 px-6 py-4 border-b border-line/80 bg-surface/30">
               <span className="text-xs font-bold text-slate-400">Danh sách bài trong Sách bài tập</span>
               <span className="text-xs font-bold text-emerald-400">{workbooks.length} bài</span>
             </div>
             <table className="w-full text-left border-collapse">
               <thead>
-                <tr className="border-b border-slate-800 bg-slate-900/50 text-[10px] font-black uppercase tracking-wider text-slate-400">
+                <tr className="border-b border-line bg-surface/50 text-[10px] font-black uppercase tracking-wider text-slate-400">
                   <th className="px-6 py-3.5 w-16 text-center">STT</th>
                   <th className="px-6 py-3.5">Tên bài luyện tập</th>
                   <th className="px-6 py-3.5 w-32 text-center">Số câu</th>
@@ -408,7 +444,7 @@ export default function SubjectMapPage() {
                     ? `/flipbooks/khtn7/quiz/${exam.bai}`
                     : `/test-assessment?examId=${exam.id}`;
                   return (
-                    <tr key={exam.id} className={clsx("transition-all duration-150 group hover:bg-slate-800/20", isCompleted && "text-slate-500")}>
+                    <tr key={exam.id} className={clsx("transition-all duration-150 group hover:bg-surface-raised/20", isCompleted && "text-slate-500")}>
                       <td className="px-6 py-4 text-center font-black text-slate-400 group-hover:text-emerald-400 transition-colors">{idx + 1}</td>
                       <td className="px-6 py-4">
                         <Link href={href} className={clsx("hover:text-emerald-400 transition-colors block leading-snug", isCompleted ? "line-through decoration-slate-600/50" : "font-extrabold")}>
@@ -416,13 +452,13 @@ export default function SubjectMapPage() {
                         </Link>
                       </td>
                       <td className="px-6 py-4 text-center">
-                        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-900/60 border border-slate-800 text-xs font-black text-slate-300">
+                        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface/60 border border-line text-xs font-black text-slate-300">
                           <Star size={12} className="text-amber-400 fill-amber-400" />{exam.total_questions || "?"} Câu
                         </span>
                       </td>
                       <td className="px-6 py-4 text-center">
                         <Link href={href} className={clsx("inline-flex items-center justify-center gap-1 px-4 py-1.5 rounded-xl font-black text-xs uppercase tracking-wide transition-all active:scale-95 duration-150",
-                          isCompleted ? "border border-slate-700 text-slate-400 hover:bg-slate-800 hover:text-white" : "bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white shadow-md shadow-teal-500/10")}>
+                          isCompleted ? "border border-line text-slate-400 hover:bg-surface-raised hover:text-white" : "bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white shadow-md shadow-teal-500/10")}>
                           {isCompleted ? "Làm lại" : "Luyện tập"}
                         </Link>
                       </td>
@@ -454,7 +490,7 @@ export default function SubjectMapPage() {
                 <div key={`rev-unit-${unit.unit}`} className="mb-12">
                   <div onClick={() => !isPlaceholder && toggleUnit(unitKey)}
                     className={clsx("mb-6 rounded-2xl p-5 text-white border relative overflow-hidden flex justify-between items-center transition-transform duration-100",
-                      !isPlaceholder ? "cursor-pointer active:scale-[0.99] select-none border-white/20 backdrop-blur-md" : "border-dashed border-slate-700/60 bg-slate-900/20 text-slate-500",
+                      !isPlaceholder ? "cursor-pointer active:scale-[0.99] select-none border-white/20 backdrop-blur-md" : "border-dashed border-line/60 bg-surface/20 text-slate-500",
                       !isPlaceholder ? unitColors[colorIdx] : "")}
                     style={!isPlaceholder ? { boxShadow: `0 8px 32px ${unitGlows[colorIdx]}` } : undefined}>
                     <div className="flex-1 pr-4">
@@ -464,7 +500,7 @@ export default function SubjectMapPage() {
                     <div className="flex items-center gap-3 z-10">
                       {!isPlaceholder
                         ? <><div className="bg-white/10 px-3 py-1 rounded-full text-xs font-black border border-white/20">{unit.exams.filter((e: any) => e.is_completed || completedExams.includes(e.id)).length}/{unit.exams.length} Đề</div><div className="w-8 h-8 rounded-full bg-white/15 flex items-center justify-center border border-white/20">{isCollapsed ? <ChevronDown size={18} /> : <ChevronUp size={18} />}</div></>
-                        : <div className="bg-slate-900/60 px-3 py-1 rounded-full text-xs font-black border border-slate-800 text-slate-500">Sắp ra mắt</div>}
+                        : <div className="bg-surface/60 px-3 py-1 rounded-full text-xs font-black border border-line text-slate-500">Sắp ra mắt</div>}
                     </div>
                   </div>
                   <AnimatePresence initial={false}>
@@ -480,18 +516,18 @@ export default function SubjectMapPage() {
           </div>
         ))}
         {!isLoading && activeTab === "review" && reviews.length === 0 && (
-          <div className="text-center py-20 text-slate-400 font-bold text-xl border-2 border-dashed border-slate-700 rounded-2xl bg-slate-800/30">Chưa có đề ôn tập.</div>
+          <div className="text-center py-20 text-slate-400 font-bold text-xl border-2 border-dashed border-line rounded-2xl bg-surface-raised/30">Chưa có đề ôn tập.</div>
         )}
 
         {/* Reflex */}
         {!isLoading && activeTab === "reflex" && (
           <div className="flex flex-col">
-            <div className="mb-8 p-6 rounded-3xl bg-slate-900/60 border border-slate-800 backdrop-blur-sm shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="mb-8 p-6 rounded-3xl bg-surface/60 border border-line backdrop-blur-sm shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
               <div>
                 <h3 className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-rose-400">⏱️ CÀI ĐẶT THỜI GIAN PHẢN XẠ</h3>
                 <p className="text-xs text-slate-400 mt-1 font-bold">Chọn giới hạn thời gian làm bài cho mỗi câu hỏi. Mặc định là 30 giây.</p>
               </div>
-              <div className="flex items-center gap-2 bg-slate-950 p-1.5 rounded-2xl border border-slate-800">
+              <div className="flex items-center gap-2 bg-slate-950 p-1.5 rounded-2xl border border-line">
                 {[10, 20, 30, 60].map((time) => (
                   <button key={time} onClick={() => setTimerLimit(time)}
                     className={clsx("px-4 py-2 rounded-xl text-xs font-black transition-all select-none duration-150 active:scale-95",
@@ -502,11 +538,11 @@ export default function SubjectMapPage() {
               </div>
             </div>
             {reflexes.map((vol: any) => {
-              const reflexKey = `reflex-${vol.volume}`;
+              const reflexKey = `reflex-${vol.id ?? vol.volume}`;
               const isReflexCollapsed = collapsedReflex[reflexKey] !== false;
               const doneCount = (vol.exams || []).filter((e: any) => completedExams.includes(e.id)).length;
               return (
-                <div key={reflexKey} className="mb-10">
+                <div key={vol.id ?? reflexKey} className="mb-10">
                   {/* Header card — click to toggle */}
                   <div
                     onClick={() => setCollapsedReflex(prev => ({ ...prev, [reflexKey]: !isReflexCollapsed }))}
@@ -549,7 +585,7 @@ export default function SubjectMapPage() {
               );
             })}
             {reflexes.length === 0 && (
-              <div className="text-center py-20 text-slate-400 font-bold text-xl border-2 border-dashed border-slate-700 rounded-2xl bg-slate-800/30">Không có đề luyện phản xạ.</div>
+              <div className="text-center py-20 text-slate-400 font-bold text-xl border-2 border-dashed border-line rounded-2xl bg-surface-raised/30">Không có đề luyện phản xạ.</div>
             )}
           </div>
         )}

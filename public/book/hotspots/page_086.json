@@ -1,0 +1,17 @@
+{
+  "page": 86,
+  "elements": [
+    {
+      "id": "q_86_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "38.4. Khi quan sát, mô tả sự sinh trưởng và phát triển ở một số vật qua tranh ảnh, video; cẩn thực hiện các yêu cẩu nào số các yêu cẩu trong bảng sau: STT Yêu câu Cẩn thực hiện Các giai đoạn sinh trưởng; phát triển của mỗi loài 2 Cách chuyển động của cơ thể Hình thái và kích thước cơ thể sinh vật ở mỗi 3 giai đoạn Biểu hiện của mối quan hệ giữa sinh trưởng và phát triển 5 Hoạt động dinh dưỡng Điểm giống và khác nhau trong quá trình sinh 6 trưởng và phát triển ở các loài 7 Các đặc điểm cấu tạo của mỗi loài",
+      "correctAnswer": "Các yêu câu cân thực hiện: 1,3,4,6."
+    }
+  ]
+}

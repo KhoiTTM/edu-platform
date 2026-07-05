@@ -17,6 +17,7 @@ export type Profile = {
   email: string | null;
   display_name: string | null;
   grade: Grade;
+  grades: Grade[];
   created_at: string;
 };
 
@@ -79,6 +80,15 @@ export type QuizQuestion = {
   correct_index: number;
   order_index: number;
   explanation: string | null;
+  type?: string;
+  correct_answer?: string;
+  exercise_title?: string;
+  instruction?: string;
+  pairs?: { left: string; right: string; }[];
+  groups?: { name: string; items: string[] }[];
+  text_segments?: string[];
+  correct_answers?: string[];
+  word_pool?: string[];
 };
 
 export type QuizAttempt = {

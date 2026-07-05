@@ -1,0 +1,29 @@
+{
+  "page": 50,
+  "elements": [
+    {
+      "id": "q_50_1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "18.8. Trái Đất là một nam châm khổng lổ vì A. Trái Đất hút mọi vật vể phía nó. B. kim của la bàn đặt trên mặt đất luôn chỉ theo hướng Bắc Nam. C. Trái Đất có Bắc cực và Nam cực. D.ở Trái Đất có nhiểu quặng sắt.",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q_50_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "19.1. Trong thí nghiệm Osterd, một kim nam châm tự do đặt cân song song với một đoạn dây dẫn AB, khi cho điện vào trong dây dẫn thì kim nam châm quay lệch khỏi vị trí ban đẩu (Hình 19.1). Giải thích tại sao. Hình 19.1 49 trong ống bằng dòng chạy",
+      "correctAnswer": "Khi cho điện chạy vào dây dẫn quanh dây dẫn (xung quanh điện) có từ trường; dưới tác dụng của từ trường làm kim nam châm quay."
+    }
+  ]
+}

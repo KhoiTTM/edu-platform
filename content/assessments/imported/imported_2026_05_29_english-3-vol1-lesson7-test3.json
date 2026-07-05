@@ -1,0 +1,352 @@
+{
+  "title": "ENGLISH 3 - Tập 1 - Bài 7 (Đề 3)",
+  "metadata": {
+    "subject": "english",
+    "grade": 3,
+    "volume": 1,
+    "book": "english 3 - Kết nối tri thức",
+    "lessons": [
+      7
+    ],
+    "total_questions": 15,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "is",
+          "it",
+          "Yes"
+        ],
+        "correct_sentence": "Yes, it is."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "xin chào",
+        "correct_word": "hello",
+        "choices": [
+          "hello",
+          "hi",
+          "how",
+          "fine"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "open",
+            "right": "mở"
+          },
+          {
+            "left": "close",
+            "right": "đóng"
+          },
+          {
+            "left": "book",
+            "right": "quyển sách"
+          },
+          {
+            "left": "stand up",
+            "right": "đứng lên"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "what",
+            "right": "cái gì"
+          },
+          {
+            "left": "name",
+            "right": "tên"
+          },
+          {
+            "left": "my",
+            "right": "của tôi"
+          },
+          {
+            "left": "your",
+            "right": "của bạn"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "Yes",
+          "he",
+          "is"
+        ],
+        "correct_sentence": "Yes, he is."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "open",
+            "right": "mở"
+          },
+          {
+            "left": "close",
+            "right": "đóng"
+          },
+          {
+            "left": "book",
+            "right": "quyển sách"
+          },
+          {
+            "left": "stand up",
+            "right": "đứng lên"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "tên",
+        "correct_word": "name",
+        "choices": [
+          "my",
+          "your",
+          "name",
+          "what"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "quyển sách",
+        "correct_word": "book",
+        "choices": [
+          "open",
+          "close",
+          "book",
+          "sit down",
+          "stand up",
+          "come in"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "do",
+          "spell",
+          "name",
+          "How",
+          "you",
+          "your"
+        ],
+        "correct_sentence": "How do you spell your name?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "open",
+            "right": "mở"
+          },
+          {
+            "left": "close",
+            "right": "đóng"
+          },
+          {
+            "left": "book",
+            "right": "quyển sách"
+          },
+          {
+            "left": "stand up",
+            "right": "đứng lên"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "am",
+          "eight",
+          "I",
+          "years",
+          "old"
+        ],
+        "correct_sentence": "I am eight years old."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "am",
+          "I",
+          "Hi",
+          "Mai"
+        ],
+        "correct_sentence": "Hi, I am Mai."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "Yes",
+          "you",
+          "can"
+        ],
+        "correct_sentence": "Yes, you can."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "vào trong",
+        "correct_word": "come in",
+        "choices": [
+          "stand up",
+          "open",
+          "come in",
+          "close",
+          "sit down",
+          "book"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "No",
+          "you",
+          "can't"
+        ],
+        "correct_sentence": "No, you can't."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 7",
+        "page": 0
+      }
+    }
+  ]
+}

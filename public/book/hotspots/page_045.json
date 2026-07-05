@@ -1,0 +1,41 @@
+{
+  "page": 45,
+  "elements": [
+    {
+      "id": "q_45_1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "15.1. cụ thí nghiệm thu năng lượng ánh sáng chuyển hoá thành điện A. pin quang điện, bóng đèn LED; dây nối. B.đèn pin, pin quang điện, điện kế, dây nối. C đèn pin, pin quang điện, bóng đèn LED. D. pin quang điện, dây nối. 15.2 Máy tính cẩm tay sử năng lượng mặt trời đã chuyển hoá năng Iượng ánh thành A. điện năng: B. nhiệt năng: C. hoá D. cơ",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "q_45_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "15.3. Hình 15.1 biểu diễn một tia trong không khí; mũi tên cho ta biết RTTHỨC Amàu sắc của ánh cuôc SỐNG B. hướng truyển của ánh C. tốc độ truyển ánh Hình 15.1 D. độ mạnh yếu của ánh",
+      "correctAnswer": "B V01 GuoG S0MG 15.4 B."
+    },
+    {
+      "id": "q_45_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "15.4. Một mụctiêu di giữa A và Bởbên kia P một bức trên bức có một lỗ nhỏ (Hình 15.2).Ở bên này bức tường, M quan sát viên cẩn đặt mắt quan sát B N trong khoảng nào để nhìn thấy mục tiêu? Q A.Từ P đến M. B.Từ M đến N. C. Từ M đến Q D.Từ P đến N. Hình 15.2 44 Dụng năng; gổm: dụng sáng năng. năng. truyển sáng sáng. sáng: sáng. sáng. động tường, tường thủng phải",
+      "correctAnswer": ""
+    }
+  ]
+}

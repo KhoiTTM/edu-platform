@@ -1,0 +1,317 @@
+{
+  "_note": "PHIẾU ĐÁP ÁN (answer sheet) — KHÔNG chứa đề bài. Chỉ lưu section, số câu, loại ô, đáp án ngắn/từ khóa để chấm, trang sách. Học sinh đọc đề ở link sách gốc.",
+  "book": {
+    "slug": "sbt-tienganh7",
+    "title": "Sách bài tập Tiếng Anh 7 (Global Success)",
+    "subject_slug": "tieng_anh",
+    "grade": 7,
+    "flipbook_url": "https://online.flipbuilder.com/sdtta/fctq/"
+  },
+  "units": [
+    {
+      "unit": 1,
+      "title": "Unit 1: Hobbies",
+      "pages": "3–9",
+      "sections": [
+        {
+          "code": "A",
+          "name": "Pronunciation",
+          "page": 3,
+          "tasks": [
+            {
+              "bai": 1,
+              "instruction_ref": "Bài 1 — Viết từ dưới mỗi tranh (8 câu)",
+              "type": "text",
+              "graded": true,
+              "answers": [
+                "shirt",
+                "island",
+                "palace",
+                "Earth",
+                "compass",
+                "circle",
+                "desert",
+                "worker"
+              ]
+            },
+            {
+              "bai": 2,
+              "instruction_ref": "Bài 2 — Chọn từ có phần gạch chân phát âm khác (5 câu)",
+              "type": "choice",
+              "graded": true,
+              "options": [
+                "A",
+                "B",
+                "C"
+              ],
+              "answers": [
+                "C",
+                "B",
+                "A",
+                "B",
+                "A"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "B",
+          "name": "Vocabulary & Grammar",
+          "page": 4,
+          "tasks": [
+            {
+              "bai": 1,
+              "instruction_ref": "Bài 1 — Tìm từ trong ô chữ (8 từ)",
+              "type": "text",
+              "graded": true,
+              "answers": [
+                "shirt",
+                "island",
+                "palace",
+                "compass",
+                "desert",
+                "Earth",
+                "circle",
+                "worker"
+              ]
+            },
+            {
+              "bai": 2,
+              "instruction_ref": "Bài 2 — Hoàn thành bảng make/do/collect/go/play (đáp án mở)",
+              "type": "text",
+              "graded": false,
+              "count": 0,
+              "sample": "Gợi ý: make → models / cakes; do → yoga / homework; collect → coins / stickers; go → cycling / fishing; play → chess / the piano."
+            },
+            {
+              "bai": 3,
+              "instruction_ref": "Bài 3 — Nhìn tranh, hoàn thành câu (5 câu)",
+              "type": "text",
+              "graded": true,
+              "answers": [
+                "cooking",
+                "doing exercise",
+                "building dollhouses",
+                "collecting stamps",
+                "singing"
+              ]
+            },
+            {
+              "bai": 4,
+              "instruction_ref": "Bài 4 — Chọn đáp án đúng (5 câu)",
+              "type": "choice",
+              "graded": true,
+              "options": [
+                "A",
+                "B",
+                "C"
+              ],
+              "answers": [
+                "C",
+                "B",
+                "C",
+                "A",
+                "B"
+              ]
+            },
+            {
+              "bai": 5,
+              "instruction_ref": "Bài 5 — Chia động từ / điền từ (8 câu)",
+              "type": "text",
+              "graded": true,
+              "answers": [
+                "loves",
+                "doesn't go",
+                "learns",
+                "gets",
+                "shares",
+                "enjoy",
+                "make",
+                "meet"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "C",
+          "name": "Speaking",
+          "page": 6,
+          "tasks": [
+            {
+              "bai": 1,
+              "instruction_ref": "Bài 1 — Chọn đáp án (5 câu)",
+              "type": "choice",
+              "graded": true,
+              "options": [
+                "A",
+                "B"
+              ],
+              "answers": [
+                "B",
+                "B",
+                "A",
+                "A",
+                "B"
+              ]
+            },
+            {
+              "bai": 2,
+              "instruction_ref": "Bài 2 — Nối (match, 5 câu)",
+              "type": "text",
+              "graded": true,
+              "answers": [
+                "b",
+                "e",
+                "d",
+                "a",
+                "c"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "D",
+          "name": "Reading",
+          "page": 7,
+          "tasks": [
+            {
+              "bai": 1,
+              "instruction_ref": "Bài 1 — Điền từ (6 câu)",
+              "type": "text",
+              "graded": true,
+              "answers": [
+                "having",
+                "photo",
+                "like",
+                "usually",
+                "sending",
+                "your"
+              ]
+            },
+            {
+              "bai": 2,
+              "instruction_ref": "Bài 2 — Chọn đáp án (6 câu)",
+              "type": "choice",
+              "graded": true,
+              "options": [
+                "A",
+                "B",
+                "C"
+              ],
+              "answers": [
+                "A",
+                "C",
+                "B",
+                "A",
+                "C",
+                "B"
+              ]
+            },
+            {
+              "bai": "3a",
+              "instruction_ref": "Bài 3a — Nối (5 câu)",
+              "type": "text",
+              "graded": true,
+              "answers": [
+                "b",
+                "d",
+                "a",
+                "e",
+                "c"
+              ]
+            },
+            {
+              "bai": "3b",
+              "instruction_ref": "Bài 3b — True/False/Not Given (5 câu)",
+              "type": "choice",
+              "graded": true,
+              "options": [
+                "T",
+                "F",
+                "NI"
+              ],
+              "answers": [
+                "F",
+                "T",
+                "NI",
+                "T",
+                "F"
+              ]
+            }
+          ]
+        },
+        {
+          "code": "E",
+          "name": "Writing",
+          "page": "8–9",
+          "tasks": [
+            {
+              "bai": 1,
+              "instruction_ref": "Bài 1 (tr.8) — Viết câu hoàn chỉnh từ từ/cụm gợi ý (5 câu). Câu đúng phải chứa các TỪ KHÓA cho sẵn.",
+              "type": "keywords",
+              "graded": true,
+              "keywords": [
+                [
+                  "like",
+                  "gardening",
+                  "plants",
+                  "flowers"
+                ],
+                [
+                  "sister",
+                  "horse riding",
+                  "afraid",
+                  "horses"
+                ],
+                [
+                  "making models",
+                  "creativity"
+                ],
+                [
+                  "collecting stamps",
+                  "patient"
+                ],
+                [
+                  "jogging",
+                  "strong",
+                  "stress"
+                ]
+              ]
+            },
+            {
+              "bai": 2,
+              "instruction_ref": "Bài 2 (tr.9) — Viết 5 câu true về các hoạt động trong tranh (dùng like/dislike + V-ing + 1 lý do). Câu đúng cần có động từ cảm xúc + hoạt động.",
+              "type": "keywords",
+              "graded": true,
+              "keywords": [
+                [
+                  "horse riding"
+                ],
+                [
+                  "cooking"
+                ],
+                [
+                  "gardening"
+                ],
+                [
+                  "swimming"
+                ],
+                [
+                  "reading"
+                ]
+              ]
+            },
+            {
+              "bai": 3,
+              "instruction_ref": "Bài 3 (tr.9) — Viết đoạn văn ~70 từ về sở thích của bố/mẹ (dựa word web). Đáp án mở — viết trong sách.",
+              "type": "essay",
+              "graded": false,
+              "count": 1,
+              "sample": "Gợi ý (đoạn văn mẫu): My mum's hobby is gardening. She started it about ten years ago. She often shares this hobby with my aunt at weekends. To do this hobby, she needs seeds, pots and a small watering can. Gardening helps her relax after work and makes our house greener and more beautiful. She feels happy and healthy when she takes care of her plants."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

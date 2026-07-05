@@ -1,0 +1,41 @@
+{
+  "page": 31,
+  "elements": [
+    {
+      "id": "q_31_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "8.4. Công thức tính tốc độ là t Av =st. B. v = C. V = D. V = t t",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "q_31_2",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "8.5. Ba bạn An, Bình, học lớp. Khi tan học, ba bạn đi chiêu trên đường vể nhà. Tốc độ của An là 6,2 km/h; của Bình là 1,5 mIs, của là 72 m/min. Kết luận nào sau đây là đúng? A. Bạn An đi nhanh nhất. B. Bạn Bình đi nhanh nhất. C. Bạn Đông đi nhanh nhất. D. Ba bạn đi nhanh như nhau.",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "q_31_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "8.6. Đường sắt Hà Nội Đà dài khoảng 880 km. Nếu tốc độ trung bình của một tàu hoả là 55 km/h thì thời gian tàu chạy từ Hà Nội đến Đà là A.8 h B. 16 h C. 24 h. D. 32 h",
+      "correctAnswer": "B"
+    }
+  ]
+}

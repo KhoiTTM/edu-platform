@@ -1,0 +1,53 @@
+{
+  "page": 49,
+  "elements": [
+    {
+      "id": "q_49_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "18.1. Có hai thanh nam châm. Thanh nam châm thứ nhất được sơn màu, một nửa màu xanh trên ghi chữ S, nửa kia màu đỏ trên ghi chữ N. Thanh nam châm thứ hai không đánh dấu cực. Làm thế nào xác định được các cực của nam châm này? 18.2 Hãy khoanh vào từ\"Đúng\" hoặc \"Sai\" các câu dưới đây nói vể nam châm STT Nói vể nam châm Đánh Nam châm hút được tất cả các vật kim loai. Sai Nam châm nào cũng có 2 cực: một cực là cực 2 Sai Bắc, một cực là cực Nam. 3 Hai nam châm cứ để gẩn nhau là hút nhau: Đúng Sai Kim la bàn là một kim nam châm. Đẩu kim la bàn Đúng Sai chỉ hướng Bắc là đẩu cực Nam của kim nam châm.",
+      "correctAnswer": "Đưa một đẩu của thanh nam châm thứ hai lại gẩn một đẩu của thanh nam châm thứ nhất (chẳng hạn đẩu cực Bắc) , nếu thấy chúng hút nhau thì hai đẩu khác tên; nếu đẩy nhau thì hai đẩu cùng tên. Từ đó xác định được cực của nam châm thứ hai."
+    },
+    {
+      "id": "q_49_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "18.3. Mạt sắt đặt ở chỗ nào trên thanh nam châm thì bị hút mạnh nhất? A. Ở phẩn của thanh B.Chỉở đẩu cực Bắc của thanh nam châm: C. Chỉ ở đâu cực Nam của thanh nam châm. D.Ởcả hai đẩu cực Bắc và cực Nam của thanh nam châm.",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "q_49_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "18.4. Một nam châm vĩnh cửu hình chữ U, sơn đánh dấu cực trên nam châm đã bị tróc, những cách nào xác định được cực của nam châm này?",
+      "correctAnswer": "Cách thứ nhất: dùng kim nam châm thử. Cách thứ hai: dùng một nam châm đã biết cực. Đưa một đẩu nam châm đã biết cực lại một đẩu của nam châm hình chữ U, nếu hút nhau thì hai cực khác tên, nếu đẩy nhau thì hai cực cùng tên."
+    },
+    {
+      "id": "q_49_4",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "18.5. Một thanh nam châm bị gãy làm hai thì A. một nửa là cực Bắc, một nửa là cực Nam. B. cả hai nửa đểu mất từ tính. 48 giá bằng Đúng gọi Đúng gọi giữa bằng",
+      "correctAnswer": "C"
+    }
+  ]
+}

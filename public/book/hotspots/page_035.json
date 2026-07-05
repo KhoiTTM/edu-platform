@@ -1,0 +1,53 @@
+{
+  "page": 35,
+  "elements": [
+    {
+      "id": "q_35_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "10.5. Đổ thị quãng đường thời gian ở s (km) Hình 10.3 môtả chuyển động của các vật 1, 2, 3 có tốc độ tương là Vv (3) V2 V3, cho thấy A.V, = V2 = V3. B.V1 > V2 > V3. C. V1 < V2 < V3: (h) D.V1 = V2 > V3: Hình 10.3",
+      "correctAnswer": "B VÚI CUÔc SỐNG"
+    },
+    {
+      "id": "q_35_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "10.6. Hình 10.4 là đổ thị quãng đường (km) thời gian của một chuyển Hãy 25 dựa vào đổ thị, viết một để bài tập có 20 3 câu hỏi rổi 15 10 5 t (h) Hình 10.4",
+      "correctAnswer": "HS tự đặt để bài và giải."
+    },
+    {
+      "id": "q_35_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "10.7. Hình 10.5 là đổ thị quãng đường 5 (km) thời gian của một người đi xe đạp s]c (1) và một người đi mô tô. Biết mô tô 100 (2) chuyển động nhanh hơn xe 0u 8 0 80 L a) Đường biểu diễn nào vỚi 60 chuyển động của xe đạp? 40 b) Tính tốc độ của mỗi chuyển động. 20 c) Sau bao lâu thì hai xe gặp nhau? t (h) Hình 10.5",
+      "correctAnswer": "a) Đường biểu diễn 2 s (km) b) đạp = 20 km/h và Vmô tô = 60 km/h. 20 c) Sau 1 h tính từ lúc người đi mô tô bắt 16 đẩu chuyển động: 12"
+    },
+    {
+      "id": "q_35_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "10.8. Một người đi xe đạp; sau khi đi được 8 km với tốc độ 12 km/h thì lại để sửa xe trong 40 min; sau đó đi tiếp 12 km với tốc độ 9 km/h. a) Vẽ đổ thị quãng đường thời gian của người đi xe b) Xác định tốc độ của đi xe đạp trên cả quãng đường. 34 ứng động. giải. đạp. ứng dừng đạp. người",
+      "correctAnswer": "a) Hình 10.1G. b) 7,5 km/h:. 3 t (h) Hình 10.1G 111 phải Đúng; Đúng; Vxe"
+    }
+  ]
+}

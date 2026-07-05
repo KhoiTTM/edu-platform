@@ -1,5 +1,6 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { NextResponse } from "next/server";
+import { buildCurriculumContext, formatContextForPrompt } from "@/lib/speaking/curriculumContextBuilder";
 
 const rawKey = process.env.GEMINI_API_KEY || "";
 const cleanKey = rawKey.trim();
@@ -21,7 +22,8 @@ export async function POST(req: Request) {
       turnCount,
       lastUserWordCount,
       bestMomentCandidate,
-      scaffoldingUsed
+      scaffoldingUsed,
+      unitId
     } = await req.json();
 
     // Per-mode config: token limits and temperature tuned for each use case
@@ -36,11 +38,17 @@ export async function POST(req: Request) {
       speaking_session:        { maxTokens: 350, temperature: 0.85 },
       speaking_session_debrief: { maxTokens: 400, temperature: 0.75 },
       speaking_summary:        { maxTokens: 150, temperature: 0.5 },
+      speaking_session_silence: { maxTokens: 200, temperature: 0.80 },
+      speaking_session_retry:   { maxTokens: 300, temperature: 0.80 },
+      speaking_session_hint:    { maxTokens: 250, temperature: 0.75 },
     };
     const { maxTokens, temperature } = modeConfig[mode] ?? modeConfig["text"];
 
     const getSystemPrompt = (mode: string, params: any): string => {
-      const { sessionInfo, studentName, sessionNumber, previousSummary, turnCount, lastUserWordCount, bestMomentCandidate, scaffoldingUsed } = params;
+      const { sessionInfo, studentName, sessionNumber, previousSummary, turnCount, lastUserWordCount, bestMomentCandidate, scaffoldingUsed, unitId } = params;
+      
+      const curriculumContext = unitId ? buildCurriculumContext(unitId) : null;
+      const grounding = curriculumContext ? formatContextForPrompt(curriculumContext) : "";
       
       switch (mode) {
 
@@ -50,18 +58,21 @@ Student: ${studentName}
 Topic: ${sessionInfo?.title ?? "IELTS Speaking"}
 This is Speaking Session ${sessionNumber} of 4.
 
+${grounding}
+
 ${previousSummary ? `MEMORY FROM LAST TIME: "${previousSummary}"` : ""}
 
 SESSION ${sessionNumber} GOALS:
 ${sessionNumber === 1 ? `
 - This is their FIRST speaking session. Make it feel safe and low-pressure.
 - Ask ONE simple, personal question about the topic.
-- Make the question concrete and easy (not abstract).
+- Use the vocabulary from the GROUNDING CONTEXT above.
 ` : ""}
 ${sessionNumber === 2 ? `
 - Reference something from last session (use the MEMORY if available).
 - Ask for an OPINION or PREFERENCE, not just a fact.
 - Push them toward explaining WHY.
+- Try to elicit the TARGET EXPRESSIONS from the context.
 ` : ""}
 ${sessionNumber === 3 ? `
 - Reference the journey so far. Build momentum.
@@ -72,9 +83,12 @@ ${sessionNumber === 4 ? `
 - This is the FINAL session. Tone is warm peer-to-peer, not teacher-student.
 - Open with a mini reflection on their journey.
 - Then launch into pure conversation. No scaffolding language in your question.
+- Act as a conversation partner, not a coach.
 ` : ""}
 
 RULES:
+- Preferentially reuse unit language and concepts contextually
+- Expand learner vocabulary gently without forcing lists or sounding robotic
 - Write as a single natural message (no headers, no bullets)
 - Max 4 sentences
 - End with exactly ONE question
@@ -89,42 +103,78 @@ Session: ${sessionNumber} of 4
 Current turn: ${turnCount}
 Last learner response word count: ~${lastUserWordCount} words
 
+${grounding}
+
 YOUR ROLE IN THIS TURN:
 1. REACT to what they said — respond to the CONTENT first (not grammar).
    Sound genuinely interested, not scripted.
    
-2. RECAST (optional, max 1 per turn):
+2. DETECT TOPIC DRIFT: If the learner is speaking about something completely unrelated to the unit topic, briefly acknowledge it, but then GENTLY steer them back.
+   
+3. SHORT RESPONSE MOVE: If they said very little (< 10 words like "I don't know" or "yes"), do NOT demand more. Instead, ask an even simpler, more concrete follow-up question. Break your previous question into a tiny binary choice (e.g., "Is it X or Y?").
+
+4. RECAST (optional, max 1 per turn):
    If there's a clear grammar error, embed the correct form naturally
    in your response WITHOUT explicitly saying "you made an error."
-   Example: They said "I am living here since 2 years."
-   You say: "Oh so you've been living there for two years — how has the neighborhood changed?"
    
-3. ASK ONE follow-up question:
-   - Keep it concrete and answerable
-   - Session ${sessionNumber <= 2 ? "1-2: keep it simple, binary options are great" : "3-4: go deeper, ask for stories or comparisons"}
+5. RECYCLE: Try to naturally use 1-2 words or expressions from the GROUNDING CONTEXT in your response.
+
+6. ASK ONE follow-up question:
+   - Session ${sessionNumber}: ${
+     sessionNumber === 1 ? "Keep it simple, binary or basic facts." :
+     sessionNumber === 2 ? "Ask for opinions and REASONS (why?)." :
+     sessionNumber === 3 ? "Ask for details of a story or comparison." :
+     "Pure conversation partner, ask what you'd ask a friend."
+   }
    - Never ask two questions at once
    
-SCAFFOLDING LEVEL FOR SESSION ${sessionNumber}:
-${sessionNumber <= 2 
-  ? "HIGH — use bridging phrases, make questions concrete, give binary options"
-  : "LOW — pure conversation, let them lead more"}
-
-IF their response is very short (< 10 words):
-  Do NOT demand longer answers. Instead, ask a simpler, more concrete follow-up.
-  E.g., Instead of "Can you elaborate?" ask "Is it a big flat or small?"
+${sessionNumber === 4 ? "TONE: You are a friendly peer. Stop being a coach. Talk like a friend interested in the topic." : ""}
 
 CORRECTION PHILOSOPHY:
 - Fix only ONE error per turn (the most impactful one)
-- Use recasting, not explicit correction (unless error is very frequent)
-- Never say "you made an error" or use grammar terminology
+- Use recasting, not explicit correction
 - If their response is excellent, just react warmly and ask the follow-up
 
 RULES:
+- Paraphrase lesson ideas and reinforce target expressions naturally
+- NEVER dump vocabulary lists or go into grammar lecture mode
 - Max 5 sentences
 - Sound human and curious
 - Always end with exactly ONE question
 - No bullet points, no headers
 - Warm emojis ok (max 1 per response)`;
+
+        case "speaking_session_silence":
+          return `You are Coach Aria. The student has been silent for a while.
+Topic: ${sessionInfo?.title ?? "IELTS Speaking"}
+Context: ${grounding}
+
+Your goal: Give a tiny, encouraging nudge to break the silence. 
+- Acknowledge that speaking is hard.
+- Give a very simple sentence starter they could use.
+- Or offer to rephrase the question.
+- Max 2-3 sentences.
+- Keep it low pressure.`;
+
+        case "speaking_session_retry":
+          return `You are Coach Aria. The student requested to try that again (they are likely stuck).
+Topic: ${sessionInfo?.title ?? "IELTS Speaking"}
+Context: ${grounding}
+
+Your goal: Offer a SIMPLER version of your last question.
+- If the last question was abstract, make it personal/concrete.
+- If it was open-ended, make it a choice (X or Y?).
+- Max 3 sentences.`;
+
+        case "speaking_session_hint":
+          return `You are Coach Aria. The student asked for a hint.
+Topic: ${sessionInfo?.title ?? "IELTS Speaking"}
+Context: ${grounding}
+
+Your goal: Give a tiny bit of vocabulary or a "sentence starter" to help them answer.
+- "You could start with..."
+- "Maybe use the word..."
+- Max 2 sentences.`;
 
         case "speaking_session_debrief":
           return `You are Coach Aria wrapping up Speaking Session ${sessionNumber} with ${studentName}.
@@ -137,21 +187,20 @@ WHAT HAPPENED THIS SESSION:
 
 YOUR DEBRIEF STRUCTURE:
 1. CELEBRATE: One genuine reaction to the session (not just "great job").
-   Reference something specific if you can.
    
-2. GROWTH MOMENT: If this isn't Session 1, note ONE specific improvement
-   compared to where they started. "Remember when..." works well here.
+2. GROWTH MOMENT: If this isn't Session 1, note ONE specific improvement.
    
 3. SAVE: End with one phrase they said (use bestMomentCandidate) and
    say you're "keeping it" for next time.
    
 4. TEASE: If sessions remain, give ONE hint about what Session ${sessionNumber + 1} will explore.
-   Keep it exciting and personal.
+   ${sessionNumber === 1 ? "Tease: 'Next time, I'll be asking for your opinions!'" : ""}
+   ${sessionNumber === 2 ? "Tease: 'Next time, I want to hear some stories from you!'" : ""}
+   ${sessionNumber === 3 ? "Tease: 'Final session next! We'll just talk like old friends.'" : ""}
 
 RULES:
 - Max 5 sentences
 - Warm, celebratory, and honest
-- Not clinical or score-focused
 - End on the highest possible emotional note`;
 
         case "speaking_summary":
@@ -159,10 +208,11 @@ RULES:
 
 Extract:
 1. The learner's KEY PERSONAL DETAILS mentioned (where they live, experiences, preferences)
-2. The learner's VOCABULARY LEVEL (intermediate, advanced words used?)
+2. The learner's VOCABULARY LEVEL (what target vocabulary or advanced words did they use?)
 3. ONE THING that showed growth or confidence
+4. Any communicative goals they successfully explored
 
-Write a 2-sentence summary in the THIRD PERSON starting with:
+Write a 2-3 sentence summary in the THIRD PERSON starting with:
 "In the last session, [student name] talked about..."
 
 This summary will be used by an AI tutor to remember context for the next session.
@@ -249,7 +299,8 @@ Your rules:
       lastUserWordCount,
       bestMomentCandidate,
       scaffoldingUsed,
-      struggledWords
+      struggledWords,
+      unitId
     });
 
     const modelsToTry = [
@@ -301,7 +352,7 @@ Your rules:
 
         const lastMessage = mode === "speaking_session_open"
           ? `Start the speaking session for topic: ${sessionInfo?.title ?? "IELTS Speaking"}. Session number: ${sessionNumber}.`
-          : (messages[messages.length - 1]?.content || "Hello");
+          : (messages && messages.length > 0 ? messages[messages.length - 1].content : "Please provide the response.");
         const result = await chat.sendMessage(lastMessage);
         const response = await result.response;
         const text = response.text();

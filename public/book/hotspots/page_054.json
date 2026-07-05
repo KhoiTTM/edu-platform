@@ -1,0 +1,29 @@
+{
+  "page": 54,
+  "elements": [
+    {
+      "id": "q_54_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "21.2. Cho các yếu tố: thức ăn, oxygen; carbon dioxide; nhiệt năng; chất thải, chất hữu cơ, ATP Xác định những yếu tố mà cơ thể người lấy vào; thải ra và tích luỹ trong cơ thể",
+      "correctAnswer": "Đối với cơ thể người: Yếu tố lấy vào: thức ăn, oxygen. Yếu tố thải ra/giải phóng: carbon dioxide; nhiệt năng, chất thải. Yếu tố tích luỹ: chất hữu cơ, ATP"
+    },
+    {
+      "id": "q_54_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "21.4. Chọn các từ/cụm từ phù hợp để hoàn thành đoạn thông tin sau: Trao đổi chất và chuyển hoá \"(1)- là đặc điểm cơ bản của sựsống; trình này có hai vai trò cơ bản là . (2) cƠ thể. Nhờ trao đổi chất nên cơ thể tự đổi mới thông qua trình đổng hoá và dị hoá. Đổng hoá là trình . (3). các chất đơn thành các chất phức tạp. Dị hoá là trình . (4) các chất phức tạp thành các chất đơn và tạo ra Iượng.",
+      "correctAnswer": "(1) năng lượng; (2) cung cấp năng lượng và kiến tạo; (3) hợp; (4) phân"
+    }
+  ]
+}

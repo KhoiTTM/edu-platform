@@ -1,0 +1,41 @@
+{
+  "page": 25,
+  "elements": [
+    {
+      "id": "q_25_1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "6.6. Liên kết hoá học các nguyên tử oxygen và hydrogen trong phân tử nước được hình thành cách A. nguyên tử oxygen nhận electron; nguyên tử hydrogen nhường electron: B. nguyên tử oxygen nhường electron; nguyên tử hydrogen nhận electron. C nguyên tử oxygen và nguyên tử hydrogen góp chung electron. D. nguyên tử oxygen và nguyên tử hydrogen góp chung proton:",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "q_25_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "6.7. phântửoxygen (02), khi hai nguyên tửoxygen liên kết với nhau; chúng A. góp chung proton B.chuyển electron từ nguyên tử này sang nguyên tử kia. C chuyển proton từ nguyên tử này sang nguyên tử kia. D. góp chung electron. NẾLTRL THỨc",
+      "correctAnswer": "D."
+    },
+    {
+      "id": "q_25_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "6.8. Trong phân tử KCI, nguyên tử K (kali) và nguyên tử Cl (chlorine) liên kết với nhau bằng liên kết Ul guoc Stng A. hoá trị. B.ion. C. kim loai. D. phi kim.",
+      "correctAnswer": "B"
+    }
+  ]
+}

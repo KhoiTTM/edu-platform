@@ -1,0 +1,53 @@
+{
+  "page": 41,
+  "elements": [
+    {
+      "id": "q_41_1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "13.8. Khi nào âm phát ra là âm bổng? A. Khi âm phát ra có tẩn số thấp. B. Khi âm phát ra có tẩn số cao. C. Khi âm nhỏ D. Khi âm to",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q_41_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "13.9. Giải thích tại sao khi thổi còi, muốn còi phát ra to và vang xa thì ta cẩn thổi mạnh vào còi. 13.10*. Khi con ong đi tìm mật thì đập cánh 880 lẩn trong 2 s, còn khi đã kiếm đủ mật vể tổ thì đập cánh 600 lẩn trong 2 s. Nghe kêu vo ve của ong; em có thể biết được ong đang đi tìm mật đang chở mật vể tổ không? Giải thích.",
+      "correctAnswer": "Khi thổi mạnh vào còi thì biên độ âmsẽ lớn nên còi phát ra to và vang xa hơn. 13.10*. Tẩn số dao của cánh ong khi đi tìm mật là: 440 Hz. Tân số dao động của cánh ong khi chở mật vê tổ là: 300 Hz Vậy khi con ong bay đi tìm mật thì tẩn số vỗ cánh lớn hơn khi chở mật vể tổ. Do đó, nghe kêu vo ve của ong, ta có thể biết được ong đang đi tìm mật hoặc đang chở mật vể tổ. 114 căng màng Dùng màng tiếng động bay bay bay tiếng"
+    },
+    {
+      "id": "q_41_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "13.11. Em có thể làm thí nghiệm để tạo ra một giai điệu với các âm thanh trẩm khác nhau từ những chiếc cốc thuỷ tinh như sau: Xếp những chiếc cốc thuỷ tinh giống nhau thành (Hình 13.1). Cho vào cốc thứ nhất mộtít nước, cốc thứ hai nhiểu hơn cốc thứ nhất, sau đó cứ dẩn mức nước lên. Dùng bút chì gõ vào chiếc cốc có ít nước nhất ThUc Hinh 13.1 và nghe âm thanh. Rổi gõ vào chiếc cốc có nhiểu nước nhất và đểý sự khác biệt giữa hai âm thanh. Cho biết cốc nào âm thanh trẩm hơn?",
+      "correctAnswer": "HS tự làm thí nghiệm. Cốc càng nhiểu nước thì âm thanh phát ra sẽ trẩm hơn"
+    },
+    {
+      "id": "q_41_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "13.12. Có hai chiếc micro được kết nối với máy hiện sóng; dao kí do âm thanh phát ra từ loa thứ nhất và loa thứ hai Iẩn được ghi trong Hình 13.2a và 13.2b. Hãy so sánh biên độ và tẩn số dao động của hai âm thanh này. b) Hình 13.2 40 nghe nghe tiếng phải bay tiếng bay7 hay bổng hàng tăng lắng động lượt",
+      "correctAnswer": "Âm ở Hình 13.2a có biên độ nhỏ hơn âm ở Hình 13.2b;tẩn số nhau."
+    }
+  ]
+}

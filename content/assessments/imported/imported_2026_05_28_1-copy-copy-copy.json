@@ -1,0 +1,179 @@
+{
+  "title": "Unit 5: My hobbies - Advanced Practice (Cumulative Unit 1-5)",
+  "metadata": {
+    "subject": "Tiếng Anh",
+    "grade": 3,
+    "volume": 1,
+    "book": "Tiếng Anh 3 - Global Success",
+    "units": ["Unit 1", "Unit 2", "Unit 3", "Unit 4", "Unit 5"],
+    "total_questions": 15,
+    "generated_date": "2026-05-28 15:50:00"
+  },
+  "questions": [
+    {
+      "id": "Q546",
+      "type": "tap_correct_word",
+      "instruction": "Chọn liên từ đúng để kết hợp hai sở thích.",
+      "question_data": {
+        "question": "What's your hobby? - I like singing ___ dancing.",
+        "correct_word": "and",
+        "choices": ["and", "is", "am", "are"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 5, "page": 36 }
+    },
+    {
+      "id": "Q547",
+      "type": "tap_correct_word",
+      "instruction": "Chọn từ đúng để hỏi về một người ở khoảng cách xa.",
+      "question_data": {
+        "question": "Is ___ your teacher? - Yes, it is.",
+        "correct_word": "that",
+        "choices": ["that", "this", "you", "am"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 3, "page": 24 }
+    },
+    {
+      "id": "Q548",
+      "type": "tap_correct_word",
+      "instruction": "Chọn mạo từ phù hợp cho bộ phận cơ thể bắt đầu bằng nguyên âm.",
+      "question_data": {
+        "question": "What's this? - It's ___ eye.",
+        "correct_word": "an",
+        "choices": ["an", "a", "is", "the"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 4, "page": 28 }
+    },
+    {
+      "id": "Q549",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các từ để tạo thành câu nói về hai sở thích cùng lúc.",
+      "question_data": {
+        "words": ["I", "like", "drawing", "and", "swimming", "."],
+        "correct_sentence": "I like drawing and swimming."
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 5, "page": 36 }
+    },
+    {
+      "id": "Q550",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các từ để giới thiệu giáo viên một cách trang trọng.",
+      "question_data": {
+        "words": ["is", "teacher", "my", "This", ",", "Ms Hoa", "."],
+        "correct_sentence": "This is my teacher, Ms Hoa."
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 3, "page": 27 }
+    },
+    {
+      "id": "Q551",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các từ để tạo thành câu trả lời về tuổi của bạn.",
+      "question_data": {
+        "words": ["years", "I'm", "ten", "old", "."],
+        "correct_sentence": "I'm ten years old."
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 18 }
+    },
+    {
+      "id": "Q552",
+      "type": "vocab_to_word",
+      "instruction": "Chọn từ tiếng Anh tương ứng với nghĩa tiếng Việt.",
+      "question_data": {
+        "question": "Sở thích",
+        "correct_word": "hobby",
+        "choices": ["hobby", "happy", "hello", "how"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 5, "page": 79 }
+    },
+    {
+      "id": "Q553",
+      "type": "vocab_to_word",
+      "instruction": "Chọn từ tiếng Anh đúng cho hành động bơi lội.",
+      "question_data": {
+        "question": "Bơi",
+        "correct_word": "swimming",
+        "choices": ["swimming", "running", "walking", "singing"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 5, "page": 80 }
+    },
+    {
+      "id": "Q554",
+      "type": "vocab_to_word",
+      "instruction": "Chọn từ tiếng Anh tương ứng với trạng thái sức khỏe tốt.",
+      "question_data": {
+        "question": "Khỏe, tốt",
+        "correct_word": "fine",
+        "choices": ["fine", "thank", "hello", "how"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 1, "page": 78 }
+    },
+    {
+      "id": "Q555",
+      "type": "fill_blank",
+      "instruction": "Điền từ sở hữu phù hợp vào câu hỏi tên.",
+      "question_data": {
+        "question": "What's ___ name? - My name's Mary.",
+        "correct_answer": "your",
+        "choices": ["your", "you", "my", "her"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 16 }
+    },
+    {
+      "id": "Q556",
+      "type": "fill_blank",
+      "instruction": "Điền hoạt động sở thích phù hợp với nghĩa tiếng Việt.",
+      "question_data": {
+        "question": "I like ___. (nấu ăn)",
+        "correct_answer": "cooking",
+        "choices": ["cooking", "dancing", "walking", "drawing"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 5, "page": 36 }
+    },
+    {
+      "id": "Q557",
+      "type": "fill_blank",
+      "instruction": "Điền động từ mệnh lệnh để hoàn thành yêu cầu.",
+      "question_data": {
+        "question": "___ your mouth, please.",
+        "correct_answer": "Open",
+        "choices": ["Open", "Touch", "Is", "Hi"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 4, "page": 30 }
+    },
+    {
+      "id": "Q558",
+      "type": "match_pair",
+      "instruction": "Nối câu hỏi xác nhận danh tính với câu trả lời tương ứng.",
+      "question_data": {
+        "pairs": [
+          { "left": "Is this Bill?", "right": "Yes, it is." },
+          { "left": "Is that Nam?", "right": "No, it isn't. It's Minh." }
+        ]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 3, "page": 24 }
+    },
+    {
+      "id": "Q559",
+      "type": "match_pair",
+      "instruction": "Nối các câu hỏi về thông tin cá nhân và sở thích với lời đáp phù hợp.",
+      "question_data": {
+        "pairs": [
+          { "left": "What's your hobby?", "right": "I like painting." },
+          { "left": "How old are you?", "right": "I'm nine years old." }
+        ]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 5, "page": 41 }
+    },
+    {
+      "id": "Q560",
+      "type": "match_pair",
+      "instruction": "Nối các động từ mệnh lệnh với bộ phận cơ thể phù hợp.",
+      "question_data": {
+        "pairs": [
+          { "left": "Touch your", "right": "nose." },
+          { "left": "Open your", "right": "mouth." }
+        ]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 4, "page": 28, "unit_ref": 30 }
+    }
+  ]
+}

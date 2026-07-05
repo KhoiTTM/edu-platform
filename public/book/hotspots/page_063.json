@@ -1,0 +1,53 @@
+{
+  "page": 63,
+  "elements": [
+    {
+      "id": "q_63_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "26.5. Sau khi thu hoạch các loại hạt (ngô; thóc, đậu, lạc, ) , cẩn thực hiện biện pháp nào để bảo quản? Vì sao để bảo quản các loại hạt giống; nên trong chum, vại, mà không nên đựng trong bao tải (cói hoặc vải)?",
+      "correctAnswer": "Để bảo quản các loại hạt, cẩn phơi hoặc sấy khô để hàm lượng nước trong hạt. Nên bảo quản các loai hạt giống trong chum; vại; thùng để ngăn cách hạt với các yếu tố nhưđộ ẩm, nhiệt độ, của môi trường để tránh hiện tượng hạt hô hấp và nảy mẩm. Không nên bảo quản hạt giống trong bao tải (cói, vải) vì bao tải không kín hoàn toàn, hạt vẫn có thể hút ẩm và hấp thụ khí oxygen từ không khí để hô hấp, làm giảm chất lượng và hạt có thể nảy mẩm. Uo"
+    },
+    {
+      "id": "q_63_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "26.6. Tại sao trong nhiểu siêu thị, rau tươi được gói trong túi nylon cóđục lỗvà để trong mát, trong khi khoai tây; cà rốt lại không cẩn bảo quản như vậy?",
+      "correctAnswer": "Sau khi thu hoạch, các loại rau, củ vẫn diễn ra quá trình hô hấp. Các loại rau tươi có hàm lượng nước cao; cẩn được bảo quản trong mát nhằm hạn chế quá trình hô hấp gây giảm chất lượng rau; túi đục lỗ được để bảo quản giúp hơi nước thoát ra trong trình hô hấp không đọng lại làm thối nhũn rau. Khoai tây và cà rốt có hàm lượng nước thấp hơn nên chỉ cẩn bảo quản ở nơi khô ráo, thoáng khí."
+    },
+    {
+      "id": "q_63_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "26.7. Vận dụng kiến thức vể hô hấp tế bào trong bảo quản nông sản, em hãy lấy vídụ cách bảo quản phù với các loai nông sản khác nhau và hoàn thành vào theo mẫu sau: Cách bảo quản thường sản nghĩa sửdụng trong gia đình BÀl 27. THỰC HÀNH: HÔ HẤP ỞTHỰC VẬT C SITC",
+      "correctAnswer": "HS vận dụng kiến thức và dựa vào các biện pháp bảo quản thực tế để hoàn thành bảng: 127 quả: ~ quá năng năng giảm ngăn dùng quá"
+    },
+    {
+      "id": "q_63_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "27.1. Muốn hạt nảy mẩm nhanh thì trước khi gieo hạt cẩn làm gì? Giải thích cơ sở khoa học của cách làm đó. 27.2 Sắp xếp các bước làm sau theo tiến trình làm thí nghiệm chứng minh hô hấp ở hạt nảy mẩm. (1) Chọn những hạt chắc; không bị vỡ, không bị mọt. (2) Cho hạt ra đĩa Petri có lót bông ẩm hoặc giấy thấm ẩm: (3) Để đĩa trong tủ ấm hoặc nơi có ánh mặt trời để hạt nảy mẩm. (4) Ngâm hạt vào nước ấm. (5) Quan sát hiện tượng xảy ra ở cốc nước vôi trong: (6) Đặt đĩa Petri có hạt nảy mẩm cốc nước vôi trong vào trong chuông A Đặt cốc nước vôi trong vào trong chuông B. 62 giải gì? đựng thùng đóng ngăn hợp bảng Nông đúng sáng cùng",
+      "correctAnswer": "Muốn hạt nảy mẩm nhanh thì nên hạt trong nước ấm, để làm mểm nhanh vỏ hạt, hạt hút nước vỡ trạng thái ngủ nghỉ để chuẩn bị cho trình hô hấp xảy ra, hạt sẽ nhanh nảy mẩm. 27.2 (1) => (4) = (2) => (3) - (6) - (5)."
+    }
+  ]
+}

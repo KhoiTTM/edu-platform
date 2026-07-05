@@ -1,0 +1,363 @@
+{
+  "title": "ENGLISH 3 - Tập 1 - Bài 6 (Đề 3)",
+  "metadata": {
+    "subject": "english",
+    "grade": 3,
+    "volume": 1,
+    "book": "english 3 - Kết nối tri thức",
+    "lessons": [
+      6
+    ],
+    "total_questions": 15,
+    "generated_date": "2026-05-29"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "is",
+          "it",
+          "Yes"
+        ],
+        "correct_sentence": "Yes, it is."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 6",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q002",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "the",
+          "to",
+          "computer",
+          "room",
+          "go",
+          "Let's"
+        ],
+        "correct_sentence": "Let's go to the computer room."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 6",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q003",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "hello",
+            "right": "xin chào"
+          },
+          {
+            "left": "hi",
+            "right": "chào"
+          },
+          {
+            "left": "how",
+            "right": "thế nào"
+          },
+          {
+            "left": "fine",
+            "right": "khỏe"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 6",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q004",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "how old",
+            "right": "mấy tuổi"
+          },
+          {
+            "left": "old",
+            "right": "cũ/tuổi"
+          },
+          {
+            "left": "years old",
+            "right": "tuổi"
+          },
+          {
+            "left": "seven",
+            "right": "bảy"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 6",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q005",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "swimming",
+          "like",
+          "I"
+        ],
+        "correct_sentence": "I like swimming."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 6",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q006",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "chào",
+        "correct_word": "hi",
+        "choices": [
+          "fine",
+          "how",
+          "hi",
+          "hello"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 6",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q007",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "Is",
+          "your",
+          "Ben",
+          "name"
+        ],
+        "correct_sentence": "Is your name Ben?"
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 6",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q008",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "hello",
+            "right": "xin chào"
+          },
+          {
+            "left": "hi",
+            "right": "chào"
+          },
+          {
+            "left": "how",
+            "right": "thế nào"
+          },
+          {
+            "left": "fine",
+            "right": "khỏe"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 6",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q009",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "computer",
+          "room",
+          "Let's",
+          "to",
+          "the",
+          "go"
+        ],
+        "correct_sentence": "Let's go to the computer room."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 6",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q010",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "Let's",
+          "go",
+          "computer",
+          "the",
+          "room",
+          "to"
+        ],
+        "correct_sentence": "Let's go to the computer room."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 6",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q011",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "swimming",
+          "like",
+          "I"
+        ],
+        "correct_sentence": "I like swimming."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 6",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q012",
+      "type": "tap_word",
+      "instruction": "Chọn từ đúng nghĩa",
+      "question_data": {
+        "target_word": "thư viện",
+        "correct_word": "library",
+        "choices": [
+          "school",
+          "classroom",
+          "gym",
+          "library",
+          "playground",
+          "computer room"
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 6",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q013",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "school",
+            "right": "trường học"
+          },
+          {
+            "left": "classroom",
+            "right": "phòng học"
+          },
+          {
+            "left": "library",
+            "right": "thư viện"
+          },
+          {
+            "left": "playground",
+            "right": "sân chơi"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 6",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q014",
+      "type": "match_pair",
+      "instruction": "Nối từ tiếng Anh với tiếng Việt",
+      "question_data": {
+        "pairs": [
+          {
+            "left": "school",
+            "right": "trường học"
+          },
+          {
+            "left": "classroom",
+            "right": "phòng học"
+          },
+          {
+            "left": "library",
+            "right": "thư viện"
+          },
+          {
+            "left": "playground",
+            "right": "sân chơi"
+          }
+        ]
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 6",
+        "page": 0
+      }
+    },
+    {
+      "id": "Q015",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp lại câu",
+      "question_data": {
+        "parts": [
+          "friend",
+          "This",
+          "is",
+          "my"
+        ],
+        "correct_sentence": "This is my friend."
+      },
+      "source_anchor": {
+        "book": "Global Success 3",
+        "lesson": "Unit 6",
+        "page": 0
+      }
+    }
+  ]
+}

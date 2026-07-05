@@ -1,0 +1,275 @@
+[
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the positive (+) and negative (-) statements and questions (?).",
+    "text_segments": ["The car ", " in the garage. (+)"],
+    "correct_answers": ["is"],
+    "word_pool": ["is", "are", "do", "does"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the positive (+) and negative (-) statements and questions (?).",
+    "text_segments": ["The car ", " in the garage. (-)"],
+    "correct_answers": ["is not"],
+    "word_pool": ["is not", "do not", "are not", "does not"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the positive (+) and negative (-) statements and questions (?).",
+    "text_segments": ["", " the car in the garage? (?)"],
+    "correct_answers": ["Is"],
+    "word_pool": ["Is", "Does", "Do", "Are"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the positive (+) and negative (-) statements and questions (?).",
+    "text_segments": ["Where ", " the car? (?)"],
+    "correct_answers": ["is"],
+    "word_pool": ["is", "are", "do", "does"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the positive (+) and negative (-) statements and questions (?).",
+    "text_segments": ["I ", " games on my phone in my bedroom. (-)"],
+    "correct_answers": ["do not play"],
+    "word_pool": ["do not play", "does not play", "am not play", "not play"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the positive (+) and negative (-) statements and questions (?).",
+    "text_segments": ["", " games on your phone in your bedroom? (?)"],
+    "correct_answers": ["Do you play"],
+    "word_pool": ["Do you play", "Are you play", "Does you play", "Play you"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the positive (+) and negative (-) statements and questions (?).",
+    "text_segments": ["What games ", " on your phone? (?)"],
+    "correct_answers": ["do you play"],
+    "word_pool": ["do you play", "are you play", "you play", "does you play"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the positive (+) and negative (-) statements and questions (?).",
+    "text_segments": ["Can I ", " a game on my phone later? (?)"],
+    "correct_answers": ["play"],
+    "word_pool": ["play", "plays", "playing", "to play"]
+  },
+  {
+    "type": "multiple_choice",
+    "instruction": "Read the sentences from Giorgio and Andrew Taylor's conversation and choose the best answer, A, B or C.",
+    "question": "Good afternoon, Prime Location Agency, Andrew Taylor speaking. ______________",
+    "options": ["Can I check your student status?", "Can I give you my student status?", "Have you time to speak? Can you check my student status?"],
+    "correct_index": 0
+  },
+  {
+    "type": "multiple_choice",
+    "instruction": "Read the sentences from Giorgio and Andrew Taylor's conversation and choose the best answer, A, B or C.",
+    "question": "Oh, hello, Giorgio. Thank you for your call, ______________",
+    "options": ["I hope that you don't mind.", "I hope that you mind.", "Do you mind?"],
+    "correct_index": 0
+  },
+  {
+    "type": "multiple_choice",
+    "instruction": "Read the sentences from Giorgio and Andrew Taylor's conversation and choose the best answer, A, B or C.",
+    "question": "First of all, ______________ in a room on campus or in private accommodation?",
+    "options": ["Where you want to live?", "Where you do want to live?", "Where do you want to live?"],
+    "correct_index": 2
+  },
+  {
+    "type": "multiple_choice",
+    "instruction": "Read the sentences from Giorgio and Andrew Taylor's conversation and choose the best answer, A, B or C.",
+    "question": "I'm not sure. ______________",
+    "options": ["You can give me some advice?", "Can you give me some advice?", "Can give me you some advice?"],
+    "correct_index": 1
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Read how Giorgio describes what he does before and after he goes to university each day. Choose the best answer.",
+    "reading_passage": "Every weekday morning, my alarm goes off at 8.30am. This gives me enough time to get ready before my lectures start at 10.00am. Then, I get up and go downstairs. I'm often too tired to eat breakfast, so I sometimes go to the fridge and just get some juice. I always talk to my housemates if they are there, in the kitchen. After that, I head back upstairs to get ready. I go to the bathroom, brush my teeth, and sometimes tidy my room. When it's time to leave, I pack my bag and go to college. At the end of the day when I get back home, I sometimes help the others with the housework; if we don't do it, all the rooms we share get very messy. When the house is clean again, we usually spend some time in the living room. We sit down together on the sofa and play games online for a while. We're always happy when we get the chance to do this, as it helps us relax. Before I go to sleep, I sit at my desk and do my homework. I never forget to do it. At the weekend, I can finally relax. I have a lie in until about 11.30am.",
+    "text_segments": ["Every weekday morning, my alarm goes ", " at 8.30am."],
+    "correct_answers": ["off"],
+    "word_pool": ["up", "on", "off"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose the best answer.",
+    "reading_passage": "Every weekday morning, my alarm goes off at 8.30am. This gives me enough time to get ready before my lectures start at 10.00am. Then, I get up and go downstairs. I'm often too tired to eat breakfast, so I sometimes go to the fridge and just get some juice. I always talk to my housemates if they are there, in the kitchen. After that, I head back upstairs to get ready. I go to the bathroom, brush my teeth, and sometimes tidy my room. When it's time to leave, I pack my bag and go to college. At the end of the day when I get back home, I sometimes help the others with the housework; if we don't do it, all the rooms we share get very messy. When the house is clean again, we usually spend some time in the living room. We sit down together on the sofa and play games online for a while. We're always happy when we get the chance to do this, as it helps us relax. Before I go to sleep, I sit at my desk and do my homework. I never forget to do it. At the weekend, I can finally relax. I have a lie in until about 11.30am.",
+    "text_segments": ["Then, I ", " up and go downstairs."],
+    "correct_answers": ["get"],
+    "word_pool": ["get", "go", "put"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose the best answer.",
+    "reading_passage": "Every weekday morning, my alarm goes off at 8.30am. This gives me enough time to get ready before my lectures start at 10.00am. Then, I get up and go downstairs. I'm often too tired to eat breakfast, so I sometimes go to the fridge and just get some juice. I always talk to my housemates if they are there, in the kitchen. After that, I head back upstairs to get ready. I go to the bathroom, brush my teeth, and sometimes tidy my room. When it's time to leave, I pack my bag and go to college. At the end of the day when I get back home, I sometimes help the others with the housework; if we don't do it, all the rooms we share get very messy. When the house is clean again, we usually spend some time in the living room. We sit down together on the sofa and play games online for a while. We're always happy when we get the chance to do this, as it helps us relax. Before I go to sleep, I sit at my desk and do my homework. I never forget to do it. At the weekend, I can finally relax. I have a lie in until about 11.30am.",
+    "text_segments": ["I'm often too tired to eat breakfast, so I sometimes go to the ", " and just get some juice."],
+    "correct_answers": ["fridge"],
+    "word_pool": ["fridge", "sink", "freezer"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose the best answer.",
+    "reading_passage": "Every weekday morning, my alarm goes off at 8.30am. This gives me enough time to get ready before my lectures start at 10.00am. Then, I get up and go downstairs. I'm often too tired to eat breakfast, so I sometimes go to the fridge and just get some juice. I always talk to my housemates if they are there, in the kitchen. After that, I head back upstairs to get ready. I go to the bathroom, brush my teeth, and sometimes tidy my room. When it's time to leave, I pack my bag and go to college. At the end of the day when I get back home, I sometimes help the others with the housework; if we don't do it, all the rooms we share get very messy. When the house is clean again, we usually spend some time in the living room. We sit down together on the sofa and play games online for a while. We're always happy when we get the chance to do this, as it helps us relax. Before I go to sleep, I sit at my desk and do my homework. I never forget to do it. At the weekend, I can finally relax. I have a lie in until about 11.30am.",
+    "text_segments": ["I always talk to my housemates if they are there, in the ", "."],
+    "correct_answers": ["kitchen"],
+    "word_pool": ["basement", "kitchen", "bathroom"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose the best answer.",
+    "reading_passage": "Every weekday morning, my alarm goes off at 8.30am. This gives me enough time to get ready before my lectures start at 10.00am. Then, I get up and go downstairs. I'm often too tired to eat breakfast, so I sometimes go to the fridge and just get some juice. I always talk to my housemates if they are there, in the kitchen. After that, I head back upstairs to get ready. I go to the bathroom, brush my teeth, and sometimes tidy my room. When it's time to leave, I pack my bag and go to college. At the end of the day when I get back home, I sometimes help the others with the housework; if we don't do it, all the rooms we share get very messy. When the house is clean again, we usually spend some time in the living room. We sit down together on the sofa and play games online for a while. We're always happy when we get the chance to do this, as it helps us relax. Before I go to sleep, I sit at my desk and do my homework. I never forget to do it. At the weekend, I can finally relax. I have a lie in until about 11.30am.",
+    "text_segments": ["I go to the bathroom, ", " my teeth, and sometimes tidy my room."],
+    "correct_answers": ["brush"],
+    "word_pool": ["wash", "tidy", "brush"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose the best answer.",
+    "reading_passage": "Every weekday morning, my alarm goes off at 8.30am. This gives me enough time to get ready before my lectures start at 10.00am. Then, I get up and go downstairs. I'm often too tired to eat breakfast, so I sometimes go to the fridge and just get some juice. I always talk to my housemates if they are there, in the kitchen. After that, I head back upstairs to get ready. I go to the bathroom, brush my teeth, and sometimes tidy my room. When it's time to leave, I pack my bag and go to college. At the end of the day when I get back home, I sometimes help the others with the housework; if we don't do it, all the rooms we share get very messy. When the house is clean again, we usually spend some time in the living room. We sit down together on the sofa and play games online for a while. We're always happy when we get the chance to do this, as it helps us relax. Before I go to sleep, I sit at my desk and do my homework. I never forget to do it. At the weekend, I can finally relax. I have a lie in until about 11.30am.",
+    "text_segments": ["At the end of the day when I get back home, I sometimes help the others with the ", "; if we don't do it, all the rooms we share get very messy."],
+    "correct_answers": ["housework"],
+    "word_pool": ["homework", "housework", "workhouse"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose the best answer.",
+    "reading_passage": "Every weekday morning, my alarm goes off at 8.30am. This gives me enough time to get ready before my lectures start at 10.00am. Then, I get up and go downstairs. I'm often too tired to eat breakfast, so I sometimes go to the fridge and just get some juice. I always talk to my housemates if they are there, in the kitchen. After that, I head back upstairs to get ready. I go to the bathroom, brush my teeth, and sometimes tidy my room. When it's time to leave, I pack my bag and go to college. At the end of the day when I get back home, I sometimes help the others with the housework; if we don't do it, all the rooms we share get very messy. When the house is clean again, we usually spend some time in the living room. We sit down together on the sofa and play games online for a while. We're always happy when we get the chance to do this, as it helps us relax. Before I go to sleep, I sit at my desk and do my homework. I never forget to do it. At the weekend, I can finally relax. I have a lie in until about 11.30am.",
+    "text_segments": ["We sit down together on the ", " and play games online for a while."],
+    "correct_answers": ["sofa"],
+    "word_pool": ["chair", "desk", "sofa"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose the best answer.",
+    "reading_passage": "Every weekday morning, my alarm goes off at 8.30am. This gives me enough time to get ready before my lectures start at 10.00am. Then, I get up and go downstairs. I'm often too tired to eat breakfast, so I sometimes go to the fridge and just get some juice. I always talk to my housemates if they are there, in the kitchen. After that, I head back upstairs to get ready. I go to the bathroom, brush my teeth, and sometimes tidy my room. When it's time to leave, I pack my bag and go to college. At the end of the day when I get back home, I sometimes help the others with the housework; if we don't do it, all the rooms we share get very messy. When the house is clean again, we usually spend some time in the living room. We sit down together on the sofa and play games online for a while. We're always happy when we get the chance to do this, as it helps us relax. Before I go to sleep, I sit at my desk and do my homework. I never forget to do it. At the weekend, I can finally relax. I have a lie in until about 11.30am.",
+    "text_segments": ["Before I go to sleep, I sit at my ", " and do my homework."],
+    "correct_answers": ["desk"],
+    "word_pool": ["desk", "bed", "drawers"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose the best answer.",
+    "reading_passage": "Every weekday morning, my alarm goes off at 8.30am. This gives me enough time to get ready before my lectures start at 10.00am. Then, I get up and go downstairs. I'm often too tired to eat breakfast, so I sometimes go to the fridge and just get some juice. I always talk to my housemates if they are there, in the kitchen. After that, I head back upstairs to get ready. I go to the bathroom, brush my teeth, and sometimes tidy my room. When it's time to leave, I pack my bag and go to college. At the end of the day when I get back home, I sometimes help the others with the housework; if we don't do it, all the rooms we share get very messy. When the house is clean again, we usually spend some time in the living room. We sit down together on the sofa and play games online for a while. We're always happy when we get the chance to do this, as it helps us relax. Before I go to sleep, I sit at my desk and do my homework. I never forget to do it. At the weekend, I can finally relax. I have a lie in until about 11.30am.",
+    "text_segments": ["I have a lie ", " until about 11.30am."],
+    "correct_answers": ["in"],
+    "word_pool": ["on", "up", "in"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentences with the adverb 'never' in the correct position.",
+    "text_segments": ["I am ", " late for school."],
+    "correct_answers": ["never"],
+    "word_pool": ["never", "always", "sometimes"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentences with the adverb 'never' in the correct position.",
+    "text_segments": ["I ", " forget to do my homework."],
+    "correct_answers": ["never"],
+    "word_pool": ["never", "always", "sometimes"]
+  },
+  {
+    "type": "match_pair",
+    "instruction": "Match the questions and answers.",
+    "pairs": [
+      { "left": "What do you like about your room?", "right": "My comfortable bed and my posters." },
+      { "left": "Who do you live with?", "right": "My parents, my sister and my grandparents." },
+      { "left": "Do you like to cook?", "right": "Yes, and I think I'm quite good at it." },
+      { "left": "Where do you watch television?", "right": "Usually in the living room and sometimes in my bedroom." },
+      { "left": "Where do you do your homework?", "right": "Usually in the study and sometimes in my bedroom." },
+      { "left": "Can you tell me where the bathroom is, please?", "right": "Yes. Go down the hall and it is next to the living room." },
+      { "left": "Why don't you often go in the kitchen?", "right": "Because I can't cook!" }
+    ]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Correct the spelling mistake in each sentence.",
+    "text_segments": ["I really like my ", ". They are red and black, and they make my bedroom very dark."],
+    "correct_answers": ["curtains"],
+    "word_pool": ["certains", "curtains"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Correct the spelling mistake in each sentence.",
+    "text_segments": ["I have a bright ", " that I use when I do my homework."],
+    "correct_answers": ["table lamp"],
+    "word_pool": ["tabel lamb", "table lamp", "table lamb"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Correct the spelling mistake in each sentence.",
+    "text_segments": ["I think ", " make the walls look more interesting, don't you?"],
+    "correct_answers": ["posters"],
+    "word_pool": ["potsers", "posters"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Correct the spelling mistake in each sentence.",
+    "text_segments": ["It is good to sleep with two ", ", it is very comfortable."],
+    "correct_answers": ["pillows"],
+    "word_pool": ["bilows", "pillows"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Correct the spelling mistake in each sentence.",
+    "text_segments": ["My brother never cooks, the only thing he can do is turn on the ", "!"],
+    "correct_answers": ["oven"],
+    "word_pool": ["uven", "oven"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Correct the spelling mistake in each sentence.",
+    "text_segments": ["Most of my clothes are in my ", ", the rest are in the drawers next to my bed."],
+    "correct_answers": ["wardrobe"],
+    "word_pool": ["walldrobe", "wardrobe"]
+  },
+  {
+    "type": "sentence_reorder",
+    "instruction": "Reorder the words to make correct sentences.",
+    "words": ["never", "he", "does", "washing", "up", "the"],
+    "correct_order": ["he", "never", "does", "the", "washing", "up"]
+  },
+  {
+    "type": "sentence_reorder",
+    "instruction": "Reorder the words to make correct sentences.",
+    "words": ["me", "advice", "you", "some", "give", "can", "?"],
+    "correct_order": ["can", "you", "give", "me", "some", "advice", "?"]
+  },
+  {
+    "type": "sentence_reorder",
+    "instruction": "Reorder the words to make correct sentences.",
+    "words": ["eight", "house", "leave", "morning", "the", "in", "always", "at", "I", "my", "o'clock"],
+    "correct_order": ["I", "always", "leave", "my", "house", "at", "eight", "o'clock", "in", "the", "morning"]
+  },
+  {
+    "type": "sentence_reorder",
+    "instruction": "Reorder the words to make correct sentences.",
+    "words": ["off", "time", "your", "does", "what", "alarm", "go", "usually", "?"],
+    "correct_order": ["what", "time", "does", "your", "alarm", "usually", "go", "off", "?"]
+  },
+  {
+    "type": "sentence_reorder",
+    "instruction": "Reorder the words to make correct sentences.",
+    "words": ["often", "dinner", "house", "my", "comes", "cousin", "to", "for"],
+    "correct_order": ["my", "cousin", "often", "comes", "to", "my", "house", "for", "dinner"]
+  },
+  {
+    "type": "sentence_reorder",
+    "instruction": "Reorder the words to make correct sentences.",
+    "words": ["live", "future", "do", "the", "where", "to", "in", "want", "you", "?"],
+    "correct_order": ["where", "do", "you", "want", "to", "live", "in", "the", "future", "?"]
+  },
+  {
+    "type": "sentence_reorder",
+    "instruction": "Reorder the words to make correct sentences.",
+    "words": ["live", "how", "you", "do", "with", "people", "many", "?"],
+    "correct_order": ["how", "many", "people", "do", "you", "live", "with", "?"]
+  },
+  {
+    "type": "sentence_reorder",
+    "instruction": "Reorder the words to make correct sentences.",
+    "words": ["on", "campus", "live", "you", "do", "university", "the", "?"],
+    "correct_order": ["do", "you", "live", "on", "the", "university", "campus", "?"]
+  }
+]

@@ -1,0 +1,99 @@
+import { createClient } from '@supabase/supabase-js';
+import { NextRequest, NextResponse } from 'next/server';
+
+
+export async function GET(
+  request: NextRequest,
+  { params }: { params: Promise<{ bookSlug: string; pageNum: string }> }
+) {
+  try {
+    const supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL || '',
+      process.env.SUPABASE_SERVICE_ROLE_KEY || ''
+    );
+    const { bookSlug, pageNum } = await params;
+    const pageNumber = parseInt(pageNum);
+
+    // Get flipbook ID
+    const { data: flipbook, error: fbError } = await supabase
+      .from('flipbooks')
+      .select('id')
+      .eq('slug', bookSlug)
+      .single();
+
+    if (fbError || !flipbook) {
+      if (bookSlug === 'khtn-7-sbt') {
+        const fs = require('fs');
+        const path = require('path');
+        const pageStr = String(pageNumber).padStart(3, '0');
+        const hotspotPath = path.join(process.cwd(), `public/book/hotspots/page_${pageStr}.json`);
+        if (fs.existsSync(hotspotPath)) {
+          const hotspotsData = JSON.parse(fs.readFileSync(hotspotPath, 'utf-8'));
+          return NextResponse.json({
+            page: pageNumber,
+            elements: (hotspotsData.elements || []).map((h: any) => ({
+              id: h.id,
+              type: h.type,
+              bbox: h.bbox,
+              label: h.label,
+              correctAnswer: h.correctAnswer
+            }))
+          });
+        }
+      }
+
+      return NextResponse.json(
+        { error: 'Flipbook not found' },
+        { status: 404 }
+      );
+    }
+
+    // Fetch hotspots for this page
+    const { data: hotspots, error: hsError } = await supabase
+      .from('flipbook_hotspots')
+      .select('*')
+      .eq('flipbook_id', flipbook.id)
+      .eq('page_number', pageNumber);
+
+    if (hsError) throw hsError;
+
+    if (!hotspots || hotspots.length === 0) {
+      if (bookSlug === 'khtn-7-sbt') {
+        const fs = require('fs');
+        const path = require('path');
+        const pageStr = String(pageNumber).padStart(3, '0');
+        const hotspotPath = path.join(process.cwd(), `public/book/hotspots/page_${pageStr}.json`);
+        if (fs.existsSync(hotspotPath)) {
+          const hotspotsData = JSON.parse(fs.readFileSync(hotspotPath, 'utf-8'));
+          return NextResponse.json({
+            page: pageNumber,
+            elements: (hotspotsData.elements || []).map((h: any) => ({
+              id: h.id,
+              type: h.type,
+              bbox: h.bbox,
+              label: h.label,
+              correctAnswer: h.correctAnswer
+            }))
+          });
+        }
+      }
+    }
+
+    return NextResponse.json({
+      page: pageNumber,
+      elements: hotspots.map((h) => ({
+        id: h.hotspot_id,
+        type: h.type,
+        bbox: h.bbox,
+        label: h.label,
+        correctAnswer: h.correct_answer
+      }))
+    });
+  } catch (error) {
+    console.error('Error fetching hotspots:', error);
+    return NextResponse.json(
+      { error: 'Internal server error' },
+      { status: 500 }
+    );
+  }
+}

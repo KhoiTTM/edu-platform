@@ -1,0 +1,41 @@
+{
+  "page": 64,
+  "elements": [
+    {
+      "id": "q_64_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "27.4. Nhà Hoa vừa thu hoạch lạc, Hoa chọn những củ già, chắc, bóc lấy hạt và lấy khoảng 300 g hạt chia thành hai phẩn bằng nhau Một phẩn cất vào túi nylon hút chân không; một phẩn để trên đĩa và đặt trong phòng. Sau 7 ngày, Hoa thấy trên đĩa có nhiểu hạt đã nảy mẩm; còn trong túi nylon không có hiện tượng hạt nảy mẩm. 70 7 Tol Em hãy thích: VỚL CUÔc SỐNG a) Thí nghiệm bạn Hoa làm và hiện tượng quan sát được chứng minh điểu gì? b) Hiện tượng hạt lạc nảy mẩm liên quan đến trình sinh lí nào? c) Tại sao hạt lạc để trên đĩa nảy mâm còn hạt lạc trong túi nylon thì không?",
+      "correctAnswer": "a) Thí nghiệm chứng minh: Các yếu tố như độ khí oxygen; nhiệt độ, độ ẩm phù hợp sẽ giúp hạt thực hiện trình hô hấp (thể hiện qua trình nảy mẩm) b) Hạt lạc nảy mẩm liên quan đến trình hô hấp tế bào. c) Hạt lạc trong túi nylon không nảy mẩm được vì trong túi nylon kín, các điểu kiện như nổng độ khí oxygen; độ ẩm không thích hợp để trình hô hấp tế bào diễn ra mạnh, cung cấp lượng cho quá trình hạt nảy mẩm."
+    },
+    {
+      "id": "q_64_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "27.5. Bạn An muốn làm thí nghiệm quan sát sinh trưởng và phát triển của cây ngô. Bà cho An một ít hạt ngô và dặn An để trong miếng vải. ngày tưới nước để túi vải luôn ẩm cho hạt ngô dễ nảy mẩm . Khoảng ba ngày sau, khi hạt ngô đã nhú mẩm, An thấy túi ngô ấm Iên. Em hãy thích hiện tượng trên.",
+      "correctAnswer": "Quá trình hô hấp tế bào diễn ra mạnh khi hạt nảy mẩm, quá trình này phóng ra năng Iượng, một phẩn lượng đó ở nhiệt nên túi ngô ấm hơn."
+    },
+    {
+      "id": "q_64_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "27.6. Tại sao trong thí nghiệm quan sát hô hấp ở hạt nảy mẩm; cốc nước vôi trong ở chuông có đĩa hạt đậu nảy mẩm có váng đục trên bể mặt? 63 đúng hay trắng váng giải quá Hằng giải",
+      "correctAnswer": "trong cốc nước vôi là kết tủa CaCO3 được tạo thành do phản giữa khí CO2 và Ca(OH)2: Khí CO2 được tạo ra trong trình hô hấp của hạt."
+    }
+  ]
+}

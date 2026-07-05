@@ -1,0 +1,1550 @@
+{
+  "collection": {
+    "title": "Kiểm Tra Giữa Kỳ 1",
+    "subject_slug": "toan",
+    "grade": 3,
+    "volume": 1,
+    "units": [
+      101
+    ],
+    "sequence_number": 1,
+    "exam_type": "midterm",
+    "reference_book": "Kết nối tri thức với cuộc sống",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 14,
+      "title": "Đề kiểm tra giữa học kỳ 1 - Đề số 14",
+      "duration_minutes": 45,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Tích của 6 và 7 là:",
+            "options": [
+              "42",
+              "35",
+              "13",
+              "38"
+            ],
+            "correct_index": 0,
+            "explanation": "6 x 7 = 42."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Biết hiệu là 268, số trừ là 135, số bị trừ là:",
+            "options": [
+              "133",
+              "403",
+              "393",
+              "413"
+            ],
+            "correct_index": 1,
+            "explanation": "Số bị trừ = Hiệu + Số trừ = 268 + 135 = 403."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cho dãy số: 3, 6, 9, 12, ..., 27, 30. Các số thích hợp điền vào chỗ chấm lần lượt là:",
+            "options": [
+              "15, 18, 21, 24",
+              "16, 17, 18, 19",
+              "13, 14, 15, 16",
+              "18, 21, 24, 27"
+            ],
+            "correct_index": 0,
+            "explanation": "Quy luật tăng 3 đơn vị: 15, 18, 21, 24."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Hà đã ăn 1/2 chiếc bánh. Chiếc bánh Hà ăn là:",
+            "options": [
+              "Hình A",
+              "Hình B",
+              "Hình C",
+              "Hình D"
+            ],
+            "correct_index": 0,
+            "image_url": "/images/toan3-gk1-de1-q4.png",
+            "explanation": "Hình A chia 2 phần bằng nhau, tô 1 phần (3/6 = 1/2)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Gấp 7 lên 6 lần ta được:",
+            "options": [
+              "42",
+              "13",
+              "34",
+              "51"
+            ],
+            "correct_index": 0,
+            "explanation": "Gấp một số lên nhiều lần: 7 x 6 = 42."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.3,
+          "metadata_json": {
+            "question": "Bố An xây một cái bể cá hình chữ nhật và trồng hoa súng trong đó. Mỗi lá súng có dạng hình tròn đường kính 3 dm. Vậy chiều dài của bể cá là:",
+            "options": [
+              "8 x 3 = 24 dm",
+              "3 x 8 = 24 dm",
+              "4 x 3 = 12 dm",
+              "2 x 3 = 6 dm"
+            ],
+            "correct_index": 1,
+            "image_url": "/images/toan3-gk1-de1-q6.png",
+            "explanation": "8 lá súng đường kính 3 dm: 3 x 8 = 24 (dm)."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính kết quả phép tính: 7 x ___ = 63",
+            "choices": [
+              "9",
+              "10",
+              "8",
+              "11"
+            ],
+            "correct_answer": "9",
+            "explanation": "7 x 9 = 63."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: ___ + 317 = 486",
+            "choices": [
+              "169",
+              "69",
+              "179",
+              "159"
+            ],
+            "correct_answer": "169",
+            "explanation": "169 + 317 = 486."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: 42 : ___ = 6",
+            "choices": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ],
+            "correct_answer": "7",
+            "explanation": "42 : 7 = 6."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: 640 - ___ = 140",
+            "choices": [
+              "500",
+              "400",
+              "510",
+              "490"
+            ],
+            "correct_answer": "500",
+            "explanation": "640 - 500 = 140."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/2 số con bọ cánh cam trong tổng số 16 con bọ cánh cam là ___ con.",
+            "choices": [
+              "8",
+              "7",
+              "10",
+              "9"
+            ],
+            "correct_answer": "8",
+            "explanation": "16 : 2 = 8."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/4 số con bọ cánh cam trong tổng số 16 con bọ cánh cam là ___ con.",
+            "choices": [
+              "4",
+              "5",
+              "3",
+              "6"
+            ],
+            "correct_answer": "4",
+            "explanation": "16 : 4 = 4."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Ngôi nhà gia đình Lan Anh ở có 4 tầng; mỗi tầng cao 5m. Hỏi ngôi nhà của gia đình Lan Anh cao bao nhiêu mét?",
+            "options": [
+              "9 m",
+              "20 m",
+              "17 m",
+              "24 m"
+            ],
+            "correct_index": 1,
+            "explanation": "5 x 4 = 20 (m)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cây xanh cạnh nhà Lan Anh có chiều cao bằng chiều cao ngôi nhà (20m) giảm đi 4 lần. Hỏi cây đó cao bao nhiêu mét?",
+            "options": [
+              "5 m",
+              "6 m",
+              "16 m",
+              "7 m"
+            ],
+            "correct_index": 0,
+            "explanation": "20 : 4 = 5 (m)."
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 15,
+      "title": "Đề kiểm tra giữa học kỳ 1 - Đề số 15",
+      "duration_minutes": 45,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Tích của 8 và 6 là:",
+            "options": [
+              "48",
+              "41",
+              "14",
+              "44"
+            ],
+            "correct_index": 0,
+            "explanation": "8 x 6 = 48."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Biết hiệu là 315, số trừ là 142, số bị trừ là:",
+            "options": [
+              "173",
+              "457",
+              "447",
+              "467"
+            ],
+            "correct_index": 1,
+            "explanation": "Số bị trừ = Hiệu + Số trừ = 315 + 142 = 457."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cho dãy số: 4, 8, 12, 16, ..., 36, 40. Các số thích hợp điền vào chỗ chấm lần lượt là:",
+            "options": [
+              "20, 24, 28, 32",
+              "21, 22, 23, 24",
+              "17, 18, 19, 20",
+              "24, 28, 32, 36"
+            ],
+            "correct_index": 0,
+            "explanation": "Quy luật tăng 4 đơn vị: 20, 24, 28, 32."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Hà đã ăn 2/3 chiếc bánh. Chiếc bánh Hà ăn là:",
+            "options": [
+              "Hình A",
+              "Hình B",
+              "Hình C",
+              "Hình D"
+            ],
+            "correct_index": 1,
+            "image_url": "/images/toan3-gk1-de1-q4.png",
+            "explanation": "Hình B chia 6 phần, tô 4 phần (4/6 = 2/3)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Gấp 8 lên 7 lần ta được:",
+            "options": [
+              "56",
+              "15",
+              "48",
+              "65"
+            ],
+            "correct_index": 0,
+            "explanation": "Gấp một số lên nhiều lần: 8 x 7 = 56."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.3,
+          "metadata_json": {
+            "question": "Bố An xây một cái bể cá hình chữ nhật và trồng hoa súng trong đó. Mỗi lá súng có dạng hình tròn đường kính 5 dm. Vậy chiều dài của bể cá là:",
+            "options": [
+              "8 x 5 = 40 dm",
+              "5 x 8 = 40 dm",
+              "4 x 5 = 20 dm",
+              "2 x 5 = 10 dm"
+            ],
+            "correct_index": 1,
+            "image_url": "/images/toan3-gk1-de1-q6.png",
+            "explanation": "8 lá súng đường kính 5 dm: 5 x 8 = 40 (dm)."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính kết quả phép tính: 8 x ___ = 72",
+            "choices": [
+              "9",
+              "10",
+              "8",
+              "11"
+            ],
+            "correct_answer": "9",
+            "explanation": "8 x 9 = 72."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: ___ + 265 = 548",
+            "choices": [
+              "283",
+              "183",
+              "293",
+              "273"
+            ],
+            "correct_answer": "283",
+            "explanation": "283 + 265 = 548."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: 48 : ___ = 8",
+            "choices": [
+              "6",
+              "7",
+              "5",
+              "8"
+            ],
+            "correct_answer": "6",
+            "explanation": "48 : 6 = 8."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: 710 - ___ = 250",
+            "choices": [
+              "460",
+              "360",
+              "470",
+              "450"
+            ],
+            "correct_answer": "460",
+            "explanation": "710 - 460 = 250."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/3 số con bọ cánh cam trong tổng số 18 con bọ cánh cam là ___ con.",
+            "choices": [
+              "6",
+              "5",
+              "8",
+              "7"
+            ],
+            "correct_answer": "6",
+            "explanation": "18 : 3 = 6."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/6 số con bọ cánh cam trong tổng số 18 con bọ cánh cam là ___ con.",
+            "choices": [
+              "3",
+              "4",
+              "2",
+              "5"
+            ],
+            "correct_answer": "3",
+            "explanation": "18 : 6 = 3."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Ngôi nhà gia đình Lan Anh ở có 3 tầng; mỗi tầng cao 6m. Hỏi ngôi nhà của gia đình Lan Anh cao bao nhiêu mét?",
+            "options": [
+              "9 m",
+              "18 m",
+              "15 m",
+              "22 m"
+            ],
+            "correct_index": 1,
+            "explanation": "6 x 3 = 18 (m)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cây xanh cạnh nhà Lan Anh có chiều cao bằng chiều cao ngôi nhà (18m) giảm đi 3 lần. Hỏi cây đó cao bao nhiêu mét?",
+            "options": [
+              "6 m",
+              "7 m",
+              "15 m",
+              "8 m"
+            ],
+            "correct_index": 0,
+            "explanation": "18 : 3 = 6 (m)."
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 16,
+      "title": "Đề kiểm tra giữa học kỳ 1 - Đề số 16",
+      "duration_minutes": 45,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Tích của 9 và 5 là:",
+            "options": [
+              "45",
+              "38",
+              "14",
+              "41"
+            ],
+            "correct_index": 0,
+            "explanation": "9 x 5 = 45."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Biết hiệu là 423, số trừ là 167, số bị trừ là:",
+            "options": [
+              "256",
+              "590",
+              "580",
+              "600"
+            ],
+            "correct_index": 1,
+            "explanation": "Số bị trừ = Hiệu + Số trừ = 423 + 167 = 590."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cho dãy số: 5, 10, 15, 20, ..., 45, 50. Các số thích hợp điền vào chỗ chấm lần lượt là:",
+            "options": [
+              "25, 30, 35, 40",
+              "26, 27, 28, 29",
+              "21, 22, 23, 24",
+              "30, 35, 40, 45"
+            ],
+            "correct_index": 0,
+            "explanation": "Quy luật tăng 5 đơn vị: 25, 30, 35, 40."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Hà đã ăn 1/3 chiếc bánh. Chiếc bánh Hà ăn là:",
+            "options": [
+              "Hình A",
+              "Hình B",
+              "Hình C",
+              "Hình D"
+            ],
+            "correct_index": 3,
+            "image_url": "/images/toan3-gk1-de1-q4.png",
+            "explanation": "Hình D chia 6 phần, tô 2 phần (2/6 = 1/3)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Gấp 6 lên 8 lần ta được:",
+            "options": [
+              "48",
+              "14",
+              "40",
+              "57"
+            ],
+            "correct_index": 0,
+            "explanation": "Gấp một số lên nhiều lần: 6 x 8 = 48."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.3,
+          "metadata_json": {
+            "question": "Bố An xây một cái bể cá hình chữ nhật và trồng hoa súng trong đó. Mỗi lá súng có dạng hình tròn đường kính 2 dm. Vậy chiều dài của bể cá là:",
+            "options": [
+              "8 x 2 = 16 dm",
+              "2 x 8 = 16 dm",
+              "4 x 2 = 8 dm",
+              "2 x 2 = 4 dm"
+            ],
+            "correct_index": 1,
+            "image_url": "/images/toan3-gk1-de1-q6.png",
+            "explanation": "8 lá súng đường kính 2 dm: 2 x 8 = 16 (dm)."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính kết quả phép tính: 9 x ___ = 54",
+            "choices": [
+              "6",
+              "7",
+              "5",
+              "8"
+            ],
+            "correct_answer": "6",
+            "explanation": "9 x 6 = 54."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: ___ + 238 = 591",
+            "choices": [
+              "353",
+              "253",
+              "363",
+              "343"
+            ],
+            "correct_answer": "353",
+            "explanation": "353 + 238 = 591."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: 54 : ___ = 9",
+            "choices": [
+              "6",
+              "7",
+              "5",
+              "8"
+            ],
+            "correct_answer": "6",
+            "explanation": "54 : 6 = 9."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: 830 - ___ = 360",
+            "choices": [
+              "470",
+              "370",
+              "480",
+              "460"
+            ],
+            "correct_answer": "470",
+            "explanation": "830 - 470 = 360."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/2 số con bọ cánh cam trong tổng số 20 con bọ cánh cam là ___ con.",
+            "choices": [
+              "10",
+              "9",
+              "12",
+              "11"
+            ],
+            "correct_answer": "10",
+            "explanation": "20 : 2 = 10."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/5 số con bọ cánh cam trong tổng số 20 con bọ cánh cam là ___ con.",
+            "choices": [
+              "4",
+              "5",
+              "3",
+              "6"
+            ],
+            "correct_answer": "4",
+            "explanation": "20 : 5 = 4."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Ngôi nhà gia đình Lan Anh ở có 5 tầng; mỗi tầng cao 4m. Hỏi ngôi nhà của gia đình Lan Anh cao bao nhiêu mét?",
+            "options": [
+              "9 m",
+              "20 m",
+              "17 m",
+              "24 m"
+            ],
+            "correct_index": 1,
+            "explanation": "4 x 5 = 20 (m)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cây xanh cạnh nhà Lan Anh có chiều cao bằng chiều cao ngôi nhà (20m) giảm đi 5 lần. Hỏi cây đó cao bao nhiêu mét?",
+            "options": [
+              "4 m",
+              "5 m",
+              "15 m",
+              "6 m"
+            ],
+            "correct_index": 0,
+            "explanation": "20 : 5 = 4 (m)."
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 17,
+      "title": "Đề kiểm tra giữa học kỳ 1 - Đề số 17",
+      "duration_minutes": 45,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Tích của 7 và 8 là:",
+            "options": [
+              "56",
+              "49",
+              "15",
+              "52"
+            ],
+            "correct_index": 0,
+            "explanation": "7 x 8 = 56."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Biết hiệu là 519, số trừ là 234, số bị trừ là:",
+            "options": [
+              "285",
+              "753",
+              "743",
+              "763"
+            ],
+            "correct_index": 1,
+            "explanation": "Số bị trừ = Hiệu + Số trừ = 519 + 234 = 753."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cho dãy số: 6, 12, 18, 24, ..., 54, 60. Các số thích hợp điền vào chỗ chấm lần lượt là:",
+            "options": [
+              "30, 36, 42, 48",
+              "31, 32, 33, 34",
+              "25, 26, 27, 28",
+              "36, 42, 48, 54"
+            ],
+            "correct_index": 0,
+            "explanation": "Quy luật tăng 6 đơn vị: 30, 36, 42, 48."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Hà đã ăn 5/6 chiếc bánh. Chiếc bánh Hà ăn là:",
+            "options": [
+              "Hình A",
+              "Hình B",
+              "Hình C",
+              "Hình D"
+            ],
+            "correct_index": 2,
+            "image_url": "/images/toan3-gk1-de1-q4.png",
+            "explanation": "Hình C chia 6 phần, tô 5 phần (5/6)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Gấp 9 lên 8 lần ta được:",
+            "options": [
+              "72",
+              "17",
+              "64",
+              "81"
+            ],
+            "correct_index": 0,
+            "explanation": "Gấp một số lên nhiều lần: 9 x 8 = 72."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.3,
+          "metadata_json": {
+            "question": "Bố An xây một cái bể cá hình chữ nhật và trồng hoa súng trong đó. Mỗi lá súng có dạng hình tròn đường kính 4 dm. Vậy chiều dài của bể cá là:",
+            "options": [
+              "8 x 4 = 32 dm",
+              "4 x 8 = 32 dm",
+              "4 x 4 = 16 dm",
+              "2 x 4 = 8 dm"
+            ],
+            "correct_index": 1,
+            "image_url": "/images/toan3-gk1-de1-q6.png",
+            "explanation": "8 lá súng đường kính 4 dm: 4 x 8 = 32 (dm)."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính kết quả phép tính: 6 x ___ = 48",
+            "choices": [
+              "8",
+              "9",
+              "7",
+              "10"
+            ],
+            "correct_answer": "8",
+            "explanation": "6 x 8 = 48."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: ___ + 342 = 673",
+            "choices": [
+              "331",
+              "231",
+              "341",
+              "321"
+            ],
+            "correct_answer": "331",
+            "explanation": "331 + 342 = 673."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: 36 : ___ = 4",
+            "choices": [
+              "9",
+              "10",
+              "8",
+              "11"
+            ],
+            "correct_answer": "9",
+            "explanation": "36 : 9 = 4."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: 920 - ___ = 470",
+            "choices": [
+              "450",
+              "350",
+              "460",
+              "440"
+            ],
+            "correct_answer": "450",
+            "explanation": "920 - 450 = 470."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/3 số con bọ cánh cam trong tổng số 24 con bọ cánh cam là ___ con.",
+            "choices": [
+              "8",
+              "7",
+              "10",
+              "9"
+            ],
+            "correct_answer": "8",
+            "explanation": "24 : 3 = 8."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/4 số con bọ cánh cam trong tổng số 24 con bọ cánh cam là ___ con.",
+            "choices": [
+              "6",
+              "7",
+              "5",
+              "8"
+            ],
+            "correct_answer": "6",
+            "explanation": "24 : 4 = 6."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Ngôi nhà gia đình Lan Anh ở có 4 tầng; mỗi tầng cao 6m. Hỏi ngôi nhà của gia đình Lan Anh cao bao nhiêu mét?",
+            "options": [
+              "10 m",
+              "24 m",
+              "21 m",
+              "28 m"
+            ],
+            "correct_index": 1,
+            "explanation": "6 x 4 = 24 (m)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cây xanh cạnh nhà Lan Anh có chiều cao bằng chiều cao ngôi nhà (24m) giảm đi 3 lần. Hỏi cây đó cao bao nhiêu mét?",
+            "options": [
+              "8 m",
+              "9 m",
+              "21 m",
+              "10 m"
+            ],
+            "correct_index": 0,
+            "explanation": "24 : 3 = 8 (m)."
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 18,
+      "title": "Đề kiểm tra giữa học kỳ 1 - Đề số 18",
+      "duration_minutes": 45,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Tích của 8 và 9 là:",
+            "options": [
+              "72",
+              "65",
+              "17",
+              "68"
+            ],
+            "correct_index": 0,
+            "explanation": "8 x 9 = 72."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Biết hiệu là 247, số trừ là 158, số bị trừ là:",
+            "options": [
+              "89",
+              "405",
+              "395",
+              "415"
+            ],
+            "correct_index": 1,
+            "explanation": "Số bị trừ = Hiệu + Số trừ = 247 + 158 = 405."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cho dãy số: 7, 14, 21, 28, ..., 63, 70. Các số thích hợp điền vào chỗ chấm lần lượt là:",
+            "options": [
+              "35, 42, 49, 56",
+              "36, 37, 38, 39",
+              "29, 30, 31, 32",
+              "42, 49, 56, 63"
+            ],
+            "correct_index": 0,
+            "explanation": "Quy luật tăng 7 đơn vị: 35, 42, 49, 56."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Hà đã ăn 1/2 chiếc bánh. Chiếc bánh Hà ăn là:",
+            "options": [
+              "Hình A",
+              "Hình B",
+              "Hình C",
+              "Hình D"
+            ],
+            "correct_index": 0,
+            "image_url": "/images/toan3-gk1-de1-q4.png",
+            "explanation": "Hình A chia 2 phần bằng nhau, tô 1 phần (3/6 = 1/2)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Gấp 7 lên 9 lần ta được:",
+            "options": [
+              "63",
+              "16",
+              "55",
+              "72"
+            ],
+            "correct_index": 0,
+            "explanation": "Gấp một số lên nhiều lần: 7 x 9 = 63."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.3,
+          "metadata_json": {
+            "question": "Bố An xây một cái bể cá hình chữ nhật và trồng hoa súng trong đó. Mỗi lá súng có dạng hình tròn đường kính 6 dm. Vậy chiều dài của bể cá là:",
+            "options": [
+              "8 x 6 = 48 dm",
+              "6 x 8 = 48 dm",
+              "4 x 6 = 24 dm",
+              "2 x 6 = 12 dm"
+            ],
+            "correct_index": 1,
+            "image_url": "/images/toan3-gk1-de1-q6.png",
+            "explanation": "8 lá súng đường kính 6 dm: 6 x 8 = 48 (dm)."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính kết quả phép tính: 8 x ___ = 64",
+            "choices": [
+              "8",
+              "9",
+              "7",
+              "10"
+            ],
+            "correct_answer": "8",
+            "explanation": "8 x 8 = 64."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: ___ + 419 = 852",
+            "choices": [
+              "433",
+              "333",
+              "443",
+              "423"
+            ],
+            "correct_answer": "433",
+            "explanation": "433 + 419 = 852."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: 63 : ___ = 9",
+            "choices": [
+              "7",
+              "8",
+              "6",
+              "9"
+            ],
+            "correct_answer": "7",
+            "explanation": "63 : 7 = 9."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: 650 - ___ = 280",
+            "choices": [
+              "370",
+              "270",
+              "380",
+              "360"
+            ],
+            "correct_answer": "370",
+            "explanation": "650 - 370 = 280."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/2 số con bọ cánh cam trong tổng số 22 con bọ cánh cam là ___ con.",
+            "choices": [
+              "11",
+              "10",
+              "13",
+              "12"
+            ],
+            "correct_answer": "11",
+            "explanation": "22 : 2 = 11."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/1 số con bọ cánh cam trong tổng số 22 con bọ cánh cam là ___ con.",
+            "choices": [
+              "22",
+              "23",
+              "21",
+              "24"
+            ],
+            "correct_answer": "22",
+            "explanation": "22 : 1 = 22."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Ngôi nhà gia đình Lan Anh ở có 2 tầng; mỗi tầng cao 9m. Hỏi ngôi nhà của gia đình Lan Anh cao bao nhiêu mét?",
+            "options": [
+              "11 m",
+              "18 m",
+              "15 m",
+              "22 m"
+            ],
+            "correct_index": 1,
+            "explanation": "9 x 2 = 18 (m)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cây xanh cạnh nhà Lan Anh có chiều cao bằng chiều cao ngôi nhà (18m) giảm đi 6 lần. Hỏi cây đó cao bao nhiêu mét?",
+            "options": [
+              "3 m",
+              "4 m",
+              "12 m",
+              "5 m"
+            ],
+            "correct_index": 0,
+            "explanation": "18 : 6 = 3 (m)."
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 19,
+      "title": "Đề kiểm tra giữa học kỳ 1 - Đề số 19",
+      "duration_minutes": 45,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Tích của 9 và 7 là:",
+            "options": [
+              "63",
+              "56",
+              "16",
+              "59"
+            ],
+            "correct_index": 0,
+            "explanation": "9 x 7 = 63."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Biết hiệu là 536, số trừ là 189, số bị trừ là:",
+            "options": [
+              "347",
+              "725",
+              "715",
+              "735"
+            ],
+            "correct_index": 1,
+            "explanation": "Số bị trừ = Hiệu + Số trừ = 536 + 189 = 725."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cho dãy số: 8, 16, 24, 32, ..., 72, 80. Các số thích hợp điền vào chỗ chấm lần lượt là:",
+            "options": [
+              "40, 48, 56, 64",
+              "41, 42, 43, 44",
+              "33, 34, 35, 36",
+              "48, 56, 64, 72"
+            ],
+            "correct_index": 0,
+            "explanation": "Quy luật tăng 8 đơn vị: 40, 48, 56, 64."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Hà đã ăn 2/3 chiếc bánh. Chiếc bánh Hà ăn là:",
+            "options": [
+              "Hình A",
+              "Hình B",
+              "Hình C",
+              "Hình D"
+            ],
+            "correct_index": 1,
+            "image_url": "/images/toan3-gk1-de1-q4.png",
+            "explanation": "Hình B chia 6 phần, tô 4 phần (4/6 = 2/3)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Gấp 8 lên 8 lần ta được:",
+            "options": [
+              "64",
+              "16",
+              "56",
+              "73"
+            ],
+            "correct_index": 0,
+            "explanation": "Gấp một số lên nhiều lần: 8 x 8 = 64."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.3,
+          "metadata_json": {
+            "question": "Bố An xây một cái bể cá hình chữ nhật và trồng hoa súng trong đó. Mỗi lá súng có dạng hình tròn đường kính 3 dm. Vậy chiều dài của bể cá là:",
+            "options": [
+              "8 x 3 = 24 dm",
+              "3 x 8 = 24 dm",
+              "4 x 3 = 12 dm",
+              "2 x 3 = 6 dm"
+            ],
+            "correct_index": 1,
+            "image_url": "/images/toan3-gk1-de1-q6.png",
+            "explanation": "8 lá súng đường kính 3 dm: 3 x 8 = 24 (dm)."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính kết quả phép tính: 9 x ___ = 81",
+            "choices": [
+              "9",
+              "10",
+              "8",
+              "11"
+            ],
+            "correct_answer": "9",
+            "explanation": "9 x 9 = 81."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: ___ + 428 = 765",
+            "choices": [
+              "337",
+              "237",
+              "347",
+              "327"
+            ],
+            "correct_answer": "337",
+            "explanation": "337 + 428 = 765."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: 56 : ___ = 7",
+            "choices": [
+              "8",
+              "9",
+              "7",
+              "10"
+            ],
+            "correct_answer": "8",
+            "explanation": "56 : 8 = 7."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: 840 - ___ = 390",
+            "choices": [
+              "450",
+              "350",
+              "460",
+              "440"
+            ],
+            "correct_answer": "450",
+            "explanation": "840 - 450 = 390."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/3 số con bọ cánh cam trong tổng số 30 con bọ cánh cam là ___ con.",
+            "choices": [
+              "10",
+              "9",
+              "12",
+              "11"
+            ],
+            "correct_answer": "10",
+            "explanation": "30 : 3 = 10."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/5 số con bọ cánh cam trong tổng số 30 con bọ cánh cam là ___ con.",
+            "choices": [
+              "6",
+              "7",
+              "5",
+              "8"
+            ],
+            "correct_answer": "6",
+            "explanation": "30 : 5 = 6."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Ngôi nhà gia đình Lan Anh ở có 3 tầng; mỗi tầng cao 7m. Hỏi ngôi nhà của gia đình Lan Anh cao bao nhiêu mét?",
+            "options": [
+              "10 m",
+              "21 m",
+              "18 m",
+              "25 m"
+            ],
+            "correct_index": 1,
+            "explanation": "7 x 3 = 21 (m)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cây xanh cạnh nhà Lan Anh có chiều cao bằng chiều cao ngôi nhà (21m) giảm đi 3 lần. Hỏi cây đó cao bao nhiêu mét?",
+            "options": [
+              "7 m",
+              "8 m",
+              "18 m",
+              "9 m"
+            ],
+            "correct_index": 0,
+            "explanation": "21 : 3 = 7 (m)."
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 20,
+      "title": "Đề kiểm tra giữa học kỳ 1 - Đề số 20",
+      "duration_minutes": 45,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Tích của 7 và 9 là:",
+            "options": [
+              "63",
+              "56",
+              "16",
+              "59"
+            ],
+            "correct_index": 0,
+            "explanation": "7 x 9 = 63."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Biết hiệu là 612, số trừ là 245, số bị trừ là:",
+            "options": [
+              "367",
+              "857",
+              "847",
+              "867"
+            ],
+            "correct_index": 1,
+            "explanation": "Số bị trừ = Hiệu + Số trừ = 612 + 245 = 857."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cho dãy số: 9, 18, 27, 36, ..., 81, 90. Các số thích hợp điền vào chỗ chấm lần lượt là:",
+            "options": [
+              "45, 54, 63, 72",
+              "46, 47, 48, 49",
+              "37, 38, 39, 40",
+              "54, 63, 72, 81"
+            ],
+            "correct_index": 0,
+            "explanation": "Quy luật tăng 9 đơn vị: 45, 54, 63, 72."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Hà đã ăn 1/3 chiếc bánh. Chiếc bánh Hà ăn là:",
+            "options": [
+              "Hình A",
+              "Hình B",
+              "Hình C",
+              "Hình D"
+            ],
+            "correct_index": 3,
+            "image_url": "/images/toan3-gk1-de1-q4.png",
+            "explanation": "Hình D chia 6 phần, tô 2 phần (2/6 = 1/3)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Gấp 6 lên 7 lần ta được:",
+            "options": [
+              "42",
+              "13",
+              "34",
+              "51"
+            ],
+            "correct_index": 0,
+            "explanation": "Gấp một số lên nhiều lần: 6 x 7 = 42."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.3,
+          "metadata_json": {
+            "question": "Bố An xây một cái bể cá hình chữ nhật và trồng hoa súng trong đó. Mỗi lá súng có dạng hình tròn đường kính 5 dm. Vậy chiều dài của bể cá là:",
+            "options": [
+              "8 x 5 = 40 dm",
+              "5 x 8 = 40 dm",
+              "4 x 5 = 20 dm",
+              "2 x 5 = 10 dm"
+            ],
+            "correct_index": 1,
+            "image_url": "/images/toan3-gk1-de1-q6.png",
+            "explanation": "8 lá súng đường kính 5 dm: 5 x 8 = 40 (dm)."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tính kết quả phép tính: 7 x ___ = 56",
+            "choices": [
+              "8",
+              "9",
+              "7",
+              "10"
+            ],
+            "correct_answer": "8",
+            "explanation": "7 x 8 = 56."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: ___ + 336 = 879",
+            "choices": [
+              "543",
+              "443",
+              "553",
+              "533"
+            ],
+            "correct_answer": "543",
+            "explanation": "543 + 336 = 879."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: 45 : ___ = 5",
+            "choices": [
+              "9",
+              "10",
+              "8",
+              "11"
+            ],
+            "correct_answer": "9",
+            "explanation": "45 : 9 = 5."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Tìm số thích hợp điền vào chỗ trống: 750 - ___ = 330",
+            "choices": [
+              "420",
+              "320",
+              "430",
+              "410"
+            ],
+            "correct_answer": "420",
+            "explanation": "750 - 420 = 330."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/2 số con bọ cánh cam trong tổng số 24 con bọ cánh cam là ___ con.",
+            "choices": [
+              "12",
+              "11",
+              "14",
+              "13"
+            ],
+            "correct_answer": "12",
+            "explanation": "24 : 2 = 12."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "1/6 số con bọ cánh cam trong tổng số 24 con bọ cánh cam là ___ con.",
+            "choices": [
+              "4",
+              "5",
+              "3",
+              "6"
+            ],
+            "correct_answer": "4",
+            "explanation": "24 : 6 = 4."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Ngôi nhà gia đình Lan Anh ở có 5 tầng; mỗi tầng cao 5m. Hỏi ngôi nhà của gia đình Lan Anh cao bao nhiêu mét?",
+            "options": [
+              "10 m",
+              "25 m",
+              "22 m",
+              "29 m"
+            ],
+            "correct_index": 1,
+            "explanation": "5 x 5 = 25 (m)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cây xanh cạnh nhà Lan Anh có chiều cao bằng chiều cao ngôi nhà (25m) giảm đi 5 lần. Hỏi cây đó cao bao nhiêu mét?",
+            "options": [
+              "5 m",
+              "6 m",
+              "20 m",
+              "7 m"
+            ],
+            "correct_index": 0,
+            "explanation": "25 : 5 = 5 (m)."
+          }
+        }
+      ]
+    }
+  ]
+}

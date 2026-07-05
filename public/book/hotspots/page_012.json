@@ -1,0 +1,77 @@
+{
+  "page": 12,
+  "elements": [
+    {
+      "id": "q_12_1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "2.22. Muối ăn chứa hai nguyên tố hoá học là natri và chlorine. Trong hạt nhân nguyên tử của các nguyên tố natri và chlorine có lần lượt 11 và 17 proton. Số electron trong các lớp của vỏ nguyên tử natri và chlorine, viết từ lớp trong ra lớp ngoài, lần lượt là",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "q_12_2",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 24.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "3.1. Đồng (copper) và carbon là các",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "q_12_3",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "3.2. Kí hiệu nào sau đây là kí hiệu hoá học của nguyên tố magnesium?",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "q_12_4",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "3.3. Đến nay con người đã tìm ra bao nhiêu nguyên tố hoá học?",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "q_12_5",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "3.4. Vàng và carbon có tính chất khác nhau vì vàng là nguyên tố kim loại còn carbon là nguyên tố",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "q_12_6",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 75.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "3.5. Hình 3.1 mô tả một nguyên tử oxygen:\na) Hãy điền số thích hợp vào chỗ trống để hoàn thiện các câu sau:\nSố hiệu nguyên tử (số proton) của nguyên tố oxygen là ..?..\nKhối lượng của nguyên tử oxygen được mô tả ở hình vẽ là ..?..",
+      "correctAnswer": "a) Số hiệu nguyên tử (số proton) của nguyên tố oxygen là 8. Khối lượng nguyên tử của nguyên tử oxygen được mô tả ở hình vẽ là 16 amu: b) Khối lượng của nguyên tử oxygen đó là 18amu:"
+    }
+  ]
+}

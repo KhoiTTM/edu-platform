@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Sparkles, Trophy, ArrowRight, RefreshCw, Star } from "lucide-react";
+import { useTrackEvent } from "@/hooks/useTrackEvent";
 
 interface Props {
   score: number;
@@ -15,8 +16,22 @@ interface Props {
 export function AriaDebrief({ score, total, studentName, lessonTitle, unitId, onRestart }: Props) {
   const [debrief, setDebrief] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const trackEvent = useTrackEvent();
 
   useEffect(() => {
+    // Track quiz completion
+    trackEvent({
+      type: "quiz_completed",
+      subject_slug: "mindset-ielts",
+      session_id: unitId,
+      metadata: {
+        quiz_id: lessonTitle,
+        score,
+        total,
+        accuracy: Math.round((score / total) * 100)
+      }
+    });
+
     const fetchDebrief = async () => {
       try {
         const response = await fetch("/api/ai/teacher", {
@@ -39,7 +54,7 @@ export function AriaDebrief({ score, total, studentName, lessonTitle, unitId, on
     };
 
     fetchDebrief();
-  }, [score, total, studentName, lessonTitle]);
+  }, [score, total, studentName, lessonTitle, trackEvent, unitId]);
 
   const getRank = () => {
     const pct = (score / total) * 100;
@@ -52,7 +67,7 @@ export function AriaDebrief({ score, total, studentName, lessonTitle, unitId, on
   const rank = getRank();
 
   return (
-    <div className="rounded-2xl border border-amber-500/30 bg-slate-900/40 p-6 shadow-2xl backdrop-blur-md space-y-6 animate-in zoom-in duration-500">
+    <div className="rounded-2xl border border-amber-500/30 bg-surface/40 p-6 shadow-2xl backdrop-blur-md space-y-6 animate-in zoom-in duration-500">
       <div className="text-center space-y-2">
         <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-amber-500/10 border border-amber-500/20 mb-2">
           <Trophy className="text-amber-500" size={32} />
@@ -62,11 +77,11 @@ export function AriaDebrief({ score, total, studentName, lessonTitle, unitId, on
       </div>
 
       <div className="grid grid-cols-2 gap-4">
-        <div className="rounded-xl bg-slate-950/60 border border-slate-800 p-4 text-center">
+        <div className="rounded-xl bg-slate-950/60 border border-line p-4 text-center">
           <p className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Final Score</p>
           <p className="mt-1 text-2xl font-black text-white">{score} <span className="text-sm text-slate-500">/ {total}</span></p>
         </div>
-        <div className="rounded-xl bg-slate-950/60 border border-slate-800 p-4 text-center flex flex-col justify-center">
+        <div className="rounded-xl bg-slate-950/60 border border-line p-4 text-center flex flex-col justify-center">
           <p className="text-[10px] font-bold uppercase tracking-wider text-slate-500">Rank</p>
           <p className={`mt-1 text-xs font-black uppercase tracking-wide ${rank.color}`}>{rank.label}</p>
         </div>
@@ -80,8 +95,8 @@ export function AriaDebrief({ score, total, studentName, lessonTitle, unitId, on
         
         {isLoading ? (
           <div className="space-y-2 py-2">
-            <div className="h-3 w-3/4 rounded bg-slate-800 animate-pulse" />
-            <div className="h-3 w-1/2 rounded bg-slate-800 animate-pulse" />
+            <div className="h-3 w-3/4 rounded bg-surface-raised animate-pulse" />
+            <div className="h-3 w-1/2 rounded bg-surface-raised animate-pulse" />
           </div>
         ) : (
           <p className="text-xs text-slate-200 leading-relaxed whitespace-pre-wrap">
@@ -109,7 +124,7 @@ export function AriaDebrief({ score, total, studentName, lessonTitle, unitId, on
       <div className="flex flex-col sm:flex-row gap-3 pt-2">
         <button
           onClick={onRestart}
-          className="flex-1 flex items-center justify-center gap-2 rounded-xl bg-slate-800 py-3 text-xs font-bold text-white transition hover:bg-slate-700 active:scale-95"
+          className="flex-1 flex items-center justify-center gap-2 rounded-xl bg-surface-raised py-3 text-xs font-bold text-white transition hover:bg-slate-700 active:scale-95"
         >
           <RefreshCw size={14} /> Review & Retry
         </button>

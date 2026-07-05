@@ -1,0 +1,122 @@
+{
+  "page": 5,
+  "elements": [
+    {
+      "id": "p5_1",
+      "type": "input",
+      "bbox": {
+        "x": 76.8,
+        "y": 22.2,
+        "width": 14.2,
+        "height": 4.8
+      },
+      "label": "Đáp án câu 1",
+      "value": "Đng1",
+      "correctAnswer": "Đ"
+    },
+    {
+      "id": "p5_2",
+      "type": "input",
+      "bbox": {
+        "x": 76.8,
+        "y": 27.2,
+        "width": 14.2,
+        "height": 9.8
+      },
+      "label": "Đáp án câu 2",
+      "value": "Sai",
+      "correctAnswer": "Đ"
+    },
+    {
+      "id": "p5_3",
+      "type": "input",
+      "bbox": {
+        "x": 76.8,
+        "y": 37.2,
+        "width": 14.2,
+        "height": 7.2
+      },
+      "label": "Đáp án câu 3",
+      "value": "Dúng",
+      "correctAnswer": "Đ"
+    },
+    {
+      "id": "p5_4",
+      "type": "input",
+      "bbox": {
+        "x": 76.8,
+        "y": 44.7,
+        "width": 14.2,
+        "height": 9.9
+      },
+      "label": "Đáp án câu 4",
+      "value": "chính xácvxzcz",
+      "correctAnswer": "Đ"
+    },
+    {
+      "id": "p5_5",
+      "type": "input",
+      "bbox": {
+        "x": 76.8,
+        "y": 54.9,
+        "width": 14.2,
+        "height": 6.9
+      },
+      "label": "Đáp án câu 5",
+      "value": "dassfdghbdf",
+      "correctAnswer": "S"
+    },
+    {
+      "id": "p5_6",
+      "type": "input",
+      "bbox": {
+        "x": 76.8,
+        "y": 62,
+        "width": 14.2,
+        "height": 7.8
+      },
+      "label": "Đáp án câu 6",
+      "value": "asdf",
+      "correctAnswer": "Đ"
+    },
+    {
+      "id": "p5_7",
+      "type": "input",
+      "bbox": {
+        "x": 76.8,
+        "y": 70,
+        "width": 14.2,
+        "height": 4.8
+      },
+      "label": "Đáp án câu 7",
+      "value": "asdf",
+      "correctAnswer": "S"
+    },
+    {
+      "id": "p5_8",
+      "type": "input",
+      "bbox": {
+        "x": 76.8,
+        "y": 75,
+        "width": 14.2,
+        "height": 6.8
+      },
+      "label": "Đáp án câu 8",
+      "value": "asdf",
+      "correctAnswer": "S"
+    },
+    {
+      "id": "p5_9",
+      "type": "input",
+      "bbox": {
+        "x": 76.8,
+        "y": 82,
+        "width": 14.2,
+        "height": 5.8
+      },
+      "label": "Đáp án câu 9",
+      "value": "dafsd",
+      "correctAnswer": "S"
+    }
+  ]
+}

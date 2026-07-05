@@ -1,0 +1,53 @@
+{
+  "page": 39,
+  "elements": [
+    {
+      "id": "q_39_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "12.7. Giả sử trong không gian vũ trụ thuộc hệ Mặt Trời có hai thiên thạch va chạm với nhau thì ở trên Trái Đất ta có thấy âm thanh của vụ nổ này không? Tại sao?",
+      "correctAnswer": "ỞTrái Đất, ta không nghe được âm thanh của vụ nổ vì âm thanh từ nơi hai thiên thạch va chạm không truyển qua được khoảng không giữa chúng và Trái Đất. 113 ứng nguổn động động giậm"
+    },
+    {
+      "id": "q_39_2",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "12.8. Một nhìn thấy tia chớp trước khi thấy sấm 5 s. Cho thời gian ánh sáng truyển từchỗ phát ra sấmđến mắt ta là không đáng kể và tốc độ truyển âm trong không khí là 340 mls. Người đó đứng cách nơi phát ra sấm một khoảng là A. 1,7 km. B. 68 km: C. 850 m D. 68 m. 12.9*. Một người búa gõ vào đường ray xe một người khác đứng cách đó 432 m và áp một tai vào đường ray xe lửa thì nghe thấy hai gõ cách nhau 1,2s.Xác định tốc độ truyển âm trong không khí Biết tốc độ âm trong thép là 6 100 m/s.",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "q_39_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "12.10. Với các dụng cụ thí nghiệm gổm: một ít hạt gạo; một cái bát sứ; một thìa inox; một cái chảo bằng kim loại; một nylon bọc thức ăn; vài dây cao su (Hình 12.1). Hãy thiết kế RI THu phương án thí nghiệm chứng tỏ rằng khi dùng thìa inox gõ vào chảo 0 phát ra âm thanh dưới dạng sóng âm có thể truyển qua không khí tới Hình 12.1 nylon trên miệng bát sứ. BÀl 13.ĐỘTOVÀ ĐỘ CAO CỦA ÂM",
+      "correctAnswer": "Bịt nylon trên miệng bát sứ, rắc vài hạt gạo lên trên: thìa inox gõ mạnh vào đáy chảo cho phát ra âm thanh ở gẩn miệng bát. Quan sát những hạt gạo trên nylon có bị nảy lên không. Nếu những hạt gạo bị nảy lên, điểu đó chứng tỏ đáy chảo phát ra âm thanh dưới dạng sóng âm có thể truyển qua không khí tới màng nylon căng trên miệng bát sứ."
+    },
+    {
+      "id": "q_39_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "13.1. Một vật dao phát ra âm có tẩn số 50 Hz và một vật khác phát ra âm có tẩn số 90 Hz. Vật nào dao động nhanh hơn? Vật nào phát ra âm thấp hơn? 38 nghe người nghe tiếng rằng tiếng tiếng dùng lửa, tiếng truyển màng đáy màng căng động",
+      "correctAnswer": "Vật phát ra âm có tẩn số 90 Hz dao động nhanh hơn Vật phát ra âm có tân số 50 Hz phát ra âm thấp hơn:"
+    }
+  ]
+}

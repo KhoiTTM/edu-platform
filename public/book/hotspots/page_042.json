@@ -1,0 +1,53 @@
+{
+  "page": 42,
+  "elements": [
+    {
+      "id": "q_42_1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "14.2. những trường hợp dưới đây; hiện tượng nào dụng phản xạ âm? A. Xác định độ sâu của đáy biển. B. Nói chuyện qua điện thoại. C Nói trong phòng thu âm qua hệ thống loa. D.Nói trong hội trường qua hệ thống loa.",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "q_42_2",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "14.3. Kết luận nào sau đây là đúng? A. Vật phản xạ âm tốt là những vật có bể mặt sẩn sùi, mểm; B. Vật phản xạ âm kém là những vật có bể mặt nhẵn, C Vật phản xạ âm tốt là những vật có kích thước lớn. D.Vật phản xạ âm kém là những vật mểm, xốp; có bể mặt sẩn sùi.",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "q_42_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "14.4. Những vật phản xạ âm tốt là A gạch, vải. B.thép, vải, xốp. C. vải nhung, gốm. D. sắt, thép; đá.",
+      "correctAnswer": "D."
+    },
+    {
+      "id": "q_42_4",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "14.5. Những vật hấp thụ âm tốt là vật A. có bể mặt nhẵn; ' NỐL TRI THỨC B. sáng, phẳng. C. phản xạ âm kém: V01 Gu0G S 0NG D. phản xạ âm tốt. 14.6*. Hai cậu bé đứng tại hai điểm A và B trước một toà nhà cao (Hình 14.1). Khi cậu bé ở A thổi to một tiếng còi thì cậu bé ở B nghe B thấy hai còi cách nhau 1 s. Tốc 150 m 200 m độ truyển âm của còi là A. 150 m/s. B. 300 m/s. C. 350 m/s. D. 500 m/s. Hình 14.1 41 hay Trong ứng thông xốp. cứng. gỗ, cứng. đứng đứng tiếng tiếng",
+      "correctAnswer": "€. 14.6*.B. Cậu bé đứng ở B nghe thấy hai tiếng còi: một do âm truyển thẳng từ A đến B và một do âm từ A tới bức tường của toà nhà rổi phản xạ lại B. 200 Thời âm truyển thẳng từ A đến B là: t1 2.150 + 200 Thời gian âm truyển từ A tới bức tường rổi phản xạ lại B là: t2 Theo để bài: t2 - t1 = 1 s 2.150 200 200 13 v =300 m/s. 14.7*. Người đứng trên đảo nghe thấy hai tiếng còi: một do âm truyển thẳng từ tàu đến đảo và một do âm truyển từ tàu tới vách núi rổi xạ lại đảo. Gọi khoảng cách từ tàu tới đảo là d (m) Thời gian âm truyển thẳng từ tàu đến đảo là: t1 340 Thời gian âm truyển từ tàu tới vách núi rổi phản xạ lại đảo là: 3 000 d+ 3 000 6 000 d t2 340 340 6 000 _ d d Theo để bài: t2 - t, =4 s = =4 = d=2320 m 340 340 115 bằng tiếng truyển gian phản"
+    }
+  ]
+}

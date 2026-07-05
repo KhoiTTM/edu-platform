@@ -1,0 +1,41 @@
+{
+  "page": 8,
+  "elements": [
+    {
+      "id": "p8_2.1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 22.5,
+        "width": 83.0,
+        "height": 23.0
+      },
+      "label": "2.1. Phát biểu nào sau đây không mô tả đúng mô hình nguyên tử của Rơ-dơ-pho - Bo?",
+      "correctAnswer": "B"
+    },
+    {
+      "id": "p8_2.2",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 46.5,
+        "width": 83.0,
+        "height": 25.0
+      },
+      "label": "2.2. Phát biểu nào sau đây không mô tả đúng vỏ nguyên tử theo mô hình nguyên tử của Rơ-dơ-pho - Bo?",
+      "correctAnswer": "C"
+    },
+    {
+      "id": "p8_2.3",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 72.5,
+        "width": 83.0,
+        "height": 11.0
+      },
+      "label": "2.3. Trừ hạt nhân của nguyên tử hydrogen, hạt nhân các nguyên tử còn lại được tạo thành từ hạt:",
+      "correctAnswer": "D"
+    }
+  ]
+}

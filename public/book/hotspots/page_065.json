@@ -1,0 +1,41 @@
+{
+  "page": 65,
+  "elements": [
+    {
+      "id": "q_65_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "28.2. Trao đổi khí ở thực vật diễn ra thông qua trình nào? A Quang và thoát hơi nước B.Hô hấp. C. Thoát hơi nước. D. Quang và hô hấp.",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_65_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "28.3. Trong quá trình quang ở thực vật, các khí được trao đổi qua khí khổng như thế nào? A CO2 và 02 khuếch tán từ môi trường vào trong tế bào lá, hơi nước thoát ra ngoài. B. O2 và CO2 khuếch tán từ trong tế bào lá ra môi trường. C. 02 khuếch tán từ môi trường vào trong tế bào lá, CO2 khuếch tán từtrong tế bào lá ra môi trường:oo D. CO2 khuếch tán từ môi trường vào trong tế bào lá, 02 khuếch tán từ tế bào lá ra môi trường.",
+      "correctAnswer": "D. 0G S0NG"
+    },
+    {
+      "id": "q_65_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "28.4. Chọn các từ/cụm từ phù hợp để hoàn thành đoạn thông tin nói vể trao đổi khí ở động vật và thực vật. Khi cây được chiếu sáng vàđượccung cấp đủ nước; (1)_ mở, CO2 từ môi trường khuếch tán vào tế bào lá và O2 từ tế bào lá khuếch tán ra ngoài môi trường trong trình . (2) , ngược lại O2 từ ngoài môi trường khuếch tán vào tế bào lá và CO2 từ tế bào lá khuếch tán ra ngoài môi trường trong trình ~(3)_Khí CO2 do con người và động vật thải ra cung cấp cho cây xanh thực hiện trình quang hợp; tạo ra O2 cấp cho hoạt 2(4) của con 64 quá CO2 đổng quá hợp 7 hợp 7 hợp trong quá quá quá động cung",
+      "correctAnswer": "(1) khí khổng; (2) quang (3) hô hấp; (4) hô hấp; (5) trao đổi khí."
+    }
+  ]
+}

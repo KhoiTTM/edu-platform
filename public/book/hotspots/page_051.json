@@ -1,0 +1,41 @@
+{
+  "page": 51,
+  "elements": [
+    {
+      "id": "q_51_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "19.3. Hãy vẽ một số đường sức từ 5 N N 5 trong khoảng giữa hai nam châm đặt gẩn nhau (Hình 19.3). Hình 19.3",
+      "correctAnswer": "Tham khảo Hình 19.26. 5 N 5 Hình 19.2G"
+    },
+    {
+      "id": "q_51_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "19.4. Hãy vẽ một số đường sức từ N 5 của nam châm chữU (Hình 19.4). Hình 19.4",
+      "correctAnswer": "Tham khảo Hình 19.36. 5 Hình 19.3G"
+    },
+    {
+      "id": "q_51_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "19.5. Xác định cực của nam châm 5 N khi biết chiểu của kim nam châm đặt tại vị trí như Hình 19.5. Hình 19.5",
+      "correctAnswer": "Đẩu bên là cực Bắc (N), đẩu bên trái là cực Nam (S)."
+    }
+  ]
+}

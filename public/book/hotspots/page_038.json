@@ -1,0 +1,53 @@
+{
+  "page": 38,
+  "elements": [
+    {
+      "id": "q_38_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "12.1. Giải thích âm từ một dây đàn ghita được gảy truyển đến tai ta như thế nào.",
+      "correctAnswer": "Khi dây đàn (nguổn âm) dao động làm cho lớp không khí tiếp xúc với nó dao động theo. Lớp không khí dao động này lại làm cho lớp không khí kế tiếp nó dao Cứ thế, các dao của âm được không khí truyển tới tai ta, làm cho màng nhĩ dao động khiến ta cảm nhận được âm phát ra từ nguổn âm."
+    },
+    {
+      "id": "q_38_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "12.2. Âm thanh không thể truyển trong A. chất B.chất rắn. C. chất khí D.chân không.",
+      "correctAnswer": "D. KẾT NỐL TRI THỨ C"
+    },
+    {
+      "id": "q_38_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "12.3. Chỉ ra câu nào đúng, câu nào sai trong các câu dưới đây. a) Âm thanh được tạo ra từ 5 nguổn âm, các nguổn âm đểu dao động. b) Âm thanh được truyển tới tai ta qua môi trường không khí. c) Âm thanh có thể truyển trong chất rắn, và khí. d) Âm thanh có thể truyển trong chân không. Io",
+      "correctAnswer": "a Đúng; b Đúng; c Đúng; 7 6 'd-Sai S 0nG)"
+    },
+    {
+      "id": "q_38_4",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "12.4. Âm thanh không truyển được trong chân không vì A. chân không không có trọng B. chân không không có vật chất. C. chân không là môi trường trong suốt. D.chân không không đặt được nguổn âm",
+      "correctAnswer": "B"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "page": 9,
+  "elements": [
+    {
+      "id": "p9_2.4",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 3.5,
+        "width": 83,
+        "height": 16
+      },
+      "label": "2.4. Trong các phát biểu trên, số phát biểu đúng là:",
+      "correctAnswer": "C",
+      "value": "C"
+    },
+    {
+      "id": "p9_2.5",
+      "type": "input",
+      "bbox": {
+        "x": 12.5,
+        "y": 25.5,
+        "width": 76.5,
+        "height": 15.5
+      },
+      "label": "2.5. Điền thông tin Điện tích Proton, Khối lượng Neutron, và Tên hạt tương ứng để hoàn thiện bảng.",
+      "correctAnswer": "Proton: +1, Neutron: 1, Electron: Tên hạt"
+    },
+    {
+      "id": "p9_2.6",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 42.5,
+        "width": 83,
+        "height": 23
+      },
+      "label": "2.6. Từ Hình 2.1, hãy cho biết trong một nguyên tử carbon có bao nhiêu hạt electron, proton, neutron?",
+      "correctAnswer": "Một nguyên tử carbon có 6 electron, 6 proton, 6 neutron."
+    }
+  ]
+}

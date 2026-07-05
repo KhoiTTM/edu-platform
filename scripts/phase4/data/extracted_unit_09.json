@@ -1,0 +1,94 @@
+[
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence with going to.",
+    "text_segments": ["I ", " try my best to pass the test."],
+    "correct_answers": ["am going to"],
+    "word_pool": ["am going to", "is going to", "are going to", "going to"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence with going to.",
+    "text_segments": ["She ", " live in another country next year."],
+    "correct_answers": ["isn't going to"],
+    "word_pool": ["isn't going to", "aren't going to", "not going to"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence with going to.",
+    "text_segments": ["", " you ", " learn a new language?"],
+    "correct_answers": ["Are", "going to"],
+    "word_pool": ["Are", "Is", "going to", "go to"]
+  },
+  {
+    "type": "match_pair",
+    "instruction": "Match the verbs with the phrases.",
+    "pairs": [
+      { "left": "a mistake, somebody laugh, a noise, a difference, a guess", "right": "make" },
+      { "left": "a test, an exam, a picture, a walk", "right": "take" }
+    ]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose make or take.",
+    "text_segments": ["Don't ", " a mistake."],
+    "correct_answers": ["make"],
+    "word_pool": ["make", "take"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose make or take.",
+    "text_segments": ["I am going to ", " an exam tomorrow."],
+    "correct_answers": ["take"],
+    "word_pool": ["make", "take"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose make or take.",
+    "text_segments": ["Can you ", " a picture of us?"],
+    "correct_answers": ["take"],
+    "word_pool": ["make", "take"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose make or take.",
+    "text_segments": ["The clown can ", " somebody laugh."],
+    "correct_answers": ["make"],
+    "word_pool": ["make", "take"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Choose make or take.",
+    "text_segments": ["Please don't ", " a noise in the library."],
+    "correct_answers": ["make"],
+    "word_pool": ["make", "take"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the question.",
+    "text_segments": ["", " are you going to buy a dictionary from?"],
+    "correct_answers": ["Where"],
+    "word_pool": ["Who", "Where", "How", "When", "Why"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the question.",
+    "text_segments": ["", " are you going to improve your language skills?"],
+    "correct_answers": ["How"],
+    "word_pool": ["Who", "Where", "How", "When", "Why"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the phrase.",
+    "text_segments": ["make an ", " to study harder"],
+    "correct_answers": ["effort"],
+    "word_pool": ["effort", "progress", "advantage", "skills"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the phrase.",
+    "text_segments": ["make good ", " in your learning"],
+    "correct_answers": ["progress"],
+    "word_pool": ["effort", "progress", "advantage", "skills"]
+  }
+]

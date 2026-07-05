@@ -1,0 +1,179 @@
+{
+  "title": "Unit 1: Hello - Assessment (Set 2)",
+  "metadata": {
+    "subject": "Tiếng Anh",
+    "grade": 3,
+    "volume": 1,
+    "book": "Tiếng Anh 3 - Global Success",
+    "units": ["Unit 1"],
+    "total_questions": 15,
+    "generated_date": "2026-05-28 13:40:00"
+  },
+  "questions": [
+    {
+      "id": "Q101",
+      "type": "tap_correct_word",
+      "instruction": "Chọn từ đúng để hoàn thành câu giới thiệu.",
+      "question_data": {
+        "question": "Hi. I ___ Minh.",
+        "correct_word": "am",
+        "choices": ["am", "is", "are", "fine"]
+      },
+      "source_anchor": { "book": "Tiếng Anh 3 - Global Success (Tập 1)", "unit": 1, "page": 10 }
+    },
+    {
+      "id": "Q102",
+      "type": "tap_correct_word",
+      "instruction": "Chọn từ đúng để hoàn thành câu trả lời về sức khỏe.",
+      "question_data": {
+        "question": "How are you? - I'm ___, thank you.",
+        "correct_word": "fine",
+        "choices": ["fine", "hello", "bye", "you"]
+      },
+      "source_anchor": { "book": "Tiếng Anh 3 - Global Success (Tập 1)", "unit": 1, "page": 12 }
+    },
+    {
+      "id": "Q103",
+      "type": "tap_correct_word",
+      "instruction": "Chọn lời chào tạm biệt phù hợp.",
+      "question_data": {
+        "question": "___, Ben. - Bye, Lucy.",
+        "correct_word": "Goodbye",
+        "choices": ["Goodbye", "Hello", "Hi", "Fine"]
+      },
+      "source_anchor": { "book": "Tiếng Anh 3 - Global Success (Tập 1)", "unit": 1, "page": 12 }
+    },
+    {
+      "id": "Q104",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các từ để tạo thành câu chào và giới thiệu tên.",
+      "question_data": {
+        "words": ["Hi", "I'm", "Minh", "."],
+        "correct_sentence": "Hi. I'm Minh."
+      },
+      "source_anchor": { "book": "Tiếng Anh 3 - Global Success (Tập 1)", "unit": 1, "page": 10 }
+    },
+    {
+      "id": "Q105",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các từ để tạo thành câu hỏi sức khỏe.",
+      "question_data": {
+        "words": ["are", "you", "How", ",", "Mai", "?"],
+        "correct_sentence": "How are you, Mai?"
+      },
+      "source_anchor": { "book": "Tiếng Anh 3 - Global Success (Tập 1)", "unit": 1, "page": 12 }
+    },
+    {
+      "id": "Q106",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các từ để tạo thành câu tạm biệt.",
+      "question_data": {
+        "words": ["Goodbye", ".", "Bye", ",", "Ben", "."],
+        "correct_sentence": "Goodbye. Bye, Ben."
+      },
+      "source_anchor": { "book": "Tiếng Anh 3 - Global Success (Tập 1)", "unit": 1, "page": 12 }
+    },
+    {
+      "id": "Q107",
+      "type": "vocab_to_word",
+      "instruction": "Chọn từ tiếng Anh tương ứng với nghĩa tiếng Việt.",
+      "question_data": {
+        "question": "Cảm ơn",
+        "correct_word": "thank you",
+        "choices": ["thank you", "hello", "fine", "bye"]
+      },
+      "source_anchor": { "book": "Tiếng Anh 3 - Global Success (Tập 1)", "unit": 1, "page": 12 }
+    },
+    {
+      "id": "Q108",
+      "type": "vocab_to_word",
+      "instruction": "Chọn từ tiếng Anh tương ứng với nghĩa tiếng Việt.",
+      "question_data": {
+        "question": "Bạn",
+        "correct_word": "you",
+        "choices": ["you", "I", "am", "how"]
+      },
+      "source_anchor": { "book": "Tiếng Anh 3 - Global Success (Tập 1)", "unit": 1, "page": 12 }
+    },
+    {
+      "id": "Q109",
+      "type": "vocab_to_word",
+      "instruction": "Chọn từ tiếng Anh tương ứng với nghĩa tiếng Việt.",
+      "question_data": {
+        "question": "Tôi",
+        "correct_word": "I",
+        "choices": ["I", "you", "hi", "fine"]
+      },
+      "source_anchor": { "book": "Tiếng Anh 3 - Global Success (Tập 1)", "unit": 1, "page": 10 }
+    },
+    {
+      "id": "Q110",
+      "type": "fill_blank",
+      "instruction": "Điền tên nhân vật còn thiếu vào chỗ trống.",
+      "question_data": {
+        "question": "Hi. I'm ___.",
+        "correct_answer": "Lucy",
+        "choices": ["Lucy", "Fine", "How", "Bye"]
+      },
+      "source_anchor": { "book": "Tiếng Anh 3 - Global Success (Tập 1)", "unit": 1, "page": 10 }
+    },
+    {
+      "id": "Q111",
+      "type": "fill_blank",
+      "instruction": "Điền từ còn thiếu để hoàn thành câu đáp lại.",
+      "question_data": {
+        "question": "Fine, ___ you.",
+        "correct_answer": "thank",
+        "choices": ["thank", "thanks", "how", "hello"]
+      },
+      "source_anchor": { "book": "Tiếng Anh 3 - Global Success (Tập 1)", "unit": 1, "page": 12 }
+    },
+    {
+      "id": "Q112",
+      "type": "fill_blank",
+      "instruction": "Điền từ chào hỏi tương đương.",
+      "question_data": {
+        "question": "Hello. ___ , I'm Ben.",
+        "correct_answer": "Hi",
+        "choices": ["Hi", "Bye", "Fine", "How"]
+      },
+      "source_anchor": { "book": "Tiếng Anh 3 - Global Success (Tập 1)", "unit": 1, "page": 10 }
+    },
+    {
+      "id": "Q113",
+      "type": "match_pair",
+      "instruction": "Nối câu hỏi/lời chào với lời đáp phù hợp.",
+      "question_data": {
+        "pairs": [
+          { "left": "Goodbye, Mai.", "right": "Bye, Ben." },
+          { "left": "How are you?", "right": "Fine, thank you." }
+        ]
+      },
+      "source_anchor": { "book": "Tiếng Anh 3 - Global Success (Tập 1)", "unit": 1, "page": 13 }
+    },
+    {
+      "id": "Q114",
+      "type": "match_pair",
+      "instruction": "Nối các câu hội thoại giới thiệu.",
+      "question_data": {
+        "pairs": [
+          { "left": "Hello. I'm Lucy.", "right": "Hi, Lucy. I'm Minh." },
+          { "left": "Hello", "right": "Hi" }
+        ]
+      },
+      "source_anchor": { "book": "Tiếng Anh 3 - Global Success (Tập 1)", "unit": 1, "page": 10 }
+    },
+    {
+      "id": "Q115",
+      "type": "match_pair",
+      "instruction": "Nối lời chào và lời tạm biệt tương ứng.",
+      "question_data": {
+        "pairs": [
+          { "left": "Goodbye", "right": "Bye" },
+          { "left": "I'm Ben.", "right": "I'm Lucy." }
+        ]
+      },
+      "source_anchor": { "book": "Tiếng Anh 3 - Global Success (Tập 1)", "unit": 1, "page": 12 }
+    }
+  ]
+}

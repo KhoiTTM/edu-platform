@@ -1,0 +1,29 @@
+{
+  "page": 59,
+  "elements": [
+    {
+      "id": "q_59_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "24.3. Dựa vào nội dung của bài thực hành, hãy cho biết những khẳng định sau đây đúng hay sai. (1) Sử giấy đen bịt kín một phẩn lá ở cả 2 mặt nhằm không cho lá đó tiếp nhận được ánh nhưvậy diệp lục ở phẩn lá bịt kín sẽ không hấp thụ ánh sáng để quang tạo thành tinh bột. (2) Phẩn Iá bị bịt kín giấy đen vẫn được tinh bột (3) Phẩn lá không dán giấy đen thí nghiệm trên tổng hợp được tinh bột. (4) Sử dụng băng giấy đen có thể biết được lá chỉ tổng hợp tinh bột khi có ánh sáng: 7o7TrT gc lá câychi (5) Thả thêm cành rong vào bể cá vì có tác ức chế sự phát triển U của các vi sinh vật gây hại cho cá. (6) Nguyên nhân làm que đóm còn tàn đỏ cháy Iên là do trong nghiệm có carbon dioxide.",
+      "correctAnswer": "(1) = Đ; (2) = S; (3) - Đ; (4) Đ; (5) S; (6) = 5"
+    },
+    {
+      "id": "q_59_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "24.4. Vì sao trong thí nghiệm chứng minh tinh bột được tạo thành trong quang hợp lại sử dụng iodine làm thuốc thử? A Dung dịch iodine phản ứng với tinh bột tạo màu xanh tím đặc trưng. B. Chỉ có dịch iodine mới tác dụng với tinh bột. C. Dung dịch iodine dễ tìm. D. Dung dịch iodine với tinh bột tạo màu đỏ đặc trưng: 58 ống giờ, ống ống tăng bằng Tăng dụng băng phẩn sáng; hợp tổng bằng băng hợp băng trong dụng rong ống bùng dung phản ứng",
+      "correctAnswer": "A."
+    }
+  ]
+}

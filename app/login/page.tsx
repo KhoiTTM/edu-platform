@@ -71,7 +71,7 @@ export default function LoginPage() {
 
       <main className="flex flex-1 items-center justify-center px-4 pb-16 pt-4">
         <div className="w-full max-w-md">
-          <div className="rounded-3xl border border-slate-800 bg-slate-900/50 p-6 shadow-2xl backdrop-blur-md sm:p-8">
+          <div className="rounded-3xl border border-line bg-surface/50 p-6 shadow-2xl backdrop-blur-md sm:p-8">
             <h1 className="font-display text-2xl font-bold text-white">
               {mode === "signin" ? "Welcome back" : "Create your account"}
             </h1>
@@ -81,7 +81,7 @@ export default function LoginPage() {
                 : "Sign up to start learning. Pick your grade level."}
             </p>
 
-            <div className="mt-6 flex rounded-full bg-slate-950/80 p-1 border border-slate-800">
+            <div className="mt-6 flex rounded-full bg-slate-950/80 p-1 border border-line">
               <button
                 type="button"
                 className={`flex-1 rounded-full py-2 text-sm font-semibold transition ${
@@ -122,7 +122,7 @@ export default function LoginPage() {
                       autoComplete="name"
                       value={displayName}
                       onChange={(e) => setDisplayName(e.target.value)}
-                      className="mt-1.5 w-full rounded-xl border border-slate-700 bg-slate-800 px-4 py-3 text-white outline-none placeholder:text-slate-500 transition focus:border-sky-500 focus:bg-slate-900"
+                      className="mt-1.5 w-full rounded-xl border border-line bg-surface-raised px-4 py-3 text-white outline-none placeholder:text-slate-500 transition focus:border-sky-500 focus:bg-surface"
                       placeholder="Alex"
                     />
                   </div>
@@ -137,7 +137,7 @@ export default function LoginPage() {
                           className={`flex flex-1 cursor-pointer items-center justify-center rounded-xl border-2 py-3 text-sm font-semibold transition ${
                             grade === g
                               ? "border-sky-500 bg-sky-950/30 text-sky-400"
-                              : "border-slate-700 bg-slate-800/30 text-slate-400 hover:border-slate-600 hover:text-white"
+                              : "border-line bg-surface-raised/30 text-slate-400 hover:border-slate-600 hover:text-white"
                           }`}
                         >
                           <input
@@ -169,7 +169,7 @@ export default function LoginPage() {
                   autoComplete="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="mt-1.5 w-full rounded-xl border border-slate-700 bg-slate-800 px-4 py-3 text-white outline-none placeholder:text-slate-500 transition focus:border-sky-500 focus:bg-slate-900"
+                  className="mt-1.5 w-full rounded-xl border border-line bg-surface-raised px-4 py-3 text-white outline-none placeholder:text-slate-500 transition focus:border-sky-500 focus:bg-surface"
                   placeholder="you@school.edu"
                 />
               </div>
@@ -190,7 +190,7 @@ export default function LoginPage() {
                   }
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="mt-1.5 w-full rounded-xl border border-slate-700 bg-slate-800 px-4 py-3 text-white outline-none placeholder:text-slate-500 transition focus:border-sky-500 focus:bg-slate-900"
+                  className="mt-1.5 w-full rounded-xl border border-line bg-surface-raised px-4 py-3 text-white outline-none placeholder:text-slate-500 transition focus:border-sky-500 focus:bg-surface"
                   placeholder="••••••••"
                 />
               </div>
@@ -218,7 +218,7 @@ export default function LoginPage() {
             </form>
           </div>
           <p className="mt-6 text-center text-xs text-slate-500">
-            Teachers: run the SQL in <code className="rounded bg-slate-900 px-1.5 py-0.5 text-sky-400">supabase/migrations</code>{" "}
+            Teachers: run the SQL in <code className="rounded bg-surface px-1.5 py-0.5 text-sky-400">supabase/migrations</code>{" "}
             after creating a Supabase project.
           </p>
         </div>

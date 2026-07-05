@@ -1,0 +1,29 @@
+{
+  "page": 70,
+  "elements": [
+    {
+      "id": "q_70_1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "30.6. Cho các đặc điểm sau: (1) Được điểu chỉnh bằng việc mở khí khổng: (2) Tốc độ thoát hơi nước nhanh: (3) Không được điểu chỉnh bằng việc mở khí khổng:. (4) Tốc độ thoát hơi nước chậm: Con đường thoát hơi nước qua khí khổng có những đặc điểm nào? A. (1), (2). B. (2), (3). C (3), (4) D. (1), (4).",
+      "correctAnswer": "A"
+    },
+    {
+      "id": "q_70_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "30.7. Khi đưa cây đi nơi khác; người ta thường làm gì để tránh cho cây không bị mất nước? A ngập cây vào nước. B. Tỉa bớt cành, lá. C Cắt ngắn rễ. D. Tưới đẫm nước cho cây.",
+      "correctAnswer": "B."
+    }
+  ]
+}

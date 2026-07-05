@@ -1,0 +1,179 @@
+{
+  "title": "Unit 2: Our names - Assessment",
+  "metadata": {
+    "subject": "Tiếng Anh",
+    "grade": 3,
+    "volume": 1,
+    "book": "Tiếng Anh 3 - Global Success",
+    "units": ["Unit 2"],
+    "total_questions": 15,
+    "generated_date": "2026-05-28 14:40:00"
+  },
+  "questions": [
+    {
+      "id": "Q201",
+      "type": "tap_correct_word",
+      "instruction": "Chọn từ đúng để hoàn thành câu hỏi tên.",
+      "question_data": {
+        "question": "What's ____ name?",
+        "correct_word": "your",
+        "choices": ["your", "you", "my", "she"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 16 }
+    },
+    {
+      "id": "Q202",
+      "type": "tap_correct_word",
+      "instruction": "Chọn từ đúng để hoàn thành câu hỏi tuổi.",
+      "question_data": {
+        "question": "How ____ are you?",
+        "correct_word": "old",
+        "choices": ["old", "what", "is", "fine"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 18 }
+    },
+    {
+      "id": "Q203",
+      "type": "tap_correct_word",
+      "instruction": "Chọn từ đúng để hoàn thành câu trả lời về tuổi.",
+      "question_data": {
+        "question": "I'm eight ____ old.",
+        "correct_word": "years",
+        "choices": ["years", "year", "old", "name"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 18 }
+    },
+    {
+      "id": "Q204",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các từ để tạo thành câu hỏi tên hoàn chỉnh.",
+      "question_data": {
+        "words": ["What's", "your", "name", "?"],
+        "correct_sentence": "What's your name?"
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 16 }
+    },
+    {
+      "id": "Q205",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các từ để tạo thành câu giới thiệu tên.",
+      "question_data": {
+        "words": ["My", "name's", "Mary", "."],
+        "correct_sentence": "My name's Mary."
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 16 }
+    },
+    {
+      "id": "Q206",
+      "type": "sentence_reorder",
+      "instruction": "Sắp xếp các từ để tạo thành câu hỏi tuổi.",
+      "question_data": {
+        "words": ["old", "are", "you", "How", "?"],
+        "correct_sentence": "How old are you?"
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 18 }
+    },
+    {
+      "id": "Q207",
+      "type": "vocab_to_word",
+      "instruction": "Chọn từ tiếng Anh tương ứng với nghĩa tiếng Việt.",
+      "question_data": {
+        "question": "Tên",
+        "correct_word": "name",
+        "choices": ["name", "old", "your", "what"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 16 }
+    },
+    {
+      "id": "Q208",
+      "type": "vocab_to_word",
+      "instruction": "Chọn từ tiếng Anh tương ứng với số đếm.",
+      "question_data": {
+        "question": "Số chín (9)",
+        "correct_word": "nine",
+        "choices": ["nine", "seven", "eight", "ten"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 18 }
+    },
+    {
+      "id": "Q209",
+      "type": "vocab_to_word",
+      "instruction": "Chọn từ tiếng Anh tương ứng với số đếm.",
+      "question_data": {
+        "question": "Số mười (10)",
+        "correct_word": "ten",
+        "choices": ["ten", "nine", "seven", "six"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 18 }
+    },
+    {
+      "id": "Q210",
+      "type": "fill_blank",
+      "instruction": "Điền từ còn thiếu vào chỗ trống.",
+      "question_data": {
+        "question": "Hi. My ____ is Linh.",
+        "correct_answer": "name",
+        "choices": ["name", "is", "your", "are"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 16 }
+    },
+    {
+      "id": "Q211",
+      "type": "fill_blank",
+      "instruction": "Điền từ còn thiếu để hỏi tuổi.",
+      "question_data": {
+        "question": "How old ____ you?",
+        "correct_answer": "are",
+        "choices": ["are", "am", "is", "old"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 18 }
+    },
+    {
+      "id": "Q212",
+      "type": "fill_blank",
+      "instruction": "Điền số tuổi bằng chữ (7).",
+      "question_data": {
+        "question": "I'm ____ years old.",
+        "correct_answer": "seven",
+        "choices": ["seven", "eight", "nine", "ten"]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 18 }
+    },
+    {
+      "id": "Q213",
+      "type": "match_pair",
+      "instruction": "Nối câu hỏi với câu trả lời phù hợp.",
+      "question_data": {
+        "pairs": [
+          { "left": "What's your name?", "right": "My name's Bill." },
+          { "left": "How old are you?", "right": "I'm nine years old." }
+        ]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 21 }
+    },
+    {
+      "id": "Q214",
+      "type": "match_pair",
+      "instruction": "Nối các lời chào và giới thiệu.",
+      "question_data": {
+        "pairs": [
+          { "left": "Hi, I'm Linh.", "right": "Hello, Linh. I'm Nam." },
+          { "left": "Goodbye, Mary.", "right": "Bye, Nam." }
+        ]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 16, "note": "Cumulative Unit 1" }
+    },
+    {
+      "id": "Q215",
+      "type": "match_pair",
+      "instruction": "Nối các cụm từ để tạo thành câu hỏi hoàn chỉnh.",
+      "question_data": {
+        "pairs": [
+          { "left": "What's", "right": "your name?" },
+          { "left": "How", "right": "old are you?" }
+        ]
+      },
+      "source_anchor": { "book": "1.1 Global success 3 - Tập 1.pdf", "unit": 2, "page": 16, "unit_ref": 18 }
+    }
+  ]
+}

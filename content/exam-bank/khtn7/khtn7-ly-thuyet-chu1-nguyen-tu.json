@@ -1,0 +1,777 @@
+{
+  "collection": {
+    "title": "KHTN 7 - Ôn Lý Thuyết - Nguyên tử, Nguyên tố, Phân tử",
+    "subject_slug": "khtn",
+    "grade": 7,
+    "volume": 1,
+    "units": [200],
+    "sequence_number": 1,
+    "exam_type": "review",
+    "reference_book": "Kết nối tri thức với cuộc sống - KHTN 7",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 1,
+      "title": "Nguyên tử — Đề 01",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Nguyên tử gồm những hạt nào?",
+            "options": ["Proton và neutron", "Proton, neutron và electron", "Chỉ có electron", "Neutron và electron"],
+            "correct_index": 1,
+            "explanation": "Nguyên tử gồm hạt nhân (proton mang điện tích dương + neutron không mang điện) và lớp vỏ (electron mang điện tích âm).",
+            "tags": ["bai2", "nguyen-tu"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Hạt nào mang điện tích dương trong nguyên tử?",
+            "options": ["Electron", "Neutron", "Proton", "Tất cả các hạt"],
+            "correct_index": 2,
+            "explanation": "Proton mang điện tích dương (+), electron mang điện tích âm (-), neutron không mang điện.",
+            "tags": ["bai2", "nguyen-tu"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Tại sao nguyên tử trung hoà về điện?",
+            "options": ["Vì không có hạt mang điện", "Vì số proton bằng số neutron", "Vì số proton bằng số electron", "Vì neutron triệt tiêu điện tích"],
+            "correct_index": 2,
+            "explanation": "Nguyên tử trung hoà điện vì số proton (điện tích +) bằng số electron (điện tích -), tổng điện tích = 0.",
+            "tags": ["bai2", "nguyen-tu"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Khối lượng của nguyên tử tập trung chủ yếu ở đâu?",
+            "options": ["Lớp vỏ electron", "Hạt nhân", "Đều nhau giữa vỏ và hạt nhân", "Electron"],
+            "correct_index": 1,
+            "explanation": "Khối lượng proton và neutron rất lớn so với electron, nên khối lượng nguyên tử tập trung gần như toàn bộ ở hạt nhân.",
+            "tags": ["bai2", "nguyen-tu"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Nguyên tố hoá học là gì?",
+            "options": ["Tập hợp các phân tử cùng loại", "Tập hợp các nguyên tử cùng số proton", "Tập hợp các nguyên tử cùng khối lượng", "Tập hợp các nguyên tử cùng số neutron"],
+            "correct_index": 1,
+            "explanation": "Nguyên tố hoá học là tập hợp các nguyên tử cùng số proton trong hạt nhân. Số proton đặc trưng cho nguyên tố.",
+            "tags": ["bai3", "nguyen-to"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Ký hiệu hoá học của nguyên tố Oxygen là gì?",
+            "options": ["Ox", "Oy", "O", "On"],
+            "correct_index": 2,
+            "explanation": "Ký hiệu hoá học của Oxygen là O (lấy từ chữ cái đầu của tên Latin 'Oxygenium').",
+            "tags": ["bai3", "nguyen-to", "ki-hieu"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Nguyên tử khối là gì?",
+            "options": ["Khối lượng tuyệt đối của nguyên tử (kg)", "Khối lượng tương đối so với 1/12 khối lượng nguyên tử C", "Số proton trong hạt nhân", "Số lớp electron"],
+            "correct_index": 1,
+            "explanation": "Nguyên tử khối là khối lượng tương đối của nguyên tử, so sánh với 1/12 khối lượng nguyên tử Carbon-12. Đơn vị là amu (u).",
+            "tags": ["bai3", "nguyen-tu-khoi"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Nguyên tử carbon có 6 proton và 6 neutron. Nguyên tử khối của carbon là bao nhiêu?",
+            "options": ["6", "12", "18", "3"],
+            "correct_index": 1,
+            "explanation": "Nguyên tử khối ≈ số proton + số neutron = 6 + 6 = 12 (amu). Electron có khối lượng không đáng kể.",
+            "tags": ["bai3", "nguyen-tu-khoi", "ap-dung"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Điều nào sau đây đúng về electron trong nguyên tử?",
+            "options": ["Electron nằm ở hạt nhân", "Electron chuyển động xung quanh hạt nhân theo lớp", "Electron không mang điện", "Electron có khối lượng bằng proton"],
+            "correct_index": 1,
+            "explanation": "Electron chuyển động rất nhanh xung quanh hạt nhân và được sắp xếp vào các lớp khác nhau (lớp 1, lớp 2, lớp 3...).",
+            "tags": ["bai2", "lop-electron"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Hai nguyên tử khác nhau về nguyên tố khi chúng có khác nhau về điều gì?",
+            "options": ["Số neutron", "Số electron ở lớp ngoài cùng", "Số proton", "Khối lượng nguyên tử"],
+            "correct_index": 2,
+            "explanation": "Số proton trong hạt nhân là đặc trưng của nguyên tố. Hai nguyên tử khác nguyên tố khi có số proton khác nhau.",
+            "tags": ["bai3", "nguyen-to"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Hạt nhân của nguyên tử Nitrogen có 7 proton và 7 neutron. Số electron của nguyên tử này là bao nhiêu?",
+            "options": ["7", "14", "0", "3"],
+            "correct_index": 0,
+            "explanation": "Nguyên tử trung hoà điện nên số electron = số proton = 7.",
+            "tags": ["bai2", "ap-dung"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Phát biểu nào sau đây KHÔNG đúng về nguyên tử?",
+            "options": ["Nguyên tử là hạt vô cùng nhỏ", "Nguyên tử trung hoà về điện", "Nguyên tử không thể phân chia được", "Hạt nhân nguyên tử mang điện tích dương"],
+            "correct_index": 2,
+            "explanation": "Nguyên tử CÓ THỂ bị phân chia (phản ứng hạt nhân). Ba phát biểu còn lại đều đúng về nguyên tử.",
+            "tags": ["bai2", "nguyen-tu"]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 2,
+      "title": "Bảng tuần hoàn — Đề 02",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Bảng tuần hoàn các nguyên tố hoá học được sắp xếp theo nguyên tắc nào?",
+            "options": ["Tăng dần khối lượng nguyên tử", "Tăng dần số proton trong hạt nhân", "Tăng dần số neutron", "Tăng dần số electron lớp ngoài cùng"],
+            "correct_index": 1,
+            "explanation": "Bảng tuần hoàn sắp xếp các nguyên tố theo chiều tăng dần số proton (= số hiệu nguyên tử Z).",
+            "tags": ["bai4", "bang-tuan-hoan"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Chu kỳ trong bảng tuần hoàn là gì?",
+            "options": ["Cột dọc chứa các nguyên tố cùng số electron ngoài cùng", "Hàng ngang chứa các nguyên tố có cùng số lớp electron", "Nhóm nguyên tố có tính chất hoá học giống nhau", "Các nguyên tố kim loại"],
+            "correct_index": 1,
+            "explanation": "Chu kỳ là hàng ngang trong bảng tuần hoàn. Các nguyên tố trong cùng chu kỳ có cùng số lớp electron.",
+            "tags": ["bai4", "chu-ky"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Nhóm trong bảng tuần hoàn là gì?",
+            "options": ["Hàng ngang các nguyên tố cùng số lớp electron", "Cột dọc các nguyên tố có cùng số electron lớp ngoài cùng", "Các nguyên tố phi kim", "Các nguyên tố có cùng khối lượng"],
+            "correct_index": 1,
+            "explanation": "Nhóm là cột dọc trong bảng tuần hoàn. Các nguyên tố cùng nhóm có số electron lớp ngoài cùng giống nhau → tính chất hoá học tương tự.",
+            "tags": ["bai4", "nhom"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Tại sao các nguyên tố trong cùng một nhóm có tính chất hoá học tương tự nhau?",
+            "options": ["Vì có cùng số proton", "Vì có cùng số electron lớp ngoài cùng", "Vì có cùng khối lượng nguyên tử", "Vì đều là kim loại"],
+            "correct_index": 1,
+            "explanation": "Tính chất hoá học quyết định bởi số electron lớp ngoài cùng. Cùng nhóm → cùng số electron ngoài cùng → tính chất tương tự.",
+            "tags": ["bai4", "nhom", "tinh-chat"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Nguyên tố sodium (Na) ở chu kỳ 3, nhóm I. Điều này có nghĩa là Na có?",
+            "options": ["3 electron và 1 proton", "3 lớp electron và 1 electron lớp ngoài cùng", "1 lớp electron và 3 electron ngoài cùng", "3 neutron và 1 proton"],
+            "correct_index": 1,
+            "explanation": "Chu kỳ 3 → 3 lớp electron. Nhóm I → 1 electron ở lớp ngoài cùng. Na dễ nhường 1 electron này khi phản ứng.",
+            "tags": ["bai4", "ap-dung"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Nguyên tố nào sau đây nằm cùng nhóm với Oxygen (O)?",
+            "options": ["Nitrogen (N)", "Sulfur (S)", "Carbon (C)", "Fluorine (F)"],
+            "correct_index": 1,
+            "explanation": "Oxygen và Sulfur đều ở nhóm VIA, có 6 electron lớp ngoài cùng. Chúng có nhiều tính chất hoá học tương tự nhau.",
+            "tags": ["bai4", "cung-nhom"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Đơn chất là gì?",
+            "options": ["Chất được tạo từ hai nguyên tố trở lên", "Chất được tạo từ một nguyên tố duy nhất", "Chất không thể tách nhỏ hơn được", "Chất chỉ có trong tự nhiên"],
+            "correct_index": 1,
+            "explanation": "Đơn chất được tạo thành từ một loại nguyên tố hoá học. Ví dụ: O₂, Fe, S, Cu đều là đơn chất.",
+            "tags": ["bai5", "don-chat"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Chất nào sau đây là hợp chất?",
+            "options": ["O₂", "Fe", "H₂O", "N₂"],
+            "correct_index": 2,
+            "explanation": "H₂O (nước) là hợp chất vì được tạo từ 2 nguyên tố: H và O. O₂, Fe, N₂ đều là đơn chất (1 nguyên tố).",
+            "tags": ["bai5", "hop-chat"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Phân tử là gì?",
+            "options": ["Hạt nhỏ nhất còn giữ được tính chất của chất", "Một nguyên tử đơn lẻ", "Tập hợp nhiều nguyên tố khác nhau", "Hạt mang điện trong nguyên tử"],
+            "correct_index": 0,
+            "explanation": "Phân tử là hạt đại diện cho chất, gồm các nguyên tử liên kết với nhau. Phân tử là hạt nhỏ nhất còn giữ được tính chất hoá học của chất.",
+            "tags": ["bai5", "phan-tu"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Phân tử CO₂ gồm những nguyên tố nào?",
+            "options": ["Carbon và Oxygen", "Calcium và Oxygen", "Carbon và Ozone", "Cobalt và Oxygen"],
+            "correct_index": 0,
+            "explanation": "CO₂ (carbon dioxide) gồm 1 nguyên tử C (Carbon) và 2 nguyên tử O (Oxygen). Đây là hợp chất vì có 2 nguyên tố.",
+            "tags": ["bai5", "phan-tu", "hop-chat"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Liên kết ion hình thành giữa loại nguyên tố nào?",
+            "options": ["Hai phi kim", "Kim loại và phi kim", "Hai kim loại", "Kim loại và kim loại"],
+            "correct_index": 1,
+            "explanation": "Liên kết ion hình thành khi kim loại nhường electron cho phi kim. Kim loại → ion dương, phi kim → ion âm, hai ion hút nhau tạo liên kết ion.",
+            "tags": ["bai6", "lien-ket-ion"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Liên kết cộng hoá trị hình thành như thế nào?",
+            "options": ["Nguyên tử cho và nhận electron", "Các nguyên tử dùng chung electron", "Ion dương hút ion âm", "Proton liên kết với neutron"],
+            "correct_index": 1,
+            "explanation": "Liên kết cộng hoá trị hình thành khi các nguyên tử (thường là phi kim) dùng chung một hay nhiều cặp electron. Ví dụ: H₂, O₂, H₂O.",
+            "tags": ["bai6", "lien-ket-cong-hoa-tri"]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 3,
+      "title": "Hoá trị — Công thức hoá học — Đề 03",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Hoá trị của một nguyên tố là gì?",
+            "options": ["Số proton trong hạt nhân", "Khối lượng nguyên tử", "Con số biểu thị khả năng liên kết của nguyên tử nguyên tố đó", "Số lớp electron"],
+            "correct_index": 2,
+            "explanation": "Hoá trị là con số biểu thị khả năng liên kết của nguyên tử một nguyên tố với nguyên tử nguyên tố khác.",
+            "tags": ["bai7", "hoa-tri"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Hydrogen (H) có hoá trị mấy?",
+            "options": ["I", "II", "III", "IV"],
+            "correct_index": 0,
+            "explanation": "Hydrogen có hoá trị I (một). H dùng làm chuẩn: hoá trị của nguyên tố = số nguyên tử H mà 1 nguyên tử nguyên tố đó liên kết được.",
+            "tags": ["bai7", "hoa-tri-hydrogen"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Quy tắc hoá trị trong hợp chất A_xB_y là gì?",
+            "options": ["a + b = x + y", "a × b = x × y", "a × x = b × y", "a / x = b / y"],
+            "correct_index": 2,
+            "explanation": "Quy tắc hoá trị: a × x = b × y (trong đó a, b là hoá trị; x, y là số nguyên tử của mỗi nguyên tố). Tổng hoá trị của các nguyên tố bằng nhau.",
+            "tags": ["bai7", "quy-tac-hoa-tri"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Nước (H₂O): Oxygen có hoá trị II, Hydrogen có hoá trị I. Kiểm tra quy tắc hoá trị: I × 2 = II × ?",
+            "options": ["1 — đúng", "2 — sai", "3 — sai", "4 — sai"],
+            "correct_index": 0,
+            "explanation": "I × 2 = II × 1 → 2 = 2 ✓. Quy tắc thoả mãn. H₂O là công thức đúng.",
+            "tags": ["bai7", "kiem-tra-cthh"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Lập công thức hoá học của hợp chất gồm Al (hoá trị III) và O (hoá trị II). Công thức đúng là?",
+            "options": ["AlO", "Al₂O₃", "Al₃O₂", "AlO₃"],
+            "correct_index": 1,
+            "explanation": "III × x = II × y → x/y = II/III = 2/3 → x=2, y=3 → Al₂O₃ (nhôm oxide).",
+            "tags": ["bai7", "lap-cthh"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Công thức hoá học cho biết điều gì?",
+            "options": ["Chỉ cho biết tên nguyên tố", "Thành phần nguyên tố và số nguyên tử mỗi nguyên tố trong phân tử", "Chỉ cho biết khối lượng phân tử", "Màu sắc và trạng thái của chất"],
+            "correct_index": 1,
+            "explanation": "Công thức hoá học cho biết: (1) thành phần nguyên tố, (2) số nguyên tử mỗi nguyên tố trong 1 phân tử chất. Từ đó tính được phân tử khối.",
+            "tags": ["bai7", "cong-thuc-hh"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Phân tử khối của H₂O là bao nhiêu? (H=1, O=16)",
+            "options": ["17", "18", "16", "19"],
+            "correct_index": 1,
+            "explanation": "Phân tử khối H₂O = 2×1 + 1×16 = 2 + 16 = 18 (amu).",
+            "tags": ["bai7", "phan-tu-khoi"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Phân tử khối của CO₂ là bao nhiêu? (C=12, O=16)",
+            "options": ["28", "44", "32", "40"],
+            "correct_index": 1,
+            "explanation": "Phân tử khối CO₂ = 1×12 + 2×16 = 12 + 32 = 44 (amu).",
+            "tags": ["bai7", "phan-tu-khoi"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "NaCl là muối ăn: Na có hoá trị I, Cl có hoá trị I. Công thức đúng là?",
+            "options": ["Na₂Cl", "NaCl₂", "NaCl", "Na₂Cl₂"],
+            "correct_index": 2,
+            "explanation": "I × x = I × y → x = y = 1 → NaCl. Tỉ lệ 1:1 là đơn giản nhất.",
+            "tags": ["bai7", "lap-cthh", "NaCl"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Hoá trị của Fe trong Fe₂O₃ là bao nhiêu? (O có hoá trị II)",
+            "options": ["I", "II", "III", "IV"],
+            "correct_index": 2,
+            "explanation": "Theo quy tắc: a×2 = II×3 → a×2 = 6 → a = III. Fe có hoá trị III trong Fe₂O₃ (sắt(III) oxide).",
+            "tags": ["bai7", "tinh-hoa-tri"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Oxygen (O) thường có hoá trị mấy?",
+            "options": ["I", "II", "III", "IV"],
+            "correct_index": 1,
+            "explanation": "Oxygen thường có hoá trị II trong hầu hết các hợp chất (H₂O, CO₂, Fe₂O₃...).",
+            "tags": ["bai7", "hoa-tri-oxygen"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Chất nào sau đây là đơn chất?",
+            "options": ["NaCl", "H₂O", "CO₂", "O₂"],
+            "correct_index": 3,
+            "explanation": "O₂ là đơn chất vì chỉ gồm 1 nguyên tố (Oxygen). NaCl, H₂O, CO₂ đều là hợp chất (≥2 nguyên tố).",
+            "tags": ["bai5", "don-chat"]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 4,
+      "title": "Ôn tổng hợp Chủ đề 1 — Đề 04",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Hạt mang điện âm trong nguyên tử là?",
+            "options": ["Proton", "Neutron", "Electron", "Ion"],
+            "correct_index": 2,
+            "explanation": "Electron mang điện tích âm (-), nằm ở lớp vỏ nguyên tử.",
+            "tags": ["bai2", "on-tap"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Nguyên tố hoá học đặc trưng bởi đại lượng nào?",
+            "options": ["Số neutron", "Số proton", "Số electron lớp ngoài cùng", "Khối lượng nguyên tử"],
+            "correct_index": 1,
+            "explanation": "Số proton trong hạt nhân là đặc trưng của nguyên tố hoá học. Nguyên tố khác nhau → số proton khác nhau.",
+            "tags": ["bai3", "on-tap"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Trong bảng tuần hoàn, các nguyên tố cùng chu kỳ có đặc điểm gì giống nhau?",
+            "options": ["Cùng số electron lớp ngoài cùng", "Cùng số lớp electron", "Cùng số proton", "Cùng tính chất hoá học"],
+            "correct_index": 1,
+            "explanation": "Cùng chu kỳ (hàng ngang) → cùng số lớp electron. Ví dụ: Na, Mg, Al... đều ở chu kỳ 3 → đều có 3 lớp electron.",
+            "tags": ["bai4", "chu-ky"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Hợp chất MgO: Mg có hoá trị II, O có hoá trị II. Công thức đúng là?",
+            "options": ["Mg₂O₂", "MgO", "Mg₂O", "MgO₂"],
+            "correct_index": 1,
+            "explanation": "II × x = II × y → x = y → tỉ lệ 1:1 → MgO (rút gọn từ Mg₂O₂). Công thức đơn giản nhất là MgO.",
+            "tags": ["bai7", "lap-cthh"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Ký hiệu hoá học nào biểu diễn 3 nguyên tử Hydrogen?",
+            "options": ["H₃", "3H", "H₃⁺", "3H₂"],
+            "correct_index": 1,
+            "explanation": "3H biểu diễn 3 nguyên tử hydrogen riêng lẻ. H₃ không tồn tại phổ biến. Chú ý: H₂ là phân tử hydrogen (2 nguyên tử liên kết).",
+            "tags": ["bai5", "bieu-dien-nguyen-tu"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Liên kết trong phân tử Cl₂ là loại liên kết gì?",
+            "options": ["Liên kết ion", "Liên kết cộng hoá trị", "Liên kết kim loại", "Không có liên kết"],
+            "correct_index": 1,
+            "explanation": "Cl₂ gồm 2 nguyên tử Cl (đều là phi kim) dùng chung 1 cặp electron → liên kết cộng hoá trị.",
+            "tags": ["bai6", "lien-ket"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "NaCl (muối ăn) được tạo thành bởi loại liên kết nào?",
+            "options": ["Liên kết cộng hoá trị", "Liên kết ion", "Liên kết kim loại", "Không có liên kết hoá học"],
+            "correct_index": 1,
+            "explanation": "NaCl tạo bởi Na (kim loại) và Cl (phi kim): Na nhường 1e cho Cl → Na⁺ và Cl⁻ hút nhau → liên kết ion.",
+            "tags": ["bai6", "lien-ket-ion"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Phân tử khối của NaCl là bao nhiêu? (Na=23, Cl=35.5)",
+            "options": ["58", "58.5", "47", "57"],
+            "correct_index": 1,
+            "explanation": "Phân tử khối NaCl = 23 + 35.5 = 58.5 (amu).",
+            "tags": ["bai7", "phan-tu-khoi"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Nguyên tử X có 11 proton, 12 neutron. Nguyên tử khối và số electron của X lần lượt là?",
+            "options": ["23 và 11", "23 và 12", "12 và 11", "11 và 12"],
+            "correct_index": 0,
+            "explanation": "Nguyên tử khối ≈ 11 + 12 = 23. Số electron = số proton = 11 (nguyên tử trung hoà điện). X là Sodium (Na).",
+            "tags": ["bai2", "bai3", "ap-dung"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Ký hiệu hoá học của Iron (Sắt) là gì?",
+            "options": ["Ir", "I", "Fe", "Fr"],
+            "correct_index": 2,
+            "explanation": "Ký hiệu của Iron (Sắt) là Fe (từ tên Latin 'Ferrum'). Đây là một trong những ký hiệu lấy từ tên Latin chứ không từ tên tiếng Anh.",
+            "tags": ["bai3", "ki-hieu"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Calcium (Ca) ở nhóm IIA, chu kỳ 4. Ca có bao nhiêu lớp electron và bao nhiêu electron lớp ngoài cùng?",
+            "options": ["4 lớp, 2 electron", "2 lớp, 4 electron", "4 lớp, 4 electron", "2 lớp, 2 electron"],
+            "correct_index": 0,
+            "explanation": "Chu kỳ 4 → 4 lớp electron. Nhóm IIA → 2 electron lớp ngoài cùng. Ca dễ nhường 2e này khi tạo ion Ca²⁺.",
+            "tags": ["bai4", "ap-dung"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Phát biểu nào đúng về phân tử?",
+            "options": ["Phân tử chỉ gồm 2 nguyên tử", "Phân tử là hạt nhỏ nhất còn giữ tính chất hoá học của chất", "Phân tử và nguyên tử là như nhau", "Phân tử không thể bị phá vỡ"],
+            "correct_index": 1,
+            "explanation": "Phân tử là hạt đại diện cho chất, giữ nguyên tính chất hoá học. Phân tử có thể gồm 2, 3 hoặc nhiều nguyên tử (H₂, H₂O, C₆H₁₂O₆...).",
+            "tags": ["bai5", "phan-tu"]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 5,
+      "title": "Ôn tổng hợp Chủ đề 1 — Đề 05",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Hạt nào không mang điện trong nguyên tử?",
+            "options": ["Proton", "Electron", "Neutron", "Ion"],
+            "correct_index": 2,
+            "explanation": "Neutron không mang điện (trung tính). Proton mang điện (+), electron mang điện (-).",
+            "tags": ["bai2", "neutron"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Nhóm VII trong bảng tuần hoàn gồm các nguyên tố có bao nhiêu electron lớp ngoài cùng?",
+            "options": ["5", "6", "7", "8"],
+            "correct_index": 2,
+            "explanation": "Nhóm VII (halogen) → 7 electron lớp ngoài cùng. Các nguyên tố này rất hoạt động, dễ nhận thêm 1e để đạt cấu hình bền.",
+            "tags": ["bai4", "nhom-VII"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Nhóm VIII (khí hiếm) có đặc điểm gì đặc biệt về cấu tạo electron?",
+            "options": ["Có 1 electron lớp ngoài cùng", "Lớp ngoài cùng đã đầy electron (8e hoặc 2e với He)", "Không có electron", "Có 4 electron lớp ngoài cùng"],
+            "correct_index": 1,
+            "explanation": "Khí hiếm (He, Ne, Ar...) có lớp electron ngoài cùng bão hoà (8e, riêng He là 2e) → rất bền vững, hầu như không phản ứng hoá học.",
+            "tags": ["bai4", "khi-hiem"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Chất nào là hợp chất?",
+            "options": ["Cl₂", "Na", "HCl", "S"],
+            "correct_index": 2,
+            "explanation": "HCl (hydrogen chloride) là hợp chất vì gồm 2 nguyên tố: H và Cl. Cl₂, Na, S đều là đơn chất (1 nguyên tố).",
+            "tags": ["bai5", "hop-chat"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Carbon (C) có hoá trị IV. Công thức hợp chất C với H (hoá trị I) là?",
+            "options": ["CH", "CH₂", "CH₃", "CH₄"],
+            "correct_index": 3,
+            "explanation": "IV × 1 = I × y → y = 4 → CH₄ (methane). Đây là thành phần chính của khí tự nhiên.",
+            "tags": ["bai7", "lap-cthh", "CH4"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Phân tử khối của CaCO₃ là bao nhiêu? (Ca=40, C=12, O=16)",
+            "options": ["84", "100", "116", "88"],
+            "correct_index": 1,
+            "explanation": "PTK CaCO₃ = 40 + 12 + 3×16 = 40 + 12 + 48 = 100 (amu). CaCO₃ là đá vôi.",
+            "tags": ["bai7", "phan-tu-khoi"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Số hiệu nguyên tử (Z) của một nguyên tố bằng?",
+            "options": ["Số neutron", "Số proton", "Số electron lớp ngoài cùng", "Nguyên tử khối"],
+            "correct_index": 1,
+            "explanation": "Số hiệu nguyên tử Z = số proton trong hạt nhân. Z đặc trưng cho nguyên tố và là cơ sở sắp xếp bảng tuần hoàn.",
+            "tags": ["bai3", "so-hieu-nguyen-tu"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Nguyên tố Y có Z=8 (8 proton). Y thuộc chu kỳ 2, nhóm VIA. Y là nguyên tố nào?",
+            "options": ["Nitrogen (N)", "Oxygen (O)", "Fluorine (F)", "Carbon (C)"],
+            "correct_index": 1,
+            "explanation": "Z=8 → Oxygen (O). Chu kỳ 2 (2 lớp electron), nhóm VIA (6e lớp ngoài cùng). Cấu hình: 2-6.",
+            "tags": ["bai4", "xac-dinh-nguyen-to"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Trong phân tử H₂SO₄, nguyên tố S có hoá trị VI. O có hoá trị II. Số nguyên tử O trong phân tử là?",
+            "options": ["2", "3", "4", "6"],
+            "correct_index": 2,
+            "explanation": "H₂SO₄: ta thấy có 4 nguyên tử O. Kiểm tra: hoá trị của nhóm SO₄ = II×4 - VI×1 = 2 (kết hợp với H₂ có hoá trị I×2=II ✓).",
+            "tags": ["bai7", "cong-thuc-axit"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Ký hiệu hoá học của Calcium là?",
+            "options": ["C", "Ca", "Cl", "Co"],
+            "correct_index": 1,
+            "explanation": "Calcium → Ca. Chú ý phân biệt: C (Carbon), Ca (Calcium), Cl (Chlorine), Co (Cobalt).",
+            "tags": ["bai3", "ki-hieu"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Trong bảng tuần hoàn, kim loại hay phi kim chiếm đa số?",
+            "options": ["Phi kim chiếm đa số", "Kim loại chiếm đa số", "Bằng nhau", "Khí hiếm chiếm đa số"],
+            "correct_index": 1,
+            "explanation": "Kim loại chiếm khoảng 80% số nguyên tố trong bảng tuần hoàn. Kim loại nằm bên trái và phía dưới đường chéo phân chia.",
+            "tags": ["bai4", "kim-loai-phi-kim"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Fe có hoá trị II trong FeO và hoá trị III trong Fe₂O₃. Phân tử khối của FeO là? (Fe=56, O=16)",
+            "options": ["56", "72", "80", "160"],
+            "correct_index": 1,
+            "explanation": "PTK FeO = 56 + 16 = 72 (amu). FeO là sắt(II) oxide, màu đen.",
+            "tags": ["bai7", "phan-tu-khoi", "Fe"]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 6,
+      "title": "Ôn tổng hợp Chủ đề 1 — Đề 06",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Lớp ngoài cùng của nguyên tử có tối đa bao nhiêu electron?",
+            "options": ["2", "6", "8", "18"],
+            "correct_index": 2,
+            "explanation": "Lớp ngoài cùng tối đa 8 electron (trừ lớp 1 chỉ tối đa 2e). Khi đạt 8e lớp ngoài (hoặc 2e với He) → cấu hình bền vững.",
+            "tags": ["bai2", "lop-electron"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Ký hiệu Fe₂O₃ cho ta biết điều gì?",
+            "options": ["Chỉ có nguyên tố Fe và O", "Có 2 nguyên tử Fe và 3 nguyên tử O trong 1 phân tử", "Fe có hoá trị II", "Khối lượng phân tử là 23"],
+            "correct_index": 1,
+            "explanation": "Fe₂O₃ có 2 nguyên tử Fe và 3 nguyên tử O trong 1 phân tử. PTK = 2×56 + 3×16 = 112+48 = 160.",
+            "tags": ["bai7", "doc-cthh"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Nguyên tử nào sau đây có số electron lớp ngoài cùng nhiều nhất? (Na: chu kỳ 3 nhóm I; Cl: chu kỳ 3 nhóm VII; Mg: chu kỳ 3 nhóm II)",
+            "options": ["Na", "Mg", "Cl", "Bằng nhau"],
+            "correct_index": 2,
+            "explanation": "Nhóm VII → 7e lớp ngoài cùng. Cl có 7e ngoài cùng, nhiều nhất. Na (1e), Mg (2e), Cl (7e).",
+            "tags": ["bai4", "electron-ngoai-cung"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Phân tử khối của O₂ là bao nhiêu? (O=16)",
+            "options": ["8", "16", "32", "48"],
+            "correct_index": 2,
+            "explanation": "O₂ gồm 2 nguyên tử O: PTK = 2×16 = 32 (amu).",
+            "tags": ["bai7", "phan-tu-khoi"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "N (nitrogen) có Z=7. Cấu hình electron theo lớp của N là?",
+            "options": ["7", "2-5", "3-4", "1-6"],
+            "correct_index": 1,
+            "explanation": "Z=7 → 7 electron. Lớp 1: 2e, lớp 2: 5e → cấu hình 2-5. N ở chu kỳ 2, nhóm VA (5e lớp ngoài cùng).",
+            "tags": ["bai2", "cau-hinh-electron"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Nguyên tử của nguyên tố A có 3 lớp electron. A thuộc chu kỳ mấy?",
+            "options": ["1", "2", "3", "4"],
+            "correct_index": 2,
+            "explanation": "Số lớp electron = số thứ tự chu kỳ. 3 lớp electron → chu kỳ 3.",
+            "tags": ["bai4", "chu-ky"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Trong liên kết ion NaCl, ion nào mang điện dương?",
+            "options": ["Cl⁻", "Na⁺", "Cả hai", "Không có ion"],
+            "correct_index": 1,
+            "explanation": "Na nhường 1e → Na⁺ (cation, điện dương). Cl nhận 1e → Cl⁻ (anion, điện âm). Na⁺ và Cl⁻ hút nhau tạo NaCl.",
+            "tags": ["bai6", "ion"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Chỉ số dưới trong công thức hoá học cho biết điều gì?",
+            "options": ["Số nguyên tử của nguyên tố đó trong phân tử", "Hoá trị của nguyên tố", "Khối lượng nguyên tử", "Số lớp electron"],
+            "correct_index": 0,
+            "explanation": "Chỉ số dưới (subscript) cho biết số nguyên tử của nguyên tố đó trong 1 phân tử. Ví dụ: H₂O → 2H và 1O.",
+            "tags": ["bai7", "doc-cthh"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Khi viết 2H₂O, con số 2 đứng trước cho biết điều gì?",
+            "options": ["2 nguyên tử H", "2 phân tử H₂O", "2 nguyên tử O", "H có hoá trị 2"],
+            "correct_index": 1,
+            "explanation": "Con số đứng trước công thức (hệ số) chỉ số phân tử. 2H₂O = 2 phân tử nước, mỗi phân tử gồm 2H + 1O.",
+            "tags": ["bai7", "he-so-phuong-trinh"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Lập CTHH: Ca (hoá trị II) và NO₃ (hoá trị I). Công thức đúng là?",
+            "options": ["CaNO₃", "Ca(NO₃)₂", "Ca₂NO₃", "Ca₂(NO₃)"],
+            "correct_index": 1,
+            "explanation": "II × 1 = I × 2 → cần 1 Ca và 2 nhóm NO₃ → Ca(NO₃)₂ (calcium nitrate). Nhóm nguyên tử phải đặt trong ngoặc đơn khi chỉ số >1.",
+            "tags": ["bai7", "nhom-nguyen-tu"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 1,
+          "metadata_json": {
+            "question": "Nguyên tử khối của nguyên tố nào lớn nhất trong số: H(1), C(12), O(16), Fe(56)?",
+            "options": ["H", "C", "O", "Fe"],
+            "correct_index": 3,
+            "explanation": "Fe (Iron/Sắt) có nguyên tử khối = 56, lớn nhất trong số 4 nguyên tố được liệt kê.",
+            "tags": ["bai3", "nguyen-tu-khoi"]
+          }
+        },
+        {
+          "type": "multiple_choice", "difficulty": 2,
+          "metadata_json": {
+            "question": "Phân tử nào sau đây có phân tử khối lớn nhất? (H=1, C=12, N=14, O=16, Na=23, Cl=35.5)",
+            "options": ["H₂O (18)", "NaCl (58.5)", "CO₂ (44)", "N₂ (28)"],
+            "correct_index": 1,
+            "explanation": "NaCl = 23 + 35.5 = 58.5 > CO₂ = 44 > N₂ = 28 > H₂O = 18. NaCl có PTK lớn nhất.",
+            "tags": ["bai7", "so-sanh-ptk"]
+          }
+        }
+      ]
+    }
+  ]
+}

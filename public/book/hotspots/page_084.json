@@ -1,0 +1,29 @@
+{
+  "page": 84,
+  "elements": [
+    {
+      "id": "q_84_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "37.4. Hãy tìm hiểu và cho biết nước chiếm tỉ Iệ bao nhiêu trong cơ thể và vai trò gì đối với con người Từ những kiến thức đó, em rút ra nhận xét gì và dụng như thế nào trong cuộc sống?",
+      "correctAnswer": "Nước chiếm khoảng 70% khối CƠ thể người; nước cấu tạo các tế bào sống, là môi trường cho sự trao đổi chất và chuyển hoá năng lượng trong cơ thể người, Vì vậy, hằng ngày, cẩn cung cấp đủ nước cho cơ thể thông qua việc nước, ăn đổ ăn có chứa nước, không nhịn khát; tuy nhiên không nên uống nhiểu nước một lúc."
+    },
+    {
+      "id": "q_84_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "37.5. Vận dụng kiến thức vể ảnh hưởng của các yếu tố bên ngoài tác động đến trình sinh trưởng và phát triển của vật, hãy để xuất các biện pháp canh tác giúp cây trổng sinh trưởng tốt, cho năng suất cao theo mẫu sau: Yếu tố bên ngoài Biện pháp canh tác Nhiệt độ Ánh Chất dinh dưỡng Độ ẩm",
+      "correctAnswer": "Yếu tố bên ngoài Biện pháp canh tác Làm nhà kính cây nhằm ổn định nhiệt độ khi môi trường nóng quá lạnh; phủ rơm rạ trên Nhiệt độ mặt đất sau khi gieo hạt, ấm giúp sự nảy mẩm thuận lợi xen cây cónhu cẩu ánh sáng khác nhau, làm luống Ánh sáng tạo khoảng cách tránh sự che lấp ánh lẫn nhau Bón phân hợp lí theo nhu câu của cây Chất dinh dưỡng luân phiên các loại cây khác nhau trên một khu đất Tưới tiêu chủ động đảm bảo độẩm thích hợp với Độ ẩm mỗi loại cây trổng 136 tăng vòng lượng uống cũng quá trổng quá hay giữ Trổng sáng trổng, trổng giữ"
+    }
+  ]
+}

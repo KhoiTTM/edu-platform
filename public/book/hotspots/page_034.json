@@ -1,0 +1,17 @@
+{
+  "page": 34,
+  "elements": [
+    {
+      "id": "q_34_1",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "10.4. Minh và Nam đi xe đạp trên một đoạn đường Trên Hình 10.2, đoạn OM là đổ thị quãng đường thời gian của Minh, đoạn ON là đô thị quãng đường thời gian của Nam. Mô tả nào sau đây không đúng? A. Minh và Nam xuất phát một 5 (km) lúc. N B. Tốc độ của Minh lớn hơn tốc độ của Nam C. Quãng đường Minh đi hơn quãng đường Nam đi. D. Thời gian xe của Nam nhiêu t (h) hơn thời gian xe của Minh Hình 10.2 33 thẳng: thẳng thẳng cùng ngắn đạp đạp",
+      "correctAnswer": "C"
+    }
+  ]
+}

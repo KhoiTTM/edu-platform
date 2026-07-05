@@ -1,0 +1,53 @@
+{
+  "page": 40,
+  "elements": [
+    {
+      "id": "q_40_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "13.2. Hãy tìm hiểu xem khi vặn cho dây đàn hơn thì âm phát ra sẽ cao hơn thấp hơn, tẩn số Iớn hơn nhỏ hơn:",
+      "correctAnswer": "Khi vặn cho dây đàn căng hơn thì âm phát ra sẽ cao hơn và tẩn số lớn hơn."
+    },
+    {
+      "id": "q_40_2",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "13.4. Biên độ dao động là A. số dao động trong một giây B. độ lệch so với vịtrí ban đâu của vật một giây. C. độ lệch lớn nhất so với vị trí cân bằng khi vật dao D.khoảng cách lớn nhất hai vị trí mà vật dao động thực hiện được.",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_40_3",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "13.5. Biên độ dao động của vật càng lớn khi A. vật dao nhanh B. vật dao với tẩn số lớn C. vật dao động càng chậm. D.vật dao động càng mạnh.",
+      "correctAnswer": "D"
+    },
+    {
+      "id": "q_40_4",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "13.6. Ta nghe tiếng trống to hơn khi gõ mạnh vào mặt trống và nhỏ hơn khi gõ nhẹ là vì cUÔc SỐNG A. mạnh làm tẩn Isódao đ dao của mặt lớn hơn B. gõ mạnh làm biên độ dao động của mặt trống Iớn hơn. C. gõ mạnh làm thành trống dao mạnh hơn. D.gõ mạnh làm dùi trống dao động mạnh hơn.",
+      "correctAnswer": "B"
+    }
+  ]
+}

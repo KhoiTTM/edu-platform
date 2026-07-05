@@ -1,0 +1,29 @@
+{
+  "page": 53,
+  "elements": [
+    {
+      "id": "q_53_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "20.5. Xác định cực của nam châm điện khi B N 5 có điện chạy trong dây như Hình 20.2. Hình 20.2",
+      "correctAnswer": "Đâu A là cực Bắc, đẩu B là cực Nam."
+    },
+    {
+      "id": "q_53_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "20.6. Một kim nam châm đặt trước đẩu N 5 N dây của nam châm điện (Hình 20.3). Đổi chiêu điện chạy trong dây có hiện tượng gì xảy ra? Giải thích. T *Ứ c Hinh 20.3 20.7* điện chạy vào cơ điện 8 0NG thường rất lớn, có khi đến nghìn 4 ampe. Nếu để tắc điện trực tiếpở mạch điện này thì rất nguy hiểm, cho nên người ta rơle điện từ. Hình 20.4 là sơ đổ mô tả dụng của rơle điện từ: 1 nam châm điện; 2 thanh thép đàn hổi; 3 công tắc điện; 4 lò XO; 5 CƠ điện: Hãy giải thích hoạt động của thiết bị này. Hình 20.4 52 Bằng cũng giá ống Đúng Đúng dòng ống dòng ống lòng ống ống dòng ống ống dòng Dòng động hàng công dùng ứng động",
+      "correctAnswer": "Đổi chiêu điện trong dây thì nam châm điện đổi cực, khi đó kim nam châm quay 180\", cực Nam (S) của kim quay vể phía đẩu dây. 20.7* Đóng khoá điện K, nam châm điện (1) hoạt động, hút thanh thép đàn hổi (2); tắc điện (3) đóng; điện chạy vào cơ điện (5). Muốn CƠ ngừng hoạt thì ngắt khoá điện đẩu vào; nam châm điện không còn từtính, lò xo (4) kéo thanh thép lên, công tắc (3) điện chạy vào CƠ, động cơ ngừng hoạt động. CHUƠNG VIL TRAO ĐỔI CHÁT VÀ CHUYỂN HOÁ NĂNG LƯỢNG Ở SINH VẬT"
+    }
+  ]
+}

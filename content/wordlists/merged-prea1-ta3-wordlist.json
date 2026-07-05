@@ -1,0 +1,1412 @@
+[
+  {
+    "word": "head",
+    "meaning": "đầu",
+    "emoji": "🧍"
+  },
+  {
+    "word": "hair",
+    "meaning": "tóc",
+    "emoji": "👤"
+  },
+  {
+    "word": "face",
+    "meaning": "khuôn mặt",
+    "emoji": "💇"
+  },
+  {
+    "word": "eye",
+    "meaning": "mắt",
+    "emoji": "😊"
+  },
+  {
+    "word": "ear",
+    "meaning": "tai",
+    "emoji": "👁"
+  },
+  {
+    "word": "nose",
+    "meaning": "mũi",
+    "emoji": "👂"
+  },
+  {
+    "word": "mouth",
+    "meaning": "miệng",
+    "emoji": "👃"
+  },
+  {
+    "word": "smile",
+    "meaning": "nụ cười",
+    "emoji": "👄"
+  },
+  {
+    "word": "arm",
+    "meaning": "cánh tay",
+    "emoji": "😄"
+  },
+  {
+    "word": "hand",
+    "meaning": "bàn tay",
+    "emoji": "💪"
+  },
+  {
+    "word": "leg",
+    "meaning": "chân",
+    "emoji": "✋"
+  },
+  {
+    "word": "foot",
+    "meaning": "bàn chân",
+    "emoji": "🦵"
+  },
+  {
+    "word": "feet",
+    "meaning": "hai bàn chân",
+    "emoji": "🦶"
+  },
+  {
+    "word": "body",
+    "meaning": "cơ thể",
+    "emoji": "🦶"
+  },
+  {
+    "word": "animal",
+    "meaning": "động vật",
+    "emoji": "🧍"
+  },
+  {
+    "word": "bird",
+    "meaning": "chim",
+    "emoji": "🦁"
+  },
+  {
+    "word": "cat",
+    "meaning": "mèo",
+    "emoji": "🐾"
+  },
+  {
+    "word": "chicken",
+    "meaning": "gà",
+    "emoji": "🐦"
+  },
+  {
+    "word": "cow",
+    "meaning": "bò",
+    "emoji": "🐱"
+  },
+  {
+    "word": "crocodile",
+    "meaning": "cá sấu",
+    "emoji": "🐔"
+  },
+  {
+    "word": "dog",
+    "meaning": "chó",
+    "emoji": "🐄"
+  },
+  {
+    "word": "duck",
+    "meaning": "vịt",
+    "emoji": "🐊"
+  },
+  {
+    "word": "elephant",
+    "meaning": "voi",
+    "emoji": "🐕"
+  },
+  {
+    "word": "frog",
+    "meaning": "ếch",
+    "emoji": "🦆"
+  },
+  {
+    "word": "giraffe",
+    "meaning": "hươu cao cổ",
+    "emoji": "🐘"
+  },
+  {
+    "word": "goat",
+    "meaning": "dê",
+    "emoji": "🐸"
+  },
+  {
+    "word": "hippo",
+    "meaning": "hà mã",
+    "emoji": "🦒"
+  },
+  {
+    "word": "horse",
+    "meaning": "ngựa",
+    "emoji": "🐐"
+  },
+  {
+    "word": "lizard",
+    "meaning": "thằn lằn",
+    "emoji": "🦛"
+  },
+  {
+    "word": "monkey",
+    "meaning": "khỉ",
+    "emoji": "🐴"
+  },
+  {
+    "word": "mouse",
+    "meaning": "chuột",
+    "emoji": "🦎"
+  },
+  {
+    "word": "sheep",
+    "meaning": "cừu",
+    "emoji": "🐒"
+  },
+  {
+    "word": "snake",
+    "meaning": "rắn",
+    "emoji": "🐭"
+  },
+  {
+    "word": "spider",
+    "meaning": "nhện",
+    "emoji": "🐑"
+  },
+  {
+    "word": "tail",
+    "meaning": "đuôi",
+    "emoji": "🐍"
+  },
+  {
+    "word": "tiger",
+    "meaning": "hổ",
+    "emoji": "🕷"
+  },
+  {
+    "word": "bag",
+    "meaning": "túi xách",
+    "emoji": "🦓"
+  },
+  {
+    "word": "clothes",
+    "meaning": "quần áo",
+    "emoji": "🐯"
+  },
+  {
+    "word": "dress",
+    "meaning": "váy/đầm",
+    "emoji": "👕"
+  },
+  {
+    "word": "glasses",
+    "meaning": "kính mắt",
+    "emoji": "👜"
+  },
+  {
+    "word": "handbag",
+    "meaning": "túi xách tay",
+    "emoji": "👗"
+  },
+  {
+    "word": "hat",
+    "meaning": "mũ",
+    "emoji": "👗"
+  },
+  {
+    "word": "jacket",
+    "meaning": "áo khoác",
+    "emoji": "👓"
+  },
+  {
+    "word": "jeans",
+    "meaning": "quần jeans",
+    "emoji": "👜"
+  },
+  {
+    "word": "shirt",
+    "meaning": "áo sơ mi",
+    "emoji": "🎩"
+  },
+  {
+    "word": "shoe",
+    "meaning": "giày",
+    "emoji": "🧥"
+  },
+  {
+    "word": "skirt",
+    "meaning": "chân váy",
+    "emoji": "👖"
+  },
+  {
+    "word": "sock",
+    "meaning": "tất/vớ",
+    "emoji": "👔"
+  },
+  {
+    "word": "trousers",
+    "meaning": "quần dài",
+    "emoji": "👟"
+  },
+  {
+    "word": "T-shirt",
+    "meaning": "áo phông",
+    "emoji": "👘"
+  },
+  {
+    "word": "watch",
+    "meaning": "đồng hồ đeo tay",
+    "emoji": "🧦"
+  },
+  {
+    "word": "black",
+    "meaning": "màu đen",
+    "emoji": "👖"
+  },
+  {
+    "word": "blue",
+    "meaning": "màu xanh lam",
+    "emoji": "👕"
+  },
+  {
+    "word": "brown",
+    "meaning": "màu nâu",
+    "emoji": "⌚"
+  },
+  {
+    "word": "green",
+    "meaning": "màu xanh lá",
+    "emoji": "🌈"
+  },
+  {
+    "word": "grey",
+    "meaning": "màu xám",
+    "emoji": "⬛"
+  },
+  {
+    "word": "orange",
+    "meaning": "màu cam",
+    "emoji": "🔵"
+  },
+  {
+    "word": "pink",
+    "meaning": "màu hồng",
+    "emoji": "🟤"
+  },
+  {
+    "word": "purple",
+    "meaning": "màu tím",
+    "emoji": "🟢"
+  },
+  {
+    "word": "red",
+    "meaning": "màu đỏ",
+    "emoji": "🔘"
+  },
+  {
+    "word": "white",
+    "meaning": "màu trắng",
+    "emoji": "🟠"
+  },
+  {
+    "word": "yellow",
+    "meaning": "màu vàng",
+    "emoji": "🌸"
+  },
+  {
+    "word": "alien",
+    "meaning": "người ngoài hành tinh",
+    "emoji": "🟣"
+  },
+  {
+    "word": "baby",
+    "meaning": "em bé",
+    "emoji": "🔴"
+  },
+  {
+    "word": "balloon",
+    "meaning": "bóng bay",
+    "emoji": "⬜"
+  },
+  {
+    "word": "boy",
+    "meaning": "bé trai",
+    "emoji": "🟡"
+  },
+  {
+    "word": "brother",
+    "meaning": "anh/em trai",
+    "emoji": "👨‍👩‍👧‍👦"
+  },
+  {
+    "word": "child",
+    "meaning": "đứa trẻ",
+    "emoji": "👽"
+  },
+  {
+    "word": "cousin",
+    "meaning": "anh chị em họ",
+    "emoji": "👶"
+  },
+  {
+    "word": "dad",
+    "meaning": "bố/ba",
+    "emoji": "🎈"
+  },
+  {
+    "word": "family",
+    "meaning": "gia đình",
+    "emoji": "👦"
+  },
+  {
+    "word": "girl",
+    "meaning": "bé gái",
+    "emoji": "👦"
+  },
+  {
+    "word": "grandma",
+    "meaning": "bà nội/ngoại",
+    "emoji": "🧒"
+  },
+  {
+    "word": "grandpa",
+    "meaning": "ông nội/ngoại",
+    "emoji": "👥"
+  },
+  {
+    "word": "man",
+    "meaning": "đàn ông",
+    "emoji": "👨"
+  },
+  {
+    "word": "monster",
+    "meaning": "quái vật",
+    "emoji": "👨‍👩‍👧‍👦"
+  },
+  {
+    "word": "mum",
+    "meaning": "mẹ",
+    "emoji": "👧"
+  },
+  {
+    "word": "people",
+    "meaning": "mọi người",
+    "emoji": "👵"
+  },
+  {
+    "word": "person",
+    "meaning": "người",
+    "emoji": "👴"
+  },
+  {
+    "word": "robot",
+    "meaning": "người máy",
+    "emoji": "👨"
+  },
+  {
+    "word": "sister",
+    "meaning": "chị/em gái",
+    "emoji": "👹"
+  },
+  {
+    "word": "toy",
+    "meaning": "đồ chơi",
+    "emoji": "👩"
+  },
+  {
+    "word": "woman",
+    "meaning": "phụ nữ",
+    "emoji": "👥"
+  },
+  {
+    "word": "apple",
+    "meaning": "táo",
+    "emoji": "🧑"
+  },
+  {
+    "word": "banana",
+    "meaning": "chuối",
+    "emoji": "🤖"
+  },
+  {
+    "word": "beans",
+    "meaning": "đậu",
+    "emoji": "👧"
+  },
+  {
+    "word": "bread",
+    "meaning": "bánh mì",
+    "emoji": "🪆"
+  },
+  {
+    "word": "burger",
+    "meaning": "bánh mì kẹp",
+    "emoji": "👩"
+  },
+  {
+    "word": "cake",
+    "meaning": "bánh ngọt",
+    "emoji": "🍎"
+  },
+  {
+    "word": "candy",
+    "meaning": "kẹo",
+    "emoji": "🍎"
+  },
+  {
+    "word": "carrot",
+    "meaning": "cà rốt",
+    "emoji": "🍌"
+  },
+  {
+    "word": "chicken",
+    "meaning": "thịt gà",
+    "emoji": "🫘"
+  },
+  {
+    "word": "chocolate",
+    "meaning": "sô cô la",
+    "emoji": "🍞"
+  },
+  {
+    "word": "coconut",
+    "meaning": "dừa",
+    "emoji": "🍔"
+  },
+  {
+    "word": "egg",
+    "meaning": "trứng",
+    "emoji": "🎂"
+  },
+  {
+    "word": "fish",
+    "meaning": "cá",
+    "emoji": "🍬"
+  },
+  {
+    "word": "fries",
+    "meaning": "khoai tây chiên",
+    "emoji": "🥕"
+  },
+  {
+    "word": "fruit",
+    "meaning": "trái cây",
+    "emoji": "🍗"
+  },
+  {
+    "word": "grapes",
+    "meaning": "nho",
+    "emoji": "🍫"
+  },
+  {
+    "word": "ice cream",
+    "meaning": "kem",
+    "emoji": "🥥"
+  },
+  {
+    "word": "juice",
+    "meaning": "nước ép",
+    "emoji": "🥚"
+  },
+  {
+    "word": "lemon",
+    "meaning": "chanh vàng",
+    "emoji": "🐟"
+  },
+  {
+    "word": "lemonade",
+    "meaning": "nước chanh",
+    "emoji": "🍟"
+  },
+  {
+    "word": "lime",
+    "meaning": "chanh xanh",
+    "emoji": "🍊"
+  },
+  {
+    "word": "mango",
+    "meaning": "xoài",
+    "emoji": "🍇"
+  },
+  {
+    "word": "meat",
+    "meaning": "thịt",
+    "emoji": "🍦"
+  },
+  {
+    "word": "milk",
+    "meaning": "sữa",
+    "emoji": "🧃"
+  },
+  {
+    "word": "onion",
+    "meaning": "hành tây",
+    "emoji": "🍋"
+  },
+  {
+    "word": "orange",
+    "meaning": "cam",
+    "emoji": "🥤"
+  },
+  {
+    "word": "pear",
+    "meaning": "lê",
+    "emoji": "🍋"
+  },
+  {
+    "word": "peas",
+    "meaning": "đậu Hà Lan",
+    "emoji": "🥭"
+  },
+  {
+    "word": "pineapple",
+    "meaning": "dứa/khóm",
+    "emoji": "🥩"
+  },
+  {
+    "word": "potato",
+    "meaning": "khoai tây",
+    "emoji": "🥛"
+  },
+  {
+    "word": "rice",
+    "meaning": "cơm/gạo",
+    "emoji": "🧅"
+  },
+  {
+    "word": "sausage",
+    "meaning": "xúc xích",
+    "emoji": "🍊"
+  },
+  {
+    "word": "tomato",
+    "meaning": "cà chua",
+    "emoji": "🍐"
+  },
+  {
+    "word": "water",
+    "meaning": "nước",
+    "emoji": "🟢"
+  },
+  {
+    "word": "watermelon",
+    "meaning": "dưa hấu",
+    "emoji": "🍍"
+  },
+  {
+    "word": "apartment",
+    "meaning": "căn hộ chung cư",
+    "emoji": "🥔"
+  },
+  {
+    "word": "armchair",
+    "meaning": "ghế bành",
+    "emoji": "🍚"
+  },
+  {
+    "word": "bath",
+    "meaning": "bồn tắm",
+    "emoji": "🌭"
+  },
+  {
+    "word": "bathroom",
+    "meaning": "phòng tắm",
+    "emoji": "🍅"
+  },
+  {
+    "word": "bed",
+    "meaning": "giường",
+    "emoji": "💧"
+  },
+  {
+    "word": "bedroom",
+    "meaning": "phòng ngủ",
+    "emoji": "🍉"
+  },
+  {
+    "word": "bookcase",
+    "meaning": "kệ sách",
+    "emoji": "🏠"
+  },
+  {
+    "word": "box",
+    "meaning": "hộp/thùng",
+    "emoji": "🏢"
+  },
+  {
+    "word": "chair",
+    "meaning": "ghế",
+    "emoji": "🪑"
+  },
+  {
+    "word": "clock",
+    "meaning": "đồng hồ treo tường",
+    "emoji": "🛁"
+  },
+  {
+    "word": "cupboard",
+    "meaning": "tủ đựng đồ",
+    "emoji": "🚿"
+  },
+  {
+    "word": "dining room",
+    "meaning": "phòng ăn",
+    "emoji": "🛏"
+  },
+  {
+    "word": "doll",
+    "meaning": "búp bê",
+    "emoji": "🛏"
+  },
+  {
+    "word": "door",
+    "meaning": "cửa ra vào",
+    "emoji": "📚"
+  },
+  {
+    "word": "flower",
+    "meaning": "hoa",
+    "emoji": "📦"
+  },
+  {
+    "word": "garden",
+    "meaning": "vườn",
+    "emoji": "🪑"
+  },
+  {
+    "word": "hall",
+    "meaning": "hành lang",
+    "emoji": "🕐"
+  },
+  {
+    "word": "house",
+    "meaning": "nhà",
+    "emoji": "🗄"
+  },
+  {
+    "word": "kitchen",
+    "meaning": "nhà bếp",
+    "emoji": "🍽"
+  },
+  {
+    "word": "lamp",
+    "meaning": "đèn bàn",
+    "emoji": "🪆"
+  },
+  {
+    "word": "living room",
+    "meaning": "phòng khách",
+    "emoji": "🚪"
+  },
+  {
+    "word": "mirror",
+    "meaning": "gương",
+    "emoji": "🌸"
+  },
+  {
+    "word": "phone",
+    "meaning": "điện thoại",
+    "emoji": "🌿"
+  },
+  {
+    "word": "picture",
+    "meaning": "bức tranh/ảnh",
+    "emoji": "🏠"
+  },
+  {
+    "word": "radio",
+    "meaning": "đài phát thanh",
+    "emoji": "🏠"
+  },
+  {
+    "word": "room",
+    "meaning": "phòng",
+    "emoji": "🍳"
+  },
+  {
+    "word": "rug",
+    "meaning": "thảm nhỏ",
+    "emoji": "💡"
+  },
+  {
+    "word": "sofa",
+    "meaning": "ghế sofa",
+    "emoji": "🛋"
+  },
+  {
+    "word": "table",
+    "meaning": "bàn",
+    "emoji": "🪞"
+  },
+  {
+    "word": "television",
+    "meaning": "ti vi",
+    "emoji": "📱"
+  },
+  {
+    "word": "wall",
+    "meaning": "bức tường",
+    "emoji": "🖼"
+  },
+  {
+    "word": "window",
+    "meaning": "cửa sổ",
+    "emoji": "📻"
+  },
+  {
+    "word": "alphabet",
+    "meaning": "bảng chữ cái",
+    "emoji": "🏠"
+  },
+  {
+    "word": "board",
+    "meaning": "bảng đen",
+    "emoji": "🪴"
+  },
+  {
+    "word": "book",
+    "meaning": "sách",
+    "emoji": "🛋"
+  },
+  {
+    "word": "class",
+    "meaning": "lớp học",
+    "emoji": "🪑"
+  },
+  {
+    "word": "classroom",
+    "meaning": "phòng học",
+    "emoji": "📺"
+  },
+  {
+    "word": "computer",
+    "meaning": "máy tính",
+    "emoji": "🧱"
+  },
+  {
+    "word": "desk",
+    "meaning": "bàn học",
+    "emoji": "🪟"
+  },
+  {
+    "word": "eraser",
+    "meaning": "tẩy",
+    "emoji": "🏫"
+  },
+  {
+    "word": "floor",
+    "meaning": "sàn nhà",
+    "emoji": "🔤"
+  },
+  {
+    "word": "keyboard",
+    "meaning": "bàn phím",
+    "emoji": "📋"
+  },
+  {
+    "word": "letter",
+    "meaning": "chữ cái",
+    "emoji": "📗"
+  },
+  {
+    "word": "line",
+    "meaning": "dòng kẻ",
+    "emoji": "🏫"
+  },
+  {
+    "word": "mouse",
+    "meaning": "chuột máy tính",
+    "emoji": "🏫"
+  },
+  {
+    "word": "page",
+    "meaning": "trang sách",
+    "emoji": "💻"
+  },
+  {
+    "word": "pen",
+    "meaning": "bút mực",
+    "emoji": "🪑"
+  },
+  {
+    "word": "pencil",
+    "meaning": "bút chì",
+    "emoji": "🗑"
+  },
+  {
+    "word": "ruler",
+    "meaning": "thước kẻ",
+    "emoji": "⬛"
+  },
+  {
+    "word": "teacher",
+    "meaning": "giáo viên",
+    "emoji": "⌨"
+  },
+  {
+    "word": "badminton",
+    "meaning": "cầu lông",
+    "emoji": "🔡"
+  },
+  {
+    "word": "ball",
+    "meaning": "quả bóng",
+    "emoji": "〰"
+  },
+  {
+    "word": "baseball",
+    "meaning": "bóng chày",
+    "emoji": "🖱"
+  },
+  {
+    "word": "basketball",
+    "meaning": "bóng rổ",
+    "emoji": "📄"
+  },
+  {
+    "word": "camera",
+    "meaning": "máy ảnh",
+    "emoji": "🖊"
+  },
+  {
+    "word": "catch",
+    "meaning": "bắt (bóng)",
+    "emoji": "✏"
+  },
+  {
+    "word": "fishing",
+    "meaning": "câu cá",
+    "emoji": "📏"
+  },
+  {
+    "word": "football",
+    "meaning": "bóng đá",
+    "emoji": "👩‍🏫"
+  },
+  {
+    "word": "guitar",
+    "meaning": "đàn ghi-ta",
+    "emoji": "⛱"
+  },
+  {
+    "word": "hit",
+    "meaning": "đánh/đập",
+    "emoji": "🏸"
+  },
+  {
+    "word": "jump",
+    "meaning": "nhảy",
+    "emoji": "⚽"
+  },
+  {
+    "word": "kick",
+    "meaning": "đá (bóng)",
+    "emoji": "⚾"
+  },
+  {
+    "word": "kite",
+    "meaning": "diều",
+    "emoji": "🏀"
+  },
+  {
+    "word": "paint",
+    "meaning": "vẽ/tô màu",
+    "emoji": "📷"
+  },
+  {
+    "word": "photo",
+    "meaning": "ảnh chụp",
+    "emoji": "🤾"
+  },
+  {
+    "word": "piano",
+    "meaning": "đàn piano",
+    "emoji": "🎣"
+  },
+  {
+    "word": "run",
+    "meaning": "chạy",
+    "emoji": "⚽"
+  },
+  {
+    "word": "sand",
+    "meaning": "cát",
+    "emoji": "🎸"
+  },
+  {
+    "word": "sea",
+    "meaning": "biển",
+    "emoji": "👊"
+  },
+  {
+    "word": "shell",
+    "meaning": "vỏ sò",
+    "emoji": "🦘"
+  },
+  {
+    "word": "sing",
+    "meaning": "hát",
+    "emoji": "🦵"
+  },
+  {
+    "word": "sport",
+    "meaning": "thể thao",
+    "emoji": "🪁"
+  },
+  {
+    "word": "sun",
+    "meaning": "mặt trời",
+    "emoji": "🎨"
+  },
+  {
+    "word": "swim",
+    "meaning": "bơi",
+    "emoji": "📸"
+  },
+  {
+    "word": "tennis",
+    "meaning": "quần vợt",
+    "emoji": "🎹"
+  },
+  {
+    "word": "throw",
+    "meaning": "ném",
+    "emoji": "🏃"
+  },
+  {
+    "word": "walk",
+    "meaning": "đi bộ",
+    "emoji": "🏖"
+  },
+  {
+    "word": "afternoon",
+    "meaning": "buổi chiều",
+    "emoji": "🌊"
+  },
+  {
+    "word": "bike",
+    "meaning": "xe đạp",
+    "emoji": "🐚"
+  },
+  {
+    "word": "boat",
+    "meaning": "thuyền",
+    "emoji": "🎤"
+  },
+  {
+    "word": "bookshop",
+    "meaning": "hiệu sách",
+    "emoji": "🏅"
+  },
+  {
+    "word": "bus",
+    "meaning": "xe buýt",
+    "emoji": "☀"
+  },
+  {
+    "word": "car",
+    "meaning": "ô tô",
+    "emoji": "🏊"
+  },
+  {
+    "word": "day",
+    "meaning": "ngày",
+    "emoji": "🎾"
+  },
+  {
+    "word": "evening",
+    "meaning": "buổi tối",
+    "emoji": "🤾"
+  },
+  {
+    "word": "fly",
+    "meaning": "bay",
+    "emoji": "🚶"
+  },
+  {
+    "word": "helicopter",
+    "meaning": "trực thăng",
+    "emoji": "🏙"
+  },
+  {
+    "word": "lorry",
+    "meaning": "xe tải",
+    "emoji": "🌤"
+  },
+  {
+    "word": "morning",
+    "meaning": "buổi sáng",
+    "emoji": "🚲"
+  },
+  {
+    "word": "motorbike",
+    "meaning": "xe máy",
+    "emoji": "⛵"
+  },
+  {
+    "word": "park",
+    "meaning": "công viên",
+    "emoji": "📚"
+  },
+  {
+    "word": "plane",
+    "meaning": "máy bay",
+    "emoji": "🚌"
+  },
+  {
+    "word": "shop",
+    "meaning": "cửa hàng",
+    "emoji": "🚗"
+  },
+  {
+    "word": "stop",
+    "meaning": "dừng lại",
+    "emoji": "📅"
+  },
+  {
+    "word": "street",
+    "meaning": "đường phố",
+    "emoji": "🌆"
+  },
+  {
+    "word": "train",
+    "meaning": "tàu hoả",
+    "emoji": "✈"
+  },
+  {
+    "word": "tree",
+    "meaning": "cây",
+    "emoji": "🚁"
+  },
+  {
+    "word": "art room",
+    "meaning": "phòng mĩ thuật",
+    "emoji": ""
+  },
+  {
+    "word": "break time",
+    "meaning": "giờ ra chơi, giờ giải lao",
+    "emoji": ""
+  },
+  {
+    "word": "bye",
+    "meaning": "chào tạm biệt",
+    "emoji": ""
+  },
+  {
+    "word": "chat",
+    "meaning": "nói chuyện",
+    "emoji": ""
+  },
+  {
+    "word": "chess",
+    "meaning": "cờ",
+    "emoji": ""
+  },
+  {
+    "word": "close",
+    "meaning": "đóng, gấp (sách)",
+    "emoji": ""
+  },
+  {
+    "word": "colour",
+    "meaning": "màu sắc",
+    "emoji": ""
+  },
+  {
+    "word": "come in",
+    "meaning": "đi vào",
+    "emoji": ""
+  },
+  {
+    "word": "computer room",
+    "meaning": "phòng tin học",
+    "emoji": ""
+  },
+  {
+    "word": "cook",
+    "meaning": "nấu ăn",
+    "emoji": ""
+  },
+  {
+    "word": "dance",
+    "meaning": "nhảy, múa",
+    "emoji": ""
+  },
+  {
+    "word": "do",
+    "meaning": "làm",
+    "emoji": ""
+  },
+  {
+    "word": "draw",
+    "meaning": "vẽ",
+    "emoji": ""
+  },
+  {
+    "word": "eight",
+    "meaning": "tám (8)",
+    "emoji": ""
+  },
+  {
+    "word": "english",
+    "meaning": "tiếng Anh",
+    "emoji": ""
+  },
+  {
+    "word": "fine",
+    "meaning": "khoẻ, tốt",
+    "emoji": ""
+  },
+  {
+    "word": "five",
+    "meaning": "năm (5)",
+    "emoji": ""
+  },
+  {
+    "word": "four",
+    "meaning": "bốn (4)",
+    "emoji": ""
+  },
+  {
+    "word": "friend",
+    "meaning": "bạn, bạn bè",
+    "emoji": ""
+  },
+  {
+    "word": "goodbye",
+    "meaning": "chào tạm biệt",
+    "emoji": ""
+  },
+  {
+    "word": "go out",
+    "meaning": "đi ra",
+    "emoji": ""
+  },
+  {
+    "word": "gym",
+    "meaning": "nhà thể chất",
+    "emoji": ""
+  },
+  {
+    "word": "have",
+    "meaning": "có",
+    "emoji": ""
+  },
+  {
+    "word": "hello",
+    "meaning": "xin chào",
+    "emoji": ""
+  },
+  {
+    "word": "hi",
+    "meaning": "xin chào",
+    "emoji": ""
+  },
+  {
+    "word": "how",
+    "meaning": "như thế nào",
+    "emoji": ""
+  },
+  {
+    "word": "i",
+    "meaning": "tôi",
+    "emoji": ""
+  },
+  {
+    "word": "it",
+    "meaning": "nó, cái đó, điều đó",
+    "emoji": ""
+  },
+  {
+    "word": "library",
+    "meaning": "thư viện",
+    "emoji": ""
+  },
+  {
+    "word": "mr",
+    "meaning": "ông",
+    "emoji": ""
+  },
+  {
+    "word": "ms",
+    "meaning": "bà, cô",
+    "emoji": ""
+  },
+  {
+    "word": "music room",
+    "meaning": "phòng âm nhạc",
+    "emoji": ""
+  },
+  {
+    "word": "my",
+    "meaning": "của tôi",
+    "emoji": ""
+  },
+  {
+    "word": "name",
+    "meaning": "tên",
+    "emoji": ""
+  },
+  {
+    "word": "nine",
+    "meaning": "chín (9)",
+    "emoji": ""
+  },
+  {
+    "word": "no",
+    "meaning": "không",
+    "emoji": ""
+  },
+  {
+    "word": "notebook",
+    "meaning": "vở viết",
+    "emoji": ""
+  },
+  {
+    "word": "one",
+    "meaning": "một (1)",
+    "emoji": ""
+  },
+  {
+    "word": "open",
+    "meaning": "mở, há (miệng)",
+    "emoji": ""
+  },
+  {
+    "word": "our",
+    "meaning": "của chúng tôi, của chúng ta",
+    "emoji": ""
+  },
+  {
+    "word": "pencil case",
+    "meaning": "hộp bút",
+    "emoji": ""
+  },
+  {
+    "word": "play",
+    "meaning": "chơi",
+    "emoji": ""
+  },
+  {
+    "word": "playground",
+    "meaning": "sân chơi",
+    "emoji": ""
+  },
+  {
+    "word": "please",
+    "meaning": "mời, xin mời",
+    "emoji": ""
+  },
+  {
+    "word": "seven",
+    "meaning": "bảy (7)",
+    "emoji": ""
+  },
+  {
+    "word": "school",
+    "meaning": "trường học",
+    "emoji": ""
+  },
+  {
+    "word": "school bag",
+    "meaning": "cặp sách",
+    "emoji": ""
+  },
+  {
+    "word": "sit down",
+    "meaning": "ngồi xuống",
+    "emoji": ""
+  },
+  {
+    "word": "six",
+    "meaning": "sáu (6)",
+    "emoji": ""
+  },
+  {
+    "word": "speak",
+    "meaning": "nói",
+    "emoji": ""
+  },
+  {
+    "word": "stand up",
+    "meaning": "đứng lên",
+    "emoji": ""
+  },
+  {
+    "word": "table tennis",
+    "meaning": "bóng bàn",
+    "emoji": ""
+  },
+  {
+    "word": "ten",
+    "meaning": "mười (10)",
+    "emoji": ""
+  },
+  {
+    "word": "thank you",
+    "meaning": "cảm ơn",
+    "emoji": ""
+  },
+  {
+    "word": "that",
+    "meaning": "đó, kia",
+    "emoji": ""
+  },
+  {
+    "word": "they",
+    "meaning": "họ, chúng nó",
+    "emoji": ""
+  },
+  {
+    "word": "this",
+    "meaning": "đây",
+    "emoji": ""
+  },
+  {
+    "word": "three",
+    "meaning": "ba (3)",
+    "emoji": ""
+  },
+  {
+    "word": "touch",
+    "meaning": "chạm",
+    "emoji": ""
+  },
+  {
+    "word": "two",
+    "meaning": "hai (2)",
+    "emoji": ""
+  },
+  {
+    "word": "vietnamese",
+    "meaning": "tiếng Việt",
+    "emoji": ""
+  },
+  {
+    "word": "volleyball",
+    "meaning": "bóng chuyền",
+    "emoji": ""
+  },
+  {
+    "word": "what",
+    "meaning": "gì",
+    "emoji": ""
+  },
+  {
+    "word": "word puzzle",
+    "meaning": "trò chơi ô chữ",
+    "emoji": ""
+  },
+  {
+    "word": "yes",
+    "meaning": "vâng",
+    "emoji": ""
+  },
+  {
+    "word": "you",
+    "meaning": "bạn, các bạn",
+    "emoji": ""
+  },
+  {
+    "word": "your",
+    "meaning": "của bạn, của các bạn",
+    "emoji": ""
+  }
+]

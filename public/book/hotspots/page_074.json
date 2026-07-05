@@ -1,0 +1,53 @@
+{
+  "page": 74,
+  "elements": [
+    {
+      "id": "q_74_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "31.8. Dựa vào những hiểu biết của em vể sự biến đổi thức ăn trong tiêu hoá của người, hãy hoàn thành theo mẫu sau và rút ra nhận xét vể sự phối hợp hoạt động của các cơ quan trong tiêu hoá. Cơ quan trong tiêu hoá Trước khi tiêu hoá Sau khi tiêu hoá Miệng Dạ dày Ruột non Ruột già BÀl 32. THỰC HÀNH: CHỨNG MINH THÂN VẬN CHUYỂN NƯỚC VÀ LÁ THOÁT HƠI NƯỚC",
+      "correctAnswer": "Cơquan trong Trước khi tiêu hoá Sau khi tiêu hoá tiêu hoá 72 I Thức ăn được nghiển nhỏ và thấm đểu Miệng Cơm; cá, thịt, rau; nước bọt, một phẩn tinh bột đã được Vonu biến đổi thành đường maltose Thức ăn thấm đêu dịch vị và được Thức ăn đã được nát trở thành dịch bán Dạ dày nghiển nhỏ và thấm protein chuỗi dài được cắt thành các đểu nước bọt đoạn Các chất dinh dưỡng đơn giản mà tế Thức ăn ở bào niêm mạc ruột có thể hấp được Ruột non bán lỏng như amino acid, glucose; glyceryl, acid béo, và các chất cặn bã, nước Ruột già Chất cặn bã và nước Hấp thụ bớt nước và hình thành phân 131 phẩm ngoài. Lòng nghiêm vùng ống7 nghiển Iỏng, ngắn dạng thụ"
+    },
+    {
+      "id": "q_74_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "32.1. Cắt một cành hoa trắng rổi cắm vào cốc nước pha màu tím. Sau một thời gian; cánh hoa sẽ có màu gì? A. Màu trắng. B Không màu: C. Màu tím. D. Màu vàng.",
+      "correctAnswer": "C. 32.2 D."
+    },
+    {
+      "id": "q_74_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "32.2. Hiện tượng nào dưới cho thấy sự vận chuyển nước từ rễ Iên thân ở thực vật? KE 7u To A Khi cắt bỏ một khoanh vỏ ở thân, phẩn mép vỏ phía dưới bị phình to. B. Khi cắt bỏ một khoanh vỏ ở thân, mépvỏ phía trên bị phình to. C. Hiện tượng lá cây bị héo quắt do Mặt Trời đốt D. Khi bỏ phẩn thân của cây; ở vết cắt có rỉ nhựa.",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_74_4",
+      "type": "mcq",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "32.3. Khi tiến hành thí nghiệm chứng minh lá thoát hơi nước, nên chọn loại túi có đặc điểm gì để trùm lên lá? A. Túi nylon kín, trong suốt. B. Túi có đục lỗ thủng. C. Túi nylon kín, màu đen. D.Túi vải. 73 ống bảng ống ống hổng đây phẩn nóng. ngắt",
+      "correctAnswer": "A"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "page": 83,
+  "elements": [
+    {
+      "id": "q_83_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "36.6. Vận kiến thức đã học; mô tả đặc điểm thể hiện các dấu hiệu của sinh trưởng và phát triển ở người.",
+      "correctAnswer": "Dấu hiệu sinh trưởng ở cơ thể người: cơ thể lên vể chiểu cao và cân nặng. Dấu hiệu phát triển: phát sinh các cơ quan trong giai đoạn phôi, phát sinh các đặc điểm ở tuổi dậy thì như mọc râu (ở nam) ngực phát triển (ở nữ) _"
+    },
+    {
+      "id": "q_83_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "36.7. Dùng vôi vẽ một quanh thân cây (ví dụ: cây phượng) cách mặt đất khoảng m. Dự đoán khoảng cách từ mặt đất đến vết vôi ở các năm sau và giải thích. BÀl 37. ỨNG DỤNG SINH TRƯỞNG VÀ PHÁT TRIỂN Ở SINH VẬT VÀO THỰC TIỄN",
+      "correctAnswer": "Qua các năm, khoảng cách từ mặt đất đến vôi không đổi vì cây cao Iên do mô phân sinh đỉnh (phía ngọn cây)."
+    }
+  ]
+}

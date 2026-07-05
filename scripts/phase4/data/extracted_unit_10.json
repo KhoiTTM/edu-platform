@@ -1,0 +1,79 @@
+[
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence with the correct computer/internet term.",
+    "text_segments": ["You need to ", " your computer when you finish using it."],
+    "correct_answers": ["shut down"],
+    "word_pool": ["shut down", "crash", "stream", "store"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence with the correct computer/internet term.",
+    "text_segments": ["A ", " is a collection of web pages."],
+    "correct_answers": ["website"],
+    "word_pool": ["website", "network", "device", "attachment"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence with the correct computer/internet term.",
+    "text_segments": ["Don't forget to ", " your files so you don't lose them."],
+    "correct_answers": ["backup"],
+    "word_pool": ["backup", "download", "stream", "shut down"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence with the correct computer/internet term.",
+    "text_segments": ["A smartphone is an electronic ", "."],
+    "correct_answers": ["device"],
+    "word_pool": ["device", "network", "website", "attachment"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence with the correct computer/internet term.",
+    "text_segments": ["You can send an ", " with your email."],
+    "correct_answers": ["attachment"],
+    "word_pool": ["attachment", "device", "network", "website"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence with the correct computer/internet term.",
+    "text_segments": ["If your computer has a problem, it might ", "."],
+    "correct_answers": ["crash"],
+    "word_pool": ["crash", "shut down", "stream", "store"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence with the correct computer/internet term.",
+    "text_segments": ["You can ", " movies and music online."],
+    "correct_answers": ["stream"],
+    "word_pool": ["stream", "download", "backup", "store"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence with the correct computer/internet term.",
+    "text_segments": ["I need to ", " this file from the internet."],
+    "correct_answers": ["download"],
+    "word_pool": ["download", "stream", "backup", "store"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence with the correct future form (will / won't).",
+    "text_segments": ["In the future, people ", " communicate using their minds."],
+    "correct_answers": ["will communicate"],
+    "word_pool": ["will communicate", "won't communicate", "will communicating"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence with the correct future form (will / won't).",
+    "text_segments": ["There ", " be enough food for everyone."],
+    "correct_answers": ["won't be"],
+    "word_pool": ["won't be", "will be", "won't being"]
+  },
+  {
+    "type": "inline_fill_blank",
+    "instruction": "Complete the sentence with the correct future form (will / won't).",
+    "text_segments": ["What ", " people eat?"],
+    "correct_answers": ["will"],
+    "word_pool": ["will", "won't", "are"]
+  }
+]

@@ -1,0 +1,84 @@
+Hãy tạo một file JSON question bank với các thông số sau:
+
+- Môn học: 3
+- Khối lớp: 3
+- Sách: Toán lớp 3 - tập 1
+- Bài học / Chủ đề: Unit 1
+- Số câu hỏi: 20
+- Loại câu hỏi: 
+fill_blank: Điền kết quả phép tính, điền số vào chỗ trống
+tap_correct_answer: Trắc nghiệm 4 đáp án số, chọn 1 đáp án đúng
+match_pair: Nối phép tính với kết quả, nối hình với tên
+number_order: Sắp xếp dãy số tăng dần / giảm dần
+word_problem: Bài toán có lời văn (chọn phép tính hoặc điền kết quả)
+true_false: Đúng / Sai cho phép tính hoặc so sánh số
+shape_identify: Nhận dạng hình học: hình vuông, tam giác, hình tròn...
+clock_read: Đọc giờ trên đồng hồ, chọn giờ đúng
+
+Yêu cầu bắt buộc:
+1. Bám sát nội dung sách và bài học được chỉ định — không tự thêm nội dung ngoài phạm vi
+2. Dùng số, phép tính, đơn vị đo đúng với chương trình Toán lớp 3
+3. Chia đều câu hỏi theo từng bài học và có lũy kế bài. ví dụ unit 3 thì tổng hợp kiến thức từ unit 1 - 3, và từng loại question type
+4. Bài toán lời văn phải ngắn gọn, ngôn ngữ đơn giản phù hợp học sinh lớp 3
+5. Mỗi câu hỏi phải có đủ: id, type, instruction, question_data, source_anchor
+6. Trả về duy nhất 1 file JSON hợp lệ, không có text thừa ngoài JSON
+
+Schema bắt buộc: (giữ cấu trúc, các tham số chỉ là ví dụ)
+{
+  "title": "...",
+  "metadata": {
+    "subject": "Toán",
+    "grade": 3,
+    "volume": 1,
+    "book": "Toán 3 - Kết nối tri thức với cuộc sống",
+    "units": [1],
+    "total_questions": 20,
+    "generated_date": "<YYYY-MM-DD>"
+  },
+  "questions": [
+    {
+      "id": "Q001",
+      "type": "<question_type>",
+      "instruction": "...",
+      "question_data": { ... },
+      "source_anchor": { "book": "Toán 3 - Kết nối tri thức với cuộc sống", "lesson": "...", "page": 10 }
+    }
+  ]
+}
+
+Cấu trúc question_data theo từng type (các giá trị chỉ là ví dụ.)
+
+fill_blank:
+  { "question": "245 + 130 = ___", "correct_answer": "375", "choices": ["375", "275", "475", "365"] }
+
+tap_correct_answer:
+  { "question": "356 - 124 = ?", "correct_answer": "232", "choices": ["232", "242", "222", "230"] }
+
+match_pair:
+  { "pairs": [ { "left": "125 + 200", "right": "325" }, { "left": "300 - 75", "right": "225" } ] }
+
+number_order:
+  { "instruction_detail": "Sắp xếp theo thứ tự tăng dần", "numbers": [456, 123, 789, 234], "correct_order": [123, 234, 456, 789] }
+
+word_problem:
+  {
+    "story": "Lan có 24 quyển vở. Mẹ mua thêm cho Lan 15 quyển. Hỏi Lan có tất cả bao nhiêu quyển vở?",
+    "question": "Lan có tất cả bao nhiêu quyển vở?",
+    "correct_answer": "39",
+    "choices": ["39", "29", "49", "9"]
+  }
+
+true_false:
+  { "statement": "456 > 465", "correct_answer": false, "explanation": "456 < 465 vì hàng chục 5 < 6" }
+
+shape_identify:
+  { "shape_description": "Hình có 3 cạnh và 3 góc", "correct_answer": "Hình tam giác", "choices": ["Hình tam giác", "Hình vuông", "Hình tròn", "Hình chữ nhật"] }
+
+clock_read:
+  { "clock_display": { "hour": 3, "minute": 30 }, "question": "Đồng hồ chỉ mấy giờ?", "correct_answer": "3 giờ 30 phút", "choices": ["3 giờ 30 phút", "6 giờ 15 phút", "3 giờ 15 phút", "6 giờ 30 phút"] }
+
+Lưu ý:
+- "units" BẮT BUỘC phải là mảng số nguyên (Ví dụ: [1]). 
+- Dùng field "lesson" thay vì "unit" (ví dụ: "Bài 3: Các số đến 10 000") trong source_anchor.
+- Page number là số nguyên — ghi chú rõ để người dùng verify lại với sách thật.
+- Sau khi tạo xong, hãy tóm tắt ngắn: tổng số câu, phân bổ theo type và theo bài học.

@@ -1,0 +1,53 @@
+{
+  "page": 142,
+  "elements": [
+    {
+      "id": "q_142_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "40.7. Đặc điểm Sinh sản vô tính Sinh sản hữu tính nhau Đêu là hình thức hình thành cơ thể mới Không có sự hợp nhất các Có sự kết hợp của giao tử giao tử đực và giao tử cái đực và giao tử cái tạo nên mà cơ thể mới được sinh hợp tử, hợp tử phát triển Khác nhau ra từ một phân cơ thể mẹ thành cơ thể con Các cơ thể con khác nhau Cơthể con giống hệt nhau và có những đặc điểm giống và giống cơ thể mẹ cơ thể mẹ và cơ thểbố",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_142_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 31.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "40.8. Có nhiểu giống ngô như ngô nếp bắp Iớn; ngô nếp tím, vừa cho suất cao, chất lượng tốt, khả chống chịu cao được tạo ra bằng biện pháp lai hữu tính (giữa các giống mang những đặc điểm mong muốn) kết với chọn lọc để được con lai mang những đặc điểm tốt của giống bố mẹ",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_142_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 50.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "40.9. Lúa thu hoạch từ vụ trước có những hạt được tạo thành từ hạt của những cây lúa ở ruộng khác; nếu dùng những hạt lúa đó làm giống; thế hệ con sẽ mang những đặc điểm của cả cây bố, mẹ nên có thể chất lượng và suất sẽ không được như từ lúa giống đi mua I Bài 41. MỘT SỐ YẾU TỐ ẢNH HƯỞNG VÀ ĐIỂU HOÀ, ĐIÊU KHIỂN SINH SẢNỞ SINH VÂT Cuoc SONG",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_142_4",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 69.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "41.2. Thanh long là cây ngày dài, chỉ ra hoa trong điểu kiện ánh kéo dài nên vào những thời gian ngày ngắn, thắp đèn để kéo dài thời gian chiếu sáng trong ngày nhằm kích thích cho cây phân hoá để ra hoa và tạo trái vụ",
+      "correctAnswer": ""
+    }
+  ]
+}

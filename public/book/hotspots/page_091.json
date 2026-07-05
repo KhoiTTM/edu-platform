@@ -1,0 +1,41 @@
+{
+  "page": 91,
+  "elements": [
+    {
+      "id": "q_91_1",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 12.0,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "41.4. Các khẳng định sau đây đúng sai? STT Khẳng định Đúng/Sai Thụ tinh nhân tạo có tác dụng là sử dụng hiệu các con đực mang đặc điểm tốt Bảo vệcác loài côn trùng thụ phấn trong tự nhiên làm 2 hiệu thụ phấn cho cây trổng Sử hormone nhân tạo để kích thích ra hoa, phân hoá 3 hoa đực hoặc hoa cái Kích thích cây thanh long ra hoa trái vụ bằng cách thắp đèn chiếu vào ban đêm Nuôi cấy phôi ở vật bao gổm các bước: tách tinh 5 trùng thành hai loại rổi cho thụ tinh với trong nghiệm, sau đó nuôi cấy tửtrong môi trường nhân tạo",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_91_2",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 37.33,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "41.5. Nghiên cứu những thí nghiệm dưới đây rổi rút ra nhận xét vể sự sinh sản của động vật phụ thuộc vào những yếu tố nào của môi trường: Thí nghiệm 1: Gà mái thường đẻ 1 trứng/ngày; khi chế độ chiếu sáng lên 16 giờ/ngày thì gà đẻ 2 trứng/ngày. Thí nghiệm 2:Cá rô phi Việt Nam có ở xích đạo, nơi nhiệt độ trung bình là 30 C, mỗi năm đẻ 11 Iứa. Nếu nuôi cá ở nhiệt độ từ 16 % đến 18 Cthì cá ngừng sinh sản. Thí nghiệm 3:Cóc đẻ rộ trong tháng 4 nên sau khi đẻ, khối hai buổng giảm. Sau đó, nếu được ăn đẩy đủ thì đến 10, hai buổng trứng phục hổi khối lượng và lại có khả năng sinh sản.",
+      "correctAnswer": ""
+    },
+    {
+      "id": "q_91_3",
+      "type": "input",
+      "bbox": {
+        "x": 8.5,
+        "y": 62.67,
+        "width": 83.0,
+        "height": 7.5
+      },
+      "label": "41.6. Một trại nuôi bò lấy thịt có số lượng bò đực rất lớn. Theo em; để trì bò đực với số lượng lớn, trang trại này nên thực hiện biện pháp gì? 90 trổng giờ giờ rằng, quả dụng tăng trổng trổng hay quả tăng quả dụng sáng dộng ống trứng hợp quả tăng quả nguổn gốc vùng lượng trứng tháng duy trang nguổn",
+      "correctAnswer": ""
+    }
+  ]
+}

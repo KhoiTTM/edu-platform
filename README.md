@@ -1,21 +1,25 @@
-# BrightPath Academy — Tài liệu Dự án Toàn diện
+# EduVerse (BrightPath Academy) — Tài liệu Dự án Toàn diện
 
 > **Mục đích tài liệu này:** Giúp bất kỳ AI hoặc lập trình viên nào đọc vào hiểu ngay cấu trúc, luồng dữ liệu, và chức năng của toàn bộ dự án mà không cần đặt câu hỏi thêm.
+>
+> **BẮT BUỘC ĐỌC THÊM:** [`docs/CONTEXT.md`](./docs/CONTEXT.md) — tài liệu kiến trúc lõi (6 phân hệ, luật cứng cho agent). File README này tóm tắt thực tế thư mục/route hiện có; `docs/CONTEXT.md` giải thích *tại sao* và *luật* phải theo.
 
 ---
 
 ## 1. Tổng quan Dự án
 
-**BrightPath Academy** là một **cổng thông tin học sinh** (student portal) dành cho học sinh lớp 3 và lớp 7 (có thêm luồng IELTS Foundation). Ứng dụng cho phép:
+**EduVerse** (tên project: `edu-platform`) là một cổng thông tin học sinh (student portal) hỗ trợ học sinh nhiều khối lớp (3, 7, và luồng IELTS Foundation) với mô hình **Question-centric**, tách 3 lớp: **Content** (câu hỏi/đề tĩnh) — **Attempts** (bài làm của học sinh) — **Progress** (tiến độ/điểm).
 
-- Đăng nhập / đăng ký tài khoản học sinh (kèm chọn khối lớp)
-- Xem lịch học theo tuần (môn Toán, Tiếng Anh lớp 3)
-- Học bài theo từng môn: đọc PDF sách giáo khoa, xem video YouTube
-- Luyện thi IELTS Foundation (Mindset for IELTS) với lộ trình 36 buổi
-- Phòng luyện nghe 3 bước (Gist → Bilingual Transcript → Shadowing)
-- Làm bài tập trắc nghiệm (quiz) có chấm điểm và lưu lịch sử điểm
-- Chat với **Giáo viên AI** (Gemini) tích hợp theo bài học
-- **Từ điển nổi** (floating dictionary) tra Anh-Việt nhanh hoặc qua AI
+Tính năng chính:
+
+- Đăng nhập/đăng ký, hỗ trợ nhiều khối lớp/profile (multi-grade)
+- Học bài theo môn: PDF/ảnh trang sách giáo khoa, video YouTube, IELTS Foundation theo Unit
+- Phòng luyện kỹ năng riêng: Nghe (Gist → Transcript song ngữ → Shadowing), Đọc, Viết, Nói (chat AI)
+- **Assessment Studio** + **Luyện tập 3 chế độ** (ngân hàng câu hỏi / ngân hàng đề / sách bài tập tương tác)
+- **Sách Scan Tương tác (Flipbook)**: pipeline AI cục bộ bóc tách PDF scan thành câu hỏi
+- **Phụ huynh**: giao nhiệm vụ, theo dõi tiến độ con
+- **Gamification**: XP, streak, energy/heart trên thanh điều hướng
+- Chat với **Giáo viên AI** (Gemini) và **Từ điển nổi** (floating dictionary)
 
 ---
 
@@ -23,436 +27,234 @@
 
 | Thành phần | Công nghệ |
 |---|---|
-| Framework | **Next.js 15** (App Router, Server Components) |
-| Ngôn ngữ | **TypeScript 5** |
+| Framework | **Next.js 15** (App Router, Server Components, Server Actions) |
+| Runtime / UI | **React 19** + **TypeScript 5** |
 | Styling | **Tailwind CSS 3** |
+| Animation | **Framer Motion** |
 | Backend / Auth / DB | **Supabase** (PostgreSQL + Row Level Security + Auth) |
-| AI | **Google Gemini** (`@google/generative-ai`) |
-| Font | `Outfit` (display), `DM Sans` (body) — Google Fonts |
+| AI | **Google Gemini** (`@google/generative-ai`), model fallback chain |
+| Schema validation | `zod` (form/API) |
 | Icons | `lucide-react` |
 | PDF Viewer | `react-pdf` |
-| Deploy target | Netlify (có `netlify.toml`) |
+| Pipeline OCR (Python, riêng `pipeline/`) | `pypdfium2`, `opencv-python`, `easyocr`, `Pillow`, `numpy` |
+| Deploy target | Netlify (`netlify.toml`, `@netlify/plugin-nextjs`) |
 
 ### Biến môi trường cần thiết (`.env.local`)
 
 ```env
 NEXT_PUBLIC_SUPABASE_URL=https://<project>.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=<anon-key>
+SUPABASE_SERVICE_ROLE_KEY=<service-role-key>   # dùng cho script seed/server action cần bypass RLS
 GEMINI_API_KEY=<google-gemini-key>
 ```
 
+Không có file `.env.example` trong repo hiện tại — tạo `.env.local` thủ công theo mẫu trên.
+
 ---
 
-## 3. Cấu trúc Thư mục
+## 3. Kiến trúc 6 Phân hệ (Route Groups)
+
+Toàn bộ route được bảo vệ (cần đăng nhập) nằm trong `app/(app)/`, chia 6 route group theo `docs/CONTEXT.md`. **Route group không xuất hiện trong URL thật** (quy ước Next.js) — ví dụ `app/(app)/(administration)/dashboard/page.tsx` phục vụ tại `/dashboard`, không phải `/administration/dashboard`.
+
+### 3.1 `(learning)` — Học bài đa phương thức
+
+Component tương ứng: `components/learning/`, `components/universal/` (Universal Learning Engine).
+
+| Route | Mô tả |
+|---|---|
+| `/hoc-tap` | Trang chọn môn học |
+| `/hoc-tap/[subject]` | Danh sách bài học theo môn |
+| `/hoc-tap/pre-a1-starter` | Trang chọn giáo trình Pre A1 Starter |
+| `/hoc-tap/pre-a1-starter/starters-wordlist` | Giao diện học từ vựng (Flipbook & học thẻ từ) |
+| `/hoc-tap/mindset-ielts` | Roadmap IELTS Foundation theo Unit |
+| `/hoc-tap/mindset-ielts/{grammar,listening,reading,speaking,writing,shadowing,flow-book}` | Từng kỹ năng/luồng riêng |
+| `/learn/[subject]/[node]` | Universal Learning Engine — coordinator chung |
+| `/lessons/[id]` | Chi tiết bài học (PDF/video + practice inline) |
+| `/listening/[id]`, `/reading/[id]`, `/writing/[id]` | Phòng luyện kỹ năng riêng biệt |
+| `/speaking/[subjectSlug]/[unitId]/[sessionId]` | Phòng luyện nói với AI |
+
+### 3.2 `(assessment)` — Làm bài, chấm điểm, lưu kết quả
+
+Component tương ứng: `components/assessment/`. Engine: `lib/assessment/` (ai-generator, blueprint-mapper, generation-engine, question-selector...).
+
+| Route | Mô tả |
+|---|---|
+| `/luyen-tap`, `/luyen-tap/[subject]` | Trang Luyện tập, phân tab theo `exam_type` (môn `pre-a1-starter` tại `/luyen-tap/pre-a1-starter?grade=3` chứa 20 đề từ vựng) |
+| `/luyen-tap/lesson/[nodeId]` | Luyện tập theo bài học cụ thể |
+| `/luyen-tap/review` | Trang xem lại bài đã làm |
+| `/sach-bai-tap/[slug]` | **Luyện tập theo sách** (phiếu đáp án): chọn Unit → nhập đáp án đọc từ sách gốc (link Flipbook) → chấm + lưu lịch sử. Component `AnswerSheetRenderer`, action `sach-bai-tap/actions.ts`, data `content/[slug]-answers.json` (chỉ đáp án ngắn/từ khóa, KHÔNG chứa đề bài — tránh bản quyền). Vào từ nút "Luyện tập theo Sách bài tập" ở tab Tiếng Anh lớp 7. |
+| `/assessment-studio`, `/assessment-studio/collections/[id]` | CMS quản lý đề thi |
+| `/assessment-studio/exams/[examId]/{preview,review}` | Xem trước / duyệt đề |
+| `/test-assessment` | Trang test runtime lấy đề (`getExamQuestions`) |
+
+> Tab "Theo Sách bài tập" (trong `/luyen-tap/[subject]`) bấm vào sẽ **chuyển thẳng** (`router.push`, không qua trang trung gian) sang `/flipbooks/[bookSlug]/quiz` ở phân hệ `(flipbook)` — xem mục 3.3.
+
+### 3.3 `(flipbook)` — Sách flip: nhập liệu + màn hình học sinh làm bài
+
+Component: `components/flipbook/` (`FlipbookClient`, `FlipbookQuizClient`, `FlipbookQuizLessonList`, `KHTNClipper`, `PdfViewer`). Server actions: `app/(app)/(flipbook)/actions.ts` (`saveFlipbookQuizAttempt`). Âm thanh đúng/sai: `lib/quizSound.ts` (Web Audio API, không cần file mp3).
+
+| Route | Mô tả |
+|---|---|
+| `/flipbooks/[bookSlug]` | Xem flipbook đã hoàn thiện |
+| `/flipbooks/[bookSlug]/quiz` | Danh sách Bài của sách (card, số câu hỏi mỗi bài, breadcrumb, link Google Drive xem sách gốc) |
+| `/flipbooks/[bookSlug]/quiz/[bai]` | Quiz text-only — chỉ câu hỏi của 1 bài, đọc từ `content/[bookSlug]-questions.json`, lưu kết quả khi "Hoàn Thành" (xem mục 6) |
+
+**Đã loại bỏ hoàn toàn luồng Hotspot/Review** (route `/interactive-workbook`, `/review`, component `BookEditor`/`BookViewer`/`QuestionEditorForm`, `lib/book-viewer-core/`, `lib/schema/`, và toàn bộ ảnh trang scan trong `public/books/[slug]/`) — vì chiếm dung lượng lớn (~28MB/sách) và độ chính xác kém (OpenCV hay gộp nhiều câu hỏi liền nhau vào 1 hotspot). Hiện chỉ còn **luồng Quiz Text-Only** (OCR toàn trang, không cần ảnh hiển thị, không cần hotspot) — xem `docs/CONTEXT.md` mục C và `agent_prompt/implement_text_only_quiz_pipeline_prompt.md` để biết quy trình đầy đủ. **Không tạo lại luồng Hotspot/Review** trừ khi có yêu cầu rõ ràng phải hiển thị ảnh trang gốc.
+
+### 3.4 `(question-bank)` — Tầng Content: lưu trữ câu hỏi tĩnh
+
+Hiện **chưa có `page.tsx`** trong route group này — đây là tầng dữ liệu thuần (`question_bank` table + `scripts/seed-question-bank.ts` và các script `seed-*` khác), chưa có UI quản trị riêng. Component dự kiến: `components/question-bank/` (hiện trống).
+
+### 3.5 `(exam-bank)` — Tầng Content: tổ hợp câu hỏi thành đề
+
+Route group này **chưa có `page.tsx`** (runtime đọc đề qua `(assessment)/test-assessment`), nhưng exam-bank đã có công cụ và UI riêng:
+
+- **Tạo/nạp đề:** generator chung `scripts/seed-exam-bank.ts` — nhận 1 file, nhiều file hoặc cả thư mục `content/exam-bank/`, validate đa loại câu hỏi, hỗ trợ `--dry-run`. Idempotent theo `(subject_slug, grade, title)` + `exam_number`.
+- **Xem đề (read-only):** tab **"Exam Bank"** trong `/phu-huynh` (`components/administration/parent/ExamBankExplorer.tsx` + action `getExamBankData`) — lọc môn/lớp/loại đề, xem chi tiết câu hỏi theo schema.
+- **Loại câu hỏi:** render bởi `components/universal/AssessmentRenderer.tsx` — gồm `multiple_choice`, `fill_blank`, `matching`, `sentence_reorder`, `crossword` (ô chữ, renderer `CrosswordRenderer.tsx`), `essay` (tự luận — hiện câu hỏi, học sinh làm vào vở rồi bấm tiếp) và nhiều loại khác.
+
+Tài liệu quy ước dữ liệu + **các bẫy đã biết** (migration 048 `concept_id` nullable; migration 049/050/051 + trigger tự sinh `title` theo `exam_type`; mã `units=[101]` cho đề giữa kỳ Toán): [`docs/EXAM_BANK.md`](./docs/EXAM_BANK.md). Scope từ vựng Tiếng Anh 3: [`docs/TIENGANH3_TAP1_SCOPE.md`](./docs/TIENGANH3_TAP1_SCOPE.md). **Đọc EXAM_BANK.md mục 6 trước khi chạy SQL trực tiếp lên `assessment_collections`/`question_bank`.**
+
+### 3.6 `(administration)` — CMS, Dashboard, quản lý user
+
+Component: `components/administration/`.
+
+| Route | Mô tả |
+|---|---|
+| `/dashboard` | Trang chủ học sinh |
+| `/phu-huynh` | Khu vực phụ huynh — giao nhiệm vụ, theo dõi |
+| `/settings` | Cấu hình cá nhân |
+
+---
+
+## 4. Cấu trúc thư mục cấp cao
 
 ```
 edu-platform/
-├── app/                          # Next.js App Router
-│   ├── layout.tsx                # Root layout: fonts, metadata, viewport
-│   ├── globals.css               # CSS gốc, Tailwind base
-│   ├── page.tsx                  # Landing page công khai (/)
-│   ├── login/                    # Trang đăng nhập / đăng ký
-│   │   └── page.tsx
-│   ├── (app)/                    # Route group: vùng bảo vệ (cần đăng nhập)
-│   │   ├── layout.tsx            # Layout có sidebar + nav + auth guard
-│   │   ├── dashboard/page.tsx    # Trang chủ học sinh (/dashboard)
-│   │   ├── hoc-tap/              # Học bài (/hoc-tap)
-│   │   │   ├── page.tsx          # Danh sách môn học
-│   │   │   ├── [subject]/page.tsx # Chi tiết môn (tập 1/2 + danh sách bài)
-│   │   │   └── mindset-ielts/    # IELTS Foundation (route riêng)
-│   │   │       ├── page.tsx      # Tổng quan 36 buổi, nhóm theo Unit
-│   │   │       ├── listening/page.tsx
-│   │   │       ├── speaking/page.tsx
-│   │   │       ├── reading/page.tsx
-│   │   │       ├── writing/page.tsx
-│   │   │       └── grammar/page.tsx
-│   │   ├── listening/            # Phòng luyện nghe IELTS (/listening)
-│   │   │   ├── page.tsx          # Danh sách buổi nghe
-│   │   │   └── [id]/page.tsx     # Chi tiết phòng luyện nghe (3 bước)
-│   │   ├── lessons/              # Route lessons chung
-│   │   │   └── [id]/             # Chi tiết bài học
-│   │   ├── quiz/                 # Quiz runner (/quiz)
-│   │   │   └── [id]/
-│   │   │       ├── page.tsx
-│   │   │       ├── QuizRunner.tsx
-│   │   │       └── actions.ts    # Server Actions: lưu điểm vào DB
-│   │   ├── schedule/             # Lịch học (/schedule)
-│   │   │   ├── page.tsx          # Server: fetch lịch tuần / schedule_entries
-│   │   │   ├── ScheduleClient.tsx      # Client: hiển thị lịch lớp 7
-│   │   │   ├── WeeklyScheduleClient.tsx # Client: hiển thị lịch tuần lớp 3
-│   │   │   └── actions.ts        # Server Action: tạo lịch demo
-│   │   └── scores/page.tsx       # Lịch sử điểm quiz (/scores)
-│   └── api/                      # API Routes
-│       └── ai/
-│           ├── teacher/route.ts  # POST /api/ai/teacher — Gemini chat
-│           └── dictionary/route.ts # POST /api/ai/dictionary — tra từ AI
+├── app/
+│   ├── layout.tsx, globals.css, page.tsx     # Root layout & landing page (/)
+│   ├── login/                                # Đăng nhập / đăng ký
+│   ├── (app)/                                # Route group bảo vệ — xem mục 3
+│   │   ├── layout.tsx                        # Auth guard + top nav + gamification bar
+│   │   ├── (learning)/  (assessment)/
+│   │   ├── (flipbook)/  actions.ts            # saveFlipbookQuizAttempt — lưu kết quả quiz
+│   │   ├── (question-bank)/  (exam-bank)/  (administration)/
+│   └── api/
+│       ├── ai/{teacher,daily-summary,insights,universal-tutor}/route.ts
+│       ├── assessment/route.ts
+│       ├── speaking/, flipbooks/, events/, english-world/
 │
-├── components/                   # Shared UI Components (client)
-│   ├── AITeacherChat.tsx         # Chat giáo viên AI (hybrid: scripted + Gemini)
-│   ├── DictionaryPopup.tsx       # Từ điển nổi Anh-Việt (quick / AI mode)
-│   ├── IELTSSkillsNav.tsx        # Tab lọc kỹ năng IELTS
-│   ├── LessonListByTopic.tsx     # Danh sách bài theo chủ đề
-│   ├── LessonPractice.tsx        # Bài tập trắc nghiệm chấm từng câu
-│   ├── ListeningClient.tsx       # Phòng luyện nghe 3 bước (quiz + transcript)
-│   ├── PdfViewer.tsx             # Viewer react-pdf trong browser
-│   ├── SignOutButton.tsx         # Nút đăng xuất (client)
-│   ├── SubjectVolumeTabs.tsx     # Tab chuyển Tập 1 / Tập 2
-│   ├── TextbookSection.tsx       # Hiển thị PDF sách + page_hint
-│   └── YouTubeEmbed.tsx          # Nhúng YouTube (youtube-nocookie)
+├── components/
+│   ├── learning/        # AITeacherChat, ListeningClient, ReadingClient, WritingClient,
+│   │                     # StartersLearningEngine, SubjectVolumeTabs, YouTubeEmbed, v.v.
+│   ├── assessment/       # AssessmentResultCard, SBTWorkbookClient
+│   ├── flipbook/         # FlipbookClient, FlipbookQuizClient, FlipbookQuizLessonList,
+│   │                     # KHTNClipper, PdfViewer
+│   ├── universal/        # Renderer cho Universal Learning Engine (MultipleChoiceRenderer,
+│   │                     # FillBlankRenderer, MatchPairRenderer, CategorizationRenderer, LearnNodeClient...)
+│   ├── administration/   # CMS components
+│   ├── gamification/     # HeartProvider, StreakFlame, XPToast
+│   ├── ui/                # SpaceBackground và các UI primitive chung
+│   └── DictionaryPopup.tsx, SignOutButton.tsx, TopNavLinks.tsx, AriaDebrief.tsx, v.v.
 │
-├── lib/                          # Thư viện & data tĩnh
-│   ├── supabase/
-│   │   ├── client.ts             # createBrowserClient (phía client)
-│   │   ├── server.ts             # createServerClient (phía server, cookies)
-│   │   └── middleware.ts         # updateSession — refresh token, redirect guard
-│   ├── curriculum/
-│   │   └── toan3-tap1.ts         # Dữ liệu curriculum Toán lớp 3 tập 1
-│   ├── schedule/
-│   │   └── term-dates.ts         # Hằng số ngày bắt đầu học kỳ
-│   ├── ieltsQuizzes.ts           # 15 câu hỏi/unit IELTS + scripted AI chat steps
-│   ├── ieltsTranscripts.ts       # Transcript song ngữ + keyVocabulary theo lesson
-│   └── storage.ts                # Helper Supabase Storage URL
+├── lib/
+│   ├── assessment/        # ai-generator, blueprint-mapper, engine, generation-engine, question-selector
+│   ├── adaptive/           # sync-engine — đồng bộ tiến độ học thích ứng (còn sơ khai)
+│   ├── mastery/            # engine.ts — mastery tracking (mới bắt đầu)
+│   ├── srs/                # scheduler.ts — Spaced Repetition System (cơ bản)
+│   ├── speaking/           # curriculumContextBuilder, prompt-generator
+│   ├── curriculum/         # retrieval-service, toan3-tap1.ts
+│   ├── subjects/           # adapter theo môn (english/, math/)
+│   ├── ai/                 # universalContextBuilder
+│   ├── data/                # Dữ liệu tĩnh: từ vựng, sbtUnit*, unit3-10Data...
+│   ├── quizSound.ts          # Beep đúng/sai cho FlipbookQuizClient (Web Audio API, không cần file mp3)
+│   └── supabase/            # client.ts, middleware.ts, server.ts
 │
-├── types/
-│   └── database.ts               # TypeScript types: Profile, Lesson, Quiz, v.v.
+├── pipeline/                # Python — OCR pipeline (xem mục 3.3 + docs/CONTEXT.md mục C)
+│   ├── src/main.py, src/core/{pdf_processor,layout_detector,ocr_engine,packager}.py
+│   └── requirements.txt
 │
-├── content/                      # PDF sách giáo khoa (phục vụ local dev)
-│   ├── toan3-tap1.pdf
-│   ├── toan3-tap2.pdf
-│   ├── tienganh3-tap1.pdf
-│   ├── tienganh3-tap2.pdf
-│   └── mindset-for-ielts-foundation.pdf
+├── content/                  # Dữ liệu tĩnh dạng file (JSON/PDF) — KHÔNG chứa runtime data
+│   ├── khtn-7-workbook.json   # Workbook KHTN 7 soạn tay, 10 bài — vẫn dùng bởi components/universal/WorkbookAnswerSheet.tsx (Universal Learning Engine, KHÔNG liên quan flipbook)
+│   ├── khtn7-questions.json   # Output luồng Quiz Text-Only — 216 câu (Bài 1–18), dùng bởi /flipbooks/khtn7/quiz và /luyen-tap/khtn?grade=7 (đọc JSON trực tiếp, không qua DB)
+│   ├── khtn7-answer-key.json  # Đáp án thô trích từ phần "HƯỚNG DẪN GIẢI" của sách, key "Bài.Câu"
+│   ├── english7-workbook.json
+│   ├── assessments/           # Đề thi import thủ công (xem AGENT_INSTRUCTIONS.md trong đó)
+│   └── *.pdf                  # Nguồn PDF gốc một số sách (Toán 3, Tiếng Anh 3, IELTS Foundation)
 │
-├── supabase/migrations/          # SQL migrations chạy tuần tự
-│   ├── 001_schema.sql            # Schema chính + RLS + seed data ban đầu
-│   ├── 002_lessons_curriculum_vi.sql  # Môn TV, thứ tự bài, giải thích quiz
-│   ├── 003_subjects_textbook.sql      # Bảng subjects, PDF URL, bucket Storage
-│   ├── 004_toan3_tap1_curriculum.sql  # 55 bài Toán lớp 3 tập 1 + quiz
-│   ├── 005_weekly_lesson_schedule.sql # Lịch tuần Toán lớp 3 (từ 01/06/2026)
-│   ├── 006_tienganh3_tap1_curriculum.sql # Tiếng Anh lớp 3 tập 1
-│   ├── 008_ielts_foundation_setup.sql # 36 buổi IELTS Foundation
-│   ├── 010_ielts_roadmap.sql         # Lộ trình IELTS nâng cao
-│   ├── 011_update_cherry_name.sql    # Cập nhật tên học sinh demo
-│   ├── 012_add_skill_focus_to_lessons.sql # Thêm cột skill_focus
-│   └── 013_fix_ielts_skill_focus.sql # Fix dữ liệu skill_focus IELTS
+├── public/books/                # Hiện trống — từng chứa ảnh trang scan của luồng Hotspot/Review (đã xóa)
 │
-├── scripts/
-│   └── generate-toan3-sql.ts     # Script tạo lại 004_toan3_tap1_curriculum.sql
+├── scripts/                   # ~98 script một lần (seed-*, generate-*, check-*, fix-*, migrate-*, cleanup-*)
 │
-├── middleware.ts                  # Next.js middleware entry point (gọi updateSession)
-├── next.config.ts
-├── tailwind.config.ts
-├── package.json
-└── netlify.toml
+├── supabase/migrations/       # SQL theo thứ tự 001 → 049 (xem mục 7)
+│
+├── docs/
+│   ├── CONTEXT.md             # ⚠️ Bắt buộc đọc — kiến trúc lõi + luật cứng cho agent
+│   ├── EXAM_BANK.md           # Quy ước dữ liệu phân hệ exam-bank
+│   └── PRE_A1_STARTER.md      # Quy ước dữ liệu & luyện nghe môn Pre A1 Starter Wordlist
+│
+├── agent_prompt/               # Hướng dẫn quy trình cho agent tương lai
+│   ├── implement_pdf_scan_pipeline_prompt.md         # Luồng Hotspot/Review
+│   ├── implement_text_only_quiz_pipeline_prompt.md   # Luồng Quiz Text-Only (mới, ưu tiên)
+│   └── ielts_flow_book_readme.md, implement_next_unit_flow_book_prompt.md
+│
+└── .agents/AGENTS.md           # Quy tắc bắt buộc cho mọi agent hoạt động trong workspace
 ```
 
 ---
 
-## 4. Database Schema (Supabase / PostgreSQL)
+## 5. AI Integration (Gemini)
 
-### Bảng chính
-
-#### `profiles` — thông tin học sinh (1:1 với `auth.users`)
-| Cột | Kiểu | Ghi chú |
-|-----|------|---------|
-| `id` | uuid PK | = auth.users.id |
-| `email` | text | |
-| `display_name` | text | Tên hiển thị |
-| `grade` | smallint | 3 hoặc 7 |
-| `created_at` | timestamptz | |
-
-**Trigger:** `on_auth_user_created` → tự động tạo profile khi user đăng ký, lấy `grade` và `display_name` từ `raw_user_meta_data`.
-
-#### `subjects` — môn học theo tập sách
-| Cột | Kiểu | Ghi chú |
-|-----|------|---------|
-| `id` | uuid PK | |
-| `grade` | smallint | 0=tất cả, 3, 7 |
-| `slug` | text | `toan`, `tieng_anh`, `mindset-ielts`, v.v. |
-| `label_vi` | text | Tên tiếng Việt |
-| `volume` | smallint | 1 hoặc 2 |
-| `textbook_pdf_url` | text | URL PDF trên Supabase Storage |
-| `textbook_title` | text | |
-
-#### `lessons` — từng bài học
-| Cột | Kiểu | Ghi chú |
-|-----|------|---------|
-| `id` | uuid PK | |
-| `grade` | smallint | 0=tất cả lớp, 3, 7 |
-| `subject_slug` | text | |
-| `subject_label_vi` | text | |
-| `subject_id` | uuid FK subjects | |
-| `title` | text | |
-| `summary` | text | |
-| `youtube_video_id` | text | YouTube video ID |
-| `skill_focus` | text | `listening`, `speaking`, `reading`, `writing`, `grammar` |
-| `lesson_index` | int | Thứ tự trong môn/tập |
-| `volume` | smallint | 1 hoặc 2 |
-| `page_hint` | text | Ví dụ: "Trang 12-18" |
-| `book_lesson_number` | int | Số bài trong sách |
-| `topic_label` | text | Nhãn chủ đề |
-| `video_part` | int | Phần video (1, 2, 3...) |
-| `duration_minutes` | int | |
-
-**RLS:** học sinh chỉ thấy bài thuộc `grade` của mình (và grade=0).
-
-#### `quizzes` + `quiz_questions` + `quiz_attempts`
-
-```
-quizzes: id, lesson_id (FK), title
-quiz_questions: id, quiz_id (FK), question, options (jsonb), correct_index, order_index, explanation
-quiz_attempts: id, user_id, quiz_id, score, total, created_at
-```
-
-**RLS:** `quiz_attempts` — chỉ học sinh đó đọc/ghi được data của mình.
-
-#### `schedule_entries` — lịch học cá nhân (lớp 7)
-| Cột | Ghi chú |
-|-----|---------|
-| `user_id` | FK auth.users |
-| `lesson_id` | FK lessons |
-| `day_of_week` | 0=CN, 1=T2...6=T7 |
-| `start_time`, `end_time` | TIME |
-
-#### `weekly_lesson_schedule` — lịch học theo tuần (lớp 3, dùng chung)
-| Cột | Ghi chú |
-|-----|---------|
-| `grade` | 3 |
-| `subject_slug` | `toan`, `tieng_anh` |
-| `volume` | 1 |
-| `term_start_date` | Mốc bắt đầu học kỳ (`2026-06-01`) |
-| `week_number` | Tuần 1..11 |
-| `weekday` | 1=T2..5=T6 |
-| `lesson_index` | Số thứ tự bài |
-| `start_time`, `end_time` | TIME |
+- `/api/ai/teacher` — Chat giáo viên AI, model fallback chain (`gemini-flash-latest` → `gemini-1.5-flash` → ... → `gemini-1.5-pro`), 2 system prompt (`text` song ngữ, `speaking` toàn tiếng Anh).
+- `/api/ai/universal-tutor`, `/api/ai/daily-summary`, `/api/ai/insights` — hỗ trợ Universal Learning Engine và tổng hợp tiến độ.
+- `lib/assessment/ai-generator.ts` — sinh câu hỏi tự động cho ngân hàng câu hỏi/đề.
+- Từ điển nổi (`DictionaryPopup.tsx`) — tra nhanh hoặc qua AI, lưu lịch sử `localStorage`.
 
 ---
 
-## 5. Authentication & Middleware
+## 6. Pipeline OCR Sách Scan (Python, `pipeline/`)
 
-### Luồng xác thực
+Xem đầy đủ ở `docs/CONTEXT.md` mục C. Quy trình hiện dùng — **Luồng Quiz Text-Only** (luồng Hotspot/Review cũ đã bị xóa hoàn toàn, không tạo lại trừ khi có yêu cầu rõ ràng phải hiển thị ảnh trang gốc):
 
-```
-Người dùng truy cập URL
-        ↓
-middleware.ts (chạy trên mọi request)
-        ↓
-lib/supabase/middleware.ts → updateSession()
-  - Refresh Supabase session token qua cookie
-  - Nếu chưa đăng nhập + route không public → redirect /login
-  - Nếu đã đăng nhập + đang ở /login hoặc / → redirect /dashboard
-        ↓
-app/(app)/layout.tsx (Server Component)
-  - Gọi supabase.auth.getUser()
-  - Nếu không có user → redirect /login
-  - Query profiles để lấy display_name, grade
-  - Render sidebar (desktop) + top nav (mobile/tablet)
-```
+1. OCR toàn trang sách (không cắt theo khung/bbox) bằng EasyOCR.
+2. Tách câu hỏi theo số thứ tự `Bài.Câu` in trong sách, dùng thuật toán quy hoạch động để loại false positive.
+3. Tự động tách trắc nghiệm (option A/B/C/D) vs tự luận.
+4. Map đáp án từ phần "HƯỚNG DẪN GIẢI" của sách.
+5. Output: `content/[bookSlug]-questions.json` — không có ảnh, không có bbox/hotspot.
 
-**Public routes:** `/` (landing), `/login`  
-**Protected routes:** tất cả trong `/(app)/*`
+Render tại `/flipbooks/[bookSlug]/quiz` (danh sách Bài) và `/flipbooks/[bookSlug]/quiz/[bai]` (quiz từng bài). Khi học sinh bấm "Hoàn Thành", kết quả (điểm trắc nghiệm + chi tiết từng câu) được lưu vào bảng `learning_sessions` có sẵn qua `saveFlipbookQuizAttempt` — cùng nguồn dữ liệu mà `/dashboard` và trang Phụ huynh (`/phu-huynh`) đọc để hiện lịch sử học. **Quy ước field bắt buộc** (đặt sai sẽ khiến lịch sử lưu được nhưng hiển thị sai/thiếu — đã xảy ra thật, xem `docs/CONTEXT.md` mục 3.D): `summary_metrics.type` phải là `"exam"` (không phải tên tự đặt), tên bài lưu ở field `unit_topic` (không phải `title`/`lesson_title`).
 
-### Supabase Client Strategy
-
-| File | Dùng ở đâu |
-|------|-----------|
-| `lib/supabase/client.ts` | Client Components (`"use client"`) |
-| `lib/supabase/server.ts` | Server Components, Server Actions, Route Handlers |
-| `lib/supabase/middleware.ts` | Next.js middleware |
+Hướng dẫn từng bước đầy đủ + các cạm bẫy OCR đã gặp (watermark, số liệu bị OCR sai, mất số thứ tự...): `agent_prompt/implement_text_only_quiz_pipeline_prompt.md`. Cần `pip install -r pipeline/requirements.txt` trước khi chạy.
 
 ---
 
-## 6. Routing & Pages
-
-### Route Map
-
-| URL | File | Chức năng |
-|-----|------|-----------|
-| `/` | `app/page.tsx` | Landing page marketing |
-| `/login` | `app/login/page.tsx` | Đăng nhập / Đăng ký (chọn lớp) |
-| `/dashboard` | `app/(app)/dashboard/page.tsx` | Trang chủ: ds môn học + điểm gần đây |
-| `/hoc-tap` | `app/(app)/hoc-tap/page.tsx` | Chọn môn học |
-| `/hoc-tap/[subject]` | `app/(app)/hoc-tap/[subject]/page.tsx` | Chọn tập + danh sách bài |
-| `/hoc-tap/mindset-ielts` | `app/(app)/hoc-tap/mindset-ielts/page.tsx` | IELTS 36 buổi nhóm theo Unit |
-| `/hoc-tap/mindset-ielts/listening` | `...mindset-ielts/listening/page.tsx` | Danh sách bài Listening IELTS |
-| `/listening` | `app/(app)/listening/page.tsx` | Phòng luyện nghe catalog |
-| `/listening/[id]` | `app/(app)/listening/[id]/page.tsx` | Phòng luyện nghe 3 bước |
-| `/quiz/[id]` | `app/(app)/quiz/[id]/page.tsx` | Làm quiz |
-| `/schedule` | `app/(app)/schedule/page.tsx` | Lịch học (lớp 3: theo tuần, lớp 7: entries) |
-| `/scores` | `app/(app)/scores/page.tsx` | Lịch sử điểm |
-
-### API Routes
-
-| Endpoint | File | Chức năng |
-|----------|------|-----------|
-| `POST /api/ai/teacher` | `app/api/ai/teacher/route.ts` | Gemini AI giáo viên (chat + speaking mode) |
-| `POST /api/ai/dictionary` | `app/api/ai/dictionary/route.ts` | Gemini tra từ thông minh |
-
----
-
-## 7. Components
-
-### `AITeacherChat.tsx` — Chat Giáo viên AI (Hybrid)
-
-**Kiến trúc Hybrid 90/10:**
-- **90% Scripted (local, không tốn API quota):** Giáo viên dẫn dắt theo kịch bản định sẵn từ `lib/ieltsQuizzes.ts`. Kịch bản theo từng Unit IELTS.
-- **10% Realtime AI (Gemini):** Khi học sinh đặt câu hỏi chứa từ như "giải thích", "dịch", "tại sao", "?", v.v. → gửi request tới `/api/ai/teacher`.
-
-**Props:**
-```typescript
-sessionInfo: { title: string; summary: string }
-studentName: string
-```
-
-### `ListeningClient.tsx` — Phòng Luyện Nghe 3 Bước
-
-4 tab nội dung cho 1 bài nghe:
-1. **Bước 1 - Nghe chay** (Gist Listening): học sinh nghe không phụ đề, ghi chú tóm tắt
-2. **Bước 2 - Transcript song ngữ**: hiển thị từng dòng EN/VI + phân tích từ vựng tiêu điểm
-3. **Bước 3 - Shadowing**: hướng dẫn kỹ thuật nói đuổi
-4. **Quiz** (Comprehension): 15 câu trắc nghiệm, phân trang từng câu, hiển thị đáp án + giải thích sau khi nộp
-
-Layout: 7/12 cột trái (player + tabs) + 5/12 cột phải (tóm tắt + đáp án).
-
-**Props:** `lesson: Lesson`, `transcript: IELTSTranscript`, `questions: QuizQuestion[]`
-
-### `DictionaryPopup.tsx` — Từ điển Nổi
-
-Floating button góc phải dưới, 2 chế độ:
-- **Tra nhanh**: gọi Google Translate client API (không cần key, ~100ms, offline-like)
-- **Giải nghĩa AI**: gọi `/api/ai/dictionary` với Gemini
-
-Lưu lịch sử 10 từ gần nhất vào `localStorage`.
-
-### Các component khác
-
-| Component | Chức năng |
-|-----------|-----------|
-| `LessonPractice.tsx` | Bài tập trắc nghiệm chấm từng câu ngay (inline, không lưu điểm) |
-| `SubjectVolumeTabs.tsx` | Tab chuyển Tập 1 / Tập 2 với query param `?tap=` |
-| `LessonListByTopic.tsx` | Render danh sách bài theo `topic_label`, có fallback card |
-| `TextbookSection.tsx` | Hiển thị tên PDF + gợi ý trang (`page_hint`) + nút mở PDF |
-| `YouTubeEmbed.tsx` | Nhúng YouTube với `youtube-nocookie.com` |
-| `PdfViewer.tsx` | Viewer react-pdf trong browser |
-| `IELTSSkillsNav.tsx` | Tabs lọc kỹ năng: Listening/Speaking/Reading/Writing/Grammar |
-| `SignOutButton.tsx` | Client button gọi `supabase.auth.signOut()` |
-
----
-
-## 8. AI Integration (Gemini)
-
-### `/api/ai/teacher` — Giáo viên IELTS
-
-- **Model fallback chain:** `gemini-flash-latest` → `gemini-1.5-flash` → `gemini-2.0-flash` → ... → `gemini-1.5-pro`
-- **2 System Prompt:**
-  - `text` mode: Giáo viên IELTS song ngữ Anh-Việt, hướng dẫn 4 kỹ năng
-  - `speaking` mode: Conversation partner 100% tiếng Anh, câu trả lời ngắn (1-3 câu)
-- **History sanitization:** đảm bảo messages luân phiên user/model đúng chuẩn Gemini
-
-### `/api/ai/dictionary` — Tra từ AI
-
-- Phân tích từ vựng thông minh: phát âm, nghĩa, ví dụ
-- Fallback tương tự teacher route
-
----
-
-## 9. Data Files tĩnh
-
-### `lib/ieltsTranscripts.ts`
-
-Map `{ [youtube_video_id]: IELTSTranscript }` với cấu trúc:
-```typescript
-type IELTSTranscript = {
-  title: string
-  unitTitle: string
-  description: string
-  keyVocabulary: { word: string; pronunciation: string; meaning: string }[]
-  lines: { english: string; vietnamese: string }[]
-}
-```
-Dùng để hiển thị transcript song ngữ trong phòng luyện nghe.
-
-### `lib/ieltsQuizzes.ts`
-
-- `getFallbackQuestionsForUnit(unitNum, quizId)`: 15 câu hỏi comprehension cho mỗi Unit IELTS (1-10) — dùng khi DB chưa có quiz questions
-- `getScriptForUnit(unitNum, studentName, summary)`: kịch bản chat giáo viên AI (scripted steps) theo từng Unit
-
-### `lib/schedule/term-dates.ts`
-
-```typescript
-export const TOAN_GRADE3_TERM_START = "2026-06-01"
-```
-
----
-
-## 10. Luồng Học Bài Chính
-
-### Học sinh lớp 3/7 — Bài học thông thường
-
-```
-/hoc-tap → chọn môn → /hoc-tap/[subject]
-    → chọn tập (1 hoặc 2, query ?tap=)
-    → danh sách bài theo topic_label
-    → click bài → /lessons/[id]
-        - TextbookSection: PDF sách + page_hint
-        - YouTubeEmbed: video bài giảng
-        - LessonPractice: quiz bài tập (inline, không lưu)
-        - Bài kiểm tra tổng hợp → /quiz/[id]
-            → QuizRunner (client)
-            → actions.ts: saveQuizAttempt() → lưu vào quiz_attempts
-```
-
-### Học sinh IELTS — Buổi luyện nghe
-
-```
-/hoc-tap/mindset-ielts → danh sách 36 buổi (nhóm theo Unit)
-    → click buổi có bài nghe → /listening/[id]
-        - Server: fetch lesson, transcript, quiz questions
-        - Client: ListeningClient (3 bước + quiz)
-        - Floating: DictionaryPopup
-        - Right panel: AITeacherChat (hybrid scripted + Gemini)
-```
-
----
-
-## 11. Hướng dẫn Setup (cho dev mới)
+## 7. Hướng dẫn Setup (cho dev mới)
 
 ### Bước 1: Database
 
-Chạy tuần tự các file SQL trong Supabase SQL Editor:
-1. `001_schema.sql` — schema cơ bản
-2. `002_lessons_curriculum_vi.sql`
-3. `003_subjects_textbook.sql`
-4. `004_toan3_tap1_curriculum.sql`
-5. `005_weekly_lesson_schedule.sql`
-6. `006_tienganh3_tap1_curriculum.sql`
-7. `008_ielts_foundation_setup.sql`
-8. `010_ielts_roadmap.sql`
-9. `012_add_skill_focus_to_lessons.sql`
-10. `013_fix_ielts_skill_focus.sql`
+Chạy lần lượt tất cả file SQL trong `supabase/migrations/` theo số thứ tự (`001` → `049` tại thời điểm viết, kiểm tra file mới nhất thực tế trong thư mục) trong Supabase SQL Editor.
 
-### Bước 2: Storage PDF
+Nhóm migration đáng chú ý gần đây: `043`–`047` (Parent Tasks), `048` (`question_bank.concept_id` nullable — phục vụ exam-bank), `049` (fix tiêu đề đề giữa kỳ).
 
-1. Tạo bucket `textbooks` (public) trong Supabase Storage
-2. Upload PDF vào đường dẫn: `grade3/toan-tap1.pdf`, `grade3/toan-tap2.pdf`, v.v.
-3. Cập nhật `textbook_pdf_url` trong bảng `subjects`
+### Bước 2: Môi trường
 
-### Bước 3: Môi trường
+Tạo `.env.local` theo mẫu ở mục 2.
 
-```bash
-cp .env.example .env.local
-# Điền NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY, GEMINI_API_KEY
-```
-
-### Bước 4: Chạy
-
+### Bước 3: Cài đặt và chạy
 ```bash
 npm install
 npm run dev
 # Mở http://localhost:3000
 ```
 
-### Scripts
+### Pipeline OCR (tùy chọn, chỉ khi cần nhập liệu sách scan mới)
+```bash
+cd pipeline
+pip install -r requirements.txt
+python src/main.py <path-to-pdf> --slug <book-slug> --pages 10
+```
+
+### NPM Scripts
 
 | Lệnh | Mô tả |
 |------|-------|
@@ -460,27 +262,30 @@ npm run dev
 | `npm run build` | Build production |
 | `npm run start` | Production server |
 | `npm run lint` | ESLint |
-| `npm run generate:toan3` | Tái tạo file `004_toan3_tap1_curriculum.sql` từ `lib/curriculum/toan3-tap1.ts` |
+| `npm run generate:toan3` | Tái tạo SQL curriculum Toán 3 từ `scripts/generate-toan3-sql.ts` |
+| `npx tsx scripts/seed-exam-bank.ts <file\|thư-mục> [--dry-run]` | Generator nạp đề exam-bank hỗ trợ Bulk Insert hàng loạt & tự động Retry khi lỗi mạng |
+
+Ngoài ra có ~98 script một lần trong `scripts/` (tiền tố `seed-*`, `generate-*`, `check-*`, `fix-*`, `migrate-*`, `cleanup-*`) — chạy qua `npx tsx scripts/<file>.ts`, đọc nội dung từng file trước khi chạy vì đây là script tác động trực tiếp DB.
 
 ---
 
-## 12. Ghi chú Thiết kế
+## 8. Luật cứng cho Agent (tóm tắt — đọc đầy đủ ở `docs/CONTEXT.md` và `.agents/AGENTS.md`)
 
-- **Responsive:** Sidebar ẩn trên mobile/tablet → top bar + bottom nav tabs. Mọi touch target ≥ 44px.
-- **Dark mode by default:** Nền `#020617` (slate-950), sidebar `#0f172a` (slate-900).
-- **Color system:** Primary = `sky-600`, accent = `emerald`, `amber`, `fuchsia`, `indigo` theo kỹ năng IELTS.
-- **PDF cross-origin:** Một số browser chặn PDF trong iframe — có nút "Mở riêng" dự phòng.
-- **YouTube:** Nhúng qua `youtube-nocookie.com` không tracking, `modestbranding=1`.
-- **IELTS Quiz fallback:** Nếu DB chưa có quiz questions cho bài nghe → dùng 15 câu hardcoded từ `ieltsQuizzes.ts`.
-- **Gemini quota:** 90% chat dùng scripted steps (không gọi API) → tiết kiệm quota đáng kể.
+- **MUST** đọc `docs/CONTEXT.md` trước khi code bất kỳ task nào trong dự án này.
+- **MUST** giữ tách biệt dữ liệu tĩnh (Questions/Exams trong `content/`, `question_bank`, `exams`) với dữ liệu runtime (StudentAnswers/Score) — không bao giờ nhúng `score`/`userAnswer` vào JSON tĩnh hay vào `metadata_json`.
+- **MUST** đặt code đúng route group/thư mục component theo phân hệ (mục 3).
+- **MUST NOT** phá vỡ cấu trúc layout/routing chung mà không có sự đồng ý của User.
+- **MUST NOT** dùng thư viện UI ngoài Tailwind trừ khi được chỉ định rõ.
+- Khi quyết định kiến trúc quan trọng, ghi lại vào `docs/` hoặc `agent_prompt/` để agent sau không lặp lại sai lầm.
 
 ---
 
-## 13. Điểm Mở rộng Tương lai
+## 9. Điểm Mở rộng Tương lai
 
-- [ ] Thêm role `teacher` / `admin` để quản lý nội dung
-- [ ] Lưu điểm quiz listening vào `quiz_attempts` (hiện chỉ client-side)
-- [ ] Thêm lịch học lớp 7 dạng `weekly_lesson_schedule` (hiện dùng `schedule_entries` cá nhân)
-- [ ] Speaking practice với Web Speech API + Gemini đánh giá
-- [ ] Thêm môn học: Khoa học, Tiếng Việt lớp 3
-- [ ] Notifications / reminders học theo lịch
+- [ ] Xây UI cho `(question-bank)` và `(exam-bank)` — hiện 2 route group này chưa có `page.tsx`, chỉ là tầng dữ liệu.
+- [ ] Hoàn thiện `lib/mastery/` (mới có `engine.ts` cơ bản) và `lib/adaptive/` (adaptive recommendation thật, hiện chỉ có sync engine).
+- [ ] Mở rộng pipeline OCR Quiz Text-Only cho các bài còn lại của sách SBT KHTN 7 (đã làm Bài 1–18, trang 1–49, 216 câu; tiếp theo Bài 19 trang 49; xem tiến độ chi tiết tại `docs/khtn7_sbt_progress.md`).
+- [ ] Xây màn hình "Lịch sử làm bài" riêng cho học sinh tự xem lại chi tiết các lần quiz đã làm (hiện dữ liệu chi tiết từng câu đã lưu trong `learning_sessions.summary_metrics.answers`, nhưng chưa có UI đọc lại — `/dashboard` và `/phu-huynh` chỉ hiện tóm tắt điểm, không hiện chi tiết câu).
+- [ ] Mở rộng role `teacher`/`admin`.
+
+<!-- Trigger Vercel Deploy: 2026-06-30T09:49:04.098Z -->

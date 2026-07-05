@@ -15,7 +15,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "BrightPath Academy | Grades 3 & 7",
+  title: "EduVerse | Khám Phá Vũ Trụ Tri Thức",
   description:
     "Student portal for lessons, schedules, videos, quizzes, and scores.",
 };
@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${outfit.variable} ${dmSans.variable}`}>
+    <html lang="en" className={`${outfit.variable} ${dmSans.variable}`} suppressHydrationWarning>
       <body className="min-h-dvh font-sans antialiased">{children}</body>
     </html>
   );

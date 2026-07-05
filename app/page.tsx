@@ -15,10 +15,10 @@ export default function HomePage() {
       <header className="relative z-10 mx-auto flex max-w-6xl items-center justify-between px-4 py-6 sm:px-6 lg:px-8">
         <div className="flex items-center gap-2">
           <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-600 text-lg font-bold text-white shadow-lg shadow-brand-600/25">
-            B
+            E
           </span>
           <span className="font-display text-xl font-semibold tracking-tight text-slate-900">
-            BrightPath
+            EduVerse
           </span>
         </div>
         <Link
