@@ -14,18 +14,88 @@ interface MultipleChoiceRendererProps {
   shuffle?: boolean;
   imageUrl?: string;
   audioText?: string;
+  audioUrl?: string;
 }
 
-function speak(text: string) {
-  if (typeof window === "undefined" || !window.speechSynthesis) return;
-  try {
+// Ưu tiên phát mp3 tĩnh (đã pre-generate bằng ElevenLabs, giọng cố định theo câu);
+// nếu không có file thì gọi ElevenLabs API động theo voiceRole; cuối cùng Web Speech API.
+async function playAudio(
+  audioUrl: string | undefined,
+  text: string | undefined,
+  voiceRole: string,
+  speed: number
+) {
+  if (typeof window === "undefined") return;
+
+  // Hủy âm thanh đang phát trước đó
+  if ((window as any).activeAudio) {
+    try {
+      (window as any).activeAudio.pause();
+    } catch (e) {}
+  }
+  if (window.speechSynthesis) {
     window.speechSynthesis.cancel();
-    const utt = new SpeechSynthesisUtterance(text);
-    utt.lang = "en-US";
-    utt.rate = 0.8;
-    window.speechSynthesis.speak(utt);
-  } catch (e) {
-    console.error("Speech play failed:", e);
+  }
+
+  // 1. ƯU TIÊN mp3 tĩnh đã tạo sẵn — giọng đã cố định theo câu.
+  if (audioUrl) {
+    try {
+      const audio = new Audio(audioUrl);
+      audio.playbackRate = speed;
+      (window as any).activeAudio = audio;
+      audio.play().catch((e) => console.error("Audio file play failed:", e));
+      return;
+    } catch (e) {
+      console.error("Audio file error:", e);
+    }
+  }
+
+  // 2. Không có file tĩnh -> gọi ElevenLabs API động theo voiceRole người dùng chọn
+  if (text) {
+    try {
+      const res = await fetch("/api/ai/tts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text, voiceRole }),
+      });
+      if (res.ok) {
+        const blob = await res.blob();
+        const url = URL.createObjectURL(blob);
+        const audio = new Audio(url);
+        audio.playbackRate = speed;
+        (window as any).activeAudio = audio;
+        audio.play().catch((e) => console.error("ElevenLabs audio play failed:", e));
+        return;
+      }
+    } catch (e) {
+      console.error("ElevenLabs dynamic TTS error, trying fallback...", e);
+    }
+  }
+
+  // 3. Fallback sang Web Speech API (trình duyệt)
+  if (text && window.speechSynthesis) {
+    try {
+      const utt = new SpeechSynthesisUtterance(text);
+      utt.lang = "en-US";
+      utt.rate = speed;
+      const voices = window.speechSynthesis.getVoices();
+      if (voices.length > 0) {
+        const isMale = voiceRole === "teacher_men" || voiceRole === "child_boy";
+        const matched = voices.find((v) => {
+          const name = v.name.toLowerCase();
+          return (
+            v.lang.startsWith("en") &&
+            (isMale
+              ? name.includes("male") || name.includes("david") || name.includes("google")
+              : name.includes("female") || name.includes("zira") || name.includes("google"))
+          );
+        });
+        if (matched) utt.voice = matched;
+      }
+      window.speechSynthesis.speak(utt);
+    } catch (e) {
+      console.error("Speech play failed:", e);
+    }
   }
 }
 
@@ -37,12 +107,27 @@ export function MultipleChoiceRenderer({
   disabled = false,
   shuffle = true,
   imageUrl,
-  audioText
+  audioText,
+  audioUrl
 }: MultipleChoiceRendererProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [shuffledOptions, setShuffledOptions] = useState<string[]>([]);
   const [actualCorrectIndex, setActualCorrectIndex] = useState<number>(0);
   const [initialized, setInitialized] = useState(false);
+
+  const [voiceRole, setVoiceRole] = useState<string>(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("tts-voice-role") || "teacher_women";
+    }
+    return "teacher_women";
+  });
+  const [speed, setSpeed] = useState<number>(() => {
+    if (typeof window !== "undefined") {
+      const val = localStorage.getItem("tts-speed");
+      return val ? parseFloat(val) : 1.0;
+    }
+    return 1.0;
+  });
 
   useEffect(() => {
     if (initialized) return;
@@ -60,10 +145,22 @@ export function MultipleChoiceRenderer({
   }, [options, correctIndex, initialized, shuffle]);
 
   useEffect(() => {
-    if (initialized && audioText) {
-      speak(audioText);
+    if (initialized && (audioUrl || audioText)) {
+      playAudio(audioUrl, audioText, voiceRole, speed);
     }
-  }, [initialized, audioText]);
+  }, [initialized, audioUrl, audioText]);
+
+  const changeVoice = (newRole: string) => {
+    setVoiceRole(newRole);
+    localStorage.setItem("tts-voice-role", newRole);
+    playAudio(audioUrl, audioText, newRole, speed);
+  };
+
+  const changeSpeed = (newSpeed: number) => {
+    setSpeed(newSpeed);
+    localStorage.setItem("tts-speed", newSpeed.toString());
+    playAudio(audioUrl, audioText, voiceRole, newSpeed);
+  };
 
   const handleSelect = (idx: number) => {
     if (disabled) return;
@@ -77,25 +174,70 @@ export function MultipleChoiceRenderer({
         {typeof question === 'string' ? formatText(question) : question}
       </div>
 
-      {audioText && (
-        <div className="flex items-center gap-3 py-1">
+      {(audioUrl || audioText) && (
+        <div className="flex flex-wrap items-center gap-3 py-2 bg-slate-900/30 p-3 rounded-2xl border border-white/5">
           <button
-            onClick={() => speak(audioText)}
+            onClick={() => playAudio(audioUrl, audioText, voiceRole, speed)}
             type="button"
             className="flex items-center gap-2 px-4 py-2 bg-sky-500 hover:bg-sky-400 text-white font-black rounded-xl shadow-[0_4px_0_rgb(14,165,233)] active:translate-y-0.5 active:shadow-none transition-all text-xs"
           >
             <Volume2 size={16} />
-            Nghe phát âm (Listen)
+            Nghe (Listen)
           </button>
+
+          <div className="flex items-center gap-1.5 bg-slate-950/60 p-1 rounded-xl border border-white/10 text-xs">
+            <span className="text-[10px] text-slate-400 font-bold px-1.5 uppercase">Giọng:</span>
+            {[
+              { id: "teacher_women", label: "Cô Giáo" },
+              { id: "teacher_men", label: "Thầy Giáo" },
+              { id: "child_girl", label: "Bé Gái" },
+              { id: "child_boy", label: "Bé Trai" }
+            ].map((v) => (
+              <button
+                key={v.id}
+                type="button"
+                onClick={() => changeVoice(v.id)}
+                className={`px-2 py-1 rounded-lg font-bold transition-all text-[11px] ${
+                  voiceRole === v.id
+                    ? "bg-sky-500 text-white shadow-sm"
+                    : "text-slate-400 hover:text-white"
+                }`}
+              >
+                {v.label}
+              </button>
+            ))}
+          </div>
+
+          <div className="flex items-center gap-1 bg-slate-950/60 p-1 rounded-xl border border-white/10 text-xs">
+            <span className="text-[10px] text-slate-400 font-bold px-1.5 uppercase">Tốc độ:</span>
+            {[
+              { val: 1.0, label: "x1" },
+              { val: 0.75, label: "x0.75" },
+              { val: 0.5, label: "x0.5" }
+            ].map((s) => (
+              <button
+                key={s.val}
+                type="button"
+                onClick={() => changeSpeed(s.val)}
+                className={`px-2.5 py-1 rounded-lg font-bold transition-all text-[11px] ${
+                  speed === s.val
+                    ? "bg-violet-500 text-white shadow-sm"
+                    : "text-slate-400 hover:text-white"
+                }`}
+              >
+                {s.label}
+              </button>
+            ))}
+          </div>
         </div>
       )}
 
       {imageUrl && (
         <div className="my-4 overflow-hidden rounded-2xl border border-white/10 bg-surface/50 flex justify-center p-4">
           {imageUrl.startsWith('<svg') ? (
-            <div 
-              className="max-h-[300px] w-full max-w-[400px] flex items-center justify-center text-white" 
-              dangerouslySetInnerHTML={{ __html: imageUrl }} 
+            <div
+              className="max-h-[300px] w-full max-w-[400px] flex items-center justify-center text-white"
+              dangerouslySetInnerHTML={{ __html: imageUrl }}
             />
           ) : (
             <img src={imageUrl} alt="Question Graphic" className="max-h-[300px] object-contain rounded-xl" />
@@ -108,7 +250,7 @@ export function MultipleChoiceRenderer({
           const isSelected = selectedIndex === idx;
           const isCorrect = idx === actualCorrectIndex;
           const showResult = disabled && (isSelected || isCorrect);
-          
+
           let borderClass = "border-line bg-surface/50 hover:bg-surface-raised hover:border-line cursor-pointer";
           if (disabled) {
             borderClass = "border-line bg-surface/50 opacity-50 cursor-not-allowed";
@@ -135,7 +277,7 @@ export function MultipleChoiceRenderer({
                 </span>
                 {formatText(option)}
               </div>
-              
+
               {showResult && isCorrect && <Check size={18} className="text-emerald-400" />}
               {showResult && isSelected && !isCorrect && <X size={18} className="text-rose-400" />}
             </button>

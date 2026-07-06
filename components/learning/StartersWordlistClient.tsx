@@ -34,35 +34,124 @@ export default function StartersWordlistClient({ initialPage = 1, backUrl = "/ho
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [isReadingText, setIsReadingText] = useState(false);
 
-  // Audio/TTS support (Web Speech API)
-  const handleTTS = () => {
-    if ('speechSynthesis' in window) {
-      if (isReadingText) {
-        window.speechSynthesis.cancel();
-        setIsReadingText(false);
-      } else {
-        const textToRead = activePage.content;
-        const utterance = new SpeechSynthesisUtterance(textToRead);
-        utterance.lang = 'en-US';
-        utterance.rate = 0.9;
-        
-        utterance.onend = () => {
-          setIsReadingText(false);
-        };
-        utterance.onerror = () => {
-          setIsReadingText(false);
-        };
+  // Trạng thái cấu hình giọng đọc & tốc độ (lưu trữ local)
+  const [voiceRole, setVoiceRole] = useState<string>(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("tts-voice-role") || "teacher_women";
+    }
+    return "teacher_women";
+  });
+  const [speed, setSpeed] = useState<number>(() => {
+    if (typeof window !== "undefined") {
+      const val = localStorage.getItem("tts-speed");
+      return val ? parseFloat(val) : 1.0;
+    }
+    return 1.0;
+  });
 
-        setIsReadingText(true);
-        window.speechSynthesis.speak(utterance);
+  const playPageAudio = async (text: string, voice: string, rate: number) => {
+    if (typeof window === "undefined") return;
+
+    // Hủy âm thanh đang phát trước đó
+    if ((window as any).activeAudio) {
+      try {
+        (window as any).activeAudio.pause();
+      } catch (e) {}
+    }
+    if (window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+    }
+
+    setIsReadingText(true);
+
+    try {
+      const res = await fetch("/api/ai/tts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text, voiceRole: voice }),
+      });
+      if (res.ok) {
+        const blob = await res.blob();
+        const url = URL.createObjectURL(blob);
+        const audio = new Audio(url);
+        audio.playbackRate = rate;
+        (window as any).activeAudio = audio;
+        audio.onended = () => setIsReadingText(false);
+        audio.onerror = () => setIsReadingText(false);
+        audio.play().catch((e) => {
+          console.error("ElevenLabs audio play failed:", e);
+          setIsReadingText(false);
+        });
+        return;
+      }
+    } catch (e) {
+      console.error("ElevenLabs dynamic TTS error, trying fallback...", e);
+    }
+
+    // Fallback sang Web Speech API (trình duyệt)
+    if (window.speechSynthesis) {
+      try {
+        const utt = new SpeechSynthesisUtterance(text);
+        utt.lang = "en-US";
+        utt.rate = rate;
+
+        utt.onend = () => setIsReadingText(false);
+        utt.onerror = () => setIsReadingText(false);
+
+        const voices = window.speechSynthesis.getVoices();
+        if (voices.length > 0) {
+          const isMale = voice === "teacher_men" || voice === "child_boy";
+          const matched = voices.find((v) => {
+            const name = v.name.toLowerCase();
+            return (
+              v.lang.startsWith("en") &&
+              (isMale
+                ? name.includes("male") || name.includes("david") || name.includes("google")
+                : name.includes("female") || name.includes("zira") || name.includes("google"))
+            );
+          });
+          if (matched) utt.voice = matched;
+        }
+
+        window.speechSynthesis.speak(utt);
+      } catch (e) {
+        console.error("Speech play failed:", e);
+        setIsReadingText(false);
       }
     } else {
-      alert("Trình duyệt của bạn không hỗ trợ tính năng phát âm giọng nói.");
+      setIsReadingText(false);
+    }
+  };
+
+  // Audio/TTS support (Web Speech API / ElevenLabs)
+  const handleTTS = () => {
+    if (isReadingText) {
+      if ((window as any).activeAudio) {
+        try {
+          (window as any).activeAudio.pause();
+        } catch (e) {}
+      }
+      if (window.speechSynthesis) {
+        window.speechSynthesis.cancel();
+      }
+      setIsReadingText(false);
+    } else {
+      const textToRead = activePage.content;
+      if (!textToRead || !textToRead.trim()) {
+        alert("Trang này không có văn bản tiếng Anh để đọc.");
+        return;
+      }
+      playPageAudio(textToRead, voiceRole, speed);
     }
   };
 
   // Stop speech synthesis on page change
   useEffect(() => {
+    if ((window as any).activeAudio) {
+      try {
+        (window as any).activeAudio.pause();
+      } catch (e) {}
+    }
     if ('speechSynthesis' in window) {
       window.speechSynthesis.cancel();
     }
@@ -205,23 +294,82 @@ export default function StartersWordlistClient({ initialPage = 1, backUrl = "/ho
 
         {/* RIGHT PANEL: Text Content & Interaction */}
         <div className="flex-1 flex flex-col bg-surface overflow-y-auto p-6 md:p-8 space-y-6">
-          <div className="border-b border-line pb-4 flex justify-between items-start">
+          <div className="border-b border-line pb-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
               <span className="text-[10px] font-bold text-sky-400 uppercase tracking-widest block">Nội dung học tập</span>
               <h2 className="text-xl font-extrabold text-white mt-1">Trang {activePage.pageNumber}</h2>
             </div>
             
-            <button
-              onClick={handleTTS}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-black text-xs uppercase tracking-wide transition-all active:scale-95 duration-150 border ${
-                isReadingText
-                  ? "bg-rose-500/20 border-rose-500 text-rose-400 hover:bg-rose-500/30"
-                  : "bg-sky-500/10 border-sky-500/30 text-sky-400 hover:bg-sky-500/20"
-              }`}
-            >
-              <Volume2 size={14} className={isReadingText ? "animate-bounce" : ""} />
-              {isReadingText ? "Dừng Đọc" : "Đọc tiếng Anh"}
-            </button>
+            <div className="flex flex-wrap items-center gap-3">
+              <button
+                onClick={handleTTS}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl font-black text-xs uppercase tracking-wide transition-all active:scale-95 duration-150 border ${
+                  isReadingText
+                    ? "bg-rose-500/20 border-rose-500 text-rose-400 hover:bg-rose-500/30"
+                    : "bg-sky-500/10 border-sky-500/30 text-sky-400 hover:bg-sky-500/20"
+                }`}
+              >
+                <Volume2 size={14} className={isReadingText ? "animate-bounce" : ""} />
+                {isReadingText ? "Dừng Đọc" : "Đọc tiếng Anh"}
+              </button>
+
+              {/* Giọng đọc selector */}
+              <div className="flex items-center gap-1 bg-surface-raised p-1 rounded-xl border border-line text-xs">
+                {[
+                  { id: "teacher_women", label: "Cô" },
+                  { id: "teacher_men", label: "Thầy" },
+                  { id: "child_girl", label: "Bé Gái" },
+                  { id: "child_boy", label: "Bé Trai" }
+                ].map((v) => (
+                  <button
+                    key={v.id}
+                    type="button"
+                    onClick={() => {
+                      setVoiceRole(v.id);
+                      localStorage.setItem("tts-voice-role", v.id);
+                      if (isReadingText && activePage.content.trim()) {
+                        playPageAudio(activePage.content, v.id, speed);
+                      }
+                    }}
+                    className={`px-2 py-0.5 rounded-lg font-bold transition-all text-[10px] ${
+                      voiceRole === v.id
+                        ? "bg-sky-500 text-white shadow-sm"
+                        : "text-slate-400 hover:text-white"
+                    }`}
+                  >
+                    {v.label}
+                  </button>
+                ))}
+              </div>
+
+              {/* Tốc độ selector */}
+              <div className="flex items-center gap-1 bg-surface-raised p-1 rounded-xl border border-line text-xs">
+                {[
+                  { val: 1.0, label: "x1" },
+                  { val: 0.75, label: "x0.75" },
+                  { val: 0.5, label: "x0.5" }
+                ].map((s) => (
+                  <button
+                    key={s.val}
+                    type="button"
+                    onClick={() => {
+                      setSpeed(s.val);
+                      localStorage.setItem("tts-speed", s.val.toString());
+                      if (isReadingText && activePage.content.trim()) {
+                        playPageAudio(activePage.content, voiceRole, s.val);
+                      }
+                    }}
+                    className={`px-2 py-0.5 rounded-lg font-bold transition-all text-[10px] ${
+                      speed === s.val
+                        ? "bg-violet-500 text-white shadow-sm"
+                        : "text-slate-400 hover:text-white"
+                    }`}
+                  >
+                    {s.label}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* Book text details */}
