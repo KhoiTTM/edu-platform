@@ -1,5 +1,4 @@
 {
-  "_comment": "Ngân hàng ÔN LÝ THUYẾT Toán 7 - Tập 1, thiết kế THEO CẶP DỄ NHỚ: mỗi khái niệm gồm 2 câu liền kề - câu lý thuyết (matching/fill_blank, câu hỏi gợi hình ảnh liên tưởng) rồi ngay câu áp dụng (multiple_choice), cả hai đều có mẹo nhớ trong explanation. 45 cặp (90 câu) rải đều+lặp vào 10 đề x 20 câu (10 cặp/đề).",
   "collection": {
     "title": "Toán 7 - Ôn Lý Thuyết Tập 1",
     "subject_slug": "toan",
@@ -135,7 +134,7 @@
         },
         {
           "type": "fill_blank",
-          "difficulty": 2.0,
+          "difficulty": 2,
           "metadata_json": {
             "question": "Mẹo 'đường LÊN dốc = giá trị TĂNG, đường XUỐNG dốc = giá trị GIẢM': Nếu đoạn nối đi lên thì đại lượng đang ___.",
             "choices": [
@@ -154,7 +153,7 @@
         },
         {
           "type": "multiple_choice",
-          "difficulty": 2.0,
+          "difficulty": 2,
           "metadata_json": {
             "question": "Áp dụng: Biểu đồ nhiệt độ có đoạn từ tháng 1 (20°C) đến tháng 2 (18°C) đi xuống dốc. Điều này thể hiện gì?",
             "options": [
@@ -249,7 +248,7 @@
         },
         {
           "type": "fill_blank",
-          "difficulty": 2.0,
+          "difficulty": 2,
           "metadata_json": {
             "question": "Mẹo 'miếng bánh to hơn = tỉ lệ cao hơn': Phần có tỉ lệ % lớn hơn thì có diện tích hình quạt ___ hơn.",
             "choices": [
@@ -268,7 +267,7 @@
         },
         {
           "type": "multiple_choice",
-          "difficulty": 2.0,
+          "difficulty": 2,
           "metadata_json": {
             "question": "Áp dụng: Khảo sát môn yêu thích: Toán 40%, Văn 25%, Anh 35%. 'Miếng bánh' to nhất (được yêu thích nhất) là môn nào?",
             "options": [
@@ -285,6 +284,127 @@
             ]
           }
         },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Mẹo 'nằm TRÊN đường thẳng thì THUỘC': Nếu điểm A nằm trên đường thẳng d, ta nói điểm A ___ đường thẳng d.",
+            "choices": [
+              "thuộc",
+              "không thuộc",
+              "song song",
+              "trùng với"
+            ],
+            "correct_answer": "thuộc",
+            "explanation": "Điểm nằm trên đường thẳng thì thuộc đường thẳng đó. Ký hiệu là $A \\in d$.",
+            "tags": [
+              "hinh-hoc-6",
+              "diem-duong-thang"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Áp dụng: Cho điểm M nằm trên đường thẳng a. Ký hiệu toán học nào sau đây mô tả đúng quan hệ này?",
+            "options": [
+              "$M \\in a$",
+              "$M \\notin a$",
+              "$M \\subset a$",
+              "$a \\in M$"
+            ],
+            "correct_index": 0,
+            "explanation": "Vì M nằm trên đường thẳng a nên M thuộc a, ký hiệu là $M \\in a$.",
+            "tags": [
+              "hinh-hoc-6",
+              "diem-duong-thang"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Mẹo 'cùng đi trên MỘT con đường thẳng': Khi ba điểm cùng thuộc một ___ , ta nói chúng thẳng hàng.",
+            "choices": [
+              "đường thẳng",
+              "đường cong",
+              "đoạn thẳng",
+              "tia"
+            ],
+            "correct_answer": "đường thẳng",
+            "explanation": "Ba điểm thẳng hàng khi và chỉ khi chúng cùng nằm trên một đường thẳng.",
+            "tags": [
+              "hinh-hoc-6",
+              "ba-diem-thang-hang"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Áp dụng: Cho ba điểm A, B, C cùng nằm trên đường thẳng xy. Phát biểu nào sau đây là chính xác nhất?",
+            "options": [
+              "Ba điểm A, B, C thẳng hàng",
+              "Ba điểm A, B, C không thẳng hàng",
+              "Điểm B nằm giữa A và C",
+              "Đường thẳng xy đi qua hai điểm A và B nhưng không qua C"
+            ],
+            "correct_index": 0,
+            "explanation": "Vì cả ba điểm A, B, C đều thuộc đường thẳng xy nên chúng thẳng hàng theo định nghĩa.",
+            "tags": [
+              "hinh-hoc-6",
+              "ba-diem-thang-hang"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Mẹo 'đường thẳng bị chặn một đầu bởi điểm GỐC': Hình gồm điểm O và một phần đường thẳng bị chia bởi điểm O gọi là một ___ gốc O.",
+            "choices": [
+              "tia",
+              "đoạn thẳng",
+              "đường thẳng",
+              "góc"
+            ],
+            "correct_answer": "tia",
+            "explanation": "Tia gốc O (hay nửa đường thẳng gốc O) là hình gồm điểm O và một phần đường thẳng bị chia ra bởi điểm O.",
+            "tags": [
+              "hinh-hoc-6",
+              "tia"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Áp dụng: Cho điểm O nằm trên đường thẳng xy. Khi đó, Ox và Oy là hai tia có tính chất gì đặc biệt?",
+            "options": [
+              "Hai tia đối nhau",
+              "Hai tia trùng nhau",
+              "Hai tia vuông góc",
+              "Hai tia song song"
+            ],
+            "correct_index": 0,
+            "explanation": "Ox và Oy chung gốc O và tạo thành đường thẳng xy nên chúng là hai tia đối nhau.",
+            "tags": [
+              "hinh-hoc-6",
+              "tia"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 2,
+      "title": "Ôn lý thuyết - Đề số 2",
+      "duration_minutes": 30,
+      "questions": [
         {
           "type": "multiple_choice",
           "difficulty": 1.6,
@@ -398,14 +518,7 @@
               "tam-giac-deu"
             ]
           }
-        }
-      ]
-    },
-    {
-      "exam_number": 2,
-      "title": "Ôn lý thuyết - Đề số 2",
-      "duration_minutes": 30,
-      "questions": [
+        },
         {
           "type": "multiple_choice",
           "difficulty": 1.3,
@@ -446,7 +559,7 @@
         },
         {
           "type": "fill_blank",
-          "difficulty": 2.0,
+          "difficulty": 2,
           "metadata_json": {
             "question": "Mẹo 'cả cái bánh pizza tròn = 100%': Biểu đồ quạt tròn so sánh các phần trong toàn bộ, tổng các phần luôn bằng ___%.",
             "choices": [
@@ -465,7 +578,7 @@
         },
         {
           "type": "multiple_choice",
-          "difficulty": 2.0,
+          "difficulty": 2,
           "metadata_json": {
             "question": "Áp dụng: Biểu đồ quạt tròn có 3 phần 30%, 45%, và phần còn lại. 'Miếng bánh' còn lại chiếm bao nhiêu %?",
             "options": [
@@ -560,7 +673,128 @@
         },
         {
           "type": "fill_blank",
-          "difficulty": 1.0,
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Mẹo 'góc bẹt rộng thẳng cánh như đường thẳng': Góc có số đo bằng $180^\\circ$ gọi là góc ___.",
+            "choices": [
+              "bẹt",
+              "vuông",
+              "nhọn",
+              "tù"
+            ],
+            "correct_answer": "bẹt",
+            "explanation": "Góc bẹt có hai cạnh là hai tia đối nhau và có số đo bằng $180^\\circ$.",
+            "tags": [
+              "hinh-hoc-6",
+              "cac-loai-goc"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Áp dụng: Một góc vuông có số đo bằng $90^\\circ$. Góc xOy có số đo bằng $135^\\circ$ thì được phân loại là góc gì?",
+            "options": [
+              "Góc tù",
+              "Góc nhọn",
+              "Góc vuông",
+              "Góc bẹt"
+            ],
+            "correct_index": 0,
+            "explanation": "Vì $90^\\circ < 135^\\circ < 180^\\circ$ nên góc xOy là góc tù.",
+            "tags": [
+              "hinh-hoc-6",
+              "cac-loai-goc"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Mẹo 'chia đôi đoạn thẳng THÀNH HAI PHẦN BẰNG NHAU': Trung điểm của đoạn thẳng chia đoạn thẳng đó thành hai phần ___.",
+            "choices": [
+              "bằng nhau",
+              "khác nhau",
+              "đối nhau",
+              "vuông góc"
+            ],
+            "correct_answer": "bằng nhau",
+            "explanation": "Trung điểm M của đoạn thẳng AB là điểm nằm giữa A, B và cách đều A, B ($MA = MB$).",
+            "tags": [
+              "hinh-hoc-6",
+              "trung-diem"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Áp dụng: Cho M là trung điểm của đoạn thẳng AB có độ dài bằng $8\\text{ cm}$. Tính độ dài đoạn thẳng AM.",
+            "options": [
+              "$4\\text{ cm}$",
+              "$8\\text{ cm}$",
+              "$2\\text{ cm}$",
+              "$16\\text{ cm}$"
+            ],
+            "correct_index": 0,
+            "explanation": "Vì M là trung điểm của AB nên $AM = MB = AB : 2 = 8 : 2 = 4\\text{ cm}$.",
+            "tags": [
+              "hinh-hoc-6",
+              "trung-diem"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Mẹo 'chia cả tử và mẫu cho ƯỚC CHUNG để gọn hơn': Muốn rút gọn phân số, ta chia cả tử và mẫu cho một ___ chung (khác 1 và -1).",
+            "choices": [
+              "ước",
+              "bội",
+              "tổng",
+              "hiệu"
+            ],
+            "correct_answer": "ước",
+            "explanation": "Rút gọn phân số bằng cách chia cả tử và mẫu cho ước chung lớn hơn 1 hoặc nhỏ hơn -1.",
+            "tags": [
+              "so-hoc-6",
+              "rut-gon-phan-so"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Áp dụng: Rút gọn phân số $\\frac{15}{25}$ về dạng tối giản.",
+            "options": [
+              "$\\frac{3}{5}$",
+              "$\\frac{5}{3}$",
+              "$\\frac{1}{2}$",
+              "$\\frac{3}{4}$"
+            ],
+            "correct_index": 0,
+            "explanation": "Chia cả tử và mẫu của $\\frac{15}{25}$ cho $ƯCLN(15, 25) = 5$, ta được $\\frac{3}{5}$.",
+            "tags": [
+              "so-hoc-6",
+              "rut-gon-phan-so"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 3,
+      "title": "Ôn lý thuyết - Đề số 3",
+      "duration_minutes": 30,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
           "metadata_json": {
             "question": "Trong phân số $\\dfrac{a}{b}$, mẫu số b giống như 'số người chia bánh' — không bao giờ được ___.",
             "choices": [
@@ -579,7 +813,7 @@
         },
         {
           "type": "multiple_choice",
-          "difficulty": 1.0,
+          "difficulty": 1,
           "metadata_json": {
             "question": "Áp dụng: Biểu thức nào 'chia bánh cho 0 người' — KHÔNG hợp lệ?",
             "options": [
@@ -598,7 +832,7 @@
         },
         {
           "type": "matching",
-          "difficulty": 2.0,
+          "difficulty": 2,
           "metadata_json": {
             "question": "Nối phương pháp thu thập dữ liệu với ví dụ — mẹo 'nhìn = quan sát, làm = thí nghiệm, hỏi giấy = khảo sát, hỏi miệng = phỏng vấn':",
             "pairs": [
@@ -627,7 +861,7 @@
         },
         {
           "type": "multiple_choice",
-          "difficulty": 2.0,
+          "difficulty": 2,
           "metadata_json": {
             "question": "Áp dụng: Muốn biết chiều cao trung bình học sinh lớp 7A, nên 'đo trực tiếp' bằng phương pháp nào?",
             "options": [
@@ -728,7 +962,7 @@
         },
         {
           "type": "multiple_choice",
-          "difficulty": 1.0,
+          "difficulty": 1,
           "metadata_json": {
             "question": "Mỗi số hữu tỉ đứng soi gương qua điểm 0 sẽ gặp bao nhiêu 'người anh em song sinh trái dấu' (số đối)?",
             "options": [
@@ -747,7 +981,7 @@
         },
         {
           "type": "multiple_choice",
-          "difficulty": 1.0,
+          "difficulty": 1,
           "metadata_json": {
             "question": "Áp dụng: 'Soi gương' số $\\dfrac{-2}{7}$ qua điểm 0, ta được số đối là:",
             "options": [
@@ -807,17 +1041,10 @@
               "tam-giac-bang-nhau"
             ]
           }
-        }
-      ]
-    },
-    {
-      "exam_number": 3,
-      "title": "Ôn lý thuyết - Đề số 3",
-      "duration_minutes": 30,
-      "questions": [
+        },
         {
           "type": "multiple_choice",
-          "difficulty": 2.0,
+          "difficulty": 2,
           "metadata_json": {
             "question": "Mẹo 'LƯỢNG = là số đếm/đo được, TÍNH = chỉ là tính chất/tên gọi' — Dữ liệu định lượng là loại nào?",
             "options": [
@@ -836,7 +1063,7 @@
         },
         {
           "type": "multiple_choice",
-          "difficulty": 2.0,
+          "difficulty": 2,
           "metadata_json": {
             "question": "Áp dụng: Trong 'chiều cao (cm)', 'màu áo yêu thích', 'điểm kiểm tra' — cái nào KHÔNG phải dữ liệu định lượng?",
             "options": [
@@ -853,6 +1080,127 @@
             ]
           }
         },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Mẹo 'CÙNG MẪU thì ta CỘNG TỬ và GIỮ MẪU': Muốn cộng hai phân số cùng mẫu, ta cộng các tử và ___ mẫu số.",
+            "choices": [
+              "giữ nguyên",
+              "cộng",
+              "nhân",
+              "bỏ"
+            ],
+            "correct_answer": "giữ nguyên",
+            "explanation": "Công thức: $\\frac{a}{m} + \\frac{b}{m} = \\frac{a+b}{m}$. Mẫu số luôn giữ nguyên.",
+            "tags": [
+              "so-hoc-6",
+              "cong-phan-so"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Áp dụng: Tính giá trị của phép tính: $\\frac{-5}{7} + \\frac{2}{7}$.",
+            "options": [
+              "$\\frac{-3}{7}$",
+              "$\\frac{-7}{7}$",
+              "$\\frac{3}{7}$",
+              "$\\frac{-3}{14}$"
+            ],
+            "correct_index": 0,
+            "explanation": "Cộng hai tử số: $-5 + 2 = -3$. Giữ nguyên mẫu là 7, ta được $\\frac{-3}{7}$.",
+            "tags": [
+              "so-hoc-6",
+              "cong-phan-so"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Mẹo 'trước ngoặc là dấu CỘNG (+) thì trong ngoặc GIỮ NGUYÊN': Khi bỏ ngoặc có dấu '+' đằng trước, ta ___ dấu của các số hạng bên trong.",
+            "choices": [
+              "giữ nguyên",
+              "đổi",
+              "nhân đôi",
+              "triệt tiêu"
+            ],
+            "correct_answer": "giữ nguyên",
+            "explanation": "Quy tắc dấu ngoặc: $a + (b - c) = a + b - c$. Dấu các số hạng trong ngoặc không thay đổi.",
+            "tags": [
+              "so-hoc-6",
+              "dau-ngoac"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Áp dụng: Khi bỏ dấu ngoặc của biểu thức $X + (Y - Z)$, ta thu được kết quả nào sau đây?",
+            "options": [
+              "$X + Y - Z$",
+              "$X + Y + Z$",
+              "$X - Y + Z$",
+              "$X - Y - Z$"
+            ],
+            "correct_index": 0,
+            "explanation": "Đằng trước ngoặc là dấu '+' nên ta giữ nguyên các dấu trong ngoặc: $+Y$ và $-Z$. Biểu thức là $X + Y - Z$.",
+            "tags": [
+              "so-hoc-6",
+              "dau-ngoac"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Mẹo 'trái dấu nhân nhau ra kết quả ÂM': Tích của hai số nguyên khác dấu luôn là một số nguyên ___.",
+            "choices": [
+              "âm",
+              "dương",
+              "bằng 0",
+              "lớn hơn 1"
+            ],
+            "correct_answer": "âm",
+            "explanation": "Số nguyên dương nhân số nguyên âm (hoặc ngược lại) luôn có kết quả là số nguyên âm.",
+            "tags": [
+              "so-hoc-6",
+              "nhan-so-nguyen"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Áp dụng: Thực hiện phép nhân sau: $(-8) \\cdot 6$.",
+            "options": [
+              "$-48$",
+              "$48$",
+              "$-14$",
+              "$14$"
+            ],
+            "correct_index": 0,
+            "explanation": "Hai số khác dấu nhân nhau ra âm: $-(8 \\cdot 6) = -48$.",
+            "tags": [
+              "so-hoc-6",
+              "nhan-so-nguyen"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 4,
+      "title": "Ôn lý thuyết - Đề số 4",
+      "duration_minutes": 30,
+      "questions": [
         {
           "type": "fill_blank",
           "difficulty": 1.8,
@@ -888,82 +1236,6 @@
             "tags": [
               "bai13-14",
               "ccc"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.0,
-          "metadata_json": {
-            "question": "Mỗi số hữu tỉ đứng soi gương qua điểm 0 sẽ gặp bao nhiêu 'người anh em song sinh trái dấu' (số đối)?",
-            "options": [
-              "Một số đối duy nhất",
-              "Hai số đối",
-              "Không có số đối",
-              "Vô số số đối"
-            ],
-            "correct_index": 0,
-            "explanation": "Mỗi số hữu tỉ có đúng 1 số đối. Meo nhớ: soi gương qua điểm 0 chỉ cho ra đúng 1 ảnh — đổi dấu, giữ nguyên giá trị tuyệt đối.",
-            "tags": [
-              "bai1",
-              "so-doi"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.0,
-          "metadata_json": {
-            "question": "Áp dụng: 'Soi gương' số $\\dfrac{-2}{7}$ qua điểm 0, ta được số đối là:",
-            "options": [
-              "$\\dfrac{2}{7}$",
-              "$\\dfrac{-2}{7}$",
-              "$\\dfrac{7}{2}$",
-              "$\\dfrac{-7}{2}$"
-            ],
-            "correct_index": 0,
-            "explanation": "Chỉ đổi dấu, giữ nguyên giá trị tuyệt đối: số đối của $\\dfrac{-2}{7}$ là $\\dfrac{2}{7}$.",
-            "tags": [
-              "bai1",
-              "so-doi"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 1.9,
-          "metadata_json": {
-            "question": "Mẹo 'CÂN = 2 bên CÂN bằng nhau như cái cân đĩa': Tam giác cân có ___ cạnh bên bằng nhau.",
-            "choices": [
-              "hai",
-              "ba",
-              "bốn",
-              "không"
-            ],
-            "correct_answer": "hai",
-            "explanation": "Tam giác cân có hai cạnh bên bằng nhau và hai góc ở đáy bằng nhau — như 2 đĩa cân thăng bằng.",
-            "tags": [
-              "bai16",
-              "tam-giac-can"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.9,
-          "metadata_json": {
-            "question": "Áp dụng: Tam giác ABC cân tại A, góc đỉnh A = 40°. Mỗi góc đáy (2 bên 'cân bằng nhau') là bao nhiêu?",
-            "options": [
-              "70°",
-              "40°",
-              "140°",
-              "80°"
-            ],
-            "correct_index": 0,
-            "explanation": "Tổng 2 góc đáy = 180° - 40° = 140°, hai góc đáy bằng nhau nên mỗi góc = 70°.",
-            "tags": [
-              "bai16",
-              "tam-giac-can"
             ]
           }
         },
@@ -1194,100 +1466,128 @@
               "so-thuc"
             ]
           }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Mẹo 'chia phân số = nhân với NGHỊCH ĐẢO': Muốn chia một phân số cho một phân số khác 0, ta nhân phân số thứ nhất với phân số ___ của phân số thứ hai.",
+            "choices": [
+              "nghịch đảo",
+              "đối",
+              "tương đương",
+              "lớn hơn"
+            ],
+            "correct_answer": "nghịch đảo",
+            "explanation": "Công thức chia phân số: $\\frac{a}{b} : \\frac{c}{d} = \\frac{a}{b} \\cdot \\frac{d}{c}$.",
+            "tags": [
+              "so-hoc-6",
+              "chia-phan-so"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Áp dụng: Kết quả của phép tính $\\frac{3}{4} : \\frac{5}{2}$ là phân số nào?",
+            "options": [
+              "$\\frac{3}{10}$",
+              "$\\frac{15}{8}$",
+              "$\\frac{10}{3}$",
+              "$\\frac{8}{15}$"
+            ],
+            "correct_index": 0,
+            "explanation": "Ta nhân nghịch đảo: $\\frac{3}{4} \\cdot \\frac{2}{5} = \\frac{6}{20} = \\frac{3}{10}$.",
+            "tags": [
+              "so-hoc-6",
+              "chia-phan-so"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Mẹo 'nhân hai lũy thừa cùng cơ số thì CỘNG MŨ': Khi nhân hai lũy thừa cùng cơ số, ta giữ nguyên cơ số và ___ các số mũ.",
+            "choices": [
+              "cộng",
+              "trừ",
+              "nhân",
+              "chia"
+            ],
+            "correct_answer": "cộng",
+            "explanation": "Công thức: $a^m \\cdot a^n = a^{m+n}$. Ta cộng số mũ lại với nhau.",
+            "tags": [
+              "so-hoc-6",
+              "luy-thua"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Áp dụng: Viết tích $5^3 \\cdot 5^4$ dưới dạng một lũy thừa duy nhất.",
+            "options": [
+              "$5^7$",
+              "$5^{12}$",
+              "$25^7$",
+              "$10^7$"
+            ],
+            "correct_index": 0,
+            "explanation": "Giữ nguyên cơ số 5 và cộng số mũ: $3 + 4 = 7$. Kết quả là $5^7$.",
+            "tags": [
+              "so-hoc-6",
+              "luy-thua"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Mẹo 'chia hai lũy thừa cùng cơ số thì TRỪ MŨ': Khi chia hai lũy thừa cùng cơ số (khác 0), ta giữ nguyên cơ số và ___ các số mũ.",
+            "choices": [
+              "trừ",
+              "cộng",
+              "nhân",
+              "chia"
+            ],
+            "correct_answer": "trừ",
+            "explanation": "Công thức: $a^m : a^n = a^{m-n}$ (với $a \\neq 0$, $m \\ge n$). Ta trừ số mũ.",
+            "tags": [
+              "so-hoc-6",
+              "luy-thua"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Áp dụng: Kết quả phép tính $2^8 : 2^3$ dưới dạng một lũy thừa là:",
+            "options": [
+              "$2^5$",
+              "$2^{11}$",
+              "$2^{24}$",
+              "$1^5$"
+            ],
+            "correct_index": 0,
+            "explanation": "Giữ nguyên cơ số 2 và lấy số mũ trừ nhau: $8 - 3 = 5$, ta được $2^5$.",
+            "tags": [
+              "so-hoc-6",
+              "luy-thua"
+            ]
+          }
         }
       ]
     },
     {
-      "exam_number": 4,
-      "title": "Ôn lý thuyết - Đề số 4",
+      "exam_number": 5,
+      "title": "Ôn lý thuyết - Đề số 5",
       "duration_minutes": 30,
       "questions": [
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.6,
-          "metadata_json": {
-            "question": "Hai góc 'soi gương chéo nhau qua tâm giao điểm' (đối đỉnh) có tính chất gì?",
-            "options": [
-              "Bằng nhau",
-              "Bù nhau",
-              "Phụ nhau",
-              "Kề nhau"
-            ],
-            "correct_index": 0,
-            "explanation": "Hai góc đối đỉnh luôn bằng nhau — như 2 hình phản chiếu qua tâm.",
-            "tags": [
-              "bai8",
-              "goc-doi-dinh-2"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.6,
-          "metadata_json": {
-            "question": "Áp dụng: Hai đường thẳng cắt nhau tạo 4 góc, một góc bằng 35°. Góc 'soi gương chéo' với nó bằng bao nhiêu?",
-            "options": [
-              "35°",
-              "145°",
-              "70°",
-              "55°"
-            ],
-            "correct_index": 0,
-            "explanation": "Hai góc đối đỉnh luôn bằng nhau, nên góc đối đỉnh cũng bằng 35°.",
-            "tags": [
-              "bai8",
-              "goc-doi-dinh-2"
-            ]
-          }
-        },
-        {
-          "type": "matching",
-          "difficulty": 2.0,
-          "metadata_json": {
-            "question": "Nối phương pháp thu thập dữ liệu với ví dụ — mẹo 'nhìn = quan sát, làm = thí nghiệm, hỏi giấy = khảo sát, hỏi miệng = phỏng vấn':",
-            "pairs": [
-              {
-                "left": "Quan sát trực tiếp",
-                "right": "Đếm số xe qua ngã tư trong 1 giờ"
-              },
-              {
-                "left": "Làm thí nghiệm",
-                "right": "Đo thời gian rơi của vật ở các độ cao khác nhau"
-              },
-              {
-                "left": "Lập bảng câu hỏi khảo sát",
-                "right": "Phát phiếu hỏi sở thích môn học cho cả lớp"
-              },
-              {
-                "left": "Phỏng vấn trực tiếp",
-                "right": "Hỏi trực tiếp ý kiến của hiệu trưởng"
-              }
-            ],
-            "tags": [
-              "bai17",
-              "thu-thap-du-lieu"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 2.0,
-          "metadata_json": {
-            "question": "Áp dụng: Muốn biết chiều cao trung bình học sinh lớp 7A, nên 'đo trực tiếp' bằng phương pháp nào?",
-            "options": [
-              "Đo trực tiếp (quan sát/thí nghiệm)",
-              "Phỏng vấn phụ huynh",
-              "Đoán dựa trên lớp khác",
-              "Không cần thu thập"
-            ],
-            "correct_index": 0,
-            "explanation": "Đo chiều cao thực tế từng học sinh là phương pháp quan sát/đo đạc trực tiếp, chính xác nhất.",
-            "tags": [
-              "bai17",
-              "thu-thap-du-lieu"
-            ]
-          }
-        },
         {
           "type": "fill_blank",
           "difficulty": 1.1,
@@ -1403,46 +1703,8 @@
           }
         },
         {
-          "type": "fill_blank",
-          "difficulty": 1.5,
-          "metadata_json": {
-            "question": "Mẹo 'PHÂN GIÁC = cắt đôi cái GIÁC (góc) như cắt bánh pizza': tia nằm giữa 2 cạnh của góc, tạo với 2 cạnh đó hai góc ___.",
-            "choices": [
-              "bằng nhau",
-              "kề bù",
-              "đối đỉnh",
-              "phụ nhau"
-            ],
-            "correct_answer": "bằng nhau",
-            "explanation": "Tia phân giác chia góc thành 2 phần bằng nhau — giống cắt đôi miếng bánh pizza hình quạt.",
-            "tags": [
-              "bai8",
-              "tia-phan-giac"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.6,
-          "metadata_json": {
-            "question": "Áp dụng: 'Cắt đôi' góc xOy = 80° bằng tia phân giác Ot. Góc xOt (một nửa) bằng bao nhiêu?",
-            "options": [
-              "40°",
-              "80°",
-              "160°",
-              "20°"
-            ],
-            "correct_index": 0,
-            "explanation": "Tia phân giác chia góc thành hai góc bằng nhau: 80° : 2 = 40°.",
-            "tags": [
-              "bai8",
-              "tia-phan-giac"
-            ]
-          }
-        },
-        {
           "type": "matching",
-          "difficulty": 2.0,
+          "difficulty": 2,
           "metadata_json": {
             "question": "Nối loại dữ liệu không phải số — mẹo 'xếp được thứ hạng = sắp thứ tự được, chỉ là tên gọi = không sắp được':",
             "pairs": [
@@ -1463,7 +1725,7 @@
         },
         {
           "type": "multiple_choice",
-          "difficulty": 2.0,
+          "difficulty": 2,
           "metadata_json": {
             "question": "Áp dụng: Dữ liệu 'xếp loại học lực: Giỏi, Khá, Trung bình, Yếu' (có thể xếp hạng cao thấp) thuộc loại nào?",
             "options": [
@@ -1593,52 +1855,128 @@
               "gia-tri-tuyet-doi-2"
             ]
           }
-        }
-      ]
-    },
-    {
-      "exam_number": 5,
-      "title": "Ôn lý thuyết - Đề số 5",
-      "duration_minutes": 30,
-      "questions": [
+        },
         {
           "type": "fill_blank",
-          "difficulty": 1.4,
+          "difficulty": 1.6,
           "metadata_json": {
-            "question": "Mẹo: 'dương thì giữ nguyên, âm thì lột dấu' — $|x| = x$ khi $x$ ___ 0.",
+            "question": "Mẹo 'số nào mũ 0 cũng bằng MỘT': Mọi số tự nhiên khác 0 lũy thừa mũ 0 đều bằng ___.",
             "choices": [
-              "≥",
-              "<",
-              "=",
-              "≠"
+              "1",
+              "0",
+              "chính nó",
+              "vô số"
             ],
-            "correct_answer": "≥",
-            "explanation": "|x| = x nếu x ≥ 0 (giữ nguyên vì đã không âm) và |x| = -x nếu x < 0 (lột dấu âm đi).",
+            "correct_answer": "1",
+            "explanation": "Theo quy ước toán học, $a^0 = 1$ với mọi $a \\neq 0$.",
             "tags": [
-              "bai7",
-              "gia-tri-tuyet-doi-2"
+              "so-hoc-6",
+              "luy-thua"
             ]
           }
         },
         {
           "type": "multiple_choice",
-          "difficulty": 1.4,
+          "difficulty": 1.6,
           "metadata_json": {
-            "question": "Áp dụng: '|x|=a có 2 đáp số vì đo khoảng cách không phân biệt hướng' — Tìm x biết $|x| = 9$.",
+            "question": "Áp dụng: Tính giá trị của biểu thức sau: $A = 2026^0 + 7^1$.",
             "options": [
-              "$x = 9$ hoặc $x = -9$",
-              "$x = 9$",
-              "$x = -9$",
-              "$x = 81$"
+              "8",
+              "1",
+              "2033",
+              "2027"
             ],
             "correct_index": 0,
-            "explanation": "Cả 9 và -9 đều cách 0 đúng 9 đơn vị, nên |x|=9 (9≥0) có hai nghiệm: x=9 hoặc x=-9.",
+            "explanation": "Ta có $2026^0 = 1$ và $7^1 = 7$. Do đó $A = 1 + 7 = 8$.",
             "tags": [
-              "bai7",
-              "gia-tri-tuyet-doi-2"
+              "so-hoc-6",
+              "luy-thua"
             ]
           }
         },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Mẹo 'lũy thừa chồng lũy thừa thì NHÂN MŨ': Khi tính lũy thừa của một lũy thừa, ta giữ nguyên cơ số và ___ các số mũ với nhau.",
+            "choices": [
+              "nhân",
+              "cộng",
+              "trừ",
+              "chia"
+            ],
+            "correct_answer": "nhân",
+            "explanation": "Công thức: $(a^m)^n = a^{m \\cdot n}$. Ta nhân hai số mũ lại.",
+            "tags": [
+              "so-hoc-6",
+              "luy-thua"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Áp dụng: Viết biểu thức $(3^2)^4$ dưới dạng một lũy thừa cơ số 3.",
+            "options": [
+              "$3^8$",
+              "$3^6$",
+              "$9^4$",
+              "$3^{16}$"
+            ],
+            "correct_index": 0,
+            "explanation": "Giữ nguyên cơ số 3 và nhân hai số mũ: $2 \\cdot 4 = 8$. Kết quả là $3^8$.",
+            "tags": [
+              "so-hoc-6",
+              "luy-thua"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Mẹo 'mũ 1 bằng CHÍNH NÓ': Số tự nhiên nào lũy thừa mũ 1 cũng bằng ___.",
+            "choices": [
+              "chính nó",
+              "1",
+              "0",
+              "hằng số"
+            ],
+            "correct_answer": "chính nó",
+            "explanation": "Công thức: $a^1 = a$ với mọi số tự nhiên a.",
+            "tags": [
+              "so-hoc-6",
+              "luy-thua"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Áp dụng: Tìm giá trị của x thỏa mãn: $x^1 = 99$.",
+            "options": [
+              "$x = 99$",
+              "$x = 1$",
+              "$x = 0$",
+              "$x = 9$"
+            ],
+            "correct_index": 0,
+            "explanation": "Vì $x^1 = x$ nên từ $x^1 = 99$ ta suy ra ngay $x = 99$.",
+            "tags": [
+              "so-hoc-6",
+              "luy-thua"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 6,
+      "title": "Ôn lý thuyết - Đề số 6",
+      "duration_minutes": 30,
+      "questions": [
         {
           "type": "fill_blank",
           "difficulty": 1.4,
@@ -1678,122 +2016,8 @@
           }
         },
         {
-          "type": "fill_blank",
-          "difficulty": 1.2,
-          "metadata_json": {
-            "question": "Mẹo 'CHIA thì TRỪ số mũ': $x^m : x^n = x^{___}$ (x khác 0).",
-            "choices": [
-              "m-n",
-              "m+n",
-              "m.n",
-              "m/n"
-            ],
-            "correct_answer": "m-n",
-            "explanation": "Khi chia hai lũy thừa cùng cơ số, ta giữ nguyên cơ số và TRỪ các số mũ: $x^m:x^n=x^{m-n}$.",
-            "tags": [
-              "bai3",
-              "luy-thua-chia"
-            ]
-          }
-        },
-        {
           "type": "multiple_choice",
-          "difficulty": 1.2,
-          "metadata_json": {
-            "question": "Áp dụng: 'CHIA thì TRỪ số mũ' — Kết quả của $5^6 : 5^2$ là:",
-            "options": [
-              "$5^4$",
-              "$5^3$",
-              "$5^8$",
-              "$5^{12}$"
-            ],
-            "correct_index": 0,
-            "explanation": "Chia hai lũy thừa cùng cơ số: trừ số mũ, $5^6:5^2=5^{6-2}=5^4$.",
-            "tags": [
-              "bai3",
-              "luy-thua-chia"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.0,
-          "metadata_json": {
-            "question": "Mỗi số hữu tỉ đứng soi gương qua điểm 0 sẽ gặp bao nhiêu 'người anh em song sinh trái dấu' (số đối)?",
-            "options": [
-              "Một số đối duy nhất",
-              "Hai số đối",
-              "Không có số đối",
-              "Vô số số đối"
-            ],
-            "correct_index": 0,
-            "explanation": "Mỗi số hữu tỉ có đúng 1 số đối. Meo nhớ: soi gương qua điểm 0 chỉ cho ra đúng 1 ảnh — đổi dấu, giữ nguyên giá trị tuyệt đối.",
-            "tags": [
-              "bai1",
-              "so-doi"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.0,
-          "metadata_json": {
-            "question": "Áp dụng: 'Soi gương' số $\\dfrac{-2}{7}$ qua điểm 0, ta được số đối là:",
-            "options": [
-              "$\\dfrac{2}{7}$",
-              "$\\dfrac{-2}{7}$",
-              "$\\dfrac{7}{2}$",
-              "$\\dfrac{-7}{2}$"
-            ],
-            "correct_index": 0,
-            "explanation": "Chỉ đổi dấu, giữ nguyên giá trị tuyệt đối: số đối của $\\dfrac{-2}{7}$ là $\\dfrac{2}{7}$.",
-            "tags": [
-              "bai1",
-              "so-doi"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 1.4,
-          "metadata_json": {
-            "question": "$|a|$ giống 'đo khoảng cách bằng thước, không quan tâm hướng' — là ___ từ điểm a đến gốc O trên trục số.",
-            "choices": [
-              "khoảng cách",
-              "tổng",
-              "hiệu",
-              "tích"
-            ],
-            "correct_answer": "khoảng cách",
-            "explanation": "|a| là khoảng cách từ điểm a đến gốc O, luôn không âm — giống đo bằng thước thì không có khoảng cách âm.",
-            "tags": [
-              "bai7",
-              "gia-tri-tuyet-doi"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.4,
-          "metadata_json": {
-            "question": "Áp dụng: 'Đo khoảng cách' từ -7 đến 0, ta được $|-7|$ bằng bao nhiêu?",
-            "options": [
-              "7",
-              "-7",
-              "0",
-              "14"
-            ],
-            "correct_index": 0,
-            "explanation": "$|-7| = 7$ vì khoảng cách từ -7 đến 0 trên trục số là 7 đơn vị (khoảng cách luôn dương).",
-            "tags": [
-              "bai7",
-              "gia-tri-tuyet-doi"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 2.0,
+          "difficulty": 2,
           "metadata_json": {
             "question": "Mẹo 'đường đi theo thời gian, như biểu đồ nhịp tim' — Biểu đồ đoạn thẳng thường dùng để biểu diễn điều gì?",
             "options": [
@@ -1812,7 +2036,7 @@
         },
         {
           "type": "multiple_choice",
-          "difficulty": 2.0,
+          "difficulty": 2,
           "metadata_json": {
             "question": "Áp dụng: Muốn biểu diễn nhiệt độ trung bình mỗi tháng trong năm, nên dùng loại biểu đồ nào?",
             "options": [
@@ -1829,165 +2053,6 @@
             ]
           }
         },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.4,
-          "metadata_json": {
-            "question": "Tập số thực R giống 'đại gia đình' gồm 2 nhánh nào hợp lại?",
-            "options": [
-              "Số hữu tỉ và số vô tỉ",
-              "Chỉ số hữu tỉ",
-              "Chỉ số vô tỉ",
-              "Chỉ số nguyên"
-            ],
-            "correct_index": 0,
-            "explanation": "R = Q ∪ I (số hữu tỉ hợp với số vô tỉ) — hai nhánh không giao nhau, gộp lại thành đại gia đình số thực.",
-            "tags": [
-              "bai7",
-              "so-thuc"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.4,
-          "metadata_json": {
-            "question": "Áp dụng: $\\sqrt{3}$ và $\\dfrac{1}{2}$ — hai 'nhánh khác nhau' — cùng chung 'mái nhà' nào?",
-            "options": [
-              "Số thực R",
-              "Chỉ số hữu tỉ Q",
-              "Chỉ số tự nhiên N",
-              "Số nguyên Z"
-            ],
-            "correct_index": 0,
-            "explanation": "R gồm cả số hữu tỉ ($\\dfrac{1}{2}$) và số vô tỉ ($\\sqrt{3}$), nên cả hai đều thuộc R.",
-            "tags": [
-              "bai7",
-              "so-thuc"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.8,
-          "metadata_json": {
-            "question": "Mẹo 'xé 3 góc tam giác ghép lại luôn vừa 1 đường thẳng' — Tổng ba góc trong tam giác bằng bao nhiêu độ?",
-            "options": [
-              "180°",
-              "360°",
-              "90°",
-              "270°"
-            ],
-            "correct_index": 0,
-            "explanation": "Tổng ba góc trong tam giác luôn bằng 180° — thử xé 3 góc và ghép lại sẽ thấy chúng tạo thành 1 đường thẳng.",
-            "tags": [
-              "bai12",
-              "tong-ba-goc"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.8,
-          "metadata_json": {
-            "question": "Áp dụng: Tam giác ABC có góc A=70°, góc B=60°. Góc C 'điền vào cho đủ 180°' là bao nhiêu?",
-            "options": [
-              "50°",
-              "60°",
-              "70°",
-              "130°"
-            ],
-            "correct_index": 0,
-            "explanation": "Tổng ba góc = 180°, nên góc C = 180° - 70° - 60° = 50°.",
-            "tags": [
-              "bai12",
-              "tong-ba-goc"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 1.0,
-          "metadata_json": {
-            "question": "Trong phân số $\\dfrac{a}{b}$, mẫu số b giống như 'số người chia bánh' — không bao giờ được ___.",
-            "choices": [
-              "bằng 0",
-              "âm",
-              "là số lẻ",
-              "lớn hơn a"
-            ],
-            "correct_answer": "bằng 0",
-            "explanation": "Mẫu số b phải khác 0. Meo nhớ: 'chia bánh cho 0 người' là vô nghĩa — không thể chia phép chia cho 0.",
-            "tags": [
-              "bai1",
-              "dieu-kien-so-huu-ti"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.0,
-          "metadata_json": {
-            "question": "Áp dụng: Biểu thức nào 'chia bánh cho 0 người' — KHÔNG hợp lệ?",
-            "options": [
-              "$\\dfrac{5}{0}$",
-              "$\\dfrac{-3}{4}$",
-              "$\\dfrac{0}{7}$",
-              "$\\dfrac{2}{9}$"
-            ],
-            "correct_index": 0,
-            "explanation": "$\\dfrac{5}{0}$ không hợp lệ vì mẫu số bằng 0 (chia cho 0 vô nghĩa).",
-            "tags": [
-              "bai1",
-              "dieu-kien-so-huu-ti"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.9,
-          "metadata_json": {
-            "question": "Tam giác vuông có 'đường tắt riêng' để xét bằng nhau — đó là trường hợp nào?",
-            "options": [
-              "Cạnh huyền - góc nhọn hoặc cạnh huyền - cạnh góc vuông",
-              "Chỉ cạnh - cạnh - cạnh",
-              "Chỉ góc - góc - góc",
-              "Không có trường hợp riêng"
-            ],
-            "correct_index": 0,
-            "explanation": "Tam giác vuông có 2 trường hợp 'đường tắt' riêng: cạnh huyền-góc nhọn và cạnh huyền-cạnh góc vuông (nhờ đã biết trước 1 góc vuông).",
-            "tags": [
-              "bai15",
-              "tam-giac-vuong"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.9,
-          "metadata_json": {
-            "question": "Áp dụng: Hai tam giác vuông có cạnh huyền bằng nhau và một góc nhọn bằng nhau. Bằng nhau theo trường hợp nào?",
-            "options": [
-              "Cạnh huyền - góc nhọn",
-              "c.c.c",
-              "Cạnh huyền - cạnh góc vuông",
-              "Không đủ dữ kiện"
-            ],
-            "correct_index": 0,
-            "explanation": "Cạnh huyền bằng nhau + một góc nhọn bằng nhau → trường hợp cạnh huyền - góc nhọn.",
-            "tags": [
-              "bai15",
-              "tam-giac-vuong"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "exam_number": 6,
-      "title": "Ôn lý thuyết - Đề số 6",
-      "duration_minutes": 30,
-      "questions": [
         {
           "type": "multiple_choice",
           "difficulty": 1.6,
@@ -2023,44 +2088,6 @@
             "tags": [
               "bai9-10",
               "duong-thang-song-song"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 2.0,
-          "metadata_json": {
-            "question": "Mẹo 'miếng bánh to hơn = tỉ lệ cao hơn': Phần có tỉ lệ % lớn hơn thì có diện tích hình quạt ___ hơn.",
-            "choices": [
-              "lớn",
-              "nhỏ",
-              "bằng nhau",
-              "không liên quan"
-            ],
-            "correct_answer": "lớn",
-            "explanation": "Diện tích hình quạt tỉ lệ thuận với tỉ lệ phần trăm mà nó biểu diễn — giống cắt bánh, phần nhiều % thì miếng to hơn.",
-            "tags": [
-              "bai18",
-              "doc-bieu-do-quat"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 2.0,
-          "metadata_json": {
-            "question": "Áp dụng: Khảo sát môn yêu thích: Toán 40%, Văn 25%, Anh 35%. 'Miếng bánh' to nhất (được yêu thích nhất) là môn nào?",
-            "options": [
-              "Toán",
-              "Văn",
-              "Anh",
-              "Không xác định"
-            ],
-            "correct_index": 0,
-            "explanation": "Toán có tỉ lệ cao nhất (40% > 35% > 25%) nên có hình quạt lớn nhất, được yêu thích nhiều nhất.",
-            "tags": [
-              "bai18",
-              "doc-bieu-do-quat"
             ]
           }
         },
@@ -2104,240 +2131,6 @@
         },
         {
           "type": "fill_blank",
-          "difficulty": 1.1,
-          "metadata_json": {
-            "question": "Muốn cộng/trừ/nhân/chia số hữu tỉ, mẹo là 'quy về cùng 1 ngôn ngữ' — viết chúng dưới dạng ___ rồi áp dụng quy tắc quen thuộc.",
-            "choices": [
-              "phân số",
-              "số nguyên",
-              "số thập phân",
-              "lũy thừa"
-            ],
-            "correct_answer": "phân số",
-            "explanation": "Viết dưới dạng phân số $\\dfrac{a}{b}$ rồi áp dụng quy tắc cộng/trừ/nhân/chia phân số đã học từ lớp dưới.",
-            "tags": [
-              "bai2",
-              "phep-tinh"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.1,
-          "metadata_json": {
-            "question": "Áp dụng: $\\dfrac{1}{2} + \\dfrac{1}{3}$ (quy đồng mẫu số trước khi cộng) bằng:",
-            "options": [
-              "$\\dfrac{5}{6}$",
-              "$\\dfrac{2}{5}$",
-              "$\\dfrac{1}{6}$",
-              "$\\dfrac{2}{6}$"
-            ],
-            "correct_index": 0,
-            "explanation": "Quy đồng mẫu số 6: $\\dfrac{3}{6}+\\dfrac{2}{6}=\\dfrac{5}{6}$.",
-            "tags": [
-              "bai2",
-              "phep-tinh"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 2.0,
-          "metadata_json": {
-            "question": "Mẹo 'LƯỢNG = là số đếm/đo được, TÍNH = chỉ là tính chất/tên gọi' — Dữ liệu định lượng là loại nào?",
-            "options": [
-              "Dữ liệu là số",
-              "Dữ liệu không phải là số",
-              "Chỉ là tên gọi",
-              "Chỉ là màu sắc"
-            ],
-            "correct_index": 0,
-            "explanation": "Dữ liệu định lượng LÀ SỐ (đo/đếm được); dữ liệu định tính KHÔNG PHẢI là số (tên gọi, tính chất).",
-            "tags": [
-              "bai17",
-              "du-lieu"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 2.0,
-          "metadata_json": {
-            "question": "Áp dụng: Trong 'chiều cao (cm)', 'màu áo yêu thích', 'điểm kiểm tra' — cái nào KHÔNG phải dữ liệu định lượng?",
-            "options": [
-              "Màu áo yêu thích",
-              "Chiều cao học sinh (cm)",
-              "Điểm kiểm tra",
-              "Cả ba đều định lượng"
-            ],
-            "correct_index": 0,
-            "explanation": "'Màu áo yêu thích' không phải số nên là dữ liệu định tính; 2 cái còn lại là số nên là định lượng.",
-            "tags": [
-              "bai17",
-              "du-lieu"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 2.0,
-          "metadata_json": {
-            "question": "Mẹo 'cả cái bánh pizza tròn = 100%': Biểu đồ quạt tròn so sánh các phần trong toàn bộ, tổng các phần luôn bằng ___%.",
-            "choices": [
-              "100",
-              "50",
-              "360",
-              "10"
-            ],
-            "correct_answer": "100",
-            "explanation": "Biểu đồ quạt tròn biểu diễn tỉ lệ phần trăm, các miếng 'bánh pizza' cộng lại luôn đúng 100%.",
-            "tags": [
-              "bai18",
-              "bieu-do-quat-tron"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 2.0,
-          "metadata_json": {
-            "question": "Áp dụng: Biểu đồ quạt tròn có 3 phần 30%, 45%, và phần còn lại. 'Miếng bánh' còn lại chiếm bao nhiêu %?",
-            "options": [
-              "25%",
-              "30%",
-              "45%",
-              "75%"
-            ],
-            "correct_index": 0,
-            "explanation": "Tổng các phần bằng 100%, nên phần còn lại = 100% - 30% - 45% = 25%.",
-            "tags": [
-              "bai18",
-              "bieu-do-quat-tron"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 1.3,
-          "metadata_json": {
-            "question": "Số thập phân 'dừng hẳn, không chạy tiếp nữa' sau hữu hạn chữ số (như 0,25) gọi là số thập phân ___.",
-            "choices": [
-              "hữu hạn",
-              "vô hạn tuần hoàn",
-              "vô hạn không tuần hoàn",
-              "âm"
-            ],
-            "correct_answer": "hữu hạn",
-            "explanation": "Số thập phân hữu hạn dừng hẳn sau một số chữ số nhất định, ví dụ 0,25 = 1/4 — vẫn là số hữu tỉ.",
-            "tags": [
-              "bai5",
-              "so-thap-phan-huu-han"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.3,
-          "metadata_json": {
-            "question": "Áp dụng: $\\dfrac{1}{4}$ viết dưới dạng thập phân 'dừng lại' ở đâu?",
-            "options": [
-              "Số thập phân hữu hạn (0,25)",
-              "Số thập phân vô hạn tuần hoàn",
-              "Số vô tỉ",
-              "Không viết được dưới dạng thập phân"
-            ],
-            "correct_index": 0,
-            "explanation": "$\\dfrac{1}{4} = 0{,}25$, dừng hẳn sau 2 chữ số nên là số thập phân hữu hạn.",
-            "tags": [
-              "bai5",
-              "so-thap-phan-huu-han"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 1.5,
-          "metadata_json": {
-            "question": "Mẹo 'KỀ nhau BÙ nhau thành đường thẳng': Hai góc chung 1 cạnh, hai cạnh còn lại là 2 tia đối nhau — tổng số đo bằng ___ độ.",
-            "choices": [
-              "180",
-              "90",
-              "360",
-              "270"
-            ],
-            "correct_answer": "180",
-            "explanation": "Hai góc kề bù ghép lại vừa khít thành một đường thẳng (180°) — như bẻ gập một que thẳng tại 1 điểm.",
-            "tags": [
-              "bai8",
-              "goc-ke-bu"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.5,
-          "metadata_json": {
-            "question": "Áp dụng: Hai góc kề bù, góc thứ nhất bằng 65°. Góc còn lại 'bù' đủ 180° là bao nhiêu?",
-            "options": [
-              "115°",
-              "65°",
-              "25°",
-              "155°"
-            ],
-            "correct_index": 0,
-            "explanation": "Tổng hai góc kề bù bằng 180°, nên góc còn lại = 180° - 65° = 115°.",
-            "tags": [
-              "bai8",
-              "goc-ke-bu"
-            ]
-          }
-        },
-        {
-          "type": "matching",
-          "difficulty": 1.8,
-          "metadata_json": {
-            "question": "Nối trường hợp bằng nhau tam giác với ký hiệu — mẹo 'đọc đúng thứ tự chữ cái là hiểu ngay cần yếu tố gì':",
-            "pairs": [
-              {
-                "left": "Cạnh - Cạnh - Cạnh",
-                "right": "c.c.c"
-              },
-              {
-                "left": "Cạnh - Góc - Cạnh (góc xen giữa 2 cạnh)",
-                "right": "c.g.c"
-              },
-              {
-                "left": "Góc - Cạnh - Góc (cạnh xen giữa 2 góc)",
-                "right": "g.c.g"
-              }
-            ],
-            "tags": [
-              "bai13-14",
-              "tam-giac-bang-nhau"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.8,
-          "metadata_json": {
-            "question": "Áp dụng: Tam giác ABC và DEF có AB=DE, góc A = góc D (xen giữa), AC=DF. Bằng nhau theo trường hợp nào?",
-            "options": [
-              "c.g.c",
-              "c.c.c",
-              "g.c.g",
-              "Không xác định"
-            ],
-            "correct_index": 0,
-            "explanation": "Hai cạnh và góc xen giữa bằng nhau (AB=DE, góc A = góc D, AC=DF) → trường hợp c.g.c (Cạnh-Góc-Cạnh, góc ở giữa).",
-            "tags": [
-              "bai13-14",
-              "tam-giac-bang-nhau"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
           "difficulty": 1.5,
           "metadata_json": {
             "question": "Mẹo 'ĐỐI ĐỈNH = ĐỐI diện nhau qua ĐỈNH' (như hình chữ X): mỗi cạnh của góc này là ___ của một cạnh góc kia.",
@@ -2373,14 +2166,7 @@
               "goc-doi-dinh"
             ]
           }
-        }
-      ]
-    },
-    {
-      "exam_number": 7,
-      "title": "Ôn lý thuyết - Đề số 7",
-      "duration_minutes": 30,
-      "questions": [
+        },
         {
           "type": "matching",
           "difficulty": 1.6,
@@ -2423,120 +2209,6 @@
         },
         {
           "type": "multiple_choice",
-          "difficulty": 1.2,
-          "metadata_json": {
-            "question": "Mẹo nhớ thứ tự tính (không ngoặc) — 'Lên trước, Nhân Chia giữa, Cộng Trừ sau cùng': thứ tự đúng là?",
-            "options": [
-              "Lũy thừa → Nhân, chia → Cộng, trừ",
-              "Cộng, trừ → Nhân, chia → Lũy thừa",
-              "Nhân, chia → Lũy thừa → Cộng, trừ",
-              "Cộng, trừ → Lũy thừa → Nhân, chia"
-            ],
-            "correct_index": 0,
-            "explanation": "Lũy thừa 'quyền lực cao nhất' làm trước, Nhân/chia làm giữa, Cộng/trừ làm sau cùng.",
-            "tags": [
-              "bai4",
-              "thu-tu-thuc-hien"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.2,
-          "metadata_json": {
-            "question": "Áp dụng: Kết quả của $2 + 3 \\cdot 2^2$ là:",
-            "options": [
-              "14",
-              "20",
-              "10",
-              "28"
-            ],
-            "correct_index": 0,
-            "explanation": "Lũy thừa trước: $2^2=4$. Nhân: $3 \\cdot 4 = 12$. Cộng: $2+12=14$.",
-            "tags": [
-              "bai4",
-              "thu-tu-thuc-hien"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 1.4,
-          "metadata_json": {
-            "question": "Mẹo: 'dương thì giữ nguyên, âm thì lột dấu' — $|x| = x$ khi $x$ ___ 0.",
-            "choices": [
-              "≥",
-              "<",
-              "=",
-              "≠"
-            ],
-            "correct_answer": "≥",
-            "explanation": "|x| = x nếu x ≥ 0 (giữ nguyên vì đã không âm) và |x| = -x nếu x < 0 (lột dấu âm đi).",
-            "tags": [
-              "bai7",
-              "gia-tri-tuyet-doi-2"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.4,
-          "metadata_json": {
-            "question": "Áp dụng: '|x|=a có 2 đáp số vì đo khoảng cách không phân biệt hướng' — Tìm x biết $|x| = 9$.",
-            "options": [
-              "$x = 9$ hoặc $x = -9$",
-              "$x = 9$",
-              "$x = -9$",
-              "$x = 81$"
-            ],
-            "correct_index": 0,
-            "explanation": "Cả 9 và -9 đều cách 0 đúng 9 đơn vị, nên |x|=9 (9≥0) có hai nghiệm: x=9 hoặc x=-9.",
-            "tags": [
-              "bai7",
-              "gia-tri-tuyet-doi-2"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 1.4,
-          "metadata_json": {
-            "question": "Q và I giống '2 phe không đội trời chung' — phần chung của chúng là tập hợp ___.",
-            "choices": [
-              "rỗng",
-              "N",
-              "Z",
-              "R"
-            ],
-            "correct_answer": "rỗng",
-            "explanation": "Không số nào vừa hữu tỉ vừa vô tỉ cùng lúc — Q ∩ I = rỗng; hợp của chúng (Q ∪ I) mới tạo thành R.",
-            "tags": [
-              "bai7",
-              "quan-he-tap-hop"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.4,
-          "metadata_json": {
-            "question": "Áp dụng: Số 0 đứng 'phe' nào?",
-            "options": [
-              "Q (và R), không thuộc I",
-              "Chỉ thuộc I",
-              "Không thuộc tập nào",
-              "Chỉ thuộc R, không thuộc Q"
-            ],
-            "correct_index": 0,
-            "explanation": "0 viết được $\\dfrac{0}{1}$ nên là số hữu tỉ (Q), và do đó cũng thuộc R; không thuộc I.",
-            "tags": [
-              "bai7",
-              "quan-he-tap-hop"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
           "difficulty": 1.4,
           "metadata_json": {
             "question": "Căn bậc hai số học của $a \\geq 0$ — 'chỉ nhận nghiệm KHÔNG ÂM' — là số x thỏa mãn điều kiện nào?",
@@ -2574,128 +2246,129 @@
           }
         },
         {
-          "type": "matching",
-          "difficulty": 1.2,
-          "metadata_json": {
-            "question": "Nối phép tính lũy thừa với công thức — mẹo: 'NHÂN thì CỘNG, CHIA thì TRỪ, LŨY THỪA CỦA LŨY THỪA thì NHÂN':",
-            "pairs": [
-              {
-                "left": "$x^m \\cdot x^n$ (NHÂN)",
-                "right": "$x^{m+n}$ (CỘNG số mũ)"
-              },
-              {
-                "left": "$x^m : x^n$ (CHIA, x≠0)",
-                "right": "$x^{m-n}$ (TRỪ số mũ)"
-              },
-              {
-                "left": "$(x^m)^n$ (lũy thừa CỦA lũy thừa)",
-                "right": "$x^{m \\cdot n}$ (NHÂN số mũ)"
-              }
-            ],
-            "tags": [
-              "bai3",
-              "luy-thua"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.2,
-          "metadata_json": {
-            "question": "Áp dụng: 'NHÂN thì CỘNG số mũ' — Kết quả của $2^3 \\cdot 2^4$ là:",
-            "options": [
-              "$2^7$",
-              "$2^{12}$",
-              "$2^1$",
-              "$4^7$"
-            ],
-            "correct_index": 0,
-            "explanation": "Nhân hai lũy thừa cùng cơ số: cộng số mũ, $2^3 \\cdot 2^4 = 2^{3+4} = 2^7$.",
-            "tags": [
-              "bai3",
-              "luy-thua"
-            ]
-          }
-        },
-        {
           "type": "fill_blank",
-          "difficulty": 1.2,
+          "difficulty": 1.6,
           "metadata_json": {
-            "question": "Mẹo 'CHIA thì TRỪ số mũ': $x^m : x^n = x^{___}$ (x khác 0).",
+            "question": "Mẹo 'bỏ số NHỎ HƠN 5 thì GIỮ NGUYÊN': Nếu chữ số đầu tiên bỏ đi nhỏ hơn 5, ta ___ nguyên bộ phận còn lại.",
             "choices": [
-              "m-n",
-              "m+n",
-              "m.n",
-              "m/n"
+              "giữ",
+              "tăng",
+              "giảm",
+              "bỏ"
             ],
-            "correct_answer": "m-n",
-            "explanation": "Khi chia hai lũy thừa cùng cơ số, ta giữ nguyên cơ số và TRỪ các số mũ: $x^m:x^n=x^{m-n}$.",
+            "correct_answer": "giữ",
+            "explanation": "Nếu chữ số đầu tiên trong các chữ số bỏ đi nhỏ hơn 5 (0, 1, 2, 3, 4) thì ta giữ nguyên chữ số cuối cùng của phần giữ lại.",
             "tags": [
-              "bai3",
-              "luy-thua-chia"
+              "so-hoc-6",
+              "lam-tron-so"
             ]
           }
         },
         {
           "type": "multiple_choice",
-          "difficulty": 1.2,
+          "difficulty": 1.6,
           "metadata_json": {
-            "question": "Áp dụng: 'CHIA thì TRỪ số mũ' — Kết quả của $5^6 : 5^2$ là:",
+            "question": "Áp dụng: Làm tròn số thập phân $7,824$ đến hàng phần mười.",
             "options": [
-              "$5^4$",
-              "$5^3$",
-              "$5^8$",
-              "$5^{12}$"
+              "$7,8$",
+              "$7,9$",
+              "$7,82$",
+              "$8,0$"
             ],
             "correct_index": 0,
-            "explanation": "Chia hai lũy thừa cùng cơ số: trừ số mũ, $5^6:5^2=5^{6-2}=5^4$.",
+            "explanation": "Chữ số ở hàng phần mười là 8. Chữ số ngay sau nó là 2 (nhỏ hơn 5), nên ta giữ nguyên 8 và bỏ các số sau đi: được $7,8$.",
             "tags": [
-              "bai3",
-              "luy-thua-chia"
+              "so-hoc-6",
+              "lam-tron-so"
             ]
           }
         },
         {
           "type": "fill_blank",
-          "difficulty": 1.8,
+          "difficulty": 1.6,
           "metadata_json": {
-            "question": "Mẹo 'viết ký hiệu bằng nhau phải ĐÚNG THỨ TỰ đỉnh tương ứng, như ghép đúng cặp giày trái-phải': Khi viết $\\triangle ABC = \\triangle DEF$, đỉnh A tương ứng với đỉnh ___.",
+            "question": "Mẹo 'bỏ số TỪ 5 TRỞ LÊN thì CỘNG thêm 1': Nếu chữ số đầu tiên bỏ đi lớn hơn hoặc bằng 5, ta ___ thêm 1 đơn vị vào chữ số cuối cùng của bộ phận còn lại.",
             "choices": [
-              "D",
-              "E",
-              "F",
-              "không đỉnh nào"
+              "cộng",
+              "trừ",
+              "nhân",
+              "giữ"
             ],
-            "correct_answer": "D",
-            "explanation": "Ký hiệu bằng nhau phải viết đúng thứ tự đỉnh tương ứng: A↔D, B↔E, C↔F — sai thứ tự là sai đề dù hình vẽ đúng.",
+            "correct_answer": "cộng",
+            "explanation": "Nếu chữ số đầu tiên bị bỏ đi $\\ge 5$ (5, 6, 7, 8, 9), ta cộng thêm 1 vào chữ số cuối cùng của phần giữ lại.",
             "tags": [
-              "bai13-14",
-              "thu-tu-dinh"
+              "so-hoc-6",
+              "lam-tron-so"
             ]
           }
         },
         {
           "type": "multiple_choice",
-          "difficulty": 1.8,
+          "difficulty": 1.6,
           "metadata_json": {
-            "question": "Áp dụng: Nếu $\\triangle ABC = \\triangle MNP$ thì cạnh AB tương ứng bằng cạnh nào?",
+            "question": "Áp dụng: Làm tròn số $15,367$ đến hàng phần mười.",
             "options": [
-              "MN",
-              "NP",
-              "MP",
-              "AC"
+              "$15,4$",
+              "$15,3$",
+              "$15,37$",
+              "$15,0$"
             ],
             "correct_index": 0,
-            "explanation": "Theo đúng thứ tự tương ứng A↔M, B↔N, C↔P, nên cạnh AB tương ứng với cạnh MN.",
+            "explanation": "Chữ số hàng phần mười là 3. Chữ số bị bỏ đi ngay sau nó là 6 (lớn hơn 5) nên ta cộng thêm 1 đơn vị vào 3 thành 4, thu được $15,4$.",
             "tags": [
-              "bai13-14",
-              "thu-tu-dinh"
+              "so-hoc-6",
+              "lam-tron-so"
             ]
           }
         },
         {
           "type": "fill_blank",
-          "difficulty": 1.0,
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Mẹo 'làm tròn phần nguyên thì thay số bỏ đi bằng số KHÔNG': Khi làm tròn số nguyên đến hàng chục, trăm... ta thay thế các chữ số bị bỏ đi bằng chữ số ___.",
+            "choices": [
+              "không",
+              "một",
+              "chính nó",
+              "chữ số cuối"
+            ],
+            "correct_answer": "không",
+            "explanation": "Khi làm tròn phần nguyên của một số, ta thay thế các chữ số bị bỏ đi bằng các chữ số 0 để giữ đúng hàng số.",
+            "tags": [
+              "so-hoc-6",
+              "lam-tron-so"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Áp dụng: Làm tròn số $149$ đến hàng chục.",
+            "options": [
+              "$150$",
+              "$140$",
+              "$100$",
+              "$149$"
+            ],
+            "correct_index": 0,
+            "explanation": "Làm tròn đến hàng chục (số 4). Số sau nó là 9 ($\\ge 5$), ta tăng 4 lên thành 5 và thay 9 bằng số 0, kết quả là $150$.",
+            "tags": [
+              "so-hoc-6",
+              "lam-tron-so"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 7,
+      "title": "Ôn lý thuyết - Đề số 7",
+      "duration_minutes": 30,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
           "metadata_json": {
             "question": "Số viết được dưới dạng phân số $\\dfrac{a}{b}$ (a, b nguyên, b khác 0) — như một 'gia đình' gồm cả phân số, số nguyên, số thập phân — được gọi là số ___.",
             "choices": [
@@ -2714,7 +2387,7 @@
         },
         {
           "type": "multiple_choice",
-          "difficulty": 1.0,
+          "difficulty": 1,
           "metadata_json": {
             "question": "Áp dụng: Số nào sau đây 'vào được nhà Q' (là số hữu tỉ)?",
             "options": [
@@ -2768,14 +2441,7 @@
               "can-bac-hai"
             ]
           }
-        }
-      ]
-    },
-    {
-      "exam_number": 8,
-      "title": "Ôn lý thuyết - Đề số 8",
-      "duration_minutes": 30,
-      "questions": [
+        },
         {
           "type": "matching",
           "difficulty": 1.1,
@@ -2817,669 +2483,6 @@
             "tags": [
               "bai2",
               "tinh-chat"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.4,
-          "metadata_json": {
-            "question": "Tập số thực R giống 'đại gia đình' gồm 2 nhánh nào hợp lại?",
-            "options": [
-              "Số hữu tỉ và số vô tỉ",
-              "Chỉ số hữu tỉ",
-              "Chỉ số vô tỉ",
-              "Chỉ số nguyên"
-            ],
-            "correct_index": 0,
-            "explanation": "R = Q ∪ I (số hữu tỉ hợp với số vô tỉ) — hai nhánh không giao nhau, gộp lại thành đại gia đình số thực.",
-            "tags": [
-              "bai7",
-              "so-thuc"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.4,
-          "metadata_json": {
-            "question": "Áp dụng: $\\sqrt{3}$ và $\\dfrac{1}{2}$ — hai 'nhánh khác nhau' — cùng chung 'mái nhà' nào?",
-            "options": [
-              "Số thực R",
-              "Chỉ số hữu tỉ Q",
-              "Chỉ số tự nhiên N",
-              "Số nguyên Z"
-            ],
-            "correct_index": 0,
-            "explanation": "R gồm cả số hữu tỉ ($\\dfrac{1}{2}$) và số vô tỉ ($\\sqrt{3}$), nên cả hai đều thuộc R.",
-            "tags": [
-              "bai7",
-              "so-thuc"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.4,
-          "metadata_json": {
-            "question": "Căn bậc hai số học của $a \\geq 0$ — 'chỉ nhận nghiệm KHÔNG ÂM' — là số x thỏa mãn điều kiện nào?",
-            "options": [
-              "$x \\geq 0$ và $x^2 = a$",
-              "$x \\leq 0$ và $x^2 = a$",
-              "$x = a^2$",
-              "$x \\cdot a = 1$"
-            ],
-            "correct_index": 0,
-            "explanation": "Căn bậc hai số học luôn không âm: x ≥ 0 và $x^2 = a$, ký hiệu $\\sqrt{a}$. Mẹo: căn bậc hai số học không bao giờ 'trả về số âm'.",
-            "tags": [
-              "bai6",
-              "can-bac-hai-2"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.4,
-          "metadata_json": {
-            "question": "Áp dụng: $\\sqrt{49}$ (chỉ lấy nghiệm không âm) bằng bao nhiêu?",
-            "options": [
-              "7",
-              "-7",
-              "49",
-              "24,5"
-            ],
-            "correct_index": 0,
-            "explanation": "$7^2 = 49$ và $7 \\geq 0$ nên $\\sqrt{49} = 7$ (không lấy -7 dù $(-7)^2$ cũng bằng 49).",
-            "tags": [
-              "bai6",
-              "can-bac-hai-2"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.2,
-          "metadata_json": {
-            "question": "Mẹo nhớ thứ tự tính (không ngoặc) — 'Lên trước, Nhân Chia giữa, Cộng Trừ sau cùng': thứ tự đúng là?",
-            "options": [
-              "Lũy thừa → Nhân, chia → Cộng, trừ",
-              "Cộng, trừ → Nhân, chia → Lũy thừa",
-              "Nhân, chia → Lũy thừa → Cộng, trừ",
-              "Cộng, trừ → Lũy thừa → Nhân, chia"
-            ],
-            "correct_index": 0,
-            "explanation": "Lũy thừa 'quyền lực cao nhất' làm trước, Nhân/chia làm giữa, Cộng/trừ làm sau cùng.",
-            "tags": [
-              "bai4",
-              "thu-tu-thuc-hien"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.2,
-          "metadata_json": {
-            "question": "Áp dụng: Kết quả của $2 + 3 \\cdot 2^2$ là:",
-            "options": [
-              "14",
-              "20",
-              "10",
-              "28"
-            ],
-            "correct_index": 0,
-            "explanation": "Lũy thừa trước: $2^2=4$. Nhân: $3 \\cdot 4 = 12$. Cộng: $2+12=14$.",
-            "tags": [
-              "bai4",
-              "thu-tu-thuc-hien"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 1.4,
-          "metadata_json": {
-            "question": "Q và I giống '2 phe không đội trời chung' — phần chung của chúng là tập hợp ___.",
-            "choices": [
-              "rỗng",
-              "N",
-              "Z",
-              "R"
-            ],
-            "correct_answer": "rỗng",
-            "explanation": "Không số nào vừa hữu tỉ vừa vô tỉ cùng lúc — Q ∩ I = rỗng; hợp của chúng (Q ∪ I) mới tạo thành R.",
-            "tags": [
-              "bai7",
-              "quan-he-tap-hop"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.4,
-          "metadata_json": {
-            "question": "Áp dụng: Số 0 đứng 'phe' nào?",
-            "options": [
-              "Q (và R), không thuộc I",
-              "Chỉ thuộc I",
-              "Không thuộc tập nào",
-              "Chỉ thuộc R, không thuộc Q"
-            ],
-            "correct_index": 0,
-            "explanation": "0 viết được $\\dfrac{0}{1}$ nên là số hữu tỉ (Q), và do đó cũng thuộc R; không thuộc I.",
-            "tags": [
-              "bai7",
-              "quan-he-tap-hop"
-            ]
-          }
-        },
-        {
-          "type": "matching",
-          "difficulty": 2.0,
-          "metadata_json": {
-            "question": "Nối loại dữ liệu không phải số — mẹo 'xếp được thứ hạng = sắp thứ tự được, chỉ là tên gọi = không sắp được':",
-            "pairs": [
-              {
-                "left": "Có thể sắp thứ tự",
-                "right": "Mức độ hài lòng: Tốt, Khá, Trung bình"
-              },
-              {
-                "left": "Không thể sắp thứ tự",
-                "right": "Danh sách môn thể thao yêu thích"
-              }
-            ],
-            "tags": [
-              "bai17",
-              "phan-loai-du-lieu"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 2.0,
-          "metadata_json": {
-            "question": "Áp dụng: Dữ liệu 'xếp loại học lực: Giỏi, Khá, Trung bình, Yếu' (có thể xếp hạng cao thấp) thuộc loại nào?",
-            "options": [
-              "Dữ liệu không phải số, có thể sắp thứ tự",
-              "Dữ liệu là số",
-              "Dữ liệu không phải số, không thể sắp thứ tự",
-              "Không phải dữ liệu"
-            ],
-            "correct_index": 0,
-            "explanation": "Xếp loại học lực không phải số nhưng có thứ tự rõ ràng (Giỏi > Khá > Trung bình > Yếu) nên có thể sắp thứ tự.",
-            "tags": [
-              "bai17",
-              "phan-loai-du-lieu"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.9,
-          "metadata_json": {
-            "question": "Mẹo 'TRUNG TRỰC = đi qua TRUNG điểm và luôn THẲNG GÓC (vuông góc)' — đường trung trực của đoạn thẳng là gì?",
-            "options": [
-              "Vuông góc với đoạn thẳng tại trung điểm của nó",
-              "Song song với đoạn thẳng",
-              "Đi qua hai đầu mút đoạn thẳng",
-              "Cắt đoạn thẳng tại một điểm bất kỳ"
-            ],
-            "correct_index": 0,
-            "explanation": "Đường trung trực vuông góc với đoạn thẳng đúng tại trung điểm — 'trung' (giữa) + 'trực' (thẳng góc).",
-            "tags": [
-              "bai16",
-              "trung-truc"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.9,
-          "metadata_json": {
-            "question": "Áp dụng: Đoạn thẳng AB dài 8cm. Đường trung trực đi qua điểm 'chính giữa', cách A bao nhiêu cm?",
-            "options": [
-              "4cm",
-              "8cm",
-              "2cm",
-              "6cm"
-            ],
-            "correct_index": 0,
-            "explanation": "Đường trung trực đi qua trung điểm của AB, cách đều A và B: 8:2=4cm.",
-            "tags": [
-              "bai16",
-              "trung-truc"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 2.0,
-          "metadata_json": {
-            "question": "Mẹo 'đường LÊN dốc = giá trị TĂNG, đường XUỐNG dốc = giá trị GIẢM': Nếu đoạn nối đi lên thì đại lượng đang ___.",
-            "choices": [
-              "tăng",
-              "giảm",
-              "không đổi",
-              "bằng 0"
-            ],
-            "correct_answer": "tăng",
-            "explanation": "Đoạn thẳng đi lên (dốc lên) thể hiện giá trị tăng theo thời gian; đi xuống thể hiện giảm.",
-            "tags": [
-              "bai19",
-              "doc-bieu-do-doan-thang"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 2.0,
-          "metadata_json": {
-            "question": "Áp dụng: Biểu đồ nhiệt độ có đoạn từ tháng 1 (20°C) đến tháng 2 (18°C) đi xuống dốc. Điều này thể hiện gì?",
-            "options": [
-              "Nhiệt độ giảm từ tháng 1 sang tháng 2",
-              "Nhiệt độ tăng",
-              "Nhiệt độ không đổi",
-              "Không đọc được thông tin"
-            ],
-            "correct_index": 0,
-            "explanation": "Đoạn thẳng đi xuống (từ 20°C xuống 18°C) thể hiện nhiệt độ giảm.",
-            "tags": [
-              "bai19",
-              "doc-bieu-do-doan-thang"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 1.9,
-          "metadata_json": {
-            "question": "Mẹo 'CÂN = 2 bên CÂN bằng nhau như cái cân đĩa': Tam giác cân có ___ cạnh bên bằng nhau.",
-            "choices": [
-              "hai",
-              "ba",
-              "bốn",
-              "không"
-            ],
-            "correct_answer": "hai",
-            "explanation": "Tam giác cân có hai cạnh bên bằng nhau và hai góc ở đáy bằng nhau — như 2 đĩa cân thăng bằng.",
-            "tags": [
-              "bai16",
-              "tam-giac-can"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.9,
-          "metadata_json": {
-            "question": "Áp dụng: Tam giác ABC cân tại A, góc đỉnh A = 40°. Mỗi góc đáy (2 bên 'cân bằng nhau') là bao nhiêu?",
-            "options": [
-              "70°",
-              "40°",
-              "140°",
-              "80°"
-            ],
-            "correct_index": 0,
-            "explanation": "Tổng 2 góc đáy = 180° - 40° = 140°, hai góc đáy bằng nhau nên mỗi góc = 70°.",
-            "tags": [
-              "bai16",
-              "tam-giac-can"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 1.5,
-          "metadata_json": {
-            "question": "Mẹo 'ĐỐI ĐỈNH = ĐỐI diện nhau qua ĐỈNH' (như hình chữ X): mỗi cạnh của góc này là ___ của một cạnh góc kia.",
-            "choices": [
-              "tia đối",
-              "tia phân giác",
-              "đường trung trực",
-              "đường vuông góc"
-            ],
-            "correct_answer": "tia đối",
-            "explanation": "Hai góc đối đỉnh: mỗi cạnh của góc này là tia đối của cạnh góc kia — giống 2 cánh kéo mở chéo, không dính cạnh chung. Luôn BẰNG NHAU.",
-            "tags": [
-              "bai8",
-              "goc-doi-dinh"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.5,
-          "metadata_json": {
-            "question": "Áp dụng: 'Hình chữ X' của 2 đường thẳng cắt nhau — một góc bằng 50°. Góc đối đỉnh (đối diện qua giao điểm) bằng bao nhiêu?",
-            "options": [
-              "50°",
-              "130°",
-              "100°",
-              "25°"
-            ],
-            "correct_index": 0,
-            "explanation": "Hai góc đối đỉnh bằng nhau nên góc đối diện cũng bằng 50°.",
-            "tags": [
-              "bai8",
-              "goc-doi-dinh"
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "exam_number": 9,
-      "title": "Ôn lý thuyết - Đề số 9",
-      "duration_minutes": 30,
-      "questions": [
-        {
-          "type": "fill_blank",
-          "difficulty": 1.0,
-          "metadata_json": {
-            "question": "Số viết được dưới dạng phân số $\\dfrac{a}{b}$ (a, b nguyên, b khác 0) — như một 'gia đình' gồm cả phân số, số nguyên, số thập phân — được gọi là số ___.",
-            "choices": [
-              "hữu tỉ",
-              "vô tỉ",
-              "tự nhiên",
-              "ảo"
-            ],
-            "correct_answer": "hữu tỉ",
-            "explanation": "Số hữu tỉ (Q). Meo nhớ: 'HỮU TỈ = HỮU dạng TỈ số (phân số)' — hễ viết được thành phân số là vào 'nhà Q'.",
-            "tags": [
-              "bai1",
-              "so-huu-ti"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.0,
-          "metadata_json": {
-            "question": "Áp dụng: Số nào sau đây 'vào được nhà Q' (là số hữu tỉ)?",
-            "options": [
-              "$\\dfrac{-3}{5}$",
-              "$\\sqrt{3}$",
-              "$\\pi$",
-              "$0{,}1010010001...$"
-            ],
-            "correct_index": 0,
-            "explanation": "$\\dfrac{-3}{5}$ đã có sẵn dạng phân số $\\dfrac{a}{b}$ nên là số hữu tỉ. Ba số còn lại là số vô tỉ (thập phân vô hạn KHÔNG tuần hoàn).",
-            "tags": [
-              "bai1",
-              "so-huu-ti"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 1.9,
-          "metadata_json": {
-            "question": "Mẹo: '2 góc đáy sinh đôi không thể cùng tù' (vì tổng đã vượt 180°) — nên góc tù của tam giác cân chắc chắn nằm ở ___.",
-            "choices": [
-              "đỉnh",
-              "đáy (cả hai)",
-              "cạnh bên",
-              "không xác định được"
-            ],
-            "correct_answer": "đỉnh",
-            "explanation": "Hai góc đáy luôn bằng nhau; nếu cả hai đều tù thì tổng đã vượt quá 180°, vô lý. Vậy góc tù chỉ có thể là góc ở đỉnh.",
-            "tags": [
-              "bai16",
-              "tam-giac-can-goc-tu"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.9,
-          "metadata_json": {
-            "question": "Áp dụng: Tam giác ABC cân tại A có góc A = 120° (góc tù, đúng như dự đoán 'góc tù ở đỉnh'). Mỗi góc đáy bằng bao nhiêu?",
-            "options": [
-              "30°",
-              "60°",
-              "120°",
-              "90°"
-            ],
-            "correct_index": 0,
-            "explanation": "Tổng 2 góc đáy = 180°-120°=60°, hai góc đáy bằng nhau nên mỗi góc = 30°.",
-            "tags": [
-              "bai16",
-              "tam-giac-can-goc-tu"
-            ]
-          }
-        },
-        {
-          "type": "matching",
-          "difficulty": 1.2,
-          "metadata_json": {
-            "question": "Nối phép tính lũy thừa với công thức — mẹo: 'NHÂN thì CỘNG, CHIA thì TRỪ, LŨY THỪA CỦA LŨY THỪA thì NHÂN':",
-            "pairs": [
-              {
-                "left": "$x^m \\cdot x^n$ (NHÂN)",
-                "right": "$x^{m+n}$ (CỘNG số mũ)"
-              },
-              {
-                "left": "$x^m : x^n$ (CHIA, x≠0)",
-                "right": "$x^{m-n}$ (TRỪ số mũ)"
-              },
-              {
-                "left": "$(x^m)^n$ (lũy thừa CỦA lũy thừa)",
-                "right": "$x^{m \\cdot n}$ (NHÂN số mũ)"
-              }
-            ],
-            "tags": [
-              "bai3",
-              "luy-thua"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.2,
-          "metadata_json": {
-            "question": "Áp dụng: 'NHÂN thì CỘNG số mũ' — Kết quả của $2^3 \\cdot 2^4$ là:",
-            "options": [
-              "$2^7$",
-              "$2^{12}$",
-              "$2^1$",
-              "$4^7$"
-            ],
-            "correct_index": 0,
-            "explanation": "Nhân hai lũy thừa cùng cơ số: cộng số mũ, $2^3 \\cdot 2^4 = 2^{3+4} = 2^7$.",
-            "tags": [
-              "bai3",
-              "luy-thua"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.3,
-          "metadata_json": {
-            "question": "$\\sqrt{25}$ có 'giả trang' thành số vô tỉ được không?",
-            "options": [
-              "Không, vì $\\sqrt{25}=5$ là số hữu tỉ",
-              "Có, vì có dấu căn",
-              "Không xác định được",
-              "Có, vì 25 là số lớn"
-            ],
-            "correct_index": 0,
-            "explanation": "Mẹo: 'có dấu căn KHÔNG có nghĩa là vô tỉ' — chỉ khi kết quả không dừng không lặp mới là vô tỉ. $\\sqrt{25}=5 \\in \\mathbb{Q}$ (căn của số chính phương luôn là số hữu tỉ).",
-            "tags": [
-              "bai6",
-              "can-bac-hai"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.3,
-          "metadata_json": {
-            "question": "Áp dụng: Trong $\\sqrt{16}, \\sqrt{7}, \\sqrt{81}, \\sqrt{5}$, bao nhiêu số 'giả trang thành công' hóa ra là số hữu tỉ?",
-            "options": [
-              "2",
-              "1",
-              "3",
-              "4"
-            ],
-            "correct_index": 0,
-            "explanation": "$\\sqrt{16}=4$ và $\\sqrt{81}=9$ là số hữu tỉ (căn của số chính phương); $\\sqrt{7}, \\sqrt{5}$ thực sự vô tỉ.",
-            "tags": [
-              "bai6",
-              "can-bac-hai"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 2.0,
-          "metadata_json": {
-            "question": "Mẹo 'đường đi theo thời gian, như biểu đồ nhịp tim' — Biểu đồ đoạn thẳng thường dùng để biểu diễn điều gì?",
-            "options": [
-              "Sự thay đổi của đại lượng theo thời gian",
-              "Tỉ lệ phần trăm trong tổng thể",
-              "So sánh 2 số bất kỳ",
-              "Vị trí điểm trên mặt phẳng"
-            ],
-            "correct_index": 0,
-            "explanation": "Biểu đồ đoạn thẳng biểu diễn sự thay đổi của một đại lượng theo thời gian — như nhìn nhịp tim lên xuống.",
-            "tags": [
-              "bai19",
-              "bieu-do-doan-thang"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 2.0,
-          "metadata_json": {
-            "question": "Áp dụng: Muốn biểu diễn nhiệt độ trung bình mỗi tháng trong năm, nên dùng loại biểu đồ nào?",
-            "options": [
-              "Biểu đồ đoạn thẳng",
-              "Biểu đồ quạt tròn",
-              "Không cần biểu đồ",
-              "Bảng số liệu duy nhất"
-            ],
-            "correct_index": 0,
-            "explanation": "Nhiệt độ thay đổi theo thời gian (theo tháng) nên biểu đồ đoạn thẳng là phù hợp nhất.",
-            "tags": [
-              "bai19",
-              "bieu-do-doan-thang"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 1.2,
-          "metadata_json": {
-            "question": "Mẹo nhớ ngoặc như 'búp bê Nga lồng nhau' — ngoặc trong cùng làm trước: ___ → [ ] → { }.",
-            "choices": [
-              "( )",
-              "[ ]",
-              "{ }",
-              "không có ngoặc nào trước"
-            ],
-            "correct_answer": "( )",
-            "explanation": "Ngoặc tròn ( ) — lớp trong cùng — làm trước, rồi đến ngoặc vuông [ ], cuối cùng ngoặc nhọn { } — giống bóc búp bê Nga từ trong ra ngoài.",
-            "tags": [
-              "bai4",
-              "dau-ngoac"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.3,
-          "metadata_json": {
-            "question": "Áp dụng: 'Bóc từ trong ra' — Kết quả của $2 \\cdot [3 + (4-1)]$ là:",
-            "options": [
-              "12",
-              "10",
-              "18",
-              "9"
-            ],
-            "correct_index": 0,
-            "explanation": "Ngoặc tròn trước: $4-1=3$. Ngoặc vuông: $3+3=6$. Nhân: $2 \\cdot 6=12$.",
-            "tags": [
-              "bai4",
-              "dau-ngoac"
-            ]
-          }
-        },
-        {
-          "type": "matching",
-          "difficulty": 1.6,
-          "metadata_json": {
-            "question": "Nối tên cặp góc với vị trí — mẹo 'SO LE thì khác phía, ĐỒNG VỊ thì cùng vị trí':",
-            "pairs": [
-              {
-                "left": "Góc so le trong",
-                "right": "Nằm khác phía đường cắt, giữa hai đường thẳng"
-              },
-              {
-                "left": "Góc đồng vị",
-                "right": "Nằm cùng phía đường cắt, cùng vị trí ở mỗi đường thẳng"
-              }
-            ],
-            "tags": [
-              "bai9-10",
-              "so-le-dong-vi"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.6,
-          "metadata_json": {
-            "question": "Áp dụng: Đường thẳng c cắt a, b tại A, B, một cặp góc 'cùng phía cùng vị trí' (đồng vị) đo được 70° và 70°. Kết luận về a, b?",
-            "options": [
-              "a song song với b",
-              "a cắt b tại một điểm khác",
-              "a vuông góc với b",
-              "Không đủ dữ kiện"
-            ],
-            "correct_index": 0,
-            "explanation": "Cặp góc đồng vị bằng nhau (70°=70°) nên a song song với b.",
-            "tags": [
-              "bai9-10",
-              "so-le-dong-vi"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 2.0,
-          "metadata_json": {
-            "question": "Mẹo 'cả cái bánh pizza tròn = 100%': Biểu đồ quạt tròn so sánh các phần trong toàn bộ, tổng các phần luôn bằng ___%.",
-            "choices": [
-              "100",
-              "50",
-              "360",
-              "10"
-            ],
-            "correct_answer": "100",
-            "explanation": "Biểu đồ quạt tròn biểu diễn tỉ lệ phần trăm, các miếng 'bánh pizza' cộng lại luôn đúng 100%.",
-            "tags": [
-              "bai18",
-              "bieu-do-quat-tron"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 2.0,
-          "metadata_json": {
-            "question": "Áp dụng: Biểu đồ quạt tròn có 3 phần 30%, 45%, và phần còn lại. 'Miếng bánh' còn lại chiếm bao nhiêu %?",
-            "options": [
-              "25%",
-              "30%",
-              "45%",
-              "75%"
-            ],
-            "correct_index": 0,
-            "explanation": "Tổng các phần bằng 100%, nên phần còn lại = 100% - 30% - 45% = 25%.",
-            "tags": [
-              "bai18",
-              "bieu-do-quat-tron"
             ]
           }
         },
@@ -3522,6 +2525,241 @@
           }
         },
         {
+          "type": "fill_blank",
+          "difficulty": 1.9,
+          "metadata_json": {
+            "question": "Mẹo: '2 góc đáy sinh đôi không thể cùng tù' (vì tổng đã vượt 180°) — nên góc tù của tam giác cân chắc chắn nằm ở ___.",
+            "choices": [
+              "đỉnh",
+              "đáy (cả hai)",
+              "cạnh bên",
+              "không xác định được"
+            ],
+            "correct_answer": "đỉnh",
+            "explanation": "Hai góc đáy luôn bằng nhau; nếu cả hai đều tù thì tổng đã vượt quá 180°, vô lý. Vậy góc tù chỉ có thể là góc ở đỉnh.",
+            "tags": [
+              "bai16",
+              "tam-giac-can-goc-tu"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.9,
+          "metadata_json": {
+            "question": "Áp dụng: Tam giác ABC cân tại A có góc A = 120° (góc tù, đúng như dự đoán 'góc tù ở đỉnh'). Mỗi góc đáy bằng bao nhiêu?",
+            "options": [
+              "30°",
+              "60°",
+              "120°",
+              "90°"
+            ],
+            "correct_index": 0,
+            "explanation": "Tổng 2 góc đáy = 180°-120°=60°, hai góc đáy bằng nhau nên mỗi góc = 30°.",
+            "tags": [
+              "bai16",
+              "tam-giac-can-goc-tu"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.9,
+          "metadata_json": {
+            "question": "Mẹo 'CÂN = 2 bên CÂN bằng nhau như cái cân đĩa': Tam giác cân có ___ cạnh bên bằng nhau.",
+            "choices": [
+              "hai",
+              "ba",
+              "bốn",
+              "không"
+            ],
+            "correct_answer": "hai",
+            "explanation": "Tam giác cân có hai cạnh bên bằng nhau và hai góc ở đáy bằng nhau — như 2 đĩa cân thăng bằng.",
+            "tags": [
+              "bai16",
+              "tam-giac-can"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.9,
+          "metadata_json": {
+            "question": "Áp dụng: Tam giác ABC cân tại A, góc đỉnh A = 40°. Mỗi góc đáy (2 bên 'cân bằng nhau') là bao nhiêu?",
+            "options": [
+              "70°",
+              "40°",
+              "140°",
+              "80°"
+            ],
+            "correct_index": 0,
+            "explanation": "Tổng 2 góc đáy = 180° - 40° = 140°, hai góc đáy bằng nhau nên mỗi góc = 70°.",
+            "tags": [
+              "bai16",
+              "tam-giac-can"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Mẹo 'đường LÊN dốc = giá trị TĂNG, đường XUỐNG dốc = giá trị GIẢM': Nếu đoạn nối đi lên thì đại lượng đang ___.",
+            "choices": [
+              "tăng",
+              "giảm",
+              "không đổi",
+              "bằng 0"
+            ],
+            "correct_answer": "tăng",
+            "explanation": "Đoạn thẳng đi lên (dốc lên) thể hiện giá trị tăng theo thời gian; đi xuống thể hiện giảm.",
+            "tags": [
+              "bai19",
+              "doc-bieu-do-doan-thang"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Áp dụng: Biểu đồ nhiệt độ có đoạn từ tháng 1 (20°C) đến tháng 2 (18°C) đi xuống dốc. Điều này thể hiện gì?",
+            "options": [
+              "Nhiệt độ giảm từ tháng 1 sang tháng 2",
+              "Nhiệt độ tăng",
+              "Nhiệt độ không đổi",
+              "Không đọc được thông tin"
+            ],
+            "correct_index": 0,
+            "explanation": "Đoạn thẳng đi xuống (từ 20°C xuống 18°C) thể hiện nhiệt độ giảm.",
+            "tags": [
+              "bai19",
+              "doc-bieu-do-doan-thang"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Mẹo 'làm tròn số âm thì làm tròn số ĐỐI rồi thêm dấu TRỪ': Để làm tròn số thập phân âm, ta làm tròn số đối của nó rồi thêm dấu ___ phía trước.",
+            "choices": [
+              "trừ",
+              "cộng",
+              "nhân",
+              "chia"
+            ],
+            "correct_answer": "trừ",
+            "explanation": "Làm tròn số âm bằng cách bỏ dấu '-', làm tròn số dương nhận được, rồi đặt dấu '-' trước kết quả.",
+            "tags": [
+              "so-hoc-6",
+              "lam-tron-so"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Áp dụng: Làm tròn số $-5,67$ đến hàng phần mười.",
+            "options": [
+              "$-5,7$",
+              "$-5,6$",
+              "$5,7$",
+              "$-6,0$"
+            ],
+            "correct_index": 0,
+            "explanation": "Xét số đối là $5,67$. Làm tròn đến hàng phần mười ta được $5,7$. Thêm lại dấu '-' ta được $-5,7$.",
+            "tags": [
+              "so-hoc-6",
+              "lam-tron-so"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Mẹo 'làm tròn đến hàng ĐƠN VỊ thì xét hàng PHẦN MƯỜI': Khi làm tròn đến hàng đơn vị của số thập phân, chữ số đầu tiên bỏ đi nằm ở hàng phần ___.",
+            "choices": [
+              "mười",
+              "trăm",
+              "nghìn",
+              "đơn vị"
+            ],
+            "correct_answer": "mười",
+            "explanation": "Chữ số ngay sau hàng đơn vị là chữ số ở hàng phần mười. Ta cần xét nó để quyết định làm tròn lên hay xuống.",
+            "tags": [
+              "so-hoc-6",
+              "lam-tron-so"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Áp dụng: Làm tròn số $8,52$ đến hàng đơn vị.",
+            "options": [
+              "$9$",
+              "$8$",
+              "$8,5$",
+              "$10$"
+            ],
+            "correct_index": 0,
+            "explanation": "Chữ số hàng đơn vị là 8, chữ số hàng phần mười ngay sau nó là 5 ($\\ge 5$). Ta làm tròn lên thành 9.",
+            "tags": [
+              "so-hoc-6",
+              "lam-tron-so"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Mẹo 'nằm TRÊN đường thẳng thì THUỘC': Nếu điểm A nằm trên đường thẳng d, ta nói điểm A ___ đường thẳng d.",
+            "choices": [
+              "thuộc",
+              "không thuộc",
+              "song song",
+              "trùng với"
+            ],
+            "correct_answer": "thuộc",
+            "explanation": "Điểm nằm trên đường thẳng thì thuộc đường thẳng đó. Ký hiệu là $A \\in d$.",
+            "tags": [
+              "hinh-hoc-6",
+              "diem-duong-thang"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Áp dụng: Cho điểm M nằm trên đường thẳng a. Ký hiệu toán học nào sau đây mô tả đúng quan hệ này?",
+            "options": [
+              "$M \\in a$",
+              "$M \\notin a$",
+              "$M \\subset a$",
+              "$a \\in M$"
+            ],
+            "correct_index": 0,
+            "explanation": "Vì M nằm trên đường thẳng a nên M thuộc a, ký hiệu là $M \\in a$.",
+            "tags": [
+              "hinh-hoc-6",
+              "diem-duong-thang"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 8,
+      "title": "Ôn lý thuyết - Đề số 8",
+      "duration_minutes": 30,
+      "questions": [
+        {
           "type": "multiple_choice",
           "difficulty": 1.7,
           "metadata_json": {
@@ -3558,87 +2796,23 @@
               "dinh-li"
             ]
           }
-        }
-      ]
-    },
-    {
-      "exam_number": 10,
-      "title": "Ôn lý thuyết - Đề số 10",
-      "duration_minutes": 30,
-      "questions": [
-        {
-          "type": "fill_blank",
-          "difficulty": 1.2,
-          "metadata_json": {
-            "question": "Mẹo nhớ ngoặc như 'búp bê Nga lồng nhau' — ngoặc trong cùng làm trước: ___ → [ ] → { }.",
-            "choices": [
-              "( )",
-              "[ ]",
-              "{ }",
-              "không có ngoặc nào trước"
-            ],
-            "correct_answer": "( )",
-            "explanation": "Ngoặc tròn ( ) — lớp trong cùng — làm trước, rồi đến ngoặc vuông [ ], cuối cùng ngoặc nhọn { } — giống bóc búp bê Nga từ trong ra ngoài.",
-            "tags": [
-              "bai4",
-              "dau-ngoac"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.3,
-          "metadata_json": {
-            "question": "Áp dụng: 'Bóc từ trong ra' — Kết quả của $2 \\cdot [3 + (4-1)]$ là:",
-            "options": [
-              "12",
-              "10",
-              "18",
-              "9"
-            ],
-            "correct_index": 0,
-            "explanation": "Ngoặc tròn trước: $4-1=3$. Ngoặc vuông: $3+3=6$. Nhân: $2 \\cdot 6=12$.",
-            "tags": [
-              "bai4",
-              "dau-ngoac"
-            ]
-          }
         },
         {
           "type": "fill_blank",
-          "difficulty": 1.8,
+          "difficulty": 1.5,
           "metadata_json": {
-            "question": "Mẹo 'g.c.g = Góc kẹp Cạnh kẹp Góc': một cạnh và 2 góc kề cạnh đó bằng tương ứng → bằng nhau theo trường hợp ___.",
+            "question": "Mẹo 'KỀ nhau BÙ nhau thành đường thẳng': Hai góc chung 1 cạnh, hai cạnh còn lại là 2 tia đối nhau — tổng số đo bằng ___ độ.",
             "choices": [
-              "g.c.g",
-              "c.c.c",
-              "c.g.c",
-              "không xác định"
+              "180",
+              "90",
+              "360",
+              "270"
             ],
-            "correct_answer": "g.c.g",
-            "explanation": "Trường hợp Góc-Cạnh-Góc: một cạnh và hai góc kề cạnh đó bằng nhau tương ứng thì hai tam giác bằng nhau.",
+            "correct_answer": "180",
+            "explanation": "Hai góc kề bù ghép lại vừa khít thành một đường thẳng (180°) — như bẻ gập một que thẳng tại 1 điểm.",
             "tags": [
-              "bai13-14",
-              "gcg"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.8,
-          "metadata_json": {
-            "question": "Áp dụng: Tam giác ABC và DEF có góc A=góc D, AB=DE (cạnh kẹp giữa), góc B=góc E. Bằng nhau theo trường hợp nào?",
-            "options": [
-              "g.c.g",
-              "c.c.c",
-              "c.g.c",
-              "Không đủ dữ kiện"
-            ],
-            "correct_index": 0,
-            "explanation": "Cạnh AB=DE xen giữa hai góc A=D và B=E tương ứng bằng nhau → trường hợp g.c.g.",
-            "tags": [
-              "bai13-14",
-              "gcg"
+              "bai8",
+              "goc-ke-bu"
             ]
           }
         },
@@ -3646,37 +2820,132 @@
           "type": "multiple_choice",
           "difficulty": 1.5,
           "metadata_json": {
-            "question": "'Kề Bù = Kề nhau, Bù thành 180°' — Hai góc kề bù có tổng số đo bằng bao nhiêu độ?",
+            "question": "Áp dụng: Hai góc kề bù, góc thứ nhất bằng 65°. Góc còn lại 'bù' đủ 180° là bao nhiêu?",
             "options": [
-              "180°",
-              "90°",
-              "360°",
-              "120°"
+              "115°",
+              "65°",
+              "25°",
+              "155°"
             ],
             "correct_index": 0,
-            "explanation": "Hai góc kề bù có tổng bằng 180 độ — như một đường thẳng bị chia làm 2 phần bởi 1 tia.",
+            "explanation": "Tổng hai góc kề bù bằng 180°, nên góc còn lại = 180° - 65° = 115°.",
             "tags": [
               "bai8",
-              "goc-ke-bu-2"
+              "goc-ke-bu"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Mẹo 'miếng bánh to hơn = tỉ lệ cao hơn': Phần có tỉ lệ % lớn hơn thì có diện tích hình quạt ___ hơn.",
+            "choices": [
+              "lớn",
+              "nhỏ",
+              "bằng nhau",
+              "không liên quan"
+            ],
+            "correct_answer": "lớn",
+            "explanation": "Diện tích hình quạt tỉ lệ thuận với tỉ lệ phần trăm mà nó biểu diễn — giống cắt bánh, phần nhiều % thì miếng to hơn.",
+            "tags": [
+              "bai18",
+              "doc-bieu-do-quat"
             ]
           }
         },
         {
           "type": "multiple_choice",
-          "difficulty": 1.5,
+          "difficulty": 2,
           "metadata_json": {
-            "question": "Áp dụng: Hai góc kề bù, góc thứ nhất gấp đôi góc thứ hai. Góc thứ hai bằng bao nhiêu?",
+            "question": "Áp dụng: Khảo sát môn yêu thích: Toán 40%, Văn 25%, Anh 35%. 'Miếng bánh' to nhất (được yêu thích nhất) là môn nào?",
             "options": [
-              "60°",
-              "90°",
-              "120°",
-              "45°"
+              "Toán",
+              "Văn",
+              "Anh",
+              "Không xác định"
             ],
             "correct_index": 0,
-            "explanation": "Gọi góc 2 là x, góc 1 là 2x: $x+2x=180° \\Rightarrow x=60°$.",
+            "explanation": "Toán có tỉ lệ cao nhất (40% > 35% > 25%) nên có hình quạt lớn nhất, được yêu thích nhiều nhất.",
+            "tags": [
+              "bai18",
+              "doc-bieu-do-quat"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Hai góc 'soi gương chéo nhau qua tâm giao điểm' (đối đỉnh) có tính chất gì?",
+            "options": [
+              "Bằng nhau",
+              "Bù nhau",
+              "Phụ nhau",
+              "Kề nhau"
+            ],
+            "correct_index": 0,
+            "explanation": "Hai góc đối đỉnh luôn bằng nhau — như 2 hình phản chiếu qua tâm.",
             "tags": [
               "bai8",
-              "goc-ke-bu-2"
+              "goc-doi-dinh-2"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Áp dụng: Hai đường thẳng cắt nhau tạo 4 góc, một góc bằng 35°. Góc 'soi gương chéo' với nó bằng bao nhiêu?",
+            "options": [
+              "35°",
+              "145°",
+              "70°",
+              "55°"
+            ],
+            "correct_index": 0,
+            "explanation": "Hai góc đối đỉnh luôn bằng nhau, nên góc đối đỉnh cũng bằng 35°.",
+            "tags": [
+              "bai8",
+              "goc-doi-dinh-2"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.8,
+          "metadata_json": {
+            "question": "Mẹo 'viết ký hiệu bằng nhau phải ĐÚNG THỨ TỰ đỉnh tương ứng, như ghép đúng cặp giày trái-phải': Khi viết $\\triangle ABC = \\triangle DEF$, đỉnh A tương ứng với đỉnh ___.",
+            "choices": [
+              "D",
+              "E",
+              "F",
+              "không đỉnh nào"
+            ],
+            "correct_answer": "D",
+            "explanation": "Ký hiệu bằng nhau phải viết đúng thứ tự đỉnh tương ứng: A↔D, B↔E, C↔F — sai thứ tự là sai đề dù hình vẽ đúng.",
+            "tags": [
+              "bai13-14",
+              "thu-tu-dinh"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.8,
+          "metadata_json": {
+            "question": "Áp dụng: Nếu $\\triangle ABC = \\triangle MNP$ thì cạnh AB tương ứng bằng cạnh nào?",
+            "options": [
+              "MN",
+              "NP",
+              "MP",
+              "AC"
+            ],
+            "correct_index": 0,
+            "explanation": "Theo đúng thứ tự tương ứng A↔M, B↔N, C↔P, nên cạnh AB tương ứng với cạnh MN.",
+            "tags": [
+              "bai13-14",
+              "thu-tu-dinh"
             ]
           }
         },
@@ -3715,164 +2984,6 @@
             "tags": [
               "bai12",
               "tam-giac-deu"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 1.7,
-          "metadata_json": {
-            "question": "Mẹo 'NẾU...THÌ...' — phần đứng SAU chữ 'thì' (điều cần chứng minh) gọi là ___.",
-            "choices": [
-              "Kết luận",
-              "Giả thiết",
-              "Hệ quả",
-              "Tiên đề"
-            ],
-            "correct_answer": "Kết luận",
-            "explanation": "Kết luận (KL) là điều cần chứng minh/suy ra, nằm sau chữ 'thì'.",
-            "tags": [
-              "bai11",
-              "dinh-li-2"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.7,
-          "metadata_json": {
-            "question": "Áp dụng: 'Nếu 2 đường thẳng cùng song song với đường thứ ba THÌ chúng song song nhau' — phần sau 'thì' (Kết luận) là gì?",
-            "options": [
-              "Chúng song song với nhau",
-              "Hai đường thẳng song song với đường thẳng thứ ba",
-              "Cả câu",
-              "Không có kết luận"
-            ],
-            "correct_index": 0,
-            "explanation": "Kết luận nằm sau từ 'thì': 'chúng song song với nhau'.",
-            "tags": [
-              "bai11",
-              "dinh-li-2"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.3,
-          "metadata_json": {
-            "question": "Khi làm tròn số, ta dựa vào đâu để quyết định 'giữ hay tăng' chữ số?",
-            "options": [
-              "Độ chính xác cho trước",
-              "Số lượng chữ số bất kỳ",
-              "Dấu của số đó",
-              "Giá trị tuyệt đối lớn nhất"
-            ],
-            "correct_index": 0,
-            "explanation": "Làm tròn số dựa trên độ chính xác cho trước — quy tắc 'từ 5 trở lên thì làm tròn lên, dưới 5 thì bỏ' áp dụng ở hàng cần làm tròn.",
-            "tags": [
-              "bai5",
-              "lam-tron"
-            ]
-          }
-        },
-        {
-          "type": "fill_blank",
-          "difficulty": 1.3,
-          "metadata_json": {
-            "question": "Mẹo '5 trở lên làm tròn lên, dưới 5 thì bỏ': Làm tròn $3{,}5678$ đến hàng phần trăm được ___ (vì chữ số kế tiếp là 7 ≥ 5).",
-            "choices": [
-              "3,57",
-              "3,56",
-              "3,6",
-              "3,5"
-            ],
-            "correct_answer": "3,57",
-            "explanation": "Chữ số hàng phần nghìn là 7 ≥ 5 nên hàng phần trăm tăng thêm 1: 3,56 → 3,57.",
-            "tags": [
-              "bai5",
-              "lam-tron"
-            ]
-          }
-        },
-        {
-          "type": "matching",
-          "difficulty": 1.1,
-          "metadata_json": {
-            "question": "Nối công thức với 'biệt danh' của tính chất (mẹo: HOÁN = đổi chỗ, HỢP = gộp nhóm, PHỐI = chia đều ra):",
-            "pairs": [
-              {
-                "left": "$a+b=b+a$",
-                "right": "Tính chất giao hoán (đổi CHỖ, kết quả không đổi)"
-              },
-              {
-                "left": "$(a+b)+c=a+(b+c)$",
-                "right": "Tính chất kết hợp (đổi NHÓM, kết quả không đổi)"
-              },
-              {
-                "left": "$a(b+c)=ab+ac$",
-                "right": "Tính chất phân phối (nhân PHÂN PHỐI vào từng số hạng)"
-              }
-            ],
-            "tags": [
-              "bai2",
-              "tinh-chat"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.1,
-          "metadata_json": {
-            "question": "Áp dụng: $3 \\cdot (4+5) = 3 \\cdot 4 + 3 \\cdot 5$ — phép nhân 3 đã 'phân phát' đều cho cả 4 và 5. Đây là tính chất gì?",
-            "options": [
-              "Phân phối",
-              "Giao hoán",
-              "Kết hợp",
-              "Không có tính chất nào"
-            ],
-            "correct_index": 0,
-            "explanation": "Đây là tính chất phân phối: $a(b+c)=ab+ac$ — số nhân được 'chia đều' vào từng số hạng trong ngoặc.",
-            "tags": [
-              "bai2",
-              "tinh-chat"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.6,
-          "metadata_json": {
-            "question": "Mẹo 'so le trong hoặc đồng vị BẰNG NHAU thì song song NHAU' — đây là dấu hiệu gì?",
-            "options": [
-              "Dấu hiệu nhận biết hai đường thẳng song song",
-              "Dấu hiệu hai đường thẳng vuông góc",
-              "Dấu hiệu hai góc kề bù",
-              "Dấu hiệu hai đường thẳng cắt nhau"
-            ],
-            "correct_index": 0,
-            "explanation": "Cặp góc so le trong bằng nhau (hoặc đồng vị bằng nhau) → hai đường thẳng song song. Nhớ: 'bằng nhau ắt song song'.",
-            "tags": [
-              "bai9-10",
-              "duong-thang-song-song"
-            ]
-          }
-        },
-        {
-          "type": "multiple_choice",
-          "difficulty": 1.6,
-          "metadata_json": {
-            "question": "Áp dụng: Đường thẳng c cắt a, b tạo một cặp góc so le trong đều 55°. Kết luận về a, b?",
-            "options": [
-              "a song song với b",
-              "a vuông góc với b",
-              "a trùng với b",
-              "Không kết luận được"
-            ],
-            "correct_index": 0,
-            "explanation": "Cặp góc so le trong bằng nhau (55°=55°) nên a // b theo dấu hiệu nhận biết.",
-            "tags": [
-              "bai9-10",
-              "duong-thang-song-song"
             ]
           }
         },
@@ -3916,6 +3027,650 @@
         },
         {
           "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Mẹo 'cùng đi trên MỘT con đường thẳng': Khi ba điểm cùng thuộc một ___ , ta nói chúng thẳng hàng.",
+            "choices": [
+              "đường thẳng",
+              "đường cong",
+              "đoạn thẳng",
+              "tia"
+            ],
+            "correct_answer": "đường thẳng",
+            "explanation": "Ba điểm thẳng hàng khi và chỉ khi chúng cùng nằm trên một đường thẳng.",
+            "tags": [
+              "hinh-hoc-6",
+              "ba-diem-thang-hang"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Áp dụng: Cho ba điểm A, B, C cùng nằm trên đường thẳng xy. Phát biểu nào sau đây là chính xác nhất?",
+            "options": [
+              "Ba điểm A, B, C thẳng hàng",
+              "Ba điểm A, B, C không thẳng hàng",
+              "Điểm B nằm giữa A và C",
+              "Đường thẳng xy đi qua hai điểm A và B nhưng không qua C"
+            ],
+            "correct_index": 0,
+            "explanation": "Vì cả ba điểm A, B, C đều thuộc đường thẳng xy nên chúng thẳng hàng theo định nghĩa.",
+            "tags": [
+              "hinh-hoc-6",
+              "ba-diem-thang-hang"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Mẹo 'đường thẳng bị chặn một đầu bởi điểm GỐC': Hình gồm điểm O và một phần đường thẳng bị chia bởi điểm O gọi là một ___ gốc O.",
+            "choices": [
+              "tia",
+              "đoạn thẳng",
+              "đường thẳng",
+              "góc"
+            ],
+            "correct_answer": "tia",
+            "explanation": "Tia gốc O (hay nửa đường thẳng gốc O) là hình gồm điểm O và một phần đường thẳng bị chia ra bởi điểm O.",
+            "tags": [
+              "hinh-hoc-6",
+              "tia"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Áp dụng: Cho điểm O nằm trên đường thẳng xy. Khi đó, Ox và Oy là hai tia có tính chất gì đặc biệt?",
+            "options": [
+              "Hai tia đối nhau",
+              "Hai tia trùng nhau",
+              "Hai tia vuông góc",
+              "Hai tia song song"
+            ],
+            "correct_index": 0,
+            "explanation": "Ox và Oy chung gốc O và tạo thành đường thẳng xy nên chúng là hai tia đối nhau.",
+            "tags": [
+              "hinh-hoc-6",
+              "tia"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Mẹo 'góc bẹt rộng thẳng cánh như đường thẳng': Góc có số đo bằng $180^\\circ$ gọi là góc ___.",
+            "choices": [
+              "bẹt",
+              "vuông",
+              "nhọn",
+              "tù"
+            ],
+            "correct_answer": "bẹt",
+            "explanation": "Góc bẹt có hai cạnh là hai tia đối nhau và có số đo bằng $180^\\circ$.",
+            "tags": [
+              "hinh-hoc-6",
+              "cac-loai-goc"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Áp dụng: Một góc vuông có số đo bằng $90^\\circ$. Góc xOy có số đo bằng $135^\\circ$ thì được phân loại là góc gì?",
+            "options": [
+              "Góc tù",
+              "Góc nhọn",
+              "Góc vuông",
+              "Góc bẹt"
+            ],
+            "correct_index": 0,
+            "explanation": "Vì $90^\\circ < 135^\\circ < 180^\\circ$ nên góc xOy là góc tù.",
+            "tags": [
+              "hinh-hoc-6",
+              "cac-loai-goc"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 9,
+      "title": "Ôn lý thuyết - Đề số 9",
+      "duration_minutes": 30,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Mẹo 'cả cái bánh pizza tròn = 100%': Biểu đồ quạt tròn so sánh các phần trong toàn bộ, tổng các phần luôn bằng ___%.",
+            "choices": [
+              "100",
+              "50",
+              "360",
+              "10"
+            ],
+            "correct_answer": "100",
+            "explanation": "Biểu đồ quạt tròn biểu diễn tỉ lệ phần trăm, các miếng 'bánh pizza' cộng lại luôn đúng 100%.",
+            "tags": [
+              "bai18",
+              "bieu-do-quat-tron"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Áp dụng: Biểu đồ quạt tròn có 3 phần 30%, 45%, và phần còn lại. 'Miếng bánh' còn lại chiếm bao nhiêu %?",
+            "options": [
+              "25%",
+              "30%",
+              "45%",
+              "75%"
+            ],
+            "correct_index": 0,
+            "explanation": "Tổng các phần bằng 100%, nên phần còn lại = 100% - 30% - 45% = 25%.",
+            "tags": [
+              "bai18",
+              "bieu-do-quat-tron"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.4,
+          "metadata_json": {
+            "question": "$|a|$ giống 'đo khoảng cách bằng thước, không quan tâm hướng' — là ___ từ điểm a đến gốc O trên trục số.",
+            "choices": [
+              "khoảng cách",
+              "tổng",
+              "hiệu",
+              "tích"
+            ],
+            "correct_answer": "khoảng cách",
+            "explanation": "|a| là khoảng cách từ điểm a đến gốc O, luôn không âm — giống đo bằng thước thì không có khoảng cách âm.",
+            "tags": [
+              "bai7",
+              "gia-tri-tuyet-doi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.4,
+          "metadata_json": {
+            "question": "Áp dụng: 'Đo khoảng cách' từ -7 đến 0, ta được $|-7|$ bằng bao nhiêu?",
+            "options": [
+              "7",
+              "-7",
+              "0",
+              "14"
+            ],
+            "correct_index": 0,
+            "explanation": "$|-7| = 7$ vì khoảng cách từ -7 đến 0 trên trục số là 7 đơn vị (khoảng cách luôn dương).",
+            "tags": [
+              "bai7",
+              "gia-tri-tuyet-doi"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.8,
+          "metadata_json": {
+            "question": "Mẹo 'g.c.g = Góc kẹp Cạnh kẹp Góc': một cạnh và 2 góc kề cạnh đó bằng tương ứng → bằng nhau theo trường hợp ___.",
+            "choices": [
+              "g.c.g",
+              "c.c.c",
+              "c.g.c",
+              "không xác định"
+            ],
+            "correct_answer": "g.c.g",
+            "explanation": "Trường hợp Góc-Cạnh-Góc: một cạnh và hai góc kề cạnh đó bằng nhau tương ứng thì hai tam giác bằng nhau.",
+            "tags": [
+              "bai13-14",
+              "gcg"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.8,
+          "metadata_json": {
+            "question": "Áp dụng: Tam giác ABC và DEF có góc A=góc D, AB=DE (cạnh kẹp giữa), góc B=góc E. Bằng nhau theo trường hợp nào?",
+            "options": [
+              "g.c.g",
+              "c.c.c",
+              "c.g.c",
+              "Không đủ dữ kiện"
+            ],
+            "correct_index": 0,
+            "explanation": "Cạnh AB=DE xen giữa hai góc A=D và B=E tương ứng bằng nhau → trường hợp g.c.g.",
+            "tags": [
+              "bai13-14",
+              "gcg"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Trong phân số $\\dfrac{a}{b}$, mẫu số b giống như 'số người chia bánh' — không bao giờ được ___.",
+            "choices": [
+              "bằng 0",
+              "âm",
+              "là số lẻ",
+              "lớn hơn a"
+            ],
+            "correct_answer": "bằng 0",
+            "explanation": "Mẫu số b phải khác 0. Meo nhớ: 'chia bánh cho 0 người' là vô nghĩa — không thể chia phép chia cho 0.",
+            "tags": [
+              "bai1",
+              "dieu-kien-so-huu-ti"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Áp dụng: Biểu thức nào 'chia bánh cho 0 người' — KHÔNG hợp lệ?",
+            "options": [
+              "$\\dfrac{5}{0}$",
+              "$\\dfrac{-3}{4}$",
+              "$\\dfrac{0}{7}$",
+              "$\\dfrac{2}{9}$"
+            ],
+            "correct_index": 0,
+            "explanation": "$\\dfrac{5}{0}$ không hợp lệ vì mẫu số bằng 0 (chia cho 0 vô nghĩa).",
+            "tags": [
+              "bai1",
+              "dieu-kien-so-huu-ti"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Nối phương pháp thu thập dữ liệu với ví dụ — mẹo 'nhìn = quan sát, làm = thí nghiệm, hỏi giấy = khảo sát, hỏi miệng = phỏng vấn':",
+            "pairs": [
+              {
+                "left": "Quan sát trực tiếp",
+                "right": "Đếm số xe qua ngã tư trong 1 giờ"
+              },
+              {
+                "left": "Làm thí nghiệm",
+                "right": "Đo thời gian rơi của vật ở các độ cao khác nhau"
+              },
+              {
+                "left": "Lập bảng câu hỏi khảo sát",
+                "right": "Phát phiếu hỏi sở thích môn học cho cả lớp"
+              },
+              {
+                "left": "Phỏng vấn trực tiếp",
+                "right": "Hỏi trực tiếp ý kiến của hiệu trưởng"
+              }
+            ],
+            "tags": [
+              "bai17",
+              "thu-thap-du-lieu"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Áp dụng: Muốn biết chiều cao trung bình học sinh lớp 7A, nên 'đo trực tiếp' bằng phương pháp nào?",
+            "options": [
+              "Đo trực tiếp (quan sát/thí nghiệm)",
+              "Phỏng vấn phụ huynh",
+              "Đoán dựa trên lớp khác",
+              "Không cần thu thập"
+            ],
+            "correct_index": 0,
+            "explanation": "Đo chiều cao thực tế từng học sinh là phương pháp quan sát/đo đạc trực tiếp, chính xác nhất.",
+            "tags": [
+              "bai17",
+              "thu-thap-du-lieu"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "difficulty": 1.2,
+          "metadata_json": {
+            "question": "Nối phép tính lũy thừa với công thức — mẹo: 'NHÂN thì CỘNG, CHIA thì TRỪ, LŨY THỪA CỦA LŨY THỪA thì NHÂN':",
+            "pairs": [
+              {
+                "left": "$x^m \\cdot x^n$ (NHÂN)",
+                "right": "$x^{m+n}$ (CỘNG số mũ)"
+              },
+              {
+                "left": "$x^m : x^n$ (CHIA, x≠0)",
+                "right": "$x^{m-n}$ (TRỪ số mũ)"
+              },
+              {
+                "left": "$(x^m)^n$ (lũy thừa CỦA lũy thừa)",
+                "right": "$x^{m \\cdot n}$ (NHÂN số mũ)"
+              }
+            ],
+            "tags": [
+              "bai3",
+              "luy-thua"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.2,
+          "metadata_json": {
+            "question": "Áp dụng: 'NHÂN thì CỘNG số mũ' — Kết quả của $2^3 \\cdot 2^4$ là:",
+            "options": [
+              "$2^7$",
+              "$2^{12}$",
+              "$2^1$",
+              "$4^7$"
+            ],
+            "correct_index": 0,
+            "explanation": "Nhân hai lũy thừa cùng cơ số: cộng số mũ, $2^3 \\cdot 2^4 = 2^{3+4} = 2^7$.",
+            "tags": [
+              "bai3",
+              "luy-thua"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.9,
+          "metadata_json": {
+            "question": "Tam giác vuông có 'đường tắt riêng' để xét bằng nhau — đó là trường hợp nào?",
+            "options": [
+              "Cạnh huyền - góc nhọn hoặc cạnh huyền - cạnh góc vuông",
+              "Chỉ cạnh - cạnh - cạnh",
+              "Chỉ góc - góc - góc",
+              "Không có trường hợp riêng"
+            ],
+            "correct_index": 0,
+            "explanation": "Tam giác vuông có 2 trường hợp 'đường tắt' riêng: cạnh huyền-góc nhọn và cạnh huyền-cạnh góc vuông (nhờ đã biết trước 1 góc vuông).",
+            "tags": [
+              "bai15",
+              "tam-giac-vuong"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.9,
+          "metadata_json": {
+            "question": "Áp dụng: Hai tam giác vuông có cạnh huyền bằng nhau và một góc nhọn bằng nhau. Bằng nhau theo trường hợp nào?",
+            "options": [
+              "Cạnh huyền - góc nhọn",
+              "c.c.c",
+              "Cạnh huyền - cạnh góc vuông",
+              "Không đủ dữ kiện"
+            ],
+            "correct_index": 0,
+            "explanation": "Cạnh huyền bằng nhau + một góc nhọn bằng nhau → trường hợp cạnh huyền - góc nhọn.",
+            "tags": [
+              "bai15",
+              "tam-giac-vuong"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Mẹo 'chia đôi đoạn thẳng THÀNH HAI PHẦN BẰNG NHAU': Trung điểm của đoạn thẳng chia đoạn thẳng đó thành hai phần ___.",
+            "choices": [
+              "bằng nhau",
+              "khác nhau",
+              "đối nhau",
+              "vuông góc"
+            ],
+            "correct_answer": "bằng nhau",
+            "explanation": "Trung điểm M của đoạn thẳng AB là điểm nằm giữa A, B và cách đều A, B ($MA = MB$).",
+            "tags": [
+              "hinh-hoc-6",
+              "trung-diem"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Áp dụng: Cho M là trung điểm của đoạn thẳng AB có độ dài bằng $8\\text{ cm}$. Tính độ dài đoạn thẳng AM.",
+            "options": [
+              "$4\\text{ cm}$",
+              "$8\\text{ cm}$",
+              "$2\\text{ cm}$",
+              "$16\\text{ cm}$"
+            ],
+            "correct_index": 0,
+            "explanation": "Vì M là trung điểm của AB nên $AM = MB = AB : 2 = 8 : 2 = 4\\text{ cm}$.",
+            "tags": [
+              "hinh-hoc-6",
+              "trung-diem"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Mẹo 'chia cả tử và mẫu cho ƯỚC CHUNG để gọn hơn': Muốn rút gọn phân số, ta chia cả tử và mẫu cho một ___ chung (khác 1 và -1).",
+            "choices": [
+              "ước",
+              "bội",
+              "tổng",
+              "hiệu"
+            ],
+            "correct_answer": "ước",
+            "explanation": "Rút gọn phân số bằng cách chia cả tử và mẫu cho ước chung lớn hơn 1 hoặc nhỏ hơn -1.",
+            "tags": [
+              "so-hoc-6",
+              "rut-gon-phan-so"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Áp dụng: Rút gọn phân số $\\frac{15}{25}$ về dạng tối giản.",
+            "options": [
+              "$\\frac{3}{5}$",
+              "$\\frac{5}{3}$",
+              "$\\frac{1}{2}$",
+              "$\\frac{3}{4}$"
+            ],
+            "correct_index": 0,
+            "explanation": "Chia cả tử và mẫu của $\\frac{15}{25}$ cho $ƯCLN(15, 25) = 5$, ta được $\\frac{3}{5}$.",
+            "tags": [
+              "so-hoc-6",
+              "rut-gon-phan-so"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Mẹo 'CÙNG MẪU thì ta CỘNG TỬ và GIỮ MẪU': Muốn cộng hai phân số cùng mẫu, ta cộng các tử và ___ mẫu số.",
+            "choices": [
+              "giữ nguyên",
+              "cộng",
+              "nhân",
+              "bỏ"
+            ],
+            "correct_answer": "giữ nguyên",
+            "explanation": "Công thức: $\\frac{a}{m} + \\frac{b}{m} = \\frac{a+b}{m}$. Mẫu số luôn giữ nguyên.",
+            "tags": [
+              "so-hoc-6",
+              "cong-phan-so"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Áp dụng: Tính giá trị của phép tính: $\\frac{-5}{7} + \\frac{2}{7}$.",
+            "options": [
+              "$\\frac{-3}{7}$",
+              "$\\frac{-7}{7}$",
+              "$\\frac{3}{7}$",
+              "$\\frac{-3}{14}$"
+            ],
+            "correct_index": 0,
+            "explanation": "Cộng hai tử số: $-5 + 2 = -3$. Giữ nguyên mẫu là 7, ta được $\\frac{-3}{7}$.",
+            "tags": [
+              "so-hoc-6",
+              "cong-phan-so"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 10,
+      "title": "Ôn lý thuyết - Đề số 10",
+      "duration_minutes": 30,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Mỗi số hữu tỉ đứng soi gương qua điểm 0 sẽ gặp bao nhiêu 'người anh em song sinh trái dấu' (số đối)?",
+            "options": [
+              "Một số đối duy nhất",
+              "Hai số đối",
+              "Không có số đối",
+              "Vô số số đối"
+            ],
+            "correct_index": 0,
+            "explanation": "Mỗi số hữu tỉ có đúng 1 số đối. Meo nhớ: soi gương qua điểm 0 chỉ cho ra đúng 1 ảnh — đổi dấu, giữ nguyên giá trị tuyệt đối.",
+            "tags": [
+              "bai1",
+              "so-doi"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Áp dụng: 'Soi gương' số $\\dfrac{-2}{7}$ qua điểm 0, ta được số đối là:",
+            "options": [
+              "$\\dfrac{2}{7}$",
+              "$\\dfrac{-2}{7}$",
+              "$\\dfrac{7}{2}$",
+              "$\\dfrac{-7}{2}$"
+            ],
+            "correct_index": 0,
+            "explanation": "Chỉ đổi dấu, giữ nguyên giá trị tuyệt đối: số đối của $\\dfrac{-2}{7}$ là $\\dfrac{2}{7}$.",
+            "tags": [
+              "bai1",
+              "so-doi"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "difficulty": 1.8,
+          "metadata_json": {
+            "question": "Nối trường hợp bằng nhau tam giác với ký hiệu — mẹo 'đọc đúng thứ tự chữ cái là hiểu ngay cần yếu tố gì':",
+            "pairs": [
+              {
+                "left": "Cạnh - Cạnh - Cạnh",
+                "right": "c.c.c"
+              },
+              {
+                "left": "Cạnh - Góc - Cạnh (góc xen giữa 2 cạnh)",
+                "right": "c.g.c"
+              },
+              {
+                "left": "Góc - Cạnh - Góc (cạnh xen giữa 2 góc)",
+                "right": "g.c.g"
+              }
+            ],
+            "tags": [
+              "bai13-14",
+              "tam-giac-bang-nhau"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.8,
+          "metadata_json": {
+            "question": "Áp dụng: Tam giác ABC và DEF có AB=DE, góc A = góc D (xen giữa), AC=DF. Bằng nhau theo trường hợp nào?",
+            "options": [
+              "c.g.c",
+              "c.c.c",
+              "g.c.g",
+              "Không xác định"
+            ],
+            "correct_index": 0,
+            "explanation": "Hai cạnh và góc xen giữa bằng nhau (AB=DE, góc A = góc D, AC=DF) → trường hợp c.g.c (Cạnh-Góc-Cạnh, góc ở giữa).",
+            "tags": [
+              "bai13-14",
+              "tam-giac-bang-nhau"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Mẹo 'LƯỢNG = là số đếm/đo được, TÍNH = chỉ là tính chất/tên gọi' — Dữ liệu định lượng là loại nào?",
+            "options": [
+              "Dữ liệu là số",
+              "Dữ liệu không phải là số",
+              "Chỉ là tên gọi",
+              "Chỉ là màu sắc"
+            ],
+            "correct_index": 0,
+            "explanation": "Dữ liệu định lượng LÀ SỐ (đo/đếm được); dữ liệu định tính KHÔNG PHẢI là số (tên gọi, tính chất).",
+            "tags": [
+              "bai17",
+              "du-lieu"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Áp dụng: Trong 'chiều cao (cm)', 'màu áo yêu thích', 'điểm kiểm tra' — cái nào KHÔNG phải dữ liệu định lượng?",
+            "options": [
+              "Màu áo yêu thích",
+              "Chiều cao học sinh (cm)",
+              "Điểm kiểm tra",
+              "Cả ba đều định lượng"
+            ],
+            "correct_index": 0,
+            "explanation": "'Màu áo yêu thích' không phải số nên là dữ liệu định tính; 2 cái còn lại là số nên là định lượng.",
+            "tags": [
+              "bai17",
+              "du-lieu"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
           "difficulty": 1.8,
           "metadata_json": {
             "question": "Mẹo 'khớp đủ 3 CẠNH là chắc chắn 2 tam giác giống hệt nhau': Ba cạnh tam giác này bằng ba cạnh tương ứng tam giác kia → bằng nhau theo trường hợp ___.",
@@ -3949,6 +3704,234 @@
             "tags": [
               "bai13-14",
               "ccc"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.2,
+          "metadata_json": {
+            "question": "Mẹo nhớ ngoặc như 'búp bê Nga lồng nhau' — ngoặc trong cùng làm trước: ___ → [ ] → { }.",
+            "choices": [
+              "( )",
+              "[ ]",
+              "{ }",
+              "không có ngoặc nào trước"
+            ],
+            "correct_answer": "( )",
+            "explanation": "Ngoặc tròn ( ) — lớp trong cùng — làm trước, rồi đến ngoặc vuông [ ], cuối cùng ngoặc nhọn { } — giống bóc búp bê Nga từ trong ra ngoài.",
+            "tags": [
+              "bai4",
+              "dau-ngoac"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.3,
+          "metadata_json": {
+            "question": "Áp dụng: 'Bóc từ trong ra' — Kết quả của $2 \\cdot [3 + (4-1)]$ là:",
+            "options": [
+              "12",
+              "10",
+              "18",
+              "9"
+            ],
+            "correct_index": 0,
+            "explanation": "Ngoặc tròn trước: $4-1=3$. Ngoặc vuông: $3+3=6$. Nhân: $2 \\cdot 6=12$.",
+            "tags": [
+              "bai4",
+              "dau-ngoac"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.2,
+          "metadata_json": {
+            "question": "Mẹo 'CHIA thì TRỪ số mũ': $x^m : x^n = x^{___}$ (x khác 0).",
+            "choices": [
+              "m-n",
+              "m+n",
+              "m.n",
+              "m/n"
+            ],
+            "correct_answer": "m-n",
+            "explanation": "Khi chia hai lũy thừa cùng cơ số, ta giữ nguyên cơ số và TRỪ các số mũ: $x^m:x^n=x^{m-n}$.",
+            "tags": [
+              "bai3",
+              "luy-thua-chia"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.2,
+          "metadata_json": {
+            "question": "Áp dụng: 'CHIA thì TRỪ số mũ' — Kết quả của $5^6 : 5^2$ là:",
+            "options": [
+              "$5^4$",
+              "$5^3$",
+              "$5^8$",
+              "$5^{12}$"
+            ],
+            "correct_index": 0,
+            "explanation": "Chia hai lũy thừa cùng cơ số: trừ số mũ, $5^6:5^2=5^{6-2}=5^4$.",
+            "tags": [
+              "bai3",
+              "luy-thua-chia"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.8,
+          "metadata_json": {
+            "question": "Mẹo 'xé 3 góc tam giác ghép lại luôn vừa 1 đường thẳng' — Tổng ba góc trong tam giác bằng bao nhiêu độ?",
+            "options": [
+              "180°",
+              "360°",
+              "90°",
+              "270°"
+            ],
+            "correct_index": 0,
+            "explanation": "Tổng ba góc trong tam giác luôn bằng 180° — thử xé 3 góc và ghép lại sẽ thấy chúng tạo thành 1 đường thẳng.",
+            "tags": [
+              "bai12",
+              "tong-ba-goc"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.8,
+          "metadata_json": {
+            "question": "Áp dụng: Tam giác ABC có góc A=70°, góc B=60°. Góc C 'điền vào cho đủ 180°' là bao nhiêu?",
+            "options": [
+              "50°",
+              "60°",
+              "70°",
+              "130°"
+            ],
+            "correct_index": 0,
+            "explanation": "Tổng ba góc = 180°, nên góc C = 180° - 70° - 60° = 50°.",
+            "tags": [
+              "bai12",
+              "tong-ba-goc"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Mẹo 'trước ngoặc là dấu CỘNG (+) thì trong ngoặc GIỮ NGUYÊN': Khi bỏ ngoặc có dấu '+' đằng trước, ta ___ dấu của các số hạng bên trong.",
+            "choices": [
+              "giữ nguyên",
+              "đổi",
+              "nhân đôi",
+              "triệt tiêu"
+            ],
+            "correct_answer": "giữ nguyên",
+            "explanation": "Quy tắc dấu ngoặc: $a + (b - c) = a + b - c$. Dấu các số hạng trong ngoặc không thay đổi.",
+            "tags": [
+              "so-hoc-6",
+              "dau-ngoac"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Áp dụng: Khi bỏ dấu ngoặc của biểu thức $X + (Y - Z)$, ta thu được kết quả nào sau đây?",
+            "options": [
+              "$X + Y - Z$",
+              "$X + Y + Z$",
+              "$X - Y + Z$",
+              "$X - Y - Z$"
+            ],
+            "correct_index": 0,
+            "explanation": "Đằng trước ngoặc là dấu '+' nên ta giữ nguyên các dấu trong ngoặc: $+Y$ và $-Z$. Biểu thức là $X + Y - Z$.",
+            "tags": [
+              "so-hoc-6",
+              "dau-ngoac"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Mẹo 'trái dấu nhân nhau ra kết quả ÂM': Tích của hai số nguyên khác dấu luôn là một số nguyên ___.",
+            "choices": [
+              "âm",
+              "dương",
+              "bằng 0",
+              "lớn hơn 1"
+            ],
+            "correct_answer": "âm",
+            "explanation": "Số nguyên dương nhân số nguyên âm (hoặc ngược lại) luôn có kết quả là số nguyên âm.",
+            "tags": [
+              "so-hoc-6",
+              "nhan-so-nguyen"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Áp dụng: Thực hiện phép nhân sau: $(-8) \\cdot 6$.",
+            "options": [
+              "$-48$",
+              "$48$",
+              "$-14$",
+              "$14$"
+            ],
+            "correct_index": 0,
+            "explanation": "Hai số khác dấu nhân nhau ra âm: $-(8 \\cdot 6) = -48$.",
+            "tags": [
+              "so-hoc-6",
+              "nhan-so-nguyen"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Mẹo 'chia phân số = nhân với NGHỊCH ĐẢO': Muốn chia một phân số cho một phân số khác 0, ta nhân phân số thứ nhất với phân số ___ của phân số thứ hai.",
+            "choices": [
+              "nghịch đảo",
+              "đối",
+              "tương đương",
+              "lớn hơn"
+            ],
+            "correct_answer": "nghịch đảo",
+            "explanation": "Công thức chia phân số: $\\frac{a}{b} : \\frac{c}{d} = \\frac{a}{b} \\cdot \\frac{d}{c}$.",
+            "tags": [
+              "so-hoc-6",
+              "chia-phan-so"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.6,
+          "metadata_json": {
+            "question": "Áp dụng: Kết quả của phép tính $\\frac{3}{4} : \\frac{5}{2}$ là phân số nào?",
+            "options": [
+              "$\\frac{3}{10}$",
+              "$\\frac{15}{8}$",
+              "$\\frac{10}{3}$",
+              "$\\frac{8}{15}$"
+            ],
+            "correct_index": 0,
+            "explanation": "Ta nhân nghịch đảo: $\\frac{3}{4} \\cdot \\frac{2}{5} = \\frac{6}{20} = \\frac{3}{10}$.",
+            "tags": [
+              "so-hoc-6",
+              "chia-phan-so"
             ]
           }
         }
