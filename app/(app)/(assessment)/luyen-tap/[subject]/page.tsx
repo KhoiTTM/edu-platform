@@ -93,6 +93,19 @@ async function getAssessmentMap(subject: string, grade?: number) {
     return { lessons: [], workbooks, reviews: reviewsKhtn, reflex: [] };
   }
 
+  // Tiếng Anh 7 SBT: đọc từ JSON thay vì DB
+  if (subject === "tieng-anh-7" && grade === 7) {
+    const res = await fetch("/api/workbooks/tienganh7", { cache: "no-store" });
+    const { units } = await res.json();
+    const workbooks = (units as { unit: number; title: string; total_questions: number }[]).map((u) => ({
+      id: `tienganh7-unit-${u.unit}`,
+      bai: u.unit,
+      title: u.title,
+      total_questions: u.total_questions,
+    }));
+    return { lessons: [], workbooks, reviews: [], reflex: [] };
+  }
+
   const { createClient } = await import("@/lib/supabase/client");
   const supabase = createClient();
 
@@ -171,7 +184,9 @@ export default function SubjectMapPage() {
   const [workbooks, setWorkbooks] = useState<any[]>([]);
   const [reviews, setReviews] = useState<any[]>([]);
   const [reflexes, setReflexes] = useState<any[]>([]);
-  const [activeTab, setActiveTab] = useState<"lesson" | "workbook" | "review" | "reflex">("lesson");
+  const [activeTab, setActiveTab] = useState<"lesson" | "workbook" | "review" | "reflex">(
+    subject === "tieng-anh-7" ? "workbook" : "lesson"
+  );
   const [completedExams, setCompletedExams] = useState<string[]>([]);
   const [collapsedUnits, setCollapsedUnits] = useState<Record<string, boolean>>({});
   const [collapsedReflex, setCollapsedReflex] = useState<Record<string, boolean>>({});
@@ -438,10 +453,13 @@ export default function SubjectMapPage() {
               <tbody className="divide-y divide-slate-800/60 text-sm font-bold text-slate-200">
                 {workbooks.map((exam: any, idx: number) => {
                   const isCompleted = completedExams.includes(exam.id);
-                  // KHTN 7 SBT → link đến flipbook quiz theo bai number
+                  // KHTN 7 / Tiếng Anh 7 SBT → link đến flipbook quiz theo bai/unit number
                   const isKhtn7 = subject === "khtn" && gradeNum === 7;
+                  const isTiengAnh7 = subject === "tieng-anh-7" && gradeNum === 7;
                   const href = isKhtn7
                     ? `/flipbooks/khtn7/quiz/${exam.bai}`
+                    : isTiengAnh7
+                    ? `/flipbooks/tienganh7/quiz/${exam.bai}`
                     : `/test-assessment?examId=${exam.id}`;
                   return (
                     <tr key={exam.id} className={clsx("transition-all duration-150 group hover:bg-surface-raised/20", isCompleted && "text-slate-500")}>

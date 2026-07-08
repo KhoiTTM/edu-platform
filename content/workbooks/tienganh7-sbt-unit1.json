@@ -1,0 +1,348 @@
+{
+  "unit": 1,
+  "title": "Unit 1: Hobbies",
+  "source": "Tiếng Anh 7 - Global Success - Sách bài tập, trang 3-9",
+  "sections": [
+    {
+      "section": "A",
+      "title": "Pronunciation",
+      "exercises": [
+        {
+          "id": "1.A.1",
+          "type": "label_and_classify",
+          "instruction": "Write a word under each picture. Then put the words in the correct column.",
+          "page": 3,
+          "items": [
+            { "num": 1, "image_desc": "a shirt", "answer": "shirt" },
+            { "num": 2, "image_desc": "an island/beach", "answer": "island" },
+            { "num": 3, "image_desc": "a palace/monument", "answer": "palace" },
+            { "num": 4, "image_desc": "a globe", "answer": "Earth" },
+            { "num": 5, "image_desc": "a compass (drawing tool)", "answer": "compass" },
+            { "num": 6, "image_desc": "a gray circle", "answer": "circle" },
+            { "num": 7, "image_desc": "a desert", "answer": "desert" },
+            { "num": 8, "image_desc": "a worker in a factory", "answer": "worker" }
+          ],
+          "classify_columns": ["/ə/", "/ɜː/"],
+          "classify_answers": {
+            "/ə/": ["island", "palace", "compass", "desert"],
+            "/ɜː/": ["shirt", "Earth", "circle", "worker"]
+          },
+          "note": "Đáp án lấy từ trang Keys (tr.102) của sách."
+        },
+        {
+          "id": "1.A.2",
+          "type": "multiple_choice",
+          "instruction": "Choose the word in which the underlined part is pronounced differently.",
+          "page": 3,
+          "questions": [
+            { "num": 1, "options": { "A": "away", "B": "around", "C": "classmate" }, "underline": "a", "answer": "C" },
+            { "num": 2, "options": { "A": "umbrella", "B": "focus", "C": "under" }, "underline": "u", "answer": "B" },
+            { "num": 3, "options": { "A": "clever", "B": "term", "C": "germ" }, "underline": "er", "answer": "A" },
+            { "num": 4, "options": { "A": "pronounce", "B": "doctor", "C": "collection" }, "underline": "o", "answer": "B" },
+            { "num": 5, "options": { "A": "surprise", "B": "Thursday", "C": "hurt" }, "underline": "ur", "answer": "A" }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "B",
+      "title": "Vocabulary & Grammar",
+      "exercises": [
+        {
+          "id": "1.B.1",
+          "type": "word_search",
+          "instruction": "Look at the pictures and find the words in the puzzle. The words can go across or down.",
+          "page": 4,
+          "grid": [
+            ["F","V","A","Y","M","A","Q","L","B","M"],
+            ["L","F","O","O","T","B","A","L","L","O"],
+            ["O","Y","M","G","P","F","G","J","C","D"],
+            ["W","J","I","A","L","L","Y","P","D","E"],
+            ["E","W","N","T","G","A","M","E","S","L"],
+            ["R","S","W","I","M","M","I","N","G","S"],
+            ["S","L","A","F","W","Z","T","U","T","J"],
+            ["N","V","D","O","L","L","S","H","O","U"],
+            ["B","C","A","M","P","I","N","G","Y","D"],
+            ["U","Y","I","Q","H","I","M","K","S","O"]
+          ],
+          "pictures": ["yoga/stretching", "flowers/gardening", "classic car", "swimming", "volleyball", "handheld game console", "dolls", "teddy bears/toy train", "camping tent", "kickboxing"],
+          "words_to_find": ["FOOTBALL", "GAMES", "SWIMMING", "DOLLS", "CAMPING"],
+          "note": "Đáp án chính thức trong Keys chỉ hiển thị lại grid đã tô, không liệt kê danh sách từ tách riêng. Đã xác nhận chắc chắn 5 từ theo hàng ngang (FOOTBALL, GAMES, SWIMMING, DOLLS, CAMPING); dạng word-search không phù hợp UI trắc nghiệm hiện tại, cân nhắc bỏ qua khi lên UI."
+        },
+        {
+          "id": "1.B.2",
+          "type": "open_table",
+          "instruction": "Complete the table with the words from 1. One word can go with more than one verb. Then add ONE more word to each list.",
+          "page": 4,
+          "rows": ["make", "do", "collect", "go", "play"],
+          "suggested_answers": {
+            "make": ["models", "flowers", "dolls", "paper animals"],
+            "do": ["judo", "yoga", "karate"],
+            "collect": ["dolls", "toys", "models", "books"],
+            "go": ["swimming", "camping", "cycling"],
+            "play": ["football", "games", "volleyball"]
+          },
+          "note": "Bài tập mở — đáp án trên là 'Suggested answers' từ trang Keys (tr.102), không phải đáp án duy nhất."
+        },
+        {
+          "id": "1.B.3",
+          "type": "picture_fill_blank",
+          "instruction": "Look at the pictures and complete the sentences.",
+          "page": 4,
+          "questions": [
+            { "num": 1, "image_desc": "girl cooking", "stem": "She enjoys ____.", "answer": "cooking" },
+            { "num": 2, "image_desc": "kids in sports formation", "stem": "They like ____.", "answer": "doing exercise" },
+            { "num": 3, "image_desc": "boy with dollhouse", "stem": "My sister loves ____.", "answer": "building dollhouses" },
+            { "num": 4, "image_desc": "boy with board game/models", "stem": "My brother hates ____.", "answer": "collecting stamps" },
+            { "num": 5, "image_desc": "man singing with microphone gesture", "stem": "My uncle doesn't like ____.", "answer": "singing" }
+          ],
+          "note": "Đáp án lấy từ trang Keys (tr.102)."
+        },
+        {
+          "id": "1.B.4",
+          "type": "multiple_choice",
+          "instruction": "Choose the correct answer A, B, or C.",
+          "page": 5,
+          "questions": [
+            {
+              "num": 1,
+              "stem": "When water ____, it ____ from a liquid to a gas.",
+              "options": { "A": "boil; changes", "B": "boils; change", "C": "boils; changes" },
+              "answer": "C"
+            },
+            {
+              "num": 2,
+              "stem": "My father ____ his hobby with me. He teaches me how to grow and take care of the flowers in our garden on Sundays.",
+              "options": { "A": "share", "B": "shares", "C": "sharing" },
+              "answer": "B"
+            },
+            {
+              "num": 3,
+              "stem": "____ your mother ____ doing yoga?",
+              "options": { "A": "Do; enjoy", "B": "Does; enjoys", "C": "Does; enjoy" },
+              "answer": "C"
+            },
+            {
+              "num": 4,
+              "stem": "My cooking lesson ____ at 9 a.m. every Saturday.",
+              "options": { "A": "starts", "B": "start", "C": "is starting" },
+              "answer": "A"
+            },
+            {
+              "num": 5,
+              "stem": "My parents ____ jogging every day. They only do it three times a week.",
+              "options": { "A": "go", "B": "don't go", "C": "doesn't go" },
+              "answer": "B"
+            }
+          ]
+        },
+        {
+          "id": "1.B.5",
+          "type": "fill_blank_verb_form",
+          "instruction": "Fill in each blank with the correct form of the verb in brackets. Use the present simple or present continuous.",
+          "page": 5,
+          "passage_template": "My cousin, Mi, (1. love) ____ cooking. She (2. not go) ____ to any cooking class. She (3. learn) ____ to cook from her mum, and sometimes she (4. get) ____ recipes from the Internet. She (5. share) ____ this hobby with her sister. I (6. enjoy) ____ cooking too, so Mi and I usually (7. make) ____ pizza together when we (8. meet) ____ at the weekend.",
+          "answers": {
+            "1": "loves",
+            "2": "doesn't go",
+            "3": "learns",
+            "4": "gets",
+            "5": "shares",
+            "6": "enjoy",
+            "7": "make",
+            "8": "meet"
+          }
+        }
+      ]
+    },
+    {
+      "section": "C",
+      "title": "Speaking",
+      "exercises": [
+        {
+          "id": "1.C.1",
+          "type": "multiple_choice",
+          "instruction": "Choose the best answer to each question below.",
+          "page": 5,
+          "questions": [
+            {
+              "num": 1,
+              "stem": "Do you enjoy collecting teddy bears?",
+              "options": { "A": "Yes, I do it every day.", "B": "Yes, very much." },
+              "answer": "B"
+            },
+            {
+              "num": 2,
+              "stem": "What do you like doing in your free time?",
+              "options": { "A": "I usually have lunch at 12.", "B": "I like building dollhouses." },
+              "answer": "B"
+            },
+            {
+              "num": 3,
+              "stem": "Do you like making models?",
+              "options": { "A": "No, I don't. But my brother loves it.", "B": "No, I make paper flowers every day." },
+              "answer": "A"
+            },
+            {
+              "num": 4,
+              "stem": "What does your brother like doing?",
+              "options": { "A": "He enjoys doing yoga a lot.", "B": "He goes to school at 7 a.m." },
+              "answer": "A"
+            },
+            {
+              "num": 5,
+              "stem": "Does your sister cook with you?",
+              "options": { "A": "Yes, she loves singing.", "B": "Yes, she and I cook together in the evening." },
+              "answer": "B"
+            }
+          ]
+        },
+        {
+          "id": "1.C.2",
+          "type": "dialogue_matching",
+          "instruction": "Mi and Elena meet for the first time. Choose a-e to complete their conversation. Then practise it with a friend.",
+          "page": 6,
+          "dialogue": [
+            { "speaker": "Mi", "line": "Elena, what's your hobby?" },
+            { "speaker": "Elena", "blank": 1 },
+            { "speaker": "Mi", "line": "How often do you dance?" },
+            { "speaker": "Elena", "blank": 2 },
+            { "speaker": "Mi", "line": "Do you go to dancing classes?" },
+            { "speaker": "Elena", "blank": 3 },
+            { "speaker": "Mi", "line": "Is it difficult to dance?" },
+            { "speaker": "Elena", "blank": 4 },
+            { "speaker": "Mi", "line": "Do you do this hobby with anyone?" },
+            { "speaker": "Elena", "blank": 5 },
+            { "speaker": "Mi", "line": "No, I don't, but I love singing." }
+          ],
+          "options": {
+            "a": "I don't think it's difficult. Just listen to music and move your body.",
+            "b": "I love dancing.",
+            "c": "Yes, my sister loves it, too. Do you like dancing, Mi?",
+            "d": "Yes, I have dancing lessons twice a week.",
+            "e": "I dance every day."
+          },
+          "answers": { "1": "b", "2": "e", "3": "d", "4": "a", "5": "c" }
+        },
+        {
+          "id": "1.C.3",
+          "type": "guided_speaking",
+          "instruction": "Make a similar conversation. Use the information given below.",
+          "page": 6,
+          "prompt": {
+            "hobby": "drawing",
+            "frequency": "every day",
+            "drawing_class": "once a week, on Sunday mornings",
+            "person": "father",
+            "difficulty": "easy"
+          },
+          "note": "Bài nói tự do, không có đáp án cố định — không phù hợp chấm tự động."
+        }
+      ]
+    },
+    {
+      "section": "D",
+      "title": "Reading",
+      "exercises": [
+        {
+          "id": "1.D.1",
+          "type": "fill_blank_word_bank",
+          "instruction": "Fill in each blank with a suitable word from the box.",
+          "page": 6,
+          "word_bank": ["like", "having", "your", "sending", "usually", "photo"],
+          "passage_template": "Dear Jane,\nI'm so happy to read your email. I like (1) ____ a pen pal in Australia because I love your country!\nThank you for sending me a (2) ____ of your family. Can you tell me more about your family members? What do you (3) ____ doing together? I like watching films with my family. We (4) ____ watch many different kinds of films. Once, we watched a film about Australia, and I found it very interesting.\nI'm (5) ____ you a photo of my family.\nI can't wait to read (6) ____ next email!\nBest wishes,\nMi",
+          "answers": {
+            "1": "having",
+            "2": "photo",
+            "3": "like",
+            "4": "usually",
+            "5": "sending",
+            "6": "your"
+          }
+        },
+        {
+          "id": "1.D.2",
+          "type": "multiple_choice_cloze",
+          "instruction": "Choose the correct answer A, B, or C to fill in each blank in the following passage.",
+          "page": 7,
+          "passage_template": "Mark has a lot of hobbies and interests. He usually (1) ____ up early, so he can jog before school. After school, Mark often (2) ____ a horse at the riding club near his home. Sometimes he goes riding on Sunday afternoons. He also (3) ____ music. He goes to choir practice on Wednesday and Saturday evenings. (4) ____ Saturday mornings, he usually waters the plants and trees in the garden with his mum. He seldom watches TV because he likes doing things (5) ____. He has a lot of friends and he (6) ____ football with them twice a week. He's a happy boy!",
+          "questions": [
+            { "num": 1, "options": { "A": "gets", "B": "stays", "C": "does" }, "answer": "A" },
+            { "num": 2, "options": { "A": "cycles", "B": "drives", "C": "rides" }, "answer": "C" },
+            { "num": 3, "options": { "A": "makes", "B": "loves", "C": "does" }, "answer": "B" },
+            { "num": 4, "options": { "A": "On", "B": "In", "C": "At" }, "answer": "A" },
+            { "num": 5, "options": { "A": "inside", "B": "behind", "C": "outside" }, "answer": "C" },
+            { "num": 6, "options": { "A": "is playing", "B": "plays", "C": "play" }, "answer": "B" }
+          ]
+        },
+        {
+          "id": "1.D.3a",
+          "type": "matching",
+          "instruction": "Read the passage and do the exercises. a. Match each word in A with its meaning in B.",
+          "page": 7,
+          "passage": "Do you have any hobbies? If you don't, please start one because having a hobby is very beneficial. Firstly, a hobby gives you something fun to do during your leisure time, especially during pandemics. During the Covid-19 lockdown, my family reads books and watches films together. This makes us feel better when we have to stay at home. Secondly, a hobby makes you a more interesting person. If you have a lot of experience and skills, you can share them with others. I love travelling, and I usually share my experiences with my classmates. This way, I have more friends. Now we have a travel group in our class. Last but not least, a hobby can help you develop new skills. If you spend a lot of time on your hobby, your skills will improve. My sister loves sewing. After sewing for two years, she can now sew beautiful doll clothes. Those are the reasons why you should have hobbies.",
+          "column_a": { "1": "beneficial", "2": "pandemics", "3": "lockdown", "4": "experiences", "5": "improve" },
+          "column_b": {
+            "a": "an emergency situation when people have to stay at home",
+            "b": "helpful or useful",
+            "c": "become better",
+            "d": "diseases throughout the whole country or the whole world",
+            "e": "things that happen to you and affect your life"
+          },
+          "answers": { "1": "b", "2": "d", "3": "a", "4": "e", "5": "c" }
+        },
+        {
+          "id": "1.D.3b",
+          "type": "true_false_no_info",
+          "instruction": "Write T (True), F (False), or NI (No Information) at the end of each sentence.",
+          "page": 8,
+          "shared_passage_ref": "1.D.3a",
+          "questions": [
+            { "num": 1, "stem": "During the lockdown, the author's family reads books and watches the news together.", "answer": "F" },
+            { "num": 2, "stem": "Travelling helps the author have more friends.", "answer": "T" },
+            { "num": 3, "stem": "There is a dancing club in the author's school.", "answer": "NI" },
+            { "num": 4, "stem": "Hobbies can help a person develop new skills.", "answer": "T" },
+            { "num": 5, "stem": "The author's sister sews clothes for her family members.", "answer": "NI" }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "E",
+      "title": "Writing",
+      "exercises": [
+        {
+          "id": "1.E.1",
+          "type": "sentence_building",
+          "instruction": "Make sentences, using the words and phrases below to help you. You can change the words/phrases or add necessary words.",
+          "page": 8,
+          "questions": [
+            { "num": 1, "prompt": "I / like / garden / because / I / love / plants / flowers.", "suggested_answer": "I like gardening because I love plants and flowers." },
+            { "num": 2, "prompt": "My sister / not like / horse riding / because / she / afraid of / horses.", "suggested_answer": "My sister doesn't like horse riding because she's afraid of horses." },
+            { "num": 3, "prompt": "Make / models / develop / your / creativity.", "suggested_answer": "Making models develops your creativity." },
+            { "num": 4, "prompt": "Collect / stamps / help / you / be / more / patient.", "suggested_answer": "Collecting stamps helps you be more patient." },
+            { "num": 5, "prompt": "Jog / make / you / strong / and / reduce / stress.", "suggested_answer": "Jogging makes you strong and reduces your stress." }
+          ],
+          "note": "Đáp án mẫu lấy từ trang Keys (tr.103) — học sinh có thể viết khác miễn đúng ngữ pháp/ý nghĩa."
+        },
+        {
+          "id": "1.E.2",
+          "type": "guided_writing",
+          "instruction": "Do you like the activities in the pictures below? Write true sentences about yourself. Remember to use verbs of liking/disliking + V-ing. Add one reason for each activity.",
+          "page": 9,
+          "pictures": ["horse riding", "talking on phone (stressed)", "gardening/watering", "swimming", "using electronics/gadgets"],
+          "example": "I love horse riding because I love horses.",
+          "note": "Bài viết tự do cá nhân — không có đáp án cố định."
+        },
+        {
+          "id": "1.E.3",
+          "type": "guided_writing_paragraph",
+          "instruction": "Think about your dad/mum and his/her hobby. Fill in the word web. Then write a short paragraph of about 70 words about your dad's/mum's hobby.",
+          "page": 9,
+          "word_web_prompts": ["His/Her hobby is:", "He/She started the hobby: ___ ago", "He/She shares the hobby with:", "To do this hobby, he/she needs:", "Benefits:"],
+          "note": "Bài viết tự do cá nhân — không có đáp án cố định."
+        }
+      ]
+    }
+  ]
+}

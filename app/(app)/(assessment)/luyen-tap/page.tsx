@@ -37,7 +37,7 @@ export default async function LuyenTapPage() {
             let availableSubjectSlugs = Array.from(new Set([
                 ...(units?.map((u: any) => subjectMap[u.subject] || u.subject) || []),
                 ...(collections?.map((c: any) => subjectMap[c.subject_slug] || c.subject_slug) || []),
-                ...(g === 7 ? ['khtn'] : []),
+                ...(g === 7 ? ['khtn', 'tieng-anh-7'] : []),
             ]));
 
             if (g === 0) {
