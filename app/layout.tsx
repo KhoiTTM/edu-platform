@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { DM_Sans, Outfit } from "next/font/google";
 import "./globals.css";
+import "katex/dist/katex.min.css";
 
 const outfit = Outfit({
   subsets: ["latin"],
