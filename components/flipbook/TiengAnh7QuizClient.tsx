@@ -474,7 +474,7 @@ export function TiengAnh7QuizClient({ data, breadcrumbs = [], pdfUrl }: Props) {
       <div className="bg-surface-raised/40 rounded-lg p-4 border border-line space-y-3">
         {ex.example && (
           <p className="text-xs text-slate-500 italic">
-            Ví dụ: "{ex.example.sentence}" → {ex.example.labels.join(" | ")}
+            Ví dụ: &quot;{ex.example.sentence}&quot; → {ex.example.labels.join(" | ")}
           </p>
         )}
         {ex.questions.map((q: any) => (
@@ -531,7 +531,7 @@ export function TiengAnh7QuizClient({ data, breadcrumbs = [], pdfUrl }: Props) {
   const renderGeneric = (ex: Exercise) => (
     <div className="bg-surface-raised/40 rounded-lg p-4 border border-line">
       <p className="text-slate-400 text-sm italic">
-        Dạng bài "{ex.type}" chưa có giao diện luyện tập chuyên biệt — cần thiết kế thêm.
+        Dạng bài &quot;{ex.type}&quot; chưa có giao diện luyện tập chuyên biệt — cần thiết kế thêm.
       </p>
     </div>
   );
