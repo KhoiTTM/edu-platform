@@ -1,0 +1,309 @@
+{
+  "unit": 12,
+  "title": "Unit 12: English-speaking Countries",
+  "source": "Tiếng Anh 7 - Global Success - Sách bài tập, trang 92-98",
+  "sections": [
+    {
+      "section": "A",
+      "title": "Pronunciation",
+      "exercises": [
+        {
+          "id": "12.A.1",
+          "type": "generic",
+          "instruction": "Mark the rising or falling intonation of the questions. Then say them out loud.",
+          "page": 92,
+          "questions": [
+            { "num": 1, "stem": "Is he an Englishman?", "answer": "falling" },
+            { "num": 2, "stem": "Why is New Zealand an island country?", "answer": "falling" },
+            { "num": 3, "stem": "What is the population of Australia?", "answer": "falling" },
+            { "num": 4, "stem": "Is Edinburgh the capital of Scotland?", "answer": "rising" },
+            { "num": 5, "stem": "Can we speak French in Canada?", "answer": "rising" }
+          ],
+          "note": "Đáp án (rising/falling) lấy từ Keys tr.123 — sách chỉ vẽ mũi tên lên/xuống, không ghi chữ; đã suy ra: câu 1-3 là câu hỏi Wh-/Yes-No đọc xuống giọng theo mẫu mũi tên đi xuống trong Keys, câu 4-5 đọc lên giọng theo mũi tên đi lên. Dạng bài luyện phát âm - không phù hợp chấm tự động, chỉ mang tính tham khảo."
+        },
+        {
+          "id": "12.A.2",
+          "type": "guided_speaking",
+          "instruction": "Work in pairs. Take turns to say the questions with the correct intonation. Listen and correct your partner's mistake.",
+          "page": 92,
+          "questions": [
+            { "num": 1, "stem": "Is English an official language in Singapore?" },
+            { "num": 2, "stem": "How long does it take to drive from London to Manchester?" },
+            { "num": 3, "stem": "Do you plan to visit Sydney?" },
+            { "num": 4, "stem": "What is the biggest city in the USA?" },
+            { "num": 5, "stem": "Where is the Statue of Liberty?" }
+          ],
+          "note": "Bài luyện nói theo cặp — không có đáp án cố định."
+        }
+      ]
+    },
+    {
+      "section": "B",
+      "title": "Vocabulary & Grammar",
+      "exercises": [
+        {
+          "id": "12.B.1",
+          "type": "fill_blank_word_bank",
+          "instruction": "Complete the sentences with the correct forms of the verbs in the box.",
+          "page": 92,
+          "word_bank": ["attract", "enjoy", "visit", "tour", "buy", "practise"],
+          "passage_template": "1. It's great to ____ English by talking with the local people here.\n2. When I was in Washington D.C., I ____ a lot of museums.\n3. The Opera House in Sydney ____ millions of visitors a year.\n4. Australians ____ outdoor activities.\n5. My father always ____ a souvenir when he visits a new country.\n6. Yesterday we ____ the countryside by bus.",
+          "answers": {
+            "1": "practise",
+            "2": "visited",
+            "3": "attracts",
+            "4": "enjoy",
+            "5": "buys",
+            "6": "toured"
+          }
+        },
+        {
+          "id": "12.B.2",
+          "type": "picture_fill_blank",
+          "instruction": "In each group, cross out ONE word which does not fill in the blank. (Ghi lại từ KHÔNG phù hợp của mỗi câu.)",
+          "page": 93,
+          "questions": [
+            { "num": 1, "stem": "a(n) ____ country — options: island, land, English-speaking, rich", "answer": "land" },
+            { "num": 2, "stem": "a ____ tour — options: city, boat, ghost, visitor", "answer": "visitor" },
+            { "num": 3, "stem": "a traditional ____ — options: wonder, dance, game, costume", "answer": "wonder" },
+            { "num": 4, "stem": "a cultural ____ — options: event, performance, tour, landscape", "answer": "landscape" },
+            { "num": 5, "stem": "a natural ____ — options: person, beauty, wonder, attraction", "answer": "person" },
+            { "num": 6, "stem": "the local ____ — options: people, food, city, customs", "answer": "city" }
+          ],
+          "note": "Đáp án lấy từ Keys tr.123 (từ bị loại ra khỏi mỗi nhóm)."
+        },
+        {
+          "id": "12.B.3",
+          "type": "fill_blank_word_bank",
+          "instruction": "Complete each sentence with a word from the box.",
+          "page": 94,
+          "word_bank": ["entertainment", "attractions", "castles", "amazing", "native"],
+          "passage_template": "1. Alaska in the USA has over three million lakes. It's ____!\n2. One of the biggest ____ parks in the world is Disneyland in California.\n3. You can find a lot of natural ____ in Canada.\n4. The Maori are the ____ people of New Zealand.\n5. Scotland is famous for its ancient ____.",
+          "answers": {
+            "1": "amazing",
+            "2": "entertainment",
+            "3": "attractions",
+            "4": "native",
+            "5": "castles"
+          }
+        },
+        {
+          "id": "12.B.4",
+          "type": "matching",
+          "instruction": "Write the correct words from the box next to their meanings.",
+          "page": 94,
+          "column_a": {
+            "1": "the traditional skirt for men in Scotland",
+            "2": "the language that you first learn to speak when you are a child",
+            "3": "a piece of land with water surrounding it",
+            "4": "an object or a place attracting a lot of visitors",
+            "5": "the area where land meets the sea or ocean"
+          },
+          "column_b": {
+            "a": "kilt",
+            "b": "mother tongue",
+            "c": "island",
+            "d": "attraction",
+            "e": "coastline"
+          },
+          "answers": { "1": "a", "2": "b", "3": "c", "4": "d", "5": "e" },
+          "word_bank": ["mother tongue", "kilt", "island", "attraction", "coastline"],
+          "note": "Word bank gốc trong sách không theo thứ tự a-e; đã sắp lại theo đáp án Keys tr.123 (1.kilt, 2.mother tongue, 3.island, 4.attraction, 5.coastline)."
+        },
+        {
+          "id": "12.B.5",
+          "type": "multiple_choice",
+          "instruction": "Complete each sentence with the correct article a, an, or the.",
+          "page": 94,
+          "questions": [
+            { "num": 1, "stem": "Look at ____ kangaroos. They're hopping on their hind legs.", "options": { "A": "a", "B": "an", "C": "the" }, "answer": "C" },
+            { "num": 2, "stem": "____ USA is a large country in North America.", "options": { "A": "A", "B": "An", "C": "The" }, "answer": "C" },
+            { "num": 3, "stem": "London has ____ population of about nine million.", "options": { "A": "a", "B": "an", "C": "the" }, "answer": "A" },
+            { "num": 4, "stem": "Her presentation is about ____ attraction in Scotland.", "options": { "A": "a", "B": "an", "C": "the" }, "answer": "B" },
+            { "num": 5, "stem": "Autumn is ____ most beautiful season in my home town.", "options": { "A": "a", "B": "an", "C": "the" }, "answer": "C" },
+            { "num": 6, "stem": "Could you get me ____ map of Melbourne from the Info Centre?", "options": { "A": "a", "B": "an", "C": "the" }, "answer": "A" }
+          ]
+        },
+        {
+          "id": "12.B.6",
+          "type": "error_identification",
+          "instruction": "Circle the incorrect underlined part (A, B, or C) in each sentence. Then correct it.",
+          "page": 94,
+          "questions": [
+            { "num": 1, "sentence_with_markers": "(A: An) Eskimos live in (B: the northern) lands of (C: the) USA and Canada.", "options": { "A": "An", "B": "the northern", "C": "the" }, "answer": "A", "correction": "An → The / no article" },
+            { "num": 2, "sentence_with_markers": "(A: The) Tower of London is (B: the) historic castle on (C: the) River Thames.", "options": { "A": "The", "B": "the", "C": "the" }, "answer": "B", "correction": "the → a" },
+            { "num": 3, "sentence_with_markers": "(A: A) music is (B: an) important part of (C: the) Scottish culture.", "options": { "A": "A", "B": "an", "C": "the" }, "answer": "A", "correction": "A → no article" },
+            { "num": 4, "sentence_with_markers": "(A: Canada) is (B: the) most educated country in (C: a) world.", "options": { "A": "Canada", "B": "the", "C": "a" }, "answer": "C", "correction": "a → the" },
+            { "num": 5, "sentence_with_markers": "(A: A) beautiful coastal road trip and (B: an) wine experience are (C: the) best memories I have of Australia.", "options": { "A": "A", "B": "an", "C": "the" }, "answer": "B", "correction": "an → a" },
+            { "num": 6, "sentence_with_markers": "American culture has (A: the) large influence on most of (B: the) world, especially in (C: the) West.", "options": { "A": "the", "B": "the", "C": "the" }, "answer": "A", "correction": "the → a" }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "C",
+      "title": "Speaking",
+      "exercises": [
+        {
+          "id": "12.C.1",
+          "type": "guided_speaking",
+          "instruction": "Work in pairs. Take turns to say the statements and respond to them with expressions of amazement.",
+          "page": 95,
+          "questions": [
+            { "num": 1, "stem": "Alaska, a state in the USA, has about three million lakes." },
+            { "num": 2, "stem": "At any time, there are over 5,000 planes flying over the USA." },
+            { "num": 3, "stem": "The town of Churchill in Canada is sometimes home to more polar bears than people." },
+            { "num": 4, "stem": "You find the koala and the kangaroo only in Australia." },
+            { "num": 5, "stem": "The oldest home in the UK is 6,000 years old, and it still remains today." },
+            { "num": 6, "stem": "Auckland, the biggest city of New Zealand, sits on a field of 53 volcanoes." }
+          ],
+          "note": "Bài luyện nói theo cặp — không có đáp án cố định."
+        },
+        {
+          "id": "12.C.2",
+          "type": "picture_fill_blank",
+          "instruction": "QUIZ: How much do you know? Work in pairs. Take turns to ask and answer the questions about English-speaking countries.",
+          "page": 95,
+          "questions": [
+            { "num": 1, "stem": "Which country borders Canada?", "answer": "The USA" },
+            { "num": 2, "stem": "Which country is also a continent?", "answer": "Australia" },
+            { "num": 3, "stem": "What is the population of New Zealand?", "answer": "5 million (2020)" },
+            { "num": 4, "stem": "How many stars are there on the US flag?", "answer": "50" },
+            { "num": 5, "stem": "What oceans border the USA?", "answer": "Atlantic and Pacific" },
+            { "num": 6, "stem": "Where are the Niagara Falls?", "answer": "Between the USA and Canada" },
+            { "num": 7, "stem": "What is the capital of Scotland?", "answer": "Edinburgh" },
+            { "num": 8, "stem": "What means of transport is a symbol of London?", "answer": "The red double-decker" },
+            { "num": 9, "stem": "Which English-speaking country is in Europe?", "answer": "Great Britain" },
+            { "num": 10, "stem": "What is the biggest city by population in the USA?", "answer": "New York" }
+          ],
+          "note": "Đáp án 'Suggested answers' từ Keys tr.123."
+        },
+        {
+          "id": "12.C.3",
+          "type": "dialogue_matching",
+          "instruction": "Lan and Linda are talking about Linda's visit to the Hobbit Village in New Zealand. Rearrange the sentences to make a complete conversation. Then practise it with a friend.",
+          "page": 95,
+          "dialogue": [
+            { "speaker": "Lan", "line": "Hi Linda, how was your visit to the Hobbit Village?" },
+            { "speaker": "Linda", "line": "It was fantastic! I had a very good time there." },
+            { "speaker": "Lan", "line": "Tell me what it was like." },
+            { "speaker": "Linda", "line": "I saw the real setting where they made the hobbit movies: old-style houses, the farms, the inn …" },
+            { "speaker": "Lan", "line": "Could you actually enter the houses?" },
+            { "speaker": "Linda", "line": "No, we couldn't." },
+            { "speaker": "Lan", "line": "Did you do anything on the farm?" },
+            { "speaker": "Linda", "line": "I took pictures of the green pastures. They were beautiful, especially at sunset. I also fed some baby lambs." },
+            { "speaker": "Lan", "line": "I'd love to feed them too. I'll visit the Hobbit Village one day." }
+          ],
+          "options": {},
+          "answers": {},
+          "note": "Bài sắp xếp hội thoại — thứ tự đúng đã được dựng sẵn theo đáp án Keys tr.123 (không phải dạng chọn a-e nên 'options' và 'answers' để trống; xem thứ tự các câu trong 'dialogue')."
+        }
+      ]
+    },
+    {
+      "section": "D",
+      "title": "Reading",
+      "exercises": [
+        {
+          "id": "12.D.1a",
+          "type": "picture_fill_blank",
+          "instruction": "Write the words below under the correct pictures.",
+          "page": 96,
+          "word_bank": ["income", "hot-air balloons", "video maker"],
+          "questions": [
+            { "num": 1, "image_desc": "many colourful hot-air balloons in the sky", "stem": "____", "answer": "hot-air balloons" },
+            { "num": 2, "image_desc": "a woman holding a video camera, giving thumbs up", "stem": "____", "answer": "video maker" },
+            { "num": 3, "image_desc": "a hand holding a money bag with a dollar sign", "stem": "____", "answer": "income" }
+          ]
+        },
+        {
+          "id": "12.D.1b",
+          "type": "true_false_no_info",
+          "instruction": "Read the passage \"The Albuquerque Balloon Festival\" and write short answers to the questions.",
+          "page": 96,
+          "passage": "THE ALBUQUERQUE BALLOON FESTIVAL\nThe Albuquerque International Hot-air Balloon Festival is the largest gathering of hot-air balloons in the world. The festival is a nine-day event in early October. It takes place in Albuquerque, a city in New Mexico, the USA. Every year, the festival attracts a great number of balloon makers. They bring about five hundred balloons to the festival. Many artists spend weeks or even months painting their balloons. Together with them are thousands of photographers, video makers, reporters, and visitors. The most exciting moment of the festival is when all the balloons in different shapes, sizes, and colours rise up high into the sky. The scene is really fantastic.\nThe Balloon Festival is one of Albuquerque's largest tourist attractions. It is an opportunity for the local people to show their New Mexican culture and history. It brings a major source of income to the city and local businesses. In 2015, the festival received nearly one million visitors.",
+          "questions": [
+            { "num": 1, "stem": "Where does the festival take place?", "answer": "In Albuquerque, a city in New Mexico, the USA." },
+            { "num": 2, "stem": "How long does it last?", "answer": "9 / Nine days." },
+            { "num": 3, "stem": "What do the artists do before the festival?", "answer": "Paint their balloons." },
+            { "num": 4, "stem": "Who goes to the festival?", "answer": "Balloon makers, photographers, video makers, reporters, and visitors." },
+            { "num": 5, "stem": "What does the festival help New Mexico show its visitors?", "answer": "New Mexican history and culture." },
+            { "num": 6, "stem": "What does the festival bring to the city?", "answer": "Income." }
+          ],
+          "note": "Đây là bài trả lời câu hỏi ngắn (short answer), không phải T/F/NI — dùng type true_false_no_info tạm để tái sử dụng UI hiện có không phù hợp hoàn toàn; cần UI dạng 'answer-only' riêng cho câu hỏi đọc hiểu ngắn."
+        },
+        {
+          "id": "12.D.2",
+          "type": "fill_blank_word_bank",
+          "instruction": "Read and complete the passage \"Disneyland\" with the words in the box.",
+          "page": 97,
+          "word_bank": ["fast", "show", "Earth", "welcome", "they", "home", "the", "children"],
+          "passage_template": "California is (1) ____ to one of the biggest and most famous entertainment parks in the world – Disneyland. Disneyland opened in 1955 with the slogan \"The happiest place on (2) ____\", and it soon became very popular. The number of visitors to the park has gone up very (3) ____.\nIn 2018, it attracted nearly 19 million visitors, both (4) ____ and adults.\nThere are different kinds of entertainment throughout the park. Mickey's Soundsational Parade is (5) ____ most popular event. It celebrates songs from the most famous Disney films. During the parade, well-known Disney characters march along Main Street. (6) ____ dance along with the music, greet visitors, talk with children, and pose for photos. Everybody is (7) ____ to join in the fun.\nAnother great attraction of the park is its fantastic fireworks (8) ____. During the busy season, the park offers the show nightly.",
+          "answers": {
+            "1": "home",
+            "2": "Earth",
+            "3": "fast",
+            "4": "children",
+            "5": "the",
+            "6": "They",
+            "7": "welcome",
+            "8": "show"
+          }
+        },
+        {
+          "id": "12.D.3",
+          "type": "fill_blank_word_bank",
+          "instruction": "Read the passage and complete the summary in the box with the information from the passage.",
+          "page": 97,
+          "passage": "The ability to use English brings a lot of benefits to its users. It helps you learn many things by watching TV programmes and YouTube videos. It helps you communicate when you are travelling abroad. It also allows you to sing English songs, read English books, and make friends from many English-speaking countries.\nIn Asia alone, there are countries where English is a second, or official, language. It means people in these countries use English at schools, at work, and for public communication. These countries include India, Singapore, Nepal, the Philippines, and Pakistan. This means that if you know English, you can communicate when you visit these countries.",
+          "passage_template": "English users have a lot of (1) ____.\nName two benefits of knowing English:\n– communicate when travelling\n– (2) ____\n– (3) ____\nThe word \"second\" in \"second language\" is similar to (4) ____.\nName two countries where English is a second language:\n– (5) ____\n– (6) ____",
+          "answers": {
+            "1": "benefits",
+            "2": "sing English songs / read English books / make friends from English-speaking countries (any two)",
+            "3": "sing English songs / read English books / make friends from English-speaking countries (any two)",
+            "4": "official",
+            "5": "India / Singapore / Nepal / the Philippines / Pakistan (any two)",
+            "6": "India / Singapore / Nepal / the Philippines / Pakistan (any two)"
+          },
+          "note": "Câu 2-3 và 5-6 chấp nhận bất kỳ 2 đáp án hợp lệ trong danh sách gợi ý (theo Keys tr.124, ghi 'in any order')."
+        }
+      ]
+    },
+    {
+      "section": "E",
+      "title": "Writing",
+      "exercises": [
+        {
+          "id": "12.E.1",
+          "type": "sentence_building",
+          "instruction": "Write complete sentences using the prompts.",
+          "page": 98,
+          "questions": [
+            { "num": 1, "prompt": "Grand Canyon / stunning natural wonder / the USA.", "suggested_answer": "The Grand Canyon is a stunning natural wonder in the USA." },
+            { "num": 2, "prompt": "Canada / both English / French / mother tongues / about 80% / population.", "suggested_answer": "In Canada, both English and French are the mother tongues of about 80% of the population." },
+            { "num": 3, "prompt": "Australia / home / kangaroos / koalas.", "suggested_answer": "Australia is home to kangaroos and koalas." },
+            { "num": 4, "prompt": "cities / Bath / Stratford Upon Avon / two famous tourist attractions / England.", "suggested_answer": "The cities of Bath and Stratford Upon Avon are two famous tourist attractions in England." },
+            { "num": 5, "prompt": "New Zealand / magical place / amazing natural beauty / friendly people.", "suggested_answer": "New Zealand is a magical place with amazing natural beauty and friendly people." }
+          ],
+          "note": "Đáp án mẫu lấy từ Keys tr.124 — học sinh có thể viết khác miễn đúng ngữ pháp/ý nghĩa."
+        },
+        {
+          "id": "12.E.2",
+          "type": "guided_writing_paragraph",
+          "instruction": "Based on the information below, write a paragraph of about 70 words to introduce Canada.",
+          "page": 98,
+          "word_web_prompts": [
+            "Location: in North America",
+            "Population: over 35 million",
+            "Capital: Ottawa",
+            "Famous for: beautiful landscape, a rich culture and many places of interests",
+            "Places to visit: Heritage Park, Historical Landmark Tour of Victorian Grand City, Museum of Illusions, Canadian Museum of History …",
+            "Weather: 25°C to 30°C (summer), -15°C to -40°C (winter)"
+          ],
+          "suggested_answer": "Canada is a big country in North America. The country has a population of over 35 million. Its capital city is Ottawa. Canada has many things to offer visitors: beautiful landscape, a rich culture and many places of interests. You can visit Heritage Park, Historical Landmark Tour of Victorian Grand City, Museum of Illusions, Canadian Museum of History … The weather in Canada is 25°C to 30°C in summer and it is very harsh in winter. The temperature sometimes drops to -40°C.",
+          "note": "Đáp án mẫu (Sample answer) từ Keys tr.124 — bài viết tự do, học sinh có thể viết khác."
+        }
+      ]
+    }
+  ]
+}

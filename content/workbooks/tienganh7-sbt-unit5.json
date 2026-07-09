@@ -1,0 +1,300 @@
+{
+  "unit": 5,
+  "title": "Unit 5: Food and Drink",
+  "source": "Tiếng Anh 7 - Global Success - Sách bài tập, trang 35-41",
+  "sections": [
+    {
+      "section": "A",
+      "title": "Pronunciation",
+      "exercises": [
+        {
+          "id": "5.A.1",
+          "type": "multiple_choice",
+          "instruction": "Find the word whose underlined part has a different sound. Say the words aloud.",
+          "page": 35,
+          "questions": [
+            { "num": 1, "options": { "A": "pan", "B": "ham", "C": "lamb", "D": "plate" }, "underline": "a", "answer": "D" },
+            { "num": 2, "options": { "A": "pot", "B": "bottle", "C": "roll", "D": "hot" }, "underline": "o", "answer": "C" },
+            { "num": 3, "options": { "A": "daughter", "B": "sauce", "C": "fault", "D": "laugh" }, "underline": "au", "answer": "D" },
+            { "num": 4, "options": { "A": "was", "B": "walk", "C": "water", "D": "wall" }, "underline": "a/al", "answer": "A" },
+            { "num": 5, "options": { "A": "morning", "B": "forget", "C": "pork", "D": "fork" }, "underline": "or", "answer": "B" }
+          ]
+        },
+        {
+          "id": "5.A.2",
+          "type": "label_and_classify",
+          "instruction": "Give the names of the following pictures. Then read the words aloud. (The first letter of each word is given). Now put the words in the correct columns.",
+          "page": 35,
+          "items": [
+            { "num": 1, "image_desc": "a moldy/spoiled piece of bread on a plate", "answer": "omelette" },
+            { "num": 2, "image_desc": "tofu/pork slices on a plate", "answer": "pork" },
+            { "num": 3, "image_desc": "a teapot", "answer": "pot" },
+            { "num": 4, "image_desc": "a fork", "answer": "fork" },
+            { "num": 5, "image_desc": "a fox", "answer": "fox" },
+            { "num": 6, "image_desc": "a bowl of sauce", "answer": "sauce" }
+          ],
+          "classify_columns": ["/ɒ/", "/ɔː/"],
+          "classify_answers": {
+            "/ɒ/": ["omelette", "pot", "fox"],
+            "/ɔː/": ["pork", "fork", "sauce"]
+          },
+          "note": "Đáp án lấy từ trang Keys (tr.109). Đáp án số 1 trong Keys là 'omelette' dù mô tả hình hơi khó xác định chính xác món ăn; đã đối chiếu đúng theo Keys."
+        }
+      ]
+    },
+    {
+      "section": "B",
+      "title": "Vocabulary & Grammar",
+      "exercises": [
+        {
+          "id": "5.B.1",
+          "type": "picture_fill_blank",
+          "instruction": "Write the words or phrases with the given letters under the pictures.",
+          "page": 36,
+          "questions": [
+            { "num": 1, "image_desc": "stack of pancakes with berries", "stem": "1. p____", "answer": "pancakes" },
+            { "num": 2, "image_desc": "a naan/flatbread on a plate", "stem": "2. n____", "answer": "noodles" },
+            { "num": 3, "image_desc": "a cup of green tea", "stem": "3. g____ t____", "answer": "green tea" },
+            { "num": 4, "image_desc": "a plastic cup of drink with straw", "stem": "4. l____", "answer": "lemonade" },
+            { "num": 5, "image_desc": "a bowl of peppercorns", "stem": "5. p____", "answer": "peppers" },
+            { "num": 6, "image_desc": "a bowl of noodle soup with chopsticks", "stem": "6. b____ n____ s____", "answer": "beef noodle soup" },
+            { "num": 7, "image_desc": "a glass of dark juice with straw", "stem": "7. j____", "answer": "juice" },
+            { "num": 8, "image_desc": "spring rolls on a plate", "stem": "8. s____ r____", "answer": "spring rolls" }
+          ],
+          "note": "Ví dụ trong sách: tofu. Đáp án lấy từ trang Keys (tr.110)."
+        },
+        {
+          "id": "5.B.2",
+          "type": "crossword",
+          "instruction": "Do the puzzle. Find the food in the blue column.",
+          "page": 36,
+          "clues": [
+            { "num": 1, "image_desc": "a bowl of soy sauce", "answer": "sauce" },
+            { "num": 2, "image_desc": "a cupcake", "answer": "cake" },
+            { "num": 3, "image_desc": "a glass of lemonade with lemon slices", "answer": "lemonade" },
+            { "num": 4, "image_desc": "an oyster", "answer": "noodles" },
+            { "num": 5, "image_desc": "a glass of water", "answer": "water" },
+            { "num": 6, "image_desc": "a fish on a plate", "answer": "fish" },
+            { "num": 7, "image_desc": "a bowl of rice", "answer": "rice" },
+            { "num": 8, "image_desc": "a block of cheese", "answer": "cheese" },
+            { "num": 9, "image_desc": "roast beef", "answer": "beef" },
+            { "num": 10, "image_desc": "a sausage", "answer": "sausage" }
+          ],
+          "blue_column_answer": "sauce",
+          "answers": {
+            "1": "sauce",
+            "2": "cake",
+            "3": "lemonade",
+            "4": "noodles",
+            "5": "water",
+            "6": "fish",
+            "7": "rice",
+            "8": "cheese",
+            "9": "beef",
+            "10": "sausage"
+          },
+          "note": "Dạng bài crossword/ô chữ — UI luyện tập hiện tại chưa hỗ trợ hiển thị lưới ô chữ và chấm tự động cho dạng này. Đáp án lấy từ trang Keys (tr.110); từ khoá cột xanh trùng với đáp án câu 1 ('sauce') theo Keys — có thể do cách trình bày bảng Keys, cần đối chiếu thêm với bản gốc nếu cần chính xác tuyệt đối vị trí từng chữ trong ô."
+        },
+        {
+          "id": "5.B.3",
+          "type": "picture_fill_blank",
+          "instruction": "Write the amount under each picture.",
+          "page": 37,
+          "questions": [
+            { "num": 1, "image_desc": "kitchen scale showing beef: 2 kg", "stem": "1. ____", "answer": "two kilograms of beef" },
+            { "num": 2, "image_desc": "milk jug showing milk: 800 ml", "stem": "2. ____", "answer": "eight hundred millilitres of milk" },
+            { "num": 3, "image_desc": "spoon with salt: 1 tsp", "stem": "3. ____", "answer": "one teaspoon of salt" },
+            { "num": 4, "image_desc": "kitchen scale showing sugar: 20 g", "stem": "4. ____", "answer": "twenty grams of sugar" },
+            { "num": 5, "image_desc": "water bottle showing water: 2 l", "stem": "5. ____", "answer": "two litres of water" }
+          ],
+          "note": "Ví dụ trong sách: 'a tablespoon of sauce' (sauce: 1 tbsp). Đáp án lấy từ trang Keys (tr.110)."
+        },
+        {
+          "id": "5.B.4",
+          "type": "matching",
+          "instruction": "Match the phrases in column A with the nouns in column B.",
+          "page": 37,
+          "column_a": { "1": "a tin of", "2": "a carton of", "3": "a slice of", "4": "a bowl of", "5": "a bar of", "6": "a bottle of" },
+          "column_b": {
+            "a": "mineral water",
+            "b": "soup",
+            "c": "chocolate",
+            "d": "beef",
+            "e": "tuna",
+            "f": "eggs"
+          },
+          "answers": { "1": "e", "2": "f", "3": "d", "4": "b", "5": "c", "6": "a" }
+        },
+        {
+          "id": "5.B.5",
+          "type": "multiple_choice",
+          "instruction": "Choose the correct words or phrases to complete the sentences below.",
+          "page": 37,
+          "questions": [
+            { "num": 1, "stem": "I have (some / any) food for you if you want some.", "options": { "A": "some", "B": "any" }, "answer": "A" },
+            { "num": 2, "stem": "There is (a lot of / some) pepper in my omelette. Too much. I don't like it.", "options": { "A": "a lot of", "B": "some" }, "answer": "A" },
+            { "num": 3, "stem": "Can I have (some / a lot of) sauce in my spaghetti? But not too much.", "options": { "A": "some", "B": "a lot of" }, "answer": "A" },
+            { "num": 4, "stem": "I need to buy (some / any) oil because there isn't (some / any) oil in the kitchen.", "options": { "A": "some, any", "B": "any, some" }, "answer": "A" },
+            { "num": 5, "stem": "She is a warm and friendly girl. She has (lots of / some) friends.", "options": { "A": "lots of", "B": "some" }, "answer": "B" },
+            { "num": 6, "stem": "I need (some / any) sugar for the cakes. Is there (any / a lot of) sugar in the jar?", "options": { "A": "some, any", "B": "any, some" }, "answer": "A" }
+          ],
+          "note": "Đáp án gốc trong Keys (tr.110) ghi dạng '5.some 6.some, any' — đã diễn giải lại thành lựa chọn A/B tương ứng với 2 chỗ trống mỗi câu để phù hợp giao diện trắc nghiệm; xem sách để đối chiếu chính xác cặp từ cần chọn."
+        },
+        {
+          "id": "5.B.6",
+          "type": "fill_blank_word_bank",
+          "instruction": "Complete the dialogue with How much or How many.",
+          "page": 38,
+          "word_bank": ["How much", "How many"],
+          "passage_template": "Nick: Let's make an omelette for breakfast, Mai!\nMai: OK, sounds good. (1) ____ eggs do we need for the omelette, Nick?\nNick: Five eggs.\nMai: And (2) ____ tomatoes and onions do we need?\nNick: Two tomatoes and three onions.\nMai: OK. Do we need any flour?\nNick: No, we don't. (3) ____ butter have we got?\nMai: About 100 grams.\nNick: We need only 40 grams of butter.\nMai: (4) ____ salt do we need?\nNick: A teaspoon.\nMai: And (5) ____ pepper do we need?\nNick: Half a teaspoon.\nMai: Do we need anything else?\nNick: Er, well - we need two tablespoons of cold water.",
+          "answers": {
+            "1": "How many",
+            "2": "How many",
+            "3": "How much",
+            "4": "How much",
+            "5": "how much"
+          }
+        },
+        {
+          "id": "5.B.7",
+          "type": "multiple_choice",
+          "instruction": "Choose the best answer (A, B, or C) to each of the following questions.",
+          "page": 38,
+          "questions": [
+            { "num": 1, "stem": "We haven't got ____ rice left for breakfast.", "options": { "A": "some", "B": "no", "C": "any" }, "answer": "C" },
+            { "num": 2, "stem": "There ____ cans of orange juice in the fridge.", "options": { "A": "are some", "B": "are any", "C": "is some" }, "answer": "A" },
+            { "num": 3, "stem": "Ann has ____ dresses. She's always buying new ones.", "options": { "A": "lots of", "B": "some", "C": "any" }, "answer": "A" },
+            { "num": 4, "stem": "____ organic food in the supermarket?", "options": { "A": "Were there any", "B": "Were there some", "C": "Was there any" }, "answer": "C" },
+            { "num": 5, "stem": "This morning he didn't have ____ cup of tea as usual.", "options": { "A": "some", "B": "no", "C": "a" }, "answer": "C" },
+            { "num": 6, "stem": "He can teach me to cook some popular dishes. He has ____ free time today.", "options": { "A": "any", "B": "a lot of", "C": "many" }, "answer": "B" },
+            { "num": 7, "stem": "There ____ yogurt in this carton.", "options": { "A": "isn't any", "B": "isn't some", "C": "aren't any" }, "answer": "A" },
+            { "num": 8, "stem": "Did you buy ____ bottle of cooking oil yesterday?", "options": { "A": "some", "B": "a", "C": "any" }, "answer": "B" }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "C",
+      "title": "Speaking",
+      "exercises": [
+        {
+          "id": "5.C.1",
+          "type": "dialogue_matching",
+          "instruction": "Choose A - E to complete the following conversation. Then practise the conversation with your friend.",
+          "page": 39,
+          "dialogue": [
+            { "speaker": "A", "line": "Good evening. What can I get you?" },
+            { "speaker": "B", "blank": 1 },
+            { "speaker": "A", "line": "Certainly. Take your time. Here is the menu." },
+            { "speaker": "A", "line": "... Can I take your order now?" },
+            { "speaker": "B", "blank": 2 },
+            { "speaker": "A", "line": "And what would you like for the main course?" },
+            { "speaker": "B", "blank": 3 },
+            { "speaker": "A", "line": "What would you like to drink?" },
+            { "speaker": "B", "blank": 4 },
+            { "speaker": "A", "line": "Anything else, sir?" },
+            { "speaker": "B", "blank": 5 },
+            { "speaker": "A", "line": "OK. I'll be right back with your order." }
+          ],
+          "options": {
+            "A": "Yes, I think so. To start with, I'd like the tomato soup.",
+            "B": "Just a bottle of mineral water, please.",
+            "C": "No, thanks.",
+            "D": "Um, I'm not ready to order yet. Can I have a minute or two?",
+            "E": "I'd like the roast chicken, spring rolls and some rice, please."
+          },
+          "answers": { "1": "D", "2": "A", "3": "E", "4": "B", "5": "C" }
+        },
+        {
+          "id": "5.C.2",
+          "type": "guided_speaking",
+          "instruction": "Look at the shopping list and the price list. Work in pairs. Read the dialogue and then act out similar dialogues.",
+          "page": 39,
+          "shopping_list": [
+            { "item": "yogurt", "quantity": "5 cartons" },
+            { "item": "rice", "quantity": "5 kilos" },
+            { "item": "instant noodles", "quantity": "4 packets" },
+            { "item": "eggs", "quantity": "10" },
+            { "item": "pork", "quantity": "1 kilo" },
+            { "item": "orange juice", "quantity": "6 cartons" }
+          ],
+          "price_list": [
+            { "item": "yogurt", "price": "6,000 / a carton" },
+            { "item": "rice", "price": "30,000 / a kg" },
+            { "item": "instant noodles", "price": "10,000 / a packet" },
+            { "item": "eggs", "price": "5,000 / an egg" },
+            { "item": "pork", "price": "70,000 / a kg" },
+            { "item": "orange juice", "price": "7,000 / a carton" }
+          ],
+          "example_dialogue": "A: Have you got any yogurt?\nB: Yes, we have. How much do you want?\nA: Five cartons, please.\nB: Here you are. Do you need anything else?\nA: No, thanks. How much are they?\nB: They're 30,000 dong.",
+          "note": "Bài nói tự do theo mẫu — không có đáp án cố định."
+        }
+      ]
+    },
+    {
+      "section": "D",
+      "title": "Reading",
+      "exercises": [
+        {
+          "id": "5.D.1",
+          "type": "multiple_choice",
+          "instruction": "Read the blog about Vietnamese food. Choose the best answer (A, B, or C) to each of the questions.",
+          "page": 40,
+          "passage": "SOME INTERESTING FACTS ABOUT VIETNAMESE FOOD\n- Viet Nam is the second largest rice exporter in the world (only smaller than India).\n- People in Viet Nam eat the largest quantity of instant noodles in Asia. They even eat more instant noodles than people in Japan, where instant noodles came from.\n- Viet Nam has many kinds of noodles, such as pho, bun (vermicelli), mien (glass noodles), and banh da (rice noodles).\n- Nem ran (spring roll) is the most popular dish in Viet Nam. It isn't usually served as an everyday dish but mostly at a family gathering or an anniversary party.\n- Viet Nam has a large variety of che (sweet soup) with more than 100 kinds.\n- Viet Nam has nearly 200 kinds of cakes with various shapes and tastes. Some of them are not made from butter and flour, like banh chung or banh gai.",
+          "questions": [
+            { "num": 1, "stem": "India ____ in the world.", "options": { "A": "is the largest rice exporter", "B": "has the smallest rice production", "C": "is the second largest rice exporter" }, "answer": "A" },
+            { "num": 2, "stem": "The Japanese eat ____.", "options": { "A": "the largest quantity of instant noodles in Asia", "B": "more instant noodles than the Vietnamese", "C": "a smaller quantity of instant noodles than the Vietnamese" }, "answer": "C" },
+            { "num": 3, "stem": "In Viet Nam, spring roll is served ____.", "options": { "A": "as an everyday dish", "B": "only to elderly people", "C": "mostly on special occasions" }, "answer": "C" },
+            { "num": 4, "stem": "The word \"them\" in the text refers to ____.", "options": { "A": "shapes", "B": "cakes", "C": "tastes" }, "answer": "B" },
+            { "num": 5, "stem": "Which of the following is NOT true according to the text?", "options": { "A": "There are more than 100 kinds of che in Viet Nam.", "B": "Viet Nam has a large variety of noodles and che.", "C": "The Vietnamese always make their cakes from butter and flour." }, "answer": "C" }
+          ]
+        },
+        {
+          "id": "5.D.2",
+          "type": "picture_fill_blank",
+          "instruction": "Read Minh's blog and answer the questions that follow.",
+          "page": 41,
+          "passage": "Bun bo Hue is one of the most popular dishes in Viet Nam. It comes from Hue - the old capital city of Viet Nam. Its main ingredients are rice vermicelli (a thin form of rice noodles called bun) and slices of beef. Nowadays, we can find bun bo Hue nearly everywhere in Viet Nam. People enjoy it for all kinds of meals during the day and even for a late-night snack.\nBun bo Hue has a special taste - a balance of spicy, salty, and sweet flavours. To make its broth, people stew beef bones and beef shank with lemongrass, shrimp sauce, sugar, and spicy chili oil. People often eat bun bo Hue with ox tail, pork knuckle, and a variety of herbs... It's really delicious!\nTell me about a particular dish where you live!\nPosted by Minh at 10:30 p.m.",
+          "questions": [
+            { "num": 1, "stem": "Where does bun bo Hue come from?", "answer": "It comes from Hue - the old capital city of Viet Nam." },
+            { "num": 2, "stem": "What are its main ingredients?", "answer": "Its main ingredients are rice vermicelli (a thin form of rice noodles called bun) and slices of beef." },
+            { "num": 3, "stem": "Where can we find bun bo Hue?", "answer": "We can find it nearly everywhere in Viet Nam." },
+            { "num": 4, "stem": "When do people enjoy bun bo Hue?", "answer": "People enjoy it for all kinds of meals during the day and even for a late-night snack." },
+            { "num": 5, "stem": "How do people make the broth for bun bo Hue?", "answer": "They stew beef bones and beef shank with lemongrass, shrimp sauce, sugar and spicy chili oil." }
+          ],
+          "note": "Đáp án lấy nguyên văn từ trang Keys (tr.110)."
+        }
+      ]
+    },
+    {
+      "section": "E",
+      "title": "Writing",
+      "exercises": [
+        {
+          "id": "5.E.1",
+          "type": "guided_writing",
+          "instruction": "Write the answers to the questions about a popular dish in your neighbourhood or area / city / province / village.",
+          "page": 41,
+          "questions_prompt": [
+            "What is its name?",
+            "Where does it come from?",
+            "What are its main ingredients?",
+            "Where can we normally find it?",
+            "When and how often do people enjoy it?",
+            "How does it taste? (What taste does it have?)",
+            "What do people often eat with it?",
+            "What is special about it? (What makes it popular?)"
+          ],
+          "note": "Bài viết tự do cá nhân — không có đáp án cố định."
+        },
+        {
+          "id": "5.E.2",
+          "type": "guided_writing_paragraph",
+          "instruction": "Write a short paragraph (60-80 words) about a popular dish in your area / city / province / village. You may use the ideas in 1 and Minh's blog as a model.",
+          "page": 41,
+          "note": "Bài viết tự do cá nhân — không có đáp án cố định."
+        }
+      ]
+    }
+  ]
+}

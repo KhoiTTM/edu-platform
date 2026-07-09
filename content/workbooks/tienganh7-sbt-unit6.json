@@ -1,0 +1,295 @@
+{
+  "unit": 6,
+  "title": "Unit 6: A Visit to a School",
+  "source": "Tiếng Anh 7 - Global Success - Sách bài tập, trang 42-48",
+  "sections": [
+    {
+      "section": "A",
+      "title": "Pronunciation",
+      "exercises": [
+        {
+          "id": "6.A.1",
+          "type": "fill_blank_word_bank",
+          "instruction": "Complete the words with letter(s) which sound(s) /tʃ/ and /dʒ/. Then read them aloud.",
+          "page": 42,
+          "passage_template": "1. ____ildren\n2. ____icken\n3. tea____er\n4. whi____\n5. Man____ester\n6. ____anuary\n7. technolo____y\n8. intelli____ent\n9. ____elly\n10. ____ym",
+          "answers": {
+            "1": "ch",
+            "2": "ch",
+            "3": "ch",
+            "4": "ch",
+            "5": "ch",
+            "6": "J",
+            "7": "g",
+            "8": "g",
+            "9": "j",
+            "10": "g"
+          },
+          "note": "Đáp án lấy từ trang Keys (tr.111): children, chicken, teacher, which, Manchester, January, technology, intelligent, jelly, gym."
+        },
+        {
+          "id": "6.A.2",
+          "type": "guided_speaking",
+          "instruction": "Practise reading the dialogue, paying attention to the words with the sounds /tʃ/ and /dʒ/.",
+          "page": 42,
+          "dialogue": [
+            { "speaker": "Mr Jones", "line": "Hi, Jane." },
+            { "speaker": "Jane", "line": "Hello, Mr Jones. I'd like a chop for lunch, please." },
+            { "speaker": "Mr Jones", "line": "Which one would you like, the chicken chop or the pork chop?" },
+            { "speaker": "Jane", "line": "Which one is better?" },
+            { "speaker": "Mr Jones", "line": "I think the chicken chop is." },
+            { "speaker": "Jane", "line": "Well, I'd like the chicken chop then." },
+            { "speaker": "Mr Jones", "line": "Which would you like to drink, orange juice or apple juice?" },
+            { "speaker": "Jane", "line": "A glass of orange juice, please." },
+            { "speaker": "Mr Jones", "line": "So, that's a chicken chop and a glass of orange juice." }
+          ],
+          "note": "Bài luyện đọc — không có đáp án chấm điểm."
+        }
+      ]
+    },
+    {
+      "section": "B",
+      "title": "Vocabulary & Grammar",
+      "exercises": [
+        {
+          "id": "6.B.1",
+          "type": "fill_blank_word_bank",
+          "instruction": "Complete the sentences with phrases from the box. There are some extra phrases.",
+          "page": 43,
+          "word_bank": ["gifted students", "final examination", "computer rooms", "school garden", "school library", "water the vegetables", "lower secondary schools", "pass an entrance exam"],
+          "passage_template": "1. When you visit my school, you can see three modern ____.\n2. Their school is one of the most famous ____ in the city.\n3. We can borrow books and magazines from the ____.\n4. If you want to study at this school, you have to ____.\n5. Tran Phu Lower Secondary School is for ____ in the province.\n6. When does the ____ take place?",
+          "answers": {
+            "1": "computer rooms",
+            "2": "lower secondary schools",
+            "3": "school library",
+            "4": "pass an entrance exam",
+            "5": "gifted students",
+            "6": "final examination"
+          }
+        },
+        {
+          "id": "6.B.2",
+          "type": "fill_blank_word_bank",
+          "instruction": "Do the crossword puzzle and complete the sentences below.",
+          "page": 43,
+          "passage_template": "ACROSS:\n1. The school ____ is in front of the building.\n2. Her favourite subject is ____.\n3. The students take part in many outdoor ____ at the weekend.\n4. They have to pass an entrance ____ to attend that school.\n5. Minh Khai Lower Secondary School is for gifted ____ in the city.\n\nDOWN:\n6. Our ____ is on the second floor.\n7. They have a lot of modern ____ in their school.\n8. They are not allowed to play football in the ____.",
+          "answers": {
+            "1": "playground",
+            "2": "maths",
+            "3": "activities",
+            "4": "exam",
+            "5": "students",
+            "6": "classroom",
+            "7": "facilities",
+            "8": "gym"
+          },
+          "note": "Ô giữa (dọc) đã điền sẵn trong đề: SCHOOL. Đáp án 1-8 lấy từ trang Keys (tr.111)."
+        },
+        {
+          "id": "6.B.3",
+          "type": "multiple_choice",
+          "instruction": "Circle the correct prepositions to complete the sentences.",
+          "page": 44,
+          "questions": [
+            { "num": 1, "stem": "The staff room is (at / in / on) the second floor of the building.", "options": { "A": "at", "B": "in", "C": "on" }, "answer": "C" },
+            { "num": 2, "stem": "When I saw Hoa, she was holding a pocket English dictionary (at / in / on) her hands.", "options": { "A": "at", "B": "in", "C": "on" }, "answer": "B" },
+            { "num": 3, "stem": "Is their school (at / in / on) 32 Vo Van Kiet Avenue?", "options": { "A": "at", "B": "in", "C": "on" }, "answer": "A" },
+            { "num": "4a", "stem": "The child is sitting (at / in / on) the classroom...", "options": { "A": "at", "B": "in", "C": "on" }, "answer": "B" },
+            { "num": "4b", "stem": "...looking at the poster (at / in / on) the wall.", "options": { "A": "at", "B": "in", "C": "on" }, "answer": "C" },
+            { "num": "5a", "stem": "Parents usually wait for their children (at / in / on) the school gate...", "options": { "A": "at", "B": "in", "C": "on" }, "answer": "A" },
+            { "num": "5b", "stem": "...(at / in / on) 11:30 a.m.", "options": { "A": "at", "B": "in", "C": "on" }, "answer": "A" },
+            { "num": 6, "stem": "What do you usually do (at / in / on) Tet?", "options": { "A": "at", "B": "in", "C": "on" }, "answer": "A" }
+          ],
+          "note": "Đáp án Keys (tr.111) gộp câu 4 và 5 thành 'in, on' và 'at, at' — đã tách thành 4a/4b, 5a/5b để khớp UI trắc nghiệm từng chỗ trống."
+        },
+        {
+          "id": "6.B.4",
+          "type": "fill_blank_word_bank",
+          "instruction": "Complete the sentences with appropriate prepositions of place.",
+          "page": 44,
+          "passage_template": "1. I studied ____ that lower secondary school when I was young.\n2. There are many books ____ the shelves of the school library.\n3. The science laboratories and computer rooms are ____ the top floor of the building.\n4. Do the children have to do homework ____ home?\n5. When you visit my school, you will see many flowers ____ the school garden.\n6. Here you can see some pictures of our summer activities ____ the wall.",
+          "answers": {
+            "1": "at",
+            "2": "on",
+            "3": "on",
+            "4": "at",
+            "5": "in",
+            "6": "on"
+          }
+        },
+        {
+          "id": "6.B.5",
+          "type": "fill_blank_word_bank",
+          "instruction": "Read the conversation and fill in the gaps with appropriate prepositions of time.",
+          "page": 44,
+          "passage_template": "Mark: I'm sorry I was out when you called yesterday afternoon, Alice. Look, I'm free (1) ____ the fifteenth of March. Can we meet then?\nAlice: I'm busy next week, I'm afraid. So, I can't see you (2) ____ Friday.\nMark: I'd like to have a meeting this month if possible because I'll be very busy (3) ____ April.\nAlice: I'm going away (4) ____ Easter, so how about the week after? Shall we meet (5) ____ the twenty-seventh? That's a Wednesday.\nMark: OK. Let's meet (6) ____ Wednesday afternoon (7) ____ half past two.",
+          "answers": {
+            "1": "on",
+            "2": "on",
+            "3": "in",
+            "4": "at",
+            "5": "on",
+            "6": "on",
+            "7": "at"
+          }
+        },
+        {
+          "id": "6.B.6",
+          "type": "picture_fill_blank",
+          "instruction": "Write the questions for the answers, using when and where.",
+          "page": 45,
+          "questions": [
+            { "num": 1, "stem": "A: ____?\nB: Quoc Hoc – Hue is in the centre of Hue City.", "answer": "Where is Quoc Hoc – Hue?" },
+            { "num": 2, "stem": "A: ____?\nB: Her classroom is on the third floor.", "answer": "Where is her classroom?" },
+            { "num": 3, "stem": "A: ____?\nB: They grow the flowers in the school garden.", "answer": "Where do they grow the flowers?" },
+            { "num": 4, "stem": "A: ____?\nB: They celebrate Teachers' Day on November 20th.", "answer": "When do they celebrate Teachers' Day?" },
+            { "num": 5, "stem": "A: ____?\nB: Our school year will finish in June.", "answer": "When will your school year finish?" },
+            { "num": 6, "stem": "A: ____?\nB: They built my school thirty years ago.", "answer": "When did they build your school?" }
+          ],
+          "note": "Đáp án lấy từ trang Keys (tr.111)."
+        }
+      ]
+    },
+    {
+      "section": "C",
+      "title": "Speaking",
+      "exercises": [
+        {
+          "id": "6.C.1",
+          "type": "matching",
+          "instruction": "Match the questions (1-6) with the answers (a-f). Then practise them with your partner.",
+          "page": 45,
+          "column_a": {
+            "1": "What school do you want to visit?",
+            "2": "When do you want to go?",
+            "3": "How do you want to go there?",
+            "4": "Who do you want to meet?",
+            "5": "What do you want to see?",
+            "6": "What do you want to do?"
+          },
+          "column_b": {
+            "a": "On Saturday.",
+            "b": "Join some outdoor activities.",
+            "c": "Nguyen Tat Thanh Lower Secondary School.",
+            "d": "The principal and students.",
+            "e": "By coach.",
+            "f": "The school facilities."
+          },
+          "answers": { "1": "c", "2": "a", "3": "e", "4": "d", "5": "f", "6": "b" }
+        },
+        {
+          "id": "6.C.2",
+          "type": "guided_speaking",
+          "instruction": "Make a conversation with a partner and complete the table. You can use the questions in 1.",
+          "page": 45,
+          "table_fields": ["Name of the school:", "Time to visit:", "Type of transport:", "People to meet:", "School facilities:", "Outdoor activities:"],
+          "note": "Bài nói tự do, không có đáp án cố định — không phù hợp chấm tự động."
+        },
+        {
+          "id": "6.C.3",
+          "type": "guided_speaking",
+          "instruction": "Work in pairs. Talk about the school you want to visit. You can use the information in the table in 2.",
+          "page": 45,
+          "note": "Bài nói tự do, không có đáp án cố định — không phù hợp chấm tự động."
+        }
+      ]
+    },
+    {
+      "section": "D",
+      "title": "Reading",
+      "exercises": [
+        {
+          "id": "6.D.1",
+          "type": "fill_blank_word_bank",
+          "instruction": "Complete the passage with the words in the box.",
+          "page": 46,
+          "word_bank": ["students", "talking", "experience", "visit", "learnt", "activities"],
+          "passage_template": "Last year, we had a visit to Thao Dien Lower Secondary School for blind students. Before the (1) ____, we spent time learning about what outdoor (2) ____ the students do there.\nDuring our visit, we were surprised to see that the (3) ____ could interact with us easily. They enjoyed (4) ____ with us while painting, drawing, making fruits using clay, and making paper art. They even (5) ____ some of the English words for fruit.\nAlthough it was a short visit, we had a good (6) ____ working with the blind students in our community.",
+          "answers": {
+            "1": "visit",
+            "2": "activities",
+            "3": "students",
+            "4": "talking",
+            "5": "learnt",
+            "6": "experience"
+          }
+        },
+        {
+          "id": "6.D.2",
+          "type": "multiple_choice",
+          "instruction": "Read the conversation and then circle the best option (A, B, or C) to complete each of the sentences.",
+          "page": 46,
+          "passage": "Mai and Phong: Good morning, Mr Lam.\nMr Lam: Good morning. Welcome to Hung Vuong Lower Secondary School.\nMai: Mr Lam, can you tell us something about the school?\nMr Lam: Well, it was founded in 1957. So it's one of the oldest lower secondary schools in the city.\nPhong: How many students are there? And what are they like?\nMr Lam: More than two thousand students. Most of them are intelligent and hard-working. They're very active too. They do lots of outdoor activities.\nPhong: Sounds really interesting. I wish I could study here.\nMr Lam: Well, to attend the school, you have to pass an entrance exam.\nPhong: Yes, I understand ... And ...",
+          "questions": [
+            { "num": 1, "stem": "Hung Vuong Lower Secondary School is one of the ____ lower secondary schools in the city.", "options": { "A": "oldest", "B": "most beautiful", "C": "most modern" }, "answer": "A" },
+            { "num": 2, "stem": "The number of students in the school is ____.", "options": { "A": "1,500", "B": "2,000", "C": "more than 2,000" }, "answer": "C" },
+            { "num": 3, "stem": "Most of the students are ____.", "options": { "A": "intelligent", "B": "hard-working", "C": "intelligent and hard-working" }, "answer": "C" },
+            { "num": 4, "stem": "The students not only study but also do ____.", "options": { "A": "morning exercise", "B": "outdoor activities", "C": "homework" }, "answer": "B" },
+            { "num": 5, "stem": "To attend the school, students have to pass ____.", "options": { "A": "an entrance exam", "B": "a mid-term test", "C": "a final exam" }, "answer": "A" }
+          ]
+        },
+        {
+          "id": "6.D.3",
+          "type": "picture_fill_blank",
+          "instruction": "Read the passage and write answers to the questions.",
+          "page": 47,
+          "passage": "Westminster High School is a famous school in England. It is in the heart of London, next to the Houses of Parliament. The school has some modern facilities such as a new sports hall, a golf course, a science centre, a large theatre, and a music centre.\nThere are 740 students in the school. They are intelligent and hard-working. To attend the school, they have to pass an entrance exam and an interview. All students have to take final exams in science, maths, English, literature, and French or German. They also take part in some outdoor activities such as playing golf, growing flowers or rowing on the Thames.",
+          "questions": [
+            { "num": 1, "stem": "Where is Westminster High School?", "answer": "It is in the heart of London, next to the Houses of Parliament." },
+            { "num": 2, "stem": "What facilities does the school have?", "answer": "It has some modern facilities such as a new sports hall, a golf course, a science centre, a large theatre, and a music centre." },
+            { "num": 3, "stem": "What are the students like?", "answer": "They are intelligent and hard-working." },
+            { "num": 4, "stem": "What do the students have to do to attend the school?", "answer": "They have to pass an entrance exam and an interview." },
+            { "num": 5, "stem": "What outdoor activities do they take part in?", "answer": "They take part in some outdoor activities such as playing golf, growing flowers or rowing on the Thames." }
+          ],
+          "note": "Đáp án lấy từ trang Keys (tr.111)."
+        }
+      ]
+    },
+    {
+      "section": "E",
+      "title": "Writing",
+      "exercises": [
+        {
+          "id": "6.E.1",
+          "type": "guided_writing",
+          "instruction": "Write the answers to the questions about your school.",
+          "page": 47,
+          "questions": [
+            "What is the full name of your school?",
+            "Where is it?",
+            "How many students and teachers are there?",
+            "What are the students and teachers like?",
+            "What facilities does it have?",
+            "How many subjects do you study? Which is your favourite one?"
+          ],
+          "note": "Bài viết tự do cá nhân — không có đáp án cố định."
+        },
+        {
+          "id": "6.E.2",
+          "type": "guided_writing",
+          "instruction": "Look at the table and write sentences to answer the questions \"Where and when do you do these outdoor activities?\"",
+          "page": 48,
+          "table": {
+            "columns": ["School outdoor activities", "Where?", "When?"],
+            "rows": [
+              ["Playing football", "School yard", "Wednesday afternoon"],
+              ["Growing and watering vegetables", "School garden", "Saturday morning"],
+              ["Taking care of old and poor people", "Nursing home", "Saturday afternoon"],
+              ["Doing clean-up activities", "Streets around school", "Sunday morning"]
+            ]
+          },
+          "example": "We usually play football in the school yard on Wednesday afternoon.",
+          "note": "Bài viết tự do cá nhân — không có đáp án cố định."
+        },
+        {
+          "id": "6.E.3",
+          "type": "guided_writing_paragraph",
+          "instruction": "Write a paragraph (60-80 words) about your school using the information in 1 and/or 2.",
+          "page": 48,
+          "starter": "The name of my school is ____",
+          "note": "Bài viết tự do cá nhân — không có đáp án cố định."
+        }
+      ]
+    }
+  ]
+}

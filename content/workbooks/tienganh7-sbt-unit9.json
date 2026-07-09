@@ -1,0 +1,344 @@
+{
+  "unit": 9,
+  "title": "Unit 9: Festivals around the World",
+  "source": "Tiếng Anh 7 - Global Success - Sách bài tập, trang 66-72",
+  "sections": [
+    {
+      "section": "A",
+      "title": "Pronunciation",
+      "exercises": [
+        {
+          "id": "9.A.1",
+          "type": "multiple_choice",
+          "instruction": "Choose the word with a different stress pattern from the others.",
+          "page": 66,
+          "questions": [
+            { "num": 1, "options": { "A": "driver", "B": "distance", "C": "traffic", "D": "repeat" }, "answer": "D" },
+            { "num": 2, "options": { "A": "travel", "B": "sentence", "C": "obey", "D": "safety" }, "answer": "C" },
+            { "num": 3, "options": { "A": "grammar", "B": "describe", "C": "accept", "D": "suggest" }, "answer": "A" },
+            { "num": 4, "options": { "A": "believe", "B": "pretty", "C": "decide", "D": "complete" }, "answer": "B" },
+            { "num": 5, "options": { "A": "confuse", "B": "shocking", "C": "useful", "D": "boring" }, "answer": "A" }
+          ]
+        },
+        {
+          "id": "9.A.2",
+          "type": "classify_table",
+          "instruction": "Put the underlined words in the correct column according to their stress pattern. Practise reading the sentences.",
+          "page": 66,
+          "sentences": [
+            "At Tet, people in Viet Nam usually gather together.",
+            "We all enjoy Tet and prepare for it carefully.",
+            "We tidy our house and cook special food.",
+            "We sometimes go out to watch fireworks.",
+            "Children become excited because they usually receive lucky money at Tet."
+          ],
+          "underlined_words": ["people", "gather", "enjoy", "prepare", "tidy", "special", "sometimes", "fireworks", "become", "receive"],
+          "classify_columns": ["Stress on 1st syllable", "Stress on 2nd syllable"],
+          "classify_answers": {
+            "Stress on 1st syllable": ["people", "gather", "tidy", "special", "sometimes", "fireworks"],
+            "Stress on 2nd syllable": ["enjoy", "prepare", "become", "receive"]
+          }
+        }
+      ]
+    },
+    {
+      "section": "B",
+      "title": "Vocabulary & Grammar",
+      "exercises": [
+        {
+          "id": "9.B.1",
+          "type": "crossword",
+          "instruction": "Solve the crossword puzzle.",
+          "page": 66,
+          "clues": {
+            "across": [
+              { "num": 1, "clue": "a large vehicle that is decorated and used in festivals" },
+              { "num": 2, "clue": "a public celebration that includes people moving down a street" },
+              { "num": 3, "clue": "a public holiday in the US and in Canada to give thanks to God for the harvest and good health" }
+            ],
+            "down": [
+              { "num": 4, "clue": "a special large meal with very good food" },
+              { "num": 5, "clue": "a festival in some countries where children dress as ghosts, witches, etc." },
+              { "num": 6, "clue": "the clothes typical of a particular country" }
+            ]
+          },
+          "answers": {
+            "1": "float",
+            "2": "parade",
+            "3": "thanksgiving",
+            "4": "feast",
+            "5": "halloween",
+            "6": "costume"
+          },
+          "note": "Đáp án lấy từ Keys (tr.116)."
+        },
+        {
+          "id": "9.B.2",
+          "type": "matching",
+          "instruction": "Match each festival with its activity/activities.",
+          "page": 67,
+          "column_a": {
+            "1": "Christmas",
+            "2": "Easter",
+            "3": "Halloween",
+            "4": "Thanksgiving",
+            "5": "Cannes Film Festival",
+            "6": "Mid-Autumn Festival"
+          },
+          "column_b": {
+            "a": "Children paint and hunt for eggs.",
+            "b": "People have a feast with turkey.",
+            "c": "People eat moon cakes.",
+            "d": "They give awards to the best films.",
+            "e": "People carve pumpkins and eat candy apples.",
+            "f": "People decorate pine trees and give gifts to their family and friends."
+          },
+          "answers": {
+            "1": "f",
+            "2": "a",
+            "3": "e",
+            "4": "b",
+            "5": "d",
+            "6": "c"
+          }
+        },
+        {
+          "id": "9.B.3",
+          "type": "multiple_choice",
+          "instruction": "Choose the correct answer A or B.",
+          "page": 67,
+          "questions": [
+            { "num": 1, "stem": "On New Year's Eve, we go to Hoan Kiem Lake to watch the fireworks ____.", "options": { "A": "exhibition", "B": "display" }, "answer": "B" },
+            { "num": 2, "stem": "Look at the dancers. They are performing a Dutch ____.", "options": { "A": "folk dance", "B": "folk song" }, "answer": "A" },
+            { "num": 3, "stem": "On ____, children wear costumes and go trick or treating.", "options": { "A": "Easter", "B": "Halloween" }, "answer": "B" },
+            { "num": 4, "stem": "Did he get the Best Actor Award at the ____ last year?", "options": { "A": "Cannes Film Festival", "B": "Christmas" }, "answer": "A" },
+            { "num": 5, "stem": "She wore a beautiful ____ in the school play.", "options": { "A": "clothes", "B": "costume" }, "answer": "B" }
+          ]
+        },
+        {
+          "id": "9.B.4",
+          "type": "error_identification",
+          "instruction": "Find a mistake in each sentence and correct it.",
+          "page": 67,
+          "questions": [
+            { "num": 1, "stem": "Can you watch folk music performances at the Russian Winter Festival last year?", "underline": { "A": "Can", "B": "watch", "C": "at the" }, "answer": "A", "correction": "Can → Could / Did" },
+            { "num": 2, "stem": "Did they went to the Tulip Festival with their family?", "underline": { "A": "Did", "B": "went", "C": "their" }, "answer": "B", "correction": "went → go" },
+            { "num": 3, "stem": "Do she carve pumpkins every year at Halloween?", "underline": { "A": "Do", "B": "carve", "C": "every" }, "answer": "A", "correction": "Do → Does" },
+            { "num": 4, "stem": "Will he asks his brother to go to the cinema with him?", "underline": { "A": "Will", "B": "asks", "C": "the" }, "answer": "B", "correction": "asks → ask" },
+            { "num": 5, "stem": "Are they perform an Indian folk dance on the stage?", "underline": { "A": "Are", "B": "perform", "C": "dance" }, "answer": "B", "correction": "perform → performing" }
+          ]
+        },
+        {
+          "id": "9.B.5",
+          "type": "sentence_transformation",
+          "instruction": "Change the following sentences into Yes/No questions.",
+          "page": 68,
+          "questions": [
+            { "num": 1, "stem": "Last year their family went to Da Nang to enjoy the International Fireworks Festival.", "answer": "Did their family go to Da Nang to enjoy the International Fireworks Festival last year?" },
+            { "num": 2, "stem": "They will go to the music festival next week.", "answer": "Will they go to the music festival next week?" },
+            { "num": 3, "stem": "We can design some posters to sell food at the Mid-Autumn Festival.", "answer": "Can we / you design some posters to sell food at the Mid-Autumn Festival?" },
+            { "num": 4, "stem": "My mother usually cooks special food at Tet.", "answer": "Does your mother usually cook special food at Tet?" },
+            { "num": 5, "stem": "People should behave well on the first day of the new year.", "answer": "Should people behave well on the first day of the new year?" },
+            { "num": 6, "stem": "He is singing a song about the beauty of his country.", "answer": "Is he singing a song about the beauty of his country?" }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "C",
+      "title": "Speaking",
+      "exercises": [
+        {
+          "id": "9.C.1",
+          "type": "multiple_choice",
+          "instruction": "Choose the correct answer (A or B) to each question below.",
+          "page": 68,
+          "questions": [
+            { "num": 1, "stem": "How was the film festival last week?", "options": { "A": "It was disappointing.", "B": "I went to the cinema last week." }, "answer": "A" },
+            { "num": 2, "stem": "Do you like this performance?", "options": { "A": "I'm fine. Thank you.", "B": "No. It's awful." }, "answer": "B" },
+            { "num": 3, "stem": "When do Americans celebrate Halloween?", "options": { "A": "I don't like it.", "B": "On October 31st." }, "answer": "B" },
+            { "num": 4, "stem": "Did he wear a clown costume on Halloween last year?", "options": { "A": "Yes, he did.", "B": "Yes, he does." }, "answer": "A" },
+            { "num": 5, "stem": "Can you tell me what the Vietnamese do just before Tet?", "options": { "A": "Yes, I do.", "B": "We clean our houses and make special food." }, "answer": "B" }
+          ]
+        },
+        {
+          "id": "9.C.2",
+          "type": "dialogue_matching",
+          "instruction": "Rearrange the sentences to make a complete conversation. Then practise it with a friend.",
+          "page": 69,
+          "dialogue": [
+            { "speaker": "1", "line": "What are you doing, Mai?", "fixed": true },
+            { "speaker": "2", "blank": 2 },
+            { "speaker": "3", "blank": 3 },
+            { "speaker": "4", "blank": 4 },
+            { "speaker": "5", "blank": 5 },
+            { "speaker": "6", "blank": 6 },
+            { "speaker": "7", "blank": 7 },
+            { "speaker": "8", "blank": 8 },
+            { "speaker": "9", "blank": 9 },
+            { "speaker": "10", "blank": 10 }
+          ],
+          "options": {
+            "A": "Is it the festival where people throw tomatoes at one another?",
+            "B": "What are you doing, Mai?",
+            "C": "Yes, it is.",
+            "D": "I went to it about two years ago.",
+            "E": "Really? What was it like?",
+            "F": "I hope I can see it someday.",
+            "G": "It was exciting. We threw tomatoes for about an hour.",
+            "H": "Did you wear goggles to protect your eyes?",
+            "I": "I'm searching for some information about La Tomatina.",
+            "J": "Yes, I did. Everyone wore goggles."
+          },
+          "answers": {
+            "1": "B",
+            "2": "I",
+            "3": "A",
+            "4": "C",
+            "5": "D",
+            "6": "E",
+            "7": "G",
+            "8": "H",
+            "9": "J",
+            "10": "F"
+          },
+          "note": "Đáp án theo thứ tự đúng: B, I, A, C, D, E, G, H, J, F (Keys tr.116)."
+        },
+        {
+          "id": "9.C.3",
+          "type": "guided_speaking",
+          "instruction": "Choose one festival and talk about it. Use the information provided in the tables.",
+          "page": 69,
+          "note": "Bài nói mở, không có đáp án cố định — sử dụng thông tin trong bảng để luyện nói.",
+          "tables": [
+            {
+              "title": "A. Monkey Buffet",
+              "rows": {
+                "What?": "A festival where people feed about 2,000 monkeys fruit and vegetables",
+                "Where?": "A town north of Bangkok, Thailand",
+                "When?": "The last Sunday, every November",
+                "Who?": "Tourists and local people",
+                "How?": "People prepare 2,000 kilograms of fruit and vegetables. They put them on the tables. The monkeys come and eat them."
+              }
+            },
+            {
+              "title": "B. Children's Day",
+              "rows": {
+                "What?": "A festival for children in Viet Nam",
+                "Where?": "Throughout the country",
+                "When?": "1st June, every year",
+                "Who?": "Adults and children",
+                "How?": "Parents take their children to the park, buy them toys, or give them gifts. Families eat out and have a picnic together."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "D",
+      "title": "Reading",
+      "exercises": [
+        {
+          "id": "9.D.1",
+          "type": "multiple_choice_cloze",
+          "instruction": "Choose the correct answer A, B, or C to fill in each blank in the following passage.",
+          "page": 70,
+          "passage_template": "The Edinburgh Festival is the biggest arts festival in the world. (1) ____ August, thousands of people come to the city to join the festival. It (2) ____ for three weeks and has a lot of activities. People enjoy music and dance performances in the streets (3) ____ early morning until late at night. They also see artists painting pictures in the streets. One of (4) ____ most interesting parts of the festival is \"Fringe\". Here people enjoy comedy shows by students in small halls and cafés. At this festival, tourists also have a chance to (5) ____ new films, plays and listen to famous musicians playing great music. Although it is the world's largest arts festival, its tickets (6) ____ quite cheap. This is one of the reasons why it attracts so many people every year.",
+          "questions": [
+            { "num": 1, "options": { "A": "On", "B": "At", "C": "Every" }, "answer": "C" },
+            { "num": 2, "options": { "A": "goes", "B": "lasts", "C": "ends" }, "answer": "B" },
+            { "num": 3, "options": { "A": "in", "B": "from", "C": "between" }, "answer": "B" },
+            { "num": 4, "options": { "A": "the", "B": "a", "C": "much" }, "answer": "A" },
+            { "num": 5, "options": { "A": "learn", "B": "join", "C": "see" }, "answer": "C" },
+            { "num": 6, "options": { "A": "are", "B": "be", "C": "will" }, "answer": "A" }
+          ]
+        },
+        {
+          "id": "9.D.2",
+          "type": "fill_blank_word_bank",
+          "instruction": "Fill in each blank with a suitable word.",
+          "page": 70,
+          "passage_template": "Hanukkah is the Jewish Festival of Lights. It lasts (1) ____ eight days. People usually celebrate it (2) ____ November or December. People light candles at this festival. They light one (3) ____ every evening. To celebrate the festival, people make special pancakes. They make the (4) ____ with potatoes, onions, eggs, flour and oil. Jam doughnuts (5) ____ also very popular. People (6) ____ their family and friends presents and money at Hanukkah. Adults give (7) ____ chocolate coins. People also give cards (8) ____ others.",
+          "answers": {
+            "1": "for",
+            "2": "in",
+            "3": "candle",
+            "4": "pancakes",
+            "5": "are",
+            "6": "give",
+            "7": "children",
+            "8": "to"
+          }
+        },
+        {
+          "id": "9.D.3",
+          "type": "reading_comprehension",
+          "instruction": "Read the passage about two carnivals and do the exercises.",
+          "page": 71,
+          "passage": "Carnival is an annual festival in many countries in the world. People celebrate it in different ways. Two of the world's most famous carnivals are held in New Orleans, USA and Rio de Janeiro, Brazil.\n\nNew Orleans\nThe carnival in New Orleans lasts for about two weeks. There is a parade every day. People wear special costumes and ride on beautiful floats. They throw small gifts to the crowd. More than one million people join the festival each year.\n\nRio de Janeiro\nThe carnival in Rio is the biggest in the world. It lasts for about five days. The Rio Carnival is famous for its samba music. People dress up in special costumes and dance on floats. At the Rio Carnival, tourists enjoy the parades and competitions between samba 'schools' or groups. These schools can spend millions of dollars preparing every year.",
+          "part_a": {
+            "instruction": "Tick (✓) the suitable boxes.",
+            "table_header": ["Which carnival ...?", "New Orleans", "Rio de Janeiro"],
+            "rows": [
+              { "num": 1, "stem": "lasts for about 14 days", "answers": ["New Orleans"] },
+              { "num": 2, "stem": "has people wearing costumes", "answers": ["New Orleans", "Rio de Janeiro"] },
+              { "num": 3, "stem": "has samba competitions", "answers": ["Rio de Janeiro"] },
+              { "num": 4, "stem": "is the biggest in the world", "answers": ["Rio de Janeiro"] }
+            ]
+          },
+          "part_b": {
+            "instruction": "Give short answers to the following questions.",
+            "questions": [
+              { "num": 1, "stem": "How often do people have carnivals?", "answer": "Every year / Annually" },
+              { "num": 2, "stem": "Do people celebrate carnivals in the same way?", "answer": "No" },
+              { "num": 3, "stem": "What do people on floats throw to the crowd at the New Orleans Carnival?", "answer": "Small gifts" },
+              { "num": 4, "stem": "How long does the Rio Carnival last?", "answer": "About 5 days" },
+              { "num": 5, "stem": "How much do samba schools spend preparing?", "answer": "Millions of dollars" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "section": "E",
+      "title": "Writing",
+      "exercises": [
+        {
+          "id": "9.E.1",
+          "type": "sentence_building",
+          "instruction": "Make sentences, using the words and phrases given. You can change the words and phrases or add necessary words.",
+          "page": 71,
+          "questions": [
+            { "num": 1, "prompt": "Easter / important / Christian / festival / and / holiday.", "answer": "Easter is an important Christian festival and holiday." },
+            { "num": 2, "prompt": "People / celebrate / around / world / between / 22nd March / 25th April.", "answer": "People celebrate it around the world between 22nd March and 25th April." },
+            { "num": 3, "prompt": "People / give / chocolate eggs / friends / and / family.", "answer": "People give chocolate eggs to their friends and family." },
+            { "num": 4, "prompt": "They / also / organise / egg hunt / children.", "answer": "They also organise egg hunts for children." },
+            { "num": 5, "prompt": "People / go / church / and / have / special / family meal.", "answer": "People go to church and have a special family meal." },
+            { "num": 6, "prompt": "Each year / shop / sell / million / of / chocolate / Easter bunnies.", "answer": "Each year shops sell millions of chocolate Easter bunnies." }
+          ]
+        },
+        {
+          "id": "9.E.2",
+          "type": "guided_writing",
+          "instruction": "Write a short story of about 50 words based on the pictures given. Start the story as follows: \"Last September, Mi and Lan went to the Mid-Autumn Festival at their school.\"",
+          "page": 72,
+          "picture_desc": [
+            "Two girls talking, thought bubble with lion dance mask and lanterns",
+            "Children watching a lion dance at night with lanterns",
+            "Children making mooncakes at a stall with a lantern display"
+          ],
+          "sample_answer": "Last September, Mi and Lan went to the Mid-Autumn Festival at their school. They went to the festival by bus. There were a lot of activities at the festival such as lion dances and making mooncakes. There was also a stall with many lanterns. Mi made some mooncakes and Lan bought a lantern.",
+          "note": "Đáp án mẫu (Suggested answer) từ Keys (tr.117)."
+        },
+        {
+          "id": "9.E.3",
+          "type": "guided_writing",
+          "instruction": "Write an email (60-80 words) to a friend to tell him/her about a festival you went to. Use the following questions as cues: 1. What festival did you go to? 2. Where and when did you go to it? 3. Why do people celebrate it? 4. What did you do there? 5. Did you like the festival? Why or why not?",
+          "page": 72,
+          "note": "Bài viết mở, không có đáp án cố định trong Keys."
+        }
+      ]
+    }
+  ]
+}

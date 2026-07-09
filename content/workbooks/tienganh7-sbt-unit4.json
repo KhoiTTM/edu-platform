@@ -1,0 +1,308 @@
+{
+  "unit": 4,
+  "title": "Unit 4: Music and Arts",
+  "source": "Tiếng Anh 7 - Global Success - Sách bài tập, trang 28-34",
+  "sections": [
+    {
+      "section": "A",
+      "title": "Pronunciation",
+      "exercises": [
+        {
+          "id": "4.A.1",
+          "type": "multiple_choice",
+          "instruction": "Find the word which is pronounced differently in the part underlined.",
+          "page": 28,
+          "questions": [
+            { "num": 1, "options": { "A": "sunburnt", "B": "sculpture", "C": "service", "D": "sugar" }, "underline": "s/c/s/s", "answer": "D" },
+            { "num": 2, "options": { "A": "measure", "B": "pleasure", "C": "conclusion", "D": "pension" }, "underline": "s/s/s/s", "answer": "D" },
+            { "num": 3, "options": { "A": "delicious", "B": "special", "C": "concentrate", "D": "musician" }, "underline": "c/c/c/c", "answer": "C" },
+            { "num": 4, "options": { "A": "usually", "B": "composer", "C": "leisure", "D": "version" }, "underline": "s/s/s/s", "answer": "B" },
+            { "num": 5, "options": { "A": "prefer", "B": "perform", "C": "painter", "D": "concert" }, "underline": "er/er/er/er", "answer": "A" }
+          ],
+          "note": "Đề gốc gạch chân một phần cụ thể trong mỗi từ (ví dụ chữ 's', 'c', 'er'...) để so sánh cách phát âm; trường 'underline' chỉ ghi chú phần được gạch chân, không ảnh hưởng đáp án."
+        },
+        {
+          "id": "4.A.2",
+          "type": "underline_classify",
+          "instruction": "Single-underline the words having the sound /ʃ/ and double-underline the words having the sound /ʒ/ in the following sentences. Then read them aloud.",
+          "page": 28,
+          "sentences": [
+            { "num": 1, "text": "She likes to listen to country music in her leisure time.", "single_underline": ["She"], "double_underline": ["leisure"] },
+            { "num": 2, "text": "There is a live show of rock on television now.", "single_underline": ["show"], "double_underline": ["television"] },
+            { "num": 3, "text": "The children are watching Treasure Island in their room.", "single_underline": [], "double_underline": ["Treasure"] },
+            { "num": 4, "text": "The new washing machine looks unusual.", "single_underline": ["washing", "machine"], "double_underline": ["unusual"] },
+            { "num": 5, "text": "It is a pleasure to go fishing at the weekend.", "single_underline": ["fishing"], "double_underline": ["pleasure"] }
+          ],
+          "note": "Dạng bài gạch chân đơn/đôi để phân biệt /ʃ/ và /ʒ/ — không phù hợp UI trắc nghiệm tự động hiện tại, chỉ liệt kê đáp án tham khảo lấy từ Keys (tr.108)."
+        }
+      ]
+    },
+    {
+      "section": "B",
+      "title": "Vocabulary & Grammar",
+      "exercises": [
+        {
+          "id": "4.B.1",
+          "type": "word_search",
+          "instruction": "Find the following words in the puzzle.",
+          "page": 28,
+          "grid": [
+            ["W","A","G","A","L","L","E","R","Y","B"],
+            ["M","D","R","F","P","U","P","P","E","T"],
+            ["U","C","C","T","R","P","I","A","N","O"],
+            ["S","A","O","G","I","H","E","L","P","R"],
+            ["I","M","N","A","Q","S","T","Z","E","W"],
+            ["C","E","C","C","B","C","T","G","F","G"],
+            ["I","R","E","T","H","J","N","K","L","N"],
+            ["A","A","R","O","T","I","O","Y","Q","X"],
+            ["N","S","T","R","S","M","N","V","T","Z"],
+            ["I","N","S","T","R","U","M","E","N","T"]
+          ],
+          "words_to_find": ["singer", "camera", "piano", "actor", "gallery", "puppet", "instrument", "artist", "musician", "concert"],
+          "note": "10 từ cần tìm cho trước trong đề (singer, camera, piano, actor, gallery, puppet, instrument, artist, musician, concert). Đáp án Keys (tr.108) chỉ hiển thị lại grid đã tô các từ tìm được (GALLERY, PUPPET, PIANO, HELP đường chéo/dọc khó tách riêng); dạng word-search không phù hợp UI trắc nghiệm hiện tại, cân nhắc bỏ qua khi lên UI."
+        },
+        {
+          "id": "4.B.2",
+          "type": "fill_blank_list",
+          "instruction": "Fill in each gap with a word or a phrase from the box.",
+          "page": 29,
+          "word_bank": ["musical instruments", "prefer", "artistic", "art museum", "folk music", "rock music"],
+          "questions": [
+            { "num": 1, "stem": "I've heard that the ____ in Pho Duc Chinh Street, Ho Chi Minh City is a very interesting one.", "answer": "art museum" },
+            { "num": 2, "stem": "Many teenagers prefer ____ because it is lively and exciting.", "answer": "rock music" },
+            { "num": 3, "stem": "Do you like ____? - Yes. It's traditional and emotional.", "answer": "folk music" },
+            { "num": 4, "stem": "Which do you ____: watching pop music in person or live on TV?", "answer": "prefer" },
+            { "num": 5, "stem": "Traditional ____ of Viet Nam include the flute, the monochord (Dan Bau), the T'rung, drums, and others.", "answer": "musical instruments" },
+            { "num": 6, "stem": "I'm not as ____ as my brother. He plays the guitar very well.", "answer": "artistic" }
+          ],
+          "note": "Dạng bài điền từ từ word bank — chuyển thành dạng liệt kê câu + đáp án (không phải trắc nghiệm A/B/C) do sách gốc là fill-in-the-blank từ hộp từ."
+        },
+        {
+          "id": "4.B.3",
+          "type": "matching",
+          "instruction": "Match the famous people in A with their occupations in B.",
+          "page": 29,
+          "column_a": { "1": "Nguyen Du", "2": "Bui Xuan Phai", "3": "Thanh Hoa", "4": "Pham Tuyen", "5": "Tom Cruise" },
+          "column_b": { "a": "painter", "b": "singer", "c": "actor", "d": "poet", "e": "composer" },
+          "answers": { "1": "d", "2": "a", "3": "b", "4": "e", "5": "c" }
+        },
+        {
+          "id": "4.B.4",
+          "type": "multiple_choice",
+          "instruction": "Choose the correct answer A, B, C, or D to complete each of the sentences.",
+          "page": 29,
+          "questions": [
+            { "num": 1, "stem": "My uncle's house is full of interesting pieces of art. It's ____ a museum.", "options": { "A": "similar", "B": "like", "C": "as", "D": "than" }, "answer": "B" },
+            { "num": 2, "stem": "This film is not ____ the original story.", "options": { "A": "as interesting as", "B": "as interesting than", "C": "more interesting like", "D": "as interesting like" }, "answer": "A" },
+            { "num": 3, "stem": "The audience ____ wildly when the band appeared on stage.", "options": { "A": "smiled", "B": "sounded", "C": "applauded", "D": "cried" }, "answer": "C" },
+            { "num": 4, "stem": "To ____ successfully, they have to practise the play many times.", "options": { "A": "perform", "B": "play", "C": "sing", "D": "dance" }, "answer": "A" },
+            { "num": 5, "stem": "Turn the TV off. The show is ____.", "options": { "A": "exciting", "B": "peaceful", "C": "tiring", "D": "boring" }, "answer": "D" },
+            { "num": 6, "stem": "Mozart was one of the most famous ____ of classical music.", "options": { "A": "actors", "B": "composers", "C": "artists", "D": "makers" }, "answer": "B" },
+            { "num": 7, "stem": "– Did you enjoy the play? – Yes. It was ____ from the previous version.", "options": { "A": "like", "B": "similar", "C": "different", "D": "same" }, "answer": "C" },
+            { "num": 8, "stem": "Because I was sitting in the back row of the theatre, I couldn't see the ____.", "options": { "A": "painters", "B": "musicians", "C": "composers", "D": "writers" }, "answer": "B" }
+          ]
+        },
+        {
+          "id": "4.B.5",
+          "type": "picture_fill_blank",
+          "instruction": "Complete the following sentences by filling in each gap with a word.",
+          "page": 30,
+          "questions": [
+            { "num": 1, "stem": "The leading ____ had to change her costume more than 10 times during the play.", "answer": "actress" },
+            { "num": 2, "stem": "My sister's personality is very different ____ mine.", "answer": "from" },
+            { "num": 3, "stem": "– Do you know who ____ The Last Supper? – Yes. It's Leonardo da Vinci.", "answer": "painted" },
+            { "num": 4, "stem": "Her ____ talent showed itself at an early age in her drawings of animals, which were wonderful for a child of 6.", "answer": "artistic" },
+            { "num": 5, "stem": "The children assembled on stage to ____ the national anthem.", "answer": "sing" },
+            { "num": 6, "stem": "– What musical ____ do you like best? – The Beatles.", "answer": "band" },
+            { "num": 7, "stem": "Paintings and drawings are not the same thing. They are quite ____.", "answer": "different" },
+            { "num": 8, "stem": "A ____ is a room or building which is used for showing works of art.", "answer": "gallery" }
+          ],
+          "note": "Đáp án lấy từ Keys (tr.108); câu 1 Keys ghi 'actress / performer' — chấp nhận cả hai."
+        },
+        {
+          "id": "4.B.6",
+          "type": "picture_fill_blank",
+          "instruction": "Fill in each of the blanks with one suitable word.",
+          "page": 30,
+          "example": { "stem": "Alison has dogs, cats, goldfish, and many other pets.", "answer": "pets" },
+          "questions": [
+            { "num": 1, "stem": "My sister likes to watch Mickey Mouse, Donald Duck, and other ____.", "answer": "cartoons" },
+            { "num": 2, "stem": "I like science fiction, but I never watch thriller or horror ____.", "answer": "films" },
+            { "num": 3, "stem": "Michael Jackson, Bob Dylan, and Britney Spears are among the ____ I like best.", "answer": "musicians / singers / stars" },
+            { "num": 4, "stem": "Old people generally enjoy traditional, classical, or country ____.", "answer": "music" },
+            { "num": 5, "stem": "Chris is a very good pianist and can also play a number of other musical ____.", "answer": "instruments" }
+          ]
+        },
+        {
+          "id": "4.B.7",
+          "type": "sentence_building",
+          "instruction": "Use the cues given to write complete sentences.",
+          "page": 30,
+          "questions": [
+            { "num": 1, "prompt": "painting / he / recently / painted / very much / like / old one.", "suggested_answer": "The painting he recently painted is very much like the old one." },
+            { "num": 2, "prompt": "performance / she / give / last night / not like / other / performances.", "suggested_answer": "The performance she gave last night was not like her / the other performances." },
+            { "num": 3, "prompt": "Each / my three sisters / be / very different / the others.", "suggested_answer": "Each of my three sisters is very different from the others." },
+            { "num": 4, "prompt": "Music / arts / my / favourite subjects / school.", "suggested_answer": "Music and arts are my favourite subjects at school." },
+            { "num": 5, "prompt": "The actress / spend / whole week / try / remember / her lines / the play.", "suggested_answer": "The actress spent the whole week trying to remember her lines for the play." }
+          ],
+          "note": "Đáp án mẫu lấy từ Keys (tr.108)."
+        }
+      ]
+    },
+    {
+      "section": "C",
+      "title": "Speaking",
+      "exercises": [
+        {
+          "id": "4.C.1",
+          "type": "guided_speaking",
+          "instruction": "Work in pairs. Talk about your preferences for different forms of arts.",
+          "page": 31,
+          "example": {
+            "Jack": "Which do you prefer, music or painting?",
+            "Chau": "I prefer painting. My dream is to become a famous painter."
+          },
+          "topics": ["Music (listening to music, playing musical instruments...)", "Painting", "Singing", "Dancing", "Photography", "Film making"],
+          "note": "Bài nói tự do, không có đáp án cố định — không phù hợp chấm tự động."
+        },
+        {
+          "id": "4.C.2",
+          "type": "matching",
+          "instruction": "What did these famous people do? Use the words and phrases in these lists to talk about them. Look at the example.",
+          "page": 31,
+          "column_a": {
+            "1": "Trinh Cong Son",
+            "2": "Leonardo da Vinci",
+            "3": "Ludwig van Beethoven",
+            "4": "William Shakespeare",
+            "5": "BTS",
+            "6": "Alexandre Gustav Eiffel"
+          },
+          "column_b": {
+            "a": "painted the Mona Lisa",
+            "b": "composed the Moonlight Sonata",
+            "c": "wrote A Midsummer Night's Dream",
+            "d": "made the album Map of the Soul",
+            "e": "designed the Truong Tien Bridge (Hue - Viet Nam)",
+            "f": "composed the song Noi vong tay lon"
+          },
+          "answers": { "1": "f", "2": "a", "3": "b", "4": "c", "5": "d", "6": "e" },
+          "note": "Đề gốc là bài nói mở (dùng List 1: compose/write/paint/make/design + List 2: tên tác phẩm) chứ không phải matching có sẵn — đã chuyển thành dạng matching dựa theo 'Sample answers' ở Keys (tr.109) để có thể chấm tự động. Ví dụ mẫu trong sách: 'Trinh Cong Son composed the song Noi vong tay lon.'"
+        },
+        {
+          "id": "4.C.3",
+          "type": "guided_speaking",
+          "instruction": "Read the following opinions about music and arts. Work with a partner. Give your opinion on the idea(s) that you agree with.",
+          "page": 31,
+          "prompts": [
+            "Art education improves students' development of life skills.",
+            "Students who study art are more attentive at school than those who do not.",
+            "Students who study art do better in maths and science.",
+            "Learning music helps students achieve higher results in maths and reading.",
+            "Music also promotes creativity, social development, and personality."
+          ],
+          "note": "Bài nói tự do, không có đáp án cố định — không phù hợp chấm tự động."
+        }
+      ]
+    },
+    {
+      "section": "D",
+      "title": "Reading",
+      "exercises": [
+        {
+          "id": "4.D.1",
+          "type": "fill_blank_word_bank",
+          "instruction": "Fill in each blank in the passage with a word from the box.",
+          "page": 32,
+          "word_bank": ["songs", "write", "languages", "musicians", "popular", "compose"],
+          "passage_template": "I'm sure that you have heard the name Trinh Cong Son many times. He was one of the most famous (1) ____ and songwriters of Viet Nam in the 20th century. He was born in 1939 in Dak Lak Province. As a child he grew up in Hue. Later he went to Sai Gon to study. He began to (2) ____ songs and became well-known in 1958. He continued to (3) ____ music all his life. He wrote about 600 songs in all. Among his best songs are Noi vong tay lon (Circle of Unity), Ha trang (White Summer) and Cat bui (Dust). His (4) ____ are mostly about love, human condition, and nature. He died in Ho Chi Minh City in 2001. His songs remain (5) ____ among the Vietnamese all over the world today. Many have been translated into English, French, Japanese, and other (6) ____.",
+          "answers": {
+            "1": "musicians",
+            "2": "write",
+            "3": "compose",
+            "4": "songs",
+            "5": "popular",
+            "6": "languages"
+          }
+        },
+        {
+          "id": "4.D.2",
+          "type": "multiple_choice_cloze",
+          "instruction": "Choose the correct answer for each gap in the following passage.",
+          "page": 32,
+          "passage_template": "Do you know that artists can turn a pavement into a masterpiece? This is why people love this kind of (1) ____. Appearing each February with the support of (2) ____ and volunteers, the Lake Worth Street Painting Festival is probably the largest free festival of its kind in the world. Now in its third decade, the festival attracts 100,000 (3) ____ each year. Artists come together, using chalk as their (4) ____. They turn the streets of Lake Worth into a huge (5) ____ with large-scale traditional and contemporary art.",
+          "questions": [
+            { "num": 1, "options": { "A": "art", "B": "event", "C": "street", "D": "painting" }, "answer": "A" },
+            { "num": 2, "options": { "A": "singers", "B": "actors", "C": "composers", "D": "artists" }, "answer": "D" },
+            { "num": 3, "options": { "A": "tourists", "B": "goers", "C": "visitors", "D": "guests" }, "answer": "C" },
+            { "num": 4, "options": { "A": "paintbrushes", "B": "instruments", "C": "pictures", "D": "crayons" }, "answer": "B" },
+            { "num": 5, "options": { "A": "gallery", "B": "museum", "C": "theatre", "D": "stadium" }, "answer": "A" }
+          ]
+        },
+        {
+          "id": "4.D.3",
+          "type": "multiple_choice",
+          "instruction": "Read the passage and choose the correct answer to each question below.",
+          "page": 33,
+          "passage": "Charlie Chaplin was an English actor, director, producer, and composer. He is known as the greatest comic artist of the screen and one of the most important figures in motion-picture history.\nChaplin was born in London in 1889. He learned to perform onstage and became a professional entertainer at eight as a clog dancer. In 1908 he joined the Fred Karno Pantomime Troupe and quickly became well-known. In 1910 he began to perform pantomime in the United States. He first appeared on screen in 1914. He created his world-famous character, the Tramp, and he played this classic role in more than 70 films during his career. He also composed background music for most of his films. In 1972 Chaplin received an Honorary Academy Award for \"making motion pictures the art form of this century\". Chaplin died in 1977 at his home in Switzerland.",
+          "questions": [
+            { "num": 1, "stem": "At eight, Chaplin became a professional entertainer as a ____.", "options": { "A": "dancer", "B": "actor", "C": "composer" }, "answer": "A" },
+            { "num": 2, "stem": "When did he start appearing in films?", "options": { "A": "In 1910", "B": "In 1914", "C": "In 1972" }, "answer": "B" },
+            { "num": 3, "stem": "In about how many films did he play the Tramp?", "options": { "A": "Seventy", "B": "Seventeen", "C": "Twenty-five" }, "answer": "A" },
+            { "num": 4, "stem": "Charlie Chaplin is very famous for ____.", "options": { "A": "his short plays", "B": "his background music", "C": "his character the Tramp" }, "answer": "C" },
+            { "num": 5, "stem": "Which of the following is NOT true?", "options": { "A": "Charlie Chaplin was an English artist.", "B": "He played classical music.", "C": "He received an award in 1972." }, "answer": "B" }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "E",
+      "title": "Writing",
+      "exercises": [
+        {
+          "id": "4.E.1",
+          "type": "sentence_building",
+          "instruction": "Rewrite the sentences so that their meaning stays the same. The beginning of each sentence is given.",
+          "page": 34,
+          "questions": [
+            { "num": 1, "prompt": "Her picture is not like mine.", "starter": "Her picture is ____.", "suggested_answer": "Her picture is different from / not the same as mine." },
+            { "num": 2, "prompt": "Khanh is a better painter than Giang.", "starter": "Giang can't ____.", "suggested_answer": "Giang can't paint as well as Khanh." },
+            { "num": 3, "prompt": "I much prefer country life to city life.", "starter": "I think living in the country is ____.", "suggested_answer": "I think living in the country is better than living in the city." },
+            { "num": 4, "prompt": "Her picture is not the same as her brother's.", "starter": "Her picture is ____.", "suggested_answer": "Her picture is different from / not like her brother's." },
+            { "num": 5, "prompt": "This year's performance is not very good. Last year's was better.", "starter": "This year's performance is not ____.", "suggested_answer": "This year's performance is not as good as last year's." }
+          ],
+          "note": "Đáp án mẫu lấy từ Keys (tr.109) — học sinh có thể viết khác miễn đúng ngữ pháp/ý nghĩa."
+        },
+        {
+          "id": "4.E.2",
+          "type": "guided_writing",
+          "instruction": "Write an invitation letter to one of your friends or relatives, using the following cues.",
+          "page": 34,
+          "cues": {
+            "event": "A Live show of BTS",
+            "start_time": "8 o'clock, Saturday night",
+            "place": "The Opera House",
+            "time_to_meet": "7:45"
+          },
+          "note": "Bài viết tự do cá nhân — không có đáp án cố định."
+        },
+        {
+          "id": "4.E.3",
+          "type": "guided_writing_paragraph",
+          "instruction": "Write a paragraph (60-80 words) about Michael Jackson, using the following prompts.",
+          "page": 34,
+          "prompts": [
+            "born: August 29, 1958, Gary, Indiana, the US",
+            "1964 joined the band The Jackson Brothers",
+            "1971 began his solo career",
+            "called \"the King of Pop\", received a lot of awards, including 13 Grammy Awards and 26 American Music Awards",
+            "Earth Song - one of his most successful songs",
+            "died June 25, 2009, Los Angeles, California, the US"
+          ],
+          "sample_answer": "Michael Jackson was born on August 29, 1958, in Gary, Indiana, the US. In 1964, Michael joined the band The Jackson Brothers. He began his solo career in 1971. He was called \"the King of Pop\", and during his career, he received a lot of awards, including 13 Grammy Awards and 26 American Music Awards. Earth Song is one of his most successful songs. He died on June 25, 2009 in Los Angeles, California, the US.",
+          "note": "Bài viết mẫu (Sample writing) lấy từ Keys (tr.109) — học sinh có thể viết khác miễn đúng nội dung/độ dài yêu cầu."
+        }
+      ]
+    }
+  ]
+}

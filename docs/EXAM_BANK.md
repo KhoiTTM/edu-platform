@@ -49,18 +49,26 @@ Có màn hình explorer trong khu **Phụ Huynh**: tab "Exam Bank" tại `/phu-h
 Lọc theo môn → lớp → loại đề (`exam_type`) → bộ đề, xem chi tiết câu hỏi/đáp án theo schema.
 Chỉ ĐỌC — không sửa/seed từ đây; tạo đề vẫn qua generator (mục 4).
 
-## 2c. "Luyện tập theo sách" (answer-sheet) — KHÁC exam-bank
+## 2c. "Luyện tập theo sách bài tập" (SBT bám sách) — dùng chung exam-bank, KHÔNG dùng answer-sheet
 
-Một cơ chế RIÊNG, dùng cho sách có bản quyền (không được tái tạo đề vào hệ thống):
-- Route `/sach-bai-tap/[slug]`, component `components/assessment/AnswerSheetRenderer.tsx`,
-  action `app/(app)/(assessment)/sach-bai-tap/actions.ts`.
-- Data `content/[slug]-answers.json` — CHỈ chứa đáp án ngắn/từ khóa + số câu + trang,
-  KHÔNG chứa đề bài. Học sinh đọc đề ở link sách gốc (Flipbook), nhập đáp án → chấm.
-- Loại chấm: `text`/`choice` (khớp đáp án), `keywords` (câu chứa đủ từ khóa), `essay`
-  (không chấm, có thể kèm `sample` = đáp án gợi ý gốc để tham khảo sau khi nộp).
-- Lưu lịch sử: `learning_sessions` với `type='exam'`, `sub_type='book_practice'`.
-- Hiện dùng cho: `sbt-tienganh7-answers.json` (SBT Tiếng Anh 7). Bản quyền: xem `docs/SACH_BAI_TAP.md`.
-Đây KHÔNG phải exam-bank (không dùng generator, không vào `assessment_collections`).
+**Đã ngừng dùng cơ chế "answer-sheet" (chỉ lưu đáp án, giấu đề bài)** mô tả ở bản cũ của mục
+này. Quyết định mới (từ khi seed Tiếng Anh 7 + KHTN 7 — xem mục 6): sách bài tập vẫn seed
+**đầy đủ đề bài** vào `question_bank.metadata_json` như exam-bank thường, đi kèm nút
+**"Xem sách"** trong `AssessmentRenderer` (prop `sourceBookUrl`, trỏ file scan gốc trên
+Google Drive — xem mục 6) để học sinh vẫn mở được sách gốc khi cần xem hình/ngữ cảnh.
+Lý do đổi: có link mở sách trực tiếp rồi thì không cần giấu đề bài trong DB nữa — trải
+nghiệm liền mạch hơn (không phải chuyển qua lại giữa 2 màn hình để tự đối chiếu số câu).
+
+Route `/sach-bai-tap/[slug]` + `components/assessment/AnswerSheetRenderer.tsx` +
+`content/[slug]-answers.json` (ví dụ `sbt-tienganh7-answers.json`) vẫn còn trong repo làm
+tài liệu tham khảo nhưng **không còn là đường đi khuyến nghị cho sách mới** — không cần đọc
+lại trừ khi cần khôi phục cách làm cũ vì lý do bản quyền nghiêm ngặt hơn.
+
+Sách bài tập giờ đi theo **đúng luồng exam-bank chuẩn** (mục 1, 3, 4) với 2 điểm khác:
+- `assessment_collections.exam_type = null`, `units = [N]` (N = bài/unit thật trong sách,
+  KHÔNG dùng số ảo — xem mục 6.2 lý do).
+- Mỗi bài/unit trong sách map thành **đúng 1 exam duy nhất**, dùng hết toàn bộ câu có trong
+  bài đó (không random/rút mẫu) — khác nhóm "ngân hàng câu hỏi" ở mục 6.1.
 
 ## 3. Định dạng `metadata_json` theo `type` câu hỏi
 
@@ -246,10 +254,104 @@ Từ migration `053`, trigger tự động sinh tên `trigger_reorder_assessment
 **c) Quy ước `units` cho đề thi và Gom nhóm UI:**
 Hệ thống hiển thị gom các collection có cùng `(subject, grade, volume, units, exam_type)` vào 1 nhóm trên UI.
 - **CẢNH BÁO:** Nếu 2 collection khác nhau trong cùng một môn học dùng chung `units`, chúng sẽ bị gộp lại làm một trên UI. Luôn sử dụng các mảng `units` khác nhau (ví dụ: `[101]`, `[102]`, `[99]`, `[2]`) để tách nhóm các kỳ thi độc lập.
+- **Ca thật đã gặp:** vì (b) trigger cũ đã bị xoá và (e) generator match theo `(subject_slug, grade, title)`
+  chứ không theo `units`, một lần seed cũ đã tạo 16 collection cho môn `khtn` (Bài 1–16) nhưng
+  **title lại bị đặt nhầm thành "English Grade 7 - Vol N - Unit N - Ex 1"** (rất có thể do copy
+  công thức đặt tên từ một script seed Tiếng Anh khác mà quên đổi phần tên môn), đồng thời
+  `exam_questions` của các collection đó **không trỏ tới câu hỏi nào** (0 rows dù `total_questions`
+  vẫn ghi đúng số). Phát hiện được nhờ so sánh `title` không khớp `subject_slug`, và đếm
+  `exam_questions` = 0. Đã dọn sạch trước khi seed lại đúng ở mục 7. **Bài học:** đừng tin
+  `total_questions` một mình — luôn `JOIN exam_questions` để xác nhận có câu hỏi thật.
 
 **d) Hỗ trợ liên kết tài liệu ngoài (External URL):**
 Bảng `exams` hỗ trợ cột `external_url`. Khi cột này được gán giá trị link (ví dụ: Link Flipbook), UI sẽ hiển thị nút "Mở Flipbook" hướng học sinh làm bài trên liên kết ngoài thay vì mở giao diện thi/kiểm tra truyền thống.
 
 **e) Trùng collection cùng tên:**
 Generator tìm collection theo `(subject_slug, grade, title)`. Nếu `collection.title` trong file JSON khác tên collection đích trong DB, generator tạo collection mới. Vì vậy hãy kiểm tra kỹ `title` trong file JSON trước khi seed.
+
+## 7. Ba format dữ liệu luyện tập hiện có, và việc seed Tiếng Anh 7 + KHTN 7 (SBT)
+
+Repo hiện có **3 format** dùng chung 1 schema DB (mục 1) nhưng khác nhau ở quan hệ
+concept↔exam và mục đích của `exam_type` — phân biệt được bằng cách đọc dữ liệu, KHÔNG có
+cột nào đánh dấu format trực tiếp:
+
+| Format | Ví dụ môn | Quan hệ concept:exam | Đặc điểm |
+|---|---|---|---|
+| **1. Ngân hàng câu hỏi, đề rút mẫu** | Toán 7, Toán 3, Tiếng Việt 3 | 1 concept → **nhiều** exam ("Đề 1", "Đề 2"...) | Concept chứa hàng trăm câu (pool); mỗi collection là 1 tập con/đề riêng. Có cả `exam_type` review/midterm/final cho đề tổng hợp nhiều bài. |
+| **2. Bám sách bài tập, đề cố định 1-1** | Tiếng Anh 7, KHTN 7 (mục này) | 1 concept → **đúng 1** exam | Concept = đúng 1 bài/unit trong sách, exam dùng hết toàn bộ câu của bài đó, không random. Cần mở sách xem hình/ngữ cảnh → có nút "Xem sách" (xem 7.3). |
+| **3. Luyện kỹ năng cắt ngang** | Pre A1 Starter | Không gắn 1 concept/unit cụ thể | Tổ chức theo `exam_type` chuyên biệt (`reflex`, `listening`, `lesson`) chứ không theo cấu trúc bài học; `units` dùng số ảo (`98`, `99`) để đánh dấu nhóm. |
+
+### 7.1. Quy tắc đặt tên chuẩn — `lib/assessment/buildExamTitle.ts`
+
+Vì trigger tự sinh tên đã bị xóa (mục 6b), **mọi script seed phải tự gọi hàm này** để đặt
+`title` — không có tầng bảo vệ nào ở DB nữa. Cấu trúc:
+
+```
+{Tên môn + Lớp} - {Nhóm luyện tập} - {Vị trí trong nhóm}[ - Đề {STT}]
+```
+
+8 nhóm luyện tập chuẩn (`ExamGroup`): `sbt` (Luyện theo sách bài tập), `bank` (Luyện tập
+theo bài), `review`, `midterm`, `final`, `reflex`, `listening`, `lesson` — xem label đầy đủ
+trong file. `examSeq` chỉ truyền khi 1 vị trí có nhiều đề (Format 1); bỏ qua với Format 2
+(luôn đúng 1 đề/vị trí).
+
+Ví dụ: `buildExamTitle({ subjectLabel: 'KHTN 7', group: 'sbt', position: 'Bài 2: Nguyên tử' })`
+→ `"KHTN 7 - Luyện theo sách bài tập - Bài 2: Nguyên tử"`.
+
+### 7.2. Nguồn dữ liệu Tiếng Anh 7 + KHTN 7
+
+- **Tiếng Anh 7** (SBT Global Success, 12 unit): OCR ban đầu qua EasyOCR chất lượng kém →
+  đọc lại bằng mắt từng trang scan (`content/pdfs/sbt/sbt_tienganh7.pdf`, không track git vì
+  ~143MB), đối chiếu Keys cuối sách. Kết quả: `content/workbooks/tienganh7-sbt-unit{1..12}.json`.
+- **KHTN 7** (SBT Kết nối tri thức, 42 bài): dữ liệu cũ (`content/workbooks/khtn7-questions.json`,
+  394 câu) cũng bị lỗi OCR nặng (từ đảo vị trí, thiếu chữ đầu câu, watermark "KẾT NỐI TRI THỨC..."
+  dính vào đề bài) và 213/394 câu thiếu đáp án. Đọc lại toàn bộ bằng mắt từ ảnh
+  `public/book/sbt_khtn_07/page_XXX.png` (đã render sẵn, không cần PDF gốc), backfill đáp án
+  còn thiếu từ `content/workbooks/khtn7-answer-key.json` (91/93 câu tìm lại được). Kết quả:
+  395 câu (thêm 1 câu `khtn7-2-18` bị OCR bỏ sót hoàn toàn trong bản gốc), chỉ còn 2 câu
+  không có đáp án tham khảo (cần xem hình/bảng tuần hoàn thật, answer key gốc cũng không có).
+- **Rủi ro khi đọc lại song song bằng nhiều agent cùng ghi 1 file:** 1 agent con (tự spawn để
+  chia việc bài 21–27) tự đổi schema JSON sang `{question, explanation}` thay vì
+  `{stem, cau, answer}` đã thống nhất, làm 162 câu (bài 21–42) lệch schema. Phát hiện bằng
+  cách so `set(keys)` giữa các câu, sửa bằng script chuẩn hoá 1 lần
+  (`scripts/normalize-khtn7-schema.ts`, đã chạy xong — không cần chạy lại trừ khi lặp lại lỗi
+  tương tự). **Bài học:** nếu giao nhiều agent cùng sửa 1 file JSON lớn song song, luôn
+  backup trước, và verify `set(keys)` đồng nhất sau khi tất cả agent xong trước khi seed DB.
+
+### 7.3. Hai cơ chế "mở link ngoài" khác nhau — KHÔNG nhầm lẫn
+
+Repo có **2 cơ chế riêng biệt** để trỏ học sinh ra tài liệu ngoài app, phục vụ 2 tình huống
+khác nhau:
+
+| | `exams.external_url` (mục 6d) | `sourceBookUrl` — nút "Xem sách" (mới, mục này) |
+|---|---|---|
+| Dùng khi | Không số hoá câu hỏi — toàn bộ đề chỉ tồn tại ở trang ngoài | Đã số hoá đầy đủ câu hỏi vào `question_bank`, chỉ cần link tham khảo hình/ngữ cảnh |
+| Hành vi khi bấm | UI đổi nút thành "Mở Flipbook", **rời khỏi app**, không vào `test-assessment` | Ở lại `test-assessment`, quiz chấm điểm bình thường trong app, mở **thêm 1 tab** cạnh bên |
+| `exams.total_questions` | `0` (không có `exam_questions` nào) | Có giá trị thật, khớp `question_bank` |
+| Nơi khai báo | Cột `external_url` trong bảng `exams`, set trực tiếp lúc insert | Prop `sourceBookUrl` trên `AssessmentRenderer`, `test-assessment/page.tsx` tự chọn theo `subject_slug` qua map `BOOK_SOURCE_URLS` khai báo ngay trong file đó |
+| Ví dụ đã dùng | Pre A1 Starter — collection "Three Practice Test" (`exam_type: 'lesson'`, 3 exam trỏ `flipbuilder.com`), có sẵn từ trước, không phải seed lần này | Tiếng Anh 7, KHTN 7 (mục 7 này) |
+
+Thêm môn mới bám sách có sẵn câu hỏi số hoá → dùng `sourceBookUrl` (thêm 1 dòng vào
+`BOOK_SOURCE_URLS`). Thêm môn hoàn toàn không định số hoá câu hỏi, chỉ muốn link ra ngoài →
+dùng `external_url` trên `exams`. Không set cả hai cho cùng 1 exam.
+
+Vì đã có nút mở sách trực tiếp, **quyết định KHÔNG dùng cơ chế answer-sheet cũ** (mục 2c) —
+đề bài chép đầy đủ vào `question_bank.metadata_json` như exam-bank thường, không giấu đề.
+
+### 7.4. Script migrate dùng lại được
+
+- `scripts/migrate-tienganh7-unit-to-db.ts <unitNumber>` — seed 1 unit Tiếng Anh 7 từ
+  `content/workbooks/tienganh7-sbt-unit{N}.json`. Có guard chống insert trùng (kiểm tra
+  concept đã có câu hỏi chưa trước khi insert).
+- `scripts/migrate-khtn7-bai-to-db.ts <baiNumber>` — seed 1 bài KHTN 7 từ
+  `content/workbooks/khtn7-questions.json`, lọc theo `bai`. Cùng guard chống trùng.
+- `scripts/reset-tienganh7-units.ts <unit1> <unit2> ...` — xóa sạch 1 hoặc nhiều unit (cascade
+  question_bank → exam_questions → exams → collection) để seed lại từ đầu khi cần sửa lỗi.
+- `scripts/survey-tienganh7-all-units.ts` — liệt kê nhanh toàn bộ collection/exam đã seed theo
+  unit, kèm tổng số câu — dùng để verify sau mỗi lần seed hàng loạt.
+
+Không có type nào trong 2 script trên dùng `image_url` (không có tranh cần seed); các dạng
+bài không thể chấm tự động (`word_search`, `crossword`, `underline_classify`, `paragraph_ordering`,
+`error_identification`, `synonym_finding`, luyện phát âm tự do...) bị `skip` có ghi log rõ lý
+do, KHÔNG đưa vào DB — vẫn còn nguyên trong file JSON gốc làm tham khảo.
 

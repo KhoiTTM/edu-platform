@@ -1,0 +1,277 @@
+{
+  "unit": 2,
+  "title": "Unit 2: Healthy Living",
+  "source": "Tiếng Anh 7 - Global Success - Sách bài tập, trang 10-15",
+  "sections": [
+    {
+      "section": "A",
+      "title": "Pronunciation",
+      "exercises": [
+        {
+          "id": "2.A.1",
+          "type": "multiple_choice",
+          "instruction": "Circle the word with the underlined part pronounced differently. Then practise saying them aloud.",
+          "page": 10,
+          "questions": [
+            { "num": 1, "options": { "A": "cough", "B": "enough", "C": "through", "D": "laugh" }, "underline": "gh", "answer": "C" },
+            { "num": 2, "options": { "A": "dolphin", "B": "uphill", "C": "earphone", "D": "alphabet" }, "underline": "ph/h", "answer": "B" },
+            { "num": 3, "options": { "A": "night", "B": "tough", "C": "flight", "D": "high" }, "underline": "gh", "answer": "D" },
+            { "num": 4, "options": { "A": "ate", "B": "about", "C": "amazing", "D": "above" }, "underline": "a", "answer": "C" },
+            { "num": 5, "options": { "A": "learn", "B": "early", "C": "earth", "D": "hear" }, "underline": "ear", "answer": "C" }
+          ]
+        },
+        {
+          "id": "2.A.2",
+          "type": "guided_speaking",
+          "instruction": "Say the sentences aloud, paying attention to the underlined words containing the sounds /f/ and /v/.",
+          "page": 10,
+          "sentences": [
+            "What is the benefit of playing volleyball?",
+            "Eat more fruit and vegetables.",
+            "Fruit contains a lot of vitamins.",
+            "Laughter and love are good for your health.",
+            "We should do more physical activities."
+          ],
+          "note": "Bài luyện phát âm tự do, không có đáp án cố định — không phù hợp chấm tự động."
+        }
+      ]
+    },
+    {
+      "section": "B",
+      "title": "Vocabulary & Grammar",
+      "exercises": [
+        {
+          "id": "2.B.1",
+          "type": "picture_fill_blank",
+          "instruction": "Write a word or phrase from the box under its correct picture.",
+          "page": 10,
+          "word_bank": ["rubbish", "fast food", "fresh vegetables", "snack", "house cleaning", "outdoor activity"],
+          "questions": [
+            { "num": 1, "image_desc": "a bag of snacks/chips", "stem": "____", "answer": "snack" },
+            { "num": 2, "image_desc": "a woman vacuuming/cleaning the living room", "stem": "____", "answer": "house cleaning" },
+            { "num": 3, "image_desc": "bags of rubbish on the street", "stem": "____", "answer": "rubbish" },
+            { "num": 4, "image_desc": "a pile of fresh vegetables", "stem": "____", "answer": "fresh vegetables" },
+            { "num": 5, "image_desc": "a person running/flying a kite on the beach", "stem": "____", "answer": "outdoor activity" },
+            { "num": 6, "image_desc": "a plate of fried food/fast food", "stem": "____", "answer": "fast food" }
+          ],
+          "note": "Đáp án lấy từ trang Keys (tr.103)."
+        },
+        {
+          "id": "2.B.2",
+          "type": "open_table",
+          "instruction": "Add three more words or phrases to each group.",
+          "page": 11,
+          "rows": ["Fruit and vegetables (e.g. pumpkin)", "Healthy activities (e.g. brushing your teeth)", "Unhealthy activities (e.g. eating a lot of salty snacks)", "Health problems (e.g. flu)"],
+          "suggested_answers": {
+            "Fruit and vegetables (e.g. pumpkin)": ["carrot", "tomato", "cauliflower", "cucumber"],
+            "Healthy activities (e.g. brushing your teeth)": ["sleeping 7-8 hours a day", "eating healthy food", "doing sport"],
+            "Unhealthy activities (e.g. eating a lot of salty snacks)": ["going to bed late", "eating a lot of fast food", "drinking soft drinks every day"],
+            "Health problems (e.g. flu)": ["acne", "chapped lips", "sunburn", "headaches"]
+          },
+          "note": "Bài tập mở — đáp án trên là 'Suggested answers' từ trang Keys (tr.103), không phải đáp án duy nhất."
+        },
+        {
+          "id": "2.B.3",
+          "type": "fill_blank_word_bank",
+          "instruction": "Complete the sentences with the words and phrases below.",
+          "page": 11,
+          "word_bank": ["tofu", "fit", "chapped lips", "weight", "harms", "bins"],
+          "passage_template": "1. Doing housework is a kind of exercise. It helps keep you ____.\n2. Some of a vegetarian's main foods are ____ and vegetables.\n3. Physical activities like running help you lose ____.\n4. There should be more ____ in public places.\n5. Reading in dim light ____ your eyes.\n6. Cold weather causes ____ and skin.",
+          "answers": {
+            "1": "fit",
+            "2": "tofu",
+            "3": "weight",
+            "4": "bins",
+            "5": "harms",
+            "6": "chapped lips"
+          }
+        },
+        {
+          "id": "2.B.4",
+          "type": "picture_fill_blank",
+          "instruction": "Write a correct word or phrase that describes each group of words.",
+          "page": 11,
+          "word_bank": ["taking a bath", "soft drinks", "house cleaning", "cycling", "fast food", "acne"],
+          "questions": [
+            { "num": 1, "image_desc": "fried chicken and chips, chain restaurants, popular", "stem": "____", "answer": "fast food" },
+            { "num": 2, "image_desc": "bike, helmet, shoes, path", "stem": "____", "answer": "cycling" },
+            { "num": 3, "image_desc": "sweetened drinks with a lot of gas", "stem": "____", "answer": "soft drinks" },
+            { "num": 4, "image_desc": "black and white pimples on your body, especially on your face", "stem": "____", "answer": "acne" },
+            { "num": 5, "image_desc": "dustpan, broom, water, floor cleaner", "stem": "____", "answer": "house cleaning" }
+          ],
+          "note": "Example trong sách: 'clean water, shower gel, clean towel' → taking a bath. Đáp án lấy từ trang Keys (tr.104)."
+        },
+        {
+          "id": "2.B.5",
+          "type": "sentence_building",
+          "instruction": "Rearrange the words and phrases to make simple sentences.",
+          "page": 11,
+          "questions": [
+            { "num": 1, "prompt": "a lot of / We / to prevent / garlic / eat / the flu /.", "suggested_answer": "We eat a lot of garlic to prevent the flu." },
+            { "num": 2, "prompt": "do not / have much stress / in the countryside / People /.", "suggested_answer": "People in the countryside do not have much stress." },
+            { "num": 3, "prompt": "your / eyedrops / tired eyes / You / for / can use /.", "suggested_answer": "You can use eyedrops for your tired eyes." },
+            { "num": 4, "prompt": "my country / Green tea / in / a popular drink / is /.", "suggested_answer": "Green tea is a popular drink in my country." },
+            { "num": 5, "prompt": "keep you / and active / Physical activities / strong / help /.", "suggested_answer": "Physical activities help keep you strong and active." }
+          ],
+          "note": "Đáp án lấy từ trang Keys (tr.104)."
+        },
+        {
+          "id": "2.B.6",
+          "type": "sentence_analysis",
+          "instruction": "Read and decide if the underlined parts are the subject (S), verb (V), object (O), or adverb (ADV) of the sentences.",
+          "page": 12,
+          "example": {
+            "sentence": "I do not eat much red meat.",
+            "labels": ["S: I", "V: do not eat", "O: much red meat"]
+          },
+          "questions": [
+            { "num": 1, "sentence": "She washes her face twice a day.", "answer": "S: She | V: washes | O: her face | ADV: twice a day" },
+            { "num": 2, "sentence": "Asian diets contain a lot of vegetables.", "answer": "S: Asian diets | V: contain | O: a lot of vegetables" },
+            { "num": 3, "sentence": "My sister uses a lot of suncream in summer.", "answer": "S: My sister | V: uses | O: a lot of suncream | ADV: in summer" },
+            { "num": 4, "sentence": "He likes cycling in the park.", "answer": "S: He | V: likes | O: cycling | ADV: in the park" },
+            { "num": 5, "sentence": "My mother cooks food with very little cooking oil.", "answer": "S: My mother | V: cooks | O: food | ADV: with very little cooking oil" }
+          ],
+          "note": "Dạng bài phân tích thành phần câu (S/V/O/ADV) chưa có giao diện luyện tập chuyên biệt — hiển thị dạng đáp án tham khảo. Đáp án lấy từ trang Keys (tr.104)."
+        }
+      ]
+    },
+    {
+      "section": "C",
+      "title": "Speaking",
+      "exercises": [
+        {
+          "id": "2.C.1",
+          "type": "true_false_no_info",
+          "instruction": "Work in pairs. Discuss the tips below. Tick (✓) the tips you think are good for your health and cross (✗) the ones that are not.",
+          "page": 12,
+          "questions": [
+            { "num": 1, "stem": "Don't hate people.", "answer": "T" },
+            { "num": 2, "stem": "Skip breakfast to lose weight.", "answer": "F" },
+            { "num": 3, "stem": "Exercise every day.", "answer": "T" },
+            { "num": 4, "stem": "Eat until you feel 100% full.", "answer": "F" },
+            { "num": 5, "stem": "Take a bath once a day.", "answer": "T" },
+            { "num": 6, "stem": "Have a balanced diet for a long life.", "answer": "T" },
+            { "num": 7, "stem": "Change your pillow cover once a month.", "answer": "F" },
+            { "num": 8, "stem": "Keep warm in winter.", "answer": "T" }
+          ],
+          "note": "Đây là bài đánh dấu ✓/✗ (tip tốt hay không tốt cho sức khỏe), được ánh xạ sang T (✓, tip tốt) / F (✗, tip không tốt/cần điều chỉnh) để tái sử dụng giao diện True/False. Đáp án và lý do gợi ý (Suggested answers, tr.104): 2. ✗ Breakfast is important, skipping it doesn't help lose weight; 3. ✓ Exercising makes people fit and strong; 4. ✗ Eat until you feel 80% full or you will feel tired; 5. ✓ To keep clean; 6. ✓ A balanced diet provides enough vitamins and minerals; 7. ✗ You should do it once a week; 8. ✓ To keep you from catching flu or cold. Không có đáp án ghi rõ cho câu 1."
+        },
+        {
+          "id": "2.C.2",
+          "type": "guided_speaking",
+          "instruction": "Discuss and give reason(s) why you agree or disagree with a tip. Then share your ideas with the class.",
+          "page": 12,
+          "example": {
+            "A": "We agree with tip Number 1.",
+            "B": "Why?",
+            "A2": "Because hating makes you tired."
+          },
+          "note": "Bài nói tự do theo cặp/nhóm, không có đáp án cố định — không phù hợp chấm tự động."
+        },
+        {
+          "id": "2.C.3",
+          "type": "guided_speaking",
+          "instruction": "Work in groups. Discuss and take notes of three things you can do to keep your house clean. Then share it with your class.",
+          "page": 13,
+          "note": "Bài thảo luận nhóm tự do, không có đáp án cố định — không phù hợp chấm tự động."
+        }
+      ]
+    },
+    {
+      "section": "D",
+      "title": "Reading",
+      "exercises": [
+        {
+          "id": "2.D.1",
+          "type": "fill_blank_word_bank",
+          "instruction": "Read the health tips and complete each statement (1-6) with one word from the text.",
+          "page": 13,
+          "passage": "HEALTH TIPS\na. Eat less salt and sugar. They put us at the risk of heart disease.\nb. Drink enough water, about one and a half litres a day. Make sure that the water you are drinking is safe. Unsafe water can lead to many kinds of diseases.\nc. Do more physical activities like sport and housework. It helps keep you fit and active.\nd. Reduce sitting and screen time. Stand up every hour and do some simple exercise or walk around. Exercise your eyes too.\ne. Get seven to eight hours of good sleep each night. This helps both your mind and body work well.\nf. Handwash regularly with soap and water. Clean hands help prevent the spread of some diseases.",
+          "passage_template": "1. Eating a lot of salt or sugar can lead to ____ disease.\n2. Drink only ____ water.\n3. Doing housework is also a type of ____ activity.\n4. Stand up every hour and do some ____ to reduce sitting time.\n5. Your mind works well if you get enough good ____.\n6. ____ regularly to prevent some diseases.",
+          "answers": {
+            "1": "heart",
+            "2": "safe",
+            "3": "physical",
+            "4": "exercise",
+            "5": "sleep",
+            "6": "Handwash"
+          }
+        },
+        {
+          "id": "2.D.2",
+          "type": "multiple_choice_cloze",
+          "instruction": "Choose the correct answer A, B, or C to fill in each blank in the following passage.",
+          "page": 14,
+          "passage_template": "My grandparents live in the countryside, and they have a big garden. They spend a lot of time working in it. When I visit them in summer, I often join them in the garden, and they teach me a lot of things about (1) ____.\nVegetables come in different shapes, sizes, and (2) ____. They also grow differently as well. Carrots and potatoes grow (3) ____ the ground. We can't see them. Some kinds of beans (4) ____ a high net to grow. Cabbages and cauliflower grow above the ground. My grandfather says that coloured vegetables are very good for health (5) ____ they provide a lot of natural vitamins. White cauliflower is (6) ____ in vitamin C. Orange carrots and red tomatoes contain vitamin A. (7) ____ have vitamins A, B, C, and E. My grandfather also says that gardening is a good way of (8) ____. It helps him keep fit and strong.",
+          "questions": [
+            { "num": 1, "options": { "A": "health", "B": "vegetables", "C": "exercise" }, "answer": "B" },
+            { "num": 2, "options": { "A": "colours", "B": "prices", "C": "weight" }, "answer": "A" },
+            { "num": 3, "options": { "A": "above", "B": "on", "C": "under" }, "answer": "C" },
+            { "num": 4, "options": { "A": "need", "B": "provide", "C": "have" }, "answer": "A" },
+            { "num": 5, "options": { "A": "and", "B": "because", "C": "so" }, "answer": "B" },
+            { "num": 6, "options": { "A": "rich", "B": "poor", "C": "low" }, "answer": "A" },
+            { "num": 7, "options": { "A": "Chicken", "B": "Fish", "C": "Pumpkins" }, "answer": "C" },
+            { "num": 8, "options": { "A": "resting", "B": "relaxing", "C": "exercising" }, "answer": "C" }
+          ]
+        },
+        {
+          "id": "2.D.3",
+          "type": "multiple_choice",
+          "instruction": "Read the passage and choose the correct answer A, B, or C.",
+          "page": 14,
+          "passage": "In 2019, Spain was the healthiest country in the world. The secret is their Mediterranean diet. This diet focuses on healthy fats and proteins. This includes cold tomato soup, plenty of seafood (especially fish), and veggies. Spanish people say that they have some of the most delicious salads in the world. Due to the Mediterranean diet, the Spanish suffer from fewer diseases than the rest of the world.\nPhysical health is important, but mental health is important too. Eight out of ten Spanish people are happy. Why? A major reason is the weather. Spain has beautiful weather all year round. Another reason is that Spain is home to a lively and relaxing culture. The Spanish enjoy the simple pleasures of life.",
+          "questions": [
+            { "num": 1, "stem": "In 2019, Spain was number ____ in health.", "options": { "A": "one", "B": "two", "C": "ten" }, "answer": "A" },
+            { "num": 2, "stem": "The Mediterranean diet includes ____.", "options": { "A": "lots of vegetables", "B": "red meat", "C": "potato soup" }, "answer": "A" },
+            { "num": 3, "stem": "Spanish people ____.", "options": { "A": "have more diseases than the rest of the world", "B": "have fewer diseases than the rest of the world", "C": "do not have diseases" }, "answer": "B" },
+            { "num": 4, "stem": "Beautiful ____ makes the Spanish happy.", "options": { "A": "beaches", "B": "houses", "C": "weather" }, "answer": "C" },
+            { "num": 5, "stem": "The Spanish enjoy ____.", "options": { "A": "good food", "B": "simple pleasures", "C": "good education" }, "answer": "B" }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "E",
+      "title": "Writing",
+      "exercises": [
+        {
+          "id": "2.E.1",
+          "type": "sentence_building",
+          "instruction": "Write complete sentences from the prompts.",
+          "page": 15,
+          "questions": [
+            { "num": 1, "prompt": "Please / eye exercises / keep / eyes / getting dry.", "suggested_answer": "Please do eye exercises to keep your eyes from getting dry." },
+            { "num": 2, "prompt": "People / Iceland / eat / lot / fresh fish.", "suggested_answer": "People in Iceland eat a lot of fresh fish." },
+            { "num": 3, "prompt": "Air pollution / be / really harmful / our health.", "suggested_answer": "Air pollution is really harmful to our health." },
+            { "num": 4, "prompt": "Going to bed / getting up / early / be / good / your health.", "suggested_answer": "Going to bed and getting up early are good for your health." },
+            { "num": 5, "prompt": "Healthy food / love / laughter / bring / healthy life.", "suggested_answer": "Healthy food, love, and laughter bring a healthy life." }
+          ],
+          "note": "Đáp án lấy từ trang Keys (tr.104)."
+        },
+        {
+          "id": "2.E.2",
+          "type": "picture_fill_blank",
+          "instruction": "Write a reason for each tip.",
+          "page": 15,
+          "example": { "stem": "Eat less high-fat food.", "reason": "You will put on weight." },
+          "questions": [
+            { "num": 1, "image_desc": null, "stem": "Do more physical activities. Reason: ____", "answer": "To keep you fit. / You'll stay strong." },
+            { "num": 2, "image_desc": null, "stem": "Eat a lot of red fruit and vegetables. Reason: ____", "answer": "They are good for your eyes. / They provide vitamin A which is good for your eyes." },
+            { "num": 3, "image_desc": null, "stem": "Use eyedrops when you are doing a lot of reading. Reason: ____", "answer": "To keep your eyes from getting tired or dry." },
+            { "num": 4, "image_desc": null, "stem": "Keep your house clean. Reason: ____", "answer": "To prevent diseases. / To reduce the number of flies and mosquitoes." },
+            { "num": 5, "image_desc": null, "stem": "Laugh more and stay relaxed. Reason: ____", "answer": "You'll feel happy, and you'll make people around you happy, too." }
+          ],
+          "note": "Đáp án mẫu (Suggested answers) lấy từ trang Keys (tr.105) — học sinh có thể viết khác miễn đúng ý nghĩa."
+        },
+        {
+          "id": "2.E.3",
+          "type": "guided_writing_paragraph",
+          "instruction": "Tick (✓) five things you think you need to do every day to have a healthy life. Then write a short passage of about 70 words about it.",
+          "page": 15,
+          "word_web_prompts": ["take a bath", "do exercise", "sleep 7-8 hours/day", "chat with friends", "clean your house", "eat a lot of meat and snacks", "eat breakfast"],
+          "note": "Bài viết tự do cá nhân — không có đáp án cố định. Đoạn văn mẫu (Suggested answer, tr.105): 'There are things I think I need to do every day to have a healthy life. First, I need to take a bath after getting up. It helps me have a fresh start. Second, I should never skip breakfast. I need to eat after a long night. During the day, I also need to spend some time exercising and cleaning my house. They are both good for my health. Finally, I need seven to eight hours of sleep a day. If not, I will feel tired and sleepy the next day.'"
+        }
+      ]
+    }
+  ]
+}

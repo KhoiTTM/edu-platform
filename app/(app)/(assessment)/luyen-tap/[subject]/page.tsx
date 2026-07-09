@@ -8,104 +8,6 @@ import { useParams, useSearchParams, useRouter } from "next/navigation";
 import { Sparkles, Star, ChevronRight, CheckCircle2, Play, Trophy, ChevronDown, ChevronUp } from "lucide-react";
 
 async function getAssessmentMap(subject: string, grade?: number) {
-  // KHTN 7: đọc từ JSON thay vì DB
-  if (subject === "khtn" && grade === 7) {
-    const { default: questions } = await import("@/content/workbooks/khtn7-questions.json");
-    const LESSON_TITLES: Record<number, string> = {
-      1: "Bài 1: Phương pháp và kĩ năng học tập môn Khoa học tự nhiên",
-      2: "Bài 2: Nguyên tử",
-      3: "Bài 3: Nguyên tố hoá học",
-      4: "Bài 4: Sơ lược về bảng tuần hoàn các nguyên tố hoá học",
-      5: "Bài 5: Phân tử - Đơn chất - Hợp chất",
-      6: "Bài 6: Giới thiệu về liên kết hoá học",
-      7: "Bài 7: Hoá trị và công thức hoá học",
-      8: "Bài 8: Tốc độ chuyển động",
-      9: "Bài 9: Đo tốc độ",
-      10: "Bài 10: Đồ thị quãng đường – thời gian",
-      11: "Bài 11: Thảo luận về ảnh hưởng của tốc độ trong an toàn giao thông",
-      12: "Bài 12: Sóng âm",
-      13: "Bài 13: Độ to và độ cao của âm",
-      14: "Bài 14: Phản xạ âm, chống ô nhiễm tiếng ồn",
-      15: "Bài 15: Năng lượng ánh sáng. Tia sáng, vùng tối",
-      16: "Bài 16: Sự phản xạ ánh sáng",
-      17: "Bài 17: Ảnh của vật qua gương phẳng",
-      18: "Bài 18: Nam châm",
-      19: "Bài 19: Từ trường",
-      20: "Bài 20: Chế tạo nam châm điện đơn giản",
-      21: "Bài 21: Khái quát về trao đổi chất và chuyển hoá năng lượng",
-      22: "Bài 22: Quang hợp ở thực vật",
-      23: "Bài 23: Một số yếu tố ảnh hưởng đến quang hợp",
-      24: "Bài 24: Thực hành: Chứng minh quang hợp ở cây xanh",
-      25: "Bài 25: Hô hấp tế bào",
-      26: "Bài 26: Một số yếu tố ảnh hưởng đến hô hấp tế bào",
-      27: "Bài 27: Thực hành: Hô hấp ở thực vật",
-      28: "Bài 28: Trao đổi khí ở sinh vật",
-      29: "Bài 29: Vai trò của nước và chất dinh dưỡng đối với sinh vật",
-      30: "Bài 30: Trao đổi nước và chất dinh dưỡng ở thực vật",
-      31: "Bài 31: Trao đổi nước và chất dinh dưỡng ở động vật",
-      32: "Bài 32: Thực hành: Chứng minh thân vận chuyển nước và lá thoát hơi nước",
-      33: "Bài 33: Cảm ứng ở sinh vật và tập tính ở động vật",
-      34: "Bài 34: Vận dụng hiện tượng cảm ứng ở sinh vật vào thực tiễn",
-      35: "Bài 35: Thực hành: Cảm ứng ở sinh vật",
-      36: "Bài 36: Khái quát về sinh trưởng và phát triển ở sinh vật",
-      37: "Bài 37: Ứng dụng sinh trưởng và phát triển ở sinh vật vào thực tiễn",
-      38: "Bài 38: Thực hành: Quan sát, mô tả sự sinh trưởng và phát triển ở một số sinh vật",
-      39: "Bài 39: Sinh sản vô tính ở sinh vật",
-      40: "Bài 40: Sinh sản hữu tính ở sinh vật",
-      41: "Bài 41: Một số yếu tố ảnh hưởng và điều hoà, điều khiển sinh sản ở sinh vật",
-      42: "Bài 42: Cơ thể sinh vật là một thể thống nhất",
-    };
-    const countByBai: Record<number, number> = {};
-    for (const q of questions as any[]) {
-      countByBai[q.bai] = (countByBai[q.bai] || 0) + 1;
-    }
-    const workbooks = Object.entries(countByBai)
-      .map(([bai, count]) => ({
-        id: `khtn7-bai-${bai}`,
-        bai: Number(bai),
-        title: LESSON_TITLES[Number(bai)] || `Bài ${bai}`,
-        total_questions: count,
-      }))
-      .sort((a, b) => a.bai - b.bai);
-    // Fetch reviews from DB (lesson/reflex exams still served from static JSON above)
-    const { createClient: createClientForKhtn } = await import("@/lib/supabase/client");
-    const supabaseKhtn = createClientForKhtn();
-    const REVIEW_TYPES_KHTN = new Set(["review", "midterm", "final", "exam"]);
-    const { data: khtnCollections } = await supabaseKhtn
-      .from("assessment_collections")
-      .select(`id, title, volume, units, sequence_number, exam_type, exams (id, title, total_questions, exam_number, external_url)`)
-      .eq("subject_slug", "khtn")
-      .eq("grade", 7)
-      .eq("status", "published")
-      .in("exam_type", ["review", "midterm", "final", "exam"]);
-    const reviewMapKhtn = new Map<number, { volume: number; units: Map<number, any> }>();
-    for (const c of (khtnCollections || []) as any[]) {
-      if (!REVIEW_TYPES_KHTN.has(c.exam_type)) continue;
-      const unitNum = Array.isArray(c.units) ? c.units[0] : 1;
-      if (!reviewMapKhtn.has(c.volume)) reviewMapKhtn.set(c.volume, { volume: c.volume, units: new Map() });
-      const volEntry = reviewMapKhtn.get(c.volume)!;
-      if (!volEntry.units.has(unitNum)) volEntry.units.set(unitNum, { unit: unitNum, title: c.title, exams: [] });
-      volEntry.units.get(unitNum)!.exams.push(...(c.exams || []));
-    }
-    const reviewsKhtn = Array.from(reviewMapKhtn.values())
-      .sort((a, b) => a.volume - b.volume)
-      .map((v) => ({ volume: v.volume, units: Array.from(v.units.values()).sort((a, b) => a.unit - b.unit) }));
-    return { lessons: [], workbooks, reviews: reviewsKhtn, reflex: [] };
-  }
-
-  // Tiếng Anh 7 SBT: đọc từ JSON thay vì DB
-  if (subject === "tieng-anh-7" && grade === 7) {
-    const res = await fetch("/api/workbooks/tienganh7", { cache: "no-store" });
-    const { units } = await res.json();
-    const workbooks = (units as { unit: number; title: string; total_questions: number }[]).map((u) => ({
-      id: `tienganh7-unit-${u.unit}`,
-      bai: u.unit,
-      title: u.title,
-      total_questions: u.total_questions,
-    }));
-    return { lessons: [], workbooks, reviews: [], reflex: [] };
-  }
-
   const { createClient } = await import("@/lib/supabase/client");
   const supabase = createClient();
 
@@ -453,14 +355,7 @@ export default function SubjectMapPage() {
               <tbody className="divide-y divide-slate-800/60 text-sm font-bold text-slate-200">
                 {workbooks.map((exam: any, idx: number) => {
                   const isCompleted = completedExams.includes(exam.id);
-                  // KHTN 7 / Tiếng Anh 7 SBT → link đến flipbook quiz theo bai/unit number
-                  const isKhtn7 = subject === "khtn" && gradeNum === 7;
-                  const isTiengAnh7 = subject === "tieng-anh-7" && gradeNum === 7;
-                  const href = isKhtn7
-                    ? `/flipbooks/khtn7/quiz/${exam.bai}`
-                    : isTiengAnh7
-                    ? `/flipbooks/tienganh7/quiz/${exam.bai}`
-                    : `/test-assessment?examId=${exam.id}`;
+                  const href = `/test-assessment?examId=${exam.id}`;
                   return (
                     <tr key={exam.id} className={clsx("transition-all duration-150 group hover:bg-surface-raised/20", isCompleted && "text-slate-500")}>
                       <td className="px-6 py-4 text-center font-black text-slate-400 group-hover:text-emerald-400 transition-colors">{idx + 1}</td>

@@ -3,9 +3,28 @@
 > File này theo dõi trạng thái OCR từng bài của sách SBT KHTN 7 (`sbt_khtn7.pdf`, 147 trang).  
 > Cập nhật mỗi khi hoàn thành 1 bài mới.
 
+## ⚠️ Cập nhật quan trọng — pipeline OCR bên dưới đã lỗi thời
+
+Quy trình OCR tự động (EasyOCR + DP parse) mô tả trong file này tạo ra
+`content/workbooks/khtn7-questions.json` với chất lượng **kém**: nhiều câu bị đảo từ, thiếu
+chữ cái đầu câu, watermark "KẾT NỐI TRI THỨC VỚI CUỘC SỐNG" dính vào đề bài, và 213/394 câu
+thiếu đáp án. Đã phát hiện và sửa toàn bộ bằng cách **đọc lại bằng mắt từng trang ảnh**
+(`public/book/sbt_khtn_07/page_XXX.png`, đã render sẵn — không cần OCR/PDF nữa), đối chiếu
+`content/workbooks/khtn7-answer-key.json`. Kết quả: 395 câu (thêm 1 câu bị OCR bỏ sót hoàn
+toàn), chỉ còn 2 câu không có đáp án tham khảo. Dữ liệu đã được seed vào Supabase (42 bài,
+1 exam/bài) — xem `docs/EXAM_BANK.md` mục 7 để biết cấu trúc DB, quy tắc đặt tên, và script
+seed dùng lại được (`scripts/migrate-khtn7-bai-to-db.ts`).
+
+**Nếu cần OCR sách khác sau này**: pipeline OCR tự động bên dưới vẫn có giá trị tham khảo cho
+bước "khoanh vùng range trang + parse chuỗi N.M", nhưng **nên đọc lại bằng mắt từng câu** thay
+vì tin thẳng output OCR — chi phí đọc tay không quá lớn (dùng nhiều agent chạy song song, mỗi
+agent phụ trách vài bài) và tránh hẳn được lớp lỗi này. Nếu giao nhiều agent cùng sửa 1 file
+JSON lớn song song, backup trước và verify schema đồng nhất sau khi tất cả agent xong (xem
+bài học ở `docs/EXAM_BANK.md` mục 7.2 — có 1 agent con tự ý đổi schema giữa chừng).
+
 ## Trạng thái hiện tại
 
-**✅ HOÀN THÀNH TOÀN BỘ: Bài 1–42** (394 câu, trang 1–91)
+**✅ HOÀN THÀNH TOÀN BỘ: Bài 1–42** (395 câu, trang 1–91 — đã đọc lại bằng mắt, xem cảnh báo trên)
 
 ## Bảng theo dõi
 

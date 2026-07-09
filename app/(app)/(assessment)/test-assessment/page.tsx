@@ -6,6 +6,12 @@ import { AssessmentRenderer } from '@/components/universal/AssessmentRenderer';
 import { AssessmentResultCard } from '@/components/assessment/AssessmentResultCard';
 import { getExamQuestions, getExamInfo, saveExamResult } from './actions';
 
+// Link đến bản scan/PDF gốc trên Google Drive, theo subject_slug — dùng cho nút "Xem sách" trong AssessmentRenderer.
+const BOOK_SOURCE_URLS: Record<string, string> = {
+  khtn: "https://drive.google.com/file/d/13zq-lbCJaAHEqSRx1JWhfX1idtn6jgEP/view?usp=sharing",
+  "tieng-anh-7": "https://drive.google.com/file/d/1VUrweOeuNiJv3lXmi2xXE2cqYjyIdFOQ/view?usp=sharing",
+};
+
 function AssessmentContent() {
   const searchParams = useSearchParams();
   const examId = searchParams.get('examId');
@@ -118,6 +124,7 @@ function AssessmentContent() {
           mode="quiz"
           onComplete={handleComplete}
           timerSeconds={customTimer || (examType === 'reflex' ? 30 : undefined)}
+          sourceBookUrl={BOOK_SOURCE_URLS[subjectSlug]}
         />
       ) : (
         <AssessmentResultCard

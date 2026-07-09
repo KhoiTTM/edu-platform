@@ -1,0 +1,377 @@
+{
+  "unit": 11,
+  "title": "Unit 11: Travelling in the Future",
+  "source": "Tiếng Anh 7 - Global Success - Sách bài tập, trang 84-91",
+  "sections": [
+    {
+      "section": "A",
+      "title": "Pronunciation",
+      "exercises": [
+        {
+          "id": "11.A.1",
+          "type": "read_aloud_stress",
+          "instruction": "Read the sentences aloud. Pay attention to the bold syllables.",
+          "page": 84,
+          "sentences": [
+            "**Let** us **talk** about **fu**ture **trans**port.",
+            "**Bam**boo-**cop**ters are **fun** to **fly**.",
+            "**Peo**ple will **think** of **new modes** of **trav**elling.",
+            "It'll be **fast**er to **trav**el by **hy**perloop.",
+            "**New ve**hicles are **green**er to the en**vi**ronment."
+          ],
+          "note": "Bài luyện phát âm - đọc to, không có đáp án chấm điểm."
+        },
+        {
+          "id": "11.A.2",
+          "type": "count_stresses",
+          "instruction": "How many stresses are there in each sentence? Read them aloud.",
+          "page": 84,
+          "questions": [
+            { "num": 1, "stem": "Let us turn to future means of transport.", "answer": 5 },
+            { "num": 2, "stem": "People will go to rural places for holidays.", "answer": 5 },
+            { "num": 3, "stem": "School students will opt for solowheels.", "answer": 4 },
+            { "num": 4, "stem": "People can sleep while travelling in a driverless car.", "answer": 6 },
+            { "num": 5, "stem": "We won't have to worry about causing pollution to the environment.", "answer": 6 }
+          ],
+          "note": "Đáp án lấy từ trang Keys (tr.120)."
+        }
+      ]
+    },
+    {
+      "section": "B",
+      "title": "Vocabulary & Grammar",
+      "exercises": [
+        {
+          "id": "11.B.1",
+          "type": "matching",
+          "instruction": "Match the verbs in column A with the words or phrases in column B.",
+          "page": 84,
+          "column_a": { "1": "drive", "2": "fly", "3": "ride", "4": "sail" },
+          "column_b_pool": ["car", "bus", "boat", "bicycle", "airplane", "spaceship", "motorbike", "bullet train", "solar-powered ship"],
+          "answers_grouped": {
+            "drive": ["car", "bus", "bullet train"],
+            "fly": ["spaceship", "airplane"],
+            "ride": ["motorbike", "bicycle", "bus", "bullet train"],
+            "sail": ["boat", "solar-powered ship"]
+          },
+          "note": "Đây là bài ghép 1-nhiều (một từ trong B có thể khớp với nhiều động từ ở A), không phải ghép 1-1 thông thường. Đáp án lấy từ trang Keys (tr.120): drive - car, bus, bullet train; fly - spaceship, airplane; ride - motorbike, bicycle, bus, bullet train; sail - boat, solar-powered ship. Dạng bài này không khớp hoàn toàn với UI matching 1-1 hiện tại, cần điều chỉnh khi lên giao diện."
+        },
+        {
+          "id": "11.B.2",
+          "type": "fill_blank_word_bank",
+          "instruction": "Use the phrases in the box to complete the sentences.",
+          "page": 85,
+          "word_bank": ["solar-powered ships", "driverless car", "high-speed train", "petrol-powered cars", "eco-friendly vehicles", "self-balancing"],
+          "passage_template": "1. People will not drive ____ in 10 years' time because they cause pollution.\n2. Riding on a ____ is more comfortable than a traditional train.\n3. ____ will be greener than the ships we are using today.\n4. You can relax and read if you ride in a ____.\n5. ____ will certainly become popular in the near future.\n6. A solowheel is fun and safe to ride. It is ____ so riders do not fall.",
+          "answers": {
+            "1": "petrol-powered cars",
+            "2": "high-speed train",
+            "3": "Solar-powered ships",
+            "4": "driverless car",
+            "5": "Eco-friendly vehicles",
+            "6": "self-balancing"
+          }
+        },
+        {
+          "id": "11.B.3",
+          "type": "fill_blank_word_bank",
+          "instruction": "Use the words and phrases in the box to complete the passage.",
+          "page": 85,
+          "word_bank": ["hyperloop", "flying car", "autopilot function", "combination", "ideas", "bullet trains", "public transport", "developing", "convenient"],
+          "passage_template": "As the world's population has grown, and traffic jams have become a 'nightmare' in many big cities, scientists are researching and (1) ____ new means of transport to solve the problem. Henry Ford was one of the first to think of a (2) ____ – a car that can fly – in 1936. It is a (3) ____ of an airplane and a motorcar. Later, more new (4) ____ about cars came about, including cars that have an (5) ____ or are driverless. Scientists have also worked to develop new means of (6) ____, and skyTrans is one of their inventions. Scientists have also invented (7) ____, which are not much different from traditional trains, but are much faster, safer, and more (8) ____. They are also working on a (9) ____ system, which allows people to travel from one country to another in minutes.",
+          "answers": {
+            "1": "developing",
+            "2": "flying car",
+            "3": "combination",
+            "4": "ideas",
+            "5": "autopilot function",
+            "6": "public transport",
+            "7": "bullet trains",
+            "8": "convenient",
+            "9": "hyperloop"
+          }
+        },
+        {
+          "id": "11.B.4",
+          "type": "circle_and_rewrite",
+          "instruction": "Circle the correct word to complete each sentence. Then write down the full sentence.",
+          "page": 85,
+          "questions": [
+            { "num": 1, "stem": "This solowheel belongs to me. That one is (her / hers / she).", "answer": "hers", "full_sentence": "This solowheel belongs to me. That one is hers." },
+            { "num": 2, "stem": "(Me / Mine / My) scooter is red. Hers is blue.", "answer": "My", "full_sentence": "My scooter is red. Hers is blue." },
+            { "num": 3, "stem": "(Ours / Our / We) train leaves at 7 p.m.", "answer": "Our", "full_sentence": "Our train leaves at 7 p.m." },
+            { "num": 4, "stem": "Will your flight to Hong Kong be late? (Him / He / His) is on time.", "answer": "His", "full_sentence": "Will your flight to Hong Kong be late? His is on time." },
+            { "num": 5, "stem": "The new red car is (theirs / their / they).", "answer": "theirs", "full_sentence": "The new red car is theirs." }
+          ]
+        },
+        {
+          "id": "11.B.5",
+          "type": "multiple_choice",
+          "instruction": "Choose the best answer A, B, or C to complete each sentence.",
+          "page": 86,
+          "questions": [
+            {
+              "num": 1,
+              "stem": "People ____ not choose to have their holiday on other planets because it will be very expensive.",
+              "options": { "A": "won't", "B": "might", "C": "should" },
+              "answer": "B"
+            },
+            {
+              "num": 2,
+              "stem": "____ we be able to inhabit Mars? Nobody knows for sure.",
+              "options": { "A": "Will", "B": "Should", "C": "Might" },
+              "answer": "A"
+            },
+            {
+              "num": 3,
+              "stem": "It ____ take a long time for travelling by teleporter to become a reality, I think.",
+              "options": { "A": "should", "B": "will", "C": "can" },
+              "answer": "B"
+            },
+            {
+              "num": 4,
+              "stem": "People ____ consider travelling by public transport to reduce traffic jams.",
+              "options": { "A": "won't", "B": "shouldn't", "C": "should" },
+              "answer": "C"
+            },
+            {
+              "num": 5,
+              "stem": "Fumeless cars ____ pollute the environment like the cars we have now do.",
+              "options": { "A": "will", "B": "might", "C": "won't" },
+              "answer": "C"
+            }
+          ]
+        },
+        {
+          "id": "11.B.6",
+          "type": "fill_blank_verb_form",
+          "instruction": "Put the verb in brackets in the correct form. Pay attention to positive or negative form.",
+          "page": 86,
+          "passage_template": "In the near future, there (1. be) ____ enough land for the world's increasing population. Though skyscrapers are getting taller, there (2. be) ____ enough land to house everyone. Air pollution (3. get) ____ worse and worse. Scientists (4. look) ____ for new opportunities to live on other planets. Mars (5. become) ____ a new place for humans to live. Scientists someday (6. invent) ____ a way for us to go to Mars and return quickly. Scientists (7. plant) ____ trees on Mars to produce more oxygen. Additionally, they (8. build) ____ up hotels for holidays on Mars because there (9. be) ____ many people who want to go there. I think it (10. take) ____ a long time for this dream to come true.",
+          "answers": {
+            "1": "won't be",
+            "2": "won't be",
+            "3": "is getting",
+            "4": "are looking",
+            "5": "will become",
+            "6": "will invent",
+            "7": "will plant",
+            "8": "will build",
+            "9": "will be",
+            "10": "won't take"
+          }
+        }
+      ]
+    },
+    {
+      "section": "C",
+      "title": "Speaking",
+      "exercises": [
+        {
+          "id": "11.C.1",
+          "type": "guided_speaking",
+          "instruction": "Here is some information about vehicles and places. Make predictions about them. Give reasons.",
+          "page": 86,
+          "prompts": [
+            { "topic": "Electric buses", "info": ["30 passengers", "comfortable seats", "cheap", "no delays"] },
+            { "topic": "Bullet trains", "info": ["hundreds of passengers", "fast", "green", "on time"] },
+            { "topic": "Resorts by the sea", "info": ["luxurious", "fresh air", "noisy", "expensive"] },
+            { "topic": "Beaches in rural areas", "info": ["peaceful", "expensive", "far from the cities", "fresh air"] }
+          ],
+          "example": "I think electric buses will become a popular means of transport in the future because travelling by electric bus will be cheap and there won't be any delays.",
+          "sample_answers": {
+            "Electric buses": "I think electric buses will become more popular in the future. They will be able to carry 30 passengers and will still provide comfortable seats for everyone. It will be cheap to travel by electric buses. There also won't be any delays.",
+            "Bullet trains": "I think bullet trains will become a popular means of transport in the future because they can carry hundreds of passengers at the same time. They are fast and green. They are also always on time.",
+            "Resorts by the sea": "I think resorts by the sea will be popular because they are luxurious, and people can enjoy fresh air. Or: I think resorts by the sea will not be popular because these areas are noisy. These resorts are luxurious, but will be expensive to stay at.",
+            "Beaches in rural areas": "I think people will choose beaches in rural areas for their holidays in the future because these places are peaceful and people will get fresh air there. Or: I think people will not choose beaches in rural areas for their holidays in the future because these places are far from the cities. Also not many people stay there and they are expensive."
+          },
+          "note": "Bài nói tự do - đáp án mẫu (Sample answers) lấy từ trang Keys (tr.121), không phải đáp án duy nhất."
+        },
+        {
+          "id": "11.C.2",
+          "type": "mind_map_speaking",
+          "instruction": "Look at the mind map and do the tasks below. a. Fill in each of the blanks with information about a future means of transport you think students will use to go to school. b. Make six questions for the six items in the mind map. Then role-play the questions and answers with your partners.",
+          "page": 87,
+          "mind_map_prompts": {
+            "1": "Popular future means of transport for students",
+            "2": "It will run on ____ (road type).",
+            "3": "It will run on / use ____ (energy).",
+            "4": "It will carry ____ student(s).",
+            "5": "It will be popular because ____.",
+            "6": "Students will like it because ____."
+          },
+          "sample_answers_a": {
+            "1": "hoverboard",
+            "2": "It will run on normal roads.",
+            "3": "It will run on / use electricity.",
+            "4": "Each hoverboard will carry only one student.",
+            "5": "It will be popular because it is safe, green and not expensive.",
+            "6": "Students will like it because it is fun to ride."
+          },
+          "sample_questions_b": {
+            "1": "What is a popular means of transport for students to use in the future?",
+            "2": "What road will it run on?",
+            "3": "What energy will it run on?",
+            "4": "How many students will it carry?",
+            "5": "Why will it be popular?",
+            "6": "What can be the reason(s) why students like it?"
+          },
+          "note": "Bài nói/viết mở - đáp án mẫu (Sample answers) lấy từ trang Keys (tr.121), học sinh có thể trả lời khác."
+        }
+      ]
+    },
+    {
+      "section": "D",
+      "title": "Reading",
+      "exercises": [
+        {
+          "id": "11.D.1",
+          "type": "multiple_choice_cloze",
+          "instruction": "Read the passage and choose the correct answer A, B, or C to fill each blank.",
+          "page": 88,
+          "passage_template": "A hoverboard can bring (1) ____ a lot of benefits. It is self-balancing so it is safe for (2) ____. It is also fun because it connects to a music speaker with a phone, so riders can enjoy music while (3) ____ on the road. It can also give riders a smooth (4) ____. It runs on electric battery. Its run time is 30 minutes but you may have to wait 2 – 3 hours for the battery to (5) ____. Because hoverboards are safe, easy to use, and inexpensive, they will (6) ____ around for long for the children to enjoy.",
+          "questions": [
+            { "num": 1, "options": { "A": "owners", "B": "riders", "C": "players" }, "answer": "B" },
+            { "num": 2, "options": { "A": "beginners", "B": "professionals", "C": "adults" }, "answer": "A" },
+            { "num": 3, "options": { "A": "hovering", "B": "running", "C": "driving" }, "answer": "A" },
+            { "num": 4, "options": { "A": "drive", "B": "ride", "C": "fly" }, "answer": "B" },
+            { "num": 5, "options": { "A": "change", "B": "replace", "C": "charge" }, "answer": "C" },
+            { "num": 6, "options": { "A": "be", "B": "live", "C": "work" }, "answer": "A" }
+          ]
+        },
+        {
+          "id": "11.D.2a",
+          "type": "true_false_no_info",
+          "instruction": "Read the passage and do the tasks below. a. Tick (✓) T (True) or F (False).",
+          "page": 88,
+          "passage": "My uncle is working at a car company. His company is now developing a new flying car. The car will have solar panels on its roof and wings, and it will charge its battery as it moves. During light traffic, you can use roads. But in heavy traffic, you can use the flight mode to avoid traffic. It will be able to carry eight passengers. The car will have an autopilot function, so a driver is not needed. All passengers can relax, read books or play games while travelling.\nI was worried about the safety because it is driverless, but my uncle said it will be much safer than a traditional car. It will also be more comfortable and greener because it is solar-powered.",
+          "questions": [
+            { "num": 1, "stem": "The writer's father is working at a car company.", "answer": "F" },
+            { "num": 2, "stem": "The car runs on solar energy.", "answer": "T" },
+            { "num": 3, "stem": "You can use it in flight mode when roads are crowded.", "answer": "T" },
+            { "num": 4, "stem": "You have to be very careful and skillful drivers to drive this car.", "answer": "F" },
+            { "num": 5, "stem": "It will be more comfortable than a traditional car.", "answer": "T" }
+          ],
+          "note": "Unit này chỉ có T/F, không có lựa chọn NI (No Information) - đề bài chỉ yêu cầu tick T hoặc F."
+        },
+        {
+          "id": "11.D.2b",
+          "type": "short_answer_reading",
+          "instruction": "b. Answer the questions.",
+          "page": 89,
+          "shared_passage_ref": "11.D.2a",
+          "questions": [
+            { "num": 1, "stem": "How will the car be powered?", "answer": "It will be powered by solar energy." },
+            { "num": 2, "stem": "When will its battery be charged?", "answer": "Its battery will be charged when / as it moves." },
+            { "num": 3, "stem": "What can it do during traffic jams?", "answer": "It can fly." },
+            { "num": 4, "stem": "What can passengers do when the car is running?", "answer": "They can relax, read books or play games." },
+            { "num": 5, "stem": "Why is it greener than a traditional car?", "answer": "Because it is solar-powered." }
+          ]
+        },
+        {
+          "id": "11.D.3a",
+          "type": "synonym_finding",
+          "instruction": "Read the passage and do the tasks below. a. Find in the passage the words that have a similar meaning to these words or phrases.",
+          "page": 89,
+          "passage": "Tel Aviv will be the first city in the world to have a skyTran system. This system will help the city reduce traffic congestion. Moreover, skyTran will provide a greener, less expensive, faster, and more comfortable mode of travel than cars and buses. The system has many pods and each pod has two seats. Passengers can get a pod by using a smartphone app. The pods glide along the rails above to their destination. The pods run on electricity and can travel at speeds up to 150 mph while passengers will still have a smooth ride. The system is about 70 m above the ground. The cost is higher than taking a bus but lower than taking a taxi. So, many people think it will be a perfect means of transport to replace traditional ones. The USA and many Asian countries are interested in building skyTran networks in the very near future.",
+          "column_a": { "1": "decrease", "2": "more eco-friendly", "3": "riders", "4": "move smoothly", "5": "be used instead of something" },
+          "answers": { "1": "reduce", "2": "greener", "3": "passengers", "4": "glide", "5": "replace" },
+          "note": "Bài dạng 'tìm từ đồng nghĩa trong đoạn văn' - không phải ghép cột 1-1 với danh sách định nghĩa cho trước (column_b). Cột phải là đáp án học sinh tự tìm trong bài đọc."
+        },
+        {
+          "id": "11.D.3b",
+          "type": "multiple_choice",
+          "instruction": "b. What is the best title of the passage?",
+          "page": 89,
+          "shared_passage_ref": "11.D.3a",
+          "questions": [
+            {
+              "num": 1,
+              "options": { "A": "Future Modes of Travel", "B": "SkyTran in the USA and Asian Countries", "C": "SkyTran – a Future Mode of Travel" },
+              "answer": "C"
+            }
+          ]
+        },
+        {
+          "id": "11.D.3c",
+          "type": "multiple_choice",
+          "instruction": "c. Choose the best answer A, B, or C.",
+          "page": 90,
+          "shared_passage_ref": "11.D.3a",
+          "questions": [
+            {
+              "num": 1,
+              "stem": "One benefit of skyTran is that ____.",
+              "options": { "A": "it is more expensive than a taxi trip", "B": "it makes cities more modern", "C": "it helps avoid traffic jams" },
+              "answer": "C"
+            },
+            {
+              "num": 2,
+              "stem": "It will be more comfortable and faster than ____.",
+              "options": { "A": "a train", "B": "a bus", "C": "a truck" },
+              "answer": "B"
+            },
+            {
+              "num": 3,
+              "stem": "To get a pod, people can ____.",
+              "options": { "A": "call it the same way as they call a taxi", "B": "use an app on their smartphones", "C": "go to a pod station and wait" },
+              "answer": "B"
+            },
+            {
+              "num": 4,
+              "stem": "The pod glides fast, and the trip is ____.",
+              "options": { "A": "smooth", "B": "unsafe", "C": "tiring" },
+              "answer": "A"
+            },
+            {
+              "num": 5,
+              "stem": "The system is ____.",
+              "options": { "A": "underground", "B": "on the ground", "C": "above the ground" },
+              "answer": "C"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "E",
+      "title": "Writing",
+      "exercises": [
+        {
+          "id": "11.E.1",
+          "type": "sentence_building",
+          "instruction": "Make sentences using the words and phrases below. Change the forms of the words and phrases when necessary.",
+          "page": 90,
+          "questions": [
+            { "num": 1, "prompt": "In the future / city / be more crowded / traffic / get worse.", "suggested_answer": "In the future, cities will be more crowded and (the) traffic will get worse." },
+            { "num": 2, "prompt": "Traffic jams / happen / every day / the air / get / more polluted.", "suggested_answer": "Traffic jams will happen every day and the air will get more polluted." },
+            { "num": 3, "prompt": "There / many / new means of transport / solve / traffic problems / and / help / environment.", "suggested_answer": "There will be many new means of transport to solve traffic problems and help the environment." },
+            { "num": 4, "prompt": "New / means of public transport / be / faster / convenient.", "suggested_answer": "New means of public transport will be faster and more convenient." },
+            { "num": 5, "prompt": "People / think of / spend / holiday / new / faraway / places.", "suggested_answer": "People will think of spending holidays in new and faraway places." }
+          ]
+        },
+        {
+          "id": "11.E.2",
+          "type": "sentence_rewriting",
+          "instruction": "Rewrite the following sentences so that their meanings stay the same, using the word given for each.",
+          "page": 90,
+          "questions": [
+            { "num": 1, "prompt": "Why don't you travel by public transport? This will help protect the environment. (SHOULD)", "answer": "People should travel (more) by public transport because this will help protect the environment." },
+            { "num": 2, "prompt": "Electric buses are eco-friendly. They will become popular in big cities soon. (SO)", "answer": "Electric buses are eco-friendly, so they will become popular in big cities soon." },
+            { "num": 3, "prompt": "Resorts by the sea are still very expensive. Not many people go there for their holidays next year. (IF)", "answer": "If resorts by the sea are still expensive, not many people will go there for their holidays next year." },
+            { "num": 4, "prompt": "We are not sure if our city will have a skyTran system in the near future. (MIGHT)", "answer": "Our city might have a skyTran system in the near future." },
+            { "num": 5, "prompt": "In a decade, people will have new green modes of travel. They will also spend their holidays in new places. (AND)", "answer": "In a decade, people will have new green modes of travel, and they will spend their holidays in new places." }
+          ]
+        },
+        {
+          "id": "11.E.3",
+          "type": "guided_writing_paragraph",
+          "instruction": "Imagine a means of transport that you will use to travel to school in the future. Write a passage of about 60 words to describe it.",
+          "page": 91,
+          "starter": "In the future, I will go to school by a new means of transport.\nIt will be a ____\nIt will ____",
+          "note": "Bài viết tự do cá nhân - không có đáp án cố định."
+        }
+      ]
+    }
+  ]
+}

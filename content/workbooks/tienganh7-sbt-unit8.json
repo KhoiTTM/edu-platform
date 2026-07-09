@@ -1,0 +1,300 @@
+{
+  "unit": 8,
+  "title": "Unit 8: Films",
+  "source": "Tiếng Anh 7 - Global Success - Sách bài tập, trang 60-65",
+  "sections": [
+    {
+      "section": "A",
+      "title": "Pronunciation",
+      "exercises": [
+        {
+          "id": "8.A.1",
+          "type": "label_and_classify",
+          "instruction": "Write the following words in the correct columns. Then practise reading out the words.",
+          "page": 60,
+          "items": [
+            { "num": 1, "image_desc": "near", "answer": "near" },
+            { "num": 2, "image_desc": "here", "answer": "here" },
+            { "num": 3, "image_desc": "there", "answer": "there" },
+            { "num": 4, "image_desc": "nightmare", "answer": "nightmare" },
+            { "num": 5, "image_desc": "fear", "answer": "fear" },
+            { "num": 6, "image_desc": "share", "answer": "share" },
+            { "num": 7, "image_desc": "square", "answer": "square" },
+            { "num": 8, "image_desc": "care", "answer": "care" },
+            { "num": 9, "image_desc": "pier", "answer": "pier" },
+            { "num": 10, "image_desc": "fare", "answer": "fare" },
+            { "num": 11, "image_desc": "stair", "answer": "stair" },
+            { "num": 12, "image_desc": "clear", "answer": "clear" },
+            { "num": 13, "image_desc": "cheer", "answer": "cheer" },
+            { "num": 14, "image_desc": "chair", "answer": "chair" },
+            { "num": 15, "image_desc": "hair", "answer": "hair" }
+          ],
+          "classify_columns": ["/ɪə/", "/eə/"],
+          "classify_answers": {
+            "/ɪə/": ["near", "here", "fear", "pier", "clear", "cheer"],
+            "/eə/": ["there", "nightmare", "share", "square", "care", "fare", "stair", "chair", "hair"]
+          },
+          "note": "Đáp án lấy từ trang Keys (tr.114) của sách."
+        },
+        {
+          "id": "8.A.2",
+          "type": "guided_speaking",
+          "instruction": "Practise reading out these sentences, paying attention to the underlined words.",
+          "page": 60,
+          "sentences": [
+            "The film is about a nice girl with fair hair.",
+            "They made a lot of films here over many years.",
+            "Look at the aeroplane up there, flying in the air.",
+            "Where is the nearest square?",
+            "She is sitting on the bottom stair with her foot on a chair.",
+            "I can clearly hear her voice."
+          ],
+          "note": "Bài luyện phát âm — không có đáp án cố định, không phù hợp chấm tự động."
+        }
+      ]
+    },
+    {
+      "section": "B",
+      "title": "Vocabulary & Grammar",
+      "exercises": [
+        {
+          "id": "8.B.1",
+          "type": "matching",
+          "instruction": "Match the film types (a-f) in the box with the film titles and their plots (1-6).",
+          "page": 60,
+          "column_a": {
+            "1": "The Chainsaw Massacre at Halloween — A killer with a severe mental illness escapes from a hospital on Halloween.",
+            "2": "Men in Black — Two men try to save Earth after aliens threaten to destroy it.",
+            "3": "Pirates of Southeast Asia — About modern-day pirates in Indonesia and Malaysia.",
+            "4": "The Wise Little Hen — Donald Duck and his friend, Peter Pig, try to avoid work until Mrs Hen teaches the value of labour.",
+            "5": "The Lord of the Rings — A hobbit (a small, friendly creature with big feet) must destroy a magic ring before an evil wizard gets it.",
+            "6": "Mr Bean's Holiday — Many funny things happen after Mr Bean wins a trip to Cannes. He unintentionally separates a young boy from his father and must help the two reunite."
+          },
+          "column_b": {
+            "a": "documentary",
+            "b": "fantasy",
+            "c": "horror film",
+            "d": "comedy",
+            "e": "science fiction film",
+            "f": "cartoon"
+          },
+          "answers": { "1": "c", "2": "e", "3": "a", "4": "f", "5": "b", "6": "d" },
+          "note": "Đáp án lấy từ trang Keys (tr.114)."
+        },
+        {
+          "id": "8.B.2",
+          "type": "open_table",
+          "instruction": "Put the words from the box in the correct columns.",
+          "page": 61,
+          "word_bank": ["boring", "enjoyable", "entertaining", "funny", "dull", "awful", "moving", "gripping", "amazing", "confusing"],
+          "rows": ["Positive", "Negative"],
+          "suggested_answers": {
+            "Positive": ["enjoyable", "entertaining", "funny", "moving", "gripping", "amazing"],
+            "Negative": ["boring", "dull", "awful", "confusing"]
+          },
+          "note": "Đáp án lấy từ trang Keys (tr.114)."
+        },
+        {
+          "id": "8.B.3",
+          "type": "multiple_choice",
+          "instruction": "Choose the correct word to complete each of the following sentences.",
+          "page": 61,
+          "questions": [
+            { "num": 1, "stem": "Tom doesn't like watching (frightening / entertaining) films. He always has bad dreams.", "options": { "A": "frightening", "B": "entertaining" }, "answer": "A" },
+            { "num": 2, "stem": "The film was so (awful / moving) that she cried at the end.", "options": { "A": "awful", "B": "moving" }, "answer": "B" },
+            { "num": 3, "stem": "I can't stand war films. They're too (amazing / violent).", "options": { "A": "amazing", "B": "violent" }, "answer": "B" },
+            { "num": 4, "stem": "She laughed all the way through the film. It was so (funny / confusing).", "options": { "A": "funny", "B": "confusing" }, "answer": "A" },
+            { "num": 5, "stem": "Many children don't usually like documentaries because they think documentaries are often (boring / gripping).", "options": { "A": "boring", "B": "gripping" }, "answer": "A" },
+            { "num": 6, "stem": "If you like (scary / dull) films about ghosts, monsters and crazy killers, you're a fan of horror films.", "options": { "A": "scary", "B": "dull" }, "answer": "A" }
+          ]
+        },
+        {
+          "id": "8.B.4",
+          "type": "picture_fill_blank",
+          "instruction": "Find the odd one out.",
+          "page": 61,
+          "questions": [
+            { "num": 1, "stem": "cartoon, documentary, fantasy, opera, comedy", "answer": "opera" },
+            { "num": 2, "stem": "silent, black-and-white, director, full-length, short", "answer": "director" },
+            { "num": 3, "stem": "actor, director, cameraman, extra, trailer", "answer": "trailer" },
+            { "num": 4, "stem": "amazing, fascinating, thrilling, entertaining, delicious", "answer": "delicious" },
+            { "num": 5, "stem": "shoot, play, act, laugh, direct", "answer": "laugh" }
+          ],
+          "note": "Đáp án lấy từ trang Keys (tr.114)."
+        },
+        {
+          "id": "8.B.5",
+          "type": "multiple_choice",
+          "instruction": "Choose the best answer A, B, or C to complete each sentence.",
+          "page": 61,
+          "questions": [
+            { "num": 1, "stem": "Tom Cruise, Penélope Cruz and Cameron Diaz ____ in the film Vanilla Sky.", "options": { "A": "direct", "B": "star", "C": "make" }, "answer": "B" },
+            { "num": 2, "stem": "The film begins with a terrible disaster, but it has a happy ____.", "options": { "A": "ending", "B": "acting", "C": "setting" }, "answer": "A" },
+            { "num": 3, "stem": "The film received positive ____. Most critics say it's a must-see.", "options": { "A": "reviews", "B": "reports", "C": "summaries" }, "answer": "A" },
+            { "num": 4, "stem": "Most people say the film is a must-see – the acting is excellent and the ____ is gripping.", "options": { "A": "character", "B": "style", "C": "plot" }, "answer": "C" },
+            { "num": 5, "stem": "Jean Dujardin won the best ____ award in 2011 for the film The Artist.", "options": { "A": "actor", "B": "character", "C": "writer" }, "answer": "A" },
+            { "num": 6, "stem": "Tom Cruise played the leading ____ in the film Mission Impossible.", "options": { "A": "performance", "B": "part", "C": "action" }, "answer": "B" },
+            { "num": 7, "stem": "– \"Do you like the film?\" – \"____\"", "options": { "A": "No, it's too frightening for me.", "B": "Sure. What film shall we see?", "C": "Who stars in it?" }, "answer": "A" },
+            { "num": 8, "stem": "The film broke box office records and became a ____.", "options": { "A": "thriller", "B": "master", "C": "blockbuster" }, "answer": "C" }
+          ]
+        },
+        {
+          "id": "8.B.6",
+          "type": "fill_blank_word_bank",
+          "instruction": "Complete the sentences using although / though or however.",
+          "page": 62,
+          "word_bank": ["although", "though", "however"],
+          "passage_template": "1. It was cold and wet. ____, he put on his swimsuit and went to the swimming pool.\n2. ____ he has problems with his health, he is an active actor.\n3. ____ she was an amateur actress, she was chosen for the leading part in the film.\n4. Her father gave her a lot of good advice. ____, she didn't follow it.\n5. ____ I had a lot of studying to do, I went to the cinema.",
+          "answers": {
+            "1": "However",
+            "2": "Although/Though",
+            "3": "Although/Though",
+            "4": "However",
+            "5": "Although/Though"
+          },
+          "note": "Đáp án lấy từ trang Keys (tr.115)."
+        },
+        {
+          "id": "8.B.7",
+          "type": "fill_blank_word_bank",
+          "instruction": "Read the text. Fill in the gaps with although / though or however.",
+          "page": 62,
+          "word_bank": ["although", "though", "however"],
+          "passage_template": "(1) ____ Mai had lots of homework to do, she agreed to go shopping with her friend Mark. Mark loves to buy jeans and T-shirts. (2) ____, Mai prefers to buy sportswear. (3) ____ it rained, they set off on Sunday morning for the town centre. Mark, as always, had more cash than Mai. (4) ____, Mai was better at buying things at a lower price. They were hungry and had lunch at the local burger bar. (5) ____ they had spent nearly all their money, there were still a few shops that Mark wanted to visit. (6) ____ they had aching feet, Mai and Mark ended up spending a few more hours shopping.",
+          "answers": {
+            "1": "Although/Though",
+            "2": "However",
+            "3": "Although/Though",
+            "4": "However",
+            "5": "Although/Though",
+            "6": "Although/Though"
+          },
+          "note": "Đáp án lấy từ trang Keys (tr.115)."
+        }
+      ]
+    },
+    {
+      "section": "C",
+      "title": "Speaking",
+      "exercises": [
+        {
+          "id": "8.C.1",
+          "type": "matching",
+          "instruction": "Match A with B to make suitable conversations. Then practise each conversation with your friend.",
+          "page": 63,
+          "column_a": {
+            "1": "Shall we go to the cinema tomorrow afternoon?",
+            "2": "Shall we go and see a film on Saturday morning?",
+            "3": "Let's go to see Crazy Coconut tonight.",
+            "4": "Do you like horror films?",
+            "5": "Which cinema shall we go to? How about the Centre Cinema?",
+            "6": "How about going to see a science fiction film tonight?"
+          },
+          "column_b": {
+            "a": "I'm afraid I can't. I'm busy at the weekend. How about on a weekday instead?",
+            "b": "That's a good idea. I quite like romantic comedies.",
+            "c": "I'd love to, but it's too far for me to travel.",
+            "d": "I'm not keen on science fiction films. I'd prefer to watch something else.",
+            "e": "I'd love to, but I have extra classes every afternoon.",
+            "f": "No, I find them too frightening. They make me have bad dreams at night."
+          },
+          "answers": { "1": "e", "2": "a", "3": "b", "4": "f", "5": "c", "6": "d" },
+          "note": "Đáp án lấy từ trang Keys (tr.115)."
+        },
+        {
+          "id": "8.C.2",
+          "type": "dialogue_matching",
+          "instruction": "Complete the conversation with the sentences (A-E) in the box. Then practise it with your friend.",
+          "page": 63,
+          "dialogue": [
+            { "speaker": "Mark", "blank": 1 },
+            { "speaker": "Mark", "line": "How about seeing it tomorrow?" },
+            { "speaker": "Mai", "line": "I'd love to, but I'm having a party at my uncle's house." },
+            { "speaker": "Mark", "blank": 2 },
+            { "speaker": "Mark", "line": "I really want to see it." },
+            { "speaker": "Mai", "line": "That would be great. I'll be free after 4 p.m." },
+            { "speaker": "Mark", "line": "That's OK." },
+            { "speaker": "Mark", "blank": 3 },
+            { "speaker": "Mai", "line": "I can be there at 4:30." },
+            { "speaker": "Mark", "line": "OK. Don't be late." },
+            { "speaker": "Mark", "blank": 4 },
+            { "speaker": "Mai", "line": "That's fine." },
+            { "speaker": "Mai", "blank": 5 }
+          ],
+          "options": {
+            "A": "I'll get the tickets for the 4:45 show.",
+            "B": "Our Holiday is on at the Town Cinema.",
+            "C": "Err ... We can go after that.",
+            "D": "See you then.",
+            "E": "What time can you be at the Town Cinema?"
+          },
+          "answers": { "1": "B", "2": "C", "3": "E", "4": "A", "5": "D" },
+          "note": "Đáp án lấy từ trang Keys (tr.115). Đã sắp xếp lại thứ tự lời thoại theo đúng vị trí chỗ trống trong sách."
+        }
+      ]
+    },
+    {
+      "section": "D",
+      "title": "Reading",
+      "exercises": [
+        {
+          "id": "8.D.1",
+          "type": "picture_fill_blank",
+          "instruction": "Read the text about the film The Theory of Everything and answer the questions that follow.",
+          "page": 64,
+          "passage": "The Theory of Everything is a biographical film, directed by James Marsh in 2014. It stars Eddie Redmayne and Felicity Jones.\nThe film is about the life of the scientist Stephen Hawking. It was adapted by Anthony McCarten from the book Travelling to Infinity: My Life with Stephen by the scientist's wife, Jane Hawking. The film is set in England in the early 1960s. It tells the story of Hawking's relationship with his wife, the diagnosis of his motor neuron disease and his success in the field of physics.\nThe film received positive reviews. People say it is a must-see. I agree, because the story is moving and the acting is excellent. The music is also incredible.\nAlthough The Theory of Everything is a little sad at times, its story is very interesting and there is a lot of action. Go and see it if you can.",
+          "questions": [
+            { "num": 1, "stem": "What kind of film is The Theory of Everything?", "answer": "It is a biographical film." },
+            { "num": 2, "stem": "Who stars in it?", "answer": "Eddie Redmayne and Felicity Jones star in the film." },
+            { "num": 3, "stem": "What is it about?", "answer": "It is about the life of the scientist Stephen Hawking." },
+            { "num": 4, "stem": "What book was it adapted from?", "answer": "It was adapted from the book Travelling to Infinity: My Life with Stephen." },
+            { "num": 5, "stem": "What do people say about the film?", "answer": "They say it is a must-see." }
+          ],
+          "note": "Đáp án lấy từ trang Keys (tr.115)."
+        },
+        {
+          "id": "8.D.2",
+          "type": "paragraph_ordering",
+          "instruction": "This is Nick's letter to his friend telling him about his favourite film. Put the following paragraphs in the correct order.",
+          "page": 64,
+          "paragraphs": [
+            { "label": "A", "text": "Titanic is a romantic film, which was directed by James Cameron. It stars Leonardo DiCaprio and Kate Winslet. The film is about the sinking of the ship Titanic on its first voyage. The main characters are Jack Dawson and Rose DeWitt Bukater. Although they are from different social classes, and Rose is already engaged, they fall in love. I won't tell you what happens in case you want to watch it!" },
+            { "label": "B", "text": "What about you? What type of films do you like? Have you been to the cinema lately? What did you see? Write back and tell me.\nYours,\nNick" },
+            { "label": "C", "text": "Dear Mark,\nHow are you? I'm writing to tell you about the great film I saw last Saturday at the cinema. I went to see Titanic with some friends." },
+            { "label": "D", "text": "Titanic received a lot of positive reviews because the plot is moving and the acting is excellent. The special effects, visuals, and music are also incredible. I think it is worth watching." }
+          ],
+          "answer_order": ["C", "A", "D", "B"],
+          "note": "Đáp án lấy từ trang Keys (tr.115). Dạng bài mới 'paragraph_ordering' — cần thiết kế giao diện kéo-thả hoặc chọn thứ tự riêng."
+        }
+      ]
+    },
+    {
+      "section": "E",
+      "title": "Writing",
+      "exercises": [
+        {
+          "id": "8.E.1",
+          "type": "picture_fill_blank",
+          "instruction": "Rewrite these sentences using however as in the example. Example: Although she hated him at first, she fell in love with him in the end. → She hated him at first. However, she fell in love with him in the end.",
+          "page": 65,
+          "questions": [
+            { "num": 1, "stem": "Although the film didn't receive good reviews from critics, many people went to see it.", "answer": "The film didn't receive good reviews from critics. However, many people went to see it." },
+            { "num": 2, "stem": "Although the story is silly, many people enjoy the film.", "answer": "The story is silly. However, many people enjoy the film." },
+            { "num": 3, "stem": "Although they spent millions of dollars on making the film, it wasn't successful as expected.", "answer": "They spent millions of dollars on making the film. However, it wasn't successful as expected." },
+            { "num": 4, "stem": "Although Jaws is one of Spielberg's first films, it is one of his best.", "answer": "Jaws is one of Spielberg's first films. However, it is one of his best." },
+            { "num": 5, "stem": "Although the film was a bit frightening, I really enjoyed it.", "answer": "The film was a bit frightening. However, I really enjoyed it." }
+          ],
+          "note": "Đáp án lấy từ trang Keys (tr.115)."
+        },
+        {
+          "id": "8.E.2",
+          "type": "guided_writing_paragraph",
+          "instruction": "a. Think of your favourite film and make notes for the headings. b. Now write a letter (60-80 words) to your penfriend about your favourite film. Use the text (in Reading 1) and the letter (in Reading 2) to help you.",
+          "page": 65,
+          "word_web_prompts": ["Film title", "Film type", "Setting", "Star(s)", "Summary of the plot", "Other (acting/sound/music/costumes/special effects, etc.)", "Recommendation"],
+          "note": "Bài viết tự do cá nhân — không có đáp án cố định."
+        }
+      ]
+    }
+  ]
+}

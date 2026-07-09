@@ -9,16 +9,18 @@ import { CategorizationRenderer } from './CategorizationRenderer';
 import { InlineFillBlankRenderer } from './InlineFillBlankRenderer';
 import { CrosswordRenderer } from './CrosswordRenderer';
 import { MathText } from './MathText';
+import { BookOpen } from 'lucide-react';
 
 interface AssessmentRendererProps {
   questions: any[];
   mode: 'practice' | 'quiz' | 'exam' | 'review' | 'challenge';
   onComplete: (answers: any[]) => void;
   timerSeconds?: number;
+  sourceBookUrl?: string;
 }
 
 
-export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds }: AssessmentRendererProps) {
+export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, sourceBookUrl }: AssessmentRendererProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<any[]>([]);
   const [hasAnswered, setHasAnswered] = useState(false);
@@ -307,6 +309,24 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds }
           />
         );
       }
+      case 'true_false_no_info': {
+        // Same shape as true_false but with a third "No Information" option (T/F/NI reading tasks).
+        const mcQuestion = currentQuestion.statement || currentQuestion.question;
+        const mcChoices = ["True", "False", "No Information"];
+        const answerMap: Record<string, number> = { T: 0, TRUE: 0, F: 1, FALSE: 1, NI: 2 };
+        const mcCorrectIndex = answerMap[String(currentQuestion.correct_answer).toUpperCase()] ?? -1;
+        return (
+          <MultipleChoiceRenderer
+            key={`tfni-${currentIndex}`}
+            question={mcQuestion}
+            options={mcChoices}
+            correctIndex={mcCorrectIndex}
+            onAnswer={handleAnswer}
+            disabled={hasAnswered}
+            shuffle={false}
+          />
+        );
+      }
       case 'shape_identify': {
         const shapeName = currentQuestion.correct_answer;
         let svg = null;
@@ -423,6 +443,17 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds }
           Question {currentIndex + 1} of {questions.length}
         </div>
         <div className="flex items-center gap-2">
+          {sourceBookUrl && (
+            <a
+              href={sourceBookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-surface-raised hover:bg-slate-700 text-cyan-400 text-xs font-bold transition-colors border border-line"
+            >
+              <BookOpen size={14} />
+              Xem sách
+            </a>
+          )}
           <div className="flex text-emerald-400 font-bold bg-surface-raised px-3 py-1 rounded-lg">
             ⭐ Score: {answers.filter(a => a.isCorrect).length * 10}
           </div>

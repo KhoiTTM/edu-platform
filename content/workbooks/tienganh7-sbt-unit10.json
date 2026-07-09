@@ -1,0 +1,342 @@
+{
+  "unit": 10,
+  "title": "Unit 10: Energy Sources",
+  "source": "Tiếng Anh 7 - Global Success - Sách bài tập, trang 77-83",
+  "sections": [
+    {
+      "section": "A",
+      "title": "Pronunciation",
+      "exercises": [
+        {
+          "id": "10.A.1",
+          "type": "multiple_choice",
+          "instruction": "Find the word which has a different stress. Say them aloud.",
+          "page": 77,
+          "questions": [
+            { "num": 1, "options": { "A": "energy", "B": "plentiful", "C": "another", "D": "dangerous" }, "answer": "C" },
+            { "num": 2, "options": { "A": "easily", "B": "consumption", "C": "government", "D": "negative" }, "answer": "B" },
+            { "num": 3, "options": { "A": "syllables", "B": "expensive", "C": "abundant", "D": "convenient" }, "answer": "A" },
+            { "num": 4, "options": { "A": "expensive", "B": "advantage", "C": "enormous", "D": "distances" }, "answer": "D" },
+            { "num": 5, "options": { "A": "attention", "B": "holiday", "C": "pollution", "D": "effective" }, "answer": "B" }
+          ]
+        },
+        {
+          "id": "10.A.2",
+          "type": "stress_marking",
+          "instruction": "Read the following sentences and mark (') the stressed syllable in the underlined words.",
+          "page": 77,
+          "questions": [
+            { "num": 1, "stem": "Solar energy is renewable and abundant.", "underlined": ["energy", "abundant"], "answer": "Solar 'energy is renewable and a'bundant." },
+            { "num": 2, "stem": "The government is looking for effective sources of energy to replace coal.", "underlined": ["government", "effective", "energy"], "answer": "The 'government is looking for ef'fective sources of 'energy to replace coal." },
+            { "num": 3, "stem": "Using coal is polluting the environment.", "underlined": ["polluting"], "answer": "Using coal is pol'luting the environment." },
+            { "num": 4, "stem": "There are three syllables in the word \"exercise\".", "underlined": ["syllables", "exercise"], "answer": "There are three 'syllables in the word \"'exercise\"." },
+            { "num": 5, "stem": "I think nuclear power is not only expensive but also dangerous to our environment.", "underlined": ["expensive", "dangerous"], "answer": "I think nuclear power is not only ex'pensive but also 'dangerous to our environment." },
+            { "num": 6, "stem": "They are reducing energy consumption as much as possible.", "underlined": ["reducing", "energy", "consumption", "possible"], "answer": "They are re'ducing 'energy con'sumption as much as 'possible." }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "B",
+      "title": "Vocabulary & Grammar",
+      "exercises": [
+        {
+          "id": "10.B.1",
+          "type": "fill_blank_word_bank",
+          "instruction": "Complete the sentences with the phrases in the box. There is one extra phrase.",
+          "page": 77,
+          "word_bank": {
+            "a": "electrical appliances",
+            "b": "low energy light bulbs",
+            "c": "solar panels",
+            "d": "new source of energy",
+            "e": "non-renewable energy sources",
+            "f": "plastic bottles",
+            "g": "the environment"
+          },
+          "questions": [
+            { "num": 1, "stem": "We can protect ____ by reducing our use of coal and gas.", "answer": "g" },
+            { "num": 2, "stem": "The workers are putting ____ on the roof of my house.", "answer": "c" },
+            { "num": 3, "stem": "We are putting the ____ in the kitchen tomorrow.", "answer": "b" },
+            { "num": 4, "stem": "She turns off ____ when not using them.", "answer": "a" },
+            { "num": 5, "stem": "Do they recycle ____?", "answer": "f" },
+            { "num": 6, "stem": "They are looking for a ____ now.", "answer": "d" }
+          ]
+        },
+        {
+          "id": "10.B.2",
+          "type": "crossword",
+          "instruction": "Do the crossword puzzle and complete the sentences.",
+          "page": 78,
+          "clues": {
+            "across": [
+              { "num": 1, "clue": "Solar energy is ____ and it can be replaced easily.", "answer": "plentiful" },
+              { "num": 2, "clue": "Hydro energy is ____ because it requires dams.", "answer": "expensive" },
+              { "num": 3, "clue": "Coal, oil and natural gas are non-renewable energy sources. Burning them is ____ to the environment.", "answer": "harmful" }
+            ],
+            "down": [
+              { "num": 4, "clue": "The alternative sources of energy like the sun and wind are not only plentiful but also ____ and safe to use.", "answer": "clean" },
+              { "num": 5, "clue": "Wind energy is convenient and ____.", "answer": "abundant" },
+              { "num": 6, "clue": "Coal is ____ and it can be replaced by renewable sources.", "answer": "limited" },
+              { "num": 7, "clue": "For many people living in rural areas, biogas is a ____ source of energy.", "answer": "cheap" },
+              { "num": 8, "clue": "Nuclear energy can provide enough electricity for the world's needs, but it is ____.", "answer": "dangerous" }
+            ]
+          },
+          "note": "Đáp án lấy từ Keys (tr.118, phần B.2 liệt kê 8 tính từ theo thứ tự 1-8: plentiful, expensive, harmful, clean, abundant, limited, cheap, dangerous), khớp với các ô chữ cái đã đọc được trên hình quét (ví dụ 1 Across bắt đầu 'pl...', 2 Across 'exp...', 8 Down 'd...a...n...')."
+        },
+        {
+          "id": "10.B.3",
+          "type": "fill_blank_verb_form",
+          "instruction": "Complete the sentences, using the verbs in brackets in the present continuous.",
+          "page": 78,
+          "passage_template": "1. The boys (not do) ____ their homework at the moment. They (watch) ____ TV instead.\n2. Mai (read) ____ about renewable energy, and Nam (do) ____ a project on our local environment.\n3. The music (get) ____ louder and louder. Many people (put) ____ their hands over their ears.\n4. Her mother (not have) ____ a nap now. She (water) ____ the plants.\n5. My father (install) ____ a biogas cooker in the kitchen, and the workers (put) ____ solar panels on the roof of our house.",
+          "answers": {
+            "1a": "aren't doing",
+            "1b": "are watching",
+            "2a": "is reading",
+            "2b": "is doing",
+            "3a": "is getting",
+            "3b": "are putting",
+            "4a": "isn't having",
+            "4b": "is watering",
+            "5a": "is installing",
+            "5b": "are putting"
+          }
+        },
+        {
+          "id": "10.B.4",
+          "type": "sentence_building",
+          "instruction": "Make sentences, using the words and phrases below to help you. You can change the words/phrases or add necessary words.",
+          "page": 79,
+          "questions": [
+            { "num": 1, "prompt": "The teacher / give a talk / renewable energy / now.", "suggested_answer": "The teacher is giving a talk on renewable energy now." },
+            { "num": 2, "prompt": "The workers / build / huge hydro power station / this year.", "suggested_answer": "The workers are building a huge hydro power station this year." },
+            { "num": 3, "prompt": "The students / not study Unit 10 / at the moment.", "suggested_answer": "The students are not studying Unit 10 at the moment." },
+            { "num": 4, "prompt": "Nowadays, people in rural areas / use energy from the sun.", "suggested_answer": "Nowadays, people in rural areas are using energy from the sun." },
+            { "num": 5, "prompt": "The government / increase taxes on electricity / save energy.", "suggested_answer": "The government is increasing taxes on electricity to save energy." },
+            { "num": 6, "prompt": "We / reduce the use / nuclear energy / nowadays.", "suggested_answer": "We are reducing the use of nuclear energy nowadays." }
+          ],
+          "note": "Đáp án mẫu lấy từ trang Keys (tr.118)."
+        },
+        {
+          "id": "10.B.5",
+          "type": "fill_blank_verb_form",
+          "instruction": "Complete the sentences, using the present simple or present continuous.",
+          "page": 79,
+          "passage_template": "1. Lan always (call) ____ me when I (do) ____ my homework.\n2. The workers (put) ____ the solar panels on the hill when it suddenly (rain) ____.\n3. While we (look) ____ for information about energy sources, the electricity (go) ____ out.\n4. I often (play) ____ the piano in the evening, but tonight I (watch) ____ TV.\n5. Normally my father (water) ____ the vegetables in the garden, but today he (cook) ____ in the kitchen.\n6. They (have) ____ a lot of work to do, so they (not go) ____ to town tonight.\n7. He usually (come) ____ back home at one o'clock, but today he (work) ____ late.",
+          "answers": {
+            "1a": "calls",
+            "1b": "am doing",
+            "2a": "are putting",
+            "2b": "rains",
+            "3a": "are looking",
+            "3b": "goes",
+            "4a": "play",
+            "4b": "am watching",
+            "5a": "waters",
+            "5b": "is cooking",
+            "6a": "have",
+            "6b": "are not going",
+            "7a": "comes",
+            "7b": "is working"
+          }
+        },
+        {
+          "id": "10.B.6",
+          "type": "fill_blank_verb_form",
+          "instruction": "Put the verbs in brackets into the present simple or present continuous.",
+          "page": 79,
+          "passage_template": "My parents work at a big hydro power station. My mother (1. work) ____ in the design section and my father (2. work) ____ in the sales section. He often (3. go) ____ abroad on business. At the moment, he (4. travel) ____ round America, and next month he (5. meet) ____ a customer in Canada. He (6. like) ____ travelling and (7. enjoy) ____ his present trip, but he always (8. feel) ____ happy to get back home.",
+          "answers": {
+            "1": "works",
+            "2": "works",
+            "3": "goes",
+            "4": "is travelling",
+            "5": "is meeting",
+            "6": "likes",
+            "7": "is enjoying",
+            "8": "feels"
+          }
+        }
+      ]
+    },
+    {
+      "section": "C",
+      "title": "Speaking",
+      "exercises": [
+        {
+          "id": "10.C.1",
+          "type": "matching",
+          "instruction": "Match the questions with the answers. Then say them aloud.",
+          "page": 80,
+          "column_a": {
+            "1": "What does energy mean?",
+            "2": "What does solar energy mean?",
+            "3": "What does hydro energy mean?",
+            "4": "What does a three-syllable word mean?",
+            "5": "What does a non-renewable source mean?"
+          },
+          "column_b": {
+            "a": "It's energy that comes from water.",
+            "b": "It's a source that we cannot replace after we use it.",
+            "c": "It's the word that has three syllables.",
+            "d": "It's power that can provide light, heat or electricity.",
+            "e": "It's energy that comes from the sun."
+          },
+          "answers": { "1": "d", "2": "e", "3": "a", "4": "c", "5": "b" }
+        },
+        {
+          "id": "10.C.2",
+          "type": "dialogue_matching",
+          "instruction": "Mi and Tony are talking about energy sources. Choose the sentences (a-e) to fill in the gaps (1-5) of the conversation.",
+          "page": 80,
+          "dialogue": [
+            { "speaker": "Mi", "line": "Hi, Tony. I'm doing a project on energy sources, but I don't understand what non-renewable sources are." },
+            { "speaker": "Tony", "blank": 1 },
+            { "speaker": "Mi", "line": "Oh. Where do they come from?" },
+            { "speaker": "Tony", "blank": 2 },
+            { "speaker": "Mi", "line": "What will happen to us when they run out?" },
+            { "speaker": "Tony", "blank": 3 },
+            { "speaker": "Mi", "line": "So what will we do then?" },
+            { "speaker": "Tony", "blank": 4, "trailing": "They are abundant and safe to use." },
+            { "speaker": "Mi", "line": "Oh, I see. What do we call them?" },
+            { "speaker": "Tony", "blank": 5, "trailing": "They are renewable because they cannot run out." },
+            { "speaker": "Mi", "line": "Thank you." }
+          ],
+          "options": {
+            "a": "We won't have any more energy.",
+            "b": "We'll have to use energy sources such as wind, water and sun.",
+            "c": "Well, they are sources that we can't replace after we use them.",
+            "d": "We call them renewable sources.",
+            "e": "They come from different sources like coal, oil and natural gas."
+          },
+          "answers": { "1": "c", "2": "e", "3": "a", "4": "b", "5": "d" }
+        },
+        {
+          "id": "10.C.3",
+          "type": "guided_speaking",
+          "instruction": "Complete the chart. Then ask and answer the questions about advantages and disadvantages of renewable and non-renewable sources.",
+          "page": 81,
+          "chart": {
+            "renewable_sources": ["wind", null, null],
+            "non_renewable_sources": [null, null, null]
+          },
+          "example": {
+            "renewable": "A: What type of source is solar energy? B: It's a renewable source. A: What are its advantages? B: It's available and clean to use. A: What are its disadvantages? B: It doesn't work on cloudy days or at night.",
+            "non_renewable": "A: What type of source is coal? B: It's a non-renewable source. A: What are its advantages? B: It's rather cheap and we can find it in lots of places. A: What are its disadvantages? B: When we burn coal, it causes pollution."
+          },
+          "note": "Bài nói tự do, sơ đồ chỉ có sẵn 1 gợi ý ('wind'), phần còn lại học sinh tự điền — không có đáp án cố định trong Keys."
+        }
+      ]
+    },
+    {
+      "section": "D",
+      "title": "Reading",
+      "exercises": [
+        {
+          "id": "10.D.1",
+          "type": "multiple_choice_cloze",
+          "instruction": "Read the passage and choose the best option (A, B, or C) to complete each sentence.",
+          "page": 81,
+          "passage": "We can use renewable and non-renewable energy sources to make electricity.\nMost of our electricity comes from power stations that use fossil fuels like coal, oil and gas. We call them non-renewable sources because they will eventually run out. Unfortunately, burning fossil fuels produces lots of greenhouse gases which cause global warming.\nWe also use renewable energy sources like the sun, wind and water to make electricity. We can use them again and again because they cannot run out. They do not produce greenhouse gases so they are much less harmful to the environment.",
+          "questions": [
+            { "num": 1, "stem": "Power stations use fossil fuels like ____ to produce electricity.", "options": { "A": "coal, oil and gas", "B": "coal and gas", "C": "oil and gas" }, "answer": "A" },
+            { "num": 2, "stem": "Burning fossil fuels produces ____ which cause global warming.", "options": { "A": "greenhouse gases", "B": "carbon dioxide", "C": "methane" }, "answer": "A" },
+            { "num": 3, "stem": "We can use the ____ to make electricity.", "options": { "A": "sun and water", "B": "sun and wind", "C": "sun, wind and water" }, "answer": "C" },
+            { "num": 4, "stem": "The renewable sources can be used again and again because they ____.", "options": { "A": "can run out", "B": "cannot run out", "C": "should run out" }, "answer": "B" },
+            { "num": 5, "stem": "Renewable sources are ____ harmful to the environment.", "options": { "A": "much more", "B": "much less", "C": "not less" }, "answer": "B" }
+          ]
+        },
+        {
+          "id": "10.D.2",
+          "type": "open_table",
+          "instruction": "Read the passage and complete the table.",
+          "page": 82,
+          "passage": "Our environment is in trouble. People and industries are polluting the air, rivers, lakes and seas. There are many things you can do to help the environment. Here are a few.\nCars: The burning of petroleum is one of the biggest sources of carbon monoxide (CO) that causes global warming. CO thins the ozone layer, which protects us from the sunrays. So try walking, bicycling or using public transportation.\nEnergy: The biggest use of home energy is for heating and cooling homes. It costs a lot of money. So don't use air-conditioners too often, especially at night. Replace regular light bulbs with low energy light bulbs, which use less energy.\nWater: Showers use a lot of water. Buying a special \"low-flow\" shower head or taking shorter showers can cut this use in half.",
+          "columns": ["Problems", "Solutions"],
+          "rows": ["Cars", "Energy", "Water"],
+          "suggested_answers": {
+            "Cars": {
+              "Problems": "The burning of petroleum produces carbon monoxide that causes global warming. CO thins the ozone layer.",
+              "Solutions": "Try walking, bicycling, or using public transportation."
+            },
+            "Energy": {
+              "Problems": "The use of home energy costs a lot of money.",
+              "Solutions": "Don't use air-conditioners too often. Replace regular light bulbs with low energy light bulbs."
+            },
+            "Water": {
+              "Problems": "Showers use a lot of water.",
+              "Solutions": "Buy a special \"low-flow\" shower head. Take shorter showers."
+            }
+          },
+          "note": "Đáp án 'Suggested answer' lấy từ trang Keys (tr.119)."
+        },
+        {
+          "id": "10.D.3",
+          "type": "fill_blank_word_bank",
+          "instruction": "Complete the passage with appropriate phrases in the box.",
+          "page": 82,
+          "word_bank": {
+            "a": "causing climate change",
+            "b": "walk or cycle",
+            "c": "low energy light bulbs",
+            "d": "powering our appliances",
+            "e": "turn off the lights"
+          },
+          "passage_template": "We use energy for almost everything we do: for heating our homes, cooking our meals and (1) ____. The use of energy is (2) ____ worldwide. It is responsible for many recent floods, droughts and storms. What should we do to avoid these problems? Firstly, we should (3) ____ before going to bed or when going out. Secondly, we should use (4) ____ at home. Thirdly, we should (5) ____ to school. In conclusion, we should use energy more wisely for our future.",
+          "answers": {
+            "1": "d",
+            "2": "a",
+            "3": "e",
+            "4": "c",
+            "5": "b"
+          }
+        }
+      ]
+    },
+    {
+      "section": "E",
+      "title": "Writing",
+      "exercises": [
+        {
+          "id": "10.E.1",
+          "type": "guided_writing",
+          "instruction": "Write the answers to the questions.",
+          "page": 83,
+          "questions": [
+            { "num": 1, "stem": "How much electricity do you use at home in a month?" },
+            { "num": 2, "stem": "How much do you pay for electricity a month?" },
+            { "num": 3, "stem": "What kind of electrical appliances do you use at home?" },
+            { "num": 4, "stem": "Do you turn off the lights before leaving a room?" },
+            { "num": 5, "stem": "What else can you do to save electricity?" }
+          ],
+          "note": "Bài viết tự do cá nhân — không có đáp án cố định."
+        },
+        {
+          "id": "10.E.2",
+          "type": "sentence_building",
+          "instruction": "Make advice or suggestions, using the words and phrases below to help you. You can add necessary words.",
+          "page": 83,
+          "questions": [
+            { "num": 1, "prompt": "Governments should do many things / the problems / energy shortage and pollution.", "suggested_answer": "Governments should do many things to solve the problems of energy shortage and pollution." },
+            { "num": 2, "prompt": "They should / encourage people / use public transportation.", "suggested_answer": "They should encourage people to use public transportation." },
+            { "num": 3, "prompt": "They / increase the tax / petrol.", "suggested_answer": "They should increase the tax on petrol." },
+            { "num": 4, "prompt": "They should / reduce the use / fossil fuels / coal, natural gas and oil.", "suggested_answer": "They should reduce the use of fossil fuels, such as coal, natural gas and oil." },
+            { "num": 5, "prompt": "They / should use / renewable energy sources / the sun, wind and water.", "suggested_answer": "They should use renewable energy sources like the sun, wind and water." },
+            { "num": 6, "prompt": "They / look for / new renewable energy sources / our future and the future of the planet.", "suggested_answer": "They should look for new renewable energy sources for our future and the future of the planet." }
+          ],
+          "note": "Đáp án mẫu lấy từ trang Keys (tr.119)."
+        },
+        {
+          "id": "10.E.3",
+          "type": "guided_writing_paragraph",
+          "instruction": "Write a short passage (60-80 words) about what governments should do to solve the problems of energy shortage and pollution. You can use the suggested ideas in 2.",
+          "page": 83,
+          "prompt_starter": "What should governments do to solve the problems of the energy shortage and pollution? Governments should ____",
+          "suggested_answer": "What should governments do to solve the problems of the energy shortage and pollution? Governments should encourage people to use public transportation. They should increase the tax on petrol. On the one hand, they should reduce the use of fossil fuels such as coal, natural gas and oil. On the other hand, they should use renewable energy sources like the sun, wind and water. Governments should look for new renewable energy sources for our future and the future of the planet.",
+          "note": "Đáp án mẫu ('Suggested answer') lấy từ trang Keys (tr.119)."
+        }
+      ]
+    }
+  ]
+}

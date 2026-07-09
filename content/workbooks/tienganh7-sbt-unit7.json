@@ -1,0 +1,351 @@
+{
+  "unit": 7,
+  "title": "Unit 7: Traffic",
+  "source": "Tiếng Anh 7 - Global Success - Sách bài tập, trang 53-59",
+  "sections": [
+    {
+      "section": "A",
+      "title": "Pronunciation",
+      "exercises": [
+        {
+          "id": "7.A.1",
+          "type": "multiple_choice",
+          "instruction": "Choose the word in which the underlined part is pronounced differently.",
+          "page": 53,
+          "questions": [
+            { "num": 1, "options": { "A": "flight", "B": "tricycle", "C": "sign", "D": "vehicle" }, "underline": "i", "answer": "D" },
+            { "num": 2, "options": { "A": "date", "B": "safety", "C": "traffic", "D": "station" }, "underline": "a", "answer": "C" },
+            { "num": 3, "options": { "A": "system", "B": "cyclist", "C": "crying", "D": "style" }, "underline": "y", "answer": "A" },
+            { "num": 4, "options": { "A": "survey", "B": "honey", "C": "obey", "D": "grey" }, "underline": "ey", "answer": "B" },
+            { "num": 5, "options": { "A": "weight", "B": "sleigh", "C": "eighty", "D": "height" }, "underline": "eigh", "answer": "D" }
+          ]
+        },
+        {
+          "id": "7.A.2",
+          "type": "generic",
+          "instruction": "Single-underline the words with the sound /eɪ/ and double-underline the words with the sound /aɪ/ in the dialogue. Then act out the dialogue with a friend.",
+          "page": 53,
+          "dialogue": [
+            { "speaker": "A", "line": "Excuse me. This train is late! I've been here since nine." },
+            { "speaker": "B", "line": "Which train, madam?" },
+            { "speaker": "A", "line": "The nine-twenty train to Miami." },
+            { "speaker": "B", "line": "I don't think there's a nine-twenty train to Miami." },
+            { "speaker": "A", "line": "But I wrote in my notebook: Miami train – nine-twenty." },
+            { "speaker": "B", "line": "Oh, no. The Miami train leaves at eight-twenty." },
+            { "speaker": "A", "line": "Eight-twenty?" },
+            { "speaker": "B", "line": "Yes. They changed the timetable at the end of July. It's the fourth of August today." },
+            { "speaker": "A", "line": "Oh, dear! What time does the train go to Miami today?" },
+            { "speaker": "B", "line": "Eight-twenty." },
+            { "speaker": "A", "line": "So the train isn't late! I'm late!" }
+          ],
+          "answer_key": {
+            "eɪ_single_underline": ["train", "late", "I've", "since", "nine", "which", "train", "madam", "nine-twenty", "train", "Miami", "nine-twenty", "train", "Miami", "wrote", "my", "Miami", "train", "nine-twenty", "Miami", "train", "eight-twenty", "eight-twenty", "they", "changed", "timetable", "eighth", "today", "train", "Miami", "today", "eight-twenty", "train", "late", "late"],
+            "note_pronunciation": "Đáp án chi tiết từ Keys chỉ hiển thị lại toàn bộ hội thoại đã gạch chân/gạch đôi, không tách riêng danh sách từng từ theo âm. Cần xem sách để đối chiếu chính xác gạch chân đơn (/eɪ/) và gạch đôi (/aɪ/)."
+          },
+          "note": "Bài luyện phát âm/đóng vai hội thoại — không phù hợp chấm trắc nghiệm tự động, chỉ hiển thị nội dung tham khảo."
+        }
+      ]
+    },
+    {
+      "section": "B",
+      "title": "Vocabulary & Grammar",
+      "exercises": [
+        {
+          "id": "7.B.1",
+          "type": "matching",
+          "instruction": "Match the words and phrases in column A with their definitions or explanations in column B.",
+          "page": 54,
+          "column_a": { "1": "road user", "2": "footpath", "3": "passenger", "4": "signal", "5": "traffic laws", "6": "pedestrian" },
+          "column_b": {
+            "a": "a movement of giving information",
+            "b": "system of rules that all road users must obey",
+            "c": "anyone who uses a road, such as a pedestrian, cyclist or motorist",
+            "d": "a path for people to walk along",
+            "e": "a person walking in the street or on the pavement and not travelling in a vehicle",
+            "f": "a person travelling in a vehicle but not driving it"
+          },
+          "answers": { "1": "c", "2": "d", "3": "f", "4": "a", "5": "b", "6": "e" }
+        },
+        {
+          "id": "7.B.2",
+          "type": "multiple_choice",
+          "instruction": "What does each sign mean? Choose the correct answer.",
+          "page": 54,
+          "questions": [
+            { "num": 1, "image_desc": "No entry sign (red circle with white bar)", "options": { "A": "Reduce your speed.", "B": "You should go fast.", "C": "Do not enter this road." }, "answer": "C" },
+            { "num": 2, "image_desc": "STOP sign (red octagon)", "options": { "A": "You can't stop here.", "B": "You must stop here.", "C": "You should go now." }, "answer": "B" },
+            { "num": 3, "image_desc": "Roadworks warning sign (triangle with worker digging)", "options": { "A": "Be careful! Roadworks ahead.", "B": "Watch out! There are workers.", "C": "Look out for children!" }, "answer": "A" },
+            { "num": 4, "image_desc": "Cattle warning sign (triangle with cow)", "options": { "A": "There are wild animals ahead.", "B": "There are cattle ahead.", "C": "You can buy cattle here." }, "answer": "B" },
+            { "num": 5, "image_desc": "No cars sign (blue circle with car and red line)", "options": { "A": "Cars and buses can pass.", "B": "Cars cannot be sold here.", "C": "Parking is not allowed." }, "answer": "C" }
+          ]
+        },
+        {
+          "id": "7.B.3",
+          "type": "matching",
+          "instruction": "Match the two halves in A and B to make sentences.",
+          "page": 54,
+          "column_a": {
+            "1": "When you cross a road,",
+            "2": "If you get lost in a city,",
+            "3": "When you see an old woman crossing the road,",
+            "4": "If your mum has a headache,",
+            "5": "You should cross the street",
+            "6": "There's an accident over there;"
+          },
+          "column_b": {
+            "a": "you should get her some medicine.",
+            "b": "you should help her.",
+            "c": "they should avoid that area.",
+            "d": "at the zebra crossing.",
+            "e": "you should ask a policeman.",
+            "f": "you should stop and look both ways."
+          },
+          "answers": { "1": "f", "2": "e", "3": "b", "4": "a", "5": "d", "6": "c" }
+        },
+        {
+          "id": "7.B.4",
+          "type": "multiple_choice",
+          "instruction": "Choose the correct option for each gap in each of the sentences.",
+          "page": 55,
+          "questions": [
+            {
+              "num": 1,
+              "stem": "– \"How did she get here?\"\n– \"____\"",
+              "options": { "A": "She came by train.", "B": "She came here last night.", "C": "The train was crowded.", "D": "Is it far from here?" },
+              "answer": "A"
+            },
+            {
+              "num": 2,
+              "stem": "My mum ____ the bus to work every morning, but my dad drives.",
+              "options": { "A": "catches", "B": "goes", "C": "does", "D": "runs" },
+              "answer": "A"
+            },
+            {
+              "num": 3,
+              "stem": "Traffic accidents can be prevented if people ____ the rules.",
+              "options": { "A": "remember", "B": "obey", "C": "go after", "D": "take care of" },
+              "answer": "B"
+            },
+            {
+              "num": 4,
+              "stem": "You should look right and left when you go ____ the road.",
+              "options": { "A": "along", "B": "up", "C": "down", "D": "across" },
+              "answer": "D"
+            },
+            {
+              "num": 5,
+              "stem": "Hurry up, or we'll ____ the last bus.",
+              "options": { "A": "lose", "B": "avoid", "C": "miss", "D": "drop" },
+              "answer": "C"
+            },
+            {
+              "num": 6,
+              "stem": "She's always tired. She ____ go to bed late every night.",
+              "options": { "A": "wouldn't", "B": "shouldn't", "C": "mightn't", "D": "couldn't" },
+              "answer": "B"
+            },
+            {
+              "num": 7,
+              "stem": "The public ____ in this city is quite good, and it's not expensive.",
+              "options": { "A": "journey", "B": "travel", "C": "vehicle", "D": "transport" },
+              "answer": "D"
+            },
+            {
+              "num": 8,
+              "stem": "____ is not very far from here to the harbour.",
+              "options": { "A": "There", "B": "This", "C": "It", "D": "That" },
+              "answer": "C"
+            }
+          ]
+        },
+        {
+          "id": "7.B.5",
+          "type": "picture_fill_blank",
+          "instruction": "Make questions for the underlined parts in the following sentences.",
+          "page": 55,
+          "questions": [
+            { "num": 1, "stem": "Most of my classmates go to school by bicycle.", "underline": "by bicycle", "answer": "How do most of your classmates go to school?" },
+            { "num": 2, "stem": "It is about three kilometres from my home to the nearest town.", "underline": "about three kilometres", "answer": "How far is it from your home to the nearest town?" },
+            { "num": 3, "stem": "It is about 170 km from Ho Chi Minh City to Can Tho City.", "underline": "about 170 km", "answer": "How far is it from Ho Chi Minh City to Can Tho City?" },
+            { "num": 4, "stem": "There are often traffic jams in the city centre during rush hour.", "underline": "during rush hour", "answer": "When are there often traffic jams in the city centre?" },
+            { "num": 5, "stem": "Trung usually rides his motorbike very carefully.", "underline": "very carefully", "answer": "How does Trung usually ride his motorbike?" }
+          ]
+        },
+        {
+          "id": "7.B.6",
+          "type": "fill_blank_word_bank",
+          "instruction": "Complete each sentence with should / shouldn't and a verb from the box.",
+          "page": 56,
+          "word_bank": ["call", "ask", "do", "finish", "ride", "drive"],
+          "passage_template": "1. He ____ his bike too fast. It's dangerous.\n2. It's a long way to the station. You ____ a taxi.\n3. I think the world ____ more to stop the spread of the disease.\n4. You ____ the teacher to help you if you don't understand the lesson.\n5. People ____ fast in the town centre.\n6. You ____ this project completely before you start the next one.",
+          "answers": {
+            "1": "shouldn't ride",
+            "2": "should call",
+            "3": "should do",
+            "4": "should ask",
+            "5": "shouldn't drive",
+            "6": "should finish"
+          }
+        },
+        {
+          "id": "7.B.7",
+          "type": "picture_fill_blank",
+          "instruction": "Fill in each blank with a word to complete each of the sentences.",
+          "page": 56,
+          "questions": [
+            { "num": 1, "stem": "At some stations you can buy a train ____ from the machine.", "answer": "ticket" },
+            { "num": 2, "stem": "There was a(n) ____ here this morning. The traffic was congested for an hour.", "answer": "accident" },
+            { "num": 3, "stem": "Try to start your journey early to avoid morning ____.", "answer": "traffic" },
+            { "num": 4, "stem": "A ____ crossing is a type of pedestrian crossing.", "answer": "zebra" },
+            { "num": 5, "stem": "The camel is the most common ____ of transport in the desert in some countries.", "answer": "means" },
+            { "num": 6, "stem": "There is a three-kilometre traffic ____ on the road approaching the town.", "answer": "jam" }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "C",
+      "title": "Speaking",
+      "exercises": [
+        {
+          "id": "7.C.1",
+          "type": "guided_speaking",
+          "instruction": "Work with a partner. Take turns to ask and answer about the means of transport you and your classmate use every day.",
+          "page": 56,
+          "example": {
+            "A": "How do you go to school every day?",
+            "B": "I usually walk. What about you?"
+          },
+          "note": "Bài nói tự do, không có đáp án cố định — không phù hợp chấm tự động."
+        },
+        {
+          "id": "7.C.2",
+          "type": "true_false_no_info",
+          "instruction": "Take the quiz. Tick (✓) T (True) or F (False).",
+          "page": 56,
+          "questions": [
+            { "num": 1, "stem": "The traffic rule is to keep to the right in Thailand.", "answer": "F" },
+            { "num": 2, "stem": "The camel is used for transport in the Sahara.", "answer": "T" },
+            { "num": 3, "stem": "People in Southwestern Viet Nam travel by boat a lot.", "answer": "T" },
+            { "num": 4, "stem": "Christopher Columbus travelled by boat.", "answer": "T" },
+            { "num": 5, "stem": "Dog sledding is a special form of transport used in Alaska.", "answer": "T" },
+            { "num": 6, "stem": "Santa Claus travels on a skateboard.", "answer": "F" }
+          ]
+        },
+        {
+          "id": "7.C.3",
+          "type": "guided_speaking",
+          "instruction": "Work with a partner. Talk about the means of transport you should use if you are in the following places, and explain why.",
+          "page": 57,
+          "word_bank": ["boat", "car", "camel", "motorbike"],
+          "questions": [
+            { "num": 1, "image_desc": "desert", "suggested_answer": "The camel. Because you can't use other means of transport." },
+            { "num": 2, "image_desc": "canal city (Venice-like)", "suggested_answer": "The boat. Because it can travel on water." },
+            { "num": 3, "image_desc": "crowded city street", "suggested_answer": "The motorbike. Because it is quick and convenient." }
+          ],
+          "note": "Đáp án mẫu (Sample answers) từ Keys — học sinh có thể trả lời khác miễn hợp lý."
+        }
+      ]
+    },
+    {
+      "section": "D",
+      "title": "Reading",
+      "exercises": [
+        {
+          "id": "7.D.1",
+          "type": "true_false_no_info",
+          "instruction": "Read the following passage and decide whether the statements are true (T) or false (F).",
+          "page": 57,
+          "passage": "Who are the best drivers? According to a recent survey, young and inexperienced drivers are the most likely to have an accident. Older drivers are more careful. Young men have the worst accident record of all. They often drive faster cars with bigger engines. One of the most interesting findings in the survey is that passengers can affect the driver. When young male drivers drive their friends, their driving becomes worse. When their wives or girlfriends are in the car; however, their driving improves. But this is not true for women. Their driving is more dangerous when their husbands or boyfriends are in the car. However, if their children are riding in the car, they drive more slowly and safely.",
+          "questions": [
+            { "num": 1, "stem": "According to the survey, young and inexperienced drivers are the most likely to have an accident.", "answer": "T" },
+            { "num": 2, "stem": "Generally, older men are likely to drive fast cars with big engines.", "answer": "F" },
+            { "num": 3, "stem": "Passengers have an effect on the driver.", "answer": "T" },
+            { "num": 4, "stem": "When men have their wives or girlfriends in the car, they drive worse.", "answer": "F" },
+            { "num": 5, "stem": "When children are in the car, mothers drive more slowly and safely.", "answer": "T" }
+          ]
+        },
+        {
+          "id": "7.D.2",
+          "type": "multiple_choice_cloze",
+          "instruction": "Read the text and decide which answer A, B, C, or D best fills each gap.",
+          "page": 57,
+          "passage_template": "When you are in Hong Kong, you can go about by taxi, by tram, by bus, or (1) ____ underground. I prefer the underground (2) ____ it is fast, easy and cheap. There are (3) ____ trams and buses in Hong Kong, and one cannot drive on the road (4) ____ and without stopping many times. The underground is therefore usually quicker (5) ____ taxis or buses. If you do not know Hong Kong very well, it is very difficult (6) ____ the bus you want. You can take a taxi, but it is (7) ____ expensive than the underground or a bus. At the underground you can find good maps that tell you the station names and show you (8) ____ to get to them, so that it is easy to find your way.",
+          "questions": [
+            { "num": 1, "options": { "A": "in", "B": "by", "C": "on", "D": "with" }, "answer": "B" },
+            { "num": 2, "options": { "A": "because", "B": "when", "C": "so", "D": "but" }, "answer": "A" },
+            { "num": 3, "options": { "A": "some", "B": "a lot", "C": "many", "D": "few" }, "answer": "C" },
+            { "num": 4, "options": { "A": "quick", "B": "quicker", "C": "quickly", "D": "quickest" }, "answer": "C" },
+            { "num": 5, "options": { "A": "as", "B": "than", "C": "so", "D": "like" }, "answer": "B" },
+            { "num": 6, "options": { "A": "finding", "B": "to find", "C": "found", "D": "to finding" }, "answer": "B" },
+            { "num": 7, "options": { "A": "more", "B": "much", "C": "as", "D": "too" }, "answer": "A" },
+            { "num": 8, "options": { "A": "who", "B": "when", "C": "what", "D": "how" }, "answer": "D" }
+          ]
+        },
+        {
+          "id": "7.D.3",
+          "type": "fill_blank_word_bank",
+          "instruction": "Read the passage and put a suitable word or phrase from the box in each of the gaps.",
+          "page": 58,
+          "word_bank": ["vehicles", "important", "healthier", "to work", "move around", "means of travel"],
+          "passage_template": "Public transport is very important in big cities. It allows a lot of people to (1) ____ easily. The term \"public transport\" covers many different types of (2) ____, but most commonly refers to buses and trains.\nGood transport has lots of benefits for people, businesses, and the environment. For example, good transport can help people go (3) ____ every day. It can also reduce the time people go to work and the cost of living. Public transport is especially (4) ____ for people with low income. Public transport also helps us keep our community greener and (5) ____. It can improve our health and reduce healthcare costs. By providing an alternative (6) ____, public transport also has an important role in reducing carbon emission.",
+          "answers": {
+            "1": "move around",
+            "2": "vehicles",
+            "3": "to work",
+            "4": "important",
+            "5": "healthier",
+            "6": "means of travel"
+          }
+        }
+      ]
+    },
+    {
+      "section": "E",
+      "title": "Writing",
+      "exercises": [
+        {
+          "id": "7.E.1",
+          "type": "sentence_building",
+          "instruction": "Write full sentences, using the words and phrases given.",
+          "page": 58,
+          "questions": [
+            { "num": 1, "prompt": "– How / your close friend / go / school /?\n– She / cycle /.", "suggested_answer": "– How does your close friend go to school?\n– She cycles." },
+            { "num": 2, "prompt": "Traffic jams / a problem / big cities / Viet Nam /.", "suggested_answer": "Traffic jams are a problem in big cities in Viet Nam." },
+            { "num": 3, "prompt": "If you / not careful / fall off / your bicycle /.", "suggested_answer": "If you are not careful, you may / will fall off your bicycle." },
+            { "num": 4, "prompt": "Before / every meal / should wash / our hands / carefully /.", "suggested_answer": "Before every meal, we should wash our hands carefully." },
+            { "num": 5, "prompt": "It / about 300 km / Ho Chi Minh City / Phu Quoc Island /.", "suggested_answer": "It is about 300 km from Ho Chi Minh City to Phu Quoc Island." }
+          ]
+        },
+        {
+          "id": "7.E.2",
+          "type": "sentence_building",
+          "instruction": "Rewrite the following sentences so that their meaning stays the same, using the word given for each.",
+          "page": 59,
+          "questions": [
+            { "num": 1, "prompt": "A train leaves for Da Nang at 5 o'clock every morning. (THERE)", "suggested_answer": "There is a train leaving for Da Nang at 5 o'clock every morning." },
+            { "num": 2, "prompt": "Is it possible to travel to Sa Pa by air? (CAN)", "suggested_answer": "Can you / we travel to Sa Pa by air?" },
+            { "num": 3, "prompt": "Our teacher is always a careful driver. (DRIVES)", "suggested_answer": "Our teacher always drives carefully." },
+            { "num": 4, "prompt": "The distance from Ha Noi to Hue City is about 540 km. (IT)", "suggested_answer": "It is about 540 km from Ha Noi to Hue City." },
+            { "num": 5, "prompt": "Road users should obey traffic rules strictly. (OBEYED)", "suggested_answer": "Traffic rules should be strictly obeyed (by road users)." }
+          ]
+        },
+        {
+          "id": "7.E.3",
+          "type": "guided_writing_paragraph",
+          "instruction": "Write a paragraph (about 80 words) about the traffic problems in your area or a place you know. You may use the following cues. Make sure to use the right connectors.",
+          "page": 59,
+          "word_web_prompts": [
+            "this place / some traffic problems",
+            "cattle / dogs / run along or across the road",
+            "children play on the road",
+            "sell and buy things on the road",
+            "people not obey traffic rules",
+            "dangerous → should be careful"
+          ],
+          "note": "Bài viết tự do cá nhân — không có đáp án cố định."
+        }
+      ]
+    }
+  ]
+}

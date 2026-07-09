@@ -1,0 +1,329 @@
+{
+  "unit": 3,
+  "title": "Unit 3: Community Service",
+  "source": "Tiếng Anh 7 - Global Success - Sách bài tập, trang 16-23",
+  "sections": [
+    {
+      "section": "A",
+      "title": "Pronunciation",
+      "exercises": [
+        {
+          "id": "3.A.1",
+          "type": "multiple_choice",
+          "instruction": "Choose the word in which the underlined part is pronounced differently. Say the words aloud.",
+          "page": 16,
+          "questions": [
+            { "num": 1, "options": { "A": "started", "B": "washed", "C": "wanted", "D": "visited" }, "underline": "ed", "answer": "B" },
+            { "num": 2, "options": { "A": "played", "B": "stopped", "C": "booked", "D": "passed" }, "underline": "ed", "answer": "A" },
+            { "num": 3, "options": { "A": "needed", "B": "decided", "C": "started", "D": "cooked" }, "underline": "ed", "answer": "D" },
+            { "num": 4, "options": { "A": "enjoyed", "B": "called", "C": "laughed", "D": "watered" }, "underline": "ed", "answer": "C" },
+            { "num": 5, "options": { "A": "watched", "B": "looked", "C": "listened", "D": "talked" }, "underline": "ed", "answer": "C" }
+          ]
+        },
+        {
+          "id": "3.A.2",
+          "type": "underline_classify",
+          "instruction": "Look at the verbs in past form with -ed in the dialogue. Single-underline the ones with the ending sound /t/, double-underline the ones with the ending sound /d/, and triple-underline the ones with the ending sound /ɪd/. Then act out the dialogue with a friend.",
+          "page": 16,
+          "dialogue": [
+            { "speaker": "Mark", "line": "... So, what did you do last weekend?" },
+            { "speaker": "Lan", "line": "I joined my friends in doing some volunteer activities at my school." },
+            { "speaker": "Mark", "line": "What did you do?" },
+            { "speaker": "Lan", "line": "We planted new trees and watered the vegetables in the school garden." },
+            { "speaker": "Mark", "line": "That's great. When did you start doing these activities?" },
+            { "speaker": "Lan", "line": "We started these activities three years ago. How about you? What did you do?" },
+            { "speaker": "Mark", "line": "Me? I stayed at home. My brother and I listened to some music and watched some movies." },
+            { "speaker": "Lan", "line": "That sounds interesting!" },
+            { "speaker": "Mark", "line": "Yes. That was on Saturday. On Sunday, we played board games and enjoyed some food that my mum cooked." }
+          ],
+          "classify_columns": ["/t/", "/d/", "/ɪd/"],
+          "classify_answers": {
+            "/t/": ["watched", "cooked"],
+            "/d/": ["joined", "watered", "stayed", "listened", "played"],
+            "/ɪd/": ["planted", "started", "enjoyed"]
+          },
+          "note": "Đáp án lấy từ trang Keys (tr.105) — sách dùng gạch chân đơn cho /t/, gạch chân đôi cho /d/, gạch chân ba cho /ɪd/ (đề bài và Keys thống nhất cách gạch, JSON này đã quy đổi đúng theo hình gạch chân trong Keys). UI hiện tại (TiengAnh7QuizClient.tsx) CHƯA CÓ giao diện chuyên biệt cho type 'underline_classify' — sẽ hiển thị theo renderGeneric cho đến khi được bổ sung."
+        }
+      ]
+    },
+    {
+      "section": "B",
+      "title": "Vocabulary & Grammar",
+      "exercises": [
+        {
+          "id": "3.B.1",
+          "type": "multiple_choice",
+          "instruction": "What activities are they doing? Choose the correct answer.",
+          "page": 16,
+          "questions": [
+            { "num": 1, "image_desc": "children planting/digging in the woods", "options": { "A": "collecting rubbish", "B": "planting trees", "C": "recycling bottles" }, "answer": "B" },
+            { "num": 2, "image_desc": "children gardening in a school plot", "options": { "A": "cleaning the playground", "B": "growing vegetables", "C": "planting trees" }, "answer": "B" },
+            { "num": 3, "image_desc": "young people giving something to an elderly man at his doorway", "options": { "A": "helping homeless children", "B": "singing for old people", "C": "helping old people" }, "answer": "C" },
+            { "num": 4, "image_desc": "a woman giving food to a child on the street", "options": { "A": "donating books to children", "B": "giving food to poor people", "C": "helping young people" }, "answer": "B" },
+            { "num": 5, "image_desc": "a group of children sitting under a tree with a teacher and a board", "options": { "A": "tutoring street children", "B": "giving food to street children", "C": "donating books to children" }, "answer": "A" }
+          ]
+        },
+        {
+          "id": "3.B.2",
+          "type": "matching",
+          "instruction": "Match the verbs in A with the words or phrases in B.",
+          "page": 17,
+          "column_a": { "1": "plant", "2": "clean up", "3": "donate", "4": "recycle", "5": "help", "6": "exchange" },
+          "column_b": { "a": "used paper for notebooks", "b": "old people", "c": "used bottles", "d": "dirty streets", "e": "food and clothes", "f": "trees" },
+          "answers": { "1": "f", "2": "d", "3": "e", "4": "c", "5": "b", "6": "a" }
+        },
+        {
+          "id": "3.B.3",
+          "type": "fill_blank_word_bank",
+          "instruction": "Use the phrases in 2 to complete the following sentences.",
+          "page": 17,
+          "word_bank": ["exchange used paper for notebooks", "help old people", "recycle used bottles", "clean up dirty streets", "donate food and clothes", "plant trees"],
+          "passage_template": "1. They often ____ and give the notebooks to poor children.\n2. Every weekend, we come to ____. We do the cooking. We also read to them.\n3. The school encourages students to ____. They turn the plastic bottles into hundreds of pretty vases and toys.\n4. Our school's students ____ every weekend. The streets now look cleaner.\n5. Our group often visits villages and ____ to the poor children there.\n6. I work in the Green Neighbourhood project. We often ____ in our neighbourhood.",
+          "answers": {
+            "1": "exchange used paper for notebooks",
+            "2": "help old people",
+            "3": "recycle used bottles",
+            "4": "clean up dirty streets",
+            "5": "donate food and clothes",
+            "6": "plant trees"
+          }
+        },
+        {
+          "id": "3.B.4",
+          "type": "fill_blank_verb_form",
+          "instruction": "Complete the sentences with the right forms of the verbs in brackets.",
+          "page": 18,
+          "passage_template": "1. We often (donate) ____ vegetables to a nursery school in the village.\n2. Last summer, we (start) ____ a Paper-Notebook Exchange programme. Now we have 20 members.\n3. I (tutor) ____ a primary school student every Thursday. He really likes English now.\n4. Our club members (give) ____ young people advice when they need it.\n5. I (become) ____ a member of Green School Club last year.\n6. We often (write) ____ letters to children in orphanages. Last Tet holiday, we (give) ____ them banh chung.",
+          "answers": {
+            "1": "donate",
+            "2": "started",
+            "3": "tutor",
+            "4": "give",
+            "5": "became",
+            "6": "write; gave"
+          }
+        },
+        {
+          "id": "3.B.5",
+          "type": "fill_blank_verb_form",
+          "instruction": "Complete the passage using the correct forms of the verbs in brackets.",
+          "page": 18,
+          "passage_template": "Last summer, our school started a community service project. Our teachers (1. make) ____ a list of activities and (2. give) ____ it to each class. We could (3. choose) ____ the activities we wanted to join. I (4. choose) ____ to help the elderly in the village nursing home. We (5. see) ____ them once a week, (6. dance) ____ and (7. sing) ____ for them. My friends (8. join) ____ other activities like clean-up or gardening activities. We (9. be) ____ very happy. We all (10. plan) ____ to join other community activities this summer.",
+          "answers": {
+            "1": "made",
+            "2": "gave",
+            "3": "choose",
+            "4": "chose",
+            "5": "saw",
+            "6": "danced",
+            "7": "sang",
+            "8": "joined",
+            "9": "were",
+            "10": "plan"
+          }
+        },
+        {
+          "id": "3.B.6",
+          "type": "dialogue_matching",
+          "instruction": "Complete the following conversation with the sentences A-F. Then practise it in pairs.",
+          "page": 18,
+          "dialogue": [
+            { "speaker": "Linh", "line": "What was your most interesting trip last year?" },
+            { "speaker": "Nam", "line": "It was the trip to an orphanage in the countryside." },
+            { "speaker": "Linh", "blank": 1 },
+            { "speaker": "Nam", "line": "We went there last July." },
+            { "speaker": "Linh", "blank": 2 },
+            { "speaker": "Nam", "line": "We gave the children books and clothing. We also talked a lot about their studies and life there." },
+            { "speaker": "Linh", "blank": 3 },
+            { "speaker": "Nam", "line": "Yes. They showed us their classrooms and library." },
+            { "speaker": "Linh", "line": "Did you see where they live?" },
+            { "speaker": "Nam", "blank": 4 },
+            { "speaker": "Linh", "line": "Did you take any photos?" },
+            { "speaker": "Nam", "line": "Sure." },
+            { "speaker": "Nam", "blank": 5 },
+            { "speaker": "Linh", "blank": 6 },
+            { "speaker": "Nam", "line": "We plan to go back next summer." }
+          ],
+          "options": {
+            "A": "We took a lot of photos together.",
+            "B": "When did you go there?",
+            "C": "Certainly. They took us to their rooms.",
+            "D": "Do you want to see them again?",
+            "E": "What did you do there?",
+            "F": "Did they show you where they studied?"
+          },
+          "answers": { "1": "B", "2": "E", "3": "F", "4": "C", "5": "A", "6": "D" }
+        }
+      ]
+    },
+    {
+      "section": "C",
+      "title": "Speaking",
+      "exercises": [
+        {
+          "id": "3.C.1",
+          "type": "guided_speaking",
+          "instruction": "Work in pairs. Compliment your partner on his/her volunteer activities as the example.",
+          "page": 19,
+          "example": {
+            "Mai": "Do you take part in any community activities?",
+            "Lan_1": "Yes. I'm part of a group that makes bamboo products. Then we sell them to raise funds for an orphanage.",
+            "Mai_2": "Wonderful! We also grow vegetables and give them to a nursing home.",
+            "Lan_2": "Sounds like great work!"
+          },
+          "prompts": [
+            { "num": 1, "prompt": "Mi cooks for the elderly." },
+            { "num": 2, "prompt": "Phong and his friends collect litter around their neighbourhood." },
+            { "num": 3, "prompt": "Minh tutors street children." }
+          ],
+          "note": "Bài nói tự do theo mẫu — không có đáp án cố định."
+        },
+        {
+          "id": "3.C.2",
+          "type": "guided_speaking",
+          "instruction": "Work in pairs. Read the fact sheets about some students. Then discuss which of the community activities below each of them should join. Give reasons to explain your answers.",
+          "page": 19,
+          "profiles": [
+            { "name": "Mai", "desc": "Mai is 12. She loves dogs and cats. She is patient and caring." },
+            { "name": "Lan", "desc": "Lan is 13. She is patient and loves children. She is good at English and science. She is a loving girl." },
+            { "name": "Minh", "desc": "Minh is active. He loves nature. He likes being outdoors. He knows a lot about different kinds of trees." },
+            { "name": "Nick", "desc": "Nick is active and very tidy. He doesn't like staying in one place. He likes to work with different people, and he cares a lot about the environment." }
+          ],
+          "activities": ["planting trees", "tutoring primary children", "cleaning up the neighbourhood", "taking care of animals"],
+          "answers": { "1": "Minh", "2": "Lan", "3": "Nick", "4": "Mai" },
+          "note": "Đáp án lấy từ Keys (tr.106): 1. Minh (planting trees), 2. Lan (tutoring primary children), 3. Nick (cleaning up the neighbourhood), 4. Mai (taking care of animals)."
+        },
+        {
+          "id": "3.C.3",
+          "type": "matching",
+          "instruction": "Match the community activities with the benefits. Then talk with your partner about a community activity you want to join and its benefits.",
+          "page": 20,
+          "column_a": {
+            "1": "taking care of pets",
+            "2": "tutoring primary students",
+            "3": "donating food to street children",
+            "4": "collecting books for the community library"
+          },
+          "column_b": {
+            "A": "Children get help in their studies. You can help children improve their English and knowledge of other subjects.",
+            "B": "Local children get more books to read. Poor children can read books for free.",
+            "C": "You learn about responsibility. You learn how to take care of animals.",
+            "D": "You can help children have a better life. You learn how to share."
+          },
+          "answers": { "1": "C", "2": "A", "3": "D", "4": "B" }
+        }
+      ]
+    },
+    {
+      "section": "D",
+      "title": "Reading",
+      "exercises": [
+        {
+          "id": "3.D.1",
+          "type": "multiple_choice_cloze",
+          "instruction": "Choose the correct word (A, B, or C) to fill in each blank in the following passage.",
+          "page": 20,
+          "passage_template": "My school has a number of volunteer activities every summer. The activities include donating books to village children, (1) ____ kids in the neighbourhood, teaching English to primary students, reading books or cooking food for the (2) ____. Our school started this programme five years ago. Every student can join one or two activities. In the beginning, we thought about (3) ____ we should join in these activities. We then thought about what (4) ____ we wanted to do. Those who like reading could choose to collect and donate (5) ____. Those who are good at English could (6) ____ primary students. Finally, we signed up for the activities we chose. Our teachers often encourage us to (7) ____ committed. They also help us when we need it. We have a lot of fun and learn many things from (8) ____ the activities.",
+          "questions": [
+            { "num": 1, "options": { "A": "tutor", "B": "tutored", "C": "tutoring" }, "answer": "C" },
+            { "num": 2, "options": { "A": "rich", "B": "needy", "C": "young" }, "answer": "B" },
+            { "num": 3, "options": { "A": "what", "B": "when", "C": "why" }, "answer": "A" },
+            { "num": 4, "options": { "A": "activities", "B": "jobs", "C": "work" }, "answer": "A" },
+            { "num": 5, "options": { "A": "clothes", "B": "books", "C": "vegetables" }, "answer": "B" },
+            { "num": 6, "options": { "A": "learn", "B": "talk", "C": "tutor" }, "answer": "C" },
+            { "num": 7, "options": { "A": "live", "B": "stay", "C": "work" }, "answer": "B" },
+            { "num": 8, "options": { "A": "doing", "B": "working", "C": "playing" }, "answer": "A" }
+          ]
+        },
+        {
+          "id": "3.D.2a",
+          "type": "matching",
+          "instruction": "Read the text and do the exercises. a. Match each word or phrase highlighted in the text with its meaning.",
+          "page": 21,
+          "passage": "People first used the word 'volunteer' in 1795, but in England there were at least 500 volunteer hospitals long before that. The YMCA in London became the first volunteering organisation in 1844. It provided help to needy people and held classes to help people develop skills. The Red Cross became the first international charity organisation in 1863. Volunteer work is becoming more and more popular in the world. For example, in the USA, about one-fifth of the population does volunteer work. In Europe, thousands of volunteer programmes are run in different countries.\nEveryone can do volunteer work to help their community. Volunteer activities include donating food and clothes, joining clean-up projects, tutoring children, protecting wild animals, etc. Volunteers work not for money but to help people in need and to connect with others.",
+          "column_a": { "1": "needy people", "2": "charity organisation", "3": "popular", "4": "community", "5": "connect" },
+          "column_b": {
+            "a": "to link, join things or people together",
+            "b": "an organisation for helping people in need",
+            "c": "people who need help, poor people",
+            "d": "a group of people living in a place",
+            "e": "liked or enjoyed by a large number of people"
+          },
+          "answers": { "1": "c", "2": "b", "3": "e", "4": "d", "5": "a" }
+        },
+        {
+          "id": "3.D.2b",
+          "type": "true_false_no_info",
+          "instruction": "Tick (✓) T (True) or F (False).",
+          "page": 21,
+          "shared_passage_ref": "3.D.2a",
+          "questions": [
+            { "num": 1, "stem": "People first used the word 'volunteer' in the 18th century.", "answer": "T" },
+            { "num": 2, "stem": "The YMCA held classes that taught people skills.", "answer": "T" },
+            { "num": 3, "stem": "The Red Cross is an American charity organisation.", "answer": "F" },
+            { "num": 4, "stem": "Volunteers work to help and connect with others.", "answer": "T" },
+            { "num": 5, "stem": "One example of volunteer work is donating clothes.", "answer": "T" }
+          ]
+        },
+        {
+          "id": "3.D.3",
+          "type": "multiple_choice",
+          "instruction": "Read the passage and answer the questions by circling A, B, or C.",
+          "page": 22,
+          "passage": "Choosing to volunteer takes up some of your time. Some people say that they do not have time to help others, so they don't volunteer. But scientists say giving time to help others benefits us.\nThe first benefit of volunteering is that it helps us learn to be flexible. Volunteers have to be ready for changes and stay flexible when solving problems. Second, volunteering can improve our health because it requires us to be active. A report found that Americans who volunteer 100 hours or more a year are the healthiest people in the country. Third, volunteers have opportunities to develop more relationships. They often work in teams, and team members get to know each other and sometimes even become friends. Moreover, volunteers often help needy people, so they may feel thankful for what they have. For these reasons, volunteers are generally positive and are less likely to become depressed.\nSo if you have not joined a volunteer activity yet, think about it. You are likely to benefit from doing so.",
+          "questions": [
+            { "num": 1, "stem": "What is the main idea of the passage?", "options": { "A": "There are different types of volunteer activities.", "B": "What to expect when you do volunteer work.", "C": "There are some good reasons why you should do volunteer work." }, "answer": "C" },
+            { "num": 2, "stem": "Which is NOT true about volunteers?", "options": { "A": "They are the strongest and most active.", "B": "They are flexible thinkers.", "C": "They are generally more positive." }, "answer": "A" },
+            { "num": 3, "stem": "Which is a benefit of doing volunteer work?", "options": { "A": "You will have a happier family.", "B": "You can have more friends.", "C": "You will never feel unhappy." }, "answer": "B" },
+            { "num": 4, "stem": "Why are volunteers often more positive?", "options": { "A": "They are the healthiest people in the country.", "B": "They stay active.", "C": "They often feel they are luckier than others." }, "answer": "C" },
+            { "num": 5, "stem": "How many benefits are mentioned in the passage?", "options": { "A": "Two.", "B": "Three.", "C": "Four." }, "answer": "C" },
+            { "num": 6, "stem": "What is the purpose of the passage?", "options": { "A": "To tell people not to join volunteer activities if they don't have the time.", "B": "To encourage people to do some volunteer activities.", "C": "To explain the steps you should follow when you join volunteer activities." }, "answer": "B" }
+          ]
+        }
+      ]
+    },
+    {
+      "section": "E",
+      "title": "Writing",
+      "exercises": [
+        {
+          "id": "3.E.1",
+          "type": "sentence_building",
+          "instruction": "Make sentences using the words and phrases below to help you. Remember to change the forms of some words.",
+          "page": 23,
+          "questions": [
+            { "num": 1, "prompt": "Minh / find / volunteer activities / interesting / can meet / new people.", "suggested_answer": "Minh finds volunteer activities interesting because he can meet new people." },
+            { "num": 2, "prompt": "We / join / community activities / help / needy / last summer.", "suggested_answer": "We joined community activities to help the needy last summer." },
+            { "num": 3, "prompt": "We / learn / teamwork skills / when / join / some / clean-up activity / last summer.", "suggested_answer": "We learnt teamwork skills when we joined some clean-up activities last summer." },
+            { "num": 4, "prompt": "If you / love / nature / can / join / our Green Neighbourhood project.", "suggested_answer": "If you love nature, you can join our Green Neighbourhood project." },
+            { "num": 5, "prompt": "I / join / recycling project / because / want / help / protect the environment.", "suggested_answer": "I will join the recycling project because I want to help protect the environment. / I join the recycling project because I want to help protect the environment." },
+            { "num": 6, "prompt": "You / need / patient and caring / when / take care / pets.", "suggested_answer": "You need to be patient and caring when you take care of pets." }
+          ],
+          "note": "Đáp án mẫu lấy từ trang Keys (tr.106)."
+        },
+        {
+          "id": "3.E.2",
+          "type": "sentence_building",
+          "instruction": "Rewrite the following sentences so that their meaning stays the same. Use the given words.",
+          "page": 23,
+          "questions": [
+            { "num": 1, "prompt": "My school may hold some volunteer activities. I am thinking about joining the animal care project. (IF)", "suggested_answer": "I will join the animal care project if my school holds some volunteer activities." },
+            { "num": 2, "prompt": "Raising funds for poor children is one thing you may do. (MIGHT)", "suggested_answer": "You might raise funds for poor children." },
+            { "num": 3, "prompt": "She doesn't join any volunteer activities. She says she is busy. (BECAUSE)", "suggested_answer": "She doesn't join any volunteer activities because (she says) she is busy." },
+            { "num": 4, "prompt": "My parents often go to villages to do charity work. I go with them. (AND)", "suggested_answer": "My parents often go to villages to do charity work, and I go with them." },
+            { "num": 5, "prompt": "There are more and more volunteer organisations in the country. (INCREASING)", "suggested_answer": "The number of volunteer organisations in the country is increasing." }
+          ],
+          "note": "Đáp án mẫu lấy từ trang Keys (tr.106)."
+        },
+        {
+          "id": "3.E.3",
+          "type": "guided_writing_paragraph",
+          "instruction": "Write a letter to your friend to tell him or her about the volunteer activities you did last year and how you felt about them.",
+          "page": 23,
+          "letter_starter": "Dear Tom,\nHow are you doing? Did you do anything interesting last summer? I joined a school club and did some volunteer activities. I ____\n\nWrite to me soon and tell me about your summer activities.\nBest,\nMai",
+          "note": "Bài viết tự do cá nhân — không có đáp án cố định."
+        }
+      ]
+    }
+  ]
+}

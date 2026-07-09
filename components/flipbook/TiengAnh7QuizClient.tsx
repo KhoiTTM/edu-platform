@@ -364,6 +364,130 @@ export function TiengAnh7QuizClient({ data, breadcrumbs = [], pdfUrl }: Props) {
     );
   };
 
+  // ---- Paragraph ordering: pick a position (1st, 2nd, ...) for each labeled paragraph ----
+  const renderParagraphOrdering = (ex: Exercise) => {
+    const isRevealed = revealed[ex.id];
+    const paragraphs = ex.paragraphs as { label: string; text: string }[];
+    const answerOrder = ex.answer_order as string[];
+    const positions = paragraphs.map((_, i) => String(i + 1));
+    return (
+      <div className="bg-surface-raised/40 rounded-lg p-4 border border-line space-y-3">
+        {paragraphs.map((p) => {
+          const key = `${ex.id}-${p.label}`;
+          const selected = textInputs[key];
+          const correctPos = String(answerOrder.indexOf(p.label) + 1);
+          const isCorrect = selected === correctPos;
+          return (
+            <div key={p.label} className="flex items-start gap-3">
+              <select
+                disabled={isRevealed}
+                value={selected || ""}
+                onChange={(e) => setTextInputs((prev) => ({ ...prev, [key]: e.target.value }))}
+                className={clsx(
+                  "px-2 py-1 rounded bg-slate-800 border text-sm shrink-0 focus:outline-none",
+                  isRevealed
+                    ? isCorrect ? "border-emerald-500 text-emerald-300" : "border-red-500 text-red-300"
+                    : "border-slate-600 text-white focus:border-cyan-400"
+                )}
+              >
+                <option value="">#</option>
+                {positions.map((pos) => (
+                  <option key={pos} value={pos}>{pos}</option>
+                ))}
+              </select>
+              <div className="flex-1 text-sm">
+                <span className="font-bold text-cyan-400">{p.label}.</span>{" "}
+                <span className="text-white">{p.text}</span>
+                {isRevealed && !isCorrect && (
+                  <span className="block text-emerald-400 text-xs font-bold mt-1">Đúng: vị trí {correctPos}</span>
+                )}
+              </div>
+            </div>
+          );
+        })}
+        {!isRevealed && <CheckButton onClick={() => reveal(ex.id)} />}
+      </div>
+    );
+  };
+
+  // ---- Error identification: pick the incorrect underlined part A/B/C ----
+  const renderErrorIdentification = (ex: Exercise) => {
+    const isRevealed = revealed[ex.id];
+    return (
+      <div className="space-y-3">
+        {ex.questions.map((q: any) => {
+          const qid = `${ex.id}-${q.num}`;
+          const selected = mcqSelected[qid];
+          return (
+            <div key={q.num} className="bg-surface-raised/40 rounded-lg p-4 border border-line">
+              <p className="text-white mb-3">{q.num}. {q.sentence_with_markers}</p>
+              <div className="flex flex-wrap gap-2">
+                {Object.entries(q.options as Record<string, string>).map(([letter, text]) => {
+                  const isSelected = selected === letter;
+                  const isCorrect = q.answer === letter;
+                  return (
+                    <button
+                      key={letter}
+                      disabled={isRevealed}
+                      onClick={() => setMcqSelected((prev) => ({ ...prev, [qid]: letter }))}
+                      className={clsx(
+                        "px-3 py-2 rounded-lg border-2 text-sm font-medium transition-all",
+                        isRevealed && isCorrect
+                          ? "bg-emerald-600/30 border-emerald-500 text-white"
+                          : isRevealed && isSelected && !isCorrect
+                          ? "bg-red-600/30 border-red-500 text-white"
+                          : isSelected
+                          ? "bg-blue-600 border-blue-400 text-white"
+                          : "bg-slate-700 border-transparent text-slate-200 hover:bg-slate-600"
+                      )}
+                    >
+                      <span className="font-bold">{letter}.</span> {text}
+                    </button>
+                  );
+                })}
+              </div>
+              {isRevealed && q.correction && (
+                <p className="text-emerald-400 text-xs font-bold mt-2">Sửa lại: {q.correction}</p>
+              )}
+            </div>
+          );
+        })}
+        {!isRevealed && (
+          <CheckButton
+            onClick={() => {
+              setRevealed((prev) => {
+                const next = { ...prev, [ex.id]: true };
+                ex.questions.forEach((q: any) => (next[`${ex.id}-${q.num}`] = true));
+                return next;
+              });
+            }}
+          />
+        )}
+      </div>
+    );
+  };
+
+  // ---- Sentence analysis (S/V/O/ADV): reference-only, answer-check impractical for free-text labeling ----
+  const renderSentenceAnalysis = (ex: Exercise) => {
+    const isRevealed = revealed[ex.id];
+    return (
+      <div className="bg-surface-raised/40 rounded-lg p-4 border border-line space-y-3">
+        {ex.example && (
+          <p className="text-xs text-slate-500 italic">
+            Ví dụ: "{ex.example.sentence}" → {ex.example.labels.join(" | ")}
+          </p>
+        )}
+        {ex.questions.map((q: any) => (
+          <div key={q.num} className="text-sm">
+            <p className="text-white">{q.num}. {q.sentence}</p>
+            {isRevealed && <p className="text-emerald-400 text-xs font-bold mt-1">{q.answer}</p>}
+          </div>
+        ))}
+        {!isRevealed && <CheckButton onClick={() => reveal(ex.id)} />}
+      </div>
+    );
+  };
+
   // ---- Exercises that require looking at pictures in the book: answer-only, no re-display of content ----
   const renderAnswerOnlyFromBook = (ex: Exercise, questions: any[], getAnswer: (q: any) => string) => {
     const isRevealed = revealed[ex.id];
@@ -435,10 +559,41 @@ export function TiengAnh7QuizClient({ data, breadcrumbs = [], pdfUrl }: Props) {
           (q) => q.answer
         );
       case "open_table":
+        if (Array.isArray(ex.columns)) {
+          // Two-column table (e.g. Problems/Solutions per row) — flatten to one question per cell.
+          return renderAnswerOnlyFromBook(
+            ex,
+            (ex.rows as string[]).flatMap((row, ri) =>
+              (ex.columns as string[]).map((col, ci) => ({
+                num: ri * (ex.columns as string[]).length + ci + 1,
+                label: `${row} — ${col}`,
+              }))
+            ),
+            (q) => {
+              const [row, col] = (q.label as string).split(" — ");
+              return ex.suggested_answers?.[row]?.[col] || "";
+            }
+          );
+        }
         return renderAnswerOnlyFromBook(
           ex,
           ex.rows.map((r: string, i: number) => ({ num: i + 1, label: r })),
-          (q) => (ex.suggested_answers?.[q.label] || []).join(", ")
+          (q) => {
+            const val = ex.suggested_answers?.[q.label];
+            return Array.isArray(val) ? val.join(", ") : val || "";
+          }
+        );
+      case "paragraph_ordering":
+        return renderParagraphOrdering(ex);
+      case "error_identification":
+        return renderErrorIdentification(ex);
+      case "sentence_analysis":
+        return renderSentenceAnalysis(ex);
+      case "synonym_finding":
+        return renderAnswerOnlyFromBook(
+          ex,
+          Object.entries(ex.column_a as Record<string, string>).map(([num, label]) => ({ num, label })),
+          (q) => (ex.answers as Record<string, string>)[q.num]
         );
       default:
         return renderGeneric(ex);
