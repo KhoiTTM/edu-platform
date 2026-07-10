@@ -187,7 +187,19 @@ Bọc công thức trong dấu `$...$`:
 
 ## 4. Quy trình chuẩn để thêm đề cho BẤT KỲ môn nào
 
-1. Soạn 1 hoặc nhiều file JSON theo template, đặt trong `content/exam-bank/`.
+> **Quy ước hiện tại (từ đợt Tiếng Anh 7 + KHTN 7 SBT):** đích đến cuối cùng luôn là
+> **database** — `/luyen-tap` đọc thẳng từ DB, không đọc file JSON. File JSON **vẫn được
+> soạn và giữ lại trong repo** (`content/exam-bank/` hoặc `content/workbooks/`) làm bản nháp
+> để agent đối chiếu/soạn câu hỏi và làm nguồn backup/tham khảo lâu dài — KHÔNG phải bước
+> thừa cần bỏ. Việc "tạo đề trên database" nghĩa là: coi DB là nguồn sự thật khi runtime đọc
+> dữ liệu, còn JSON là công cụ soạn thảo trung gian, luôn phải seed lên DB thì đề mới thật sự
+> "có" trên app.
+
+1. Agent đọc đề gốc (ảnh/PDF sách, xem mục 4b) và soạn câu hỏi thành 1 hoặc nhiều file JSON
+   theo template (mục 3), đặt trong `content/exam-bank/` (ngân hàng câu hỏi) hoặc
+   `content/workbooks/` (bám sách bài tập 1-1, xem mục 7). Với dạng luyện tập bám sách
+   (SBT), câu hỏi phải đọc/gõ lại **y như bản in gốc** — không diễn giải lại, không đổi số
+   liệu — vì học sinh sẽ đối chiếu ngược với sách khi cần.
 2. Kiểm tra trước khi ghi (KHÔNG đụng DB):
    ```bash
    npx tsx scripts/seed-exam-bank.ts content/exam-bank/<file>.json --dry-run
@@ -200,7 +212,30 @@ Bọc công thức trong dấu `$...$`:
    Generator sẽ: tìm/tạo collection theo (subject_slug, grade, title), tạo/cập nhật từng
    exam theo `exam_number`, ghi câu hỏi vào `question_bank` (concept_id = null) và nối qua
    `exam_questions`. Khi seed lại 1 exam, các câu cũ của exam đó bị xóa-tạo lại sạch sẽ.
-4. Kiểm tra ở `/luyen-tap/<subject>?grade=<grade>` đúng tab theo `exam_type`.
+   Với sách bài tập theo bài/unit 1-1, dùng script migrate riêng của môn đó thay vì
+   generator chung (xem mục 7.4, ví dụ `migrate-khtn7-bai-to-db.ts`).
+4. Kiểm tra ở `/luyen-tap/<subject>?grade=<grade>` đúng tab theo `exam_type` — đây là bước
+   xác nhận đề đã "lên" thật (DB có dữ liệu và render đúng), không chỉ dựa vào file JSON đã
+   soạn xong.
+5. **Giữ lại file JSON đã soạn trong repo** sau khi seed — không xoá. Dùng để đối chiếu khi
+   phát hiện lỗi nội dung về sau (như đợt QC Toán 7 — xem `docs/khtn7_sbt_progress.md` và
+   các file `.bak-*` làm ví dụ), hoặc để seed lại/khôi phục nếu DB bị xoá nhầm.
+
+## 4b. Nguồn ảnh/PDF sách gốc — dùng Google Drive, KHÔNG tải về lưu trong repo
+
+Quy ước hiện tại: PDF/ảnh scan sách gốc (dùng để agent đọc lại và soạn câu hỏi, hoặc để học
+sinh xem qua nút "Xem sách") lấy trực tiếp từ **Google Drive**, không tải về commit vào
+`public/book/`, `content/pdfs/` như cách làm cũ (mục 7.2 mô tả cách làm cũ cho tham khảo).
+
+- **Soạn câu hỏi:** agent mở file trên Google Drive (link do người dùng cung cấp) để đọc/OCR
+  thủ công, không cần tải PDF về máy/repo trước.
+- **Hiển thị cho học sinh** (`sourceBookUrl`, nút "Xem sách" — xem mục 7.3): trỏ thẳng ra link
+  chia sẻ Google Drive thay vì đường dẫn nội bộ `/book/...` hay `/images/...`.
+- **Lý do đổi:** tránh phình repo với file ảnh/PDF nặng (ví dụ PDF Tiếng Anh 7 ~143MB từng
+  phải loại khỏi git — mục 7.2), và tránh phải tự host/scan lại khi có thêm sách mới.
+- **Không áp dụng cho** hình minh hoạ **tự vẽ/tự tạo** riêng cho câu hỏi (SVG, ảnh do agent
+  generate) — loại này vẫn theo `image_url` trỏ `public/images/` như trước, vì đó là asset
+  của riêng app chứ không phải bản scan sách.
 
 ## 5. Luật cứng
 
@@ -298,7 +333,7 @@ trong file. `examSeq` chỉ truyền khi 1 vị trí có nhiều đề (Format 1
 Ví dụ: `buildExamTitle({ subjectLabel: 'KHTN 7', group: 'sbt', position: 'Bài 2: Nguyên tử' })`
 → `"KHTN 7 - Luyện theo sách bài tập - Bài 2: Nguyên tử"`.
 
-### 7.2. Nguồn dữ liệu Tiếng Anh 7 + KHTN 7
+### 7.2. Nguồn dữ liệu Tiếng Anh 7 + KHTN 7 (lịch sử — thời điểm này CHƯA có quy ước Google Drive ở mục 4b)
 
 - **Tiếng Anh 7** (SBT Global Success, 12 unit): OCR ban đầu qua EasyOCR chất lượng kém →
   đọc lại bằng mắt từng trang scan (`content/pdfs/sbt/sbt_tienganh7.pdf`, không track git vì
