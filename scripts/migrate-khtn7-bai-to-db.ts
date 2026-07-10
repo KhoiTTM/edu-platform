@@ -97,7 +97,8 @@ async function migrate() {
   }
 
   const rows = questions.map((q: any) => {
-    if (q.type === 'multiple_choice') {
+    const hasOptions = Array.isArray(q.options) && q.options.length >= 2;
+    if (q.type === 'multiple_choice' || (q.type === 'essay' && hasOptions)) {
       const letterIdx = q.answer ? q.answer.trim().toUpperCase().charCodeAt(0) - 65 : -1;
       return {
         concept_id: concept!.id,

@@ -353,9 +353,9 @@
     "id": "khtn7-2-21",
     "bai": 2,
     "cau": 21,
-    "type": "essay",
+    "type": "multiple_choice",
     "stem": "Hạt nhân một nguyên tử fluorine có 9 proton và 10 neutron. Khối lượng của nguyên tử fluorine xấp xỉ bằng",
-    "answer": "€. Khối Iượng của một nguyên tử xấp xỉ bằng khối lượng của hạt nhân_ Khối lượng của nguyên tử fluorine = 9 . 1 + 10 1 = 19 (amu).",
+    "answer": "C. Khối lượng của một nguyên tử xấp xỉ bằng khối lượng của hạt nhân. Khối lượng của nguyên tử fluorine = 9 . 1 + 10 . 1 = 19 (amu).",
     "options": [
       "9 amu.",
       "10 amu.",
