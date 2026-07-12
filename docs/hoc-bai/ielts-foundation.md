@@ -11,7 +11,24 @@
   `speaking/`, `writing/`.
 - Component chính: `components/learning/IELTSSkillsNav.tsx`.
 - Kiểu học: **Universal Learning Engine** (`curriculum_nodes` phân cấp `subject → course →
-  unit → lesson`), không phải lesson-engine kiểu Duolingo, không phải flipbook ảnh scan.
+  unit → lesson`), không phải lesson-engine kiểu Duolingo, không phải flipbook ảnh scan —
+  **ngoại lệ: `flow-book/page.tsx` không còn đọc DB nữa, xem mục 3b.**
+
+### 1b. 7 dạng bài (khảo sát trực tiếp Supabase — 2026-07-12)
+
+Tất cả cùng nguồn `curriculum_nodes` (content_source `mindset-foundation`, 97 node
+`unit`+`lesson`), mỗi trang lọc theo `metadata.skill_focus` hoặc regex tiêu đề:
+
+| Trang | Route | Số bài | Cách lọc |
+|---|---|---|---|
+| Tổng quan (36 Buổi) | `/mindset-ielts` | 97 | không lọc, gắn nhãn kỹ năng theo tiêu đề |
+| Listening | `/listening` | 70 gắn tag (68 có `youtube_id`) | `skill_focus==='listening'` hoặc regex hoặc có video |
+| Shadowing | `/shadowing` | 55 | `skill_focus==='shadowing'` **và** có transcript trong `lib/shadowingData.ts` (~18k dòng) |
+| Grammar | `/grammar` | 18 | `skill_focus==='grammar'` hoặc regex |
+| Reading | `/reading` | 11 | tương tự |
+| Writing | `/writing` | 10 | tương tự |
+| Speaking | `/speaking` | 9 | tương tự |
+| Flow Book | `/flow-book` | — (đã đổi cơ chế, xem mục 3b) | không còn đọc DB |
 
 ## 2. Nguồn nội dung bài học
 
@@ -30,24 +47,40 @@
 
 - **99 `curriculum_nodes`** dưới `content_source = mindset-foundation`: 1 `subject`, 1
   `course`, 42 `unit`, 55 `lesson`.
-- ⚠️ **Cảnh báo cấu trúc — 2 hệ thống unit đang tồn tại song song, không phải trùng lặp lỗi
-  nhưng dễ nhầm khi audit:**
+- **Cấu trúc 2 nhánh unit song song — ĐÃ XÁC NHẬN LÀ CHỦ ĐÍCH (2026-07-12), không phải lỗi
+  dữ liệu:**
   1. **36 unit "Buổi N"** (`parent_id` trỏ đúng vào course "IELTS Foundation", slug
-     `unit-1`..`unit-36`) — đây là giáo trình chính, theo thứ tự "Buổi 1: U1 - Daily Life
-     (Reading & Vocabulary)" → ... → "Buổi 36: Review & Final Assessment", đi qua 10 chủ đề
-     (U1 Daily Life .. U10 Tech) chia làm 3-4 buổi/chủ đề theo 4 kỹ năng.
-  2. **6 unit "Unit N: {Topic}"** (`parent_id: null`, slug `mindset-unit-2`, `mindset-unit-4`,
-     `mindset-unit-5`, `mindset-unit-7`, `mindset-unit-8`, `mindset-unit-9`) — **không có
-     course cha**, chứa 55 `lesson` con nhưng nội dung lesson thực chất là "Luyện Nghe Tiếng
-     Anh Level A2 - TỔNG KẾT 2021..2025" (các bài luyện nghe tổng kết theo năm, không khớp
-     với topic của unit cha).
-- Vì cả `page.tsx` và `flow-book/page.tsx` lấy toàn bộ node type `unit`/`lesson` không lọc
-  theo course, **cả 2 cấu trúc trên hiển thị lẫn vào nhau trên UI** — cần xác nhận với người
-  phụ trách nội dung đây là chủ đích (2 mảng nội dung độc lập cùng hiển thị) hay là dữ liệu di
-  sản cần dọn/gán lại `parent_id` đúng trước khi coi là "sạch".
+     `unit-1`..`unit-36`) — giáo trình chính, "Buổi 1: U1 - Daily Life (Reading &
+     Vocabulary)" → ... → "Buổi 36: Review & Final Assessment", 10 chủ đề (U1 Daily Life ..
+     U10 Tech) chia 3-4 buổi/chủ đề theo 4 kỹ năng.
+  2. **6 unit "Unit N: {Topic}"** (`parent_id: null`, slug `mindset-unit-2/4/5/7/8/9`) — chứa
+     55 `lesson` con slug `luyen-nghe-a2-...`. **Đã xác nhận: đây là nguồn Shadowing/Dictation
+     thật** — các bài này có transcript đầy đủ trong `lib/shadowingData.ts` (~18k dòng), dùng
+     audio "luyện nghe A2" làm ngữ liệu cho bài tập chép chính tả/shadowing, không phải dữ
+     liệu lạc. Tên slug gây hiểu lầm ban đầu (đợt khảo sát 2026-07-10) nhưng nội dung có mục
+     đích rõ ràng.
+- Vì `page.tsx` (tổng quan) lấy toàn bộ node type `unit`/`lesson` không lọc theo course, cả 2
+  nhánh trên vẫn hiển thị lẫn vào nhau ở trang tổng quan — chấp nhận được vì đây là chủ đích,
+  không cần tách riêng.
 - `node_lessons` (bảng cầu nối `curriculum_nodes` ↔ `lessons` cũ) có 36 dòng — khớp với 36
-  "Buổi", gợi ý nhánh "Buổi" là nhánh chính thống được liên kết đầy đủ; nhánh "Unit N" độc lập
-  có thể là import sau, chưa nối `node_lessons`.
+  "Buổi", nhánh "Unit N" (Shadowing) chưa nối `node_lessons` — không ảnh hưởng vì trang
+  Shadowing đọc trực tiếp `curriculum_nodes` + `lib/shadowingData.ts`, không qua bảng cầu nối.
+
+## 3b. Flow Book — đã đổi từ đọc DB sang link ngoài (2026-07-12)
+
+- **Trước:** `flow-book/page.tsx` query `curriculum_nodes`, lọc whitelist slug cứng
+  (`unit-8`..`unit-35`), hiển thị danh sách card link vào `/learn/mindset-ielts/{slug}`
+  (Universal Learning Engine). Có 1 comment sai lệch với code thực tế ("Unit 3 through Unit
+  10 are supported" nhưng whitelist thực chất là `unit-8`..`unit-35`, tức "Buổi 8" đến "Buổi
+  35", không phải "Unit 3-10" theo nghĩa chủ đề).
+- **Sau:** trang không còn đọc DB — chỉ hiển thị 1 nút/thẻ đơn giản yêu cầu học sinh mở link
+  flipbook ngoài trong tab mới: `https://online.flipbuilder.com/sdtta/bsjh/mobile/index.html#p=1`.
+  Không xoá `curriculum_nodes` liên quan (28 node slug `unit-8`..`unit-35`) khỏi Supabase —
+  các node này vẫn được dùng chung ở trang tổng quan và các trang kỹ năng khác (Listening,
+  Grammar...), chỉ riêng Flow Book thôi query chúng.
+- Đây là 1 trong 2 cơ chế "mở link ngoài" của hệ thống (không dùng `exams.external_url` như
+  luồng exam-bank ở `docs/exam_bank.md` mục 6d/7.3, vì môn này không đi qua exam-bank) — chỉ
+  đơn giản là `<a href target="_blank">` trong component học bài.
 
 ## 4. Đặc thù riêng của môn
 
@@ -68,16 +101,20 @@
 
 ## 6. Việc cần làm khi mở rộng/sửa môn này
 
-- [ ] Đọc mục 3 ở trên trước khi sửa — đặc biệt cảnh báo về 2 cấu trúc unit song song
+- [ ] Đọc mục 3, 3b ở trên trước khi sửa
 - [ ] Trước khi thêm bài mới, xác định rõ nó thuộc nhánh "Buổi" (giáo trình chính, có
-      `parent_id`) hay nhánh "Unit N" độc lập (luyện nghe tổng kết) — không tạo thêm node
-      không có `parent_id` một cách tuỳ tiện, dễ làm rối cấu trúc thêm
-- [ ] Nếu phát hiện đây là lỗi dữ liệu (không phải chủ đích), báo người phụ trách trước khi tự
-      ý sửa `parent_id` hàng loạt — có thể ảnh hưởng tới bài học đang hiển thị cho học sinh
+      `parent_id`) hay nhánh "Unit N" độc lập (Shadowing/Dictation) — 2 nhánh này là chủ đích,
+      không tự ý gộp/xoá
+- [ ] Nếu sửa Flow Book, nhớ đây giờ chỉ là link tĩnh, không cần đồng bộ với
+      `curriculum_nodes` nữa — nếu muốn quay lại đọc DB, xem lại mục 3b để hiểu whitelist cũ
 - [ ] Cập nhật lại mục 3 (trạng thái) sau khi làm rõ/sửa cấu trúc
 
 ## 7. Lịch sử / ghi chú quan trọng
 
-- 2026-07-10: khảo sát lần đầu phát hiện cấu trúc 2 nhánh unit song song mô tả ở mục 3 — chưa
-  rõ đây là chủ đích thiết kế hay dữ liệu cần dọn, cần hỏi người phụ trách nội dung môn này
-  trước khi có thay đổi cấu trúc lớn.
+- 2026-07-10: khảo sát lần đầu phát hiện cấu trúc 2 nhánh unit song song — lúc đó chưa rõ chủ
+  đích hay lỗi.
+- 2026-07-12: đã xác nhận với người phụ trách — nhánh "Unit N" (55 bài `luyen-nghe-a2-...`) là
+  nguồn Shadowing/Dictation thật có transcript đầy đủ, không phải dữ liệu lạc. Đồng thời đổi
+  Flow Book từ đọc `curriculum_nodes` sang hiển thị link flipbook ngoài
+  (`https://online.flipbuilder.com/sdtta/bsjh/mobile/index.html#p=1`) — không xoá dữ liệu DB
+  liên quan vì các node đó vẫn dùng chung ở trang tổng quan/kỹ năng khác.
