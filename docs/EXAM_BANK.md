@@ -75,8 +75,14 @@ Sách bài tập giờ đi theo **đúng luồng exam-bank chuẩn** (mục 1, 3
 **`multiple_choice`** — chọn 1 đáp án:
 ```json
 { "question": "...", "options": ["A","B","C","D"], "correct_index": 0,
-  "explanation": "...", "image_url": "/images/....png", "tags": ["unit-1"] }
+  "explanation": "...", "hint": "...", "image_url": "/images/....png", "tags": ["unit-1"] }
 ```
+`hint` (tùy chọn) — gợi ý PHƯƠNG PHÁP làm bài, hiển thị LUÔN (không cần bấm) ngay dưới câu hỏi
+khi học sinh làm bài, trước khi chọn đáp án. Khác `explanation` (giải thích SAU khi trả lời,
+có thể nêu ra đáp án) — `hint` chỉ nêu quy tắc/công thức chung (VD "Nhân chia trước, cộng trừ
+sau", "1 km = 1000 m"), KHÔNG được tiết lộ đáp án cụ thể của câu đó. Hiện chỉ render trong
+`MultipleChoiceRenderer.tsx` (dùng cho `multiple_choice`/`listening_multiple_choice`) — chưa
+áp dụng cho các loại câu khác, thêm khi có nhu cầu thực tế.
 
 **`fill_blank`** — điền vào chỗ trống (có gợi ý chọn):
 ```json
@@ -188,12 +194,17 @@ Bọc công thức trong dấu `$...$`:
 ## 4. Quy trình chuẩn để thêm đề cho BẤT KỲ môn nào
 
 > **Quy ước hiện tại (từ đợt Tiếng Anh 7 + KHTN 7 SBT):** đích đến cuối cùng luôn là
-> **database** — `/luyen-tap` đọc thẳng từ DB, không đọc file JSON. File JSON **vẫn được
-> soạn và giữ lại trong repo** (`content/exam-bank/` hoặc `content/workbooks/`) làm bản nháp
-> để agent đối chiếu/soạn câu hỏi và làm nguồn backup/tham khảo lâu dài — KHÔNG phải bước
+> **database** — mọi đề đi theo luồng exam-bank ở tài liệu này (kể cả sách bài tập bám sách
+> 1-1) phải seed lên DB, `/luyen-tap` đọc thẳng từ đó, không đọc file JSON. File JSON **vẫn
+> được soạn và giữ lại trong repo** (`content/exam-bank/` hoặc `content/workbooks/`) làm bản
+> nháp để agent đối chiếu/soạn câu hỏi và làm nguồn backup/tham khảo lâu dài — KHÔNG phải bước
 > thừa cần bỏ. Việc "tạo đề trên database" nghĩa là: coi DB là nguồn sự thật khi runtime đọc
 > dữ liệu, còn JSON là công cụ soạn thảo trung gian, luôn phải seed lên DB thì đề mới thật sự
 > "có" trên app.
+> **Ngoại lệ còn tồn tại:** các "sách flip" cũ chưa migrate sang exam-bank (luồng Quiz
+> Text-Only ở `docs/CONTEXT.md` mục C, route `/flipbooks/[bookSlug]/quiz`) vẫn đọc
+> `content/[bookSlug]-questions.json` trực tiếp, không qua DB. Đây là luồng di sản, không
+> dùng cho sách mới — sách mới đi theo quy trình DB ở mục này.
 
 1. Agent đọc đề gốc (ảnh/PDF sách, xem mục 4b) và soạn câu hỏi thành 1 hoặc nhiều file JSON
    theo template (mục 3), đặt trong `content/exam-bank/` (ngân hàng câu hỏi) hoặc

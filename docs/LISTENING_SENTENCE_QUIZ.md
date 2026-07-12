@@ -14,8 +14,8 @@
 
 ## 2. Loại câu hỏi
 
-Tái dùng loại đã có: **`listening_multiple_choice`** (xem `docs/PRE_A1_STARTER.md` mục 2.2 —
-đã có renderer TTS + nút "🔊 Nghe"). Ta dùng nó ở mức CÂU thay vì mức TỪ.
+Tái dùng loại đã có: **`listening_multiple_choice`** (xem `docs/luyen-tap/pre-a1-starter.md`
+mục 3 — đã có renderer TTS + nút "🔊 Nghe"). Ta dùng nó ở mức CÂU thay vì mức TỪ.
 
 ### Schema `metadata_json`
 ```json
@@ -48,7 +48,7 @@ Tái dùng loại đã có: **`listening_multiple_choice`** (xem `docs/PRE_A1_ST
 
 - File: `content/exam-bank/pre-a1-listening-sentences.json` (theo template exam-bank).
 - Collection gợi ý: `subject_slug="pre-a1-starter"`, `grade=3`, `exam_type="lesson"` hoặc `"listening"`,
-  `title="Luyện nghe theo câu"`. (Xem tên nhóm hiển thị: `docs/PRE_A1_STARTER.md` mục 3.)
+  `title="Luyện nghe theo câu"`. (Xem tên nhóm hiển thị: `docs/luyen-tap/pre-a1-starter.md` mục 2.)
 - Seed bằng generator chung: `npx tsx scripts/seed-exam-bank.ts content/exam-bank/pre-a1-listening-sentences.json`.
 - Lịch sử: tự lưu `learning_sessions` (type='exam') như các đề khác.
 

@@ -174,13 +174,19 @@ edu-platform/
 │   ├── src/main.py, src/core/{pdf_processor,layout_detector,ocr_engine,packager}.py
 │   └── requirements.txt
 │
-├── content/                  # Dữ liệu tĩnh dạng file (JSON/PDF) — KHÔNG chứa runtime data
-│   ├── khtn-7-workbook.json   # Workbook KHTN 7 soạn tay, 10 bài — vẫn dùng bởi components/universal/WorkbookAnswerSheet.tsx (Universal Learning Engine, KHÔNG liên quan flipbook)
-│   ├── khtn7-questions.json   # Output luồng Quiz Text-Only — 216 câu (Bài 1–18), dùng bởi /flipbooks/khtn7/quiz và /luyen-tap/khtn?grade=7 (đọc JSON trực tiếp, không qua DB)
-│   ├── khtn7-answer-key.json  # Đáp án thô trích từ phần "HƯỚNG DẪN GIẢI" của sách, key "Bài.Câu"
-│   ├── english7-workbook.json
-│   ├── assessments/           # Đề thi import thủ công (xem AGENT_INSTRUCTIONS.md trong đó)
-│   └── *.pdf                  # Nguồn PDF gốc một số sách (Toán 3, Tiếng Anh 3, IELTS Foundation)
+├── content/                  # JSON soạn thảo/đối chiếu cho đề luyện tập — KHÔNG phải nguồn runtime
+│   │                          # (xem docs/EXAM_BANK.md mục 4: /luyen-tap luôn đọc từ DB, JSON ở đây
+│   │                          # chỉ là bản nháp soạn + backup/tham khảo, PHẢI seed lên DB mới "có" trên app)
+│   ├── exam-bank/              # JSON theo template exam-bank chuẩn, seed bằng scripts/seed-exam-bank.ts
+│   ├── workbooks/               # JSON bám sách bài tập 1-1 (Tiếng Anh 7, KHTN 7...), seed bằng
+│   │                             # scripts/migrate-<subject>-*-to-db.ts riêng từng môn (xem mục 7.4 EXAM_BANK.md)
+│   │   ├── khtn7-questions.json      # 395 câu, đã seed đủ 42 bài lên Supabase (assessment_collections)
+│   │   └── khtn-7-workbook.json      # Vẫn dùng trực tiếp (KHÔNG qua DB) bởi
+│   │                                  # components/universal/WorkbookAnswerSheet.tsx trong /hoc-tap
+│   │                                  # (Universal Learning Engine, KHÔNG phải trang /luyen-tap)
+│   ├── assessments/           # Đề thi import thủ công qua Gemini Pro Web (xem AGENT_INSTRUCTIONS.md trong đó)
+│   └── *.pdf                  # Nguồn PDF gốc một số sách — quy ước mới lấy từ Google Drive, không tải
+│                                về commit vào repo nữa (xem docs/EXAM_BANK.md mục 4b)
 │
 ├── public/books/                # Hiện trống — từng chứa ảnh trang scan của luồng Hotspot/Review (đã xóa)
 │
@@ -190,8 +196,26 @@ edu-platform/
 │
 ├── docs/
 │   ├── CONTEXT.md             # ⚠️ Bắt buộc đọc — kiến trúc lõi + luật cứng cho agent
-│   ├── EXAM_BANK.md           # Quy ước dữ liệu phân hệ exam-bank
-│   └── PRE_A1_STARTER.md      # Quy ước dữ liệu & luyện nghe môn Pre A1 Starter Wordlist
+│   ├── EXAM_BANK.md           # Quy ước dữ liệu CHUNG phân hệ exam-bank (đọc trước các file môn)
+│   ├── hoc-bai/                # Tài liệu riêng từng môn học — phần "Học bài" (Universal
+│   │   │                         Learning Engine: universal_subjects/content_sources/curriculum_nodes)
+│   │   ├── _template.md          # Khung mẫu khi thêm môn mới
+│   │   ├── toan-7.md
+│   │   ├── khtn-7.md
+│   │   ├── toan-3.md
+│   │   ├── tieng-anh-3.md
+│   │   ├── tieng-anh-7.md
+│   │   ├── tieng-viet-3.md       # Cảnh báo: 2 subject_slug gần trùng tên (tieng-viet/tieng_viet)
+│   │   └── ielts-foundation.md   # Cảnh báo cấu trúc 2 nhánh unit lẫn nhau
+│   └── luyen-tap/               # Tài liệu riêng từng môn — phần "Luyện tập" (đọc EXAM_BANK.md
+│       │                          trước, file môn chỉ ghi phần đặc thù riêng, không lặp quy tắc chung)
+│       ├── _template.md
+│       ├── toan-7-tap-1.md
+│       ├── tieng-anh-7.md
+│       ├── khtn-7.md
+│       ├── toan-3.md            # Lưu ý: phần lớn seed bằng procedural script, không JSON
+│       ├── tieng-anh-3.md       # Lưu ý: cùng đặc điểm procedural như toan-3.md
+│       └── pre-a1-starter.md    # Thay thế PRE_A1_STARTER.md cũ (đã gộp vào cấu trúc mới)
 │
 ├── agent_prompt/               # Hướng dẫn quy trình cho agent tương lai
 │   ├── implement_pdf_scan_pipeline_prompt.md         # Luồng Hotspot/Review

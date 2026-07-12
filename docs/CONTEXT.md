@@ -29,9 +29,30 @@ Các môn học khác nhau sẽ render UI học tập khác nhau:
 Tầng ghi nhận nỗ lực (Attempts - `StudentAnswer`).
 1. **Luyện tập theo Ngân hàng câu hỏi:** Làm ngẫu nhiên hoặc theo chuyên đề (từ `question-bank`).
 2. **Luyện tập theo Ngân hàng đề:** Làm bài thi hoàn chỉnh (có timer, nộp bài, lưu điểm) từ `exam-bank`.
-3. **Luyện tập theo Sách bài tập:** Vào `/luyen-tap/[subject]` → bấm tab "Theo Sách bài tập" → **chuyển thẳng** (router.push, không qua trang trung gian) sang `/flipbooks/[bookSlug]/quiz` (danh sách Bài, dạng card) → `/flipbooks/[bookSlug]/quiz/[bai]` (quiz text-only chỉ gồm câu hỏi của Bài đó, đọc từ `content/[bookSlug]-questions.json`). Kết quả làm bài được lưu — xem mục D.
+3. **Luyện tập theo Sách bài tập:** đường đi đã đổi tuỳ môn — xem `docs/EXAM_BANK.md` mục 4 (DB
+   là nguồn sự thật) và mục 7 (format "bám sách bài tập 1-1").
+   - **Tiếng Anh 7, KHTN 7** (đã migrate sang exam-bank chuẩn): `/luyen-tap/[subject]` → tab
+     "Luyện theo sách bài tập" → ở lại `test-assessment`, đọc câu hỏi từ DB
+     (`assessment_collections`/`question_bank`, xem mục B.2 ở trên và `docs/EXAM_BANK.md`
+     mục 7). Nút "Xem sách" (`sourceBookUrl`) mở thêm 1 tab tham khảo ảnh/PDF gốc, không phải
+     nguồn dữ liệu câu hỏi.
+   - **Các sách flip khác chưa migrate** (route `[bookSlug]` generic vẫn tồn tại): vẫn
+     **chuyển thẳng** (router.push) sang `/flipbooks/[bookSlug]/quiz` → `/flipbooks/[bookSlug]/quiz/[bai]`
+     (quiz text-only, đọc trực tiếp `content/[bookSlug]-questions.json`, KHÔNG qua DB) — xem
+     mục C bên dưới. Đây là luồng cũ hơn, coi là tạm/di sản; sách mới nên đi theo nhánh
+     exam-bank ở trên thay vì nhân bản luồng này.
+   Kết quả làm bài được lưu — xem mục D.
 
 ### C. Nhập liệu Sách Scan (Thư mục `pipeline/`)
+
+> ⚠️ Luồng Quiz Text-Only mô tả dưới đây (đọc JSON trực tiếp, không qua DB) là luồng dùng cho
+> các sách flip **chưa migrate** sang exam-bank. **KHTN 7 và Tiếng Anh 7 đã migrate** — câu
+> hỏi của 2 môn này giờ nằm trong DB và đi qua `/luyen-tap/[subject]` (xem mục B.3, và
+> `docs/EXAM_BANK.md` mục 7). Ví dụ `content/khtn7-questions.json` (121 câu, Bài 1–7) ở mục
+> C.7 dưới đây đã lỗi thời — file đó không còn tồn tại, đã được thay bằng bộ đầy đủ hơn
+> `content/workbooks/khtn7-questions.json` (395 câu, seed đủ 42 bài lên Supabase qua
+> `scripts/migrate-khtn7-bai-to-db.ts`). Giữ nguyên mục C này làm tài liệu cho sách flip mới
+> **chưa** có kế hoạch lên DB ngay.
 
 > ⚠️ **Đã loại bỏ luồng Hotspot/Review.** Trước đây có 2 luồng song song: (1) khoanh vùng câu hỏi trên ảnh trang bằng OpenCV + review tay trên `/review`, và (2) OCR toàn trang theo số thứ tự câu hỏi. Luồng (1) đã bị **xóa hoàn toàn** (route `/interactive-workbook`, `/review`, component `BookEditor`/`BookViewer`/`QuestionEditorForm`, `lib/book-viewer-core`, `lib/schema`, toàn bộ ảnh `public/books/[slug]/`) vì chiếm dung lượng lớn (~28MB/sách) và độ chính xác kém (OpenCV hay gộp nhiều câu vào 1 hotspot). Agent tương lai **KHÔNG tạo lại luồng này** trừ khi có yêu cầu rõ ràng phải hiển thị ảnh trang gốc.
 
