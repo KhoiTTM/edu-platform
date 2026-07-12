@@ -1,0 +1,5483 @@
+{
+  "collection": {
+    "title": "Tiếng Anh 3 - Ôn tập tổng hợp Học kỳ 1",
+    "subject_slug": "tieng_anh",
+    "grade": 3,
+    "volume": 1,
+    "units": [
+      201
+    ],
+    "sequence_number": 2,
+    "exam_type": "review",
+    "reference_book": "Tiếng Anh 3, Global Success, Tập 1 (NXB Giáo dục Việt Nam + Macmillan)",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 1,
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 1 (Unit 1-3)",
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Ben meets Mai for the first time at school. What does he say?",
+            "options": [
+              "Hello. I'm Ben.",
+              "Fine, thank you.",
+              "I'm eight years old.",
+              "Goodbye, Ben."
+            ],
+            "correct_index": 0,
+            "explanation": "Khi tự giới thiệu lần đầu, dùng 'Hello. I'm...' (Unit 1).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Hi, Mai. How are you? – ___, thank you.",
+            "choices": [
+              "Fine",
+              "Bye",
+              "Hello",
+              "Name's"
+            ],
+            "correct_answer": "Fine",
+            "explanation": "Đáp lại 'How are you?' bằng 'Fine, thank you.' (Unit 1, Lesson 2).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bạn muốn hỏi tên một người bạn mới quen. Câu hỏi đúng là:",
+            "options": [
+              "What's your name?",
+              "How are you?",
+              "Is this Bill?",
+              "How old are you?"
+            ],
+            "correct_index": 0,
+            "explanation": "'What's your name?' dùng để hỏi tên (Unit 2, Lesson 1).",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "How old are you? – I'm eight ___ old.",
+            "choices": [
+              "years",
+              "name's",
+              "friend",
+              "fine"
+            ],
+            "correct_answer": "years",
+            "explanation": "Mẫu trả lời tuổi đầy đủ 'I'm + số + years old.' (Unit 2, Lesson 2).",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Mary giới thiệu bạn mình đứng cạnh mình: '___ Mary.' (Unit 3, Lesson 1)",
+            "options": [
+              "This is",
+              "That's",
+              "I'm",
+              "My name's"
+            ],
+            "correct_index": 0,
+            "explanation": "'This is + tên' dùng để giới thiệu người ở gần (Unit 3).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "That's Mr Long. – Hello, ___ Long.",
+            "choices": [
+              "Mr",
+              "Ms",
+              "This",
+              "That's"
+            ],
+            "correct_answer": "Mr",
+            "explanation": "'Mr' (ông/thầy) đứng trước tên nam giới lớn tuổi (Unit 3).",
+            "tags": [
+              "unit-3",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bạn chỉ vào tai của mình và hỏi bạn cùng lớp. Câu hỏi đúng là:",
+            "options": [
+              "What's this?",
+              "What's your name?",
+              "How old are you?",
+              "Is this a pen?"
+            ],
+            "correct_index": 0,
+            "explanation": "'What's this?' dùng để hỏi tên bộ phận cơ thể ở gần (Unit 4, Lesson 1).",
+            "tags": [
+              "unit-4"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What's this? – It's ___. (bộ phận dùng để nghe)",
+            "choices": [
+              "an ear",
+              "an eye",
+              "a nose",
+              "a hand"
+            ],
+            "correct_answer": "an ear",
+            "explanation": "'Ear' (tai) là bộ phận dùng để nghe (Unit 4, vocabulary).",
+            "tags": [
+              "unit-4",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Lucy hỏi bạn về sở thích. Câu hỏi đúng là:",
+            "options": [
+              "What's your hobby?",
+              "What's this?",
+              "How old are you?",
+              "Is this your hobby?"
+            ],
+            "correct_index": 0,
+            "explanation": "'What's your hobby?' dùng để hỏi về sở thích (Unit 5, Lesson 1).",
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What's your hobby? – It's ___. (sở thích hát)",
+            "choices": [
+              "singing",
+              "dancing",
+              "drawing",
+              "swimming"
+            ],
+            "correct_answer": "singing",
+            "explanation": "'Singing' (ca hát) là một sở thích trong Unit 5.",
+            "tags": [
+              "unit-5",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cô giáo cho học sinh xem tranh sân chơi và hỏi. Câu hỏi đúng là:",
+            "options": [
+              "Is this our playground?",
+              "What's your hobby?",
+              "How old are you?",
+              "Is this your friend?"
+            ],
+            "correct_index": 0,
+            "explanation": "'Is this our...?' dùng để hỏi về nơi chốn ở trường (Unit 6, Lesson 1).",
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Is this our library? – Yes, ___ is.",
+            "choices": [
+              "it",
+              "this",
+              "that",
+              "she"
+            ],
+            "correct_answer": "it",
+            "explanation": "Trả lời 'Is this...?' luôn dùng 'it' (Unit 6).",
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cô giáo muốn cả lớp mở sách ra. Cô nói:",
+            "options": [
+              "Open your books, please!",
+              "Close your books, please!",
+              "Sit down, please!",
+              "Stand up, please!"
+            ],
+            "correct_index": 0,
+            "explanation": "Câu mệnh lệnh lịch sự dùng 'V + ..., please!' (Unit 7, Lesson 1).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "___ down, please! (Học sinh đang đứng, cô muốn các em ngồi xuống)",
+            "choices": [
+              "Sit",
+              "Stand",
+              "Open",
+              "Close"
+            ],
+            "correct_answer": "Sit",
+            "explanation": "'Sit down, please!' là câu mệnh lệnh yêu cầu ngồi xuống (Unit 7).",
+            "tags": [
+              "unit-7",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Lucy khoe với Ben rằng mình có một cây bút mực. Câu nói của Lucy là:",
+            "options": [
+              "I have a pen.",
+              "I have a ruler.",
+              "Do you have a pen?",
+              "It's a pen."
+            ],
+            "correct_index": 0,
+            "explanation": "'I have + a/an + đồ vật' dùng để nói mình có gì (Unit 8, Lesson 1).",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Do you have an eraser? – Yes, I ___.",
+            "choices": [
+              "do",
+              "don't",
+              "have",
+              "am"
+            ],
+            "correct_answer": "do",
+            "explanation": "Trả lời khẳng định cho 'Do you have...?' là 'Yes, I do.' (Unit 8, Lesson 2).",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Ben cầm cây bút chì màu vàng và hỏi bạn. Câu hỏi đúng là:",
+            "options": [
+              "What colour is it?",
+              "What's this?",
+              "Do you have it?",
+              "Is this yellow?"
+            ],
+            "correct_index": 0,
+            "explanation": "'What colour is it?' dùng để hỏi màu sắc của một vật (Unit 9, Lesson 1).",
+            "tags": [
+              "unit-9"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What colour is it? – It's ___. (màu của quả chuối)",
+            "choices": [
+              "yellow",
+              "blue",
+              "green",
+              "black"
+            ],
+            "correct_answer": "yellow",
+            "explanation": "'Yellow' nghĩa là màu vàng (Unit 9, vocabulary).",
+            "tags": [
+              "unit-9",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Minh hỏi bạn về hoạt động giờ ra chơi. Câu hỏi đúng là:",
+            "options": [
+              "What do you do at break time?",
+              "What's your hobby?",
+              "Is this break time?",
+              "How old are you?"
+            ],
+            "correct_index": 0,
+            "explanation": "'What do you do at break time?' dùng để hỏi hoạt động giờ ra chơi (Unit 10, Lesson 1).",
+            "tags": [
+              "unit-10"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What do you do at break time? – I ___. (chơi cờ vua)",
+            "choices": [
+              "play chess",
+              "play football",
+              "chat",
+              "play volleyball"
+            ],
+            "correct_answer": "play chess",
+            "explanation": "'Play chess' nghĩa là chơi cờ vua (Unit 10, vocabulary).",
+            "tags": [
+              "unit-10",
+              "vocabulary"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 2,
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 2 (Unit 4-5)",
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Lucy and Minh say goodbye at the end of the day. What does Lucy say?",
+            "options": [
+              "Goodbye, Minh.",
+              "My name's Lucy.",
+              "How old are you?",
+              "This is Minh."
+            ],
+            "correct_index": 0,
+            "explanation": "'Goodbye' dùng để chào tạm biệt bạn (Unit 1, Lesson 2).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối câu hỏi/câu chào với câu trả lời đúng:",
+            "pairs": [
+              {
+                "left": "Hi. I'm Ben.",
+                "right": "Hello, Ben. I'm Lucy."
+              },
+              {
+                "left": "How are you, Ben?",
+                "right": "Fine, thank you."
+              },
+              {
+                "left": "Goodbye, Ben.",
+                "right": "Bye, Lucy."
+              }
+            ],
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối câu hỏi với câu trả lời đúng (Unit 2 - Our names):",
+            "pairs": [
+              {
+                "left": "What's your name?",
+                "right": "My name's Mary."
+              },
+              {
+                "left": "How old are you?",
+                "right": "I'm eight years old."
+              },
+              {
+                "left": "Hi. I'm Linh. What's your name?",
+                "right": "My name's Ben."
+              }
+            ],
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bạn của em có sinh nhật lần thứ 9. Bạn ấy trả lời câu 'How old are you?' như thế nào?",
+            "options": [
+              "I'm nine years old.",
+              "My name's nine.",
+              "Fine, nine.",
+              "I'm nine, thank you."
+            ],
+            "correct_index": 0,
+            "explanation": "Số tuổi kết hợp với 'I'm ___ years old.', số 9 là 'nine' (Unit 2).",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Is this Bill? – ___",
+            "options": [
+              "Yes, it is.",
+              "Yes, he is.",
+              "Fine, thank you.",
+              "My name's Bill."
+            ],
+            "correct_index": 0,
+            "explanation": "Câu hỏi 'Is this...?' được trả lời 'Yes, it is.' / 'No, it isn't.' (Unit 3).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Is that Nam? – No, it isn't. It's ___.",
+            "choices": [
+              "Minh",
+              "friend",
+              "teacher",
+              "Ms Hoa"
+            ],
+            "correct_answer": "Minh",
+            "explanation": "Khi phủ định, nói rõ 'It's + tên đúng' (Unit 3).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "What's this? – It's a nose. Từ 'nose' có nghĩa là gì?",
+            "options": [
+              "mũi",
+              "tai",
+              "mắt",
+              "tay"
+            ],
+            "correct_index": 0,
+            "explanation": "'Nose' nghĩa là mũi (Unit 4, Lesson 1).",
+            "tags": [
+              "unit-4",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What's that? – It's ___. (bộ phận dùng để nhìn)",
+            "choices": [
+              "an eye",
+              "an ear",
+              "a mouth",
+              "hair"
+            ],
+            "correct_answer": "an eye",
+            "explanation": "'Eye' (mắt) là bộ phận dùng để nhìn (Unit 4).",
+            "tags": [
+              "unit-4",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Ben thích vẽ tranh. Bạn ấy trả lời câu 'What's your hobby?' như thế nào?",
+            "options": [
+              "It's drawing.",
+              "It's singing.",
+              "I'm drawing.",
+              "Drawing, please."
+            ],
+            "correct_index": 0,
+            "explanation": "Trả lời sở thích dùng cấu trúc 'It's + hobby (V-ing).' (Unit 5).",
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What's your hobby? – It's ___. (sở thích bơi lội)",
+            "choices": [
+              "swimming",
+              "dancing",
+              "painting",
+              "running"
+            ],
+            "correct_answer": "swimming",
+            "explanation": "'Swimming' (bơi lội) là một sở thích trong Unit 5.",
+            "tags": [
+              "unit-5",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Is this our classroom? Bức tranh là sân chơi, không phải lớp học. Câu trả lời đúng là:",
+            "options": [
+              "No, it isn't.",
+              "Yes, it is.",
+              "Yes, it isn't.",
+              "No, it is."
+            ],
+            "correct_index": 0,
+            "explanation": "Khi câu hỏi sai với tranh, trả lời phủ định 'No, it isn't.' (Unit 6).",
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Nơi có nhiều sách để đọc và mượn ở trường gọi là gì?",
+            "choices": [
+              "library",
+              "gym",
+              "playground",
+              "art room"
+            ],
+            "correct_answer": "library",
+            "explanation": "'Library' nghĩa là thư viện (Unit 6, vocabulary).",
+            "tags": [
+              "unit-6",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Học sinh muốn ra khỏi lớp, em xin phép cô giáo bằng câu:",
+            "options": [
+              "May I go out?",
+              "May I come in?",
+              "May I sit down?",
+              "May I open the book?"
+            ],
+            "correct_index": 0,
+            "explanation": "'May I...?' dùng để xin phép; 'go out' nghĩa là ra ngoài (Unit 7, Lesson 2).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "May I come in? – Yes, you ___.",
+            "choices": [
+              "can",
+              "can't",
+              "do",
+              "don't"
+            ],
+            "correct_answer": "can",
+            "explanation": "Đồng ý cho phép trả lời 'Yes, you can.' (Unit 7, Lesson 2).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Ben hỏi Mai có cây thước không nhưng Mai không có. Mai trả lời:",
+            "options": [
+              "No, I don't.",
+              "No, I doesn't.",
+              "Yes, I do.",
+              "I have a ruler."
+            ],
+            "correct_index": 0,
+            "explanation": "Trả lời phủ định cho 'Do you have...?' là 'No, I don't.' (Unit 8, Lesson 2).",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "I have a ___. (đồ vật dùng để đựng bút, thước)",
+            "choices": [
+              "pencil case",
+              "notebook",
+              "eraser",
+              "school bag"
+            ],
+            "correct_answer": "pencil case",
+            "explanation": "'Pencil case' nghĩa là hộp bút (Unit 8, vocabulary).",
+            "tags": [
+              "unit-8",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "What colour is the eraser? – It's blue. Từ 'blue' có nghĩa là gì?",
+            "options": [
+              "màu xanh dương",
+              "màu đỏ",
+              "màu vàng",
+              "màu nâu"
+            ],
+            "correct_index": 0,
+            "explanation": "'Blue' nghĩa là màu xanh dương (Unit 9, Lesson 1).",
+            "tags": [
+              "unit-9",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What colour are they? – They're ___. (nhiều quả táo màu đỏ)",
+            "choices": [
+              "red",
+              "brown",
+              "white",
+              "orange"
+            ],
+            "correct_answer": "red",
+            "explanation": "Khi hỏi về nhiều vật dùng 'What colour are they? – They're...' (Unit 9, Lesson 2).",
+            "tags": [
+              "unit-9"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Ben rủ bạn chơi cờ vua vào giờ ra chơi. Ben nói:",
+            "options": [
+              "It's break time. Let's play chess.",
+              "What's your hobby?",
+              "Is this our playground?",
+              "Do you have a chess set?"
+            ],
+            "correct_index": 0,
+            "explanation": "Theo hội thoại Unit 10, Ben nói 'It's break time. Let's play chess.'",
+            "tags": [
+              "unit-10"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "I play volleyball at break time. What about you, ___?",
+            "choices": [
+              "Minh",
+              "chess",
+              "playground",
+              "eraser"
+            ],
+            "correct_answer": "Minh",
+            "explanation": "Câu hỏi ngược 'What about you, Minh?' dùng tên bạn cùng lớp (Unit 10, Lesson 1).",
+            "tags": [
+              "unit-10"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 3,
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 3 (Unit 6-7)",
+      "questions": [
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Từ nào có nghĩa là 'lời chào tạm biệt' (giống 'bye')?",
+            "choices": [
+              "goodbye",
+              "hello",
+              "thank you",
+              "fine"
+            ],
+            "correct_answer": "goodbye",
+            "explanation": "'Goodbye' và 'Bye' đều là lời chào tạm biệt (Unit 1).",
+            "tags": [
+              "unit-1",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Chọn từ bắt đầu bằng cùng âm /h/ với 'hello' (Phonics Unit 1):",
+            "options": [
+              "how",
+              "bye",
+              "yes",
+              "friend"
+            ],
+            "correct_index": 0,
+            "explanation": "Phonics Unit 1 luyện âm /h/ trong 'hello'; 'how' cũng bắt đầu bằng âm này.",
+            "tags": [
+              "unit-1",
+              "phonics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Chọn từ đúng để hoàn thành: What's your ___? – My name's Nam.",
+            "choices": [
+              "name",
+              "old",
+              "friend",
+              "yes"
+            ],
+            "correct_answer": "name",
+            "explanation": "Từ vựng 'name' nằm trong mẫu câu 'What's your name?' (Unit 2).",
+            "tags": [
+              "unit-2",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bill hỏi tuổi của Mary. Câu hỏi của Bill là gì?",
+            "options": [
+              "How old are you?",
+              "What's your name?",
+              "Is this Mary?",
+              "Hello, Mary."
+            ],
+            "correct_index": 0,
+            "explanation": "'How old are you?' dùng để hỏi tuổi (Unit 2, Lesson 2).",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối câu hỏi với câu trả lời đúng (Unit 3 - Our friends):",
+            "pairs": [
+              {
+                "left": "Is this Bill?",
+                "right": "Yes, it is."
+              },
+              {
+                "left": "Is that Nam?",
+                "right": "No, it isn't. It's Minh."
+              },
+              {
+                "left": "This is Mary.",
+                "right": "Hi, Mary."
+              }
+            ],
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ nào chỉ một người bạn (không phải thầy/cô giáo)?",
+            "options": [
+              "friend",
+              "teacher",
+              "Mr",
+              "Ms"
+            ],
+            "correct_index": 0,
+            "explanation": "'Friend' nghĩa là bạn bè, khác với 'teacher' (Unit 3).",
+            "tags": [
+              "unit-3",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối bộ phận cơ thể với chức năng của nó:",
+            "pairs": [
+              {
+                "left": "eye",
+                "right": "to see"
+              },
+              {
+                "left": "ear",
+                "right": "to hear"
+              },
+              {
+                "left": "mouth",
+                "right": "to eat / to speak"
+              },
+              {
+                "left": "hand",
+                "right": "to touch"
+              }
+            ],
+            "tags": [
+              "unit-4",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cô giáo yêu cầu học sinh nhắm mắt lại rồi mở ra. Cô nói:",
+            "options": [
+              "Open your eyes!",
+              "Touch your nose!",
+              "This is your eye.",
+              "What's this?"
+            ],
+            "correct_index": 0,
+            "explanation": "'Open your eyes!' là câu mệnh lệnh dùng động từ 'open' (Unit 4, Lesson 2).",
+            "tags": [
+              "unit-4"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối câu hỏi với tranh sở thích đúng:",
+            "pairs": [
+              {
+                "left": "It's dancing.",
+                "right": "múa/nhảy"
+              },
+              {
+                "left": "It's drawing.",
+                "right": "vẽ tranh"
+              },
+              {
+                "left": "It's swimming.",
+                "right": "bơi lội"
+              },
+              {
+                "left": "It's singing.",
+                "right": "ca hát"
+              }
+            ],
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ 'painting' có nghĩa là gì?",
+            "options": [
+              "vẽ tranh (bằng màu)",
+              "chạy bộ",
+              "nấu ăn",
+              "đi bộ"
+            ],
+            "correct_index": 0,
+            "explanation": "'Painting' nghĩa là vẽ tranh bằng màu (Unit 5, vocabulary mở rộng).",
+            "tags": [
+              "unit-5",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối tên phòng học với hoạt động phù hợp:",
+            "pairs": [
+              {
+                "left": "gym",
+                "right": "tập thể dục"
+              },
+              {
+                "left": "art room",
+                "right": "học vẽ"
+              },
+              {
+                "left": "computer room",
+                "right": "học tin học"
+              },
+              {
+                "left": "music room",
+                "right": "học nhạc"
+              }
+            ],
+            "tags": [
+              "unit-6",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bạn rủ bạn cùng lớp đi đến thư viện. Câu nói đúng là:",
+            "options": [
+              "Let's go to the library.",
+              "Is this our library?",
+              "It's a library.",
+              "What's this?"
+            ],
+            "correct_index": 0,
+            "explanation": "'Let's go to the...' dùng để rủ rê đi đến một nơi (Unit 6, Lesson 2).",
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối câu mệnh lệnh với hành động đúng:",
+            "pairs": [
+              {
+                "left": "Stand up, please!",
+                "right": "đứng lên"
+              },
+              {
+                "left": "Sit down, please!",
+                "right": "ngồi xuống"
+              },
+              {
+                "left": "Close your book, please!",
+                "right": "gấp sách lại"
+              },
+              {
+                "left": "Open your book, please!",
+                "right": "mở sách ra"
+              }
+            ],
+            "tags": [
+              "unit-7",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Học sinh đi học muộn, xin phép cô giáo vào lớp. Câu hỏi đúng là:",
+            "options": [
+              "May I come in?",
+              "May I go out?",
+              "Is this our classroom?",
+              "Let's go to class."
+            ],
+            "correct_index": 0,
+            "explanation": "'May I come in?' dùng để xin phép vào lớp (Unit 7, Lesson 2).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối đồ dùng học tập với hình ảnh mô tả:",
+            "pairs": [
+              {
+                "left": "a book",
+                "right": "quyển sách"
+              },
+              {
+                "left": "a ruler",
+                "right": "cây thước"
+              },
+              {
+                "left": "a school bag",
+                "right": "cặp sách"
+              },
+              {
+                "left": "an eraser",
+                "right": "cục tẩy"
+              }
+            ],
+            "tags": [
+              "unit-8",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ nào dùng để viết và có thể tẩy xóa được (khác với bút mực)?",
+            "options": [
+              "a pencil",
+              "a pen",
+              "a ruler",
+              "a book"
+            ],
+            "correct_index": 0,
+            "explanation": "'Pencil' (bút chì) khác với 'pen' (bút mực) — bút chì có thể tẩy xóa (Unit 8).",
+            "tags": [
+              "unit-8",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối tên màu với đồ vật thường có màu đó:",
+            "pairs": [
+              {
+                "left": "green",
+                "right": "lá cây"
+              },
+              {
+                "left": "brown",
+                "right": "cây thước gỗ"
+              },
+              {
+                "left": "white",
+                "right": "tờ giấy"
+              },
+              {
+                "left": "black",
+                "right": "bảng đen"
+              }
+            ],
+            "tags": [
+              "unit-9",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Câu hỏi 'What colour are they?' khác câu 'What colour is it?' ở điểm nào?",
+            "options": [
+              "Dùng khi hỏi về nhiều vật (số nhiều)",
+              "Dùng khi hỏi về một vật",
+              "Không có gì khác nhau",
+              "Chỉ dùng cho màu đỏ"
+            ],
+            "correct_index": 0,
+            "explanation": "'Is it' dùng cho số ít, 'are they' dùng cho số nhiều (Unit 9, Lesson 2).",
+            "tags": [
+              "unit-9"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối hoạt động giờ ra chơi với nghĩa tiếng Việt:",
+            "pairs": [
+              {
+                "left": "play chess",
+                "right": "chơi cờ vua"
+              },
+              {
+                "left": "play basketball",
+                "right": "chơi bóng rổ"
+              },
+              {
+                "left": "play badminton",
+                "right": "chơi cầu lông"
+              },
+              {
+                "left": "play volleyball",
+                "right": "chơi bóng chuyền"
+              }
+            ],
+            "tags": [
+              "unit-10",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ nào chỉ hoạt động 'trò chuyện' vào giờ ra chơi?",
+            "options": [
+              "chat",
+              "play chess",
+              "play football",
+              "word puzzles"
+            ],
+            "correct_index": 0,
+            "explanation": "'Chat' nghĩa là trò chuyện, xuất hiện trong vocabulary Unit 10.",
+            "tags": [
+              "unit-10",
+              "vocabulary"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 4,
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 4 (Unit 8-9)",
+      "questions": [
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Minh: Hi. I'm Minh. What's your name? Mai: My name's ___.",
+            "choices": [
+              "Mai",
+              "seven",
+              "fine",
+              "goodbye"
+            ],
+            "correct_answer": "Mai",
+            "explanation": "Đáp lại 'What's your name?' bằng 'My name's + tên' (Unit 1-2).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Em gặp cô giáo mới vào buổi sáng. Em nên nói gì?",
+            "options": [
+              "Hello.",
+              "Goodbye.",
+              "I'm eight.",
+              "It's a pen."
+            ],
+            "correct_index": 0,
+            "explanation": "'Hello' dùng để chào khi gặp mặt (Unit 1).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "My name's ___. I'm seven years old. (điền tên một bạn trong bài)",
+            "choices": [
+              "Nam",
+              "eye",
+              "pen",
+              "school"
+            ],
+            "correct_answer": "Nam",
+            "explanation": "'Nam' là tên nhân vật xuất hiện trong Unit 2.",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ nào có nghĩa là 'tuổi' hoặc dùng để hỏi tuổi?",
+            "options": [
+              "old",
+              "name",
+              "friend",
+              "fine"
+            ],
+            "correct_index": 0,
+            "explanation": "'Old' xuất hiện trong cụm 'How old are you?' / '... years old' (Unit 2).",
+            "tags": [
+              "unit-2",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Em muốn giới thiệu một người bạn đang đứng xa mình. Em nói:",
+            "options": [
+              "That's my friend.",
+              "This is my friend.",
+              "I'm my friend.",
+              "Hello, my friend."
+            ],
+            "correct_index": 0,
+            "explanation": "'That's' dùng cho người/vật ở xa, 'This is' dùng cho người/vật ở gần (Unit 3).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Mai: Lucy, ___ Mr Long. Lucy: Hello, Mr Long.",
+            "choices": [
+              "that's",
+              "this is",
+              "is this",
+              "how old"
+            ],
+            "correct_answer": "that's",
+            "explanation": "Vì Mr Long đứng ở xa trong tranh, Mai dùng 'that's' để giới thiệu (Unit 3).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "___ your nose! (Chạm vào mũi của em)",
+            "choices": [
+              "Touch",
+              "Open",
+              "Is",
+              "What's"
+            ],
+            "correct_answer": "Touch",
+            "explanation": "'Touch' nghĩa là chạm vào, dùng trong câu mệnh lệnh 'Touch your nose!' (Unit 4).",
+            "tags": [
+              "unit-4",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ nào chỉ bộ phận dùng để cầm nắm đồ vật?",
+            "options": [
+              "hand",
+              "face",
+              "hair",
+              "mouth"
+            ],
+            "correct_index": 0,
+            "explanation": "'Hand' (bàn tay) dùng để cầm nắm (Unit 4, vocabulary).",
+            "tags": [
+              "unit-4",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What's your hobby, Ben? – ___.",
+            "choices": [
+              "Dancing",
+              "Fine",
+              "Eight",
+              "Hello"
+            ],
+            "correct_answer": "Dancing",
+            "explanation": "Có thể trả lời ngắn gọn chỉ bằng động từ V-ing như 'Dancing.' (Unit 5, Lesson 1).",
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bạn thích chạy bộ mỗi sáng. Sở thích đó tiếng Anh là gì?",
+            "options": [
+              "running",
+              "walking",
+              "cooking",
+              "singing"
+            ],
+            "correct_index": 0,
+            "explanation": "'Running' nghĩa là chạy bộ (Unit 5, vocabulary mở rộng).",
+            "tags": [
+              "unit-5",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Let's go to the gym. – OK, ___ go.",
+            "choices": [
+              "let's",
+              "let",
+              "going",
+              "goes"
+            ],
+            "correct_answer": "let's",
+            "explanation": "Câu đáp lại lời rủ là 'OK, let's go.' (Unit 6, Lesson 2).",
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ 'playground' có nghĩa là gì?",
+            "options": [
+              "sân chơi",
+              "phòng máy tính",
+              "phòng nhạc",
+              "phòng vẽ"
+            ],
+            "correct_index": 0,
+            "explanation": "'Playground' nghĩa là sân chơi (Unit 6, vocabulary).",
+            "tags": [
+              "unit-6",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "May I speak? – No, you ___.",
+            "choices": [
+              "can't",
+              "can",
+              "do",
+              "don't"
+            ],
+            "correct_answer": "can't",
+            "explanation": "Từ chối cho phép trả lời 'No, you can't.' (Unit 7, Lesson 2).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ 'speak' trong 'May I speak?' có nghĩa là gì?",
+            "options": [
+              "nói/phát biểu",
+              "đứng lên",
+              "ngồi xuống",
+              "đi ra"
+            ],
+            "correct_index": 0,
+            "explanation": "'Speak' nghĩa là nói/phát biểu (Unit 7, vocabulary).",
+            "tags": [
+              "unit-7",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Do you have a notebook? – ___, I do.",
+            "choices": [
+              "Yes",
+              "No",
+              "It's",
+              "I'm"
+            ],
+            "correct_answer": "Yes",
+            "explanation": "Câu trả lời khẳng định bắt đầu bằng 'Yes' (Unit 8, Lesson 2).",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Mai nói: 'I have a ruler, too.' Từ 'too' ở đây có nghĩa gì?",
+            "options": [
+              "cũng vậy",
+              "không có",
+              "rất nhiều",
+              "màu gì"
+            ],
+            "correct_index": 0,
+            "explanation": "'Too' nghĩa là 'cũng vậy', dùng khi đồng tình có cùng đồ vật (Unit 8, Lesson 1).",
+            "tags": [
+              "unit-8",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What colour is your school bag? – It's ___. (màu cam)",
+            "choices": [
+              "orange",
+              "green",
+              "white",
+              "brown"
+            ],
+            "correct_answer": "orange",
+            "explanation": "'Orange' nghĩa là màu cam (Unit 9, vocabulary).",
+            "tags": [
+              "unit-9",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ nào chỉ màu sắc trong các từ sau?",
+            "options": [
+              "brown",
+              "book",
+              "hobby",
+              "friend"
+            ],
+            "correct_index": 0,
+            "explanation": "'Brown' (màu nâu) là từ chỉ màu sắc trong Unit 9.",
+            "tags": [
+              "unit-9",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "I ___ at break time. (chơi bóng đá)",
+            "choices": [
+              "play football",
+              "play chess",
+              "chat",
+              "play table tennis"
+            ],
+            "correct_answer": "play football",
+            "explanation": "'Play football' nghĩa là chơi bóng đá (Unit 10, vocabulary).",
+            "tags": [
+              "unit-10",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Câu 'I play basketball.' trả lời cho câu hỏi nào?",
+            "options": [
+              "What do you do at break time?",
+              "What's your hobby?",
+              "Is this our gym?",
+              "What colour is it?"
+            ],
+            "correct_index": 0,
+            "explanation": "Câu trả lời hoạt động giờ ra chơi dùng cấu trúc 'I + hoạt động + at break time.' (Unit 10).",
+            "tags": [
+              "unit-10"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 5,
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 5 (Unit 10 + tổng hợp 1-3)",
+      "questions": [
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Hi. How are you? – Fine, ___ you.",
+            "choices": [
+              "thank",
+              "hello",
+              "bye",
+              "name"
+            ],
+            "correct_answer": "thank",
+            "explanation": "Cấu trúc đầy đủ là 'Fine, thank you.' (Unit 1, Lesson 2).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ nào KHÔNG phải là lời chào?",
+            "options": [
+              "pen",
+              "hello",
+              "hi",
+              "bye"
+            ],
+            "correct_index": 0,
+            "explanation": "'Pen' là đồ dùng học tập, không phải lời chào (Unit 1 vs Unit 8).",
+            "tags": [
+              "unit-1",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối tên với số tuổi tương ứng theo hội thoại Unit 2:",
+            "pairs": [
+              {
+                "left": "Linh",
+                "right": "seven years old"
+              },
+              {
+                "left": "Mary",
+                "right": "eight years old"
+              },
+              {
+                "left": "Ben",
+                "right": "nine years old"
+              }
+            ],
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "How old are you? – I'm ___ years old. (số 6)",
+            "choices": [
+              "six",
+              "seven",
+              "eight",
+              "nine"
+            ],
+            "correct_answer": "six",
+            "explanation": "Số 6 trong tiếng Anh là 'six' (Unit 2, số đếm).",
+            "tags": [
+              "unit-2",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ 'teacher' có nghĩa là gì?",
+            "options": [
+              "giáo viên",
+              "bạn bè",
+              "học sinh",
+              "tên"
+            ],
+            "correct_index": 0,
+            "explanation": "'Teacher' nghĩa là giáo viên, xuất hiện với 'Mr/Ms + tên' (Unit 3).",
+            "tags": [
+              "unit-3",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Is this your teacher? – Yes, ___ is. It's Ms Hoa.",
+            "choices": [
+              "it",
+              "she",
+              "he",
+              "that"
+            ],
+            "correct_answer": "it",
+            "explanation": "Trả lời câu hỏi 'Is this...?' luôn dùng 'it' (Unit 3).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What's this? It's a ___. (toàn bộ phần trước của đầu)",
+            "choices": [
+              "face",
+              "hand",
+              "ear",
+              "eye"
+            ],
+            "correct_answer": "face",
+            "explanation": "'Face' nghĩa là khuôn mặt (Unit 4, Lesson 1).",
+            "tags": [
+              "unit-4",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Phonics Unit 4 luyện âm nào trong từ 'hair' và 'ears'?",
+            "options": [
+              "âm /h/ và /iə/",
+              "âm /b/",
+              "âm /th/",
+              "âm /f/"
+            ],
+            "correct_index": 0,
+            "explanation": "Phonics Unit 4 luyện các âm trong 'hair' và 'ears' (Unit 4, Phonics).",
+            "tags": [
+              "unit-4",
+              "phonics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Phonics Unit 5 luyện âm đầu trong từ nào?",
+            "choices": [
+              "painting",
+              "hobby",
+              "drawing",
+              "swimming"
+            ],
+            "correct_answer": "painting",
+            "explanation": "Phonics Unit 5 luyện âm /p/ trong 'painting' và âm /r/ trong 'running' (Unit 5, Phonics).",
+            "tags": [
+              "unit-5",
+              "phonics"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối sở thích với hoạt động mô tả:",
+            "pairs": [
+              {
+                "left": "cooking",
+                "right": "nấu ăn"
+              },
+              {
+                "left": "walking",
+                "right": "đi bộ"
+              },
+              {
+                "left": "running",
+                "right": "chạy bộ"
+              }
+            ],
+            "tags": [
+              "unit-5",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Is this our art room? – No, it isn't. It's our ___.",
+            "choices": [
+              "music room",
+              "playground",
+              "gym",
+              "library"
+            ],
+            "correct_answer": "music room",
+            "explanation": "Khi phủ định, cần nói rõ nơi đúng, ví dụ 'It's our music room.' (Unit 6).",
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Phonics Unit 6 luyện âm trong hai từ nào?",
+            "options": [
+              "playground và classroom",
+              "hobby và drawing",
+              "eye và ear",
+              "book và pen"
+            ],
+            "correct_index": 0,
+            "explanation": "Phonics Unit 6 luyện âm /pl/ trong 'playground' và /kl/ trong 'classroom' (Unit 6, Phonics).",
+            "tags": [
+              "unit-6",
+              "phonics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Phonics Unit 7 luyện phụ âm đầu trong hai từ nào?",
+            "choices": [
+              "speak và stand",
+              "book và eraser",
+              "eye và ear",
+              "red và blue"
+            ],
+            "correct_answer": "speak và stand",
+            "explanation": "Phonics Unit 7 luyện cụm phụ âm /sp/ trong 'speak' và /st/ trong 'stand' (Unit 7).",
+            "tags": [
+              "unit-7",
+              "phonics"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cô giáo chào lớp vào đầu buổi học và yêu cầu ngồi xuống. Cô nói:",
+            "options": [
+              "Hello, class. Sit down, please!",
+              "Goodbye, class!",
+              "Open your books!",
+              "May I come in?"
+            ],
+            "correct_index": 0,
+            "explanation": "Theo hội thoại mẫu Unit 7, cô giáo nói 'Hello, class. Sit down, please!' khi vào lớp.",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Phonics Unit 8 luyện âm đầu trong hai từ nào?",
+            "choices": [
+              "book và eraser",
+              "hand và face",
+              "red và blue",
+              "speak và stand"
+            ],
+            "correct_answer": "book và eraser",
+            "explanation": "Phonics Unit 8 luyện âm /b/ trong 'book' và nguyên âm trong 'eraser' (Unit 8, Phonics).",
+            "tags": [
+              "unit-8",
+              "phonics"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Em muốn hỏi bạn có quyển vở hay không. Câu hỏi đúng là:",
+            "options": [
+              "Do you have a notebook?",
+              "Have you a notebook?",
+              "Is this a notebook?",
+              "What's a notebook?"
+            ],
+            "correct_index": 0,
+            "explanation": "Cấu trúc hỏi 'Do you have + a/an + đồ vật?' (Unit 8, Lesson 2).",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Phonics Unit 9 luyện âm đầu trong hai từ nào?",
+            "choices": [
+              "blue và brown",
+              "eye và ear",
+              "book và pen",
+              "run và walk"
+            ],
+            "correct_answer": "blue và brown",
+            "explanation": "Phonics Unit 9 luyện cụm phụ âm /bl/ trong 'blue' và /br/ trong 'brown' (Unit 9, Phonics).",
+            "tags": [
+              "unit-9",
+              "phonics"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối câu hỏi với câu trả lời đúng (Unit 9):",
+            "pairs": [
+              {
+                "left": "What colour is it?",
+                "right": "It's red."
+              },
+              {
+                "left": "What colour are they?",
+                "right": "They're green."
+              }
+            ],
+            "tags": [
+              "unit-9"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Trò chơi giải ô chữ vào giờ ra chơi gọi là gì?",
+            "choices": [
+              "word puzzles",
+              "table tennis",
+              "badminton",
+              "chess"
+            ],
+            "correct_answer": "word puzzles",
+            "explanation": "'Word puzzles' nghĩa là trò chơi ô chữ (Unit 10, vocabulary).",
+            "tags": [
+              "unit-10",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối câu hỏi với câu trả lời phù hợp (Unit 10):",
+            "pairs": [
+              {
+                "left": "What do you do at break time?",
+                "right": "I play badminton."
+              },
+              {
+                "left": "It's break time. Let's play chess.",
+                "right": "OK!"
+              }
+            ],
+            "tags": [
+              "unit-10"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 6,
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 6 (Unit 1-5 (đợt 2))",
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Ben chào tạm biệt bằng một câu ngắn hơn 'goodbye'. Đó là câu nào?",
+            "options": [
+              "Bye.",
+              "Hello.",
+              "Fine.",
+              "Yes."
+            ],
+            "correct_index": 0,
+            "explanation": "'Bye' là cách nói ngắn của 'Goodbye' (Unit 1).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "___ are you? – Fine, thank you.",
+            "choices": [
+              "How",
+              "What",
+              "Who",
+              "This"
+            ],
+            "correct_answer": "How",
+            "explanation": "'How are you?' là câu hỏi thăm sức khỏe (Unit 1, Lesson 2).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Câu 'My name's Bill.' dùng để trả lời câu hỏi nào?",
+            "options": [
+              "What's your name?",
+              "How old are you?",
+              "How are you?",
+              "Is this Bill?"
+            ],
+            "correct_index": 0,
+            "explanation": "'My name's...' là câu trả lời cho 'What's your name?' (Unit 2).",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What's ___ name? – My name's Linh.",
+            "choices": [
+              "your",
+              "my",
+              "his",
+              "old"
+            ],
+            "correct_answer": "your",
+            "explanation": "'Your' dùng khi hỏi về đối phương: 'What's your name?' (Unit 2).",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Chọn từ dùng trước tên của một phụ nữ lớn tuổi (như cô giáo):",
+            "options": [
+              "Ms",
+              "Mr",
+              "friend",
+              "teacher"
+            ],
+            "correct_index": 0,
+            "explanation": "'Ms' dùng trước tên phụ nữ, ví dụ 'Ms Hoa' (Unit 3).",
+            "tags": [
+              "unit-3",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối từ với nghĩa tiếng Việt đúng:",
+            "pairs": [
+              {
+                "left": "friend",
+                "right": "bạn"
+              },
+              {
+                "left": "teacher",
+                "right": "giáo viên"
+              },
+              {
+                "left": "this",
+                "right": "đây (gần)"
+              },
+              {
+                "left": "that",
+                "right": "kia (xa)"
+              }
+            ],
+            "tags": [
+              "unit-3",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối câu hỏi với câu trả lời đúng theo bài hát 'Parts of the body':",
+            "pairs": [
+              {
+                "left": "What's this? (chỉ vào mắt)",
+                "right": "It's an eye."
+              },
+              {
+                "left": "What's this? (chỉ vào tai)",
+                "right": "It's an ear."
+              },
+              {
+                "left": "What's that? (chỉ vào mặt)",
+                "right": "It's a face."
+              }
+            ],
+            "tags": [
+              "unit-4"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What's this? – It's a mouth. Từ 'mouth' nghĩa là gì?",
+            "choices": [
+              "miệng",
+              "mũi",
+              "tóc",
+              "tay"
+            ],
+            "correct_answer": "miệng",
+            "explanation": "'Mouth' nghĩa là miệng (Unit 4, vocabulary).",
+            "tags": [
+              "unit-4",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Trong trò chơi 'Find the hobby', bạn học sinh giơ tranh vẽ người đang bơi. Bạn ấy nói gì?",
+            "options": [
+              "Swimming.",
+              "Singing.",
+              "Drawing.",
+              "Dancing."
+            ],
+            "correct_index": 0,
+            "explanation": "Tranh vẽ người bơi tương ứng với từ 'swimming' (Unit 5, hoạt động 'Let's play').",
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What's your hobby? – It's ___. (sở thích múa)",
+            "choices": [
+              "dancing",
+              "singing",
+              "swimming",
+              "drawing"
+            ],
+            "correct_answer": "dancing",
+            "explanation": "'Dancing' (múa/nhảy) là một sở thích trong Unit 5.",
+            "tags": [
+              "unit-5",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối câu hỏi với câu trả lời đúng (Unit 6):",
+            "pairs": [
+              {
+                "left": "Is this our school?",
+                "right": "Yes, it is."
+              },
+              {
+                "left": "Is this our classroom?",
+                "right": "No, it isn't."
+              },
+              {
+                "left": "Let's go to the playground.",
+                "right": "OK, let's go."
+              }
+            ],
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Nơi học sinh chơi bóng rổ, tập thể dục trong nhà gọi là gì?",
+            "choices": [
+              "gym",
+              "library",
+              "art room",
+              "computer room"
+            ],
+            "correct_answer": "gym",
+            "explanation": "'Gym' là phòng thể chất/thể dục (Unit 6, vocabulary).",
+            "tags": [
+              "unit-6",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối lời xin phép với câu trả lời phù hợp:",
+            "pairs": [
+              {
+                "left": "May I go out?",
+                "right": "Yes, you can."
+              },
+              {
+                "left": "May I speak?",
+                "right": "No, you can't."
+              }
+            ],
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "___ your book, please! (Học xong bài, cô muốn học sinh gấp sách lại)",
+            "choices": [
+              "Close",
+              "Open",
+              "Sit",
+              "Stand"
+            ],
+            "correct_answer": "Close",
+            "explanation": "'Close your book, please!' là câu mệnh lệnh gấp sách lại (Unit 7).",
+            "tags": [
+              "unit-7",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối câu hỏi với câu trả lời phù hợp:",
+            "pairs": [
+              {
+                "left": "Do you have a pen?",
+                "right": "Yes, I do."
+              },
+              {
+                "left": "Do you have a ruler?",
+                "right": "No, I don't."
+              }
+            ],
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "I have a ___. (đồ vật đựng sách vở khi đi học, đeo trên lưng)",
+            "choices": [
+              "school bag",
+              "pencil case",
+              "eraser",
+              "ruler"
+            ],
+            "correct_answer": "school bag",
+            "explanation": "'School bag' nghĩa là cặp sách (Unit 8, vocabulary).",
+            "tags": [
+              "unit-8",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bạn có 2 cây bút chì màu trắng. Câu trả lời đúng cho 'What colour are they?' là:",
+            "options": [
+              "They're white.",
+              "It's white.",
+              "They's white.",
+              "Is white."
+            ],
+            "correct_index": 0,
+            "explanation": "Với nhiều vật, dùng 'They're + màu.' (Unit 9, Lesson 2).",
+            "tags": [
+              "unit-9"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What colour is it? – It's ___. (màu đen của bảng)",
+            "choices": [
+              "black",
+              "white",
+              "yellow",
+              "orange"
+            ],
+            "correct_answer": "black",
+            "explanation": "'Black' nghĩa là màu đen (Unit 9, vocabulary).",
+            "tags": [
+              "unit-9",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Phonics Unit 10 luyện âm đầu trong hai từ nào?",
+            "choices": [
+              "football và volleyball",
+              "book và pen",
+              "eye và ear",
+              "red và blue"
+            ],
+            "correct_answer": "football và volleyball",
+            "explanation": "Phonics Unit 10 luyện âm /f/ trong 'football' và /v/ trong 'volleyball' (Unit 10, Phonics).",
+            "tags": [
+              "unit-10",
+              "phonics"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bạn chơi bóng bàn vào giờ ra chơi. Đó là hoạt động gì trong tiếng Anh?",
+            "options": [
+              "table tennis",
+              "basketball",
+              "badminton",
+              "chess"
+            ],
+            "correct_index": 0,
+            "explanation": "'Table tennis' nghĩa là bóng bàn (Unit 10, vocabulary).",
+            "tags": [
+              "unit-10",
+              "vocabulary"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 7,
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 7 (Unit 6-10 (đợt 2))",
+      "questions": [
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối lời chào phù hợp với hoàn cảnh:",
+            "pairs": [
+              {
+                "left": "Gặp bạn buổi sáng",
+                "right": "Hello."
+              },
+              {
+                "left": "Hỏi thăm sức khỏe bạn",
+                "right": "How are you?"
+              },
+              {
+                "left": "Chia tay ra về",
+                "right": "Goodbye."
+              }
+            ],
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ 'fine' trong 'Fine, thank you.' có nghĩa là gì?",
+            "options": [
+              "khỏe, ổn",
+              "tên",
+              "tạm biệt",
+              "bạn"
+            ],
+            "correct_index": 0,
+            "explanation": "'Fine' nghĩa là khỏe/ổn, dùng để trả lời 'How are you?' (Unit 1).",
+            "tags": [
+              "unit-1",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Chọn số đúng cho '10 years old':",
+            "options": [
+              "ten years old",
+              "nine years old",
+              "one years old",
+              "two years old"
+            ],
+            "correct_index": 0,
+            "explanation": "Số 10 là 'ten' trong tiếng Anh (Unit 2, ôn số đếm Starter).",
+            "tags": [
+              "unit-2",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Phonics Unit 2 luyện chữ hoa đầu của tên riêng. Từ nào viết đúng?",
+            "choices": [
+              "Mary",
+              "mary",
+              "MARY",
+              "maRy"
+            ],
+            "correct_answer": "Mary",
+            "explanation": "Tên riêng luôn viết hoa chữ cái đầu, như 'Mary', 'Nam' (Unit 2, Phonics).",
+            "tags": [
+              "unit-2",
+              "phonics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Phonics Unit 3 luyện âm /th/ trong từ nào?",
+            "choices": [
+              "that",
+              "friend",
+              "yes",
+              "teacher"
+            ],
+            "correct_answer": "that",
+            "explanation": "Phonics Unit 3 luyện âm /th/ qua 'that' và 'thank' (Unit 3, Phonics).",
+            "tags": [
+              "unit-3",
+              "phonics"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Nam giới thiệu bạn mình đứng ngay bên cạnh với cô giáo. Câu đúng nhất là:",
+            "options": [
+              "This is my friend.",
+              "That's my friend.",
+              "Is this my friend?",
+              "How old is my friend?"
+            ],
+            "correct_index": 0,
+            "explanation": "Khi người/vật ở gần, dùng 'This is...' để giới thiệu (Unit 3).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bạn muốn hỏi về bộ phận cơ thể ở xa (trong tranh). Câu hỏi là:",
+            "options": [
+              "What's that?",
+              "What's this?",
+              "Is this an ear?",
+              "How old are you?"
+            ],
+            "correct_index": 0,
+            "explanation": "'What's that?' dùng để hỏi về vật/bộ phận ở xa (Unit 4).",
+            "tags": [
+              "unit-4"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Touch your ___! (phần tóc trên đầu)",
+            "choices": [
+              "hair",
+              "hand",
+              "face",
+              "nose"
+            ],
+            "correct_answer": "hair",
+            "explanation": "'Hair' nghĩa là tóc (Unit 4, Phonics & vocabulary).",
+            "tags": [
+              "unit-4",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Ben và Lucy đang xem một buổi biểu diễn ca nhạc trên sân khấu. Lucy hỏi 'What's your hobby?' và bạn trên sân khấu trả lời:",
+            "options": [
+              "It's singing.",
+              "It's swimming.",
+              "It's a pen.",
+              "Nine years old."
+            ],
+            "correct_index": 0,
+            "explanation": "Theo hội thoại mẫu Unit 5, câu trả lời 'It's singing.' ứng với hình ảnh ca hát trên sân khấu.",
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Mai's hobby is ___. She likes to paint pictures every weekend.",
+            "choices": [
+              "painting",
+              "swimming",
+              "running",
+              "cooking"
+            ],
+            "correct_answer": "painting",
+            "explanation": "'Painting' phù hợp với việc vẽ tranh bằng màu (Unit 5, vocabulary mở rộng).",
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cô giáo giơ tranh ngôi trường và hỏi 'Is this our school?'. Bạn học sinh trả lời đúng là:",
+            "options": [
+              "Yes, it is. It's our school.",
+              "No, it is. It's our school.",
+              "Yes, it isn't.",
+              "It's our school? Yes."
+            ],
+            "correct_index": 0,
+            "explanation": "Theo hội thoại mẫu Unit 6, trả lời khẳng định là 'Yes, it is. It's our school.'",
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Nơi học sinh học vẽ tranh, tô màu gọi là gì?",
+            "choices": [
+              "art room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_answer": "art room",
+            "explanation": "'Art room' nghĩa là phòng học vẽ (Unit 6, vocabulary).",
+            "tags": [
+              "unit-6",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Học sinh muốn phát biểu ý kiến trong giờ học, xin phép bằng câu:",
+            "options": [
+              "May I speak?",
+              "May I go out?",
+              "May I come in?",
+              "Sit down, please."
+            ],
+            "correct_index": 0,
+            "explanation": "'May I speak?' dùng để xin phép phát biểu (Unit 7, vocabulary).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Cô giáo bước vào lớp buổi sáng. Học sinh chào: 'Good morning, ___ Hoa.'",
+            "choices": [
+              "Ms",
+              "Mr",
+              "Is",
+              "That's"
+            ],
+            "correct_answer": "Ms",
+            "explanation": "'Ms' dùng trước tên cô giáo, ví dụ 'Ms Hoa' (Unit 7, hội thoại mẫu).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Ben nói: 'Look, Lucy. I have a pen.' Lucy đáp lại thế nào theo hội thoại mẫu?",
+            "options": [
+              "It's nice. I like it.",
+              "No, I don't.",
+              "It's blue.",
+              "I'm nine."
+            ],
+            "correct_index": 0,
+            "explanation": "Theo hội thoại mẫu Unit 8, Lucy khen 'It's nice. I like it.' khi Ben khoe đồ vật.",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Do you have a pencil case? – No, I ___.",
+            "choices": [
+              "don't",
+              "do",
+              "isn't",
+              "am not"
+            ],
+            "correct_answer": "don't",
+            "explanation": "Trả lời phủ định cho 'Do you have...?' là 'No, I don't.' (Unit 8, Lesson 2).",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Nam hỏi bạn về màu của cục tẩy trong tranh 'Look, listen and repeat'. Bạn trả lời:",
+            "options": [
+              "It's blue.",
+              "It's black.",
+              "Yes, I do.",
+              "I have it."
+            ],
+            "correct_index": 0,
+            "explanation": "Theo hội thoại mẫu Unit 9, cục tẩy trong tranh có màu xanh dương ('It's blue.').",
+            "tags": [
+              "unit-9"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What colour is the pen? – It's ___. (màu đỏ)",
+            "choices": [
+              "red",
+              "yellow",
+              "brown",
+              "white"
+            ],
+            "correct_answer": "red",
+            "explanation": "'Red' nghĩa là màu đỏ (Unit 9, vocabulary).",
+            "tags": [
+              "unit-9",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Minh trả lời Mai: 'I play basketball.' Câu hỏi trước đó của Mai là gì?",
+            "choices": [
+              "What about you, Minh?",
+              "What's your name?",
+              "How old are you?",
+              "What colour is it?"
+            ],
+            "correct_answer": "What about you, Minh?",
+            "explanation": "Theo hội thoại mẫu Unit 10, Mai hỏi ngược 'What about you, Minh?' và Minh trả lời 'I play basketball.'",
+            "tags": [
+              "unit-10"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ nào KHÔNG phải là một môn thể thao/trò chơi trong Unit 10?",
+            "options": [
+              "library",
+              "chess",
+              "football",
+              "badminton"
+            ],
+            "correct_index": 0,
+            "explanation": "'Library' (thư viện) thuộc Unit 6, không phải hoạt động giờ ra chơi (Unit 10).",
+            "tags": [
+              "unit-10",
+              "vocabulary"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 8,
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 8 (Unit 1-3 + 8-10)",
+      "questions": [
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Lucy: ___. I'm Lucy. Ben: Hello, Lucy.",
+            "choices": [
+              "Hi",
+              "Bye",
+              "Fine",
+              "Old"
+            ],
+            "correct_answer": "Hi",
+            "explanation": "'Hi' là cách chào thân mật, tương đương 'Hello' (Unit 1).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Nam gặp lại bạn cũ sau kỳ nghỉ hè. Câu chào phù hợp nhất là:",
+            "options": [
+              "Hello. How are you?",
+              "Goodbye.",
+              "What's your name?",
+              "How old are you?"
+            ],
+            "correct_index": 0,
+            "explanation": "Khi gặp lại bạn, dùng 'Hello. How are you?' để chào và hỏi thăm (Unit 1).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Mary tự giới thiệu tên mình với Bill. Câu nói của Mary là:",
+            "options": [
+              "My name's Mary.",
+              "Your name's Mary.",
+              "Is this Mary?",
+              "How old, Mary?"
+            ],
+            "correct_index": 0,
+            "explanation": "'My name's + tên' dùng để giới thiệu tên của bản thân (Unit 2, Lesson 1).",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "How old are you? – I'm ___ years old. (số 5)",
+            "choices": [
+              "five",
+              "four",
+              "six",
+              "seven"
+            ],
+            "correct_answer": "five",
+            "explanation": "Số 5 trong tiếng Anh là 'five' (Unit 2, số đếm).",
+            "tags": [
+              "unit-2",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Is that your friend? Người bạn đó đứng cách xa, và đúng là bạn của em. Trả lời:",
+            "options": [
+              "Yes, it is.",
+              "No, it is.",
+              "Yes, isn't it.",
+              "It this."
+            ],
+            "correct_index": 0,
+            "explanation": "Trả lời khẳng định cho câu hỏi 'Is that...?' là 'Yes, it is.' (Unit 3).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "This is Ms Hoa. She's my ___.",
+            "choices": [
+              "teacher",
+              "friend",
+              "name",
+              "hobby"
+            ],
+            "correct_answer": "teacher",
+            "explanation": "Ms Hoa là cô giáo nên dùng từ 'teacher' (Unit 3, vocabulary).",
+            "tags": [
+              "unit-3",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Trong bài hát 'Parts of the body', câu nào lặp lại cấu trúc 'What's this? It's a/an...'?",
+            "options": [
+              "What's this? It's an eye.",
+              "What's your hobby?",
+              "How old are you?",
+              "Is this our school?"
+            ],
+            "correct_index": 0,
+            "explanation": "Bài hát Unit 4 dùng cấu trúc hỏi-đáp 'What's this? It's a/an...' (Unit 4, hoạt động 6).",
+            "tags": [
+              "unit-4"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Nối tiếp câu lệnh: Touch your ears! ___ your eyes! (mở ra)",
+            "choices": [
+              "Open",
+              "Touch",
+              "Close",
+              "Is"
+            ],
+            "correct_answer": "Open",
+            "explanation": "'Open your eyes!' là câu mệnh lệnh mở mắt ra (Unit 4, Lesson 2).",
+            "tags": [
+              "unit-4",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ nào chỉ hoạt động nấu ăn?",
+            "options": [
+              "cooking",
+              "walking",
+              "running",
+              "drawing"
+            ],
+            "correct_index": 0,
+            "explanation": "'Cooking' nghĩa là nấu ăn (Unit 5, vocabulary mở rộng).",
+            "tags": [
+              "unit-5",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Chọn đáp án đúng: What's your hobby? – It's ___. (đi bộ)",
+            "choices": [
+              "walking",
+              "running",
+              "swimming",
+              "singing"
+            ],
+            "correct_answer": "walking",
+            "explanation": "'Walking' nghĩa là đi bộ (Unit 5, vocabulary mở rộng).",
+            "tags": [
+              "unit-5",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bạn muốn rủ bạn mình đến phòng vi tính. Câu nói đúng là:",
+            "options": [
+              "Let's go to the computer room.",
+              "Is this our computer room?",
+              "It's our computer room.",
+              "What's the computer room?"
+            ],
+            "correct_index": 0,
+            "explanation": "'Let's go to the + nơi chốn.' dùng để rủ đi đâu đó (Unit 6, Lesson 2).",
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Is this our music room? – Yes, it is. Từ 'music room' nghĩa là gì?",
+            "choices": [
+              "phòng học nhạc",
+              "phòng thể dục",
+              "phòng vẽ",
+              "thư viện"
+            ],
+            "correct_answer": "phòng học nhạc",
+            "explanation": "'Music room' nghĩa là phòng học nhạc (Unit 6, vocabulary).",
+            "tags": [
+              "unit-6",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Trong 4 câu sau, câu nào là lời xin phép (không phải mệnh lệnh)?",
+            "options": [
+              "May I go out?",
+              "Stand up, please!",
+              "Sit down, please!",
+              "Open your book, please!"
+            ],
+            "correct_index": 0,
+            "explanation": "'May I...?' là câu hỏi xin phép, khác với các câu mệnh lệnh 'V..., please!' (Unit 7).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Đáp lại lời xin phép 'May I go out?' khi đồng ý:",
+            "choices": [
+              "Yes, you can.",
+              "Yes, you do.",
+              "Yes, it is.",
+              "Yes, please."
+            ],
+            "correct_answer": "Yes, you can.",
+            "explanation": "Trả lời đồng ý cho 'May I...?' là 'Yes, you can.' (Unit 7, ngữ pháp).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ nào chỉ đồ vật dùng để đo độ dài, kẻ đường thẳng?",
+            "options": [
+              "a ruler",
+              "a pen",
+              "a book",
+              "an eraser"
+            ],
+            "correct_index": 0,
+            "explanation": "'Ruler' (cây thước) dùng để đo và kẻ (Unit 8, vocabulary).",
+            "tags": [
+              "unit-8",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Cấu trúc khẳng định 'I have...' khác gì với câu hỏi 'Do you have...?'",
+            "choices": [
+              "I have dùng để kể có gì, Do you have dùng để hỏi",
+              "Cả hai giống nhau hoàn toàn",
+              "I have là câu hỏi",
+              "Do you have là câu khẳng định"
+            ],
+            "correct_answer": "I have dùng để kể có gì, Do you have dùng để hỏi",
+            "explanation": "'I have' là câu khẳng định, 'Do you have?' là câu hỏi Yes/No (Unit 8, ngữ pháp).",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Câu nào dùng đúng ngữ pháp khi hỏi màu của MỘT quyển sách?",
+            "options": [
+              "What colour is it?",
+              "What colour are it?",
+              "What colour they is?",
+              "What colour is they?"
+            ],
+            "correct_index": 0,
+            "explanation": "Với một vật (số ít) dùng 'is', với nhiều vật dùng 'are' (Unit 9, ngữ pháp).",
+            "tags": [
+              "unit-9"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Cây thước trong hình 'Listen, point and say' Unit 9 có màu gì?",
+            "choices": [
+              "brown",
+              "blue",
+              "red",
+              "yellow"
+            ],
+            "correct_answer": "brown",
+            "explanation": "Theo tranh mục 2 Unit 9, cây thước có màu nâu ('brown').",
+            "tags": [
+              "unit-9"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "I play ___ at break time. (môn có lưới, đánh bằng vợt cầu lông)",
+            "choices": [
+              "badminton",
+              "chess",
+              "football",
+              "table tennis"
+            ],
+            "correct_answer": "badminton",
+            "explanation": "'Badminton' nghĩa là cầu lông (Unit 10, vocabulary).",
+            "tags": [
+              "unit-10",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cấu trúc câu trả lời về hoạt động giờ ra chơi trong Unit 10 là gì?",
+            "options": [
+              "I + play/chat/... + at break time.",
+              "It's + V-ing.",
+              "I have + a/an + đồ vật.",
+              "What colour is it?"
+            ],
+            "correct_index": 0,
+            "explanation": "Cấu trúc đúng: 'I + hoạt động + at break time.' (Unit 10, ngữ pháp).",
+            "tags": [
+              "unit-10"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 9,
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 9 (Unit 4-7)",
+      "questions": [
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Mai: Goodbye, Ben. Ben: ___, Mai.",
+            "choices": [
+              "Bye",
+              "Hello",
+              "Hi",
+              "Fine"
+            ],
+            "correct_answer": "Bye",
+            "explanation": "Đáp lại lời chào tạm biệt bằng 'Bye' (Unit 1, Lesson 2).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Trong 4 từ sau, từ nào dùng để tự giới thiệu tên mình?",
+            "options": [
+              "I'm",
+              "How",
+              "Old",
+              "Bye"
+            ],
+            "correct_index": 0,
+            "explanation": "'I'm + tên' dùng để tự giới thiệu, ví dụ 'Hello. I'm Ben.' (Unit 1).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Câu hỏi 'How old are you?' hỏi về điều gì?",
+            "options": [
+              "tuổi",
+              "tên",
+              "sức khỏe",
+              "sở thích"
+            ],
+            "correct_index": 0,
+            "explanation": "'How old are you?' dùng để hỏi tuổi của một người (Unit 2).",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Linh: Hi. My name's Linh. What's ___ name? Ben: My name's Ben.",
+            "choices": [
+              "your",
+              "my",
+              "his",
+              "her"
+            ],
+            "correct_answer": "your",
+            "explanation": "'What's your name?' dùng để hỏi tên đối phương (Unit 2, Lesson 1).",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Trong lớp có bạn tên Bill đứng gần cửa sổ (xa em). Em hỏi bạn khác:",
+            "options": [
+              "Is that Bill?",
+              "Is this Bill?",
+              "This is Bill.",
+              "That's Bill."
+            ],
+            "correct_index": 0,
+            "explanation": "Hỏi về người ở xa dùng 'Is that...?' (Unit 3, Lesson 2).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Is this Mr Long? – No, it isn't. It's ___. (thầy giáo khác)",
+            "choices": [
+              "Mr Ben",
+              "Ms Hoa",
+              "friend",
+              "teacher"
+            ],
+            "correct_answer": "Mr Ben",
+            "explanation": "Khi phủ định, cần nêu đúng tên người trong tranh (Unit 3, Lesson 2).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ nào dùng mạo từ 'an' thay vì 'a' (vì bắt đầu bằng nguyên âm)?",
+            "options": [
+              "an eye",
+              "a face",
+              "a hand",
+              "a mouth"
+            ],
+            "correct_index": 0,
+            "explanation": "'Eye' bắt đầu bằng nguyên âm nên dùng 'an eye' (Unit 4, ngữ pháp mạo từ).",
+            "tags": [
+              "unit-4"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What's this? – It's ___ ear. (chọn mạo từ đúng)",
+            "choices": [
+              "an",
+              "a",
+              "the",
+              "no article"
+            ],
+            "correct_answer": "an",
+            "explanation": "'Ear' bắt đầu bằng nguyên âm /e/ nên dùng mạo từ 'an' (Unit 4, ngữ pháp).",
+            "tags": [
+              "unit-4"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cấu trúc trả lời về sở thích trong Unit 5 là gì?",
+            "options": [
+              "It's + V-ing.",
+              "I have + danh từ.",
+              "I'm + số tuổi.",
+              "It's + màu sắc."
+            ],
+            "correct_index": 0,
+            "explanation": "Trả lời sở thích dùng 'It's + hobby (dạng V-ing).' (Unit 5, ngữ pháp).",
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Trong tranh 'Let's talk' trang 34, hai bạn nhỏ đang vẽ tranh cây dừa. Sở thích của họ là ___.",
+            "choices": [
+              "drawing",
+              "singing",
+              "dancing",
+              "swimming"
+            ],
+            "correct_answer": "drawing",
+            "explanation": "Theo tranh Let's talk Unit 5, hai bạn đang vẽ tranh nên sở thích là 'drawing'.",
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Chọn câu trả lời phù hợp: Is this our gym? (Đây đúng là phòng thể dục)",
+            "options": [
+              "Yes, it is.",
+              "No, it isn't.",
+              "Yes, it isn't.",
+              "It's a gym?"
+            ],
+            "correct_index": 0,
+            "explanation": "Khi đúng, trả lời khẳng định 'Yes, it is.' (Unit 6, Lesson 1).",
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Nơi rộng ngoài trời để học sinh vui chơi giờ ra chơi gọi là gì?",
+            "choices": [
+              "playground",
+              "classroom",
+              "library",
+              "gym"
+            ],
+            "correct_answer": "playground",
+            "explanation": "'Playground' là sân chơi ngoài trời (Unit 6, vocabulary).",
+            "tags": [
+              "unit-6",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ nào có nghĩa là 'đi vào' (ngược nghĩa với 'go out')?",
+            "options": [
+              "come in",
+              "sit down",
+              "stand up",
+              "close"
+            ],
+            "correct_index": 0,
+            "explanation": "'Come in' nghĩa là đi vào, trái nghĩa với 'go out' (đi ra) (Unit 7, vocabulary).",
+            "tags": [
+              "unit-7",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Học sinh nói chuyện riêng trong giờ học. Cô giáo có thể nhắc: 'No, you ___ speak now.'",
+            "choices": [
+              "can't",
+              "can",
+              "do",
+              "don't"
+            ],
+            "correct_answer": "can't",
+            "explanation": "Cô giáo dùng 'can't' để nhắc học sinh không được làm gì đó lúc đó (Unit 7, ngữ pháp).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Em có 2 quyển vở trong cặp. Câu nói đúng theo mẫu Unit 8 là:",
+            "options": [
+              "I have a notebook.",
+              "I has a notebook.",
+              "Do I have a notebook?",
+              "I'm a notebook."
+            ],
+            "correct_index": 0,
+            "explanation": "Cấu trúc 'I have + a/an + đồ vật.' (Unit 8, Lesson 1).",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Bạn muốn hỏi liệu bạn cùng bàn có mang theo cặp sách không:",
+            "choices": [
+              "Do you have a school bag?",
+              "Is this a school bag?",
+              "What's a school bag?",
+              "Have a school bag?"
+            ],
+            "correct_answer": "Do you have a school bag?",
+            "explanation": "Cấu trúc hỏi 'Do you have + a/an + đồ vật?' (Unit 8, Lesson 2).",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Chọn màu KHÔNG xuất hiện trong danh sách từ vựng Unit 9:",
+            "options": [
+              "pink",
+              "green",
+              "orange",
+              "white"
+            ],
+            "correct_index": 0,
+            "explanation": "Vocabulary Unit 9 gồm black, blue, brown, colour, green, orange, red, white, yellow — không có 'pink' (Unit 9).",
+            "tags": [
+              "unit-9",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What colour are your books? – They're ___. (nhiều quyển sách màu xanh lá)",
+            "choices": [
+              "green",
+              "greens",
+              "is green",
+              "a green"
+            ],
+            "correct_answer": "green",
+            "explanation": "Tính từ chỉ màu không thêm 's', giữ nguyên 'green' dù là số nhiều (Unit 9, ngữ pháp).",
+            "tags": [
+              "unit-9"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Bạn chơi bóng chuyền cùng bạn bè vào giờ ra chơi ở sân trường. Đó là môn gì?",
+            "choices": [
+              "volleyball",
+              "basketball",
+              "badminton",
+              "table tennis"
+            ],
+            "correct_answer": "volleyball",
+            "explanation": "'Volleyball' nghĩa là bóng chuyền (Unit 10, vocabulary).",
+            "tags": [
+              "unit-10",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Câu 'It's break time. Let's play chess.' – 'OK!' là hội thoại giữa hai bạn nào?",
+            "options": [
+              "Ben và Minh (theo hội thoại mẫu Unit 10)",
+              "Mai và Lucy",
+              "Bill và Mary",
+              "Nam và Linh"
+            ],
+            "correct_index": 0,
+            "explanation": "Theo hội thoại mẫu Unit 10, Ben rủ bạn 'Let's play chess.' và bạn đáp 'OK!'",
+            "tags": [
+              "unit-10"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 10,
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 10 (Tổng hợp Unit 1-10 (đề 10))",
+      "questions": [
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Chọn từ đồng nghĩa với 'hi':",
+            "choices": [
+              "hello",
+              "bye",
+              "fine",
+              "friend"
+            ],
+            "correct_answer": "hello",
+            "explanation": "'Hi' và 'Hello' đều là lời chào khi gặp mặt (Unit 1).",
+            "tags": [
+              "unit-1",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Linh hỏi thăm sức khỏe của Ben. Câu hỏi của Linh là:",
+            "options": [
+              "How are you?",
+              "How old are you?",
+              "What's your name?",
+              "Is this Ben?"
+            ],
+            "correct_index": 0,
+            "explanation": "'How are you?' dùng để hỏi thăm sức khỏe (Unit 1, Lesson 2).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Chọn câu trả lời đúng khi được hỏi 'How old are you?' và bạn 7 tuổi:",
+            "options": [
+              "I'm seven years old.",
+              "I'm seven old.",
+              "My name's seven.",
+              "Seven years, thank you."
+            ],
+            "correct_index": 0,
+            "explanation": "Cấu trúc đúng là 'I'm + số + years old.' (Unit 2, Lesson 2).",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Phonics Unit 2 luyện âm đầu trong tên nào?",
+            "choices": [
+              "Nam",
+              "Ben",
+              "Bill",
+              "Mai"
+            ],
+            "correct_answer": "Nam",
+            "explanation": "Phonics Unit 2 luyện âm /n/ trong tên riêng 'Nam' (Unit 2, Phonics).",
+            "tags": [
+              "unit-2",
+              "phonics"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Câu nào dùng đúng để hỏi về một vật/người đang ở GẦN mình?",
+            "options": [
+              "Is this a book?",
+              "Is that a book?",
+              "That's a book?",
+              "This a book is?"
+            ],
+            "correct_index": 0,
+            "explanation": "'This' dùng cho vật/người ở gần (Unit 3, ngữ pháp).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối tình huống với câu nói phù hợp:",
+            "pairs": [
+              {
+                "left": "Giới thiệu bạn đứng ngay cạnh mình",
+                "right": "This is my friend."
+              },
+              {
+                "left": "Giới thiệu người đứng ở xa",
+                "right": "That's my friend."
+              },
+              {
+                "left": "Hỏi xác nhận người ở xa có phải Nam không",
+                "right": "Is that Nam?"
+              }
+            ],
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Trò chơi 'Listen and tick' Unit 4 yêu cầu học sinh phân biệt hai bộ phận cơ thể nào trong câu 1?",
+            "options": [
+              "a hand và an eye",
+              "an ear và a nose",
+              "a face và a mouth",
+              "hair và a hand"
+            ],
+            "correct_index": 0,
+            "explanation": "Bài 4 (Listen and tick) Unit 4 cho học sinh phân biệt tranh 'a hand' và 'an eye' (Unit 4, hoạt động 4).",
+            "tags": [
+              "unit-4"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Cô giáo nói: 'Touch your face!' Học sinh sẽ làm gì?",
+            "choices": [
+              "chạm vào mặt",
+              "chạm vào tay",
+              "mở mắt",
+              "đứng lên"
+            ],
+            "correct_answer": "chạm vào mặt",
+            "explanation": "'Touch your face!' là mệnh lệnh chạm vào khuôn mặt (Unit 4, Lesson 2).",
+            "tags": [
+              "unit-4"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bạn nào có sở thích giống bạn kia nếu cả hai đều thích 'swimming'?",
+            "options": [
+              "Cả hai đều thích bơi lội",
+              "Một bạn thích vẽ, một bạn thích hát",
+              "Không xác định được",
+              "Cả hai đều thích múa"
+            ],
+            "correct_index": 0,
+            "explanation": "'Swimming' là bơi lội — nếu cả hai cùng trả lời 'It's swimming' thì cùng sở thích (Unit 5, vocabulary).",
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Phonics: từ 'running' bắt đầu bằng âm giống chữ cái nào?",
+            "choices": [
+              "r",
+              "s",
+              "p",
+              "d"
+            ],
+            "correct_answer": "r",
+            "explanation": "'Running' bắt đầu bằng âm /r/ (Unit 5, Phonics mở rộng).",
+            "tags": [
+              "unit-5",
+              "phonics"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối lời rủ với câu đáp lại phù hợp:",
+            "pairs": [
+              {
+                "left": "Let's go to the library.",
+                "right": "OK, let's go."
+              },
+              {
+                "left": "Let's go to the art room.",
+                "right": "OK, let's go."
+              }
+            ],
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Trong 4 từ sau, từ nào KHÔNG phải là một phòng/khu vực trong trường học?",
+            "options": [
+              "hobby",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 0,
+            "explanation": "'Hobby' (sở thích) thuộc Unit 5, không phải phòng/khu vực trong trường (Unit 6).",
+            "tags": [
+              "unit-6",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Chọn câu đúng để yêu cầu học sinh đứng dậy chào khách:",
+            "options": [
+              "Stand up, please!",
+              "Sit down, please!",
+              "Open your book!",
+              "May I stand up?"
+            ],
+            "correct_index": 0,
+            "explanation": "'Stand up, please!' là câu mệnh lệnh đúng để yêu cầu đứng dậy (Unit 7).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Cô giáo bước vào và học sinh đứng dậy chào: 'Good morning, Ms Hoa.' Cô đáp: 'Hello, class. ___ down, please!'",
+            "choices": [
+              "Sit",
+              "Stand",
+              "Open",
+              "Close"
+            ],
+            "correct_answer": "Sit",
+            "explanation": "Sau khi chào, cô giáo mời học sinh ngồi xuống bằng 'Sit down, please!' (Unit 7, hội thoại mẫu).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Nối nghĩa với từ: 'notebook' nghĩa là gì?",
+            "options": [
+              "quyển vở/sổ tay",
+              "cây bút chì",
+              "cục tẩy",
+              "cặp sách"
+            ],
+            "correct_index": 0,
+            "explanation": "'Notebook' nghĩa là quyển vở (Unit 8, vocabulary).",
+            "tags": [
+              "unit-8",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Bill: I have a school bag. Nam: I have a school bag, ___.",
+            "choices": [
+              "too",
+              "no",
+              "do",
+              "isn't"
+            ],
+            "correct_answer": "too",
+            "explanation": "'Too' nghĩa là 'cũng vậy', dùng khi cả hai cùng có một đồ vật (Unit 8, Lesson 1).",
+            "tags": [
+              "unit-8",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Mary hỏi bạn về màu chiếc cặp sách. Câu hỏi đúng là:",
+            "options": [
+              "What colour is your school bag?",
+              "What's your school bag?",
+              "Do you have a school bag?",
+              "Is this your school bag?"
+            ],
+            "correct_index": 0,
+            "explanation": "'What colour is/are...?' dùng để hỏi màu sắc của đồ vật (Unit 9, ngữ pháp).",
+            "tags": [
+              "unit-9"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What colour is it? – It's ___. (màu trắng của tờ giấy)",
+            "choices": [
+              "white",
+              "black",
+              "brown",
+              "yellow"
+            ],
+            "correct_answer": "white",
+            "explanation": "'White' nghĩa là màu trắng (Unit 9, vocabulary).",
+            "tags": [
+              "unit-9",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Từ nào chỉ hoạt động chơi bóng rổ vào giờ ra chơi?",
+            "choices": [
+              "play basketball",
+              "play chess",
+              "chat",
+              "word puzzles"
+            ],
+            "correct_answer": "play basketball",
+            "explanation": "'Play basketball' nghĩa là chơi bóng rổ (Unit 10, vocabulary).",
+            "tags": [
+              "unit-10",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Mai nói: 'I play volleyball at break time.' Cấu trúc câu này gồm chủ ngữ + động từ + gì?",
+            "options": [
+              "hoạt động + at break time",
+              "tính từ chỉ màu",
+              "số tuổi",
+              "tên đồ vật"
+            ],
+            "correct_index": 0,
+            "explanation": "Cấu trúc 'I + play/chat + hoạt động + at break time.' mô tả hoạt động giờ ra chơi (Unit 10, ngữ pháp).",
+            "tags": [
+              "unit-10"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 11,
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 11 (Tổng hợp Unit 1-10 (đề 11))",
+      "questions": [
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Hello, class! ___, thank you. (đáp lại câu hỏi thăm của cô giáo)",
+            "choices": [
+              "Fine",
+              "Bye",
+              "Name",
+              "Old"
+            ],
+            "correct_answer": "Fine",
+            "explanation": "Học sinh đáp lại lời hỏi thăm của cô giáo bằng 'Fine, thank you.' (Unit 1).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Câu nào dùng để chào tạm biệt một nhóm bạn?",
+            "options": [
+              "Goodbye, friends.",
+              "Hello, friends.",
+              "Fine, friends.",
+              "How, friends?"
+            ],
+            "correct_index": 0,
+            "explanation": "'Goodbye' dùng khi chia tay, có thể thêm đối tượng phía sau (Unit 1).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bill mới chuyển đến lớp. Cô giáo hỏi tên và tuổi của Bill theo thứ tự nào?",
+            "options": [
+              "What's your name? rồi How old are you?",
+              "How old are you? rồi What's your name?",
+              "Chỉ hỏi tên, không hỏi tuổi",
+              "Chỉ hỏi tuổi, không hỏi tên"
+            ],
+            "correct_index": 0,
+            "explanation": "Trong Unit 2, thường hỏi tên trước rồi mới hỏi tuổi (Lesson 1 rồi Lesson 2).",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "My name's Mary. I'm ___ years old. (số 8, theo hội thoại mẫu)",
+            "choices": [
+              "eight",
+              "seven",
+              "nine",
+              "six"
+            ],
+            "correct_answer": "eight",
+            "explanation": "Theo hội thoại mẫu Unit 2, Mary/bạn nhỏ trả lời 'I'm eight years old.'",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Yes, it is. / No, it ___. (phủ định của 'is')",
+            "choices": [
+              "isn't",
+              "not",
+              "don't",
+              "aren't"
+            ],
+            "correct_answer": "isn't",
+            "explanation": "Dạng phủ định của 'is' là 'isn't' (Unit 3, ngữ pháp).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Chọn câu hỏi đúng để hỏi xem một người ở xa có phải là cô giáo không:",
+            "options": [
+              "Is that your teacher?",
+              "Is this your teacher?",
+              "That's your teacher?",
+              "Your teacher is that?"
+            ],
+            "correct_index": 0,
+            "explanation": "'Is that...?' dùng để hỏi về người/vật ở xa (Unit 3, Lesson 2).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ nào trong 4 từ sau KHÔNG phải là bộ phận cơ thể học ở Unit 4?",
+            "options": [
+              "book",
+              "hair",
+              "hand",
+              "mouth"
+            ],
+            "correct_index": 0,
+            "explanation": "'Book' là đồ dùng học tập (Unit 8), không phải bộ phận cơ thể (Unit 4).",
+            "tags": [
+              "unit-4",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Nam: What's this? Lucy: It's ___. (chỉ vào miệng)",
+            "choices": [
+              "a mouth",
+              "a nose",
+              "an ear",
+              "an eye"
+            ],
+            "correct_answer": "a mouth",
+            "explanation": "'Mouth' nghĩa là miệng, dùng mạo từ 'a' vì bắt đầu bằng phụ âm (Unit 4, vocabulary).",
+            "tags": [
+              "unit-4",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối câu hỏi-trả lời về sở thích của từng bạn:",
+            "pairs": [
+              {
+                "left": "What's your hobby, Mai?",
+                "right": "It's drawing."
+              },
+              {
+                "left": "What's your hobby, Ben?",
+                "right": "It's dancing."
+              },
+              {
+                "left": "What's your hobby, Lucy?",
+                "right": "It's singing."
+              }
+            ],
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Trong tranh biển ở mục 'Let's talk' trang 34, có bạn nhỏ đang bơi ngoài biển. Sở thích của bạn ấy là gì?",
+            "options": [
+              "swimming",
+              "painting",
+              "cooking",
+              "walking"
+            ],
+            "correct_index": 0,
+            "explanation": "Tranh bãi biển Unit 5 có bạn nhỏ bơi lội, ứng với từ 'swimming' (Unit 5, Lesson 1).",
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Is this our classroom? – Yes, it is. Từ 'classroom' nghĩa là gì?",
+            "choices": [
+              "lớp học",
+              "sân chơi",
+              "thư viện",
+              "phòng nhạc"
+            ],
+            "correct_answer": "lớp học",
+            "explanation": "'Classroom' nghĩa là lớp học (Unit 6, vocabulary).",
+            "tags": [
+              "unit-6",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bạn muốn rủ bạn cùng lớp ra sân chơi giờ ra chơi. Câu nói đúng là:",
+            "options": [
+              "Let's go to the playground.",
+              "Is this our playground?",
+              "It's our playground.",
+              "What's the playground?"
+            ],
+            "correct_index": 0,
+            "explanation": "'Let's go to the + nơi chốn.' dùng để rủ đi đâu đó (Unit 6, Lesson 2).",
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ nào có nghĩa là 'gấp/đóng lại' (ngược với 'open')?",
+            "options": [
+              "close",
+              "sit",
+              "stand",
+              "speak"
+            ],
+            "correct_index": 0,
+            "explanation": "'Close' nghĩa là đóng/gấp lại, trái nghĩa với 'open' (Unit 7, vocabulary).",
+            "tags": [
+              "unit-7",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Bill xin phép cô giáo ra ngoài đi vệ sinh. Câu hỏi đúng là: 'May I ___?'",
+            "choices": [
+              "go out",
+              "come in",
+              "sit down",
+              "speak"
+            ],
+            "correct_answer": "go out",
+            "explanation": "'May I go out?' dùng để xin phép ra ngoài (Unit 7, Lesson 2).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Chọn từ chỉ đồ vật dùng để tẩy xóa chữ viết bằng bút chì:",
+            "options": [
+              "an eraser",
+              "a ruler",
+              "a pen",
+              "a book"
+            ],
+            "correct_index": 0,
+            "explanation": "'Eraser' (cục tẩy) dùng để xóa chữ viết bằng bút chì (Unit 8, vocabulary).",
+            "tags": [
+              "unit-8",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Do you have a pen? – Yes, I do. I have a pen and a ___, too. (bút chì)",
+            "choices": [
+              "pencil",
+              "ruler",
+              "eraser",
+              "notebook"
+            ],
+            "correct_answer": "pencil",
+            "explanation": "'Pencil' (bút chì) là đồ dùng học tập khác trong Unit 8, vocabulary.",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bill có 3 cây bút chì màu cam. Câu hỏi và trả lời đúng là:",
+            "options": [
+              "What colour are they? – They're orange.",
+              "What colour is it? – It's orange.",
+              "What colour are they? – It's orange.",
+              "What colour is it? – They're orange."
+            ],
+            "correct_index": 0,
+            "explanation": "Với nhiều vật (3 cây bút), dùng 'are they' và 'They're...' (Unit 9, ngữ pháp).",
+            "tags": [
+              "unit-9"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Chọn từ chỉ màu sắc của quả cam:",
+            "choices": [
+              "orange",
+              "green",
+              "blue",
+              "black"
+            ],
+            "correct_answer": "orange",
+            "explanation": "'Orange' vừa là tên quả cam vừa là tên màu cam (Unit 9, vocabulary).",
+            "tags": [
+              "unit-9",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Nam thích trò chuyện với bạn bè hơn là chơi thể thao vào giờ ra chơi. Nam nói: 'I ___ at break time.'",
+            "choices": [
+              "chat",
+              "play football",
+              "play chess",
+              "play badminton"
+            ],
+            "correct_answer": "chat",
+            "explanation": "'Chat' nghĩa là trò chuyện (Unit 10, vocabulary).",
+            "tags": [
+              "unit-10"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Lucy thích giải các câu đố chữ vào giờ ra chơi. Cô ấy nói:",
+            "options": [
+              "I do word puzzles at break time.",
+              "I play chess at break time.",
+              "I play football at break time.",
+              "I chat at break time."
+            ],
+            "correct_index": 0,
+            "explanation": "'Word puzzles' là trò chơi ô chữ, phù hợp với 'do word puzzles' (Unit 10, vocabulary).",
+            "tags": [
+              "unit-10"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 12,
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 12 (Tổng hợp Unit 1-10 (đề 12))",
+      "questions": [
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối từ tiếng Anh với nghĩa tiếng Việt (Unit 1):",
+            "pairs": [
+              {
+                "left": "hello",
+                "right": "xin chào"
+              },
+              {
+                "left": "goodbye",
+                "right": "tạm biệt"
+              },
+              {
+                "left": "fine",
+                "right": "khỏe"
+              },
+              {
+                "left": "thank you",
+                "right": "cảm ơn"
+              }
+            ],
+            "tags": [
+              "unit-1",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Phonics: từ 'bye' bắt đầu bằng âm giống với từ nào?",
+            "choices": [
+              "Ben",
+              "how",
+              "yes",
+              "old"
+            ],
+            "correct_answer": "Ben",
+            "explanation": "'Bye' và 'Ben' cùng bắt đầu bằng âm /b/ (Unit 1, Phonics).",
+            "tags": [
+              "unit-1",
+              "phonics"
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Nối câu hỏi với câu trả lời của từng bạn nhỏ:",
+            "pairs": [
+              {
+                "left": "What's your name? (bạn nam)",
+                "right": "My name's Nam."
+              },
+              {
+                "left": "What's your name? (bạn nữ)",
+                "right": "My name's Mary."
+              },
+              {
+                "left": "How old are you?",
+                "right": "I'm nine years old."
+              }
+            ],
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Chọn từ đúng: How ___ are you?",
+            "choices": [
+              "old",
+              "name",
+              "fine",
+              "friend"
+            ],
+            "correct_answer": "old",
+            "explanation": "'How old are you?' là cấu trúc cố định để hỏi tuổi (Unit 2).",
+            "tags": [
+              "unit-2",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Từ 'no' và 'yes' dùng để làm gì trong câu trả lời Unit 3?",
+            "choices": [
+              "xác nhận đúng/sai",
+              "hỏi tên",
+              "hỏi tuổi",
+              "chào hỏi"
+            ],
+            "correct_answer": "xác nhận đúng/sai",
+            "explanation": "'Yes'/'No' dùng để trả lời câu hỏi Yes/No như 'Is this...?' (Unit 3, vocabulary).",
+            "tags": [
+              "unit-3",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Linh chỉ vào một bạn gái đứng xa và hỏi cô giáo. Câu hỏi đúng là:",
+            "options": [
+              "Is that your friend?",
+              "Is this your friend?",
+              "What's her name?",
+              "How old is she?"
+            ],
+            "correct_index": 0,
+            "explanation": "Khi hỏi về người ở xa, dùng 'Is that...?' (Unit 3, Lesson 2).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Trong bài 'Listen and tick' câu 2, học sinh phân biệt hai bộ phận nào?",
+            "options": [
+              "an ear và a nose",
+              "a hand và an eye",
+              "a face và hair",
+              "a mouth và an ear"
+            ],
+            "correct_index": 0,
+            "explanation": "Bài tập 4 Unit 4 (câu 2) cho học sinh phân biệt tranh 'an ear' và 'a nose' (Unit 4).",
+            "tags": [
+              "unit-4"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Bạn nhỏ trong bài hát nói: 'What's that? It's a ___.' (chỉ vào tay, đưa 5 ngón)",
+            "choices": [
+              "hand",
+              "face",
+              "eye",
+              "ear"
+            ],
+            "correct_answer": "hand",
+            "explanation": "Theo bài hát Unit 4 'A face and a hand.', từ 'hand' đi kèm hình ảnh bàn tay xòe 5 ngón.",
+            "tags": [
+              "unit-4"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What's your hobby? – It's ___. (thích tô màu, sáng tạo tranh nghệ thuật)",
+            "choices": [
+              "painting",
+              "running",
+              "walking",
+              "cooking"
+            ],
+            "correct_answer": "painting",
+            "explanation": "'Painting' nghĩa là vẽ tranh bằng màu, khác với 'drawing' (vẽ nét) (Unit 5, vocabulary mở rộng).",
+            "tags": [
+              "unit-5",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Chọn câu hỏi đúng để hỏi sở thích của bạn tên Minh:",
+            "options": [
+              "What's your hobby, Minh?",
+              "What's your name, Minh?",
+              "How old are you, Minh?",
+              "Is this your hobby, Minh?"
+            ],
+            "correct_index": 0,
+            "explanation": "'What's your hobby, + tên?' dùng để hỏi sở thích một bạn cụ thể (Unit 5, Lesson 1).",
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Nam rủ Linh đi phòng thể chất chơi thể thao. Linh đáp lại:",
+            "choices": [
+              "OK, let's go.",
+              "No, it isn't.",
+              "Yes, it is.",
+              "I have a gym."
+            ],
+            "correct_answer": "OK, let's go.",
+            "explanation": "Câu đáp lại lời rủ đồng ý là 'OK, let's go.' (Unit 6, Lesson 2).",
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Is this our library? Bức tranh đúng là thư viện. Câu trả lời đúng là:",
+            "options": [
+              "Yes, it is.",
+              "No, it isn't.",
+              "Yes, it isn't.",
+              "No, it is."
+            ],
+            "correct_index": 0,
+            "explanation": "Khi tranh đúng với câu hỏi, trả lời khẳng định 'Yes, it is.' (Unit 6, Lesson 1).",
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Trong lớp học, câu mệnh lệnh nào yêu cầu học sinh im lặng lắng nghe (không nói)?",
+            "options": [
+              "Không có mệnh lệnh 'no speak' trong bài; chỉ có 'May I speak?' để xin phép nói",
+              "Sit down, please!",
+              "Stand up, please!",
+              "Open your book!"
+            ],
+            "correct_index": 0,
+            "explanation": "Unit 7 chỉ dạy 'May I speak?' để xin phép nói, không có mệnh lệnh cấm nói riêng (Unit 7).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Cả lớp đang ngồi, cô giáo muốn kiểm tra bài nên yêu cầu học sinh đứng lên trả lời. Cô nói: '___ up, please!'",
+            "choices": [
+              "Stand",
+              "Sit",
+              "Open",
+              "Close"
+            ],
+            "correct_answer": "Stand",
+            "explanation": "'Stand up, please!' là câu mệnh lệnh đứng lên (Unit 7, vocabulary).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Lucy khoe cây thước mới với Ben: 'I have a ruler, too.' Câu này nghĩa là gì?",
+            "options": [
+              "Tôi cũng có một cây thước.",
+              "Tôi không có thước.",
+              "Bạn có thước không?",
+              "Cây thước này màu gì?"
+            ],
+            "correct_index": 0,
+            "explanation": "'I have..., too.' nghĩa là 'tôi cũng có...' (Unit 8, Lesson 1).",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Mai hỏi bạn cùng bàn: 'Do you have a book?' Bạn ấy có mang sách nên trả lời:",
+            "choices": [
+              "Yes, I do.",
+              "No, I don't.",
+              "Yes, it is.",
+              "I have."
+            ],
+            "correct_answer": "Yes, I do.",
+            "explanation": "Trả lời khẳng định cho 'Do you have...?' là 'Yes, I do.' (Unit 8, Lesson 2).",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Linh hỏi bạn về màu của quyển vở mới. Câu hỏi và câu trả lời phù hợp là:",
+            "options": [
+              "What colour is it? – It's brown.",
+              "What's this? – It's a book.",
+              "Do you have it? – Yes, I do.",
+              "Is this brown? – Yes, it is."
+            ],
+            "correct_index": 0,
+            "explanation": "'What colour is it? – It's + màu.' là cấu trúc hỏi-đáp màu sắc chuẩn (Unit 9, Lesson 1).",
+            "tags": [
+              "unit-9"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Chọn màu của lá cây trong tranh Unit 9:",
+            "choices": [
+              "green",
+              "brown",
+              "red",
+              "black"
+            ],
+            "correct_answer": "green",
+            "explanation": "'Green' nghĩa là màu xanh lá cây (Unit 9, vocabulary).",
+            "tags": [
+              "unit-9",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Bạn muốn rủ bạn cùng chơi cầu lông giờ ra chơi. Câu nói đúng là: 'Let's ___.'",
+            "choices": [
+              "play badminton",
+              "play chess",
+              "chat",
+              "do word puzzles"
+            ],
+            "correct_answer": "play badminton",
+            "explanation": "'Play badminton' nghĩa là chơi cầu lông (Unit 10, vocabulary).",
+            "tags": [
+              "unit-10",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Minh hỏi Ben: 'What do you do at break time?' Ben trả lời rằng thích chơi bóng bàn:",
+            "options": [
+              "I play table tennis.",
+              "I play chess.",
+              "I chat.",
+              "I play badminton."
+            ],
+            "correct_index": 0,
+            "explanation": "'Play table tennis' nghĩa là chơi bóng bàn (Unit 10, vocabulary).",
+            "tags": [
+              "unit-10"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 13,
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 13 (Tổng hợp Unit 1-10 (đề 13))",
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Câu 'Hello. I'm Lucy.' dùng trong tình huống nào?",
+            "options": [
+              "Tự giới thiệu khi gặp người mới",
+              "Hỏi tuổi bạn mới quen",
+              "Xin phép vào lớp",
+              "Hỏi màu sắc đồ vật"
+            ],
+            "correct_index": 0,
+            "explanation": "Câu này dùng để chào và tự giới thiệu tên (Unit 1, Lesson 1).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "How are you, Minh? – ___, thank you. (trả lời rằng mình khỏe)",
+            "choices": [
+              "Fine",
+              "Bye",
+              "Nine",
+              "Name's"
+            ],
+            "correct_answer": "Fine",
+            "explanation": "'Fine, thank you.' là câu trả lời chuẩn cho 'How are you?' (Unit 1).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ 'your' trong câu 'What's your name?' đóng vai trò gì?",
+            "options": [
+              "tính từ sở hữu (của bạn)",
+              "động từ",
+              "danh từ",
+              "lời chào"
+            ],
+            "correct_index": 0,
+            "explanation": "'Your' là tính từ sở hữu, nghĩa là 'của bạn' (Unit 2, ngữ pháp).",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Bill is nine years old. Nam is ___ years old, too. (Nam cũng 9 tuổi)",
+            "choices": [
+              "nine",
+              "eight",
+              "seven",
+              "ten"
+            ],
+            "correct_answer": "nine",
+            "explanation": "'Too' nghĩa là 'cũng vậy', nên Nam cũng 9 tuổi giống Bill (Unit 2, ngữ pháp mở rộng).",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Is this Ms Hoa? – Yes, it is. She's my ___.",
+            "choices": [
+              "teacher",
+              "friend",
+              "name",
+              "hobby"
+            ],
+            "correct_answer": "teacher",
+            "explanation": "Ms Hoa là cô giáo nên gọi là 'teacher' (Unit 3, vocabulary).",
+            "tags": [
+              "unit-3",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bill đứng gần cửa lớp giới thiệu bạn mình với cô giáo mới. Câu đúng nhất là:",
+            "options": [
+              "This is my friend, Nam.",
+              "That's my friend, Nam.",
+              "Is this my friend, Nam?",
+              "My friend Nam is this."
+            ],
+            "correct_index": 0,
+            "explanation": "Khi người bạn ở gần, dùng 'This is + tên' để giới thiệu (Unit 3, Lesson 1).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cô giáo chỉ vào khuôn mặt học sinh và hỏi 'What's that?'. Câu trả lời đúng là:",
+            "options": [
+              "It's a face.",
+              "It's an ear.",
+              "It's a hand.",
+              "It's a nose."
+            ],
+            "correct_index": 0,
+            "explanation": "'Face' nghĩa là khuôn mặt, trả lời bằng 'It's a face.' (Unit 4, Lesson 1).",
+            "tags": [
+              "unit-4"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Cô giáo nói: 'Open your ___!' và học sinh mở to hai con mắt.",
+            "choices": [
+              "eyes",
+              "ears",
+              "hands",
+              "mouths"
+            ],
+            "correct_answer": "eyes",
+            "explanation": "'Open your eyes!' là mệnh lệnh mở mắt (Unit 4, Lesson 2).",
+            "tags": [
+              "unit-4"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Ben's hobby is ___. He likes moving to music with friends.",
+            "choices": [
+              "dancing",
+              "swimming",
+              "cooking",
+              "reading"
+            ],
+            "correct_answer": "dancing",
+            "explanation": "'Dancing' (múa/nhảy) phù hợp với việc di chuyển theo nhạc (Unit 5, vocabulary).",
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Trong trò chơi 'Find the hobby', bạn học sinh giơ tranh vẽ người đang hát trên sân khấu. Bạn ấy nói gì?",
+            "options": [
+              "Singing.",
+              "Swimming.",
+              "Drawing.",
+              "Running."
+            ],
+            "correct_index": 0,
+            "explanation": "Tranh người hát trên sân khấu tương ứng với từ 'singing' (Unit 5, hoạt động 'Let's play').",
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Trường học nói chung, nơi có nhiều phòng học, gọi là gì?",
+            "choices": [
+              "school",
+              "classroom",
+              "library",
+              "gym"
+            ],
+            "correct_answer": "school",
+            "explanation": "'School' nghĩa là trường học nói chung (Unit 6, vocabulary).",
+            "tags": [
+              "unit-6",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bạn muốn rủ bạn đi phòng vẽ để tô màu tranh. Câu nói đúng là:",
+            "options": [
+              "Let's go to the art room.",
+              "Is this our art room?",
+              "It's our art room.",
+              "What's the art room?"
+            ],
+            "correct_index": 0,
+            "explanation": "'Let's go to the + nơi chốn.' dùng để rủ đi đâu đó (Unit 6, Lesson 2).",
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Học sinh muốn xin phép đứng lên phát biểu, nên hỏi câu gì trước?",
+            "options": [
+              "May I speak?",
+              "May I go out?",
+              "May I come in?",
+              "Sit down, please."
+            ],
+            "correct_index": 0,
+            "explanation": "'May I speak?' dùng để xin phép phát biểu trước lớp (Unit 7).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Bill đi học muộn, gõ cửa lớp và hỏi: 'May I ___?'",
+            "choices": [
+              "come in",
+              "go out",
+              "sit down",
+              "stand up"
+            ],
+            "correct_answer": "come in",
+            "explanation": "'May I come in?' dùng để xin phép vào lớp khi đến muộn (Unit 7, Lesson 2).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ nào chỉ đồ vật hình chữ nhật, có nhiều trang giấy, dùng để đọc?",
+            "options": [
+              "a book",
+              "a ruler",
+              "an eraser",
+              "a pen"
+            ],
+            "correct_index": 0,
+            "explanation": "'Book' (quyển sách) có nhiều trang, dùng để đọc (Unit 8, vocabulary).",
+            "tags": [
+              "unit-8",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Do you have a school bag? – Yes, I do. I have a ___, too. (cây bút chì)",
+            "choices": [
+              "pencil",
+              "pen",
+              "ruler",
+              "eraser"
+            ],
+            "correct_answer": "pencil",
+            "explanation": "'Pencil' là đồ dùng học tập khác, có thể liệt kê thêm (Unit 8, vocabulary).",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bạn có một cây bút chì màu vàng và một cục tẩy màu trắng. Câu hỏi 'What colour is the pencil?' được trả lời:",
+            "options": [
+              "It's yellow.",
+              "It's white.",
+              "They're yellow.",
+              "It's blue."
+            ],
+            "correct_index": 0,
+            "explanation": "Cây bút chì có màu vàng, trả lời 'It's yellow.' (Unit 9, Lesson 1).",
+            "tags": [
+              "unit-9"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Is the pen blue? – Yes, it is. Nó có màu gì?",
+            "choices": [
+              "blue",
+              "red",
+              "green",
+              "black"
+            ],
+            "correct_answer": "blue",
+            "explanation": "Câu hỏi xác nhận màu, trả lời khẳng định nghĩa là màu đúng là 'blue' (Unit 9, vocabulary).",
+            "tags": [
+              "unit-9"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Mai và bạn thường trò chuyện với nhau vào giờ ra chơi thay vì chơi thể thao. Họ nói: 'We ___ at break time.'",
+            "choices": [
+              "chat",
+              "play chess",
+              "play football",
+              "play badminton"
+            ],
+            "correct_answer": "chat",
+            "explanation": "'Chat' nghĩa là trò chuyện (Unit 10, vocabulary).",
+            "tags": [
+              "unit-10",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Câu hỏi 'What do you do at break time?' hỏi về điều gì?",
+            "options": [
+              "hoạt động vào giờ ra chơi",
+              "tên của bạn",
+              "tuổi của bạn",
+              "màu sắc đồ vật"
+            ],
+            "correct_index": 0,
+            "explanation": "Câu hỏi này dùng để hỏi về hoạt động giờ ra chơi (Unit 10, Lesson 1).",
+            "tags": [
+              "unit-10"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 14,
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 14 (Tổng hợp Unit 1-10 (đề 14))",
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Từ nào trong các từ sau có nghĩa là 'cảm ơn'?",
+            "options": [
+              "thank you",
+              "hello",
+              "goodbye",
+              "fine"
+            ],
+            "correct_index": 0,
+            "explanation": "'Thank you' nghĩa là cảm ơn (Unit 1, vocabulary).",
+            "tags": [
+              "unit-1",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Bill: Hello. I'm Bill. Linh: ___, Bill. I'm Linh.",
+            "choices": [
+              "Hello",
+              "Bye",
+              "Fine",
+              "Old"
+            ],
+            "correct_answer": "Hello",
+            "explanation": "Đáp lại lời chào bằng chính lời chào tương tự (Unit 1, Lesson 1).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Linh tự giới thiệu tên rồi hỏi ngược lại tên bạn mới. Thứ tự câu đúng là:",
+            "options": [
+              "Hi. I'm Linh. What's your name?",
+              "What's your name? Hi. I'm Linh.",
+              "I'm Linh, what's, hi your name?",
+              "Your name Linh what's hi I'm?"
+            ],
+            "correct_index": 0,
+            "explanation": "Trong hội thoại Unit 2, thường tự giới thiệu trước rồi hỏi tên bạn (Unit 2, Lesson 1).",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "How old are you? – I'm ___ years old. (số 9, tuổi của Ben trong bài)",
+            "choices": [
+              "nine",
+              "eight",
+              "seven",
+              "six"
+            ],
+            "correct_answer": "nine",
+            "explanation": "Theo nhân vật Ben trong sách, tuổi là 'nine years old' ở một số bài luyện tập Unit 2.",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Is this your friend? – Yes, ___ is. This is Lucy.",
+            "choices": [
+              "it",
+              "she",
+              "he",
+              "that"
+            ],
+            "correct_answer": "it",
+            "explanation": "Câu trả lời cho 'Is this...?' luôn dùng chủ ngữ 'it' (Unit 3, ngữ pháp).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Chọn câu đúng để hỏi về cô giáo đang đứng ở xa cuối lớp:",
+            "options": [
+              "Is that Ms Hoa?",
+              "Is this Ms Hoa?",
+              "This is Ms Hoa?",
+              "Ms Hoa is that?"
+            ],
+            "correct_index": 0,
+            "explanation": "Người/vật ở xa dùng 'Is that...?' (Unit 3, Lesson 2).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bộ phận nào dùng để ngửi mùi?",
+            "options": [
+              "a nose",
+              "an ear",
+              "an eye",
+              "a hand"
+            ],
+            "correct_index": 0,
+            "explanation": "'Nose' (mũi) dùng để ngửi (Unit 4, vocabulary).",
+            "tags": [
+              "unit-4",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What's this? – It's ___. (chỉ vào bàn tay đang xòe ra)",
+            "choices": [
+              "a hand",
+              "a face",
+              "an eye",
+              "hair"
+            ],
+            "correct_answer": "a hand",
+            "explanation": "'Hand' nghĩa là bàn tay, dùng mạo từ 'a' (Unit 4, vocabulary).",
+            "tags": [
+              "unit-4",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What's your hobby? – It's ___. (thích tô màu bức tranh phong cảnh bằng cọ vẽ)",
+            "choices": [
+              "painting",
+              "singing",
+              "running",
+              "chatting"
+            ],
+            "correct_answer": "painting",
+            "explanation": "'Painting' nghĩa là vẽ tranh bằng màu/cọ vẽ (Unit 5, vocabulary mở rộng).",
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bill hỏi Mary về sở thích của bạn ấy trên sân khấu biểu diễn múa. Mary trả lời:",
+            "options": [
+              "It's dancing.",
+              "It's singing.",
+              "It's drawing.",
+              "It's swimming."
+            ],
+            "correct_index": 0,
+            "explanation": "Theo hội thoại mẫu Unit 5, hình ảnh múa trên sân khấu ứng với 'It's dancing.'",
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Is this our computer room? – No, it isn't. It's our ___.",
+            "choices": [
+              "library",
+              "gym",
+              "art room",
+              "music room"
+            ],
+            "correct_answer": "library",
+            "explanation": "Khi phủ định, cần nói rõ nơi đúng trong tranh (Unit 6, Lesson 1).",
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bạn muốn rủ bạn đến phòng nhạc để tập hát. Câu nói đúng là:",
+            "options": [
+              "Let's go to the music room.",
+              "Is this our music room?",
+              "It's our music room.",
+              "What's the music room?"
+            ],
+            "correct_index": 0,
+            "explanation": "'Let's go to the + nơi chốn.' dùng để rủ đi đâu đó (Unit 6, Lesson 2).",
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Trong 4 câu sau, câu nào KHÔNG phải là mệnh lệnh trong lớp học Unit 7?",
+            "options": [
+              "What's your hobby?",
+              "Sit down, please!",
+              "Open your book, please!",
+              "Stand up, please!"
+            ],
+            "correct_index": 0,
+            "explanation": "'What's your hobby?' thuộc Unit 5, không phải mệnh lệnh lớp học (Unit 7).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cô giáo muốn cả lớp mở sách ra. Cô nói:",
+            "options": [
+              "Open your books, please!",
+              "Close your books, please!",
+              "Sit down, please!",
+              "Stand up, please!"
+            ],
+            "correct_index": 0,
+            "explanation": "Câu mệnh lệnh lịch sự dùng 'V + ..., please!' (Unit 7, Lesson 1).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Chọn câu hỏi đúng ngữ pháp trong các câu sau:",
+            "options": [
+              "Do you have a pencil case?",
+              "You have a pencil case?",
+              "Have you do a pencil case?",
+              "Do have you a pencil case?"
+            ],
+            "correct_index": 0,
+            "explanation": "Cấu trúc chuẩn là 'Do you have + a/an + đồ vật?' (Unit 8, ngữ pháp).",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Lucy khoe với Ben rằng mình có một cây bút mực. Câu nói của Lucy là:",
+            "options": [
+              "I have a pen.",
+              "I have a ruler.",
+              "Do you have a pen?",
+              "It's a pen."
+            ],
+            "correct_index": 0,
+            "explanation": "'I have + a/an + đồ vật' dùng để nói mình có gì (Unit 8, Lesson 1).",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Ben cầm cây bút chì màu vàng và hỏi bạn. Câu hỏi đúng là:",
+            "options": [
+              "What colour is it?",
+              "What's this?",
+              "Do you have it?",
+              "Is this yellow?"
+            ],
+            "correct_index": 0,
+            "explanation": "'What colour is it?' dùng để hỏi màu sắc của một vật (Unit 9, Lesson 1).",
+            "tags": [
+              "unit-9"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What colour is it? – It's ___. (màu của quả chuối)",
+            "choices": [
+              "yellow",
+              "blue",
+              "green",
+              "black"
+            ],
+            "correct_answer": "yellow",
+            "explanation": "'Yellow' nghĩa là màu vàng (Unit 9, vocabulary).",
+            "tags": [
+              "unit-9",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Minh hỏi bạn về hoạt động giờ ra chơi. Câu hỏi đúng là:",
+            "options": [
+              "What do you do at break time?",
+              "What's your hobby?",
+              "Is this break time?",
+              "How old are you?"
+            ],
+            "correct_index": 0,
+            "explanation": "'What do you do at break time?' dùng để hỏi hoạt động giờ ra chơi (Unit 10, Lesson 1).",
+            "tags": [
+              "unit-10"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What do you do at break time? – I ___. (chơi cờ vua)",
+            "choices": [
+              "play chess",
+              "play football",
+              "chat",
+              "play volleyball"
+            ],
+            "correct_answer": "play chess",
+            "explanation": "'Play chess' nghĩa là chơi cờ vua (Unit 10, vocabulary).",
+            "tags": [
+              "unit-10",
+              "vocabulary"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 15,
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 15 (Tổng hợp Unit 1-10 (đề 15))",
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Chọn câu đúng ngữ pháp để chào và giới thiệu tên trong một câu:",
+            "options": [
+              "Hi. I'm Nam.",
+              "Hi. Am I Nam.",
+              "I Nam hi.",
+              "Nam hi I'm."
+            ],
+            "correct_index": 0,
+            "explanation": "Cấu trúc đúng là 'Hi./Hello. I'm + tên.' (Unit 1, Lesson 1).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Mai gặp bạn mới ở sân trường. Mai nói: 'Hello. ___ Mai.'",
+            "choices": [
+              "I'm",
+              "You're",
+              "This",
+              "That's"
+            ],
+            "correct_answer": "I'm",
+            "explanation": "'I'm + tên' dùng để tự giới thiệu (Unit 1, Lesson 1).",
+            "tags": [
+              "unit-1"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Chọn câu hỏi phù hợp để hỏi tên của một bạn nam mới chuyển đến lớp:",
+            "options": [
+              "What's your name?",
+              "How old are you?",
+              "Is this your name?",
+              "Your name is what?"
+            ],
+            "correct_index": 0,
+            "explanation": "'What's your name?' là câu hỏi tên chuẩn (Unit 2, Lesson 1).",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "How old are you? – I'm ___ years old. (số 7, tuổi của Linh)",
+            "choices": [
+              "seven",
+              "six",
+              "eight",
+              "nine"
+            ],
+            "correct_answer": "seven",
+            "explanation": "Theo hội thoại mẫu Unit 2, Linh trả lời 'I'm seven years old.'",
+            "tags": [
+              "unit-2"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Is this your teacher? – No, it isn't. It's my ___.",
+            "choices": [
+              "friend",
+              "teacher",
+              "name",
+              "hobby"
+            ],
+            "correct_answer": "friend",
+            "explanation": "Khi phủ định, cần nêu đúng vai trò của người trong tranh, ví dụ 'It's my friend.' (Unit 3).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Mary giới thiệu bạn mình đứng cạnh mình: '___ Mary.' (Unit 3, Lesson 1)",
+            "options": [
+              "This is",
+              "That's",
+              "I'm",
+              "My name's"
+            ],
+            "correct_index": 0,
+            "explanation": "'This is + tên' dùng để giới thiệu người ở gần (Unit 3).",
+            "tags": [
+              "unit-3"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cô giáo yêu cầu học sinh chạm vào tai của mình. Cô nói:",
+            "options": [
+              "Touch your ears!",
+              "Open your ears!",
+              "This is your ear.",
+              "What's this?"
+            ],
+            "correct_index": 0,
+            "explanation": "'Touch your ears!' là câu mệnh lệnh chạm vào tai (Unit 4, Lesson 2).",
+            "tags": [
+              "unit-4"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Bạn chỉ vào tai của mình và hỏi bạn cùng lớp. Câu hỏi đúng là:",
+            "options": [
+              "What's this?",
+              "What's your name?",
+              "How old are you?",
+              "Is this a pen?"
+            ],
+            "correct_index": 0,
+            "explanation": "'What's this?' dùng để hỏi tên bộ phận cơ thể ở gần (Unit 4, Lesson 1).",
+            "tags": [
+              "unit-4"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What's your hobby? – It's ___. (thích chạy bộ buổi sáng ở công viên)",
+            "choices": [
+              "running",
+              "walking",
+              "swimming",
+              "cooking"
+            ],
+            "correct_answer": "running",
+            "explanation": "'Running' nghĩa là chạy bộ (Unit 5, vocabulary mở rộng).",
+            "tags": [
+              "unit-5",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Lucy hỏi bạn về sở thích. Câu hỏi đúng là:",
+            "options": [
+              "What's your hobby?",
+              "What's this?",
+              "How old are you?",
+              "Is this your hobby?"
+            ],
+            "correct_index": 0,
+            "explanation": "'What's your hobby?' dùng để hỏi về sở thích (Unit 5, Lesson 1).",
+            "tags": [
+              "unit-5"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Is this our gym? – Yes, ___ is. Let's go and play.",
+            "choices": [
+              "it",
+              "this",
+              "that",
+              "she"
+            ],
+            "correct_answer": "it",
+            "explanation": "Trả lời câu hỏi 'Is this...?' luôn dùng 'it' (Unit 6, Lesson 1).",
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Cô giáo cho học sinh xem tranh sân chơi và hỏi. Câu hỏi đúng là:",
+            "options": [
+              "Is this our playground?",
+              "What's your hobby?",
+              "How old are you?",
+              "Is this your friend?"
+            ],
+            "correct_index": 0,
+            "explanation": "'Is this our...?' dùng để hỏi về nơi chốn ở trường (Unit 6, Lesson 1).",
+            "tags": [
+              "unit-6"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "___ down, please! (Học sinh đang đứng, cô muốn các em ngồi xuống)",
+            "choices": [
+              "Sit",
+              "Stand",
+              "Open",
+              "Close"
+            ],
+            "correct_answer": "Sit",
+            "explanation": "'Sit down, please!' là câu mệnh lệnh yêu cầu ngồi xuống (Unit 7).",
+            "tags": [
+              "unit-7",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Học sinh muốn ra khỏi lớp, em xin phép cô giáo bằng câu:",
+            "options": [
+              "May I go out?",
+              "May I come in?",
+              "May I sit down?",
+              "May I open the book?"
+            ],
+            "correct_index": 0,
+            "explanation": "'May I...?' dùng để xin phép; 'go out' nghĩa là ra ngoài (Unit 7, Lesson 2).",
+            "tags": [
+              "unit-7"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Do you have an eraser? – Yes, I ___.",
+            "choices": [
+              "do",
+              "don't",
+              "have",
+              "am"
+            ],
+            "correct_answer": "do",
+            "explanation": "Trả lời khẳng định cho 'Do you have...?' là 'Yes, I do.' (Unit 8, Lesson 2).",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Ben hỏi Mai có cây thước không nhưng Mai không có. Mai trả lời:",
+            "options": [
+              "No, I don't.",
+              "No, I doesn't.",
+              "Yes, I do.",
+              "I have a ruler."
+            ],
+            "correct_index": 0,
+            "explanation": "Trả lời phủ định cho 'Do you have...?' là 'No, I don't.' (Unit 8, Lesson 2).",
+            "tags": [
+              "unit-8"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "What colour is the eraser? – It's blue. Từ 'blue' có nghĩa là gì?",
+            "options": [
+              "màu xanh dương",
+              "màu đỏ",
+              "màu vàng",
+              "màu nâu"
+            ],
+            "correct_index": 0,
+            "explanation": "'Blue' nghĩa là màu xanh dương (Unit 9, Lesson 1).",
+            "tags": [
+              "unit-9",
+              "vocabulary"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "What colour are they? – They're ___. (nhiều quả táo màu đỏ)",
+            "choices": [
+              "red",
+              "brown",
+              "white",
+              "orange"
+            ],
+            "correct_answer": "red",
+            "explanation": "Khi hỏi về nhiều vật dùng 'What colour are they? – They're...' (Unit 9, Lesson 2).",
+            "tags": [
+              "unit-9"
+            ]
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "metadata_json": {
+            "question": "Ben rủ bạn chơi cờ vua vào giờ ra chơi. Ben nói:",
+            "options": [
+              "It's break time. Let's play chess.",
+              "What's your hobby?",
+              "Is this our playground?",
+              "Do you have a chess set?"
+            ],
+            "correct_index": 0,
+            "explanation": "Theo hội thoại Unit 10, Ben nói 'It's break time. Let's play chess.'",
+            "tags": [
+              "unit-10"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "I play volleyball at break time. What about you, ___?",
+            "choices": [
+              "Minh",
+              "chess",
+              "playground",
+              "eraser"
+            ],
+            "correct_answer": "Minh",
+            "explanation": "Câu hỏi ngược 'What about you, Minh?' dùng tên bạn cùng lớp (Unit 10, Lesson 1).",
+            "tags": [
+              "unit-10"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

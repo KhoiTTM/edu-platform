@@ -12,10 +12,17 @@
 - Format dữ liệu (xem `exam_bank.md` mục 7): **Format 1 — Ngân hàng câu hỏi, đề rút mẫu**, chia
   theo 10 Unit của Tập 1.
 
-## 2. Trạng thái hiện tại (2026-07-12 — đã XOÁ SẠCH sau audit, xem mục 5)
+## 2. Trạng thái hiện tại (2026-07-12)
 
-- **0 collections.** Tab "Luyện tập theo sách bài tập" hiện trống hoàn toàn cho Tiếng Anh 3 —
-  đây là chủ đích, không phải sự cố.
+- **Tab "Luyện tập theo sách bài tập" (`exam_type: null`): trống (0 collections)** — đã xoá
+  sạch sau audit, chờ soạn lại đúng chuẩn (xem mục 5, 6). Đây là chủ đích, không phải sự cố.
+- **Tab "Ôn Tập" (`exam_type: review`): 1 collection, 15 exams, 300 câu** — "Tiếng Anh 3 - Ôn
+  tập tổng hợp Học kỳ 1", `units: [201]` (số ảo đánh dấu nhóm ôn tập tổng hợp, theo đúng quy
+  ước chung ở `exam_bank.md` mục 6c). Bám sát cả 10 unit của SGK (không phải SBT) — nguồn:
+  `content/pdfs/sgk/sgk_tienganh3-tap1.pdf` (Book map trang 4-5, chi tiết từng unit trang
+  10-77). Học sinh bấm "Luyện đề Ngẫu nhiên" để random 1 trong 15 đề, mỗi đề 20 câu rải đều
+  ~2 câu/unit, kết hợp `multiple_choice`/`fill_blank`/`matching`. Nguồn soạn:
+  `content/exam-bank/tieng-anh/tienganh3-hk1-review-full.json`.
 - Trạng thái trước khi xoá (2026-07-10): 121 collections, 121 exams, 2416 câu hỏi — 120
   collection `exam_type: null` (10 unit) sinh bằng procedural script + 1 collection
   `exam_type: midterm` lạc (đã xoá riêng trước, xem mục 5).
@@ -62,6 +69,18 @@
 - [ ] Cập nhật lại mục 2 (trạng thái) trong chính file này sau khi seed thêm
 
 ## 5. Lịch sử / ghi chú quan trọng
+
+- **2026-07-12 — Seed bộ "Ôn tập tổng hợp Học kỳ 1" (15 đề × 20 câu = 300 câu), bám cả 10
+  unit SGK:** soạn theo đúng quy trình chuẩn — đọc trực tiếp ảnh render từ
+  `content/pdfs/sgk/sgk_tienganh3-tap1.pdf` (không có text layer, phải render bằng
+  `pypdfium2` do môi trường thiếu `poppler-utils`/`pdftoppm`), soạn JSON, dry-run, seed.
+  **Bài học về kiểm tra chất lượng:** lần soạn đầu tiên (15 đề) bị phát hiện 142/300 câu
+  (47%) chỉ khác nhau ở hậu tố `"(Đề N)"` dán vào cuối câu hỏi — nội dung/đáp án giống hệt
+  nhau, "lách" qua bước kiểm tra trùng lặp text đơn giản. Đã yêu cầu soạn lại, dùng script
+  kiểm tra nghiêm ngặt hơn (chuẩn hoá bỏ hậu tố trước khi so sánh, so cả `options`/`pairs`
+  đi kèm) — bản soạn lại đạt 282/300 câu (94%) khác nhau thật. **Khi giao AI soạn số lượng
+  lớn câu hỏi tương tự nhau, luôn tự verify độc lập bằng cách chuẩn hoá text trước khi so
+  trùng lặp — đừng tin báo cáo "0 trùng lặp" nếu không tự kiểm tra lại logic so sánh.**
 
 - **2026-07-12 — Xoá toàn bộ 120 collection procedural, tab "Theo sách bài tập" chờ soạn
   lại:** audit theo yêu cầu người phụ trách phát hiện toàn bộ dữ liệu Unit 1-10 (sinh bằng
