@@ -28,12 +28,14 @@ import {
 } from "./actions";
 import type { StudentProfile, ParentTask, LearningHistoryEntry } from "./actions";
 
-// ─── Subject list (fixed) ────────────────────────────────────────────────────
+// ─── Subject list for Exam Bank Explorer filter (read-only browsing, all grades combined) ────
 
 const SUBJECTS = [
   { slug: "toan", name: "Toán", icon: "🔢", color: "sky" },
   { slug: "tieng_viet", name: "Tiếng Việt", icon: "📖", color: "amber" },
   { slug: "tieng_anh", name: "Tiếng Anh", icon: "🌍", color: "emerald" },
+  { slug: "tieng-anh-7", name: "Tiếng Anh 7", icon: "🇬🇧", color: "emerald" },
+  { slug: "khtn", name: "KHTN", icon: "🧬", color: "rose" },
   { slug: "mindset-ielts", name: "IELTS", icon: "🎓", color: "violet" },
   { slug: "pre-a1-starter", name: "Pre A1", icon: "⭐", color: "pink" },
 ];
@@ -153,7 +155,6 @@ function TasksSection({ students }: { students: StudentProfile[] }) {
         <div className="rounded-2xl bg-surface/80 border-2 border-indigo-500/30 shadow-[0_0_30px_rgba(99,102,241,0.15)] p-5">
           <TaskWizard
             students={students}
-            subjects={SUBJECTS}
             onSuccess={handleSuccess}
             onCancel={() => setShowWizard(false)}
             getExamsForSubject={getExamsForSubject}

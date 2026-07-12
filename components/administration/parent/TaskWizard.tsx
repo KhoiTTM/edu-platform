@@ -22,7 +22,6 @@ type Subject = { slug: string; name: string; icon: string; color: string };
 
 type WizardProps = {
   students: Student[];
-  subjects: Subject[];
   onSuccess: () => void;
   onCancel: () => void;
   getExamsForSubject: (slug: string, grade: number) => Promise<ExamOption[]>;
@@ -102,7 +101,6 @@ function StepIndicator({ current, total }: { current: number; total: number }) {
 
 export function TaskWizard({
   students,
-  subjects,
   onSuccess,
   onCancel,
   getExamsForSubject,
@@ -256,7 +254,8 @@ export function TaskWizard({
         (selectedExamTypeFilter === "lesson" && type === "lesson") ||
         (selectedExamTypeFilter === "workbook" && !type) ||
         (selectedExamTypeFilter === "reflex" && type === "reflex") ||
-        (selectedExamTypeFilter === "review" && (type === "midterm" || type === "final"));
+        (selectedExamTypeFilter === "review" &&
+          (type === "review" || type === "midterm" || type === "final" || type === "exam"));
 
       return matchesSearch && matchesUnit && matchesType;
     });
