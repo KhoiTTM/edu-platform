@@ -115,7 +115,7 @@
     "id": "khtn7-2-1",
     "bai": 2,
     "cau": 1,
-    "type": "essay",
+    "type": "multiple_choice",
     "stem": "Phát biểu nào sau đây không mô tả đúng mô hình nguyên tử của Rơ-dơ-pho – Bo?",
     "answer": "B",
     "options": [
@@ -395,7 +395,7 @@
     "id": "khtn7-3-2",
     "bai": 3,
     "cau": 2,
-    "type": "essay",
+    "type": "multiple_choice",
     "stem": "Kí hiệu nào sau đây là kí hiệu hoá học của nguyên tố magnesium?",
     "answer": "B.",
     "options": [
@@ -409,7 +409,7 @@
     "id": "khtn7-3-3",
     "bai": 3,
     "cau": 3,
-    "type": "essay",
+    "type": "multiple_choice",
     "stem": "Đến nay con người đã tìm ra bao nhiêu nguyên tố hoá học?",
     "answer": "A",
     "options": [
@@ -541,7 +541,7 @@
     "id": "khtn7-4-3",
     "bai": 4,
     "cau": 3,
-    "type": "essay",
+    "type": "multiple_choice",
     "stem": "Phát biểu nào sau đây là đúng?",
     "answer": "C.",
     "options": [
@@ -571,7 +571,7 @@
     "id": "khtn7-4-6",
     "bai": 4,
     "cau": 6,
-    "type": "essay",
+    "type": "multiple_choice",
     "stem": "Phát biểu nào sau đây không đúng?",
     "answer": "B",
     "options": [
@@ -585,7 +585,7 @@
     "id": "khtn7-4-7",
     "bai": 4,
     "cau": 7,
-    "type": "essay",
+    "type": "multiple_choice",
     "stem": "Phát biểu nào sau đây là đúng?",
     "answer": "B",
     "options": [
@@ -607,7 +607,7 @@
     "id": "khtn7-4-9",
     "bai": 4,
     "cau": 9,
-    "type": "essay",
+    "type": "multiple_choice",
     "stem": "Phát biểu nào sau đây là đúng?",
     "answer": "B",
     "options": [
@@ -621,7 +621,7 @@
     "id": "khtn7-4-10",
     "bai": 4,
     "cau": 10,
-    "type": "essay",
+    "type": "multiple_choice",
     "stem": "Phát biểu nào sau đây không đúng?",
     "answer": "C.",
     "options": [
