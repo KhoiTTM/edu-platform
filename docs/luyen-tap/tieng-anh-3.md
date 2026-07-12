@@ -12,22 +12,24 @@
 - Format dữ liệu (xem `exam_bank.md` mục 7): **Format 1 — Ngân hàng câu hỏi, đề rút mẫu**, chia
   theo 10 Unit của Tập 1.
 
-## 2. Trạng thái hiện tại (khảo sát trực tiếp Supabase — 2026-07-10)
+## 2. Trạng thái hiện tại (2026-07-12 — đã XOÁ SẠCH sau audit, xem mục 5)
 
-- **121 collections, 121 exams, 2416 câu hỏi** đã seed.
-- `exam_type: null` (120 collections) — trải đều 10 unit (`units: [1]` .. `[10]`), title hiển
-  thị `"SBT Tiếng Anh 3 - Tập 1"`.
-- `exam_type: midterm` (1 collection, `units: [1]`) — đề giữa kỳ.
-- **Cùng đặc điểm với Toán 3: phần lớn dữ liệu KHÔNG có file JSON nguồn đầy đủ còn lại trong
-  repo.** Chỉ có:
-  - `content/exam-bank/tieng-anh/tienganh3-tap1-unit1.json` (349 dòng) — có vẻ là bản soạn tay
-    mẫu cho Unit 1, dùng để tham khảo cú pháp trước khi các unit sau chuyển sang cách
-    Procedural.
+- **0 collections.** Tab "Luyện tập theo sách bài tập" hiện trống hoàn toàn cho Tiếng Anh 3 —
+  đây là chủ đích, không phải sự cố.
+- Trạng thái trước khi xoá (2026-07-10): 121 collections, 121 exams, 2416 câu hỏi — 120
+  collection `exam_type: null` (10 unit) sinh bằng procedural script + 1 collection
+  `exam_type: midterm` lạc (đã xoá riêng trước, xem mục 5).
+- File backup trước khi xoá: `content/exam-bank/tieng-anh/tienganh3-tap1-procedural-BACKUP-before-delete-2026-07-12.json`
+  (120 collection, 2400 câu, xuất trực tiếp từ Supabase) — giữ lại để tham khảo cách soạn cũ,
+  KHÔNG dùng để seed lại (nội dung không bám sách, xem mục 5 lý do xoá).
+- File JSON khác vẫn còn trong repo (không liên quan bộ đã xoá):
+  - `content/exam-bank/tieng-anh/tienganh3-tap1-unit1.json` (349 dòng) — bản soạn tay mẫu bám
+    đúng cấu trúc sách (section A-E, có Phonics/crossword) — **đây là hình mẫu nên theo khi
+    soạn lại**, xem mục 6.
   - `content/wordlists/tienganh3-tap1-wordlist.json` — từ điển từ vựng nguồn (word, phonetic,
-    meaning), dùng làm dữ liệu đầu vào cho script procedural, KHÔNG phải câu hỏi soạn sẵn.
+    meaning), dùng làm dữ liệu đầu vào cho script procedural cũ.
   - `content/assessments/imported/imported_2026_05_28_tienganh3_1.json` — 1 file đã import qua
-    luồng phụ Gemini Pro Web (xem `content/assessments/AGENT_INSTRUCTIONS.md`), không phải
-    nguồn chính cho toàn bộ 10 unit.
+    luồng phụ Gemini Pro Web (xem `content/assessments/AGENT_INSTRUCTIONS.md`).
 
 ## 3. Đặc thù riêng của môn
 
@@ -61,8 +63,33 @@
 
 ## 5. Lịch sử / ghi chú quan trọng
 
-- Cùng rủi ro như Toán 3: thiếu file JSON nguồn đầy đủ cho 10 unit, khó khôi phục nhanh nếu
-  DB mất dữ liệu ngoài chạy lại script procedural.
+- **2026-07-12 — Xoá toàn bộ 120 collection procedural, tab "Theo sách bài tập" chờ soạn
+  lại:** audit theo yêu cầu người phụ trách phát hiện toàn bộ dữ liệu Unit 1-10 (sinh bằng
+  `scripts/seed-english3-dynamic-assessments.ts`) **không hề bám theo dạng bài thật của SBT
+  Global Success**. So sánh trực tiếp với file mẫu soạn tay
+  (`tienganh3-tap1-unit1.json`, đúng cấu trúc section A-E "PHONICS", có `crossword`) thì dữ
+  liệu thật trên DB chỉ là câu hỏi dịch nghĩa từ vựng qua lại
+  ("What is the correct English word for...", "Choose the odd one out", "Rearrange the
+  letters...") — không có Phonics/Read-and-match/Make-sentences như sách. Nhiều câu còn lặp
+  gần giống hệt nhau (chỉ đổi vị trí đáp án). Người phụ trách quyết định **xoá sạch để thiết
+  kế lại**, giữ nguyên tab UI (sẽ tự hiện lại khi seed đề mới, xem mục 2). Đã backup trước khi
+  xoá — xem mục 2.
+- Trước đó (còn hiệu lực cho collection `exam_type: midterm` lạc, id `e8919f74...`, đã xoá
+  riêng cùng ngày): title trùng "SBT Tiếng Anh 3 - Tập 1" nhưng chỉ có 1 đề 16 câu, tạo tab
+  "Ôn Tập" gần như trống — không phải đề giữa kỳ thật.
 - `content/assessments/imported/imported_2026_05_28_tienganh3_1.json` cho thấy môn này từng
   dùng cả luồng import phụ (Gemini Pro Web, xem `content/assessments/AGENT_INSTRUCTIONS.md`)
-  song song với procedural — nếu thấy dữ liệu trùng/lệch khi audit, kiểm tra cả 2 nguồn này.
+  song song với procedural — không liên quan tới đợt xoá này, vẫn còn trong repo.
+
+## 6. Hướng soạn lại (khi thiết kế lại "Luyện tập theo sách bài tập")
+
+- Theo đúng nguyên tắc SBT bám sách (giống Tiếng Anh 7/KHTN 7, xem `exam_bank.md` mục 7):
+  chép/gõ lại **y như bản in gốc** từ PDF `content/pdfs/sbt/sbt_tienganh3.pdf`, không diễn giải
+  lại, không đổi số liệu.
+- Dùng `content/exam-bank/tieng-anh/tienganh3-tap1-unit1.json` làm hình mẫu cấu trúc (section
+  A-E, các `type` tương ứng theo bảng mapping ở `exam_bank.md` mục 5b) — dù mục 5b viết riêng
+  cho Tiếng Anh 3 SBT, đã có sẵn từ trước, dùng lại được.
+- Soạn theo quy trình chuẩn ở `exam_bank.md` mục 4: soạn JSON trong `content/exam-bank/tieng-anh/`
+  trước, seed bằng `scripts/seed-exam-bank.ts`, giữ lại JSON làm backup — **không lặp lại
+  cách procedural cũ** (sinh bằng code, không JSON nguồn) vì đó là nguyên nhân khiến nội dung
+  trôi khỏi sách thật mà không ai phát hiện sớm.
