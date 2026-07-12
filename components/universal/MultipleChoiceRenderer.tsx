@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Check, X, Volume2 } from "lucide-react";
+import { Check, X, Volume2, Lightbulb } from "lucide-react";
 import { formatText } from "./formatText";
 
 interface MultipleChoiceRendererProps {
@@ -9,6 +9,7 @@ interface MultipleChoiceRendererProps {
   options: string[];
   correctIndex: number;
   explanation?: string | null;
+  hint?: string | null;
   onAnswer: (isCorrect: boolean, answer: string) => void;
   disabled?: boolean;
   shuffle?: boolean;
@@ -103,6 +104,7 @@ export function MultipleChoiceRenderer({
   question,
   options,
   correctIndex,
+  hint,
   onAnswer,
   disabled = false,
   shuffle = true,
@@ -173,6 +175,13 @@ export function MultipleChoiceRenderer({
       <div className="text-lg font-medium text-white leading-snug">
         {typeof question === 'string' ? formatText(question) : question}
       </div>
+
+      {hint && (
+        <div className="flex items-start gap-2 px-3 py-2 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs leading-relaxed">
+          <Lightbulb size={14} className="mt-0.5 flex-shrink-0" />
+          <span>{typeof hint === 'string' ? formatText(hint) : hint}</span>
+        </div>
+      )}
 
       {(audioUrl || audioText) && (
         <div className="flex flex-wrap items-center gap-3 py-2 bg-slate-900/30 p-3 rounded-2xl border border-white/5">

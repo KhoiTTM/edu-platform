@@ -25,6 +25,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
   const [answers, setAnswers] = useState<any[]>([]);
   const [hasAnswered, setHasAnswered] = useState(false);
   const [essayDone, setEssayDone] = useState(false);
+  const [essayAnswerText, setEssayAnswerText] = useState('');
   const [timeLeft, setTimeLeft] = useState<number>(timerSeconds || 0);
 
   const currentQuestion = questions[currentIndex];
@@ -96,6 +97,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
       setCurrentIndex(currentIndex + 1);
       setHasAnswered(false);
       setEssayDone(false);
+      setEssayAnswerText('');
     } else {
       onComplete(answers);
     }
@@ -125,6 +127,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
             }
             onAnswer={handleAnswer}
             disabled={hasAnswered}
+            hint={currentQuestion.hint || currentQuestion.metadata_json?.hint}
             imageUrl={currentQuestion.imageUrl || currentQuestion.image_url || currentQuestion.metadata_json?.image_url}
             audioText={currentQuestion.audio_text || currentQuestion.audioText || currentQuestion.metadata_json?.audio_text || currentQuestion.metadata_json?.audioText}
             audioUrl={currentQuestion.audio_url || currentQuestion.audioUrl || currentQuestion.metadata_json?.audio_url || currentQuestion.metadata_json?.audioUrl}
@@ -392,16 +395,31 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
             <div className="text-white font-semibold text-base leading-relaxed">
               <MathText text={currentQuestion.question || currentQuestion.stem || ""} />
             </div>
-            <p className="text-xs text-slate-400 italic">Câu tự luận — tự làm vào vở rồi bấm bên dưới.</p>
+            <p className="text-xs text-slate-400 italic">Câu tự luận — nhập câu trả lời của em vào ô bên dưới.</p>
             {!essayDone ? (
-              <button
-                onClick={() => setEssayDone(true)}
-                className="w-full px-4 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-xl text-white font-bold transition-colors"
-              >
-                Đã làm xong — xem hướng dẫn giải →
-              </button>
+              <div className="flex flex-col gap-3">
+                <textarea
+                  value={essayAnswerText}
+                  onChange={(e) => setEssayAnswerText(e.target.value)}
+                  placeholder="Nhập câu trả lời của em..."
+                  rows={5}
+                  className="w-full px-4 py-3 bg-surface-base border border-line rounded-xl text-white text-sm leading-relaxed placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-y"
+                />
+                <button
+                  onClick={() => setEssayDone(true)}
+                  className="w-full px-4 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-xl text-white font-bold transition-colors"
+                >
+                  Đã làm xong — xem hướng dẫn giải →
+                </button>
+              </div>
             ) : (
               <div className="flex flex-col gap-4">
+                {essayAnswerText.trim() && (
+                  <div className="p-4 bg-surface-base border border-line rounded-xl">
+                    <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Câu trả lời của em</p>
+                    <p className="text-slate-200 text-sm leading-relaxed whitespace-pre-wrap">{essayAnswerText}</p>
+                  </div>
+                )}
                 {essayExplanation && (
                   <div className="p-4 bg-emerald-900/30 border border-emerald-500/40 rounded-xl">
                     <p className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-2">Hướng dẫn giải</p>
@@ -411,7 +429,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
                   </div>
                 )}
                 <button
-                  onClick={() => { setEssayDone(false); handleAnswer(true, "essay_done"); }}
+                  onClick={() => { setEssayDone(false); handleAnswer(true, essayAnswerText.trim() || "essay_done"); }}
                   className="w-full px-4 py-3 bg-indigo-600 hover:bg-indigo-500 rounded-xl text-white font-bold transition-colors"
                 >
                   Tiếp theo →
