@@ -250,12 +250,16 @@ export function TaskWizard({
         selectedFilterUnit === null || e.units.includes(selectedFilterUnit);
       
       const type = e.exam_type;
+      const REVIEW_TYPES = new Set(["review", "midterm", "final", "exam"]);
+      // Mirror the fallback rule used by the main /luyen-tap page: any exam_type that
+      // isn't null (workbook), "reflex", or a review-family type defaults to the
+      // "lesson" bucket (e.g. Pre A1 Starter's "listening" type).
       const matchesType =
-        (selectedExamTypeFilter === "lesson" && type === "lesson") ||
         (selectedExamTypeFilter === "workbook" && !type) ||
         (selectedExamTypeFilter === "reflex" && type === "reflex") ||
-        (selectedExamTypeFilter === "review" &&
-          (type === "review" || type === "midterm" || type === "final" || type === "exam"));
+        (selectedExamTypeFilter === "review" && !!type && REVIEW_TYPES.has(type)) ||
+        (selectedExamTypeFilter === "lesson" &&
+          !!type && type !== "reflex" && !REVIEW_TYPES.has(type));
 
       return matchesSearch && matchesUnit && matchesType;
     });
