@@ -73,7 +73,13 @@ function TaskRow({
     });
   };
 
-  const isDone = !!task.completed_at;
+  // "daily_tasks" (and its completed_at column) only ever gets created for exam-type
+  // tasks (see supabase/migrations/043_parent_tasks.sql — exam_id is NOT NULL there).
+  // Lesson-type tasks (lesson_node_id) never get a daily_tasks row, so completed_at
+  // is always null for them — their completion instead shows up as score_text
+  // ("Đã xong") computed from learning_sessions in getMyParentTasks(). Treat either
+  // signal as "done" so lesson tasks don't permanently show "Chưa làm".
+  const isDone = !!task.completed_at || !!task.score_text;
 
   return (
     <div
