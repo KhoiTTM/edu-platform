@@ -7,6 +7,7 @@ import { AssessmentRenderer } from "./AssessmentRenderer";
 import { AssessmentResultCard } from "../assessment/AssessmentResultCard";
 import { WorkbookAnswerSheet } from "./WorkbookAnswerSheet";
 import { CurriculumMap } from "./CurriculumMap";
+import { TiengVietLessonView } from "./TiengVietLessonView";
 import { useRouter, usePathname } from "next/navigation";
 import { getFallbackQuestionsForUnit, getCumulativeQuestionsForUnit, getCumulativeVocabularyQuiz } from "@/lib/ieltsQuizzes";
 import AITeacherChat from "@/components/learning/AITeacherChat";
@@ -485,8 +486,9 @@ export function LearnNodeClient({
     return false;
   });
 
-  const isGrammar = isGrammarFocus || 
-                    node.metadata?.skill_focus === 'grammar' || 
+  const isGrammar = isGrammarFocus ||
+                    node.metadata?.skill_focus === 'grammar' ||
+                    (subjectSlug === 'tieng_viet' && node.type === 'lesson') ||
                     (node.title && /grammar|ngữ pháp|vocabulary|từ vựng/i.test(node.title));
 
   const isExam = node.type === 'exam';
@@ -496,6 +498,7 @@ export function LearnNodeClient({
   );
   
   const [completed, setCompleted] = useState(false);
+  const [isBookOpen, setIsBookOpen] = useState(true);
   const [studentName, setStudentName] = useState("Học sinh");
   const [activeSubView, setActiveSubView] = useState<'hub' | 'theory' | 'quiz' | 'warmup' | 'book-work'>('hub');
   const [warmupQuizSession, setWarmupQuizSession] = useState<any>(null);
@@ -1521,14 +1524,24 @@ export function LearnNodeClient({
             </h1>
         </div>
         <p className="text-sm text-slate-400 max-w-2xl">
-          {isExam 
-            ? "Bài đánh giá năng lực cuối chương. Hãy tập trung làm bài thật tốt nhé!" 
+          {isExam
+            ? "Bài đánh giá năng lực cuối chương. Hãy tập trung làm bài thật tốt nhé!"
+            : subjectSlug === 'tieng_viet'
+            ? "Đọc bài trong sách và trả lời các câu hỏi luyện tập bên dưới."
             : "Hoàn thành tuần tự 3 bước học tập: Xem video giảng bài -> Luyện tập hiểu bài -> Làm quiz tính điểm."}
         </p>
       </div>
 
       {node.type !== 'lesson' && node.type !== 'exam' && !isGrammar ? (
         <CurriculumMap nodes={childNodes || []} subjectSlug={subjectSlug} completedNodes={completedNodes} />
+      ) : subjectSlug === 'tieng_viet' && node.type === 'lesson' ? (
+        <TiengVietLessonView
+          node={node}
+          isBookOpen={isBookOpen}
+          setIsBookOpen={setIsBookOpen}
+          questions={practiceSession?.questions || []}
+          isLoadingQuestions={isFetchingPractice || !practiceSession}
+        />
       ) : !completed ? (
         <div className="space-y-6">
           {!isExam && (
@@ -1649,51 +1662,108 @@ export function LearnNodeClient({
           {currentPart === 'ai-tutorial' && (
             <div className="space-y-8 animate-in fade-in duration-300">
               {node.metadata?.page && (
-                <div className="bg-gradient-to-r from-amber-500/20 to-orange-500/10 border border-amber-500/30 p-5 rounded-2xl flex items-start gap-4">
-                  <div className="p-3 bg-amber-500/20 rounded-xl text-amber-400">
-                    <BookOpen size={24} />
+                <div className="bg-gradient-to-r from-amber-500/20 to-orange-500/10 border border-amber-500/30 p-5 rounded-2xl flex items-start justify-between gap-4">
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-amber-500/20 rounded-xl text-amber-400">
+                      <BookOpen size={24} />
+                    </div>
+                    <div>
+                      <h4 className="text-amber-400 font-bold text-lg">Yêu cầu học tập</h4>
+                      <p className="text-slate-300 text-sm mt-1">
+                        Môn học này có nhiều hình ảnh và thực hành đặc thù. 
+                        {node.metadata?.drive_file_id 
+                          ? ` Sách giáo khoa đã được đính kèm bên dưới, hãy cuộn tới trang ${node.metadata.page} để xem các hình ảnh trực quan nhé!`
+                          : ` Hãy kết hợp mở Sách giáo khoa trang ${node.metadata.page} để đạt hiệu quả tốt nhất nhé!`
+                        }
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="text-amber-400 font-bold text-lg">Yêu cầu học tập</h4>
-                    <p className="text-slate-300 text-sm mt-1">
-                      Môn học này có nhiều hình ảnh và thực hành đặc thù. 
-                      {node.metadata?.drive_file_id 
-                        ? ` Sách giáo khoa đã được đính kèm bên dưới, hãy cuộn tới trang ${node.metadata.page} để xem các hình ảnh trực quan nhé!`
-                        : ` Hãy kết hợp mở Sách giáo khoa trang ${node.metadata.page} để đạt hiệu quả tốt nhất nhé!`
-                      }
-                    </p>
-                  </div>
+                  {node.metadata?.drive_file_id && subjectSlug === 'tieng_viet' && (
+                    <button
+                      onClick={() => setIsBookOpen(prev => !prev)}
+                      className={`flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold border transition ${
+                        isBookOpen
+                          ? "bg-amber-600/20 border-amber-500/40 text-amber-300 hover:bg-amber-600/30"
+                          : "bg-sky-600/20 border-sky-500/40 text-sky-300 hover:bg-sky-600/30"
+                      }`}
+                    >
+                      <BookOpen size={16} />
+                      {isBookOpen ? "Ẩn Sách" : "Hiện Sách"}
+                    </button>
+                  )}
                 </div>
               )}
 
-              {node.metadata?.drive_file_id && (
-                <div className="w-full h-[600px] md:h-[800px] rounded-3xl overflow-hidden border-2 border-amber-500/30 shadow-2xl bg-slate-950">
-                  <iframe 
-                    src={`https://drive.google.com/file/d/${node.metadata.drive_file_id}/preview`} 
-                    width="100%" 
-                    height="100%" 
-                    allow="autoplay"
-                    className="rounded-2xl border-0"
-                  ></iframe>
-                </div>
-              )}
-              <div className="bg-surface/40 border border-line p-8 rounded-3xl backdrop-blur-md shadow-2xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-[50%] h-64 bg-rose-500/5 blur-[120px] pointer-events-none" />
-                <GrammarTutorialRenderer content={node.metadata?.grammar_tutorial} />
-                
-                <div className="p-6 mt-8 rounded-3xl bg-slate-950/50 border border-line/80 flex flex-col sm:flex-row items-center justify-between gap-4">
-                  <div className="space-y-1 text-center sm:text-left">
-                    <p className="font-extrabold text-white text-base">Đã nắm rõ lý thuyết?</p>
-                    <p className="text-xs text-slate-500">Chuyển sang làm bài luyện tập không tính điểm để kiểm tra hiểu biết nhé!</p>
-                  </div>
-                  <button 
-                    onClick={() => setCurrentPart('practice')}
-                    className="px-6 py-3 bg-rose-600 hover:bg-rose-500 text-white font-extrabold rounded-2xl transition active:scale-95 flex items-center gap-2"
+              {node.metadata?.drive_file_id && subjectSlug === 'tieng_viet' ? (
+                <div className="flex flex-col md:flex-row gap-6 w-full items-stretch min-h-[600px] md:min-h-[750px]">
+                  {/* LEFT: Drive PDF Viewer (Collapsible) */}
+                  <div
+                    className={`transition-all duration-300 overflow-hidden rounded-3xl border border-line bg-slate-950 flex flex-col ${
+                      isBookOpen ? "w-full md:w-1/2 opacity-100" : "w-0 opacity-0 pointer-events-none border-0"
+                    }`}
                   >
-                    Bắt đầu luyện tập <ChevronRight size={18} />
-                  </button>
+                    <iframe 
+                      src={`https://drive.google.com/file/d/${node.metadata.drive_file_id}/preview`} 
+                      width="100%" 
+                      height="100%" 
+                      allow="autoplay"
+                      className="border-0 w-full flex-1"
+                    ></iframe>
+                  </div>
+
+                  {/* RIGHT: AI Tutorial & Reading content */}
+                  <div className={`transition-all duration-300 flex-1 flex flex-col justify-between p-8 rounded-3xl bg-surface/40 border border-line backdrop-blur-md shadow-2xl relative overflow-hidden`}>
+                    <div className="absolute top-0 right-0 w-[50%] h-64 bg-rose-500/5 blur-[120px] pointer-events-none" />
+                    <div className="flex-1 overflow-y-auto">
+                      <GrammarTutorialRenderer content={node.metadata?.grammar_tutorial} />
+                    </div>
+                    
+                    <div className="p-6 mt-8 rounded-3xl bg-slate-950/50 border border-line/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+                      <div className="space-y-1 text-center sm:text-left">
+                        <p className="font-extrabold text-white text-base">Đã nắm rõ lý thuyết?</p>
+                        <p className="text-xs text-slate-500">Chuyển sang làm bài luyện tập không tính điểm để kiểm tra hiểu biết nhé!</p>
+                      </div>
+                      <button 
+                        onClick={() => setCurrentPart('practice')}
+                        className="px-6 py-3 bg-rose-600 hover:bg-rose-500 text-white font-extrabold rounded-2xl transition active:scale-95 flex items-center gap-2 shrink-0"
+                      >
+                        Bắt đầu luyện tập <ChevronRight size={18} />
+                      </button>
+                    </div>
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <>
+                  {node.metadata?.drive_file_id && (
+                    <div className="w-full h-[600px] md:h-[800px] rounded-3xl overflow-hidden border-2 border-amber-500/30 shadow-2xl bg-slate-950">
+                      <iframe 
+                        src={`https://drive.google.com/file/d/${node.metadata.drive_file_id}/preview`} 
+                        width="100%" 
+                        height="100%" 
+                        allow="autoplay"
+                        className="rounded-2xl border-0"
+                      ></iframe>
+                    </div>
+                  )}
+                  <div className="bg-surface/40 border border-line p-8 rounded-3xl backdrop-blur-md shadow-2xl relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-[50%] h-64 bg-rose-500/5 blur-[120px] pointer-events-none" />
+                    <GrammarTutorialRenderer content={node.metadata?.grammar_tutorial} />
+                    
+                    <div className="p-6 mt-8 rounded-3xl bg-slate-950/50 border border-line/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+                      <div className="space-y-1 text-center sm:text-left">
+                        <p className="font-extrabold text-white text-base">Đã nắm rõ lý thuyết?</p>
+                        <p className="text-xs text-slate-500">Chuyển sang làm bài luyện tập không tính điểm để kiểm tra hiểu biết nhé!</p>
+                      </div>
+                      <button 
+                        onClick={() => setCurrentPart('practice')}
+                        className="px-6 py-3 bg-rose-600 hover:bg-rose-500 text-white font-extrabold rounded-2xl transition active:scale-95 flex items-center gap-2"
+                      >
+                        Bắt đầu luyện tập <ChevronRight size={18} />
+                      </button>
+                    </div>
+                  </div>
+                </>
+              )}
             </div>
           )}
 

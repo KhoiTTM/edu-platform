@@ -33,11 +33,11 @@ export default async function HocTapSubjectPage({ params, searchParams }: Props)
     .from("profiles")
     .select("grade")
     .eq("id", user.id)
-    .single();
+    .maybeSingle();
 
   const grade = profile?.grade ?? 3;
 
-  if (subject === "toan" || subject === "tieng_anh") {
+  if (subject === "toan" || subject === "tieng_anh" || subject === "tieng_viet") {
     redirect(`/learn/${subject}/lop-${grade}`);
   }
   const { tap } = await searchParams;
@@ -47,30 +47,36 @@ export default async function HocTapSubjectPage({ params, searchParams }: Props)
 
 
 
-  const { data: subjectRows, error: subjectError } = await supabase
-    .from("subjects")
-    .select("*")
-    .in("grade", [grade, 0])
-    .eq("slug", subject)
-    .order("volume");
+  // Table 'public.subjects' is deprecated and dropped in migration 039.
+  // We bypass querying 'subjects' and build active subject info dynamically.
+  const subjectCatalog = [
+    {
+      id: "cccccccc-cccc-cccc-cccc-tiengviet301",
+      grade: 3,
+      slug: "tieng_viet",
+      label_vi: "Tiếng Việt",
+      volume: 1,
+      textbook_title: "Sách Tiếng Việt lớp 3 — Tập 1",
+      textbook_pdf_url: "https://drive.google.com/file/d/1kBGEw5OkC2HupTOQo04cVzfRsaeRbov_/view?usp=sharing"
+    },
+    {
+      id: "cccccccc-cccc-cccc-cccc-tiengviet302",
+      grade: 3,
+      slug: "tieng_viet",
+      label_vi: "Tiếng Việt",
+      volume: 2,
+      textbook_title: "Sách Tiếng Việt lớp 3 — Tập 2",
+      textbook_pdf_url: null
+    }
+  ] as unknown as Subject[];
 
-  if (subjectError) {
-    console.error("Error fetching subject info:", subjectError);
-  }
+  const subjectError = null;
 
-  const subjectCatalog = (subjectRows ?? []) as Subject[];
-
-  const { data: allLessons, error: lessonsError } = await supabase
-    .from("lessons")
-    .select("*")
-    .in("grade", [grade, 0])
-    .eq("subject_slug", subject)
-    .order("volume")
-    .order("lesson_index", { ascending: true });
-
-  if (lessonsError) {
-    console.error("Error fetching subject lessons:", lessonsError);
-  }
+  // Table 'public.lessons' is deprecated and dropped in migration 039.
+  // Content routes dynamically under '/learn/[subject]/[node]' via curriculum_nodes.
+  // We mock a redirect or mock lessons array to prevent SQL errors.
+  const allLessons: Lesson[] = [];
+  const lessonsError = null;
 
   const all = (allLessons ?? []) as Lesson[];
   if (all.length === 0) notFound();

@@ -46,11 +46,17 @@ export default async function LearnNodePage({ params }: LearnNodePageProps) {
     sourceIds = (sources ?? []).map((s: any) => s.id);
   }
 
-  // Step 1c: Query the node, filtered by source if possible
+  // Step 1c: Query the node, filtered by source if possible. If node parameter is UUID, check ID.
+  const isUuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(node);
   let nodeQuery = adminSupabase
     .from("curriculum_nodes")
-    .select("id, title, slug, path, type, metadata, source_id, content_sources(slug)")
-    .eq("slug", node);
+    .select("id, title, slug, path, type, metadata, source_id, content_sources(slug)");
+  
+  if (isUuid) {
+    nodeQuery = nodeQuery.eq("id", node);
+  } else {
+    nodeQuery = nodeQuery.eq("slug", node);
+  }
 
   if (sourceIds.length > 0) {
     nodeQuery = nodeQuery.in("source_id", sourceIds);
@@ -268,6 +274,8 @@ export default async function LearnNodePage({ params }: LearnNodePageProps) {
       />
     );
   }
+
+
 
   return (
     <main className="min-h-screen bg-surface p-4 md:p-8 lg:p-12">

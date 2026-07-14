@@ -88,6 +88,7 @@ export default async function HocTapPage() {
   const getSubjectLink = (slug: string, grade: number) => {
     if (slug === 'mindset-ielts') return `/hoc-tap/mindset-ielts`;
     if (slug === 'pre-a1-starter') return `/hoc-tap/pre-a1-starter`;
+    if (slug === 'tieng_viet') return `/hoc-tap/tieng_viet`;
     const nodeSlug = grade === 0 ? (slug === 'mindset-ielts' ? 'ielts-foundation' : 'global') : `lop-${grade}`;
     return `/learn/${slug}/${nodeSlug}`;
   };

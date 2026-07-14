@@ -22,12 +22,16 @@ export function LessonListByTopic({ lessons }: Props) {
             {topic}
           </h2>
           <ul className="space-y-3">
-            {items.map((lesson) => (
-              <li key={lesson.id}>
-                <Link
-                  href={`/lessons/${lesson.id}`}
-                  className="group relative flex min-h-[64px] flex-col rounded-2xl border-2 border-line bg-surface-raised px-5 py-4 shadow-[0_6px_0_#334155] transition-all duration-150 hover:bg-slate-700 active:translate-y-[6px] active:shadow-none sm:flex-row sm:items-center sm:justify-between"
-                >
+            {items.map((lesson) => {
+              const hrefPath = lesson.subject_slug === 'tieng_viet' 
+                ? `/learn/tieng_viet/${lesson.id}` 
+                : `/lessons/${lesson.id}`;
+              return (
+                <li key={lesson.id}>
+                  <Link
+                    href={hrefPath}
+                    className="group relative flex min-h-[64px] flex-col rounded-2xl border-2 border-line bg-surface-raised px-5 py-4 shadow-[0_6px_0_#334155] transition-all duration-150 hover:bg-slate-700 active:translate-y-[6px] active:shadow-none sm:flex-row sm:items-center sm:justify-between"
+                  >
                   <div className="min-w-0 flex-1">
                     <div className="flex flex-wrap items-center gap-2">
                       <span className="text-xs font-semibold uppercase tracking-wide text-sky-500">
@@ -64,7 +68,8 @@ export function LessonListByTopic({ lessons }: Props) {
                   </span>
                 </Link>
               </li>
-            ))}
+            );
+          })}
           </ul>
         </section>
       ))}

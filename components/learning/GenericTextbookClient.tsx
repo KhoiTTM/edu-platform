@@ -31,6 +31,8 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
 
   const activePage = pages[currentPageIndex];
 
+  // Collapsible book panel state
+  const [isBookOpen, setIsBookOpen] = useState(true);
 
   // User input answers state
   const [userAnswers, setUserAnswers] = useState<Record<string, string>>({});
@@ -45,7 +47,6 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
 
   // Initialize page-specific state
   useEffect(() => {
-    // Reset audio when page changes
     setIsPlaying(false);
     setCurrentTime(0);
     setDuration(0);
@@ -105,7 +106,6 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
   const handleInputChange = (exerciseId: string, index: number, value: string) => {
     const key = `${activePage.pageNumber}-${exerciseId}-${index}`;
     setUserAnswers(prev => ({ ...prev, [key]: value }));
-    // Hide results for this page once user starts typing again
     setShowResults(prev => ({ ...prev, [activePage.pageNumber]: false }));
   };
 
@@ -114,14 +114,12 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
     const pageNum = activePage.pageNumber;
     setShowResults(prev => ({ ...prev, [pageNum]: true }));
 
-    // Verify if all answers on the active page are correct
     let pageCorrect = true;
     activePage.exercises.forEach(ex => {
       ex.correctAnswers.forEach((correctVal, idx) => {
         const key = `${pageNum}-${ex.id}-${idx}`;
         const userVal = (userAnswers[key] || "").trim().toLowerCase();
         
-        // Handle fuzzy checking
         const isCorrect = correctVal.split("/").some(option => {
           const opt = option.trim().toLowerCase();
           return userVal === opt || (opt.length > 3 && userVal.includes(opt));
@@ -143,32 +141,33 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
   };
 
   return (
-    <div className="flex flex-col h-screen text-slate-100 bg-surface-deep">
+    <div className="flex flex-col h-screen text-slate-100 bg-surface-deep overflow-hidden">
       {/* ── HEADER ────────────────────────────────────────────────────────── */}
-      <header className="flex items-center justify-between px-6 py-4 bg-surface border-b border-line shadow-md">
+      <header className="flex items-center justify-between px-6 py-4 bg-surface border-b border-line shadow-md z-20">
         <div className="flex items-center gap-3">
           <Link
             href={backUrl}
-            className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-raised hover:bg-surface-raised border border-line text-slate-300 hover:text-white transition text-xs font-medium"
+            className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-raised hover:bg-slate-800 border border-line text-slate-350 hover:text-white transition text-xs font-medium"
           >
             <ChevronLeft className="h-4 w-4" /> Quay Lại
           </Link>
 
-          {/* Mở sách giáo trình ở tab trình duyệt khác */}
-          <a
-            href={`https://online.flipbuilder.com/sdtta/bsjh/mobile/index.html#p=${activePage.pageNumber}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-sky-600/90 hover:bg-sky-500 border border-sky-500 text-white transition text-xs font-medium"
-            title="Mở sách giáo trình ở tab mới"
+          {/* Toggle Button for Textbook Panel */}
+          <button
+            onClick={() => setIsBookOpen(prev => !prev)}
+            className={`flex items-center gap-2 px-3 py-1.5 rounded-lg border transition text-xs font-bold ${
+              isBookOpen 
+                ? "bg-amber-600/20 border-amber-500/40 text-amber-300 hover:bg-amber-600/30" 
+                : "bg-sky-600/20 border-sky-500/40 text-sky-300 hover:bg-sky-600/30"
+            }`}
           >
-            <ExternalLink className="h-4 w-4" /> Mở Sách (tab mới)
-          </a>
+            <BookOpen className="h-4 w-4" /> {isBookOpen ? "Ẩn Sách Minh Họa" : "Xem Sách Minh Họa"}
+          </button>
 
           <div className="h-4 w-[1px] bg-surface-raised"></div>
           <div>
             <h1 className="text-sm font-bold tracking-tight text-white flex items-center gap-1.5">
-              <BookOpen className="h-4 w-4 text-sky-400" /> IELTS Foundation Textbook Alignment
+              📚 Học bài tích hợp sách giáo khoa
             </h1>
             <p className="text-[10px] text-slate-400">{unitTitle}</p>
           </div>
@@ -194,14 +193,50 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
         </div>
       </header>
 
-      {/* ── MAIN WINDOW: 100% INTERACTIVE ─────────────────────────────────── */}
-      <div className="flex-1 flex flex-col overflow-hidden">
+      {/* ── MAIN WINDOW: SPLIT SCREEN LAYOUT ─────────────────────────────────── */}
+      <div className="flex-1 flex overflow-hidden relative">
+        
+        {/* LEFT PANEL: Textbook Viewer (Collapsible) */}
+        <div 
+          className={`h-full border-r border-line bg-slate-950 transition-all duration-300 flex flex-col overflow-hidden relative ${
+            isBookOpen ? "w-full md:w-[45%] lg:w-[50%] opacity-100" : "w-0 opacity-0 pointer-events-none border-r-0"
+          }`}
+        >
+          <div className="flex-1 w-full bg-slate-900 flex items-center justify-center relative">
+            {activePage.driveFileId ? (
+              <iframe 
+                src={`https://drive.google.com/file/d/${activePage.driveFileId}/preview`} 
+                width="100%" 
+                height="100%" 
+                allow="autoplay"
+                className="border-0 w-full h-full"
+              ></iframe>
+            ) : (
+              <iframe
+                src={`https://online.flipbuilder.com/sdtta/bsjh/mobile/index.html#p=${activePage.pageNumber}`}
+                className="border-0 w-full h-full"
+                allowFullScreen
+              ></iframe>
+            )}
+          </div>
+        </div>
 
-        {/* INTERACTIVE FORMS WORKSPACE (full width) */}
-        <div className="flex-1 flex flex-col bg-surface overflow-y-auto p-6 md:p-8 space-y-6 w-full max-w-5xl mx-auto">
-          <div className="border-b border-line pb-4">
-            <span className="text-[10px] font-bold text-sky-400 uppercase tracking-widest block">INTERACTIVE STUDY WORKSPACE</span>
-            <h2 className="text-xl font-extrabold text-white mt-1">Trang {activePage.pageNumber}: {activePage.title}</h2>
+        {/* RIGHT PANEL: Interactive Forms Workspace */}
+        <div className="flex-1 h-full flex flex-col bg-surface overflow-y-auto p-6 md:p-8 space-y-6">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-line pb-4 gap-3">
+            <div>
+              <span className="text-[10px] font-bold text-sky-400 uppercase tracking-widest block">Không gian bài tập tương tác</span>
+              <h2 className="text-xl font-extrabold text-white mt-1">Trang {activePage.pageNumber}: {activePage.title}</h2>
+            </div>
+            
+            {!isBookOpen && (
+              <button
+                onClick={() => setIsBookOpen(true)}
+                className="flex-shrink-0 flex items-center gap-1.5 px-4 py-2 bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white text-xs font-bold rounded-xl shadow-lg shadow-orange-500/10 transition active:scale-95"
+              >
+                <BookOpen className="h-4 w-4" /> Mở Sách Xem Tranh Minh Họa
+              </button>
+            )}
           </div>
 
           {/* LISTENING VIDEO PLAYER (real YouTube audio) */}
@@ -212,8 +247,8 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
                   <Volume2 className="h-5 w-5 animate-pulse" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-white uppercase tracking-wider">Listening Video</h4>
-                  <p className="text-[10px] text-slate-400">Listen to complete the exercises below</p>
+                  <h4 className="text-xs font-bold text-white uppercase tracking-wider">Bài Nghe Video</h4>
+                  <p className="text-[10px] text-slate-400">Nghe video dưới đây để hoàn thành các bài tập</p>
                 </div>
               </div>
 
@@ -233,7 +268,7 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
             </div>
           )}
 
-          {/* LISTENING AUDIO PLAYER (placeholder audio fallback) */}
+          {/* LISTENING AUDIO PLAYER */}
           {activePage.audioUrl && !activePage.youtubeId && (
             <div className="p-5 rounded-2xl bg-gradient-to-br from-slate-950 to-slate-900 border border-line shadow-lg space-y-4">
               <div className="flex items-center gap-3">
@@ -241,8 +276,8 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
                   <Volume2 className="h-5 w-5 animate-pulse" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-white uppercase tracking-wider">Audio Lesson Player</h4>
-                  <p className="text-[10px] text-slate-400">Listen to complete the exercises below</p>
+                  <h4 className="text-xs font-bold text-white uppercase tracking-wider">File Nghe Bài Học</h4>
+                  <p className="text-[10px] text-slate-400">Nhấn nút phát bên dưới để nghe bài đọc</p>
                 </div>
               </div>
 
@@ -257,7 +292,7 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
               <div className="flex items-center gap-4">
                 <button
                   onClick={handlePlayPause}
-                  className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500 text-slate-950 hover:bg-sky-400 transition"
+                  className="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-500 text-slate-950 hover:bg-sky-400 transition animate-in fade-in zoom-in"
                 >
                   {isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5 fill-current" />}
                 </button>
@@ -297,12 +332,12 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
           )}
 
           {/* Exercises list */}
-          <div className="space-y-6 flex-1">
+          <div className="space-y-6 flex-1 max-w-4xl w-full mx-auto">
             {activePage.exercises.map((ex) => {
               const showResult = showResults[activePage.pageNumber] || false;
 
               return (
-                <div key={ex.id} className="p-5 rounded-2xl border border-line bg-slate-950/20 space-y-4">
+                <div key={ex.id} className="p-5 rounded-2xl border border-line bg-slate-950/20 space-y-4 shadow-sm hover:border-line-active transition-all">
                   <div>
                     <h3 className="text-sm font-bold text-white flex items-start gap-2">
                       <HelpCircle className="h-4.5 w-4.5 text-sky-400 shrink-0 mt-0.5" />
@@ -361,7 +396,7 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
                       
                       <div className="space-y-2">
                         {ex.options?.map((option) => {
-                          const optKey = option.charAt(0); // A, B, C, D
+                          const optKey = option.charAt(0);
                           const ansKey = `${activePage.pageNumber}-${ex.id}-0`;
                           const currentVal = userAnswers[ansKey] || "";
                           const isSelected = currentVal === optKey;
@@ -401,7 +436,7 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
                       
                       <textarea
                         rows={6}
-                        placeholder={ex.placeholder || "Enter your written answer response..."}
+                        placeholder={ex.placeholder || "Nhập câu tự luận..."}
                         value={userAnswers[`${activePage.pageNumber}-${ex.id}-0`] || ""}
                         onChange={(e) => handleInputChange(ex.id, 0, e.target.value)}
                         className="w-full bg-slate-950 border border-line rounded-xl px-4 py-3 text-xs outline-none focus:border-sky-500 transition duration-200"
@@ -410,7 +445,7 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
                       {showResult && (
                         <div className="p-4 rounded-xl bg-emerald-950/20 border border-emerald-800/40 text-xs space-y-1">
                           <span className="font-bold text-emerald-400 flex items-center gap-1.5">
-                            <CheckCircle className="h-4 w-4" /> Suggested Answer Guide:
+                            <CheckCircle className="h-4 w-4" /> Hướng dẫn đáp án mẫu:
                           </span>
                           <p className="text-slate-300 italic">{ex.correctAnswers[0]}</p>
                         </div>
@@ -423,10 +458,10 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
           </div>
 
           {/* CHECK ANSWERS CTA FOOTER */}
-          <div className="flex items-center justify-between p-5 bg-slate-950 rounded-2xl border border-line sticky bottom-0 z-10 shadow-lg">
+          <div className="flex items-center justify-between p-5 bg-slate-950 rounded-2xl border border-line sticky bottom-0 z-10 shadow-lg max-w-4xl w-full mx-auto">
             <div>
-              <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">SUBMIT WORKSPACE</span>
-              <p className="text-xs font-bold text-slate-350 mt-0.5">Click to verify answers for this book page</p>
+              <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Nộp bài tập</span>
+              <p className="text-xs font-bold text-slate-350 mt-0.5">Kiểm tra kết quả làm bài của trang này</p>
             </div>
             
             <div className="flex items-center gap-3">
@@ -440,14 +475,14 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
                 }}
                 className="px-4 py-2 rounded-xl bg-surface border border-line text-slate-400 hover:text-white text-xs font-semibold transition"
               >
-                Reset Page
+                Làm lại trang
               </button>
 
               <button
                 onClick={handleCheckAnswers}
                 className="flex items-center gap-1.5 px-6 py-2.5 rounded-xl bg-gradient-to-r from-sky-600 to-indigo-600 hover:from-sky-500 hover:to-indigo-500 text-white text-xs font-bold shadow-lg shadow-indigo-600/10 transition active:scale-[0.98]"
               >
-                <CheckCircle className="h-4 w-4" /> Check Answers
+                <CheckCircle className="h-4 w-4" /> Kiểm tra đáp án
               </button>
             </div>
           </div>

@@ -41,25 +41,21 @@ export default async function LessonPage({ params }: Props) {
   const volume = (L.volume ?? 1) as Volume;
   let subjectRow: Subject | null = null;
 
-  if (L.subject_id) {
-    const { data } = await supabase
-      .from("subjects")
-      .select("*")
-      .eq("id", L.subject_id)
-      .maybeSingle();
-    subjectRow = (data as Subject) ?? null;
-  }
+  const subjectSlug = L.subject_slug ?? "toan";
+  const subjectLabel = L.subject_label_vi ?? "Môn học";
+  const tapQuery = `?tap=${volume}`;
 
-  if (!subjectRow) {
-    const { data } = await supabase
-      .from("subjects")
-      .select("*")
-      .or(`grade.eq.${L.grade},grade.eq.0`)
-      .eq("slug", L.subject_slug ?? "toan")
-      .eq("volume", volume)
-      .maybeSingle();
-    subjectRow = (data as Subject) ?? null;
-  }
+  // Table 'public.subjects' is deprecated and dropped in migration 039.
+  // We mock subjectRow properties based on subject_slug and metadata to prevent crash.
+  subjectRow = {
+    id: L.subject_id || "mocked-subject-id",
+    grade: L.grade,
+    slug: subjectSlug,
+    label_vi: L.subject_label_vi || "Môn học",
+    volume: volume,
+    textbook_title: subjectSlug === "tieng_viet" ? `Sách Tiếng Việt lớp 3 — Tập ${volume}` : `${L.subject_label_vi} lớp ${L.grade} — Tập ${volume}`,
+    textbook_pdf_url: subjectSlug === "tieng_viet" && volume === 1 ? "https://drive.google.com/file/d/1kBGEw5OkC2HupTOQo04cVzfRsaeRbov_/view?usp=sharing" : null
+  } as unknown as Subject;
 
   const { data: quiz } = await supabase
     .from("quizzes")
@@ -78,10 +74,6 @@ export default async function LessonPage({ params }: Props) {
       .order("order_index", { ascending: true });
     practiceQuestions = (questions ?? []) as QuizQuestion[];
   }
-
-  const subjectSlug = L.subject_slug ?? "toan";
-  const subjectLabel = L.subject_label_vi ?? "Môn học";
-  const tapQuery = `?tap=${volume}`;
 
   // Parse Unit Number from the lesson title (e.g. U1, U2... U10)
   const getUnitNumber = (title: string): number => {
