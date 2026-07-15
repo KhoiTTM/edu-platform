@@ -403,7 +403,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
                   onChange={(e) => setEssayAnswerText(e.target.value)}
                   placeholder="Nhập câu trả lời của em..."
                   rows={5}
-                  className="w-full px-4 py-3 bg-surface-base border border-line rounded-xl text-white text-sm leading-relaxed placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-y"
+                  className="w-full px-4 py-3 bg-surface border border-line rounded-xl text-white text-sm leading-relaxed placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-y"
                 />
                 <button
                   onClick={() => setEssayDone(true)}
