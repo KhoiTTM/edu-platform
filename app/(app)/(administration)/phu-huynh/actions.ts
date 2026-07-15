@@ -852,29 +852,141 @@ type CreateTaskInput = {
   active_days: number[];
   exam_id?: string | null;
   lesson_node_id?: string | null;
+  start_date?: string; // Format: YYYY-MM-DD
+  end_date?: string;   // Format: YYYY-MM-DD
+  num_exams?: number;  // Number of exams to generate per day
+  exam_types?: string[]; // Array of selected exam types e.g. ["lesson", "workbook", "review", "reflex"]
 };
 
-/** Create a new parent task */
+/** Create a new parent task and manually generate daily_tasks for a date range if specified */
 export async function createParentTask(input: CreateTaskInput) {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) return { error: "Unauthorized" };
 
-  const { error } = await supabase.from("parent_tasks").insert({
-    parent_id: user.id,
-    student_id: input.student_id,
-    subject_slug: input.subject_slug,
-    unit_numbers: input.unit_numbers,
-    frequency: input.frequency,
-    active_days: input.active_days,
-    exam_id: input.exam_id || null,
-    lesson_node_id: input.lesson_node_id || null,
-    is_active: true,
-  });
+  // 1. Create the parent task configuration
+  const { data: taskData, error: taskError } = await supabase
+    .from("parent_tasks")
+    .insert({
+      parent_id: user.id,
+      student_id: input.student_id,
+      subject_slug: input.subject_slug,
+      unit_numbers: input.unit_numbers || [],
+      frequency: input.frequency,
+      active_days: input.active_days,
+      exam_id: input.exam_id || null,
+      lesson_node_id: input.lesson_node_id || null,
+      is_active: true,
+    })
+    .select("id")
+    .single();
 
-  if (error) {
-    console.error("[createParentTask] Error:", error);
-    return { error: error.message };
+  if (taskError || !taskData) {
+    console.error("[createParentTask] Task creation error:", taskError);
+    return { error: taskError?.message || "Failed to create parent task configuration." };
+  }
+
+  const taskId = taskData.id;
+
+  // 2. If manual date range is provided, generate daily_tasks upfront
+  if (input.start_date && input.end_date) {
+    const startDate = new Date(input.start_date);
+    const endDate = new Date(input.end_date);
+    const numExams = input.num_exams || 1;
+
+    // Fetch all eligible exams for the subject/grade configuration
+    const { data: studentProfile } = await supabase
+      .from("profiles")
+      .select("grade")
+      .eq("id", input.student_id)
+      .maybeSingle();
+
+    const grade = studentProfile?.grade ?? 3;
+
+    // Query exams based on subject, grade, units, and exam types
+    let examsQuery = supabase
+      .from("exams")
+      .select(`
+        id,
+        title,
+        collection:assessment_collections!inner (
+          id,
+          subject_slug,
+          grade,
+          units,
+          exam_type
+        )
+      `)
+      .eq("assessment_collections.subject_slug", input.subject_slug)
+      .eq("assessment_collections.grade", grade);
+
+    // Apply unit filters if selected
+    if (input.unit_numbers && input.unit_numbers.length > 0) {
+      // Postgres overlap check
+      examsQuery = examsQuery.filter("assessment_collections.units", "cs", `{${input.unit_numbers.join(",")}}`);
+    }
+
+    const { data: matchingExams, error: examsErr } = await examsQuery;
+    if (examsErr) {
+      console.error("[createParentTask] Error querying exams for schedule:", examsErr);
+    }
+
+    const eligibleExams = (matchingExams || []).filter((e: any) => {
+      const type = e.collection?.exam_type;
+      const REVIEW_TYPES = ["review", "midterm", "final", "exam"];
+      
+      if (!input.exam_types || input.exam_types.length === 0) return true;
+
+      return input.exam_types.some((selectedType) => {
+        if (selectedType === "workbook") return !type;
+        if (selectedType === "reflex") return type === "reflex";
+        if (selectedType === "review") return type && REVIEW_TYPES.includes(type);
+        if (selectedType === "lesson") return type && type !== "reflex" && !REVIEW_TYPES.includes(type);
+        return false;
+      });
+    });
+
+    if (eligibleExams.length > 0) {
+      const dailyInserts = [];
+      let currentDate = new Date(startDate);
+      let examIdx = 0;
+
+      while (currentDate <= endDate) {
+        const taskDateStr = currentDate.toISOString().split("T")[0];
+        const dayOfWeek = currentDate.getDay() === 0 ? 7 : currentDate.getDay(); // 1 = Mon, 7 = Sun
+
+        // Only schedule on active days
+        if (input.active_days.includes(dayOfWeek)) {
+          for (let i = 0; i < numExams; i++) {
+            // Select exam in round-robin fashion or specific exam
+            let selectedExamId = input.exam_id;
+            if (!selectedExamId) {
+              const exam = eligibleExams[examIdx % eligibleExams.length];
+              selectedExamId = exam.id;
+              examIdx++;
+            }
+
+            dailyInserts.push({
+              task_id: taskId,
+              student_id: input.student_id,
+              exam_id: selectedExamId,
+              lesson_node_id: input.lesson_node_id || null,
+              task_date: taskDateStr,
+            });
+          }
+        }
+        currentDate.setDate(currentDate.getDate() + 1);
+      }
+
+      if (dailyInserts.length > 0) {
+        const { error: insertErr } = await supabase
+          .from("daily_tasks")
+          .insert(dailyInserts);
+        if (insertErr) {
+          console.error("[createParentTask] Batch daily task scheduling error:", insertErr);
+        }
+      }
+    }
   }
 
   revalidatePath("/phu-huynh");

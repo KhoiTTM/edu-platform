@@ -28,33 +28,12 @@ type WizardProps = {
   getLessonsForSubject: (slug: string, grade: number) => Promise<LessonOption[]>;
 };
 
-const FREQUENCY_OPTIONS = [
-  {
-    id: "daily" as const,
-    label: "Mỗi ngày",
-    desc: "7 ngày / tuần",
-    days: [1, 2, 3, 4, 5, 6, 7],
-  },
-  {
-    id: "weekdays" as const,
-    label: "Ngày học",
-    desc: "Thứ 2 – Thứ 6",
-    days: [1, 2, 3, 4, 5],
-  },
-  {
-    id: "weekly" as const,
-    label: "Tuần 1 lần",
-    desc: "Chủ nhật hàng tuần",
-    days: [7],
-  },
-];
-
 const DAY_LABELS = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
 
 // ─── Step Indicator ─────────────────────────────────────────────────────────
 
 function StepIndicator({ current, total }: { current: number; total: number }) {
-  const steps = ["Học sinh", "Môn học", "Đề luyện tập", "Tần suất"];
+  const steps = ["Học sinh", "Môn học", "Tham số đề", "Cài đặt & Giao"];
   return (
     <div className="flex items-center gap-1 mb-6">
       {steps.map((label, i) => {
@@ -117,13 +96,22 @@ export function TaskWizard({
   const [lessons, setLessons] = useState<LessonOption[]>([]);
   const [selectedLesson, setSelectedLesson] = useState<LessonOption | null>(null);
   const [loadingLessons, setLoadingLessons] = useState(false);
-  const [frequency, setFrequency] = useState<"daily" | "weekdays" | "weekly">("daily");
+  
+  // Date-range scheduling state
+  const [startDate, setStartDate] = useState(new Date().toISOString().split("T")[0]);
+  const [endDate, setEndDate] = useState(() => {
+    const d = new Date();
+    d.setDate(d.getDate() + 2); // Default to 3 days (today, tomorrow, next day)
+    return d.toISOString().split("T")[0];
+  });
+  const [numExamsPerDay, setNumExamsPerDay] = useState(1);
   const [activeDays, setActiveDays] = useState<number[]>([1, 2, 3, 4, 5, 6, 7]);
+  const [selectedExamTypes, setSelectedExamTypes] = useState<string[]>(["lesson"]); // e.g. ["lesson", "workbook", "review", "reflex"]
+
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState<string | null>(null);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedFilterUnit, setSelectedFilterUnit] = useState<number | null>(null);
-  const [selectedExamTypeFilter, setSelectedExamTypeFilter] = useState<"lesson" | "workbook" | "review" | "reflex">("lesson");
 
   // Load dynamically active subjects for selected student's grade
   useEffect(() => {
@@ -165,6 +153,24 @@ export function TaskWizard({
       setLessons(l);
       setLoadingExams(false);
       setLoadingLessons(false);
+    }
+  };
+
+  // Toggle active scheduling day
+  const toggleDay = (day: number) => {
+    if (activeDays.includes(day)) {
+      setActiveDays(activeDays.filter((d) => d !== day));
+    } else {
+      setActiveDays([...activeDays, day].sort());
+    }
+  };
+
+  // Toggle selected exam type filter for batch creation
+  const toggleExamType = (type: string) => {
+    if (selectedExamTypes.includes(type)) {
+      setSelectedExamTypes(selectedExamTypes.filter((t) => t !== type));
+    } else {
+      setSelectedExamTypes([...selectedExamTypes, type]);
     }
   };
 
@@ -233,9 +239,8 @@ export function TaskWizard({
     </div>
   );
 
-  // ── Step 3: Select Lesson or Exam ──────────────────────────────────────────
-  const StepExamsAndLessons = () => {
-    // Unique units for filtering
+  // ── Step 3: Configure Parameters and Select Specific content if needed ───
+  const StepParameters = () => {
     const uniqueUnits = Array.from(
       new Set(
         taskType === "exam"
@@ -246,38 +251,33 @@ export function TaskWizard({
 
     const filteredExams = exams.filter((e) => {
       const matchesSearch = e.title.toLowerCase().includes(searchTerm.toLowerCase());
-      const matchesUnit =
-        selectedFilterUnit === null || e.units.includes(selectedFilterUnit);
+      const matchesUnit = selectedFilterUnit === null || e.units.includes(selectedFilterUnit);
       
       const type = e.exam_type;
-      const REVIEW_TYPES = new Set(["review", "midterm", "final", "exam"]);
-      // Mirror the fallback rule used by the main /luyen-tap page: any exam_type that
-      // isn't null (workbook), "reflex", or a review-family type defaults to the
-      // "lesson" bucket (e.g. Pre A1 Starter's "listening" type).
-      const matchesType =
-        (selectedExamTypeFilter === "workbook" && !type) ||
-        (selectedExamTypeFilter === "reflex" && type === "reflex") ||
-        (selectedExamTypeFilter === "review" && !!type && REVIEW_TYPES.has(type)) ||
-        (selectedExamTypeFilter === "lesson" &&
-          !!type && type !== "reflex" && !REVIEW_TYPES.has(type));
+      const REVIEW_TYPES = ["review", "midterm", "final", "exam"];
+      const matchesType = selectedExamTypes.some((selectedType) => {
+        if (selectedType === "workbook") return !type;
+        if (selectedType === "reflex") return type === "reflex";
+        if (selectedType === "review") return type && REVIEW_TYPES.includes(type);
+        if (selectedType === "lesson") return type && type !== "reflex" && !REVIEW_TYPES.includes(type);
+        return false;
+      });
 
       return matchesSearch && matchesUnit && matchesType;
     });
 
     const filteredLessons = lessons.filter((l) => {
       const matchesSearch = l.title.toLowerCase().includes(searchTerm.toLowerCase());
-      const matchesUnit =
-        selectedFilterUnit === null || l.unit_number === selectedFilterUnit;
+      const matchesUnit = selectedFilterUnit === null || l.unit_number === selectedFilterUnit;
       return matchesSearch && matchesUnit;
     });
 
     const isLoading = taskType === "exam" ? loadingExams : loadingLessons;
-    const itemsCount = taskType === "exam" ? exams.length : lessons.length;
     const filteredCount = taskType === "exam" ? filteredExams.length : filteredLessons.length;
 
     return (
-      <div className="flex flex-col gap-3">
-        {/* Toggle between Lesson and Exam */}
+      <div className="flex flex-col gap-4 text-slate-200">
+        {/* Task Type Switch */}
         <div className="flex bg-slate-950/60 p-1 rounded-xl border border-line">
           <button
             onClick={() => {
@@ -290,7 +290,7 @@ export function TaskWizard({
                 : "text-slate-400 hover:text-white"
             }`}
           >
-            📝 Bài luyện tập ({exams.length})
+            📝 Đề luyện tập tự động ({exams.length})
           </button>
           <button
             onClick={() => {
@@ -303,216 +303,270 @@ export function TaskWizard({
                 : "text-slate-400 hover:text-white"
             }`}
           >
-            📖 Bài học ({lessons.length})
+            📖 Bài học cố định ({lessons.length})
           </button>
         </div>
 
-        {/* Sub-exam type selectors for "Bài luyện tập" */}
-        {taskType === "exam" && (
-          <div className="flex bg-surface/60 p-1.5 rounded-xl border border-line/80 gap-1 flex-wrap justify-center">
-            <button
-              onClick={() => setSelectedExamTypeFilter("lesson")}
-              className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all select-none ${
-                selectedExamTypeFilter === "lesson"
-                  ? "bg-cyan-600 text-white shadow-sm shadow-cyan-500/10"
-                  : "text-slate-400 hover:text-white"
-              }`}
-            >
-              Luyện theo bài học
-            </button>
-            <button
-              onClick={() => setSelectedExamTypeFilter("workbook")}
-              className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all select-none ${
-                selectedExamTypeFilter === "workbook"
-                  ? "bg-emerald-600 text-white shadow-sm shadow-emerald-500/10"
-                  : "text-slate-400 hover:text-white"
-              }`}
-            >
-              Luyện theo Sách bài tập
-            </button>
-            <button
-              onClick={() => setSelectedExamTypeFilter("review")}
-              className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all select-none ${
-                selectedExamTypeFilter === "review"
-                  ? "bg-fuchsia-600 text-white shadow-sm shadow-fuchsia-500/10"
-                  : "text-slate-400 hover:text-white"
-              }`}
-            >
-              Ôn Tập
-            </button>
-            <button
-              onClick={() => setSelectedExamTypeFilter("reflex")}
-              className={`px-3 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all select-none ${
-                selectedExamTypeFilter === "reflex"
-                  ? "bg-orange-600 text-white shadow-sm shadow-orange-500/10"
-                  : "text-slate-400 hover:text-white"
-              }`}
-            >
-              Luyện phản xạ
-            </button>
-          </div>
-        )}
-
-        {/* Filter inputs */}
-        <div className="flex gap-2">
-          <input
-            type="text"
-            placeholder={taskType === "exam" ? "Tìm đề luyện tập..." : "Tìm bài học..."}
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="flex-1 bg-surface-raised/80 border-2 border-line rounded-xl px-3 py-1.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-all font-bold"
-          />
-          {uniqueUnits.length > 0 && (
-            <select
-              value={selectedFilterUnit === null ? "" : selectedFilterUnit}
-              onChange={(e) =>
-                setSelectedFilterUnit(
-                  e.target.value === "" ? null : Number(e.target.value)
-                )
-              }
-              className="bg-surface-raised/80 border-2 border-line rounded-xl px-3 py-1.5 text-xs text-white font-bold focus:outline-none focus:border-indigo-500 transition-all"
-            >
-              <option value="">Tất cả Unit</option>
-              {uniqueUnits.map((u) => (
-                <option key={u} value={u}>
-                  Unit {u}
-                </option>
-              ))}
-            </select>
-          )}
-        </div>
-
-        {/* Random Exam Selector */}
-        {taskType === "exam" && filteredExams.length > 0 && (
-          <button
-            onClick={() => {
-              const randomIndex = Math.floor(Math.random() * filteredExams.length);
-              const randomExam = filteredExams[randomIndex];
-              setSelectedExam(randomExam);
-              setStep(4);
-            }}
-            className="w-full py-2 rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-black text-xs uppercase tracking-wide transition-all shadow-md active:scale-[0.98] select-none"
-          >
-            🎲 Chọn ngẫu nhiên 1 đề trong bộ lọc ({filteredExams.length})
-          </button>
-        )}
-
-        {isLoading ? (
-          <div className="flex items-center justify-center py-8">
-            <Loader2 size={20} className="animate-spin text-indigo-400" />
-          </div>
-        ) : filteredCount === 0 ? (
-          <div className="text-center py-8 text-slate-500 text-sm">
-            {itemsCount === 0
-              ? `Không tìm thấy ${taskType === "exam" ? "đề luyện tập" : "bài học"} nào`
-              : "Không tìm thấy kết quả khớp bộ lọc"}
-          </div>
-        ) : (
-          <div className="flex flex-col gap-1.5 max-h-40 overflow-y-auto pr-1 custom-scrollbar">
-            {taskType === "exam"
-              ? filteredExams.map((e) => {
-                  const isSelected = selectedExam?.id === e.id;
+        {taskType === "exam" ? (
+          <div className="space-y-3">
+            {/* Multi-select Exam Types */}
+            <div>
+              <label className="text-[10px] font-black uppercase tracking-wider text-slate-400 block mb-1.5">
+                Chọn loại đề luyện tập
+              </label>
+              <div className="grid grid-cols-2 gap-1.5 bg-surface/40 p-2 rounded-xl border border-line">
+                {[
+                  { id: "lesson", label: "Luyện bài học" },
+                  { id: "workbook", label: "Sách bài tập" },
+                  { id: "review", label: "Đề ôn tập (Thi kì)" },
+                  { id: "reflex", label: "Luyện phản xạ" }
+                ].map((type) => {
+                  const isChecked = selectedExamTypes.includes(type.id);
                   return (
                     <button
-                      key={e.id}
-                      onClick={() => {
-                        setSelectedExam(e);
-                        setStep(4);
-                      }}
-                      className={`flex items-center justify-between p-2.5 rounded-xl border-2 transition-all text-left ${
-                        isSelected
-                          ? "border-indigo-500 bg-indigo-500/10 shadow-[0_0_12px_rgba(99,102,241,0.3)]"
-                          : "border-line bg-surface-raised/60 hover:border-slate-600"
+                      key={type.id}
+                      onClick={() => toggleExamType(type.id)}
+                      className={`px-2.5 py-1.5 rounded-lg text-[10px] font-bold transition-all text-center border ${
+                        isChecked
+                          ? "bg-indigo-500/20 border-indigo-500/60 text-indigo-200"
+                          : "bg-surface-raised/40 border-line text-slate-400 hover:border-slate-500"
                       }`}
                     >
-                      <div className="min-w-0 flex-1">
-                        <p className="text-xs font-black text-white truncate uppercase tracking-wide">
-                          {e.title}
-                        </p>
-                        <p className="text-[10px] text-slate-400 font-bold uppercase tracking-wider mt-0.5">
-                          📝 {e.total_questions} câu hỏi · Unit {e.units.join(", ")}
-                        </p>
-                      </div>
-                      {isSelected && (
-                        <CheckCircle2 size={14} className="text-indigo-400 shrink-0 ml-2" />
-                      )}
-                    </button>
-                  );
-                })
-              : filteredLessons.map((l) => {
-                  const isSelected = selectedLesson?.id === l.id;
-                  return (
-                    <button
-                      key={l.id}
-                      onClick={() => {
-                        setSelectedLesson(l);
-                        setStep(4);
-                      }}
-                      className={`flex items-center justify-between p-2.5 rounded-xl border-2 transition-all text-left ${
-                        isSelected
-                          ? "border-indigo-500 bg-indigo-500/10 shadow-[0_0_12px_rgba(99,102,241,0.3)]"
-                          : "border-line bg-surface-raised/60 hover:border-slate-600"
-                      }`}
-                    >
-                      <div className="min-w-0 flex-1">
-                        <p className="text-xs font-black text-white truncate uppercase tracking-wide">
-                          {l.title}
-                        </p>
-                        <p className="text-[10px] text-slate-400 font-bold uppercase tracking-wider mt-0.5">
-                          📖 {l.unit_title || "Bài học"}
-                        </p>
-                      </div>
-                      {isSelected && (
-                        <CheckCircle2 size={14} className="text-indigo-400 shrink-0 ml-2" />
-                      )}
+                      {type.label}
                     </button>
                   );
                 })}
+              </div>
+            </div>
+
+            {/* Filter by unit */}
+            {uniqueUnits.length > 0 && (
+              <div>
+                <label className="text-[10px] font-black uppercase tracking-wider text-slate-400 block mb-1">
+                  Chọn giới hạn Unit / Chương
+                </label>
+                <select
+                  value={selectedFilterUnit === null ? "" : selectedFilterUnit}
+                  onChange={(e) =>
+                    setSelectedFilterUnit(
+                      e.target.value === "" ? null : Number(e.target.value)
+                    )
+                  }
+                  className="w-full bg-surface-raised border-2 border-line rounded-xl px-3 py-1.5 text-xs text-white font-bold focus:outline-none focus:border-indigo-500 transition-all"
+                >
+                  <option value="">Tất cả các Unit</option>
+                  {uniqueUnits.map((u) => (
+                    <option key={u} value={u}>
+                      Unit {u}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
+
+            {/* Option to pin a specific exam instead of random */}
+            <div>
+              <div className="flex items-center justify-between mb-1.5">
+                <label className="text-[10px] font-black uppercase tracking-wider text-slate-400 block">
+                  Hoặc chọn ghim cố định 1 đề
+                </label>
+                {selectedExam && (
+                  <button
+                    onClick={() => setSelectedExam(null)}
+                    className="text-[9px] font-black text-rose-400 uppercase tracking-widest hover:underline"
+                  >
+                    Bỏ ghim
+                  </button>
+                )}
+              </div>
+              <input
+                type="text"
+                placeholder="Tìm tên đề thi để ghim cố định..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full mb-1.5 bg-surface-raised/80 border-2 border-line rounded-xl px-3 py-1.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-indigo-500 transition-all font-bold"
+              />
+
+              {isLoading ? (
+                <div className="flex items-center justify-center py-4">
+                  <Loader2 size={16} className="animate-spin text-indigo-400" />
+                </div>
+              ) : filteredCount === 0 ? (
+                <p className="text-[10px] text-slate-500 text-center py-2">Không tìm thấy đề khớp bộ lọc</p>
+              ) : (
+                <div className="flex flex-col gap-1 max-h-28 overflow-y-auto pr-1 custom-scrollbar">
+                  {filteredExams.map((e) => {
+                    const isSelected = selectedExam?.id === e.id;
+                    return (
+                      <button
+                        key={e.id}
+                        onClick={() => setSelectedExam(e)}
+                        className={`flex items-center justify-between p-2 rounded-lg border text-left text-[10px] transition-all ${
+                          isSelected
+                            ? "border-indigo-500 bg-indigo-500/10"
+                            : "border-line bg-surface-raised/40 hover:border-slate-600"
+                        }`}
+                      >
+                        <span className="font-bold text-white truncate flex-1 pr-2">{e.title}</span>
+                        <span className="text-[9px] text-slate-400 shrink-0 uppercase">U{e.units.join(",")}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          </div>
+        ) : (
+          <div className="space-y-3">
+            {/* Fixed Lesson Selection */}
+            <div>
+              <label className="text-[10px] font-black uppercase tracking-wider text-slate-400 block mb-1">
+                Chọn bài học cố định
+              </label>
+              <input
+                type="text"
+                placeholder="Tìm bài học..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full mb-1.5 bg-surface-raised border-2 border-line rounded-xl px-3 py-1.5 text-xs text-white placeholder-slate-500 focus:outline-none"
+              />
+
+              {isLoading ? (
+                <div className="flex items-center justify-center py-4">
+                  <Loader2 size={16} className="animate-spin text-indigo-400" />
+                </div>
+              ) : filteredCount === 0 ? (
+                <p className="text-[10px] text-slate-500 text-center py-2">Không tìm thấy bài học</p>
+              ) : (
+                <div className="flex flex-col gap-1 max-h-40 overflow-y-auto pr-1 custom-scrollbar">
+                  {filteredLessons.map((l) => {
+                    const isSelected = selectedLesson?.id === l.id;
+                    return (
+                      <button
+                        key={l.id}
+                        onClick={() => setSelectedLesson(l)}
+                        className={`flex items-center justify-between p-2.5 rounded-lg border text-left text-[11px] transition-all ${
+                          isSelected
+                            ? "border-indigo-500 bg-indigo-500/10"
+                            : "border-line bg-surface-raised/40 hover:border-slate-600"
+                        }`}
+                      >
+                        <span className="font-bold text-white truncate flex-1 pr-2">{l.title}</span>
+                        {isSelected && <CheckCircle2 size={12} className="text-indigo-400 shrink-0" />}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
           </div>
         )}
       </div>
     );
   };
 
-  // ── Step 4: Confirm ─────────────────────────────────────────────────────
-  const StepConfirm = () => (
-    <div className="flex flex-col gap-4">
-      <div className="text-center py-4">
-        <div className="w-12 h-12 rounded-full bg-indigo-500/10 border-2 border-indigo-500/30 flex items-center justify-center mx-auto text-indigo-400 mb-3 animate-pulse">
-          ✓
-        </div>
-        <h3 className="font-black text-white text-sm uppercase tracking-wide">Xác nhận giao nhiệm vụ</h3>
-        <p className="text-[10px] text-slate-500 mt-1 max-w-xs mx-auto">Vui lòng kiểm tra lại thông tin dưới đây trước khi giao bài cho học sinh.</p>
-      </div>
+  // ── Step 4: Schedule Settings and Confirmation ─────────────────────────────
+  const StepScheduleAndConfirm = () => {
+    return (
+      <div className="flex flex-col gap-3 text-slate-200">
+        <p className="text-[10px] text-slate-400 font-black uppercase tracking-wider mb-1">
+          Cấu hình thời gian giao bài tự động
+        </p>
 
-      <div className="rounded-xl bg-surface-raised/80 border border-line p-4 space-y-3">
+        {/* Date inputs */}
+        <div className="grid grid-cols-2 gap-2">
+          <div>
+            <label className="text-[9px] font-black text-slate-400 uppercase tracking-wide block mb-1">
+              Từ ngày
+            </label>
+            <input
+              type="date"
+              value={startDate}
+              onChange={(e) => setStartDate(e.target.value)}
+              className="w-full bg-surface-raised border-2 border-line rounded-xl px-2 py-1.5 text-xs text-white font-bold focus:outline-none"
+            />
+          </div>
+          <div>
+            <label className="text-[9px] font-black text-slate-400 uppercase tracking-wide block mb-1">
+              Đến ngày
+            </label>
+            <input
+              type="date"
+              value={endDate}
+              onChange={(e) => setEndDate(e.target.value)}
+              className="w-full bg-surface-raised border-2 border-line rounded-xl px-2 py-1.5 text-xs text-white font-bold focus:outline-none"
+            />
+          </div>
+        </div>
+
+        {/* Active Weekdays selection */}
         <div>
-          <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Học sinh nhận</span>
-          <p className="text-xs text-slate-200 font-bold mt-0.5">👤 {selectedStudent?.display_name}</p>
+          <label className="text-[9px] font-black text-slate-400 uppercase tracking-wide block mb-1">
+            Giao vào các ngày trong tuần
+          </label>
+          <div className="flex gap-1 justify-between bg-surface/30 p-1.5 rounded-xl border border-line">
+            {[1, 2, 3, 4, 5, 6, 7].map((day) => {
+              const isActive = activeDays.includes(day);
+              return (
+                <button
+                  key={day}
+                  type="button"
+                  onClick={() => toggleDay(day)}
+                  className={`flex-1 py-1 rounded-lg text-[9px] font-black text-center transition-all ${
+                    isActive
+                      ? "bg-indigo-600 text-white shadow-sm"
+                      : "bg-surface-raised/40 text-slate-500 hover:text-slate-300"
+                  }`}
+                >
+                  {DAY_LABELS[day - 1]}
+                </button>
+              );
+            })}
+          </div>
         </div>
 
-        <div>
-          <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Môn học</span>
-          <p className="text-xs text-slate-200 font-bold mt-0.5">📚 {selectedSubject?.name}</p>
-        </div>
+        {/* Number of tasks per day */}
+        {taskType === "exam" && (
+          <div>
+            <label className="text-[9px] font-black text-slate-400 uppercase tracking-wide block mb-1">
+              Số lượng đề luyện tập mỗi ngày
+            </label>
+            <select
+              value={numExamsPerDay}
+              onChange={(e) => setNumExamsPerDay(Number(e.target.value))}
+              className="w-full bg-surface-raised border border-line rounded-xl px-2 py-1.5 text-xs text-white font-bold"
+            >
+              <option value={1}>Giao 1 đề / ngày</option>
+              <option value={2}>Giao 2 đề / ngày</option>
+              <option value={3}>Giao 3 đề / ngày</option>
+            </select>
+          </div>
+        )}
 
-        <div>
-          <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Nội dung bài làm</span>
-          <p className="text-xs text-indigo-300 font-bold mt-0.5">
-            {taskType === "exam" ? (
-              <>📝 Đề thi: <span className="text-white">{selectedExam?.title || "Chưa chọn đề"}</span></>
-            ) : (
-              <>📖 Bài học: <span className="text-white">{selectedLesson?.title || "Chưa chọn bài học"}</span></>
-            )}
-          </p>
+        {/* Confirmation Summary */}
+        <div className="rounded-xl bg-surface-raised/80 border border-line p-3 space-y-2 mt-1">
+          <div className="flex justify-between text-[11px]">
+            <span className="text-slate-500">Học sinh:</span>
+            <span className="font-bold text-slate-200">{selectedStudent?.display_name}</span>
+          </div>
+          <div className="flex justify-between text-[11px]">
+            <span className="text-slate-500">Môn học:</span>
+            <span className="font-bold text-slate-200">{selectedSubject?.name}</span>
+          </div>
+          <div className="flex justify-between text-[11px]">
+            <span className="text-slate-500">Nội dung:</span>
+            <span className="font-bold text-indigo-300">
+              {taskType === "exam" ? (
+                selectedExam ? `Ghim đề: ${selectedExam.title}` : `Tự động tạo từ ${selectedExamTypes.length} nhóm đề`
+              ) : (
+                `Bài học: ${selectedLesson?.title || "Chưa chọn"}`
+              )}
+            </span>
+          </div>
         </div>
       </div>
-
-      <div className="rounded-xl bg-slate-950/40 border border-line px-4 py-3 text-[10px] font-semibold text-slate-400 leading-relaxed text-center">
-        💡 Nhiệm vụ sẽ xuất hiện trên bảng điều khiển của học sinh ngay hôm nay.
-      </div>
-    </div>
-  );
+    );
+  };
 
   // ── Navigation logic ─────────────────────────────────────────────────────
 
@@ -520,14 +574,15 @@ export function TaskWizard({
     if (step === 1) return !!selectedStudent;
     if (step === 2) return !!selectedSubject;
     if (step === 3) {
-      return taskType === "exam" ? !!selectedExam : !!selectedLesson;
+      if (taskType === "lesson") return !!selectedLesson;
+      // For auto exam generator, either have specific exam pinned or types selected
+      return !!selectedExam || selectedExamTypes.length > 0;
     }
     return true;
   };
 
   const handleNext = async () => {
     if (step === 2 && selectedSubject && selectedStudent) {
-      // Load both exams and lessons for step 3
       setLoadingExams(true);
       setLoadingLessons(true);
       setSearchTerm("");
@@ -550,7 +605,7 @@ export function TaskWizard({
 
   const handleSubmit = () => {
     if (!selectedStudent || !selectedSubject) return;
-    if (taskType === "exam" && !selectedExam) return;
+    if (taskType === "exam" && !selectedExam && selectedExamTypes.length === 0) return;
     if (taskType === "lesson" && !selectedLesson) return;
     
     setError(null);
@@ -559,11 +614,15 @@ export function TaskWizard({
       const result = await createParentTask({
         student_id: selectedStudent.id,
         subject_slug: selectedSubject.slug,
-        unit_numbers: taskType === "exam" ? selectedExam!.units : (selectedLesson!.unit_number ? [selectedLesson!.unit_number] : []),
-        frequency,
+        unit_numbers: selectedFilterUnit ? [selectedFilterUnit] : [],
+        frequency: "daily",
         active_days: activeDays,
-        exam_id: taskType === "exam" ? selectedExam!.id : null,
-        lesson_node_id: taskType === "lesson" ? selectedLesson!.id : null,
+        exam_id: taskType === "exam" ? selectedExam?.id : null,
+        lesson_node_id: taskType === "lesson" ? selectedLesson?.id : null,
+        start_date: startDate,
+        end_date: endDate,
+        num_exams: numExamsPerDay,
+        exam_types: taskType === "exam" ? selectedExamTypes : [],
       });
 
       if (result?.error) {
@@ -595,8 +654,8 @@ export function TaskWizard({
       <div className="min-h-[240px]">
         {step === 1 && <StepStudent />}
         {step === 2 && <StepSubject />}
-        {step === 3 && <StepExamsAndLessons />}
-        {step === 4 && <StepConfirm />}
+        {step === 3 && <StepParameters />}
+        {step === 4 && <StepScheduleAndConfirm />}
       </div>
 
       {error && (
