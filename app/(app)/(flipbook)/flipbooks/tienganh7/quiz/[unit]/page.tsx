@@ -44,7 +44,7 @@ export default async function TiengAnh7QuizUnitPage({
       <TiengAnh7QuizClient
         data={data}
         breadcrumbs={breadcrumbs}
-        pdfUrl="https://drive.google.com/file/d/1VUrweOeuNiJv3lXmi2xXE2cqYjyIdFOQ/view?usp=sharing"
+        pdfUrl="https://drive.google.com/file/d/1qYijNRWMqLm6f4gd8zABFQNgRSZSINQe/view?usp=sharing"
       />
     </div>
   );

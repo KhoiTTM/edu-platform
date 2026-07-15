@@ -2,15 +2,22 @@
 
 import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
+import { BookOpen } from 'lucide-react';
 import { AssessmentRenderer } from '@/components/universal/AssessmentRenderer';
 import { AssessmentResultCard } from '@/components/assessment/AssessmentResultCard';
 import { getExamQuestions, getExamInfo, saveExamResult } from './actions';
 
-// Link đến bản scan/PDF gốc trên Google Drive, theo subject_slug — dùng cho nút "Xem sách" trong AssessmentRenderer.
+// Link đến bản scan/PDF gốc trên Google Drive, theo subject_slug — dùng để nhúng sách bên cạnh phần luyện tập.
 const BOOK_SOURCE_URLS: Record<string, string> = {
   khtn: "https://drive.google.com/file/d/13zq-lbCJaAHEqSRx1JWhfX1idtn6jgEP/view?usp=sharing",
-  "tieng-anh-7": "https://drive.google.com/file/d/1VUrweOeuNiJv3lXmi2xXE2cqYjyIdFOQ/view?usp=sharing",
+  "tieng-anh-7": "https://drive.google.com/file/d/1qYijNRWMqLm6f4gd8zABFQNgRSZSINQe/view?usp=sharing",
 };
+
+function extractDriveFileId(url?: string): string | null {
+  if (!url) return null;
+  const match = url.match(/\/file\/d\/([^/]+)/);
+  return match ? match[1] : null;
+}
 
 function AssessmentContent() {
   const searchParams = useSearchParams();
@@ -25,6 +32,7 @@ function AssessmentContent() {
   const [results, setResults] = useState<any>(null);
   const [subjectSlug, setSubjectSlug] = useState<string>("tieng_anh");
   const [examType, setExamType] = useState<string>("lesson");
+  const [isBookOpen, setIsBookOpen] = useState(true);
 
   useEffect(() => {
     if (examId) {
@@ -115,25 +123,62 @@ function AssessmentContent() {
     );
   }
 
+  const bookDriveId = extractDriveFileId(BOOK_SOURCE_URLS[subjectSlug]);
+
   return (
     <div className="w-full flex flex-col items-center">
-      <h1 className="text-4xl font-black text-ink mb-8 text-center">{examTitle}</h1>
-      {!completed ? (
-        <AssessmentRenderer
-          questions={questions}
-          mode="quiz"
-          onComplete={handleComplete}
-          timerSeconds={customTimer || (examType === 'reflex' ? 30 : undefined)}
-          sourceBookUrl={BOOK_SOURCE_URLS[subjectSlug]}
-        />
-      ) : (
-        <AssessmentResultCard
-          score={results.score}
-          correctCount={results.correctCount}
-          totalCount={results.totalCount}
-          onContinue={() => window.history.back()}
-        />
-      )}
+      <div className="w-full max-w-2xl flex items-center justify-between gap-4 mb-4">
+        <h1 className="text-4xl font-black text-ink text-center flex-1">{examTitle}</h1>
+        {bookDriveId && (
+          <button
+            onClick={() => setIsBookOpen((prev) => !prev)}
+            className={`flex-shrink-0 flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold border transition ${
+              isBookOpen
+                ? "bg-amber-600/20 border-amber-500/40 text-amber-300 hover:bg-amber-600/30"
+                : "bg-sky-600/20 border-sky-500/40 text-sky-300 hover:bg-sky-600/30"
+            }`}
+          >
+            <BookOpen size={16} />
+            {isBookOpen ? "Ẩn Sách" : "Hiện Sách"}
+          </button>
+        )}
+      </div>
+
+      <div className="flex flex-col md:flex-row gap-6 w-full items-stretch min-h-[600px]">
+        {bookDriveId && (
+          <div
+            className={`transition-all duration-300 overflow-hidden rounded-3xl border border-line bg-slate-950 flex flex-col ${
+              isBookOpen ? "w-full md:w-1/2 opacity-100" : "w-0 opacity-0 pointer-events-none border-0"
+            }`}
+          >
+            <iframe
+              src={`https://drive.google.com/file/d/${bookDriveId}/preview`}
+              width="100%"
+              height="100%"
+              allow="autoplay"
+              className="border-0 w-full flex-1 min-h-[600px]"
+            />
+          </div>
+        )}
+
+        <div className="flex-1 flex flex-col items-center">
+          {!completed ? (
+            <AssessmentRenderer
+              questions={questions}
+              mode="quiz"
+              onComplete={handleComplete}
+              timerSeconds={customTimer || (examType === 'reflex' ? 30 : undefined)}
+            />
+          ) : (
+            <AssessmentResultCard
+              score={results.score}
+              correctCount={results.correctCount}
+              totalCount={results.totalCount}
+              onContinue={() => window.history.back()}
+            />
+          )}
+        </div>
+      </div>
     </div>
   );
 }
