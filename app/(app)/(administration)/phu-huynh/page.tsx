@@ -21,12 +21,14 @@ import { ExamBankExplorer } from "@/components/administration/parent/ExamBankExp
 import {
   getStudentList,
   getStudentHistory,
+  getStudentDashboardStats,
+  getStudentTodayTimeline,
   getMyParentTasks,
   getExamsForSubject,
   getLessonsForSubject,
   checkParentAccess,
 } from "./actions";
-import type { StudentProfile, ParentTask, LearningHistoryEntry } from "./actions";
+import type { StudentProfile, ParentTask, LearningHistoryEntry, StudentDashboardStats, TimelineEntry } from "./actions";
 
 // ─── Subject list for Exam Bank Explorer filter (read-only browsing, all grades combined) ────
 
@@ -51,13 +53,21 @@ function HistorySection({ students }: { students: StudentProfile[] }) {
     students[0]?.id || ""
   );
   const [history, setHistory] = useState<LearningHistoryEntry[]>([]);
+  const [dashboardStats, setDashboardStats] = useState<StudentDashboardStats | null>(null);
+  const [todayTimeline, setTodayTimeline] = useState<TimelineEntry[]>([]);
   const [loading, setLoading] = useState(false);
 
   const loadHistory = useCallback(async (studentId: string) => {
     if (!studentId) return;
     setLoading(true);
-    const data = await getStudentHistory(studentId);
-    setHistory(data);
+    const [historyData, statsData, timelineData] = await Promise.all([
+      getStudentHistory(studentId),
+      getStudentDashboardStats(studentId),
+      getStudentTodayTimeline(studentId),
+    ]);
+    setHistory(historyData);
+    setDashboardStats(statsData);
+    setTodayTimeline(timelineData);
     setLoading(false);
   }, []);
 
@@ -109,6 +119,8 @@ function HistorySection({ students }: { students: StudentProfile[] }) {
           studentName={selectedStudent.display_name}
           studentGrade={selectedStudent.grade}
           history={history}
+          dashboardStats={dashboardStats}
+          todayTimeline={todayTimeline}
         />
       ) : null}
     </div>

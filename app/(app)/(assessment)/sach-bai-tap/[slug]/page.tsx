@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import { useParams } from "next/navigation";
 import { Loader2, BookOpen, ChevronRight } from "lucide-react";
 import { AnswerSheetRenderer } from "@/components/assessment/AnswerSheetRenderer";
@@ -13,6 +13,7 @@ export default function BookPracticePage() {
   const [loading, setLoading] = useState(true);
   const [activeUnit, setActiveUnit] = useState<any>(null);
   const [saved, setSaved] = useState(false);
+  const unitStartedAtRef = useRef<number>(Date.now());
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -25,6 +26,7 @@ export default function BookPracticePage() {
 
   const handleComplete = async (score: number, total: number, detail: any[]) => {
     if (!data || !activeUnit) return;
+    const durationSeconds = Math.max(1, Math.round((Date.now() - unitStartedAtRef.current) / 1000));
     await saveBookPracticeAttempt(
       data.book.slug,
       data.book.subject_slug,
@@ -32,7 +34,8 @@ export default function BookPracticePage() {
       activeUnit.title,
       score,
       total,
-      detail
+      detail,
+      durationSeconds
     );
     setSaved(true);
   };
@@ -110,7 +113,7 @@ export default function BookPracticePage() {
           return (
             <button
               key={u.unit}
-              onClick={() => setActiveUnit(u)}
+              onClick={() => { unitStartedAtRef.current = Date.now(); setActiveUnit(u); }}
               className="flex items-center justify-between gap-3 p-4 rounded-2xl border border-line bg-surface/40 hover:bg-surface-raised/60 hover:border-indigo-500/40 transition-all text-left"
             >
               <div>

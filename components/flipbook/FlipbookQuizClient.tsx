@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef } from "react";
 import Link from "next/link";
 import { Send, Book, AlertCircle, CheckCircle, XCircle, ChevronRight, BookOpen } from "lucide-react";
 import clsx from "clsx";
@@ -50,6 +50,7 @@ export function FlipbookQuizClient({
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [checked, setChecked] = useState<Record<string, boolean>>({});
   const [submitted, setSubmitted] = useState(false);
+  const startedAtRef = useRef<number>(Date.now());
 
   const current = questions[currentIdx];
   const correctIndex = useMemo(() => answerLetterIndex(current?.answer), [current]);
@@ -112,13 +113,15 @@ export function FlipbookQuizClient({
         };
       });
 
+    const durationSeconds = Math.max(1, Math.round((Date.now() - startedAtRef.current) / 1000));
     saveFlipbookQuizAttempt(
       bookSlug,
       questions[0]?.bai ?? 0,
       title,
       mcqCorrectCount,
       mcqCount,
-      answerDetails
+      answerDetails,
+      durationSeconds
     ).catch((err) => console.error("Failed to save quiz attempt:", err));
   };
 
@@ -131,6 +134,7 @@ export function FlipbookQuizClient({
     setAnswers({});
     setChecked({});
     setSubmitted(false);
+    startedAtRef.current = Date.now();
   };
 
   const answeredCount = Object.keys(answers).length;

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, Suspense } from 'react';
+import { useState, useEffect, useRef, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { BookOpen } from 'lucide-react';
 import { AssessmentRenderer } from '@/components/universal/AssessmentRenderer';
@@ -33,12 +33,14 @@ function AssessmentContent() {
   const [subjectSlug, setSubjectSlug] = useState<string>("tieng_anh");
   const [examType, setExamType] = useState<string>("lesson");
   const [isBookOpen, setIsBookOpen] = useState(true);
+  const startedAtRef = useRef<number>(Date.now());
 
   useEffect(() => {
     if (examId) {
       async function load() {
         try {
           setIsLoading(true);
+          startedAtRef.current = Date.now();
           const [info, data] = await Promise.all([
             getExamInfo(examId!),
             getExamQuestions(examId!),
@@ -86,7 +88,8 @@ function AssessmentContent() {
           completedExams.push(examId);
           localStorage.setItem('completed_exams', JSON.stringify(completedExams));
         }
-        saveExamResult(examId, correctCount, answers.length);
+        const durationSeconds = Math.max(1, Math.round((Date.now() - startedAtRef.current) / 1000));
+        saveExamResult(examId, correctCount, answers.length, durationSeconds);
 
         fetch('/api/events', {
           method: 'POST',

@@ -84,6 +84,26 @@ export type LearningHistoryEntry = {
   summary_metrics: Record<string, any>;
 };
 
+export type StudentDashboardStats = {
+  current_streak: number;
+  total_learning_minutes: number;
+  last_ai_insight: string | null;
+  last_ai_insight_at: string | null;
+  subject_progress: Record<string, any>;
+};
+
+export type TimelineEntry =
+  | { kind: "login"; at: string }
+  | {
+      kind: "session";
+      id: string;
+      subject_slug: string;
+      started_at: string;
+      ended_at: string | null;
+      duration_seconds: number;
+      summary_metrics: Record<string, any>;
+    };
+
 // ─── Queries ───────────────────────────────────────────────────────────────
 
 export async function checkParentAccess(): Promise<{ hasAccess: boolean; role?: string }> {
@@ -146,6 +166,84 @@ export async function getStudentHistory(
   } catch (e) {
     console.error("[getStudentHistory] Authorization error:", e);
     return [];
+  }
+}
+
+/** Get today's timeline (logins + learning sessions) for a specific student, in chronological order */
+export async function getStudentTodayTimeline(
+  studentId: string
+): Promise<TimelineEntry[]> {
+  try {
+    const adminClient = await getAdminClient();
+
+    const now = new Date();
+    const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate()).toISOString();
+
+    const [sessionsRes, loginsRes] = await Promise.all([
+      adminClient
+        .from("learning_sessions")
+        .select("id, subject_slug, started_at, ended_at, duration_seconds, summary_metrics")
+        .eq("user_id", studentId)
+        .gte("started_at", startOfDay)
+        .order("started_at", { ascending: true }),
+      adminClient
+        .from("learning_events")
+        .select("created_at")
+        .eq("user_id", studentId)
+        .eq("event_type", "login")
+        .gte("created_at", startOfDay)
+        .order("created_at", { ascending: true }),
+    ]);
+
+    if (sessionsRes.error) console.error("[getStudentTodayTimeline] sessions:", sessionsRes.error);
+    if (loginsRes.error) console.error("[getStudentTodayTimeline] logins:", loginsRes.error);
+
+    const sessionEntries: TimelineEntry[] = (sessionsRes.data || []).map((s: any) => ({
+      kind: "session",
+      id: s.id,
+      subject_slug: s.subject_slug,
+      started_at: s.started_at,
+      ended_at: s.ended_at,
+      duration_seconds: s.duration_seconds || 0,
+      summary_metrics: s.summary_metrics || {},
+    }));
+
+    const loginEntries: TimelineEntry[] = (loginsRes.data || []).map((l: any) => ({
+      kind: "login",
+      at: l.created_at,
+    }));
+
+    const timelineAt = (e: TimelineEntry) => (e.kind === "login" ? e.at : e.started_at);
+    return [...sessionEntries, ...loginEntries].sort(
+      (a, b) => new Date(timelineAt(a)).getTime() - new Date(timelineAt(b)).getTime()
+    );
+  } catch (e) {
+    console.error("[getStudentTodayTimeline] Authorization error:", e);
+    return [];
+  }
+}
+
+/** Get dashboard stats (streak, AI insight, subject progress) for a specific student */
+export async function getStudentDashboardStats(
+  studentId: string
+): Promise<StudentDashboardStats | null> {
+  try {
+    const adminClient = await getAdminClient();
+    const { data, error } = await adminClient
+      .from("user_dashboard_stats")
+      .select("current_streak, total_learning_minutes, last_ai_insight, last_ai_insight_at, subject_progress")
+      .eq("user_id", studentId)
+      .maybeSingle();
+
+    if (error) {
+      console.error("[getStudentDashboardStats] Error:", error);
+      return null;
+    }
+
+    return data as StudentDashboardStats | null;
+  } catch (e) {
+    console.error("[getStudentDashboardStats] Authorization error:", e);
+    return null;
   }
 }
 
@@ -585,10 +683,8 @@ export async function getTodayTasks(): Promise<DailyTask[]> {
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) return [];
 
-  // Generate tasks first (idempotent RPC)
-  await supabase.rpc("generate_daily_tasks_for_student", {
-    p_student_id: user.id,
-  });
+  // Table 'daily_tasks' is now manually pre-populated for a date range by the parent.
+  // We disabled the automatic/random generator to prevent tasks from showing up again on daily reset.
 
   const today = new Date().toISOString().split("T")[0];
 

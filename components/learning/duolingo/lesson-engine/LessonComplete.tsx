@@ -14,9 +14,10 @@ interface LessonCompleteProps {
   xp?: number;
   streak?: number;
   nodeId?: string;
+  durationSeconds?: number;
 }
 
-export const LessonComplete: React.FC<LessonCompleteProps> = ({ isVictory, xp = 10, streak = 0, nodeId }) => {
+export const LessonComplete: React.FC<LessonCompleteProps> = ({ isVictory, xp = 10, streak = 0, nodeId, durationSeconds }) => {
   useEffect(() => {
     if (!isVictory) return;
 
@@ -39,16 +40,17 @@ export const LessonComplete: React.FC<LessonCompleteProps> = ({ isVictory, xp = 
   }, [isVictory]);
 
   useEffect(() => {
-    console.log('Submitting lesson result:', { isVictory, xp, streak, nodeId });
+    console.log('Submitting lesson result:', { isVictory, xp, streak, nodeId, durationSeconds });
     if (nodeId) {
-      submitLesson(nodeId, isVictory, xp, streak).catch(console.error);
+      submitLesson(nodeId, isVictory, xp, streak, durationSeconds).catch(console.error);
     } else {
-      fetch('/api/assessment/submit', { 
+      fetch('/api/assessment/submit', {
         method: 'POST',
-        body: JSON.stringify({ isVictory, xp, streak })
+        body: JSON.stringify({ isVictory, xp, streak, durationSeconds })
       }).catch(() => {});
     }
-  }, [isVictory, xp, streak, nodeId]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[80vh] w-full px-6 py-10 animate-in fade-in slide-in-from-bottom-8 duration-1000">

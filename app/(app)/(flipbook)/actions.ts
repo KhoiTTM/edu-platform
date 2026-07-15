@@ -17,19 +17,23 @@ export async function saveFlipbookQuizAttempt(
   lessonTitle: string,
   score: number,
   total: number,
-  answers: QuizAnswerDetail[]
+  answers: QuizAnswerDetail[],
+  durationSeconds?: number
 ) {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) return { success: false, error: "Not authenticated" };
 
-  const now = new Date().toISOString();
+  const now = new Date();
+  const duration = durationSeconds ?? 0;
+  const startedAt = new Date(now.getTime() - duration * 1000);
 
   const { error } = await supabase.from("learning_sessions").insert({
     user_id: user.id,
     subject_slug: "khtn",
-    started_at: now,
-    ended_at: now,
+    started_at: startedAt.toISOString(),
+    ended_at: now.toISOString(),
+    duration_seconds: duration,
     summary_metrics: {
       // Reuse "exam" so the existing dashboard / parent history UI
       // (which only special-cases metrics.type === "exam" to show a score

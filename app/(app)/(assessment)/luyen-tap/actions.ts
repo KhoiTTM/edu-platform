@@ -8,7 +8,8 @@ export async function submitLesson(
   nodeId: string,
   isVictory: boolean,
   xp: number,
-  streak: number
+  streak: number,
+  durationSeconds?: number
 ): Promise<void> {
   try {
     const { createClient } = await import("@/lib/supabase/server");
@@ -28,11 +29,16 @@ export async function submitLesson(
         ? source[0]?.universal_subjects?.slug
         : source?.universal_subjects?.slug) || "khac";
 
+    const now = new Date();
+    const duration = durationSeconds ?? 0;
+    const startedAt = new Date(now.getTime() - duration * 1000);
+
     const { error } = await supabase.from("learning_sessions").insert({
       user_id: user.id,
       subject_slug: subjectSlug,
-      started_at: new Date().toISOString(),
-      ended_at: new Date().toISOString(),
+      started_at: startedAt.toISOString(),
+      ended_at: now.toISOString(),
+      duration_seconds: duration,
       summary_metrics: {
         type: "lesson",
         lesson_node_id: nodeId,

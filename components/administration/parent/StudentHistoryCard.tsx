@@ -11,8 +11,10 @@ import {
   ChevronDown,
   ChevronUp,
   Trophy,
+  Flame,
+  LogIn,
 } from "lucide-react";
-import type { LearningHistoryEntry } from "@/app/(app)/(administration)/phu-huynh/actions";
+import type { LearningHistoryEntry, StudentDashboardStats, TimelineEntry } from "@/app/(app)/(administration)/phu-huynh/actions";
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
@@ -44,6 +46,11 @@ function fmtDuration(seconds: number): string {
   return `${m}m ${s > 0 ? s + "s" : ""}`;
 }
 
+function fmtTime(iso: string): string {
+  const d = new Date(iso);
+  return d.toLocaleTimeString("vi-VN", { hour: "2-digit", minute: "2-digit" });
+}
+
 function calcStats(history: LearningHistoryEntry[]) {
   const totalMinutes = history.reduce(
     (acc, h) => acc + Math.round((h.duration_seconds || 0) / 60),
@@ -72,9 +79,12 @@ type Props = {
   studentName: string;
   studentGrade: number;
   history: LearningHistoryEntry[];
+  dashboardStats?: StudentDashboardStats | null;
+  todayTimeline?: TimelineEntry[];
 };
 
-export function StudentHistoryCard({ studentName, studentGrade, history }: Props) {
+export function StudentHistoryCard({ studentName, studentGrade, history, dashboardStats, todayTimeline = [] }: Props) {
+  const [viewMode, setViewMode] = useState<'today' | 'history'>('today');
   const [expanded, setExpanded] = useState(false);
   const [timeFilter, setTimeFilter] = useState<'all' | '1d' | '7d'>('all');
   const [subjectFilter, setSubjectFilter] = useState<string>('all');
@@ -114,6 +124,163 @@ export function StudentHistoryCard({ studentName, studentGrade, history }: Props
 
   return (
     <div className="rounded-2xl border-2 border-line bg-surface/60 backdrop-blur-xl overflow-hidden">
+      {/* Header */}
+      <div className="flex items-center justify-between px-4 py-3 border-b border-line">
+        <div className="flex items-center gap-3">
+          <div className="w-9 h-9 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center font-black text-white text-sm shrink-0">
+            {studentName.charAt(0).toUpperCase()}
+          </div>
+          <div>
+            <p className="font-black text-white text-sm">{studentName}</p>
+            <p className="text-[10px] text-slate-400 uppercase tracking-widest font-bold">
+              Lớp {studentGrade}
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center gap-3">
+          {/* Quick stats */}
+          <div className="hidden sm:flex items-center gap-3">
+            <div className="flex items-center gap-1.5 text-sky-400 bg-sky-500/10 border border-sky-500/20 rounded-lg px-2 py-1">
+              <Clock size={12} />
+              <span className="text-[10px] font-black">
+                {dashboardStats?.total_learning_minutes ?? stats.totalMinutes}p
+              </span>
+            </div>
+            <div className="flex items-center gap-1.5 text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 rounded-lg px-2 py-1">
+              <TrendingUp size={12} />
+              <span className="text-[10px] font-black">{stats.sessions} buổi</span>
+            </div>
+            {dashboardStats && dashboardStats.current_streak > 0 ? (
+              <div className="flex items-center gap-1.5 text-orange-400 bg-orange-500/10 border border-orange-500/20 rounded-lg px-2 py-1">
+                <Flame size={12} />
+                <span className="text-[10px] font-black">{dashboardStats.current_streak} ngày liên tục</span>
+              </div>
+            ) : (
+              <div className="flex items-center gap-1.5 text-amber-400 bg-amber-500/10 border border-amber-500/20 rounded-lg px-2 py-1">
+                <Calendar size={12} />
+                <span className="text-[10px] font-black">{stats.activeDays} ngày</span>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* Subject progress */}
+      {dashboardStats?.subject_progress && Object.keys(dashboardStats.subject_progress).length > 0 && (
+        <div className="px-4 py-3 border-b border-line flex flex-wrap gap-2">
+          {Object.entries(dashboardStats.subject_progress).map(([slug, progress]) => {
+            const meta = SUBJECT_META[slug] || { label: slug, icon: "📚", color: "text-slate-400" };
+            const pct =
+              typeof progress === "number"
+                ? progress
+                : (progress as any)?.percent ?? (progress as any)?.progress ?? null;
+            return (
+              <div
+                key={slug}
+                className="flex items-center gap-1.5 bg-surface-raised/50 border border-line rounded-lg px-2.5 py-1"
+              >
+                <span className="text-sm">{meta.icon}</span>
+                <span className={`text-[10px] font-bold ${meta.color}`}>{meta.label}</span>
+                {pct !== null && (
+                  <span className="text-[10px] font-black text-slate-300">{Math.round(pct)}%</span>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {/* View mode toggle */}
+      <div className="flex border-b border-line">
+        {(['today', 'history'] as const).map((m) => (
+          <button
+            key={m}
+            onClick={() => setViewMode(m)}
+            className={`flex-1 py-2.5 text-[10px] font-black uppercase tracking-widest transition-all ${
+              viewMode === m
+                ? "text-indigo-300 bg-indigo-500/10 border-b-2 border-indigo-500"
+                : "text-slate-500 hover:text-slate-300"
+            }`}
+          >
+            {m === 'today' ? 'Hôm nay' : 'Lịch sử'}
+          </button>
+        ))}
+      </div>
+
+      {viewMode === 'today' ? (
+        <div className="divide-y divide-slate-800/60">
+          {todayTimeline.length === 0 ? (
+            <div className="px-4 py-6 text-center">
+              <p className="text-slate-500 text-sm">Chưa có hoạt động nào hôm nay</p>
+            </div>
+          ) : (
+            todayTimeline.map((entry, idx) => {
+              if (entry.kind === "login") {
+                return (
+                  <div key={`login-${idx}`} className="flex items-center gap-3 px-4 py-2.5">
+                    <span className="w-8 h-8 shrink-0 rounded-full bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400">
+                      <LogIn size={14} />
+                    </span>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-xs font-bold text-sky-300">Đăng nhập</p>
+                      <p className="text-[10px] text-slate-500">{fmtTime(entry.at)}</p>
+                    </div>
+                  </div>
+                );
+              }
+
+              const meta = SUBJECT_META[entry.subject_slug] || {
+                label: entry.subject_slug,
+                icon: "📚",
+                color: "text-slate-400",
+              };
+              const metrics = entry.summary_metrics as any;
+              const isExam = metrics?.type === "exam";
+              const score = metrics?.score;
+              const total = metrics?.total;
+              const hasScore = score !== null && score !== undefined && total;
+              const topicTitle = metrics?.unit_topic || (isExam ? "Bài kiểm tra" : "Học bài");
+
+              return (
+                <div key={entry.id} className="flex items-center gap-3 px-4 py-2.5 hover:bg-surface-raised/30 transition-colors">
+                  <span className="text-lg shrink-0">{meta.icon}</span>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-xs font-bold text-slate-200 truncate">{topicTitle}</p>
+                    <p className="text-[10px] text-slate-500">
+                      {fmtTime(entry.started_at)}
+                      {entry.ended_at && entry.duration_seconds > 0 && (
+                        <span className="ml-1 text-slate-600">→ {fmtTime(entry.ended_at)}</span>
+                      )}
+                      {entry.duration_seconds > 0 && (
+                        <span className="ml-2 text-slate-600">· {fmtDuration(entry.duration_seconds)}</span>
+                      )}
+                    </p>
+                  </div>
+                  <div className="shrink-0 flex items-center gap-2">
+                    {isExam && (
+                      <span
+                        className={`text-[10px] font-black px-2 py-0.5 rounded-full border ${
+                          hasScore
+                            ? score / total >= 0.8
+                              ? "text-emerald-400 border-emerald-500/30 bg-emerald-500/10"
+                              : score / total >= 0.5
+                              ? "text-amber-400 border-amber-500/30 bg-amber-500/10"
+                              : "text-rose-400 border-rose-500/30 bg-rose-500/10"
+                            : "text-slate-400 border-line bg-surface-raised"
+                        }`}
+                      >
+                        {hasScore ? `${score}/${total}` : "Đã làm"}
+                      </span>
+                    )}
+                    <span className={`text-[10px] font-bold uppercase tracking-wider ${meta.color}`}>{meta.label}</span>
+                  </div>
+                </div>
+              );
+            })
+          )}
+        </div>
+      ) : (
+      <>
       {/* Filters Bar */}
       <div className="bg-slate-950/40 px-4 py-3 border-b border-line/80 flex flex-col gap-3.5">
         {/* Time filters */}
@@ -184,37 +351,6 @@ export function StudentHistoryCard({ studentName, studentGrade, history }: Props
             })}
           </div>
         )}
-      </div>
-      {/* Header */}
-      <div className="flex items-center justify-between px-4 py-3 border-b border-line">
-        <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center font-black text-white text-sm shrink-0">
-            {studentName.charAt(0).toUpperCase()}
-          </div>
-          <div>
-            <p className="font-black text-white text-sm">{studentName}</p>
-            <p className="text-[10px] text-slate-400 uppercase tracking-widest font-bold">
-              Lớp {studentGrade}
-            </p>
-          </div>
-        </div>
-        <div className="flex items-center gap-3">
-          {/* Quick stats */}
-          <div className="hidden sm:flex items-center gap-3">
-            <div className="flex items-center gap-1.5 text-sky-400 bg-sky-500/10 border border-sky-500/20 rounded-lg px-2 py-1">
-              <Clock size={12} />
-              <span className="text-[10px] font-black">{stats.totalMinutes}p</span>
-            </div>
-            <div className="flex items-center gap-1.5 text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 rounded-lg px-2 py-1">
-              <TrendingUp size={12} />
-              <span className="text-[10px] font-black">{stats.sessions} buổi</span>
-            </div>
-            <div className="flex items-center gap-1.5 text-amber-400 bg-amber-500/10 border border-amber-500/20 rounded-lg px-2 py-1">
-              <Calendar size={12} />
-              <span className="text-[10px] font-black">{stats.activeDays} ngày</span>
-            </div>
-          </div>
-        </div>
       </div>
 
       {/* History list */}
@@ -300,6 +436,8 @@ export function StudentHistoryCard({ studentName, studentGrade, history }: Props
             </>
           )}
         </button>
+      )}
+      </>
       )}
     </div>
   );

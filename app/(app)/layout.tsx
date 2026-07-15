@@ -6,6 +6,7 @@ import { Star, Flame, Heart } from "lucide-react";
 import { HeartProvider } from "@/components/gamification/HeartProvider";
 import { SpaceBackground } from "@/components/ui/SpaceBackground";
 import { TopNavLinks } from "@/components/TopNavLinks";
+import { LoginTracker } from "@/components/LoginTracker";
 
 export default async function StudentLayout({
   children,
@@ -37,6 +38,7 @@ export default async function StudentLayout({
 
   return (
     <div className="min-h-dvh flex flex-col relative text-white font-['Outfit']">
+      <LoginTracker />
       {/* Global Background */}
       <SpaceBackground />
 

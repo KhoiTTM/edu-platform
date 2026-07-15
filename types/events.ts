@@ -101,10 +101,18 @@ export type QuizCompletedEvent = {
 export type LessonVisitedEvent = {
   type: "lesson_visited";
   subject_slug: string;
+  session_id?: string;
   metadata: {
     title: string;
     url: string;
   };
+};
+
+export type LessonExitedEvent = {
+  type: "lesson_exited";
+  subject_slug: string;
+  session_id: string;
+  metadata?: Record<string, never>;
 };
 
 export type ExamVisitedEvent = {
@@ -116,13 +124,21 @@ export type ExamVisitedEvent = {
   };
 };
 
-export type AnyLearningEvent = 
-  | SpeakingTurnCompletedEvent 
+export type LoginEvent = {
+  type: "login";
+  subject_slug: "system";
+  metadata: Record<string, never>;
+};
+
+export type AnyLearningEvent =
+  | SpeakingTurnCompletedEvent
   | SpeakingSessionStartedEvent
-  | SpeakingSessionFinishedEvent 
+  | SpeakingSessionFinishedEvent
   | QuizCompletedEvent
   | LessonVisitedEvent
+  | LessonExitedEvent
   | ExamVisitedEvent
+  | LoginEvent
   | UniversalEvent;
 
 export interface LearningEventRecord {

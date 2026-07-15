@@ -42,7 +42,7 @@ export async function getExamQuestions(examId: string) {
   }));
 }
 
-export async function saveExamResult(examId: string, score: number, total: number) {
+export async function saveExamResult(examId: string, score: number, total: number, durationSeconds?: number) {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) return;
@@ -56,13 +56,16 @@ export async function saveExamResult(examId: string, score: number, total: numbe
   if (examData) {
     const coll = examData.assessment_collections as any;
     const subjectSlug = (Array.isArray(coll) ? coll[0]?.subject_slug : coll?.subject_slug) || 'tieng_anh';
-    const now = new Date().toISOString();
+    const now = new Date();
+    const duration = durationSeconds ?? 0;
+    const startedAt = new Date(now.getTime() - duration * 1000);
 
     await supabase.from('learning_sessions').insert({
       user_id: user.id,
       subject_slug: subjectSlug,
-      started_at: now,
-      ended_at: now,
+      started_at: startedAt.toISOString(),
+      ended_at: now.toISOString(),
+      duration_seconds: duration,
       summary_metrics: {
         type: 'exam',
         exam_id: examId,

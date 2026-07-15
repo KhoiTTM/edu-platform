@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { ChevronRight, Home, Layout, BookOpen, Trophy, ArrowRight, Loader2, Sparkles, Award, CheckCircle2, XCircle, HelpCircle, FileText, Copy, Terminal, Compass, Check } from "lucide-react";
 import Link from "next/link";
 import { AssessmentRenderer } from "./AssessmentRenderer";
@@ -606,23 +606,63 @@ export function LearnNodeClient({
     fetchCompleted();
   }, []);
 
+  const lessonSessionIdRef = useRef<string | null>(null);
+
   useEffect(() => {
-    // Fire tracking event for lesson visited
-    if (node && subjectSlug) {
-      if (node.type !== 'lesson' && node.type !== 'grammar') return;
-      fetch('/api/events', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          type: 'lesson_visited',
-          subject_slug: subjectSlug,
-          metadata: {
-            title: node.title,
-            url: window.location.pathname
-          }
-        })
-      }).catch(console.error);
-    }
+    // Fire tracking event for lesson visited (marks the start of the session)
+    if (!node || !subjectSlug) return;
+    if (node.type !== 'lesson' && node.type !== 'grammar') return;
+
+    const sessionId =
+      typeof crypto !== 'undefined' && crypto.randomUUID ? crypto.randomUUID() : `${node.id}_${Date.now()}`;
+    lessonSessionIdRef.current = sessionId;
+
+    fetch('/api/events', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        type: 'lesson_visited',
+        subject_slug: subjectSlug,
+        session_id: sessionId,
+        metadata: {
+          title: node.title,
+          url: window.location.pathname
+        }
+      })
+    }).catch(console.error);
+
+    const sendExitEvent = () => {
+      const sid = lessonSessionIdRef.current;
+      if (!sid) return;
+      lessonSessionIdRef.current = null;
+      const payload = JSON.stringify({
+        type: 'lesson_exited',
+        subject_slug: subjectSlug,
+        session_id: sid,
+      });
+      if (navigator.sendBeacon) {
+        navigator.sendBeacon('/api/events', new Blob([payload], { type: 'application/json' }));
+      } else {
+        fetch('/api/events', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: payload,
+          keepalive: true,
+        }).catch(() => {});
+      }
+    };
+
+    const onVisibilityChange = () => {
+      if (document.visibilityState === 'hidden') sendExitEvent();
+    };
+    document.addEventListener('visibilitychange', onVisibilityChange);
+    window.addEventListener('beforeunload', sendExitEvent);
+
+    return () => {
+      sendExitEvent();
+      document.removeEventListener('visibilitychange', onVisibilityChange);
+      window.removeEventListener('beforeunload', sendExitEvent);
+    };
   }, [node, subjectSlug]);
 
   useEffect(() => {

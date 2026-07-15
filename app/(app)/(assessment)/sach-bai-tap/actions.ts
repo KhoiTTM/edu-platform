@@ -25,18 +25,22 @@ export async function saveBookPracticeAttempt(
   unitTitle: string,
   score: number,
   total: number,
-  detail: any[]
+  detail: any[],
+  durationSeconds?: number
 ) {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) return { success: false, error: "Not authenticated" };
 
-  const now = new Date().toISOString();
+  const now = new Date();
+  const duration = durationSeconds ?? 0;
+  const startedAt = new Date(now.getTime() - duration * 1000);
   const { error } = await supabase.from("learning_sessions").insert({
     user_id: user.id,
     subject_slug: subjectSlug,
-    started_at: now,
-    ended_at: now,
+    started_at: startedAt.toISOString(),
+    ended_at: now.toISOString(),
+    duration_seconds: duration,
     summary_metrics: {
       type: "exam",
       sub_type: "book_practice",

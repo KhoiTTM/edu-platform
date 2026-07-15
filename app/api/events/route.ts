@@ -76,15 +76,17 @@ export async function POST(req: Request) {
       updateLastVisited(supabase, user.id, event.subject_slug, type, title, url).catch(e => console.error("Last Visited Update Error:", e));
     }
 
-    // 7. Write lesson visit to learning_sessions so parent history page can see it
-    if (event.type === "lesson_visited") {
+    // 7. Write lesson visit to learning_sessions so parent history page can see it.
+    // started_at is set now; ended_at/duration_seconds are filled in by the
+    // matching "lesson_exited" event fired when the student leaves the page.
+    if (event.type === "lesson_visited" && event.session_id) {
       const { title } = event.metadata as any;
       const now = new Date().toISOString();
-      supabase.from("learning_sessions").insert({
+      supabase.from("learning_sessions").upsert({
+        id: event.session_id,
         user_id: user.id,
         subject_slug: event.subject_slug,
         started_at: now,
-        ended_at: now,
         summary_metrics: {
           type: "lesson",
           unit_topic: title,
@@ -92,6 +94,29 @@ export async function POST(req: Request) {
       }).then(({ error }) => {
         if (error) console.error("Failed to insert lesson session:", error);
       });
+    }
+
+    // 8. Close out the lesson session started above, computing real duration.
+    if (event.type === "lesson_exited" && event.session_id) {
+      const { data: existing } = await supabase
+        .from("learning_sessions")
+        .select("started_at")
+        .eq("id", event.session_id)
+        .maybeSingle();
+
+      if (existing) {
+        const startedAt = new Date(existing.started_at).getTime();
+        const endedAt = Date.now();
+        const durationSeconds = Math.max(1, Math.round((endedAt - startedAt) / 1000));
+
+        await supabase
+          .from("learning_sessions")
+          .update({
+            ended_at: new Date(endedAt).toISOString(),
+            duration_seconds: durationSeconds,
+          })
+          .eq("id", event.session_id);
+      }
     }
 
     return NextResponse.json({ success: true });

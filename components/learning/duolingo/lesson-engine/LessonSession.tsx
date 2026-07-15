@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { LessonProgress } from './LessonProgress';
 import { TapWordStep, TapWordStepData } from '../steps/TapWordStep';
 import { MultipleChoiceStep, MultipleChoiceStepData } from '../steps/MultipleChoiceStep';
@@ -24,6 +24,7 @@ export const LessonSession: React.FC<Props> = ({ steps, onCompleteOverride, isRe
   const [showXP, setShowXP] = useState(false);
   const [results, setResults] = useState<SessionResult[]>([]);
   const [stepStartTime, setStepStartTime] = useState(Date.now());
+  const sessionStartTimeRef = useRef(Date.now());
   const { hearts, decreaseHeart, isGameOver } = useHearts();
 
   const handleCorrect = () => {
@@ -77,7 +78,16 @@ export const LessonSession: React.FC<Props> = ({ steps, onCompleteOverride, isRe
 
   if (currentStepIndex >= steps.length) {
     if (onCompleteOverride) return null;
-    return <LessonComplete isVictory={true} xp={steps.length * 5 + 10} streak={streak} nodeId={nodeId} />;
+    const durationSeconds = Math.max(1, Math.round((Date.now() - sessionStartTimeRef.current) / 1000));
+    return (
+      <LessonComplete
+        isVictory={true}
+        xp={steps.length * 5 + 10}
+        streak={streak}
+        nodeId={nodeId}
+        durationSeconds={durationSeconds}
+      />
+    );
   }
 
   const currentStep = steps[currentStepIndex];
