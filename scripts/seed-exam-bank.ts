@@ -59,10 +59,11 @@ const RENDERABLE_TYPES = new Set([
   'clock_read',
   'number_order',
   'crossword',
+  'essay',          // câu tự luận — renderer đã có case riêng (textarea + show explanation)
+  'true_false_no_info', // True/False/No Information
 ]);
 // Loại có nhánh render riêng nhưng renderer KHÔNG có (rơi vào default) — chỉ cảnh báo, không chặn.
-// essay: pipeline OCR sinh mặc định; hiện renderer chưa có case riêng.
-const KNOWN_BUT_UNRENDERED = new Set(['essay', 'short_answer']);
+const KNOWN_BUT_UNRENDERED = new Set(['short_answer']);
 
 // ---- Kiểu dữ liệu template ----
 interface ExamQuestion {

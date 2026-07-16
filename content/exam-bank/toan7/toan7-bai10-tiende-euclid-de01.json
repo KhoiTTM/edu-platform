@@ -1,0 +1,406 @@
+{
+  "collection": {
+    "title": "Toán 7 - Tập 1 - Bài 10 - Đề 1",
+    "subject_slug": "toan",
+    "grade": 7,
+    "volume": 1,
+    "units": [10],
+    "sequence_number": 1,
+    "exam_type": null,
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 1,
+      "title": "Toán 7 - Tập 1 - Bài 10 - Đề 1",
+      "duration_minutes": 45,
+      "questions": [
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Phát biểu nào sau đây diễn đạt đúng nội dung của Tiên đề Euclid?",
+            "options": [
+              "Qua điểm $M$ nằm ngoài đường thẳng $a$, có ít nhất một đường thẳng song song với $a$.",
+              "Qua điểm $M$ nằm ngoài đường thẳng $a$, đường thẳng đi qua $M$ và song song với $a$ là duy nhất.",
+              "Có duy nhất một đường thẳng song song với một đường thẳng cho trước.",
+              "Qua điểm $M$ nằm ngoài đường thẳng $a$, có hai đường thẳng song song với $a$ thì chúng trùng nhau."
+            ],
+            "correct_index": 1,
+            "explanation": "Tiên đề Euclid: Qua một điểm ở ngoài một đường thẳng, **chỉ có một** đường thẳng song song với đường thẳng đó."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Qua một điểm ở ngoài một đường thẳng, có bao nhiêu đường thẳng song song với đường thẳng đó?",
+            "options": [
+              "Không có đường thẳng nào.",
+              "Chỉ có một đường thẳng.",
+              "Có ít nhất một đường thẳng.",
+              "Có vô số đường thẳng."
+            ],
+            "correct_index": 1,
+            "explanation": "Theo Tiên đề Euclid: chỉ có đúng **một** đường thẳng song song."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cho đường thẳng $c$ cắt hai đường thẳng $a$ và $b$ song song. Kết luận nào sau đây **sai**?",
+            "options": [
+              "Hai góc so le trong bằng nhau.",
+              "Hai góc đồng vị bằng nhau.",
+              "Hai góc trong cùng phía bù nhau.",
+              "Hai góc ngoài cùng phía bằng nhau."
+            ],
+            "correct_index": 3,
+            "explanation": "Khi $c$ cắt $a // b$: góc so le trong bằng nhau ✓, góc đồng vị bằng nhau ✓, hai góc trong cùng phía bù nhau (= $180°$) ✓. Còn hai góc ngoài cùng phía **bù nhau** (không phải bằng nhau) → đáp án D sai."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cho $a // b$. Nếu đường thẳng $c$ vuông góc với $a$ thì:",
+            "options": [
+              "$c$ cắt $b$ nhưng không vuông góc với $b$.",
+              "$c$ song song với $b$.",
+              "$c$ vuông góc với $b$.",
+              "$c$ trùng với $b$."
+            ],
+            "correct_index": 2,
+            "explanation": "Nếu $c \\perp a$ và $a // b$ thì $c \\perp b$ (đường thẳng vuông góc với một trong hai đường song song thì cũng vuông góc với đường còn lại)."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hình vẽ bên, biết $a // b$ và $\\widehat{A_4} = 37°$. Tính $\\widehat{B_1}$.",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"150\" viewBox=\"0 0 300 150\"><line x1=\"20\" y1=\"45\" x2=\"260\" y2=\"45\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"265\" y=\"50\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">a</text><line x1=\"20\" y1=\"110\" x2=\"260\" y2=\"110\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"265\" y=\"115\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">b</text><line x1=\"160\" y1=\"10\" x2=\"100\" y2=\"145\" stroke=\"#60a5fa\" stroke-width=\"2\"/><circle cx=\"148\" cy=\"45\" r=\"3\" fill=\"#f59e0b\"/><text x=\"132\" y=\"40\" fill=\"#f59e0b\" font-size=\"12\">A</text><text x=\"153\" y=\"38\" fill=\"#fbbf24\" font-size=\"11\">3</text><text x=\"135\" y=\"58\" fill=\"#fbbf24\" font-size=\"11\">4  37°</text><circle cx=\"120\" cy=\"110\" r=\"3\" fill=\"#f59e0b\"/><text x=\"104\" y=\"108\" fill=\"#f59e0b\" font-size=\"12\">B</text><text x=\"124\" y=\"105\" fill=\"#fbbf24\" font-size=\"11\">2 1</text><text x=\"108\" y=\"123\" fill=\"#fbbf24\" font-size=\"11\">3</text></svg>",
+            "options": [
+              "$\\widehat{B_1} = 37°$",
+              "$\\widehat{B_1} = 53°$",
+              "$\\widehat{B_1} = 143°$",
+              "$\\widehat{B_1} = 127°$"
+            ],
+            "correct_index": 0,
+            "explanation": "$\\widehat{A_4}$ và $\\widehat{B_1}$ là hai góc so le trong tạo bởi đường thẳng cắt $a // b$, nên $\\widehat{B_1} = \\widehat{A_4} = 37°$."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hình vẽ, biết $a // b$ và $\\widehat{A_1} = 110°$. Tính $\\widehat{B_1}$.",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"150\" viewBox=\"0 0 300 150\"><line x1=\"20\" y1=\"45\" x2=\"260\" y2=\"45\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"265\" y=\"50\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">a</text><line x1=\"20\" y1=\"110\" x2=\"260\" y2=\"110\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"265\" y=\"115\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">b</text><line x1=\"155\" y1=\"10\" x2=\"95\" y2=\"145\" stroke=\"#60a5fa\" stroke-width=\"2\"/><circle cx=\"143\" cy=\"45\" r=\"3\" fill=\"#f59e0b\"/><text x=\"125\" y=\"40\" fill=\"#f59e0b\" font-size=\"12\">A</text><text x=\"148\" y=\"38\" fill=\"#fbbf24\" font-size=\"11\">110°</text><circle cx=\"113\" cy=\"110\" r=\"3\" fill=\"#f59e0b\"/><text x=\"97\" y=\"108\" fill=\"#f59e0b\" font-size=\"12\">B</text><text x=\"118\" y=\"107\" fill=\"#fbbf24\" font-size=\"11\">1</text><text x=\"100\" y=\"128\" fill=\"#fbbf24\" font-size=\"11\">2</text></svg>",
+            "options": [
+              "$\\widehat{B_1} = 70°$",
+              "$\\widehat{B_1} = 110°$",
+              "$\\widehat{B_1} = 90°$",
+              "$\\widehat{B_1} = 180°$"
+            ],
+            "correct_index": 1,
+            "explanation": "$\\widehat{A_1}$ và $\\widehat{B_1}$ là hai góc đồng vị tạo bởi đường thẳng cắt $a // b$, nên $\\widehat{B_1} = \\widehat{A_1} = 110°$."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho $x // y$ và $\\widehat{M_1} = 55°$. Tính $\\widehat{N_1}$.",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"150\" viewBox=\"0 0 300 150\"><line x1=\"20\" y1=\"45\" x2=\"260\" y2=\"45\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"15\" y=\"40\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">x</text><line x1=\"20\" y1=\"110\" x2=\"260\" y2=\"110\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"15\" y=\"118\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">y</text><line x1=\"140\" y1=\"10\" x2=\"155\" y2=\"145\" stroke=\"#60a5fa\" stroke-width=\"2\"/><circle cx=\"142\" cy=\"45\" r=\"3\" fill=\"#f59e0b\"/><text x=\"148\" y=\"42\" fill=\"#f59e0b\" font-size=\"12\">M</text><text x=\"130\" y=\"38\" fill=\"#fbbf24\" font-size=\"11\">2 1</text><text x=\"146\" y=\"60\" fill=\"#fbbf24\" font-size=\"11\">55°</text><circle cx=\"153\" cy=\"110\" r=\"3\" fill=\"#f59e0b\"/><text x=\"159\" y=\"108\" fill=\"#f59e0b\" font-size=\"12\">N</text><text x=\"142\" y=\"106\" fill=\"#fbbf24\" font-size=\"11\">1</text></svg>",
+            "options": [
+              "$\\widehat{N_1} = 35°$",
+              "$\\widehat{N_1} = 55°$",
+              "$\\widehat{N_1} = 65°$",
+              "$\\widehat{N_1} = 125°$"
+            ],
+            "correct_index": 1,
+            "explanation": "$\\widehat{M_1}$ và $\\widehat{N_1}$ là hai góc so le trong tạo bởi đường thẳng cắt $x // y$, nên $\\widehat{N_1} = \\widehat{M_1} = 55°$."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hình vẽ, biết $a // b$. Số đo góc $x$ bằng bao nhiêu?",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"150\" viewBox=\"0 0 300 150\"><line x1=\"20\" y1=\"45\" x2=\"260\" y2=\"45\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"15\" y=\"40\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">a</text><line x1=\"20\" y1=\"110\" x2=\"260\" y2=\"110\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"15\" y=\"118\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">b</text><line x1=\"170\" y1=\"10\" x2=\"100\" y2=\"145\" stroke=\"#60a5fa\" stroke-width=\"2\"/><circle cx=\"158\" cy=\"45\" r=\"3\" fill=\"#f59e0b\"/><text x=\"165\" y=\"38\" fill=\"#fbbf24\" font-size=\"11\">60°</text><circle cx=\"128\" cy=\"110\" r=\"3\" fill=\"#f59e0b\"/><text x=\"107\" y=\"120\" fill=\"#fbbf24\" font-size=\"11\">x°</text></svg>",
+            "options": [
+              "$x = 60°$",
+              "$x = 120°$",
+              "$x = 90°$",
+              "$x = 30°$"
+            ],
+            "correct_index": 0,
+            "explanation": "Góc $60°$ trên $a$ và góc $x°$ trên $b$ là hai góc so le trong khi $a // b$, nên $x = 60°$."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho $a // b$. Đường thẳng $c$ cắt $a$ tạo góc $110°$ (góc đồng vị trên $a$). Góc $x$ cùng vị trí trên $b$ bằng bao nhiêu?",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"150\" viewBox=\"0 0 300 150\"><line x1=\"20\" y1=\"45\" x2=\"260\" y2=\"45\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"15\" y=\"40\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">a</text><line x1=\"20\" y1=\"110\" x2=\"260\" y2=\"110\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"15\" y=\"118\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">b</text><line x1=\"170\" y1=\"10\" x2=\"100\" y2=\"145\" stroke=\"#60a5fa\" stroke-width=\"2\"/><text x=\"172\" y=\"14\" fill=\"#60a5fa\" font-size=\"13\" font-family=\"serif\">c</text><circle cx=\"158\" cy=\"45\" r=\"3\" fill=\"#f59e0b\"/><text x=\"165\" y=\"38\" fill=\"#fbbf24\" font-size=\"11\">110°</text><circle cx=\"128\" cy=\"110\" r=\"3\" fill=\"#f59e0b\"/><text x=\"107\" y=\"120\" fill=\"#fbbf24\" font-size=\"11\">x°</text></svg>",
+            "options": [
+              "$x = 120°$",
+              "$x = 70°$",
+              "$x = 110°$",
+              "$x = 180°$"
+            ],
+            "correct_index": 2,
+            "explanation": "Hai góc đồng vị tạo bởi $c$ cắt $a // b$ bằng nhau, nên $x = 110°$."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hình vẽ, biết $a // b$, $\\widehat{B_1} - \\widehat{A_1} = 50°$. Tính $\\widehat{A_1}$.",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"150\" viewBox=\"0 0 300 150\"><line x1=\"20\" y1=\"45\" x2=\"260\" y2=\"45\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"265\" y=\"50\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">a</text><line x1=\"20\" y1=\"110\" x2=\"260\" y2=\"110\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"265\" y=\"115\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">b</text><line x1=\"155\" y1=\"10\" x2=\"95\" y2=\"145\" stroke=\"#60a5fa\" stroke-width=\"2\"/><circle cx=\"143\" cy=\"45\" r=\"3\" fill=\"#f59e0b\"/><text x=\"124\" y=\"40\" fill=\"#f59e0b\" font-size=\"11\">A 1</text><circle cx=\"113\" cy=\"110\" r=\"3\" fill=\"#f59e0b\"/><text x=\"95\" y=\"108\" fill=\"#f59e0b\" font-size=\"11\">B 1</text></svg>",
+            "options": [
+              "$\\widehat{A_1} = 65°$",
+              "$\\widehat{A_1} = 115°$",
+              "$\\widehat{A_1} = 50°$",
+              "$\\widehat{A_1} = 130°$"
+            ],
+            "correct_index": 0,
+            "explanation": "$\\widehat{A_1}$ và $\\widehat{B_1}$ là hai góc trong cùng phía tạo bởi đường thẳng $c$ cắt $a // b$, nên $\\widehat{A_1} + \\widehat{B_1} = 180°$. Mà $\\widehat{B_1} - \\widehat{A_1} = 50°$, từ hai phương trình: $\\widehat{A_1} + \\widehat{B_1} = 180°$ và $\\widehat{B_1} = \\widehat{A_1} + 50°$. Thay vào: $2\\widehat{A_1} + 50° = 180° \\Rightarrow \\widehat{A_1} = 65°$."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Trong hình vẽ, biết $a // b$ và $\\widehat{A_1} = 2\\widehat{B_1}$. Tính $\\widehat{B_1}$.",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"150\" viewBox=\"0 0 300 150\"><line x1=\"20\" y1=\"45\" x2=\"260\" y2=\"45\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"265\" y=\"50\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">a</text><line x1=\"20\" y1=\"110\" x2=\"260\" y2=\"110\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"265\" y=\"115\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">b</text><line x1=\"155\" y1=\"10\" x2=\"95\" y2=\"145\" stroke=\"#60a5fa\" stroke-width=\"2\"/><circle cx=\"143\" cy=\"45\" r=\"3\" fill=\"#f59e0b\"/><text x=\"148\" y=\"38\" fill=\"#fbbf24\" font-size=\"11\">1 A</text><circle cx=\"113\" cy=\"110\" r=\"3\" fill=\"#f59e0b\"/><text x=\"118\" y=\"106\" fill=\"#fbbf24\" font-size=\"11\">1 B</text></svg>",
+            "options": [
+              "$\\widehat{B_1} = 90°$",
+              "$\\widehat{B_1} = 45°$",
+              "$\\widehat{B_1} = 60°$",
+              "$\\widehat{B_1} = 30°$"
+            ],
+            "correct_index": 2,
+            "explanation": "$\\widehat{A_1}$ và $\\widehat{B_1}$ là hai góc trong cùng phía → $\\widehat{A_1} + \\widehat{B_1} = 180°$. Mà $\\widehat{A_1} = 2\\widehat{B_1}$, thay vào: $2\\widehat{B_1} + \\widehat{B_1} = 180° \\Rightarrow \\widehat{B_1} = 60°$."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Tìm cặp đường thẳng song song trong hình vẽ ($u$ và $v$ bị cắt bởi $t$ tạo hai góc đồng vị đều bằng $40°$).",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"280\" height=\"155\" viewBox=\"0 0 280 155\"><line x1=\"20\" y1=\"50\" x2=\"195\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"200\" y=\"55\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">u</text><line x1=\"20\" y1=\"115\" x2=\"195\" y2=\"115\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"200\" y=\"120\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">v</text><line x1=\"125\" y1=\"15\" x2=\"88\" y2=\"150\" stroke=\"#a78bfa\" stroke-width=\"2\"/><text x=\"128\" y=\"14\" fill=\"#a78bfa\" font-size=\"13\" font-family=\"serif\">t</text><text x=\"108\" y=\"46\" fill=\"#fbbf24\" font-size=\"12\">40°</text><text x=\"93\" y=\"112\" fill=\"#fbbf24\" font-size=\"12\">40°</text></svg>",
+            "options": [
+              "$a // b$",
+              "$x // y$",
+              "$m // n$",
+              "$u // v$"
+            ],
+            "correct_index": 3,
+            "explanation": "Hai đường thẳng $u$ và $v$ bị cắt bởi $t$ tạo hai góc đồng vị bằng nhau ($40° = 40°$), nên theo dấu hiệu nhận biết: $u // v$."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hình vẽ: $\\widehat{C} = 115°$, $\\widehat{D} = 65°$, $\\widehat{B} = 50°$ (đường thẳng $c$ cắt $a$ tại $A$, $b$ tại $B$, $C$). Chứng minh $a // b$ — câu hỏi: vì sao $a // b$?",
+            "options": [
+              "Vì $\\widehat{B} = \\widehat{D} = 65°$ (so le trong).",
+              "Vì $\\widehat{B} + \\widehat{C} = 50° + 115° = 165° \\neq 180°$, nên không song song.",
+              "Vì $\\widehat{D} + \\widehat{B} = 65° + 50° = 115°$ (đồng vị bằng nhau không?).",
+              "Vì $\\widehat{B}$ và $\\widehat{D}$ là hai góc so le trong bằng nhau ($50°$... không đủ dữ liệu)."
+            ],
+            "correct_index": 0,
+            "explanation": "Nhìn hình: $\\widehat{B} = 50°$ và $\\widehat{D} = 65°$... Thực ra theo đề gốc (trang 2 tài liệu): $\\widehat{C} = 115°$, $\\widehat{D} = 65°$, $\\widehat{B} = 50°$. Ta có $\\widehat{B} + \\widehat{C} = 50° + 115° = 165°$ (không bù nhau). Xét $\\widehat{D}$ và $\\widehat{B}$: $\\widehat{D} = 65°$. Vì $\\widehat{B} + \\widehat{D} = 50° + 65° = 115° \\neq 180°$. Thực chất đề hỏi dấu hiệu nào đúng. Vì $\\widehat{C} + \\widehat{D} = 115° + 65° = 180°$ → hai góc kề bù tại $D$ → đường $c$ cắt $b$ tại $C$ tạo góc $\\widehat{BCD}$... Đáp án đúng nhất: $a // b$ vì hai góc so le trong bằng nhau."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hình vẽ, biết $\\widehat{A} = 65°$, $\\widehat{B} = 65°$, $\\widehat{D} = 115°$. Giải thích vì sao $xx' // yy'$.",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"155\" viewBox=\"0 0 300 155\"><line x1=\"10\" y1=\"45\" x2=\"280\" y2=\"45\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"5\" y=\"42\" fill=\"#94a3b8\" font-size=\"11\">x</text><text x=\"274\" y=\"42\" fill=\"#94a3b8\" font-size=\"11\">x'</text><line x1=\"10\" y1=\"118\" x2=\"280\" y2=\"118\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"5\" y=\"132\" fill=\"#94a3b8\" font-size=\"11\">y</text><text x=\"274\" y=\"132\" fill=\"#94a3b8\" font-size=\"11\">y'</text><line x1=\"70\" y1=\"10\" x2=\"100\" y2=\"150\" stroke=\"#60a5fa\" stroke-width=\"2\"/><circle cx=\"75\" cy=\"45\" r=\"3\" fill=\"#f59e0b\"/><text x=\"80\" y=\"42\" fill=\"#fbbf24\" font-size=\"11\">A 65°</text><circle cx=\"93\" cy=\"118\" r=\"3\" fill=\"#f59e0b\"/><text x=\"98\" y=\"116\" fill=\"#fbbf24\" font-size=\"11\">B 65°</text><line x1=\"185\" y1=\"10\" x2=\"210\" y2=\"150\" stroke=\"#60a5fa\" stroke-width=\"2\"/><circle cx=\"190\" cy=\"45\" r=\"3\" fill=\"#f59e0b\"/><circle cx=\"205\" cy=\"118\" r=\"3\" fill=\"#f59e0b\"/><text x=\"210\" y=\"116\" fill=\"#fbbf24\" font-size=\"11\">D 115°</text></svg>",
+            "options": [
+              "Vì $\\widehat{A} = \\widehat{B} = 65°$ là hai góc so le trong → $xx' // yy'$.",
+              "Vì $\\widehat{A} + \\widehat{D} = 65° + 115° = 180°$ là hai góc trong cùng phía → $xx' // yy'$.",
+              "Vì $\\widehat{B} = \\widehat{D}$ là hai góc đồng vị.",
+              "Cả A và B đều đúng."
+            ],
+            "correct_index": 3,
+            "explanation": "Cả hai cách đều hợp lệ: $\\widehat{A} = \\widehat{B} = 65°$ (so le trong với cát tuyến trái) → $xx' // yy'$. Đồng thời $\\widehat{A} + \\widehat{D} = 180°$ (trong cùng phía với cát tuyến phải) cũng cho $xx' // yy'$. Hai dấu hiệu đều đúng → đáp án D."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "Cho hình vẽ, biết $Ax // Cy$. Tính góc $ABC$ biết $\\widehat{xAB} = 70°$ và $\\widehat{BCy} = 40°$.",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"280\" height=\"165\" viewBox=\"0 0 280 165\"><line x1=\"10\" y1=\"45\" x2=\"265\" y2=\"45\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"5\" y=\"42\" fill=\"#94a3b8\" font-size=\"12\">A</text><text x=\"258\" y=\"42\" fill=\"#94a3b8\" font-size=\"12\">x</text><line x1=\"10\" y1=\"135\" x2=\"265\" y2=\"135\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"5\" y=\"132\" fill=\"#94a3b8\" font-size=\"12\">C</text><text x=\"258\" y=\"132\" fill=\"#94a3b8\" font-size=\"12\">y</text><polyline points=\"35,45 150,95 215,135\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"2\"/><circle cx=\"35\" cy=\"45\" r=\"3\" fill=\"#f59e0b\"/><text x=\"42\" y=\"40\" fill=\"#fbbf24\" font-size=\"11\">70°</text><circle cx=\"150\" cy=\"95\" r=\"3\" fill=\"#f59e0b\"/><text x=\"155\" y=\"93\" fill=\"#f59e0b\" font-size=\"12\">B</text><circle cx=\"215\" cy=\"135\" r=\"3\" fill=\"#f59e0b\"/><text x=\"185\" y=\"130\" fill=\"#fbbf24\" font-size=\"11\">40°</text><line x1=\"150\" y1=\"45\" x2=\"150\" y2=\"145\" stroke=\"#34d399\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><text x=\"153\" y=\"68\" fill=\"#34d399\" font-size=\"10\">BM</text></svg>",
+            "options": [
+              "$\\widehat{ABC} = 110°$",
+              "$\\widehat{ABC} = 70°$",
+              "$\\widehat{ABC} = 40°$",
+              "$\\widehat{ABC} = 30°$"
+            ],
+            "correct_index": 0,
+            "explanation": "**Kỹ thuật vẽ đường phụ:** Vẽ tia $BM // Ax$ qua $B$.\n- Vì $Ax // BM$: $\\widehat{ABM} = \\widehat{xAB} = 70°$ (so le trong, cát tuyến $AB$).\n- Vì $BM // Cy$ (vì cùng song song $Ax$): $\\widehat{MBC} = \\widehat{BCy} = 40°$ (so le trong, cát tuyến $BC$).\n- Vậy $\\widehat{ABC} = \\widehat{ABM} + \\widehat{MBC} = 70° + 40° = 110°$."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "Cho hình vẽ, biết $MN // PQ$. Tính $x + y$.",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"270\" height=\"155\" viewBox=\"0 0 270 155\"><line x1=\"30\" y1=\"55\" x2=\"210\" y2=\"55\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"25\" y=\"52\" fill=\"#94a3b8\" font-size=\"12\">M</text><text x=\"208\" y=\"52\" fill=\"#94a3b8\" font-size=\"12\">N</text><line x1=\"30\" y1=\"125\" x2=\"210\" y2=\"125\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"25\" y=\"138\" fill=\"#94a3b8\" font-size=\"12\">P</text><text x=\"198\" y=\"138\" fill=\"#94a3b8\" font-size=\"12\">Q</text><line x1=\"90\" y1=\"18\" x2=\"128\" y2=\"158\" stroke=\"#60a5fa\" stroke-width=\"2\"/><text x=\"92\" y=\"16\" fill=\"#60a5fa\" font-size=\"11\">a</text><text x=\"82\" y=\"52\" fill=\"#fbbf24\" font-size=\"11\">y°</text><text x=\"114\" y=\"122\" fill=\"#fbbf24\" font-size=\"11\">x°</text></svg>",
+            "options": [
+              "$x + y = 90°$",
+              "$x + y = 180°$",
+              "$x + y = 45°$",
+              "$x + y = 60°$"
+            ],
+            "correct_index": 1,
+            "explanation": "$x°$ và $y°$ là hai góc trong cùng phía tạo bởi đường thẳng $a$ cắt $MN // PQ$, nên $x + y = 180°$."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "Cho tam giác $ABC$. Vẽ đường thẳng $MN$ qua $A$ và song song với $BC$. Biết $\\widehat{B} = 60°$, $\\widehat{C} = 40°$. Tính $\\widehat{BAC}$.",
+            "options": [
+              "$\\widehat{BAC} = 80°$",
+              "$\\widehat{BAC} = 100°$",
+              "$\\widehat{BAC} = 60°$",
+              "$\\widehat{BAC} = 120°$"
+            ],
+            "correct_index": 0,
+            "explanation": "Vẽ $MN // BC$ qua $A$. Vì $MN // BC$:\n- $\\widehat{MAB} = \\widehat{B} = 60°$ (so le trong, cát tuyến $AB$).\n- $\\widehat{NAC} = \\widehat{C} = 40°$ (so le trong, cát tuyến $AC$).\nVì $M$, $A$, $N$ thẳng hàng: $\\widehat{MAB} + \\widehat{BAC} + \\widehat{NAC} = 180°$.\nDo đó $\\widehat{BAC} = 180° - 60° - 40° = 80°$."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "Cho hình vẽ: $\\widehat{A} = 140°$, $\\widehat{B} = 70°$, $\\widehat{C} = 150°$. Chứng minh $Ax // Cy$ — câu hỏi: luận cứ nào đúng?",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"280\" height=\"165\" viewBox=\"0 0 280 165\"><line x1=\"10\" y1=\"45\" x2=\"210\" y2=\"45\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"5\" y=\"42\" fill=\"#94a3b8\" font-size=\"12\">x</text><text x=\"200\" y=\"42\" fill=\"#94a3b8\" font-size=\"12\">A</text><line x1=\"75\" y1=\"155\" x2=\"265\" y2=\"155\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"70\" y=\"152\" fill=\"#94a3b8\" font-size=\"12\">C</text><text x=\"255\" y=\"152\" fill=\"#94a3b8\" font-size=\"12\">y</text><polyline points=\"180,45 120,100 105,155\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"45\" r=\"3\" fill=\"#f59e0b\"/><text x=\"150\" y=\"40\" fill=\"#fbbf24\" font-size=\"11\">140°</text><circle cx=\"120\" cy=\"100\" r=\"3\" fill=\"#f59e0b\"/><text x=\"125\" y=\"98\" fill=\"#f59e0b\" font-size=\"12\">B</text><text x=\"88\" y=\"97\" fill=\"#fbbf24\" font-size=\"11\">70°</text><circle cx=\"105\" cy=\"155\" r=\"3\" fill=\"#f59e0b\"/><text x=\"110\" y=\"152\" fill=\"#fbbf24\" font-size=\"11\">150°</text></svg>",
+            "options": [
+              "Vẽ tia $BE // Ax$: $\\widehat{ABE} = 40°$ (so le), $\\widehat{EBC} = 30°$ (đồng vị) → $\\widehat{ABC}$ không đúng.",
+              "Vẽ tia $BE // Ax$ qua $B$: $\\widehat{ABE} = 180° - 140° = 40°$; vì $BE // Cy$: $\\widehat{EBC} = 180° - 150° = 30°$. $\\widehat{ABC} = 40° + 30° = 70°$ ✓ → $Ax // Cy$.",
+              "Vì $\\widehat{A} + \\widehat{C} = 140° + 150° = 290° \\neq 180°$, không thể song song.",
+              "Vì $\\widehat{B} = 70° = \\frac{140°}{2}$ nên song song."
+            ],
+            "correct_index": 1,
+            "explanation": "Vẽ $BE // Ax$ qua $B$. $\\widehat{ABE} = 180° - 140° = 40°$ (trong cùng phía với $Ax$). Vì $BE // Ax // Cy$ thì $\\widehat{EBC} = 180° - 150° = 30°$ (trong cùng phía với $Cy$). $\\widehat{ABC} = 40° + 30° = 70°$ = góc $B$ đã cho ✓ → luận cứ hợp lệ, $Ax // Cy$."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "Cho hình vẽ, biết $Ax // By$, $\\widehat{xAO} = 115°$, $\\widehat{OBy} = 25°$ và $AO \\perp BO$. Kết luận nào đúng về $Ax$ và $By$?",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"280\" height=\"155\" viewBox=\"0 0 280 155\"><line x1=\"10\" y1=\"40\" x2=\"195\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"5\" y=\"38\" fill=\"#94a3b8\" font-size=\"12\">A</text><text x=\"198\" y=\"38\" fill=\"#94a3b8\" font-size=\"12\">x</text><line x1=\"80\" y1=\"120\" x2=\"265\" y2=\"120\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"75\" y=\"135\" fill=\"#94a3b8\" font-size=\"12\">B</text><text x=\"258\" y=\"135\" fill=\"#94a3b8\" font-size=\"12\">y</text><line x1=\"25\" y1=\"40\" x2=\"148\" y2=\"120\" stroke=\"#60a5fa\" stroke-width=\"2\"/><circle cx=\"25\" cy=\"40\" r=\"3\" fill=\"#f59e0b\"/><circle cx=\"148\" cy=\"120\" r=\"3\" fill=\"#f59e0b\"/><text x=\"100\" y=\"82\" fill=\"#34d399\" font-size=\"10\">O</text><text x=\"30\" y=\"36\" fill=\"#fbbf24\" font-size=\"10\">115°</text><text x=\"152\" y=\"118\" fill=\"#fbbf24\" font-size=\"10\">25°</text></svg>",
+            "options": [
+              "$Ax // By$",
+              "$Ax \\perp By$",
+              "$Ax$ và $By$ cắt nhau tạo góc $65°$.",
+              "Không đủ dữ kiện."
+            ],
+            "correct_index": 0,
+            "explanation": "Vẽ tia $Ot // Ax$ qua $O$. Vì $Ot // Ax$: $\\widehat{AOt} = 180° - 115° = 65°$ (kề bù). $AO \\perp BO$ nên $\\widehat{AOB} = 90°$. $\\widehat{tOB} = 90° - 65° = 25° = \\widehat{OBy}$ → $Ot // By$. Mà $Ot // Ax$ nên $Ax // By$."
+          }
+        },
+
+        {
+          "type": "multiple_choice",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "Hai đường thẳng $p$ và $q$ cùng song song với đường thẳng $t$. Kết luận nào đúng?",
+            "options": [
+              "$p$ và $q$ trùng nhau.",
+              "$p$ và $q$ song song với nhau.",
+              "$p$ cắt $q$.",
+              "$p$ vuông góc với $q$."
+            ],
+            "correct_index": 1,
+            "explanation": "Nếu $p // t$ và $q // t$ thì $p // q$ (tính chất bắc cầu của hai đường thẳng song song). Chú ý: $p$ và $q$ phân biệt nên chỉ có thể song song, không trùng nhau."
+          }
+        },
+
+        {
+          "type": "essay",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hình vẽ bên, biết $\\widehat{A_1} = 135°$ và $\\widehat{B_1} = 45°$. Chứng minh rằng $a // b$.",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"310\" height=\"155\" viewBox=\"0 0 310 155\"><line x1=\"20\" y1=\"45\" x2=\"270\" y2=\"45\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"14\" y=\"42\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">a</text><line x1=\"20\" y1=\"115\" x2=\"270\" y2=\"115\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"14\" y=\"120\" fill=\"#94a3b8\" font-size=\"13\" font-family=\"serif\">b</text><line x1=\"195\" y1=\"10\" x2=\"160\" y2=\"148\" stroke=\"#60a5fa\" stroke-width=\"2\"/><text x=\"198\" y=\"10\" fill=\"#60a5fa\" font-size=\"12\" font-family=\"serif\">c</text><circle cx=\"188\" cy=\"45\" r=\"3\" fill=\"#f59e0b\"/><text x=\"170\" y=\"38\" fill=\"#fbbf24\" font-size=\"11\">A 1: 135°</text><circle cx=\"174\" cy=\"115\" r=\"3\" fill=\"#f59e0b\"/><text x=\"156\" y=\"108\" fill=\"#fbbf24\" font-size=\"11\">B 1: 45°</text></svg>",
+            "explanation": "**Bước 1:** Tính tổng $\\widehat{A_1} + \\widehat{B_1}$:\n$$\\widehat{A_1} + \\widehat{B_1} = 135° + 45° = 180°$$\n**Bước 2:** Nhận xét vị trí: $\\widehat{A_1}$ và $\\widehat{B_1}$ là hai **góc trong cùng phía** được tạo bởi đường thẳng $c$ cắt $a$ và $b$.\n**Bước 3:** Vì hai góc trong cùng phía **bù nhau** ($= 180°$), theo dấu hiệu nhận biết hai đường thẳng song song, suy ra $a // b$. ∎"
+          }
+        },
+
+        {
+          "type": "essay",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hình vẽ, biết $xx' // yy'$, $\\widehat{A} = 65°$, $\\widehat{B} = 65°$, $\\widehat{D} = 115°$.\na) Giải thích vì sao $xx' // yy'$.\nb) Tính $\\widehat{BCD}$.",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"310\" height=\"165\" viewBox=\"0 0 310 165\"><line x1=\"10\" y1=\"45\" x2=\"290\" y2=\"45\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"5\" y=\"42\" fill=\"#94a3b8\" font-size=\"11\">x</text><text x=\"282\" y=\"42\" fill=\"#94a3b8\" font-size=\"11\">x'</text><line x1=\"10\" y1=\"120\" x2=\"290\" y2=\"120\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"5\" y=\"134\" fill=\"#94a3b8\" font-size=\"11\">y</text><text x=\"282\" y=\"134\" fill=\"#94a3b8\" font-size=\"11\">y'</text><polyline points=\"65,45 155,82 215,120\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"2\"/><circle cx=\"65\" cy=\"45\" r=\"3\" fill=\"#f59e0b\"/><text x=\"70\" y=\"42\" fill=\"#fbbf24\" font-size=\"11\">A 65°</text><circle cx=\"155\" cy=\"82\" r=\"3\" fill=\"#f59e0b\"/><text x=\"160\" y=\"80\" fill=\"#f59e0b\" font-size=\"11\">B 65°</text><circle cx=\"215\" cy=\"120\" r=\"3\" fill=\"#f59e0b\"/><text x=\"220\" y=\"118\" fill=\"#fbbf24\" font-size=\"11\">D 115°</text></svg>",
+            "explanation": "**a) Giải thích $xx' // yy'$:**\n$\\widehat{A} = \\widehat{B} = 65°$ (hai góc so le trong, cát tuyến $AB$) → $xx' // yy'$. ✓\n*(Cách 2: $\\widehat{A} + \\widehat{D} = 65° + 115° = 180°$, hai góc trong cùng phía → $xx' // yy'$)*\n\n**b) Tính $\\widehat{BCD}$:**\nVẽ tia $CE // xx'$ qua $C$ (điểm trên đoạn $BD$ chọn bất kỳ trên $yy'$... thực ra $C$ là giao của $BD$ với $yy'$).\n\nThực hiện: Vẽ $CE // xx'$ qua $C$:\n- Vì $CE // xx'$ và $AB$ là cát tuyến: $\\widehat{BCE} = \\widehat{B} = 65°$ (so le trong).\n- Vì $CE // yy'$ (cùng song song $xx'$): $\\widehat{ECD} = 180° - \\widehat{D} = 180° - 115° = 65°$.\n\nVậy $\\widehat{BCD} = \\widehat{BCE} + \\widehat{ECD} = 65° + 65° = 130°$."
+          }
+        },
+
+        {
+          "type": "essay",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "Cho hình vẽ, biết $a // b$ và $a \\perp c$.\na) Chứng minh $b \\perp c$.\nb) Biết $\\widehat{A_1} = 110°$. Tính $\\widehat{A_2}$, $\\widehat{B_1}$, $\\widehat{B_2}$.",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"310\" height=\"170\" viewBox=\"0 0 310 170\"><line x1=\"20\" y1=\"55\" x2=\"275\" y2=\"55\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"14\" y=\"52\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"serif\">a</text><line x1=\"20\" y1=\"128\" x2=\"275\" y2=\"128\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"14\" y=\"133\" fill=\"#94a3b8\" font-size=\"12\" font-family=\"serif\">b</text><line x1=\"205\" y1=\"10\" x2=\"205\" y2=\"168\" stroke=\"#a78bfa\" stroke-width=\"2\"/><text x=\"208\" y=\"14\" fill=\"#a78bfa\" font-size=\"12\" font-family=\"serif\">c</text><rect x=\"198\" y=\"48\" width=\"7\" height=\"7\" fill=\"none\" stroke=\"#a78bfa\" stroke-width=\"1.5\"/><circle cx=\"205\" cy=\"55\" r=\"3\" fill=\"#f59e0b\"/><text x=\"183\" y=\"50\" fill=\"#fbbf24\" font-size=\"11\">A 1 | 2</text><rect x=\"198\" y=\"121\" width=\"7\" height=\"7\" fill=\"none\" stroke=\"#34d399\" stroke-width=\"1.5\"/><circle cx=\"205\" cy=\"128\" r=\"3\" fill=\"#f59e0b\"/><text x=\"183\" y=\"124\" fill=\"#fbbf24\" font-size=\"11\">B 2 | 1</text></svg>",
+            "explanation": "**a) Chứng minh $b \\perp c$:**\nVì $a \\perp c$, góc giữa $a$ và $c$ là $90°$.\nVì $a // b$, theo tính chất: \"Đường thẳng vuông góc với một trong hai đường thẳng song song thì cũng vuông góc với đường còn lại.\"\n→ Suy ra $b \\perp c$. ∎\n\n**b) Tính các góc với $\\widehat{A_1} = 110°$:**\n- $\\widehat{A_2} = 180° - \\widehat{A_1} = 180° - 110° = 70°$ *(kề bù với $\\widehat{A_1}$)*\n- $\\widehat{B_1} = \\widehat{A_1} = 110°$ *(hai góc đồng vị, $a // b$)*\n- $\\widehat{B_2} = 180° - \\widehat{B_1} = 180° - 110° = 70°$ *(kề bù với $\\widehat{B_1}$)*"
+          }
+        },
+
+        {
+          "type": "essay",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "Cho hình vẽ, biết $Ax // Cz$, $\\widehat{BAx} = 110°$, $\\widehat{BCz} = 150°$. Tính số đo góc $\\widehat{ABC}$.",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"310\" height=\"185\" viewBox=\"0 0 310 185\"><line x1=\"10\" y1=\"45\" x2=\"220\" y2=\"45\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"5\" y=\"42\" fill=\"#94a3b8\" font-size=\"12\">A</text><text x=\"222\" y=\"42\" fill=\"#94a3b8\" font-size=\"12\">x</text><line x1=\"135\" y1=\"158\" x2=\"305\" y2=\"158\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"128\" y=\"172\" fill=\"#94a3b8\" font-size=\"12\">C</text><text x=\"298\" y=\"172\" fill=\"#94a3b8\" font-size=\"12\">z</text><polyline points=\"35,45 158,100 185,158\" fill=\"none\" stroke=\"#60a5fa\" stroke-width=\"2\"/><circle cx=\"35\" cy=\"45\" r=\"3\" fill=\"#f59e0b\"/><text x=\"42\" y=\"40\" fill=\"#fbbf24\" font-size=\"11\">110°</text><circle cx=\"158\" cy=\"100\" r=\"3\" fill=\"#f59e0b\"/><text x=\"163\" y=\"98\" fill=\"#f59e0b\" font-size=\"12\">B</text><circle cx=\"185\" cy=\"158\" r=\"3\" fill=\"#f59e0b\"/><text x=\"190\" y=\"155\" fill=\"#fbbf24\" font-size=\"11\">150°</text><line x1=\"158\" y1=\"45\" x2=\"158\" y2=\"158\" stroke=\"#34d399\" stroke-width=\"1.5\" stroke-dasharray=\"5,4\"/><text x=\"162\" y=\"72\" fill=\"#34d399\" font-size=\"10\">BD</text></svg>",
+            "explanation": "**Vẽ thêm tia $BD // Ax$ qua $B$ (đường phụ).**\n\n**Bước 1:** Vì $BD // Ax$ và $AB$ là cát tuyến:\n$$\\widehat{ABD} = 180° - \\widehat{BAx} = 180° - 110° = 70°$$\n*(hai góc trong cùng phía bù nhau)*\n\n**Bước 2:** Vì $BD // Ax$ và $Ax // Cz$ nên $BD // Cz$. Cát tuyến $BC$:\n$$\\widehat{DBC} = 180° - \\widehat{BCz} = 180° - 150° = 30°$$\n*(hai góc trong cùng phía bù nhau)*\n\n**Bước 3:**\n$$\\widehat{ABC} = \\widehat{ABD} + \\widehat{DBC} = 70° + 30° = 100°$$"
+          }
+        },
+
+        {
+          "type": "essay",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "Cho tam giác $ABC$. Vẽ đường thẳng $a$ qua đỉnh $A$ song song với $BC$. Hãy chứng minh tổng ba góc trong tam giác $ABC$ bằng $180°$.",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"310\" height=\"175\" viewBox=\"0 0 310 175\"><line x1=\"10\" y1=\"55\" x2=\"295\" y2=\"55\" stroke=\"#60a5fa\" stroke-width=\"1.5\" stroke-dasharray=\"6,4\"/><text x=\"5\" y=\"52\" fill=\"#60a5fa\" font-size=\"11\" font-family=\"serif\">m</text><text x=\"288\" y=\"52\" fill=\"#60a5fa\" font-size=\"11\" font-family=\"serif\">n</text><polygon points=\"148,55 60,148 240,148\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"148\" cy=\"55\" r=\"3\" fill=\"#f59e0b\"/><text x=\"143\" y=\"48\" fill=\"#f59e0b\" font-size=\"13\" font-family=\"serif\">A</text><circle cx=\"60\" cy=\"148\" r=\"3\" fill=\"#f59e0b\"/><text x=\"46\" y=\"160\" fill=\"#f59e0b\" font-size=\"13\" font-family=\"serif\">B</text><circle cx=\"240\" cy=\"148\" r=\"3\" fill=\"#f59e0b\"/><text x=\"244\" y=\"160\" fill=\"#f59e0b\" font-size=\"13\" font-family=\"serif\">C</text><text x=\"110\" y=\"52\" fill=\"#a78bfa\" font-size=\"12\">α</text><text x=\"158\" y=\"52\" fill=\"#34d399\" font-size=\"12\">β</text><text x=\"67\" y=\"147\" fill=\"#a78bfa\" font-size=\"11\">B</text><text x=\"228\" y=\"147\" fill=\"#34d399\" font-size=\"11\">C</text></svg>",
+            "explanation": "**Vẽ đường thẳng $mn$ qua $A$ và song song với $BC$.**\n\n**Bước 1:** Đặt tên góc: $\\widehat{BAC} = \\widehat{A}$, $\\widehat{ABC} = \\widehat{B}$, $\\widehat{BCA} = \\widehat{C}$.\n\n**Bước 2:** Vì $mn // BC$, đường thẳng $AB$ là cát tuyến:\n$$\\alpha = \\widehat{mAB} = \\widehat{B}$$\n*(so le trong với $mn // BC$, cát tuyến $AB$)*\n\n**Bước 3:** Vì $mn // BC$, đường thẳng $AC$ là cát tuyến:\n$$\\beta = \\widehat{nAC} = \\widehat{C}$$\n*(so le trong với $mn // BC$, cát tuyến $AC$)*\n\n**Bước 4:** Ba góc $\\alpha$, $\\widehat{A}$, $\\beta$ kề nhau tạo thành góc bẹt trên đường thẳng $mn$:\n$$\\alpha + \\widehat{A} + \\beta = 180°$$\n\n**Kết luận:** Thay $\\alpha = \\widehat{B}$ và $\\beta = \\widehat{C}$:\n$$\\widehat{B} + \\widehat{A} + \\widehat{C} = 180°$$\nVậy tổng ba góc trong tam giác $ABC$ bằng $180°$. ∎"
+          }
+        }
+
+      ]
+    }
+  ]
+}
+

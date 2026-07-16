@@ -390,11 +390,24 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
       }
       case 'essay': {
         const essayExplanation = currentQuestion.explanation || currentQuestion.metadata_json?.explanation;
+        const essayImageUrl = currentQuestion.image_url || currentQuestion.metadata_json?.image_url;
         return (
           <div className="flex flex-col gap-6 p-6 bg-surface-raised/60 rounded-xl border border-line">
             <div className="text-white font-semibold text-base leading-relaxed">
               <MathText text={currentQuestion.question || currentQuestion.stem || ""} />
             </div>
+            {essayImageUrl && (
+              <div className="overflow-hidden rounded-2xl border border-white/10 bg-surface/50 flex justify-center p-4">
+                {essayImageUrl.startsWith('<svg') ? (
+                  <div
+                    className="max-h-[300px] w-full max-w-[420px] flex items-center justify-center"
+                    dangerouslySetInnerHTML={{ __html: essayImageUrl }}
+                  />
+                ) : (
+                  <img src={essayImageUrl} alt="Hình vẽ minh họa" className="max-h-[300px] object-contain rounded-xl" />
+                )}
+              </div>
+            )}
             <p className="text-xs text-slate-400 italic">Câu tự luận — nhập câu trả lời của em vào ô bên dưới.</p>
             {!essayDone ? (
               <div className="flex flex-col gap-3">
