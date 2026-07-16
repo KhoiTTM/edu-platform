@@ -20,18 +20,18 @@
     có ít nhất 1 đề riêng, Bài 4 có 2 đề).
   - `Toán 7 - Tập 1 - Góc và Tia Phân Giác` — `exam_type: lesson`, `units: [8]`, **25 câu** (20
     `multiple_choice` có hình vẽ SVG inline + 5 `essay` có hướng dẫn giải). Seed **2026-07-16**.
-  - `Toán 7 - Tập 1 - Bài 10 - Đề 1` — `exam_type: null`, `units: [10]`, **25 câu** (20
+  - `Toán 7 - Tập 1 - Tiên Đề Euclid` — `exam_type: lesson`, `units: [10]`, **25 câu** (20
     `multiple_choice` có SVG inline hình vẽ + 5 `essay` có hướng dẫn giải). Seed **2026-07-16**.
   - `Toán 7 - Ôn Lý Thuyết Tập 1` — `exam_type: review`, `units: [200]` (số ảo, không phải số
     bài thật — đánh dấu nhóm ôn tập lý thuyết, không phải luyện theo bài học).
   - `Kiểm Tra Giữa Kỳ 1` — `exam_type: final`, `units: [101]`.
   - `Toán 7 - Tập 1 - Bài 102 - Đề 1`, `Toán 7 - Thi HK1 - Đề 01` — cả hai `exam_type: review`,
     `units: [102]` (đề tổng hợp ôn thi HK1, không phải "bài 102" thật).
-- **Chưa làm**: Bài 6–9, 11 trở đi của Tập 1 (SGK Toán 7 Tập 1 — Kết nối tri thức — còn nhiều bài
+- **Chưa làm**: Bài 6–7, 9, 11 trở đi của Tập 1 (SGK Toán 7 Tập 1 — Kết nối tri thức — còn nhiều bài
   chưa có đề luyện tập riêng).
 - Nguồn soạn thảo (JSON): `content/exam-bank/toan7/` — gồm
   `toan7-hk1-de01/02/03.json`, `toan7-ly-thuyet-tap1.json`, `toan7-pilot-hk1.json`,
-  `toan7-review-hk1.json`, `toan7-bai10-tiende-euclid-de01.json`.
+  `toan7-review-hk1.json`, `toan7-bai10-tiende-euclid-de01.json`, `toan7-bai08-goc-tiaphangiac-de01.json`.
 - Script seed: `scripts/seed-exam-bank.ts content/exam-bank/toan7/<file>.json` (generator
   chuẩn, không có script riêng cho môn này).
 
