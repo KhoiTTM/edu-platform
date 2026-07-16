@@ -1,6 +1,6 @@
 {
   "collection": {
-    "title": "Toán 7 - Tập 1 - Bài 10 - Đề 1",
+    "title": "Toán 7 - Tập 1 - Tiên Đề Euclid",
     "subject_slug": "toan",
     "grade": 7,
     "volume": 1,
@@ -12,7 +12,7 @@
   "exams": [
     {
       "exam_number": 1,
-      "title": "Toán 7 - Tập 1 - Bài 10 - Đề 1",
+      "title": "Toán 7 - Tập 1 - Tiên Đề Euclid",
       "duration_minutes": 45,
       "questions": [
 
