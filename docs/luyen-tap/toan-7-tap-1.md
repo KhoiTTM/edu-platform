@@ -15,10 +15,12 @@
 
 ## 2. Trạng thái hiện tại (khảo sát trực tiếp Supabase — 2026-07-16)
 
-- **12 collections**, **129 exams** đã seed:
+- **13 collections**, **130 exams** đã seed:
   - `Toán 7 - Tập 1 - Bài {1,2,3,4,5} - Đề {N}` — `exam_type: null`, `units: [1]..[5]` (mỗi bài
     có ít nhất 1 đề riêng, Bài 4 có 2 đề).
   - `Toán 7 - Tập 1 - Góc và Tia Phân Giác` — `exam_type: lesson`, `units: [8]`, **25 câu** (20
+    `multiple_choice` có hình vẽ SVG inline + 5 `essay` có hướng dẫn giải). Seed **2026-07-16**.
+  - `Toán 7 - Tập 1 - 2 đường thẳng song song` — `exam_type: lesson`, `units: [9]`, **25 câu** (20
     `multiple_choice` có hình vẽ SVG inline + 5 `essay` có hướng dẫn giải). Seed **2026-07-16**.
   - `Toán 7 - Tập 1 - Tiên Đề Euclid` — `exam_type: lesson`, `units: [10]`, **25 câu** (20
     `multiple_choice` có SVG inline hình vẽ + 5 `essay` có hướng dẫn giải). Seed **2026-07-16**.
@@ -27,11 +29,12 @@
   - `Kiểm Tra Giữa Kỳ 1` — `exam_type: final`, `units: [101]`.
   - `Toán 7 - Tập 1 - Bài 102 - Đề 1`, `Toán 7 - Thi HK1 - Đề 01` — cả hai `exam_type: review`,
     `units: [102]` (đề tổng hợp ôn thi HK1, không phải "bài 102" thật).
-- **Chưa làm**: Bài 6–7, 9, 11 trở đi của Tập 1 (SGK Toán 7 Tập 1 — Kết nối tri thức — còn nhiều bài
+- **Chưa làm**: Bài 6–7, 11 trở đi của Tập 1 (SGK Toán 7 Tập 1 — Kết nối tri thức — còn nhiều bài
   chưa có đề luyện tập riêng).
 - Nguồn soạn thảo (JSON): `content/exam-bank/toan7/` — gồm
   `toan7-hk1-de01/02/03.json`, `toan7-ly-thuyet-tap1.json`, `toan7-pilot-hk1.json`,
-  `toan7-review-hk1.json`, `toan7-bai10-tiende-euclid-de01.json`, `toan7-bai08-goc-tiaphangiac-de01.json`.
+  `toan7-review-hk1.json`, `toan7-bai10-tiende-euclid-de01.json`, `toan7-bai08-goc-tiaphangiac-de01.json`,
+  `toan7-bai09-2duongthangsongsong-de01.json`.
 - Script seed: `scripts/seed-exam-bank.ts content/exam-bank/toan7/<file>.json` (generator
   chuẩn, không có script riêng cho môn này).
 
