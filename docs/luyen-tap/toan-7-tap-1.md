@@ -15,9 +15,11 @@
 
 ## 2. Trạng thái hiện tại (khảo sát trực tiếp Supabase — 2026-07-16)
 
-- **11 collections**, **128 exams** đã seed:
+- **12 collections**, **129 exams** đã seed:
   - `Toán 7 - Tập 1 - Bài {1,2,3,4,5} - Đề {N}` — `exam_type: null`, `units: [1]..[5]` (mỗi bài
     có ít nhất 1 đề riêng, Bài 4 có 2 đề).
+  - `Toán 7 - Tập 1 - Góc và Tia Phân Giác` — `exam_type: lesson`, `units: [8]`, **25 câu** (20
+    `multiple_choice` có hình vẽ SVG inline + 5 `essay` có hướng dẫn giải). Seed **2026-07-16**.
   - `Toán 7 - Tập 1 - Bài 10 - Đề 1` — `exam_type: null`, `units: [10]`, **25 câu** (20
     `multiple_choice` có SVG inline hình vẽ + 5 `essay` có hướng dẫn giải). Seed **2026-07-16**.
   - `Toán 7 - Ôn Lý Thuyết Tập 1` — `exam_type: review`, `units: [200]` (số ảo, không phải số

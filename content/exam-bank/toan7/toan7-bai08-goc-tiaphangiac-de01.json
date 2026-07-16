@@ -1,0 +1,369 @@
+{
+  "collection": {
+    "title": "Toán 7 - Tập 1 - Góc và Tia Phân Giác",
+    "subject_slug": "toan",
+    "grade": 7,
+    "volume": 1,
+    "units": [
+      8
+    ],
+    "sequence_number": 1,
+    "exam_type": "lesson",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 1,
+      "title": "Toán 7 - Tập 1 - Góc và Tia Phân Giác",
+      "duration_minutes": 45,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Thế nào là hai góc kề bù?",
+            "options": [
+              "Hai góc có một cạnh chung và có tổng số đo bằng $90°$.",
+              "Hai góc có một cạnh chung, hai cạnh còn lại là hai tia đối nhau.",
+              "Hai góc có tổng số đo bằng $180°$.",
+              "Hai góc đối nhau qua một đỉnh."
+            ],
+            "correct_index": 1,
+            "explanation": "Định nghĩa hai góc kề bù: Hai góc vừa kề nhau (có một cạnh chung, hai cạnh còn lại nằm về hai nửa mặt phẳng đối nhau) vừa bù nhau (có tổng số đo bằng $180°$). Biểu diễn hình học là hai góc có một cạnh chung, hai cạnh còn lại là hai tia đối nhau."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Khẳng định nào sau đây là đúng về hai góc đối đỉnh?",
+            "options": [
+              "Hai góc đối đỉnh thì bù nhau.",
+              "Hai góc đối đỉnh thì kề nhau.",
+              "Hai góc đối đỉnh thì bằng nhau.",
+              "Hai góc bằng nhau thì chắc chắn đối đỉnh."
+            ],
+            "correct_index": 2,
+            "explanation": "Theo tính chất của hai góc đối đỉnh: Hai góc đối đỉnh thì bằng nhau. Ngược lại, hai góc bằng nhau chưa chắc đã đối đỉnh."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cho $\\widehat{xOy} = 70°$. Góc kề bù với $\\widehat{xOy}$ có số đo là bao nhiêu?",
+            "options": [
+              "$20°$",
+              "$70°$",
+              "$110°$",
+              "$180°$"
+            ],
+            "correct_index": 2,
+            "explanation": "Vì hai góc kề bù có tổng số đo bằng $180°$, nên số đo góc kề bù với $\\widehat{xOy}$ là $180° - 70° = 110°$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Hai đường thẳng cắt nhau tạo thành bốn góc nhọn và tù (không tính góc bẹt). Nếu một trong các góc đó bằng $45°$, thì góc đối đỉnh với nó bằng:",
+            "options": [
+              "$45°$",
+              "$135°$",
+              "$90°$",
+              "$180°$"
+            ],
+            "correct_index": 0,
+            "explanation": "Hai góc đối đỉnh luôn có số đo bằng nhau, do đó góc đối đỉnh với góc $45°$ cũng có số đo bằng $45°$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Trong các hình vẽ dưới đây, hình nào thể hiện hai góc $\\widehat{xOz}$ và $\\widehat{zOy}$ kề bù?",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"400\" height=\"120\" viewBox=\"0 0 400 120\"><g stroke=\"#94a3b8\" stroke-width=\"1.5\" fill=\"none\"><line x1=\"20\" y1=\"100\" x2=\"100\" y2=\"100\"/><line x1=\"60\" y1=\"100\" x2=\"90\" y2=\"40\"/><text x=\"15\" y=\"115\" fill=\"#94a3b8\" font-size=\"10\">x</text><text x=\"95\" y=\"115\" fill=\"#94a3b8\" font-size=\"10\">y</text><text x=\"95\" y=\"35\" fill=\"#94a3b8\" font-size=\"10\">z</text><text x=\"58\" y=\"115\" fill=\"#94a3b8\" font-size=\"10\">O</text><text x=\"40\" y=\"15\" fill=\"#60a5fa\" font-size=\"12\">Hình 1</text></g><g stroke=\"#94a3b8\" stroke-width=\"1.5\" fill=\"none\"><line x1=\"140\" y1=\"100\" x2=\"240\" y2=\"100\"/><line x1=\"190\" y1=\"100\" x2=\"220\" y2=\"40\"/><text x=\"135\" y=\"115\" fill=\"#94a3b8\" font-size=\"10\">x</text><text x=\"245\" y=\"115\" fill=\"#94a3b8\" font-size=\"10\">y</text><text x=\"225\" y=\"35\" fill=\"#94a3b8\" font-size=\"10\">z</text><text x=\"188\" y=\"115\" fill=\"#94a3b8\" font-size=\"10\">O</text><text x=\"170\" y=\"15\" fill=\"#60a5fa\" font-size=\"12\">Hình 2</text></g><g stroke=\"#94a3b8\" stroke-width=\"1.5\" fill=\"none\"><line x1=\"280\" y1=\"100\" x2=\"340\" y2=\"100\"/><line x1=\"310\" y1=\"100\" x2=\"340\" y2=\"40\"/><line x1=\"310\" y1=\"100\" x2=\"280\" y2=\"40\"/><text x=\"275\" y=\"115\" fill=\"#94a3b8\" font-size=\"10\">x</text><text x=\"345\" y=\"115\" fill=\"#94a3b8\" font-size=\"10\">y</text><text x=\"345\" y=\"35\" fill=\"#94a3b8\" font-size=\"10\">z</text><text x=\"308\" y=\"115\" fill=\"#94a3b8\" font-size=\"10\">O</text><text x=\"300\" y=\"15\" fill=\"#60a5fa\" font-size=\"12\">Hình 3</text></g></svg>",
+            "options": [
+              "Hình 1",
+              "Hình 2",
+              "Hình 3",
+              "Không có hình nào"
+            ],
+            "correct_index": 1,
+            "explanation": "Ở Hình 2, hai tia $Ox$ và $Oy$ đối nhau tạo thành góc bẹt $xOy$, tia $Oz$ chung tạo thành hai góc $\\widehat{xOz}$ và $\\widehat{zOy}$ kề bù (có tổng bằng $180°$)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hình vẽ dưới đây. Cặp góc nào là cặp góc đối đỉnh?",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"250\" height=\"150\" viewBox=\"0 0 250 150\"><line x1=\"30\" y1=\"30\" x2=\"220\" y2=\"120\" stroke=\"#94a3b8\" stroke-width=\"2\"/><line x1=\"30\" y1=\"120\" x2=\"220\" y2=\"30\" stroke=\"#94a3b8\" stroke-width=\"2\"/><circle cx=\"125\" cy=\"75\" r=\"3\" fill=\"#f59e0b\"/><text x=\"122\" y=\"92\" fill=\"#f59e0b\" font-size=\"12\">O</text><text x=\"20\" y=\"25\" fill=\"#94a3b8\" font-size=\"11\">x</text><text x=\"225\" y=\"130\" fill=\"#94a3b8\" font-size=\"11\">x'</text><text x=\"225\" y=\"25\" fill=\"#94a3b8\" font-size=\"11\">y</text><text x=\"20\" y=\"130\" fill=\"#94a3b8\" font-size=\"11\">y'</text></svg>",
+            "options": [
+              "$\\widehat{xOy}$ và $\\widehat{yOx'}$",
+              "$\\widehat{xOy}$ và $\\widehat{x'Oy'}$",
+              "$\\widehat{xOy'}$ và $\\widehat{yOx'}$",
+              "$\\widehat{xOy}$ và $\\widehat{y'Ox'}$"
+            ],
+            "correct_index": 1,
+            "explanation": "Đường thẳng $xx'$ và $yy'$ cắt nhau tại $O$. Cặp góc đối đỉnh là $\\widehat{xOy}$ và $\\widehat{x'Oy'}$, hoặc $\\widehat{xOy'}$ và $\\widehat{x'Oy}$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Cho $\\widehat{xOy} = 120°$. Tia $Ot$ là tia phân giác của góc $xOy$. Số đo góc $\\widehat{xOt}$ là:",
+            "options": [
+              "$50°$",
+              "$60°$",
+              "$70°$",
+              "$120°$"
+            ],
+            "correct_index": 1,
+            "explanation": "Vì $Ot$ là tia phân giác của $\\widehat{xOy}$ nên $\\widehat{xOt} = \\widehat{tOy} = \\dfrac{1}{2} \\widehat{xOy} = \\dfrac{120°}{2} = 60°$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Tia $Ot$ là tia phân giác của góc $xOy$. Biết $\\widehat{xOt} = 40°$, số đo góc $xOy$ bằng:",
+            "options": [
+              "$20°$",
+              "$40°$",
+              "$80°$",
+              "$140°$"
+            ],
+            "correct_index": 2,
+            "explanation": "Vì $Ot$ là tia phân giác của $\\widehat{xOy}$ nên $\\widehat{xOy} = 2 \\cdot \\widehat{xOt} = 2 \\cdot 40° = 80°$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hai góc kề bù $\\widehat{xOy}$ và $\\widehat{yOz}$ sao cho $\\widehat{xOy} = 2\\widehat{yOz}$. Số đo góc $\\widehat{yOz}$ là:",
+            "options": [
+              "$60°$",
+              "$120°$",
+              "$90°$",
+              "$45°$"
+            ],
+            "correct_index": 0,
+            "explanation": "Vì $\\widehat{xOy}$ và $\\widehat{yOz}$ kề bù nên $\\widehat{xOy} + \\widehat{yOz} = 180°$. Thay $\\widehat{xOy} = 2\\widehat{yOz}$ ta được: $2\\widehat{yOz} + \\widehat{yOz} = 180° \\Rightarrow 3\\widehat{yOz} = 180° \\Rightarrow \\widehat{yOz} = 60°$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hình vẽ dưới đây, hai đường thẳng $aa'$ và $bb'$ cắt nhau tại $O$. Biết số đo góc $\\widehat{aOb} = 35°$. Hãy tìm số đo góc $x$ trong hình.",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"260\" height=\"140\" viewBox=\"0 0 260 140\"><line x1=\"20\" y1=\"30\" x2=\"240\" y2=\"110\" stroke=\"#94a3b8\" stroke-width=\"2\"/><line x1=\"20\" y1=\"110\" x2=\"240\" y2=\"30\" stroke=\"#94a3b8\" stroke-width=\"2\"/><text x=\"15\" y=\"25\" fill=\"#94a3b8\" font-size=\"11\">a</text><text x=\"245\" y=\"120\" fill=\"#94a3b8\" font-size=\"11\">a'</text><text x=\"245\" y=\"25\" fill=\"#94a3b8\" font-size=\"11\">b</text><text x=\"15\" y=\"120\" fill=\"#94a3b8\" font-size=\"11\">b'</text><circle cx=\"130\" cy=\"70\" r=\"3\" fill=\"#f59e0b\"/><text x=\"127\" y=\"88\" fill=\"#f59e0b\" font-size=\"12\">O</text><text x=\"145\" y=\"65\" fill=\"#fbbf24\" font-size=\"11\">35°</text><text x=\"95\" y=\"65\" fill=\"#fbbf24\" font-size=\"11\">x</text></svg>",
+            "options": [
+              "$x = 35°$",
+              "$x = 145°$",
+              "$x = 55°$",
+              "$x = 180°$"
+            ],
+            "correct_index": 0,
+            "explanation": "Góc $\\widehat{a'Ob'}$ và góc $\\widehat{aOb}$ là hai góc đối đỉnh. Do đó, $x = \\widehat{a'Ob'} = \\widehat{aOb} = 35°$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hai đường thẳng $AB$ và $CD$ cắt nhau tại $O$. Biết $\\widehat{AOC} - \\widehat{AOD} = 40°$. Số đo góc $\\widehat{AOC}$ là:",
+            "options": [
+              "$70°$",
+              "$110°$",
+              "$120°$",
+              "$140°$"
+            ],
+            "correct_index": 1,
+            "explanation": "Vì $AB$ và $CD$ cắt nhau nên $\\widehat{AOC}$ và $\\widehat{AOD}$ là hai góc kề bù $\\Rightarrow \\widehat{AOC} + \\widehat{AOD} = 180°$. Từ $\\widehat{AOC} - \\widehat{AOD} = 40°$, ta có hệ thức: $2\\widehat{AOC} = 180° + 40° = 220° \\Rightarrow \\widehat{AOC} = 110°$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho góc $\\widehat{xOy} = 80°$. Vẽ tia $Oz$ nằm giữa hai tia $Ox$ và $Oy$ sao cho $\\widehat{xOz} = 40°$. Khẳng định nào sau đây là **sai**?",
+            "options": [
+              "Tia $Oz$ là tia phân giác của góc $\\widehat{xOy}$.",
+              "$\\widehat{zOy} = 40°$.",
+              "$\\widehat{xOz} = \\widehat{zOy}$.",
+              "Tia $Oy$ là tia phân giác của góc $\\widehat{xOz}$."
+            ],
+            "correct_index": 3,
+            "explanation": "Vì tia $Oz$ nằm giữa $Ox, Oy$ và $\\widehat{xOz} = 40° = \\dfrac{1}{2}\\widehat{xOy}$ nên $Oz$ là tia phân giác của góc $xOy$. Từ đó $\\widehat{zOy} = 40°$. Khẳng định tia $Oy$ là phân giác của $\\widehat{xOz}$ là hoàn toàn sai."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Bốn đường thẳng phân biệt cắt nhau tại một điểm tạo thành bao nhiêu cặp góc đối đỉnh (không tính góc bẹt)?",
+            "options": [
+              "4 cặp",
+              "8 cặp",
+              "12 cặp",
+              "16 cặp"
+            ],
+            "correct_index": 2,
+            "explanation": "Với $n$ đường thẳng phân biệt cắt nhau tại một điểm, số cặp góc đối đỉnh tạo thành là $n(n - 1)$. Ở đây có $4$ đường thẳng, số cặp góc đối đỉnh là $4 \\cdot (4 - 1) = 12$ cặp."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hình vẽ dưới đây, tìm số đo góc $y$ biết góc kề bù với nó có số đo bằng $140°$.",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"250\" height=\"120\" viewBox=\"0 0 250 120\"><line x1=\"20\" y1=\"90\" x2=\"230\" y2=\"90\" stroke=\"#94a3b8\" stroke-width=\"2\"/><line x1=\"120\" y1=\"90\" x2=\"170\" y2=\"30\" stroke=\"#60a5fa\" stroke-width=\"2\"/><text x=\"15\" y=\"105\" fill=\"#94a3b8\" font-size=\"11\">x</text><text x=\"235\" y=\"105\" fill=\"#94a3b8\" font-size=\"11\">y'</text><text x=\"175\" y=\"25\" fill=\"#94a3b8\" font-size=\"11\">z</text><circle cx=\"120\" cy=\"90\" r=\"3\" fill=\"#f59e0b\"/><text x=\"115\" y=\"108\" fill=\"#f59e0b\" font-size=\"11\">O</text><text x=\"60\" y=\"80\" fill=\"#fbbf24\" font-size=\"11\">140°</text><text x=\"150\" y=\"80\" fill=\"#fbbf24\" font-size=\"11\">y</text></svg>",
+            "options": [
+              "$y = 40°$",
+              "$y = 140°$",
+              "$y = 50°$",
+              "$y = 90°$"
+            ],
+            "correct_index": 0,
+            "explanation": "Vì góc $140°$ và góc $y$ là hai góc kề bù nên $y = 180° - 140° = 40°$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho góc $\\widehat{mOn} = 50°$ và tia phân giác $Ot$ của góc đó như hình vẽ. Tính số đo góc $\\widehat{mOt}$.",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"220\" height=\"120\" viewBox=\"0 0 220 120\"><line x1=\"30\" y1=\"100\" x2=\"190\" y2=\"100\" stroke=\"#94a3b8\" stroke-width=\"2\"/><line x1=\"30\" y1=\"100\" x2=\"150\" y2=\"30\" stroke=\"#94a3b8\" stroke-width=\"2\"/><line x1=\"30\" y1=\"100\" x2=\"170\" y2=\"65\" stroke=\"#34d399\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><text x=\"195\" y=\"105\" fill=\"#94a3b8\" font-size=\"11\">n</text><text x=\"152\" y=\"25\" fill=\"#94a3b8\" font-size=\"11\">m</text><text x=\"175\" y=\"60\" fill=\"#34d399\" font-size=\"11\">t</text><circle cx=\"30\" cy=\"100\" r=\"3\" fill=\"#f59e0b\"/><text x=\"20\" y=\"105\" fill=\"#f59e0b\" font-size=\"11\">O</text></svg>",
+            "options": [
+              "$\\widehat{mOt} = 25°$",
+              "$\\widehat{mOt} = 50°$",
+              "$\\widehat{mOt} = 100°$",
+              "$\\widehat{mOt} = 15°$"
+            ],
+            "correct_index": 0,
+            "explanation": "Vì $Ot$ là tia phân giác của $\\widehat{mOn}$ nên $\\widehat{mOt} = \\widehat{tOn} = \\dfrac{1}{2}\\widehat{mOn} = \\dfrac{50°}{2} = 25°$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "Cho góc bẹt $\\widehat{xOy}$. Vẽ tia $Oz$ sao cho $\\widehat{xOz} = 80°$. Vẽ tia phân giác $Om$ của $\\widehat{xOz}$ và tia phân giác $On$ của $\\widehat{zOy}$. Tính số đo góc $\\widehat{mOn}$.",
+            "options": [
+              "$\\widehat{mOn} = 80°$",
+              "$\\widehat{mOn} = 90°$",
+              "$\\widehat{mOn} = 100°$",
+              "$\\widehat{mOn} = 45°$"
+            ],
+            "correct_index": 1,
+            "explanation": "Ta có $\\widehat{xOz}$ và $\\widehat{zOy}$ là hai góc kề bù nên $\\widehat{zOy} = 180° - 80° = 100°$. Vì $Om$ là phân giác của $\\widehat{xOz}$ nên $\\widehat{mOz} = 80° / 2 = 40°$. Vì $On$ là phân giác của $\\widehat{zOy}$ nên $\\widehat{zOn} = 100° / 2 = 50°$. Vì $Oz$ nằm giữa $Om$ và $On$ nên $\\widehat{mOn} = \\widehat{mOz} + \\widehat{zOn} = 40° + 50° = 90°$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "Góc tạo bởi hai tia phân giác của hai góc kề bù bằng bao nhiêu độ?",
+            "options": [
+              "$45°$",
+              "$60°$",
+              "$90°$",
+              "$180°$"
+            ],
+            "correct_index": 2,
+            "explanation": "Gọi hai góc kề bù là $\\widehat{xOy}$ và $\\widehat{yOz}$ với tia phân giác lần lượt là $Om$ và $On$. Ta có $\\widehat{mOn} = \\widehat{mOy} + \\widehat{yOn} = \\dfrac{1}{2}\\widehat{xOy} + \\dfrac{1}{2}\\widehat{yOz} = \\dfrac{1}{2}(\\widehat{xOy} + \\widehat{yOz}) = \\dfrac{1}{2} \\cdot 180° = 90°$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho góc bẹt $\\widehat{xOy}$, vẽ tia $Ot$ sao cho $\\widehat{xOt} = 150°$. Vẽ tia phân giác $Om$ của góc $\\widehat{xOt}$. Tính góc $\\widehat{mOy}$.",
+            "options": [
+              "$\\widehat{mOy} = 75°$",
+              "$\\widehat{mOy} = 105°$",
+              "$\\widehat{mOy} = 120°$",
+              "$\\widehat{mOy} = 135°$"
+            ],
+            "correct_index": 1,
+            "explanation": "Ta có $\\widehat{yOt}$ kề bù với $\\widehat{xOt}$ nên $\\widehat{yOt} = 180° - 150° = 30°$. Tia $Om$ là phân giác của $\\widehat{xOt}$ nên $\\widehat{mOt} = 150° / 2 = 75°$. Vì $Ot$ nằm giữa $Om$ và $Oy$ nên $\\widehat{mOy} = \\widehat{mOt} + \\widehat{yOt} = 75° + 30° = 105°$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "Cho góc $\\widehat{xOy}$ nhọn. Vẽ tia đối của $Ox$ là $Ox'$, tia đối của $Oy$ là $Oy'$. Vẽ tia phân giác $Ot$ của góc $\\widehat{xOy}$ và tia $Ot'$ là tia đối của $Ot$. Phát biểu nào sau đây là đúng?",
+            "options": [
+              "Tia $Ot'$ là tia phân giác của góc $\\widehat{x'Oy'}$.",
+              "Tia $Ot'$ là tia phân giác của góc $\\widehat{xOy'}$.",
+              "Tia $Ot'$ là tia phân giác của góc $\\widehat{x'Oy}$.",
+              "Tia $Ot'$ không là tia phân giác của góc nào cả."
+            ],
+            "correct_index": 0,
+            "explanation": "Vì $Ox'$ đối $Ox$, $Oy'$ đối $Oy$ nên góc $\\widehat{x'Oy'}$ đối đỉnh với $\\widehat{xOy}$, do đó $\\widehat{x'Oy'} = \\widehat{xOy}$. Khi vẽ tia đối $Ot'$ của phân giác $Ot$, ta có $\\widehat{x'Ot'} = \\widehat{xOt}$ và $\\widehat{y'Ot'} = \\widehat{yOt}$ (đối đỉnh). Vì $\\widehat{xOt} = \\widehat{yOt}$ nên $\\widehat{x'Ot'} = \\widehat{y'Ot'}$. Vậy $Ot'$ là phân giác của góc $\\widehat{x'Oy'}$."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hai đường thẳng $xx'$ và $yy'$ cắt nhau tại $O$ sao cho $xx' \\perp yy'$. Có bao nhiêu góc vuông (nhỏ hơn hoặc bằng $90°$) được tạo thành tại đỉnh $O$?",
+            "options": [
+              "1 góc",
+              "2 góc",
+              "3 góc",
+              "4 góc"
+            ],
+            "correct_index": 3,
+            "explanation": "Khi $xx' \\perp yy'$, tại đỉnh $O$ tạo thành 4 góc vuông kề nhau và đối đỉnh nhau là $\\widehat{xOy}, \\widehat{yOx'}, \\widehat{x'Oy'}, \\widehat{y'Ox}$, tất cả đều bằng $90°$."
+          }
+        },
+        {
+          "type": "essay",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hai góc kề bù $\\widehat{xOy}$ và $\\widehat{yOz}$ với $\\widehat{xOy} = 130°$.\na) Tính số đo góc $\\widehat{yOz}$.\nb) Vẽ tia phân giác $Om$ của $\\widehat{xOy}$ và tia phân giác $On$ của $\\widehat{yOz}$. Chứng minh rằng $Om \\perp On$.",
+            "explanation": "**a) Tính số đo góc $\\widehat{yOz}$:**\nVì $\\widehat{xOy}$ và $\\widehat{yOz}$ là hai góc kề bù nên:\n$$\\widehat{xOy} + \\widehat{yOz} = 180°$$\nThay số:\n$$130° + \\widehat{yOz} = 180° \\Rightarrow \\widehat{yOz} = 180° - 130° = 50°$$\n\n**b) Chứng minh $Om \\perp On$:**\n- Vì $Om$ là tia phân giác của $\\widehat{xOy}$ nên:\n$$\\widehat{yOm} = \\dfrac{1}{2} \\widehat{xOy} = \\dfrac{130°}{2} = 65°$$\n- Vì $On$ là tia phân giác của $\\widehat{yOz}$ nên:\n$$\\widehat{yOn} = \\dfrac{1}{2} \\widehat{yOz} = \\dfrac{50°}{2} = 25°$$\n- Vì tia $Oy$ nằm giữa hai tia $Om$ và $On$, ta có:\n$$\\widehat{mOn} = \\widehat{yOm} + \\widehat{yOn} = 65° + 25° = 90°$$\nDo $\\widehat{mOn} = 90°$ nên $Om \\perp On$."
+          }
+        },
+        {
+          "type": "essay",
+          "difficulty": 2,
+          "metadata_json": {
+            "question": "Cho hai đường thẳng $AB$ và $CD$ cắt nhau tại $O$. Biết tổng số đo của hai góc đối đỉnh $\\widehat{AOC}$ và $\\widehat{BOD}$ bằng $100°$. Tính số đo của bốn góc tạo thành.",
+            "explanation": "**Bước 1:** Xác định tính chất góc đối đỉnh.\nVì $\\widehat{AOC}$ và $\\widehat{BOD}$ là hai góc đối đỉnh nên:\n$$\\widehat{AOC} = \\widehat{BOD}$$\n\n**Bước 2:** Tính số đo $\\widehat{AOC}$ và $\\widehat{BOD}$.\nTheo đề bài:\n$$\\widehat{AOC} + \\widehat{BOD} = 100°$$\n$$\\Rightarrow 2\\widehat{AOC} = 100° \\Rightarrow \\widehat{AOC} = \\widehat{BOD} = 50°$$\n\n**Bước 3:** Tính số đo hai góc còn lại $\\widehat{AOD}$ và $\\widehat{BOC}$.\nTa có $\\widehat{AOD}$ kề bù với $\\widehat{AOC}$ nên:\n$$\\widehat{AOD} + \\widehat{AOC} = 180° \\Rightarrow \\widehat{AOD} = 180° - 50° = 130°$$\nVì $\\widehat{BOC}$ đối đỉnh với $\\widehat{AOD}$ nên:\n$$\\widehat{BOC} = \\widehat{AOD} = 130°$$\n\nVậy các góc tạo thành là: $\\widehat{AOC} = \\widehat{BOD} = 50°$ và $\\widehat{AOD} = \\widehat{BOC} = 130°$."
+          }
+        },
+        {
+          "type": "essay",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "Cho góc bẹt $\\widehat{AOB}$. Trên cùng một nửa mặt phẳng bờ $AB$, vẽ các tia $OC$ và $OD$ sao cho $\\widehat{AOC} = 50°$ và $\\widehat{BOD} = 50°$.\na) Chứng minh góc $\\widehat{AOC}$ và góc $\\widehat{BOD}$ không phải là hai góc đối đỉnh.\nb) Vẽ tia phân giác $OM$ của góc $\\widehat{COD}$. Chứng minh $OM \\perp AB$.",
+            "explanation": "**a) Chứng minh $\\widehat{AOC}$ và $\\widehat{BOD}$ không đối đỉnh:**\nHai góc đối đỉnh là hai góc mà mỗi cạnh của góc này là tia đối của một cạnh của góc kia. Ở đây, tia $OA$ và $OB$ là hai tia đối nhau (vì $\\widehat{AOB}$ bẹt), nhưng tia $OC$ và $OD$ nằm trên cùng một nửa mặt phẳng bờ $AB$ nên chúng không đối nhau. Do đó, $\\widehat{AOC}$ và $\\widehat{BOD}$ không phải là hai góc đối đỉnh.\n\n**b) Chứng minh $OM \\perp AB$:**\n- Trên nửa mặt phẳng bờ $AB$, ta có $\\widehat{AOC} = 50°$, mà $OD$ nằm trên nửa mặt phẳng này. Ta tính số đo góc $\\widehat{COD}$:\nVì tia $OC, OD$ nằm trên cùng nửa mặt phẳng bờ $AB$ và $\\widehat{AOC} + \\widehat{BOD} = 50° + 50° = 100° < 180°$, nên tia $OC, OD$ nằm giữa $OA, OB$. Do đó:\n$$\\widehat{COD} = 180° - (\\widehat{AOC} + \\widehat{BOD}) = 180° - 100° = 80°$$\n- Vì $OM$ là tia phân giác của $\\widehat{COD}$ nên:\n$$\\widehat{COM} = \\widehat{MOD} = \\dfrac{\\widehat{COD}}{2} = \\dfrac{80°}{2} = 40°$$\n- Tính số đo góc $\\widehat{AOM}$:\nVì tia $OC$ nằm giữa $OA$ và $OM$:\n$$\\widehat{AOM} = \\widehat{AOC} + \\widehat{COM} = 50° + 40° = 90°$$\nVì $\\widehat{AOM} = 90°$ nên $OM \\perp AB$."
+          }
+        },
+        {
+          "type": "essay",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "Cho góc $\\widehat{xOy} = 80°$. Vẽ tia $Oz$ là tia đối của tia $Ox$, tia $Ot$ là tia đối của tia $Oy$. Vẽ tia phân giác $Om$ của góc $\\widehat{xOy}$ và tia phân giác $On$ của góc $\\widehat{zOt}$. Hãy chứng minh $Om$ và $On$ là hai tia đối nhau.",
+            "image_url": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"280\" height=\"160\" viewBox=\"0 0 280 160\"><line x1=\"20\" y1=\"80\" x2=\"260\" y2=\"80\" stroke=\"#94a3b8\" stroke-width=\"2\"/><line x1=\"50\" y1=\"130\" x2=\"230\" y2=\"30\" stroke=\"#94a3b8\" stroke-width=\"2\"/><line x1=\"190\" y1=\"140\" x2=\"90\" y2=\"20\" stroke=\"#34d399\" stroke-width=\"1.5\"/><text x=\"265\" y=\"85\" fill=\"#94a3b8\" font-size=\"11\">x</text><text x=\"10\" y=\"85\" fill=\"#94a3b8\" font-size=\"11\">z</text><text x=\"235\" y=\"25\" fill=\"#94a3b8\" font-size=\"11\">y</text><text x=\"40\" y=\"140\" fill=\"#94a3b8\" font-size=\"11\">t</text><text x=\"80\" y=\"15\" fill=\"#34d399\" font-size=\"11\">m</text><text x=\"195\" y=\"150\" fill=\"#34d399\" font-size=\"11\">n</text><circle cx=\"140\" cy=\"80\" r=\"3\" fill=\"#f59e0b\"/><text x=\"137\" y=\"98\" fill=\"#f59e0b\" font-size=\"12\">O</text></svg>",
+            "explanation": "**Bước 1:** Phân tích góc đối đỉnh.\nVì $Oz$ là tia đối của $Ox$, $Ot$ là tia đối của $Oy$, nên góc $\\widehat{xOy}$ và $\\widehat{zOt}$ là hai góc đối đỉnh.\n$$\\Rightarrow \\widehat{zOt} = \\widehat{xOy} = 80°$$\n\n**Bước 2:** Tính số đo các góc phân giác.\n- $Om$ là tia phân giác của $\\widehat{xOy}$ nên:\n$$\\widehat{xOm} = \\widehat{mOy} = \\dfrac{80°}{2} = 40°$$\n- $On$ là tia phân giác của $\\widehat{zOt}$ nên:\n$$\\widehat{zOn} = \\widehat{nOt} = \\dfrac{80°}{2} = 40°$$\n\n**Bước 3:** Tính góc bẹt $\\widehat{mOn}$.\nTa có $\\widehat{xOz} = 180°$ (góc bẹt do $Oz$ là tia đối $Ox$). Tia $Om$ và $On$ nằm ở hai nửa mặt phẳng đối nhau bờ là đường thẳng $xz$.\nTa tính số đo góc $\\widehat{mOn}$:\nTia $Om$ và $On$ cùng với đường thẳng $xz$ tạo thành:\n$$\\widehat{mOn} = \\widehat{mOx} + \\widehat{xOt} + \\widehat{tOn}$$\nTrong đó:\n- $\\widehat{xOt} = 180° - \\widehat{xOy} = 180° - 80° = 100°$ (kề bù với $\\widehat{xOy}$).\n- $\\widehat{mOx} = 40°$.\n- $\\widehat{tOn} = 40°$.\nDo đó:\n$$\\widehat{mOn} = 40° + 100° + 40° = 180°$$\nVì góc $\\widehat{mOn} = 180°$ nên hai tia $Om$ và $On$ là hai tia đối nhau."
+          }
+        },
+        {
+          "type": "essay",
+          "difficulty": 3,
+          "metadata_json": {
+            "question": "Cho hai góc kề $\\widehat{AOB}$ và $\\widehat{BOC}$ có tổng số đo bằng $160°$, trong đó $\\widehat{AOB} - \\widehat{BOC} = 40°$.\na) Tính số đo góc $\\widehat{AOB}$ và $\\widehat{BOC}$.\nb) Vẽ tia $OD$ là tia đối của tia $OC$. Tính số đo góc $\\widehat{AOD}$.\nc) Vẽ tia phân giác $OM$ của góc $\\widehat{AOB}$. Tính số đo góc $\\widehat{DOM}$.",
+            "explanation": "**a) Tính số đo $\\widehat{AOB}$ và $\\widehat{BOC}$:**\nTa có:\n$$\\widehat{AOB} + \\widehat{BOC} = 160°$$\n$$\\widehat{AOB} - \\widehat{BOC} = 40°$$\nCộng hai đẳng thức:\n$$2\\widehat{AOB} = 200° \\Rightarrow \\widehat{AOB} = 100°$$\n$$\\Rightarrow \\widehat{BOC} = 160° - 100° = 60°$$\n\n**b) Tính số đo góc $\\widehat{AOD}$:**\nVì $OD$ là tia đối của $OC$ nên $\\widehat{COD} = 180°$ (góc bẹt).\nVì $\\widehat{AOB}$ và $\\widehat{BOC}$ kề nhau nên tia $OB$ nằm giữa $OA$ và $OC$.\nTa có:\n$$\\widehat{AOC} = \\widehat{AOB} + \\widehat{BOC} = 100° + 60° = 160°$$\nVì $OD$ là tia đối của $OC$ nên góc $\\widehat{AOD}$ và $\\widehat{AOC}$ kề bù:\n$$\\widehat{AOD} + \\widehat{AOC} = 180° \\Rightarrow \\widehat{AOD} = 180° - 160° = 20°$$\n\n**c) Tính góc $\\widehat{DOM}$:**\n- Vì $OM$ là tia phân giác của $\\widehat{AOB}$ nên:\n$$\\widehat{AOM} = \\dfrac{1}{2} \\widehat{AOB} = \\dfrac{100°}{2} = 50°$$\n- Do tia $OA$ nằm giữa hai tia $OD$ và $OM$, ta có:\n$$\\widehat{DOM} = \\widehat{AOD} + \\widehat{AOM} = 20° + 50° = 70°$$\nVậy $\\widehat{DOM} = 70°$."
+          }
+        }
+      ]
+    }
+  ]
+}
