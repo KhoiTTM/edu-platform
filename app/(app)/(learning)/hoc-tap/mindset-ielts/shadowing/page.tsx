@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
 import IELTSSkillsNav from '@/components/learning/IELTSSkillsNav';
-import { shadowingLessons } from '@/lib/shadowingData';
 
 export default async function ShadowingPage() {
   const supabase = await createClient();
@@ -16,7 +15,14 @@ export default async function ShadowingPage() {
   let lessons: any[] = [];
   
   if (source) {
-    // 2. Fetch all nodes for this source
+    // 2. Fetch all shadowing lessons from DB first to match slugs
+    const { data: dbLessons } = await supabase
+      .from('shadowing_lessons')
+      .select('slug');
+
+    const availableSlugs = new Set(dbLessons?.map(l => l.slug) || []);
+
+    // 3. Fetch all nodes for this source
     const { data: nodes } = await supabase
       .from('curriculum_nodes')
       .select('id, title, slug, type, sort_key, metadata')
@@ -25,7 +31,7 @@ export default async function ShadowingPage() {
 
     if (nodes) {
         lessons = nodes
-          .filter(n => n.type === 'lesson' && n.metadata?.skill_focus === 'shadowing' && !!shadowingLessons[n.slug])
+          .filter(n => n.type === 'lesson' && n.metadata?.skill_focus === 'shadowing' && availableSlugs.has(n.slug))
           .map(n => ({
             id: n.id,
             title: n.title,

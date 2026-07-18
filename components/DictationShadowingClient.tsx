@@ -5,9 +5,10 @@ import Link from "next/link";
 import { 
   Play, Pause, RotateCcw, Volume2, Mic, Square, CheckCircle, 
   Eye, RefreshCw, VolumeX, Sparkles, BookOpen, HelpCircle,
-  Languages, ChevronRight, ChevronLeft, Check, X, Info, Award, Headphones
+  Languages, ChevronRight, ChevronLeft, Check, X, Info, Award, Headphones, Loader2
 } from "lucide-react";
-import { shadowingLessons } from "@/lib/shadowingData";
+import { getShadowingLesson } from "@/lib/shadowingActions";
+import type { AdviceData, SentenceItem } from "@/lib/shadowingTypes";
 
 interface Props {
   backUrl?: string;
@@ -15,23 +16,39 @@ interface Props {
 }
 
 export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonSlug = "luyen-nghe-a2-tong-ket-2025" }: Props) {
+  const [lessonData, setLessonData] = useState<AdviceData | null>(null);
+  const [loadingLesson, setLoadingLesson] = useState(true);
+
   // 5-step flow: 1 | 2 | 3 | 4 (Dictation) | 5 (Shadowing)
   const [step, setStep] = useState<number>(1);
   
-  // Active lesson details
-  const lessonData = shadowingLessons[lessonSlug] || shadowingLessons["luyen-nghe-a2-tong-ket-2025"];
-  const { sentences, title, audio_url: youtubeVideoId } = lessonData;
-  
-  // Sentence state for Dictation & Shadowing steps (Step 4 & 5)
-  const [currentSentenceIndex, setCurrentSentenceIndex] = useState<number>(0);
-  const currentSentence = sentences[currentSentenceIndex];
-
   // YouTube Player States
   const [player, setPlayer] = useState<any>(null);
   const [playerReady, setPlayerReady] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0); // in seconds
   const [playbackRate, setPlaybackRate] = useState<number>(1);
+
+  // Load lesson data dynamically from server action
+  useEffect(() => {
+    async function fetchLesson() {
+      setLoadingLesson(true);
+      const data = await getShadowingLesson(lessonSlug);
+      if (data) {
+        setLessonData(data);
+      }
+      setLoadingLesson(false);
+    }
+    fetchLesson();
+  }, [lessonSlug]);
+
+  const sentences: SentenceItem[] = lessonData?.sentences || [];
+  const youtubeVideoId = lessonData?.audio_url || "";
+  const title = lessonData?.title || "";
+  
+  // Sentence state for Dictation & Shadowing steps (Step 4 & 5)
+  const [currentSentenceIndex, setCurrentSentenceIndex] = useState<number>(0);
+  const currentSentence = sentences[currentSentenceIndex];
 
   // Active sentence highlighting state in Step 1 & 2
   const [activeSentenceIndex, setActiveSentenceIndex] = useState<number | null>(null);
@@ -66,7 +83,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
   // Lần 2: 230400ms offset (starts at ~245.76s in video)
   // Lần 3: 460800ms offset (starts at ~476.16s in video)
   const getPlayOffsetSeconds = (activeStep: number): number => {
-    const period = lessonData.repeat_offset || 0;
+    const period = lessonData?.repeat_offset || 0;
     if (activeStep === 1) return 0;
     if (activeStep === 2) return period;
     if (activeStep === 3) return period * 2;
@@ -434,7 +451,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
             <span>Đáp án chuẩn:</span>
           </div>
           <p className="text-base text-slate-100">
-            {currentSentence.content.split(/\s+/).map((word, i) => {
+            {currentSentence.content.split(/\s+/).map((word: string, i: number) => {
               const clean = normalize(word);
               const wasTyped = userWords.includes(clean);
               return (
@@ -466,6 +483,15 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
       </div>
     );
   };
+
+  if (loadingLesson || !lessonData) {
+    return (
+      <div className="flex flex-col items-center justify-center py-20 min-h-[300px]">
+        <Loader2 className="animate-spin text-indigo-500 mb-4" size={40} />
+        <p className="text-slate-400 font-bold">Đang tải giáo trình nghe đuổi...</p>
+      </div>
+    );
+  }
 
   return (
     <div className="w-full space-y-6 select-none relative text-white">
@@ -686,7 +712,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
                 {dictationMode === "easy" ? (
                   /* Easy mode fill-in-the-blanks */
                   <div className="text-base leading-relaxed text-slate-100 select-text">
-                    {currentSentence.words.map((word) => {
+                    {currentSentence.words.map((word: any) => {
                       if (word.type === "BLANK") {
                         const isCorrect = easyChecked && easyInputs[word.key]?.trim().toLowerCase() === word.value.toLowerCase();
                         return (
