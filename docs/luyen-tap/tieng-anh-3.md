@@ -23,6 +23,11 @@
   10-77). Học sinh bấm "Luyện đề Ngẫu nhiên" để random 1 trong 15 đề, mỗi đề 20 câu rải đều
   ~2 câu/unit, kết hợp `multiple_choice`/`fill_blank`/`matching`. Nguồn soạn:
   `content/exam-bank/tieng-anh/tienganh3-hk1-review-full.json`.
+  **Lưu ý quan trọng:** MỌI đề trong bộ này đều phủ đều cả 10 unit (2 câu/unit/đề), KHÔNG có đề
+  nào chỉ tập trung vào 1 nhóm unit hẹp — dù ban đầu tiêu đề 9/15 đề ghi kiểu "Đề 1 (Unit 1-3)"
+  gây hiểu nhầm là đề đó chỉ hỏi unit 1-3. Đã sửa lại tiêu đề ngày 2026-07-15 để khớp thực tế
+  (xem mục 5). Nếu cần đề ôn tập CHỈ riêng 1 nhóm unit hẹp (không phủ hết 10 unit), phải soạn
+  JSON mới, không dùng lại bộ này.
 - Trạng thái trước khi xoá (2026-07-10): 121 collections, 121 exams, 2416 câu hỏi — 120
   collection `exam_type: null` (10 unit) sinh bằng procedural script + 1 collection
   `exam_type: midterm` lạc (đã xoá riêng trước, xem mục 5).
@@ -99,6 +104,19 @@
 - `content/assessments/imported/imported_2026_05_28_tienganh3_1.json` cho thấy môn này từng
   dùng cả luồng import phụ (Gemini Pro Web, xem `content/assessments/AGENT_INSTRUCTIONS.md`)
   song song với procedural — không liên quan tới đợt xoá này, vẫn còn trong repo.
+
+- **2026-07-15 — Sửa tiêu đề gây hiểu nhầm phạm vi unit trong bộ "Ôn tập tổng hợp":** phát hiện
+  khi kiểm tra lại theo yêu cầu người phụ trách rằng 9/15 đề có tiêu đề dạng "Đề N (Unit X-Y)"
+  (VD "Đề 1 (Unit 1-3)", "Đề 6 (Unit 1-5 (đợt 2))") dù nội dung thật bên trong luôn rải đều
+  2 câu cho MỌI unit 1-10 (verify bằng cách đếm tag `unit-N` trong JSON: đúng 2 câu/unit cho
+  mọi đề, không lệch). Đã đổi tên: Đề 1-9 bỏ hẳn phần "(Unit X-Y)" (chỉ còn "Đề N"); Đề 10-15
+  vốn đã ghi đúng "(Tổng hợp Unit 1-10)" nên giữ nguyên, chỉ bỏ phần số đề trùng lặp
+  "(đề N)" lồng bên trong ngoặc. Sửa trực tiếp trong
+  `content/exam-bank/tieng-anh/tienganh3-hk1-review-full.json` rồi chạy lại
+  `scripts/seed-exam-bank.ts` (idempotent — xoá câu cũ của từng exam, tạo lại, không tăng số
+  lượng collection/exam). Bài học: khi soạn tiêu đề đề "ôn tập tổng hợp", đừng gợi ý phạm vi
+  unit hẹp nếu nội dung thật sẽ luôn phủ đều toàn bộ chương trình — gây kỳ vọng sai cho người
+  dùng đề (phụ huynh/học sinh chọn đề tưởng đang ôn trọng tâm 1 nhóm unit).
 
 ## 6. Hướng soạn lại (khi thiết kế lại "Luyện tập theo sách bài tập")
 

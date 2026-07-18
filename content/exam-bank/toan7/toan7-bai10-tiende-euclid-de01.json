@@ -220,15 +220,15 @@
           "type": "multiple_choice",
           "difficulty": 2,
           "metadata_json": {
-            "question": "Cho hình vẽ: $\\widehat{C} = 115°$, $\\widehat{D} = 65°$, $\\widehat{B} = 50°$ (đường thẳng $c$ cắt $a$ tại $A$, $b$ tại $B$, $C$). Chứng minh $a // b$ — câu hỏi: vì sao $a // b$?",
+            "question": "Đường thẳng $c$ cắt hai đường thẳng $a$ và $b$ lần lượt tại $A$ và $B$. Biết $\\widehat{A} = 115°$ và $\\widehat{B} = 65°$ là hai góc trong cùng phía. Vì sao $a // b$?",
             "options": [
-              "Vì $\\widehat{B} = \\widehat{D} = 65°$ (so le trong).",
-              "Vì $\\widehat{B} + \\widehat{C} = 50° + 115° = 165° \\neq 180°$, nên không song song.",
-              "Vì $\\widehat{D} + \\widehat{B} = 65° + 50° = 115°$ (đồng vị bằng nhau không?).",
-              "Vì $\\widehat{B}$ và $\\widehat{D}$ là hai góc so le trong bằng nhau ($50°$... không đủ dữ liệu)."
+              "Vì $\\widehat{A} + \\widehat{B} = 115° + 65° = 180°$, hai góc trong cùng phía bù nhau.",
+              "Vì $\\widehat{A} = \\widehat{B}$, hai góc so le trong bằng nhau.",
+              "Vì $\\widehat{A} - \\widehat{B} = 50°$, hai góc đồng vị bằng nhau.",
+              "Vì $\\widehat{A} + \\widehat{B} = 180°$ nên $a$ vuông góc với $b$."
             ],
             "correct_index": 0,
-            "explanation": "Nhìn hình: $\\widehat{B} = 50°$ và $\\widehat{D} = 65°$... Thực ra theo đề gốc (trang 2 tài liệu): $\\widehat{C} = 115°$, $\\widehat{D} = 65°$, $\\widehat{B} = 50°$. Ta có $\\widehat{B} + \\widehat{C} = 50° + 115° = 165°$ (không bù nhau). Xét $\\widehat{D}$ và $\\widehat{B}$: $\\widehat{D} = 65°$. Vì $\\widehat{B} + \\widehat{D} = 50° + 65° = 115° \\neq 180°$. Thực chất đề hỏi dấu hiệu nào đúng. Vì $\\widehat{C} + \\widehat{D} = 115° + 65° = 180°$ → hai góc kề bù tại $D$ → đường $c$ cắt $b$ tại $C$ tạo góc $\\widehat{BCD}$... Đáp án đúng nhất: $a // b$ vì hai góc so le trong bằng nhau."
+            "explanation": "$\\widehat{A}$ và $\\widehat{B}$ là hai góc trong cùng phía tạo bởi đường thẳng $c$ cắt $a$ và $b$. Ta có $\\widehat{A} + \\widehat{B} = 115° + 65° = 180°$, tức hai góc trong cùng phía bù nhau. Theo dấu hiệu nhận biết hai đường thẳng song song, suy ra $a // b$."
           }
         },
 

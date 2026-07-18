@@ -36,7 +36,12 @@
   tranh cần seed).
 - Ràng buộc bản quyền: đây là dạng "bám sách bài tập 1-1" — **được chép nguyên văn đề bài**
   từ sách (khác quy tắc "phải soạn mới" áp dụng cho ngân hàng câu hỏi như Toán 7/Toán 3).
-  Có nút "Xem sách" (`sourceBookUrl`) trỏ ra bản scan gốc trên Google Drive.
+  Trang làm bài (`app/(app)/(assessment)/test-assessment/page.tsx`) nhúng thẳng bản scan gốc
+  qua Google Drive iframe (`/preview`) trong layout chia đôi 50:50 (sách bên trái, phần luyện
+  tập bên phải), có nút "Ẩn Sách / Hiện Sách" để học sinh lấy toàn bộ không gian khi không cần
+  xem sách — không còn dùng nút "Xem sách" mở tab mới (`sourceBookUrl` không còn được truyền
+  cho môn này, dù prop vẫn tồn tại trong `AssessmentRenderer` cho các flipbook khác).
+  Link Drive hiện tại: xem `BOOK_SOURCE_URLS["tieng-anh-7"]` trong chính file trang đó.
 - Dạng bài không thể chấm tự động (`word_search`, `underline_classify`, `paragraph_ordering`,
   `error_identification`, `synonym_finding`, luyện phát âm tự do...) bị `skip` có ghi log lý
   do, KHÔNG đưa vào DB — vẫn còn nguyên trong file JSON gốc làm tham khảo.

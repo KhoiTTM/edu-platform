@@ -15,7 +15,7 @@
   "exams": [
     {
       "exam_number": 1,
-      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 1 (Unit 1-3)",
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 1",
       "questions": [
         {
           "type": "multiple_choice",
@@ -367,7 +367,7 @@
     },
     {
       "exam_number": 2,
-      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 2 (Unit 4-5)",
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 2",
       "questions": [
         {
           "type": "multiple_choice",
@@ -731,7 +731,7 @@
     },
     {
       "exam_number": 3,
-      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 3 (Unit 6-7)",
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 3",
       "questions": [
         {
           "type": "fill_blank",
@@ -1166,7 +1166,7 @@
     },
     {
       "exam_number": 4,
-      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 4 (Unit 8-9)",
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 4",
       "questions": [
         {
           "type": "fill_blank",
@@ -1522,7 +1522,7 @@
     },
     {
       "exam_number": 5,
-      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 5 (Unit 10 + tổng hợp 1-3)",
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 5",
       "questions": [
         {
           "type": "fill_blank",
@@ -1896,7 +1896,7 @@
     },
     {
       "exam_number": 6,
-      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 6 (Unit 1-5 (đợt 2))",
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 6",
       "questions": [
         {
           "type": "multiple_choice",
@@ -2278,7 +2278,7 @@
     },
     {
       "exam_number": 7,
-      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 7 (Unit 6-10 (đợt 2))",
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 7",
       "questions": [
         {
           "type": "matching",
@@ -2638,7 +2638,7 @@
     },
     {
       "exam_number": 8,
-      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 8 (Unit 1-3 + 8-10)",
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 8",
       "questions": [
         {
           "type": "fill_blank",
@@ -2992,7 +2992,7 @@
     },
     {
       "exam_number": 9,
-      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 9 (Unit 4-7)",
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 9",
       "questions": [
         {
           "type": "fill_blank",
@@ -3342,7 +3342,7 @@
     },
     {
       "exam_number": 10,
-      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 10 (Tổng hợp Unit 1-10 (đề 10))",
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 10 (Tổng hợp Unit 1-10)",
       "questions": [
         {
           "type": "fill_blank",
@@ -3704,7 +3704,7 @@
     },
     {
       "exam_number": 11,
-      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 11 (Tổng hợp Unit 1-10 (đề 11))",
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 11 (Tổng hợp Unit 1-10)",
       "questions": [
         {
           "type": "fill_blank",
@@ -4062,7 +4062,7 @@
     },
     {
       "exam_number": 12,
-      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 12 (Tổng hợp Unit 1-10 (đề 12))",
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 12 (Tổng hợp Unit 1-10)",
       "questions": [
         {
           "type": "matching",
@@ -4431,7 +4431,7 @@
     },
     {
       "exam_number": 13,
-      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 13 (Tổng hợp Unit 1-10 (đề 13))",
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 13 (Tổng hợp Unit 1-10)",
       "questions": [
         {
           "type": "multiple_choice",
@@ -4781,7 +4781,7 @@
     },
     {
       "exam_number": 14,
-      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 14 (Tổng hợp Unit 1-10 (đề 14))",
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 14 (Tổng hợp Unit 1-10)",
       "questions": [
         {
           "type": "multiple_choice",
@@ -5132,7 +5132,7 @@
     },
     {
       "exam_number": 15,
-      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 15 (Tổng hợp Unit 1-10 (đề 15))",
+      "title": "Ôn tập tổng hợp Học kỳ 1 - Đề 15 (Tổng hợp Unit 1-10)",
       "questions": [
         {
           "type": "multiple_choice",

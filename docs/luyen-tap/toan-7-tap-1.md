@@ -13,9 +13,9 @@
   (1 concept/bài → nhiều đề "Đề 1", "Đề 2"...), cộng thêm các collection tổng hợp
   `exam_type: review/final` (ôn tập, kiểm tra giữa kỳ, thi HK1) gộp nhiều bài lại.
 
-## 2. Trạng thái hiện tại (khảo sát trực tiếp Supabase — 2026-07-16)
+## 2. Trạng thái hiện tại (khảo sát trực tiếp Supabase — 2026-07-17)
 
-- **13 collections**, **130 exams** đã seed:
+- **10 collections**, **125 exams** đã seed:
   - `Toán 7 - Tập 1 - Bài {1,2,3,4,5} - Đề {N}` — `exam_type: null`, `units: [1]..[5]` (mỗi bài
     có ít nhất 1 đề riêng, Bài 4 có 2 đề).
   - `Toán 7 - Tập 1 - Góc và Tia Phân Giác` — `exam_type: lesson`, `units: [8]`, **25 câu** (20
@@ -23,18 +23,25 @@
   - `Toán 7 - Tập 1 - 2 đường thẳng song song` — `exam_type: lesson`, `units: [9]`, **25 câu** (20
     `multiple_choice` có hình vẽ SVG inline + 5 `essay` có hướng dẫn giải). Seed **2026-07-16**.
   - `Toán 7 - Tập 1 - Tiên Đề Euclid` — `exam_type: lesson`, `units: [10]`, **25 câu** (20
-    `multiple_choice` có SVG inline hình vẽ + 5 `essay` có hướng dẫn giải). Seed **2026-07-16**.
+    `multiple_choice` có SVG inline hình vẽ + 5 `essay` có hướng dẫn giải). Seed **2026-07-16**,
+    sửa lỗi câu 13 (dữ liệu đề mâu thuẫn với đáp án) **2026-07-17**.
   - `Toán 7 - Ôn Lý Thuyết Tập 1` — `exam_type: review`, `units: [200]` (số ảo, không phải số
-    bài thật — đánh dấu nhóm ôn tập lý thuyết, không phải luyện theo bài học).
-  - `Kiểm Tra Giữa Kỳ 1` — `exam_type: final`, `units: [101]`.
-  - `Toán 7 - Tập 1 - Bài 102 - Đề 1`, `Toán 7 - Thi HK1 - Đề 01` — cả hai `exam_type: review`,
-    `units: [102]` (đề tổng hợp ôn thi HK1, không phải "bài 102" thật).
+    bài thật — đánh dấu nhóm ôn tập lý thuyết, không phải luyện theo bài học). Đây là
+    **collection duy nhất còn lại** thuộc nhóm "Ôn tập" sau dọn dẹp 2026-07-17 (xem mục 5).
+- **Đã xóa 2026-07-17** (rác/trùng lặp, xem mục 5 để biết lý do):
+  - Collection trùng `Toán 7 - Tập 1 - Bài 10 - Đề 1` (units `[10]`, bản cũ của Tiên Đề Euclid
+    trước khi đổi tên, chứa câu 13 lỗi).
+  - Collection rác `Toán 7 - Tập 1 - Bài 102 - Đề 1` (units `[102]`, exam chỉ có 1 câu, dở dang,
+    không có file JSON nguồn).
+  - Collection `Kiểm Tra Giữa Kỳ 1` (units `[101]`, exam_type `final`, 25 câu).
+  - Collection `Toán 7 - Thi HK1 - Đề 01` (units `[102]`, exam_type `review`, 3 đề tổng 49 câu).
 - **Chưa làm**: Bài 6–7, 11 trở đi của Tập 1 (SGK Toán 7 Tập 1 — Kết nối tri thức — còn nhiều bài
   chưa có đề luyện tập riêng).
 - Nguồn soạn thảo (JSON): `content/exam-bank/toan7/` — gồm
-  `toan7-hk1-de01/02/03.json`, `toan7-ly-thuyet-tap1.json`, `toan7-pilot-hk1.json`,
-  `toan7-review-hk1.json`, `toan7-bai10-tiende-euclid-de01.json`, `toan7-bai08-goc-tiaphangiac-de01.json`,
-  `toan7-bai09-2duongthangsongsong-de01.json`.
+  `toan7-ly-thuyet-tap1.json`, `toan7-bai08-goc-tiaphangiac-de01.json`,
+  `toan7-bai09-2duongthangsongsong-de01.json`, `toan7-bai10-tiende-euclid-de01.json`.
+  (Các file `toan7-hk1-de01/02/03.json`, `toan7-pilot-hk1.json`, `toan7-review-hk1.json` đã bị
+  **xóa 2026-07-17** cùng lúc với việc xóa các collection tương ứng trong DB — xem mục 5.)
 - Script seed: `scripts/seed-exam-bank.ts content/exam-bank/toan7/<file>.json` (generator
   chuẩn, không có script riêng cho môn này).
 
@@ -65,6 +72,24 @@
 
 ## 5. Lịch sử / ghi chú quan trọng
 
+- **2026-07-17 — Sửa câu 13 "Tiên Đề Euclid" + dọn dẹp collection trùng/rác:**
+  - Câu 13 gốc (`toan7-bai10-tiende-euclid-de01.json`) có dữ liệu mâu thuẫn nội bộ: option A ghi
+    $\widehat{B} = 65°$ trong khi đề bài cho $\widehat{B} = 50°$, và phần `explanation` tự thừa
+    nhận không chắc chắn ("Đáp án đúng nhất..."). Đã viết lại câu hỏi với số liệu nhất quán
+    (hai góc trong cùng phía $115° + 65° = 180°$), seed lại đè lên exam cũ.
+  - Trong lúc kiểm tra phát hiện **collection trùng lặp**: `Toán 7 - Tập 1 - Bài 10 - Đề 1`
+    (cùng `units: [10]`) là bản còn sót lại từ trước khi đổi tên thành "Tiên Đề Euclid", vẫn
+    chứa câu 13 lỗi, không có file JSON nguồn tương ứng → xác nhận là rác, đã xóa thẳng khỏi DB
+    (collection + exam + 25 câu hỏi liên quan).
+  - Rà thêm phần "Ôn tập" (`exam_type` review/midterm/final/exam), phát hiện thêm 1 cặp trùng:
+    `Toán 7 - Tập 1 - Bài 102 - Đề 1` (exam chỉ có **1 câu**, dở dang) trùng tên exam với
+    `Toán 7 - Thi HK1 - Đề 01` (bản đủ 16 câu) — không có file JSON nguồn nào seed ra bản 1 câu
+    → xác nhận rác, đã xóa.
+  - Theo yêu cầu người phụ trách môn, xóa luôn toàn bộ 2 collection `Kiểm Tra Giữa Kỳ 1` (25
+    câu) và `Toán 7 - Thi HK1 - Đề 01` (3 đề, 49 câu) khỏi DB — không giữ lại. Xóa kèm 5 file
+    JSON nguồn mồ côi tương ứng (`toan7-hk1-de01/02/03.json`, `toan7-pilot-hk1.json`,
+    `toan7-review-hk1.json`) để tránh seed nhầm lại sau này. Chỉ còn `Toán 7 - Ôn Lý Thuyết
+    Tập 1` trong nhóm "Ôn tập".
 - **2026-07-10 — QC "Ôn Lý Thuyết Tập 1":** rà toàn bộ 200 câu, không phát hiện lỗi đáp án
   toán học nào (đã tính lại từng phép tính). Phát hiện 70/200 câu lặp lại y hệt giữa các đề
   (đề 1≈5≈9, 2≈6≈10, 3≈7, 4≈8) — theo quyết định của người phụ trách môn, **giữ nguyên không
