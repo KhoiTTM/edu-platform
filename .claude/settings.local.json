@@ -47,7 +47,12 @@
       "Bash(npm install *)",
       "Bash(curl -s -D - -o /dev/null \"http://localhost:3002/review\")",
       "Bash(npx --yes playwright --version)",
-      "Bash(python3 -c ' *)"
+      "Bash(python3 -c ' *)",
+      "Bash(rm content/exam-bank/toan7/toan7-hk1-de01.json content/exam-bank/toan7/toan7-hk1-de02.json content/exam-bank/toan7/toan7-hk1-de03.json content/exam-bank/toan7/toan7-pilot-hk1.json content/exam-bank/toan7/toan7-review-hk1.json)",
+      "Bash(rm -f scripts/_tmp-verify-clean.ts)",
+      "mcp__claude_ai_Google_Drive__read_file_content",
+      "mcp__claude_ai_Google_Drive__search_files",
+      "Bash(xargs grep -l \"loading\")"
     ],
     "additionalDirectories": [
       "/tmp",
