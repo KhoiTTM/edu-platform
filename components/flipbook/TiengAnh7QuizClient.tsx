@@ -33,8 +33,8 @@ interface Props {
   pdfUrl?: string;
 }
 
-function normalize(s: string): string {
-  return s.trim().toLowerCase().replace(/\s+/g, " ").replace(/[.,!?]+$/, "");
+function normalize(s: string | undefined | null): string {
+  return (s || "").trim().toLowerCase().replace(/\s+/g, " ").replace(/[.,!?]+$/, "");
 }
 
 function OpenBookLink({ pdfUrl, page }: { pdfUrl?: string; page?: number }) {

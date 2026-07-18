@@ -19,18 +19,21 @@ export default async function StudentLayout({
   } = await supabase.auth.getUser();
   if (!user) redirect("/login");
 
-  const { data: profile } = await supabase
-    .from("profiles")
-    .select("display_name, grade, role")
-    .eq("id", user.id)
-    .single();
+  const [profileRes, gamificationRes] = await Promise.all([
+    supabase
+      .from("profiles")
+      .select("display_name, grade, role")
+      .eq("id", user.id)
+      .single(),
+    supabase
+      .from("gamification_profiles")
+      .select("xp, level, rank, streak, energy")
+      .eq("user_id", user.id)
+      .maybeSingle()
+  ]);
 
-  const { data: gamificationData } = await supabase
-    .from("gamification_profiles")
-    .select("xp, level, rank, streak, energy")
-    .eq("user_id", user.id)
-    .maybeSingle();
-
+  const profile = profileRes.data;
+  const gamificationData = gamificationRes.data;
   const gamification = gamificationData || { xp: 0, level: 1, energy: 5 };
 
   const name = profile?.display_name ?? user.email?.split("@")[0] ?? "Student";

@@ -15,12 +15,14 @@ export default async function DashboardPage() {
     redirect("/login");
   }
 
-  // Fetch all dashboard data in parallel
-  const [profileRes, statsRes, sessionsRes, quizRes] = await Promise.all([
+  // Fetch all dashboard data in parallel — including tasks to avoid waterfalls
+  const [profileRes, statsRes, sessionsRes, quizRes, todayTasks, pendingOldTasks] = await Promise.all([
     supabase.from("profiles").select("grade, display_name").eq("id", user.id).single(),
     supabase.from("user_dashboard_stats").select("*").eq("user_id", user.id).single(),
     supabase.from("learning_sessions").select("*").eq("user_id", user.id).order("started_at", { ascending: false }).limit(20),
     supabase.from("quiz_attempts").select("id, score, total, created_at, quizzes(title, lessons(subject_slug))").eq("user_id", user.id).order("created_at", { ascending: false }).limit(20),
+    getTodayTasks(),
+    getPendingTasks(),
   ]);
 
   const profile = profileRes.data;
@@ -80,25 +82,27 @@ export default async function DashboardPage() {
     }
   }
 
-  // Fetch next lesson recommendations for each recent activity
-  for (const activity of recentSessionsList) {
-    const match = activity.title.match(/(?:Bài|Unit|Ex)\s*(\d+)/i);
-    if (match) {
-      const nextUnitNum = parseInt(match[1]) + 1;
-      const { data: nextCol } = await supabase
-        .from('assessment_collections')
-        .select('exams(id)')
-        .eq('subject_slug', activity.subject)
-        .contains('units', [nextUnitNum])
-        .limit(1)
-        .single();
-        
-      if (nextCol && nextCol.exams && nextCol.exams.length > 0) {
-        activity.nextUnit = nextUnitNum;
-        activity.nextExamId = (nextCol.exams[0] as any).id;
+  // Fetch next lesson recommendations for each recent activity — IN PARALLEL (no waterfall)
+  await Promise.all(
+    recentSessionsList.map(async (activity) => {
+      const match = activity.title.match(/(?:Bài|Unit|Ex)\s*(\d+)/i);
+      if (match) {
+        const nextUnitNum = parseInt(match[1]) + 1;
+        const { data: nextCol } = await supabase
+          .from('assessment_collections')
+          .select('exams(id)')
+          .eq('subject_slug', activity.subject)
+          .contains('units', [nextUnitNum])
+          .limit(1)
+          .maybeSingle();
+
+        if (nextCol && nextCol.exams && (nextCol.exams as any[]).length > 0) {
+          activity.nextUnit = nextUnitNum;
+          activity.nextExamId = ((nextCol.exams as any[])[0]).id;
+        }
       }
-    }
-  }
+    })
+  );
 
   const coreSubjects = grade === 7
     ? [
@@ -141,9 +145,7 @@ export default async function DashboardPage() {
     };
   });
 
-  // Fetch today's assigned tasks from parent
-  const todayTasks = await getTodayTasks();
-  const pendingOldTasks = await getPendingTasks();
+  // Tasks already fetched in parallel above
 
   // Merge: show today tasks first, then any unfinished from previous days (hide completed tasks)
   const allTasksMap = new Map<string, any>();

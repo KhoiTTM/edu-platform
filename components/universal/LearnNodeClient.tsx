@@ -3,14 +3,35 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { ChevronRight, Home, Layout, BookOpen, Trophy, ArrowRight, Loader2, Sparkles, Award, CheckCircle2, XCircle, HelpCircle, FileText, Copy, Terminal, Compass, Check } from "lucide-react";
 import Link from "next/link";
-import { AssessmentRenderer } from "./AssessmentRenderer";
-import { AssessmentResultCard } from "../assessment/AssessmentResultCard";
-import { WorkbookAnswerSheet } from "./WorkbookAnswerSheet";
-import { CurriculumMap } from "./CurriculumMap";
-import { TiengVietLessonView } from "./TiengVietLessonView";
+import dynamic from "next/dynamic";
 import { useRouter, usePathname } from "next/navigation";
-import { getFallbackQuestionsForUnit, getCumulativeQuestionsForUnit, getCumulativeVocabularyQuiz } from "@/lib/ieltsQuizzes";
-import AITeacherChat from "@/components/learning/AITeacherChat";
+
+// ── Lazy-loaded heavy components (code-split, not in initial JS bundle) ─────
+const AssessmentRenderer = dynamic(
+  () => import('./AssessmentRenderer').then(m => ({ default: m.AssessmentRenderer })),
+  { ssr: false, loading: () => <div className="flex items-center justify-center p-16"><Loader2 className="animate-spin text-sky-500" size={32} /></div> }
+);
+const AssessmentResultCard = dynamic(
+  () => import('../assessment/AssessmentResultCard').then(m => ({ default: m.AssessmentResultCard })),
+  { ssr: false }
+);
+const WorkbookAnswerSheet = dynamic(
+  () => import('./WorkbookAnswerSheet').then(m => ({ default: m.WorkbookAnswerSheet })),
+  { ssr: false, loading: () => <div className="flex items-center justify-center p-10"><Loader2 className="animate-spin text-emerald-500" size={28} /></div> }
+);
+const CurriculumMap = dynamic(
+  () => import('./CurriculumMap').then(m => ({ default: m.CurriculumMap })),
+  { ssr: false, loading: () => <div className="flex items-center justify-center p-10"><Loader2 className="animate-spin text-indigo-500" size={28} /></div> }
+);
+const TiengVietLessonView = dynamic(
+  () => import('./TiengVietLessonView').then(m => ({ default: m.TiengVietLessonView })),
+  { ssr: false, loading: () => <div className="flex items-center justify-center p-10"><Loader2 className="animate-spin text-amber-500" size={28} /></div> }
+);
+const AITeacherChat = dynamic(
+  () => import('@/components/learning/AITeacherChat'),
+  { ssr: false, loading: () => <div className="flex items-center justify-center p-6"><Loader2 className="animate-spin text-rose-400" size={24} /></div> }
+);
+// ─────────────────────────────────────────────────────────────────────────────
 
 interface LearnNodeClientProps {
   node: {
@@ -801,6 +822,9 @@ export function LearnNodeClient({
 
     if (!isExam) {
       if (subjectSlug === "mindset-ielts") {
+        // Lazy-load ieltsQuizzes only for IELTS subject (45KB avoided for all other subjects)
+        (async () => {
+        const { getCumulativeQuestionsForUnit, getCumulativeVocabularyQuiz } = await import("@/lib/ieltsQuizzes");
         const dummySessionId = "practice_" + node.id;
         const rawQs = getCumulativeQuestionsForUnit(unitNum, dummySessionId, 25);
         const questionsWithType = rawQs.map(q => ({
@@ -823,6 +847,7 @@ export function LearnNodeClient({
           id: warmupId,
           questions: warmupQsWithType
         });
+        })(); // end async IIFE
       } else {
         fetchPractice();
       }
