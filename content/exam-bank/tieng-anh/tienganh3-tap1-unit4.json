@@ -1,0 +1,205 @@
+{
+  "collection": {
+    "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 4: Our bodies",
+    "subject_slug": "tieng_anh",
+    "grade": 3,
+    "volume": 1,
+    "units": [4],
+    "exam_type": null,
+    "reference_book": "Global Success - Sách bài tập Tiếng Anh 3 Tập 1",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 4,
+      "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 4: Our bodies",
+      "questions": [
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. It's an ___.",
+            "correct_answer": "eye"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "2. It's a ___.",
+            "correct_answer": "hand"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "3. ___ your hair!",
+            "correct_answer": "Touch"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "4. ___ your mouth!",
+            "correct_answer": "Open"
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Read and match.",
+            "pairs": [
+              { "left": "1. It's", "right": "d. a nose." },
+              { "left": "2. It's an", "right": "a. eye." },
+              { "left": "3. Open", "right": "b. your eyes!" },
+              { "left": "4. Touch your", "right": "c. ears!" }
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. A: What's this?\nB: It's ___.",
+            "correct_answer": "an ear",
+            "choices": ["a face", "an ear", "eyes", "hair"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "2. A: What's that?\nB: It's ___.",
+            "correct_answer": "a face",
+            "choices": ["a face", "an ear", "eyes", "hair"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "3. Touch your ___!",
+            "correct_answer": "hair",
+            "choices": ["a face", "an ear", "eyes", "hair"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "4. Open your ___!",
+            "correct_answer": "eyes",
+            "choices": ["a face", "an ear", "eyes", "hair"]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "Make sentence: that / What's",
+            "words": ["What's", "that", "?"],
+            "correct_sentence": "What's that?"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "Make sentence: mouth / Open / your",
+            "words": ["Open", "your", "mouth", "!"],
+            "correct_sentence": "Open your mouth!"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "Make sentence: an / It's / eye",
+            "words": ["It's", "an", "eye", "."],
+            "correct_sentence": "It's an eye."
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "Make sentence: your / Touch / hand",
+            "words": ["Touch", "your", "hand", "!"],
+            "correct_sentence": "Touch your hand!"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. A: What's this?\nB: ___.",
+            "correct_answer": "It's a nose.",
+            "choices": ["It's a nose.", "It's an ear."]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "2. A: What's that?\nB: ___.",
+            "correct_answer": "It's a face.",
+            "choices": ["It's a hand.", "It's a face."]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "3. ___",
+            "correct_answer": "Touch your mouth!",
+            "choices": ["Touch your mouth!", "Touch your ears!"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "4. ___",
+            "correct_answer": "Open your mouth!",
+            "choices": ["Open your eyes!", "Open your mouth!"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look and write.\n1. A: What's this?\nB: It's ___.",
+            "correct_answer": "a mouth"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look and write.\n2. A: What's this?\nB: It's ___.",
+            "correct_answer": "an eye"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look and write.\n3. A: What's that?\nB: It's ___.",
+            "correct_answer": "a nose"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. Touch ___!",
+            "correct_answer": "your nose"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "2. Open ___!",
+            "correct_answer": "your eyes"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "3. ___ ears!",
+            "correct_answer": "Touch your"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "4. ___ your ___!",
+            "correct_answer": "Open your mouth"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,257 @@
+{
+  "collection": {
+    "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 2: Our names",
+    "subject_slug": "tieng_anh",
+    "grade": 3,
+    "volume": 1,
+    "units": [2],
+    "sequence_number": 2,
+    "exam_type": null,
+    "reference_book": "Global Success - Sách bài tập Tiếng Anh 3 Tập 1",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 2,
+      "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 2: Our names",
+      "duration_minutes": 25,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Complete and say:\n_ary",
+            "choices": ["n", "M"],
+            "correct_answer": "M",
+            "explanation": "M + ary = Mary."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Complete and say:\n_ame",
+            "choices": ["n", "M"],
+            "correct_answer": "n",
+            "explanation": "n + ame = name."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Do the puzzle: Identify the name of the character (1)",
+            "choices": ["Minh", "Lucy", "Mary", "Ben", "Nam", "Linh"],
+            "correct_answer": "Minh"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Do the puzzle: Identify the name of the character (2)",
+            "choices": ["Minh", "Lucy", "Mary", "Ben", "Nam", "Linh"],
+            "correct_answer": "Lucy"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Do the puzzle: Identify the name of the character (3)",
+            "choices": ["Minh", "Lucy", "Mary", "Ben", "Nam", "Linh"],
+            "correct_answer": "Mary"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Do the puzzle: Identify the name of the character (4)",
+            "choices": ["Minh", "Lucy", "Mary", "Ben", "Nam", "Linh"],
+            "correct_answer": "Ben"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Do the puzzle: Identify the name of the character (5)",
+            "choices": ["Minh", "Lucy", "Mary", "Ben", "Nam", "Linh"],
+            "correct_answer": "Nam"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Do the puzzle: Identify the name of the character (6)",
+            "choices": ["Minh", "Lucy", "Mary", "Ben", "Nam", "Linh"],
+            "correct_answer": "Linh"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Read and complete:\n1. _______ your name?",
+            "choices": ["What's", "My", "How", "I'm"],
+            "correct_answer": "What's"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Read and complete:\n2. _______ name's Mary.",
+            "choices": ["What's", "My", "How", "I'm"],
+            "correct_answer": "My"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Read and complete:\n3. _______ old are you?",
+            "choices": ["What's", "My", "How", "I'm"],
+            "correct_answer": "How"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Read and complete:\n4. _______ nine years old.",
+            "choices": ["What's", "My", "How", "I'm"],
+            "correct_answer": "I'm"
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Read and match:",
+            "pairs": [
+              {"left": "1. What's", "right": "c. your name?"},
+              {"left": "2. My name's", "right": "a. Nam."},
+              {"left": "3. How old", "right": "b. are you?"}
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Read and match dialogues:",
+            "pairs": [
+              {"left": "1. Hello. My name's Ben.", "right": "c. Hi, Ben. I'm Nam."},
+              {"left": "2. What's your name?", "right": "a. My name's Linh."},
+              {"left": "3. How old are you?", "right": "b. I'm seven years old."}
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Make sentences:",
+            "words": ["name's", "My", "Mary"],
+            "correct_sentence": "My name's Mary"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Make sentences:",
+            "words": ["your", "What's", "name"],
+            "correct_sentence": "What's your name?"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Make sentences:",
+            "words": ["are", "How old", "you"],
+            "correct_sentence": "How old are you?"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Make sentences:",
+            "words": ["ten", "I'm", "years old"],
+            "correct_sentence": "I'm ten years old"
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "D. READING — Read and match dialogues with pictures:",
+            "pairs": [
+              {"left": "1. Hello. My name's Lucy.", "right": "b (Lucy waving)"},
+              {"left": "2. I'm nine years old.", "right": "a (boy next to cake with 9 candle)"},
+              {"left": "3. Hello. My name's Linh.", "right": "c (Linh waving)"}
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "D. READING — Read and complete:\nMinh: Hi. (1) _______ name's Minh.",
+            "choices": ["My", "name's", "How", "are", "seven"],
+            "correct_answer": "My"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "D. READING — Read and complete:\nNga: Hello, Minh. My (2) _______ Nga.",
+            "choices": ["My", "name's", "How", "are", "seven"],
+            "correct_answer": "name's"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "D. READING — Read and complete:\nNga: (3) _______ old are you?",
+            "choices": ["My", "name's", "How", "are", "seven"],
+            "correct_answer": "How"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "D. READING — Read and complete:\nMinh: I'm eight years old. How old (4) _______ you?",
+            "choices": ["My", "name's", "How", "are", "seven"],
+            "correct_answer": "are"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "D. READING — Read and complete:\nNga: I'm (5) _______ years old.",
+            "choices": ["My", "name's", "How", "are", "seven"],
+            "correct_answer": "seven"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "E. WRITING — Look and write:\n1. Hello. My name's _______.",
+            "choices": ["Linh", "Ben", "ten", "eight"],
+            "correct_answer": "Linh"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "E. WRITING — Look and write:\n2. Hi. My name's _______.",
+            "choices": ["Linh", "Ben", "ten", "eight"],
+            "correct_answer": "Ben"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "E. WRITING — Look and write:\n3. I'm _______ years old.",
+            "choices": ["Linh", "Ben", "ten", "eight"],
+            "correct_answer": "ten"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "E. WRITING — Look and write:\n4. I'm _______.",
+            "choices": ["Linh", "Ben", "ten", "eight"],
+            "correct_answer": "eight"
+          }
+        }
+      ]
+    }
+  ]
+}

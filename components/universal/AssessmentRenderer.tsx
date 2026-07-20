@@ -149,7 +149,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
                  textSegments[textSegments.length - 1] += '\n' + (parts[0] || '');
              }
              if (parts.length > 1) {
-                 correctAnswers.push(s.correct_answer);
+                 correctAnswers.push(s.correct_answer || '');
                  textSegments.push(parts[1] || '');
              }
           });

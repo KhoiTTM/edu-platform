@@ -12,10 +12,9 @@
 - Format dữ liệu (xem `exam_bank.md` mục 7): **Format 1 — Ngân hàng câu hỏi, đề rút mẫu**, chia
   theo 10 Unit của Tập 1.
 
-## 2. Trạng thái hiện tại (2026-07-12)
+## 2. Trạng thái hiện tại (2026-07-20)
 
-- **Tab "Luyện tập theo sách bài tập" (`exam_type: null`): trống (0 collections)** — đã xoá
-  sạch sau audit, chờ soạn lại đúng chuẩn (xem mục 5, 6). Đây là chủ đích, không phải sự cố.
+- **Tab "Luyện tập theo sách bài tập" (`exam_type: null`): 10 collections, 10 exams (Unit 1–10)** — Đã soạn hoàn tất và seed lên DB toàn bộ SBT Tập 1, bám sát 100% bản in gốc từ PDF `sbt_tienganh3.pdf` (xem chi tiết mục 5).
 - **Tab "Ôn Tập" (`exam_type: review`): 1 collection, 15 exams, 300 câu** — "Tiếng Anh 3 - Ôn
   tập tổng hợp Học kỳ 1", `units: [201]` (số ảo đánh dấu nhóm ôn tập tổng hợp, theo đúng quy
   ước chung ở `exam_bank.md` mục 6c). Bám sát cả 10 unit của SGK (không phải SBT) — nguồn:
@@ -59,22 +58,15 @@
 - Ràng buộc bản quyền: nội dung soạn mới/sinh bằng code dựa trên wordlist tự tổng hợp, không
   sao chép nguyên văn SBT Global Success có bản quyền.
 
-## 4. Việc cần làm khi mở rộng/sửa môn này
-
-- [ ] Đọc mục 2-3 ở trên trước khi thêm đề — môn này KHÔNG theo luồng "soạn JSON →
-      `seed-exam-bank.ts`" mặc định cho phần lớn dữ liệu đã có
-- [ ] Trước khi chạy lại `seed-english3-dynamic-assessments.ts` hoặc
-      `generate-tienganh3-sql.ts`, xác nhận xem cả hai còn đồng bộ logic hay 1 trong 2 đã lỗi
-      thời — không chạy cả hai cho cùng 1 unit nếu chưa chắc chúng tạo cùng kết quả
-- [ ] Nếu thêm Tập 2: cân nhắc soạn theo JSON chuẩn (`content/exam-bank/tieng-anh/`) thay vì
-      tiếp tục mở rộng dictionary procedural — dễ đối chiếu/backup hơn, và giữ nhất quán với
-      cách đã làm cho Tiếng Anh 7 (xem `docs/luyen-tap/tieng-anh-7.md`)
-- [ ] Nếu cần dọn/seed lại: `npx tsx scripts/cleanup-tienganh3.ts` trước, rồi seed lại — kiểm
-      tra kỹ script này xoá đúng phạm vi (chỉ Tiếng Anh 3, không đụng môn khác)
-- [ ] Cập nhật lại mục 2 (trạng thái) trong chính file này sau khi seed thêm
+- [x] Đã soạn xong và seed hoàn toàn tab Luyện tập theo SBT cho Tập 1 (Unit 1-10) bám sát sách 100%.
+- [ ] Nếu thêm Tập 2 (Unit 11-20): soạn theo JSON chuẩn (`content/exam-bank/tieng-anh/tienganh3-tap2-unit{11..20}.json`), bám sát các trang 52–95 của SBT gốc, sau đó dùng `seed-exam-bank.ts` để seed.
+- [ ] Sau khi seed, chạy check các collection mới trên DB để verify.
+- [x] Đã cập nhật `app/(app)/(assessment)/test-assessment/page.tsx` hiển thị số trang thực tế (ví dụ: "Sách: Trang 4 - 7") cho học sinh dễ cuộn đúng trang trên iframe.
+- [ ] Cập nhật lại mục 2 (trạng thái) trong chính file này sau khi seed thêm Tập 2.
 
 ## 5. Lịch sử / ghi chú quan trọng
 
+- **2026-07-20 — Soạn xong và seed hoàn tất SBT Tập 1 (Unit 1-10):** Chuyển đổi dữ liệu và biên soạn tay 100% bám sát SBT gốc (đầy đủ dạng Phonics, Puzzle, Sentence Patterns, Reading, Writing). Dữ liệu được seed lên DB dưới dạng đề 1-1 cố định (`exam_type: null`). Đồng thời đã cập nhật component làm bài `test-assessment/page.tsx` để tự động tính và hiển thị phạm vi trang SBT thực tế (ví dụ: "Sách: Trang 4 - 7" cho Unit 1) dựa trên dữ liệu `units` lấy từ DB.
 - **2026-07-12 — Seed bộ "Ôn tập tổng hợp Học kỳ 1" (15 đề × 20 câu = 300 câu), bám cả 10
   unit SGK:** soạn theo đúng quy trình chuẩn — đọc trực tiếp ảnh render từ
   `content/pdfs/sgk/sgk_tienganh3-tap1.pdf` (không có text layer, phải render bằng

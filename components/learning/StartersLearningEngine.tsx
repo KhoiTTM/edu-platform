@@ -11,6 +11,7 @@ import {
   vocabTopics, allVocabWords, VocabWord, VocabTopic, getDistractors,
 } from "@/lib/data/startersVocabulary";
 import Link from "next/link";
+import { saveStartersLearningProgress } from "@/lib/learningActions";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -777,6 +778,8 @@ export default function StartersLearningEngine({
     : null;
   const words = selectedTopic ? selectedTopic.words : allVocabWords;
 
+  const startedTimeRef = useRef<number>(Date.now());
+
   const handleTopicSelect = (id: string | null) => {
     setSelectedTopicId(id);
     setStage("mode");
@@ -786,16 +789,25 @@ export default function StartersLearningEngine({
     setMode(m);
     if (dir) setDirection(dir);
     setSessionKey(k => k + 1);
+    startedTimeRef.current = Date.now();
     setStage("exercise");
   };
 
   const handleComplete = (stats: SessionStats) => {
     setLastStats(stats);
     setStage("result");
+    
+    // Save to learning_sessions database
+    const topicName = selectedTopic ? selectedTopic.title : "Tổng hợp từ vựng";
+    const topicKey = selectedTopicId || "all-starters";
+    const durationSeconds = Math.max(1, Math.round((Date.now() - startedTimeRef.current) / 1000));
+    saveStartersLearningProgress(topicKey, topicName, stats.correct, stats.total, durationSeconds)
+      .catch(err => console.error("Failed to save starters progress:", err));
   };
 
   const handleRetry = () => {
     setSessionKey(k => k + 1);
+    startedTimeRef.current = Date.now();
     setStage("exercise");
   };
 

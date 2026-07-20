@@ -1,0 +1,241 @@
+{
+  "collection": {
+    "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 9: Colours",
+    "subject_slug": "tieng_anh",
+    "grade": 3,
+    "volume": 1,
+    "units": [
+      9
+    ],
+    "exam_type": null,
+    "reference_book": "Global Success - Sách bài tập Tiếng Anh 3 Tập 1",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 9,
+      "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 9: Colours",
+      "questions": [
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. Complete and say:\nbl[[ue]]",
+            "correct_answer": "ue"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. Complete and say:\nbr[[own]]",
+            "correct_answer": "own"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. The pen is [[blue]].",
+            "correct_answer": "blue"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "2. The pencil is [[orange]].",
+            "correct_answer": "orange"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "3. The school bag is [[yellow]].",
+            "correct_answer": "yellow"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "4. The erasers are [[black]].",
+            "correct_answer": "black"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "5. The notebooks are [[green]].",
+            "correct_answer": "green"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "6. The pencil cases are [[brown]].",
+            "correct_answer": "brown"
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Read and match.",
+            "pairs": [
+              {
+                "left": "It is",
+                "right": "black."
+              },
+              {
+                "left": "What colour",
+                "right": "is it?"
+              },
+              {
+                "left": "They",
+                "right": "are green."
+              },
+              {
+                "left": "What colour are",
+                "right": "they?"
+              }
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Read and match.",
+            "pairs": [
+              {
+                "left": "What is this?",
+                "right": "It's my notebook."
+              },
+              {
+                "left": "Is this your school bag?",
+                "right": "Yes, it is."
+              },
+              {
+                "left": "What colour is the pen?",
+                "right": "It's orange."
+              },
+              {
+                "left": "What colour are the erasers?",
+                "right": "They're brown."
+              }
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "are / the pencils / What colour",
+            "words": [
+              "What",
+              "colour",
+              "are",
+              "the",
+              "pencils?"
+            ],
+            "correct_sentence": "What colour are the pencils?"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "the ruler / What colour / is",
+            "words": [
+              "What",
+              "colour",
+              "is",
+              "the",
+              "ruler?"
+            ],
+            "correct_sentence": "What colour is the ruler?"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "black / is / My school bag",
+            "words": [
+              "My",
+              "school",
+              "bag",
+              "is",
+              "black."
+            ],
+            "correct_sentence": "My school bag is black."
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "green / The / are / pencil cases",
+            "words": [
+              "The",
+              "pencil",
+              "cases",
+              "are",
+              "green."
+            ],
+            "correct_sentence": "The pencil cases are green."
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Read and match.",
+            "pairs": [
+              {
+                "left": "This is my pencil. It is black.",
+                "right": "black pencil"
+              },
+              {
+                "left": "This is my pen. It is blue.",
+                "right": "blue pen"
+              },
+              {
+                "left": "These are my erasers. They are red.",
+                "right": "red erasers"
+              },
+              {
+                "left": "These are my books. They are yellow.",
+                "right": "yellow books"
+              }
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "This is my school bag. It is [[brown]]. That is my pen. [[It is]] black. These [[are]] my pencils. [[They are]] orange. [[And]] these are my erasers. They are green.",
+            "correct_answer": "brown"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. This is my [[ruler]]. It is [[yellow]].",
+            "correct_answer": "ruler"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "2. This is my [[pencil case]]. It is [[orange]].",
+            "correct_answer": "pencil case"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "3. These are my [[notebooks]]. They are [[green]].",
+            "correct_answer": "notebooks"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "4. These are my [[erasers]]. They are [[red]].",
+            "correct_answer": "erasers"
+          }
+        }
+      ]
+    }
+  ]
+}

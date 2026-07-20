@@ -1,0 +1,229 @@
+{
+  "collection": {
+    "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 7: Classroom instructions",
+    "subject_slug": "tieng_anh",
+    "grade": 3,
+    "volume": 1,
+    "units": [7],
+    "exam_type": null,
+    "reference_book": "Global Success - Sách bài tập Tiếng Anh 3 Tập 1",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 7,
+      "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 7: Classroom instructions",
+      "questions": [
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Unscramble the word: pnoe",
+            "correct_answer": "open"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Unscramble the word: ecsol",
+            "correct_answer": "close"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Unscramble the word: cemo",
+            "correct_answer": "come"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Unscramble the word: og",
+            "correct_answer": "go"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Unscramble the word: tdnas",
+            "correct_answer": "stand"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Unscramble the word: tsi",
+            "correct_answer": "sit"
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Read and match the opposites.",
+            "pairs": [
+              { "left": "1. Close your book, please!", "right": "b. Open your book, please!" },
+              { "left": "2. Come in, please!", "right": "c. Go out, please!" },
+              { "left": "3. Stand up, please!", "right": "a. Sit down, please!" }
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Read and match.",
+            "pairs": [
+              { "left": "1. Sit", "right": "c. down, please!" },
+              { "left": "2. Stand", "right": "d. up, please!" },
+              { "left": "3. Come", "right": "b. in, please!" },
+              { "left": "4. Open", "right": "a. your book, please!" }
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Read and match.",
+            "pairs": [
+              { "left": "1. Good morning, Ms Hoa.", "right": "d. Hello, class. Sit down, please!" },
+              { "left": "2. May I come in?", "right": "c. Yes, you can." },
+              { "left": "3. Is this Ben?", "right": "b. No, it isn't. It's Bill." },
+              { "left": "4. May I speak Vietnamese?", "right": "a. No, you can't. Speak English, please!" }
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "Make sentence: May / come in / I / ?",
+            "words": ["May", "I", "come", "in", "?"],
+            "correct_sentence": "May I come in?"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "Make sentence: open / the book / May I / ?",
+            "words": ["May", "I", "open", "the", "book", "?"],
+            "correct_sentence": "May I open the book?"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "Make sentence: Vietnamese / speak / May I / ?",
+            "words": ["May", "I", "speak", "Vietnamese", "?"],
+            "correct_sentence": "May I speak Vietnamese?"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "Make sentence: go out / I / May / ?",
+            "words": ["May", "I", "go", "out", "?"],
+            "correct_sentence": "May I go out?"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Read and complete: Nam: ___ I sit down? Ms Hoa: Yes, you can.",
+            "correct_answer": "May",
+            "choices": ["book", "can't", "May", "speak"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Read and complete: Mai: May I ___ Vietnamese? Ms Hoa: Yes, you can.",
+            "correct_answer": "speak",
+            "choices": ["book", "can't", "May", "speak"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Read and complete: Linh: May I open the ___? Ms Hoa: Yes, you can.",
+            "correct_answer": "book",
+            "choices": ["book", "can't", "May", "speak"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Read and complete: Minh: May I go out? Mr Long: No, you ___.",
+            "correct_answer": "can't",
+            "choices": ["book", "can't", "May", "speak"]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Read and match.",
+            "pairs": [
+              { "left": "1. A: May I come in?\nB: Yes, you can.", "right": "c" },
+              { "left": "2. A: May I open the book?\nB: No, you can't.", "right": "a" },
+              { "left": "3. A: May I stand up?\nB: No, you can't.", "right": "d" },
+              { "left": "4. A: May I speak English?\nB: Yes, you can.", "right": "b" }
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Read and write.\n1. Close your ___, please!",
+            "correct_answer": "book"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Read and write.\n2. Sit ___, please!",
+            "correct_answer": "down"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Read and write.\n3. A: May I ___ out?\nB: No, you can't.",
+            "correct_answer": "go"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Read and write.\n4. A: May I speak English?\nB: Yes, you ___.",
+            "correct_answer": "can"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look and write the question.\n1. Bill: ___?",
+            "correct_answer": "May I come in"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look and write the question.\n2. Lucy: ___?",
+            "correct_answer": "May I sit down"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look and write the question.\n3. Mary: ___?",
+            "correct_answer": "May I stand up"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look and write the question.\n4. Ben: ___?",
+            "correct_answer": "May I go out"
+          }
+        }
+      ]
+    }
+  ]
+}

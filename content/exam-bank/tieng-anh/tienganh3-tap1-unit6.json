@@ -1,0 +1,175 @@
+{
+  "collection": {
+    "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 6: Our school",
+    "subject_slug": "tieng_anh",
+    "grade": 3,
+    "volume": 1,
+    "units": [6],
+    "exam_type": null,
+    "reference_book": "Global Success - Sách bài tập Tiếng Anh 3 Tập 1",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 6,
+      "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 6: Our school",
+      "questions": [
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Read and match.",
+            "pairs": [
+              { "left": "1. school", "right": "b" },
+              { "left": "2. gym", "right": "d" },
+              { "left": "3. library", "right": "a" },
+              { "left": "4. computer room", "right": "c" }
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Read and match.",
+            "pairs": [
+              { "left": "1. Is that", "right": "b. our music room?" },
+              { "left": "2. Is this your", "right": "c. classroom?" },
+              { "left": "3. Yes,", "right": "d. it is." },
+              { "left": "4. Let's go", "right": "a. to the playground." }
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look, complete and read.\n1. That's our ___.",
+            "correct_answer": "computer room"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look, complete and read.\n2. A: Is this your ___?\nB: Yes, it is.",
+            "correct_answer": "school"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look, complete and read.\n3. Let's go to the ___.",
+            "correct_answer": "gym"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look, complete and read.\n4. A: ___ to the art room.\nB: OK, let's go.",
+            "correct_answer": "Let's go"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "Make sentence: your / Is / classroom / that / ?",
+            "words": ["Is", "that", "your", "classroom", "?"],
+            "correct_sentence": "Is that your classroom?"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "Make sentence: Yes / is / it / .",
+            "words": ["Yes", ",", "it", "is", "."],
+            "correct_sentence": "Yes, it is."
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "Make sentence: the playground / go to / Let's / .",
+            "words": ["Let's", "go", "to", "the", "playground", "."],
+            "correct_sentence": "Let's go to the playground."
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "Make sentence: library / our / Is / this / ?",
+            "words": ["Is", "this", "our", "library", "?"],
+            "correct_sentence": "Is this our library?"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. That is our ___.",
+            "correct_answer": "playground",
+            "choices": ["playground", "library"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "2. This is our ___.",
+            "correct_answer": "school",
+            "choices": ["gym", "school"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "3. Let's go to the ___.",
+            "correct_answer": "classroom",
+            "choices": ["music room", "classroom"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "4. Let's go to the ___.",
+            "correct_answer": "computer room",
+            "choices": ["computer room", "art room"]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Read and match.",
+            "pairs": [
+              { "left": "1. A: Is that our music room?\nB: No, it isn't. It's our library.", "right": "b" },
+              { "left": "2. A: Let's go to the gym.\nB: OK, let's go.", "right": "c" },
+              { "left": "3. A: Let's go to the playground.\nB: OK, let's go.", "right": "a" }
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look and write.\n1. A: Is this our ___?\nB: Yes, it is.",
+            "correct_answer": "playground"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look and write.\n2. A: Is that ___ classroom?\nB: No, it isn't. My classroom is over there.",
+            "correct_answer": "your"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look and write.\n3. A: Let's go to the ___.\nB: OK, let's go.",
+            "correct_answer": "computer room"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look and write.\n4. A: Let's go to the ___.\nB: OK, let's go.",
+            "correct_answer": "art room"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import AITeacherChat from "@/components/learning/AITeacherChat";
 import { ChunkCheckpoints } from "@/components/ChunkCheckpoints";
@@ -13,6 +13,7 @@ import { VocabFlipCard } from "@/components/learning/VocabFlipCard";
 import { SpeakingFollowUpBox } from "@/components/learning/SpeakingFollowUpBox";
 
 import { AriaDebrief } from "@/components/AriaDebrief";
+import { saveIeltsListeningProgress } from "@/lib/learningActions";
 
 interface Props {
   lesson: Lesson;
@@ -30,6 +31,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
   // ── Session Phase State (Replacing old tabs) ──────────────────────────────
   const [sessionPhase, setSessionPhase] = useState<SessionPhase>("listen");
   const [highestPhase, setHighestPhase] = useState<number>(0);
+  const startedTimeRef = useRef<number>(Date.now());
 
   const changePhase = (newPhase: SessionPhase) => {
     const newIdx = PHASE_ORDER.indexOf(newPhase);
@@ -106,6 +108,11 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
     });
     setQuizScore(score);
     setQuizSubmitted(true);
+
+    // Save to learning_sessions database
+    const durationSeconds = Math.max(1, Math.round((Date.now() - startedTimeRef.current) / 1000));
+    saveIeltsListeningProgress(lesson.id, lesson.title, score, questions.length, durationSeconds)
+      .catch(err => console.error("Error saving IELTS listening progress:", err));
   };
 
   const restartQuiz = () => {
@@ -113,6 +120,7 @@ export function ListeningClient({ lesson, transcript, questions, studentName = "
     setCurrentQuestionIdx(0);
     setQuizSubmitted(false);
     setQuizScore(0);
+    startedTimeRef.current = Date.now();
   };
 
   return (

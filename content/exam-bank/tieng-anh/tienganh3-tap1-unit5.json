@@ -1,0 +1,193 @@
+{
+  "collection": {
+    "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 5: My hobbies",
+    "subject_slug": "tieng_anh",
+    "grade": 3,
+    "volume": 1,
+    "units": [5],
+    "exam_type": null,
+    "reference_book": "Global Success - Sách bài tập Tiếng Anh 3 Tập 1",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 5,
+      "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 5: My hobbies",
+      "questions": [
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Read and match.",
+            "pairs": [
+              { "left": "1. cooking", "right": "b" },
+              { "left": "2. walking", "right": "c" },
+              { "left": "3. swimming", "right": "a" },
+              { "left": "4. dancing", "right": "d" }
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look, complete and read.\n1. What's your hobby?\nIt's ___.",
+            "correct_answer": "swimming"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look, complete and read.\n2. What's your hobby?\nIt's ___.",
+            "correct_answer": "dancing"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look, complete and read.\n3. What's your hobby?\nIt's ___.",
+            "correct_answer": "singing"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look, complete and read.\n4. What's your hobby?\nIt's ___.",
+            "correct_answer": "painting"
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Read and match.",
+            "pairs": [
+              { "left": "1. A: What's your hobby?\nB: It's dancing.", "right": "b" },
+              { "left": "2. A: What's your hobby?\nB: It's swimming.", "right": "c" },
+              { "left": "3. A: What's your hobby?\nB: I like painting.", "right": "d" },
+              { "left": "4. A: What's your hobby?\nB: I like cooking.", "right": "a" }
+            ]
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Read and match.",
+            "pairs": [
+              { "left": "1. What's your", "right": "d. hobby?" },
+              { "left": "2. I", "right": "c. like walking." },
+              { "left": "3. What's", "right": "b. your hobby?" },
+              { "left": "4. It's", "right": "a. drawing." }
+            ]
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "Make sentence: your / hobby / What's / ?",
+            "words": ["What's", "your", "hobby", "?"],
+            "correct_sentence": "What's your hobby?"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "Make sentence: dancing / It's / .",
+            "words": ["It's", "dancing", "."],
+            "correct_sentence": "It's dancing."
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "Make sentence: like / running / I / .",
+            "words": ["I", "like", "running", "."],
+            "correct_sentence": "I like running."
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "Make sentence: cooking / like / I / .",
+            "words": ["I", "like", "cooking", "."],
+            "correct_sentence": "I like cooking."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. A: What's your hobby?\nB: It's ___.",
+            "correct_answer": "singing"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "2. A: What's your hobby?\nB: It's ___.",
+            "correct_answer": "painting"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "3. A: What's your hobby?\nB: I like ___.",
+            "correct_answer": "cooking"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "4. A: What's your hobby?\nB: I like ___.",
+            "correct_answer": "running"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Hi. My name is Mary. I like walking in the morning. I like (1) ___ at noon...",
+            "correct_answer": "cooking"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "...and I like (2) ___ in the afternoon...",
+            "correct_answer": "swimming"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "...I like (3) ___ in the evening. What do you like?",
+            "correct_answer": "painting"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look and write. \n1. A: What's your hobby?\nB: ___.",
+            "correct_answer": "It's drawing"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look and write. \n2. A: What's your hobby?\nB: ___.",
+            "correct_answer": "It's swimming"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look and write. \n3. A: What's your hobby?\nB: ___.",
+            "correct_answer": "It's running"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Look and write. \n4. A: What's your hobby?\nB: ___.",
+            "correct_answer": "It's cooking"
+          }
+        }
+      ]
+    }
+  ]
+}

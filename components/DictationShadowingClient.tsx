@@ -9,6 +9,8 @@ import {
 } from "lucide-react";
 import { getShadowingLesson } from "@/lib/shadowingActions";
 import type { AdviceData, SentenceItem } from "@/lib/shadowingTypes";
+import { saveIeltsShadowingProgress } from "@/lib/learningActions";
+import { useRouter } from "next/navigation";
 
 interface Props {
   backUrl?: string;
@@ -16,8 +18,27 @@ interface Props {
 }
 
 export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonSlug = "luyen-nghe-a2-tong-ket-2025" }: Props) {
+  const router = useRouter();
   const [lessonData, setLessonData] = useState<AdviceData | null>(null);
   const [loadingLesson, setLoadingLesson] = useState(true);
+
+  // Time spent tracking
+  const startedTimeRef = useRef<number>(Date.now());
+  const [sentenceScores, setSentenceScores] = useState<Record<number, number>>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleFinishShadowing = async () => {
+    setIsSubmitting(true);
+    const scoresArray = Object.values(sentenceScores);
+    const avgScore = scoresArray.length > 0 
+      ? scoresArray.reduce((a, b) => a + b, 0) / scoresArray.length
+      : 100; // default 100 if completed without recordings
+    
+    const durationSeconds = Math.max(1, Math.round((Date.now() - startedTimeRef.current) / 1000));
+    await saveIeltsShadowingProgress(lessonSlug, title, avgScore, durationSeconds);
+    setIsSubmitting(false);
+    router.push(backUrl);
+  };
 
   // 5-step flow: 1 | 2 | 3 | 4 (Dictation) | 5 (Shadowing)
   const [step, setStep] = useState<number>(1);
@@ -38,6 +59,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
         setLessonData(data);
       }
       setLoadingLesson(false);
+      startedTimeRef.current = Date.now();
     }
     fetchLesson();
   }, [lessonSlug]);
@@ -385,6 +407,12 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
 
     const percent = Math.round((matches / cleanOriginal.length) * 100);
     setShadowingScore(percent);
+
+    // Save score for current sentence
+    setSentenceScores(prev => ({
+      ...prev,
+      [currentSentenceIndex]: percent
+    }));
   };
 
   const getShadowingFeedback = () => {
@@ -714,7 +742,8 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
                   <div className="text-base leading-relaxed text-slate-100 select-text">
                     {currentSentence.words.map((word: any) => {
                       if (word.type === "BLANK") {
-                        const isCorrect = easyChecked && easyInputs[word.key]?.trim().toLowerCase() === word.value.toLowerCase();
+                        const normalizeWord = (str: string) => str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()?]/g, "").trim().toLowerCase();
+                        const isCorrect = easyChecked && normalizeWord(easyInputs[word.key] || "") === normalizeWord(word.value);
                         return (
                           <input
                             key={word.key}
@@ -1034,14 +1063,29 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
           Bước trước
         </button>
 
-        <button
-          onClick={handleNextStep}
-          disabled={step === 5}
-          className="inline-flex items-center gap-1.5 px-5 py-2 rounded-xl bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-bold shadow-lg shadow-indigo-500/25 disabled:opacity-40 disabled:hover:bg-indigo-500 transition duration-150"
-        >
-          Bước tiếp theo
-          <ChevronRight className="h-4 w-4" />
-        </button>
+        {(() => {
+          if (step === 5) {
+            return (
+              <button
+                onClick={handleFinishShadowing}
+                disabled={isSubmitting}
+                className="inline-flex items-center gap-1.5 px-6 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white text-sm font-bold shadow-lg shadow-emerald-500/25 active:scale-95 disabled:opacity-50 transition duration-150"
+              >
+                {isSubmitting ? "Đang ghi nhận..." : "Hoàn thành buổi học 🎉"}
+              </button>
+            );
+          }
+
+          return (
+            <button
+              onClick={handleNextStep}
+              className="inline-flex items-center gap-1.5 px-5 py-2 rounded-xl bg-indigo-500 hover:bg-indigo-600 text-white text-sm font-bold shadow-lg shadow-indigo-500/25 transition duration-150"
+            >
+              Bước tiếp theo
+              <ChevronRight className="h-4 w-4" />
+            </button>
+          );
+        })()}
       </div>
     </div>
   );

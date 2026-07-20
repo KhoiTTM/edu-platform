@@ -4,11 +4,13 @@ import { createClient } from "@/lib/supabase/server";
 
 export async function getExamInfo(examId: string) {
   const supabase = await createClient();
-  const { data } = await supabase.from('exams').select('title, assessment_collections(subject_slug, exam_type, grade)').eq('id', examId).single();
+  const { data } = await supabase.from('exams').select('title, assessment_collections(subject_slug, exam_type, grade, units, volume)').eq('id', examId).single();
   const subjectSlug = (data?.assessment_collections as any)?.subject_slug || "toan";
   const examType = (data?.assessment_collections as any)?.exam_type || "lesson";
   const grade = (data?.assessment_collections as any)?.grade || 3;
-  return { title: data?.title || "Bài Kiểm Tra", subjectSlug, examType, grade };
+  const units = (data?.assessment_collections as any)?.units || [];
+  const volume = (data?.assessment_collections as any)?.volume || null;
+  return { title: data?.title || "Bài Kiểm Tra", subjectSlug, examType, grade, units, volume };
 }
 
 export async function getExamQuestions(examId: string) {

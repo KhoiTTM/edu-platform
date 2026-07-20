@@ -1,0 +1,318 @@
+{
+  "collection": {
+    "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 3: Our friends",
+    "subject_slug": "tieng_anh",
+    "grade": 3,
+    "volume": 1,
+    "units": [3],
+    "sequence_number": 3,
+    "exam_type": null,
+    "reference_book": "Global Success - Sách bài tập Tiếng Anh 3 Tập 1",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 3,
+      "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 3: Our friends",
+      "duration_minutes": 25,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Complete and say:\n__at",
+            "choices": ["th", "sh"],
+            "correct_answer": "th",
+            "explanation": "th + at = that."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Complete and say:\n__ank",
+            "choices": ["th", "sh"],
+            "correct_answer": "th",
+            "explanation": "th + ank = thank."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Find and circle six names:\n1. B _ l l",
+            "choices": ["Bill", "Mary", "Nam", "Mai", "Ben", "Minh"],
+            "correct_answer": "Bill"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Find and circle six names:\n2. M _ r y",
+            "choices": ["Bill", "Mary", "Nam", "Mai", "Ben", "Minh"],
+            "correct_answer": "Mary"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Find and circle six names:\n3. N _ m",
+            "choices": ["Bill", "Mary", "Nam", "Mai", "Ben", "Minh"],
+            "correct_answer": "Nam"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Find and circle six names:\n4. M _ i",
+            "choices": ["Bill", "Mary", "Nam", "Mai", "Ben", "Minh"],
+            "correct_answer": "Mai"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Find and circle six names:\n5. B _ n",
+            "choices": ["Bill", "Mary", "Nam", "Mai", "Ben", "Minh"],
+            "correct_answer": "Ben"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Find and circle six names:\n6. M _ n h",
+            "choices": ["Bill", "Mary", "Nam", "Mai", "Ben", "Minh"],
+            "correct_answer": "Minh"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Look, complete and read:\n1. This is _______.",
+            "choices": ["Lucy", "Minh", "this", "Yes", "that", "No"],
+            "correct_answer": "Lucy"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Look, complete and read:\n2. That's _______.",
+            "choices": ["Lucy", "Minh", "this", "Yes", "that", "No"],
+            "correct_answer": "Minh"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Look, complete and read:\n3. Mai: Is _______ Mary?\nNam: _______, it is.",
+            "choices": ["this", "Yes", "that", "No"],
+            "correct_answer": "this"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "A. PHONICS AND VOCABULARY — Look, complete and read:\n4. Mai: Is _______ Bill?\nNam: _______, it isn't. It's Ben.",
+            "choices": ["this", "Yes", "that", "No"],
+            "correct_answer": "that"
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Read and match:",
+            "pairs": [
+              {"left": "1. This is Mary.", "right": "d. Hi, Mary."},
+              {"left": "2. That's Bill.", "right": "c. Hello, Bill."},
+              {"left": "3. Is this Mai?", "right": "a. Yes, it is. It's Mai."},
+              {"left": "4. Is that Minh?", "right": "b. No, it isn't. It's Nam."}
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Look, complete and read:\n1. _______ Lucy.",
+            "choices": ["This is", "That is", "Is this", "Is that"],
+            "correct_answer": "This is"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Look, complete and read:\n2. _______ Minh.",
+            "choices": ["This is", "That is", "Is this", "Is that"],
+            "correct_answer": "That is"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Look, complete and read:\n3. _______ Mr Long?",
+            "choices": ["This is", "That is", "Is this", "Is that"],
+            "correct_answer": "Is this"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Look, complete and read:\n4. _______ Ms Hoa?",
+            "choices": ["This is", "That is", "Is this", "Is that"],
+            "correct_answer": "Is that"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Make sentences:",
+            "words": ["Ms Hoa", "this", "Is"],
+            "correct_sentence": "Is this Ms Hoa?"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Make sentences:",
+            "words": ["it", "Yes", "is"],
+            "correct_sentence": "Yes, it is"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Make sentences:",
+            "words": ["that", "Is", "Linh"],
+            "correct_sentence": "Is that Linh?"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "B. SENTENCE PATTERNS — Make sentences:",
+            "words": ["isn't", "No", "it"],
+            "correct_sentence": "No, it isn't"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "C. SPEAKING — Ask and answer:\na. Is this Bill?\nYes, _______.",
+            "choices": ["it is", "it isn't"],
+            "correct_answer": "it is"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "C. SPEAKING — Ask and answer:\nb. Is that Lucy?\nNo, _______ . It's Mary.",
+            "choices": ["it is", "it isn't"],
+            "correct_answer": "it isn't"
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "D. READING — Read and match dialogues with pictures:",
+            "pairs": [
+              {"left": "1. Mai: 'This is Mary.' Ms Hoa: 'Hi, Mary.'", "right": "b (Mai introducing Mary to Ms Hoa)"},
+              {"left": "2. Ms Hoa: 'Is that Bill?' Mai: 'No, it isn't. It's Ben.'", "right": "a (Ms Hoa asking Mai about Bill)"}
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "D. READING — Read and complete:\nThis (1) _______ Mary.",
+            "choices": ["is", "That is", "friend", "Ms Hoa"],
+            "correct_answer": "is"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "D. READING — Read and complete:\n(2) _______ Bill.",
+            "choices": ["is", "That is", "friend", "Ms Hoa"],
+            "correct_answer": "That is"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "D. READING — Read and complete:\nAnd this is Mai, my (3) _______.",
+            "choices": ["is", "That is", "friend", "Ms Hoa"],
+            "correct_answer": "friend"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "D. READING — Read and complete:\nThat is (4) _______, my teacher.",
+            "choices": ["is", "That is", "friend", "Ms Hoa"],
+            "correct_answer": "Ms Hoa"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "E. WRITING — Look and write:\n1. This is _______.",
+            "choices": ["Nam", "Ms Hoa", "Lucy", "Mr Long"],
+            "correct_answer": "Nam"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "E. WRITING — Look and write:\n2. That is _______.",
+            "choices": ["Nam", "Ms Hoa", "Lucy", "Mr Long"],
+            "correct_answer": "Ms Hoa"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "E. WRITING — Look and write:\n3. This is _______.",
+            "choices": ["Nam", "Ms Hoa", "Lucy", "Mr Long"],
+            "correct_answer": "Lucy"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "E. WRITING — Look and write:\n4. That is _______.",
+            "choices": ["Nam", "Ms Hoa", "Lucy", "Mr Long"],
+            "correct_answer": "Mr Long"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "E. WRITING — Look and write:\n1. A: Is this Mai?\nB: Yes, _______.",
+            "choices": ["it is", "it isn't", "Yes, it is", "No, it isn't"],
+            "correct_answer": "it is"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "E. WRITING — Look and write:\n2. A: Is this Ben?\nB: No, _______.",
+            "choices": ["it is", "it isn't", "Yes, it is", "No, it isn't"],
+            "correct_answer": "it isn't"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "E. WRITING — Look and write:\n3. A: Is that Mary?\nB: _______.",
+            "choices": ["it is", "it isn't", "Yes, it is", "No, it isn't"],
+            "correct_answer": "Yes, it is"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "E. WRITING — Look and write:\n4. A: Is that Linh?\nB: _______.",
+            "choices": ["it is", "it isn't", "Yes, it is", "No, it isn't"],
+            "correct_answer": "No, it isn't"
+          }
+        }
+      ]
+    }
+  ]
+}

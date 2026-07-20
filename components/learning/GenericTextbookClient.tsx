@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { saveTextbookLearningProgress } from "@/lib/learningActions";
 import { TextbookPage, Exercise } from "@/lib/data/unit3Data"; // Import types
 import { 
   BookOpen, 
@@ -44,6 +45,27 @@ export default function GenericTextbookClient({ pages, initialPage = 34, backUrl
   const [duration, setDuration] = useState(0);
   const [playbackRate, setPlaybackRate] = useState(1);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Time spent tracking
+  const pageStartedTimeRef = useRef<number>(Date.now());
+  const prevPageIndexRef = useRef<number>(currentPageIndex);
+
+  // Save progress on page navigation and unmount
+  useEffect(() => {
+    pageStartedTimeRef.current = Date.now();
+    const prevIdx = prevPageIndexRef.current;
+    prevPageIndexRef.current = currentPageIndex;
+
+    return () => {
+      const timeSpent = Math.round((Date.now() - pageStartedTimeRef.current) / 1000);
+      const prevPage = pages[prevIdx];
+      // Only log session if spent more than 10 seconds to avoid spamming
+      if (timeSpent >= 10 && prevPage) {
+        saveTextbookLearningProgress(subjectSlug, unitTitle, prevPage.pageNumber, timeSpent)
+          .catch(err => console.error("Error saving textbook progress:", err));
+      }
+    };
+  }, [currentPageIndex, subjectSlug, unitTitle, pages]);
 
   // Initialize page-specific state
   useEffect(() => {

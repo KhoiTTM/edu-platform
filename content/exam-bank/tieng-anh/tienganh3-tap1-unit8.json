@@ -1,0 +1,224 @@
+{
+  "collection": {
+    "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 8: My school things",
+    "subject_slug": "tieng_anh",
+    "grade": 3,
+    "volume": 1,
+    "units": [
+      8
+    ],
+    "exam_type": null,
+    "reference_book": "Global Success - Sách bài tập Tiếng Anh 3 Tập 1",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 8,
+      "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 8: My school things",
+      "questions": [
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. Complete and say:\ner[[a]]ser",
+            "correct_answer": "a"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. Complete and say:\nb[[oo]]k",
+            "correct_answer": "oo"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. I have [[an eraser]].",
+            "correct_answer": "an eraser"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "2. I have [[a pencil case]].",
+            "correct_answer": "a pencil case"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "3. Do you have [[a school bag]]?",
+            "correct_answer": "a school bag"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "4. Do you have [[a notebook]]?",
+            "correct_answer": "a notebook"
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Read and match.",
+            "pairs": [
+              {
+                "left": "A: Do you have a ____?\nB: Yes, I do.",
+                "right": "book"
+              },
+              {
+                "left": "A: Do you have an ____?\nB: No, I don't.",
+                "right": "eraser"
+              },
+              {
+                "left": "A: Do you have a pencil?\nB: No, ____.",
+                "right": "I don't"
+              },
+              {
+                "left": "A: Do you have a notebook?\nB: Yes, ____.",
+                "right": "I do"
+              }
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. I have [[a ruler]].",
+            "correct_answer": "a ruler"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "2. A: Do you have [[an eraser]]?\nB: No, [[I don't]].",
+            "correct_answer": "an eraser"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "3. A: Do you have [[a school bag]]?\nB: Yes, [[I do]].",
+            "correct_answer": "a school bag"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "4. A: Do you have [[a notebook]]?\nB: No, [[I don't]].",
+            "correct_answer": "a notebook"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "have / a notebook / I",
+            "words": [
+              "I",
+              "have",
+              "a",
+              "notebook."
+            ],
+            "correct_sentence": "I have a notebook."
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "an eraser / you / Do / have",
+            "words": [
+              "Do",
+              "you",
+              "have",
+              "an",
+              "eraser?"
+            ],
+            "correct_sentence": "Do you have an eraser?"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "do / I / Yes",
+            "words": [
+              "Yes,",
+              "I",
+              "do."
+            ],
+            "correct_sentence": "Yes, I do."
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "you / Do / a school bag / have",
+            "words": [
+              "Do",
+              "you",
+              "have",
+              "a",
+              "school",
+              "bag?"
+            ],
+            "correct_sentence": "Do you have a school bag?"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "don't / I / No",
+            "words": [
+              "No,",
+              "I",
+              "don't."
+            ],
+            "correct_sentence": "No, I don't."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Hi. My name is Lucy. This is my school [[bag]]. Look! I have a book, a [[notebook]], a pencil [[case]], a pen, a pencil, a ruler and an [[eraser]]. I like my [[school]] things.",
+            "correct_answer": "bag"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Read and write the questions:\n1. I have a pen. -> [[Do you have a pen?]]",
+            "correct_answer": "Do you have a pen?"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "2. I have a pencil. -> [[Do you have a pencil?]]",
+            "correct_answer": "Do you have a pencil?"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "3. I have an eraser. -> [[Do you have an eraser?]]",
+            "correct_answer": "Do you have an eraser?"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "4. I have a notebook. -> [[Do you have a notebook?]]",
+            "correct_answer": "Do you have a notebook?"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "5. I have a pencil case. -> [[Do you have a pencil case?]]",
+            "correct_answer": "Do you have a pencil case?"
+          }
+        }
+      ]
+    }
+  ]
+}

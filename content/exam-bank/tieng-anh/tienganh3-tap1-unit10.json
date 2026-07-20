@@ -1,0 +1,243 @@
+{
+  "collection": {
+    "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 10: Break time activities",
+    "subject_slug": "tieng_anh",
+    "grade": 3,
+    "volume": 1,
+    "units": [
+      10
+    ],
+    "exam_type": null,
+    "reference_book": "Global Success - Sách bài tập Tiếng Anh 3 Tập 1",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 10,
+      "title": "Tiếng Anh 3 - Luyện theo sách bài tập - Unit 10: Break time activities",
+      "questions": [
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. Complete and say:\nv[[olleyball]]",
+            "correct_answer": "olleyball"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. Complete and say:\nf[[ootball]]",
+            "correct_answer": "ootball"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. I [[do word puzzles]] at break time.",
+            "correct_answer": "do word puzzles"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "2. I [[play chess]] at break time.",
+            "correct_answer": "play chess"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "3. I [[play basketball]] at break time.",
+            "correct_answer": "play basketball"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "4. I [[play volleyball]] at break time.",
+            "correct_answer": "play volleyball"
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Read and match.",
+            "pairs": [
+              {
+                "left": "What do",
+                "right": "you do at break time?"
+              },
+              {
+                "left": "I play",
+                "right": "basketball at break time."
+              },
+              {
+                "left": "I chat with",
+                "right": "my classmates at break time."
+              },
+              {
+                "left": "I do word puzzles",
+                "right": "at break time."
+              }
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. I play [[basketball]] at break time.",
+            "correct_answer": "basketball"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "2. I [[play table tennis]] at break time.",
+            "correct_answer": "play table tennis"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "3. A: [[What]] do you do at break time?\nB: I [[chat]] with my friends.",
+            "correct_answer": "What"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "4. A: What [[do you do]] at break time?\nB: I [[play football]].",
+            "correct_answer": "do you do"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "at break time / play chess / I",
+            "words": [
+              "I",
+              "play",
+              "chess",
+              "at",
+              "break",
+              "time."
+            ],
+            "correct_sentence": "I play chess at break time."
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "play football / at / I / break time",
+            "words": [
+              "I",
+              "play",
+              "football",
+              "at",
+              "break",
+              "time."
+            ],
+            "correct_sentence": "I play football at break time."
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "do you do / break time / at / What",
+            "words": [
+              "What",
+              "do",
+              "you",
+              "do",
+              "at",
+              "break",
+              "time?"
+            ],
+            "correct_sentence": "What do you do at break time?"
+          }
+        },
+        {
+          "type": "sentence_reorder",
+          "metadata_json": {
+            "question": "play badminton / I / break time / at",
+            "words": [
+              "I",
+              "play",
+              "badminton",
+              "at",
+              "break",
+              "time."
+            ],
+            "correct_sentence": "I play badminton at break time."
+          }
+        },
+        {
+          "type": "matching",
+          "metadata_json": {
+            "question": "Read and match.",
+            "pairs": [
+              {
+                "left": "My name is Minh. I play basketball at break time.",
+                "right": "basketball"
+              },
+              {
+                "left": "I am Ben. I play table tennis at break time.",
+                "right": "table tennis"
+              },
+              {
+                "left": "Hello. I am Mary. I do word puzzles at break time.",
+                "right": "word puzzles"
+              },
+              {
+                "left": "Hi. I am Lucy. I play badminton at break time.",
+                "right": "badminton"
+              }
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "Hello. My [[name]] is Minh. I like word puzzles and sports. I [[play]] volleyball, badminton and basketball [[at]] break time. I chat [[with]] my friends, too. What [[do]] you do at break time?",
+            "correct_answer": "name"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "1. I play [[football]] at break time.",
+            "correct_answer": "football"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "2. I play [[badminton]] at break time.",
+            "correct_answer": "badminton"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "3. I play [[chess]] at break time.",
+            "correct_answer": "chess"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "4. I play [[volleyball at break time]].",
+            "correct_answer": "volleyball at break time"
+          }
+        },
+        {
+          "type": "fill_blank",
+          "metadata_json": {
+            "question": "5. I [[chat with my friends at break time]].",
+            "correct_answer": "chat with my friends at break time"
+          }
+        }
+      ]
+    }
+  ]
+}
