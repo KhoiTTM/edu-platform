@@ -315,6 +315,19 @@ Bảng `exams` hỗ trợ cột `external_url`. Khi cột này được gán gi�
 **e) Trùng collection cùng tên:**
 Generator tìm collection theo `(subject_slug, grade, title)`. Nếu `collection.title` trong file JSON khác tên collection đích trong DB, generator tạo collection mới. Vì vậy hãy kiểm tra kỹ `title` trong file JSON trước khi seed.
 
+**f) `matching`/`match_pair` — `left` và `right` PHẢI duy nhất trong 1 câu (bug component, không phải quy ước):**
+`components/universal/MatchPairRenderer.tsx` chấm theo `Set<string>` lưu **giá trị text**
+của đáp án đã nối đúng, không lưu theo cặp/index. Nếu 2 phần tử `pairs` trong CÙNG 1 câu có
+`right` (hoặc `left`) trùng text nhau, nối xong 1 cặp sẽ khoá luôn CẢ 2 nút cùng text
+(`isMatched` chỉ so text) — cặp còn lại vĩnh viễn không bấm được, học sinh kẹt cứng không
+hoàn thành nổi bài. Case thật đã gặp: Tiếng Anh 3, xem `docs/luyen-tap/tieng-anh-3.md` mục 5
+(2026-07-22) — 2 câu "hai vế trái khác nhau nhưng cùng nối 1 đáp án đúng về ngữ nghĩa" (VD
+"Let's go to the library." và "Let's go to the art room." đều đáp đúng bằng "OK, let's go.")
+tưởng hợp lý về nội dung nhưng làm học sinh không chọn được. **Khi soạn `matching`: luôn kiểm
+tra `left` không trùng nhau VÀ `right` không trùng nhau trong cùng 1 câu**, kể cả khi 2 đáp
+án đó đúng về nghĩa — nếu cần 2 vế trái cùng đáp về 1 câu trả lời chung, phải đổi câu hỏi
+sang dạng khác (`multiple_choice`/`fill_blank`) thay vì `matching`.
+
 ## 7. Ba format dữ liệu luyện tập hiện có, và việc seed Tiếng Anh 7 + KHTN 7 (SBT)
 
 Repo hiện có **3 format** dùng chung 1 schema DB (mục 1) nhưng khác nhau ở quan hệ

@@ -91,7 +91,7 @@
           "metadata_json": {
             "question": "B. SENTENCE PATTERNS — Read and match:",
             "pairs": [
-              {"left": "1. Hello.", "right": "d. Mai."},
+              {"left": "1. Hello.", "right": "c. I'm Ben."},
               {"left": "2. Bye,", "right": "d. Mai."},
               {"left": "3. How", "right": "a. are you?"},
               {"left": "4. Fine,", "right": "b. thank you."}
@@ -114,23 +114,23 @@
           "type": "sentence_reorder",
           "metadata_json": {
             "question": "B. SENTENCE PATTERNS — Make sentences:",
-            "words": ["I'm", "Hi", "Lucy"],
-            "correct_sentence": "Hi. I'm Lucy"
+            "words": ["I'm Lucy.", "Hi."],
+            "correct_sentence": "Hi. I'm Lucy."
           }
         },
         {
           "type": "sentence_reorder",
           "metadata_json": {
             "question": "B. SENTENCE PATTERNS — Make sentences:",
-            "words": ["Ben", "Goodbye"],
-            "correct_sentence": "Goodbye, Ben"
+            "words": ["Ben.", "Goodbye,"],
+            "correct_sentence": "Goodbye, Ben."
           }
         },
         {
           "type": "sentence_reorder",
           "metadata_json": {
             "question": "B. SENTENCE PATTERNS — Make sentences:",
-            "words": ["are", "How", "you"],
+            "words": ["are", "How", "you?"],
             "correct_sentence": "How are you?"
           }
         },
@@ -138,8 +138,8 @@
           "type": "sentence_reorder",
           "metadata_json": {
             "question": "B. SENTENCE PATTERNS — Make sentences:",
-            "words": ["thank", "Fine", "you"],
-            "correct_sentence": "Fine, thank you"
+            "words": ["thank you.", "Fine,"],
+            "correct_sentence": "Fine, thank you."
           }
         },
         {

@@ -140,15 +140,15 @@
           "type": "sentence_reorder",
           "metadata_json": {
             "question": "B. SENTENCE PATTERNS — Make sentences:",
-            "words": ["name's", "My", "Mary"],
-            "correct_sentence": "My name's Mary"
+            "words": ["name's", "My", "Mary."],
+            "correct_sentence": "My name's Mary."
           }
         },
         {
           "type": "sentence_reorder",
           "metadata_json": {
             "question": "B. SENTENCE PATTERNS — Make sentences:",
-            "words": ["your", "What's", "name"],
+            "words": ["your", "What's", "name?"],
             "correct_sentence": "What's your name?"
           }
         },
@@ -156,7 +156,7 @@
           "type": "sentence_reorder",
           "metadata_json": {
             "question": "B. SENTENCE PATTERNS — Make sentences:",
-            "words": ["are", "How old", "you"],
+            "words": ["are", "How old", "you?"],
             "correct_sentence": "How old are you?"
           }
         },
@@ -164,8 +164,8 @@
           "type": "sentence_reorder",
           "metadata_json": {
             "question": "B. SENTENCE PATTERNS — Make sentences:",
-            "words": ["ten", "I'm", "years old"],
-            "correct_sentence": "I'm ten years old"
+            "words": ["ten", "I'm", "years old."],
+            "correct_sentence": "I'm ten years old."
           }
         },
         {

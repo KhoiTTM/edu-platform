@@ -162,7 +162,7 @@
           "type": "sentence_reorder",
           "metadata_json": {
             "question": "B. SENTENCE PATTERNS — Make sentences:",
-            "words": ["Ms Hoa", "this", "Is"],
+            "words": ["Ms Hoa?", "this", "Is"],
             "correct_sentence": "Is this Ms Hoa?"
           }
         },
@@ -170,15 +170,15 @@
           "type": "sentence_reorder",
           "metadata_json": {
             "question": "B. SENTENCE PATTERNS — Make sentences:",
-            "words": ["it", "Yes", "is"],
-            "correct_sentence": "Yes, it is"
+            "words": ["it", "Yes,", "is."],
+            "correct_sentence": "Yes, it is."
           }
         },
         {
           "type": "sentence_reorder",
           "metadata_json": {
             "question": "B. SENTENCE PATTERNS — Make sentences:",
-            "words": ["that", "Is", "Linh"],
+            "words": ["that", "Is", "Linh?"],
             "correct_sentence": "Is that Linh?"
           }
         },
@@ -186,8 +186,8 @@
           "type": "sentence_reorder",
           "metadata_json": {
             "question": "B. SENTENCE PATTERNS — Make sentences:",
-            "words": ["isn't", "No", "it"],
-            "correct_sentence": "No, it isn't"
+            "words": ["isn't.", "No,", "it"],
+            "correct_sentence": "No, it isn't."
           }
         },
         {

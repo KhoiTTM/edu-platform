@@ -3533,8 +3533,8 @@
                 "right": "OK, let's go."
               },
               {
-                "left": "Let's go to the art room.",
-                "right": "OK, let's go."
+                "left": "Is this our art room?",
+                "right": "Yes, it is."
               }
             ],
             "tags": [

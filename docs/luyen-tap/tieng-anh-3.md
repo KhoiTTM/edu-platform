@@ -66,6 +66,32 @@
 
 ## 5. Lịch sử / ghi chú quan trọng
 
+- **2026-07-22 — Sửa lỗi "không chọn được đáp án" ở dạng bài `matching`/`match_pair`:**
+  người dùng báo "rất nhiều câu không chọn được đáp án". Audit toàn bộ câu hỏi
+  `multiple_choice`/`fill_blank`/`sentence_reorder`/`matching` (script kiểm tra cấu trúc +
+  đọc thủ công nội dung) chỉ tìm thấy 2 câu lỗi thật, cả 2 đều dạng `matching` có **2 cặp
+  khác `left` nhưng trùng `right`** (Unit 1 Q9: "1. Hello." và "2. Bye," đều nối "d. Mai.";
+  Ôn tập Exam 10 Q11: "Let's go to the library." và "Let's go to the art room." đều nối "OK,
+  let's go."). Đọc `components/universal/MatchPairRenderer.tsx` xác nhận đây là bug nghiêm
+  trọng ở component, không chỉ lỗi nội dung: `matchedRights` là `Set<string>` lưu theo
+  **giá trị text** của đáp án chứ không theo từng cặp/index riêng — khi 2 lựa chọn bên phải
+  trùng text, nối xong 1 cặp sẽ khiến CẢ 2 nút cùng text bị khoá (`isMatched`) dù chỉ mới nối
+  đúng 1, nút còn lại vĩnh viễn không bấm được nữa → học sinh kẹt cứng, không hoàn thành được
+  bài. Đã sửa dữ liệu (đổi 1 vế phải trùng lặp thành đáp án khác biệt hợp lý) cho cả 2 câu,
+  seed lại lên DB, verify trực tiếp trên Supabase (0 câu `matching` còn trùng
+  left/right trong toàn bộ `tieng_anh` lớp 3). Cũng quét toàn repo (`content/exam-bank`,
+  `content/workbooks`) — không còn câu `matching` nào khác bị lỗi tương tự.
+  **Ghi chú kỹ thuật quan trọng:** `SentenceReorderRenderer.tsx` chấm bằng cách nối `words`
+  đã chọn bằng dấu cách rồi `normalize` (lowercase + xoá TOÀN BỘ whitespace, không xoá dấu
+  câu) so với `correct_sentence` — vì vậy `words` tách dấu câu (`?`/`.`/`!`) thành phần tử
+  riêng (kiểu Unit 4-7) vẫn chấm đúng được (dấu câu dù đứng tách hay dính từ đều biến mất khi
+  xoá whitespace), KHÔNG phải lỗi như nghi ngờ ban đầu — đã verify bằng cách thử mọi hoán vị
+  của `words`. Ngược lại, `MatchPairRenderer` chấm theo Set text nên **matching là dạng bài
+  duy nhất bắt buộc mọi giá trị `right` (và `left`) trong 1 câu phải duy nhất**, không được
+  trùng nhau dù nội dung ngữ nghĩa hợp lý — cần nhớ luật này khi soạn câu `matching` mới
+  (nên thêm assert kiểm tra trùng lặp vào quy trình soạn, xem mục "Luật cứng" ở
+  `exam_bank.md`).
+
 - **2026-07-20 — Soạn xong và seed hoàn tất SBT Tập 1 (Unit 1-10):** Chuyển đổi dữ liệu và biên soạn tay 100% bám sát SBT gốc (đầy đủ dạng Phonics, Puzzle, Sentence Patterns, Reading, Writing). Dữ liệu được seed lên DB dưới dạng đề 1-1 cố định (`exam_type: null`). Đồng thời đã cập nhật component làm bài `test-assessment/page.tsx` để tự động tính và hiển thị phạm vi trang SBT thực tế (ví dụ: "Sách: Trang 4 - 7" cho Unit 1) dựa trên dữ liệu `units` lấy từ DB.
 - **2026-07-12 — Seed bộ "Ôn tập tổng hợp Học kỳ 1" (15 đề × 20 câu = 300 câu), bám cả 10
   unit SGK:** soạn theo đúng quy trình chuẩn — đọc trực tiếp ảnh render từ
