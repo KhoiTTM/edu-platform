@@ -954,14 +954,14 @@ type CreateTaskInput = {
   exam_types?: string[]; // Array of selected exam types e.g. ["lesson", "workbook", "review", "reflex"]
 };
 
-/** Create a new parent task and manually generate daily_tasks for a date range if specified */
 export async function createParentTask(input: CreateTaskInput) {
+  const adminClient = await getAdminClient();
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) return { error: "Unauthorized" };
 
-  // 1. Create the parent task configuration
-  const { data: taskData, error: taskError } = await supabase
+  // 1. Create the parent task configuration using admin client to bypass RLS limitations
+  const { data: taskData, error: taskError } = await adminClient
     .from("parent_tasks")
     .insert({
       parent_id: user.id,
@@ -990,8 +990,8 @@ export async function createParentTask(input: CreateTaskInput) {
     const endDate = new Date(input.end_date);
     const numExams = input.num_exams || 1;
 
-    // Fetch all eligible exams for the subject/grade configuration
-    const { data: studentProfile } = await supabase
+    // Fetch all eligible exams for the subject/grade configuration using adminClient (RLS bypass)
+    const { data: studentProfile } = await adminClient
       .from("profiles")
       .select("grade")
       .eq("id", input.student_id)
@@ -1075,7 +1075,7 @@ export async function createParentTask(input: CreateTaskInput) {
       }
 
       if (dailyInserts.length > 0) {
-        const { error: insertErr } = await supabase
+        const { error: insertErr } = await adminClient
           .from("daily_tasks")
           .insert(dailyInserts);
         if (insertErr) {
