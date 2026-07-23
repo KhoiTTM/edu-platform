@@ -24,7 +24,7 @@
   2. **"Wordlist"** (`exam_type: reflex`, `units: [99]`) — luyện phản xạ nhanh Level 1 (có timer, thu
      gọn/mở rộng). Nguồn: `content/exam-bank/tieng-anh/pre-a1-starter-wordlist-reflex.json`,
      `pre-a1-starter-wordlist-reflex-batch2.json`.
-  3. **"Wordlist Level 2"** (`exam_type: reflex`, `units: [98]`) — phản xạ nâng cao Level 2, 20 đề × 20 câu
+  3. **"Wordlist Level 2"** (`exam_type: reflex`, `units: [100]`) — phản xạ nâng cao Level 2, 20 đề × 20 câu
      (400 câu). Mix từ vựng khó hơn (ngữ cảnh câu, phân loại, spelling) + nghe câu ngắn (mp3 tĩnh).
      Nguồn: `content/exam-bank/tieng-anh/starters-wordlist-reflex-level2.json`.
      Script sinh đề: `scripts/generate-wordlist-level2.ts` (seeded RNG = reproducible).
