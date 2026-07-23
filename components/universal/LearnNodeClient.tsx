@@ -608,21 +608,64 @@ export function LearnNodeClient({
         const supabase = createClient();
         const { data: { user } } = await supabase.auth.getUser();
         if (!user) return;
-        const { data } = await supabase.from('learning_events').select('metadata').eq('user_id', user.id).eq('event_type', 'lesson_visited');
-        if (data) {
-           const slugs = data.map(d => {
-             if (d.metadata?.slug) return d.metadata.slug;
-             if (d.metadata?.url) {
-               const parts = d.metadata.url.split('/');
-               return parts[parts.length - 1];
-             }
-             return null;
-           }).filter(Boolean);
-           const examsStr = localStorage.getItem('completed_exams');
-           const exams = examsStr ? JSON.parse(examsStr) : [];
-           setCompletedNodes([...new Set([...slugs, ...exams])]);
+
+        // 1. Fetch completed lessons from learning_events (visited)
+        const { data: events } = await supabase
+          .from('learning_events')
+          .select('metadata')
+          .eq('user_id', user.id)
+          .eq('event_type', 'lesson_visited');
+
+        const slugs: string[] = [];
+        if (events) {
+          events.forEach(d => {
+            if (d.metadata?.slug) slugs.push(d.metadata.slug);
+            else if (d.metadata?.url) {
+              const parts = d.metadata.url.split('/');
+              const lastPart = parts[parts.length - 1];
+              if (lastPart) slugs.push(lastPart);
+            }
+          });
         }
-      } catch (e) {}
+
+        // 2. Fetch completed exams and lessons from learning_sessions database (real progress)
+        const { data: sessions } = await supabase
+          .from('learning_sessions')
+          .select('summary_metrics')
+          .eq('user_id', user.id);
+
+        const dbExams: string[] = [];
+        const derivedSlugs: string[] = [];
+
+        if (sessions) {
+          sessions.forEach((s: any) => {
+            const metrics = s.summary_metrics as any;
+            if (metrics) {
+              // Add exam_id to completed exams list
+              if (metrics.exam_id) {
+                dbExams.push(metrics.exam_id);
+              }
+              // Parse unit_topic to derive completed lesson slug (e.g. "Bài 24" -> "bai-24")
+              if (metrics.unit_topic && typeof metrics.unit_topic === 'string') {
+                const match = metrics.unit_topic.match(/Bài\s*(\d+)/i);
+                if (match) {
+                  derivedSlugs.push(`bai-${match[1]}`);
+                }
+              }
+            }
+          });
+        }
+
+        // 3. Merge with localStorage fallback
+        const examsStr = localStorage.getItem('completed_exams');
+        const localExams = examsStr ? JSON.parse(examsStr) : [];
+        const allExams = [...new Set([...localExams, ...dbExams])];
+        const allSlugs = [...new Set([...slugs, ...derivedSlugs])];
+
+        setCompletedNodes([...new Set([...allSlugs, ...allExams])]);
+      } catch (e) {
+        console.error("Error fetching completed nodes:", e);
+      }
     };
     fetchCompleted();
   }, []);
