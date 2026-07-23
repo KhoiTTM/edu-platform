@@ -94,7 +94,7 @@ export default function SubjectMapPage() {
   const [collapsedReflex, setCollapsedReflex] = useState<Record<string, boolean>>({});
   const [isLoading, setIsLoading] = useState(true);
   const [isPickingRandom, setIsPickingRandom] = useState(false);
-  const [timerLimit, setTimerLimit] = useState(30);
+  const [timerLimit, setTimerLimit] = useState(60);
 
   const subjectTitles: Record<string, string> = {
     tieng_anh: "Tiếng Anh",
@@ -438,7 +438,7 @@ export default function SubjectMapPage() {
             <div className="mb-8 p-6 rounded-3xl bg-surface/60 border border-line backdrop-blur-sm shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
               <div>
                 <h3 className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-rose-400">⏱️ CÀI ĐẶT THỜI GIAN PHẢN XẠ</h3>
-                <p className="text-xs text-slate-400 mt-1 font-bold">Chọn giới hạn thời gian làm bài cho mỗi câu hỏi. Mặc định là 30 giây.</p>
+                <p className="text-xs text-slate-400 mt-1 font-bold">Chọn giới hạn thời gian làm bài cho mỗi câu hỏi. Mặc định là 60 giây.</p>
               </div>
               <div className="flex items-center gap-2 bg-slate-950 p-1.5 rounded-2xl border border-line">
                 {[10, 20, 30, 60].map((time) => (

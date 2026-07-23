@@ -217,7 +217,7 @@ function AssessmentContent() {
               questions={questions}
               mode="quiz"
               onComplete={handleComplete}
-              timerSeconds={customTimer || (examType === 'reflex' ? 30 : undefined)}
+              timerSeconds={customTimer || (examType === 'reflex' ? 60 : undefined)}
             />
           ) : (
             <AssessmentResultCard

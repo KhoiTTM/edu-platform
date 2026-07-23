@@ -12,19 +12,23 @@
 - Format dữ liệu (xem `exam_bank.md` mục 7): **Format 3 — Luyện kỹ năng cắt ngang** (không
   gắn 1 concept/unit cụ thể, tổ chức theo `exam_type` chuyên biệt, `units` dùng số ảo).
 
-## 2. Trạng thái hiện tại (khảo sát trực tiếp Supabase — 2026-07-10)
+## 2. Trạng thái hiện tại (cập nhật 2026-07-23)
 
-- **5 collections**: `exam_type: reflex` (2), `listening` (1), `lesson` (2).
+- **6 collections**: `exam_type: reflex` (3), `listening` (1), `lesson` (2).
 - Dữ liệu từ vựng lõi: 215 từ, chia 10 chủ đề (My Body, At the Zoo, Colours, Food...) — định
   nghĩa tại `lib/data/startersVocabulary.ts`.
 - 3 nhóm collection theo tên hiển thị:
   1. **"Wordlist"** (`exam_type: lesson`, `units: [1]`) — luyện theo bài học, 20 đề × 20 câu,
      bao quát 100% từ vựng (400 câu nạp tĩnh). Nguồn:
-     `content/exam-bank/starters-wordlist-pilot.json`.
-  2. **"Wordlist"** (`exam_type: reflex`, `units: [99]`) — luyện phản xạ nhanh (có timer, thu
-     gọn/mở rộng). Nguồn: `content/exam-bank/pre-a1-starter-wordlist-reflex.json`,
+     `content/exam-bank/tieng-anh/starters-wordlist-pilot.json`.
+  2. **"Wordlist"** (`exam_type: reflex`, `units: [99]`) — luyện phản xạ nhanh Level 1 (có timer, thu
+     gọn/mở rộng). Nguồn: `content/exam-bank/tieng-anh/pre-a1-starter-wordlist-reflex.json`,
      `pre-a1-starter-wordlist-reflex-batch2.json`.
-  3. **"Three Practice Test"** (`exam_type: lesson`, `units: [2]`) — liên kết Flipbook ngoài
+  3. **"Wordlist Level 2"** (`exam_type: reflex`, `units: [98]`) — phản xạ nâng cao Level 2, 20 đề × 20 câu
+     (400 câu). Mix từ vựng khó hơn (ngữ cảnh câu, phân loại, spelling) + nghe câu ngắn (mp3 tĩnh).
+     Nguồn: `content/exam-bank/tieng-anh/starters-wordlist-reflex-level2.json`.
+     Script sinh đề: `scripts/generate-wordlist-level2.ts` (seeded RNG = reproducible).
+  4. **"Three Practice Test"** (`exam_type: lesson`, `units: [2]`) — liên kết Flipbook ngoài
      qua `external_url`, không có câu hỏi số hoá trong DB (xem `exam_bank.md` mục 7.3).
 - Script seed: `scripts/seed-exam-bank.ts` (generator chuẩn, không có script riêng).
 
@@ -62,8 +66,11 @@
   request (thay vì 20 requests liên tục) để loại bỏ lỗi nghẽn mạng `fetch failed`, kèm cơ chế
   tự động thử lại (Retry 5 lần, delay 1s). Lệnh nạp lại/đồng bộ:
   ```bash
-  npx tsx scripts/seed-exam-bank.ts content/exam-bank/starters-wordlist-pilot.json
-  npx tsx scripts/seed-exam-bank.ts content/exam-bank/pre-a1-starter-wordlist-reflex-batch2.json
+  npx tsx scripts/seed-exam-bank.ts content/exam-bank/tieng-anh/starters-wordlist-pilot.json
+  npx tsx scripts/seed-exam-bank.ts content/exam-bank/tieng-anh/pre-a1-starter-wordlist-reflex-batch2.json
+  npx tsx scripts/seed-exam-bank.ts content/exam-bank/tieng-anh/starters-wordlist-reflex-level2.json
   ```
+- **Luyện nghe phản xạ Level 2 (mp3 tĩnh):** Khác với Level 1 sử dụng Web Speech API (TTS), bộ Wordlist Level 2 sử dụng các file âm thanh mp3 tĩnh đã được lưu sẵn trong `public/audio/pre-a1-starter-listening` thông qua thuộc tính `audio_url` để bảo đảm độ chuẩn xác của giọng đọc.
+- **Thời gian phản xạ:** Mặc định của thời gian phản xạ (timer) đã được nâng lên **60 giây** thay vì 30 giây mặc định trước đó ở các trang `luyen-tap/[subject]/page.tsx` và `test-assessment/page.tsx`.
 - Trigger tự động sinh tên đã bị xóa (migration 053) — tiêu đề hiển thị chính là `title` được
   đặt lúc seed, không có gì tự ghi đè lại (đúng quy tắc chung ở `exam_bank.md` mục 6b).
