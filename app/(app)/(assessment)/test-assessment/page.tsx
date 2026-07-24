@@ -128,7 +128,14 @@ function AssessmentContent() {
           localStorage.setItem('completed_exams', JSON.stringify(completedExams));
         }
         const durationSeconds = Math.max(1, Math.round((Date.now() - startedAtRef.current) / 1000));
-        saveExamResult(examId, correctCount, answers.length, durationSeconds);
+        let ttsSpeed = 1.0;
+        try {
+          const savedSpeed = localStorage.getItem('tts-speed');
+          if (savedSpeed) ttsSpeed = parseFloat(savedSpeed);
+        } catch (e) {
+          console.error("Failed to read tts-speed from localStorage", e);
+        }
+        saveExamResult(examId, correctCount, answers.length, durationSeconds, ttsSpeed);
 
         fetch('/api/events', {
           method: 'POST',

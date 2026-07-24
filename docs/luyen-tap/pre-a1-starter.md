@@ -12,12 +12,11 @@
 - Format dữ liệu (xem `exam_bank.md` mục 7): **Format 3 — Luyện kỹ năng cắt ngang** (không
   gắn 1 concept/unit cụ thể, tổ chức theo `exam_type` chuyên biệt, `units` dùng số ảo).
 
-## 2. Trạng thái hiện tại (cập nhật 2026-07-23)
+## 2. Trạng thái hiện tại (cập nhật 2026-07-24)
 
-- **6 collections**: `exam_type: reflex` (3), `listening` (1), `lesson` (2).
-- Dữ liệu từ vựng lõi: 215 từ, chia 10 chủ đề (My Body, At the Zoo, Colours, Food...) — định
-  nghĩa tại `lib/data/startersVocabulary.ts`.
-- 3 nhóm collection theo tên hiển thị:
+- **7 collections**: `exam_type: reflex` (3), `listening` (2), `lesson` (2).
+- Dữ liệu từ vựng lõi: 280 từ (đã bao gồm 100% từ vựng Tiếng Anh 3 Global Success và Pre A1 Starters) — định nghĩa tại `lib/data/startersVocabulary.ts`.
+- Các nhóm collection theo tên hiển thị:
   1. **"Wordlist"** (`exam_type: lesson`, `units: [1]`) — luyện theo bài học, 20 đề × 20 câu,
      bao quát 100% từ vựng (400 câu nạp tĩnh). Nguồn:
      `content/exam-bank/tieng-anh/starters-wordlist-pilot.json`.
@@ -28,7 +27,12 @@
      (400 câu). Mix từ vựng khó hơn (ngữ cảnh câu, phân loại, spelling) + nghe câu ngắn (mp3 tĩnh).
      Nguồn: `content/exam-bank/tieng-anh/starters-wordlist-reflex-level2.json`.
      Script sinh đề: `scripts/generate-wordlist-level2.ts` (seeded RNG = reproducible).
-  4. **"Three Practice Test"** (`exam_type: lesson`, `units: [2]`) — liên kết Flipbook ngoài
+  4. **"Luyện nghe Level 2"** (`exam_type: listening`, `units: [3]`) — luyện nghe câu đơn với mp3 tĩnh, 20 đề × 15 câu (300 câu).
+     Nguồn: `content/exam-bank/pre-a1-listening-level2-exams.json`.
+  5. **"Luyện nghe Level 3"** (`exam_type: listening`, `units: [4]`) — luyện nghe hội thoại ngắn phân vai với mp3 tĩnh, 10 đề × 15 câu (150 câu). Phân bổ lặp lại từ 66 câu hội thoại chuẩn đã sinh từ ElevenLabs.
+     Nguồn: `content/exam-bank/pre-a1-listening-level3-exams.json`.
+     Script sinh đề: `scripts/generate-listening-level3.ts` và `scripts/generate-listening-level3-repeat.ts`.
+  6. **"Three Practice Test"** (`exam_type: lesson`, `units: [2]`) — liên kết Flipbook ngoài
      qua `external_url`, không có câu hỏi số hoá trong DB (xem `exam_bank.md` mục 7.3).
 - Script seed: `scripts/seed-exam-bank.ts` (generator chuẩn, không có script riêng).
 
@@ -70,7 +74,10 @@
   npx tsx scripts/seed-exam-bank.ts content/exam-bank/tieng-anh/pre-a1-starter-wordlist-reflex-batch2.json
   npx tsx scripts/seed-exam-bank.ts content/exam-bank/tieng-anh/starters-wordlist-reflex-level2.json
   ```
-- **Luyện nghe phản xạ Level 2 (mp3 tĩnh):** Khác với Level 1 sử dụng Web Speech API (TTS), bộ Wordlist Level 2 sử dụng các file âm thanh mp3 tĩnh đã được lưu sẵn trong `public/audio/pre-a1-starter-listening` thông qua thuộc tính `audio_url` để bảo đảm độ chuẩn xác của giọng đọc.
-- **Thời gian phản xạ:** Mặc định của thời gian phản xạ (timer) đã được nâng lên **60 giây** thay vì 30 giây mặc định trước đó ở các trang `luyen-tap/[subject]/page.tsx` và `test-assessment/page.tsx`.
+- **Quản lý Audio tĩnh (ElevenLabs MP3):**
+  * **Level 2 (Nghe câu đơn):** Audio được lưu tại thư mục [public/audio/pre-a1-starter-listening/](file:///d:/Backups/Projects/edu-platform/public/audio/pre-a1-starter-listening). Sinh tự động qua script [gen-audio-elevenlabs.ts](file:///d:/Backups/Projects/edu-platform/scripts/gen-audio-elevenlabs.ts).
+  * **Level 3 (Hội thoại ngắn):** Audio được lưu tại thư mục [public/audio/pre-a1-starter-listening-l3/](file:///d:/Backups/Projects/edu-platform/public/audio/pre-a1-starter-listening-l3). Sinh tự động qua script [gen-audio-level3.ts](file:///d:/Backups/Projects/edu-platform/scripts/gen-audio-level3.ts). Script này tự động phân vai thoại (Man/Woman/Girl/Boy), gọi ElevenLabs cho từng giọng rồi ghép nối các buffer nhị phân lại để tạo thành file âm thanh đối thoại hoàn chỉnh.
+- **Luyện nghe Level 3 (Hội thoại ngắn):** Xem lộ trình chi tiết tại [pre-a1-starter-listening-level3-roadmap.md](file:///d:/Backups/Projects/edu-platform/docs/luyen-tap/pre-a1-starter-listening-level3-roadmap.md).
+- **Thời gian phản xạ:** Mặc định của thời gian phản xạ (timer) đã được nâng lên **60 giây** thay vì 30 giây mặc định trước đó ở các trang `luyen-tap/[subject]/page.tsx` and `test-assessment/page.tsx`.
 - Trigger tự động sinh tên đã bị xóa (migration 053) — tiêu đề hiển thị chính là `title` được
   đặt lúc seed, không có gì tự ghi đè lại (đúng quy tắc chung ở `exam_bank.md` mục 6b).

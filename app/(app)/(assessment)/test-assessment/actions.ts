@@ -44,7 +44,7 @@ export async function getExamQuestions(examId: string) {
   }));
 }
 
-export async function saveExamResult(examId: string, score: number, total: number, durationSeconds?: number) {
+export async function saveExamResult(examId: string, score: number, total: number, durationSeconds?: number, ttsSpeed?: number) {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
   if (!user) return;
@@ -74,6 +74,7 @@ export async function saveExamResult(examId: string, score: number, total: numbe
         unit_topic: examData.title,
         score,
         total,
+        tts_speed: ttsSpeed ?? null,
       },
     });
 
