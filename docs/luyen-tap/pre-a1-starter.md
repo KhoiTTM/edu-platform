@@ -34,13 +34,15 @@
      Script sinh đề: `scripts/generate-listening-level3.ts` và `scripts/generate-listening-level3-repeat.ts`.
   6. **"Three Practice Test"** (`exam_type: lesson`, `units: [2]`) — liên kết Flipbook ngoài
      qua `external_url`, không có câu hỏi số hoá trong DB (xem `exam_bank.md` mục 7.3).
-  7. **"Luyện chính tả Level 1"** (`exam_type: review`, `units: [101]`, tab Ôn Tập) — 1 đề × 20 câu
-     `fill_blank` luyện nhớ chính tả cả từ: khuyết NHIỀU chữ cái (10 câu, VD `b a _ _ _ a` → chọn
-     `nan`) hoặc khuyết toàn bộ từ (10 câu, chọn cách viết đúng trong 4 cách, VD `cat`/`kat`/`cet`/`cta`).
-     Câu hỏi chỉ ghi nghĩa tiếng Việt, KHÔNG có emoji/hình gợi ý. Mỗi câu bật flag
-     `metadata_json.retry_until_correct: true` → chế độ làm-lại-khi-sai (xem mục 5).
-     Nguồn: `content/exam-bank/tieng-anh/pre-a1-spelling-level1.json`. Từ vựng lấy từ wordlist
-     280 từ (`lib/data/startersVocabulary.ts`).
+  7. **"Luyện chính tả Level 1"** (`exam_type: review`, `units: [101]`, tab Ôn Tập) — 12 đề × 20 câu
+     (240 câu) `fill_blank` luyện nhớ chính tả cả từ: khuyết NHIỀU chữ cái (10 câu/đề, VD `b a _ _ _ a`
+     → chọn `nan`) hoặc khuyết toàn bộ từ (10 câu/đề, chọn cách viết đúng trong 4 cách, VD
+     `cat`/`kat`/`cet`/`cta`). Câu hỏi chỉ ghi nghĩa tiếng Việt, KHÔNG có emoji/hình gợi ý. Mỗi câu
+     bật flag `metadata_json.retry_until_correct: true` → chế độ làm-lại-khi-sai (xem mục 5).
+     Phủ 238 từ phân biệt = toàn bộ từ ĐƠN 3-8 chữ cái trong wordlist (Đề 12 trộn lại 2 từ cũ
+     `hat`, `touch` cho đủ 20 câu). Nguồn: `content/exam-bank/tieng-anh/pre-a1-spelling-level1.json`.
+     Từ vựng lấy từ wordlist 280 từ (`lib/data/startersVocabulary.ts`); script sinh Đề 02-12:
+     `scratch/gen-spelling-l1.ts` (seeded RNG), script verify: `scratch/check-spelling-l1.ts`.
 - Script seed: `scripts/seed-exam-bank.ts` (generator chuẩn, không có script riêng).
 
 ## 3. Đặc thù riêng của môn
