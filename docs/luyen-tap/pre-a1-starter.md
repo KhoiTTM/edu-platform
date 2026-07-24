@@ -14,7 +14,7 @@
 
 ## 2. Trạng thái hiện tại (cập nhật 2026-07-24)
 
-- **7 collections**: `exam_type: reflex` (3), `listening` (2), `lesson` (2).
+- **8 collections**: `exam_type: reflex` (3), `listening` (2), `lesson` (2), `review` (1).
 - Dữ liệu từ vựng lõi: 280 từ (đã bao gồm 100% từ vựng Tiếng Anh 3 Global Success và Pre A1 Starters) — định nghĩa tại `lib/data/startersVocabulary.ts`.
 - Các nhóm collection theo tên hiển thị:
   1. **"Wordlist"** (`exam_type: lesson`, `units: [1]`) — luyện theo bài học, 20 đề × 20 câu,
@@ -34,6 +34,13 @@
      Script sinh đề: `scripts/generate-listening-level3.ts` và `scripts/generate-listening-level3-repeat.ts`.
   6. **"Three Practice Test"** (`exam_type: lesson`, `units: [2]`) — liên kết Flipbook ngoài
      qua `external_url`, không có câu hỏi số hoá trong DB (xem `exam_bank.md` mục 7.3).
+  7. **"Luyện chính tả Level 1"** (`exam_type: review`, `units: [101]`, tab Ôn Tập) — 1 đề × 20 câu
+     `fill_blank` luyện nhớ chính tả cả từ: khuyết NHIỀU chữ cái (10 câu, VD `b a _ _ _ a` → chọn
+     `nan`) hoặc khuyết toàn bộ từ (10 câu, chọn cách viết đúng trong 4 cách, VD `cat`/`kat`/`cet`/`cta`).
+     Câu hỏi chỉ ghi nghĩa tiếng Việt, KHÔNG có emoji/hình gợi ý. Mỗi câu bật flag
+     `metadata_json.retry_until_correct: true` → chế độ làm-lại-khi-sai (xem mục 5).
+     Nguồn: `content/exam-bank/tieng-anh/pre-a1-spelling-level1.json`. Từ vựng lấy từ wordlist
+     280 từ (`lib/data/startersVocabulary.ts`).
 - Script seed: `scripts/seed-exam-bank.ts` (generator chuẩn, không có script riêng).
 
 ## 3. Đặc thù riêng của môn
@@ -65,6 +72,15 @@
 - [ ] Cập nhật lại mục 2 (trạng thái) trong chính file này sau khi seed xong
 
 ## 5. Lịch sử / ghi chú quan trọng
+
+- **2026-07-24 — Chế độ làm-lại-khi-sai (`retry_until_correct`) cho câu trắc nghiệm/fill_blank:**
+  `MultipleChoiceRenderer.tsx` nhận thêm prop `retryUntilCorrect` + `onWrongAttempt`. Khi bật:
+  chọn sai KHÔNG bị chấm sai — đáp án sai giữ nguyên màu đỏ (không reset, không bấm lại được),
+  hiện thông báo "Chưa đúng — em thử lại nhé!" và học sinh chọn tiếp đến khi đúng; chỉ khi
+  chọn đúng mới ghi nhận kết quả (luôn là đúng). Bật bằng flag `retry_until_correct: true`
+  trong `metadata_json` của từng câu — hiện chỉ được nối vào nhánh `fill_blank` fallback của
+  `AssessmentRenderer.tsx`; các môn/câu không có flag giữ nguyên hành vi chấm 1 lần như cũ.
+  Dùng đầu tiên cho collection "Luyện chính tả Level 1" (xem mục 2).
 
 - **Bulk Insert:** `scripts/seed-exam-bank.ts` đã tối ưu nạp hàng loạt 20 câu hỏi trong 1
   request (thay vì 20 requests liên tục) để loại bỏ lỗi nghẽn mạng `fetch failed`, kèm cơ chế

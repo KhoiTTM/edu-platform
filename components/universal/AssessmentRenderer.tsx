@@ -177,6 +177,8 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
             onAnswer={handleAnswer}
             disabled={hasAnswered}
             imageUrl={currentQuestion.imageUrl || currentQuestion.image_url || currentQuestion.metadata_json?.image_url}
+            retryUntilCorrect={!!(currentQuestion.retry_until_correct || currentQuestion.metadata_json?.retry_until_correct)}
+            onWrongAttempt={() => playSound(false)}
           />
         );
       case 'tap_word': {

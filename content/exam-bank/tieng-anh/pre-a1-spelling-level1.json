@@ -1,0 +1,262 @@
+{
+  "collection": {
+    "title": "Luyện chính tả Level 1",
+    "subject_slug": "pre-a1-starter",
+    "grade": 3,
+    "volume": 1,
+    "units": [101],
+    "sequence_number": 1,
+    "exam_type": "review",
+    "reference_book": "Pre A1 Starters + Tiếng Anh 3 Wordlist",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 1,
+      "title": "Đề 01",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"quả táo\"**: **a _ _ l e**",
+            "choices": ["pp", "bb", "lp", "pl"],
+            "correct_answer": "pp",
+            "explanation": "Từ đầy đủ là **\"apple\"**, nghĩa là \"quả táo\".",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "food"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"quả chuối\"**: **b a _ _ _ a**",
+            "choices": ["nan", "nna", "man", "nen"],
+            "correct_answer": "nan",
+            "explanation": "Từ đầy đủ là **\"banana\"**, nghĩa là \"quả chuối\".",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "food"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"màu vàng\"**: **y e _ _ o w**",
+            "choices": ["ll", "lw", "wl", "yl"],
+            "correct_answer": "ll",
+            "explanation": "Từ đầy đủ là **\"yellow\"**, nghĩa là \"màu vàng\".",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "colours"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"con khỉ\"**: **m o n _ _ _**",
+            "choices": ["key", "kay", "cey", "kee"],
+            "correct_answer": "key",
+            "explanation": "Từ đầy đủ là **\"monkey\"**, nghĩa là \"con khỉ\".",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "animals"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"màu tím\"**: **p u r _ _ e**",
+            "choices": ["pl", "bl", "lp", "pp"],
+            "correct_answer": "pl",
+            "explanation": "Từ đầy đủ là **\"purple\"**, nghĩa là \"màu tím\".",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "colours"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"con gà\"**: **c h i _ _ e n**",
+            "choices": ["ck", "kc", "cc", "kk"],
+            "correct_answer": "ck",
+            "explanation": "Từ đầy đủ là **\"chicken\"**, nghĩa là \"con gà\".",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "animals"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"chị gái / em gái\"**: **s i s _ _ _**",
+            "choices": ["ter", "tor", "tre", "tar"],
+            "correct_answer": "ter",
+            "explanation": "Từ đầy đủ là **\"sister\"**, nghĩa là \"chị gái / em gái\".",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "family"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"nước\"**: **w a _ _ r**",
+            "choices": ["te", "to", "ta", "tr"],
+            "correct_answer": "te",
+            "explanation": "Từ đầy đủ là **\"water\"**, nghĩa là \"nước\".",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "food"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"con hổ\"**: **t i _ _ r**",
+            "choices": ["ge", "gu", "je", "ga"],
+            "correct_answer": "ge",
+            "explanation": "Từ đầy đủ là **\"tiger\"**, nghĩa là \"con hổ\".",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "animals"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"con voi\"**: **e l e _ _ _ n t**",
+            "choices": ["pha", "fha", "pah", "phe"],
+            "correct_answer": "pha",
+            "explanation": "Từ đầy đủ là **\"elephant\"**, nghĩa là \"con voi\".",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "animals"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"con mèo\"** được viết đúng là:",
+            "choices": ["cat", "kat", "cet", "cta"],
+            "correct_answer": "cat",
+            "explanation": "**\"cat\"** nghĩa là \"con mèo\", ghép bởi 3 chữ cái c-a-t.",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "animals"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"con chó\"** được viết đúng là:",
+            "choices": ["dog", "dok", "dug", "dgo"],
+            "correct_answer": "dog",
+            "explanation": "**\"dog\"** nghĩa là \"con chó\", ghép bởi 3 chữ cái d-o-g.",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "animals"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"con cá\"** được viết đúng là:",
+            "choices": ["fish", "fich", "fesh", "fhis"],
+            "correct_answer": "fish",
+            "explanation": "**\"fish\"** nghĩa là \"con cá\", ghép bởi 4 chữ cái f-i-s-h.",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "animals"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"sữa\"** được viết đúng là:",
+            "choices": ["milk", "milc", "melk", "mlik"],
+            "correct_answer": "milk",
+            "explanation": "**\"milk\"** nghĩa là \"sữa\", ghép bởi 4 chữ cái m-i-l-k.",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "food"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"màu đỏ\"** được viết đúng là:",
+            "choices": ["red", "rad", "rid", "erd"],
+            "correct_answer": "red",
+            "explanation": "**\"red\"** nghĩa là \"màu đỏ\", ghép bởi 3 chữ cái r-e-d.",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "colours"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"quả trứng\"** được viết đúng là:",
+            "choices": ["egg", "eg", "egk", "geg"],
+            "correct_answer": "egg",
+            "explanation": "**\"egg\"** nghĩa là \"quả trứng\", ghép bởi 3 chữ cái e-g-g.",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "food"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"bánh mì\"** được viết đúng là:",
+            "choices": ["bread", "bred", "braed", "brade"],
+            "correct_answer": "bread",
+            "explanation": "**\"bread\"** nghĩa là \"bánh mì\", ghép bởi 5 chữ cái b-r-e-a-d.",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "food"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"con ngựa\"** được viết đúng là:",
+            "choices": ["horse", "hors", "hourse", "horze"],
+            "correct_answer": "horse",
+            "explanation": "**\"horse\"** nghĩa là \"con ngựa\", ghép bởi 5 chữ cái h-o-r-s-e.",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "animals"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"màu xanh lá\"** được viết đúng là:",
+            "choices": ["green", "gren", "grean", "grene"],
+            "correct_answer": "green",
+            "explanation": "**\"green\"** nghĩa là \"màu xanh lá\", ghép bởi 5 chữ cái g-r-e-e-n.",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "colours"]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"bàn tay\"** được viết đúng là:",
+            "choices": ["hand", "hend", "hnad", "han"],
+            "correct_answer": "hand",
+            "explanation": "**\"hand\"** nghĩa là \"bàn tay\", ghép bởi 4 chữ cái h-a-n-d.",
+            "retry_until_correct": true,
+            "tags": ["spelling", "level-1", "my-body"]
+          }
+        }
+      ]
+    }
+  ]
+}

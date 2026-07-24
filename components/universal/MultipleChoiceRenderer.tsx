@@ -16,6 +16,10 @@ interface MultipleChoiceRendererProps {
   imageUrl?: string;
   audioText?: string;
   audioUrl?: string;
+  // Chế độ luyện tập: chọn sai không bị chấm sai, chỉ báo "chưa đúng" và cho chọn lại.
+  // Đáp án sai đã chọn giữ nguyên màu đỏ (không reset) để học sinh thấy mình đã sai ở đâu.
+  retryUntilCorrect?: boolean;
+  onWrongAttempt?: () => void;
 }
 
 // Ưu tiên phát mp3 tĩnh (đã pre-generate bằng ElevenLabs, giọng cố định theo câu);
@@ -110,9 +114,12 @@ export function MultipleChoiceRenderer({
   shuffle = true,
   imageUrl,
   audioText,
-  audioUrl
+  audioUrl,
+  retryUntilCorrect = false,
+  onWrongAttempt
 }: MultipleChoiceRendererProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+  const [wrongIndices, setWrongIndices] = useState<number[]>([]);
   const [shuffledOptions, setShuffledOptions] = useState<string[]>([]);
   const [actualCorrectIndex, setActualCorrectIndex] = useState<number>(0);
   const [initialized, setInitialized] = useState(false);
@@ -166,6 +173,12 @@ export function MultipleChoiceRenderer({
 
   const handleSelect = (idx: number) => {
     if (disabled) return;
+    if (retryUntilCorrect && idx !== actualCorrectIndex) {
+      // Không chấm sai — chỉ đánh dấu "chưa đúng" và cho chọn lại.
+      setWrongIndices(prev => (prev.includes(idx) ? prev : [...prev, idx]));
+      onWrongAttempt?.();
+      return;
+    }
     setSelectedIndex(idx);
     onAnswer(idx === actualCorrectIndex, shuffledOptions[idx]);
   };
@@ -254,15 +267,27 @@ export function MultipleChoiceRenderer({
         </div>
       )}
 
+      {retryUntilCorrect && wrongIndices.length > 0 && !disabled && (
+        <div className="flex items-center gap-2 px-4 py-3 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 text-sm font-bold">
+          <X size={16} className="flex-shrink-0" />
+          Chưa đúng — em thử lại nhé!
+        </div>
+      )}
+
       <div className="grid gap-2">
         {shuffledOptions.map((option, idx) => {
           const isSelected = selectedIndex === idx;
           const isCorrect = idx === actualCorrectIndex;
           const showResult = disabled && (isSelected || isCorrect);
+          const isWrongAttempt = wrongIndices.includes(idx);
 
           let borderClass = "border-line bg-surface/50 hover:bg-surface-raised hover:border-line cursor-pointer";
           if (disabled) {
             borderClass = "border-line bg-surface/50 opacity-50 cursor-not-allowed";
+          }
+          if (isWrongAttempt) {
+            // Đáp án đã chọn sai (chế độ làm lại): giữ nguyên màu đỏ, không cho bấm lại
+            borderClass = "border-rose-500 bg-rose-500/10 text-rose-400 opacity-100 cursor-not-allowed";
           }
           if (showResult) {
             if (isCorrect) borderClass = "border-emerald-500 bg-emerald-500/10 text-emerald-400 opacity-100 font-bold z-10";
@@ -272,14 +297,14 @@ export function MultipleChoiceRenderer({
           return (
             <button
               key={idx}
-              disabled={disabled}
+              disabled={disabled || isWrongAttempt}
               onClick={() => handleSelect(idx)}
               className={`w-full text-left p-3 rounded-2xl border transition-all text-slate-200 text-sm flex items-center justify-between group ${borderClass}`}
             >
               <div className="flex items-center">
                 <span className={`inline-flex h-8 w-8 items-center justify-center rounded-lg border text-xs font-bold mr-4 transition-colors ${
                   showResult && isCorrect ? "bg-emerald-500 border-emerald-400 text-white" :
-                  showResult && isSelected ? "bg-rose-500 border-rose-400 text-white" :
+                  (showResult && isSelected) || isWrongAttempt ? "bg-rose-500 border-rose-400 text-white" :
                   "bg-surface-raised border-line text-slate-400 group-hover:text-white group-hover:border-sky-500/50"
                 }`}>
                   {String.fromCharCode(65 + idx)}
@@ -288,7 +313,7 @@ export function MultipleChoiceRenderer({
               </div>
 
               {showResult && isCorrect && <Check size={18} className="text-emerald-400" />}
-              {showResult && isSelected && !isCorrect && <X size={18} className="text-rose-400" />}
+              {((showResult && isSelected && !isCorrect) || (isWrongAttempt && !showResult)) && <X size={18} className="text-rose-400" />}
             </button>
           );
         })}
