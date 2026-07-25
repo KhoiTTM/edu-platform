@@ -82,5 +82,12 @@ Chúng ta sẽ xây dựng một script tự động:
 ---
 
 ## 5. Lịch sử cập nhật (Changelog)
-* **2026-07-24**: Hoàn thành sinh 66 audio tĩnh, phân bổ thành 10 đề luyện nghe Level 3 và seed lên database Supabase thành công. Tích hợp tracking tốc độ phát nghe tts_speed.
+* **2026-07-24**: Hoàn thành sinh 66 audio tĩnh (thực tế 63 câu unique), phân bổ thành 10 đề luyện nghe Level 3 và seed lên database Supabase thành công. Tích hợp tracking tốc độ phát nghe tts_speed.
+* **2026-07-25**: Mở rộng lên **20 đề × 20 câu (400 câu)**, dùng `ELEVENLABS_API_KEY_SECOND`
+  (key thứ 2, tier free riêng biệt) sau khi key đầu cạn quota. Soạn 9 batch câu hội thoại mới
+  thủ công phủ các chủ đề wordlist còn thiếu (My Body, At the Beach, My Street, Birthday, thú
+  nuôi tại nhà, At the Zoo, Clothes Shop, Favourite Food), sinh audio đến khi quota key 2 gần
+  cạn — tổng 195 câu unique có audio thật. Sửa thuật toán phân bổ đề (bản cũ random-cắt-đầu
+  độc lập từng đề bỏ sót một số câu; bản v2 xáo trộn-nối-liên-tiếp đảm bảo phủ đều 100%) — xem
+  chi tiết đầy đủ tại `docs/luyen-tap/pre-a1-starter.md` mục 5 (2026-07-25).
 

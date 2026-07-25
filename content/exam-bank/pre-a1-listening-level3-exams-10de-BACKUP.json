@@ -1,0 +1,3608 @@
+{
+  "collection": {
+    "title": "Luyện nghe Level 3",
+    "subject_slug": "pre-a1-starter",
+    "grade": 3,
+    "volume": 1,
+    "units": [
+      4
+    ],
+    "sequence_number": 11,
+    "exam_type": "listening",
+    "reference_book": "PreA1 Starter - Listening Level 3 (hội thoại)",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 1,
+      "title": "PreA1 Starter Listen Level 3 - Đề 01",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing baseball, Jill?\nGirl: No, I like playing with Nick in the garden.",
+            "question": "🔊 What does Jill like playing?",
+            "options": [
+              "baseball",
+              "chess",
+              "table tennis",
+              "volleyball"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "chess"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/ec1181211124.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: What are you doing, Alice?\nGirl: My grandpa and I are playing chess.",
+            "question": "🔊 What is Alice playing?",
+            "options": [
+              "Chess",
+              "Volleyball",
+              "Table tennis",
+              "Word puzzle"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "chess"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/ce0ee33b1926.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where is Lucy, Grace?\nBoy: He is in the library reading a book.",
+            "question": "🔊 Where is Lucy?",
+            "options": [
+              "art room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "mirror",
+              "bathroom"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/5e585922cda4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Can you play volleyball, Tom?\nBoy: No, but I can play basketball very well.",
+            "question": "🔊 What sport can Tom play?",
+            "options": [
+              "Volleyball",
+              "Basketball",
+              "Football",
+              "Chess"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "basketball"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/78523a7764d5.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: What fruit would you like, Grace?\nGirl: I'd like some apple, please.",
+            "question": "🔊 What fruit does Grace want?",
+            "options": [
+              "apple",
+              "coconut",
+              "mango",
+              "pineapple"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "lemonade"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/ee5770b01e18.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where are you going, Anna?\nBoy: I'm going to the computer room to see my teacher.",
+            "question": "🔊 Where is Anna going?",
+            "options": [
+              "computer room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "art-room",
+              "drawing"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/6a9428559750.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing badminton, Eva?\nGirl: No, I like playing with Lucy in the garden.",
+            "question": "🔊 What does Eva like playing?",
+            "options": [
+              "badminton",
+              "chess",
+              "table tennis",
+              "volleyball"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "volleyball"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/4b9402e54fea.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where is Grace, Sam?\nGirl: He is in the gym reading a book.",
+            "question": "🔊 Where is Grace?",
+            "options": [
+              "art room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "sister",
+              "living-room"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/b7522b046fe4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Look at that sheep, Dan!\nBoy: Yes, it is very nice. It is red.",
+            "question": "🔊 What colour is the sheep?",
+            "options": [
+              "blue",
+              "green",
+              "red",
+              "yellow"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "snake",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/705c90ac4b7f.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing badminton, Kim?\nGirl: No, I like playing table tennis with my brother.",
+            "question": "🔊 What sport does Kim like?",
+            "options": [
+              "Badminton",
+              "Table tennis",
+              "Volleyball",
+              "Chess"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "table-tennis"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/9e406da45bae.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing table tennis, Alex?\nGirl: No, I like playing with Pat in the garden.",
+            "question": "🔊 What does Alex like playing?",
+            "options": [
+              "badminton",
+              "chess",
+              "table tennis",
+              "volleyball"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "word-puzzle"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/87b82a4a692d.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where are my glasses, Sam?\nBoy: They are next to your handbag, Mum.",
+            "question": "🔊 Where are the glasses?",
+            "options": [
+              "In the handbag",
+              "Next to the handbag",
+              "On the bed",
+              "Under the table"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes",
+              "glasses"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/4d7c5436dd95.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Look at that cow, Kim!\nGirl: Yes, it is very nice. It is grey.",
+            "question": "🔊 What colour is the cow?",
+            "options": [
+              "blue",
+              "green",
+              "grey",
+              "red"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "giraffe"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/1e10a1971b21.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is there a mirror in your bedroom, Tom?\nBoy: No, the mirror is in the bathroom.",
+            "question": "🔊 Where is the mirror?",
+            "options": [
+              "In the bedroom",
+              "In the bathroom",
+              "In the hall",
+              "In the kitchen"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "mirror",
+              "bathroom"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/427c39fa7bf5.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: What animal can you see, Grace?\nGirl: I can see a tall giraffe eating leaves.",
+            "question": "🔊 What animal does Grace see?",
+            "options": [
+              "A hippo",
+              "A crocodile",
+              "A giraffe",
+              "A tiger"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "giraffe"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/594a0bc74e57.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 2,
+      "title": "PreA1 Starter Listen Level 3 - Đề 02",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Would you like some coconut water, Jill?\nGirl: No, thank you. Can I have some chocolate cake?",
+            "question": "🔊 What does the girl want?",
+            "options": [
+              "Coconut water",
+              "Chocolate cake",
+              "Lemonade",
+              "Pineapple juice"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "chocolate",
+              "cake"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/f92b69550210.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where are you going, Grace?\nGirl: I'm going to the gym to see my teacher.",
+            "question": "🔊 Where is Grace going?",
+            "options": [
+              "art room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "library"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/8e33df7225e8.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: What fruit would you like, Lucy?\nBoy: I'd like some cake, please.",
+            "question": "🔊 What fruit does Lucy want?",
+            "options": [
+              "cake",
+              "coconut",
+              "mango",
+              "pineapple"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "mango",
+              "pineapple"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/ddadb390c505.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is there any fruit on the table, Hugo?\nBoy: Yes, there is a big coconut and a watermelon.",
+            "question": "🔊 What fruits are on the table?",
+            "options": [
+              "Coconut and watermelon",
+              "Mango and pineapple",
+              "Apple and orange",
+              "Banana and pear"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "coconut"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/75fdc52b02a4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where are you going, Sam?\nBoy: I'm going to the playground to see my teacher.",
+            "question": "🔊 Where is Sam going?",
+            "options": [
+              "art room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 3,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "computer-room"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/3a5a3debc677.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Do you like my new shoes, Nick?\nBoy: Yes, they are very nice, Dad.",
+            "question": "🔊 What are the shoes like?",
+            "options": [
+              "Old and dirty",
+              "Very nice",
+              "Too small",
+              "Red and yellow"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes",
+              "shoes"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/87b98a9b69ea.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where are you going, Alice?\nGirl: I'm going to the kitchen to see my teacher.",
+            "question": "🔊 Where is Alice going?",
+            "options": [
+              "gym",
+              "kitchen",
+              "library",
+              "playground"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "notebook",
+              "school-bag"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/ba7e6f7dcbeb.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Look at that duck, Alice!\nGirl: Yes, it is very nice. It is blue.",
+            "question": "🔊 What colour is the duck?",
+            "options": [
+              "blue",
+              "green",
+              "red",
+              "yellow"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "spider",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/85853181a5fa.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing table tennis, Alex?\nGirl: No, I like playing with Pat in the garden.",
+            "question": "🔊 What does Alex like playing?",
+            "options": [
+              "badminton",
+              "chess",
+              "table tennis",
+              "volleyball"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "word-puzzle"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/87b82a4a692d.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where are you going, Bill?\nBoy: I'm going to the dining room to see my teacher.",
+            "question": "🔊 Where is Bill going?",
+            "options": [
+              "dining room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "eraser",
+              "ruler"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/74b0e4eb27ff.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Are you and Bill playing football?\nBoy: No, we are playing badminton in the park.",
+            "question": "🔊 What game are the boys playing?",
+            "options": [
+              "Football",
+              "Basketball",
+              "Badminton",
+              "Volleyball"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "badminton"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/2f6b58ebdc41.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing tennis, May?\nGirl: No, I like playing with Hugo in the garden.",
+            "question": "🔊 What does May like playing?",
+            "options": [
+              "chess",
+              "table tennis",
+              "tennis",
+              "volleyball"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "table-tennis"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/e8902853d70b.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: What are you drawing in the art room, Ben?\nBoy: I'm drawing a red helicopter.",
+            "question": "🔊 What is the boy drawing?",
+            "options": [
+              "A red train",
+              "A red helicopter",
+              "A blue plane",
+              "A green bike"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "art-room",
+              "drawing"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/270112cb7fe2.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is there a mirror in your bedroom, Tom?\nBoy: No, the mirror is in the bathroom.",
+            "question": "🔊 Where is the mirror?",
+            "options": [
+              "In the bedroom",
+              "In the bathroom",
+              "In the hall",
+              "In the kitchen"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "mirror",
+              "bathroom"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/427c39fa7bf5.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is your brother in the living room, Dan?\nBoy: No, he is sleeping in his bedroom.",
+            "question": "🔊 Where is the boy's brother?",
+            "options": [
+              "In the living room",
+              "In the bedroom",
+              "In the bathroom",
+              "In the kitchen"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "brother",
+              "bedroom"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/93a3ed6f0ffe.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 3,
+      "title": "PreA1 Starter Listen Level 3 - Đề 03",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where are you going, Ben?\nGirl: I'm going to the art room to see my teacher.",
+            "question": "🔊 Where is Ben going?",
+            "options": [
+              "art room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "playground",
+              "break-time"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/4bddbef2a401.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Do you like playing hockey, Hugo?\nBoy: No, I like playing with Jill in the garden.",
+            "question": "🔊 What does Hugo like playing?",
+            "options": [
+              "chess",
+              "hockey",
+              "table tennis",
+              "volleyball"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "football"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/a406e1e3b27e.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: What fruit would you like, Grace?\nGirl: I'd like some apple, please.",
+            "question": "🔊 What fruit does Grace want?",
+            "options": [
+              "apple",
+              "coconut",
+              "mango",
+              "pineapple"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "lemonade"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/ee5770b01e18.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where is Lucy, Grace?\nBoy: He is in the library reading a book.",
+            "question": "🔊 Where is Lucy?",
+            "options": [
+              "art room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "mirror",
+              "bathroom"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/5e585922cda4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where are you going, Kim?\nGirl: I'm going to the music room to see my teacher.",
+            "question": "🔊 Where is Kim going?",
+            "options": [
+              "gym",
+              "library",
+              "music room",
+              "playground"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "pencil-case",
+              "notebook"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/5e07bec2f017.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Which room are you in, Sam?\nBoy: I'm singing in the music room with my teacher.",
+            "question": "🔊 What is the boy doing in the music room?",
+            "options": [
+              "Reading",
+              "Singing",
+              "Drawing",
+              "Dancing"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "music-room",
+              "singing"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/d0ed972bb013.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where are you going, Bill?\nBoy: I'm going to the dining room to see my teacher.",
+            "question": "🔊 Where is Bill going?",
+            "options": [
+              "dining room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "eraser",
+              "ruler"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/74b0e4eb27ff.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Look at that sheep, Dan!\nBoy: Yes, it is very nice. It is red.",
+            "question": "🔊 What colour is the sheep?",
+            "options": [
+              "blue",
+              "green",
+              "red",
+              "yellow"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "snake",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/705c90ac4b7f.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing badminton, Kim?\nGirl: No, I like playing table tennis with my brother.",
+            "question": "🔊 What sport does Kim like?",
+            "options": [
+              "Badminton",
+              "Table tennis",
+              "Volleyball",
+              "Chess"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "table-tennis"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/9e406da45bae.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: What are you drawing in the art room, Ben?\nBoy: I'm drawing a red helicopter.",
+            "question": "🔊 What is the boy drawing?",
+            "options": [
+              "A red train",
+              "A red helicopter",
+              "A blue plane",
+              "A green bike"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "art-room",
+              "drawing"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/270112cb7fe2.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the snake green, Dan?\nBoy: No, this snake is black and yellow.",
+            "question": "🔊 What colour is the snake?",
+            "options": [
+              "Green",
+              "Black and yellow",
+              "Purple and red",
+              "Orange and brown"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "snake",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/0785e7129b69.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Look at the spider on the wall, Sue!\nGirl: Oh, it is very big and purple!",
+            "question": "🔊 What colour is the spider?",
+            "options": [
+              "Black",
+              "Purple",
+              "Green",
+              "Yellow"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "spider",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/998f91a88374.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where are you going, Sam?\nBoy: I'm going to the playground to see my teacher.",
+            "question": "🔊 Where is Sam going?",
+            "options": [
+              "art room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 3,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "computer-room"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/3a5a3debc677.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is that your notebook on the desk?\nGirl: No, my notebook is in my school bag.",
+            "question": "🔊 Where is the girl's notebook?",
+            "options": [
+              "On the desk",
+              "In her school bag",
+              "Under the chair",
+              "In the bookcase"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "notebook",
+              "school-bag"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/fd61294ee6b5.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is there any fruit on the table, Hugo?\nBoy: Yes, there is a big coconut and a watermelon.",
+            "question": "🔊 What fruits are on the table?",
+            "options": [
+              "Coconut and watermelon",
+              "Mango and pineapple",
+              "Apple and orange",
+              "Banana and pear"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "coconut"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/75fdc52b02a4.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 4,
+      "title": "PreA1 Starter Listen Level 3 - Đề 04",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: What are you doing, Alice?\nGirl: My grandpa and I are playing chess.",
+            "question": "🔊 What is Alice playing?",
+            "options": [
+              "Chess",
+              "Volleyball",
+              "Table tennis",
+              "Word puzzle"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "chess"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/ce0ee33b1926.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where is Grace, Sam?\nGirl: He is in the gym reading a book.",
+            "question": "🔊 Where is Grace?",
+            "options": [
+              "art room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "sister",
+              "living-room"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/b7522b046fe4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where are you going, Tom?\nBoy: I'm going to the bedroom to see my teacher.",
+            "question": "🔊 Where is Tom going?",
+            "options": [
+              "bedroom",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "teacher",
+              "mr"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/e00d431028de.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Look at the spider on the wall, Sue!\nGirl: Oh, it is very big and purple!",
+            "question": "🔊 What colour is the spider?",
+            "options": [
+              "Black",
+              "Purple",
+              "Green",
+              "Yellow"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "spider",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/998f91a88374.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where are you going, Kim?\nGirl: I'm going to the music room to see my teacher.",
+            "question": "🔊 Where is Kim going?",
+            "options": [
+              "gym",
+              "library",
+              "music room",
+              "playground"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "pencil-case",
+              "notebook"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/5e07bec2f017.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where is your cousin, Kim?\nGirl: She is cooking in the kitchen with my grandma.",
+            "question": "🔊 Where is the girl's cousin?",
+            "options": [
+              "In the bedroom",
+              "In the kitchen",
+              "In the garden",
+              "In the dining room"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "cousin",
+              "kitchen"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/2316dbe3ffef.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Which room are you in, Sam?\nBoy: I'm singing in the music room with my teacher.",
+            "question": "🔊 What is the boy doing in the music room?",
+            "options": [
+              "Reading",
+              "Singing",
+              "Drawing",
+              "Dancing"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "music-room",
+              "singing"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/d0ed972bb013.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where are you going, Dan?\nBoy: I'm going to the classroom to see my teacher.",
+            "question": "🔊 Where is Dan going?",
+            "options": [
+              "classroom",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "music-room",
+              "singing"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/d55843bda7e1.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is your favourite sport basketball, Dan?\nBoy: No, my favourite sport is football.",
+            "question": "🔊 What is Dan's favourite sport?",
+            "options": [
+              "Basketball",
+              "Volleyball",
+              "Football",
+              "Chess"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "football"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/71f562a1f944.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where are you going, Alice?\nGirl: I'm going to the kitchen to see my teacher.",
+            "question": "🔊 Where is Alice going?",
+            "options": [
+              "gym",
+              "kitchen",
+              "library",
+              "playground"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "notebook",
+              "school-bag"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/ba7e6f7dcbeb.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where is Lucy, Grace?\nBoy: He is in the library reading a book.",
+            "question": "🔊 Where is Lucy?",
+            "options": [
+              "art room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "mirror",
+              "bathroom"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/5e585922cda4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Look at that chicken, Tom!\nBoy: Yes, it is very nice. It is green.",
+            "question": "🔊 What colour is the chicken?",
+            "options": [
+              "blue",
+              "green",
+              "red",
+              "yellow"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "crocodile"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/6b26abb481ab.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is there a mirror in your bedroom, Tom?\nBoy: No, the mirror is in the bathroom.",
+            "question": "🔊 Where is the mirror?",
+            "options": [
+              "In the bedroom",
+              "In the bathroom",
+              "In the hall",
+              "In the kitchen"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "mirror",
+              "bathroom"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/427c39fa7bf5.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing baseball, Jill?\nGirl: No, I like playing with Nick in the garden.",
+            "question": "🔊 What does Jill like playing?",
+            "options": [
+              "baseball",
+              "chess",
+              "table tennis",
+              "volleyball"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "chess"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/ec1181211124.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing badminton, Kim?\nGirl: No, I like playing table tennis with my brother.",
+            "question": "🔊 What sport does Kim like?",
+            "options": [
+              "Badminton",
+              "Table tennis",
+              "Volleyball",
+              "Chess"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "table-tennis"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/9e406da45bae.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 5,
+      "title": "PreA1 Starter Listen Level 3 - Đề 05",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where are you going, Sue?\nGirl: I'm going to the bathroom to see my teacher.",
+            "question": "🔊 Where is Sue going?",
+            "options": [
+              "bathroom",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "playground"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/390c77f64d3d.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where is Lucy, Grace?\nBoy: He is in the library reading a book.",
+            "question": "🔊 Where is Lucy?",
+            "options": [
+              "art room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "mirror",
+              "bathroom"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/5e585922cda4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: What fruit would you like, Grace?\nGirl: I'd like some apple, please.",
+            "question": "🔊 What fruit does Grace want?",
+            "options": [
+              "apple",
+              "coconut",
+              "mango",
+              "pineapple"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "lemonade"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/ee5770b01e18.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: What fruit would you like, Anna?\nBoy: I'd like some orange, please.",
+            "question": "🔊 What fruit does Anna want?",
+            "options": [
+              "coconut",
+              "mango",
+              "orange",
+              "pineapple"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "coconut"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/1b6cde198ba3.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Do you like playing volleyball, Pat?\nBoy: No, I like playing with Eva in the garden.",
+            "question": "🔊 What does Pat like playing?",
+            "options": [
+              "badminton",
+              "chess",
+              "table tennis",
+              "volleyball"
+            ],
+            "correct_index": 3,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "badminton"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/77171c180683.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Look at that bird, Sue!\nGirl: Yes, it is very nice. It is yellow.",
+            "question": "🔊 What colour is the bird?",
+            "options": [
+              "blue",
+              "green",
+              "red",
+              "yellow"
+            ],
+            "correct_index": 3,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "tiger"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/c5bdc36d257c.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where are you going, Sam?\nBoy: I'm going to the playground to see my teacher.",
+            "question": "🔊 Where is Sam going?",
+            "options": [
+              "art room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 3,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "computer-room"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/3a5a3debc677.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing badminton, Eva?\nGirl: No, I like playing with Lucy in the garden.",
+            "question": "🔊 What does Eva like playing?",
+            "options": [
+              "badminton",
+              "chess",
+              "table tennis",
+              "volleyball"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "volleyball"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/4b9402e54fea.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: What did you eat for lunch, Sam?\nBoy: I ate a burger and two sausages.",
+            "question": "🔊 What did Sam eat for lunch?",
+            "options": [
+              "Rice and fish",
+              "A burger and sausages",
+              "Cake and eggs",
+              "Bread and chocolate"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "sausage",
+              "burger"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/2d297b5f4b4d.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where are you going, May?\nGirl: I'm going to the library to read books.",
+            "question": "🔊 Where is the girl going?",
+            "options": [
+              "To the library",
+              "To the gym",
+              "To the playground",
+              "To the art room"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "library"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/f2fc1ee390c4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Do you like my new shoes, Nick?\nBoy: Yes, they are very nice, Dad.",
+            "question": "🔊 What are the shoes like?",
+            "options": [
+              "Old and dirty",
+              "Very nice",
+              "Too small",
+              "Red and yellow"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes",
+              "shoes"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/87b98a9b69ea.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Can we go out now, Ms Mary?\nGirl: Yes, please go to the playground.",
+            "question": "🔊 Where should the girl go?",
+            "options": [
+              "To the library",
+              "To the playground",
+              "To the gym",
+              "To the computer room"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "playground"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/87163d8ade6c.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where are you going, Bill?\nBoy: I'm going to the dining room to see my teacher.",
+            "question": "🔊 Where is Bill going?",
+            "options": [
+              "dining room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "eraser",
+              "ruler"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/74b0e4eb27ff.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the snake green, Dan?\nBoy: No, this snake is black and yellow.",
+            "question": "🔊 What colour is the snake?",
+            "options": [
+              "Green",
+              "Black and yellow",
+              "Purple and red",
+              "Orange and brown"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "snake",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/0785e7129b69.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is your favourite sport basketball, Dan?\nBoy: No, my favourite sport is football.",
+            "question": "🔊 What is Dan's favourite sport?",
+            "options": [
+              "Basketball",
+              "Volleyball",
+              "Football",
+              "Chess"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "football"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/71f562a1f944.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 6,
+      "title": "PreA1 Starter Listen Level 3 - Đề 06",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: What do you do at break time, Lucy?\nGirl: I play with my friend, Grace, in the playground.",
+            "question": "🔊 Where does Lucy play at break time?",
+            "options": [
+              "In the classroom",
+              "In the library",
+              "In the playground",
+              "In the gym"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "playground",
+              "break-time"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/6e475bbaafd9.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is your favourite sport basketball, Dan?\nBoy: No, my favourite sport is football.",
+            "question": "🔊 What is Dan's favourite sport?",
+            "options": [
+              "Basketball",
+              "Volleyball",
+              "Football",
+              "Chess"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "football"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/71f562a1f944.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Look at the spider on the wall, Sue!\nGirl: Oh, it is very big and purple!",
+            "question": "🔊 What colour is the spider?",
+            "options": [
+              "Black",
+              "Purple",
+              "Green",
+              "Yellow"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "spider",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/998f91a88374.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing table tennis, Alex?\nGirl: No, I like playing with Pat in the garden.",
+            "question": "🔊 What does Alex like playing?",
+            "options": [
+              "badminton",
+              "chess",
+              "table tennis",
+              "volleyball"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "word-puzzle"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/87b82a4a692d.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where are you going, May?\nGirl: I'm going to the library to read books.",
+            "question": "🔊 Where is the girl going?",
+            "options": [
+              "To the library",
+              "To the gym",
+              "To the playground",
+              "To the art room"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "library"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/f2fc1ee390c4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing badminton, Eva?\nGirl: No, I like playing with Lucy in the garden.",
+            "question": "🔊 What does Eva like playing?",
+            "options": [
+              "badminton",
+              "chess",
+              "table tennis",
+              "volleyball"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "volleyball"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/4b9402e54fea.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is your brother in the living room, Dan?\nBoy: No, he is sleeping in his bedroom.",
+            "question": "🔊 Where is the boy's brother?",
+            "options": [
+              "In the living room",
+              "In the bedroom",
+              "In the bathroom",
+              "In the kitchen"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "brother",
+              "bedroom"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/93a3ed6f0ffe.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is there a mirror in your bedroom, Tom?\nBoy: No, the mirror is in the bathroom.",
+            "question": "🔊 Where is the mirror?",
+            "options": [
+              "In the bedroom",
+              "In the bathroom",
+              "In the hall",
+              "In the kitchen"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "mirror",
+              "bathroom"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/427c39fa7bf5.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Would you like some coconut water, Jill?\nGirl: No, thank you. Can I have some chocolate cake?",
+            "question": "🔊 What does the girl want?",
+            "options": [
+              "Coconut water",
+              "Chocolate cake",
+              "Lemonade",
+              "Pineapple juice"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "chocolate",
+              "cake"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/f92b69550210.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: What fruit would you like, Anna?\nBoy: I'd like some orange, please.",
+            "question": "🔊 What fruit does Anna want?",
+            "options": [
+              "coconut",
+              "mango",
+              "orange",
+              "pineapple"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "coconut"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/1b6cde198ba3.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where are you going, Kim?\nGirl: I'm going to the music room to see my teacher.",
+            "question": "🔊 Where is Kim going?",
+            "options": [
+              "gym",
+              "library",
+              "music room",
+              "playground"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "pencil-case",
+              "notebook"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/5e07bec2f017.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Can you see the hippo, Ben?\nBoy: Yes, it is sitting in the water.",
+            "question": "🔊 What is the hippo doing?",
+            "options": [
+              "Sitting in the water",
+              "Running in the park",
+              "Eating fruit",
+              "Sleeping under a tree"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "hippo"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/d3b06467be3f.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Look at that sheep, Dan!\nBoy: Yes, it is very nice. It is red.",
+            "question": "🔊 What colour is the sheep?",
+            "options": [
+              "blue",
+              "green",
+              "red",
+              "yellow"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "snake",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/705c90ac4b7f.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Who is that playing with the toy robot?\nGirl: That's my baby sister in the living room.",
+            "question": "🔊 Who is playing with the toy robot?",
+            "options": [
+              "Her cousin",
+              "Her baby sister",
+              "Her brother",
+              "Her friend"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "sister",
+              "living-room"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/994aee1433cb.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where is your cousin, Kim?\nGirl: She is cooking in the kitchen with my grandma.",
+            "question": "🔊 Where is the girl's cousin?",
+            "options": [
+              "In the bedroom",
+              "In the kitchen",
+              "In the garden",
+              "In the dining room"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "cousin",
+              "kitchen"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/2316dbe3ffef.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 7,
+      "title": "PreA1 Starter Listen Level 3 - Đề 07",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Do you like my new shoes, Nick?\nBoy: Yes, they are very nice, Dad.",
+            "question": "🔊 What are the shoes like?",
+            "options": [
+              "Old and dirty",
+              "Very nice",
+              "Too small",
+              "Red and yellow"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes",
+              "shoes"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/87b98a9b69ea.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing tennis, May?\nGirl: No, I like playing with Hugo in the garden.",
+            "question": "🔊 What does May like playing?",
+            "options": [
+              "chess",
+              "table tennis",
+              "tennis",
+              "volleyball"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "table-tennis"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/e8902853d70b.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Would you like some coconut water, Jill?\nGirl: No, thank you. Can I have some chocolate cake?",
+            "question": "🔊 What does the girl want?",
+            "options": [
+              "Coconut water",
+              "Chocolate cake",
+              "Lemonade",
+              "Pineapple juice"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "chocolate",
+              "cake"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/f92b69550210.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing baseball, Jill?\nGirl: No, I like playing with Nick in the garden.",
+            "question": "🔊 What does Jill like playing?",
+            "options": [
+              "baseball",
+              "chess",
+              "table tennis",
+              "volleyball"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "chess"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/ec1181211124.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing table tennis, Alex?\nGirl: No, I like playing with Pat in the garden.",
+            "question": "🔊 What does Alex like playing?",
+            "options": [
+              "badminton",
+              "chess",
+              "table tennis",
+              "volleyball"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "word-puzzle"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/87b82a4a692d.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Can you play volleyball, Tom?\nBoy: No, but I can play basketball very well.",
+            "question": "🔊 What sport can Tom play?",
+            "options": [
+              "Volleyball",
+              "Basketball",
+              "Football",
+              "Chess"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "basketball"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/78523a7764d5.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: What fruit would you like, Sam?\nBoy: I'd like some banana, please.",
+            "question": "🔊 What fruit does Sam want?",
+            "options": [
+              "banana",
+              "coconut",
+              "mango",
+              "pineapple"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "sausage",
+              "burger"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/53b940225d7f.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the snake green, Dan?\nBoy: No, this snake is black and yellow.",
+            "question": "🔊 What colour is the snake?",
+            "options": [
+              "Green",
+              "Black and yellow",
+              "Purple and red",
+              "Orange and brown"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "snake",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/0785e7129b69.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you play table tennis at school, May?\nGirl: No, we play volleyball at break time.",
+            "question": "🔊 What sport does May play at school?",
+            "options": [
+              "Table tennis",
+              "Volleyball",
+              "Badminton",
+              "Basketball"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "volleyball"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/e8c870e9204a.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Who is that man standing near the gym?\nBoy: That's my English teacher, Mr Park.",
+            "question": "🔊 Who is Mr Park?",
+            "options": [
+              "The English teacher",
+              "The Vietnamese teacher",
+              "His dad",
+              "His friend"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "teacher",
+              "mr"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/3591bfbdebf4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Do you like playing hockey, Hugo?\nBoy: No, I like playing with Jill in the garden.",
+            "question": "🔊 What does Hugo like playing?",
+            "options": [
+              "chess",
+              "hockey",
+              "table tennis",
+              "volleyball"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "football"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/a406e1e3b27e.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: What is that book on the table, Sue?\nGirl: It's a book of word puzzles. I like doing them.",
+            "question": "🔊 What does Sue like doing?",
+            "options": [
+              "Playing chess",
+              "Doing word puzzles",
+              "Reading stories",
+              "Drawing pictures"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "word-puzzle"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/54ce6aca8878.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where are my glasses, Sam?\nBoy: They are next to your handbag, Mum.",
+            "question": "🔊 Where are the glasses?",
+            "options": [
+              "In the handbag",
+              "Next to the handbag",
+              "On the bed",
+              "Under the table"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes",
+              "glasses"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/4d7c5436dd95.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where are you going, May?\nGirl: I'm going to the library to read books.",
+            "question": "🔊 Where is the girl going?",
+            "options": [
+              "To the library",
+              "To the gym",
+              "To the playground",
+              "To the art room"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "library"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/f2fc1ee390c4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is your jacket blue, Jill?\nGirl: No, my jacket is red and my jeans are blue.",
+            "question": "🔊 What colour is the girl's jacket?",
+            "options": [
+              "Blue",
+              "Red",
+              "Black",
+              "Green"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes",
+              "jacket",
+              "jeans"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/3dc8b60f1a97.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 8,
+      "title": "PreA1 Starter Listen Level 3 - Đề 08",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is your brother in the living room, Dan?\nBoy: No, he is sleeping in his bedroom.",
+            "question": "🔊 Where is the boy's brother?",
+            "options": [
+              "In the living room",
+              "In the bedroom",
+              "In the bathroom",
+              "In the kitchen"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "brother",
+              "bedroom"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/93a3ed6f0ffe.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where are you going, May?\nGirl: I'm going to the library to read books.",
+            "question": "🔊 Where is the girl going?",
+            "options": [
+              "To the library",
+              "To the gym",
+              "To the playground",
+              "To the art room"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "library"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/f2fc1ee390c4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: What is that book on the table, Sue?\nGirl: It's a book of word puzzles. I like doing them.",
+            "question": "🔊 What does Sue like doing?",
+            "options": [
+              "Playing chess",
+              "Doing word puzzles",
+              "Reading stories",
+              "Drawing pictures"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "word-puzzle"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/54ce6aca8878.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where are you going, Bill?\nBoy: I'm going to the dining room to see my teacher.",
+            "question": "🔊 Where is Bill going?",
+            "options": [
+              "dining room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "eraser",
+              "ruler"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/74b0e4eb27ff.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: What fruit would you like, Anna?\nBoy: I'd like some orange, please.",
+            "question": "🔊 What fruit does Anna want?",
+            "options": [
+              "coconut",
+              "mango",
+              "orange",
+              "pineapple"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "coconut"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/1b6cde198ba3.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where are my glasses, Sam?\nBoy: They are next to your handbag, Mum.",
+            "question": "🔊 Where are the glasses?",
+            "options": [
+              "In the handbag",
+              "Next to the handbag",
+              "On the bed",
+              "Under the table"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes",
+              "glasses"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/4d7c5436dd95.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Are you and Bill playing football?\nBoy: No, we are playing badminton in the park.",
+            "question": "🔊 What game are the boys playing?",
+            "options": [
+              "Football",
+              "Basketball",
+              "Badminton",
+              "Volleyball"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "badminton"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/2f6b58ebdc41.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: What fruit would you like, Grace?\nGirl: I'd like some apple, please.",
+            "question": "🔊 What fruit does Grace want?",
+            "options": [
+              "apple",
+              "coconut",
+              "mango",
+              "pineapple"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "lemonade"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/ee5770b01e18.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you play table tennis at school, May?\nGirl: No, we play volleyball at break time.",
+            "question": "🔊 What sport does May play at school?",
+            "options": [
+              "Table tennis",
+              "Volleyball",
+              "Badminton",
+              "Basketball"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "volleyball"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/e8c870e9204a.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is there a mirror in your bedroom, Tom?\nBoy: No, the mirror is in the bathroom.",
+            "question": "🔊 Where is the mirror?",
+            "options": [
+              "In the bedroom",
+              "In the bathroom",
+              "In the hall",
+              "In the kitchen"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "mirror",
+              "bathroom"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/427c39fa7bf5.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: What do you do at break time, Lucy?\nGirl: I play with my friend, Grace, in the playground.",
+            "question": "🔊 Where does Lucy play at break time?",
+            "options": [
+              "In the classroom",
+              "In the library",
+              "In the playground",
+              "In the gym"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "playground",
+              "break-time"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/6e475bbaafd9.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is your classroom big, Nick?\nBoy: No, but our computer room is very big.",
+            "question": "🔊 Which room is very big?",
+            "options": [
+              "The classroom",
+              "The computer room",
+              "The music room",
+              "The gym"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "computer-room"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/8af9605ffb2e.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: What fruit would you like, Ben?\nBoy: I'd like some mango and pineapple, please.",
+            "question": "🔊 Which fruits does the boy want?",
+            "options": [
+              "Apple and orange",
+              "Banana and coconut",
+              "Mango and pineapple",
+              "Pear and lemon"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "mango",
+              "pineapple"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/fb7b75b7118c.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Which room are you in, Sam?\nBoy: I'm singing in the music room with my teacher.",
+            "question": "🔊 What is the boy doing in the music room?",
+            "options": [
+              "Reading",
+              "Singing",
+              "Drawing",
+              "Dancing"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "music-room",
+              "singing"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/d0ed972bb013.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where are you going, Sue?\nGirl: I'm going to the bathroom to see my teacher.",
+            "question": "🔊 Where is Sue going?",
+            "options": [
+              "bathroom",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "playground"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/390c77f64d3d.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 9,
+      "title": "PreA1 Starter Listen Level 3 - Đề 09",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where are you going, Alice?\nGirl: I'm going to the kitchen to see my teacher.",
+            "question": "🔊 Where is Alice going?",
+            "options": [
+              "gym",
+              "kitchen",
+              "library",
+              "playground"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "notebook",
+              "school-bag"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/ba7e6f7dcbeb.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is the lizard green, Lucy?\nGirl: Yes, it is a small green lizard on the rock.",
+            "question": "🔊 What is the lizard like?",
+            "options": [
+              "A big green lizard",
+              "A small green lizard",
+              "A small yellow lizard",
+              "A big black lizard"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "lizard"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/534b58dc8dc0.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Look at that sheep, Dan!\nBoy: Yes, it is very nice. It is red.",
+            "question": "🔊 What colour is the sheep?",
+            "options": [
+              "blue",
+              "green",
+              "red",
+              "yellow"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "snake",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/705c90ac4b7f.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the crocodile swimming, Tom?\nBoy: No, the crocodile is sleeping near the water.",
+            "question": "🔊 What is the crocodile doing?",
+            "options": [
+              "Swimming",
+              "Sleeping",
+              "Running",
+              "Eating"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "crocodile"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/a5636541c368.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like drinking milk, Lucy?\nGirl: No, I like cold lemonade on a hot day.",
+            "question": "🔊 What drink does the girl prefer?",
+            "options": [
+              "Milk",
+              "Water",
+              "Lemonade",
+              "Fruit juice"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "lemonade"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/f89dddd745ce.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: What is your favourite animal, May?\nGirl: I like tigers, they are orange and black.",
+            "question": "🔊 What is the girl's favourite animal?",
+            "options": [
+              "Giraffes",
+              "Crocodiles",
+              "Tigers",
+              "Monkeys"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "tiger"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/363a49d65c6e.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where is Grace, Sam?\nGirl: He is in the gym reading a book.",
+            "question": "🔊 Where is Grace?",
+            "options": [
+              "art room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "sister",
+              "living-room"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/b7522b046fe4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you have a pencil case, Anna?\nGirl: Yes, I have a pink pencil case and a blue notebook.",
+            "question": "🔊 What colour is Anna's notebook?",
+            "options": [
+              "Pink",
+              "Blue",
+              "Green",
+              "Yellow"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "pencil-case",
+              "notebook"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/c1eb22f64acf.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Do you like playing volleyball, Pat?\nBoy: No, I like playing with Eva in the garden.",
+            "question": "🔊 What does Pat like playing?",
+            "options": [
+              "badminton",
+              "chess",
+              "table tennis",
+              "volleyball"
+            ],
+            "correct_index": 3,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "badminton"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/77171c180683.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Can you see the hippo, Ben?\nBoy: Yes, it is sitting in the water.",
+            "question": "🔊 What is the hippo doing?",
+            "options": [
+              "Sitting in the water",
+              "Running in the park",
+              "Eating fruit",
+              "Sleeping under a tree"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "hippo"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/d3b06467be3f.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Look at the spider on the wall, Sue!\nGirl: Oh, it is very big and purple!",
+            "question": "🔊 What colour is the spider?",
+            "options": [
+              "Black",
+              "Purple",
+              "Green",
+              "Yellow"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "spider",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/998f91a88374.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing tennis, May?\nGirl: No, I like playing with Hugo in the garden.",
+            "question": "🔊 What does May like playing?",
+            "options": [
+              "chess",
+              "table tennis",
+              "tennis",
+              "volleyball"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "table-tennis"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/e8902853d70b.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing badminton, Kim?\nGirl: No, I like playing table tennis with my brother.",
+            "question": "🔊 What sport does Kim like?",
+            "options": [
+              "Badminton",
+              "Table tennis",
+              "Volleyball",
+              "Chess"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "table-tennis"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/9e406da45bae.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where are you going, Grace?\nGirl: I'm going to the gym to see my teacher.",
+            "question": "🔊 Where is Grace going?",
+            "options": [
+              "art room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "library"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/8e33df7225e8.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where are my glasses, Sam?\nBoy: They are next to your handbag, Mum.",
+            "question": "🔊 Where are the glasses?",
+            "options": [
+              "In the handbag",
+              "Next to the handbag",
+              "On the bed",
+              "Under the table"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes",
+              "glasses"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/4d7c5436dd95.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 10,
+      "title": "PreA1 Starter Listen Level 3 - Đề 10",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where are you going, Tom?\nBoy: I'm going to the bedroom to see my teacher.",
+            "question": "🔊 Where is Tom going?",
+            "options": [
+              "bedroom",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "teacher",
+              "mr"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/e00d431028de.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is your favourite sport basketball, Dan?\nBoy: No, my favourite sport is football.",
+            "question": "🔊 What is Dan's favourite sport?",
+            "options": [
+              "Basketball",
+              "Volleyball",
+              "Football",
+              "Chess"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "football"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/71f562a1f944.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where are you going, May?\nGirl: I'm going to the library to read books.",
+            "question": "🔊 Where is the girl going?",
+            "options": [
+              "To the library",
+              "To the gym",
+              "To the playground",
+              "To the art room"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "library"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/f2fc1ee390c4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: What are you drawing in the art room, Ben?\nBoy: I'm drawing a red helicopter.",
+            "question": "🔊 What is the boy drawing?",
+            "options": [
+              "A red train",
+              "A red helicopter",
+              "A blue plane",
+              "A green bike"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "art-room",
+              "drawing"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/270112cb7fe2.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Do you like playing chess, Nick?\nBoy: No, I like playing with Alex in the garden.",
+            "question": "🔊 What does Nick like playing?",
+            "options": [
+              "badminton",
+              "chess",
+              "table tennis",
+              "volleyball"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "basketball"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/520f50a66fed.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where are you going, Bill?\nBoy: I'm going to the dining room to see my teacher.",
+            "question": "🔊 Where is Bill going?",
+            "options": [
+              "dining room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "eraser",
+              "ruler"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/74b0e4eb27ff.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing baseball, Jill?\nGirl: No, I like playing with Nick in the garden.",
+            "question": "🔊 What does Jill like playing?",
+            "options": [
+              "baseball",
+              "chess",
+              "table tennis",
+              "volleyball"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "chess"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/ec1181211124.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: What do you do at break time, Lucy?\nGirl: I play with my friend, Grace, in the playground.",
+            "question": "🔊 Where does Lucy play at break time?",
+            "options": [
+              "In the classroom",
+              "In the library",
+              "In the playground",
+              "In the gym"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "playground",
+              "break-time"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/6e475bbaafd9.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is your jacket blue, Jill?\nGirl: No, my jacket is red and my jeans are blue.",
+            "question": "🔊 What colour is the girl's jacket?",
+            "options": [
+              "Blue",
+              "Red",
+              "Black",
+              "Green"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes",
+              "jacket",
+              "jeans"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/3dc8b60f1a97.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Look at that sheep, Dan!\nBoy: Yes, it is very nice. It is red.",
+            "question": "🔊 What colour is the sheep?",
+            "options": [
+              "blue",
+              "green",
+              "red",
+              "yellow"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "snake",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/705c90ac4b7f.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Where are you going, Sam?\nBoy: I'm going to the playground to see my teacher.",
+            "question": "🔊 Where is Sam going?",
+            "options": [
+              "art room",
+              "gym",
+              "library",
+              "playground"
+            ],
+            "correct_index": 3,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "computer-room"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/3a5a3debc677.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where is your cousin, Kim?\nGirl: She is cooking in the kitchen with my grandma.",
+            "question": "🔊 Where is the girl's cousin?",
+            "options": [
+              "In the bedroom",
+              "In the kitchen",
+              "In the garden",
+              "In the dining room"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "home",
+              "cousin",
+              "kitchen"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/2316dbe3ffef.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: What is that book on the table, Sue?\nGirl: It's a book of word puzzles. I like doing them.",
+            "question": "🔊 What does Sue like doing?",
+            "options": [
+              "Playing chess",
+              "Doing word puzzles",
+              "Reading stories",
+              "Drawing pictures"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "sports",
+              "word-puzzle"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/54ce6aca8878.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Look at the spider on the wall, Sue!\nGirl: Oh, it is very big and purple!",
+            "question": "🔊 What colour is the spider?",
+            "options": [
+              "Black",
+              "Purple",
+              "Green",
+              "Yellow"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "animals",
+              "spider",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/998f91a88374.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you have a pencil case, Anna?\nGirl: Yes, I have a pink pencil case and a blue notebook.",
+            "question": "🔊 What colour is Anna's notebook?",
+            "options": [
+              "Pink",
+              "Blue",
+              "Green",
+              "Yellow"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "school",
+              "pencil-case",
+              "notebook"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/c1eb22f64acf.mp3"
+          }
+        }
+      ]
+    }
+  ]
+}

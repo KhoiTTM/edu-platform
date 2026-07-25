@@ -1,0 +1,760 @@
+{
+  "dialogues": [
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Is your neck OK, Ella?",
+      "line2": "Yes, but my shoulder hurts a little.",
+      "question": "🔊 What hurts on Ella?",
+      "options": [
+        "Her neck",
+        "Her shoulder",
+        "Her back",
+        "Her knee"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "my-body",
+        "shoulder"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Can you jump on one foot, Rory?",
+      "line2": "Yes, look, I'm jumping on my left foot!",
+      "question": "🔊 What is Rory doing?",
+      "options": [
+        "Jumping on one foot",
+        "Running fast",
+        "Sitting down",
+        "Clapping his hands"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "my-body",
+        "foot"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Do you like playing in the sand, Coco?",
+      "line2": "Yes, I make shapes with my hands and feet.",
+      "question": "🔊 What does Coco make in the sand?",
+      "options": [
+        "Shapes",
+        "Holes",
+        "Words",
+        "Circles"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-beach",
+        "sand"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is your ice cream melting, Jude?",
+      "line2": "Yes, it's too hot at the beach today.",
+      "question": "🔊 Why is the ice cream melting?",
+      "options": [
+        "It's too hot",
+        "It's too cold",
+        "It's raining",
+        "It's windy"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-beach",
+        "sun"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Where is the post office, Faith?",
+      "line2": "It's between the bank and the bakery.",
+      "question": "🔊 Where is the post office?",
+      "options": [
+        "Between the bank and bakery",
+        "Next to the park",
+        "Behind the shop",
+        "Near the school"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "my-street",
+        "post-office"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Do you see the traffic light, Caleb?",
+      "line2": "Yes, it's red, so we must stop.",
+      "question": "🔊 What colour is the traffic light?",
+      "options": [
+        "Green",
+        "Red",
+        "Yellow",
+        "Blue"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "my-street",
+        "traffic-light"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "How many candles are on the cake, Iris?",
+      "line2": "There are seven candles, one for each year.",
+      "question": "🔊 How many candles are on the cake?",
+      "options": [
+        "Six",
+        "Seven",
+        "Eight",
+        "Nine"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "birthday",
+        "cake"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Did you bring a card, Hugo?",
+      "line2": "Yes, a card with a big yellow star.",
+      "question": "🔊 What is on Hugo's card?",
+      "options": [
+        "A yellow star",
+        "A red heart",
+        "A blue moon",
+        "A green tree"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "birthday",
+        "card"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Is your goldfish in the bowl, Lena?",
+      "line2": "Yes, it's swimming near the plant.",
+      "question": "🔊 Where is Lena's goldfish?",
+      "options": [
+        "Near the plant",
+        "Under the table",
+        "In the garden",
+        "In the sink"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-home",
+        "goldfish"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is the curtain green, Miles?",
+      "line2": "No, the curtain in my room is blue.",
+      "question": "🔊 What colour is Miles's curtain?",
+      "options": [
+        "Green",
+        "Blue",
+        "Yellow",
+        "Purple"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "at-home",
+        "curtain",
+        "colours"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Do you like the yellow gloves, Nova?",
+      "line2": "No, I like the white scarf better.",
+      "question": "🔊 What does Nova like?",
+      "options": [
+        "The yellow gloves",
+        "The white scarf",
+        "The black boots",
+        "The red coat"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "clothes-shop",
+        "scarf"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Are these boots too small, Arlo?",
+      "line2": "Yes, can I have a bigger pair, please?",
+      "question": "🔊 What does Arlo want?",
+      "options": [
+        "A bigger pair of boots",
+        "A smaller hat",
+        "New socks",
+        "A different colour"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "clothes-shop",
+        "boots"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Would you like some soup, Hazel?",
+      "line2": "Yes please, with some bread.",
+      "question": "🔊 What does Hazel want with soup?",
+      "options": [
+        "Bread",
+        "Rice",
+        "Cake",
+        "Fries"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "food",
+        "soup",
+        "bread"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Do you want juice or milk, Reuben?",
+      "line2": "Juice, please, and some grapes too.",
+      "question": "🔊 What does Reuben want to drink?",
+      "options": [
+        "Juice",
+        "Milk",
+        "Water",
+        "Lemonade"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "food",
+        "juice"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Can you see the owl, Mabel?",
+      "line2": "Yes, it's sleeping in the tree.",
+      "question": "🔊 What is the owl doing?",
+      "options": [
+        "Sleeping",
+        "Flying",
+        "Singing",
+        "Eating"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-zoo",
+        "owl"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is the panda eating, Leo?",
+      "line2": "Yes, it's eating green bamboo.",
+      "question": "🔊 What is the panda eating?",
+      "options": [
+        "Bamboo",
+        "Fruit",
+        "Fish",
+        "Grass"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-zoo",
+        "panda"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "What colour is your raincoat, Skye?",
+      "line2": "It's yellow with a white hood.",
+      "question": "🔊 What colour is the hood?",
+      "options": [
+        "White",
+        "Yellow",
+        "Black",
+        "Grey"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "colours"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Do you have PE today, Xander?",
+      "line2": "Yes, after Maths and before lunch.",
+      "question": "🔊 When is PE today?",
+      "options": [
+        "After Maths",
+        "After lunch",
+        "Before Maths",
+        "After Art"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-school",
+        "pe"
+      ]
+    }
+  ],
+  "exams": [
+    {
+      "exam_number": 301,
+      "title": "Batch4 - Đề 1",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is your neck OK, Ella?\nGirl: Yes, but my shoulder hurts a little.",
+            "question": "🔊 What hurts on Ella?",
+            "options": [
+              "Her neck",
+              "Her shoulder",
+              "Her back",
+              "Her knee"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-body",
+              "shoulder"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/6f9557e93950.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Can you jump on one foot, Rory?\nBoy: Yes, look, I'm jumping on my left foot!",
+            "question": "🔊 What is Rory doing?",
+            "options": [
+              "Jumping on one foot",
+              "Running fast",
+              "Sitting down",
+              "Clapping his hands"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-body",
+              "foot"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/8f1c5aa5c436.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like playing in the sand, Coco?\nGirl: Yes, I make shapes with my hands and feet.",
+            "question": "🔊 What does Coco make in the sand?",
+            "options": [
+              "Shapes",
+              "Holes",
+              "Words",
+              "Circles"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-beach",
+              "sand"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/a60251f02a51.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is your ice cream melting, Jude?\nBoy: Yes, it's too hot at the beach today.",
+            "question": "🔊 Why is the ice cream melting?",
+            "options": [
+              "It's too hot",
+              "It's too cold",
+              "It's raining",
+              "It's windy"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-beach",
+              "sun"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/47b7b84ad09e.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where is the post office, Faith?\nGirl: It's between the bank and the bakery.",
+            "question": "🔊 Where is the post office?",
+            "options": [
+              "Between the bank and bakery",
+              "Next to the park",
+              "Behind the shop",
+              "Near the school"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-street",
+              "post-office"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/5562e4a547e4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Do you see the traffic light, Caleb?\nBoy: Yes, it's red, so we must stop.",
+            "question": "🔊 What colour is the traffic light?",
+            "options": [
+              "Green",
+              "Red",
+              "Yellow",
+              "Blue"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-street",
+              "traffic-light"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/de44d022e5ec.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: How many candles are on the cake, Iris?\nGirl: There are seven candles, one for each year.",
+            "question": "🔊 How many candles are on the cake?",
+            "options": [
+              "Six",
+              "Seven",
+              "Eight",
+              "Nine"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "birthday",
+              "cake"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/277437827e32.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Did you bring a card, Hugo?\nBoy: Yes, a card with a big yellow star.",
+            "question": "🔊 What is on Hugo's card?",
+            "options": [
+              "A yellow star",
+              "A red heart",
+              "A blue moon",
+              "A green tree"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "birthday",
+              "card"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/8980311bf929.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is your goldfish in the bowl, Lena?\nGirl: Yes, it's swimming near the plant.",
+            "question": "🔊 Where is Lena's goldfish?",
+            "options": [
+              "Near the plant",
+              "Under the table",
+              "In the garden",
+              "In the sink"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-home",
+              "goldfish"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/b612ee053513.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the curtain green, Miles?\nBoy: No, the curtain in my room is blue.",
+            "question": "🔊 What colour is Miles's curtain?",
+            "options": [
+              "Green",
+              "Blue",
+              "Yellow",
+              "Purple"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-home",
+              "curtain",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/b0dd44dc6295.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like the yellow gloves, Nova?\nGirl: No, I like the white scarf better.",
+            "question": "🔊 What does Nova like?",
+            "options": [
+              "The yellow gloves",
+              "The white scarf",
+              "The black boots",
+              "The red coat"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes-shop",
+              "scarf"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/6c21663ee989.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Are these boots too small, Arlo?\nBoy: Yes, can I have a bigger pair, please?",
+            "question": "🔊 What does Arlo want?",
+            "options": [
+              "A bigger pair of boots",
+              "A smaller hat",
+              "New socks",
+              "A different colour"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes-shop",
+              "boots"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/df6fa336f434.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Would you like some soup, Hazel?\nGirl: Yes please, with some bread.",
+            "question": "🔊 What does Hazel want with soup?",
+            "options": [
+              "Bread",
+              "Rice",
+              "Cake",
+              "Fries"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "soup",
+              "bread"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/61cb45bbccc1.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Do you want juice or milk, Reuben?\nBoy: Juice, please, and some grapes too.",
+            "question": "🔊 What does Reuben want to drink?",
+            "options": [
+              "Juice",
+              "Milk",
+              "Water",
+              "Lemonade"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "juice"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/b64938efdc0c.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Can you see the owl, Mabel?\nGirl: Yes, it's sleeping in the tree.",
+            "question": "🔊 What is the owl doing?",
+            "options": [
+              "Sleeping",
+              "Flying",
+              "Singing",
+              "Eating"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-zoo",
+              "owl"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/cb9b96187198.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 302,
+      "title": "Batch4 - Đề 2",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the panda eating, Leo?\nBoy: Yes, it's eating green bamboo.",
+            "question": "🔊 What is the panda eating?",
+            "options": [
+              "Bamboo",
+              "Fruit",
+              "Fish",
+              "Grass"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-zoo",
+              "panda"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/77c44976eccc.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: What colour is your raincoat, Skye?\nGirl: It's yellow with a white hood.",
+            "question": "🔊 What colour is the hood?",
+            "options": [
+              "White",
+              "Yellow",
+              "Black",
+              "Grey"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/2ff7c4c2b7db.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Do you have PE today, Xander?\nBoy: Yes, after Maths and before lunch.",
+            "question": "🔊 When is PE today?",
+            "options": [
+              "After Maths",
+              "After lunch",
+              "Before Maths",
+              "After Art"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-school",
+              "pe"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/828fc2a2cac7.mp3"
+          }
+        }
+      ]
+    }
+  ]
+}

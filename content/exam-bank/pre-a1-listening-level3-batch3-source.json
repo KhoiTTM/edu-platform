@@ -1,0 +1,1235 @@
+{
+  "dialogues": [
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Is your ear big, Daisy?",
+      "line2": "No, but my brother's ears are very big!",
+      "question": "🔊 Whose ears are big?",
+      "options": [
+        "Daisy's",
+        "Her brother's",
+        "Her sister's",
+        "Her dad's"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "my-body",
+        "ear",
+        "brother"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Can you smile for the photo, Finn?",
+      "line2": "Yes, look at my mouth, I'm smiling!",
+      "question": "🔊 What is Finn doing?",
+      "options": [
+        "Smiling",
+        "Crying",
+        "Sleeping",
+        "Eating"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "my-body",
+        "mouth",
+        "smile"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Are your feet cold, Wendy?",
+      "line2": "Yes, my feet and hands are very cold.",
+      "question": "🔊 What is cold on Wendy?",
+      "options": [
+        "Her feet and hands",
+        "Her head and ears",
+        "Her arms and legs",
+        "Her nose"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "my-body",
+        "foot",
+        "hand"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Do you have a big body like your dad, Kevin?",
+      "line2": "No, my dad is tall but I am small.",
+      "question": "🔊 Who is tall?",
+      "options": [
+        "Kevin",
+        "His dad",
+        "His brother",
+        "His friend"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "my-body",
+        "body"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "What are you building at the beach, Nora?",
+      "line2": "I'm building a tall sandcastle with my spade.",
+      "question": "🔊 What is Nora building?",
+      "options": [
+        "A sandcastle",
+        "A boat",
+        "A tower of rocks",
+        "A tent"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-beach",
+        "sandcastle"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is the sea cold today, Freddie?",
+      "line2": "No, the sea is warm and I want to swim.",
+      "question": "🔊 What does Freddie want to do?",
+      "options": [
+        "Swim",
+        "Build a sandcastle",
+        "Eat lunch",
+        "Sleep"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-beach",
+        "sea"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Where is your towel, Poppy?",
+      "line2": "It's on the sand next to my bag.",
+      "question": "🔊 Where is Poppy's towel?",
+      "options": [
+        "On the sand",
+        "In the sea",
+        "In the car",
+        "At home"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-beach",
+        "towel"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is there a supermarket on your street, Toby?",
+      "line2": "Yes, and there's a bank next to it.",
+      "question": "🔊 What is next to the supermarket?",
+      "options": [
+        "A bank",
+        "A park",
+        "A school",
+        "A bakery"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "my-street",
+        "supermarket",
+        "bank"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Do you walk to school, Holly?",
+      "line2": "No, I take the bus on my street.",
+      "question": "🔊 How does Holly go to school?",
+      "options": [
+        "By bus",
+        "By car",
+        "On foot",
+        "By bike"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "my-street",
+        "bus"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is the shop open now, Charlie?",
+      "line2": "Yes, but the bank is closed today.",
+      "question": "🔊 What is closed today?",
+      "options": [
+        "The shop",
+        "The bank",
+        "The park",
+        "The bakery"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "my-street",
+        "shop",
+        "bank"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Whose birthday is it today, Isla?",
+      "line2": "It's my friend's birthday. She is nine today.",
+      "question": "🔊 How old is Isla's friend today?",
+      "options": [
+        "Seven",
+        "Eight",
+        "Nine",
+        "Ten"
+      ],
+      "correctIndex": 2,
+      "tags": [
+        "birthday",
+        "age"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "What game do you play at the party, George?",
+      "line2": "We play hide and seek in the garden.",
+      "question": "🔊 What game do they play?",
+      "options": [
+        "Hide and seek",
+        "Chess",
+        "Football",
+        "Word puzzle"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "birthday",
+        "game"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Are there balloons at the party, Ruby?",
+      "line2": "Yes, lots of red and yellow balloons.",
+      "question": "🔊 What colour are the balloons?",
+      "options": [
+        "Red and yellow",
+        "Blue and green",
+        "Purple and pink",
+        "Black and white"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "birthday",
+        "balloon",
+        "colours"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is your rabbit in its cage, Ollie?",
+      "line2": "No, it's hopping in the living room.",
+      "question": "🔊 Where is Ollie's rabbit?",
+      "options": [
+        "In its cage",
+        "In the living room",
+        "In the kitchen",
+        "In the garden"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "at-home",
+        "rabbit",
+        "living-room"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Where is the sofa, Maya?",
+      "line2": "It's in the living room, next to the TV.",
+      "question": "🔊 Where is the sofa?",
+      "options": [
+        "In the bedroom",
+        "Next to the TV",
+        "In the kitchen",
+        "In the bathroom"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "at-home",
+        "sofa",
+        "living-room"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is your bird singing, Leo?",
+      "line2": "Yes, it sings every morning in the kitchen.",
+      "question": "🔊 When does Leo's bird sing?",
+      "options": [
+        "Every morning",
+        "At night",
+        "At lunch",
+        "On weekends"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-home",
+        "bird",
+        "singing"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Can I try the blue skirt, please?",
+      "line2": "Yes, and here is a white blouse too.",
+      "question": "🔊 What does the shop have?",
+      "options": [
+        "A blue skirt and white blouse",
+        "A red dress",
+        "Black shoes",
+        "A green hat"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "clothes-shop",
+        "skirt"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "How much is this jacket, Dylan?",
+      "line2": "It's fifteen dollars, but the shoes are twenty.",
+      "question": "🔊 How much is the jacket?",
+      "options": [
+        "Ten dollars",
+        "Fifteen dollars",
+        "Twenty dollars",
+        "Twenty-five dollars"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "clothes-shop",
+        "jacket"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Do you like this red hat, Ivy?",
+      "line2": "No, I prefer the purple one.",
+      "question": "🔊 What colour hat does Ivy prefer?",
+      "options": [
+        "Red",
+        "Purple",
+        "Yellow",
+        "Green"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "clothes-shop",
+        "hat",
+        "colours"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "What's your favourite fruit, Aiden?",
+      "line2": "I love grapes, but my sister loves lemons.",
+      "question": "🔊 What is Aiden's favourite fruit?",
+      "options": [
+        "Grapes",
+        "Lemons",
+        "Pears",
+        "Mangoes"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "food",
+        "grapes"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Do you eat beans, Tilly?",
+      "line2": "Yes, I like beans with rice and chicken.",
+      "question": "🔊 What does Tilly eat with beans?",
+      "options": [
+        "Rice and chicken",
+        "Bread and cheese",
+        "Fish and potato",
+        "Egg and toast"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "food",
+        "beans",
+        "rice"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is the soup hot, Ryan?",
+      "line2": "Yes, and it has carrots and onions in it.",
+      "question": "🔊 What is in the soup?",
+      "options": [
+        "Carrots and onions",
+        "Rice and beans",
+        "Potato and egg",
+        "Fish and peas"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "food",
+        "carrot",
+        "onion"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Can you see the sheep, Willow?",
+      "line2": "Yes, and there's a goat next to it.",
+      "question": "🔊 What animal is next to the sheep?",
+      "options": [
+        "A goat",
+        "A cow",
+        "A duck",
+        "A frog"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-zoo",
+        "sheep",
+        "goat"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is the cow eating grass, Theo?",
+      "line2": "Yes, and the horse is drinking water.",
+      "question": "🔊 What is the horse doing?",
+      "options": [
+        "Eating grass",
+        "Drinking water",
+        "Sleeping",
+        "Running"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "at-the-zoo",
+        "cow",
+        "horse"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Look at the little duck, Freya!",
+      "line2": "Yes, it's yellow and it's swimming fast.",
+      "question": "🔊 What colour is the duck?",
+      "options": [
+        "Yellow",
+        "White",
+        "Brown",
+        "Grey"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-zoo",
+        "duck"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "What colour is your bike, Adam?",
+      "line2": "It's black with green wheels.",
+      "question": "🔊 What colour are Adam's bike wheels?",
+      "options": [
+        "Green",
+        "Red",
+        "Blue",
+        "Yellow"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "colours"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Is your kite orange, Bella?",
+      "line2": "No, it's pink and purple.",
+      "question": "🔊 What colour is Bella's kite?",
+      "options": [
+        "Orange",
+        "Pink and purple",
+        "Green",
+        "Blue and white"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "colours"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "What subject do you have now, Blake?",
+      "line2": "We have Maths, then PE after break.",
+      "question": "🔊 What do they have after break?",
+      "options": [
+        "Maths",
+        "PE",
+        "Art",
+        "Music"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "at-school",
+        "break-time"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Where is your homework, Stella?",
+      "line2": "It's in my school bag with my pencil case.",
+      "question": "🔊 Where is Stella's homework?",
+      "options": [
+        "On the desk",
+        "In her school bag",
+        "In the library",
+        "At home"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "at-school",
+        "school-bag",
+        "pencil-case"
+      ]
+    }
+  ],
+  "exams": [
+    {
+      "exam_number": 201,
+      "title": "Batch3 - Đề 1",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is your ear big, Daisy?\nGirl: No, but my brother's ears are very big!",
+            "question": "🔊 Whose ears are big?",
+            "options": [
+              "Daisy's",
+              "Her brother's",
+              "Her sister's",
+              "Her dad's"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-body",
+              "ear",
+              "brother"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/97a495fb4093.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Can you smile for the photo, Finn?\nBoy: Yes, look at my mouth, I'm smiling!",
+            "question": "🔊 What is Finn doing?",
+            "options": [
+              "Smiling",
+              "Crying",
+              "Sleeping",
+              "Eating"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-body",
+              "mouth",
+              "smile"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/1480e263cb99.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Are your feet cold, Wendy?\nGirl: Yes, my feet and hands are very cold.",
+            "question": "🔊 What is cold on Wendy?",
+            "options": [
+              "Her feet and hands",
+              "Her head and ears",
+              "Her arms and legs",
+              "Her nose"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-body",
+              "foot",
+              "hand"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/bc7ba0ce2d6c.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Do you have a big body like your dad, Kevin?\nBoy: No, my dad is tall but I am small.",
+            "question": "🔊 Who is tall?",
+            "options": [
+              "Kevin",
+              "His dad",
+              "His brother",
+              "His friend"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-body",
+              "body"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/87b309c486d4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: What are you building at the beach, Nora?\nGirl: I'm building a tall sandcastle with my spade.",
+            "question": "🔊 What is Nora building?",
+            "options": [
+              "A sandcastle",
+              "A boat",
+              "A tower of rocks",
+              "A tent"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-beach",
+              "sandcastle"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/a5224230fbf6.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the sea cold today, Freddie?\nBoy: No, the sea is warm and I want to swim.",
+            "question": "🔊 What does Freddie want to do?",
+            "options": [
+              "Swim",
+              "Build a sandcastle",
+              "Eat lunch",
+              "Sleep"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-beach",
+              "sea"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/a62606ae3b1a.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where is your towel, Poppy?\nGirl: It's on the sand next to my bag.",
+            "question": "🔊 Where is Poppy's towel?",
+            "options": [
+              "On the sand",
+              "In the sea",
+              "In the car",
+              "At home"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-beach",
+              "towel"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/ff5d3f9df480.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is there a supermarket on your street, Toby?\nBoy: Yes, and there's a bank next to it.",
+            "question": "🔊 What is next to the supermarket?",
+            "options": [
+              "A bank",
+              "A park",
+              "A school",
+              "A bakery"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-street",
+              "supermarket",
+              "bank"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/aa5b391e7e4a.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you walk to school, Holly?\nGirl: No, I take the bus on my street.",
+            "question": "🔊 How does Holly go to school?",
+            "options": [
+              "By bus",
+              "By car",
+              "On foot",
+              "By bike"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-street",
+              "bus"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/eca2b9c368e7.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the shop open now, Charlie?\nBoy: Yes, but the bank is closed today.",
+            "question": "🔊 What is closed today?",
+            "options": [
+              "The shop",
+              "The bank",
+              "The park",
+              "The bakery"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-street",
+              "shop",
+              "bank"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/85dd76907316.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Whose birthday is it today, Isla?\nGirl: It's my friend's birthday. She is nine today.",
+            "question": "🔊 How old is Isla's friend today?",
+            "options": [
+              "Seven",
+              "Eight",
+              "Nine",
+              "Ten"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "birthday",
+              "age"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/c777ec917448.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: What game do you play at the party, George?\nBoy: We play hide and seek in the garden.",
+            "question": "🔊 What game do they play?",
+            "options": [
+              "Hide and seek",
+              "Chess",
+              "Football",
+              "Word puzzle"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "birthday",
+              "game"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/adc115482f56.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Are there balloons at the party, Ruby?\nGirl: Yes, lots of red and yellow balloons.",
+            "question": "🔊 What colour are the balloons?",
+            "options": [
+              "Red and yellow",
+              "Blue and green",
+              "Purple and pink",
+              "Black and white"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "birthday",
+              "balloon",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/5ade588e5976.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is your rabbit in its cage, Ollie?\nBoy: No, it's hopping in the living room.",
+            "question": "🔊 Where is Ollie's rabbit?",
+            "options": [
+              "In its cage",
+              "In the living room",
+              "In the kitchen",
+              "In the garden"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-home",
+              "rabbit",
+              "living-room"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/4bb9fa351707.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where is the sofa, Maya?\nGirl: It's in the living room, next to the TV.",
+            "question": "🔊 Where is the sofa?",
+            "options": [
+              "In the bedroom",
+              "Next to the TV",
+              "In the kitchen",
+              "In the bathroom"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-home",
+              "sofa",
+              "living-room"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/aeb5f43d85ee.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 202,
+      "title": "Batch3 - Đề 2",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is your bird singing, Leo?\nBoy: Yes, it sings every morning in the kitchen.",
+            "question": "🔊 When does Leo's bird sing?",
+            "options": [
+              "Every morning",
+              "At night",
+              "At lunch",
+              "On weekends"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-home",
+              "bird",
+              "singing"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/085032ea17e9.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Can I try the blue skirt, please?\nGirl: Yes, and here is a white blouse too.",
+            "question": "🔊 What does the shop have?",
+            "options": [
+              "A blue skirt and white blouse",
+              "A red dress",
+              "Black shoes",
+              "A green hat"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes-shop",
+              "skirt"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/7a9864f05b36.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: How much is this jacket, Dylan?\nBoy: It's fifteen dollars, but the shoes are twenty.",
+            "question": "🔊 How much is the jacket?",
+            "options": [
+              "Ten dollars",
+              "Fifteen dollars",
+              "Twenty dollars",
+              "Twenty-five dollars"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes-shop",
+              "jacket"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/18d665f5e471.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like this red hat, Ivy?\nGirl: No, I prefer the purple one.",
+            "question": "🔊 What colour hat does Ivy prefer?",
+            "options": [
+              "Red",
+              "Purple",
+              "Yellow",
+              "Green"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes-shop",
+              "hat",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/38d435e0d1f0.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: What's your favourite fruit, Aiden?\nBoy: I love grapes, but my sister loves lemons.",
+            "question": "🔊 What is Aiden's favourite fruit?",
+            "options": [
+              "Grapes",
+              "Lemons",
+              "Pears",
+              "Mangoes"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "grapes"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/6fb9e20be31b.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you eat beans, Tilly?\nGirl: Yes, I like beans with rice and chicken.",
+            "question": "🔊 What does Tilly eat with beans?",
+            "options": [
+              "Rice and chicken",
+              "Bread and cheese",
+              "Fish and potato",
+              "Egg and toast"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "beans",
+              "rice"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/b8d090a79160.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the soup hot, Ryan?\nBoy: Yes, and it has carrots and onions in it.",
+            "question": "🔊 What is in the soup?",
+            "options": [
+              "Carrots and onions",
+              "Rice and beans",
+              "Potato and egg",
+              "Fish and peas"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "carrot",
+              "onion"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/0a9cb07dce22.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Can you see the sheep, Willow?\nGirl: Yes, and there's a goat next to it.",
+            "question": "🔊 What animal is next to the sheep?",
+            "options": [
+              "A goat",
+              "A cow",
+              "A duck",
+              "A frog"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-zoo",
+              "sheep",
+              "goat"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/35e170ea291a.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the cow eating grass, Theo?\nBoy: Yes, and the horse is drinking water.",
+            "question": "🔊 What is the horse doing?",
+            "options": [
+              "Eating grass",
+              "Drinking water",
+              "Sleeping",
+              "Running"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-zoo",
+              "cow",
+              "horse"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/45da34a4277b.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Look at the little duck, Freya!\nGirl: Yes, it's yellow and it's swimming fast.",
+            "question": "🔊 What colour is the duck?",
+            "options": [
+              "Yellow",
+              "White",
+              "Brown",
+              "Grey"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-zoo",
+              "duck"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/e71f765fb564.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: What colour is your bike, Adam?\nBoy: It's black with green wheels.",
+            "question": "🔊 What colour are Adam's bike wheels?",
+            "options": [
+              "Green",
+              "Red",
+              "Blue",
+              "Yellow"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/12d0078131aa.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is your kite orange, Bella?\nGirl: No, it's pink and purple.",
+            "question": "🔊 What colour is Bella's kite?",
+            "options": [
+              "Orange",
+              "Pink and purple",
+              "Green",
+              "Blue and white"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/1dbcf477866c.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: What subject do you have now, Blake?\nBoy: We have Maths, then PE after break.",
+            "question": "🔊 What do they have after break?",
+            "options": [
+              "Maths",
+              "PE",
+              "Art",
+              "Music"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-school",
+              "break-time"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/60f86e23933b.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where is your homework, Stella?\nGirl: It's in my school bag with my pencil case.",
+            "question": "🔊 Where is Stella's homework?",
+            "options": [
+              "On the desk",
+              "In her school bag",
+              "In the library",
+              "At home"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-school",
+              "school-bag",
+              "pencil-case"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/963357f908b1.mp3"
+          }
+        }
+      ]
+    }
+  ]
+}

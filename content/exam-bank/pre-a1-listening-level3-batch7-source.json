@@ -1,0 +1,341 @@
+{
+  "dialogues": [
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Are you cold, Faye?",
+      "line2": "Yes, my toes are cold.",
+      "question": "🔊 What is cold?",
+      "options": [
+        "Her toes",
+        "Her ears",
+        "Her nose",
+        "Her hands"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "my-body",
+        "foot"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is the sand hot, Rex?",
+      "line2": "Yes, very hot today.",
+      "question": "🔊 What is hot?",
+      "options": [
+        "The sand",
+        "The sea",
+        "The wind",
+        "The rock"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-beach",
+        "sand"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Is the light red, Joy?",
+      "line2": "No, it's green now.",
+      "question": "🔊 What colour is the light?",
+      "options": [
+        "Green",
+        "Red",
+        "Yellow",
+        "Blue"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "my-street",
+        "traffic-light"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Do you like party hats, Cy?",
+      "line2": "Yes, mine is gold!",
+      "question": "🔊 What colour is Cy's hat?",
+      "options": [
+        "Gold",
+        "Silver",
+        "Pink",
+        "Blue"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "birthday",
+        "hat"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Is your clock loud, Bea?",
+      "line2": "Yes, it's very loud!",
+      "question": "🔊 What is loud?",
+      "options": [
+        "The clock",
+        "The TV",
+        "The phone",
+        "The fan"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-home",
+        "clock"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Do you like the cap, Roy?",
+      "line2": "Yes, it's my favourite!",
+      "question": "🔊 What is Roy's favourite?",
+      "options": [
+        "The cap",
+        "The scarf",
+        "The coat",
+        "The boots"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "clothes-shop",
+        "cap"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Do you like plums, Gia?",
+      "line2": "Yes, I love plums!",
+      "question": "🔊 What does Gia love?",
+      "options": [
+        "Plums",
+        "Peaches",
+        "Cherries",
+        "Grapes"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "food",
+        "plum"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is the seal wet, Cruz?",
+      "line2": "Yes, it's swimming fast.",
+      "question": "🔊 What is the seal doing?",
+      "options": [
+        "Swimming",
+        "Sleeping",
+        "Eating",
+        "Jumping"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-zoo",
+        "seal"
+      ]
+    }
+  ],
+  "exams": [
+    {
+      "exam_number": 601,
+      "title": "Batch7 - Đề 1",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Are you cold, Faye?\nGirl: Yes, my toes are cold.",
+            "question": "🔊 What is cold?",
+            "options": [
+              "Her toes",
+              "Her ears",
+              "Her nose",
+              "Her hands"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-body",
+              "foot"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/5a7726ce8f59.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the sand hot, Rex?\nBoy: Yes, very hot today.",
+            "question": "🔊 What is hot?",
+            "options": [
+              "The sand",
+              "The sea",
+              "The wind",
+              "The rock"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-beach",
+              "sand"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/1d74f988e2d8.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is the light red, Joy?\nGirl: No, it's green now.",
+            "question": "🔊 What colour is the light?",
+            "options": [
+              "Green",
+              "Red",
+              "Yellow",
+              "Blue"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-street",
+              "traffic-light"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/5e36ed557017.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Do you like party hats, Cy?\nBoy: Yes, mine is gold!",
+            "question": "🔊 What colour is Cy's hat?",
+            "options": [
+              "Gold",
+              "Silver",
+              "Pink",
+              "Blue"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "birthday",
+              "hat"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/dc111048dc41.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is your clock loud, Bea?\nGirl: Yes, it's very loud!",
+            "question": "🔊 What is loud?",
+            "options": [
+              "The clock",
+              "The TV",
+              "The phone",
+              "The fan"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-home",
+              "clock"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/d6c98e381a52.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Do you like the cap, Roy?\nBoy: Yes, it's my favourite!",
+            "question": "🔊 What is Roy's favourite?",
+            "options": [
+              "The cap",
+              "The scarf",
+              "The coat",
+              "The boots"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes-shop",
+              "cap"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/39f773b71cc5.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like plums, Gia?\nGirl: Yes, I love plums!",
+            "question": "🔊 What does Gia love?",
+            "options": [
+              "Plums",
+              "Peaches",
+              "Cherries",
+              "Grapes"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "plum"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/f0699d0dc0b5.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the seal wet, Cruz?\nBoy: Yes, it's swimming fast.",
+            "question": "🔊 What is the seal doing?",
+            "options": [
+              "Swimming",
+              "Sleeping",
+              "Eating",
+              "Jumping"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-zoo",
+              "seal"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/1ef9cf721bcc.mp3"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,680 @@
+{
+  "dialogues": [
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Is your back OK, Tara?",
+      "line2": "Yes, but my knee hurts from running.",
+      "question": "🔊 What hurts on Tara?",
+      "options": [
+        "Her back",
+        "Her knee",
+        "Her neck",
+        "Her hand"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "my-body",
+        "knee"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Can you wave your hand, Dexter?",
+      "line2": "Yes, look, I'm waving with both hands!",
+      "question": "🔊 What is Dexter doing?",
+      "options": [
+        "Waving",
+        "Clapping",
+        "Pointing",
+        "Jumping"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "my-body",
+        "hand"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Do you like the waves, Piper?",
+      "line2": "Yes, I like jumping over the small waves.",
+      "question": "🔊 What does Piper like doing?",
+      "options": [
+        "Jumping over waves",
+        "Building sandcastles",
+        "Collecting shells",
+        "Swimming far"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-beach",
+        "sea"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is your bucket full of water, Milo?",
+      "line2": "Yes, and I have some shells too.",
+      "question": "🔊 What does Milo have in his bucket?",
+      "options": [
+        "Water and shells",
+        "Sand and rocks",
+        "Fish and water",
+        "Toys"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-beach",
+        "shell"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Where is the hospital, June?",
+      "line2": "It's near the school, past the park.",
+      "question": "🔊 Where is the hospital?",
+      "options": [
+        "Near the school",
+        "Near the beach",
+        "Near the bank",
+        "Near the shop"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "my-street",
+        "hospital"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is your house near the park, Otis?",
+      "line2": "Yes, it's opposite the park gate.",
+      "question": "🔊 Where is Otis's house?",
+      "options": [
+        "Opposite the park",
+        "Behind the school",
+        "Next to the shop",
+        "Near the beach"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "my-street",
+        "park"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Did you make a wish, Fern?",
+      "line2": "Yes, I blew out all the candles!",
+      "question": "🔊 What did Fern do?",
+      "options": [
+        "Blew out the candles",
+        "Ate the cake",
+        "Sang a song",
+        "Opened presents"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "birthday",
+        "candles"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "How many guests are coming, Elliot?",
+      "line2": "Ten friends are coming to my party.",
+      "question": "🔊 How many guests are coming?",
+      "options": [
+        "Eight",
+        "Nine",
+        "Ten",
+        "Eleven"
+      ],
+      "correctIndex": 2,
+      "tags": [
+        "birthday",
+        "party"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Is your hamster in its cage, Wren?",
+      "line2": "No, it's running on the carpet.",
+      "question": "🔊 Where is Wren's hamster?",
+      "options": [
+        "In its cage",
+        "On the carpet",
+        "In the garden",
+        "On the sofa"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "at-home",
+        "hamster"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is the shelf high, Jasper?",
+      "line2": "Yes, my books are on the top shelf.",
+      "question": "🔊 Where are Jasper's books?",
+      "options": [
+        "On the top shelf",
+        "On the floor",
+        "In a box",
+        "On the bed"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-home",
+        "shelf"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Do you want the green gloves, Sadie?",
+      "line2": "No, I want the red ones, please.",
+      "question": "🔊 What colour gloves does Sadie want?",
+      "options": [
+        "Green",
+        "Red",
+        "Blue",
+        "Black"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "clothes-shop",
+        "colours"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Are the trousers too long, Gus?",
+      "line2": "Yes, I need a shorter pair.",
+      "question": "🔊 What does Gus need?",
+      "options": [
+        "A shorter pair of trousers",
+        "A longer jacket",
+        "Bigger shoes",
+        "A new hat"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "clothes-shop",
+        "trousers"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Do you like cheese, Robin?",
+      "line2": "Yes, I put cheese on my bread.",
+      "question": "🔊 What does Robin put cheese on?",
+      "options": [
+        "Bread",
+        "Rice",
+        "Cake",
+        "Soup"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "food",
+        "cheese",
+        "bread"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Would you like an orange, Percy?",
+      "line2": "Yes, and can I have a banana too?",
+      "question": "🔊 What fruits does Percy want?",
+      "options": [
+        "Orange and banana",
+        "Apple and pear",
+        "Mango and grapes",
+        "Lemon and lime"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "food",
+        "orange",
+        "banana"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Can you see the parrot, Dahlia?",
+      "line2": "Yes, it's green and it can talk!",
+      "question": "🔊 What colour is the parrot?",
+      "options": [
+        "Green",
+        "Blue",
+        "Red",
+        "Yellow"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-zoo",
+        "parrot"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is the zebra running, Cassius?",
+      "line2": "No, it's standing near the fence.",
+      "question": "🔊 What is the zebra doing?",
+      "options": [
+        "Standing",
+        "Running",
+        "Eating",
+        "Sleeping"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-zoo",
+        "zebra"
+      ]
+    }
+  ],
+  "exams": [
+    {
+      "exam_number": 401,
+      "title": "Batch5 - Đề 1",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is your back OK, Tara?\nGirl: Yes, but my knee hurts from running.",
+            "question": "🔊 What hurts on Tara?",
+            "options": [
+              "Her back",
+              "Her knee",
+              "Her neck",
+              "Her hand"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-body",
+              "knee"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/ed206b4d9d1b.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Can you wave your hand, Dexter?\nBoy: Yes, look, I'm waving with both hands!",
+            "question": "🔊 What is Dexter doing?",
+            "options": [
+              "Waving",
+              "Clapping",
+              "Pointing",
+              "Jumping"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-body",
+              "hand"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/5a462884029e.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like the waves, Piper?\nGirl: Yes, I like jumping over the small waves.",
+            "question": "🔊 What does Piper like doing?",
+            "options": [
+              "Jumping over waves",
+              "Building sandcastles",
+              "Collecting shells",
+              "Swimming far"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-beach",
+              "sea"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/cbfa7386086d.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is your bucket full of water, Milo?\nBoy: Yes, and I have some shells too.",
+            "question": "🔊 What does Milo have in his bucket?",
+            "options": [
+              "Water and shells",
+              "Sand and rocks",
+              "Fish and water",
+              "Toys"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-beach",
+              "shell"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/b9dcd81ffb54.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Where is the hospital, June?\nGirl: It's near the school, past the park.",
+            "question": "🔊 Where is the hospital?",
+            "options": [
+              "Near the school",
+              "Near the beach",
+              "Near the bank",
+              "Near the shop"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-street",
+              "hospital"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/b8d6b1c0e373.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is your house near the park, Otis?\nBoy: Yes, it's opposite the park gate.",
+            "question": "🔊 Where is Otis's house?",
+            "options": [
+              "Opposite the park",
+              "Behind the school",
+              "Next to the shop",
+              "Near the beach"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-street",
+              "park"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/8825673e27b1.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Did you make a wish, Fern?\nGirl: Yes, I blew out all the candles!",
+            "question": "🔊 What did Fern do?",
+            "options": [
+              "Blew out the candles",
+              "Ate the cake",
+              "Sang a song",
+              "Opened presents"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "birthday",
+              "candles"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/1d96bc08ef6b.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: How many guests are coming, Elliot?\nBoy: Ten friends are coming to my party.",
+            "question": "🔊 How many guests are coming?",
+            "options": [
+              "Eight",
+              "Nine",
+              "Ten",
+              "Eleven"
+            ],
+            "correct_index": 2,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "birthday",
+              "party"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/acc66eceb1cd.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is your hamster in its cage, Wren?\nGirl: No, it's running on the carpet.",
+            "question": "🔊 Where is Wren's hamster?",
+            "options": [
+              "In its cage",
+              "On the carpet",
+              "In the garden",
+              "On the sofa"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-home",
+              "hamster"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/5ded416a456b.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the shelf high, Jasper?\nBoy: Yes, my books are on the top shelf.",
+            "question": "🔊 Where are Jasper's books?",
+            "options": [
+              "On the top shelf",
+              "On the floor",
+              "In a box",
+              "On the bed"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-home",
+              "shelf"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/f09708d4c899.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you want the green gloves, Sadie?\nGirl: No, I want the red ones, please.",
+            "question": "🔊 What colour gloves does Sadie want?",
+            "options": [
+              "Green",
+              "Red",
+              "Blue",
+              "Black"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes-shop",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/5b78509dd34f.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Are the trousers too long, Gus?\nBoy: Yes, I need a shorter pair.",
+            "question": "🔊 What does Gus need?",
+            "options": [
+              "A shorter pair of trousers",
+              "A longer jacket",
+              "Bigger shoes",
+              "A new hat"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes-shop",
+              "trousers"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/f2b0fcb40331.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you like cheese, Robin?\nGirl: Yes, I put cheese on my bread.",
+            "question": "🔊 What does Robin put cheese on?",
+            "options": [
+              "Bread",
+              "Rice",
+              "Cake",
+              "Soup"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "cheese",
+              "bread"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/72ce2e51aa68.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Would you like an orange, Percy?\nBoy: Yes, and can I have a banana too?",
+            "question": "🔊 What fruits does Percy want?",
+            "options": [
+              "Orange and banana",
+              "Apple and pear",
+              "Mango and grapes",
+              "Lemon and lime"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "orange",
+              "banana"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/c5ac19e44355.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Can you see the parrot, Dahlia?\nGirl: Yes, it's green and it can talk!",
+            "question": "🔊 What colour is the parrot?",
+            "options": [
+              "Green",
+              "Blue",
+              "Red",
+              "Yellow"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-zoo",
+              "parrot"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/2bc5ebd2a3ce.mp3"
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 402,
+      "title": "Batch5 - Đề 2",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the zebra running, Cassius?\nBoy: No, it's standing near the fence.",
+            "question": "🔊 What is the zebra doing?",
+            "options": [
+              "Standing",
+              "Running",
+              "Eating",
+              "Sleeping"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-zoo",
+              "zebra"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/a456b7df5dba.mp3"
+          }
+        }
+      ]
+    }
+  ]
+}

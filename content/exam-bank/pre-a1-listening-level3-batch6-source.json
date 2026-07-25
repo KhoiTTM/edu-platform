@@ -1,0 +1,509 @@
+{
+  "dialogues": [
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Is your chin OK, Belle?",
+      "line2": "Yes, but my elbow hurts.",
+      "question": "🔊 What hurts on Belle?",
+      "options": [
+        "Her chin",
+        "Her elbow",
+        "Her knee",
+        "Her wrist"
+      ],
+      "correctIndex": 1,
+      "tags": [
+        "my-body",
+        "elbow"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Can you swim, Cole?",
+      "line2": "Yes, I swim every day at the beach.",
+      "question": "🔊 When does Cole swim?",
+      "options": [
+        "Every day",
+        "Once a week",
+        "On Sundays",
+        "Never"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-beach",
+        "swim"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Is the crab red, Nell?",
+      "line2": "Yes, it's small and red.",
+      "question": "🔊 What colour is the crab?",
+      "options": [
+        "Red",
+        "Blue",
+        "Green",
+        "Brown"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-beach",
+        "crab"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is the market far, Silas?",
+      "line2": "No, it's close to my street.",
+      "question": "🔊 Where is the market?",
+      "options": [
+        "Close to his street",
+        "Far away",
+        "Next to school",
+        "In the park"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "my-street",
+        "market"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Are there many cars, Opal?",
+      "line2": "Yes, my street is very busy today.",
+      "question": "🔊 What is Opal's street like today?",
+      "options": [
+        "Busy",
+        "Quiet",
+        "Empty",
+        "Wet"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "my-street",
+        "car"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Did you get a present, Reid?",
+      "line2": "Yes, a new football!",
+      "question": "🔊 What present did Reid get?",
+      "options": [
+        "A football",
+        "A book",
+        "A robot",
+        "A bike"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "birthday",
+        "present"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Is your parrot loud, Vera?",
+      "line2": "Yes, it talks all day!",
+      "question": "🔊 What does Vera's parrot do?",
+      "options": [
+        "Talks all day",
+        "Sleeps all day",
+        "Flies away",
+        "Eats seeds"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-home",
+        "parrot"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is the rug soft, Kai?",
+      "line2": "Yes, it's soft and blue.",
+      "question": "🔊 What colour is the rug?",
+      "options": [
+        "Blue",
+        "Red",
+        "Green",
+        "Grey"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-home",
+        "rug",
+        "colours"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Do you want the pink gloves, Wynn?",
+      "line2": "No, the grey ones, please.",
+      "question": "🔊 What colour gloves does Wynn want?",
+      "options": [
+        "Grey",
+        "Pink",
+        "Purple",
+        "White"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "clothes-shop",
+        "colours"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Do you like yoghurt, Beau?",
+      "line2": "Yes, with some honey please.",
+      "question": "🔊 What does Beau want with yoghurt?",
+      "options": [
+        "Honey",
+        "Sugar",
+        "Jam",
+        "Milk"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "food",
+        "yoghurt"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Can you see the owl's eyes, Wilder?",
+      "line2": "Yes, they are big and yellow.",
+      "question": "🔊 What colour are the owl's eyes?",
+      "options": [
+        "Yellow",
+        "Black",
+        "Brown",
+        "Green"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-zoo",
+        "owl",
+        "colours"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is the kangaroo jumping, Rhys?",
+      "line2": "Yes, it jumps very high.",
+      "question": "🔊 What is the kangaroo doing?",
+      "options": [
+        "Jumping",
+        "Sleeping",
+        "Eating",
+        "Running"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-zoo",
+        "kangaroo"
+      ]
+    }
+  ],
+  "exams": [
+    {
+      "exam_number": 501,
+      "title": "Batch6 - Đề 1",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is your chin OK, Belle?\nGirl: Yes, but my elbow hurts.",
+            "question": "🔊 What hurts on Belle?",
+            "options": [
+              "Her chin",
+              "Her elbow",
+              "Her knee",
+              "Her wrist"
+            ],
+            "correct_index": 1,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-body",
+              "elbow"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/a7c3b9a5a8e4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Can you swim, Cole?\nBoy: Yes, I swim every day at the beach.",
+            "question": "🔊 When does Cole swim?",
+            "options": [
+              "Every day",
+              "Once a week",
+              "On Sundays",
+              "Never"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-beach",
+              "swim"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/3c3be21941c4.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is the crab red, Nell?\nGirl: Yes, it's small and red.",
+            "question": "🔊 What colour is the crab?",
+            "options": [
+              "Red",
+              "Blue",
+              "Green",
+              "Brown"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-beach",
+              "crab"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/d8f67c58e89b.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the market far, Silas?\nBoy: No, it's close to my street.",
+            "question": "🔊 Where is the market?",
+            "options": [
+              "Close to his street",
+              "Far away",
+              "Next to school",
+              "In the park"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-street",
+              "market"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/466889eab39a.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Are there many cars, Opal?\nGirl: Yes, my street is very busy today.",
+            "question": "🔊 What is Opal's street like today?",
+            "options": [
+              "Busy",
+              "Quiet",
+              "Empty",
+              "Wet"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-street",
+              "car"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/1e3b45443ea2.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Did you get a present, Reid?\nBoy: Yes, a new football!",
+            "question": "🔊 What present did Reid get?",
+            "options": [
+              "A football",
+              "A book",
+              "A robot",
+              "A bike"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "birthday",
+              "present"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/9b8158ef0333.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is your parrot loud, Vera?\nGirl: Yes, it talks all day!",
+            "question": "🔊 What does Vera's parrot do?",
+            "options": [
+              "Talks all day",
+              "Sleeps all day",
+              "Flies away",
+              "Eats seeds"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-home",
+              "parrot"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/ef3601be8748.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the rug soft, Kai?\nBoy: Yes, it's soft and blue.",
+            "question": "🔊 What colour is the rug?",
+            "options": [
+              "Blue",
+              "Red",
+              "Green",
+              "Grey"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-home",
+              "rug",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/8b1e4b4e813b.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Do you want the pink gloves, Wynn?\nGirl: No, the grey ones, please.",
+            "question": "🔊 What colour gloves does Wynn want?",
+            "options": [
+              "Grey",
+              "Pink",
+              "Purple",
+              "White"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "clothes-shop",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/eb24225379b2.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Do you like yoghurt, Beau?\nBoy: Yes, with some honey please.",
+            "question": "🔊 What does Beau want with yoghurt?",
+            "options": [
+              "Honey",
+              "Sugar",
+              "Jam",
+              "Milk"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food",
+              "yoghurt"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/0397957d6ed5.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Can you see the owl's eyes, Wilder?\nGirl: Yes, they are big and yellow.",
+            "question": "🔊 What colour are the owl's eyes?",
+            "options": [
+              "Yellow",
+              "Black",
+              "Brown",
+              "Green"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-zoo",
+              "owl",
+              "colours"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/7b875e381aca.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the kangaroo jumping, Rhys?\nBoy: Yes, it jumps very high.",
+            "question": "🔊 What is the kangaroo doing?",
+            "options": [
+              "Jumping",
+              "Sleeping",
+              "Eating",
+              "Running"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-zoo",
+              "kangaroo"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/df23f4372d35.mp3"
+          }
+        }
+      ]
+    }
+  ]
+}

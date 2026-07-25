@@ -1,0 +1,249 @@
+{
+  "dialogues": [
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Is your tummy OK, Nia?",
+      "line2": "Yes, but my thumb hurts.",
+      "question": "🔊 What hurts?",
+      "options": [
+        "Her thumb",
+        "Her tummy",
+        "Her chin",
+        "Her toe"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "my-body",
+        "hand"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is the wind strong, Eli?",
+      "line2": "Yes, very strong today.",
+      "question": "🔊 What is strong today?",
+      "options": [
+        "The wind",
+        "The sun",
+        "The rain",
+        "The sea"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-beach"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Is the road wet, Suki?",
+      "line2": "Yes, it's raining now.",
+      "question": "🔊 Why is the road wet?",
+      "options": [
+        "It's raining",
+        "It's sunny",
+        "It's windy",
+        "It's snowing"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "my-street"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Do you want a badge, Fox?",
+      "line2": "Yes, a star badge please!",
+      "question": "🔊 What badge does Fox want?",
+      "options": [
+        "A star badge",
+        "A heart badge",
+        "A moon badge",
+        "A sun badge"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "birthday"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Is your plant tall, Dot?",
+      "line2": "Yes, it's very tall now.",
+      "question": "🔊 What is tall?",
+      "options": [
+        "Her plant",
+        "Her lamp",
+        "Her chair",
+        "Her bed"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-home"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Do you like plums or peaches, Moss?",
+      "line2": "Peaches, please!",
+      "question": "🔊 What does Moss like?",
+      "options": [
+        "Peaches",
+        "Plums",
+        "Grapes",
+        "Pears"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "food"
+      ]
+    }
+  ],
+  "exams": [
+    {
+      "exam_number": 701,
+      "title": "Batch8 - Đề 1",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is your tummy OK, Nia?\nGirl: Yes, but my thumb hurts.",
+            "question": "🔊 What hurts?",
+            "options": [
+              "Her thumb",
+              "Her tummy",
+              "Her chin",
+              "Her toe"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-body",
+              "hand"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/9b0eab7c3eca.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is the wind strong, Eli?\nBoy: Yes, very strong today.",
+            "question": "🔊 What is strong today?",
+            "options": [
+              "The wind",
+              "The sun",
+              "The rain",
+              "The sea"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-beach"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/3f3066a1440c.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is the road wet, Suki?\nGirl: Yes, it's raining now.",
+            "question": "🔊 Why is the road wet?",
+            "options": [
+              "It's raining",
+              "It's sunny",
+              "It's windy",
+              "It's snowing"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-street"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/1d02bb65f8ad.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Do you want a badge, Fox?\nBoy: Yes, a star badge please!",
+            "question": "🔊 What badge does Fox want?",
+            "options": [
+              "A star badge",
+              "A heart badge",
+              "A moon badge",
+              "A sun badge"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "birthday"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/8567d8470196.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is your plant tall, Dot?\nGirl: Yes, it's very tall now.",
+            "question": "🔊 What is tall?",
+            "options": [
+              "Her plant",
+              "Her lamp",
+              "Her chair",
+              "Her bed"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-home"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/df74996110ef.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Do you like plums or peaches, Moss?\nBoy: Peaches, please!",
+            "question": "🔊 What does Moss like?",
+            "options": [
+              "Peaches",
+              "Plums",
+              "Grapes",
+              "Pears"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "food"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/417407925068.mp3"
+          }
+        }
+      ]
+    }
+  ]
+}

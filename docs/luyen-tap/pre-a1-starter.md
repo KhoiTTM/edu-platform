@@ -29,9 +29,19 @@
      Script sinh đề: `scripts/generate-wordlist-level2.ts` (seeded RNG = reproducible).
   4. **"Luyện nghe Level 2"** (`exam_type: listening`, `units: [3]`) — luyện nghe câu đơn với mp3 tĩnh, 20 đề × 15 câu (300 câu).
      Nguồn: `content/exam-bank/pre-a1-listening-level2-exams.json`.
-  5. **"Luyện nghe Level 3"** (`exam_type: listening`, `units: [4]`) — luyện nghe hội thoại ngắn phân vai với mp3 tĩnh, 10 đề × 15 câu (150 câu). Phân bổ lặp lại từ 66 câu hội thoại chuẩn đã sinh từ ElevenLabs.
-     Nguồn: `content/exam-bank/pre-a1-listening-level3-exams.json`.
-     Script sinh đề: `scripts/generate-listening-level3.ts` và `scripts/generate-listening-level3-repeat.ts`.
+  5. **"Luyện nghe Level 3"** (`exam_type: listening`, `units: [4]`) — luyện nghe hội thoại ngắn phân vai với mp3 tĩnh, **20 đề × 20 câu (400 câu)**. Phân bổ lặp lại (mỗi câu ~2.05 lần,
+     không trùng trong cùng 1 đề) từ **195 câu hội thoại unique** có audio thật, chủ đề bám
+     đủ 11 chủ đề của wordlist (My Body, At the Zoo, Clothes Shop, Colours, Birthday, Food,
+     At Home, At School, At the Beach, My Street, TA3 Extra) — xem mục 5 (2026-07-25).
+     Nguồn: `content/exam-bank/pre-a1-listening-level3-exams.json` (đã ghi đè phiên bản
+     10 đề cũ; backup 63 câu gốc tại `pre-a1-listening-level3-exams-10de-BACKUP.json`).
+     Script sinh câu mới: `scripts/generate-listening-level3-batch{2..9}.ts` (9 batch thủ
+     công). Script sinh audio: `scripts/gen-audio-level3-batch{2..9}.ts` (dùng
+     `ELEVENLABS_API_KEY_SECOND`, tự dừng khi hết quota). Script phân bổ cuối cùng thành đề:
+     `scripts/generate-listening-level3-repeat-v2.ts` (thay `generate-listening-level3-repeat.ts`
+     cũ — thuật toán cũ dùng random-cắt-đầu độc lập từng đề có thể bỏ sót câu "xui" không rơi
+     vào top-N của bất kỳ lần shuffle nào; bản v2 xáo trộn toàn cục nhiều vòng rồi cắt liên
+     tiếp, đảm bảo phủ đều 100% câu nguồn — xem mục 5).
   6. **"Three Practice Test"** (`exam_type: lesson`, `units: [2]`) — liên kết Flipbook ngoài
      qua `external_url`, không có câu hỏi số hoá trong DB (xem `exam_bank.md` mục 7.3).
   7. **"Luyện chính tả Level 1"** (`exam_type: review`, `units: [101]`, tab Ôn Tập) — 12 đề × 20 câu
@@ -74,6 +84,39 @@
 - [ ] Cập nhật lại mục 2 (trạng thái) trong chính file này sau khi seed xong
 
 ## 5. Lịch sử / ghi chú quan trọng
+
+- **2026-07-25 — Mở rộng "Luyện nghe Level 3" từ 10 đề (150 câu) lên 20 đề (400 câu),
+  dùng `ELEVENLABS_API_KEY_SECOND`:** batch audio đầu tiên (66 câu, key
+  `ELEVENLABS_API_KEY`) đã cạn quota từ 2026-07-24. Người dùng cập nhật thêm
+  `ELEVENLABS_API_KEY_SECOND` (tier free, 10.000 ký tự/tháng) trong `.env.local`. Test key
+  bằng gọi `GET /v1/user/subscription` + 1 lần TTS thật xác nhận hoạt động tốt, quota riêng
+  biệt với key cũ. Soạn **9 batch câu hội thoại mới thủ công** (KHÔNG dùng vòng lặp biến thể
+  tự động như batch 1 cũ, để tránh trùng khuôn câu) ưu tiên phủ các chủ đề wordlist CHƯA có
+  trong 63 câu batch 1 (My Body, At the Beach, My Street, My Friend's Birthday, thú nuôi
+  tại nhà, các phòng At Home còn thiếu, At the Zoo, Clothes Shop, Favourite Food) — đối
+  chiếu 11 chủ đề trong `lib/data/startersVocabulary.ts`. Sinh audio bằng script sửa lại
+  đọc `ELEVENLABS_API_KEY_SECOND` thay vì key cũ, có bắt lỗi 401/429 để **tự dừng khi hết
+  quota** thay vì crash — chạy 9 lần liên tiếp (kiểm tra quota còn lại giữa mỗi lần bằng
+  `GET /v1/user/subscription`) cho đến khi quota còn quá thấp (~1.493 ký tự) để an toàn dừng
+  hẳn, tổng cộng sinh được 132 câu mới (39+29+18+16+12+8+6+4), gộp với 63 câu batch 1 =
+  **195 câu unique có audio thật**.
+  **Bug tự phát hiện khi verify độc lập (đừng tin log "thành công" một mình):** script gộp
+  đầu tiên dùng thuật toán "shuffle toàn bộ pool rồi cắt N câu đầu, lặp lại 20 lần độc lập
+  cho 20 đề" — verify bằng Python đếm `set(audio_text)` trong output phát hiện chỉ 170-187
+  câu unique xuất hiện trong 400 lượt, THIẾU so với 195 câu nguồn (một số câu "xui" không
+  rơi vào top-20 của bất kỳ lần shuffle độc lập nào trong 20 lượt — hiện tượng thống kê
+  bình thường với seeded RNG, không phải lỗi logic rõ ràng nên dễ bỏ sót nếu không tự đếm
+  lại). Còn phát hiện thêm 1 lỗi thao tác: đọc VÀ ghi đè cùng 1 file
+  `pre-a1-listening-level3-exams.json` trong cùng script khiến lần chạy thứ 2 đọc nhầm
+  chính output đã trộn của lần 1 làm nguồn — sửa bằng cách luôn đọc từ file
+  `-10de-BACKUP.json` riêng, không bao giờ đọc lại file đích sẽ ghi đè. Thuật toán mới
+  (`generate-listening-level3-repeat-v2.ts`): xáo trộn toàn cục nhiều vòng nối liên tiếp
+  thành 1 dải dài rồi cắt từng đoạn 20 câu — đảm bảo mỗi câu nguồn xuất hiện đủ số lần gần
+  bằng nhau, verify lại bằng Python xác nhận đủ 195/195 câu nguồn xuất hiện trong output,
+  0 câu trùng trong cùng 1 đề, rồi mới seed. **Bài học:** khi phân bổ ngẫu nhiên 1 pool nhỏ
+  vào nhiều nhóm độc lập (N đề), random-cắt-đầu lặp lại N lần KHÔNG đảm bảo phủ hết pool —
+  phải dùng round-robin/xáo-trộn-nối-liên-tiếp nếu cần đảm bảo phủ đều, và luôn tự đếm lại
+  `set()` kết quả cuối so với nguồn thay vì tin số liệu log giữa chừng.
 
 - **2026-07-24 — Chế độ làm-lại-khi-sai (`retry_until_correct`) cho câu trắc nghiệm/fill_blank:**
   `MultipleChoiceRenderer.tsx` nhận thêm prop `retryUntilCorrect` + `onWrongAttempt`. Khi bật:

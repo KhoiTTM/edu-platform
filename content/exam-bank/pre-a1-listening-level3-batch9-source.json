@@ -1,0 +1,169 @@
+{
+  "dialogues": [
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Is your wrist OK, Tess?",
+      "line2": "Yes, it's fine now.",
+      "question": "🔊 How is Tess's wrist?",
+      "options": [
+        "Fine",
+        "Hurting",
+        "Swollen",
+        "Cold"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "my-body"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Is your kite up high, Zack?",
+      "line2": "Yes, very high!",
+      "question": "🔊 Where is the kite?",
+      "options": [
+        "Very high",
+        "On the sand",
+        "In the sea",
+        "In his bag"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "at-the-beach"
+      ]
+    },
+    {
+      "speaker1": "Man",
+      "speaker2": "Girl",
+      "line1": "Is the corner shop open, Elle?",
+      "line2": "Yes, it's open now.",
+      "question": "🔊 Is the shop open?",
+      "options": [
+        "Yes",
+        "No",
+        "Not today",
+        "Not sure"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "my-street"
+      ]
+    },
+    {
+      "speaker1": "Woman",
+      "speaker2": "Boy",
+      "line1": "Did you have fun, Cade?",
+      "line2": "Yes, so much fun!",
+      "question": "🔊 Did Cade have fun?",
+      "options": [
+        "Yes",
+        "No",
+        "A little",
+        "Not really"
+      ],
+      "correctIndex": 0,
+      "tags": [
+        "birthday"
+      ]
+    }
+  ],
+  "exams": [
+    {
+      "exam_number": 801,
+      "title": "Batch9 - Đề 1",
+      "duration_minutes": 10,
+      "questions": [
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is your wrist OK, Tess?\nGirl: Yes, it's fine now.",
+            "question": "🔊 How is Tess's wrist?",
+            "options": [
+              "Fine",
+              "Hurting",
+              "Swollen",
+              "Cold"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-body"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/150518eb8df0.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Is your kite up high, Zack?\nBoy: Yes, very high!",
+            "question": "🔊 Where is the kite?",
+            "options": [
+              "Very high",
+              "On the sand",
+              "In the sea",
+              "In his bag"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "at-the-beach"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/a6ba44cc603b.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Man: Is the corner shop open, Elle?\nGirl: Yes, it's open now.",
+            "question": "🔊 Is the shop open?",
+            "options": [
+              "Yes",
+              "No",
+              "Not today",
+              "Not sure"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "my-street"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/898429b0b88a.mp3"
+          }
+        },
+        {
+          "type": "listening_multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "audio_text": "Woman: Did you have fun, Cade?\nBoy: Yes, so much fun!",
+            "question": "🔊 Did Cade have fun?",
+            "options": [
+              "Yes",
+              "No",
+              "A little",
+              "Not really"
+            ],
+            "correct_index": 0,
+            "tags": [
+              "listening",
+              "dialogue",
+              "level-3",
+              "birthday"
+            ],
+            "audio_url": "/audio/pre-a1-starter-listening-l3/3947b7939e20.mp3"
+          }
+        }
+      ]
+    }
+  ]
+}
