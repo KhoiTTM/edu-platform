@@ -2,6 +2,7 @@
 
 import { useState, useTransition, useRef, useEffect } from "react";
 import { createPortal } from "react-dom";
+import clsx from "clsx";
 import { ClipboardCheck, Loader2, Check, X } from "lucide-react";
 import { assignExamNow, getStudentList } from "@/app/(app)/(administration)/phu-huynh/actions";
 import type { StudentProfile } from "@/app/(app)/(administration)/phu-huynh/actions";
@@ -35,7 +36,7 @@ export function AssignNowButton({ examId, examTitle }: { examId: string; examTit
   const handleOpen = () => {
     if (btnRef.current) {
       const rect = btnRef.current.getBoundingClientRect();
-      setCoords({ top: rect.bottom + window.scrollY + 6, left: rect.right + window.scrollX - 240 });
+      setCoords({ top: rect.bottom + window.scrollY + 6, left: rect.right + window.scrollX - 224 });
     }
     setFeedback(null);
     setOpen((prev) => !prev);
@@ -63,46 +64,50 @@ export function AssignNowButton({ examId, examTitle }: { examId: string; examTit
         type="button"
         onClick={handleOpen}
         title="Giao ngay đề này cho học sinh"
-        className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/20 text-[10px] font-black uppercase tracking-wide transition-all active:scale-95"
+        className={clsx(
+          "p-1.5 rounded-lg border-2 transition-all active:scale-95 shrink-0",
+          open
+            ? "text-emerald-400 border-emerald-500/40 bg-emerald-500/10"
+            : "text-ink-muted border-line bg-surface-raised hover:text-emerald-400 hover:border-emerald-500/40"
+        )}
       >
-        <ClipboardCheck size={12} />
-        Giao ngay
+        <ClipboardCheck size={13} />
       </button>
 
       {open && coords && typeof document !== "undefined" && createPortal(
         <div
           ref={popoverRef}
           style={{ position: "absolute", top: coords.top, left: Math.max(8, coords.left) }}
-          className="z-50 w-60 rounded-2xl border border-line bg-surface-raised shadow-2xl p-3"
+          className="z-50 w-56 rounded-xl border border-line bg-surface-raised shadow-2xl p-2.5"
         >
-          <p className="text-[10px] font-black uppercase tracking-wide text-slate-400 mb-2 px-1 line-clamp-1">
+          <p className="text-[9px] font-black uppercase tracking-wide text-ink-muted mb-2 px-1 line-clamp-1">
             Giao &quot;{examTitle}&quot; cho:
           </p>
 
           {!students && (
             <div className="flex items-center justify-center py-4">
-              <Loader2 size={16} className="animate-spin text-slate-500" />
+              <Loader2 size={14} className="animate-spin text-ink-muted" />
             </div>
           )}
 
           {students && students.length === 0 && (
-            <p className="text-xs text-slate-500 text-center py-3">Chưa có học sinh nào.</p>
+            <p className="text-[11px] text-ink-muted text-center py-3">Chưa có học sinh nào.</p>
           )}
 
           {students && students.length > 0 && (
-            <div className="flex flex-col gap-1 max-h-64 overflow-y-auto">
+            <div className="flex flex-col gap-1 max-h-56 overflow-y-auto">
               {students.map((s) => (
                 <button
                   key={s.id}
                   type="button"
                   disabled={isPending}
                   onClick={() => handleAssign(s.id)}
-                  className="flex items-center gap-2 px-2.5 py-2 rounded-xl border border-line hover:border-sky-500/50 hover:bg-sky-500/10 text-left transition-all disabled:opacity-50"
+                  className="flex items-center gap-2 px-2 py-1.5 rounded-lg border border-line hover:border-sky-500/50 hover:bg-sky-500/10 text-left transition-all disabled:opacity-50"
                 >
-                  <span className="w-6 h-6 rounded-full bg-indigo-500/20 flex items-center justify-center text-[10px] font-black text-indigo-300 shrink-0">
+                  <span className="w-5 h-5 rounded-full bg-sky-500/15 flex items-center justify-center text-[9px] font-black text-sky-300 shrink-0">
                     {(s.display_name || "?").charAt(0).toUpperCase()}
                   </span>
-                  <span className="text-xs font-bold text-slate-200 truncate">{s.display_name || s.email}</span>
+                  <span className="text-[11px] font-bold text-ink truncate">{s.display_name || s.email}</span>
                 </button>
               ))}
             </div>
@@ -110,13 +115,14 @@ export function AssignNowButton({ examId, examTitle }: { examId: string; examTit
 
           {feedback && (
             <div
-              className={`mt-2 flex items-center gap-1.5 text-[11px] font-bold px-2 py-1.5 rounded-lg ${
+              className={clsx(
+                "mt-2 flex items-center gap-1.5 text-[10px] font-bold px-2 py-1.5 rounded-lg",
                 feedback.type === "success"
                   ? "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
                   : "bg-rose-500/10 text-rose-400 border border-rose-500/20"
-              }`}
+              )}
             >
-              {feedback.type === "success" ? <Check size={12} /> : <X size={12} />}
+              {feedback.type === "success" ? <Check size={11} /> : <X size={11} />}
               {feedback.text}
             </div>
           )}

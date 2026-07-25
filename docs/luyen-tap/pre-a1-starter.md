@@ -93,6 +93,13 @@
 
 ## 5. Lịch sử / ghi chú quan trọng
 
+- **2026-07-25 — Đổi tên 20 đề "Luyện chính tả Level 1" từ "Đề 01".."Đề 20" (quá cụt, mất
+  ngữ cảnh môn/level khi hiện độc lập ở nơi khác như popover "Giao ngay" hay lịch sử làm bài)
+  sang format `PreA1 - Chính tả - Lv1 - Đề {N}` (N không đệm số 0):** sửa cả `title` trong
+  file JSON nguồn lẫn cột `exams.title` trên DB (update trực tiếp, không seed lại toàn bộ câu
+  hỏi vì nội dung không đổi). Script: `scratch/rename-spelling-l1-titles.ts`. Verify độc lập:
+  20/20 đề đúng format mới sau update.
+
 - **2026-07-25 — Mở rộng "Luyện chính tả Level 1" từ 12 lên 20 đề + chuyển sang tab "Luyện
   theo bài học":** người phụ trách duyệt bản `spell_builder` (xem ghi chú ngay dưới), yêu cầu
   đủ 20 đề và chuyển collection từ tab Ôn Tập sang tab Luyện theo bài học.
