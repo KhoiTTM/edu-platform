@@ -14,7 +14,7 @@
 
 ## 2. Trạng thái hiện tại (cập nhật 2026-07-24)
 
-- **8 collections**: `exam_type: reflex` (3), `listening` (2), `lesson` (2), `review` (1).
+- **8 collections**: `exam_type: reflex` (3), `listening` (2), `lesson` (3).
 - Dữ liệu từ vựng lõi: 280 từ (đã bao gồm 100% từ vựng Tiếng Anh 3 Global Success và Pre A1 Starters) — định nghĩa tại `lib/data/startersVocabulary.ts`.
 - Các nhóm collection theo tên hiển thị:
   1. **"Wordlist"** (`exam_type: lesson`, `units: [1]`) — luyện theo bài học, 20 đề × 20 câu,
@@ -44,19 +44,23 @@
      tiếp, đảm bảo phủ đều 100% câu nguồn — xem mục 5).
   6. **"Three Practice Test"** (`exam_type: lesson`, `units: [2]`) — liên kết Flipbook ngoài
      qua `external_url`, không có câu hỏi số hoá trong DB (xem `exam_bank.md` mục 7.3).
-  7. **"Luyện chính tả Level 1"** (`exam_type: review`, `units: [101]`, tab Ôn Tập) — 12 đề × 20 câu
-     (240 câu) dạng `spell_builder` (renderer `SpellBuilderRenderer`) — học sinh CHẠM CHỌN LẦN
-     LƯỢT TỪNG CHỮ CÁI theo đúng thứ tự để tự ghép cả từ, không phải chọn 1 trong nhiều đáp án
-     có sẵn (xem mục 5, 2026-07-25 — lý do đổi từ bản `fill_blank` đầu tiên). Pool chữ cái =
-     các chữ của từ (xáo trộn) + 2-3 chữ gây nhiễu (dễ nhầm hình/âm). Chấm từng chữ theo thứ
-     tự trái→phải: chọn sai → ô đang chờ nháy đỏ, cho chọn lại ngay, không mất lượt, không
-     reset các chữ đã điền đúng trước đó. Câu hỏi chỉ ghi nghĩa tiếng Việt, KHÔNG emoji/hình,
-     có nút "Nghe" phát âm từ (Web Speech API). Phủ 238 từ phân biệt = toàn bộ từ ĐƠN 3-8 chữ
-     cái trong wordlist (Đề 12 trộn lại 2 từ cũ `hat`, `touch` cho đủ 20 câu).
-     Nguồn: `content/exam-bank/tieng-anh/pre-a1-spelling-level1.json`. Backup bản `fill_blank`
-     đầu tiên (không còn dùng): `pre-a1-spelling-level1-fillblank-BACKUP.json`. Từ vựng lấy từ
-     wordlist 280 từ (`lib/data/startersVocabulary.ts`); script chuyển đổi sang spell_builder:
-     `scratch/gen-spelling-l1-v2-letterbox.ts` (seeded RNG, giữ nguyên từ/nghĩa/tag từ bản cũ).
+  7. **"Luyện chính tả Level 1"** (`exam_type: lesson`, `units: [101]`, tab **Luyện theo bài
+     học** — đổi từ tab Ôn Tập ngày 2026-07-25, xem mục 5) — **20 đề × 20 câu (400 câu)** dạng
+     `spell_builder` (renderer `SpellBuilderRenderer`) — học sinh CHẠM CHỌN LẦN LƯỢT TỪNG CHỮ
+     CÁI theo đúng thứ tự để tự ghép cả từ, không phải chọn 1 trong nhiều đáp án có sẵn (xem
+     mục 5, 2026-07-25 — lý do đổi từ bản `fill_blank` đầu tiên). Pool chữ cái = các chữ của
+     từ (xáo trộn) + 2-3 chữ gây nhiễu (dễ nhầm hình/âm). Chấm từng chữ theo thứ tự trái→phải:
+     chọn sai → ô đang chờ nháy đỏ, cho chọn lại ngay, không mất lượt, không reset các chữ đã
+     điền đúng trước đó. Câu hỏi chỉ ghi nghĩa tiếng Việt, KHÔNG emoji/hình, có nút "Nghe" phát
+     âm từ (Web Speech API). Đề 1-12 phủ đủ 238 từ phân biệt = toàn bộ từ ĐƠN 3-8 chữ cái
+     trong wordlist (không còn từ mới); Đề 13-20 dùng LẶP LẠI 160/238 từ đó (phân bổ khác +
+     distractor mới, seed RNG riêng) vì wordlist không còn từ hợp lệ chưa dùng — xem mục 5.
+     Nguồn: `content/exam-bank/tieng-anh/pre-a1-spelling-level1.json`. Backup: bản `fill_blank`
+     đầu tiên (không còn dùng) tại `pre-a1-spelling-level1-fillblank-BACKUP.json`, bản 12 đề
+     `spell_builder` trước khi mở rộng tại `pre-a1-spelling-level1-12de-BACKUP.json`. Từ vựng
+     lấy từ wordlist 280 từ (`lib/data/startersVocabulary.ts`); script chuyển đổi sang
+     spell_builder: `scratch/gen-spelling-l1-v2-letterbox.ts`; script thêm Đề 13-20:
+     `scratch/gen-spelling-l1-de13-20.ts` (cả 2 seeded RNG, tái lập được).
 - Script seed: `scripts/seed-exam-bank.ts` (generator chuẩn, không có script riêng).
 
 ## 3. Đặc thù riêng của môn
@@ -88,6 +92,28 @@
 - [ ] Cập nhật lại mục 2 (trạng thái) trong chính file này sau khi seed xong
 
 ## 5. Lịch sử / ghi chú quan trọng
+
+- **2026-07-25 — Mở rộng "Luyện chính tả Level 1" từ 12 lên 20 đề + chuyển sang tab "Luyện
+  theo bài học":** người phụ trách duyệt bản `spell_builder` (xem ghi chú ngay dưới), yêu cầu
+  đủ 20 đề và chuyển collection từ tab Ôn Tập sang tab Luyện theo bài học.
+  **Vấn đề gặp phải:** wordlist chỉ có đúng **238 từ hợp lệ** (đơn, 3-8 ký tự) — 12 đề đầu đã
+  dùng hết toàn bộ 238 từ này, không còn từ MỚI nào để soạn 8 đề tiếp mà không trùng. Quyết
+  định: **dùng lại 160/238 từ đã có** (giữ nguyên nghĩa/tag đã soạn), chỉ phân bổ lại thành
+  8 nhóm-20-từ khác + sinh distractor pool mới (seed RNG khác hẳn 2 lần trước:
+  `20260724`→`20260725`→`20260726`) cho Đề 13-20 — cùng cách tiếp cận đã dùng khi mở rộng
+  "Luyện nghe Level 3" (lặp lại có kiểm soát, không trùng từ trong CÙNG 1 đề). Script:
+  `scratch/gen-spelling-l1-de13-20.ts`, đọc lại 12 đề cũ bằng regex để lấy đúng
+  từ/nghĩa/tag đã soạn, không soạn lại từ đầu.
+  **Đổi tab:** `assessment_collections.exam_type` đổi thẳng từ `review` → `lesson` qua update
+  trực tiếp trên Supabase (không cần xoá/tạo lại collection — `id` giữ nguyên
+  `7c9cee28-34af-4ff1-9ad7-bd535aed16d6`). Đã kiểm tra trước: `units: [101]` chưa bị collection
+  `lesson` nào khác dùng (chỉ `[1]` "Wordlist" và `[2]` "Three Practice Test" đã dùng) nên
+  không gộp nhầm nhóm trên UI theo luật ở `exam_bank.md` mục 6c. File JSON nguồn cũng đã sửa
+  `exam_type` để khớp DB, tránh lần seed sau vô tình ghi đè về `review`.
+  **Verify độc lập trước/sau khi seed (không tin log một mình):** JSON đủ 20 `exam_number`
+  (1-20, không thiếu không trùng) × 20 câu = 400 câu, mọi câu `letter_pool` chứa đủ multiset
+  chữ cái đáp án + ≥2 distractor; sau seed JOIN `exam_questions` xác nhận cả 20 đề có đúng 20
+  câu liên kết thật.
 
 - **2026-07-25 — Đổi "Luyện chính tả Level 1" từ `fill_blank` (chọn 1/4 đáp án) sang
   `spell_builder` (ghép chữ cái theo thứ tự):** người phụ trách phản hồi bản đầu tiên
