@@ -64,14 +64,10 @@ export function AssignNowButton({ examId, examTitle }: { examId: string; examTit
         type="button"
         onClick={handleOpen}
         title="Giao ngay đề này cho học sinh"
-        className={clsx(
-          "p-1.5 rounded-lg border-2 transition-all active:scale-95 shrink-0",
-          open
-            ? "text-emerald-400 border-emerald-500/40 bg-emerald-500/10"
-            : "text-ink-muted border-line bg-surface-raised hover:text-emerald-400 hover:border-emerald-500/40"
-        )}
+        className="inline-flex items-center justify-center gap-1 px-4 py-1.5 rounded-xl font-black text-xs uppercase tracking-wide transition-all active:scale-95 duration-150 shrink-0 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white shadow-md shadow-teal-500/10"
       >
         <ClipboardCheck size={13} />
+        Giao ngay
       </button>
 
       {open && coords && typeof document !== "undefined" && createPortal(
