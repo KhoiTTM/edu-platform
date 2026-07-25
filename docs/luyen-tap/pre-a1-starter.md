@@ -45,14 +45,18 @@
   6. **"Three Practice Test"** (`exam_type: lesson`, `units: [2]`) — liên kết Flipbook ngoài
      qua `external_url`, không có câu hỏi số hoá trong DB (xem `exam_bank.md` mục 7.3).
   7. **"Luyện chính tả Level 1"** (`exam_type: review`, `units: [101]`, tab Ôn Tập) — 12 đề × 20 câu
-     (240 câu) `fill_blank` luyện nhớ chính tả cả từ: khuyết NHIỀU chữ cái (10 câu/đề, VD `b a _ _ _ a`
-     → chọn `nan`) hoặc khuyết toàn bộ từ (10 câu/đề, chọn cách viết đúng trong 4 cách, VD
-     `cat`/`kat`/`cet`/`cta`). Câu hỏi chỉ ghi nghĩa tiếng Việt, KHÔNG có emoji/hình gợi ý. Mỗi câu
-     bật flag `metadata_json.retry_until_correct: true` → chế độ làm-lại-khi-sai (xem mục 5).
-     Phủ 238 từ phân biệt = toàn bộ từ ĐƠN 3-8 chữ cái trong wordlist (Đề 12 trộn lại 2 từ cũ
-     `hat`, `touch` cho đủ 20 câu). Nguồn: `content/exam-bank/tieng-anh/pre-a1-spelling-level1.json`.
-     Từ vựng lấy từ wordlist 280 từ (`lib/data/startersVocabulary.ts`); script sinh Đề 02-12:
-     `scratch/gen-spelling-l1.ts` (seeded RNG), script verify: `scratch/check-spelling-l1.ts`.
+     (240 câu) dạng `spell_builder` (renderer `SpellBuilderRenderer`) — học sinh CHẠM CHỌN LẦN
+     LƯỢT TỪNG CHỮ CÁI theo đúng thứ tự để tự ghép cả từ, không phải chọn 1 trong nhiều đáp án
+     có sẵn (xem mục 5, 2026-07-25 — lý do đổi từ bản `fill_blank` đầu tiên). Pool chữ cái =
+     các chữ của từ (xáo trộn) + 2-3 chữ gây nhiễu (dễ nhầm hình/âm). Chấm từng chữ theo thứ
+     tự trái→phải: chọn sai → ô đang chờ nháy đỏ, cho chọn lại ngay, không mất lượt, không
+     reset các chữ đã điền đúng trước đó. Câu hỏi chỉ ghi nghĩa tiếng Việt, KHÔNG emoji/hình,
+     có nút "Nghe" phát âm từ (Web Speech API). Phủ 238 từ phân biệt = toàn bộ từ ĐƠN 3-8 chữ
+     cái trong wordlist (Đề 12 trộn lại 2 từ cũ `hat`, `touch` cho đủ 20 câu).
+     Nguồn: `content/exam-bank/tieng-anh/pre-a1-spelling-level1.json`. Backup bản `fill_blank`
+     đầu tiên (không còn dùng): `pre-a1-spelling-level1-fillblank-BACKUP.json`. Từ vựng lấy từ
+     wordlist 280 từ (`lib/data/startersVocabulary.ts`); script chuyển đổi sang spell_builder:
+     `scratch/gen-spelling-l1-v2-letterbox.ts` (seeded RNG, giữ nguyên từ/nghĩa/tag từ bản cũ).
 - Script seed: `scripts/seed-exam-bank.ts` (generator chuẩn, không có script riêng).
 
 ## 3. Đặc thù riêng của môn
@@ -84,6 +88,32 @@
 - [ ] Cập nhật lại mục 2 (trạng thái) trong chính file này sau khi seed xong
 
 ## 5. Lịch sử / ghi chú quan trọng
+
+- **2026-07-25 — Đổi "Luyện chính tả Level 1" từ `fill_blank` (chọn 1/4 đáp án) sang
+  `spell_builder` (ghép chữ cái theo thứ tự):** người phụ trách phản hồi bản đầu tiên
+  (`fill_blank` khuyết chữ/chọn cả từ, 4 lựa chọn có sẵn) chỉ luyện được **nhận diện mặt
+  chữ** — học sinh nhìn 4 đáp án và so khớp thị giác, không bắt buộc phải tự nhớ cấu trúc/thứ
+  tự từng chữ cái của từ (đúng mục tiêu môn này đã chốt từ đầu, xem
+  `spelling-writing-feature-goal` trong memory: "ghi nhớ từ vựng được ghép bởi những chữ cái
+  nào"). Đồng thời có báo lỗi hành vi chấm điểm "làm sai vẫn cho qua" trên bản production —
+  điều tra không tìm thấy bug trong code (logic `retry_until_correct` ở
+  `MultipleChoiceRenderer.tsx` đúng, đã verify lại toàn bộ chuỗi data → spread → render, nghi
+  vấn nằm ở Netlify chưa deploy xong bản mới, người dùng tự kiểm tra dashboard) — nhưng nhân
+  dịp này quyết định đổi hẳn sang thiết kế `spell_builder` vì đúng mục tiêu hơn, không chỉ vá
+  bug retry của format cũ.
+  **Renderer mới:** `components/universal/SpellBuilderRenderer.tsx` — tái dùng pattern
+  index-based tile của `SentenceReorderRenderer.tsx` (chống lỗi chữ cái lặp, VD "apple" có 2
+  chữ `p`, không dính lớp bug trùng-theo-text như `MatchPairRenderer` — xem `exam_bank.md`
+  mục 6f). Khác `SentenceReorderRenderer`: chấm NGAY từng chữ khi chọn (không đợi bấm nút
+  "Kiểm tra" ở cuối), bắt buộc điền tuần tự trái→phải (không cho điền vào ô bất kỳ), chọn sai
+  chỉ nháy đỏ ô đang chờ rồi cho chọn lại ngay — không mất lượt, không reset các chữ đã đúng.
+  Quy tắc `metadata_json` cho type `spell_builder` đã ghi vào `docs/exam_bank.md` mục 3.
+  Đã thêm `spell_builder` vào `RENDERABLE_TYPES` của `scripts/seed-exam-bank.ts`.
+  **Dữ liệu:** giữ nguyên toàn bộ 238 từ + nghĩa + tag đã soạn ở bản `fill_blank` trước (không
+  soạn lại từ đầu), chỉ đổi cấu trúc câu hỏi — script `scratch/gen-spelling-l1-v2-letterbox.ts`
+  đọc file cũ, trích lại từ/nghĩa/tag bằng regex, sinh `letters`+`letter_pool` mới. Verify độc
+  lập trước và sau seed (không tin log seed một mình): 240/240 câu đúng type, `letter_pool`
+  luôn chứa đủ multiset chữ cái của đáp án cộng 2-3 chữ nhiễu.
 
 - **2026-07-25 — Mở rộng "Luyện nghe Level 3" từ 10 đề (150 câu) lên 20 đề (400 câu),
   dùng `ELEVENLABS_API_KEY_SECOND`:** batch audio đầu tiên (66 câu, key

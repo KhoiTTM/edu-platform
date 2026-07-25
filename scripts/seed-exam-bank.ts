@@ -49,6 +49,7 @@ const RENDERABLE_TYPES = new Set([
   'listening_multiple_choice',
   'tap_correct_answer', 'tap_correct_word', 'vocab_to_word',
   'fill_blank', 'fill_in_blank', 'inline_fill_blank',
+  'spell_builder',
   'tap_word',
   'sorting', 'sentence_reorder',
   'matching', 'match_pair',

@@ -110,6 +110,29 @@ sau", "1 km = 1000 m"), KHÔNG được tiết lộ đáp án cụ thể của c
 kèm đủ `items:[{id,text}]` — `words`+`correct_sentence` đơn giản và chắc ăn hơn.
 LƯU Ý: renderer KHÔNG tự xáo từ — phải xáo `words` sẵn trong data, nếu không học sinh thấy đáp án.)
 
+**`spell_builder`** — ghép chữ cái theo đúng thứ tự để luyện chính tả (KHÔNG phải chọn 1
+trong nhiều đáp án có sẵn — bắt buộc học sinh nhớ và tự dựng lại từng chữ cái), renderer
+`SpellBuilderRenderer`:
+```json
+{ "question": "Nghĩa: \"quả táo\"",
+  "letters": ["a","p","p","l","e"],
+  "letter_pool": ["l","p","a","x","p","e","o"],
+  "audio_text": "apple",
+  "tags": ["spelling", "level-1", "food"] }
+```
+- `letters`: chữ cái ĐÚNG của từ, theo đúng thứ tự — dùng để chấm.
+- `letter_pool`: toàn bộ tile hiển thị cho học sinh chọn = các chữ trong `letters` (đã xáo
+  trộn vị trí) CỘNG THÊM 2-3 chữ gây nhiễu (distractor). Component tự lọc tile đã dùng theo
+  **index**, không theo text — nên từ có chữ cái lặp (VD "apple" có 2 chữ `p`) vẫn hoạt động
+  đúng, không dính lỗi trùng-theo-text như `MatchPairRenderer` từng gặp (mục 6f).
+- Component chấm TỪNG CHỮ theo đúng thứ tự trái→phải, không cho điền vào ô bất kỳ: chọn
+  đúng chữ cái tiếp theo → điền vào ô, chọn sai → ô đang chờ nháy đỏ rồi cho chọn lại (không
+  chấm sai cả câu, không mất lượt) — thiết kế active recall: học sinh phải tự nhớ toàn bộ
+  chuỗi ký tự, không thể "so khớp thị giác" ra đáp án như `fill_blank` chọn-1-trong-4.
+- Khác `fill_blank`: KHÔNG có `choices`/`correct_answer` dạng chuỗi, không có khái niệm
+  "chọn sai" ở cấp câu — chỉ chấm khi ghép xong toàn bộ ô, luôn đúng vì bắt buộc điền đúng
+  từng bước mới đi tiếp được.
+
 **`crossword`** — ô chữ ("Do the puzzle"), renderer `CrosswordRenderer`:
 ```json
 { "question": "Hoàn thành ô chữ:",

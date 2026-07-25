@@ -1,0 +1,5141 @@
+{
+  "collection": {
+    "title": "Luyện chính tả Level 1",
+    "subject_slug": "pre-a1-starter",
+    "grade": 3,
+    "volume": 1,
+    "units": [
+      101
+    ],
+    "sequence_number": 1,
+    "exam_type": "review",
+    "reference_book": "Pre A1 Starters + Tiếng Anh 3 Wordlist",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 1,
+      "title": "Đề 01",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"quả táo\"**: **a _ _ l e**",
+            "choices": [
+              "pp",
+              "bb",
+              "lp",
+              "pl"
+            ],
+            "correct_answer": "pp",
+            "explanation": "Từ đầy đủ là **\"apple\"**, nghĩa là \"quả táo\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"quả chuối\"**: **b a _ _ _ a**",
+            "choices": [
+              "nan",
+              "nna",
+              "man",
+              "nen"
+            ],
+            "correct_answer": "nan",
+            "explanation": "Từ đầy đủ là **\"banana\"**, nghĩa là \"quả chuối\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"màu vàng\"**: **y e _ _ o w**",
+            "choices": [
+              "ll",
+              "lw",
+              "wl",
+              "yl"
+            ],
+            "correct_answer": "ll",
+            "explanation": "Từ đầy đủ là **\"yellow\"**, nghĩa là \"màu vàng\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "colours"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"con khỉ\"**: **m o n _ _ _**",
+            "choices": [
+              "key",
+              "kay",
+              "cey",
+              "kee"
+            ],
+            "correct_answer": "key",
+            "explanation": "Từ đầy đủ là **\"monkey\"**, nghĩa là \"con khỉ\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"màu tím\"**: **p u r _ _ e**",
+            "choices": [
+              "pl",
+              "bl",
+              "lp",
+              "pp"
+            ],
+            "correct_answer": "pl",
+            "explanation": "Từ đầy đủ là **\"purple\"**, nghĩa là \"màu tím\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "colours"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"con gà\"**: **c h i _ _ e n**",
+            "choices": [
+              "ck",
+              "kc",
+              "cc",
+              "kk"
+            ],
+            "correct_answer": "ck",
+            "explanation": "Từ đầy đủ là **\"chicken\"**, nghĩa là \"con gà\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"chị gái / em gái\"**: **s i s _ _ _**",
+            "choices": [
+              "ter",
+              "tor",
+              "tre",
+              "tar"
+            ],
+            "correct_answer": "ter",
+            "explanation": "Từ đầy đủ là **\"sister\"**, nghĩa là \"chị gái / em gái\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"nước\"**: **w a _ _ r**",
+            "choices": [
+              "te",
+              "to",
+              "ta",
+              "tr"
+            ],
+            "correct_answer": "te",
+            "explanation": "Từ đầy đủ là **\"water\"**, nghĩa là \"nước\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"con hổ\"**: **t i _ _ r**",
+            "choices": [
+              "ge",
+              "gu",
+              "je",
+              "ga"
+            ],
+            "correct_answer": "ge",
+            "explanation": "Từ đầy đủ là **\"tiger\"**, nghĩa là \"con hổ\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"con voi\"**: **e l e _ _ _ n t**",
+            "choices": [
+              "pha",
+              "fha",
+              "pah",
+              "phe"
+            ],
+            "correct_answer": "pha",
+            "explanation": "Từ đầy đủ là **\"elephant\"**, nghĩa là \"con voi\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"con mèo\"** được viết đúng là:",
+            "choices": [
+              "cat",
+              "kat",
+              "cet",
+              "cta"
+            ],
+            "correct_answer": "cat",
+            "explanation": "**\"cat\"** nghĩa là \"con mèo\", ghép bởi 3 chữ cái c-a-t.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"con chó\"** được viết đúng là:",
+            "choices": [
+              "dog",
+              "dok",
+              "dug",
+              "dgo"
+            ],
+            "correct_answer": "dog",
+            "explanation": "**\"dog\"** nghĩa là \"con chó\", ghép bởi 3 chữ cái d-o-g.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"con cá\"** được viết đúng là:",
+            "choices": [
+              "fish",
+              "fich",
+              "fesh",
+              "fhis"
+            ],
+            "correct_answer": "fish",
+            "explanation": "**\"fish\"** nghĩa là \"con cá\", ghép bởi 4 chữ cái f-i-s-h.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"sữa\"** được viết đúng là:",
+            "choices": [
+              "milk",
+              "milc",
+              "melk",
+              "mlik"
+            ],
+            "correct_answer": "milk",
+            "explanation": "**\"milk\"** nghĩa là \"sữa\", ghép bởi 4 chữ cái m-i-l-k.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"màu đỏ\"** được viết đúng là:",
+            "choices": [
+              "red",
+              "rad",
+              "rid",
+              "erd"
+            ],
+            "correct_answer": "red",
+            "explanation": "**\"red\"** nghĩa là \"màu đỏ\", ghép bởi 3 chữ cái r-e-d.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "colours"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"quả trứng\"** được viết đúng là:",
+            "choices": [
+              "egg",
+              "eg",
+              "egk",
+              "geg"
+            ],
+            "correct_answer": "egg",
+            "explanation": "**\"egg\"** nghĩa là \"quả trứng\", ghép bởi 3 chữ cái e-g-g.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"bánh mì\"** được viết đúng là:",
+            "choices": [
+              "bread",
+              "bred",
+              "braed",
+              "brade"
+            ],
+            "correct_answer": "bread",
+            "explanation": "**\"bread\"** nghĩa là \"bánh mì\", ghép bởi 5 chữ cái b-r-e-a-d.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"con ngựa\"** được viết đúng là:",
+            "choices": [
+              "horse",
+              "hors",
+              "hourse",
+              "horze"
+            ],
+            "correct_answer": "horse",
+            "explanation": "**\"horse\"** nghĩa là \"con ngựa\", ghép bởi 5 chữ cái h-o-r-s-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"màu xanh lá\"** được viết đúng là:",
+            "choices": [
+              "green",
+              "gren",
+              "grean",
+              "grene"
+            ],
+            "correct_answer": "green",
+            "explanation": "**\"green\"** nghĩa là \"màu xanh lá\", ghép bởi 5 chữ cái g-r-e-e-n.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "colours"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"bàn tay\"** được viết đúng là:",
+            "choices": [
+              "hand",
+              "hend",
+              "hnad",
+              "han"
+            ],
+            "correct_answer": "hand",
+            "explanation": "**\"hand\"** nghĩa là \"bàn tay\", ghép bởi 4 chữ cái h-a-n-d.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "my-body"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 2,
+      "title": "Đề 02",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"ghế\"**: **c h a _ _**",
+            "choices": [
+              "er",
+              "ir",
+              "yr",
+              "il"
+            ],
+            "correct_answer": "ir",
+            "explanation": "Từ đầy đủ là **\"chair\"**, nghĩa là \"ghế\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"quả xoài\"**: **m _ _ g o**",
+            "choices": [
+              "en",
+              "on",
+              "ar",
+              "an"
+            ],
+            "correct_answer": "an",
+            "explanation": "Từ đầy đủ là **\"mango\"**, nghĩa là \"quả xoài\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"bàn phím\"**: **k e y _ _ a r d**",
+            "choices": [
+              "bo",
+              "bu",
+              "ob",
+              "po"
+            ],
+            "correct_answer": "bo",
+            "explanation": "Từ đầy đủ là **\"keyboard\"**, nghĩa là \"bàn phím\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "school"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"gia đình\"**: **f a m i _ _**",
+            "choices": [
+              "iy",
+              "lj",
+              "ly",
+              "yl"
+            ],
+            "correct_answer": "ly",
+            "explanation": "Từ đầy đủ là **\"family\"**, nghĩa là \"gia đình\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"tàu hoả\"**: **t r a _ _**",
+            "choices": [
+              "in",
+              "ir",
+              "ln",
+              "yn"
+            ],
+            "correct_answer": "in",
+            "explanation": "Từ đầy đủ là **\"train\"**, nghĩa là \"tàu hoả\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "street"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"trường học\"**: **s _ _ _ o l**",
+            "choices": [
+              "kho",
+              "cko",
+              "cho",
+              "cno"
+            ],
+            "correct_answer": "cho",
+            "explanation": "Từ đầy đủ là **\"school\"**, nghĩa là \"trường học\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"bức tranh/ảnh\"**: **p i c t u _ _**",
+            "choices": [
+              "le",
+              "er",
+              "ri",
+              "re"
+            ],
+            "correct_answer": "re",
+            "explanation": "Từ đầy đủ là **\"picture\"**, nghĩa là \"bức tranh/ảnh\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"nước chanh\"**: **l e m o _ _ d e**",
+            "choices": [
+              "ua",
+              "no",
+              "na",
+              "ra"
+            ],
+            "correct_answer": "na",
+            "explanation": "Từ đầy đủ là **\"lemonade\"**, nghĩa là \"nước chanh\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"quần vợt\"**: **t e n n _ _**",
+            "choices": [
+              "ys",
+              "es",
+              "is",
+              "ix"
+            ],
+            "correct_answer": "is",
+            "explanation": "Từ đầy đủ là **\"tennis\"**, nghĩa là \"quần vợt\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"mọi người\"**: **p _ _ p l e**",
+            "choices": [
+              "eo",
+              "ao",
+              "io",
+              "ea"
+            ],
+            "correct_answer": "eo",
+            "explanation": "Từ đầy đủ là **\"people\"**, nghĩa là \"mọi người\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"màu xanh lam\"** được viết đúng là:",
+            "choices": [
+              "blue",
+              "blua",
+              "lbue",
+              "brue"
+            ],
+            "correct_answer": "blue",
+            "explanation": "**\"blue\"** nghĩa là \"màu xanh lam\", ghép bởi 4 chữ cái b-l-u-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "colours"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"số năm\"** được viết đúng là:",
+            "choices": [
+              "fiev",
+              "five",
+              "fiwe",
+              "ifve"
+            ],
+            "correct_answer": "five",
+            "explanation": "**\"five\"** nghĩa là \"số năm\", ghép bởi 4 chữ cái f-i-v-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"quả chanh xanh\"** được viết đúng là:",
+            "choices": [
+              "ilme",
+              "lime",
+              "leme",
+              "rime"
+            ],
+            "correct_answer": "lime",
+            "explanation": "**\"lime\"** nghĩa là \"quả chanh xanh\", ghép bởi 4 chữ cái l-i-m-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"họ / chúng\"** được viết đúng là:",
+            "choices": [
+              "thiy",
+              "thye",
+              "tkey",
+              "they"
+            ],
+            "correct_answer": "they",
+            "explanation": "**\"they\"** nghĩa là \"họ / chúng\", ghép bởi 4 chữ cái t-h-e-y.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"chạy\"** được viết đúng là:",
+            "choices": [
+              "rum",
+              "rnu",
+              "run",
+              "ron"
+            ],
+            "correct_answer": "run",
+            "explanation": "**\"run\"** nghĩa là \"chạy\", ghép bởi 3 chữ cái r-u-n.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"cô ấy / chị ấy\"** được viết đúng là:",
+            "choices": [
+              "xhe",
+              "ehs",
+              "zhe",
+              "she"
+            ],
+            "correct_answer": "she",
+            "explanation": "**\"she\"** nghĩa là \"cô ấy / chị ấy\", ghép bởi 3 chữ cái s-h-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"bay\"** được viết đúng là:",
+            "choices": [
+              "fli",
+              "fry",
+              "fly",
+              "vly"
+            ],
+            "correct_answer": "fly",
+            "explanation": "**\"fly\"** nghĩa là \"bay\", ghép bởi 3 chữ cái f-l-y.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "street"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"mắt\"** được viết đúng là:",
+            "choices": [
+              "eye",
+              "yee",
+              "aye",
+              "eie"
+            ],
+            "correct_answer": "eye",
+            "explanation": "**\"eye\"** nghĩa là \"mắt\", ghép bởi 3 chữ cái e-y-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "my-body"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"đèn bàn\"** được viết đúng là:",
+            "choices": [
+              "lanp",
+              "lamp",
+              "lawp",
+              "lamq"
+            ],
+            "correct_answer": "lamp",
+            "explanation": "**\"lamp\"** nghĩa là \"đèn bàn\", ghép bởi 4 chữ cái l-a-m-p.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"màu xám\"** được viết đúng là:",
+            "choices": [
+              "gney",
+              "grej",
+              "grey",
+              "rgey"
+            ],
+            "correct_answer": "grey",
+            "explanation": "**\"grey\"** nghĩa là \"màu xám\", ghép bởi 4 chữ cái g-r-e-y.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "colours"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 3,
+      "title": "Đề 03",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"Tiếng Anh\"**: **E n g l i _ _**",
+            "choices": [
+              "ch",
+              "sh",
+              "hs",
+              "xh"
+            ],
+            "correct_answer": "sh",
+            "explanation": "Từ đầy đủ là **\"English\"**, nghĩa là \"Tiếng Anh\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"tủ đựng đồ\"**: **c u p b _ _ r d**",
+            "choices": [
+              "oa",
+              "ou",
+              "aa",
+              "oo"
+            ],
+            "correct_answer": "oa",
+            "explanation": "Từ đầy đủ là **\"cupboard\"**, nghĩa là \"tủ đựng đồ\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"màu cam\"**: **o _ _ _ g e**",
+            "choices": [
+              "nar",
+              "ran",
+              "run",
+              "ren"
+            ],
+            "correct_answer": "ran",
+            "explanation": "Từ đầy đủ là **\"orange\"**, nghĩa là \"màu cam\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "colours"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"quần dài\"**: **t r o u s e _ _**",
+            "choices": [
+              "ns",
+              "rs",
+              "rz",
+              "rc"
+            ],
+            "correct_answer": "rs",
+            "explanation": "Từ đầy đủ là **\"trousers\"**, nghĩa là \"quần dài\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "clothes"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"nhà\"**: **h _ _ s e**",
+            "choices": [
+              "uo",
+              "oo",
+              "ov",
+              "ou"
+            ],
+            "correct_answer": "ou",
+            "explanation": "Từ đầy đủ là **\"house\"**, nghĩa là \"nhà\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"câu cá\"**: **f _ _ h i n g**",
+            "choices": [
+              "ys",
+              "ix",
+              "is",
+              "es"
+            ],
+            "correct_answer": "is",
+            "explanation": "Từ đầy đủ là **\"fishing\"**, nghĩa là \"câu cá\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"ghế bành\"**: **a _ _ _ h a i r**",
+            "choices": [
+              "cmr",
+              "nmc",
+              "rmc",
+              "rcm"
+            ],
+            "correct_answer": "rmc",
+            "explanation": "Từ đầy đủ là **\"armchair\"**, nghĩa là \"ghế bành\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"gương\"**: **m i r _ _ _**",
+            "choices": [
+              "rro",
+              "ror",
+              "lor",
+              "rol"
+            ],
+            "correct_answer": "ror",
+            "explanation": "Từ đầy đủ là **\"mirror\"**, nghĩa là \"gương\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"con hà mã\"**: **h i _ _ o**",
+            "choices": [
+              "pp",
+              "qp",
+              "pq",
+              "pb"
+            ],
+            "correct_answer": "pp",
+            "explanation": "Từ đầy đủ là **\"hippo\"**, nghĩa là \"con hà mã\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"váy/đầm\"**: **d r e _ _**",
+            "choices": [
+              "ss",
+              "cs",
+              "xs",
+              "zs"
+            ],
+            "correct_answer": "ss",
+            "explanation": "Từ đầy đủ là **\"dress\"**, nghĩa là \"váy/đầm\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "clothes"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"quả bóng\"** được viết đúng là:",
+            "choices": [
+              "bull",
+              "ball",
+              "pall",
+              "bal"
+            ],
+            "correct_answer": "ball",
+            "explanation": "**\"ball\"** nghĩa là \"quả bóng\", ghép bởi 4 chữ cái b-a-l-l.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"khoai tây chiên\"** được viết đúng là:",
+            "choices": [
+              "fires",
+              "friez",
+              "frles",
+              "fries"
+            ],
+            "correct_answer": "fries",
+            "explanation": "**\"fries\"** nghĩa là \"khoai tây chiên\", ghép bởi 5 chữ cái f-r-i-e-s.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"đánh/đập\"** được viết đúng là:",
+            "choices": [
+              "hyt",
+              "iht",
+              "hit",
+              "kit"
+            ],
+            "correct_answer": "hit",
+            "explanation": "**\"hit\"** nghĩa là \"đánh/đập\", ghép bởi 3 chữ cái h-i-t.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"cái gì\"** được viết đúng là:",
+            "choices": [
+              "wkat",
+              "whad",
+              "whot",
+              "what"
+            ],
+            "correct_answer": "what",
+            "explanation": "**\"what\"** nghĩa là \"cái gì\", ghép bởi 4 chữ cái w-h-a-t.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"con bò\"** được viết đúng là:",
+            "choices": [
+              "caw",
+              "cew",
+              "cwo",
+              "cow"
+            ],
+            "correct_answer": "cow",
+            "explanation": "**\"cow\"** nghĩa là \"con bò\", ghép bởi 3 chữ cái c-o-w.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"cửa ra vào\"** được viết đúng là:",
+            "choices": [
+              "dour",
+              "door",
+              "odor",
+              "dor"
+            ],
+            "correct_answer": "door",
+            "explanation": "**\"door\"** nghĩa là \"cửa ra vào\", ghép bởi 4 chữ cái d-o-o-r.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"giày\"** được viết đúng là:",
+            "choices": [
+              "zhoe",
+              "choe",
+              "shoe",
+              "hsoe"
+            ],
+            "correct_answer": "shoe",
+            "explanation": "**\"shoe\"** nghĩa là \"giày\", ghép bởi 4 chữ cái s-h-o-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "clothes"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"búp bê\"** được viết đúng là:",
+            "choices": [
+              "dol",
+              "dorl",
+              "poll",
+              "doll"
+            ],
+            "correct_answer": "doll",
+            "explanation": "**\"doll\"** nghĩa là \"búp bê\", ghép bởi 4 chữ cái d-o-l-l.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"vâng / dạ\"** được viết đúng là:",
+            "choices": [
+              "yes",
+              "eys",
+              "yec",
+              "yex"
+            ],
+            "correct_answer": "yes",
+            "explanation": "**\"yes\"** nghĩa là \"vâng / dạ\", ghép bởi 3 chữ cái y-e-s.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"mặt trời\"** được viết đúng là:",
+            "choices": [
+              "cun",
+              "sun",
+              "son",
+              "sum"
+            ],
+            "correct_answer": "sun",
+            "explanation": "**\"sun\"** nghĩa là \"mặt trời\", ghép bởi 3 chữ cái s-u-n.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 4,
+      "title": "Đề 04",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"đồng hồ đeo tay\"**: **w a t _ _**",
+            "choices": [
+              "cn",
+              "kh",
+              "ch",
+              "ck"
+            ],
+            "correct_answer": "ch",
+            "explanation": "Từ đầy đủ là **\"watch\"**, nghĩa là \"đồng hồ đeo tay\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "clothes"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"đàn ghi-ta\"**: **g _ _ _ a r**",
+            "choices": [
+              "tiu",
+              "ult",
+              "uti",
+              "uit"
+            ],
+            "correct_answer": "uit",
+            "explanation": "Từ đầy đủ là **\"guitar\"**, nghĩa là \"đàn ghi-ta\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"củ cà rốt\"**: **c a r _ _ _**",
+            "choices": [
+              "rot",
+              "lot",
+              "ret",
+              "ort"
+            ],
+            "correct_answer": "rot",
+            "explanation": "Từ đầy đủ là **\"carrot\"**, nghĩa là \"củ cà rốt\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"buổi tối\"**: **e v e n _ _ _**",
+            "choices": [
+              "lng",
+              "ing",
+              "inq",
+              "ign"
+            ],
+            "correct_answer": "ing",
+            "explanation": "Từ đầy đủ là **\"evening\"**, nghĩa là \"buổi tối\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "street"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"chân váy\"**: **s _ _ r t**",
+            "choices": [
+              "ki",
+              "ik",
+              "ke",
+              "xi"
+            ],
+            "correct_answer": "ki",
+            "explanation": "Từ đầy đủ là **\"skirt\"**, nghĩa là \"chân váy\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "clothes"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"phòng ngủ\"**: **b e d _ _ _ m**",
+            "choices": [
+              "roe",
+              "rou",
+              "reo",
+              "roo"
+            ],
+            "correct_answer": "roo",
+            "explanation": "Từ đầy đủ là **\"bedroom\"**, nghĩa là \"phòng ngủ\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"nụ cười\"**: **s m _ _ e**",
+            "choices": [
+              "ii",
+              "il",
+              "ir",
+              "el"
+            ],
+            "correct_answer": "il",
+            "explanation": "Từ đầy đủ là **\"smile\"**, nghĩa là \"nụ cười\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "my-body"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"màu trắng\"**: **w h i _ _**",
+            "choices": [
+              "ta",
+              "fe",
+              "et",
+              "te"
+            ],
+            "correct_answer": "te",
+            "explanation": "Từ đầy đủ là **\"white\"**, nghĩa là \"màu trắng\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "colours"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"kính mắt\"**: **g _ _ s s e s**",
+            "choices": [
+              "ra",
+              "lu",
+              "al",
+              "la"
+            ],
+            "correct_answer": "la",
+            "explanation": "Từ đầy đủ là **\"glasses\"**, nghĩa là \"kính mắt\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "clothes"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"điện thoại\"**: **p h o _ _**",
+            "choices": [
+              "me",
+              "ne",
+              "na",
+              "ni"
+            ],
+            "correct_answer": "ne",
+            "explanation": "Từ đầy đủ là **\"phone\"**, nghĩa là \"điện thoại\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"diều\"** được viết đúng là:",
+            "choices": [
+              "kife",
+              "ktie",
+              "kite",
+              "kyte"
+            ],
+            "correct_answer": "kite",
+            "explanation": "**\"kite\"** nghĩa là \"diều\", ghép bởi 4 chữ cái k-i-t-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"nấu ăn\"** được viết đúng là:",
+            "choices": [
+              "ocok",
+              "coek",
+              "cuok",
+              "cook"
+            ],
+            "correct_answer": "cook",
+            "explanation": "**\"cook\"** nghĩa là \"nấu ăn\", ghép bởi 4 chữ cái c-o-o-k.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"con ếch\"** được viết đúng là:",
+            "choices": [
+              "frog",
+              "froj",
+              "frgo",
+              "vrog"
+            ],
+            "correct_answer": "frog",
+            "explanation": "**\"frog\"** nghĩa là \"con ếch\", ghép bởi 4 chữ cái f-r-o-g.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"xe đạp\"** được viết đúng là:",
+            "choices": [
+              "bika",
+              "ibke",
+              "bike",
+              "dike"
+            ],
+            "correct_answer": "bike",
+            "explanation": "**\"bike\"** nghĩa là \"xe đạp\", ghép bởi 4 chữ cái b-i-k-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "street"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"bức tường\"** được viết đúng là:",
+            "choices": [
+              "wail",
+              "well",
+              "wal",
+              "wall"
+            ],
+            "correct_answer": "wall",
+            "explanation": "**\"wall\"** nghĩa là \"bức tường\", ghép bởi 4 chữ cái w-a-l-l.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"cát\"** được viết đúng là:",
+            "choices": [
+              "sadn",
+              "sand",
+              "sard",
+              "sanp"
+            ],
+            "correct_answer": "sand",
+            "explanation": "**\"sand\"** nghĩa là \"cát\", ghép bởi 4 chữ cái s-a-n-d.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"con vịt\"** được viết đúng là:",
+            "choices": [
+              "ducx",
+              "duck",
+              "dack",
+              "dukc"
+            ],
+            "correct_answer": "duck",
+            "explanation": "**\"duck\"** nghĩa là \"con vịt\", ghép bởi 4 chữ cái d-u-c-k.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"bồn tắm\"** được viết đúng là:",
+            "choices": [
+              "buth",
+              "bath",
+              "batn",
+              "bafh"
+            ],
+            "correct_answer": "bath",
+            "explanation": "**\"bath\"** nghĩa là \"bồn tắm\", ghép bởi 4 chữ cái b-a-t-h.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"con dê\"** được viết đúng là:",
+            "choices": [
+              "goad",
+              "goet",
+              "guat",
+              "goat"
+            ],
+            "correct_answer": "goat",
+            "explanation": "**\"goat\"** nghĩa là \"con dê\", ghép bởi 4 chữ cái g-o-a-t.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"thuyền\"** được viết đúng là:",
+            "choices": [
+              "baot",
+              "boat",
+              "beat",
+              "buat"
+            ],
+            "correct_answer": "boat",
+            "explanation": "**\"boat\"** nghĩa là \"thuyền\", ghép bởi 4 chữ cái b-o-a-t.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "street"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 5,
+      "title": "Đề 05",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"quái vật\"**: **m o _ _ t e r**",
+            "choices": [
+              "ms",
+              "ns",
+              "us",
+              "sn"
+            ],
+            "correct_answer": "ns",
+            "explanation": "Từ đầy đủ là **\"monster\"**, nghĩa là \"quái vật\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"làm ơn / xin vui lòng\"**: **p l _ _ _ e**",
+            "choices": [
+              "eaz",
+              "eas",
+              "eac",
+              "esa"
+            ],
+            "correct_answer": "eas",
+            "explanation": "Từ đầy đủ là **\"please\"**, nghĩa là \"làm ơn / xin vui lòng\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"vỏ sò\"**: **s h e _ _**",
+            "choices": [
+              "ll",
+              "lr",
+              "il",
+              "rl"
+            ],
+            "correct_answer": "ll",
+            "explanation": "Từ đầy đủ là **\"shell\"**, nghĩa là \"vỏ sò\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"hành lang\"**: **h _ _ l**",
+            "choices": [
+              "ar",
+              "el",
+              "al",
+              "ul"
+            ],
+            "correct_answer": "al",
+            "explanation": "Từ đầy đủ là **\"hall\"**, nghĩa là \"hành lang\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"số tám\"**: **e i g _ _**",
+            "choices": [
+              "ht",
+              "hd",
+              "hf",
+              "nt"
+            ],
+            "correct_answer": "ht",
+            "explanation": "Từ đầy đủ là **\"eight\"**, nghĩa là \"số tám\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"xúc xích\"**: **s a _ _ _ g e**",
+            "choices": [
+              "vsa",
+              "uas",
+              "usa",
+              "usu"
+            ],
+            "correct_answer": "usa",
+            "explanation": "Từ đầy đủ là **\"sausage\"**, nghĩa là \"xúc xích\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"người ngoài hành tinh\"**: **a _ _ e n**",
+            "choices": [
+              "ly",
+              "ii",
+              "le",
+              "li"
+            ],
+            "correct_answer": "li",
+            "explanation": "Từ đầy đủ là **\"alien\"**, nghĩa là \"người ngoài hành tinh\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"ném\"**: **t h _ _ w**",
+            "choices": [
+              "ru",
+              "ro",
+              "no",
+              "ra"
+            ],
+            "correct_answer": "ro",
+            "explanation": "Từ đầy đủ là **\"throw\"**, nghĩa là \"ném\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"bảng đen\"**: **b o _ _ d**",
+            "choices": [
+              "ar",
+              "an",
+              "er",
+              "ur"
+            ],
+            "correct_answer": "ar",
+            "explanation": "Từ đầy đủ là **\"board\"**, nghĩa là \"bảng đen\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "school"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"thư viện\"**: **l i b _ _ _ y**",
+            "choices": [
+              "rur",
+              "ral",
+              "rar",
+              "ran"
+            ],
+            "correct_answer": "rar",
+            "explanation": "Từ đầy đủ là **\"library\"**, nghĩa là \"thư viện\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"vẽ tranh\"** được viết đúng là:",
+            "choices": [
+              "darw",
+              "rdaw",
+              "draw",
+              "druw"
+            ],
+            "correct_answer": "draw",
+            "explanation": "**\"draw\"** nghĩa là \"vẽ tranh\", ghép bởi 4 chữ cái d-r-a-w.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"chân\"** được viết đúng là:",
+            "choices": [
+              "lag",
+              "leg",
+              "lej",
+              "gel"
+            ],
+            "correct_answer": "leg",
+            "explanation": "**\"leg\"** nghĩa là \"chân\", ghép bởi 3 chữ cái l-e-g.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "my-body"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"số mười\"** được viết đúng là:",
+            "choices": [
+              "tan",
+              "fen",
+              "ten",
+              "net"
+            ],
+            "correct_answer": "ten",
+            "explanation": "**\"ten\"** nghĩa là \"số mười\", ghép bởi 3 chữ cái t-e-n.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"bàn chân\"** được viết đúng là:",
+            "choices": [
+              "foto",
+              "food",
+              "foot",
+              "faot"
+            ],
+            "correct_answer": "foot",
+            "explanation": "**\"foot\"** nghĩa là \"bàn chân\", ghép bởi 4 chữ cái f-o-o-t.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "my-body"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"khuôn mặt\"** được viết đúng là:",
+            "choices": [
+              "foce",
+              "fcae",
+              "face",
+              "faec"
+            ],
+            "correct_answer": "face",
+            "explanation": "**\"face\"** nghĩa là \"khuôn mặt\", ghép bởi 4 chữ cái f-a-c-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "my-body"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"tai\"** được viết đúng là:",
+            "choices": [
+              "ear",
+              "eer",
+              "iar",
+              "eal"
+            ],
+            "correct_answer": "ear",
+            "explanation": "**\"ear\"** nghĩa là \"tai\", ghép bởi 3 chữ cái e-a-r.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "my-body"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"bơi\"** được viết đúng là:",
+            "choices": [
+              "wsim",
+              "swiw",
+              "xwim",
+              "swim"
+            ],
+            "correct_answer": "swim",
+            "explanation": "**\"swim\"** nghĩa là \"bơi\", ghép bởi 4 chữ cái s-w-i-m.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"hai bàn chân\"** được viết đúng là:",
+            "choices": [
+              "feat",
+              "feet",
+              "teet",
+              "efet"
+            ],
+            "correct_answer": "feet",
+            "explanation": "**\"feet\"** nghĩa là \"hai bàn chân\", ghép bởi 4 chữ cái f-e-e-t.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "my-body"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"con chim\"** được viết đúng là:",
+            "choices": [
+              "brid",
+              "ibrd",
+              "birp",
+              "bird"
+            ],
+            "correct_answer": "bird",
+            "explanation": "**\"bird\"** nghĩa là \"con chim\", ghép bởi 4 chữ cái b-i-r-d.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"ghế sofa\"** được viết đúng là:",
+            "choices": [
+              "sofa",
+              "sfoa",
+              "sufa",
+              "zofa"
+            ],
+            "correct_answer": "sofa",
+            "explanation": "**\"sofa\"** nghĩa là \"ghế sofa\", ghép bởi 4 chữ cái s-o-f-a.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 6,
+      "title": "Đề 06",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"con hươu cao cổ\"**: **g i r a _ _ _**",
+            "choices": [
+              "eff",
+              "fve",
+              "ffa",
+              "ffe"
+            ],
+            "correct_answer": "ffe",
+            "explanation": "Từ đầy đủ là **\"giraffe\"**, nghĩa là \"con hươu cao cổ\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"bóng bay\"**: **b _ _ l o o n**",
+            "choices": [
+              "al",
+              "la",
+              "ol",
+              "ar"
+            ],
+            "correct_answer": "al",
+            "explanation": "Từ đầy đủ là **\"balloon\"**, nghĩa là \"bóng bay\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"con nhện\"**: **s p i _ _ _**",
+            "choices": [
+              "dir",
+              "dre",
+              "red",
+              "der"
+            ],
+            "correct_answer": "der",
+            "explanation": "Từ đầy đủ là **\"spider\"**, nghĩa là \"con nhện\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"sàn nhà\"**: **f l _ _ r**",
+            "choices": [
+              "ou",
+              "oo",
+              "ao",
+              "oa"
+            ],
+            "correct_answer": "oo",
+            "explanation": "Từ đầy đủ là **\"floor\"**, nghĩa là \"sàn nhà\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "school"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"tô màu\"**: **p a i _ _**",
+            "choices": [
+              "rt",
+              "tn",
+              "nt",
+              "nf"
+            ],
+            "correct_answer": "nt",
+            "explanation": "Từ đầy đủ là **\"paint\"**, nghĩa là \"tô màu\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"động vật\"**: **a n _ _ _ l**",
+            "choices": [
+              "lma",
+              "iwa",
+              "ima",
+              "ema"
+            ],
+            "correct_answer": "ima",
+            "explanation": "Từ đầy đủ là **\"animal\"**, nghĩa là \"động vật\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"phòng tắm\"**: **b a t h r _ _ m**",
+            "choices": [
+              "ao",
+              "oe",
+              "uo",
+              "oo"
+            ],
+            "correct_answer": "oo",
+            "explanation": "Từ đầy đủ là **\"bathroom\"**, nghĩa là \"phòng tắm\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"quả cà chua\"**: **t o _ _ t o**",
+            "choices": [
+              "na",
+              "mu",
+              "mo",
+              "ma"
+            ],
+            "correct_answer": "ma",
+            "explanation": "Từ đầy đủ là **\"tomato\"**, nghĩa là \"quả cà chua\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"chạm / sờ\"**: **t o _ _ h**",
+            "choices": [
+              "vc",
+              "uc",
+              "us",
+              "ac"
+            ],
+            "correct_answer": "uc",
+            "explanation": "Từ đầy đủ là **\"touch\"**, nghĩa là \"chạm / sờ\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"vườn\"**: **g _ _ d e n**",
+            "choices": [
+              "ar",
+              "al",
+              "or",
+              "an"
+            ],
+            "correct_answer": "ar",
+            "explanation": "Từ đầy đủ là **\"garden\"**, nghĩa là \"vườn\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"số chín\"** được viết đúng là:",
+            "choices": [
+              "uine",
+              "niue",
+              "nine",
+              "nire"
+            ],
+            "correct_answer": "nine",
+            "explanation": "**\"nine\"** nghĩa là \"số chín\", ghép bởi 4 chữ cái n-i-n-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"ngày\"** được viết đúng là:",
+            "choices": [
+              "duy",
+              "bay",
+              "day",
+              "doy"
+            ],
+            "correct_answer": "day",
+            "explanation": "**\"day\"** nghĩa là \"ngày\", ghép bởi 3 chữ cái d-a-y.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "street"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"thịt\"** được viết đúng là:",
+            "choices": [
+              "meat",
+              "maet",
+              "meet",
+              "meaf"
+            ],
+            "correct_answer": "meat",
+            "explanation": "**\"meat\"** nghĩa là \"thịt\", ghép bởi 4 chữ cái m-e-a-t.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"giường\"** được viết đúng là:",
+            "choices": [
+              "bad",
+              "bde",
+              "bid",
+              "bed"
+            ],
+            "correct_answer": "bed",
+            "explanation": "**\"bed\"** nghĩa là \"giường\", ghép bởi 3 chữ cái b-e-d.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"miệng\"** được viết đúng là:",
+            "choices": [
+              "mouth",
+              "moath",
+              "omuth",
+              "muoth"
+            ],
+            "correct_answer": "mouth",
+            "explanation": "**\"mouth\"** nghĩa là \"miệng\", ghép bởi 5 chữ cái m-o-u-t-h.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "my-body"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"tạm biệt\"** được viết đúng là:",
+            "choices": [
+              "byi",
+              "dye",
+              "bye",
+              "bie"
+            ],
+            "correct_answer": "bye",
+            "explanation": "**\"bye\"** nghĩa là \"tạm biệt\", ghép bởi 3 chữ cái b-y-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"dòng kẻ\"** được viết đúng là:",
+            "choices": [
+              "lina",
+              "rine",
+              "line",
+              "lene"
+            ],
+            "correct_answer": "line",
+            "explanation": "**\"line\"** nghĩa là \"dòng kẻ\", ghép bởi 4 chữ cái l-i-n-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "school"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"cơ thể\"** được viết đúng là:",
+            "choices": [
+              "budy",
+              "boyd",
+              "body",
+              "obdy"
+            ],
+            "correct_answer": "body",
+            "explanation": "**\"body\"** nghĩa là \"cơ thể\", ghép bởi 4 chữ cái b-o-d-y.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "my-body"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"biển\"** được viết đúng là:",
+            "choices": [
+              "aes",
+              "sia",
+              "see",
+              "sea"
+            ],
+            "correct_answer": "sea",
+            "explanation": "**\"sea\"** nghĩa là \"biển\", ghép bởi 3 chữ cái s-e-a.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"túi xách\"** được viết đúng là:",
+            "choices": [
+              "baj",
+              "bag",
+              "beg",
+              "baq"
+            ],
+            "correct_answer": "bag",
+            "explanation": "**\"bag\"** nghĩa là \"túi xách\", ghép bởi 3 chữ cái b-a-g.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "clothes"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 7,
+      "title": "Đề 07",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"kệ sách\"**: **b o o _ _ a s e**",
+            "choices": [
+              "ck",
+              "cc",
+              "kk",
+              "kc"
+            ],
+            "correct_answer": "kc",
+            "explanation": "Từ đầy đủ là **\"bookcase\"**, nghĩa là \"kệ sách\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"nhà bếp\"**: **k _ _ _ h e n**",
+            "choices": [
+              "ict",
+              "etc",
+              "tic",
+              "itc"
+            ],
+            "correct_answer": "itc",
+            "explanation": "Từ đầy đủ là **\"kitchen\"**, nghĩa là \"nhà bếp\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"quả dừa\"**: **c _ _ o n u t**",
+            "choices": [
+              "ec",
+              "oc",
+              "ac",
+              "uc"
+            ],
+            "correct_answer": "oc",
+            "explanation": "Từ đầy đủ là **\"coconut\"**, nghĩa là \"quả dừa\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"số ba\"**: **t h r _ _**",
+            "choices": [
+              "ee",
+              "ae",
+              "ea",
+              "ei"
+            ],
+            "correct_answer": "ee",
+            "explanation": "Từ đầy đủ là **\"three\"**, nghĩa là \"số ba\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"những cái này\"**: **t _ _ s e**",
+            "choices": [
+              "hi",
+              "he",
+              "ke",
+              "ne"
+            ],
+            "correct_answer": "he",
+            "explanation": "Từ đầy đủ là **\"these\"**, nghĩa là \"những cái này\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"ảnh chụp\"**: **p _ _ t o**",
+            "choices": [
+              "ho",
+              "ko",
+              "ha",
+              "no"
+            ],
+            "correct_answer": "ho",
+            "explanation": "Từ đầy đủ là **\"photo\"**, nghĩa là \"ảnh chụp\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"bảng chữ cái\"**: **a l p _ _ _ e t**",
+            "choices": [
+              "hba",
+              "had",
+              "ahb",
+              "hab"
+            ],
+            "correct_answer": "hab",
+            "explanation": "Từ đầy đủ là **\"alphabet\"**, nghĩa là \"bảng chữ cái\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "school"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"bà nội/ngoại\"**: **g _ _ n d m a**",
+            "choices": [
+              "ru",
+              "ar",
+              "ra",
+              "la"
+            ],
+            "correct_answer": "ra",
+            "explanation": "Từ đầy đủ là **\"grandma\"**, nghĩa là \"bà nội/ngoại\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"máy bay\"**: **p l a _ _**",
+            "choices": [
+              "en",
+              "ne",
+              "ue",
+              "me"
+            ],
+            "correct_answer": "ne",
+            "explanation": "Từ đầy đủ là **\"plane\"**, nghĩa là \"máy bay\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "street"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"người máy\"**: **r o b _ _**",
+            "choices": [
+              "od",
+              "et",
+              "at",
+              "ot"
+            ],
+            "correct_answer": "ot",
+            "explanation": "Từ đầy đủ là **\"robot\"**, nghĩa là \"người máy\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"mũ\"** được viết đúng là:",
+            "choices": [
+              "aht",
+              "tah",
+              "hat",
+              "hot"
+            ],
+            "correct_answer": "hat",
+            "explanation": "**\"hat\"** nghĩa là \"mũ\", ghép bởi 3 chữ cái h-a-t.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "clothes"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"đậu\"** được viết đúng là:",
+            "choices": [
+              "baens",
+              "beans",
+              "beams",
+              "beasn"
+            ],
+            "correct_answer": "beans",
+            "explanation": "**\"beans\"** nghĩa là \"đậu\", ghép bởi 5 chữ cái b-e-a-n-s.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"số sáu\"** được viết đúng là:",
+            "choices": [
+              "slx",
+              "isx",
+              "cix",
+              "six"
+            ],
+            "correct_answer": "six",
+            "explanation": "**\"six\"** nghĩa là \"số sáu\", ghép bởi 3 chữ cái s-i-x.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"tán gẫu / trò chuyện\"** được viết đúng là:",
+            "choices": [
+              "chat",
+              "ckat",
+              "chet",
+              "chut"
+            ],
+            "correct_answer": "chat",
+            "explanation": "**\"chat\"** nghĩa là \"tán gẫu / trò chuyện\", ghép bởi 4 chữ cái c-h-a-t.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"hát\"** được viết đúng là:",
+            "choices": [
+              "sign",
+              "syng",
+              "sing",
+              "siug"
+            ],
+            "correct_answer": "sing",
+            "explanation": "**\"sing\"** nghĩa là \"hát\", ghép bởi 4 chữ cái s-i-n-g.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"đàn ông\"** được viết đúng là:",
+            "choices": [
+              "amn",
+              "nan",
+              "man",
+              "men"
+            ],
+            "correct_answer": "man",
+            "explanation": "**\"man\"** nghĩa là \"đàn ông\", ghép bởi 3 chữ cái m-a-n.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"bàn học\"** được viết đúng là:",
+            "choices": [
+              "desk",
+              "dsek",
+              "dask",
+              "dezk"
+            ],
+            "correct_answer": "desk",
+            "explanation": "**\"desk\"** nghĩa là \"bàn học\", ghép bởi 4 chữ cái d-e-s-k.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "school"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"đây / cái này\"** được viết đúng là:",
+            "choices": [
+              "thes",
+              "thic",
+              "thsi",
+              "this"
+            ],
+            "correct_answer": "this",
+            "explanation": "**\"this\"** nghĩa là \"đây / cái này\", ghép bởi 4 chữ cái t-h-i-s.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"đá (bóng)\"** được viết đúng là:",
+            "choices": [
+              "cick",
+              "klck",
+              "kick",
+              "kikk"
+            ],
+            "correct_answer": "kick",
+            "explanation": "**\"kick\"** nghĩa là \"đá (bóng)\", ghép bởi 4 chữ cái k-i-c-k.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"số bốn\"** được viết đúng là:",
+            "choices": [
+              "ofur",
+              "four",
+              "feur",
+              "foru"
+            ],
+            "correct_answer": "four",
+            "explanation": "**\"four\"** nghĩa là \"số bốn\", ghép bởi 4 chữ cái f-o-u-r.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 8,
+      "title": "Đề 08",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"máy tính\"**: **c o m p u _ _ r**",
+            "choices": [
+              "de",
+              "ti",
+              "te",
+              "ta"
+            ],
+            "correct_answer": "te",
+            "explanation": "Từ đầy đủ là **\"computer\"**, nghĩa là \"máy tính\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "school"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"bắt (bóng)\"**: **c _ _ c h**",
+            "choices": [
+              "at",
+              "ad",
+              "ot",
+              "ut"
+            ],
+            "correct_answer": "at",
+            "explanation": "Từ đầy đủ là **\"catch\"**, nghĩa là \"bắt (bóng)\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"cửa sổ\"**: **w _ _ _ o w**",
+            "choices": [
+              "ind",
+              "ynd",
+              "iud",
+              "dni"
+            ],
+            "correct_answer": "ind",
+            "explanation": "Từ đầy đủ là **\"window\"**, nghĩa là \"cửa sổ\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"màu nâu\"**: **b _ _ w n**",
+            "choices": [
+              "ra",
+              "or",
+              "ro",
+              "ru"
+            ],
+            "correct_answer": "ro",
+            "explanation": "Từ đầy đủ là **\"brown\"**, nghĩa là \"màu nâu\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "colours"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"anh/em trai\"**: **b r o t _ _ _**",
+            "choices": [
+              "ner",
+              "ker",
+              "ehr",
+              "her"
+            ],
+            "correct_answer": "her",
+            "explanation": "Từ đầy đủ là **\"brother\"**, nghĩa là \"anh/em trai\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"con cừu\"**: **s h e _ _**",
+            "choices": [
+              "ip",
+              "ep",
+              "eq",
+              "eb"
+            ],
+            "correct_answer": "ep",
+            "explanation": "Từ đầy đủ là **\"sheep\"**, nghĩa là \"con cừu\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"máy ảnh\"**: **c _ _ e r a**",
+            "choices": [
+              "am",
+              "um",
+              "em",
+              "aw"
+            ],
+            "correct_answer": "am",
+            "explanation": "Từ đầy đủ là **\"camera\"**, nghĩa là \"máy ảnh\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"ông nội/ngoại\"**: **g r a _ _ p a**",
+            "choices": [
+              "dn",
+              "np",
+              "ud",
+              "nd"
+            ],
+            "correct_answer": "nd",
+            "explanation": "Từ đầy đủ là **\"grandpa\"**, nghĩa là \"ông nội/ngoại\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"số bảy\"**: **s e v _ _**",
+            "choices": [
+              "en",
+              "er",
+              "eu",
+              "an"
+            ],
+            "correct_answer": "en",
+            "explanation": "Từ đầy đủ là **\"seven\"**, nghĩa là \"số bảy\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"anh chị em họ\"**: **c o _ _ _ n**",
+            "choices": [
+              "usl",
+              "sui",
+              "usi",
+              "isu"
+            ],
+            "correct_answer": "usi",
+            "explanation": "Từ đầy đủ là **\"cousin\"**, nghĩa là \"anh chị em họ\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"màu hồng\"** được viết đúng là:",
+            "choices": [
+              "pinx",
+              "pink",
+              "qink",
+              "pirk"
+            ],
+            "correct_answer": "pink",
+            "explanation": "**\"pink\"** nghĩa là \"màu hồng\", ghép bởi 4 chữ cái p-i-n-k.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "colours"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"bé gái\"** được viết đúng là:",
+            "choices": [
+              "glrl",
+              "qirl",
+              "girl",
+              "girr"
+            ],
+            "correct_answer": "girl",
+            "explanation": "**\"girl\"** nghĩa là \"bé gái\", ghép bởi 4 chữ cái g-i-r-l.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"phòng thể chất\"** được viết đúng là:",
+            "choices": [
+              "jym",
+              "gym",
+              "gim",
+              "qym"
+            ],
+            "correct_answer": "gym",
+            "explanation": "**\"gym\"** nghĩa là \"phòng thể chất\", ghép bởi 3 chữ cái g-y-m.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"phòng\"** được viết đúng là:",
+            "choices": [
+              "room",
+              "roam",
+              "loom",
+              "noom"
+            ],
+            "correct_answer": "room",
+            "explanation": "**\"room\"** nghĩa là \"phòng\", ghép bởi 4 chữ cái r-o-o-m.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"đài phát thanh\"** được viết đúng là:",
+            "choices": [
+              "raido",
+              "radio",
+              "redio",
+              "nadio"
+            ],
+            "correct_answer": "radio",
+            "explanation": "**\"radio\"** nghĩa là \"đài phát thanh\", ghép bởi 5 chữ cái r-a-d-i-o.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"dừng lại\"** được viết đúng là:",
+            "choices": [
+              "stpo",
+              "tsop",
+              "stop",
+              "ztop"
+            ],
+            "correct_answer": "stop",
+            "explanation": "**\"stop\"** nghĩa là \"dừng lại\", ghép bởi 4 chữ cái s-t-o-p.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "street"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"cờ vua\"** được viết đúng là:",
+            "choices": [
+              "chess",
+              "shess",
+              "chesz",
+              "ches"
+            ],
+            "correct_answer": "chess",
+            "explanation": "**\"chess\"** nghĩa là \"cờ vua\", ghép bởi 5 chữ cái c-h-e-s-s.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"tất/vớ\"** được viết đúng là:",
+            "choices": [
+              "sock",
+              "seck",
+              "xock",
+              "cock"
+            ],
+            "correct_answer": "sock",
+            "explanation": "**\"sock\"** nghĩa là \"tất/vớ\", ghép bởi 4 chữ cái s-o-c-k.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "clothes"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"đồ chơi\"** được viết đúng là:",
+            "choices": [
+              "toy",
+              "yot",
+              "foy",
+              "tey"
+            ],
+            "correct_answer": "toy",
+            "explanation": "**\"toy\"** nghĩa là \"đồ chơi\", ghép bởi 3 chữ cái t-o-y.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"đầu\"** được viết đúng là:",
+            "choices": [
+              "heud",
+              "heod",
+              "head",
+              "haad"
+            ],
+            "correct_answer": "head",
+            "explanation": "**\"head\"** nghĩa là \"đầu\", ghép bởi 4 chữ cái h-e-a-d.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "my-body"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 9,
+      "title": "Đề 09",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"bút chì\"**: **p _ _ _ i l**",
+            "choices": [
+              "enc",
+              "enk",
+              "euc",
+              "inc"
+            ],
+            "correct_answer": "enc",
+            "explanation": "Từ đầy đủ là **\"pencil\"**, nghĩa là \"bút chì\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "school"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"bóng chày\"**: **b a _ _ _ a l l**",
+            "choices": [
+              "sib",
+              "bes",
+              "seb",
+              "zeb"
+            ],
+            "correct_answer": "seb",
+            "explanation": "Từ đầy đủ là **\"baseball\"**, nghĩa là \"bóng chày\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"con thằn lằn\"**: **l i z a _ _**",
+            "choices": [
+              "nd",
+              "ld",
+              "rd",
+              "rp"
+            ],
+            "correct_answer": "rd",
+            "explanation": "Từ đầy đủ là **\"lizard\"**, nghĩa là \"con thằn lằn\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"tẩy\"**: **e r _ _ e r**",
+            "choices": [
+              "ac",
+              "sa",
+              "as",
+              "us"
+            ],
+            "correct_answer": "as",
+            "explanation": "Từ đầy đủ là **\"eraser\"**, nghĩa là \"tẩy\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "school"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"túi xách tay\"**: **h a n _ _ a g**",
+            "choices": [
+              "pb",
+              "bb",
+              "dp",
+              "db"
+            ],
+            "correct_answer": "db",
+            "explanation": "Từ đầy đủ là **\"handbag\"**, nghĩa là \"túi xách tay\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "clothes"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"trái cây\"**: **f _ _ i t**",
+            "choices": [
+              "nu",
+              "ro",
+              "ur",
+              "ru"
+            ],
+            "correct_answer": "ru",
+            "explanation": "Từ đầy đủ là **\"fruit\"**, nghĩa là \"trái cây\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"nước ép\"**: **j _ _ c e**",
+            "choices": [
+              "oi",
+              "ui",
+              "ue",
+              "ul"
+            ],
+            "correct_answer": "ui",
+            "explanation": "Từ đầy đủ là **\"juice\"**, nghĩa là \"nước ép\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"tạm biệt\"**: **g o _ _ _ y e**",
+            "choices": [
+              "udb",
+              "odd",
+              "adb",
+              "odb"
+            ],
+            "correct_answer": "odb",
+            "explanation": "Từ đầy đủ là **\"goodbye\"**, nghĩa là \"tạm biệt\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"thể thao\"**: **s _ _ r t**",
+            "choices": [
+              "qo",
+              "po",
+              "pe",
+              "pu"
+            ],
+            "correct_answer": "po",
+            "explanation": "Từ đầy đủ là **\"sport\"**, nghĩa là \"thể thao\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"con chuột\"**: **m _ _ s e**",
+            "choices": [
+              "uu",
+              "ou",
+              "ov",
+              "eu"
+            ],
+            "correct_answer": "ou",
+            "explanation": "Từ đầy đủ là **\"mouse\"**, nghĩa là \"con chuột\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"lớp học\"** được viết đúng là:",
+            "choices": [
+              "clasx",
+              "cluss",
+              "clasz",
+              "class"
+            ],
+            "correct_answer": "class",
+            "explanation": "**\"class\"** nghĩa là \"lớp học\", ghép bởi 5 chữ cái c-l-a-s-s.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "school"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"nhảy\"** được viết đúng là:",
+            "choices": [
+              "jomp",
+              "junp",
+              "jump",
+              "jumb"
+            ],
+            "correct_answer": "jump",
+            "explanation": "**\"jump\"** nghĩa là \"nhảy\", ghép bởi 4 chữ cái j-u-m-p.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"khỏe / tốt\"** được viết đúng là:",
+            "choices": [
+              "ifne",
+              "fine",
+              "fiue",
+              "fnie"
+            ],
+            "correct_answer": "fine",
+            "explanation": "**\"fine\"** nghĩa là \"khỏe / tốt\", ghép bởi 4 chữ cái f-i-n-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"sách\"** được viết đúng là:",
+            "choices": [
+              "boak",
+              "boko",
+              "pook",
+              "book"
+            ],
+            "correct_answer": "book",
+            "explanation": "**\"book\"** nghĩa là \"sách\", ghép bởi 4 chữ cái b-o-o-k.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "school"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"xe buýt\"** được viết đúng là:",
+            "choices": [
+              "pus",
+              "bus",
+              "ubs",
+              "bsu"
+            ],
+            "correct_answer": "bus",
+            "explanation": "**\"bus\"** nghĩa là \"xe buýt\", ghép bởi 3 chữ cái b-u-s.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "street"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"đi bộ\"** được viết đúng là:",
+            "choices": [
+              "walx",
+              "wark",
+              "wakl",
+              "walk"
+            ],
+            "correct_answer": "walk",
+            "explanation": "**\"walk\"** nghĩa là \"đi bộ\", ghép bởi 4 chữ cái w-a-l-k.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"thước kẻ\"** được viết đúng là:",
+            "choices": [
+              "ruler",
+              "rvler",
+              "rulir",
+              "rulel"
+            ],
+            "correct_answer": "ruler",
+            "explanation": "**\"ruler\"** nghĩa là \"thước kẻ\", ghép bởi 5 chữ cái r-u-l-e-r.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "school"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"mũi\"** được viết đúng là:",
+            "choices": [
+              "rose",
+              "nose",
+              "uose",
+              "mose"
+            ],
+            "correct_answer": "nose",
+            "explanation": "**\"nose\"** nghĩa là \"mũi\", ghép bởi 4 chữ cái n-o-s-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "my-body"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"quả chanh vàng\"** được viết đúng là:",
+            "choices": [
+              "lemor",
+              "lewon",
+              "lemon",
+              "lemen"
+            ],
+            "correct_answer": "lemon",
+            "explanation": "**\"lemon\"** nghĩa là \"quả chanh vàng\", ghép bởi 5 chữ cái l-e-m-o-n.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"kia / cái kia\"** được viết đúng là:",
+            "choices": [
+              "htat",
+              "thta",
+              "thot",
+              "that"
+            ],
+            "correct_answer": "that",
+            "explanation": "**\"that\"** nghĩa là \"kia / cái kia\", ghép bởi 4 chữ cái t-h-a-t.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 10,
+      "title": "Đề 10",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"giáo viên\"**: **t e a c _ _ _**",
+            "choices": [
+              "hen",
+              "hel",
+              "her",
+              "har"
+            ],
+            "correct_answer": "her",
+            "explanation": "Từ đầy đủ là **\"teacher\"**, nghĩa là \"giáo viên\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "school"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"bông hoa\"**: **f l _ _ _ r**",
+            "choices": [
+              "ewo",
+              "uwe",
+              "owe",
+              "ome"
+            ],
+            "correct_answer": "owe",
+            "explanation": "Từ đầy đủ là **\"flower\"**, nghĩa là \"bông hoa\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"đậu Hà Lan\"**: **p e _ _**",
+            "choices": [
+              "us",
+              "az",
+              "ax",
+              "as"
+            ],
+            "correct_answer": "as",
+            "explanation": "Từ đầy đủ là **\"peas\"**, nghĩa là \"đậu Hà Lan\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"cây\"**: **t _ _ e**",
+            "choices": [
+              "ne",
+              "le",
+              "re",
+              "ri"
+            ],
+            "correct_answer": "re",
+            "explanation": "Từ đầy đủ là **\"tree\"**, nghĩa là \"cây\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "street"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"con rắn\"**: **s _ _ k e**",
+            "choices": [
+              "ne",
+              "ra",
+              "na",
+              "an"
+            ],
+            "correct_answer": "na",
+            "explanation": "Từ đầy đủ là **\"snake\"**, nghĩa là \"con rắn\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"kẹo\"**: **c a _ _ y**",
+            "choices": [
+              "ud",
+              "md",
+              "nd",
+              "nb"
+            ],
+            "correct_answer": "nd",
+            "explanation": "Từ đầy đủ là **\"candy\"**, nghĩa là \"kẹo\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"cửa hàng\"**: **s _ _ p**",
+            "choices": [
+              "no",
+              "he",
+              "ho",
+              "oh"
+            ],
+            "correct_answer": "ho",
+            "explanation": "Từ đầy đủ là **\"shop\"**, nghĩa là \"cửa hàng\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "street"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"chơi\"**: **p l _ _**",
+            "choices": [
+              "ai",
+              "ay",
+              "ey",
+              "uy"
+            ],
+            "correct_answer": "ay",
+            "explanation": "Từ đầy đủ là **\"play\"**, nghĩa là \"chơi\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"đồng hồ treo tường\"**: **c l o _ _**",
+            "choices": [
+              "cc",
+              "kc",
+              "kk",
+              "ck"
+            ],
+            "correct_answer": "ck",
+            "explanation": "Từ đầy đủ là **\"clock\"**, nghĩa là \"đồng hồ treo tường\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"xin chào\"**: **h _ _ l o**",
+            "choices": [
+              "ei",
+              "le",
+              "el",
+              "al"
+            ],
+            "correct_answer": "el",
+            "explanation": "Từ đầy đủ là **\"hello\"**, nghĩa là \"xin chào\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"như thế nào\"** được viết đúng là:",
+            "choices": [
+              "now",
+              "ohw",
+              "hew",
+              "how"
+            ],
+            "correct_answer": "how",
+            "explanation": "**\"how\"** nghĩa là \"như thế nào\", ghép bởi 3 chữ cái h-o-w.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"bé trai\"** được viết đúng là:",
+            "choices": [
+              "boi",
+              "boy",
+              "bey",
+              "buy"
+            ],
+            "correct_answer": "boy",
+            "explanation": "**\"boy\"** nghĩa là \"bé trai\", ghép bởi 3 chữ cái b-o-y.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"bút mực\"** được viết đúng là:",
+            "choices": [
+              "pen",
+              "epn",
+              "ben",
+              "pan"
+            ],
+            "correct_answer": "pen",
+            "explanation": "**\"pen\"** nghĩa là \"bút mực\", ghép bởi 3 chữ cái p-e-n.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "school"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"cánh tay\"** được viết đúng là:",
+            "choices": [
+              "ram",
+              "arm",
+              "anm",
+              "amr"
+            ],
+            "correct_answer": "arm",
+            "explanation": "**\"arm\"** nghĩa là \"cánh tay\", ghép bởi 3 chữ cái a-r-m.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "my-body"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"số một\"** được viết đúng là:",
+            "choices": [
+              "eno",
+              "oen",
+              "ona",
+              "one"
+            ],
+            "correct_answer": "one",
+            "explanation": "**\"one\"** nghĩa là \"số một\", ghép bởi 3 chữ cái o-n-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"mở ra\"** được viết đúng là:",
+            "choices": [
+              "poen",
+              "oper",
+              "opeu",
+              "open"
+            ],
+            "correct_answer": "open",
+            "explanation": "**\"open\"** nghĩa là \"mở ra\", ghép bởi 4 chữ cái o-p-e-n.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"mẹ\"** được viết đúng là:",
+            "choices": [
+              "mom",
+              "mum",
+              "wum",
+              "mun"
+            ],
+            "correct_answer": "mum",
+            "explanation": "**\"mum\"** nghĩa là \"mẹ\", ghép bởi 3 chữ cái m-u-m.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"bố/ba\"** được viết đúng là:",
+            "choices": [
+              "dda",
+              "add",
+              "dad",
+              "dud"
+            ],
+            "correct_answer": "dad",
+            "explanation": "**\"dad\"** nghĩa là \"bố/ba\", ghép bởi 3 chữ cái d-a-d.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"hộp/thùng\"** được viết đúng là:",
+            "choices": [
+              "bax",
+              "box",
+              "bok",
+              "bux"
+            ],
+            "correct_answer": "box",
+            "explanation": "**\"box\"** nghĩa là \"hộp/thùng\", ghép bởi 3 chữ cái b-o-x.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"số hai\"** được viết đúng là:",
+            "choices": [
+              "twe",
+              "wto",
+              "fwo",
+              "two"
+            ],
+            "correct_answer": "two",
+            "explanation": "**\"two\"** nghĩa là \"số hai\", ghép bởi 3 chữ cái t-w-o.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 11,
+      "title": "Đề 11",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"quần áo\"**: **c l o t _ _ _**",
+            "choices": [
+              "hse",
+              "hes",
+              "kes",
+              "seh"
+            ],
+            "correct_answer": "hes",
+            "explanation": "Từ đầy đủ là **\"clothes\"**, nghĩa là \"quần áo\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "clothes"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"nhảy múa\"**: **d a _ _ e**",
+            "choices": [
+              "rc",
+              "uc",
+              "nc",
+              "mc"
+            ],
+            "correct_answer": "nc",
+            "explanation": "Từ đầy đủ là **\"dance\"**, nghĩa là \"nhảy múa\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"người\"**: **p _ _ _ o n**",
+            "choices": [
+              "ars",
+              "ers",
+              "erc",
+              "res"
+            ],
+            "correct_answer": "ers",
+            "explanation": "Từ đầy đủ là **\"person\"**, nghĩa là \"người\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"người bạn\"**: **f _ _ _ n d**",
+            "choices": [
+              "lie",
+              "ire",
+              "ria",
+              "rie"
+            ],
+            "correct_answer": "rie",
+            "explanation": "Từ đầy đủ là **\"friend\"**, nghĩa là \"người bạn\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"chữ cái\"**: **l e t _ _ _**",
+            "choices": [
+              "etr",
+              "der",
+              "ret",
+              "ter"
+            ],
+            "correct_answer": "ter",
+            "explanation": "Từ đầy đủ là **\"letter\"**, nghĩa là \"chữ cái\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "school"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"áo khoác\"**: **j a _ _ e t**",
+            "choices": [
+              "sk",
+              "ck",
+              "kc",
+              "cc"
+            ],
+            "correct_answer": "ck",
+            "explanation": "Từ đầy đủ là **\"jacket\"**, nghĩa là \"áo khoác\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "clothes"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"bánh mì kẹp\"**: **b u _ _ _ r**",
+            "choices": [
+              "rge",
+              "lge",
+              "gre",
+              "rga"
+            ],
+            "correct_answer": "rge",
+            "explanation": "Từ đầy đủ là **\"burger\"**, nghĩa là \"bánh mì kẹp\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"vở ghi\"**: **n o t _ _ o o k**",
+            "choices": [
+              "eb",
+              "ed",
+              "ep",
+              "ib"
+            ],
+            "correct_answer": "eb",
+            "explanation": "Từ đầy đủ là **\"notebook\"**, nghĩa là \"vở ghi\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"bóng đá\"**: **f o o t b a _ _**",
+            "choices": [
+              "lr",
+              "il",
+              "rl",
+              "ll"
+            ],
+            "correct_answer": "ll",
+            "explanation": "Từ đầy đủ là **\"football\"**, nghĩa là \"bóng đá\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"hiệu sách\"**: **b o _ _ s h o p**",
+            "choices": [
+              "ko",
+              "ox",
+              "oc",
+              "ok"
+            ],
+            "correct_answer": "ok",
+            "explanation": "Từ đầy đủ là **\"bookshop\"**, nghĩa là \"hiệu sách\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "street"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"quần jeans\"** được viết đúng là:",
+            "choices": [
+              "jeaus",
+              "geans",
+              "jeuns",
+              "jeans"
+            ],
+            "correct_answer": "jeans",
+            "explanation": "**\"jeans\"** nghĩa là \"quần jeans\", ghép bởi 5 chữ cái j-e-a-n-s.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "clothes"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"công viên\"** được viết đúng là:",
+            "choices": [
+              "park",
+              "pork",
+              "parc",
+              "pakr"
+            ],
+            "correct_answer": "park",
+            "explanation": "**\"park\"** nghĩa là \"công viên\", ghép bởi 4 chữ cái p-a-r-k.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "street"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"cái đuôi\"** được viết đúng là:",
+            "choices": [
+              "tall",
+              "tail",
+              "tair",
+              "teil"
+            ],
+            "correct_answer": "tail",
+            "explanation": "**\"tail\"** nghĩa là \"cái đuôi\", ghép bởi 4 chữ cái t-a-i-l.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "animals"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"áo sơ mi\"** được viết đúng là:",
+            "choices": [
+              "shird",
+              "shirt",
+              "shirf",
+              "shert"
+            ],
+            "correct_answer": "shirt",
+            "explanation": "**\"shirt\"** nghĩa là \"áo sơ mi\", ghép bởi 5 chữ cái s-h-i-r-t.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "clothes"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"tóc\"** được viết đúng là:",
+            "choices": [
+              "hair",
+              "ahir",
+              "kair",
+              "hari"
+            ],
+            "correct_answer": "hair",
+            "explanation": "**\"hair\"** nghĩa là \"tóc\", ghép bởi 4 chữ cái h-a-i-r.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "my-body"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"thảm nhỏ\"** được viết đúng là:",
+            "choices": [
+              "rug",
+              "nug",
+              "ruq",
+              "rog"
+            ],
+            "correct_answer": "rug",
+            "explanation": "**\"rug\"** nghĩa là \"thảm nhỏ\", ghép bởi 3 chữ cái r-u-g.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"phụ nữ\"** được viết đúng là:",
+            "choices": [
+              "wuman",
+              "woman",
+              "weman",
+              "womna"
+            ],
+            "correct_answer": "woman",
+            "explanation": "**\"woman\"** nghĩa là \"phụ nữ\", ghép bởi 5 chữ cái w-o-m-a-n.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"xe tải\"** được viết đúng là:",
+            "choices": [
+              "loryr",
+              "lrory",
+              "lorri",
+              "lorry"
+            ],
+            "correct_answer": "lorry",
+            "explanation": "**\"lorry\"** nghĩa là \"xe tải\", ghép bởi 5 chữ cái l-o-r-r-y.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "street"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"em bé\"** được viết đúng là:",
+            "choices": [
+              "abby",
+              "baby",
+              "babj",
+              "boby"
+            ],
+            "correct_answer": "baby",
+            "explanation": "**\"baby\"** nghĩa là \"em bé\", ghép bởi 4 chữ cái b-a-b-y.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"màu đen\"** được viết đúng là:",
+            "choices": [
+              "blacc",
+              "blakc",
+              "plack",
+              "black"
+            ],
+            "correct_answer": "black",
+            "explanation": "**\"black\"** nghĩa là \"màu đen\", ghép bởi 5 chữ cái b-l-a-c-k.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "colours"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "exam_number": 12,
+      "title": "Đề 12",
+      "duration_minutes": 15,
+      "questions": [
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"bàn\"**: **t a b _ _**",
+            "choices": [
+              "li",
+              "el",
+              "le",
+              "la"
+            ],
+            "correct_answer": "le",
+            "explanation": "Từ đầy đủ là **\"table\"**, nghĩa là \"bàn\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "home"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"đàn piano\"**: **p i _ _ o**",
+            "choices": [
+              "au",
+              "ar",
+              "en",
+              "an"
+            ],
+            "correct_answer": "an",
+            "explanation": "Từ đầy đủ là **\"piano\"**, nghĩa là \"đàn piano\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "sports"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"buổi sáng\"**: **m o r _ _ n g**",
+            "choices": [
+              "mi",
+              "ni",
+              "ri",
+              "ui"
+            ],
+            "correct_answer": "ni",
+            "explanation": "Từ đầy đủ là **\"morning\"**, nghĩa là \"buổi sáng\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "street"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"nói\"**: **s _ _ a k**",
+            "choices": [
+              "pe",
+              "ep",
+              "be",
+              "qe"
+            ],
+            "correct_answer": "pe",
+            "explanation": "Từ đầy đủ là **\"speak\"**, nghĩa là \"nói\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"đường phố\"**: **s _ _ _ e t**",
+            "choices": [
+              "tre",
+              "tne",
+              "tle",
+              "fre"
+            ],
+            "correct_answer": "tre",
+            "explanation": "Từ đầy đủ là **\"street\"**, nghĩa là \"đường phố\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "street"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"chạm / sờ\"**: **t _ _ c h**",
+            "choices": [
+              "oo",
+              "ou",
+              "uo",
+              "oa"
+            ],
+            "correct_answer": "ou",
+            "explanation": "Từ đầy đủ là **\"touch\"**, nghĩa là \"chạm / sờ\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"quả nho\"**: **g _ _ _ e s**",
+            "choices": [
+              "rab",
+              "rap",
+              "raq",
+              "nap"
+            ],
+            "correct_answer": "rap",
+            "explanation": "Từ đầy đủ là **\"grapes\"**, nghĩa là \"quả nho\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"củ khoai tây\"**: **p o _ _ t o**",
+            "choices": [
+              "at",
+              "ta",
+              "to",
+              "da"
+            ],
+            "correct_answer": "ta",
+            "explanation": "Từ đầy đủ là **\"potato\"**, nghĩa là \"củ khoai tây\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"đứa trẻ\"**: **c _ _ l d**",
+            "choices": [
+              "ki",
+              "ih",
+              "hi",
+              "he"
+            ],
+            "correct_answer": "hi",
+            "explanation": "Từ đầy đủ là **\"child\"**, nghĩa là \"đứa trẻ\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "family"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Điền các chữ cái còn thiếu để hoàn chỉnh từ tiếng Anh có nghĩa **\"củ hành tây\"**: **o _ _ o n**",
+            "choices": [
+              "nl",
+              "ni",
+              "in",
+              "ny"
+            ],
+            "correct_answer": "ni",
+            "explanation": "Từ đầy đủ là **\"onion\"**, nghĩa là \"củ hành tây\".",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"của chúng tôi\"** được viết đúng là:",
+            "choices": [
+              "oul",
+              "oun",
+              "eur",
+              "our"
+            ],
+            "correct_answer": "our",
+            "explanation": "**\"our\"** nghĩa là \"của chúng tôi\", ghép bởi 3 chữ cái o-u-r.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"bạn / cậu\"** được viết đúng là:",
+            "choices": [
+              "yuu",
+              "yoa",
+              "yuo",
+              "you"
+            ],
+            "correct_answer": "you",
+            "explanation": "**\"you\"** nghĩa là \"bạn / cậu\", ghép bởi 3 chữ cái y-o-u.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"mũ\"** được viết đúng là:",
+            "choices": [
+              "hat",
+              "nat",
+              "het",
+              "tah"
+            ],
+            "correct_answer": "hat",
+            "explanation": "**\"hat\"** nghĩa là \"mũ\", ghép bởi 3 chữ cái h-a-t.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "clothes"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"bánh ngọt\"** được viết đúng là:",
+            "choices": [
+              "cuke",
+              "sake",
+              "caka",
+              "cake"
+            ],
+            "correct_answer": "cake",
+            "explanation": "**\"cake\"** nghĩa là \"bánh ngọt\", ghép bởi 4 chữ cái c-a-k-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"ô tô\"** được viết đúng là:",
+            "choices": [
+              "cal",
+              "car",
+              "can",
+              "cra"
+            ],
+            "correct_answer": "car",
+            "explanation": "**\"car\"** nghĩa là \"ô tô\", ghép bởi 3 chữ cái c-a-r.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "street"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"có\"** được viết đúng là:",
+            "choices": [
+              "hove",
+              "have",
+              "nave",
+              "hava"
+            ],
+            "correct_answer": "have",
+            "explanation": "**\"have\"** nghĩa là \"có\", ghép bởi 4 chữ cái h-a-v-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"quả lê\"** được viết đúng là:",
+            "choices": [
+              "peer",
+              "peal",
+              "paar",
+              "pear"
+            ],
+            "correct_answer": "pear",
+            "explanation": "**\"pear\"** nghĩa là \"quả lê\", ghép bởi 4 chữ cái p-e-a-r.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"trang sách\"** được viết đúng là:",
+            "choices": [
+              "pgae",
+              "poge",
+              "qage",
+              "page"
+            ],
+            "correct_answer": "page",
+            "explanation": "**\"page\"** nghĩa là \"trang sách\", ghép bởi 4 chữ cái p-a-g-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "school"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"cơm/gạo\"** được viết đúng là:",
+            "choices": [
+              "nice",
+              "ryce",
+              "irce",
+              "rice"
+            ],
+            "correct_answer": "rice",
+            "explanation": "**\"rice\"** nghĩa là \"cơm/gạo\", ghép bởi 4 chữ cái r-i-c-e.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "food"
+            ]
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1,
+          "metadata_json": {
+            "question": "Từ tiếng Anh có nghĩa **\"của bạn\"** được viết đúng là:",
+            "choices": [
+              "youl",
+              "yoru",
+              "your",
+              "yoar"
+            ],
+            "correct_answer": "your",
+            "explanation": "**\"your\"** nghĩa là \"của bạn\", ghép bởi 4 chữ cái y-o-u-r.",
+            "retry_until_correct": true,
+            "tags": [
+              "spelling",
+              "level-1",
+              "basics"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -8,6 +8,7 @@ import { MatchPairRenderer } from './MatchPairRenderer';
 import { CategorizationRenderer } from './CategorizationRenderer';
 import { InlineFillBlankRenderer } from './InlineFillBlankRenderer';
 import { CrosswordRenderer } from './CrosswordRenderer';
+import { SpellBuilderRenderer } from './SpellBuilderRenderer';
 import { MathText } from './MathText';
 import { BookOpen } from 'lucide-react';
 
@@ -181,6 +182,19 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
             onWrongAttempt={() => playSound(false)}
           />
         );
+      case 'spell_builder': {
+        return (
+          <SpellBuilderRenderer
+            key={`sb-${currentIndex}`}
+            instruction={currentQuestion.question || currentQuestion.instruction || 'Ghép các chữ cái thành từ đúng:'}
+            letters={currentQuestion.letters || []}
+            letterPool={currentQuestion.letter_pool || currentQuestion.letterPool || []}
+            audioText={currentQuestion.audio_text || currentQuestion.audioText}
+            onAnswer={handleAnswer}
+            disabled={hasAnswered}
+          />
+        );
+      }
       case 'tap_word': {
         const words = currentQuestion.words || currentQuestion.choices || [];
         const correctWord = currentQuestion.correctWord || currentQuestion.correct_word || '';
