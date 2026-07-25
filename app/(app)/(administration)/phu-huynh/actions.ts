@@ -1089,6 +1089,85 @@ export async function createParentTask(input: CreateTaskInput) {
   return { success: true };
 }
 
+/**
+ * Giao ngay 1 đề cụ thể cho 1 học sinh, chỉ áp dụng cho hôm nay — dùng bởi nút "Giao ngay"
+ * trên trang /luyen-tap/[subject], khác với TaskWizard (lịch lặp lại nhiều ngày).
+ *
+ * parent_tasks.frequency chỉ nhận 'daily'|'weekdays'|'weekly' (CHECK constraint, migration
+ * 043) — không có 'once'. Tạo với is_active: false NGAY TỪ ĐẦU (không update sau) để RPC
+ * generate_daily_tasks_for_student (chạy mỗi khi học sinh vào dashboard, xem migration
+ * 043/046/047) bỏ qua record này ở các ngày tiếp theo — nếu để is_active: true, RPC sẽ tự
+ * sinh thêm daily_tasks cho cùng đề này vào các ngày sau, không đúng ý "chỉ giao hôm nay".
+ * daily_tasks của hôm nay được insert thủ công ngay trong action này, không qua RPC.
+ */
+export async function assignExamNow(studentId: string, examId: string) {
+  const adminClient = await getAdminClient(); // đã tự gọi checkParentAccess() bên trong
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return { error: "Unauthorized" };
+
+  const { data: examData, error: examErr } = await adminClient
+    .from("exams")
+    .select("id, title, collection:assessment_collections!inner(subject_slug)")
+    .eq("id", examId)
+    .single();
+
+  if (examErr || !examData) {
+    return { error: "Không tìm thấy đề này." };
+  }
+  const subjectSlug = (examData.collection as any)?.subject_slug;
+
+  const todayStr = new Date().toISOString().split("T")[0];
+
+  // Idempotent theo ngày: đề này đã giao cho học sinh này hôm nay chưa
+  const { data: existingDaily } = await adminClient
+    .from("daily_tasks")
+    .select("id")
+    .eq("student_id", studentId)
+    .eq("exam_id", examId)
+    .eq("task_date", todayStr)
+    .maybeSingle();
+
+  if (existingDaily) {
+    return { error: `Đề "${examData.title}" đã được giao cho học sinh này hôm nay rồi.` };
+  }
+
+  const { data: parentTask, error: taskErr } = await adminClient
+    .from("parent_tasks")
+    .insert({
+      parent_id: user.id,
+      student_id: studentId,
+      subject_slug: subjectSlug,
+      unit_numbers: [],
+      frequency: "daily",
+      active_days: [1, 2, 3, 4, 5, 6, 7],
+      exam_id: examId,
+      is_active: false,
+    })
+    .select("id")
+    .single();
+
+  if (taskErr || !parentTask) {
+    console.error("[assignExamNow] parent_tasks insert error:", taskErr);
+    return { error: taskErr?.message || "Không tạo được nhiệm vụ." };
+  }
+
+  const { error: dailyErr } = await adminClient.from("daily_tasks").insert({
+    task_id: parentTask.id,
+    student_id: studentId,
+    exam_id: examId,
+    task_date: todayStr,
+  });
+
+  if (dailyErr) {
+    console.error("[assignExamNow] daily_tasks insert error:", dailyErr);
+    return { error: dailyErr.message };
+  }
+
+  revalidatePath("/phu-huynh");
+  return { success: true, examTitle: examData.title };
+}
+
 /** Toggle active/inactive state of a task */
 export async function toggleParentTask(taskId: string, isActive: boolean) {
   const supabase = await createClient();

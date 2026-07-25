@@ -68,6 +68,12 @@
 - Học sinh nhìn thấy các `daily_tasks` này ở đâu: `getTodayTasks()`/`getPendingTasks()` (cùng
   file `actions.ts`) — dùng ở trang học sinh (`/dashboard` hoặc tương đương), KHÔNG phải trang
   phụ huynh này. Chỉ liệt kê ở đây để biết luồng dữ liệu đi đâu tiếp.
+- **Giao ngay từ trang luyện tập (2026-07-25):** ngoài `TaskWizard`, còn có nút "Giao ngay"
+  (`AssignNowButton.tsx`) đặt trực tiếp trên `/luyen-tap/[subject]` (không phải trang
+  `/phu-huynh` này) — cạnh mỗi dòng đề trong bảng, chỉ hiện khi `profiles.role` là
+  `parent`/`admin`. Bấm mở popover chọn học sinh, gọi action `assignExamNow(studentId,
+  examId)` tạo NGAY 1 `daily_tasks` cho hôm nay, không cần qua wizard 4 bước. Xem chi tiết kỹ
+  thuật ở mục 9 (2026-07-25).
 
 ## 5. Tab "Ngân hàng đề" (`ExamBankExplorer`)
 
@@ -113,8 +119,48 @@
 - [ ] Nếu thêm luồng học mới (môn/loại bài tập mới) sinh `learning_sessions`, áp dụng đúng
       pattern đo thời gian thật đã làm ở mục 7 — không quay lại kiểu `started_at = ended_at`
 - [ ] Cập nhật lại mục 3 sau khi có thay đổi về cách tính thống kê/streak
+- [ ] Nếu sửa `assignExamNow`/RPC `generate_daily_tasks_for_student`, đọc kỹ mục 9
+      (2026-07-25) trước — luật `is_active: false` ngay lúc tạo là bắt buộc, không phải tuỳ
+      chọn, nếu không RPC sẽ tự sinh thêm `daily_tasks` lặp lại ngoài ý muốn ở các ngày sau.
 
 ## 9. Lịch sử / ghi chú quan trọng
+
+- **2026-07-25 — Thêm nút "Giao ngay" trên trang luyện tập (`AssignNowButton` +
+  `assignExamNow`):** phụ huynh đang duyệt đề ở `/luyen-tap/[subject]` giờ giao được đúng đề
+  đang xem cho 1 học sinh ngay tại chỗ, không cần mở `TaskWizard` (4 bước, thiết kế cho lịch
+  lặp lại nhiều ngày).
+  **Vấn đề kỹ thuật cốt lõi:** `parent_tasks.frequency` chỉ nhận `'daily'|'weekdays'|'weekly'`
+  (CHECK constraint, migration 043) — không có giá trị `'once'`. Đồng thời RPC
+  `generate_daily_tasks_for_student` (migration 043/046/047) **tự chạy mỗi lần học sinh vào
+  dashboard**, và với mọi `parent_tasks` có `is_active = true`, nó tự sinh thêm 1
+  `daily_tasks` mới cho ngày đó nếu chưa có (dùng `exam_id` cố định nếu có, xem migration
+  046). Nếu tạo `parent_tasks` bình thường với `is_active: true` rồi để vậy, RPC sẽ tự lặp
+  lại giao đúng đề đó vào MỌI ngày sau — sai hoàn toàn ý "chỉ giao hôm nay".
+  **Giải pháp:** `assignExamNow(studentId, examId)` tạo `parent_tasks` với `is_active: false`
+  **ngay từ lúc INSERT** (không phải tạo `true` rồi update tắt sau — tránh cửa sổ race
+  hiếm khi RPC chạy đúng lúc giữa 2 bước) và `frequency: 'daily'` (giá trị hợp lệ, không có ý
+  nghĩa thực tế vì `is_active: false` đã chặn RPC từ đầu). `daily_tasks` của hôm nay được
+  insert thủ công ngay trong action, không dựa vào RPC. Vì `is_active: false`, task này
+  KHÔNG bị RPC đụng tới ở các ngày sau — nhưng vẫn hiện đầy đủ trong `ActiveTasksList` (tab
+  "Giao bài") vì `getMyParentTasks()` không filter theo `is_active`/`frequency`, chỉ hiện mờ
+  hơn (CSS opacity) và nút bật/tắt (`Power`/`PowerOff`) vẫn hoạt động bình thường nếu phụ
+  huynh muốn tự biến nó thành lịch lặp lại sau này.
+  **Vị trí nút:** trang `/luyen-tap/[subject]` (`app/(app)/(assessment)/luyen-tap/[subject]/page.tsx`)
+  có 2 nơi render dòng đề dùng chung 1 kiểu bảng — `ExamTable` (dùng cho tab lesson/review/
+  reflex) và bảng workbook riêng (tab "Luyện theo Sách bài tập") — nút được chèn vào CẢ HAI,
+  không phải chỉ 1 nơi. Trang vốn không biết role user (chỉ dùng ở học sinh lẫn phụ huynh) —
+  đã thêm 1 query `profiles.role` nhẹ, chạy song song với `loadData()` hiện có (không chặn
+  loading chính), chỉ hiện nút khi `role === 'parent' || role === 'admin'`.
+  **Verify độc lập (script tạm trong `scratch/`, không commit):** mô phỏng đúng logic
+  `assignExamNow` bằng admin client + gọi thẳng RPC `generate_daily_tasks_for_student` sau đó
+  — xác nhận số `daily_tasks` của task không tăng (RPC bỏ qua vì `is_active: false`), xác
+  nhận idempotent check hoạt động, xác nhận record hiện đúng khi đọc lại theo logic
+  `getMyParentTasks()` (tên đề, trạng thái `completed_at: null` = "Chưa làm").
+  **Giới hạn đã biết:** môi trường phát triển không có công cụ browser automation (Playwright
+  v.v.) khả dụng — đã verify bằng type-check sạch, `next build` production thành công (bắt
+  lỗi SSR/hydration), và giả lập toàn bộ luồng dữ liệu qua script độc lập, nhưng CHƯA tự tay
+  bấm thử UI thật trên trình duyệt. Nên tự test tay 1 lần trên UI thật trước khi coi là hoàn
+  tất (đặc biệt: vị trí popover khi cuộn trang, click-outside-to-close, hành vi trên mobile).
 
 - **2026-07-15 — Thêm tab "Hôm nay" + sửa tracking thời gian học thật:** trước đó
   `StudentHistoryCard` chỉ có 1 view "Lịch sử" dùng `started_at = ended_at` (ghi 1 lần lúc

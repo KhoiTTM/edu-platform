@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import clsx from "clsx";
 import { useParams, useSearchParams, useRouter } from "next/navigation";
 import { Sparkles, Star, ChevronRight, CheckCircle2, Play, Trophy, ChevronDown, ChevronUp } from "lucide-react";
+import { AssignNowButton } from "@/components/administration/parent/AssignNowButton";
 
 async function getAssessmentMap(subject: string, grade?: number) {
   const { createClient } = await import("@/lib/supabase/client");
@@ -95,6 +96,7 @@ export default function SubjectMapPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [isPickingRandom, setIsPickingRandom] = useState(false);
   const [timerLimit, setTimerLimit] = useState(60);
+  const [canAssignTasks, setCanAssignTasks] = useState(false);
 
   const subjectTitles: Record<string, string> = {
     tieng_anh: "Tiếng Anh",
@@ -124,6 +126,19 @@ export default function SubjectMapPage() {
         setIsLoading(false);
       }
       loadData();
+      // Query role riêng, không chặn loadData — chỉ để ẩn/hiện nút "Giao ngay" cho
+      // phụ huynh/admin. Không critical path nên không cần setIsLoading.
+      async function loadRole() {
+        try {
+          const { createClient } = await import("@/lib/supabase/client");
+          const supabase = createClient();
+          const { data: { user } } = await supabase.auth.getUser();
+          if (!user) return;
+          const { data: profile } = await supabase.from("profiles").select("role").eq("id", user.id).single();
+          if (profile?.role === "parent" || profile?.role === "admin") setCanAssignTasks(true);
+        } catch (e) {}
+      }
+      loadRole();
     }
     const handlePageShow = () => {
       try {
@@ -229,14 +244,17 @@ export default function SubjectMapPage() {
                     ? <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-[10px] font-black uppercase tracking-wider"><CheckCircle2 size={12} />Đã làm</span>
                     : <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-sky-500/10 border border-sky-500/30 text-sky-400 text-[10px] font-black uppercase tracking-wider"><Play size={12} />Sẵn sàng</span>}
                 </td>
-                <td className="px-6 py-4 text-center">
-                  <Link href={href} target={isExternal ? "_blank" : undefined} rel={isExternal ? "noopener noreferrer" : undefined}
-                    className={clsx("inline-flex items-center justify-center gap-1 px-4 py-1.5 rounded-xl font-black text-xs uppercase tracking-wide transition-all active:scale-95 duration-150",
-                      isExternal
-                        ? "bg-gradient-to-r from-violet-500 to-purple-600 hover:from-violet-400 hover:to-purple-500 text-white shadow-md shadow-purple-500/10"
-                        : isCompleted ? "border border-line text-slate-400 hover:bg-surface-raised hover:text-white" : "bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-md shadow-blue-500/10")}>
-                    {isExternal ? "Mở Flipbook" : isCompleted ? "Làm lại" : "Luyện tập"}
-                  </Link>
+                <td className="px-6 py-4">
+                  <div className="flex items-center justify-center gap-2 flex-wrap">
+                    <Link href={href} target={isExternal ? "_blank" : undefined} rel={isExternal ? "noopener noreferrer" : undefined}
+                      className={clsx("inline-flex items-center justify-center gap-1 px-4 py-1.5 rounded-xl font-black text-xs uppercase tracking-wide transition-all active:scale-95 duration-150",
+                        isExternal
+                          ? "bg-gradient-to-r from-violet-500 to-purple-600 hover:from-violet-400 hover:to-purple-500 text-white shadow-md shadow-purple-500/10"
+                          : isCompleted ? "border border-line text-slate-400 hover:bg-surface-raised hover:text-white" : "bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white shadow-md shadow-blue-500/10")}>
+                      {isExternal ? "Mở Flipbook" : isCompleted ? "Làm lại" : "Luyện tập"}
+                    </Link>
+                    {canAssignTasks && <AssignNowButton examId={exam.id} examTitle={exam.title} />}
+                  </div>
                 </td>
               </tr>
             );
@@ -369,11 +387,14 @@ export default function SubjectMapPage() {
                           <Star size={12} className="text-amber-400 fill-amber-400" />{exam.total_questions || "?"} Câu
                         </span>
                       </td>
-                      <td className="px-6 py-4 text-center">
-                        <Link href={href} className={clsx("inline-flex items-center justify-center gap-1 px-4 py-1.5 rounded-xl font-black text-xs uppercase tracking-wide transition-all active:scale-95 duration-150",
-                          isCompleted ? "border border-line text-slate-400 hover:bg-surface-raised hover:text-white" : "bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white shadow-md shadow-teal-500/10")}>
-                          {isCompleted ? "Làm lại" : "Luyện tập"}
-                        </Link>
+                      <td className="px-6 py-4">
+                        <div className="flex items-center justify-center gap-2 flex-wrap">
+                          <Link href={href} className={clsx("inline-flex items-center justify-center gap-1 px-4 py-1.5 rounded-xl font-black text-xs uppercase tracking-wide transition-all active:scale-95 duration-150",
+                            isCompleted ? "border border-line text-slate-400 hover:bg-surface-raised hover:text-white" : "bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white shadow-md shadow-teal-500/10")}>
+                            {isCompleted ? "Làm lại" : "Luyện tập"}
+                          </Link>
+                          {canAssignTasks && <AssignNowButton examId={exam.id} examTitle={exam.title} />}
+                        </div>
                       </td>
                     </tr>
                   );
