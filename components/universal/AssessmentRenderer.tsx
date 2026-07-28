@@ -8,6 +8,7 @@ import { MatchPairRenderer } from './MatchPairRenderer';
 import { CategorizationRenderer } from './CategorizationRenderer';
 import { InlineFillBlankRenderer } from './InlineFillBlankRenderer';
 import { CrosswordRenderer } from './CrosswordRenderer';
+import { FillBlankRenderer } from './FillBlankRenderer';
 import { SpellBuilderRenderer } from './SpellBuilderRenderer';
 import { MathText } from './MathText';
 import { BookOpen } from 'lucide-react';
@@ -168,6 +169,18 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
         // Fallback for simple fill_blank
         const mcQuestion = [currentQuestion.instruction, currentQuestion.question].filter(Boolean).join('\n');
         const mcChoices = currentQuestion.choices || [];
+        if (mcChoices.length === 0) {
+          const correctAnswer = currentQuestion.correct_answer || currentQuestion.correct_word || '';
+          return (
+            <FillBlankRenderer
+              key={`fb-${currentIndex}`}
+              question={mcQuestion}
+              correctAnswer={correctAnswer}
+              onAnswer={handleAnswer}
+              disabled={hasAnswered}
+            />
+          );
+        }
         const mcCorrectIndex = mcChoices.indexOf(currentQuestion.correct_word || currentQuestion.correct_answer);
         return (
           <MultipleChoiceRenderer
