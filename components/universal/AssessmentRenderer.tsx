@@ -15,7 +15,7 @@ import { BookOpen } from 'lucide-react';
 
 interface AssessmentRendererProps {
   questions: any[];
-  mode: 'practice' | 'quiz' | 'exam' | 'review' | 'challenge';
+  mode: 'practice' | 'quiz' | 'exam' | 'review' | 'challenge' | 'reflex';
   onComplete: (answers: any[]) => void;
   timerSeconds?: number;
   sourceBookUrl?: string;
