@@ -157,6 +157,7 @@ export function MultipleChoiceRenderer({
     if (initialized && (audioUrl || audioText)) {
       playAudio(audioUrl, audioText, voiceRole, speed);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [initialized, audioUrl, audioText]);
 
   const changeVoice = (newRole: string) => {
@@ -262,6 +263,7 @@ export function MultipleChoiceRenderer({
               dangerouslySetInnerHTML={{ __html: imageUrl }}
             />
           ) : (
+            // eslint-disable-next-line @next/next/no-img-element
             <img src={imageUrl} alt="Question Graphic" className="max-h-[300px] object-contain rounded-xl" />
           )}
         </div>

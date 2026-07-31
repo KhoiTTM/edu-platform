@@ -131,6 +131,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
     }, 1000);
 
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentIndex, timerSeconds, hasAnswered, mode]);
 
   const handleNext = () => {
@@ -491,6 +492,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
                     dangerouslySetInnerHTML={{ __html: essayImageUrl }}
                   />
                 ) : (
+                  // eslint-disable-next-line @next/next/no-img-element
                   <img src={essayImageUrl} alt="Hình vẽ minh họa" className="max-h-[300px] object-contain rounded-xl" />
                 )}
               </div>

@@ -69,7 +69,7 @@ export default function Unit3TextbookClient({ initialPage = 34, backUrl = "/hoc-
           .catch(err => console.error("Error saving textbook progress:", err));
       }
     };
-  }, [currentPageIndex, subjectSlug, unit3Pages]);
+  }, [currentPageIndex, subjectSlug]);
 
   // Initialize page-specific state
   useEffect(() => {

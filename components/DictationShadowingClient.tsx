@@ -64,7 +64,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
     fetchLesson();
   }, [lessonSlug]);
 
-  const sentences: SentenceItem[] = lessonData?.sentences || [];
+  const sentences: SentenceItem[] = useMemo(() => lessonData?.sentences || [], [lessonData?.sentences]);
   const youtubeVideoId = lessonData?.audio_url || "";
   const title = lessonData?.title || "";
   
@@ -104,13 +104,13 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
   // Lần 1: 0 offset (12.0s to 244.0s)
   // Lần 2: 230400ms offset (starts at ~245.76s in video)
   // Lần 3: 460800ms offset (starts at ~476.16s in video)
-  const getPlayOffsetSeconds = (activeStep: number): number => {
+  const getPlayOffsetSeconds = useCallback((activeStep: number): number => {
     const period = lessonData?.repeat_offset || 0;
     if (activeStep === 1) return 0;
     if (activeStep === 2) return period;
     if (activeStep === 3) return period * 2;
     return 0; // step 4 & 5 have custom offsets
-  };
+  }, [lessonData?.repeat_offset]);
 
   // Reset sentence specific states when shifting sentences
   const resetSentenceStates = () => {
@@ -237,6 +237,7 @@ export default function DictationShadowingClient({ backUrl = "/hoc-tap", lessonS
 
       recognitionRef.current = rec;
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentSentenceIndex]);
 
   // Handle Play/Pause

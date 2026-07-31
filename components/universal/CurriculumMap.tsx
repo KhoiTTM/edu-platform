@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import Link from "next/link";
 import { Star, Lock, CheckCircle2, Play, BookOpen, Crown, Gift, Sparkles } from "lucide-react";
 
@@ -35,30 +35,33 @@ export function CurriculumMap({ nodes, subjectSlug, completedNodes = [] }: Curri
   });
 
   // 2. Group nodes by Unit
-  const groups: { unit: PathNode; items: PathNode[] }[] = [];
-  let currentGroup: { unit: PathNode; items: PathNode[] } | null = null;
+  const groups = useMemo(() => {
+    const result: { unit: PathNode; items: PathNode[] }[] = [];
+    let currentGroup: { unit: PathNode; items: PathNode[] } | null = null;
 
-  nodes.forEach(node => {
-    if (node.type === 'unit') {
-      currentGroup = { unit: node, items: [] };
-      groups.push(currentGroup);
-    } else {
-      if (currentGroup) {
-        currentGroup.items.push(node);
+    nodes.forEach(node => {
+      if (node.type === 'unit') {
+        currentGroup = { unit: node, items: [] };
+        result.push(currentGroup);
       } else {
-        currentGroup = {
-          unit: { id: 'dummy', title: 'Khởi động', slug: 'start', type: 'unit' },
-          items: [node]
-        };
-        groups.push(currentGroup);
+        if (currentGroup) {
+          currentGroup.items.push(node);
+        } else {
+          currentGroup = {
+            unit: { id: 'dummy', title: 'Khởi động', slug: 'start', type: 'unit' },
+            items: [node]
+          };
+          result.push(currentGroup);
+        }
       }
-    }
-  });
+    });
+    return result;
+  }, [nodes]);
 
-  const getGroupCompletion = (g: typeof groups[0]) => {
+  const getGroupCompletion = useCallback((g: typeof groups[0]) => {
     if (g.items.length === 0) return completedNodes.includes(g.unit.slug);
     return g.items.every(item => completedNodes.includes(item.slug));
-  };
+  }, [completedNodes]);
 
   const [collapsedUnits, setCollapsedUnits] = useState<Record<string, boolean>>({});
   const [initialized, setInitialized] = useState(false);
