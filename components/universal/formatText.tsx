@@ -21,11 +21,14 @@ export function KaTeXSpan({ latex }: { latex: string }) {
 export function formatText(text: string): React.ReactNode {
   if (typeof text !== "string") return text;
 
-  const tokens = text.split(/(\$[^$]+\$|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g);
+  const tokens = text.split(/(\n|\$[^$]+\$|\*\*[^*]+\*\*|\*[^*]+\*|`[^`]+`)/g);
 
   return (
     <span>
       {tokens.map((token, i) => {
+        if (token === "\n") {
+          return <br key={i} />;
+        }
         if (token.startsWith("$") && token.endsWith("$")) {
           const latex = token.slice(1, -1);
           return <KaTeXSpan key={i} latex={latex} />;

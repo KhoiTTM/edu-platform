@@ -43,17 +43,13 @@
     lại file này** — DB đã có sẵn dữ liệu, seed lại sẽ tạo trùng exam.
   - Bài 1–7 (176 collections còn lại) vẫn **chưa có backup JSON** — rủi ro vẫn còn nguyên,
     xem mục 5.
+  - **LƯU Ý QUAN TRỌNG:** Toàn bộ dự án hiện tại đã thống nhất theo flow tạo đề bằng file JSON, seed lên DB và giữ lại file JSON làm backup. Các đề Toán 3 mới **BẮT BUỘC** phải tuân theo flow này.
 
 ## 3. Đặc thù riêng của môn
 
 - Loại câu hỏi hay dùng: `multiple_choice` (chủ yếu).
-- **Cách tạo đề: Procedural, không phải soạn JSON tay.** Các script như
-  `scripts/seed-math3-dynamic-assessments.ts`, `seed-math3-chapter1-assessments.ts`,
-  `seed-midterm-math3.ts` tự sinh câu hỏi bằng hàm code (VD `makeQuestion(qText, opts,
-  correctVal, expl)`), đáp án tính đúng bằng logic code nên luôn khớp, rồi `INSERT` thẳng qua
-  Supabase client — **không đọc/ghi file JSON nào**, không đi qua
-  `scripts/seed-exam-bank.ts`. Đây là cách "Procedural" được nhắc ở `exam_bank.md` mục "3
-  cách tạo file JSON", áp dụng triệt để nhất ở môn này.
+- **Cách tạo đề (Lịch sử):** Trước đây sử dụng cách Procedural. Các script như `seed-math3-dynamic-assessments.ts` tự sinh câu hỏi bằng code rồi `INSERT` thẳng qua Supabase client không qua JSON.
+- **Cách tạo đề (Hiện tại - BẮT BUỘC):** Mọi đề thi mới phải được **soạn bằng file JSON** lưu trong `content/exam-bank/toan3/` và nạp lên DB qua `scripts/seed-exam-bank.ts`. File JSON sau khi seed xong **phải được giữ lại** trong repo làm bản backup và đối chiếu.
 - Có `scripts/seed-svg-math3.ts`, `seed-svg-bulk-math3.ts` — sinh câu hỏi kèm hình minh hoạ
   SVG tự vẽ (không phải ảnh scan sách), phù hợp Toán tiểu học cần trực quan hình khối/đếm.
 - Có công thức toán (KaTeX)? Chủ yếu là số học đơn giản (cộng trừ nhân chia, hình học cơ bản
@@ -64,19 +60,11 @@
 
 ## 4. Việc cần làm khi mở rộng/sửa môn này
 
-- [ ] Đọc mục 2-3 ở trên trước khi thêm đề — môn này KHÔNG theo luồng "soạn JSON →
-      `seed-exam-bank.ts`" mặc định, cần xác định trước sẽ dùng cách nào (procedural giống
-      các bài cũ, hay chuyển sang soạn JSON chuẩn như các môn khác)
-- [ ] Nếu tiếp tục cách Procedural: viết script mới theo mẫu các file `seed-math3-*.ts` hiện
-      có, đảm bảo `title` được gán rõ ràng (không có trigger tự sinh, xem `exam_bank.md` mục
-      6b), và tự verify đáp án đúng bằng code trước khi insert
-    (không dựa vào AI tự đoán đáp án)
-- [ ] Nếu muốn chuyển sang soạn JSON chuẩn (dễ đối chiếu/backup hơn): soạn theo template ở
-      `exam_bank.md` mục 3, đặt trong `content/exam-bank/toan3/`, seed bằng
-      `scripts/seed-exam-bank.ts` — nhưng cân nhắc kỹ vì sẽ tạo 2 kiểu quản lý khác nhau trong
-      cùng 1 môn (phần cũ procedural, phần mới JSON)
-- [ ] Vì không có 1 nguồn JSON đầy đủ để đối chiếu, khi cần sửa lỗi nội dung phải sửa trực
-      tiếp qua Supabase (`question_bank.metadata_json`) — không có bản backup file để restore
+- [ ] **TUÂN THỦ QUY TRÌNH JSON:** Soạn đề mới dưới dạng file JSON chuẩn theo template ở `docs/EXAM_BANK.md` mục 3. Đặt file trong thư mục `content/exam-bank/toan3/`.
+- [ ] **SEED VÀO DB:** Chạy script (ví dụ: `scripts/seed-exam-bank.ts`) để nạp đề từ JSON lên Supabase.
+- [ ] **GIỮ LẠI FILE BACKUP:** Sau khi seed thành công và verify trên DB, **tuyệt đối không xoá file JSON**. Phải commit file này vào Git để làm bản backup và đối chiếu sau này.
+- [ ] **KHÔNG DÙNG PROCEDURAL CHO ĐỀ MỚI:** Dù các bài cũ dùng code tự sinh, nhưng định hướng toàn dự án hiện tại là quản lý nội dung qua JSON để đảm bảo an toàn dữ liệu. Không viết thêm các script `seed-math3-*.ts` đẩy trực tiếp nữa.
+- [ ] Khi cần sửa lỗi các câu hỏi Procedural cũ (không có JSON), đành phải sửa trực tiếp qua Supabase (`question_bank.metadata_json`). Tuy nhiên, với các đề mới, hãy sửa file JSON và cập nhật lại DB để đồng bộ.
 - [ ] Cập nhật lại mục 2 (trạng thái) trong chính file này sau khi seed thêm
 
 ## 5. Lịch sử / ghi chú quan trọng
