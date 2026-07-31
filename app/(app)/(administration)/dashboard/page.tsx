@@ -16,13 +16,14 @@ export default async function DashboardPage() {
   }
 
   // Fetch all dashboard data in parallel — including tasks to avoid waterfalls
-  const [profileRes, statsRes, sessionsRes, quizRes, todayTasks, pendingOldTasks] = await Promise.all([
+  const [profileRes, statsRes, sessionsRes, quizRes, todayTasks, pendingOldTasks, reflexColRes] = await Promise.all([
     supabase.from("profiles").select("grade, display_name").eq("id", user.id).single(),
     supabase.from("user_dashboard_stats").select("*").eq("user_id", user.id).single(),
     supabase.from("learning_sessions").select("*").eq("user_id", user.id).order("started_at", { ascending: false }).limit(20),
     supabase.from("quiz_attempts").select("id, score, total, created_at, quizzes(title, lessons(subject_slug))").eq("user_id", user.id).order("created_at", { ascending: false }).limit(20),
     getTodayTasks(),
     getPendingTasks(),
+    supabase.from('assessment_collections').select('exams(id)').eq('subject_slug', 'pre-a1-starter').eq('title', 'Phản xạ Từ vựng Cơ bản').maybeSingle()
   ]);
 
   const profile = profileRes.data;
@@ -32,6 +33,12 @@ export default async function DashboardPage() {
 
   const grade = profile?.grade ?? 3;
   const firstName = profile?.display_name?.split(/\s+/)[0] ?? "bạn";
+
+  let randomVocabReflexExamId = null;
+  if (reflexColRes.data?.exams && (reflexColRes.data.exams as any[]).length > 0) {
+    const exams = reflexColRes.data.exams as any[];
+    randomVocabReflexExamId = exams[Math.floor(Math.random() * exams.length)].id;
+  }
 
   const allActivities: any[] = [];
 
@@ -201,6 +208,24 @@ export default async function DashboardPage() {
           />
         </div>
       </div>
+
+      {grade === 3 && randomVocabReflexExamId && (
+        <div className="shrink-0 mb-1 bg-gradient-to-r from-orange-500 to-rose-600 rounded-3xl p-5 flex flex-col md:flex-row items-center justify-between gap-4 shadow-[0_8px_32px_rgba(244,63,94,0.3)] border border-rose-400/20">
+          <div className="flex items-center gap-4 text-center md:text-left">
+            <div className="w-12 h-12 shrink-0 bg-white/20 rounded-xl flex items-center justify-center text-2xl shadow-inner backdrop-blur-sm border border-white/20">
+              ⚡
+            </div>
+            <div>
+              <h3 className="text-white font-black text-[1.1rem] drop-shadow-sm uppercase tracking-wider">Phản xạ Từ vựng Cơ bản</h3>
+              <p className="text-white/80 font-bold text-xs mt-0.5">Vào nhanh một đề ngẫu nhiên để rèn luyện phản xạ (5 giây/câu).</p>
+            </div>
+          </div>
+          <Link href={`/test-assessment?examId=${randomVocabReflexExamId}&timer=5`}
+                className="px-6 py-3 shrink-0 w-full md:w-auto text-center bg-white text-rose-600 font-black rounded-xl text-sm shadow-md hover:scale-[1.02] active:scale-95 transition-all">
+            Luyện tập ngay
+          </Link>
+        </div>
+      )}
 
       {/* 2. Main Layout Grid (fills remaining height) */}
       <div className="grid gap-4 lg:grid-cols-12 flex-1 min-h-0">
