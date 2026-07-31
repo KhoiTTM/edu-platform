@@ -1,0 +1,252 @@
+{
+  "collection": {
+    "title": "Toán 3 - Kiểm Tra Cuối Kỳ 1 - Đề 08",
+    "subject_slug": "toan",
+    "grade": 3,
+    "volume": 1,
+    "units": [
+      102
+    ],
+    "sequence_number": 8,
+    "exam_type": "final",
+    "reference_book": "Kết nối tri thức với cuộc sống",
+    "status": "published"
+  },
+  "exams": [
+    {
+      "exam_number": 1,
+      "title": "Đề số 08",
+      "duration_minutes": 40,
+      "questions": [
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.0,
+          "metadata_json": {
+            "question": "Số 'Ba trăm linh bảy' được viết là:",
+            "options": [
+              "703",
+              "307",
+              "370",
+              "37"
+            ],
+            "correct_index": 1,
+            "explanation": "Số 'Ba trăm linh bảy' có chữ số hàng trăm là 3, hàng chục là 0, hàng đơn vị là 7. Do đó viết là 307."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.0,
+          "metadata_json": {
+            "question": "Số lớn nhất trong các số: 947, 708, 440, 475 là:",
+            "options": [
+              "475",
+              "947",
+              "708",
+              "440"
+            ],
+            "correct_index": 1,
+            "explanation": "Trong các số đã cho, 947 là số có giá trị lớn nhất."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Kết quả của phép tính 180 x 5 là:",
+            "options": [
+              "1000",
+              "890",
+              "900",
+              "910"
+            ],
+            "correct_index": 2,
+            "explanation": "Ta đặt tính hoặc tính nhẩm: 180 x 5 = 900."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Kết quả của phép chia 450 : 9 là:",
+            "options": [
+              "60",
+              "500",
+              "5",
+              "50"
+            ],
+            "correct_index": 3,
+            "explanation": "Ta có 45 : 9 = 5. Vậy 450 : 9 = 50."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.3,
+          "metadata_json": {
+            "question": "Tính giá trị của biểu thức: 60 - 10 x 2",
+            "options": [
+              "50",
+              "40",
+              "30",
+              "100"
+            ],
+            "correct_index": 1,
+            "explanation": "Trong biểu thức có cả phép trừ và phép nhân, ta thực hiện phép nhân trước, phép trừ sau:\n60 - 10 x 2\n= 60 - 20\n= 40.",
+            "hint": "Biểu thức có phép nhân và phép trừ, ta ưu tiên làm phép tính nào trước?"
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.2,
+          "metadata_json": {
+            "question": "Điền số thích hợp vào chỗ chấm: 3 m 8 cm = ... cm",
+            "options": [
+              "380",
+              "3008",
+              "38",
+              "308"
+            ],
+            "correct_index": 3,
+            "explanation": "Ta có 3 m = 300 cm. Vậy 3 m 8 cm = 300 cm + 8 cm = 308 cm."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.0,
+          "metadata_json": {
+            "question": "Hai túi đường cân nặng tổng cộng 1 kg. Túi thứ nhất nặng 800 g. Hỏi túi thứ hai nặng bao nhiêu gam?",
+            "options": [
+              "200 g",
+              "800 g",
+              "20 g",
+              "1800 g"
+            ],
+            "correct_index": 0,
+            "explanation": "Ta đổi 1 kg = 1000 g.\nTúi thứ hai nặng là: 1000 - 800 = 200 (g)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.1,
+          "metadata_json": {
+            "question": "Biết 400 ml + 600 ml = ... lít. Số thích hợp điền vào chỗ chấm là:",
+            "options": [
+              "10",
+              "1000",
+              "100",
+              "1"
+            ],
+            "correct_index": 3,
+            "explanation": "Ta có 400 ml + 600 ml = 1000 ml. Mà 1000 ml = 1 lít. Vậy số cần điền là 1."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Hình dưới đây có bao nhiêu góc vuông?\n\n",
+            "image_url": "<svg viewBox=\"0 0 200 150\" width=\"200\" height=\"150\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M50 20 L50 120 L150 120 L50 20\" fill=\"#e0f7fa\" stroke=\"#006064\" stroke-width=\"2\"/><path d=\"M50 105 L65 105 L65 120\" fill=\"none\" stroke=\"#006064\" stroke-width=\"2\"/></svg>",
+            "options": [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            "correct_index": 0,
+            "explanation": "Hình vẽ là một tam giác vuông, có đúng 1 góc vuông (góc ở phía dưới bên trái)."
+          }
+        },
+        {
+          "type": "multiple_choice",
+          "difficulty": 1.2,
+          "metadata_json": {
+            "question": "M là trung điểm của đoạn thẳng AB. Biết AB = 18 cm. Hỏi độ dài đoạn thẳng AM là bao nhiêu?",
+            "options": [
+              "9 cm",
+              "10 cm",
+              "18 cm",
+              "36 cm"
+            ],
+            "correct_index": 0,
+            "explanation": "M là trung điểm của AB nên AM = MB = AB : 2. Vậy AM = 18 : 2 = 9 (cm)."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Thực hiện phép tính sau:\n86 x 4 = ___\n",
+            "choices": [
+              "354",
+              "334",
+              "348",
+              "344"
+            ],
+            "correct_answer": "344",
+            "explanation": "Ta đặt tính: 86 x 4 = 344."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Một miếng bìa hình vuông có cạnh là 22 cm. Tính chu vi của miếng bìa hình vuông đó.\n\nChu vi của miếng bìa là: ___ cm",
+            "choices": [
+              "88",
+              "44",
+              "66",
+              "92"
+            ],
+            "correct_answer": "88",
+            "explanation": "Chu vi hình vuông bằng cạnh nhân 4.\nChu vi miếng bìa là: 22 x 4 = 88 (cm)."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Tính chu vi hình chữ nhật có kích thước như hình vẽ dưới đây:\n\nChu vi của hình chữ nhật là: ___ cm",
+            "image_url": "<svg viewBox=\"0 0 200 120\" width=\"200\" height=\"120\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"10\" y=\"10\" width=\"180\" height=\"100\" fill=\"#f3e5f5\" stroke=\"#4a148c\" stroke-width=\"2\"/><text x=\"100\" y=\"30\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\" fill=\"#fff\">12 cm</text><text x=\"30\" y=\"60\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\" fill=\"#fff\">5 cm</text></svg>",
+            "choices": [
+              "60",
+              "68",
+              "17",
+              "34"
+            ],
+            "correct_answer": "34",
+            "explanation": "Chiều dài là 12 cm, chiều rộng là 5 cm.\nChu vi hình chữ nhật là: (12 + 5) x 2 = 17 x 2 = 34 (cm)."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 1.5,
+          "metadata_json": {
+            "question": "Lan mua 6 quyển vở, mỗi quyển giá 4000 đồng. Hỏi Lan phải trả bao nhiêu nghìn đồng?\n(Ghi số nghìn đồng, ví dụ: 10000 đồng thì ghi là 10)\n\nLan phải trả: ___ nghìn đồng",
+            "choices": [
+              "10",
+              "29",
+              "24",
+              "24000"
+            ],
+            "correct_answer": "24",
+            "explanation": "Số tiền Lan phải trả là:\n4000 x 6 = 24000 (đồng)\n24000 đồng tương đương 24 nghìn đồng. Đáp số: 24."
+          }
+        },
+        {
+          "type": "fill_blank",
+          "difficulty": 2.0,
+          "metadata_json": {
+            "question": "Thùng thứ nhất có 160 lít dầu. Thùng thứ hai có số dầu gấp 4 lần thùng thứ nhất. Hỏi cả hai thùng có tất cả bao nhiêu lít dầu?\n\nCả hai thùng có tất cả: ___ lít dầu",
+            "choices": [
+              "164",
+              "640",
+              "810",
+              "800"
+            ],
+            "correct_answer": "800",
+            "explanation": "Số dầu ở thùng thứ hai là:\n160 x 4 = 640 (lít)\nCả hai thùng có tất cả số dầu là:\n160 + 640 = 800 (lít)\nĐáp số: 800."
+          }
+        }
+      ]
+    }
+  ]
+}
