@@ -222,9 +222,9 @@ function AssessmentContent() {
           {!completed ? (
             <AssessmentRenderer
               questions={questions}
-              mode="quiz"
+              mode={examType === 'reflex' ? 'reflex' : 'quiz'}
               onComplete={handleComplete}
-              timerSeconds={customTimer || (examType === 'reflex' ? 60 : undefined)}
+              timerSeconds={customTimer || (examType === 'reflex' ? 10 : undefined)}
             />
           ) : (
             <AssessmentResultCard

@@ -95,7 +95,7 @@ export default function SubjectMapPage() {
   const [collapsedReflex, setCollapsedReflex] = useState<Record<string, boolean>>({});
   const [isLoading, setIsLoading] = useState(true);
   const [isPickingRandom, setIsPickingRandom] = useState(false);
-  const [timerLimit, setTimerLimit] = useState(60);
+  const [timerLimit, setTimerLimit] = useState<number | null>(null);
   const [canAssignTasks, setCanAssignTasks] = useState(false);
 
   const subjectTitles: Record<string, string> = {
@@ -459,22 +459,33 @@ export default function SubjectMapPage() {
             <div className="mb-8 p-6 rounded-3xl bg-surface/60 border border-line backdrop-blur-sm shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
               <div>
                 <h3 className="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-rose-400">⏱️ CÀI ĐẶT THỜI GIAN PHẢN XẠ</h3>
-                <p className="text-xs text-slate-400 mt-1 font-bold">Chọn giới hạn thời gian làm bài cho mỗi câu hỏi. Mặc định là 60 giây.</p>
+                <p className="text-xs text-slate-400 mt-1 font-bold">Chọn giới hạn thời gian làm bài cho mỗi câu hỏi. Mặc định chung là 10 giây.</p>
               </div>
               <div className="flex items-center gap-2 bg-slate-950 p-1.5 rounded-2xl border border-line">
-                {[10, 20, 30, 60].map((time) => (
+                {[5, 10, 20, 30, 60].map((time) => {
+                  const isSelected = timerLimit === time || (timerLimit === null && time === 10);
+                  return (
                   <button key={time} onClick={() => setTimerLimit(time)}
                     className={clsx("px-4 py-2 rounded-xl text-xs font-black transition-all select-none duration-150 active:scale-95",
-                      timerLimit === time ? "bg-gradient-to-r from-orange-500 to-rose-600 text-white shadow-md shadow-rose-500/20" : "text-slate-400 hover:text-white")}>
+                      isSelected ? "bg-gradient-to-r from-orange-500 to-rose-600 text-white shadow-md shadow-rose-500/20" : "text-slate-400 hover:text-white")}>
                     {time} giây
                   </button>
-                ))}
+                  );
+                })}
               </div>
             </div>
             {reflexes.map((vol: any) => {
               const reflexKey = `reflex-${vol.id ?? vol.volume}`;
               const isReflexCollapsed = collapsedReflex[reflexKey] !== false;
               const doneCount = (vol.exams || []).filter((e: any) => completedExams.includes(e.id)).length;
+              
+              const getEffectiveTimer = () => {
+                if (timerLimit !== null) return timerLimit;
+                if (vol.title === "Phản xạ Từ vựng Cơ bản") return 5;
+                return 10;
+              };
+              const effectiveTimer = getEffectiveTimer();
+
               return (
                 <div key={vol.id ?? reflexKey} className="mb-10">
                   {/* Header card — click to toggle */}
@@ -491,7 +502,7 @@ export default function SubjectMapPage() {
                         {doneCount}/{(vol.exams || []).length} Đề
                       </div>
                       <button
-                        onClick={(e) => { e.stopPropagation(); pickRandom(vol.exams, timerLimit); }}
+                        onClick={(e) => { e.stopPropagation(); pickRandom(vol.exams, effectiveTimer); }}
                         disabled={isPickingRandom}
                         className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-white text-rose-600 font-extrabold text-xs shadow-lg transition-all active:scale-95 disabled:opacity-50 hover:bg-slate-50">
                         <Sparkles size={14} className="animate-pulse" />
@@ -511,7 +522,9 @@ export default function SubjectMapPage() {
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.25 }}
                         className="overflow-hidden">
-                        <ExamTable exams={vol.exams} timer={timerLimit} />
+                        <div className="mt-4 pt-4 border-t border-line">
+                          <ExamTable exams={vol.exams} timer={effectiveTimer} />
+                        </div>
                       </motion.div>
                     )}
                   </AnimatePresence>

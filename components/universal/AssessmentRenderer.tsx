@@ -9,6 +9,7 @@ import { CategorizationRenderer } from './CategorizationRenderer';
 import { InlineFillBlankRenderer } from './InlineFillBlankRenderer';
 import { CrosswordRenderer } from './CrosswordRenderer';
 import { SpellBuilderRenderer } from './SpellBuilderRenderer';
+import { ReflexFlashcardRenderer } from './ReflexFlashcardRenderer';
 import { MathText } from './MathText';
 import { BookOpen } from 'lucide-react';
 
@@ -30,6 +31,18 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
   const [timeLeft, setTimeLeft] = useState<number>(timerSeconds || 0);
 
   const currentQuestion = questions[currentIndex];
+
+  const tickAudioRef = useRef<HTMLAudioElement | null>(null);
+
+  const playTickFile = (url: string) => {
+    if (typeof window === 'undefined') return;
+    if (tickAudioRef.current) {
+      tickAudioRef.current.pause();
+    }
+    const audio = new Audio(url);
+    tickAudioRef.current = audio;
+    audio.play().catch(e => console.log('Audio blocked:', e));
+  };
 
   const playSound = (isCorrect: boolean) => {
     try {
@@ -76,14 +89,41 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
   };
 
   useEffect(() => {
-    if (!timerSeconds || hasAnswered) return;
+    if (!timerSeconds || hasAnswered) {
+      if (tickAudioRef.current) {
+        tickAudioRef.current.pause();
+        tickAudioRef.current = null;
+      }
+      return;
+    }
     
     setTimeLeft(timerSeconds);
+
+    if (mode === 'reflex') {
+       if (timerSeconds === 5) {
+          playTickFile('/audio/sound/tick-5s.mp3');
+       } else if (timerSeconds >= 10) {
+          playTickFile('/audio/sound/tick-10s.mp3');
+       }
+    }
+
     const interval = setInterval(() => {
       setTimeLeft((prev) => {
+        if (mode === 'reflex') {
+           if (prev === 11) {
+              playTickFile('/audio/sound/tick-10s.mp3');
+           } else if (prev === 6) {
+              playTickFile('/audio/sound/tick-5s.mp3');
+           }
+        }
+        
         if (prev <= 1) {
           clearInterval(interval);
           handleAnswer(false, "timeout");
+          if (tickAudioRef.current) {
+             tickAudioRef.current.pause();
+             tickAudioRef.current = null;
+          }
           return 0;
         }
         return prev - 1;
@@ -91,7 +131,7 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [currentIndex, timerSeconds, hasAnswered]);
+  }, [currentIndex, timerSeconds, hasAnswered, mode]);
 
   const handleNext = () => {
     if (currentIndex < questions.length - 1) {
@@ -107,6 +147,37 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
   if (!currentQuestion) return null;
 
   const renderQuestion = () => {
+    if (mode === 'reflex') {
+      const options = currentQuestion.options && typeof currentQuestion.options[0] === 'object'
+        ? currentQuestion.options.map((o: any) => o.text || o.content || JSON.stringify(o))
+        : currentQuestion.options || currentQuestion.choices || [];
+      const correctIdx = currentQuestion.correct_index !== undefined 
+        ? currentQuestion.correct_index 
+        : currentQuestion.options && typeof currentQuestion.options[0] === 'object'
+          ? currentQuestion.options.findIndex((o: any) => o.is_correct || o.isCorrect)
+          : options.indexOf(currentQuestion.correctOption || currentQuestion.correct_answer || currentQuestion.correct_word);
+          
+      const correctAnswer = options[correctIdx] || "";
+      
+      // Bắt buộc chỉ lấy 1 chữ cái đầu tiên và ẩn phần còn lại, bỏ qua hint từ DB
+      let hint = "";
+      if (correctAnswer) {
+         hint = correctAnswer[0] + ' ' + '_ '.repeat(correctAnswer.length - 1).trim();
+      }
+
+      return (
+        <ReflexFlashcardRenderer
+          key={`reflex-${currentIndex}`}
+          question={currentQuestion.question || currentQuestion.instruction || currentQuestion.metadata_json?.question}
+          correctAnswer={correctAnswer}
+          hint={hint}
+          onNext={handleNext}
+          disabled={hasAnswered}
+          audioText={currentQuestion.audio_text || currentQuestion.metadata_json?.audio_text || (correctAnswer.match(/^[a-zA-Z\s]+$/) ? correctAnswer : undefined)}
+        />
+      );
+    }
+
     switch (currentQuestion.type) {
       case 'multiple_choice':
       case 'listening_multiple_choice':
