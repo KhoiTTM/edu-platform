@@ -172,7 +172,7 @@ function AssessmentContent() {
     );
   }
 
-  const bookDriveId = extractDriveFileId(BOOK_SOURCE_URLS[subjectSlug]);
+  const bookDriveId = examType !== 'reflex' ? extractDriveFileId(BOOK_SOURCE_URLS[subjectSlug]) : null;
   const pageRange = units.length > 0 ? getBookPageRange(subjectSlug, units[0]) : null;
 
   return (

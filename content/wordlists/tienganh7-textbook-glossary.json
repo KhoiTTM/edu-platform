@@ -1,0 +1,1532 @@
+{
+  "Unit 1": [
+    {
+      "word": "belong to",
+      "pos": "v",
+      "ipa": "/bɪˈlɒŋ tuː/",
+      "meaning": "thuộc về"
+    },
+    {
+      "word": "benefit",
+      "pos": "n",
+      "ipa": "/ˈbenɪfɪt/",
+      "meaning": "lợi ích"
+    },
+    {
+      "word": "bug",
+      "pos": "n",
+      "ipa": "/bʌɡ/",
+      "meaning": "con bọ"
+    },
+    {
+      "word": "cardboard",
+      "pos": "n",
+      "ipa": "/ˈkɑːdbɔːd/",
+      "meaning": "bìa các tông"
+    },
+    {
+      "word": "dollhouse",
+      "pos": "n",
+      "ipa": "/ˈdɒlhaʊs/",
+      "meaning": "nhà búp bê"
+    },
+    {
+      "word": "gardening",
+      "pos": "v, n",
+      "ipa": "/ˈɡɑːdnɪŋ/",
+      "meaning": "làm vườn"
+    },
+    {
+      "word": "glue",
+      "pos": "n",
+      "ipa": "/ɡluː/",
+      "meaning": "keo dán, hồ"
+    },
+    {
+      "word": "horse riding",
+      "pos": "n",
+      "ipa": "/ˈhɔːs ˈraɪdɪŋ/",
+      "meaning": "cưỡi ngựa"
+    },
+    {
+      "word": "insect",
+      "pos": "n",
+      "ipa": "/ˈɪnsekt/",
+      "meaning": "côn trùng"
+    },
+    {
+      "word": "jogging",
+      "pos": "n",
+      "ipa": "/ˈdʒɒɡɪŋ/",
+      "meaning": "chạy bộ"
+    },
+    {
+      "word": "making models",
+      "pos": "n",
+      "ipa": "/ˈmeɪkɪŋ ˈmɒdlz/",
+      "meaning": "làm mô hình"
+    },
+    {
+      "word": "maturity",
+      "pos": "n",
+      "ipa": "/məˈtʃʊərəti/",
+      "meaning": "sự trưởng thành"
+    },
+    {
+      "word": "patient",
+      "pos": "adj",
+      "ipa": "/ˈpeɪʃnt/",
+      "meaning": "kiên nhẫn"
+    },
+    {
+      "word": "popular",
+      "pos": "adj",
+      "ipa": "/ˈpɒpjʊlə(r)/",
+      "meaning": "được nhiều người ưa thích"
+    },
+    {
+      "word": "responsibility",
+      "pos": "n",
+      "ipa": "/rɪˌspɒnsəˈbɪləti/",
+      "meaning": "sự chịu trách nhiệm"
+    },
+    {
+      "word": "set",
+      "pos": "v",
+      "ipa": "/set/",
+      "meaning": "(mặt trời) lặn"
+    },
+    {
+      "word": "stress",
+      "pos": "n",
+      "ipa": "/stres/",
+      "meaning": "sự căng thẳng"
+    },
+    {
+      "word": "take on",
+      "pos": "v",
+      "ipa": "/teɪk ɒn/",
+      "meaning": "nhận thêm"
+    },
+    {
+      "word": "unusual",
+      "pos": "adj",
+      "ipa": "/ʌnˈjuːʒuəl/",
+      "meaning": "khác thường"
+    },
+    {
+      "word": "valuable",
+      "pos": "adj",
+      "ipa": "/ˈvæljuəbl/",
+      "meaning": "quý giá"
+    },
+    {
+      "word": "yoga",
+      "pos": "n",
+      "ipa": "/ˈjəʊɡə/",
+      "meaning": "yoga"
+    }
+  ],
+  "Unit 2": [
+    {
+      "word": "acne",
+      "pos": "n",
+      "ipa": "/ˈækni/",
+      "meaning": "mụn trứng cá"
+    },
+    {
+      "word": "affect",
+      "pos": "v",
+      "ipa": "/əˈfekt/",
+      "meaning": "tác động, ảnh hưởng đến"
+    },
+    {
+      "word": "avoid",
+      "pos": "v",
+      "ipa": "/əˈvɔɪd/",
+      "meaning": "tránh"
+    },
+    {
+      "word": "chapped",
+      "pos": "adj",
+      "ipa": "/tʃæpt/",
+      "meaning": "bị nứt nẻ, hiện tượng nứt nẻ (trên da)"
+    },
+    {
+      "word": "dim",
+      "pos": "adj",
+      "ipa": "/dɪm/",
+      "meaning": "lờ mờ, không đủ sáng"
+    },
+    {
+      "word": "disease",
+      "pos": "n",
+      "ipa": "/dɪˈziːz/",
+      "meaning": "bệnh"
+    },
+    {
+      "word": "eyedrops",
+      "pos": "n",
+      "ipa": "/ˈaɪdrɒps/",
+      "meaning": "thuốc nhỏ mắt"
+    },
+    {
+      "word": "fat",
+      "pos": "n",
+      "ipa": "/fæt/",
+      "meaning": "mỡ"
+    },
+    {
+      "word": "fit",
+      "pos": "adj",
+      "ipa": "/fɪt/",
+      "meaning": "gọn gàng, cân đối"
+    },
+    {
+      "word": "health",
+      "pos": "n",
+      "ipa": "/helθ/",
+      "meaning": "sức khỏe"
+    },
+    {
+      "word": "healthy",
+      "pos": "adj",
+      "ipa": "/ˈhelθi/",
+      "meaning": "khỏe mạnh, lành mạnh"
+    },
+    {
+      "word": "indoor",
+      "pos": "adj",
+      "ipa": "/ˈɪndɔː(r)/",
+      "meaning": "trong nhà"
+    },
+    {
+      "word": "lip balm",
+      "pos": "n",
+      "ipa": "/lɪp bɑːm/",
+      "meaning": "kem bôi môi (chống nứt nẻ)"
+    },
+    {
+      "word": "pimple",
+      "pos": "n",
+      "ipa": "/ˈpɪmpl/",
+      "meaning": "mụn"
+    },
+    {
+      "word": "pop",
+      "pos": "v",
+      "ipa": "/pɒp/",
+      "meaning": "nặn (mụn)"
+    },
+    {
+      "word": "protein",
+      "pos": "n",
+      "ipa": "/ˈprəʊtiːn/",
+      "meaning": "chất đạm"
+    },
+    {
+      "word": "skin condition",
+      "pos": "n",
+      "ipa": "/skɪn kənˈdɪʃn/",
+      "meaning": "tình trạng da"
+    },
+    {
+      "word": "soybean",
+      "pos": "n",
+      "ipa": "/ˈsɔɪbiːn/",
+      "meaning": "đậu nành"
+    },
+    {
+      "word": "sunburn",
+      "pos": "n",
+      "ipa": "/ˈsʌnbɜːn/",
+      "meaning": "sự cháy nắng"
+    },
+    {
+      "word": "tofu",
+      "pos": "n",
+      "ipa": "/ˈtəʊfuː/",
+      "meaning": "đậu phụ"
+    },
+    {
+      "word": "virus",
+      "pos": "n",
+      "ipa": "/ˈvaɪrəs/",
+      "meaning": "(con) virút"
+    },
+    {
+      "word": "vitamin",
+      "pos": "n",
+      "ipa": "/ˈvɪtəmɪn/",
+      "meaning": "vitamin"
+    }
+  ],
+  "Unit 3": [
+    {
+      "word": "board game",
+      "pos": "n",
+      "ipa": "/bɔːd ɡeɪm/",
+      "meaning": "trò chơi trên bàn cờ"
+    },
+    {
+      "word": "clean-up activity",
+      "pos": "n",
+      "ipa": "/kliːn ʌp ækˈtɪvəti/",
+      "meaning": "hoạt động dọn dẹp"
+    },
+    {
+      "word": "collect",
+      "pos": "v",
+      "ipa": "/kəˈlekt/",
+      "meaning": "thu thập, sưu tầm"
+    },
+    {
+      "word": "community",
+      "pos": "n",
+      "ipa": "/kəˈmjuːnəti/",
+      "meaning": "cộng đồng"
+    },
+    {
+      "word": "community service",
+      "pos": "n",
+      "ipa": "/kəˈmjuːnəti ˈsɜːvɪs/",
+      "meaning": "dịch vụ cộng đồng"
+    },
+    {
+      "word": "develop",
+      "pos": "v",
+      "ipa": "/dɪˈveləp/",
+      "meaning": "phát triển"
+    },
+    {
+      "word": "donate",
+      "pos": "v",
+      "ipa": "/dəʊˈneɪt/",
+      "meaning": "cho, tặng"
+    },
+    {
+      "word": "elderly",
+      "pos": "adj",
+      "ipa": "/ˈeldəli/",
+      "meaning": "lớn tuổi, cao tuổi"
+    },
+    {
+      "word": "exchange",
+      "pos": "v",
+      "ipa": "/ɪksˈtʃeɪndʒ/",
+      "meaning": "trao đổi"
+    },
+    {
+      "word": "flooded",
+      "pos": "adj",
+      "ipa": "/ˈflʌdɪd/",
+      "meaning": "bị lũ lụt"
+    },
+    {
+      "word": "homeless",
+      "pos": "adj",
+      "ipa": "/ˈhəʊmləs/",
+      "meaning": "vô gia cư, không có gia đình"
+    },
+    {
+      "word": "mountainous",
+      "pos": "adj",
+      "ipa": "/ˈmaʊntənəs/",
+      "meaning": "vùng núi"
+    },
+    {
+      "word": "nursing",
+      "pos": "n",
+      "ipa": "/ˈnɜːsɪŋ/",
+      "meaning": "chăm sóc điều dưỡng"
+    },
+    {
+      "word": "nursing home",
+      "pos": "n",
+      "ipa": "/ˈnɜːsɪŋ həʊm/",
+      "meaning": "viện dưỡng lão"
+    },
+    {
+      "word": "orphanage",
+      "pos": "n",
+      "ipa": "/ˈɔːfənɪdʒ/",
+      "meaning": "trại trẻ mồ côi"
+    },
+    {
+      "word": "plant",
+      "pos": "v",
+      "ipa": "/plɑːnt/",
+      "meaning": "trồng cây"
+    },
+    {
+      "word": "protect",
+      "pos": "v",
+      "ipa": "/prəˈtekt/",
+      "meaning": "bảo vệ"
+    },
+    {
+      "word": "proud",
+      "pos": "adj",
+      "ipa": "/praʊd/",
+      "meaning": "tự hào"
+    },
+    {
+      "word": "provide",
+      "pos": "v",
+      "ipa": "/prəˈvaɪd/",
+      "meaning": "cung cấp"
+    },
+    {
+      "word": "rural area",
+      "pos": "n",
+      "ipa": "/ˈrʊərəl ˈeəriə/",
+      "meaning": "vùng nông thôn"
+    },
+    {
+      "word": "skill",
+      "pos": "n",
+      "ipa": "/skɪl/",
+      "meaning": "kĩ năng"
+    },
+    {
+      "word": "teenager",
+      "pos": "n",
+      "ipa": "/ˈtiːneɪdʒə(r)/",
+      "meaning": "thanh thiếu niên"
+    },
+    {
+      "word": "tutor",
+      "pos": "v",
+      "ipa": "/ˈtjuːtə(r)/",
+      "meaning": "phụ đạo, dạy học"
+    },
+    {
+      "word": "volunteer",
+      "pos": "v, n",
+      "ipa": "/ˌvɒlənˈtɪə(r)/",
+      "meaning": "tình nguyện, người tình nguyện"
+    }
+  ],
+  "Unit 4": [
+    {
+      "word": "anthem",
+      "pos": "n",
+      "ipa": "/'ænθəm/",
+      "meaning": "bài quốc ca"
+    },
+    {
+      "word": "character",
+      "pos": "n",
+      "ipa": "/'kærəktə/",
+      "meaning": "nhân vật (trong phim, tác phẩm văn học...)"
+    },
+    {
+      "word": "compose",
+      "pos": "v",
+      "ipa": "/kəm'pəʊz/",
+      "meaning": "soạn, biên soạn"
+    },
+    {
+      "word": "composer",
+      "pos": "n",
+      "ipa": "/kəm'pəʊzə/",
+      "meaning": "nhà soạn nhạc, nhạc sĩ"
+    },
+    {
+      "word": "concert",
+      "pos": "n",
+      "ipa": "/'kɒnsət/",
+      "meaning": "buổi hoà nhạc"
+    },
+    {
+      "word": "control",
+      "pos": "v",
+      "ipa": "/kən'trəʊl/",
+      "meaning": "điều khiển"
+    },
+    {
+      "word": "country music",
+      "pos": "n",
+      "ipa": "/'kʌntri mju:zɪk/",
+      "meaning": "nhạc đồng quê"
+    },
+    {
+      "word": "exhibition",
+      "pos": "n",
+      "ipa": "/ˌeksɪ'bɪʃn/",
+      "meaning": "cuộc triển lãm"
+    },
+    {
+      "word": "folk music",
+      "pos": "n",
+      "ipa": "/'fəʊk mju:zɪk/",
+      "meaning": "nhạc dân gian, nhạc truyền thống"
+    },
+    {
+      "word": "gallery",
+      "pos": "n",
+      "ipa": "/'gæləri/",
+      "meaning": "phòng triển lãm tranh"
+    },
+    {
+      "word": "musical instrument",
+      "pos": "n",
+      "ipa": "/,mju:zɪkl 'ɪnstrəmənt/",
+      "meaning": "nhạc cụ"
+    },
+    {
+      "word": "originate",
+      "pos": "v",
+      "ipa": "/ə'rɪdʒɪneɪt/",
+      "meaning": "bắt nguồn, xuất phát từ"
+    },
+    {
+      "word": "perform",
+      "pos": "v",
+      "ipa": "/pə'fɔ:m/",
+      "meaning": "biểu diễn, trình diễn"
+    },
+    {
+      "word": "performance",
+      "pos": "n",
+      "ipa": "/pə'fɔ:məns/",
+      "meaning": "sự trình diễn, buổi biểu diễn"
+    },
+    {
+      "word": "photography",
+      "pos": "n",
+      "ipa": "/fə'tɒgrəfi/",
+      "meaning": "nhiếp ảnh"
+    },
+    {
+      "word": "portrait",
+      "pos": "n",
+      "ipa": "/'pɔ:trət/",
+      "meaning": "bức chân dung"
+    },
+    {
+      "word": "prefer",
+      "pos": "v",
+      "ipa": "/prɪ'fɜ:/",
+      "meaning": "thích hơn"
+    },
+    {
+      "word": "puppet",
+      "pos": "n",
+      "ipa": "/'pʌpɪt/",
+      "meaning": "con rối"
+    },
+    {
+      "word": "sculpture",
+      "pos": "n",
+      "ipa": "/'skʌlptʃə/",
+      "meaning": "điêu khắc, tác phẩm điêu khắc"
+    },
+    {
+      "word": "water puppetry",
+      "pos": "",
+      "ipa": "/'wɔ:tə 'pʌpɪtri/",
+      "meaning": "múa rối nước"
+    }
+  ],
+  "Unit 5": [
+    {
+      "word": "beef",
+      "pos": "n",
+      "ipa": "/bi:f/",
+      "meaning": "thịt bò"
+    },
+    {
+      "word": "butter",
+      "pos": "n",
+      "ipa": "/'bʌtə/",
+      "meaning": "bơ"
+    },
+    {
+      "word": "dish",
+      "pos": "n",
+      "ipa": "/dɪʃ/",
+      "meaning": "món ăn"
+    },
+    {
+      "word": "eel",
+      "pos": "n",
+      "ipa": "/i:l/",
+      "meaning": "con lươn"
+    },
+    {
+      "word": "flour",
+      "pos": "n",
+      "ipa": "/'flaʊə/",
+      "meaning": "bột"
+    },
+    {
+      "word": "fried",
+      "pos": "adj",
+      "ipa": "/fraɪd/",
+      "meaning": "được chiên / rán"
+    },
+    {
+      "word": "green tea",
+      "pos": "n",
+      "ipa": "/,gri:n 'ti:/",
+      "meaning": "chè xanh, trà xanh"
+    },
+    {
+      "word": "ingredient",
+      "pos": "n",
+      "ipa": "/ɪn'gri:diənt/",
+      "meaning": "thành phần (nguyên liệu để tạo một món ăn)"
+    },
+    {
+      "word": "juice",
+      "pos": "n",
+      "ipa": "/dʒu:s/",
+      "meaning": "nước ép (của quả, rau...)"
+    },
+    {
+      "word": "lemonade",
+      "pos": "n",
+      "ipa": "/,lemə'neɪd/",
+      "meaning": "nước chanh"
+    },
+    {
+      "word": "mineral water",
+      "pos": "n",
+      "ipa": "/'mɪnərəl 'wɔ:tə/",
+      "meaning": "nước khoáng"
+    },
+    {
+      "word": "noodles",
+      "pos": "n",
+      "ipa": "/'nu:dlz/",
+      "meaning": "mì, mì sợi, phở"
+    }
+  ],
+  "Unit 6": [
+    {
+      "word": "omelette",
+      "pos": "n",
+      "ipa": "/'ɒmlət/",
+      "meaning": "trứng tráng"
+    },
+    {
+      "word": "onion",
+      "pos": "n",
+      "ipa": "/'ʌnjən/",
+      "meaning": "củ hành"
+    },
+    {
+      "word": "pancake",
+      "pos": "n",
+      "ipa": "/'pæŋkeɪk/",
+      "meaning": "bánh kếp"
+    },
+    {
+      "word": "pepper",
+      "pos": "n",
+      "ipa": "/'pepə/",
+      "meaning": "hạt tiêu"
+    },
+    {
+      "word": "pie",
+      "pos": "n",
+      "ipa": "/paɪ/",
+      "meaning": "bánh nướng, bánh hấp"
+    },
+    {
+      "word": "pork",
+      "pos": "n",
+      "ipa": "/pɔ:k/",
+      "meaning": "thịt lợn"
+    },
+    {
+      "word": "recipe",
+      "pos": "n",
+      "ipa": "/'resɪpi/",
+      "meaning": "công thức làm món ăn"
+    },
+    {
+      "word": "roast",
+      "pos": "adj",
+      "ipa": "/rəʊst/",
+      "meaning": "(được) quay, nướng"
+    },
+    {
+      "word": "salt",
+      "pos": "n",
+      "ipa": "/sɔ:lt/",
+      "meaning": "muối"
+    },
+    {
+      "word": "sauce",
+      "pos": "n",
+      "ipa": "/sɔ:s/",
+      "meaning": "nước chấm, nước xốt"
+    },
+    {
+      "word": "shrimp",
+      "pos": "n",
+      "ipa": "/ʃrɪmp/",
+      "meaning": "con tôm"
+    },
+    {
+      "word": "soup",
+      "pos": "n",
+      "ipa": "/su:p/",
+      "meaning": "xúp, canh, cháo"
+    },
+    {
+      "word": "spring rolls",
+      "pos": "n",
+      "ipa": "/sprɪŋ rəʊlz/",
+      "meaning": "nem rán"
+    },
+    {
+      "word": "tablespoon",
+      "pos": "n",
+      "ipa": "/'teɪblspu:n/",
+      "meaning": "khối lượng đựng trong một thìa / muỗng xúp"
+    },
+    {
+      "word": "teaspoon",
+      "pos": "n",
+      "ipa": "/'ti:spu:n/",
+      "meaning": "khối lượng đựng trong một thìa nhỏ dùng để quấy trà"
+    },
+    {
+      "word": "toast",
+      "pos": "n",
+      "ipa": "/təʊst/",
+      "meaning": "bánh mì nướng"
+    }
+  ],
+  "Unit 7": [
+    {
+      "word": "bumpy",
+      "pos": "adj",
+      "ipa": "/ˈbʌmpi/",
+      "meaning": "lồi lõm, nhiều ổ gà"
+    },
+    {
+      "word": "distance",
+      "pos": "n",
+      "ipa": "/ˈdɪstəns/",
+      "meaning": "khoảng cách"
+    },
+    {
+      "word": "fine",
+      "pos": "v",
+      "ipa": "/faɪn/",
+      "meaning": "phạt"
+    },
+    {
+      "word": "fly",
+      "pos": "v",
+      "ipa": "/flaɪ/",
+      "meaning": "bay, lái máy bay, đi trên máy bay"
+    },
+    {
+      "word": "handlebars",
+      "pos": "n",
+      "ipa": "/ˈhændlbɑːz/",
+      "meaning": "tay lái, ghi đông"
+    },
+    {
+      "word": "lane",
+      "pos": "n",
+      "ipa": "/leɪn/",
+      "meaning": "làn đường"
+    },
+    {
+      "word": "obey traffic rules",
+      "pos": "",
+      "ipa": "/əˈbeɪ ˈtræfɪk ruːlz/",
+      "meaning": "tuân theo luật giao thông"
+    },
+    {
+      "word": "park",
+      "pos": "v",
+      "ipa": "/pɑːk/",
+      "meaning": "đỗ xe"
+    },
+    {
+      "word": "passenger",
+      "pos": "n",
+      "ipa": "/ˈpæsɪndʒə/",
+      "meaning": "hành khách"
+    },
+    {
+      "word": "pavement",
+      "pos": "n",
+      "ipa": "/ˈpeɪvmənt/",
+      "meaning": "vỉa hè (cho người đi bộ)"
+    },
+    {
+      "word": "pedestrian",
+      "pos": "n",
+      "ipa": "/pəˈdestriən/",
+      "meaning": "người đi bộ"
+    },
+    {
+      "word": "plane",
+      "pos": "n",
+      "ipa": "/pleɪn/",
+      "meaning": "máy bay"
+    },
+    {
+      "word": "road sign",
+      "pos": "n",
+      "ipa": "/ˈrəʊd saɪn/",
+      "meaning": "biển báo giao thông"
+    },
+    {
+      "word": "traffic sign",
+      "pos": "",
+      "ipa": "/ˈtræfɪk saɪn/",
+      "meaning": "biển báo giao thông"
+    },
+    {
+      "word": "roof",
+      "pos": "n",
+      "ipa": "/ruːf/",
+      "meaning": "nóc xe, mái nhà"
+    },
+    {
+      "word": "safety",
+      "pos": "n",
+      "ipa": "/ˈseɪfti/",
+      "meaning": "sự an toàn"
+    },
+    {
+      "word": "seatbelt",
+      "pos": "n",
+      "ipa": "/ˈsiːtbelt/",
+      "meaning": "đai an toàn"
+    },
+    {
+      "word": "traffic jam",
+      "pos": "n",
+      "ipa": "/ˈtræfɪk dʒæm/",
+      "meaning": "tắc đường"
+    },
+    {
+      "word": "traffic rule",
+      "pos": "",
+      "ipa": "/law /",
+      "meaning": "ˈtræfɪk ruːl/ luật giao thông"
+    },
+    {
+      "word": "vehicle",
+      "pos": "n",
+      "ipa": "/ˈviːəkl/",
+      "meaning": "xe cộ, phương tiện giao thông"
+    },
+    {
+      "word": "zebra crossing",
+      "pos": "n",
+      "ipa": "/ˈziːbrə ˈkrɒsɪŋ/",
+      "meaning": "vạch kẻ cho người đi bộ sang đường"
+    },
+    {
+      "word": "must-see",
+      "pos": "n",
+      "ipa": "/ˈmʌst-siː/",
+      "meaning": "bộ phim hấp dẫn, cần xem"
+    },
+    {
+      "word": "poster",
+      "pos": "n",
+      "ipa": "/ˈpəʊstə/",
+      "meaning": "áp phích quảng cáo"
+    },
+    {
+      "word": "review",
+      "pos": "n",
+      "ipa": "/rɪˈvjuː/",
+      "meaning": "bài phê bình (về một bộ phim)"
+    },
+    {
+      "word": "scary",
+      "pos": "adj",
+      "ipa": "/ˈskeəri/",
+      "meaning": "sợ hãi, rùng rợn"
+    },
+    {
+      "word": "science fiction",
+      "pos": "n",
+      "ipa": "/ˈsaɪəns ˈfɪkʃən/",
+      "meaning": "thể loại phim khoa học viễn tưởng"
+    },
+    {
+      "word": "shocking",
+      "pos": "adj",
+      "ipa": "/ˈʃɒkɪŋ/",
+      "meaning": "làm sửng sốt"
+    },
+    {
+      "word": "star",
+      "pos": "v",
+      "ipa": "/stɑː/",
+      "meaning": "đóng vai chính"
+    },
+    {
+      "word": "survey",
+      "pos": "n",
+      "ipa": "/ˈsɜːveɪ/",
+      "meaning": "cuộc khảo sát"
+    },
+    {
+      "word": "twin",
+      "pos": "n",
+      "ipa": "/twɪn/",
+      "meaning": "đứa trẻ sinh đôi"
+    },
+    {
+      "word": "violent",
+      "pos": "adj",
+      "ipa": "/ˈvaɪələnt/",
+      "meaning": "có nhiều cảnh bạo lực"
+    },
+    {
+      "word": "wizard",
+      "pos": "n",
+      "ipa": "/ˈwɪzəd/",
+      "meaning": "phù thủy"
+    }
+  ],
+  "Unit 8": [
+    {
+      "word": "acting",
+      "pos": "n",
+      "ipa": "/ˈæktɪn/",
+      "meaning": "diễn xuất"
+    },
+    {
+      "word": "comedy",
+      "pos": "n",
+      "ipa": "/ˈkɒmədi/",
+      "meaning": "phim hài"
+    },
+    {
+      "word": "confusing",
+      "pos": "adj",
+      "ipa": "/kənˈfjuːzɪŋ/",
+      "meaning": "khó hiểu, gây bối rối"
+    },
+    {
+      "word": "director",
+      "pos": "v",
+      "ipa": "/dɪˈrektə/",
+      "meaning": "người đạo diễn (phim, kịch, ...)"
+    },
+    {
+      "word": "documentary",
+      "pos": "n",
+      "ipa": "/ˌdɒkjəˈmentri/",
+      "meaning": "phim tài liệu"
+    },
+    {
+      "word": "dull",
+      "pos": "adj",
+      "ipa": "/dʌl/",
+      "meaning": "buồn tẻ, chán ngắt"
+    },
+    {
+      "word": "enjoyable",
+      "pos": "adj",
+      "ipa": "/ɪnˈdʒɔɪəbl/",
+      "meaning": "thú vị, thích thú"
+    },
+    {
+      "word": "fantasy",
+      "pos": "n",
+      "ipa": "/ˈfæntəsi/",
+      "meaning": "phim giả tưởng"
+    },
+    {
+      "word": "frightening",
+      "pos": "adj",
+      "ipa": "/ˈfraɪtnɪŋ/",
+      "meaning": "làm sợ hãi, rùng rợn"
+    },
+    {
+      "word": "gripping",
+      "pos": "adj",
+      "ipa": "/ˈɡrɪpɪŋ/",
+      "meaning": "hấp dẫn, thú vị"
+    },
+    {
+      "word": "horror film",
+      "pos": "n",
+      "ipa": "/ˈhɒrə fɪlm/",
+      "meaning": "phim kinh dị"
+    },
+    {
+      "word": "moving",
+      "pos": "adj",
+      "ipa": "/ˈmuːvɪŋ/",
+      "meaning": "cảm động"
+    }
+  ],
+  "Unit 9": [
+    {
+      "word": "candy",
+      "pos": "n",
+      "ipa": "/ˈkændi/",
+      "meaning": "kẹo"
+    },
+    {
+      "word": "Cannes Film Festival",
+      "pos": "",
+      "ipa": "/kæn fɪlm ˈfestɪvl/",
+      "meaning": "Cannes"
+    },
+    {
+      "word": "carve",
+      "pos": "v",
+      "ipa": "/kɑːv/",
+      "meaning": "chạm, khắc"
+    },
+    {
+      "word": "celebrate",
+      "pos": "v",
+      "ipa": "/ˈselɪbreɪt/",
+      "meaning": "kỉ niệm, tổ chức"
+    },
+    {
+      "word": "costume",
+      "pos": "n",
+      "ipa": "/ˈkɒstjuːm/",
+      "meaning": "trang phục"
+    },
+    {
+      "word": "decorate",
+      "pos": "v",
+      "ipa": "/ˈdekəreɪt/",
+      "meaning": "trang trí"
+    },
+    {
+      "word": "decoration",
+      "pos": "n",
+      "ipa": "/ˌdekəˈreɪʃn/",
+      "meaning": "đồ trang trí"
+    },
+    {
+      "word": "disappointing",
+      "pos": "adj",
+      "ipa": "/ˌdɪsəˈpɔɪntɪŋ/",
+      "meaning": "đáng thất vọng"
+    },
+    {
+      "word": "disappointment",
+      "pos": "n",
+      "ipa": "/ˌdɪsəˈpɔɪntmənt/",
+      "meaning": "sự thất vọng"
+    },
+    {
+      "word": "Dutch",
+      "pos": "adj, n",
+      "ipa": "/dʌtʃ/",
+      "meaning": "thuộc về Hà Lan, người Hà Lan"
+    },
+    {
+      "word": "Easter",
+      "pos": "n",
+      "ipa": "/ˈiːstə/",
+      "meaning": "Lễ Phục sinh"
+    },
+    {
+      "word": "feast",
+      "pos": "n",
+      "ipa": "/fiːst/",
+      "meaning": "bữa tiệc"
+    },
+    {
+      "word": "feature",
+      "pos": "v",
+      "ipa": "/ˈfiːtʃə/",
+      "meaning": "trình diễn đặc biệt"
+    },
+    {
+      "word": "fireworks display",
+      "pos": "",
+      "ipa": "/ˈfaɪəwɜːks dɪˈspleɪ/",
+      "meaning": "bắn pháo hoa"
+    },
+    {
+      "word": "float",
+      "pos": "n",
+      "ipa": "/fləʊt/",
+      "meaning": "xe diễu hành"
+    },
+    {
+      "word": "folk dance",
+      "pos": "n",
+      "ipa": "/ˈfəʊk dɑːns/",
+      "meaning": "điệu nhảy / múa dân gian"
+    },
+    {
+      "word": "Holland",
+      "pos": "n",
+      "ipa": "/ˈhɒlənd/",
+      "meaning": "nước Hà Lan"
+    },
+    {
+      "word": "Mid-Autumn Festival",
+      "pos": "",
+      "ipa": "/ˌmɪd-ˈɔːtəm ˈfestɪvl/",
+      "meaning": "Tết Trung thu"
+    },
+    {
+      "word": "parade",
+      "pos": "n",
+      "ipa": "/pəˈreɪd/",
+      "meaning": "cuộc diễu hành"
+    },
+    {
+      "word": "perform",
+      "pos": "v",
+      "ipa": "/pəˈfɔːm/",
+      "meaning": "biểu diễn"
+    },
+    {
+      "word": "performance",
+      "pos": "n",
+      "ipa": "/pəˈfɔːməns/",
+      "meaning": "tiết mục biểu diễn"
+    },
+    {
+      "word": "symbol",
+      "pos": "n",
+      "ipa": "/ˈsɪmbl/",
+      "meaning": "biểu tượng"
+    },
+    {
+      "word": "take part in",
+      "pos": "",
+      "ipa": "/teɪk pɑːt ɪn/",
+      "meaning": "tham gia"
+    },
+    {
+      "word": "Thanksgiving",
+      "pos": "n",
+      "ipa": "/ˌθæŋksˈɡɪvɪn/",
+      "meaning": "Lễ Tạ ơn"
+    }
+  ],
+  "Unit 10": [
+    {
+      "word": "available",
+      "pos": "adj",
+      "ipa": "/əˈveɪləbl/",
+      "meaning": "sẵn có"
+    },
+    {
+      "word": "electricity",
+      "pos": "n",
+      "ipa": "/ɪˌlekˈtrɪsəti/",
+      "meaning": "điện năng"
+    },
+    {
+      "word": "energy",
+      "pos": "n",
+      "ipa": "/ˈenədʒi/",
+      "meaning": "năng lượng"
+    },
+    {
+      "word": "hydro",
+      "pos": "adj",
+      "ipa": "/ˈhaɪdrəʊ/",
+      "meaning": "liên quan đến nước"
+    },
+    {
+      "word": "light bulb",
+      "pos": "n",
+      "ipa": "/laɪt bʌlb/",
+      "meaning": "bóng đèn"
+    },
+    {
+      "word": "limited",
+      "pos": "adj",
+      "ipa": "/ˈlɪmɪtɪd/",
+      "meaning": "bị hạn chế"
+    },
+    {
+      "word": "non-renewable",
+      "pos": "adj",
+      "ipa": "/ˌnɒn rɪˈnjuːəbl/",
+      "meaning": "không thể thay thế/tái tạo"
+    },
+    {
+      "word": "nuclear",
+      "pos": "adj",
+      "ipa": "/ˈnjuːkliə(r)/",
+      "meaning": "thuộc về hạt nhân"
+    },
+    {
+      "word": "overcool",
+      "pos": "v",
+      "ipa": "/ˌəʊvəˈkuːl/",
+      "meaning": "làm cho quá lạnh"
+    },
+    {
+      "word": "overheat",
+      "pos": "v",
+      "ipa": "/ˌəʊvəˈhiːt/",
+      "meaning": "làm cho quá nóng"
+    },
+    {
+      "word": "panel",
+      "pos": "n",
+      "ipa": "/ˈpænl/",
+      "meaning": "tấm ghép, bảng điều khiển"
+    },
+    {
+      "word": "produce",
+      "pos": "v",
+      "ipa": "/prəˈdjuːs/",
+      "meaning": "sản xuất"
+    },
+    {
+      "word": "reduce",
+      "pos": "v",
+      "ipa": "/rɪˈdjuːs/",
+      "meaning": "giảm"
+    },
+    {
+      "word": "renewable",
+      "pos": "adj",
+      "ipa": "/rɪˈnjuːəbl/",
+      "meaning": "có thể thay thế/tái tạo"
+    },
+    {
+      "word": "replace",
+      "pos": "v",
+      "ipa": "/rɪˈpleɪs/",
+      "meaning": "thay thế"
+    },
+    {
+      "word": "solar",
+      "pos": "adj",
+      "ipa": "/ˈsəʊlə(r)/",
+      "meaning": "liên quan đến mặt trời"
+    },
+    {
+      "word": "source",
+      "pos": "n",
+      "ipa": "/sɔːs/",
+      "meaning": "nguồn"
+    },
+    {
+      "word": "syllable",
+      "pos": "n",
+      "ipa": "/ˈsɪləbl/",
+      "meaning": "âm tiết"
+    },
+    {
+      "word": "tap",
+      "pos": "n",
+      "ipa": "/tæp/",
+      "meaning": "vòi nước"
+    },
+    {
+      "word": "warm",
+      "pos": "v",
+      "ipa": "/wɔːm/",
+      "meaning": "(làm cho) ấm lên, nóng lên"
+    }
+  ],
+  "Unit 11": [
+    {
+      "word": "appear",
+      "pos": "v",
+      "ipa": "/əˈpɪə(r)/",
+      "meaning": "xuất hiện"
+    },
+    {
+      "word": "autopilot",
+      "pos": "adj, n",
+      "ipa": "/ˈɔːtəʊˌpaɪlət/",
+      "meaning": "lái tự động"
+    },
+    {
+      "word": "bamboo-copter",
+      "pos": "n",
+      "ipa": "/bæmˈbuː ˈkɒptə(r)/",
+      "meaning": "chong chóng tre"
+    },
+    {
+      "word": "comfortable",
+      "pos": "adj",
+      "ipa": "/ˈkʌmftəbl/",
+      "meaning": "thoải mái, đủ tiện nghi"
+    },
+    {
+      "word": "convenient",
+      "pos": "adj",
+      "ipa": "/kənˈviːniənt/",
+      "meaning": "thuận tiện, tiện lợi"
+    },
+    {
+      "word": "disappear",
+      "pos": "v",
+      "ipa": "/ˌdɪsəˈpɪə(r)/",
+      "meaning": "biến mất"
+    },
+    {
+      "word": "driverless",
+      "pos": "adj",
+      "ipa": "/ˈdraɪvələs/",
+      "meaning": "không người lái"
+    },
+    {
+      "word": "eco-friendly",
+      "pos": "adj",
+      "ipa": "/ˌiːkəʊ ˈfrendli/",
+      "meaning": "thân thiện với môi trường"
+    },
+    {
+      "word": "economical",
+      "pos": "adj",
+      "ipa": "/ˌiːkəˈnɒmɪkl/",
+      "meaning": "tiết kiệm nhiên liệu/tiền bạc"
+    },
+    {
+      "word": "fume",
+      "pos": "n",
+      "ipa": "/fjuːm/",
+      "meaning": "khói"
+    },
+    {
+      "word": "function",
+      "pos": "n",
+      "ipa": "/ˈfʌŋkʃn/",
+      "meaning": "chức năng"
+    },
+    {
+      "word": "hyperloop",
+      "pos": "n",
+      "ipa": "/ˈhaɪpəluːp/",
+      "meaning": "hệ thống giao thông siêu tốc"
+    },
+    {
+      "word": "mode of travel",
+      "pos": "n",
+      "ipa": "/məʊd əv ˈtrævl/",
+      "meaning": "phương thức đi lại"
+    },
+    {
+      "word": "pedal",
+      "pos": "v",
+      "ipa": "/ˈpedl/",
+      "meaning": "đạp (xe đạp)"
+    },
+    {
+      "word": "rails",
+      "pos": "n",
+      "ipa": "/reɪlz/",
+      "meaning": "đường ray, đường sắt"
+    },
+    {
+      "word": "run on",
+      "pos": "v",
+      "ipa": "/rʌn ɒn/",
+      "meaning": "chạy bằng (nhiên liệu nào)"
+    },
+    {
+      "word": "sail",
+      "pos": "v",
+      "ipa": "/seɪl/",
+      "meaning": "lướt buồm, đi tàu buồm"
+    },
+    {
+      "word": "skyTran",
+      "pos": "n",
+      "ipa": "/ˈskaɪtræn/",
+      "meaning": "hệ thống tàu điện trên không"
+    },
+    {
+      "word": "solar-powered",
+      "pos": "adj",
+      "ipa": "/ˈsəʊlə ˈpaʊəd/",
+      "meaning": "chạy bằng năng lượng mặt trời"
+    },
+    {
+      "word": "solar-powered ship",
+      "pos": "n",
+      "ipa": "/ˈsəʊlə ˈpaʊəd ʃɪp/",
+      "meaning": "tàu thuỷ chạy bằng năng lượng mặt trời"
+    },
+    {
+      "word": "solowheel",
+      "pos": "n",
+      "ipa": "/ˈsəʊləʊwiːl/",
+      "meaning": "phương tiện tự hành cá nhân 1 bánh"
+    },
+    {
+      "word": "walkcar",
+      "pos": "n",
+      "ipa": "/ˈwɔːkkɑː(r)/",
+      "meaning": "phương tiện tự hành nhỏ gọn dùng chân"
+    },
+    {
+      "word": "teleporter",
+      "pos": "n",
+      "ipa": "/ˈtelɪpɔːtə(r)/",
+      "meaning": "phương tiện di chuyển tức thời"
+    }
+  ],
+  "Unit 12": [
+    {
+      "word": "amazement",
+      "pos": "n",
+      "ipa": "/əˈmeɪzmənt/",
+      "meaning": "sự ngạc nhiên, kinh ngạc (một cách thích thú)"
+    },
+    {
+      "word": "amazing",
+      "pos": "adj",
+      "ipa": "/əˈmeɪzɪŋ/",
+      "meaning": "ngạc nhiên (một cách thích thú)"
+    },
+    {
+      "word": "ancient",
+      "pos": "adj",
+      "ipa": "/ˈeɪnʃənt/",
+      "meaning": "cổ, lâu đời"
+    },
+    {
+      "word": "Australia",
+      "pos": "n",
+      "ipa": "/ɒˈstreɪliə/",
+      "meaning": "nước Úc"
+    },
+    {
+      "word": "Canada",
+      "pos": "n",
+      "ipa": "/ˈkænədə/",
+      "meaning": "nước Canada"
+    },
+    {
+      "word": "capital",
+      "pos": "n",
+      "ipa": "/ˈkæpɪtl/",
+      "meaning": "thủ đô"
+    },
+    {
+      "word": "castle",
+      "pos": "n",
+      "ipa": "/ˈkɑːsl/",
+      "meaning": "pháo đài, lâu đài"
+    },
+    {
+      "word": "coastline",
+      "pos": "n",
+      "ipa": "/ˈkəʊstlaɪn/",
+      "meaning": "đường bờ biển"
+    },
+    {
+      "word": "culture",
+      "pos": "n",
+      "ipa": "/ˈkʌltʃə(r)/",
+      "meaning": "nền văn hoá"
+    },
+    {
+      "word": "historic",
+      "pos": "adj",
+      "ipa": "/hɪˈstɒrɪk/",
+      "meaning": "thuộc về lịch sử"
+    },
+    {
+      "word": "island country",
+      "pos": "n",
+      "ipa": "/ˈaɪlənd ˈkʌntri/",
+      "meaning": "đảo quốc"
+    },
+    {
+      "word": "kilt",
+      "pos": "n",
+      "ipa": "/kɪlt/",
+      "meaning": "váy truyền thống của đàn ông Scotland"
+    },
+    {
+      "word": "landscape",
+      "pos": "n",
+      "ipa": "/ˈlændskeɪp/",
+      "meaning": "phong cảnh"
+    },
+    {
+      "word": "local",
+      "pos": "adj",
+      "ipa": "/ˈləʊkl/",
+      "meaning": "thuộc về địa phương"
+    },
+    {
+      "word": "native",
+      "pos": "adj",
+      "ipa": "/ˈneɪtɪv/",
+      "meaning": "nguyên thuỷ, nguyên gốc (của một vùng đất)"
+    },
+    {
+      "word": "New Zealand",
+      "pos": "n",
+      "ipa": "/njuː ˈziːlənd/",
+      "meaning": "nước Niu Zi Lân"
+    },
+    {
+      "word": "penguin",
+      "pos": "n",
+      "ipa": "/ˈpeŋɡwɪn/",
+      "meaning": "chim cánh cụt"
+    },
+    {
+      "word": "royal",
+      "pos": "adj",
+      "ipa": "/ˈrɔɪəl/",
+      "meaning": "thuộc về hoàng gia"
+    },
+    {
+      "word": "shining",
+      "pos": "adj",
+      "ipa": "/ˈʃaɪnɪŋ/",
+      "meaning": "chói chang, chan hòa ánh nắng"
+    },
+    {
+      "word": "sunset",
+      "pos": "n",
+      "ipa": "/ˈsʌnset/",
+      "meaning": "mặt trời lặn"
+    },
+    {
+      "word": "symbol",
+      "pos": "n",
+      "ipa": "/ˈsɪmbl/",
+      "meaning": "biểu tượng"
+    },
+    {
+      "word": "tattoo",
+      "pos": "n, v",
+      "ipa": "/təˈtuː/",
+      "meaning": "hình xăm, xăm hình"
+    },
+    {
+      "word": "the UK",
+      "pos": "n",
+      "ipa": "/ðə ˌjuː ˈkeɪ/",
+      "meaning": "Vương quốc Liên hiệp Anh"
+    },
+    {
+      "word": "the USA",
+      "pos": "n",
+      "ipa": "/ðə ˌjuː es ˈeɪ/",
+      "meaning": "Hoa Kỳ (nước Mỹ)"
+    },
+    {
+      "word": "tower",
+      "pos": "n",
+      "ipa": "/ˈtaʊə(r)/",
+      "meaning": "tháp"
+    }
+  ]
+}
