@@ -125,6 +125,108 @@
       "pos": "n",
       "ipa": "/ˈjəʊɡə/",
       "meaning": "yoga"
+    },
+    {
+      "word": "make a mess",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "làm bừa bộn"
+    },
+    {
+      "word": "make a noise",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "làm ồn"
+    },
+    {
+      "word": "make the beds",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "dọn giường"
+    },
+    {
+      "word": "do the laundry",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "giặt giũ"
+    },
+    {
+      "word": "do the shopping",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "đi mua sắm"
+    },
+    {
+      "word": "do the housework",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "làm việc nhà"
+    },
+    {
+      "word": "do the cleaning",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "dọn dẹp vệ sinh"
+    },
+    {
+      "word": "catch the bus",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "bắt xe buýt"
+    },
+    {
+      "word": "fall asleep",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "chìm vào giấc ngủ"
+    },
+    {
+      "word": "get ready",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "chuẩn bị sẵn sàng"
+    },
+    {
+      "word": "have a shower",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "tắm vòi sen"
+    },
+    {
+      "word": "have a break",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "nghỉ giải lao"
+    },
+    {
+      "word": "go online",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "lên mạng"
+    },
+    {
+      "word": "relax with friends",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "thư giãn cùng bạn bè"
+    },
+    {
+      "word": "tidy the room",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "dọn dẹp phòng"
+    },
+    {
+      "word": "do washing up",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "rửa bát chén"
+    },
+    {
+      "word": "daily routine",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "thói quen hằng ngày"
     }
   ],
   "Unit 2": [
@@ -259,6 +361,120 @@
       "pos": "n",
       "ipa": "/ˈvɪtəmɪn/",
       "meaning": "vitamin"
+    },
+    {
+      "word": "basement",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "tầng hầm"
+    },
+    {
+      "word": "attic",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "gác xép"
+    },
+    {
+      "word": "blind",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "rèm cửa (cuốn/sập)"
+    },
+    {
+      "word": "curtains",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "rèm cửa (vải)"
+    },
+    {
+      "word": "drawers",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "ngăn kéo"
+    },
+    {
+      "word": "sink",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "bồn rửa"
+    },
+    {
+      "word": "oven",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "lò nướng"
+    },
+    {
+      "word": "table lamp",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "đèn bàn"
+    },
+    {
+      "word": "wardrobe",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "tủ quần áo"
+    },
+    {
+      "word": "pillows",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "gối"
+    },
+    {
+      "word": "garage",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "nhà để xe"
+    },
+    {
+      "word": "semi-detached house",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "nhà song lập"
+    },
+    {
+      "word": "university campus",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "khuôn viên đại học"
+    },
+    {
+      "word": "private apartment",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "căn hộ tư nhân"
+    },
+    {
+      "word": "living room",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "phòng khách"
+    },
+    {
+      "word": "study",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "phòng làm việc/học tập"
+    },
+    {
+      "word": "hallway",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "hành lang"
+    },
+    {
+      "word": "fridge",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "tủ lạnh"
+    },
+    {
+      "word": "freezer",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "tủ đông"
     }
   ],
   "Unit 3": [
@@ -405,6 +621,144 @@
       "pos": "v, n",
       "ipa": "/ˌvɒlənˈtɪə(r)/",
       "meaning": "tình nguyện, người tình nguyện"
+    },
+    {
+      "word": "white water rafting",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "chèo thuyền vượt thác"
+    },
+    {
+      "word": "canoeing",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "môn chèo thuyền canoe"
+    },
+    {
+      "word": "hiking",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "đi bộ đường dài"
+    },
+    {
+      "word": "sailing",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "chèo thuyền buồm"
+    },
+    {
+      "word": "bowling",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "trò chơi bowling"
+    },
+    {
+      "word": "gymnastics",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "thể dục dụng cụ"
+    },
+    {
+      "word": "athletics",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "điền kinh"
+    },
+    {
+      "word": "judo",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "võ judo"
+    },
+    {
+      "word": "karate",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "võ karate"
+    },
+    {
+      "word": "taekwondo",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "võ taekwondo"
+    },
+    {
+      "word": "professional",
+      "pos": "adjective",
+      "ipa": "",
+      "meaning": "chuyên nghiệp"
+    },
+    {
+      "word": "successful",
+      "pos": "adjective",
+      "ipa": "",
+      "meaning": "thành công"
+    },
+    {
+      "word": "fit",
+      "pos": "adjective",
+      "ipa": "",
+      "meaning": "cân đối, khỏe mạnh"
+    },
+    {
+      "word": "score a goal",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "ghi bàn"
+    },
+    {
+      "word": "win a match",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "thắng trận đấu"
+    },
+    {
+      "word": "beat an opponent",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "đánh bại đối thủ"
+    },
+    {
+      "word": "lose a game",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "thua trận"
+    },
+    {
+      "word": "kick a ball",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "đá bóng"
+    },
+    {
+      "word": "hit a ball",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "đánh bóng"
+    },
+    {
+      "word": "throw a ball",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "ném bóng"
+    },
+    {
+      "word": "catch a ball",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "bắt bóng"
+    },
+    {
+      "word": "go fishing",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "đi câu cá"
+    },
+    {
+      "word": "play chess",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "chơi cờ"
     }
   ],
   "Unit 4": [
@@ -527,6 +881,102 @@
       "pos": "",
       "ipa": "/'wɔ:tə 'pʌpɪtri/",
       "meaning": "múa rối nước"
+    },
+    {
+      "word": "cultural visit",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "chuyến tham quan văn hóa"
+    },
+    {
+      "word": "beach resort",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "khu nghỉ dưỡng ven biển"
+    },
+    {
+      "word": "day trip",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "chuyến đi trong ngày"
+    },
+    {
+      "word": "local attraction",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "điểm du lịch địa phương"
+    },
+    {
+      "word": "traditional food",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "ẩm thực truyền thống"
+    },
+    {
+      "word": "host family",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "gia đình bản xứ"
+    },
+    {
+      "word": "language exchange",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "trao đổi ngôn ngữ"
+    },
+    {
+      "word": "city break",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "kỳ nghỉ ngắn ngày ở thành phố"
+    },
+    {
+      "word": "adventure holiday",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "kỳ nghỉ phiêu lưu/khám phá"
+    },
+    {
+      "word": "mountain climbing",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "leo núi"
+    },
+    {
+      "word": "horse riding",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "cưỡi ngựa"
+    },
+    {
+      "word": "cycling tour",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "chuyến du lịch bằng xe đạp"
+    },
+    {
+      "word": "water park",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "công viên nước"
+    },
+    {
+      "word": "go sightseeing",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "đi ngắm cảnh"
+    },
+    {
+      "word": "book a flight",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "đặt vé máy bay"
+    },
+    {
+      "word": "passenger",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "hành khách"
     }
   ],
   "Unit 5": [
@@ -601,6 +1051,150 @@
       "pos": "n",
       "ipa": "/'nu:dlz/",
       "meaning": "mì, mì sợi, phở"
+    },
+    {
+      "word": "boil",
+      "pos": "verb",
+      "ipa": "",
+      "meaning": "luộc, đun sôi"
+    },
+    {
+      "word": "chop",
+      "pos": "verb",
+      "ipa": "",
+      "meaning": "băm, thái nhỏ"
+    },
+    {
+      "word": "cut",
+      "pos": "verb",
+      "ipa": "",
+      "meaning": "cắt"
+    },
+    {
+      "word": "fold",
+      "pos": "verb",
+      "ipa": "",
+      "meaning": "gấp, cuộn (bột)"
+    },
+    {
+      "word": "fry",
+      "pos": "verb",
+      "ipa": "",
+      "meaning": "chiên, rán"
+    },
+    {
+      "word": "mix",
+      "pos": "verb",
+      "ipa": "",
+      "meaning": "trộn"
+    },
+    {
+      "word": "roll",
+      "pos": "verb",
+      "ipa": "",
+      "meaning": "cán, cuộn"
+    },
+    {
+      "word": "prawns",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "tôm"
+    },
+    {
+      "word": "garlic",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "tỏi"
+    },
+    {
+      "word": "coconut milk",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "nước cốt dừa"
+    },
+    {
+      "word": "broccoli",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "súp lơ xanh"
+    },
+    {
+      "word": "salmon",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "cá hồi"
+    },
+    {
+      "word": "carrot",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "cà rốt"
+    },
+    {
+      "word": "spring onion",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "hành lá"
+    },
+    {
+      "word": "cabbage",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "bắp cải"
+    },
+    {
+      "word": "cauliflower",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "súp lơ trắng"
+    },
+    {
+      "word": "lettuce",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "rau diếp"
+    },
+    {
+      "word": "lobster",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "tôm hùm"
+    },
+    {
+      "word": "duck",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "thịt vịt"
+    },
+    {
+      "word": "dough",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "bột nhào"
+    },
+    {
+      "word": "ingredients",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "nguyên liệu"
+    },
+    {
+      "word": "tahini paste",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "sốt bơ vừng"
+    },
+    {
+      "word": "dumpling",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "bánh bao/há cảo"
+    },
+    {
+      "word": "soy sauce",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "nước tương"
     }
   ],
   "Unit 6": [
@@ -699,6 +1293,120 @@
       "pos": "n",
       "ipa": "/təʊst/",
       "meaning": "bánh mì nướng"
+    },
+    {
+      "word": "motorway",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "đường cao tốc"
+    },
+    {
+      "word": "the underground",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "tàu điện ngầm"
+    },
+    {
+      "word": "department store",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "cửa hàng bách hóa"
+    },
+    {
+      "word": "platform",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "sân ga"
+    },
+    {
+      "word": "coach",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "xe khách đường dài"
+    },
+    {
+      "word": "square",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "quảng trường"
+    },
+    {
+      "word": "castle",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "lâu đài"
+    },
+    {
+      "word": "stadium",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "sân vận động"
+    },
+    {
+      "word": "statue",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "tượng đài"
+    },
+    {
+      "word": "tower",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "tòa tháp"
+    },
+    {
+      "word": "bridge",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "cây cầu"
+    },
+    {
+      "word": "police station",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "đồn cảnh sát"
+    },
+    {
+      "word": "library",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "thư viện"
+    },
+    {
+      "word": "sports centre",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "trung tâm thể thao"
+    },
+    {
+      "word": "shopping centre",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "trung tâm thương mại"
+    },
+    {
+      "word": "museum",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "bảo tàng"
+    },
+    {
+      "word": "petrol station",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "trạm xăng"
+    },
+    {
+      "word": "flight",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "chuyến bay"
+    },
+    {
+      "word": "boat trip",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "chuyến đi bằng thuyền"
     }
   ],
   "Unit 7": [
@@ -893,6 +1601,114 @@
       "pos": "n",
       "ipa": "/ˈwɪzəd/",
       "meaning": "phù thủy"
+    },
+    {
+      "word": "lifeguard",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "nhân viên cứu hộ"
+    },
+    {
+      "word": "receptionist",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "nhân viên lễ tân"
+    },
+    {
+      "word": "shop assistant",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "nhân viên bán hàng (cửa hàng)"
+    },
+    {
+      "word": "changing rooms",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "phòng thử đồ"
+    },
+    {
+      "word": "chef",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "đầu bếp"
+    },
+    {
+      "word": "cleaner",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "nhân viên dọn vệ sinh"
+    },
+    {
+      "word": "waiter",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "bồi bàn nam"
+    },
+    {
+      "word": "waitress",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "bồi bàn nữ"
+    },
+    {
+      "word": "sales assistant",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "nhân viên hỗ trợ kinh doanh"
+    },
+    {
+      "word": "video games designer",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "nhà thiết kế trò chơi điện tử"
+    },
+    {
+      "word": "sports coach",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "huấn luyện viên thể thao"
+    },
+    {
+      "word": "apply for a job",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "ứng tuyển công việc"
+    },
+    {
+      "word": "get a certificate",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "nhận chứng chỉ"
+    },
+    {
+      "word": "earn money",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "kiếm tiền"
+    },
+    {
+      "word": "gain experience",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "tích lũy kinh nghiệm"
+    },
+    {
+      "word": "hard-working",
+      "pos": "adjective",
+      "ipa": "",
+      "meaning": "chăm chỉ"
+    },
+    {
+      "word": "friendly and helpful",
+      "pos": "phrase",
+      "ipa": "",
+      "meaning": "thân thiện và hay giúp đỡ"
+    },
+    {
+      "word": "customer",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "khách hàng"
     }
   ],
   "Unit 8": [
@@ -967,6 +1783,96 @@
       "pos": "adj",
       "ipa": "/ˈmuːvɪŋ/",
       "meaning": "cảm động"
+    },
+    {
+      "word": "do exercise",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "tập thể dục"
+    },
+    {
+      "word": "do yoga",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "tập yoga"
+    },
+    {
+      "word": "go for a walk",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "đi dạo"
+    },
+    {
+      "word": "drink water",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "uống nước"
+    },
+    {
+      "word": "get enough sleep",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "ngủ đủ giấc"
+    },
+    {
+      "word": "healthy diet",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "chế độ ăn uống lành mạnh"
+    },
+    {
+      "word": "personal trainer",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "huấn luyện viên cá nhân"
+    },
+    {
+      "word": "follow a diet",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "tuân thủ chế độ ăn kiêng"
+    },
+    {
+      "word": "concentrate",
+      "pos": "verb",
+      "ipa": "",
+      "meaning": "tập trung"
+    },
+    {
+      "word": "physical activity",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "hoạt động thể chất"
+    },
+    {
+      "word": "sports lessons",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "tiết học thể thao"
+    },
+    {
+      "word": "stay healthy",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "giữ gìn sức khỏe"
+    },
+    {
+      "word": "reduce stress",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "giảm căng thẳng"
+    },
+    {
+      "word": "relax",
+      "pos": "verb",
+      "ipa": "",
+      "meaning": "thư giãn"
+    },
+    {
+      "word": "energetic",
+      "pos": "adjective",
+      "ipa": "",
+      "meaning": "tràn đầy năng lượng"
     }
   ],
   "Unit 9": [
@@ -1113,6 +2019,150 @@
       "pos": "n",
       "ipa": "/ˌθæŋksˈɡɪvɪn/",
       "meaning": "Lễ Tạ ơn"
+    },
+    {
+      "word": "hold a conversation",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "duy trì cuộc trò chuyện"
+    },
+    {
+      "word": "make an effort",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "nỗ lực"
+    },
+    {
+      "word": "make progress",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "tạo sự tiến bộ"
+    },
+    {
+      "word": "make a mistake",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "phạm sai lầm"
+    },
+    {
+      "word": "make a difference",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "tạo ra sự khác biệt"
+    },
+    {
+      "word": "make somebody laugh",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "làm ai đó cười"
+    },
+    {
+      "word": "take advice",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "nghe theo lời khuyên"
+    },
+    {
+      "word": "take an exam",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "tham gia kỳ thi"
+    },
+    {
+      "word": "take a test",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "làm bài kiểm tra"
+    },
+    {
+      "word": "keep a vocabulary notebook",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "giữ sổ tay từ vựng"
+    },
+    {
+      "word": "look up a word",
+      "pos": "collocation",
+      "ipa": "",
+      "meaning": "tra từ điển"
+    },
+    {
+      "word": "communicate",
+      "pos": "verb",
+      "ipa": "",
+      "meaning": "giao tiếp"
+    },
+    {
+      "word": "multilingual",
+      "pos": "adjective",
+      "ipa": "",
+      "meaning": "đa ngôn ngữ"
+    },
+    {
+      "word": "native speaker",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "người bản xứ"
+    },
+    {
+      "word": "translation",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "sự dịch thuật"
+    },
+    {
+      "word": "population",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "dân số"
+    },
+    {
+      "word": "culture",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "văn hóa"
+    },
+    {
+      "word": "firstly",
+      "pos": "linking word",
+      "ipa": "",
+      "meaning": "đầu tiên"
+    },
+    {
+      "word": "furthermore",
+      "pos": "linking word",
+      "ipa": "",
+      "meaning": "hơn nữa"
+    },
+    {
+      "word": "additionally",
+      "pos": "linking word",
+      "ipa": "",
+      "meaning": "thêm vào đó"
+    },
+    {
+      "word": "on the other hand",
+      "pos": "linking phrase",
+      "ipa": "",
+      "meaning": "mặt khác"
+    },
+    {
+      "word": "however",
+      "pos": "linking word",
+      "ipa": "",
+      "meaning": "tuy nhiên"
+    },
+    {
+      "word": "to sum up",
+      "pos": "linking phrase",
+      "ipa": "",
+      "meaning": "tóm lại"
+    },
+    {
+      "word": "in conclusion",
+      "pos": "linking phrase",
+      "ipa": "",
+      "meaning": "kết luận lại"
     }
   ],
   "Unit 10": [
@@ -1235,6 +2285,168 @@
       "pos": "v",
       "ipa": "/wɔːm/",
       "meaning": "(làm cho) ấm lên, nóng lên"
+    },
+    {
+      "word": "desktop computer",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "máy tính để bàn"
+    },
+    {
+      "word": "landline telephone",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "điện thoại cố định"
+    },
+    {
+      "word": "stream",
+      "pos": "verb",
+      "ipa": "",
+      "meaning": "phát trực tuyến (video/nhạc)"
+    },
+    {
+      "word": "backup",
+      "pos": "noun/verb",
+      "ipa": "",
+      "meaning": "sao lưu dữ liệu"
+    },
+    {
+      "word": "attachment",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "tệp đính kèm"
+    },
+    {
+      "word": "crash",
+      "pos": "verb",
+      "ipa": "",
+      "meaning": "sập mạng, hỏng (máy tính)"
+    },
+    {
+      "word": "device",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "thiết bị"
+    },
+    {
+      "word": "network",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "mạng lưới kết nối"
+    },
+    {
+      "word": "shut down",
+      "pos": "phrasal verb",
+      "ipa": "",
+      "meaning": "tắt máy"
+    },
+    {
+      "word": "swipe",
+      "pos": "verb",
+      "ipa": "",
+      "meaning": "vuốt (màn hình)"
+    },
+    {
+      "word": "latest model",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "mẫu mới nhất"
+    },
+    {
+      "word": "out of date",
+      "pos": "adjective",
+      "ipa": "",
+      "meaning": "lỗi thời"
+    },
+    {
+      "word": "features",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "tính năng"
+    },
+    {
+      "word": "memory",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "bộ nhớ"
+    },
+    {
+      "word": "touch screen",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "màn hình cảm ứng"
+    },
+    {
+      "word": "power button",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "nút nguồn"
+    },
+    {
+      "word": "USB input",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "cổng cắm USB"
+    },
+    {
+      "word": "microphone",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "micrô"
+    },
+    {
+      "word": "power bar",
+      "pos": "noun phrase",
+      "ipa": "",
+      "meaning": "thanh hiển thị pin"
+    },
+    {
+      "word": "case",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "ốp lưng/vỏ bảo vệ"
+    },
+    {
+      "word": "go down",
+      "pos": "phrasal verb",
+      "ipa": "",
+      "meaning": "giảm xuống"
+    },
+    {
+      "word": "go up",
+      "pos": "phrasal verb",
+      "ipa": "",
+      "meaning": "tăng lên"
+    },
+    {
+      "word": "increase",
+      "pos": "verb/noun",
+      "ipa": "",
+      "meaning": "sự tăng lên / tăng"
+    },
+    {
+      "word": "decrease",
+      "pos": "verb/noun",
+      "ipa": "",
+      "meaning": "sự giảm xuống / giảm"
+    },
+    {
+      "word": "rise",
+      "pos": "verb/noun",
+      "ipa": "",
+      "meaning": "sự gia tăng / tăng lên"
+    },
+    {
+      "word": "fall",
+      "pos": "verb/noun",
+      "ipa": "",
+      "meaning": "sự sụt giảm / giảm xuống"
+    },
+    {
+      "word": "percentage",
+      "pos": "noun",
+      "ipa": "",
+      "meaning": "tỷ lệ phần trăm"
     }
   ],
   "Unit 11": [
