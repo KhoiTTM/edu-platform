@@ -2,6 +2,7 @@ import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { HeroMomentumCard } from "@/components/administration/dashboard/HeroMomentumCard";
+import { RandomReflexButton } from "@/components/administration/dashboard/RandomReflexButton";
 import { Sparkles, ArrowRight, Target, BookOpen, CheckSquare, Flame, Clock, PenTool } from "lucide-react";
 import { getTodayTasks, getPendingTasks } from "@/app/(app)/(administration)/phu-huynh/actions";
 
@@ -35,12 +36,10 @@ export default async function DashboardPage() {
   const grade = profile?.grade ?? 3;
   const firstName = profile?.display_name?.split(/\s+/)[0] ?? "bạn";
 
-  let randomVocabReflexExamId = null;
   const targetReflexCol = grade === 7 ? reflexCol7Res.data : reflexColRes.data;
-  if (targetReflexCol?.exams && (targetReflexCol.exams as any[]).length > 0) {
-    const exams = targetReflexCol.exams as any[];
-    randomVocabReflexExamId = exams[Math.floor(Math.random() * exams.length)].id;
-  }
+  const reflexExamIds = targetReflexCol?.exams
+    ? (targetReflexCol.exams as any[]).map((e) => e.id)
+    : [];
 
   const allActivities: any[] = [];
 
@@ -211,7 +210,7 @@ export default async function DashboardPage() {
         </div>
       </div>
 
-      {(grade === 3 || grade === 7) && randomVocabReflexExamId && (
+      {(grade === 3 || grade === 7) && reflexExamIds.length > 0 && (
         <div className="shrink-0 mb-1 bg-gradient-to-r from-orange-500 to-rose-600 rounded-3xl p-5 flex flex-col md:flex-row items-center justify-between gap-4 shadow-[0_8px_32px_rgba(244,63,94,0.3)] border border-rose-400/20">
           <div className="flex items-center gap-4 text-center md:text-left">
             <div className="w-12 h-12 shrink-0 bg-white/20 rounded-xl flex items-center justify-center text-2xl shadow-inner backdrop-blur-sm border border-white/20">
@@ -224,10 +223,7 @@ export default async function DashboardPage() {
               <p className="text-white/80 font-bold text-xs mt-0.5">Vào nhanh một đề ngẫu nhiên để rèn luyện phản xạ (5 giây/câu).</p>
             </div>
           </div>
-          <Link href={`/test-assessment?examId=${randomVocabReflexExamId}&timer=5`}
-                className="px-6 py-3 shrink-0 w-full md:w-auto text-center bg-white text-rose-600 font-black rounded-xl text-sm shadow-md hover:scale-[1.02] active:scale-95 transition-all">
-            Luyện tập ngay
-          </Link>
+          <RandomReflexButton examIds={reflexExamIds} timer={5} />
         </div>
       )}
 
