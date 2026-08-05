@@ -238,9 +238,30 @@ export function AssessmentRenderer({ questions, mode, onComplete, timerSeconds, 
           );
         }
         // Fallback for simple fill_blank
-        const mcQuestion = [currentQuestion.instruction, currentQuestion.question].filter(Boolean).join('\n');
         const mcChoices = currentQuestion.choices || [];
-        const mcCorrectIndex = mcChoices.indexOf(currentQuestion.correct_word || currentQuestion.correct_answer);
+        const correctAnswer = currentQuestion.correct_word || currentQuestion.correct_answer;
+
+        if (mcChoices.length === 0 && correctAnswer) {
+          const qText = currentQuestion.question || "";
+          const placeholderRegex = /▢|___|__/g;
+          const textSegments = qText.split(placeholderRegex);
+          if (textSegments.length === 1) {
+            textSegments.push("");
+          }
+          return (
+            <InlineFillBlankRenderer
+              key={`ifb-input-${currentIndex}`}
+              instruction={currentQuestion.instruction || "Điền đáp án đúng vào chỗ trống:"}
+              textSegments={textSegments}
+              correctAnswers={[correctAnswer]}
+              onAnswer={handleAnswer}
+              disabled={hasAnswered}
+            />
+          );
+        }
+
+        const mcQuestion = [currentQuestion.instruction, currentQuestion.question].filter(Boolean).join('\n');
+        const mcCorrectIndex = mcChoices.indexOf(correctAnswer);
         return (
           <MultipleChoiceRenderer
             key={`mc-norm-${currentIndex}`}
