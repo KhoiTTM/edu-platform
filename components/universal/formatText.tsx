@@ -34,7 +34,7 @@ export function formatText(text: string): React.ReactNode {
           return <KaTeXSpan key={i} latex={latex} />;
         }
         if (token.startsWith("**") && token.endsWith("**")) {
-          return <strong key={i} className="text-white font-extrabold">{token.slice(2, -2)}</strong>;
+          return <strong key={i} className="font-extrabold">{token.slice(2, -2)}</strong>;
         }
         if (token.startsWith("*") && token.endsWith("*")) {
           return <span key={i} className="text-amber-400 font-medium italic">{token.slice(1, -1)}</span>;
