@@ -1,0 +1,9272 @@
+{
+  "words": [
+    {
+      "id": "ta7-vocab-1",
+      "english": "able",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-2",
+      "english": "abundant",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-3",
+      "english": "accident",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-4",
+      "english": "accidents",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-5",
+      "english": "according",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-6",
+      "english": "achieve",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-7",
+      "english": "acne",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-8",
+      "english": "across",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-9",
+      "english": "act",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-10",
+      "english": "acting",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-11",
+      "english": "activities",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-12",
+      "english": "activity",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-13",
+      "english": "actor",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-14",
+      "english": "actress",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-15",
+      "english": "adapted",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-16",
+      "english": "adv",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-17",
+      "english": "aeroplane",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-18",
+      "english": "afternoon",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-19",
+      "english": "again",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-20",
+      "english": "age",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-21",
+      "english": "ago",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-22",
+      "english": "air",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-23",
+      "english": "airplane",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-24",
+      "english": "alaska",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-25",
+      "english": "albuquerque",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-26",
+      "english": "alison",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-27",
+      "english": "along",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-28",
+      "english": "already",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-29",
+      "english": "always",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-30",
+      "english": "amazing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-31",
+      "english": "america",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-32",
+      "english": "american",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-33",
+      "english": "americans",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-34",
+      "english": "angeles",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-35",
+      "english": "animals",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-36",
+      "english": "ann",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-37",
+      "english": "annually",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-38",
+      "english": "anthem",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-39",
+      "english": "appeared",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-40",
+      "english": "appearing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-41",
+      "english": "appliances",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-42",
+      "english": "approaching",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-43",
+      "english": "april",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-44",
+      "english": "art",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-45",
+      "english": "artist",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-46",
+      "english": "artistic",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-47",
+      "english": "artists",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-48",
+      "english": "asian",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-49",
+      "english": "ask",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-50",
+      "english": "asks",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-51",
+      "english": "assembled",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-52",
+      "english": "atlantic",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-53",
+      "english": "attend",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-54",
+      "english": "attentive",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-55",
+      "english": "attract",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-56",
+      "english": "attraction",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-57",
+      "english": "attractions",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-58",
+      "english": "auckland",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-59",
+      "english": "audience",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-60",
+      "english": "august",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-61",
+      "english": "australia",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-62",
+      "english": "author",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-63",
+      "english": "autopilot",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-64",
+      "english": "autumn",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-65",
+      "english": "avenue",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-66",
+      "english": "avoid",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-67",
+      "english": "award",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-68",
+      "english": "awards",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-69",
+      "english": "awful",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-70",
+      "english": "back",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-71",
+      "english": "bad",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-72",
+      "english": "balanced",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-73",
+      "english": "balancing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-74",
+      "english": "balloon",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-75",
+      "english": "balloons",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-76",
+      "english": "bam",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-77",
+      "english": "band",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-78",
+      "english": "bath",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-79",
+      "english": "battery",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-80",
+      "english": "bau",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-81",
+      "english": "bears",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-82",
+      "english": "beatles",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-83",
+      "english": "beautiful",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-84",
+      "english": "beauty",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-85",
+      "english": "became",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-86",
+      "english": "become",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-87",
+      "english": "bed",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-88",
+      "english": "beef",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-89",
+      "english": "began",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-90",
+      "english": "begins",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-91",
+      "english": "behave",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-92",
+      "english": "belongs",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-93",
+      "english": "benefit",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-94",
+      "english": "benefits",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-95",
+      "english": "best",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-96",
+      "english": "better",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-97",
+      "english": "bicycle",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-98",
+      "english": "big",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-99",
+      "english": "biggest",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-100",
+      "english": "bins",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-101",
+      "english": "biographical",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-102",
+      "english": "bit",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-103",
+      "english": "black",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-104",
+      "english": "blue",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-105",
+      "english": "boat",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-106",
+      "english": "bob",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-107",
+      "english": "bones",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-108",
+      "english": "boo",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-109",
+      "english": "book",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-110",
+      "english": "books",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-111",
+      "english": "border",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-112",
+      "english": "borders",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-113",
+      "english": "boring",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-114",
+      "english": "born",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-115",
+      "english": "bottle",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-116",
+      "english": "bottles",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-117",
+      "english": "bottom",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-118",
+      "english": "box",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-119",
+      "english": "breakfast",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-120",
+      "english": "bring",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-121",
+      "english": "britain",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-122",
+      "english": "britney",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-123",
+      "english": "broke",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-124",
+      "english": "broth",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-125",
+      "english": "brother",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-126",
+      "english": "brothers",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-127",
+      "english": "brushing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-128",
+      "english": "bubble",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-129",
+      "english": "build",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-130",
+      "english": "building",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-131",
+      "english": "built",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-132",
+      "english": "bukater",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-133",
+      "english": "bullet",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-134",
+      "english": "bun",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-135",
+      "english": "bundant",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-136",
+      "english": "bunnies",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-137",
+      "english": "burning",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-138",
+      "english": "bus",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-139",
+      "english": "buses",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-140",
+      "english": "buy",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-141",
+      "english": "buying",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-142",
+      "english": "cake",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-143",
+      "english": "cakes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-144",
+      "english": "california",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-145",
+      "english": "call",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-146",
+      "english": "called",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-147",
+      "english": "camel",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-148",
+      "english": "camera",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-149",
+      "english": "cameraman",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-150",
+      "english": "cameron",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-151",
+      "english": "camping",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-152",
+      "english": "canada",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-153",
+      "english": "canadian",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-154",
+      "english": "cans",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-155",
+      "english": "capital",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-156",
+      "english": "car",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-157",
+      "english": "care",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-158",
+      "english": "career",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-159",
+      "english": "careful",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-160",
+      "english": "carefully",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-161",
+      "english": "carnival",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-162",
+      "english": "carnivals",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-163",
+      "english": "carrot",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-164",
+      "english": "cars",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-165",
+      "english": "carton",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-166",
+      "english": "cartoon",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-167",
+      "english": "cartoons",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-168",
+      "english": "carve",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-169",
+      "english": "case",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-170",
+      "english": "castles",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-171",
+      "english": "cats",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-172",
+      "english": "cattle",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-173",
+      "english": "cauliflower",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-174",
+      "english": "cause",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-175",
+      "english": "causing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-176",
+      "english": "celebrate",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-177",
+      "english": "centre",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-178",
+      "english": "century",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-179",
+      "english": "chair",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-180",
+      "english": "change",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-181",
+      "english": "changed",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-182",
+      "english": "chaplin",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-183",
+      "english": "chapped",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-184",
+      "english": "characters",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-185",
+      "english": "charged",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-186",
+      "english": "charity",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-187",
+      "english": "charlie",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-188",
+      "english": "chat",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-189",
+      "english": "cheap",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-190",
+      "english": "cheer",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-191",
+      "english": "cheese",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-192",
+      "english": "chi",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-193",
+      "english": "child",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-194",
+      "english": "children",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-195",
+      "english": "chili",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-196",
+      "english": "chinh",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-197",
+      "english": "chocolate",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-198",
+      "english": "choose",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-199",
+      "english": "chris",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-200",
+      "english": "christian",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-201",
+      "english": "christopher",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-202",
+      "english": "church",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-203",
+      "english": "churchill",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-204",
+      "english": "cinema",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-205",
+      "english": "circle",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-206",
+      "english": "cities",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-207",
+      "english": "city",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-208",
+      "english": "classes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-209",
+      "english": "classic",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-210",
+      "english": "classical",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-211",
+      "english": "classmates",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-212",
+      "english": "classroom",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-213",
+      "english": "claus",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-214",
+      "english": "clean",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-215",
+      "english": "cleaning",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-216",
+      "english": "clear",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-217",
+      "english": "clearly",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-218",
+      "english": "clothes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-219",
+      "english": "clown",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-220",
+      "english": "club",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-221",
+      "english": "coal",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-222",
+      "english": "coastline",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-223",
+      "english": "collect",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-224",
+      "english": "collecting",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-225",
+      "english": "columbus",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-226",
+      "english": "combination",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-227",
+      "english": "come",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-228",
+      "english": "comedy",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-229",
+      "english": "comes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-230",
+      "english": "comfortable",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-231",
+      "english": "common",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-232",
+      "english": "company",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-233",
+      "english": "compass",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-234",
+      "english": "competitions",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-235",
+      "english": "compose",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-236",
+      "english": "computer",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-237",
+      "english": "con",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-238",
+      "english": "concert",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-239",
+      "english": "confusing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-240",
+      "english": "congested",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-241",
+      "english": "connect",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-242",
+      "english": "consider",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-243",
+      "english": "console",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-244",
+      "english": "consumption",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-245",
+      "english": "contain",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-246",
+      "english": "contains",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-247",
+      "english": "continent",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-248",
+      "english": "convenient",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-249",
+      "english": "cook",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-250",
+      "english": "cooked",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-251",
+      "english": "cooking",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-252",
+      "english": "cooks",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-253",
+      "english": "cop",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-254",
+      "english": "costume",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-255",
+      "english": "costumes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-256",
+      "english": "couldn",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-257",
+      "english": "countries",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-258",
+      "english": "country",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-259",
+      "english": "course",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-260",
+      "english": "cover",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-261",
+      "english": "crazy",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-262",
+      "english": "creativity",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-263",
+      "english": "cried",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-264",
+      "english": "critics",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-265",
+      "english": "cross",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-266",
+      "english": "crossing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-267",
+      "english": "crowd",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-268",
+      "english": "crowded",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-269",
+      "english": "cruise",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-270",
+      "english": "cruz",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-271",
+      "english": "cucumber",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-272",
+      "english": "cultural",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-273",
+      "english": "culture",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-274",
+      "english": "cup",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-275",
+      "english": "customs",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-276",
+      "english": "cycling",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-277",
+      "english": "dad",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-278",
+      "english": "dan",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-279",
+      "english": "dance",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-280",
+      "english": "dancers",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-281",
+      "english": "dancing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-282",
+      "english": "dangerous",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-283",
+      "english": "dawson",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-284",
+      "english": "day",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-285",
+      "english": "days",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-286",
+      "english": "dear",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-287",
+      "english": "decade",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-288",
+      "english": "decker",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-289",
+      "english": "delays",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-290",
+      "english": "delicious",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-291",
+      "english": "desert",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-292",
+      "english": "design",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-293",
+      "english": "develop",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-294",
+      "english": "developing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-295",
+      "english": "development",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-296",
+      "english": "dewitt",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-297",
+      "english": "diaz",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-298",
+      "english": "dicaprio",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-299",
+      "english": "dictionary",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-300",
+      "english": "didn",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-301",
+      "english": "died",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-302",
+      "english": "diet",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-303",
+      "english": "diets",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-304",
+      "english": "direct",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-305",
+      "english": "directed",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-306",
+      "english": "director",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-307",
+      "english": "dirty",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-308",
+      "english": "disaster",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-309",
+      "english": "diseases",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-310",
+      "english": "dishes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-311",
+      "english": "display",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-312",
+      "english": "documentaries",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-313",
+      "english": "documentary",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-314",
+      "english": "doesn",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-315",
+      "english": "dog",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-316",
+      "english": "dogs",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-317",
+      "english": "doing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-318",
+      "english": "dollars",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-319",
+      "english": "dollhouses",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-320",
+      "english": "dolls",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-321",
+      "english": "don",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-322",
+      "english": "donald",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-323",
+      "english": "donate",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-324",
+      "english": "donating",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-325",
+      "english": "double",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-326",
+      "english": "drawings",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-327",
+      "english": "dreams",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-328",
+      "english": "dresses",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-329",
+      "english": "drinking",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-330",
+      "english": "drinks",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-331",
+      "english": "drive",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-332",
+      "english": "driver",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-333",
+      "english": "driverless",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-334",
+      "english": "drivers",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-335",
+      "english": "drives",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-336",
+      "english": "drums",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-337",
+      "english": "dry",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-338",
+      "english": "duc",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-339",
+      "english": "ducing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-340",
+      "english": "duck",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-341",
+      "english": "dujardin",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-342",
+      "english": "dull",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-343",
+      "english": "dutch",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-344",
+      "english": "dylan",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-345",
+      "english": "early",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-346",
+      "english": "earth",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-347",
+      "english": "easter",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-348",
+      "english": "eat",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-349",
+      "english": "eating",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-350",
+      "english": "eco",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-351",
+      "english": "eddie",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-352",
+      "english": "edinburgh",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-353",
+      "english": "education",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-354",
+      "english": "effect",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-355",
+      "english": "effective",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-356",
+      "english": "effects",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-357",
+      "english": "egg",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-358",
+      "english": "eggs",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-359",
+      "english": "eighth",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-360",
+      "english": "electric",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-361",
+      "english": "electrical",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-362",
+      "english": "electricity",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-363",
+      "english": "electronics",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-364",
+      "english": "elling",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-365",
+      "english": "else",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-366",
+      "english": "emotional",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-367",
+      "english": "end",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-368",
+      "english": "energy",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-369",
+      "english": "engaged",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-370",
+      "english": "engines",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-371",
+      "english": "english",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-372",
+      "english": "englishman",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-373",
+      "english": "enjoy",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-374",
+      "english": "enjoyable",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-375",
+      "english": "enjoyed",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-376",
+      "english": "enjoys",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-377",
+      "english": "entertainer",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-378",
+      "english": "entertaining",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-379",
+      "english": "entertainment",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-380",
+      "english": "entrance",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-381",
+      "english": "environment",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-382",
+      "english": "etc",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-383",
+      "english": "europe",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-384",
+      "english": "eve",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-385",
+      "english": "event",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-386",
+      "english": "everything",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-387",
+      "english": "everywhere",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-388",
+      "english": "exam",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-389",
+      "english": "examination",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-390",
+      "english": "example",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-391",
+      "english": "excellent",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-392",
+      "english": "exchange",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-393",
+      "english": "excited",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-394",
+      "english": "exciting",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-395",
+      "english": "exercise",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-396",
+      "english": "expected",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-397",
+      "english": "expensive",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-398",
+      "english": "experience",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-399",
+      "english": "extra",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-400",
+      "english": "eyedrops",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-401",
+      "english": "eyes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-402",
+      "english": "face",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-403",
+      "english": "facilities",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-404",
+      "english": "fair",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-405",
+      "english": "fall",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-406",
+      "english": "falling",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-407",
+      "english": "falls",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-408",
+      "english": "family",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-409",
+      "english": "famous",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-410",
+      "english": "fan",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-411",
+      "english": "fantasy",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-412",
+      "english": "far",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-413",
+      "english": "fare",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-414",
+      "english": "fascinating",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-415",
+      "english": "fast",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-416",
+      "english": "faster",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-417",
+      "english": "fat",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-418",
+      "english": "father",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-419",
+      "english": "favourite",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-420",
+      "english": "fear",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-421",
+      "english": "fective",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-422",
+      "english": "feel",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-423",
+      "english": "felicity",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-424",
+      "english": "festival",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-425",
+      "english": "fiction",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-426",
+      "english": "field",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-427",
+      "english": "film",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-428",
+      "english": "films",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-429",
+      "english": "final",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-430",
+      "english": "find",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-431",
+      "english": "finish",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-432",
+      "english": "fireworks",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-433",
+      "english": "first",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-434",
+      "english": "fish",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-435",
+      "english": "fishing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-436",
+      "english": "fit",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-437",
+      "english": "flag",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-438",
+      "english": "flies",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-439",
+      "english": "flight",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-440",
+      "english": "floats",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-441",
+      "english": "floor",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-442",
+      "english": "flowers",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-443",
+      "english": "flu",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-444",
+      "english": "flute",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-445",
+      "english": "fly",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-446",
+      "english": "flying",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-447",
+      "english": "folk",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-448",
+      "english": "following",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-449",
+      "english": "food",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-450",
+      "english": "foot",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-451",
+      "english": "football",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-452",
+      "english": "fork",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-453",
+      "english": "form",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-454",
+      "english": "fossil",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-455",
+      "english": "fox",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-456",
+      "english": "free",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-457",
+      "english": "french",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-458",
+      "english": "fresh",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-459",
+      "english": "fridge",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-460",
+      "english": "friendly",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-461",
+      "english": "friends",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-462",
+      "english": "frightening",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-463",
+      "english": "fruit",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-464",
+      "english": "fuels",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-465",
+      "english": "full",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-466",
+      "english": "fumeless",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-467",
+      "english": "fun",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-468",
+      "english": "function",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-469",
+      "english": "funny",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-470",
+      "english": "future",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-471",
+      "english": "gadgets",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-472",
+      "english": "gallery",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-473",
+      "english": "game",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-474",
+      "english": "games",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-475",
+      "english": "garden",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-476",
+      "english": "gardening",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-477",
+      "english": "gary",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-478",
+      "english": "gas",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-479",
+      "english": "gate",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-480",
+      "english": "gather",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-481",
+      "english": "generally",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-482",
+      "english": "get",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-483",
+      "english": "getting",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-484",
+      "english": "ghost",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-485",
+      "english": "ghosts",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-486",
+      "english": "gifted",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-487",
+      "english": "gifts",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-488",
+      "english": "girl",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-489",
+      "english": "girlfriends",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-490",
+      "english": "girls",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-491",
+      "english": "give",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-492",
+      "english": "glides",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-493",
+      "english": "global",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-494",
+      "english": "goes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-495",
+      "english": "going",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-496",
+      "english": "goldfish",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-497",
+      "english": "golf",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-498",
+      "english": "good",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-499",
+      "english": "got",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-500",
+      "english": "government",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-501",
+      "english": "grammy",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-502",
+      "english": "grams",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-503",
+      "english": "grand",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-504",
+      "english": "great",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-505",
+      "english": "green",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-506",
+      "english": "greener",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-507",
+      "english": "gripping",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-508",
+      "english": "grow",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-509",
+      "english": "growing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-510",
+      "english": "guitar",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-511",
+      "english": "hair",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-512",
+      "english": "hall",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-513",
+      "english": "halloween",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-514",
+      "english": "handheld",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-515",
+      "english": "hands",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-516",
+      "english": "happens",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-517",
+      "english": "happy",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-518",
+      "english": "harbour",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-519",
+      "english": "hard",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-520",
+      "english": "harmful",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-521",
+      "english": "harms",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-522",
+      "english": "hate",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-523",
+      "english": "hates",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-524",
+      "english": "haven",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-525",
+      "english": "having",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-526",
+      "english": "hawking",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-527",
+      "english": "headaches",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-528",
+      "english": "health",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-529",
+      "english": "healthier",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-530",
+      "english": "healthy",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-531",
+      "english": "hear",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-532",
+      "english": "heard",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-533",
+      "english": "heart",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-534",
+      "english": "held",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-535",
+      "english": "help",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-536",
+      "english": "helps",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-537",
+      "english": "heritage",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-538",
+      "english": "hers",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-539",
+      "english": "hicles",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-540",
+      "english": "high",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-541",
+      "english": "higher",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-542",
+      "english": "hind",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-543",
+      "english": "historical",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-544",
+      "english": "history",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-545",
+      "english": "hoa",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-546",
+      "english": "hoan",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-547",
+      "english": "hobbies",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-548",
+      "english": "hobby",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-549",
+      "english": "hoc",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-550",
+      "english": "holding",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-551",
+      "english": "holiday",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-552",
+      "english": "holidays",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-553",
+      "english": "home",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-554",
+      "english": "hong",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-555",
+      "english": "hopping",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-556",
+      "english": "horror",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-557",
+      "english": "horse",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-558",
+      "english": "hot",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-559",
+      "english": "hour",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-560",
+      "english": "hours",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-561",
+      "english": "house",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-562",
+      "english": "houses",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-563",
+      "english": "however",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-564",
+      "english": "hue",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-565",
+      "english": "hundred",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-566",
+      "english": "hundreds",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-567",
+      "english": "hung",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-568",
+      "english": "hunts",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-569",
+      "english": "hurry",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-570",
+      "english": "hyperloop",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-571",
+      "english": "idea",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-572",
+      "english": "ideas",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-573",
+      "english": "illusions",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-574",
+      "english": "important",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-575",
+      "english": "impossible",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-576",
+      "english": "improves",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-577",
+      "english": "include",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-578",
+      "english": "includes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-579",
+      "english": "including",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-580",
+      "english": "income",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-581",
+      "english": "incredible",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-582",
+      "english": "india",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-583",
+      "english": "indian",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-584",
+      "english": "indiana",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-585",
+      "english": "inexperienced",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-586",
+      "english": "infinity",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-587",
+      "english": "info",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-588",
+      "english": "ingredients",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-589",
+      "english": "inhabit",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-590",
+      "english": "instrument",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-591",
+      "english": "instruments",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-592",
+      "english": "intelligent",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-593",
+      "english": "interesting",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-594",
+      "english": "interests",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-595",
+      "english": "international",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-596",
+      "english": "interview",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-597",
+      "english": "island",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-598",
+      "english": "isn",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-599",
+      "english": "itself",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-600",
+      "english": "jack",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-601",
+      "english": "jackson",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-602",
+      "english": "jam",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-603",
+      "english": "james",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-604",
+      "english": "jams",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-605",
+      "english": "janeiro",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-606",
+      "english": "japanese",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-607",
+      "english": "jar",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-608",
+      "english": "jaws",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-609",
+      "english": "jean",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-610",
+      "english": "jogging",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-611",
+      "english": "joined",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-612",
+      "english": "jones",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-613",
+      "english": "journey",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-614",
+      "english": "judo",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-615",
+      "english": "juice",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-616",
+      "english": "june",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-617",
+      "english": "kangaroo",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-618",
+      "english": "kangaroos",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-619",
+      "english": "karate",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-620",
+      "english": "kate",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-621",
+      "english": "keep",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-622",
+      "english": "kickboxing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-623",
+      "english": "kiem",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-624",
+      "english": "kiet",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-625",
+      "english": "killers",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-626",
+      "english": "kilograms",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-627",
+      "english": "kilometre",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-628",
+      "english": "kilometres",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-629",
+      "english": "kilt",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-630",
+      "english": "kind",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-631",
+      "english": "kinds",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-632",
+      "english": "king",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-633",
+      "english": "kitchen",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-634",
+      "english": "know",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-635",
+      "english": "knows",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-636",
+      "english": "koala",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-637",
+      "english": "kong",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-638",
+      "english": "lake",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-639",
+      "english": "lakes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-640",
+      "english": "land",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-641",
+      "english": "landmark",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-642",
+      "english": "landscape",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-643",
+      "english": "language",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-644",
+      "english": "languages",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-645",
+      "english": "lantern",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-646",
+      "english": "lanterns",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-647",
+      "english": "large",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-648",
+      "english": "last",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-649",
+      "english": "lasts",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-650",
+      "english": "late",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-651",
+      "english": "lately",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-652",
+      "english": "laugh",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-653",
+      "english": "laughed",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-654",
+      "english": "laughter",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-655",
+      "english": "leading",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-656",
+      "english": "learning",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-657",
+      "english": "learnt",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-658",
+      "english": "leaves",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-659",
+      "english": "leaving",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-660",
+      "english": "left",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-661",
+      "english": "legs",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-662",
+      "english": "leisure",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-663",
+      "english": "lemonade",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-664",
+      "english": "lemongrass",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-665",
+      "english": "length",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-666",
+      "english": "leonardo",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-667",
+      "english": "lesson",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-668",
+      "english": "let",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-669",
+      "english": "liberty",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-670",
+      "english": "library",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-671",
+      "english": "life",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-672",
+      "english": "lights",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-673",
+      "english": "likely",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-674",
+      "english": "likes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-675",
+      "english": "limited",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-676",
+      "english": "lion",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-677",
+      "english": "lips",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-678",
+      "english": "liquid",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-679",
+      "english": "listen",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-680",
+      "english": "listened",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-681",
+      "english": "listening",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-682",
+      "english": "litres",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-683",
+      "english": "live",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-684",
+      "english": "lively",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-685",
+      "english": "local",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-686",
+      "english": "location",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-687",
+      "english": "lockdown",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-688",
+      "english": "london",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-689",
+      "english": "long",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-690",
+      "english": "look",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-691",
+      "english": "looking",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-692",
+      "english": "looks",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-693",
+      "english": "lope",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-694",
+      "english": "los",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-695",
+      "english": "lose",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-696",
+      "english": "lot",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-697",
+      "english": "lots",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-698",
+      "english": "love",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-699",
+      "english": "loves",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-700",
+      "english": "lower",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-701",
+      "english": "lucky",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-702",
+      "english": "luting",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-703",
+      "english": "luxurious",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-704",
+      "english": "machine",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-705",
+      "english": "madam",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-706",
+      "english": "made",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-707",
+      "english": "main",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-708",
+      "english": "make",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-709",
+      "english": "maker",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-710",
+      "english": "makers",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-711",
+      "english": "makes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-712",
+      "english": "making",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-713",
+      "english": "manchester",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-714",
+      "english": "map",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-715",
+      "english": "march",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-716",
+      "english": "mark",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-717",
+      "english": "mars",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-718",
+      "english": "mask",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-719",
+      "english": "maths",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-720",
+      "english": "meal",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-721",
+      "english": "meals",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-722",
+      "english": "means",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-723",
+      "english": "meat",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-724",
+      "english": "mediterranean",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-725",
+      "english": "meet",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-726",
+      "english": "melbourne",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-727",
+      "english": "members",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-728",
+      "english": "men",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-729",
+      "english": "mentioned",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-730",
+      "english": "mexican",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-731",
+      "english": "mexico",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-732",
+      "english": "miami",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-733",
+      "english": "michael",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-734",
+      "english": "mickey",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-735",
+      "english": "mid",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-736",
+      "english": "milk",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-737",
+      "english": "millilitres",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-738",
+      "english": "million",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-739",
+      "english": "millions",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-740",
+      "english": "mine",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-741",
+      "english": "minh",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-742",
+      "english": "mission",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-743",
+      "english": "mode",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-744",
+      "english": "models",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-745",
+      "english": "modern",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-746",
+      "english": "modes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-747",
+      "english": "money",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-748",
+      "english": "monochord",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-749",
+      "english": "monsters",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-750",
+      "english": "month",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-751",
+      "english": "mooncakes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-752",
+      "english": "morning",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-753",
+      "english": "mosquitoes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-754",
+      "english": "mother",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-755",
+      "english": "mothers",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-756",
+      "english": "motorbike",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-757",
+      "english": "mouse",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-758",
+      "english": "move",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-759",
+      "english": "moves",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-760",
+      "english": "moving",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-761",
+      "english": "mozart",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-762",
+      "english": "mum",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-763",
+      "english": "museum",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-764",
+      "english": "music",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-765",
+      "english": "musical",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-766",
+      "english": "musician",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-767",
+      "english": "musicians",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-768",
+      "english": "nam",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-769",
+      "english": "name",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-770",
+      "english": "nang",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-771",
+      "english": "national",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-772",
+      "english": "native",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-773",
+      "english": "natural",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-774",
+      "english": "near",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-775",
+      "english": "nearest",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-776",
+      "english": "nearly",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-777",
+      "english": "need",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-778",
+      "english": "needs",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-779",
+      "english": "negative",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-780",
+      "english": "neighbourhood",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-781",
+      "english": "never",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-782",
+      "english": "new",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-783",
+      "english": "news",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-784",
+      "english": "next",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-785",
+      "english": "niagara",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-786",
+      "english": "nice",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-787",
+      "english": "nick",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-788",
+      "english": "night",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-789",
+      "english": "nightmare",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-790",
+      "english": "nobody",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-791",
+      "english": "noisy",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-792",
+      "english": "noodle",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-793",
+      "english": "noodles",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-794",
+      "english": "normally",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-795",
+      "english": "north",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-796",
+      "english": "notebooks",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-797",
+      "english": "november",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-798",
+      "english": "nuclear",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-799",
+      "english": "number",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-800",
+      "english": "nursing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-801",
+      "english": "obey",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-802",
+      "english": "oceans",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-803",
+      "english": "off",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-804",
+      "english": "office",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-805",
+      "english": "official",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-806",
+      "english": "often",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-807",
+      "english": "oil",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-808",
+      "english": "old",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-809",
+      "english": "older",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-810",
+      "english": "oldest",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-811",
+      "english": "omelette",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-812",
+      "english": "once",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-813",
+      "english": "ones",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-814",
+      "english": "opera",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-815",
+      "english": "opt",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-816",
+      "english": "options",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-817",
+      "english": "orange",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-818",
+      "english": "organic",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-819",
+      "english": "organisation",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-820",
+      "english": "organise",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-821",
+      "english": "original",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-822",
+      "english": "orleans",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-823",
+      "english": "others",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-824",
+      "english": "ottawa",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-825",
+      "english": "ours",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-826",
+      "english": "outdoor",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-827",
+      "english": "pacific",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-828",
+      "english": "paint",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-829",
+      "english": "painted",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-830",
+      "english": "painting",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-831",
+      "english": "paintings",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-832",
+      "english": "palace",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-833",
+      "english": "pancakes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-834",
+      "english": "paper",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-835",
+      "english": "parents",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-836",
+      "english": "park",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-837",
+      "english": "parliament",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-838",
+      "english": "part",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-839",
+      "english": "pass",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-840",
+      "english": "passage",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-841",
+      "english": "passengers",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-842",
+      "english": "pay",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-843",
+      "english": "peaceful",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-844",
+      "english": "pedestrian",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-845",
+      "english": "pen",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-846",
+      "english": "pensive",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-847",
+      "english": "peo",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-848",
+      "english": "people",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-849",
+      "english": "pepper",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-850",
+      "english": "peppers",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-851",
+      "english": "perform",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-852",
+      "english": "performance",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-853",
+      "english": "performances",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-854",
+      "english": "performing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-855",
+      "english": "perloop",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-856",
+      "english": "person",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-857",
+      "english": "personality",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-858",
+      "english": "petrol",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-859",
+      "english": "pets",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-860",
+      "english": "pho",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-861",
+      "english": "phone",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-862",
+      "english": "photo",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-863",
+      "english": "photographers",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-864",
+      "english": "photography",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-865",
+      "english": "physical",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-866",
+      "english": "pianist",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-867",
+      "english": "piano",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-868",
+      "english": "pieces",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-869",
+      "english": "pier",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-870",
+      "english": "pillow",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-871",
+      "english": "place",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-872",
+      "english": "places",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-873",
+      "english": "plan",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-874",
+      "english": "planes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-875",
+      "english": "planets",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-876",
+      "english": "plant",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-877",
+      "english": "planted",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-878",
+      "english": "planting",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-879",
+      "english": "play",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-880",
+      "english": "played",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-881",
+      "english": "playing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-882",
+      "english": "plays",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-883",
+      "english": "ple",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-884",
+      "english": "pleasure",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-885",
+      "english": "plentiful",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-886",
+      "english": "plot",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-887",
+      "english": "pocket",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-888",
+      "english": "pod",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-889",
+      "english": "pol",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-890",
+      "english": "polar",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-891",
+      "english": "pollute",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-892",
+      "english": "polluting",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-893",
+      "english": "pollution",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-894",
+      "english": "poor",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-895",
+      "english": "pop",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-896",
+      "english": "popular",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-897",
+      "english": "population",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-898",
+      "english": "pork",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-899",
+      "english": "port",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-900",
+      "english": "positive",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-901",
+      "english": "possible",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-902",
+      "english": "poster",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-903",
+      "english": "posters",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-904",
+      "english": "pot",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-905",
+      "english": "power",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-906",
+      "english": "powered",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-907",
+      "english": "practise",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-908",
+      "english": "prefer",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-909",
+      "english": "prepare",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-910",
+      "english": "preparing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-911",
+      "english": "presentation",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-912",
+      "english": "prevent",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-913",
+      "english": "prevented",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-914",
+      "english": "previous",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-915",
+      "english": "primary",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-916",
+      "english": "problems",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-917",
+      "english": "produce",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-918",
+      "english": "produces",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-919",
+      "english": "professional",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-920",
+      "english": "promotes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-921",
+      "english": "protect",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-922",
+      "english": "provide",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-923",
+      "english": "public",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-924",
+      "english": "pumpkin",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-925",
+      "english": "pumpkins",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-926",
+      "english": "puppet",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-927",
+      "english": "purpose",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-928",
+      "english": "putting",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-929",
+      "english": "quite",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-930",
+      "english": "quoc",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-931",
+      "english": "read",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-932",
+      "english": "reading",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-933",
+      "english": "reads",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-934",
+      "english": "reality",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-935",
+      "english": "really",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-936",
+      "english": "reason",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-937",
+      "english": "receive",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-938",
+      "english": "received",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-939",
+      "english": "recommendation",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-940",
+      "english": "records",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-941",
+      "english": "recycle",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-942",
+      "english": "red",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-943",
+      "english": "redmayne",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-944",
+      "english": "reduce",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-945",
+      "english": "reducing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-946",
+      "english": "refers",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-947",
+      "english": "relax",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-948",
+      "english": "relaxed",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-949",
+      "english": "remains",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-950",
+      "english": "renewable",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-951",
+      "english": "replace",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-952",
+      "english": "reporters",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-953",
+      "english": "resorts",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-954",
+      "english": "results",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-955",
+      "english": "reviews",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-956",
+      "english": "rice",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-957",
+      "english": "rich",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-958",
+      "english": "ride",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-959",
+      "english": "rides",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-960",
+      "english": "riding",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-961",
+      "english": "right",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-962",
+      "english": "rio",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-963",
+      "english": "rising",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-964",
+      "english": "road",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-965",
+      "english": "roads",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-966",
+      "english": "rock",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-967",
+      "english": "roll",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-968",
+      "english": "rolls",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-969",
+      "english": "romantic",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-970",
+      "english": "ronment",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-971",
+      "english": "roof",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-972",
+      "english": "room",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-973",
+      "english": "rooms",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-974",
+      "english": "rose",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-975",
+      "english": "row",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-976",
+      "english": "rowing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-977",
+      "english": "rubbish",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-978",
+      "english": "rule",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-979",
+      "english": "rules",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-980",
+      "english": "run",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-981",
+      "english": "rung",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-982",
+      "english": "running",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-983",
+      "english": "runs",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-984",
+      "english": "rural",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-985",
+      "english": "rush",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-986",
+      "english": "russian",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-987",
+      "english": "safely",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-988",
+      "english": "sahara",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-989",
+      "english": "salt",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-990",
+      "english": "salty",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-991",
+      "english": "samba",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-992",
+      "english": "santa",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-993",
+      "english": "saturday",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-994",
+      "english": "sauce",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-995",
+      "english": "sausage",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-996",
+      "english": "save",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-997",
+      "english": "saw",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-998",
+      "english": "say",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-999",
+      "english": "scary",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1000",
+      "english": "school",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1001",
+      "english": "schools",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1002",
+      "english": "science",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1003",
+      "english": "scientist",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1004",
+      "english": "scooter",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1005",
+      "english": "scotland",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1006",
+      "english": "sea",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1007",
+      "english": "season",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1008",
+      "english": "seats",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1009",
+      "english": "second",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1010",
+      "english": "secondary",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1011",
+      "english": "see",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1012",
+      "english": "self",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1013",
+      "english": "sell",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1014",
+      "english": "sending",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1015",
+      "english": "served",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1016",
+      "english": "setting",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1017",
+      "english": "sews",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1018",
+      "english": "shank",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1019",
+      "english": "share",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1020",
+      "english": "shares",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1021",
+      "english": "ship",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1022",
+      "english": "ships",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1023",
+      "english": "shirt",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1024",
+      "english": "shoot",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1025",
+      "english": "shops",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1026",
+      "english": "short",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1027",
+      "english": "show",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1028",
+      "english": "showed",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1029",
+      "english": "showing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1030",
+      "english": "shrimp",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1031",
+      "english": "silent",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1032",
+      "english": "silly",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1033",
+      "english": "since",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1034",
+      "english": "sing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1035",
+      "english": "singapore",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1036",
+      "english": "singer",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1037",
+      "english": "singers",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1038",
+      "english": "singing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1039",
+      "english": "sinking",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1040",
+      "english": "sister",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1041",
+      "english": "sits",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1042",
+      "english": "sitting",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1043",
+      "english": "skateboard",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1044",
+      "english": "skillful",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1045",
+      "english": "skills",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1046",
+      "english": "skip",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1047",
+      "english": "sky",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1048",
+      "english": "skytran",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1049",
+      "english": "sledding",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1050",
+      "english": "sleep",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1051",
+      "english": "sleeping",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1052",
+      "english": "slices",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1053",
+      "english": "slowly",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1054",
+      "english": "small",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1055",
+      "english": "snack",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1056",
+      "english": "snacks",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1057",
+      "english": "social",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1058",
+      "english": "soft",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1059",
+      "english": "solar",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1060",
+      "english": "solo",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1061",
+      "english": "solowheel",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1062",
+      "english": "solowheels",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1063",
+      "english": "solutions",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1064",
+      "english": "sometimes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1065",
+      "english": "song",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1066",
+      "english": "songs",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1067",
+      "english": "soon",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1068",
+      "english": "sound",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1069",
+      "english": "soup",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1070",
+      "english": "sources",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1071",
+      "english": "southwestern",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1072",
+      "english": "spaceship",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1073",
+      "english": "spaghetti",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1074",
+      "english": "spain",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1075",
+      "english": "spanish",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1076",
+      "english": "speak",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1077",
+      "english": "speaking",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1078",
+      "english": "spears",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1079",
+      "english": "special",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1080",
+      "english": "speed",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1081",
+      "english": "spend",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1082",
+      "english": "spent",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1083",
+      "english": "spicy",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1084",
+      "english": "spielberg",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1085",
+      "english": "sport",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1086",
+      "english": "sports",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1087",
+      "english": "spring",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1088",
+      "english": "square",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1089",
+      "english": "staff",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1090",
+      "english": "stage",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1091",
+      "english": "stair",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1092",
+      "english": "stall",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1093",
+      "english": "stamps",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1094",
+      "english": "stand",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1095",
+      "english": "star",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1096",
+      "english": "stars",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1097",
+      "english": "start",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1098",
+      "english": "started",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1099",
+      "english": "state",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1100",
+      "english": "stations",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1101",
+      "english": "statue",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1102",
+      "english": "stay",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1103",
+      "english": "stayed",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1104",
+      "english": "stephen",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1105",
+      "english": "stew",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1106",
+      "english": "still",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1107",
+      "english": "story",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1108",
+      "english": "street",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1109",
+      "english": "streets",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1110",
+      "english": "stress",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1111",
+      "english": "stressed",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1112",
+      "english": "stretching",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1113",
+      "english": "strong",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1114",
+      "english": "students",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1115",
+      "english": "study",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1116",
+      "english": "subjects",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1117",
+      "english": "successful",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1118",
+      "english": "successfully",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1119",
+      "english": "sugar",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1120",
+      "english": "summary",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1121",
+      "english": "summer",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1122",
+      "english": "sumption",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1123",
+      "english": "sunburn",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1124",
+      "english": "suncream",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1125",
+      "english": "sunday",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1126",
+      "english": "sundays",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1127",
+      "english": "supermarket",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1128",
+      "english": "supper",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1129",
+      "english": "sure",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1130",
+      "english": "survey",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1131",
+      "english": "swimming",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1132",
+      "english": "sydney",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1133",
+      "english": "syllable",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1134",
+      "english": "syllables",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1135",
+      "english": "symbol",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1136",
+      "english": "system",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1137",
+      "english": "take",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1138",
+      "english": "taking",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1139",
+      "english": "talent",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1140",
+      "english": "talk",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1141",
+      "english": "talking",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1142",
+      "english": "taste",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1143",
+      "english": "taught",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1144",
+      "english": "tea",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1145",
+      "english": "teach",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1146",
+      "english": "teachers",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1147",
+      "english": "teaches",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1148",
+      "english": "teaspoon",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1149",
+      "english": "teddy",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1150",
+      "english": "teenagers",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1151",
+      "english": "teeth",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1152",
+      "english": "teleporter",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1153",
+      "english": "television",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1154",
+      "english": "tell",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1155",
+      "english": "tent",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1156",
+      "english": "terrible",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1157",
+      "english": "ters",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1158",
+      "english": "tet",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1159",
+      "english": "text",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1160",
+      "english": "thailand",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1161",
+      "english": "thames",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1162",
+      "english": "theatre",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1163",
+      "english": "theirs",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1164",
+      "english": "theory",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1165",
+      "english": "thin",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1166",
+      "english": "thing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1167",
+      "english": "things",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1168",
+      "english": "think",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1169",
+      "english": "third",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1170",
+      "english": "thirty",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1171",
+      "english": "tho",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1172",
+      "english": "though",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1173",
+      "english": "thought",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1174",
+      "english": "thriller",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1175",
+      "english": "thrilling",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1176",
+      "english": "throw",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1177",
+      "english": "ticket",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1178",
+      "english": "tidy",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1179",
+      "english": "time",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1180",
+      "english": "times",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1181",
+      "english": "timetable",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1182",
+      "english": "tired",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1183",
+      "english": "titanic",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1184",
+      "english": "title",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1185",
+      "english": "today",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1186",
+      "english": "tofu",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1187",
+      "english": "together",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1188",
+      "english": "tom",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1189",
+      "english": "tomato",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1190",
+      "english": "tomorrow",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1191",
+      "english": "tongue",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1192",
+      "english": "tour",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1193",
+      "english": "town",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1194",
+      "english": "toy",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1195",
+      "english": "toys",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1196",
+      "english": "traditional",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1197",
+      "english": "traffic",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1198",
+      "english": "trailer",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1199",
+      "english": "train",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1200",
+      "english": "trains",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1201",
+      "english": "tramp",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1202",
+      "english": "trans",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1203",
+      "english": "transport",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1204",
+      "english": "trav",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1205",
+      "english": "travel",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1206",
+      "english": "travelled",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1207",
+      "english": "travelling",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1208",
+      "english": "travels",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1209",
+      "english": "treasure",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1210",
+      "english": "treating",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1211",
+      "english": "trees",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1212",
+      "english": "trick",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1213",
+      "english": "trip",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1214",
+      "english": "true",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1215",
+      "english": "trung",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1216",
+      "english": "try",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1217",
+      "english": "tulip",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1218",
+      "english": "ture",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1219",
+      "english": "turn",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1220",
+      "english": "turns",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1221",
+      "english": "tutoring",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1222",
+      "english": "twenty",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1223",
+      "english": "twice",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1224",
+      "english": "type",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1225",
+      "english": "uncle",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1226",
+      "english": "unhealthy",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1227",
+      "english": "until",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1228",
+      "english": "unusual",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1229",
+      "english": "usa",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1230",
+      "english": "use",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1231",
+      "english": "used",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1232",
+      "english": "uses",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1233",
+      "english": "using",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1234",
+      "english": "usual",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1235",
+      "english": "usually",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1236",
+      "english": "van",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1237",
+      "english": "vanilla",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1238",
+      "english": "vegetables",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1239",
+      "english": "vehicles",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1240",
+      "english": "vermicelli",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1241",
+      "english": "version",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1242",
+      "english": "victorian",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1243",
+      "english": "video",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1244",
+      "english": "viet",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1245",
+      "english": "vietnamese",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1246",
+      "english": "vinci",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1247",
+      "english": "violent",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1248",
+      "english": "visit",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1249",
+      "english": "visitor",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1250",
+      "english": "visitors",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1251",
+      "english": "visuals",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1252",
+      "english": "vitamin",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1253",
+      "english": "vitamins",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1254",
+      "english": "voice",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1255",
+      "english": "volcanoes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1256",
+      "english": "volleyball",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1257",
+      "english": "volunteer",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1258",
+      "english": "volunteers",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1259",
+      "english": "voyage",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1260",
+      "english": "vuong",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1261",
+      "english": "wait",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1262",
+      "english": "wall",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1263",
+      "english": "want",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1264",
+      "english": "war",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1265",
+      "english": "warm",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1266",
+      "english": "warming",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1267",
+      "english": "washes",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1268",
+      "english": "washing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1269",
+      "english": "wasn",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1270",
+      "english": "watch",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1271",
+      "english": "watched",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1272",
+      "english": "watches",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1273",
+      "english": "watching",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1274",
+      "english": "water",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1275",
+      "english": "watered",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1276",
+      "english": "watering",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1277",
+      "english": "way",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1278",
+      "english": "wear",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1279",
+      "english": "wearing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1280",
+      "english": "weather",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1281",
+      "english": "wednesday",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1282",
+      "english": "week",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1283",
+      "english": "weekend",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1284",
+      "english": "weight",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1285",
+      "english": "welcome",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1286",
+      "english": "went",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1287",
+      "english": "westminster",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1288",
+      "english": "while",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1289",
+      "english": "white",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1290",
+      "english": "wildly",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1291",
+      "english": "wind",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1292",
+      "english": "winslet",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1293",
+      "english": "winter",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1294",
+      "english": "wives",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1295",
+      "english": "won",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1296",
+      "english": "wonder",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1297",
+      "english": "wonderful",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1298",
+      "english": "word",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1299",
+      "english": "wore",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1300",
+      "english": "work",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1301",
+      "english": "worker",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1302",
+      "english": "workers",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1303",
+      "english": "working",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1304",
+      "english": "works",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1305",
+      "english": "world",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1306",
+      "english": "worry",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1307",
+      "english": "worse",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1308",
+      "english": "worth",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1309",
+      "english": "write",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1310",
+      "english": "writer",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1311",
+      "english": "writing",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1312",
+      "english": "wrote",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1313",
+      "english": "yard",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1314",
+      "english": "year",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1315",
+      "english": "years",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1316",
+      "english": "yesterday",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1317",
+      "english": "ymca",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1318",
+      "english": "yoga",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1319",
+      "english": "yogurt",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1320",
+      "english": "york",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1321",
+      "english": "young",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1322",
+      "english": "yours",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1323",
+      "english": "zealand",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    },
+    {
+      "id": "ta7-vocab-1324",
+      "english": "zebra",
+      "vietnamese": "",
+      "ipa": "",
+      "audio_url": ""
+    }
+  ]
+}
