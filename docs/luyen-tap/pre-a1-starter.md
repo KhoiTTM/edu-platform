@@ -12,9 +12,9 @@
 - Format dữ liệu (xem `exam_bank.md` mục 7): **Format 3 — Luyện kỹ năng cắt ngang** (không
   gắn 1 concept/unit cụ thể, tổ chức theo `exam_type` chuyên biệt, `units` dùng số ảo).
 
-## 2. Trạng thái hiện tại (cập nhật 2026-07-24)
+## 2. Trạng thái hiện tại (cập nhật 2026-08-16)
 
-- **8 collections**: `exam_type: reflex` (3), `listening` (2), `lesson` (3).
+- **9 collections**: `exam_type: reflex` (3), `listening` (2), `lesson` (4).
 - Dữ liệu từ vựng lõi: 280 từ (đã bao gồm 100% từ vựng Tiếng Anh 3 Global Success và Pre A1 Starters) — định nghĩa tại `lib/data/startersVocabulary.ts`.
 - Các nhóm collection theo tên hiển thị:
   1. **"Wordlist"** (`exam_type: lesson`, `units: [1]`) — luyện theo bài học, 20 đề × 20 câu,
@@ -61,6 +61,19 @@
      lấy từ wordlist 280 từ (`lib/data/startersVocabulary.ts`); script chuyển đổi sang
      spell_builder: `scratch/gen-spelling-l1-v2-letterbox.ts`; script thêm Đề 13-20:
      `scratch/gen-spelling-l1-de13-20.ts` (cả 2 seeded RNG, tái lập được).
+   8. **"Luyện chính tả Level 2"** (`exam_type: lesson`, `units: [102]`) — **20 đề × 20 câu
+      (400 câu)** dạng `spell_builder`, nâng độ khó so với Level 1:
+      - Pool từ: ~57 từ/cụm, bao gồm từ đơn dài **9–11 ký tự** mới hoàn toàn (butterfly,
+        chocolate, strawberry...) + **cụm từ ghép liền không space** (icecream, birthdaycake,
+        livingroom, atthebeach...) + từ **7–8 ký tự tái dùng** từ L1 nhưng pool nhiễu lớn hơn.
+      - Pool chữ cái: **11–19 chữ** (tăng từ 8–9 của L1), nhiễu **4–7 chữ** (tăng từ 2–3).
+      - Cụm từ hiển thị nghĩa gốc tiếng Việt + chuỗi gốc có space (VD: *"kem (ice cream)"*);
+        câu hỏi phát TTS chuỗi gốc có space để nghe tự nhiên.
+      - Phân nhóm đề: Đề 1–5 từ đơn dài mới; Đề 6–10 cụm ghép ngắn (≤10 ký tự); Đề 11–15
+        cụm ghép dài + mix; Đề 16–20 ôn tập tổng hợp (seeded RNG `20260816`).
+      - Nguồn: `content/exam-bank/tieng-anh/pre-a1-spelling-level2.json`.
+        Script sinh: `scratch/gen-spelling-l2.ts`.
+      - Collection ID trong DB: `e4af8977-2f4a-4cba-8e1c-f0cd82d7f80b`.
 - Script seed: `scripts/seed-exam-bank.ts` (generator chuẩn, không có script riêng).
 
 ## 3. Đặc thù riêng của môn
@@ -92,6 +105,84 @@
 - [ ] Cập nhật lại mục 2 (trạng thái) trong chính file này sau khi seed xong
 
 ## 5. Lịch sử / ghi chú quan trọng
+
+- **2026-08-16 — Seed "Luyện chính tả Level 2" (20 đề × 20 câu, `spell_builder`):** Cherry hoàn
+  thành 100% Level 1 (20/20 đề, điểm trung bình 100%), cần nâng lên Level 2. Pool từ ~57 từ/cụm
+  gồm 3 nhóm: từ đơn 9–11 ký tự mới (butterfly, chocolate...), cụm từ ghép liền không space
+  (icecream, birthdaycake...), từ 7–8 ký tự tái dùng với nhiễu lớn hơn. Script sinh:
+  `scratch/gen-spelling-l2.ts` (seeded RNG `20260816`). Verify trước seed: 400 câu, mọi
+  `letter_pool` chứa đủ multiset đáp án + ≥3 nhiễu. Verify sau seed: `exam_questions` JOIN
+  xác nhận 20 exams × 20 câu = 400 thật trên Supabase.
+
+
+- **2026-08-16 — Thêm âm thanh (nhạc nền + hiệu ứng) cho mini-game "Bắn Bóng Từ Vựng":** người
+  dùng tự tải sẵn file CC0/royalty-free từ Pixabay/Mixkit vào
+  `public/audio/music-for-game/background/` (8 bài nhạc nền) và
+  `public/audio/music-for-game/tough/` (2 file tiếng "balloon pop"). Tích hợp:
+  - **Nhạc nền:** random 1/8 bài mỗi khi bấm "Bắt đầu chơi" (đổi mỗi lượt chơi mới, không đổi
+    giữa các câu trong cùng 1 lượt), volume 0.35, loop, tự dừng khi chuyển sang màn kết quả hoặc
+    unmount component (rời trang).
+  - **Bắn trúng:** random 1/2 file "balloon pop" đã tải, phát cùng lúc với confetti.
+  - **Bắn trật:** KHÔNG có file riêng cho trường hợp này — tự sinh tiếng "buzz" ngắn bằng Web
+    Audio API (`playWrongBuzz()`, oscillator sawtooth quét tần số 180→90Hz trong 0.3s) thay vì
+    yêu cầu tải thêm file, giữ số lượng asset cần quản lý ở mức tối thiểu.
+  - **Nút tắt/bật âm thanh** ở header (icon loa) — chỉ tắt nhạc nền + hiệu ứng, KHÔNG tắt giọng
+    đọc từ/câu (Web Speech API hoặc audio Cấp độ 2) vì đó là nội dung học tập bắt buộc nghe để
+    trả lời, không phải hiệu ứng trang trí.
+  **Lưu ý kỹ thuật:** cleanup effect dừng nhạc nền khi unmount cố ý đọc `musicRef.current` bên
+  trong closure của cleanup function (không copy ra biến ngoài) vì `<audio>` element chỉ được
+  render sau khi `startGame()` chạy — tại thời điểm effect `mount` (dependency `[]`), ref luôn là
+  `null` nên copy ra biến ngoài effect sẽ tạo bug (biến đó mãi mãi `null`); ESLint
+  `react-hooks/exhaustive-deps` cảnh báo sai trong trường hợp này, đã disable có chú thích lý do
+  ngay tại dòng gây cảnh báo (không disable cả effect).
+
+- **2026-08-16 — Đổi triết lý chấm điểm mini-game "Bắn Bóng Từ Vựng" từ "không mất lượt" sang
+  "chấm ngay, 1 lần/câu":** người dùng phản hồi sau khi chơi thử — cho phép chạm sai vô hạn lần
+  ("retry_until_correct") khiến học sinh dễ bấm bừa thay vì nghe kỹ. Đổi hẳn: chạm bất kỳ bóng
+  bay nào (đúng hoặc sai) đều khoá round ngay lập tức, hiện rõ đáp án đúng (bóng đúng dừng lại,
+  viền xanh, các bóng khác mờ đi) kèm thông báo đúng/sai, đợi **3 giây** rồi mới tự động chuyển
+  sang từ tiếp theo (trước đó là 600ms). Vì không còn "luôn đúng cuối cùng", màn kết quả đổi từ
+  hiển thị cố định `N/N` sang **điểm thật** (`score/total` + phần trăm + xếp hạng theo ngưỡng
+  90/70/50, cùng pattern `StartersLearningEngine.tsx`'s `ResultScreen`) — confetti lớn chỉ bắn
+  khi đạt ≥80% thay vì luôn bắn. Đồng thời giảm tốc độ đọc Web Speech API từ `rate: 0.85` xuống
+  `rate: 0.8` theo yêu cầu, giúp học sinh nghe rõ hơn khi tự đọc từ (Cấp độ 1).
+
+- **2026-08-16 — Thêm "Cấp độ 2" cho mini-game "Bắn Bóng Từ Vựng" — nghe cả câu bằng audio thật
+  thay vì nghe 1 từ qua TTS:** người dùng phản hồi Cấp độ 1 (nghe 1 từ đơn) quá đơn giản. Thay vì
+  soạn câu mới bằng template + Web Speech API, quyết định tái dùng audio mp3 thật (ElevenLabs,
+  phát âm chuẩn hơn) đã có sẵn từ collection "Luyện nghe Level 2" — phát âm chất lượng tốt hơn
+  và không tốn công sinh audio mới.
+  **Vấn đề gặp phải:** dữ liệu nguồn (`content/exam-bank/pre-a1-listening-level2-exams.json`,
+  182 câu unique) không có mapping sẵn tới `VocabWord.id` — chỉ có tag chủ đề chung chung (11
+  nhóm, không phải theo từng từ). Phải viết script đối chiếu thủ công (loại từ chức năng: đại
+  từ/giới từ/mạo từ/số đếm/tên riêng; ưu tiên danh từ cụ thể xuất hiện cuối câu; chỉ nhận tính từ
+  màu sắc làm từ mục tiêu khi không còn lựa chọn nào khác, VD "My favourite colour is yellow."
+  → `colour-yellow`) để suy ra từ mục tiêu của từng câu. Kết quả: **175/182 câu map được vào 82
+  từ vựng unique** (7 câu về "living room"/"dining room" không map được vì `home-room` bị loại
+  do gây nhầm lẫn giữa 2 loại phòng, chấp nhận bỏ qua). Đã verify cả 175 file mp3 tương ứng đều
+  tồn tại thật trên đĩa (`public/audio/pre-a1-starter-listening/`) trước khi đưa vào dữ liệu.
+  **Vì chỉ phủ được 82/280 từ (~29%),** quyết định Cấp độ 2 là **chế độ chơi riêng** (chọn ở màn
+  Intro), không thay thế Cấp độ 1 — Cấp độ 1 giữ nguyên hành vi cũ (từ đơn, TTS, toàn bộ 280 từ).
+  **Dữ liệu:** kết quả đối chiếu được ghi thành file tĩnh `lib/data/pooyanLevel2Sentences.ts`
+  (175 entry, mỗi entry gồm `wordId`/`audioText`/`audioUrl`) — không chạy lại heuristic ở
+  runtime, sinh 1 lần bằng script tạm rồi xoá. Cơ chế chấm điểm, "không mất lượt khi sai", layout
+  lane/bong bóng giữ nguyên như Cấp độ 1, chỉ đổi nguồn phát âm (`<audio>` phát mp3 thật thay vì
+  `speechSynthesis`) và ẩn chữ tiếng Anh trước khi trả lời đúng (tránh lộ đáp án qua chữ khi bài
+  tập là nghe-hiểu câu) — sau khi trả lời đúng mới hiện `audioText` làm phản hồi học tập.
+
+- **2026-08-15 — Thêm mini-game "Bắn Bóng Từ Vựng" (Pooyan-style shooter), độc lập với
+  exam_bank/DB:** route tĩnh `luyen-tap/pre-a1-starter/game-pooyan` (component
+  `components/games/PooyanVocabGame.tsx`, thư mục `components/games/` mới) — nghe từ tiếng Anh
+  qua Web Speech API rồi chạm chọn đúng bóng bay emoji trong số 4 bóng (1 đúng + 3 nhiễu) trôi
+  ngang qua 4 lane dọc, dùng framer-motion tween khai báo (không rAF, không physics engine).
+  Chơi hết 10 từ ngẫu nhiên (lấy trực tiếp từ `allVocabWords`/`getDistractors` có sẵn trong
+  `lib/data/startersVocabulary.ts`, không seed, không bảng DB mới) rồi hiện màn kết quả. Áp
+  dụng triết lý không mất lượt/không trừ điểm khi chạm sai (cùng tinh thần
+  `retry_until_correct` đã dùng cho "Luyện chính tả Level 1") — vì vậy không có mạng/game-over,
+  và màn kết quả chỉ hiện hoàn thành N/N + confetti (không có % điểm vì luật chơi đảm bảo luôn
+  hoàn thành). Có 1 card liên kết tới game được chèn vào đầu trang `luyen-tap/[subject]/page.tsx`
+  khi `subject === "pre-a1-starter"`. Chưa lưu kết quả vào `learning_sessions` (game độc lập theo
+  quyết định ban đầu) — có thể bổ sung sau nếu cần theo dõi lịch sử chơi.
 
 - **2026-07-25 — Đổi tên 20 đề "Luyện chính tả Level 1" từ "Đề 01".."Đề 20" (quá cụt, mất
   ngữ cảnh môn/level khi hiện độc lập ở nơi khác như popover "Giao ngay" hay lịch sử làm bài)
