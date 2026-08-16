@@ -280,6 +280,20 @@ export default function SubjectMapPage() {
           </div>
         )}
 
+        {!isLoading && subject === "pre-a1-starter" && (
+          <Link
+            href="/luyen-tap/pre-a1-starter/game-pooyan"
+            className="group mb-8 flex items-center gap-4 rounded-3xl border-2 border-fuchsia-500/30 bg-gradient-to-r from-fuchsia-950/50 to-indigo-950/50 px-6 py-5 shadow-lg hover:border-fuchsia-400/60 transition-all"
+          >
+            <span className="text-4xl">🎈</span>
+            <div className="flex-1">
+              <h3 className="font-black text-white text-base">Bắn Bóng Từ Vựng</h3>
+              <p className="text-xs text-slate-400 mt-0.5">Nghe từ và bắn đúng bóng bay — trò chơi luyện từ vựng vui nhộn!</p>
+            </div>
+            <ChevronRight className="text-fuchsia-400 group-hover:translate-x-1 transition" size={20} />
+          </Link>
+        )}
+
         {!isLoading && (
           <div className="flex justify-center mb-10">
             <div className="flex bg-surface/80 p-1.5 rounded-2xl border border-white/10 backdrop-blur-sm gap-1 flex-wrap justify-center">
