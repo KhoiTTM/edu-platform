@@ -1,0 +1,58 @@
+[
+  {
+    "bai": 26,
+    "title": "Bài 26: Phép cộng và phép trừ đa thức một biến",
+    "questions": [
+      {
+        "id": "toan7-sbt-t2-26-7.15",
+        "type": "essay",
+        "question": "**7.15.** Cho hai đa thức $A(x) = x^4 - 5x^3 + x^2 + 5x - \\dfrac{1}{3}$ và $B(x) = x^4 - 2x^3 + x^2 - 5x - \\dfrac{2}{3}$.\nHãy tính $A(x) + B(x)$ và $A(x) - B(x)$.",
+        "explanation": "$A(x) + B(x) = 2x^4 - 7x^3 + 2x^2 - 1$;\n\n$A(x) - B(x) = -3x^3 + 10x + \\dfrac{1}{3}$.",
+        "tags": [
+          "chuong-7",
+          "bai-26"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-26-7.16",
+        "type": "essay",
+        "question": "**7.16.** Cho đa thức $H(x) = x^4 - 3x^3 - x + 1$. Tìm đa thức $P(x)$ và $Q(x)$ sao cho\na) $H(x) + P(x) = x^5 - 2x^2 + 2$;\nb) $H(x) - Q(x) = -2x^3$.",
+        "explanation": "a) $P(x) = (x^5 - 2x^2 + 2) - H(x) = x^5 - x^4 + 3x^3 - 2x^2 + x + 1$.\n\nb) $Q(x) = H(x) + 2x^3 = x^4 - x^3 - x + 1$.",
+        "tags": [
+          "chuong-7",
+          "bai-26"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-26-7.17",
+        "type": "essay",
+        "question": "**7.17.** Em hãy viết hai đa thức tuỳ ý $A(x)$ và $B(x)$. Sau đó tính $C(x) = A(x) - B(x)$ và $C'(x) = B(x) - A(x)$, rồi so sánh và nêu nhận xét về bậc, các hệ số của $C(x)$ và $C'(x)$.",
+        "explanation": "Trong mọi trường hợp, các hệ số của hai hạng tử cùng bậc trong hai đa thức $C(x)$ và $C'(x)$ là hai số đối nhau.",
+        "tags": [
+          "chuong-7",
+          "bai-26"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-26-7.18",
+        "type": "essay",
+        "question": "**7.18.** Cho các đa thức $A(x) = 2x^3 - 2x^2 + x - 4$; $B(x) = 3x^3 - 2x + 3$ và $C(x) = -x^3 + 1$.\nHãy tính:\na) $A(x) + B(x) + C(x)$;\nb) $A(x) - B(x) - C(x)$.",
+        "explanation": "a) $4x^3 - 2x^2 - x$;\n\nb) $-2x^2 + 3x - 8$.\n\n*HD.* Nhận xét rằng $A + B + C = A + (B + C)$ và $A - B - C = A - (B + C)$. Do đó để cho gọn, trước hết hãy tính $B + C$.",
+        "tags": [
+          "chuong-7",
+          "bai-26"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-26-7.19",
+        "type": "essay",
+        "question": "**7.19.** Gọi $S(x)$ là tổng của hai đa thức $A(x)$ và $B(x)$. Biết rằng $x = a$ là một nghiệm của đa thức $A(x)$. Chứng minh rằng:\na) Nếu $x = a$ là một nghiệm của $B(x)$ thì $a$ cũng là một nghiệm của $S(x)$.\nb) Nếu $a$ không là nghiệm của $B(x)$ thì $a$ cũng không là nghiệm của $S(x)$.",
+        "explanation": "Theo đề bài, ta có $S(x) = A(x) + B(x)$ và $A(a) = 0$. Do đó $S(a) = B(a)$.\na) Nếu $a$ là nghiệm của $B(x)$ thì $B(a) = 0$, suy ra $S(a) = B(a) = 0$. Vậy $a$ cũng là nghiệm của $S(x)$.\nb) Ngược lại, nếu $a$ không là nghiệm của $B(x)$ thì $B(a) \\ne 0$, suy ra $S(a) = B(a) \\ne 0$. Vậy $a$ không là nghiệm của $S(x)$.",
+        "tags": [
+          "chuong-7",
+          "bai-26"
+        ]
+      }
+    ]
+  }
+]

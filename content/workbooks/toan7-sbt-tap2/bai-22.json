@@ -1,0 +1,88 @@
+[
+  {
+    "bai": 22,
+    "title": "Bài 22: Đại lượng tỉ lệ thuận",
+    "questions": [
+      {
+        "id": "toan7-sbt-t2-22-1",
+        "type": "essay",
+        "question": "**6.17.** Biết rằng x và y là hai đại lượng tỉ lệ thuận và khi $x = 5$ thì $y = 3$.\n\na) Viết công thức tính y theo x.\n\nb) Tính giá trị của y khi $x = 10$.\n\nc) Tính giá trị của x khi $y = \\dfrac{3}{25}$.",
+        "explanation": "a) Ta có $y = \\dfrac{3}{5}x$.\n\nb) Khi $x = 10$ thì $y = \\dfrac{3}{5} \\cdot 10 = 6$.\n\nc) Từ $y = \\dfrac{3}{5}x$ suy ra $x = \\dfrac{5}{3}y$, do đó, khi $y = \\dfrac{3}{25}$ thì $x = \\dfrac{5}{3} \\cdot \\dfrac{3}{25} = \\dfrac{1}{5}$.",
+        "tags": [
+          "chuong-6",
+          "bai-22"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-22-2",
+        "type": "essay",
+        "question": "**6.18.** Cho biết x và y là hai đại lượng tỉ lệ thuận. Thay dấu \"?\" trong bảng sau bằng số thích hợp.\n\n| $x$ | $2$ | $5$ | $?$ | $?$ | $-1,5$ | $?$ |\n|---|---|---|---|---|---|---|\n| $y$ | $6$ | $?$ | $12$ | $-9$ | $?$ | $-1,5$ |\n\nViết công thức mô tả mối quan hệ phụ thuộc giữa hai đại lượng x và y.",
+        "explanation": "Bảng sau khi thay dấu \"?\":\n\n| $x$ | $2$ | $5$ | $4$ | $-3$ | $-1,5$ | $-0,5$ |\n|---|---|---|---|---|---|---|\n| $y$ | $6$ | $15$ | $12$ | $-9$ | $-4,5$ | $-1,5$ |\n\nTa có $\\dfrac{y}{x} = \\dfrac{6}{2} = 3$, do đó ta có công thức $y = 3x$. Hoặc $\\dfrac{x}{y} = \\dfrac{1}{3}$ nên $x = \\dfrac{1}{3}y$.",
+        "tags": [
+          "chuong-6",
+          "bai-22"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-22-3",
+        "type": "essay",
+        "question": "**6.19.** Trong mỗi bảng giá trị dưới đây, hai đại lượng x và y có phải là hai đại lượng tỉ lệ thuận không?\n\na)\n\n| $x$ | $4$ | $-10$ | $22$ | $36$ |\n|---|---|---|---|---|\n| $y$ | $24$ | $-60$ | $132$ | $216$ |\n\nb)\n\n| $x$ | $5$ | $-8$ | $14$ | $-26$ |\n|---|---|---|---|---|\n| $y$ | $20$ | $-32$ | $46$ | $-104$ |",
+        "explanation": "a) Hai đại lượng x và y là hai đại lượng tỉ lệ thuận.\n\nb) Hai đại lượng x và y không phải là hai đại lượng tỉ lệ thuận.",
+        "tags": [
+          "chuong-6",
+          "bai-22"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-22-4",
+        "type": "essay",
+        "question": "**6.20.** Dưới đây là bảng tiêu thụ xăng của một loại ô tô cỡ nhỏ.\n\n| Quãng đường đi được (km) | 10 | 20 | 30 | 40 | 50 | 80 | 100 |\n|---|---|---|---|---|---|---|---|\n| Lượng xăng tiêu thụ (lít) | 0,8 | 1,6 | 2,4 | 3,2 | 4,0 | 6,4 | 8,0 |\n\nQuãng đường đi được có tỉ lệ thuận với lượng xăng tiêu thụ hay không? Nếu có thì hãy tìm hệ số tỉ lệ và tính lượng xăng tiêu thụ khi ô tô chạy được $150\\text{ km}$.",
+        "explanation": "Quãng đường đi được (km) tỉ lệ thuận với lượng xăng tiêu thụ (lít).\nHệ số tỉ lệ là $a = \\dfrac{10}{0,8} = 12,5$. Ta có quãng đường đi được y (km) liên hệ với lượng xăng tiêu thụ x (lít) theo công thức $y = 12,5x$. Do đó khi $y = 150$ thì $x = \\dfrac{150}{12,5} = 12$ (lít).",
+        "tags": [
+          "chuong-6",
+          "bai-22"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-22-5",
+        "type": "essay",
+        "question": "**6.21.** Một công ty có chính sách khen thưởng cuối năm là thưởng theo năng suất lao động của công nhân. Hai công nhân có năng suất lao động tương ứng tỉ lệ với $3; 4$. Tính số tiền thưởng nhận được cuối năm của mỗi công nhân đó. Biết rằng số tiền thưởng của người thứ hai nhiều hơn số tiền thưởng của người thứ nhất là $2$ triệu đồng.",
+        "explanation": "Người thứ nhất được thưởng $6$ triệu đồng và người thứ hai được thưởng $8$ triệu đồng.",
+        "tags": [
+          "chuong-6",
+          "bai-22"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-22-6",
+        "type": "essay",
+        "question": "**6.22.** Ba đơn vị kinh doanh góp vốn theo tỉ lệ $3 : 5 : 7$. Hỏi mỗi đơn vị được chia bao nhiêu tiền lãi, biết tổng số tiền lãi là $600$ triệu đồng và tiền lãi được chia tỉ lệ thuận với số vốn đã góp?",
+        "explanation": "Số tiền lãi được chia cho mỗi đơn vị lần lượt là $120$ triệu đồng, $200$ triệu đồng và $280$ triệu đồng.",
+        "tags": [
+          "chuong-6",
+          "bai-22"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-22-7",
+        "type": "essay",
+        "question": "**6.23.** Cho biết x tỉ lệ thuận với y theo hệ số tỉ lệ $0,4$ và y tỉ lệ thuận với z theo hệ số tỉ lệ $6$.\n\na) Hỏi x tỉ lệ thuận với z theo hệ số tỉ lệ bằng bao nhiêu?\n\nb) Tìm giá trị của x khi $z = \\dfrac{3}{4}$.\n\nc) Tìm giá trị của z khi $x = 12$.",
+        "explanation": "a) Theo đề bài x tỉ lệ thuận với y theo hệ số tỉ lệ $0,4$ nên $x = 0,4y$; y tỉ lệ thuận với z theo hệ số tỉ lệ $6$ nên $y = 6z$. Do đó $x = 0,4 \\cdot 6z = 2,4z$.\nVậy x tỉ lệ thuận với z theo hệ số tỉ lệ $2,4$.\n\nb) Khi $z = \\dfrac{3}{4}$ thì $x = 2,4 \\cdot \\dfrac{3}{4} = 1,8$.\n\nc) Từ $x = 2,4z$ suy ra $z = \\dfrac{5}{12}x$. Do đó khi $x = 12$ thì $z = \\dfrac{5}{12} \\cdot 12 = 5$.",
+        "tags": [
+          "chuong-6",
+          "bai-22"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-22-8",
+        "type": "essay",
+        "question": "**6.24.** Cho biết x và y là hai đại lượng tỉ lệ thuận, $x_1, x_2$ là hai giá trị khác nhau của x và $y_1, y_2$ là hai giá trị tương ứng của y.\n\na) Tính giá trị của $x_1$, biết $x_2 = 3, y_1 = -5, y_2 = 9$.\n\nb) Tính $x_2$ và $y_2$, biết $y_2 - x_2 = -68, x_1 = 5, y_1 = -12$.",
+        "explanation": "Vì x, y là hai đại lượng tỉ lệ thuận, nên theo tính chất của đại lượng tỉ lệ thuận, ta có:\n\na) $\\dfrac{y_1}{x_1} = \\dfrac{y_2}{x_2}$, suy ra $x_1 = \\dfrac{y_1 \\cdot x_2}{y_2} = \\dfrac{-5 \\cdot 3}{9} = -\\dfrac{5}{3}$.\n\nb) $\\dfrac{y_2}{y_1} = \\dfrac{x_2}{x_1}$ và $y_2 - x_2 = -68$.\nTừ tính chất của dãy tỉ số bằng nhau, ta có $\\dfrac{y_2}{y_1} = \\dfrac{x_2}{x_1} = \\dfrac{y_2 - x_2}{y_1 - x_1} = \\dfrac{-68}{-12 - 5} = 4$.\nVậy $x_2 = 4 \\cdot 5 = 20;\\ y_2 = 4 \\cdot (-12) = -48$.",
+        "tags": [
+          "chuong-6",
+          "bai-22"
+        ]
+      }
+    ]
+  }
+]

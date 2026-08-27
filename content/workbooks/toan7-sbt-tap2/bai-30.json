@@ -1,0 +1,43 @@
+[
+  {
+    "bai": 30,
+    "title": "Bài 30: Làm quen với xác suất của biến cố",
+    "questions": [
+      {
+        "id": "toan7-sbt-t2-30-8.5",
+        "type": "essay",
+        "question": "**8.5.** Lớp 7A có $40$ học sinh trong đó có $10$ học sinh nam. Giáo viên gọi ngẫu nhiên một bạn lên bảng để kiểm tra bài tập. Hỏi bạn nam hay bạn nữ có khả năng được gọi lên bảng nhiều hơn? Tại sao?",
+        "explanation": "Bạn nữ có khả năng được gọi lên bảng nhiều hơn vì lớp 7A có nhiều học sinh nữ hơn.",
+        "tags": ["chuong-8", "bai-30"]
+      },
+      {
+        "id": "toan7-sbt-t2-30-8.6",
+        "type": "essay",
+        "question": "**8.6.** Nam, Việt và Mai mỗi người gieo một con xúc xắc. Tính xác suất của biến cố:\n\na) \"Tổng số chấm xuất hiện trên ba con xúc xắc lớn hơn $2$\";\n\nb) \"Tích số chấm xuất hiện trên ba con xúc xắc lớn hơn $216$\".",
+        "explanation": "a) Xác suất bằng $1$ vì đây là biến cố chắc chắn.\n\nb) Xác suất bằng $0$ vì đây là biến cố không thể.",
+        "tags": ["chuong-8", "bai-30"]
+      },
+      {
+        "id": "toan7-sbt-t2-30-8.7",
+        "type": "essay",
+        "question": "**8.7.** Một túi đựng sáu tấm thẻ được ghi các số $6; 9; 10; 11; 12; 13$. Rút ngẫu nhiên một tấm thẻ trong túi. Tính xác suất để:\n\na) Rút được thẻ ghi số chia hết cho $7$;\n\nb) Rút được thẻ ghi số lớn hơn $5$.",
+        "explanation": "a) Xác suất bằng $0$ vì đây là biến cố không thể.\n\nb) Xác suất bằng $1$ vì đây là biến cố chắc chắn.",
+        "tags": ["chuong-8", "bai-30"]
+      },
+      {
+        "id": "toan7-sbt-t2-30-8.8",
+        "type": "essay",
+        "question": "**8.8.** Tại một hội thảo có $50$ đại biểu trong đó có $25$ đại biểu nam. Phóng viên chọn ngẫu nhiên một đại biểu để phỏng vấn. Tính xác suất để đại biểu được chọn phỏng vấn là nữ.",
+        "explanation": "Biến cố \"Đại biểu được chọn phỏng vấn là nữ\" và biến cố \"Đại biểu được chọn phỏng vấn là nam\" là đồng khả năng vì số đại biểu nam bằng số đại biểu nữ. Vậy xác suất của biến cố cần tìm là $\\dfrac{1}{2}$.",
+        "tags": ["chuong-8", "bai-30"]
+      },
+      {
+        "id": "toan7-sbt-t2-30-8.9",
+        "type": "essay",
+        "question": "**8.9.** Một túi đựng tám quả cầu được ghi các số $12; 18; 20; 22; 24; 26; 30; 34$. Lấy ngẫu nhiên một quả cầu trong túi. Tính xác suất để:\n\na) Lấy được quả cầu ghi số chia hết cho $3$;\n\nb) Lấy được quả cầu ghi số chia hết cho $11$;\n\nc) Lấy được quả cầu ghi số $12$ hoặc $18$.",
+        "explanation": "a) Biến cố \"Lấy được quả cầu ghi số chia hết cho $3$\" và biến cố \"Lấy được quả cầu ghi số không chia hết cho $3$\" là đồng khả năng vì có bốn quả cầu ghi số chia hết cho $3$ và bốn quả cầu ghi số không chia hết cho $3$. Vậy xác suất của biến cố cần tìm là $\\dfrac{1}{2}$.\n\nb) Biến cố \"Lấy được quả cầu ghi số chia hết cho $11$\" chính là biến cố \"Lấy được quả cầu ghi số $22$\". Mỗi quả cầu có khả năng lấy được như nhau. Có tám biến cố đồng khả năng và luôn xảy ra một và chỉ một biến cố trong tám biến cố này nên xác suất của biến cố cần tìm là $\\dfrac{1}{8}$.\n\nc) Xác suất của biến cố cần tìm là $\\dfrac{1}{4}$.",
+        "tags": ["chuong-8", "bai-30"]
+      }
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "bai": 37,
+    "title": "Bài 37: Hình lăng trụ đứng tam giác và hình lăng trụ đứng tứ giác",
+    "questions": [
+      {
+        "id": "toan7-sbt-t2-37-10.9",
+        "type": "essay",
+        "question": "**10.9.** Gọi tên đỉnh, cạnh đáy, cạnh bên, mặt đáy, mặt bên của hình lăng trụ đứng tứ giác $MNPQ.M'N'P'Q'$ trong Hình 10.7.",
+        "explanation": "Các đỉnh: $M, N, P, Q, M', N', P', Q'$.\nCác cạnh đáy: $MN, NP, PQ, QM, M'N', N'P', P'Q', Q'M'$.\nCác cạnh bên: $MM', NN', PP', QQ'$.\nCác mặt đáy: $MNPQ, M'N'P'Q'$.\nCác mặt bên: $MNN'M', NPP'N', PQQ'P', MQQ'M'$.",
+        "tags": [
+          "chuong-X",
+          "bai-37"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-37-10.10",
+        "type": "essay",
+        "question": "**10.10.** Tính thể tích hình lăng trụ đứng tam giác trong Hình 10.8.\n(Biết lăng trụ đứng có đáy là tam giác với chiều cao $5 \\text{ cm}$, cạnh đáy $10 \\text{ cm}$ và chiều cao lăng trụ là $15 \\text{ cm}$)",
+        "explanation": "Diện tích đáy của hình lăng trụ là $S = \\dfrac{1}{2} \\cdot 10 \\cdot 5 = 25$ ($\\text{cm}^2$).\nThể tích lăng trụ là $V = S \\cdot h = 25 \\cdot 15 = 375$ ($\\text{cm}^3$).",
+        "tags": [
+          "chuong-X",
+          "bai-37"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-37-10.11",
+        "type": "essay",
+        "question": "**10.11.** Một hình lăng trụ đứng đáy là một tứ giác có chu vi $30 \\text{ cm}$, chiều cao của hình lăng trụ là $8 \\text{ cm}$. Tính diện tích xung quanh của hình lăng trụ đó.",
+        "explanation": "Diện tích xung quanh của hình lăng trụ là $S_{xq} = C \\cdot h = 30 \\cdot 8 = 240$ ($\\text{cm}^2$).",
+        "tags": [
+          "chuong-X",
+          "bai-37"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-37-10.12",
+        "type": "essay",
+        "question": "**10.12.** Một lăng kính thuỷ tinh có dạng hình lăng trụ đứng có đáy là tam giác đều, kích thước như trong Hình 10.9 (cạnh đáy $3 \\text{ cm}$, chiều cao đáy $2,6 \\text{ cm}$, chiều cao lăng trụ $10 \\text{ cm}$).\na) Tính thể tích của lăng kính thuỷ tinh.\nb) Người ta làm một chiếc hộp bằng bìa cứng để đựng vừa khít lăng kính thuỷ tinh nói trên (hở hai đáy tam giác). Tính diện tích bìa cần dùng (bỏ qua mép nối).",
+        "explanation": "a) Diện tích đáy của lăng kính là $S = \\dfrac{1}{2} \\cdot 3 \\cdot 2,6 = 3,9$ ($\\text{cm}^2$).\nThể tích lăng kính thuỷ tinh là $V = S \\cdot h = 3,9 \\cdot 10 = 39$ ($\\text{cm}^3$).\nb) Diện tích bìa cứng cần dùng là $S_{xq} = (3 + 3 + 3) \\cdot 10 = 90$ ($\\text{cm}^2$).",
+        "tags": [
+          "chuong-X",
+          "bai-37"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-37-10.13",
+        "type": "essay",
+        "question": "**10.13.** Một hình lăng trụ đứng có hình khai triển như Hình 10.10 (các mặt bên có kích thước $5 \\text{ cm}$, $4 \\text{ cm}$, $3 \\text{ cm}$ và chiều cao $8 \\text{ cm}$). Tính diện tích xung quanh của hình lăng trụ.",
+        "explanation": "Diện tích xung quanh của hình lăng trụ là\n$S_{xq} = (5 + 4 + 3) \\cdot 8 = 96$ ($\\text{cm}^2$).",
+        "tags": [
+          "chuong-X",
+          "bai-37"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-37-10.14",
+        "type": "essay",
+        "question": "**10.14.** Cho hình lăng trụ đứng $MNPQ.M'N'P'Q'$ có đáy $MNPQ$ là hình thang vuông tại $M$ và $N$. Kích thước các cạnh như trong Hình 10.11 ($MQ = 20 \\text{ cm}$, $NP = 10 \\text{ cm}$, $MN = 8 \\text{ cm}$, chiều cao lăng trụ $15 \\text{ cm}$). Tính thể tích hình lăng trụ.",
+        "explanation": "Diện tích hình thang vuông $MNPQ$ là\n$S = \\dfrac{1}{2}(MQ + NP)MN = \\dfrac{1}{2}(20 + 10) \\cdot 8 = 120$ ($\\text{cm}^2$).\nThể tích của hình lăng trụ đứng $MNPQ.M'N'P'Q'$ là\n$V = S \\cdot h = 120 \\cdot 15 = 1\\,800$ ($\\text{cm}^3$).",
+        "tags": [
+          "chuong-X",
+          "bai-37"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-37-10.15",
+        "type": "essay",
+        "question": "**10.15.** Một hình lăng trụ đứng được ghép bởi một hình lăng trụ đứng tam giác và một hình hộp chữ nhật có kích thước như trong Hình 10.12 (Khối hộp chữ nhật có kích thước $5 \\text{ cm} \\times 6 \\text{ cm}$, lăng trụ tam giác có cạnh góc vuông $3 \\text{ cm}$ và $4 \\text{ cm}$, chiều cao chung của lăng trụ là $8 \\text{ cm}$). Tính thể tích của hình lăng trụ đứng $ABCEF.A'B'C'E'F'$.",
+        "explanation": "Thể tích hình lăng trụ đứng $ABC.A'B'C'$ là\n$V_1 = S \\cdot h = \\dfrac{1}{2} \\cdot 3 \\cdot 4 \\cdot 8 = 48$ ($\\text{cm}^3$).\nThể tích hình hộp chữ nhật là $V_2 = 5 \\cdot 6 \\cdot 8 = 240$ ($\\text{cm}^3$).\nThể tích của hình lăng trụ đứng $ABCEF.A'B'C'E'F'$ là\n$V = V_1 + V_2 = 48 + 240 = 288$ ($\\text{cm}^3$).",
+        "tags": [
+          "chuong-X",
+          "bai-37"
+        ]
+      }
+    ]
+  }
+]

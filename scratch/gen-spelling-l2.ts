@@ -185,9 +185,7 @@ function buildLetterPool(answer: string): string[] {
 
 function buildQuestion(word: Word): object {
   const pool = buildLetterPool(word.answer);
-  const displayVietnamese = word.originalPhrase
-    ? `"${word.vietnamese}" (${word.originalPhrase})`
-    : `"${word.vietnamese}"`;
+  const displayVietnamese = `"${word.vietnamese}"`;
 
   return {
     type: 'spell_builder',

@@ -7,6 +7,7 @@ const skills = [
   { key: 'speaking', label: 'Speaking', color: 'bg-emerald-500' },
   { key: 'grammar', label: 'Grammar', color: 'bg-rose-500' },
   { key: 'shadowing', label: 'Shadowing', color: 'bg-indigo-500' },
+  { key: 'phan-xa', label: 'Phản xạ', color: 'bg-green-600' },
   { key: 'flow-book', label: 'Flow Book', color: 'bg-blue-600' },
 ];
 

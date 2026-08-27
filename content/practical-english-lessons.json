@@ -1,0 +1,57 @@
+[
+  {
+    "id": "lesson-01",
+    "group": "Origin and History",
+    "slug": "bai-1-facebook-reel",
+    "title": "History and Original of OFF",
+    "description": "Học tiếng Anh thực tế qua video ngắn. Luyện kỹ năng nghe và hiểu ngữ cảnh.",
+    "videoUrl": "https://drive.google.com/file/d/17xs8gKUlGyovePxrpJL_RoWeNcUFffvx/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/origin-history-base.jpg",
+    "thumbnailText": "OFF"
+  },
+  {
+    "id": "lesson-02",
+    "group": "Origin and History",
+    "slug": "bai-2-origin-history-of-as",
+    "title": "History and Original of AS",
+    "description": "Nguồn gốc và lịch sử của từ AS. Học tiếng Anh thực tế qua video ngắn.",
+    "videoUrl": "https://drive.google.com/file/d/1EP8okY2JZlFMlIxl94WsOSa_PZYYJggy/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/origin-history-base.jpg",
+    "thumbnailText": "AS"
+  },
+  {
+    "id": "lesson-03",
+    "group": "Origin and History",
+    "slug": "bai-3-origin-history-of-by",
+    "title": "History and Original of BY",
+    "description": "Nguồn gốc và lịch sử của từ BY. Học tiếng Anh thực tế qua video ngắn.",
+    "videoUrl": "https://drive.google.com/file/d/1XjRWKYm1OIogVgK4nhok9rW91YfXasA8/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/origin-history-base.jpg",
+    "thumbnailText": "BY"
+  },
+  {
+    "id": "lesson-04",
+    "group": "Origin and History",
+    "slug": "bai-4-origin-history-of-with",
+    "title": "History and Original of WITH",
+    "description": "Nguồn gốc và lịch sử của từ WITH. Học tiếng Anh thực tế qua video ngắn.",
+    "videoUrl": "https://drive.google.com/file/d/1E_LjgLdEu5c5DENe51QyJEHFu7N5eAFl/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/origin-history-base.jpg",
+    "thumbnailText": "WITH"
+  },
+  {
+    "id": "lesson-05",
+    "group": "Origin and History",
+    "slug": "bai-5-origin-history-of-for",
+    "title": "History and Original of FOR",
+    "description": "Nguồn gốc và lịch sử của từ FOR. Học tiếng Anh thực tế qua video ngắn.",
+    "videoUrl": "https://drive.google.com/file/d/1E_LjgLdEu5c5DENe51QyJEHFu7N5eAFl/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/origin-history-base.jpg",
+    "thumbnailText": "FOR"
+  }
+]

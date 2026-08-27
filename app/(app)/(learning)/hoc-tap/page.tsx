@@ -57,6 +57,20 @@ export default async function HocTapPage() {
             }
           ];
         }
+        const hasPE = gradeSubjects.some((s: any) => s.slug === 'practical-english');
+        if (!hasPE) {
+          gradeSubjects = [
+            ...gradeSubjects,
+            {
+              id: 'c8a2b3e4-5f6a-7b8c-9d0e-1f2a3b4c5d6e',
+              slug: 'practical-english',
+              name_vi: 'Practical English',
+              name_en: 'Practical English',
+              description: 'Tiếng Anh thực tế qua video',
+              icon: '🎬'
+            }
+          ];
+        }
       } else {
         // Prevent Cambridge subjects leaking into grade categories
         gradeSubjects = gradeSubjects.filter((s: any) => !['pre-a1-starter', 'mindset-ielts'].includes(s.slug));
@@ -81,6 +95,7 @@ export default async function HocTapPage() {
         case 'tieng_viet': return <BookOpen className={className} />;
         case 'mindset-ielts': return <GraduationCap className={className} />;
         case 'pre-a1-starter': return <Star className={className} />;
+        case 'practical-english': return <Globe2 className={className} />;
         default: return <BookOpen className={className} />;
     }
   };
@@ -88,6 +103,7 @@ export default async function HocTapPage() {
   const getSubjectLink = (slug: string, grade: number) => {
     if (slug === 'mindset-ielts') return `/hoc-tap/mindset-ielts`;
     if (slug === 'pre-a1-starter') return `/hoc-tap/pre-a1-starter`;
+    if (slug === 'practical-english') return `/hoc-tap/practical-english`;
     if (slug === 'tieng_viet') return `/hoc-tap/tieng_viet`;
     const nodeSlug = grade === 0 ? (slug === 'mindset-ielts' ? 'ielts-foundation' : 'global') : `lop-${grade}`;
     return `/learn/${slug}/${nodeSlug}`;

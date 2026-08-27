@@ -88,13 +88,14 @@ export default function SubjectMapPage() {
   const [reviews, setReviews] = useState<any[]>([]);
   const [reflexes, setReflexes] = useState<any[]>([]);
   const [activeTab, setActiveTab] = useState<"lesson" | "workbook" | "review" | "reflex">(
-    subject === "tieng-anh-7" ? "workbook" : "lesson"
+    ["tieng-anh-7", "toan", "khtn"].includes(subject) ? "workbook" : "lesson"
   );
   const [completedExams, setCompletedExams] = useState<string[]>([]);
   const [collapsedUnits, setCollapsedUnits] = useState<Record<string, boolean>>({});
   const [collapsedReflex, setCollapsedReflex] = useState<Record<string, boolean>>({});
   const [isLoading, setIsLoading] = useState(true);
   const [isPickingRandom, setIsPickingRandom] = useState(false);
+  const [isPickingTeleprompter, setIsPickingTeleprompter] = useState(false);
   const [timerLimit, setTimerLimit] = useState<number | null>(null);
   const [canAssignTasks, setCanAssignTasks] = useState(false);
 
@@ -182,6 +183,26 @@ export default function SubjectMapPage() {
       console.error(err);
     } finally {
       setIsPickingRandom(false);
+    }
+  };
+
+  const pickRandomTeleprompter = async () => {
+    setIsPickingTeleprompter(true);
+    try {
+      const { createClient } = await import("@/lib/supabase/client");
+      const supabase = createClient();
+      const { data: lessons } = await supabase
+        .from("shadowing_lessons")
+        .select("slug")
+        .order("title", { ascending: true });
+      const slugs = (lessons ?? []).map((l: any) => l.slug).filter(Boolean);
+      if (slugs.length === 0) return;
+      const slug = slugs[Math.floor(Math.random() * slugs.length)];
+      router.push(`/hoc-tap/mindset-ielts/phan-xa/${slug}`);
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setIsPickingTeleprompter(false);
     }
   };
 
@@ -281,17 +302,30 @@ export default function SubjectMapPage() {
         )}
 
         {!isLoading && subject === "pre-a1-starter" && (
-          <Link
-            href="/luyen-tap/pre-a1-starter/game-pooyan"
-            className="group mb-8 flex items-center gap-4 rounded-3xl border-2 border-fuchsia-500/30 bg-gradient-to-r from-fuchsia-950/50 to-indigo-950/50 px-6 py-5 shadow-lg hover:border-fuchsia-400/60 transition-all"
-          >
-            <span className="text-4xl">🎈</span>
-            <div className="flex-1">
-              <h3 className="font-black text-white text-base">Bắn Bóng Từ Vựng</h3>
-              <p className="text-xs text-slate-400 mt-0.5">Nghe từ và bắn đúng bóng bay — trò chơi luyện từ vựng vui nhộn!</p>
-            </div>
-            <ChevronRight className="text-fuchsia-400 group-hover:translate-x-1 transition" size={20} />
-          </Link>
+          <div className="mb-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <Link
+              href="/luyen-tap/pre-a1-starter/game-pooyan"
+              className="group flex items-center gap-4 rounded-3xl border-2 border-fuchsia-500/30 bg-gradient-to-r from-fuchsia-950/50 to-indigo-950/50 px-6 py-5 shadow-lg hover:border-fuchsia-400/60 transition-all"
+            >
+              <span className="text-4xl">🎈</span>
+              <div className="flex-1">
+                <h3 className="font-black text-white text-base">Bắn Bóng Từ Vựng</h3>
+                <p className="text-xs text-slate-400 mt-0.5">Nghe từ và bắn đúng bóng bay — trò chơi luyện từ vựng vui nhộn!</p>
+              </div>
+              <ChevronRight className="text-fuchsia-400 group-hover:translate-x-1 transition" size={20} />
+            </Link>
+            <Link
+              href="/luyen-tap/pre-a1-starter/game-akinator"
+              className="group flex items-center gap-4 rounded-3xl border-2 border-indigo-500/30 bg-gradient-to-r from-indigo-950/50 to-cyan-950/50 px-6 py-5 shadow-lg hover:border-indigo-400/60 transition-all"
+            >
+              <span className="text-4xl">🧞</span>
+              <div className="flex-1">
+                <h3 className="font-black text-white text-base">English Akinator</h3>
+                <p className="text-xs text-slate-400 mt-0.5">Đoán từ tiếng Anh qua câu hỏi Yes/No — luyện đọc & đặt câu hỏi!</p>
+              </div>
+              <ChevronRight className="text-indigo-400 group-hover:translate-x-1 transition" size={20} />
+            </Link>
+          </div>
         )}
 
         {!isLoading && (
@@ -488,7 +522,44 @@ export default function SubjectMapPage() {
                 })}
               </div>
             </div>
+            {/* Teleprompter reading card — only for mindset-ielts */}
+            {subject === "mindset-ielts" && (
+              <div className="mb-8">
+                <div className="rounded-3xl border border-green-800/50 bg-gradient-to-br from-green-950/60 via-slate-900/80 to-slate-950 p-6 shadow-xl shadow-green-950/30">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div>
+                      <span className="inline-flex items-center gap-1.5 rounded-full bg-green-500/15 px-3 py-1 text-[10px] font-black text-green-400 border border-green-500/25 uppercase tracking-wider">
+                        📖 Phản xạ đọc
+                      </span>
+                      <h3 className="mt-3 text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-emerald-400">
+                        Luyện Đọc Theo Teleprompter
+                      </h3>
+                      <p className="mt-1.5 text-xs text-slate-400 font-bold leading-relaxed max-w-md">
+                        Chọn 1 bài từ 55 đoạn hội thoại — chữ tự chạy lên, tô xanh từng câu theo tốc độ 130 từ/phút.
+                        Đọc hết bài là hoàn thành, không chấm điểm.
+                      </p>
+                    </div>
+                    <div className="flex flex-col sm:flex-row gap-3 shrink-0">
+                      <Link
+                        href="/hoc-tap/mindset-ielts/phan-xa"
+                        className="inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-r from-green-600 to-emerald-600 px-6 py-3 text-sm font-black text-white shadow-lg shadow-green-900/40 hover:from-green-500 hover:to-emerald-500 transition-all active:scale-95"
+                      >
+                        📖 Chọn bài đọc →
+                      </Link>
+                      <button
+                        onClick={pickRandomTeleprompter}
+                        disabled={isPickingTeleprompter}
+                        className="inline-flex items-center justify-center gap-2 rounded-2xl border border-green-800/60 px-6 py-3 text-sm font-black text-green-400 hover:bg-green-950/40 transition-all active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
+                      >
+                        {isPickingTeleprompter ? "Đang chọn..." : "🎲 Ngẫu nhiên"}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
             {reflexes.map((vol: any) => {
+
               const reflexKey = `reflex-${vol.id ?? vol.volume}`;
               const isReflexCollapsed = collapsedReflex[reflexKey] !== false;
               const doneCount = (vol.exams || []).filter((e: any) => completedExams.includes(e.id)).length;

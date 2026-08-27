@@ -1,0 +1,68 @@
+[
+  {
+    "bai": 24,
+    "title": "Bài 24: Biểu thức đại số",
+    "questions": [
+      {
+        "id": "toan7-sbt-t2-24-7.1",
+        "type": "essay",
+        "question": "**7.1.** Viết biểu thức đại số biểu thị:\na) Hiệu các bình phương của hai số $a$ và $b$;\nb) Tổng các lập phương của hai số $x$ và $y$.",
+        "explanation": "a) $a^2 - b^2$;\n\nb) $x^3 + y^3$.",
+        "tags": [
+          "chuong-7",
+          "bai-24"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-24-7.2",
+        "type": "essay",
+        "question": "**7.2.** Viết biểu thức đại số biểu thị:\na) Thể tích của hình hộp chữ nhật có chiều dài $a$, chiều rộng $b$ và chiều cao là $a + b$;\nb) Diện tích của hình tứ giác có hai đường chéo vuông góc với nhau và độ dài của hai đường chéo đó là $p$ và $q$.",
+        "explanation": "a) $V = ab(a + b)$;\n\nb) $S = \\dfrac{1}{2}pq$.\n\n*HD.* Cách 1: $S = S_1 + S_2$, trong đó $S_1$ và $S_2$ lần lượt là diện tích tam giác $ABC$ và tam giác $ADC$.\nCách 2: Vẽ hình chữ nhật có các cạnh song song với hai đường chéo của tứ giác đã cho (H.7.1) và xét các tam giác vuông bằng nhau để chứng tỏ rằng diện tích của tứ giác đã cho đúng bằng nửa diện tích của hình chữ nhật.",
+        "tags": [
+          "chuong-7",
+          "bai-24"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-24-7.3",
+        "type": "essay",
+        "question": "**7.3.** Hãy chỉ ra các biến trong mỗi biểu thức đại số thu được ở các Bài 7.1 và 7.2.",
+        "explanation": "",
+        "tags": [
+          "chuong-7",
+          "bai-24"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-24-7.4",
+        "type": "essay",
+        "question": "**7.4.** Tính giá trị của biểu thức:\na) $2a^2b + ab^2 - 3ab$ tại $a = -2$ và $b = 4$.\nb) $xy(x + y) - (x^2 + y^2)$ tại $x = 0,5$ và $y = -1,5$.",
+        "explanation": "a) $24$;\n\nb) $-1,75$.",
+        "tags": [
+          "chuong-7",
+          "bai-24"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-24-7.5",
+        "type": "essay",
+        "question": "**7.5.** Trong hai kết luận sau, kết luận nào đúng?\na) Hai biểu thức $A(x) = (x + 1)^2$ và $B(x) = x^2 + 1$ bằng nhau với mọi giá trị của $x$. (Chẳng hạn, khi $x = 0$ thì ta có $A(0) = B(0) = 1$).\nb) Hai biểu thức $C = a(b + c)$ và $D = ab + ac$ bằng nhau với mọi giá trị của các biến $a, b$ và $c$. (Chẳng hạn, khi $a = b = c = 0$ thì $C = D = 0$).",
+        "explanation": "a) Sai. Chẳng hạn tại $x = 1$, ta có $A(1) = 4$ khác với $B(1) = 2$.\n\nb) Đúng, vì đẳng thức $a(b + c) = ab + ac$ biểu thị tính chất phân phối của phép nhân đối với phép cộng.",
+        "tags": [
+          "chuong-7",
+          "bai-24"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-24-7.6",
+        "type": "essay",
+        "question": "**7.6.** Một luống rau có $x$ hàng, mỗi hàng có $y$ cây rau ($x, y \\in \\mathbb{N}$). Trong tình huống này, biểu thức $P = xy$ biểu thị số cây rau được trồng trên luống rau đó. Hãy nêu một tình huống khác, trong đó một đại lượng được biểu thị bởi biểu thức $x - y$.",
+        "explanation": "",
+        "tags": [
+          "chuong-7",
+          "bai-24"
+        ]
+      }
+    ]
+  }
+]

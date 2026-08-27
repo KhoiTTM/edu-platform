@@ -1,0 +1,36 @@
+[
+  {
+    "bai": 29,
+    "title": "Bài 29: Làm quen với biến cố",
+    "questions": [
+      {
+        "id": "toan7-sbt-t2-29-8.1",
+        "type": "essay",
+        "question": "**8.1.** Một túi đựng các quả cầu được đánh số $5; 10; 15; 20; 30; 35; 40$. Lấy ngẫu nhiên một quả cầu trong túi. Trong các biến cố sau, biến cố nào là biến cố chắc chắn, biến cố không thể hay biến cố ngẫu nhiên?\n\na) Biến cố A: \"Quả cầu được lấy có ghi số chính phương\".\n\nb) Biến cố B: \"Quả cầu được lấy có ghi số chia hết cho $3$\".\n\nc) Biến cố C: \"Quả cầu được lấy có ghi số chia hết cho $5$\".",
+        "explanation": "a) Biến cố A là biến cố không thể.\n\nb) Biến cố B là biến cố ngẫu nhiên.\n\nc) Biến cố C là biến cố chắc chắn.",
+        "tags": ["chuong-8", "bai-29"]
+      },
+      {
+        "id": "toan7-sbt-t2-29-8.2",
+        "type": "essay",
+        "question": "**8.2.** Điền cụm từ thích hợp (ngẫu nhiên, chắc chắn, không thể) vào chỗ chấm trong các câu sau:\n\na) Biến cố A: \"An là một vận động viên điền kinh. Trong giải chạy sắp tới, An sẽ chạy $100$ m không quá $30$ giây\" là biến cố ...\n\nb) Biến cố B: \"Ngày mai, chất lượng không khí tại Hà Nội ở mức tốt\" là biến cố ...\n\nc) Biến cố C: \"Ông An năm nay $80$ tuổi. Ông sẽ sống thọ đến $300$ tuổi\" là biến cố ...",
+        "explanation": "a) Biến cố A: \"An là một vận động viên điền kinh. Trong giải chạy sắp tới, An sẽ chạy $100$ m không quá $30$ giây\" là biến cố chắc chắn.\n\nb) Biến cố B: \"Ngày mai chất lượng không khí ở Hà Nội ở mức tốt\" là biến cố ngẫu nhiên.\n\nc) Biến cố C: \"Ông An năm nay $80$ tuổi. Ông sẽ sống thọ đến $300$ tuổi\" là biến cố không thể.",
+        "tags": ["chuong-8", "bai-29"]
+      },
+      {
+        "id": "toan7-sbt-t2-29-8.3",
+        "type": "essay",
+        "question": "**8.3.** An, Bình và Cường mỗi người gieo một con xúc xắc. Điền cụm từ thích hợp (ngẫu nhiên, chắc chắn, không thể) vào ô trống tương ứng với loại biến cố:\n- Số chấm xuất hiện trên cả ba con xúc xắc đều là $6$.\n- Số chấm xuất hiện trên cả ba con xúc xắc đều nhỏ hơn $7$.\n- Tích các số chấm xuất hiện trên ba con xúc xắc lớn hơn $216$.",
+        "explanation": "- Số chấm xuất hiện trên cả ba con xúc xắc đều là $6$: Ngẫu nhiên.\n- Số chấm xuất hiện trên cả ba con xúc xắc đều nhỏ hơn $7$: Chắc chắn.\n- Tích các số chấm xuất hiện trên ba con xúc xắc lớn hơn $216$: Không thể.",
+        "tags": ["chuong-8", "bai-29"]
+      },
+      {
+        "id": "toan7-sbt-t2-29-8.4",
+        "type": "essay",
+        "question": "**8.4.** Một tấm bìa cứng hình tròn được chia làm sáu phần có diện tích bằng nhau và ghi các số La Mã I, II, III, IV, V, VI, được gắn vào trục quay có mũi tên ở tâm như Hình 8.1. Bạn Hiền quay tấm bìa.\nTrong các biến cố sau, biến cố nào là biến cố chắc chắn, biến cố không thể hay biến cố ngẫu nhiên?\n\na) Biến cố A: \"Mũi tên dừng ở hình quạt có ghi số VII\".\n\nb) Biến cố B: \"Mũi tên dừng ở hình quạt có ghi một trong các số I, II, III, IV, V, VI\".\n\nc) Biến cố C: \"Mũi tên dừng ở hình quạt có ghi số I\".",
+        "explanation": "a) Biến cố A là biến cố không thể.\n\nb) Biến cố B là biến cố chắc chắn.\n\nc) Biến cố C là biến cố ngẫu nhiên.",
+        "tags": ["chuong-8", "bai-29"]
+      }
+    ]
+  }
+]

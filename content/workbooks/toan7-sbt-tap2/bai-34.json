@@ -1,0 +1,58 @@
+[
+  {
+    "bai": 34,
+    "title": "Bài 34: Sự đồng quy của ba đường trung tuyến, ba đường phân giác trong một tam giác",
+    "questions": [
+      {
+        "id": "toan7-sbt-t2-34-1",
+        "type": "essay",
+        "question": "**9.14.** Cho góc $xAy$ và một điểm $G$ trong góc đó. Lấy hai điểm $M, N$ trên tia $AG$ sao cho $AM = \\dfrac{3}{2} AG$, $AN = 2AM$. Qua $N$ kẻ đường thẳng song song với đường thẳng chứa tia $Ax$, nó cắt $Ay$ tại $C$. Đường thẳng $CM$ cắt $Ax$ tại $B$.\na) Chứng minh hai tam giác $ABM$ và $NCM$ bằng nhau, từ đó suy ra $AM$ là đường trung tuyến của tam giác $ABC$.\nb) Chứng minh rằng $G$ là trọng tâm của tam giác $ABC$ vừa dựng được.",
+        "explanation": "HD. (H.9.18) a) Từ $AN = 2AM$ suy ra $AM = NM$.\nTa có $\\widehat{MAB} = \\widehat{MNC}$ (góc so le trong do $NC \\parallel Ax$); $\\widehat{AMB} = \\widehat{NMC}$ (góc đối đỉnh). Vậy $\\Delta ABM = \\Delta NCM$ (g.c.g). Suy ra $MB = MC$ hay $M$ là trung điểm của $BC$. Vậy $AM$ là đường trung tuyến của tam giác $ABC$.\nb) Điểm $G$ nằm trên đường trung tuyến $AM$ của tam giác $ABC$ mà $AG = \\dfrac{2}{3} AM$ nên $G$ là trọng tâm của tam giác $ABC$.",
+        "tags": [
+          "chuong-9",
+          "bai-34"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-34-2",
+        "type": "essay",
+        "question": "**9.15.** Gọi $M$ là trung điểm của cạnh $BC$ của tam giác $ABC$ và $D$ là điểm sao cho $M$ là trung điểm của $AD$. Đường thẳng qua $D$ và trung điểm của $AB$ cắt $BC$ tại $U$, đường thẳng qua $D$ và trung điểm của $AC$ cắt $BC$ tại $V$. Chứng minh $BU = UV = VC$.",
+        "explanation": "HD. (H.9.19) Đường thẳng $BM$ và đường thẳng $DU$ là hai đường trung tuyến của tam giác $ABD$ nên $U$ là trọng tâm tam giác đó, suy ra $BU = 2UM = \\dfrac{2}{3}BM$. Đường thẳng $CM$ và đường thẳng $DV$ là hai đường trung tuyến của tam giác $ACD$ nên $V$ là trọng tâm của tam giác đó, suy ra $VC = 2VM = \\dfrac{2}{3}CM$. Do $BM = CM$, nên $UV = UM + VM = \\dfrac{2}{3}BM$. Vậy $BU = VC = UV$.",
+        "tags": [
+          "chuong-9",
+          "bai-34"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-34-3",
+        "type": "essay",
+        "question": "**9.16.** a) Gọi $I$ là giao điểm của hai đường phân giác $BE$ và $CF$ của tam giác $ABC$. Đường thẳng qua $I$ song song với $BC$ cắt $AB$ tại $J$ và cắt $AC$ tại $K$. Chứng minh $JK = BJ + CK$.\nb) Đường thẳng qua $B$ vuông góc với $BI$ cắt đường thẳng qua $C$ vuông góc với $CI$ tại điểm $I'$. Qua $I'$ kẻ đường thẳng song song với $BC$ cắt $AB$ tại $J'$, cắt $AC$ tại $K'$. Chứng minh $J'K' = BJ' + CK'$.",
+        "explanation": "a) Từ tính chất tia phân giác suy ra $\\widehat{JBI} = \\widehat{JIB}$, do đó $\\Delta BJI$ cân tại $J$, suy ra $JI = BJ$.\nTương tự, từ tính chất tia phân giác suy ra tam giác $KCI$ cân tại $K$ nên $KI = CK$.\nVậy $JK = JI + IK = BJ + CK$.\nb) Vì $BI'$ vuông góc với $BI$, suy ra $BI'$ là tia phân giác của góc tạo bởi $BC$ và tia đối của tia $BA$ (phân giác ngoài tại $B$). Tương tự như thế, $CI'$ là tia phân giác của góc tạo bởi $CB$ và tia đối của tia $CA$ (phân giác ngoài tại $C$). Chứng minh tiếp tục tương tự chứng minh câu a).",
+        "tags": [
+          "chuong-9",
+          "bai-34"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-34-4",
+        "type": "essay",
+        "question": "**9.17.** Tam giác $ABC$ có $AD, BE$ là hai đường phân giác và $\\widehat{BAC} = 120^\\circ$. Chứng minh rằng $DE$ là tia phân giác của góc $ADC$.",
+        "explanation": "HD. (H.9.21) Gọi $Ax$ là tia đối của tia $AB$ thì ba góc $\\widehat{BAD}$, $\\widehat{DAC}$, $\\widehat{CAx}$ có cùng số đo $60^\\circ$.\nHạ $EH \\perp Bx$, $EI \\perp AD$, $EK \\perp BC$. Ta có:\n$EH = EK$ (vì $BE$ là phân giác góc $ABC$),\n$EH = EI$ (vì $AE$ là phân giác góc $DAx$).\nSuy ra $EK = EI$, hay $E$ nằm trên tia phân giác của góc $ADC$.",
+        "tags": [
+          "chuong-9",
+          "bai-34"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-34-5",
+        "type": "essay",
+        "question": "**9.18.** Cho tam giác $ABC$ với $M$ là trung điểm của $BC$. Lấy điểm $N$ sao cho $C$ là trung điểm của đoạn thẳng $BN$. Lấy điểm $P$ sao cho $M$ là trung điểm của đoạn thẳng $AP$. Chứng minh đường thẳng $AC$ đi qua trung điểm của $PN$, đường thẳng $PC$ đi qua trung điểm của $AN$.",
+        "explanation": "HD. (H.9.22) Trong tam giác $ANP$, đường $NM$ là trung tuyến mà $NC = BC = 2CM$ nên $C$ là trọng tâm của tam giác $ANP$. Vậy $AC$, $PC$ là hai đường trung tuyến của tam giác đó. Vì thế $AC$ đi qua trung điểm của $PN$ và $PC$ đi qua trung điểm của $AN$.",
+        "tags": [
+          "chuong-9",
+          "bai-34"
+        ]
+      }
+    ]
+  }
+]

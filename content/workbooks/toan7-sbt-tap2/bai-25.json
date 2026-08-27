@@ -1,0 +1,88 @@
+[
+  {
+    "bai": 25,
+    "title": "Bài 25: Đa thức một biến",
+    "questions": [
+      {
+        "id": "toan7-sbt-t2-25-7.7",
+        "type": "essay",
+        "question": "**7.7.** Trong các biểu thức sau đây, biểu thức nào là đa thức một biến?\na) $\\dfrac{x^2}{\\sqrt{3}} - \\sqrt{3}$;\nb) $\\sqrt{2x}$;\nc) $(1 - \\sqrt{2})x^3 + 2$;\nd) $x + \\dfrac{1}{x}$.",
+        "explanation": "*HD.* Chú ý rằng $\\dfrac{x^2}{\\sqrt{3}} = \\dfrac{1}{\\sqrt{3}}x^2$ và $(1 - \\sqrt{2})$ là một số.",
+        "tags": [
+          "chuong-7",
+          "bai-25"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-25-7.8",
+        "type": "essay",
+        "question": "**7.8.** Thu gọn và sắp xếp mỗi đa thức sau đây theo luỹ thừa giảm của biến rồi tìm bậc, hệ số cao nhất và hệ số tự do của mỗi đa thức đó.\na) $F(x) = -2 + 4x^5 - 2x^3 - 4x^5 + 3x + 3$;\nb) $G(x) = -5x^3 + 4 - 3x + 4x^3 + x^2 + 6x - 3$.",
+        "explanation": "a) $F(x) = -2x^3 + 3x + 1$;\n\nb) $G(x) = -x^3 + x^2 + 3x + 1$.",
+        "tags": [
+          "chuong-7",
+          "bai-25"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-25-7.9",
+        "type": "essay",
+        "question": "**7.9.** Bằng cách tính giá trị của đa thức $F(x) = x^3 + 2x^2 + x$ tại các giá trị của $x$ thuộc tập hợp $\\{-2; -1; 0; 1; 2\\}$, hãy tìm hai nghiệm của đa thức $F(x)$.",
+        "explanation": "$F(-2) = -2; F(-1) = 0; F(0) = 0; F(1) = 4; F(2) = 18$.\nHai nghiệm của đa thức $F(x)$ là $x = -1$ và $x = 0$.",
+        "tags": [
+          "chuong-7",
+          "bai-25"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-25-7.10",
+        "type": "essay",
+        "question": "**7.10.** Tìm đa thức $P(x)$ bậc 3 thoả mãn các điều kiện sau:\n- $P(x)$ khuyết hạng tử bậc hai;\n- Hệ số cao nhất là $4$;\n- Hệ số tự do là $0$;\n- $x = \\dfrac{1}{2}$ là một nghiệm của $P(x)$.",
+        "explanation": "$P(x) = 4x^3 - x$.",
+        "tags": [
+          "chuong-7",
+          "bai-25"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-25-7.11",
+        "type": "essay",
+        "question": "**7.11.** Cho hai đa thức $A(x) = -x^4 + 2,5x^3 + 3x^2 - 4x$ và $B(x) = x^4 + \\sqrt{2}$.\na) Chứng tỏ rằng $x = 0$ là nghiệm của đa thức $A(x)$ nhưng không là nghiệm của đa thức $B(x)$.\nb) Chứng tỏ rằng đa thức $B(x)$ không có nghiệm.",
+        "explanation": "a) *HD.* Vì $A(0) = 0$, $B(0) = \\sqrt{2} \\ne 0$.\n\nb) Ta biết rằng $x^4 \\ge 0$ với mọi giá trị của $x$. Do đó $B(x) = x^4 + \\sqrt{2} \\ge \\sqrt{2} > 0$ với mọi giá trị của $x$. Vậy $B(x)$ không có nghiệm.",
+        "tags": [
+          "chuong-7",
+          "bai-25"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-25-7.12",
+        "type": "essay",
+        "question": "**7.12.** Biết rằng hai đa thức $G(x) = x^2 - 3x + 2$ và $H(x) = x^2 + x - 6$ có một nghiệm chung. Hãy tìm nghiệm chung đó.",
+        "explanation": "Giả sử $a$ là nghiệm của cả hai đa thức, ta có $G(a) = H(a) = 0$. Từ đó suy ra:\n$(a^2 - 3a + 2) - (a^2 + a - 6) = G(a) - H(a) = 0$.\nThu gọn vế trái ta được $-4a + 8 = 0$ suy ra $a = 2$. Thử lại bằng cách tính $G(2)$ và $H(2)$, ta thấy $x = 2$ đúng là nghiệm của cả hai đa thức $G(x)$ và $H(x)$.",
+        "tags": [
+          "chuong-7",
+          "bai-25"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-25-7.13",
+        "type": "essay",
+        "question": "**7.13.** Người ta định dùng những viên gạch với kích thước như nhau để xây một bức tường (có dạng hình hộp chữ nhật) dày $20 \\text{ cm}$, dài $6 \\text{ m}$ và cao $x \\text{ (m)}$. Số gạch đã có là $450$ viên.\na) Tìm đa thức (biến $x$) biểu thị số gạch cần mua thêm để xây tường, biết rằng cứ xây mỗi mét khối tường thì cần $542$ viên gạch. Xác định bậc và hệ số tự do của đa thức đó.\nb) Nếu chỉ dùng số gạch sẵn có thì xây được bức tường cao khoảng bao nhiêu mét? (tính chính xác đến $0,1 \\text{ m}$).",
+        "explanation": "a) Bức tường có dạng hình hộp chữ nhật với ba kích thước là $0,2 \\text{ m}$; $6 \\text{ m}$ và $x \\text{ (m)}$.\nThể tích của nó là $0,2 \\cdot 6 \\cdot x = 1,2x \\text{ (m}^3\\text{)}$.\nMỗi mét khối tường xây hết $542$ viên gạch nên số gạch cần dùng để xây bức tường là $542 \\cdot 1,2x = 650,4x$ (viên). Số gạch đã có là $450$ viên.\nVậy số gạch cần mua thêm là:\n$F(x) = 650,4x - 450$.\n\nb) Nếu chỉ dùng số gạch sẵn có để xây tường thì số gạch mua thêm là $0$, tức là $650,4x - 450 = 0$. Từ đó ta tính được $x = 450 : 650,4 \\approx 0,7 \\text{ (m)}$.\nVậy nếu chỉ dùng số gạch có sẵn thì xây được bức tường cao khoảng $0,7 \\text{ m}$.",
+        "tags": [
+          "chuong-7",
+          "bai-25"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-25-7.14",
+        "type": "essay",
+        "question": "**7.14.** Tìm các hệ số $p$ và $q$ của đa thức $F(x) = x^2 + px + q$, biết rằng với số $a$ tuỳ ý, giá trị của $F(x)$ tại $x = a$, tức là $F(a)$ luôn bằng $(a + 2)^2$.",
+        "explanation": "$p = q = 4$.\n\n*HD.* Theo đề bài, với $a$ là một số tuỳ ý, ta luôn có $a^2 + pa + q = (a + 2)^2$.\nHãy chọn $a = 0$ để từ đẳng thức đó suy ra $q = 4$. Sau đó chọn $a = 1$ để suy ra $p = 4$.",
+        "tags": [
+          "chuong-7",
+          "bai-25"
+        ]
+      }
+    ]
+  }
+]

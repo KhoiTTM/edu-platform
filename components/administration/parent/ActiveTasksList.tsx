@@ -24,6 +24,7 @@ const SUBJECT_META: Record<string, { label: string; icon: string; colorClass: st
   tieng_anh: { label: "Tiếng Anh", icon: "🌍", colorClass: "text-emerald-400 bg-emerald-500/10 border-emerald-500/30" },
   "mindset-ielts": { label: "IELTS", icon: "🎓", colorClass: "text-violet-400 bg-violet-500/10 border-violet-500/30" },
   "pre-a1-starter": { label: "Pre A1", icon: "⭐", colorClass: "text-pink-400 bg-pink-500/10 border-pink-500/30" },
+  "practical-english": { label: "Practical English", icon: "🎬", colorClass: "text-fuchsia-400 bg-fuchsia-500/10 border-fuchsia-500/30" },
   khtn: { label: "KHTN", icon: "🧪", colorClass: "text-cyan-400 bg-cyan-500/10 border-cyan-500/30" },
 };
 

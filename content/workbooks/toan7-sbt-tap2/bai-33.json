@@ -1,0 +1,48 @@
+[
+  {
+    "bai": 33,
+    "title": "Bài 33: Quan hệ giữa ba cạnh của một tam giác",
+    "questions": [
+      {
+        "id": "toan7-sbt-t2-33-10",
+        "type": "essay",
+        "question": "**9.10.** Cho tam giác có độ dài cạnh lớn nhất bằng $4 \\text{ cm}$. Hãy giải thích tại sao chu vi tam giác đó bé hơn $12 \\text{ cm}$ và lớn hơn $8 \\text{ cm}$.",
+        "explanation": "Gọi độ dài ba cạnh tam giác là $a, b, c \\text{ (cm)}$; $a = 4, b < 4, c < 4$.\nSuy ra $a + b + c < 4 + 4 + 4 = 12$.\nMặt khác theo bất đẳng thức tam giác, $b + c > a$, suy ra $a + b + c > 2a = 8$.",
+        "tags": [
+          "chuong-9",
+          "bai-33"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-33-11",
+        "type": "essay",
+        "question": "**9.11.** Tam giác $ABC$ có $AB = 2 \\text{ cm}, BC = 5 \\text{ cm}, AC = b \\text{ (cm)}$ với $b$ là một số nguyên. Hỏi $b$ có thể bằng bao nhiêu?",
+        "explanation": "Ta có $AC = b \\text{ (cm)}$ thì $5 - 2 < b < 5 + 2$ tức là $3 < b < 7$. Vì $b$ nguyên nên $b \\in \\{4; 5; 6\\}$.",
+        "tags": [
+          "chuong-9",
+          "bai-33"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-33-12",
+        "type": "essay",
+        "question": "**9.12.** Tam giác $ABC$ có $AB = 2 \\text{ cm}, BC = 3 \\text{ cm}$. Đặt $CA = b \\text{ (cm)}$.\na) Chứng minh rằng $1 < b < 5$.\nb) Giả sử rằng với $1 < b < 5$, có tam giác $ABC$ thoả mãn $AB = 2 \\text{ cm}, BC = 3 \\text{ cm}, CA = b \\text{ (cm)}$. Với mỗi tam giác đó, hãy sắp xếp ba góc $A, B, C$ theo thứ tự từ bé đến lớn.",
+        "explanation": "a) Theo bất đẳng thức tam giác ta có $3 - 2 < b < 3 + 2$, tức là $1 < b < 5$.\nb) Với $1 < b \\le 2$, do $CA \\le AB < BC$ nên $\\widehat{B} \\le \\widehat{C} < \\widehat{A}$;\nVới $2 < b \\le 3$, do $AB < CA \\le BC$ nên $\\widehat{C} < \\widehat{B} \\le \\widehat{A}$;\nVới $3 < b < 5$, do $AB < BC < CA$ nên $\\widehat{C} < \\widehat{A} < \\widehat{B}$.",
+        "tags": [
+          "chuong-9",
+          "bai-33"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-33-13",
+        "type": "essay",
+        "question": "**9.13.** a) Cho $P$ là một điểm bên trong tam giác $ABC$. Chứng minh rằng $AB + AC > PB + PC$.\nb) Cho $M$ là một điểm bên trong tam giác $ABC$. Chứng minh rằng $\\dfrac{1}{2}(AB + BC + CA) < MA + MB + MC < AB + BC + CA$.",
+        "explanation": "HD. a) Đường thẳng $BP$ cắt cạnh $AC$ tại $N$ thì\n$AB + AC = (AB + AN) + NC > BN + NC = (PB + NP) + NC = PB + (NP + NC) > PB + PC$.\nb) (H.9.17b) Ta có $MA + MB > AB$, $MB + MC > BC$, $MC + MA > CA$ nên ta suy ra được $2(MA + MB + MC) > AB + BC + CA$.\nMặt khác theo a), ta có $AB + AC > MB + MC$, $AC + BC > MA + MB$, $BC + BA > MC + MA$ nên ta suy ra được $2(AB + BC + CA) > 2(MA + MB + MC)$.",
+        "tags": [
+          "chuong-9",
+          "bai-33"
+        ]
+      }
+    ]
+  }
+]

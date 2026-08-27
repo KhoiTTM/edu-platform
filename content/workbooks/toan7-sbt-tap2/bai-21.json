@@ -1,0 +1,88 @@
+[
+  {
+    "bai": 21,
+    "title": "Bài 21: Tính chất của dãy tỉ số bằng nhau",
+    "questions": [
+      {
+        "id": "toan7-sbt-t2-21-1",
+        "type": "essay",
+        "question": "**6.9.** Tìm hai số x và y, biết: $\\dfrac{x}{3} = \\dfrac{y}{5}$ và $x + y = 16$.",
+        "explanation": "$x = 6$ và $y = 10$.",
+        "tags": [
+          "chuong-6",
+          "bai-21"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-21-2",
+        "type": "essay",
+        "question": "**6.10.** Tìm hai số x và y, biết: $7x = 3y$ và $y - x = -16$.",
+        "explanation": "$x = -12$ và $y = -28$.",
+        "tags": [
+          "chuong-6",
+          "bai-21"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-21-3",
+        "type": "essay",
+        "question": "**6.11.** Tìm ba số x, y và z, biết: $x : y : z = 3 : 5 : 7$ và $x - y + z = 35$.",
+        "explanation": "$x = 21; y = 35$ và $z = 49$.",
+        "tags": [
+          "chuong-6",
+          "bai-21"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-21-4",
+        "type": "essay",
+        "question": "**6.12.** Tìm diện tích của một mảnh vườn hình chữ nhật, biết rằng tỉ số giữa hai cạnh của nó bằng $\\dfrac{3}{5}$ và chu vi bằng $48\\text{ m}$.",
+        "explanation": "Diện tích của mảnh vườn hình chữ nhật là $135\\text{ m}^2$.",
+        "tags": [
+          "chuong-6",
+          "bai-21"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-21-5",
+        "type": "essay",
+        "question": "**6.13.** Số lượt khách quốc tế có quốc tịch Mỹ đến Việt Nam trong năm 2014 và năm 2019 tỉ lệ với $317; 533$. Tính số lượt khách quốc tịch Mỹ đến Việt Nam trong hai năm đó, biết rằng số lượt khách đến năm 2019 nhiều hơn số lượt khách đến năm 2014 là $302\\ 400$ lượt người.",
+        "explanation": "Số lượt khách quốc tịch Mỹ đến Việt Nam năm 2014 và năm 2019 lần lượt là $443\\ 800$ lượt khách và $746\\ 200$ lượt khách.",
+        "tags": [
+          "chuong-6",
+          "bai-21"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-21-6",
+        "type": "essay",
+        "question": "**6.14.** Ba bạn Đức, Loan và Hà góp tổng cộng được $120$ nghìn đồng ủng hộ các bạn học sinh có hoàn cảnh khó khăn mua sách vở nhân dịp năm học mới. Hỏi mỗi bạn đã góp bao nhiêu tiền? Biết rằng số tiền ba bạn góp theo thứ tự tỉ lệ với $2; 1; 3$.",
+        "explanation": "Bạn Đức góp $40$ nghìn đồng, bạn Loan góp $20$ nghìn đồng và bạn Hà góp $60$ nghìn đồng.",
+        "tags": [
+          "chuong-6",
+          "bai-21"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-21-7",
+        "type": "essay",
+        "question": "**6.15.** Tìm hai số x và y, biết: $3x = 5y$ và $2x + 3y = 38$.",
+        "explanation": "Ta có $3x = 5y$ suy ra $\\dfrac{x}{5} = \\dfrac{y}{3}$, hay $\\dfrac{2x}{10} = \\dfrac{3y}{9}$. Theo đề bài, $2x + 3y = 38$.\nTừ tính chất của dãy tỉ số bằng nhau, ta có $\\dfrac{2x}{10} = \\dfrac{3y}{9} = \\dfrac{2x + 3y}{10 + 9} = \\dfrac{38}{19} = 2$.\nSuy ra $x = 2 \\cdot 5 = 10;\\ y = 2 \\cdot 3 = 6$. Vậy $x = 10$ và $y = 6$.",
+        "tags": [
+          "chuong-6",
+          "bai-21"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-21-8",
+        "type": "essay",
+        "question": "**6.16.** Từ tỉ lệ thức $\\dfrac{a}{b} = \\dfrac{c}{d}$ hãy suy ra tỉ lệ thức $\\dfrac{a}{3a + b} = \\dfrac{c}{3c + d}$ (Giả thiết các tỉ số đều có nghĩa).",
+        "explanation": "Cách 1: Đặt $\\dfrac{a}{b} = \\dfrac{c}{d} = k$. Suy ra $a = kb, c = kd$.\nTa có $\\dfrac{a}{3a + b} = \\dfrac{kb}{3 \\cdot kb + b} = \\dfrac{kb}{(3k + 1)b} = \\dfrac{k}{3k + 1}$ và\n$\\dfrac{c}{3c + d} = \\dfrac{kd}{3 \\cdot kd + d} = \\dfrac{kd}{(3k + 1)d} = \\dfrac{k}{3k + 1}$.\nDo đó $\\dfrac{a}{3a + b} = \\dfrac{c}{3c + d}$.\n\nCách 2: Ta có $\\dfrac{a}{b} = \\dfrac{c}{d}$ suy ra $\\dfrac{a}{c} = \\dfrac{b}{d}$, hay $\\dfrac{3a}{3c} = \\dfrac{b}{d}$.\nTừ tính chất của dãy tỉ số bằng nhau, ta có $\\dfrac{3a}{3c} = \\dfrac{b}{d} = \\dfrac{3a + b}{3c + d}$.\nSuy ra $\\dfrac{a}{c} = \\dfrac{3a + b}{3c + d}$. Do đó $\\dfrac{a}{3a + b} = \\dfrac{c}{3c + d}$.",
+        "tags": [
+          "chuong-6",
+          "bai-21"
+        ]
+      }
+    ]
+  }
+]

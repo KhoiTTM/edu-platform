@@ -1,0 +1,64 @@
+[
+  {
+    "bai": 20,
+    "title": "Bài 20: Tỉ lệ thức",
+    "questions": [
+      {
+        "id": "toan7-sbt-t2-20-1",
+        "type": "essay",
+        "question": "**6.1.** Tìm các tỉ số bằng nhau trong các tỉ số sau rồi lập tỉ lệ thức:\n\n$12 : 18$; $0{,}24 : 0{,}32$; $\\dfrac{4}{7} : \\dfrac{6}{7}$.",
+        "explanation": "Ta có tỉ lệ thức $12 : 18 = \\dfrac{4}{7} : \\dfrac{6}{7}$.\n\n*(Giải thích: $12:18 = \\dfrac{2}{3}$; $0{,}24:0{,}32 = \\dfrac{3}{4}$; $\\dfrac{4}{7}:\\dfrac{6}{7} = \\dfrac{2}{3}$)*",
+        "tags": ["chuong-6", "bai-20"]
+      },
+      {
+        "id": "toan7-sbt-t2-20-2",
+        "type": "essay",
+        "question": "**6.2.** Tìm $x$ trong các tỉ lệ thức sau:\n\na) $\\dfrac{x}{3} = \\dfrac{-2}{5}$;\n\nb) $\\dfrac{4}{x} = \\dfrac{8}{-10}$;\n\nc) $\\dfrac{x}{4} = \\dfrac{2{,}4}{3{,}2}$.",
+        "explanation": "a) $x = \\dfrac{-6}{5}$.\n\nb) $x = -5$.\n\nc) $x = 3$.",
+        "tags": ["chuong-6", "bai-20"]
+      },
+      {
+        "id": "toan7-sbt-t2-20-3",
+        "type": "essay",
+        "question": "**6.3.** Lập tất cả các tỉ lệ thức có thể được từ đẳng thức $(-16) \\cdot 35 = 28 \\cdot (-20)$.",
+        "explanation": "Từ đẳng thức $(-16) \\cdot 35 = 28 \\cdot (-20)$ ta lập được các tỉ lệ thức sau:\n\n$\\dfrac{-16}{28} = \\dfrac{-20}{35}$; $\\dfrac{-16}{-20} = \\dfrac{28}{35}$; $\\dfrac{35}{28} = \\dfrac{-20}{-16}$; $\\dfrac{35}{-20} = \\dfrac{28}{-16}$",
+        "tags": ["chuong-6", "bai-20"]
+      },
+      {
+        "id": "toan7-sbt-t2-20-4",
+        "type": "essay",
+        "question": "**6.4.** Có thể lập được những tỉ lệ thức nào từ bốn số sau đây: $3$; $18$; $72$; $12$?",
+        "explanation": "Ta có $3 \\cdot 72 = 18 \\cdot 12 \\; (= 216)$. Do đó ta có thể lập được tỉ lệ thức từ bốn số này như sau:\n\n$\\dfrac{3}{18} = \\dfrac{12}{72}$; $\\dfrac{3}{12} = \\dfrac{18}{72}$; $\\dfrac{72}{18} = \\dfrac{12}{3}$; $\\dfrac{72}{12} = \\dfrac{18}{3}$",
+        "tags": ["chuong-6", "bai-20"]
+      },
+      {
+        "id": "toan7-sbt-t2-20-5",
+        "type": "essay",
+        "question": "**6.5.** Trong một ngày đủ nắng, lá cây xanh khi quang hợp sẽ hấp thụ lượng khí carbon dioxide và giải phóng lượng khí oxygen theo tỉ lệ $11 : 8$. Tính lượng khí oxygen mà lá cây xanh giải phóng, biết rằng lượng khí carbon dioxide được hấp thụ là $44$ g.",
+        "explanation": "Lá cây xanh giải phóng $32$ g oxygen.",
+        "tags": ["chuong-6", "bai-20"]
+      },
+      {
+        "id": "toan7-sbt-t2-20-6",
+        "type": "essay",
+        "question": "**6.6.** Một phân xưởng có $20$ máy đóng gói tự động, trong một ngày đóng gói được $400$ sản phẩm. Để đóng gói được $600$ sản phẩm một ngày thì phân xưởng đó cần đầu tư thêm bao nhiêu máy? Giả thiết năng suất của các máy là như nhau.",
+        "explanation": "Phân xưởng đó cần đầu tư thêm $10$ máy.",
+        "tags": ["chuong-6", "bai-20"]
+      },
+      {
+        "id": "toan7-sbt-t2-20-7",
+        "type": "essay",
+        "question": "**6.7.** Nhà bạn An có một khu vườn trồng rau có dạng hình chữ nhật. Biết tỉ lệ hai cạnh của khu vườn là $2 : 5$ và khu vườn có diện tích là $160 \\text{ m}^2$. Tính chiều dài và chiều rộng của khu vườn.",
+        "explanation": "Gọi $x, y$ (m) lần lượt là chiều rộng và chiều dài của khu vườn nhà bạn An.\n\nTheo đề bài ta có $\\dfrac{x}{2} = \\dfrac{y}{5}$ và $x \\cdot y = 160$.\n\nĐặt $\\dfrac{x}{2} = \\dfrac{y}{5} = k \\; (k > 0)$. Suy ra $x = 2k, y = 5k$.\n\nKhi đó ta có $2k \\cdot 5k = 160$, hay $k^2 = 16$. Suy ra $k = 4$.\n\nDo đó $x = 2 \\cdot 4 = 8$ (m); $y = 5 \\cdot 4 = 20$ (m).\n\nVậy chiều rộng và chiều dài của khu vườn lần lượt là $8$ m và $20$ m.",
+        "tags": ["chuong-6", "bai-20"]
+      },
+      {
+        "id": "toan7-sbt-t2-20-8",
+        "type": "essay",
+        "question": "**6.8.** Từ tỉ lệ thức $\\dfrac{a}{b} = \\dfrac{c}{d}$ (với $b \\neq 0, d \\neq 0, 2b \\neq -d$), hãy suy ra tỉ lệ thức $\\dfrac{2a+c}{2b+d} = \\dfrac{c}{d}$.",
+        "explanation": "**Cách 1:** Đặt $\\dfrac{a}{b} = \\dfrac{c}{d} = k$. Suy ra $c = kd, a = kb$.\nTa có $\\dfrac{a}{b} = \\dfrac{2a}{2b}$ nên $\\dfrac{2a}{2b} = k$, suy ra $2a = k \\cdot 2b$.\nXét $\\dfrac{2a+c}{2b+d} = \\dfrac{k \\cdot 2b + kd}{2b+d} = \\dfrac{k(2b+d)}{2b+d} = k$. Mặt khác, $\\dfrac{c}{d} = k$.\nDo đó $\\dfrac{2a+c}{2b+d} = \\dfrac{c}{d}$.\n\n**Cách 2:** Từ $\\dfrac{a}{b} = \\dfrac{c}{d}$ suy ra $\\dfrac{2a}{2b} = \\dfrac{c}{d}$ nên ta có $2ad = 2bc$.\nSuy ra $2ad + cd = 2bc + cd$. Hay $(2a+c)d = (2b+d)c$. Do đó $\\dfrac{2a+c}{2b+d} = \\dfrac{c}{d}$.",
+        "tags": ["chuong-6", "bai-20"]
+      }
+    ]
+  }
+]

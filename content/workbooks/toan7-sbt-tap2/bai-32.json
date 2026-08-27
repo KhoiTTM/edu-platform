@@ -1,0 +1,58 @@
+[
+  {
+    "bai": 32,
+    "title": "Bài 32: Quan hệ giữa đường vuông góc và đường xiên",
+    "questions": [
+      {
+        "id": "toan7-sbt-t2-32-5",
+        "type": "essay",
+        "question": "**9.5.** Cho hai đường thẳng song song $c$ và $d$. Chứng minh rằng khoảng cách từ mọi điểm thuộc $c$ đến đường thẳng $d$ bằng nhau và bằng khoảng cách từ mọi điểm thuộc đường thẳng $d$ đến đường thẳng $c$ (khoảng cách đó được gọi là khoảng cách giữa hai đường thẳng song song $c$ và $d$).",
+        "explanation": "Lấy $M, M'$ thuộc $c$ ($M$ khác $M'$), kẻ $MH, M'H'$ vuông góc với $d$ thì $MH \\parallel M'H'$.\nXét hai tam giác $MHH'$ và $H'M'M$ có:\n$MH'$ chung, $\\widehat{M_1} = \\widehat{H'_2}$ (so le trong), $\\widehat{M_2} = \\widehat{H'_1}$ (so le trong).\nDo đó $\\Delta MHH' = \\Delta H'M'M$ (g.c.g).\nSuy ra $MH = H'M'$ (độ dài $MH$ gọi là khoảng cách từ $d$ đến $c$).",
+        "tags": [
+          "chuong-9",
+          "bai-32"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-32-6",
+        "type": "essay",
+        "question": "**9.6.** Cho hai điểm phân biệt $M, M'$ ở cùng phía đối với đường thẳng $d$ ($M, M'$ không thuộc $d$). Chứng minh rằng nếu $M, M'$ có cùng khoảng cách đến đường thẳng $d$ thì $MM'$ song song với $d$.",
+        "explanation": "HD. Kẻ $MH, M'H'$ vuông góc với $d$ thì $MH \\parallel M'H'$. Theo giả thiết $MH = M'H'$.\nXét hai tam giác $MHH'$ và $H'M'M$ có:\n$MH'$ chung, $MH = H'M', \\widehat{HMH'} = \\widehat{M'H'M}$ (so le trong).\nDo đó $\\Delta MHH' = \\Delta H'M'M$ (g.c.g). Suy ra $\\widehat{MH'H} = \\widehat{H'MM'}$, hai góc này ở vị trí so le trong nên $MM' \\parallel d$.",
+        "tags": [
+          "chuong-9",
+          "bai-32"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-32-7",
+        "type": "essay",
+        "question": "**9.7.** Dùng thước hai lề ta có thể dựng cặp đường thẳng song song với khoảng cách $h$ không đổi.\nCho góc $xOy$. Dùng thước hai lề dựng cặp đường thẳng song song gồm đường thẳng chứa tia $Ox$ và đường thẳng $x'$ (sao cho $x'$ cắt $Oy$) rồi dùng thước hai lề đó, dựng cặp đường thẳng song song gồm đường thẳng chứa tia $Oy$ và đường thẳng $y'$ (sao cho $y'$ cắt $Ox$). Hai đường thẳng $x'$ và $y'$ cắt nhau tại $P$. Chứng minh rằng tia $OP$ là tia phân giác của góc $xOy$.",
+        "explanation": "HD. Do $P$ thuộc đường thẳng $x'$ nên $P$ cách $x$ khoảng cách $h$; do $P$ thuộc $y'$ nên $P$ cách $y$ một khoảng là $h$. Vậy $P$ cách đều hai đường thẳng $Ox, Oy$. Theo cách dựng, $P$ nằm trong góc $xOy$. Vậy $P$ nằm trên tia phân giác của góc $xOy$.",
+        "tags": [
+          "chuong-9",
+          "bai-32"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-32-8",
+        "type": "essay",
+        "question": "**9.8.** Cho tam giác $ABC$ cân tại $A$. Chứng minh rằng khoảng cách từ $B$ đến đường thẳng $AC$ bằng khoảng cách từ $C$ đến đường thẳng $AB$.",
+        "explanation": "HD. Kẻ đoạn thẳng $BI$ vuông góc với đường thẳng $AC$ và đoạn thẳng $CK$ vuông góc với đường thẳng $AB$. Hai tam giác vuông $BCK$ và $CBI$ bằng nhau (cạnh huyền $BC$ chung, $\\widehat{B} = \\widehat{C}$ (hai góc ở đáy $BC$ của tam giác cân $ABC$)). Suy ra $BI = CK$.",
+        "tags": [
+          "chuong-9",
+          "bai-32"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-32-9",
+        "type": "essay",
+        "question": "**9.9.** Cho tam giác $ABC$ cân tại $A$ và một điểm $M$ tuỳ ý thuộc đoạn thẳng $BC$. Chứng minh rằng tổng khoảng cách từ điểm $M$ đến các đường thẳng $AB, AC$ là một số không đổi.",
+        "explanation": "HD. Khi $M$ trùng $B$ hay $C$ thì tổng khoảng cách đó là $BI$ hay $CK$; theo Bài 9.8, $BI = CK$.\nKhi $M$ khác $B$, khác $C$, kẻ $MP$ vuông góc $AC$, kẻ $MQ$ vuông góc với $AB$ thì tổng khoảng cách đang xét là $MQ + MP$.\nQua $M$ kẻ đường thẳng song song với $AC$, nó cắt $AB$ tại $R$, cắt $BI$ tại $S$.\nTam giác $RBM$ cân tại $R$ do hai góc tại $B$ và $M$ bằng nhau. $MQ$ là khoảng cách từ $M$ đến $RB, BS$ là khoảng cách từ $B$ đến $RM$. Theo Bài 9.8, $BS = MQ$.\nTa có $MR \\parallel AC, MP$ và $SI$ có độ dài là khoảng cách giữa hai đường thẳng đó nên $MP = SI$.\nSuy ra $MP + MQ = BS + SI = BI = CK$.",
+        "tags": [
+          "chuong-9",
+          "bai-32"
+        ]
+      }
+    ]
+  }
+]

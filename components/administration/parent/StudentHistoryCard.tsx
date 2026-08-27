@@ -25,6 +25,7 @@ const SUBJECT_META: Record<string, { label: string; icon: string; color: string 
   "mindset-ielts": { label: "IELTS", icon: "🎓", color: "text-violet-400" },
   "pre-a1-starter": { label: "Pre A1", icon: "⭐", color: "text-pink-400" },
   khtn: { label: "KHTN", icon: "🧪", color: "text-cyan-400" },
+  "practical-english": { label: "Practical English", icon: "🎬", color: "text-fuchsia-500" },
 };
 
 function fmtDate(iso: string): string {

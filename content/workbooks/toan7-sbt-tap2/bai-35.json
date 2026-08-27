@@ -1,0 +1,48 @@
+[
+  {
+    "bai": 35,
+    "title": "Bài 35: Sự đồng quy của ba đường trung trực, ba đường cao trong một tam giác",
+    "questions": [
+      {
+        "id": "toan7-sbt-t2-35-1",
+        "type": "essay",
+        "question": "**9.19.** Cho tam giác $ABC$ vuông. Kẻ đường thẳng vuông góc với cạnh huyền $BC$ của tam giác $ABC$ tại điểm $D$ không thuộc đoạn $BC$. Nó cắt đường thẳng chứa cạnh $AB$ tại $E$ và cắt đường thẳng chứa cạnh $AC$ tại $F$. Xác định trực tâm của tam giác $BEF$.",
+        "explanation": "HD. (H.9.23) Trong tam giác $BEF$, đường cao xuất phát từ $B$ là đường thẳng $BD$; đường cao xuất phát từ $F$ là đường thẳng $FA$. Hai đường cao cắt nhau tại $C$. Vậy $C$ là trực tâm của tam giác $BEF$.",
+        "tags": [
+          "chuong-9",
+          "bai-35"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-35-2",
+        "type": "essay",
+        "question": "**9.20.** Cho $P$ là một điểm nằm trong góc nhọn $xOy$. Gọi $M$ là điểm sao cho $Ox$ là đường trung trực của đoạn thẳng $PM$, gọi $N$ là điểm sao cho $Oy$ là đường trung trực của đoạn thẳng $PN$. Đường thẳng $MN$ cắt $Ox$ tại $R$, cắt $Oy$ tại $S$. Chứng minh tia $PO$ là tia phân giác của góc $RPS$.",
+        "explanation": "HD. (H.9.24) Tam giác $OPM$ là tam giác cân tại $O$, $RPM$ là tam giác cân tại $R$ nên suy ra $\\widehat{OMR} = \\widehat{OPR}$. Tam giác $OPN$ là tam giác cân tại $O$, tam giác $SPN$ là tam giác cân tại $S$ nên suy ra $\\widehat{ONS} = \\widehat{OPS}$.\nVì $OM = OP = ON$ nên tam giác $OMN$ là tam giác cân tại $O$, do đó $\\widehat{OMR} = \\widehat{ONS}$.\nSuy ra $\\widehat{OPR} = \\widehat{OPS}$, tức $PO$ là tia phân giác của góc $RPS$.",
+        "tags": [
+          "chuong-9",
+          "bai-35"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-35-3",
+        "type": "essay",
+        "question": "**9.21.** Gọi $H$ là trực tâm của tam giác nhọn $ABC$. Khi $AH = BC$, hãy chứng minh $\\widehat{BAC} = 45^\\circ$.",
+        "explanation": "HD. (H.9.25) Gọi $BJ$ là đường cao xuất phát từ $B$ của tam giác $ABC$ thì hai tam giác vuông $AHJ$ và $BCJ$ bằng nhau do các cạnh huyền $AH$ và $BC$ bằng nhau, $\\widehat{JAH} = \\widehat{JBC}$ (vì cùng phụ với $\\widehat{JCB}$). Suy ra $AJ = BJ$. Tam giác $JAB$ vuông tại $J$ nên $\\Delta JAB$ là tam giác vuông cân.\nVậy $\\widehat{BAC} = 45^\\circ$.",
+        "tags": [
+          "chuong-9",
+          "bai-35"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-35-4",
+        "type": "essay",
+        "question": "**9.22.** a) Giả sử đường trung trực $d$ của cạnh $BC$ của tam giác $ABC$ cắt cạnh $AC$ tại một điểm $D$ nằm giữa $A$ và $C$. Chứng minh $AC > AB$.\nb) Hỏi đảo lại có đúng không tức là nếu tam giác $ABC$ có $AC > AB$ thì đường trung trực $d$ của cạnh $BC$ có cắt $AC$ tại điểm nằm giữa $A$ và $C$ không?\nc) Vẫn giả sử đường trung trực $d$ của cạnh $BC$ của tam giác $ABC$ cắt cạnh $AC$ tại một điểm $D$ nằm giữa $A$ và $C$. Với $M$ là một điểm tuỳ ý thuộc $d$, $M$ khác $D$, hãy chứng minh $MA + MB > DA + DB$.",
+        "explanation": "a) Nếu đường trung trực $d$ của cạnh $BC$ cắt cạnh $AC$ tại điểm $M$ nằm giữa $A$ và $C$ thì $MB = MC$ nên $AC = AM + MC = AM + MB$. Trong tam giác $ABM$, theo bất đẳng thức tam giác, ta có $AM + MB > AB$. Vậy $AC > AB$.\nb) Điều đảo lại cũng đúng: đường trung trực của $BC$ không thể đi qua $A$ vì nếu thế thì $AC = AB$, nên $d$ phải cắt đoạn thẳng $AB$ tại điểm nằm giữa $A$ và $B$, lúc đó $AB > AC$ (chứng minh tương tự câu a) hoặc phải cắt đoạn thẳng $AC$ tại điểm nằm giữa $A$ và $C$, lúc đó $AC > AB$. Vì giả thiết $AC > AB$ nên đường trung trực của đoạn thẳng $BC$ phải cắt đoạn thẳng $AC$ tại điểm nằm giữa $A$ và $C$.\nc) Do $MB = MC$ nên $MA + MB = MA + MC$; vì $M$ khác $D$, trong tam giác $AMC$ theo bất đẳng thức tam giác, ta có $MA + MC > AC = AD + DC = AD + DB$.",
+        "tags": [
+          "chuong-9",
+          "bai-35"
+        ]
+      }
+    ]
+  }
+]

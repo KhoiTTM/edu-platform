@@ -1,0 +1,88 @@
+[
+  {
+    "bai": 23,
+    "title": "Bài 23: Đại lượng tỉ lệ nghịch",
+    "questions": [
+      {
+        "id": "toan7-sbt-t2-23-1",
+        "type": "essay",
+        "question": "**6.25.** Biết rằng x và y tỉ lệ nghịch với nhau và $x = 4$ khi $y = 15$.\n\na) Viết công thức tính y theo x.\n\nb) Tìm giá trị của y khi $x = 6$.\n\nc) Tìm giá trị của x khi $y = 0,5$.",
+        "explanation": "a) Ta có $y = \\dfrac{60}{x}$.\n\nb) Khi $x = 6$ ta có $y = \\dfrac{60}{6} = 10$.\n\nc) Từ $y = \\dfrac{60}{x}$ suy ra $x = \\dfrac{60}{y}$. Do đó với $y = 0,5$ ta có $x = \\dfrac{60}{0,5} = 120$.",
+        "tags": [
+          "chuong-6",
+          "bai-23"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-23-2",
+        "type": "essay",
+        "question": "**6.26.** Cho biết x và y là hai đại lượng tỉ lệ nghịch. Thay dấu \"?\" trong bảng sau bằng số thích hợp.\n\n| $x$ | $1$ | $2,5$ | $?$ | $?$ | $8$ | $?$ |\n|---|---|---|---|---|---|---|\n| $y$ | $?$ | $4$ | $2,5$ | $2$ | $?$ | $10$ |\n\nViết công thức mô tả mối quan hệ phụ thuộc giữa hai đại lượng x và y.",
+        "explanation": "Bảng hoàn thành:\n\n| $x$ | $1$ | $2,5$ | $4$ | $5$ | $8$ | $10$ |\n|---|---|---|---|---|---|---|\n| $y$ | $10$ | $4$ | $2,5$ | $2$ | $1,25$ | $1$ |\n\nCông thức mô tả mối quan hệ phụ thuộc giữa hai đại lượng x và y là: $xy = 10$.",
+        "tags": [
+          "chuong-6",
+          "bai-23"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-23-3",
+        "type": "essay",
+        "question": "**6.27.** Theo bảng giá trị dưới đây, hai đại lượng x và y có phải là hai đại lượng tỉ lệ nghịch không?\n\na)\n\n| $x$ | $6$ | $3$ | $-4$ | $5$ |\n|---|---|---|---|---|\n| $y$ | $10$ | $20$ | $-15$ | $12$ |\n\nb)\n\n| $x$ | $-2$ | $-1$ | $2$ | $5$ |\n|---|---|---|---|---|\n| $y$ | $-15$ | $-30$ | $16$ | $6$ |",
+        "explanation": "a) Hai đại lượng x và y là hai đại lượng tỉ lệ nghịch.\n\nb) Với $x = 2, y = 16$ thì $xy = 2 \\cdot 16 = 32$, với $x = 5, y = 6$ thì $xy = 30$. Vậy x và y không phải là hai đại lượng tỉ lệ nghịch.",
+        "tags": [
+          "chuong-6",
+          "bai-23"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-23-4",
+        "type": "essay",
+        "question": "**6.28.** Đức cùng mẹ và chị Linh đi siêu thị và dự định mua $5$ vỉ gồm $20$ hộp sữa chua. Siêu thị đang trong đợt khuyến mại, sữa chua được giảm giá $20\\%$ mỗi hộp. Chị Linh nói rằng với số tiền ban đầu dự định mua sữa chua thì bây giờ có thể mua được $6$ vỉ gồm $24$ hộp (tăng thêm $20\\%$ số hộp so với ban đầu). Đức thì cho rằng với số tiền đó bây giờ sẽ mua được $25$ hộp sữa chua (tăng thêm $25\\%$ số hộp so với ban đầu). Hỏi ai đúng, ai sai?",
+        "explanation": "Đức đúng.\nGọi x (đồng) là số tiền mua một hộp sữa chua trước khi giảm giá. Khi đó số tiền mua một hộp sữa chua sau khi giảm giá là $80\\%x = 0,8x$.\nGọi y (hộp) là số hộp sữa chua mua được sau khi giảm giá.\nDo số tiền dự định để mua sữa chua không thay đổi nên giá tiền mỗi hộp và số hộp sữa chua mua được là hai đại lượng tỉ lệ nghịch.\nTa có: $x \\cdot 20 = 0,8x \\cdot y$.\nDo đó $y = \\dfrac{x \\cdot 20}{0,8x} = 25$. Vậy với số tiền dự định ban đầu, số hộp sữa chua mua được sau khi giảm giá là $25$ hộp.",
+        "tags": [
+          "chuong-6",
+          "bai-23"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-23-5",
+        "type": "essay",
+        "question": "**6.29.** Một ô tô và một xe máy cùng đi từ A đến B. Biết rằng vận tốc của ô tô gấp rưỡi vận tốc của xe máy và xe máy đi hết $6$ giờ. Hỏi ô tô đi hết bao nhiêu giờ?",
+        "explanation": "Gọi $v_1, v_2$ (km/h) lần lượt là vận tốc của ô tô và xe máy; $t_1, t_2$ (giờ) là thời gian tương ứng để đi từ A đến B của ô tô và xe máy.\nTa có: $v_1 = 1,5v_2$ và $t_2 = 6$ (giờ).\nVì vận tốc và thời gian chuyển động trên cùng một quãng đường là hai đại lượng tỉ lệ nghịch nên: $\\dfrac{v_1}{v_2} = \\dfrac{t_2}{t_1}$.\nThay $v_1 = 1,5v_2$ và $t_2 = 6$ vào ta có: $\\dfrac{1,5v_2}{v_2} = \\dfrac{6}{t_1}$ hay $1,5 = \\dfrac{6}{t_1}$.\nSuy ra $t_1 = \\dfrac{6}{1,5} = 4$.\nVậy thời gian để ô tô đi từ A đến B là $4$ giờ.",
+        "tags": [
+          "chuong-6",
+          "bai-23"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-23-6",
+        "type": "essay",
+        "question": "**6.30.** Ba máy cày cùng loại, mỗi máy làm việc $8$ giờ một ngày thì trong $7$ ngày cày xong một cánh đồng. Do thời tiết nắng nóng và sắp có mưa nên yêu cầu trong $4$ ngày phải hoàn thành và mỗi ngày chỉ làm được trong $6$ giờ. Hỏi cần bao nhiêu máy cày để có thể hoàn thành công việc đó?",
+        "explanation": "Gọi x là số máy cày để hoàn thành công việc đó trong $4$ ngày.\nSố giờ ba máy cày xong cánh đồng là $8 \\cdot 7 = 56$ (giờ).\nSố giờ x máy cày xong cánh đồng là $6 \\cdot 4 = 24$ (giờ).\nTrên cùng một cánh đồng, số máy cày và số giờ làm việc là hai đại lượng tỉ lệ nghịch.\nDo đó, ta có $\\dfrac{56}{24} = \\dfrac{x}{3}$. Suy ra $x = \\dfrac{56 \\cdot 3}{24} = 7$ (máy).\nVậy cần $7$ máy cày để hoàn thành công việc đó trong $4$ ngày.",
+        "tags": [
+          "chuong-6",
+          "bai-23"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-23-7",
+        "type": "essay",
+        "question": "**6.31.** Ba tổ công nhân làm đường có tổng cộng $52$ công nhân. Để hoàn thành cùng một công việc, tổ I cần $2$ ngày, tổ II cần $3$ ngày và tổ III cần $4$ ngày. Hỏi mỗi tổ có bao nhiêu công nhân, biết rằng năng suất làm việc của mỗi người là như nhau?",
+        "explanation": "Ba tổ lần lượt có $24$ người, $16$ người và $12$ người.",
+        "tags": [
+          "chuong-6",
+          "bai-23"
+        ]
+      },
+      {
+        "id": "toan7-sbt-t2-23-8",
+        "type": "essay",
+        "question": "**6.32.** Cho biết x và y là hai đại lượng tỉ lệ nghịch, $x_1, x_2$ là hai giá trị khác nhau của x và $y_1, y_2$ là hai giá trị tương ứng của y.\n\na) Tính giá trị của $y_1$ và $y_2$, biết $x_1 = 3, x_2 = 2$ và $2y_1 + 3y_2 = -26$.\n\nb) Tính $x_1$ và $y_2$, biết $3x_1 - 2y_2 = 32;\\ x_2 = -4;\\ y_1 = -10$.",
+        "explanation": "Vì x, y là hai đại lượng tỉ lệ nghịch, nên theo tính chất của đại lượng tỉ lệ nghịch, ta có:\n\na) $\\dfrac{y_1}{y_2} = \\dfrac{x_2}{x_1}$, suy ra $\\dfrac{y_1}{x_2} = \\dfrac{y_2}{x_1}$ nên $\\dfrac{2y_1}{2x_2} = \\dfrac{3y_2}{3x_1}$.\nTừ tính chất của dãy tỉ số bằng nhau, ta có $\\dfrac{2y_1}{2x_2} = \\dfrac{3y_2}{3x_1} = \\dfrac{2y_1 + 3y_2}{2x_2 + 3x_1} = \\dfrac{-26}{13} = -2$.\nSuy ra $y_1 = -2 \\cdot x_2 = -2 \\cdot 2 = -4;\\ y_2 = -2 \\cdot x_1 = -2 \\cdot 3 = -6$.\n\nb) $\\dfrac{x_1}{x_2} = \\dfrac{y_2}{y_1}$, suy ra $\\dfrac{3x_1}{3x_2} = \\dfrac{2y_2}{2y_1}$.\nTừ tính chất của dãy tỉ số bằng nhau, ta có $\\dfrac{3x_1}{3x_2} = \\dfrac{2y_2}{2y_1} = \\dfrac{3x_1 - 2y_2}{3x_2 - 2y_1} = \\dfrac{32}{8} = 4$.\nVậy $x_1 = 4 \\cdot x_2 = 4 \\cdot (-4) = -16;\\ y_2 = 4 \\cdot y_1 = 4 \\cdot (-10) = -40$.",
+        "tags": [
+          "chuong-6",
+          "bai-23"
+        ]
+      }
+    ]
+  }
+]

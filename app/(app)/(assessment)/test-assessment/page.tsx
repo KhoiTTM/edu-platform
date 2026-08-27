@@ -12,6 +12,7 @@ const BOOK_SOURCE_URLS: Record<string, string> = {
   khtn: "https://drive.google.com/file/d/13zq-lbCJaAHEqSRx1JWhfX1idtn6jgEP/view?usp=sharing",
   "tieng-anh-7": "https://drive.google.com/file/d/1qYijNRWMqLm6f4gd8zABFQNgRSZSINQe/view?usp=sharing",
   tieng_anh: "https://drive.google.com/file/d/1Gx7c2l1lffYJeLDPHQAJinZrkzP-nETs/view?usp=sharing",
+  toan: "https://drive.google.com/file/d/1939qLF0wEkHXIyGMndS3I8c_-1-7p7gh/view?usp=sharing",
 };
 
 function extractDriveFileId(url?: string): string | null {
@@ -21,6 +22,29 @@ function extractDriveFileId(url?: string): string | null {
 }
 
 function getBookPageRange(subjectSlug: string, unitNumber: number): string | null {
+  if (subjectSlug === 'toan') {
+    switch (unitNumber) {
+      case 20: return "3 - 5";
+      case 21: return "6 - 8";
+      case 22: return "8 - 12";
+      case 23: return "12 - 15";
+      case 24: return "19 - 22";
+      case 25: return "22 - 25";
+      case 26: return "26 - 28";
+      case 27: return "29 - 31";
+      case 28: return "31 - 34";
+      case 29: return "37 - 39";
+      case 30: return "40 - 43";
+      case 31: return "47 - 49";
+      case 32: return "49 - 51";
+      case 33: return "51 - 53";
+      case 34: return "53 - 55";
+      case 35: return "56 - 58";
+      case 36: return "61 - 63";
+      case 37: return "64 - 66";
+      default: return null;
+    }
+  }
   if (subjectSlug === 'tieng_anh') {
     switch (unitNumber) {
       case 1: return "4 - 7";
