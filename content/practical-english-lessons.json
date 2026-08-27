@@ -108,5 +108,71 @@
     "aspectRatio": "vertical",
     "thumbnail": "/images/practical-english/core-grammar-base.jpg",
     "thumbnailText": "-ED / -ING"
+  },
+  {
+    "id": "lesson-11",
+    "group": "Core English Grammar",
+    "slug": "bai-11-core-grammar-mao-tu",
+    "title": "Mạo từ (A, An, The)",
+    "description": "Ngữ pháp cốt lõi: Cách sử dụng Mạo Từ trong Tiếng Anh.",
+    "videoUrl": "https://drive.google.com/file/d/1NlEDDferfQN8lqYB8uMkHQ-9gf6JKGwW/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/core-grammar-base.jpg",
+    "thumbnailText": "MẠO TỪ"
+  },
+  {
+    "id": "lesson-12",
+    "group": "Core English Grammar",
+    "slug": "bai-12-core-grammar-4-dang-do",
+    "title": "4 Dạng của DO",
+    "description": "Ngữ pháp cốt lõi: Phân biệt 4 dạng thường gặp của động từ DO.",
+    "videoUrl": "https://drive.google.com/file/d/13Po7sZsxCOPV0EFICrv7wyilszs6kvCa/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/core-grammar-base.jpg",
+    "thumbnailText": "4 DẠNG DO"
+  },
+  {
+    "id": "lesson-13",
+    "group": "Core English Grammar",
+    "slug": "bai-13-core-grammar-xu-ly-cau",
+    "title": "6 chữ giúp XỬ LÝ CÂU",
+    "description": "Ngữ pháp cốt lõi: Nắm vững quy tắc xử lý mọi loại câu trong Tiếng Anh.",
+    "videoUrl": "https://drive.google.com/file/d/1d6Y9rCKcdka3djB097uQJixKg8m2pd7g/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/core-grammar-base.jpg",
+    "thumbnailText": "XỬ LÝ CÂU"
+  },
+  {
+    "id": "lesson-14",
+    "group": "Core English Grammar",
+    "slug": "bai-14-core-grammar-5-cau-truc-cau",
+    "title": "5 Cấu Trúc Câu",
+    "description": "Ngữ pháp cốt lõi: Phân tích 5 cấu trúc câu cơ bản nhất trong Tiếng Anh.",
+    "videoUrl": "https://drive.google.com/file/d/1_grFBd84gHePAnFXF0qD769hX18RUUBM/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/core-grammar-base.jpg",
+    "thumbnailText": "5 CẤU TRÚC CÂU"
+  },
+  {
+    "id": "lesson-15",
+    "group": "Core English Grammar",
+    "slug": "bai-15-core-grammar-trat-tu-tinh-tu",
+    "title": "Trật tự tính từ",
+    "description": "Ngữ pháp cốt lõi: Quy tắc sắp xếp trật tự tính từ (OSASCOMP) trong Tiếng Anh.",
+    "videoUrl": "https://drive.google.com/file/d/1XpGNvpsjUpvrarYcSFmTbpuRX4alqoRf/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/core-grammar-base.jpg",
+    "thumbnailText": "TRẬT TỰ TÍNH TỪ"
+  },
+  {
+    "id": "lesson-16",
+    "group": "Core English Grammar",
+    "slug": "bai-16-core-grammar-cau-co-ban",
+    "title": "Câu cơ bản",
+    "description": "Ngữ pháp cốt lõi: Phân tích cấu trúc câu cơ bản trong Tiếng Anh.",
+    "videoUrl": "https://drive.google.com/file/d/1adspLGj2mJdKGSs0sYA1-K3t7CJQDdtt/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/core-grammar-base.jpg",
+    "thumbnailText": "CÂU CƠ BẢN"
   }
 ]
