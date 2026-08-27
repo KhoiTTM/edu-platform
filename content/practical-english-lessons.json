@@ -53,5 +53,60 @@
     "aspectRatio": "vertical",
     "thumbnail": "/images/practical-english/origin-history-base.jpg",
     "thumbnailText": "FOR"
+  },
+  {
+    "id": "lesson-06",
+    "group": "Core English Grammar",
+    "slug": "bai-6-core-grammar-16-tenses",
+    "title": "16 thì - Tenses",
+    "description": "Ngữ pháp cốt lõi: Tổng hợp 16 thì trong tiếng Anh.",
+    "videoUrl": "https://drive.google.com/file/d/1W6tz10Ejd4IjN9_Ml9q5vTKyt7xn1gDM/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/core-grammar-base.jpg",
+    "thumbnailText": "16 THÌ - TENSES"
+  },
+  {
+    "id": "lesson-07",
+    "group": "Core English Grammar",
+    "slug": "bai-7-core-grammar-10-tu-loai",
+    "title": "10 Từ Loại - Parts of Speech",
+    "description": "Ngữ pháp cốt lõi: 10 từ loại cơ bản trong tiếng Anh.",
+    "videoUrl": "https://drive.google.com/file/d/1qcPjHznQ8ywKqGIjwfkz5zugRKyPFny_/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/core-grammar-base.jpg",
+    "thumbnailText": "10 TỪ LOẠI"
+  },
+  {
+    "id": "lesson-08",
+    "group": "Core English Grammar",
+    "slug": "bai-8-core-grammar-there-be",
+    "title": "Cấu trúc THERE BE",
+    "description": "Ngữ pháp cốt lõi: Cách sử dụng cấu trúc THERE BE.",
+    "videoUrl": "https://drive.google.com/file/d/1tYY_IH32JQOAtsEV_hOxMBBjE4cvRCRf/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/core-grammar-base.jpg",
+    "thumbnailText": "THERE BE"
+  },
+  {
+    "id": "lesson-09",
+    "group": "Core English Grammar",
+    "slug": "bai-9-core-grammar-khung-tieng-anh",
+    "title": "Khung Tiếng Anh",
+    "description": "Ngữ pháp cốt lõi: Nắm bắt bộ khung cấu trúc cơ bản của Tiếng Anh.",
+    "videoUrl": "https://drive.google.com/file/d/1t59IItvMAmp9di1TwsysroGot92FQgO8/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/core-grammar-base.jpg",
+    "thumbnailText": "KHUNG"
+  },
+  {
+    "id": "lesson-10",
+    "group": "Core English Grammar",
+    "slug": "bai-10-core-grammar-ed-ing",
+    "title": "Tính từ -ED và -ING",
+    "description": "Ngữ pháp cốt lõi: Phân biệt cách dùng tính từ đuôi -ED và đuôi -ING.",
+    "videoUrl": "https://drive.google.com/file/d/1qRiOHw-ibn1oZN3EKIgPNCiKRG8pyRNR/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/core-grammar-base.jpg",
+    "thumbnailText": "-ED / -ING"
   }
 ]
