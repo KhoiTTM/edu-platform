@@ -174,5 +174,248 @@
     "aspectRatio": "vertical",
     "thumbnail": "/images/practical-english/core-grammar-base.jpg",
     "thumbnailText": "CÂU CƠ BẢN"
+  },
+
+  {
+    "id": "lesson-17",
+    "group": "Origin and History",
+    "slug": "bai-17-origin-history-of-to",
+    "title": "History and Original of TO",
+    "description": "Nguồn gốc và lịch sử của từ TO. Học tiếng Anh thực tế qua video ngắn.",
+    "videoUrl": "https://drive.google.com/file/d/10JG1A38QIaWiEqSW1d0-WjXRaHr1uhrU/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/origin-history-base.jpg",
+    "thumbnailText": "TO"
+  },
+  {
+    "id": "lesson-18",
+    "group": "Origin and History",
+    "slug": "bai-18-origin-history-of-at",
+    "title": "History and Original of AT",
+    "description": "Nguồn gốc và lịch sử của từ AT. Học tiếng Anh thực tế qua video ngắn.",
+    "videoUrl": "https://drive.google.com/file/d/1YPEXJu7m3oaF-EhNB-bUOVCzcgcHQfhx/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/origin-history-base.jpg",
+    "thumbnailText": "AT"
+  },
+  {
+    "id": "lesson-19",
+    "group": "Origin and History",
+    "slug": "bai-19-origin-history-of-on",
+    "title": "History and Original of ON",
+    "description": "Nguồn gốc và lịch sử của từ ON. Học tiếng Anh thực tế qua video ngắn.",
+    "videoUrl": "https://drive.google.com/file/d/1NHppDxLQYmi4pMJr_g_t-MQ_SsNhSaIl/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/origin-history-base.jpg",
+    "thumbnailText": "ON"
+  },
+  {
+    "id": "lesson-20",
+    "group": "Origin and History",
+    "slug": "bai-20-origin-history-of-about",
+    "title": "History and Original of ABOUT",
+    "description": "Nguồn gốc và lịch sử của từ ABOUT. Học tiếng Anh thực tế qua video ngắn.",
+    "videoUrl": "https://drive.google.com/file/d/1i7nsped6_ZVdkRT0iXuOFczXnxhuenTa/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/origin-history-base.jpg",
+    "thumbnailText": "ABOUT"
+  },
+  {
+    "id": "lesson-21",
+    "group": "Relative Clause",
+    "slug": "bai-21-relative-clause-p1",
+    "title": "Mệnh Đề Quan Hệ (Phần 1)",
+    "description": "Học tiếng Anh thực tế qua video ngắn. Kiến thức về Mệnh Đề Quan Hệ (Relative Clause).",
+    "videoUrl": "https://drive.google.com/file/d/1li16OGisLMFRQ_rn2GdBlBisf9g-sEKy/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/menh-de-quan-he-p1.jpg",
+    "thumbnailText": ""
+  },
+  {
+    "id": "lesson-22",
+    "group": "Relative Clause",
+    "slug": "bai-22-relative-clause-p2",
+    "title": "Mệnh Đề Quan Hệ (Phần 2)",
+    "description": "Học tiếng Anh thực tế qua video ngắn. Kiến thức về Mệnh Đề Quan Hệ (Relative Clause).",
+    "videoUrl": "https://drive.google.com/file/d/1PVJDTCPckYBZBFydswmu7y-rLYBeE0Lz/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/menh-de-quan-he-p2.jpg",
+    "thumbnailText": ""
+  },
+  {
+    "id": "lesson-23",
+    "group": "Relative Clause",
+    "slug": "bai-23-relative-clause-p3",
+    "title": "Mệnh Đề Quan Hệ (Phần 3)",
+    "description": "Học tiếng Anh thực tế qua video ngắn. Kiến thức về Mệnh Đề Quan Hệ (Relative Clause).",
+    "videoUrl": "https://drive.google.com/file/d/16mWsrWoSGwPZCj5kRsob8kf5sqw79-pc/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/menh-de-quan-he-p3.jpg",
+    "thumbnailText": ""
+  },
+  {
+    "id": "lesson-24",
+    "group": "Relative Clause",
+    "slug": "bai-24-relative-clause-p4",
+    "title": "Mệnh Đề Quan Hệ (Phần 4)",
+    "description": "Học tiếng Anh thực tế qua video ngắn. Kiến thức về Mệnh Đề Quan Hệ (Relative Clause).",
+    "videoUrl": "https://drive.google.com/file/d/1vsTHXMU0F_DbO6si3rbTXWlovyE3if_y/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/menh-de-quan-he-p4.jpg",
+    "thumbnailText": ""
+  },
+  {
+    "id": "lesson-24",
+    "group": "Câu Điều Kiện",
+    "slug": "bai-24-cau-dieu-kien-phan-1",
+    "title": "Câu Điều Kiện - Phần 1",
+    "description": "Nắm vững bản chất và các quy tắc cơ bản nhất của câu điều kiện (Conditional Sentences).",
+    "videoUrl": "https://drive.google.com/file/d/1-naV91OpNysJB-kUfdwz3lawdgOrinvk/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/cau-dieu-kien-base.jpg",
+    "thumbnailText": "# P1"
+  },
+  {
+    "id": "lesson-25",
+    "group": "Câu Điều Kiện",
+    "slug": "bai-25-cau-dieu-kien-phan-2",
+    "title": "Câu Điều Kiện - Phần 2",
+    "description": "Nắm vững bản chất và các quy tắc cơ bản nhất của câu điều kiện (Conditional Sentences).",
+    "videoUrl": "https://drive.google.com/file/d/1J8uiiFnpKF-RxJQ7YhwR7SyAIDQY0Cv_/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/cau-dieu-kien-base.jpg",
+    "thumbnailText": "# P2"
+  },
+  {
+    "id": "lesson-26",
+    "group": "Relative Clause",
+    "slug": "bai-26-relative-clause-p5",
+    "title": "Mệnh Đề Quan Hệ (Phần 5)",
+    "description": "Học tiếng Anh thực tế qua video ngắn. Kiến thức về Mệnh Đề Quan Hệ (Relative Clause).",
+    "videoUrl": "https://drive.google.com/file/d/1uEx7pbg_PIwR0-KUSbHqoCwq30F0z6EA/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/menh-de-quan-he-p5.jpg",
+    "thumbnailText": ""
+  },
+  {
+    "id": "lesson-27",
+    "group": "Relative Clause",
+    "slug": "bai-27-relative-clause-p6",
+    "title": "Mệnh Đề Quan Hệ (Phần 6)",
+    "description": "Học tiếng Anh thực tế qua video ngắn. Kiến thức về Mệnh Đề Quan Hệ (Relative Clause).",
+    "videoUrl": "/videos/EN_PE_menh_de_quan_he_P6.mp4",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/relative-clause-base.jpg",
+    "thumbnailText": "#P.6"
+  },
+  {
+    "id": "lesson-28",
+    "group": "Master Confusing Words",
+    "slug": "bai-28-beside-vs-besides",
+    "title": "Phân biệt Beside và Besides",
+    "description": "Học tiếng Anh thực tế qua video ngắn. Master Confusing Words: Beside vs Besides.",
+    "videoUrl": "https://drive.google.com/file/d/1I0pY7-puwap3PzEZaXnNZVi-59IfQInt/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/phan_biet.png",
+    "thumbnailText": "beside ⚡ besides"
+  },
+  {
+    "id": "lesson-29",
+    "group": "Master Confusing Words",
+    "slug": "bai-29-bored-vs-boring",
+    "title": "Phân biệt Bored và Boring",
+    "description": "Học tiếng Anh thực tế qua video ngắn. Master Confusing Words: Bored vs Boring.",
+    "videoUrl": "https://drive.google.com/file/d/16nm76PVQS48JhhGQcU-cfYerGOIisqEt/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/phan_biet.png",
+    "thumbnailText": "bored ⚡ boring"
+  },
+  {
+    "id": "lesson-30",
+    "group": "Master Confusing Words",
+    "slug": "bai-30-confusing-words-is-are",
+    "title": "Phân biệt IS và ARE",
+    "description": "Master Confusing Words: Nắm vững cách phân biệt bộ đôi gây lú IS và ARE.",
+    "videoUrl": "https://drive.google.com/file/d/1_aKaf1NW0y2GNyL2YPR1ebG-dlbHCnKj/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/phan_biet.png",
+    "thumbnailText": "IS ⚡ ARE"
+  },
+  {
+    "id": "lesson-31",
+    "group": "Master Confusing Words",
+    "slug": "bai-31-other-vs-another",
+    "title": "Phân biệt Other và Another",
+    "description": "Học tiếng Anh thực tế qua video ngắn. Master Confusing Words: Other vs Another.",
+    "videoUrl": "https://drive.google.com/file/d/1sUKql5PnF7d8y_zJzQRRNX8A3ZUer5nW/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/phan_biet.png",
+    "thumbnailText": "other ⚡ another"
+  },
+  {
+    "id": "lesson-32",
+    "group": "Master Confusing Words",
+    "slug": "bai-32-confusing-words-the-shit",
+    "title": "The SH*T",
+    "description": "Master Confusing Words: Hiểu đúng nghĩa và cách dùng cụm từ The SH*T.",
+    "videoUrl": "https://drive.google.com/file/d/1RO5azhdFSDAgw-V1pXV8Zua_xND9a2h5/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/phan_biet.png",
+    "thumbnailText": "THE SH*T"
+  },
+  {
+    "id": "lesson-33",
+    "group": "Master Confusing Words",
+    "slug": "bai-33-confusing-words-begin-start",
+    "title": "Phân biệt BEGIN và START",
+    "description": "Master Confusing Words: Hiểu rõ sự khác nhau và cách dùng BEGIN và START.",
+    "videoUrl": "https://drive.google.com/file/d/1v7fINuGClm9qxFkUK60pA9BpvKhGefcS/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/phan_biet.png",
+    "thumbnailText": "begin ⚡ start"
+  },
+  {
+    "id": "lesson-34",
+    "group": "Master Confusing Words",
+    "slug": "bai-34-confusing-words-advise-suggest",
+    "title": "Phân biệt ADVISE và SUGGEST",
+    "description": "Master Confusing Words: Hiểu rõ sự khác nhau và cách dùng ADVISE và SUGGEST.",
+    "videoUrl": "https://drive.google.com/file/d/1b2dsPXbHvDP-a7si-LBzN_LpFlQynq9Z/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/phan_biet.png",
+    "thumbnailText": "advise ⚡ suggest"
+  },
+  {
+    "id": "lesson-35",
+    "group": "Master Confusing Words",
+    "slug": "bai-35-confusing-words-famous-infamous",
+    "title": "Phân biệt FAMOUS và INFAMOUS",
+    "description": "Master Confusing Words: Sự khác biệt thú vị giữa FAMOUS và INFAMOUS.",
+    "videoUrl": "https://drive.google.com/file/d/1s6PHt5Dtx6Am_hXgDuj_APxHycs_bR4S/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/phan_biet.png",
+    "thumbnailText": "famous ⚡ infamous"
+  },
+  {
+    "id": "lesson-36",
+    "group": "Master Confusing Words",
+    "slug": "bai-36-confusing-words-belike-looklike",
+    "title": "Phân biệt BE LIKE và LOOK LIKE",
+    "description": "Master Confusing Words: Hiểu rõ sự khác biệt giữa BE LIKE và LOOK LIKE.",
+    "videoUrl": "https://drive.google.com/file/d/1rYSwntUPK36fzd2GERMW1OrcB5NX9O2j/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/phan_biet.png",
+    "thumbnailText": "be like ⚡ look like"
+  },
+  {
+    "id": "lesson-37",
+    "group": "Master Confusing Words",
+    "slug": "bai-37-confusing-words-agreeto-agreewith",
+    "title": "Phân biệt AGREE TO và AGREE WITH",
+    "description": "Master Confusing Words: Sự khác biệt thú vị giữa AGREE TO và AGREE WITH.",
+    "videoUrl": "https://drive.google.com/file/d/12iTeFZcCuXYyG84qGGjNpu3dnPZu0Ci6/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/phan_biet.png",
+    "thumbnailText": "agree to ⚡ agree with"
   }
 ]

@@ -71,11 +71,23 @@ export default async function PracticalEnglishListPage() {
                             {lesson.thumbnailText && (
                               <div className="absolute inset-x-0 bottom-4 flex justify-center z-10 pointer-events-none drop-shadow-2xl">
                                 <span 
-                                  className="text-4xl md:text-5xl font-black text-white italic tracking-tighter uppercase"
-                                  style={{
-                                    WebkitTextStroke: '2px black',
-                                    textShadow: '3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
-                                  }}
+                                  className={
+                                    lesson.group === "Master Confusing Words"
+                                      ? "text-2xl md:text-3xl font-extrabold text-green-300 tracking-wide drop-shadow-md"
+                                      : "text-4xl md:text-5xl font-black text-white italic tracking-tighter uppercase"
+                                  }
+                                  style={
+                                    lesson.group === "Master Confusing Words"
+                                      ? {
+                                          WebkitTextStroke: '1px black',
+                                          textShadow: '2px 2px 4px rgba(0,0,0,0.8)',
+                                          fontFamily: '"Courier New", Courier, monospace'
+                                        }
+                                      : {
+                                          WebkitTextStroke: '2px black',
+                                          textShadow: '3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000'
+                                        }
+                                  }
                                 >
                                   {lesson.thumbnailText}
                                 </span>
@@ -85,6 +97,17 @@ export default async function PracticalEnglishListPage() {
                         ) : (
                           <div className="absolute inset-0 flex items-center justify-center bg-slate-800">
                             <PlayCircle className="w-12 h-12 text-slate-500" />
+                          </div>
+                        )}
+                        
+                        {/* Views overlay ở góc trên bên phải */}
+                        {lesson.views && (
+                          <div className="absolute top-2 right-2 flex items-center gap-1.5 text-white font-semibold text-xs bg-black/50 backdrop-blur-md px-2 py-1 rounded-lg z-10 shadow-sm border border-white/10">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                              <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                              <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                            {lesson.views}
                           </div>
                         )}
                       </Link>
