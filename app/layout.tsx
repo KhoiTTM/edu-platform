@@ -19,6 +19,15 @@ export const metadata: Metadata = {
   title: "EduVerse | Khám Phá Vũ Trụ Tri Thức",
   description:
     "Student portal for lessons, schedules, videos, quizzes, and scores.",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "EduVerse",
+  },
+  icons: {
+    apple: "/icons/icon-192x192.png",
+  },
 };
 
 export const viewport: Viewport = {
