@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
-import withPWAInit from "@ducanh2912/next-pwa";
+import withSerwistInit from "@serwist/next";
 
-const withPWA = withPWAInit({
-  dest: "public",
-  register: true,
+const withSerwist = withSerwistInit({
+  swSrc: "app/sw.ts",
+  swDest: "public/sw.js",
+  disable: process.env.NODE_ENV === "development",
 });
 
 const nextConfig: NextConfig = {
@@ -15,4 +16,4 @@ const nextConfig: NextConfig = {
   transpilePackages: ["katex"],
 };
 
-export default withPWA(nextConfig);
+export default withSerwist(nextConfig);
