@@ -38,7 +38,7 @@ export default async function PracticalEnglishLessonPage({ params }: PageProps) 
     const { data: session } = await supabase
       .from("learning_sessions")
       .select("id")
-      .eq("student_id", user.id)
+      .eq("user_id", user.id)
       .eq("subject_slug", "practical-english")
       .contains("summary_metrics", { unit_topic: lesson.title, sub_type: "video_lesson" })
       .maybeSingle();
@@ -68,11 +68,6 @@ export default async function PracticalEnglishLessonPage({ params }: PageProps) 
                 {lesson.description}
               </p>
             </div>
-            {isCompleted && (
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 whitespace-nowrap text-sm font-semibold">
-                <CheckCircle2 className="w-4 h-4" /> Đã hoàn thành
-              </div>
-            )}
           </div>
         </header>
 
@@ -105,8 +100,8 @@ export default async function PracticalEnglishLessonPage({ params }: PageProps) 
                 const { data: { user: u } } = await sb.auth.getUser();
                 if (!u) return;
                 
-                await sb.from("learning_sessions").insert({
-                  student_id: u.id,
+                const { error } = await sb.from("learning_sessions").insert({
+                  user_id: u.id,
                   subject_slug: "practical-english",
                   summary_metrics: {
                     type: "exam",
@@ -116,8 +111,10 @@ export default async function PracticalEnglishLessonPage({ params }: PageProps) 
                     total: 1
                   }
                 });
+                if (error) console.error("INSERT ERROR:", error);
                 
                 const { revalidatePath } = await import("next/cache");
+                revalidatePath(`/hoc-tap/practical-english`);
                 revalidatePath(`/hoc-tap/practical-english/${lessonSlug}`);
              }}>
                <button type="submit" className="px-8 py-3 rounded-full bg-fuchsia-600 hover:bg-fuchsia-500 text-white font-bold transition-all shadow-[0_0_20px_rgba(192,38,211,0.4)]">

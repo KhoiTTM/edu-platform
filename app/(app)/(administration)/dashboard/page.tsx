@@ -169,6 +169,48 @@ export default async function DashboardPage() {
   }
   const displayTasks = Array.from(allTasksMap.values());
 
+  // --- RECOMMENDATIONS LOGIC ---
+  const recommendations: any[] = [];
+
+  // 1. Gợi ý Practical English ít view nhất
+  const fs = require('fs');
+  const path = require('path');
+  const peDataPath = path.resolve(process.cwd(), "content/practical-english-lessons.json");
+  let peLessons: any[] = [];
+  try {
+    peLessons = JSON.parse(fs.readFileSync(peDataPath, "utf8"));
+  } catch (e) {}
+
+  if (peLessons.length > 0) {
+    const { data: peSessions } = await supabase.from("learning_sessions").select("summary_metrics").eq("subject_slug", "practical-english");
+    const viewsCount: Record<string, number> = {};
+    if (peSessions) {
+      peSessions.forEach(s => {
+        const topic = s.summary_metrics?.unit_topic;
+        if (topic) viewsCount[topic] = (viewsCount[topic] || 0) + 1;
+      });
+    }
+    let minViews = Infinity;
+    const peWithViews = peLessons.map((l: any) => ({ ...l, viewsNum: viewsCount[l.title] || 0 }));
+    peWithViews.forEach((l: any) => { if (l.viewsNum < minViews) minViews = l.viewsNum; });
+    const candidates = peWithViews.filter((l: any) => l.viewsNum === minViews);
+    
+    if (candidates.length > 0) {
+      const suggestedPeLesson = candidates[Math.floor(Math.random() * candidates.length)];
+      recommendations.push({
+        id: "pe-random-lowest",
+        title: "Video tiếng Anh thú vị",
+        description: suggestedPeLesson.title,
+        url: `/hoc-tap/practical-english/${suggestedPeLesson.slug}`,
+        icon: "🎬",
+        color: "bg-indigo-500",
+        glow: "shadow-[0_0_15px_rgba(99,102,241,0.4)]"
+      });
+    }
+  }
+
+  // --- END RECOMMENDATIONS ---
+
   const todayStr = new Date().toISOString().split("T")[0];
   const groupedTasks: Record<string, any[]> = {};
   displayTasks.forEach((task: any) => {
@@ -224,6 +266,23 @@ export default async function DashboardPage() {
             </div>
           </div>
           <RandomReflexButton examIds={reflexExamIds} timer={5} />
+        </div>
+      )}
+
+      {recommendations.length > 0 && (
+        <div className="shrink-0 mb-1 flex gap-3 overflow-x-auto custom-scrollbar pb-2">
+          {recommendations.map(rec => (
+            <Link key={rec.id} href={rec.url} className="flex-shrink-0 flex items-center gap-3 p-3 rounded-2xl bg-surface border border-line hover:border-indigo-500/50 shadow-md transition-all w-72 group">
+              <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-xl text-white ${rec.color} ${rec.glow} group-hover:scale-110 transition-transform`}>
+                {rec.icon}
+              </div>
+              <div className="flex-1 min-w-0">
+                <h4 className="text-[11px] font-black text-sky-400 uppercase tracking-widest truncate">{rec.title}</h4>
+                <p className="text-xs font-bold text-slate-200 truncate mt-0.5 group-hover:text-white">{rec.description}</p>
+              </div>
+              <ArrowRight size={14} className="text-slate-500 group-hover:text-indigo-400 group-hover:translate-x-1 transition-all" />
+            </Link>
+          ))}
         </div>
       )}
 

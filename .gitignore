@@ -44,3 +44,9 @@ public/fonts/
 
 # Ignore downloaded videos
 public/videos/
+
+# PWA files
+**/public/sw.js
+**/public/workbox-*.js
+**/public/fallback-*.js
+**/public/swe-worker-*.js

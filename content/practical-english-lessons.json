@@ -417,5 +417,71 @@
     "aspectRatio": "vertical",
     "thumbnail": "/images/practical-english/phan_biet.png",
     "thumbnailText": "agree to ⚡ agree with"
+  },
+  {
+    "id": "lesson-38",
+    "group": "Master Confusing Words",
+    "slug": "bai-38-o-clock",
+    "title": "Phân biệt cách dùng O'CLOCK",
+    "description": "Học tiếng Anh thực tế qua video ngắn. Master Confusing Words: cách dùng O'CLOCK chuẩn.",
+    "videoUrl": "https://drive.google.com/file/d/15F1yXNYaXCOtdBIgHY1BYai64UZhG5DG/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/phan_biet.png",
+    "thumbnailText": "o'clock"
+  },
+  {
+    "id": "lesson-39",
+    "group": "Master Confusing Words",
+    "slug": "bai-39-nation-state-country",
+    "title": "Phân biệt Nation, State và Country",
+    "description": "Học tiếng Anh thực tế qua video ngắn. Master Confusing Words: Phân biệt NATION, STATE và COUNTRY.",
+    "videoUrl": "https://drive.google.com/file/d/1uRQciq9xaf3NxnZtE0b4UwmWADL5x5mj/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/phan_biet.png",
+    "thumbnailText": "nation ⚡ state ⚡ country"
+  },
+  {
+    "id": "lesson-40",
+    "group": "Master Confusing Words",
+    "slug": "bai-40-beside-near-next-to",
+    "title": "Phân biệt Beside, Near và Next to",
+    "description": "Học tiếng Anh thực tế qua video ngắn. Master Confusing Words: Phân biệt BESIDE, NEAR và NEXT TO.",
+    "videoUrl": "https://drive.google.com/file/d/11LwirHiNiu4TLR4VvDEz1Nm9DwZvFwWm/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/phan_biet.png",
+    "thumbnailText": "beside ⚡ near ⚡ next to"
+  },
+  {
+    "id": "lesson-41",
+    "group": "Master Confusing Words",
+    "slug": "bai-41-in-on-at",
+    "title": "Phân biệt IN, ON và AT",
+    "description": "Học tiếng Anh thực tế qua video ngắn. Master Confusing Words: Phân biệt IN, ON và AT.",
+    "videoUrl": "https://drive.google.com/file/d/1VrjuWFBB1IbC2mmuRGJ6T7FKtuYrd8th/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/phan_biet.png",
+    "thumbnailText": "in ⚡ on ⚡ at"
+  },
+  {
+    "id": "lesson-42",
+    "group": "Master Confusing Words",
+    "slug": "bai-42-todo-doing",
+    "title": "Phân biệt TO DO và DOING",
+    "description": "Học tiếng Anh thực tế qua video ngắn. Master Confusing Words: Phân biệt TO DO và DOING.",
+    "videoUrl": "https://drive.google.com/file/d/1i8KYjIg0J4kSEFSq5F85v-f7gIyiMEgS/preview",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/phan_biet.png",
+    "thumbnailText": "to do ⚡ doing"
+  },
+  {
+    "id": "lesson-43",
+    "group": "Master Confusing Words",
+    "slug": "bai-43-me-too-me-either",
+    "title": "Phân biệt Me too và Me either",
+    "description": "Học tiếng Anh thực tế qua video ngắn. Master Confusing Words: Phân biệt ME TOO và ME EITHER.",
+    "videoUrl": "/videos/EN_PE_phan_biet_METOO_MEEITHER.mp4",
+    "aspectRatio": "vertical",
+    "thumbnail": "/images/practical-english/phan_biet.png",
+    "thumbnailText": "me too ⚡ me either"
   }
 ]
