@@ -77,13 +77,19 @@ export default async function PracticalEnglishLessonPage({ params }: PageProps) 
               lesson.aspectRatio === 'vertical' ? 'max-w-[400px] aspect-[9/16]' : 'max-w-[800px] aspect-video'
             }`}
           >
-             {lesson.videoUrl ? (
-               <iframe 
-                 src={lesson.videoUrl}
-                 className="absolute top-0 left-0 w-full h-full border-none"
-                 allow="autoplay; fullscreen; picture-in-picture"
-                 allowFullScreen
-               ></iframe>
+           {lesson.videoUrl ? (
+               <video 
+                 src={(() => {
+                   const match = lesson.videoUrl.match(/\/d\/(.+?)\//);
+                   return match && match[1] 
+                     ? `https://drive.google.com/uc?export=download&id=${match[1]}`
+                     : lesson.videoUrl;
+                 })()}
+                 controls
+                 playsInline
+                 className="absolute top-0 left-0 w-full h-full object-contain bg-black"
+                 poster={lesson.thumbnail || undefined}
+               />
              ) : (
                <div className="absolute inset-0 flex items-center justify-center text-slate-500">
                  Đang cập nhật video...
