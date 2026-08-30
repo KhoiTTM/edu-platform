@@ -4,6 +4,7 @@ import fs from "fs";
 import path from "path";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
 import { createClient } from "@/lib/supabase/server";
+import VideoPlayer from "./VideoPlayer";
 
 interface PageProps {
   params: Promise<{
@@ -48,6 +49,41 @@ export default async function PracticalEnglishLessonPage({ params }: PageProps) 
     }
   }
 
+  // Server Action để client gọi khi xem xong (quá 2/3) hoặc khi click nút
+  async function markAsCompleted() {
+    "use server";
+    const sb = await createClient();
+    const { data: { user: u } } = await sb.auth.getUser();
+    if (!u) return;
+    
+    // Kiểm tra xem đã có chưa để tránh duplicate
+    const { data: existing } = await sb.from("learning_sessions")
+      .select("id")
+      .eq("user_id", u.id)
+      .eq("subject_slug", "practical-english")
+      .contains("summary_metrics", { unit_topic: lesson.title, sub_type: "video_lesson" })
+      .maybeSingle();
+      
+    if (!existing) {
+      const { error } = await sb.from("learning_sessions").insert({
+        user_id: u.id,
+        subject_slug: "practical-english",
+        summary_metrics: {
+          type: "exam",
+          sub_type: "video_lesson",
+          unit_topic: lesson.title,
+          score: 1,
+          total: 1
+        }
+      });
+      if (error) console.error("INSERT ERROR:", error);
+    }
+    
+    const { revalidatePath } = await import("next/cache");
+    revalidatePath(`/hoc-tap/practical-english`);
+    revalidatePath(`/hoc-tap/practical-english/${lessonSlug}`);
+  }
+
   return (
     <div className="flex min-h-screen w-full flex-col bg-surface text-white pb-20">
       <div className="mx-auto max-w-4xl w-full px-6 py-8">
@@ -71,58 +107,13 @@ export default async function PracticalEnglishLessonPage({ params }: PageProps) 
           </div>
         </header>
 
-        <div className="flex justify-center mb-8">
-          <div 
-            className={`rounded-2xl overflow-hidden shadow-2xl bg-black border border-line w-full relative ${
-              lesson.aspectRatio === 'vertical' ? 'max-w-[400px] aspect-[9/20]' : 'max-w-[800px] aspect-video'
-            }`}
-          >
-             {lesson.videoUrl ? (
-               <iframe 
-                 src={lesson.videoUrl}
-                 className="absolute top-0 left-0 w-full h-full border-none"
-                 allow="autoplay; fullscreen; picture-in-picture"
-                 allowFullScreen
-               ></iframe>
-             ) : (
-               <div className="absolute inset-0 flex items-center justify-center text-slate-500">
-                 Đang cập nhật video...
-               </div>
-             )}
-          </div>
-        </div>
-
-        {!isCompleted && (
-          <div className="flex justify-center mt-8">
-             <form action={async () => {
-                "use server";
-                const sb = await createClient();
-                const { data: { user: u } } = await sb.auth.getUser();
-                if (!u) return;
-                
-                const { error } = await sb.from("learning_sessions").insert({
-                  user_id: u.id,
-                  subject_slug: "practical-english",
-                  summary_metrics: {
-                    type: "exam",
-                    sub_type: "video_lesson",
-                    unit_topic: lesson.title,
-                    score: 1,
-                    total: 1
-                  }
-                });
-                if (error) console.error("INSERT ERROR:", error);
-                
-                const { revalidatePath } = await import("next/cache");
-                revalidatePath(`/hoc-tap/practical-english`);
-                revalidatePath(`/hoc-tap/practical-english/${lessonSlug}`);
-             }}>
-               <button type="submit" className="px-8 py-3 rounded-full bg-fuchsia-600 hover:bg-fuchsia-500 text-white font-bold transition-all shadow-[0_0_20px_rgba(192,38,211,0.4)]">
-                 Đánh dấu đã hoàn thành
-               </button>
-             </form>
-          </div>
-        )}
+        <VideoPlayer 
+          lessonTitle={lesson.title}
+          videoUrl={lesson.videoUrl}
+          aspectRatio={lesson.aspectRatio}
+          isCompleted={isCompleted}
+          onCompleteAction={markAsCompleted}
+        />
       </div>
     </div>
   );

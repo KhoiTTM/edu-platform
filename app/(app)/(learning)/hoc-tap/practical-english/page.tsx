@@ -2,6 +2,7 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import { ArrowLeft, PlayCircle } from "lucide-react";
+import { createClient as createSupabaseClient } from "@supabase/supabase-js";
 
 import { createClient } from "@/lib/supabase/server";
 
@@ -25,7 +26,12 @@ export default async function PracticalEnglishListPage() {
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
 
-  const { data: sessions } = await supabase
+  const supabaseAdmin = createSupabaseClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.SUPABASE_SERVICE_ROLE_KEY!
+  );
+
+  const { data: sessions } = await supabaseAdmin
     .from("learning_sessions")
     .select("user_id, summary_metrics")
     .eq("subject_slug", "practical-english");
